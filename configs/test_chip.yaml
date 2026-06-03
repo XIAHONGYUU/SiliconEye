@@ -1,0 +1,23 @@
+# Test chip config — 8-layer CMOS die photos (5712x4284 pixels each)
+extends: defaults/cmos.yaml
+
+chip:
+  name: "test_chip"
+  process: "cmos"
+  die_size_um: [0, 0, 571.2, 428.4]   # assumed 10 px/μm, will tune
+
+layers:
+  - {name: sub,        index: 0,  description: "衬底层 (Substrate)"}
+  - {name: implant,    index: 1,  description: "注入层 (Implant)"}
+  - {name: aa,         index: 2,  description: "有源区 (Active Area)"}
+  - {name: poly,       index: 3,  description: "多晶硅栅 (Polysilicon Gate)"}
+  - {name: m1,         index: 4,  description: "金属1 (Metal 1)", is_metal: true}
+  - {name: m2,         index: 5,  description: "金属2 (Metal 2)", is_metal: true}
+  - {name: m3,         index: 6,  description: "金属3 (Metal 3)", is_metal: true}
+  - {name: m4,         index: 7,  description: "金属4 (Metal 4)", is_metal: true}
+
+tiles:
+  - id: "tile_full"
+    bbox_um: [0, 0, 571.2, 428.4]
+    overlap_um: 0
+    pixel_per_um: 10.0   # 5712px / 571.2μm = 10 px/μm (adjustable)

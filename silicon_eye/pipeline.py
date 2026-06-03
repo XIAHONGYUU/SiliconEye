@@ -186,7 +186,16 @@ class Pipeline:
 
             images = []
             for layer in self.config.layers:
-                img_path = f"{self.config.chip.name}/{tile_config.id}/{layer.name}.png"
+                # Try common image extensions
+                img_path = None
+                for ext in [".png", ".jpg", ".jpeg", ".tif", ".tiff"]:
+                    candidate = f"{self.config.chip.name}/{tile_config.id}/{layer.name}{ext}"
+                    if (Path(self.config.chip.name) / tile_config.id / f"{layer.name}{ext}").exists():
+                        img_path = candidate
+                        break
+                if img_path is None:
+                    # Fallback: use .png path (will error if missing)
+                    img_path = f"{self.config.chip.name}/{tile_config.id}/{layer.name}.png"
                 images.append(
                     LayerImage(
                         path=img_path,
