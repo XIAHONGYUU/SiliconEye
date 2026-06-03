@@ -1,0 +1,23 @@
+# Example config: annotated chip (single tile, color-block annotations)
+extends: defaults/cmos.yaml
+
+chip:
+  name: "example_chip"
+  process: "cmos"
+  die_size_um: [0, 0, 800, 600]
+
+layers:
+  - {name: n_well,       index: 0}
+  - {name: p_diffusion,  index: 1}
+  - {name: n_diffusion,  index: 2}
+  - {name: poly,         index: 3}
+  - {name: contact,      index: 4, is_via: true}
+  - {name: metal1,       index: 5, is_metal: true}
+
+tiles:
+  - id: "tile_full"
+    bbox_um: [0, 0, 800, 600]
+    pixel_per_um: 20.0
+
+# Annotations are populated by:
+#   silicon-eye annotate parse -i annotated.png -o this_file.yaml

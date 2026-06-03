@@ -1,0 +1,42 @@
+# Default: CMOS 180nm-like process (generic)
+# All chip configs should extend this and override specific values.
+
+chip:
+  name: "unknown"
+  process: "cmos"
+
+layers:
+  - {name: n_well,       index: 0,  description: "N-well implant"}
+  - {name: p_diffusion,  index: 1,  description: "P+ source/drain"}
+  - {name: n_diffusion,  index: 2,  description: "N+ source/drain"}
+  - {name: poly,         index: 3,  description: "Polysilicon gate"}
+  - {name: contact,      index: 4,  description: "Contact holes", is_via: true}
+  - {name: metal1,       index: 5,  description: "Metal 1", is_metal: true}
+  - {name: via1,         index: 6,  description: "Via 1", is_via: true}
+  - {name: metal2,       index: 7,  description: "Metal 2", is_metal: true}
+  - {name: via2,         index: 8,  description: "Via 2", is_via: true}
+  - {name: metal3,       index: 9,  description: "Metal 3 (MIM top)", is_metal: true}
+  - {name: mim_dielectric, index: 10, description: "MIM dielectric (CTM)"}
+
+phase1:
+  stitcher:
+    enabled: false
+  segmenter:
+    mode: "rule_based"
+    confidence_threshold: 0.7
+  extractor:
+    min_device_area_um2: 5.0
+
+phase2:
+  grouper:
+    w_tolerance_pct: 5.0
+    l_tolerance_pct: 5.0
+    spatial_proximity_um: 50.0
+  dummy_filter:
+    auto_detect: true
+
+annotations:
+  global_hints: []
+  regions: []
+  device_hints: []
+  power_nets: []

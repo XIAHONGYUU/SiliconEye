@@ -1,0 +1,70 @@
+[project]
+name = "silicon-eye"
+version = "0.1.0"
+description = "AI-assisted analog circuit reverse engineering: from die images to clean SPICE netlists"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Silicon Eye Contributors"},
+]
+keywords = [
+    "reverse-engineering",
+    "analog-circuit",
+    "semiconductor",
+    "chip-analysis",
+    "computer-vision",
+    "eda",
+    "image-processing",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "numpy>=1.26",
+    "opencv-python>=4.9",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "shapely>=2.0",
+    "tqdm>=4.66",
+    "pillow>=10.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+sam = [
+    # SAM 3 for device segmentation (install separately due to size)
+    # pip install git+https://github.com/facebookresearch/sam3.git
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.8",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+silicon-eye = "silicon_eye.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["silicon_eye*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
