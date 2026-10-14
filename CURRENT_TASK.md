@@ -59,7 +59,7 @@
 
 本轮全套109 tests passed，修改代码/测试 Ruff 通过；pipeline 未触及网表 helper 的既有 F541/SIM114 两项明确排除。Git diff --check 通过；待提交文件未发现私钥或常见 token 模式。它是开发快照，poly 候选 conflict、材料真值未完成、设备阶段 blocked 的状态保持不变。
 
-提交/远端实际结果以 Git HEAD 和 origin/main 为准；此记录随当前开发快照提交，GitHub 发布不表示物理边界或器件验收通过。
+代码快照已提交并推送：5912f3523e3456afaec95766ea0d2fdf7825bd86（feat: add audited local registration and pixel annotation workflow）；git ls-remote 核验远端 main 与该提交完全一致。首次 Git 推送缺凭证接口，随后通过 gh 已登录凭证管理接口完成推送，没有读取/输出 token。本条完成记录作为后续文档提交同步；GitHub 开发快照不表示物理边界或器件验收通过。
 
 ## 唯一下一步
 
