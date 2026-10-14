@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "case_id": "local-pixel-annotations-v2",
+  "coordinate_frame": "native_source_pixel_xy_half_open",
+  "physical_scale_status": "unknown",
+  "physical_scale_px_per_um": null,
+  "registration_manifest": "benchmarks/local-ring-aa-poly-v1/baseline/manifest.json",
+  "registration_sha256": "bd448b156323133f52faf38bcac3fe41fd6f5cf626df103bb8310ce803ec2143",
+  "sources": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "scope_xywh": [
+        1850,
+        1150,
+        1500,
+        850
+      ],
+      "registration_side": "reference",
+      "layer_label": "active_area",
+      "layer_status": "confirmed",
+      "layer_review": {
+        "reviewer": "user_in_current_chat",
+        "actor": "human",
+        "decision": "confirm",
+        "evidence": "2026-10-14 user replied: 是，层名称已确认; question explicitly named aa=有源区层 and poly=多晶硅层"
+      }
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "scope_xywh": [
+        1780,
+        970,
+        1500,
+        850
+      ],
+      "registration_side": "target",
+      "layer_label": "polysilicon",
+      "layer_status": "confirmed",
+      "layer_review": {
+        "reviewer": "user_in_current_chat",
+        "actor": "human",
+        "decision": "confirm",
+        "evidence": "2026-10-14 user replied: 是，层名称已确认; question explicitly named aa=有源区层 and poly=多晶硅层"
+      }
+    }
+  },
+  "objects": [
+    {
+      "id": "aa-H-outer",
+      "source_id": "aa",
+      "bbox_xywh": [
+        2560,
+        1440,
+        650,
+        300
+      ],
+      "role": "registration_control",
+      "usage": "fitting",
+      "label": "H-outer",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "aa-V-outer",
+      "source_id": "aa",
+      "bbox_xywh": [
+        2250,
+        1280,
+        185,
+        625
+      ],
+      "role": "registration_control",
+      "usage": "diagnostic",
+      "label": "V-outer",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "aa-square",
+      "source_id": "aa",
+      "bbox_xywh": [
+        2025,
+        1545,
+        100,
+        100
+      ],
+      "role": "registration_control",
+      "usage": "diagnostic",
+      "label": "square",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "aa-H-inner",
+      "source_id": "aa",
+      "bbox_xywh": [
+        2650,
+        1520,
+        480,
+        140
+      ],
+      "role": "region_candidate",
+      "usage": "annotation_draft",
+      "label": "H-inner",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "aa-V-inner",
+      "source_id": "aa",
+      "bbox_xywh": [
+        2310,
+        1370,
+        60,
+        450
+      ],
+      "role": "region_candidate",
+      "usage": "annotation_draft",
+      "label": "V-inner",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "poly-H-outer",
+      "source_id": "poly",
+      "bbox_xywh": [
+        2500,
+        1260,
+        665,
+        295
+      ],
+      "role": "registration_control",
+      "usage": "fitting",
+      "label": "H-outer",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "poly-V-outer",
+      "source_id": "poly",
+      "bbox_xywh": [
+        2180,
+        1100,
+        190,
+        635
+      ],
+      "role": "registration_control",
+      "usage": "diagnostic",
+      "label": "V-outer",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "poly-square",
+      "source_id": "poly",
+      "bbox_xywh": [
+        1930,
+        1365,
+        110,
+        115
+      ],
+      "role": "registration_control",
+      "usage": "diagnostic",
+      "label": "square",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "poly-H-inner",
+      "source_id": "poly",
+      "bbox_xywh": [
+        2580,
+        1340,
+        490,
+        150
+      ],
+      "role": "region_candidate",
+      "usage": "annotation_draft",
+      "label": "H-inner",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    },
+    {
+      "id": "poly-V-inner",
+      "source_id": "poly",
+      "bbox_xywh": [
+        2240,
+        1190,
+        60,
+        460
+      ],
+      "role": "region_candidate",
+      "usage": "annotation_draft",
+      "label": "V-inner",
+      "boundary_definition": "visual_roi_not_material_mask",
+      "producer": "reasoning_model",
+      "status": "candidate",
+      "review": null,
+      "uncertainty": "AI-selected ROI only; no exact mask, device identity or terminal evidence; not an untouched holdout",
+      "device_type": "unknown",
+      "terminals": []
+    }
+  ],
+  "previous_input_sha256": "56a4807c88d2ec9a7686fd5b55abfa45149a1a038134ceee6fe957b14fccd27d",
+  "correspondences": [
+    {
+      "id": "PAIR-H-outer",
+      "object_ids": [
+        "aa-H-outer",
+        "poly-H-outer"
+      ],
+      "status": "candidate",
+      "producer": "reasoning_model",
+      "review": null,
+      "uncertainty": "position/topology match only; material boundary identity not confirmed; no device or terminal inference"
+    },
+    {
+      "id": "PAIR-V-outer",
+      "object_ids": [
+        "aa-V-outer",
+        "poly-V-outer"
+      ],
+      "status": "candidate",
+      "producer": "reasoning_model",
+      "review": null,
+      "uncertainty": "position/topology match only; material boundary identity not confirmed; no device or terminal inference"
+    },
+    {
+      "id": "PAIR-square",
+      "object_ids": [
+        "aa-square",
+        "poly-square"
+      ],
+      "status": "candidate",
+      "producer": "reasoning_model",
+      "review": null,
+      "uncertainty": "position/topology match only; material boundary identity not confirmed; no device or terminal inference"
+    },
+    {
+      "id": "PAIR-H-inner",
+      "object_ids": [
+        "aa-H-inner",
+        "poly-H-inner"
+      ],
+      "status": "candidate",
+      "producer": "reasoning_model",
+      "review": null,
+      "uncertainty": "position/topology match only; material boundary identity not confirmed; no device or terminal inference"
+    },
+    {
+      "id": "PAIR-V-inner",
+      "object_ids": [
+        "aa-V-inner",
+        "poly-V-inner"
+      ],
+      "status": "candidate",
+      "producer": "reasoning_model",
+      "review": null,
+      "uncertainty": "position/topology match only; material boundary identity not confirmed; no device or terminal inference"
+    }
+  ]
+}

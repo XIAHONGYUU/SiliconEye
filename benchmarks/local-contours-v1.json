@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "annotations": "benchmarks/local-pixel-annotations-v2.json",
+  "object_ids": [
+    "aa-H-inner",
+    "aa-V-inner",
+    "poly-H-inner",
+    "poly-V-inner"
+  ],
+  "gaussian_sigma": 1.5,
+  "gaussian_kernel": 7,
+  "threshold_method": "otsu_dual_polarity",
+  "semantic_status": "unknown",
+  "morphology": "none",
+  "coordinate_frame": "native_source_pixel_center_xy"
+}

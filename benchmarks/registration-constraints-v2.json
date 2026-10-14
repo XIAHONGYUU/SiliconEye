@@ -1,0 +1,897 @@
+{
+  "schema_version": 1,
+  "reference": "aa",
+  "source_sha256": {
+    "sub": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+    "implant": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+    "aa": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "poly": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "m1": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "m2": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "m3": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "m4": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+  },
+  "budget": {
+    "scope": "pilot_macro_registration_only",
+    "status": "engineering_trial",
+    "p95_px": 8,
+    "max_px": 12,
+    "basis": "Target allocation: reference localization 3px + target localization 3px + geometric model 2px gives 8px; max 12px covers tail. These localization allocations are targets, not certified measurements. No confirmed physical scale or extraction accuracy is implied.",
+    "locked_before_registration": true
+  },
+  "limits": {
+    "min_scale": 0.9,
+    "max_scale": 1.1,
+    "max_rotation_deg": 5,
+    "max_translation_px": 400,
+    "max_anchor_residual_px": 10,
+    "min_anchor_hull_area_px2": 100000
+  },
+  "layers": {
+    "poly": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.8131806113124,
+          1585.9914570350143
+        ],
+        "target_xy": [
+          2836.343010831249,
+          1408.961456788441
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.8131806113124,
+            1585.9914570350143
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2571.412166670567,
+            3210.2141945520575,
+            1439.2272405956053,
+            1732.7556734744232
+          ],
+          "edge_contrast": [
+            128.06060791015625,
+            118.37381744384766,
+            133.61509704589844,
+            144.76991271972656
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2836.343010831249,
+            1408.961456788441
+          ],
+          "box_xywh": [
+            2500,
+            1260,
+            665,
+            295
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2505.4179289733956,
+            3167.2680926891026,
+            1255.8344022200245,
+            1562.0885113568572
+          ],
+          "edge_contrast": [
+            100.10274505615234,
+            100.71444702148438,
+            101.18687438964844,
+            101.01866149902344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of large upper-left striped rectangular bank",
+        "reference_xy": [
+          1380.424449651303,
+          1625.3212496745184
+        ],
+        "target_xy": [
+          1264.1771356770726,
+          1446.8324784934168
+        ],
+        "reference_measurement": {
+          "xy": [
+            1380.424449651303,
+            1625.3212496745184
+          ],
+          "box_xywh": [
+            855,
+            1510,
+            1100,
+            240
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            828.6454688681681,
+            1932.2034304344377,
+            1482.7891324525444,
+            1767.8533668964924
+          ],
+          "edge_contrast": [
+            102.87828063964844,
+            93.7880859375,
+            80.4391098022461,
+            73.284423828125
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1264.1771356770726,
+            1446.8324784934168
+          ],
+          "box_xywh": [
+            700,
+            1310,
+            1170,
+            280
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            686.0022343656175,
+            1842.3520369885277,
+            1291.9609512795676,
+            1601.704005707266
+          ],
+          "edge_contrast": [
+            101.06948852539062,
+            67.82191467285156,
+            24.80322265625,
+            92.36639404296875
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4333775785726,
+          850.0861051614152
+        ],
+        "target_xy": [
+          2483.3265785321455,
+          646.8728689347621
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4333775785726,
+            850.0861051614152
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            1037.6208662822821,
+            4091.245888874863,
+            683.2987773938548,
+            1016.8734329289756
+          ],
+          "edge_contrast": [
+            111.01969909667969,
+            88.89451599121094,
+            113.62638854980469,
+            114.950927734375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2483.3265785321455,
+            646.8728689347621
+          ],
+          "box_xywh": [
+            890,
+            500,
+            3190,
+            330
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            895.6894764229713,
+            4070.96368064132,
+            473.8036285952497,
+            819.9421092742746
+          ],
+          "edge_contrast": [
+            84.82368469238281,
+            71.37181091308594,
+            60.82511901855469,
+            91.42201232910156
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ],
+    "m1": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.8131806113124,
+          1585.9914570350143
+        ],
+        "target_xy": [
+          2791.854202749084,
+          1565.53646547555
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.8131806113124,
+            1585.9914570350143
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2571.412166670567,
+            3210.2141945520575,
+            1439.2272405956053,
+            1732.7556734744232
+          ],
+          "edge_contrast": [
+            128.06060791015625,
+            118.37381744384766,
+            133.61509704589844,
+            144.76991271972656
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2791.854202749084,
+            1565.53646547555
+          ],
+          "box_xywh": [
+            2460,
+            1410,
+            660,
+            320
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2465.945380031035,
+            3117.7630254671335,
+            1395.0047812300425,
+            1736.0681497210576
+          ],
+          "edge_contrast": [
+            98.62110900878906,
+            99.85081481933594,
+            93.58214569091797,
+            21.411956787109375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of large upper-left striped rectangular bank",
+        "reference_xy": [
+          1380.424449651303,
+          1625.3212496745184
+        ],
+        "target_xy": [
+          1348.5648042909138,
+          1632.151941538706
+        ],
+        "reference_measurement": {
+          "xy": [
+            1380.424449651303,
+            1625.3212496745184
+          ],
+          "box_xywh": [
+            855,
+            1510,
+            1100,
+            240
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            828.6454688681681,
+            1932.2034304344377,
+            1482.7891324525444,
+            1767.8533668964924
+          ],
+          "edge_contrast": [
+            102.87828063964844,
+            93.7880859375,
+            80.4391098022461,
+            73.284423828125
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1348.5648042909138,
+            1632.151941538706
+          ],
+          "box_xywh": [
+            740,
+            1490,
+            1240,
+            260
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            715.8113257673588,
+            1981.318282814469,
+            1511.5942691141008,
+            1752.709613963311
+          ],
+          "edge_contrast": [
+            79.28457641601562,
+            2.05877685546875,
+            76.93962097167969,
+            88.28246307373047
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4333775785726,
+          850.0861051614152
+        ],
+        "target_xy": [
+          2462.101837172349,
+          802.9974347906868
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4333775785726,
+            850.0861051614152
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            1037.6208662822821,
+            4091.245888874863,
+            683.2987773938548,
+            1016.8734329289756
+          ],
+          "edge_contrast": [
+            111.01969909667969,
+            88.89451599121094,
+            113.62638854980469,
+            114.950927734375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2462.101837172349,
+            802.9974347906868
+          ],
+          "box_xywh": [
+            900,
+            640,
+            3100,
+            355
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            927.9803555719868,
+            3996.223318772711,
+            626.0514844007096,
+            979.9433851806641
+          ],
+          "edge_contrast": [
+            34.57184600830078,
+            81.08135986328125,
+            60.27397155761719,
+            69.63874816894531
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ],
+    "sub": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.8131806113124,
+          1585.9914570350143
+        ],
+        "target_xy": [
+          2787.6614354479334,
+          1430.1683062762368
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.8131806113124,
+            1585.9914570350143
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2571.412166670567,
+            3210.2141945520575,
+            1439.2272405956053,
+            1732.7556734744232
+          ],
+          "edge_contrast": [
+            128.06060791015625,
+            118.37381744384766,
+            133.61509704589844,
+            144.76991271972656
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2787.6614354479334,
+            1430.1683062762368
+          ],
+          "box_xywh": [
+            2440,
+            1270,
+            710,
+            320
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2414.9904229553144,
+            3160.332447940553,
+            1244.7985723867016,
+            1615.5380401657721
+          ],
+          "edge_contrast": [
+            121.38999938964844,
+            26.48760986328125,
+            101.63921356201172,
+            88.53760528564453
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of large upper-left striped rectangular bank",
+        "reference_xy": [
+          1380.424449651303,
+          1625.3212496745184
+        ],
+        "target_xy": [
+          1338.0532112230746,
+          1519.7237490581351
+        ],
+        "reference_measurement": {
+          "xy": [
+            1380.424449651303,
+            1625.3212496745184
+          ],
+          "box_xywh": [
+            855,
+            1510,
+            1100,
+            240
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            828.6454688681681,
+            1932.2034304344377,
+            1482.7891324525444,
+            1767.8533668964924
+          ],
+          "edge_contrast": [
+            102.87828063964844,
+            93.7880859375,
+            80.4391098022461,
+            73.284423828125
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1338.0532112230746,
+            1519.7237490581351
+          ],
+          "box_xywh": [
+            730,
+            1390,
+            1200,
+            260
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            754.9543950481959,
+            1921.1520273979534,
+            1364.3080349628087,
+            1675.1394631534617
+          ],
+          "edge_contrast": [
+            112.83230590820312,
+            5.3845672607421875,
+            65.96234130859375,
+            127.99695587158203
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4333775785726,
+          850.0861051614152
+        ],
+        "target_xy": [
+          2426.0534151267316,
+          721.2419252161808
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4333775785726,
+            850.0861051614152
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            1037.6208662822821,
+            4091.245888874863,
+            683.2987773938548,
+            1016.8734329289756
+          ],
+          "edge_contrast": [
+            111.01969909667969,
+            88.89451599121094,
+            113.62638854980469,
+            114.950927734375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2426.0534151267316,
+            721.2419252161808
+          ],
+          "box_xywh": [
+            900,
+            535,
+            3090,
+            320
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            887.8491197059379,
+            3964.257710547525,
+            561.7561475664459,
+            880.7277028659158
+          ],
+          "edge_contrast": [
+            20.305084228515625,
+            75.46288299560547,
+            47.32537841796875,
+            95.30747985839844
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ],
+    "implant": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.8131806113124,
+          1585.9914570350143
+        ],
+        "target_xy": [
+          3014.955072643753,
+          1442.9616581536675
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.8131806113124,
+            1585.9914570350143
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2571.412166670567,
+            3210.2141945520575,
+            1439.2272405956053,
+            1732.7556734744232
+          ],
+          "edge_contrast": [
+            128.06060791015625,
+            118.37381744384766,
+            133.61509704589844,
+            144.76991271972656
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            3014.955072643753,
+            1442.9616581536675
+          ],
+          "box_xywh": [
+            2670,
+            1310,
+            680,
+            305
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            2693.0728185410667,
+            3336.837326746439,
+            1292.9701843840908,
+            1592.9531319232444
+          ],
+          "edge_contrast": [
+            84.20077514648438,
+            65.07566833496094,
+            59.653533935546875,
+            56.923187255859375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of large upper-left striped rectangular bank",
+        "reference_xy": [
+          1380.424449651303,
+          1625.3212496745184
+        ],
+        "target_xy": [
+          1511.0950428116857,
+          1560.1763158084632
+        ],
+        "reference_measurement": {
+          "xy": [
+            1380.424449651303,
+            1625.3212496745184
+          ],
+          "box_xywh": [
+            855,
+            1510,
+            1100,
+            240
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            828.6454688681681,
+            1932.2034304344377,
+            1482.7891324525444,
+            1767.8533668964924
+          ],
+          "edge_contrast": [
+            102.87828063964844,
+            93.7880859375,
+            80.4391098022461,
+            73.284423828125
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1511.0950428116857,
+            1560.1763158084632
+          ],
+          "box_xywh": [
+            965,
+            1440,
+            1050,
+            230
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            981.987629811168,
+            2040.2024558122034,
+            1423.0826084317896,
+            1697.2700231851368
+          ],
+          "edge_contrast": [
+            82.08465576171875,
+            62.57377624511719,
+            43.629974365234375,
+            39.69171142578125
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4333775785726,
+          850.0861051614152
+        ],
+        "target_xy": [
+          2598.3612156652007,
+          798.4031549353069
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4333775785726,
+            850.0861051614152
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            1037.6208662822821,
+            4091.245888874863,
+            683.2987773938548,
+            1016.8734329289756
+          ],
+          "edge_contrast": [
+            111.01969909667969,
+            88.89451599121094,
+            113.62638854980469,
+            114.950927734375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            2598.3612156652007,
+            798.4031549353069
+          ],
+          "box_xywh": [
+            1090,
+            630,
+            3060,
+            310
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            1064.7552041437232,
+            4131.967227186678,
+            641.8038359243153,
+            955.0024739462984
+          ],
+          "edge_contrast": [
+            92.62667846679688,
+            91.72026062011719,
+            23.07501220703125,
+            41.00239562988281
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ]
+  },
+  "unknown_layers": {
+    "m2": "No reliable homologous lower structure identified",
+    "m3": "Different wiring; no reliable homologous lower structure identified",
+    "m4": "Upper pad pattern cannot be equated to lower-layer device boundaries"
+  }
+}

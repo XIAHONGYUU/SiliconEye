@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "case_id": "local-ring-aa-poly-v1",
+  "producer": "AI_source_visual_review",
+  "status": "candidate",
+  "human_confirmation": false,
+  "facts_from_user": [
+    "same chip with successive delayering",
+    "manual photography"
+  ],
+  "structures": [
+    {
+      "id": "horizontal-ring",
+      "role": "fitting",
+      "observed": "wide closed rectangular ridge surrounding a narrower horizontal nested rectangle; immediately right of a tall vertical nested rectangle",
+      "identity": "candidate_supported",
+      "edge_identity": "unknown",
+      "excluded_features": "inner stripes in aa versus contacts in poly"
+    },
+    {
+      "id": "vertical-ring",
+      "role": "diagnostic_validation",
+      "observed": "tall nested closed rectangle between wide ring and left enclosure, same neighborhood ordering",
+      "identity": "candidate_supported",
+      "edge_identity": "unknown",
+      "excluded_features": "internal stripe/contact pattern"
+    },
+    {
+      "id": "square",
+      "role": "frozen_model_validation",
+      "observed": "isolated square area inside enclosure immediately left of vertical ring",
+      "identity": "candidate_supported",
+      "edge_identity": "unknown",
+      "excluded_features": "aa bright perimeter versus poly filled gray square; materials may shift apparent boundary"
+    }
+  ],
+  "limitations": [
+    "AI visual correspondence is not human-confirmed physical truth",
+    "all metrics use only one local region and native pixels",
+    "existing structures have been inspected; no strict project-wide blind holdout",
+    "material edge shifts and camera geometry are not completely separated"
+  ],
+  "evidence_origin": {
+    "baseline_manifest_sha256": "bd448b156323133f52faf38bcac3fe41fd6f5cf626df103bb8310ce803ec2143",
+    "raw_source_sha256": {
+      "reference": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "target": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    }
+  }
+}

@@ -1,0 +1,1452 @@
+{
+  "schema_version": 1,
+  "reference": "aa",
+  "source_sha256": {
+    "sub": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+    "implant": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+    "aa": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "poly": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "m1": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "m2": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "m3": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "m4": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+  },
+  "budget": {
+    "scope": "pilot_macro_registration_only",
+    "status": "engineering_trial",
+    "p95_px": 8,
+    "max_px": 12,
+    "basis": "Target allocation: reference localization 3px + target localization 3px + geometric model 2px gives 8px; max 12px covers tail. These localization allocations are targets, not certified measurements. No confirmed physical scale or extraction accuracy is implied.",
+    "locked_before_registration": true
+  },
+  "limits": {
+    "min_scale": 0.9,
+    "max_scale": 1.1,
+    "max_rotation_deg": 5,
+    "max_translation_px": 400,
+    "max_anchor_residual_px": 10,
+    "min_anchor_hull_area_px2": 100000
+  },
+  "layers": {
+    "poly": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.773622264553,
+          1586.0372429689846
+        ],
+        "target_xy": [
+          2836.360638594334,
+          1408.9568876380727
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.773622264553,
+            1586.0372429689846
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2571.3688299467663,
+            3210.17841458234,
+            1439.2313948778842,
+            1732.8430910600853
+          ],
+          "edge_contrast": [
+            120.56307983398438,
+            114.04159545898438,
+            131.43746948242188,
+            132.08892822265625
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2836.360638594334,
+            1408.9568876380727
+          ],
+          "box_xywh": [
+            2500,
+            1260,
+            665,
+            295
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2505.4331981439777,
+            3167.2880790446907,
+            1255.8223060145108,
+            1562.0914692616343
+          ],
+          "edge_contrast": [
+            97.48826599121094,
+            95.48953247070312,
+            95.81536102294922,
+            98.58563232421875
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of entire enclosing bank frame including the right square region",
+        "reference_xy": [
+          1521.7381695670965,
+          1552.1408882646442
+        ],
+        "target_xy": [
+          1411.2784890094501,
+          1376.8698621882377
+        ],
+        "reference_measurement": {
+          "xy": [
+            1521.7381695670965,
+            1552.1408882646442
+          ],
+          "box_xywh": [
+            840,
+            1370,
+            1370,
+            400
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            824.500696312896,
+            2218.9756428212972,
+            1336.7538310637287,
+            1767.5279454655597
+          ],
+          "edge_contrast": [
+            107.24909973144531,
+            121.75411987304688,
+            135.73097229003906,
+            101.49419403076172
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            1411.2784890094501,
+            1376.8698621882377
+          ],
+          "box_xywh": [
+            680,
+            1110,
+            1460,
+            490
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            681.3958306378445,
+            2141.161147381056,
+            1153.0295401711446,
+            1600.7101842053307
+          ],
+          "edge_contrast": [
+            78.65071105957031,
+            108.61978912353516,
+            100.20288848876953,
+            84.45936584472656
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4330974868835,
+          882.862391471879
+        ],
+        "target_xy": [
+          2483.3129878793584,
+          645.1808129561683
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4330974868835,
+            882.862391471879
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            1037.630506711167,
+            4091.2356882626004,
+            746.1221992497163,
+            1019.6025836940418
+          ],
+          "edge_contrast": [
+            109.65283203125,
+            92.33323669433594,
+            138.21072387695312,
+            121.91128540039062
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2483.3129878793584,
+            645.1808129561683
+          ],
+          "box_xywh": [
+            890,
+            500,
+            3190,
+            330
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            895.662377865663,
+            4070.9635978930537,
+            470.4208283012788,
+            819.9407976110579
+          ],
+          "edge_contrast": [
+            80.4060287475586,
+            71.25816345214844,
+            77.46487426757812,
+            89.90179443359375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ],
+    "m1": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.773622264553,
+          1586.0372429689846
+        ],
+        "target_xy": [
+          2791.8371333146006,
+          1545.081534393748
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.773622264553,
+            1586.0372429689846
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2571.3688299467663,
+            3210.17841458234,
+            1439.2313948778842,
+            1732.8430910600853
+          ],
+          "edge_contrast": [
+            120.56307983398438,
+            114.04159545898438,
+            131.43746948242188,
+            132.08892822265625
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2791.8371333146006,
+            1545.081534393748
+          ],
+          "box_xywh": [
+            2460,
+            1410,
+            660,
+            320
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2465.9398325660404,
+            3117.7344340631603,
+            1395.0049330332145,
+            1695.1581357542816
+          ],
+          "edge_contrast": [
+            91.15629577636719,
+            91.42977905273438,
+            91.22408294677734,
+            94.48899841308594
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of entire enclosing bank frame including the right square region",
+        "reference_xy": [
+          1521.7381695670965,
+          1552.1408882646442
+        ],
+        "target_xy": [
+          1381.5176955892102,
+          1530.979135500534
+        ],
+        "reference_measurement": {
+          "xy": [
+            1521.7381695670965,
+            1552.1408882646442
+          ],
+          "box_xywh": [
+            840,
+            1370,
+            1370,
+            400
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            824.500696312896,
+            2218.9756428212972,
+            1336.7538310637287,
+            1767.5279454655597
+          ],
+          "edge_contrast": [
+            107.24909973144531,
+            121.75411987304688,
+            135.73097229003906,
+            101.49419403076172
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            1381.5176955892102,
+            1530.979135500534
+          ],
+          "box_xywh": [
+            680,
+            1320,
+            1420,
+            450
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            659.5709381894155,
+            2103.4644529890047,
+            1310.0997129666414,
+            1751.8585580344268
+          ],
+          "edge_contrast": [
+            84.31104278564453,
+            97.518310546875,
+            81.02780151367188,
+            82.2720718383789
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4330974868835,
+          882.862391471879
+        ],
+        "target_xy": [
+          2431.186621426081,
+          802.9000496286351
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4330974868835,
+            882.862391471879
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            1037.630506711167,
+            4091.2356882626004,
+            746.1221992497163,
+            1019.6025836940418
+          ],
+          "edge_contrast": [
+            109.65283203125,
+            92.33323669433594,
+            138.21072387695312,
+            121.91128540039062
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2431.186621426081,
+            802.9000496286351
+          ],
+          "box_xywh": [
+            900,
+            640,
+            3100,
+            355
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            866.1517309791258,
+            3996.221511873036,
+            625.8569878260097,
+            979.9431114312604
+          ],
+          "edge_contrast": [
+            85.09933471679688,
+            81.60084533691406,
+            71.5166015625,
+            69.31498718261719
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ],
+    "sub": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.773622264553,
+          1586.0372429689846
+        ],
+        "target_xy": [
+          2787.452673644455,
+          1431.970284163841
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.773622264553,
+            1586.0372429689846
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2571.3688299467663,
+            3210.17841458234,
+            1439.2313948778842,
+            1732.8430910600853
+          ],
+          "edge_contrast": [
+            120.56307983398438,
+            114.04159545898438,
+            131.43746948242188,
+            132.08892822265625
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2787.452673644455,
+            1431.970284163841
+          ],
+          "box_xywh": [
+            2440,
+            1270,
+            710,
+            320
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2414.0320564613958,
+            3160.873290827514,
+            1232.966953008133,
+            1630.9736153195488
+          ],
+          "edge_contrast": [
+            109.63846588134766,
+            122.48172760009766,
+            88.20895385742188,
+            84.58631896972656
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of entire enclosing bank frame including the right square region",
+        "reference_xy": [
+          1521.7381695670965,
+          1552.1408882646442
+        ],
+        "target_xy": [
+          1345.8658522296162,
+          1525.1024007344645
+        ],
+        "reference_measurement": {
+          "xy": [
+            1521.7381695670965,
+            1552.1408882646442
+          ],
+          "box_xywh": [
+            840,
+            1370,
+            1370,
+            400
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            824.500696312896,
+            2218.9756428212972,
+            1336.7538310637287,
+            1767.5279454655597
+          ],
+          "edge_contrast": [
+            107.24909973144531,
+            121.75411987304688,
+            135.73097229003906,
+            101.49419403076172
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            1345.8658522296162,
+            1525.1024007344645
+          ],
+          "box_xywh": [
+            640,
+            1240,
+            1480,
+            515
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            617.8899973325709,
+            2073.8417071266613,
+            1248.906038807824,
+            1801.2987626611048
+          ],
+          "edge_contrast": [
+            105.62399291992188,
+            116.05032348632812,
+            54.395347595214844,
+            105.04112243652344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4330974868835,
+          882.862391471879
+        ],
+        "target_xy": [
+          2418.729012402334,
+          733.1476943180905
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4330974868835,
+            882.862391471879
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            1037.630506711167,
+            4091.2356882626004,
+            746.1221992497163,
+            1019.6025836940418
+          ],
+          "edge_contrast": [
+            109.65283203125,
+            92.33323669433594,
+            138.21072387695312,
+            121.91128540039062
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2418.729012402334,
+            733.1476943180905
+          ],
+          "box_xywh": [
+            900,
+            535,
+            3090,
+            320
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            886.6078730807077,
+            3950.85015172396,
+            565.2750722974503,
+            901.0203163387307
+          ],
+          "edge_contrast": [
+            64.2459716796875,
+            72.10874938964844,
+            49.15411376953125,
+            105.39617156982422
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ],
+    "implant": [
+      {
+        "id": "FIT-ring",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of unique middle horizontal nested rectangular ring",
+        "reference_xy": [
+          2890.773622264553,
+          1586.0372429689846
+        ],
+        "target_xy": [
+          3008.541513710276,
+          1442.9470264164465
+        ],
+        "reference_measurement": {
+          "xy": [
+            2890.773622264553,
+            1586.0372429689846
+          ],
+          "box_xywh": [
+            2560,
+            1440,
+            650,
+            300
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2571.3688299467663,
+            3210.17841458234,
+            1439.2313948778842,
+            1732.8430910600853
+          ],
+          "edge_contrast": [
+            120.56307983398438,
+            114.04159545898438,
+            131.43746948242188,
+            132.08892822265625
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            3008.541513710276,
+            1442.9470264164465
+          ],
+          "box_xywh": [
+            2670,
+            1310,
+            680,
+            305
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            2697.0069314855537,
+            3320.076095934998,
+            1292.959301119369,
+            1592.9347517135243
+          ],
+          "edge_contrast": [
+            65.50617980957031,
+            85.11967468261719,
+            43.90269470214844,
+            41.145538330078125
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-bank",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of entire enclosing bank frame including the right square region",
+        "reference_xy": [
+          1521.7381695670965,
+          1552.1408882646442
+        ],
+        "target_xy": [
+          1694.7680506971333,
+          1513.895451282819
+        ],
+        "reference_measurement": {
+          "xy": [
+            1521.7381695670965,
+            1552.1408882646442
+          ],
+          "box_xywh": [
+            840,
+            1370,
+            1370,
+            400
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            824.500696312896,
+            2218.9756428212972,
+            1336.7538310637287,
+            1767.5279454655597
+          ],
+          "edge_contrast": [
+            107.24909973144531,
+            121.75411987304688,
+            135.73097229003906,
+            101.49419403076172
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": true,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            1694.7680506971333,
+            1513.895451282819
+          ],
+          "box_xywh": [
+            940,
+            1290,
+            1480,
+            490
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            979.9961510341442,
+            2409.5399503601225,
+            1293.7976201175336,
+            1733.9932824481043
+          ],
+          "edge_contrast": [
+            129.80142211914062,
+            32.87445068359375,
+            90.28693389892578,
+            148.7534942626953
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      },
+      {
+        "id": "FIT-upper",
+        "role": "fitting",
+        "status": "candidate",
+        "description": "center of wide upper two-row rectangular bank",
+        "reference_xy": [
+          2564.4330974868835,
+          882.862391471879
+        ],
+        "target_xy": [
+          2589.4706620316774,
+          798.4340137102823
+        ],
+        "reference_measurement": {
+          "xy": [
+            2564.4330974868835,
+            882.862391471879
+          ],
+          "box_xywh": [
+            1030,
+            700,
+            3080,
+            290
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            1037.630506711167,
+            4091.2356882626004,
+            746.1221992497163,
+            1019.6025836940418
+          ],
+          "edge_contrast": [
+            109.65283203125,
+            92.33323669433594,
+            138.21072387695312,
+            121.91128540039062
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "target_measurement": {
+          "xy": [
+            2589.4706620316774,
+            798.4340137102823
+          ],
+          "box_xywh": [
+            1090,
+            630,
+            3060,
+            310
+          ],
+          "edge_search_band_px": 50,
+          "edge_positions_lrtb": [
+            1046.988938549622,
+            4131.952385513733,
+            641.8660115817028,
+            955.0020158388619
+          ],
+          "edge_contrast": [
+            85.875732421875,
+            64.14579772949219,
+            32.788047790527344,
+            50.27789306640625
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate",
+          "measurement_quality": {
+            "valid": false,
+            "min_contrast": 10.0,
+            "edge_checks_lrtb": [
+              {
+                "support_inside_search_band": false,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              },
+              {
+                "support_inside_search_band": true,
+                "contrast_sufficient": true
+              }
+            ],
+            "scope": "localization_only_not_structural_identity"
+          }
+        },
+        "producer": "codex_identity_review_and_script_edge_measurement"
+      }
+    ]
+  },
+  "unknown_layers": {
+    "m2": "No reliable homologous lower structure identified",
+    "m3": "Different wiring; no reliable homologous lower structure identified",
+    "m4": "Upper pad pattern cannot be equated to lower-layer device boundaries"
+  },
+  "supersedes": "registration-constraints-v2.json",
+  "review_date": "2026-10-14",
+  "review_note": "FIT-bank now consistently uses entire enclosing frame including right square region; weak/truncated localization is rejected before fitting. Validation point set and budget unchanged."
+}

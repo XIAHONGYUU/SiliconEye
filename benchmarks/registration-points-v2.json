@@ -1,0 +1,1491 @@
+{
+  "schema_version": 1,
+  "reference": "aa",
+  "source_sha256": {
+    "sub": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+    "implant": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+    "aa": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "poly": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "m1": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "m2": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "m3": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "m4": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+  },
+  "annotation_note": "AI reviewed identities, independent edge ridge center measurements. Not human ground truth. v1 preserved; ambiguous LL-6 retired for all layers.",
+  "supersedes": "registration-points-v1.json",
+  "layers": {
+    "poly": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1312.528662273484,
+          2925.818504899895
+        ],
+        "target_xy": [
+          1201.0968273381777,
+          2808.734265834367
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1312.528662273484,
+            2925.818504899895
+          ],
+          "box_xywh": [
+            970,
+            2750,
+            670,
+            350
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            959.0187160183892,
+            1666.038608528579,
+            2760.4511763383084,
+            3091.185833461481
+          ],
+          "edge_contrast": [
+            109.69700622558594,
+            128.20899963378906,
+            132.77943420410156,
+            132.43380737304688
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1201.0968273381777,
+            2808.734265834367
+          ],
+          "box_xywh": [
+            840,
+            2630,
+            715,
+            355
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            846.0767320702035,
+            1556.116922606152,
+            2638.4596000308516,
+            2979.0089316378817
+          ],
+          "edge_contrast": [
+            76.70767974853516,
+            102.7599868774414,
+            108.27603912353516,
+            89.50272369384766
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1188.8465630678013,
+          3236.108717730703
+        ],
+        "target_xy": [
+          1090.692961474696,
+          3130.2800152741193
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1188.8465630678013,
+            3236.108717730703
+          ],
+          "box_xywh": [
+            925,
+            3188,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            929.2086690153097,
+            1448.484457120293,
+            3208.8231946839937,
+            3263.3942407774125
+          ],
+          "edge_contrast": [
+            108.22286987304688,
+            116.45832061767578,
+            167.30197143554688,
+            153.26547241210938
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1090.692961474696,
+            3130.2800152741193
+          ],
+          "box_xywh": [
+            840,
+            3080,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            819.6054014586257,
+            1361.7805214907662,
+            3101.083521913594,
+            3159.476508634645
+          ],
+          "edge_contrast": [
+            119.54783630371094,
+            88.89224243164062,
+            63.40345764160156,
+            105.1419677734375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1191.5163993768197,
+          3341.1000665430715
+        ],
+        "target_xy": [
+          1114.0381313957596,
+          3212.8521708660937
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1191.5163993768197,
+            3341.1000665430715
+          ],
+          "box_xywh": [
+            925,
+            3310,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            931.5831865184819,
+            1451.4496122351577,
+            3291.2592296725957,
+            3390.9409034135474
+          ],
+          "edge_contrast": [
+            100.18663024902344,
+            113.32466125488281,
+            124.0340576171875,
+            147.96676635742188
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1114.0381313957596,
+            3212.8521708660937
+          ],
+          "box_xywh": [
+            840,
+            3200,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            861.429645449689,
+            1366.64661734183,
+            3184.93841597411,
+            3240.765925758078
+          ],
+          "edge_contrast": [
+            102.4914779663086,
+            94.81785583496094,
+            106.39375305175781,
+            64.8812255859375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1299.653197835867,
+          3727.894984744319
+        ],
+        "target_xy": [
+          1190.8763236362647,
+          3640.508233806191
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1299.653197835867,
+            3727.894984744319
+          ],
+          "box_xywh": [
+            1010,
+            3677,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1029.2776352781204,
+            1570.0287603936138,
+            3698.502731687607,
+            3757.287237801031
+          ],
+          "edge_contrast": [
+            128.39645385742188,
+            121.78289794921875,
+            158.63345336914062,
+            147.26866149902344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1190.8763236362647,
+            3640.508233806191
+          ],
+          "box_xywh": [
+            920,
+            3595,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            941.8973862585665,
+            1439.8552610139632,
+            3614.811228322715,
+            3666.2052392896667
+          ],
+          "edge_contrast": [
+            39.93683624267578,
+            53.399200439453125,
+            56.90416717529297,
+            63.14952087402344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280.1094032166466,
+          3855.6499338440844
+        ],
+        "target_xy": [
+          1188.8904028420902,
+          3746.3822090297617
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1280.1094032166466,
+            3855.6499338440844
+          ],
+          "box_xywh": [
+            1010,
+            3804,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1030.296417053667,
+            1529.922389379626,
+            3825.750500574403,
+            3885.5493671137665
+          ],
+          "edge_contrast": [
+            116.54125213623047,
+            120.78614807128906,
+            150.35943603515625,
+            144.124755859375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1188.8904028420902,
+            3746.3822090297617
+          ],
+          "box_xywh": [
+            920,
+            3715,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            933.1432256379425,
+            1444.637580046238,
+            3694.6412166177574,
+            3798.1232014417665
+          ],
+          "edge_contrast": [
+            35.59208679199219,
+            66.10066986083984,
+            64.78011322021484,
+            63.365325927734375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      }
+    ],
+    "m1": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1312.528662273484,
+          2925.818504899895
+        ],
+        "target_xy": [
+          1180.9993304742015,
+          2950.519351901361
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1312.528662273484,
+            2925.818504899895
+          ],
+          "box_xywh": [
+            970,
+            2750,
+            670,
+            350
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            959.0187160183892,
+            1666.038608528579,
+            2760.4511763383084,
+            3091.185833461481
+          ],
+          "edge_contrast": [
+            109.69700622558594,
+            128.20899963378906,
+            132.77943420410156,
+            132.43380737304688
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1180.9993304742015,
+            2950.519351901361
+          ],
+          "box_xywh": [
+            830,
+            2780,
+            720,
+            350
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            828.4790059172055,
+            1533.5196550311973,
+            2781.7871365870146,
+            3119.2515672157074
+          ],
+          "edge_contrast": [
+            80.31661987304688,
+            99.80377197265625,
+            98.65142059326172,
+            79.46220397949219
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1188.8465630678013,
+          3236.108717730703
+        ],
+        "target_xy": [
+          1074.6188630919432,
+          3231.5069063384417
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1188.8465630678013,
+            3236.108717730703
+          ],
+          "box_xywh": [
+            925,
+            3188,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            929.2086690153097,
+            1448.484457120293,
+            3208.8231946839937,
+            3263.3942407774125
+          ],
+          "edge_contrast": [
+            108.22286987304688,
+            116.45832061767578,
+            167.30197143554688,
+            153.26547241210938
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1074.6188630919432,
+            3231.5069063384417
+          ],
+          "box_xywh": [
+            805,
+            3215,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            803.3912526978122,
+            1345.846473486074,
+            3194.354308234078,
+            3268.659504442806
+          ],
+          "edge_contrast": [
+            94.23751831054688,
+            98.93087768554688,
+            93.06706237792969,
+            83.60240173339844
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1191.5163993768197,
+          3341.1000665430715
+        ],
+        "target_xy": [
+          1079.1348912237772,
+          3361.6374206211026
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1191.5163993768197,
+            3341.1000665430715
+          ],
+          "box_xywh": [
+            925,
+            3310,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            931.5831865184819,
+            1451.4496122351577,
+            3291.2592296725957,
+            3390.9409034135474
+          ],
+          "edge_contrast": [
+            100.18663024902344,
+            113.32466125488281,
+            124.0340576171875,
+            147.96676635742188
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1079.1348912237772,
+            3361.6374206211026
+          ],
+          "box_xywh": [
+            805,
+            3345,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            807.1893831006008,
+            1351.0803993469535,
+            3327.4918309779587,
+            3395.7830102642465
+          ],
+          "edge_contrast": [
+            84.82361602783203,
+            98.51168823242188,
+            96.34101867675781,
+            17.74456787109375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1299.653197835867,
+          3727.894984744319
+        ],
+        "target_xy": [
+          1179.0274526690084,
+          3760.832597539752
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1299.653197835867,
+            3727.894984744319
+          ],
+          "box_xywh": [
+            1010,
+            3677,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1029.2776352781204,
+            1570.0287603936138,
+            3698.502731687607,
+            3757.287237801031
+          ],
+          "edge_contrast": [
+            128.39645385742188,
+            121.78289794921875,
+            158.63345336914062,
+            147.26866149902344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1179.0274526690084,
+            3760.832597539752
+          ],
+          "box_xywh": [
+            905,
+            3730,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            912.9007956660272,
+            1445.1541096719898,
+            3742.1087236873263,
+            3779.556471392177
+          ],
+          "edge_contrast": [
+            80.90902709960938,
+            78.68028259277344,
+            16.812820434570312,
+            17.700645446777344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280.1094032166466,
+          3855.6499338440844
+        ],
+        "target_xy": [
+          1179.471371180905,
+          3900.9398075275785
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1280.1094032166466,
+            3855.6499338440844
+          ],
+          "box_xywh": [
+            1010,
+            3804,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1030.296417053667,
+            1529.922389379626,
+            3825.750500574403,
+            3885.5493671137665
+          ],
+          "edge_contrast": [
+            116.54125213623047,
+            120.78614807128906,
+            150.35943603515625,
+            144.124755859375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1179.471371180905,
+            3900.9398075275785
+          ],
+          "box_xywh": [
+            905,
+            3855,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            911.8652950726951,
+            1447.077447289115,
+            3863.780622399452,
+            3938.0989926557045
+          ],
+          "edge_contrast": [
+            9.339576721191406,
+            15.095748901367188,
+            35.648193359375,
+            59.64961242675781
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      }
+    ],
+    "sub": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1312.528662273484,
+          2925.818504899895
+        ],
+        "target_xy": [
+          1222.2349072295867,
+          2860.5463707095873
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1312.528662273484,
+            2925.818504899895
+          ],
+          "box_xywh": [
+            970,
+            2750,
+            670,
+            350
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            959.0187160183892,
+            1666.038608528579,
+            2760.4511763383084,
+            3091.185833461481
+          ],
+          "edge_contrast": [
+            109.69700622558594,
+            128.20899963378906,
+            132.77943420410156,
+            132.43380737304688
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1222.2349072295867,
+            2860.5463707095873
+          ],
+          "box_xywh": [
+            840,
+            2670,
+            720,
+            330
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            857.8748211659621,
+            1586.5949932932115,
+            2695.728607663307,
+            3025.364133755868
+          ],
+          "edge_contrast": [
+            44.869144439697266,
+            68.2836685180664,
+            63.6904296875,
+            81.62403869628906
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1188.8465630678013,
+          3236.108717730703
+        ],
+        "target_xy": [
+          1108.4779324590518,
+          3113.2689491749247
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1188.8465630678013,
+            3236.108717730703
+          ],
+          "box_xywh": [
+            925,
+            3188,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            929.2086690153097,
+            1448.484457120293,
+            3208.8231946839937,
+            3263.3942407774125
+          ],
+          "edge_contrast": [
+            108.22286987304688,
+            116.45832061767578,
+            167.30197143554688,
+            153.26547241210938
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1108.4779324590518,
+            3113.2689491749247
+          ],
+          "box_xywh": [
+            830,
+            3085,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            826.6623717781926,
+            1390.293493139911,
+            3102.867465905523,
+            3123.6704324443263
+          ],
+          "edge_contrast": [
+            18.47437286376953,
+            95.976806640625,
+            52.12804412841797,
+            37.13935089111328
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1191.5163993768197,
+          3341.1000665430715
+        ],
+        "target_xy": [
+          1110.9979136858988,
+          3265.3380786291445
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1191.5163993768197,
+            3341.1000665430715
+          ],
+          "box_xywh": [
+            925,
+            3310,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            931.5831865184819,
+            1451.4496122351577,
+            3291.2592296725957,
+            3390.9409034135474
+          ],
+          "edge_contrast": [
+            100.18663024902344,
+            113.32466125488281,
+            124.0340576171875,
+            147.96676635742188
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1110.9979136858988,
+            3265.3380786291445
+          ],
+          "box_xywh": [
+            830,
+            3225,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            831.7168699304395,
+            1390.2789574413578,
+            3247.8699024447756,
+            3282.806254813513
+          ],
+          "edge_contrast": [
+            20.08340072631836,
+            113.17382049560547,
+            13.184745788574219,
+            29.849685668945312
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1299.653197835867,
+          3727.894984744319
+        ],
+        "target_xy": [
+          1212.6431289083316,
+          3633.9199127163324
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1299.653197835867,
+            3727.894984744319
+          ],
+          "box_xywh": [
+            1010,
+            3677,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1029.2776352781204,
+            1570.0287603936138,
+            3698.502731687607,
+            3757.287237801031
+          ],
+          "edge_contrast": [
+            128.39645385742188,
+            121.78289794921875,
+            158.63345336914062,
+            147.26866149902344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1212.6431289083316,
+            3633.9199127163324
+          ],
+          "box_xywh": [
+            920,
+            3590,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            941.2022317191521,
+            1484.0840260975112,
+            3601.83908232151,
+            3666.000743111155
+          ],
+          "edge_contrast": [
+            51.339080810546875,
+            11.038726806640625,
+            50.15949249267578,
+            44.763885498046875
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280.1094032166466,
+          3855.6499338440844
+        ],
+        "target_xy": [
+          1172.1923300448602,
+          3742.0427361231705
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1280.1094032166466,
+            3855.6499338440844
+          ],
+          "box_xywh": [
+            1010,
+            3804,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1030.296417053667,
+            1529.922389379626,
+            3825.750500574403,
+            3885.5493671137665
+          ],
+          "edge_contrast": [
+            116.54125213623047,
+            120.78614807128906,
+            150.35943603515625,
+            144.124755859375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1172.1923300448602,
+            3742.0427361231705
+          ],
+          "box_xywh": [
+            920,
+            3722,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            906.8824192072174,
+            1437.5022408825032,
+            3700.67368553625,
+            3783.411786710091
+          ],
+          "edge_contrast": [
+            34.05400848388672,
+            58.81611633300781,
+            22.47858428955078,
+            18.15497589111328
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      }
+    ],
+    "implant": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1312.528662273484,
+          2925.818504899895
+        ],
+        "target_xy": [
+          1349.410965208757,
+          2884.434860716575
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1312.528662273484,
+            2925.818504899895
+          ],
+          "box_xywh": [
+            970,
+            2750,
+            670,
+            350
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            959.0187160183892,
+            1666.038608528579,
+            2760.4511763383084,
+            3091.185833461481
+          ],
+          "edge_contrast": [
+            109.69700622558594,
+            128.20899963378906,
+            132.77943420410156,
+            132.43380737304688
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1349.410965208757,
+            2884.434860716575
+          ],
+          "box_xywh": [
+            1010,
+            2720,
+            710,
+            320
+          ],
+          "edge_search_band_px": 25,
+          "edge_positions_lrtb": [
+            983.3010843598043,
+            1715.5208460577098,
+            2713.8630333580504,
+            3055.0066880750996
+          ],
+          "edge_contrast": [
+            23.39386749267578,
+            97.8934097290039,
+            56.435882568359375,
+            60.314178466796875
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1188.8465630678013,
+          3236.108717730703
+        ],
+        "target_xy": [
+          1248.3249513587693,
+          3180.3948042153543
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1188.8465630678013,
+            3236.108717730703
+          ],
+          "box_xywh": [
+            925,
+            3188,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            929.2086690153097,
+            1448.484457120293,
+            3208.8231946839937,
+            3263.3942407774125
+          ],
+          "edge_contrast": [
+            108.22286987304688,
+            116.45832061767578,
+            167.30197143554688,
+            153.26547241210938
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1248.3249513587693,
+            3180.3948042153543
+          ],
+          "box_xywh": [
+            970,
+            3130,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            973.961586422091,
+            1522.6883162954477,
+            3149.980580528017,
+            3210.809027902692
+          ],
+          "edge_contrast": [
+            59.04655456542969,
+            8.02716064453125,
+            42.586761474609375,
+            34.95069122314453
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1191.5163993768197,
+          3341.1000665430715
+        ],
+        "target_xy": [
+          1252.4949457948142,
+          3277.5209321694883
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1191.5163993768197,
+            3341.1000665430715
+          ],
+          "box_xywh": [
+            925,
+            3310,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            931.5831865184819,
+            1451.4496122351577,
+            3291.2592296725957,
+            3390.9409034135474
+          ],
+          "edge_contrast": [
+            100.18663024902344,
+            113.32466125488281,
+            124.0340576171875,
+            147.96676635742188
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1252.4949457948142,
+            3277.5209321694883
+          ],
+          "box_xywh": [
+            970,
+            3260,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            979.7855111946092,
+            1525.204380395019,
+            3249.0135165710226,
+            3306.028347767954
+          ],
+          "edge_contrast": [
+            61.66925048828125,
+            34.91105651855469,
+            64.39726257324219,
+            38.57421875
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1299.653197835867,
+          3727.894984744319
+        ],
+        "target_xy": [
+          1299.4502567950472,
+          3671.2093273005958
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1299.653197835867,
+            3727.894984744319
+          ],
+          "box_xywh": [
+            1010,
+            3677,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1029.2776352781204,
+            1570.0287603936138,
+            3698.502731687607,
+            3757.287237801031
+          ],
+          "edge_contrast": [
+            128.39645385742188,
+            121.78289794921875,
+            158.63345336914062,
+            147.26866149902344
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1299.4502567950472,
+            3671.2093273005958
+          ],
+          "box_xywh": [
+            1040,
+            3620,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1037.4815904278057,
+            1561.4189231622888,
+            3640.362750814673,
+            3702.055903786519
+          ],
+          "edge_contrast": [
+            39.87560272216797,
+            28.013290405273438,
+            31.272727966308594,
+            27.397315979003906
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_identity_review_and_script_edge_measurement",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280.1094032166466,
+          3855.6499338440844
+        ],
+        "target_xy": [
+          1302.7104631311643,
+          3774.562097873468
+        ],
+        "exclusion_radius_px": 128,
+        "reference_measurement": {
+          "xy": [
+            1280.1094032166466,
+            3855.6499338440844
+          ],
+          "box_xywh": [
+            1010,
+            3804,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1030.296417053667,
+            1529.922389379626,
+            3825.750500574403,
+            3885.5493671137665
+          ],
+          "edge_contrast": [
+            116.54125213623047,
+            120.78614807128906,
+            150.35943603515625,
+            144.124755859375
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "target_measurement": {
+          "xy": [
+            1302.7104631311643,
+            3774.562097873468
+          ],
+          "box_xywh": [
+            1040,
+            3755,
+            540,
+            60
+          ],
+          "edge_search_band_px": 20,
+          "edge_positions_lrtb": [
+            1017.4325538079722,
+            1587.9883724543563,
+            3744.0784451877253,
+            3805.045750559211
+          ],
+          "edge_contrast": [
+            22.397743225097656,
+            16.74505615234375,
+            64.74702453613281,
+            41.96636962890625
+          ],
+          "definition": "center of opposite bright rectangular edge ridges",
+          "producer": "script_edge_measurement",
+          "status": "candidate"
+        },
+        "review_note": "Replaced coarse visual center with fixed edge ridge center definition. Layer-dependent morphology remains uncertain; neither fit nor transform residual was used to locate this point."
+      }
+    ]
+  },
+  "unknown_layers": {
+    "m2": "No reliable homologous lower structure identified",
+    "m3": "Different wiring; no reliable homologous lower structure identified",
+    "m4": "Upper pad pattern cannot be equated to lower-layer device boundaries"
+  }
+}

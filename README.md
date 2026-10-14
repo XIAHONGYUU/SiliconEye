@@ -114,3 +114,36 @@ The parser (`silicon-eye annotate parse`) extracts bounding boxes and labels fro
 ## License
 
 MIT — see LICENSE file.
+
+## 本机开发入口
+
+```bash
+cd /home/zuoky/project_siliconeyes/silicon-eye
+source .venv/bin/activate
+silicon-eye --help
+silicon-eye info -c configs/test_chip.yaml
+```
+
+- [CURRENT_TASK.md](CURRENT_TASK.md)：唯一实时任务入口。
+- [AGENTS.md](AGENTS.md)：项目约定与验证边界。
+- [开发计划](docs/development-plan.md)：阶段顺序及验收。
+- [初始基线](docs/baseline.md)：环境及已复现问题。
+- [AI/脚本分工与验证设计](docs/ai-script-validation.md)：职责、判断接口及独立验收。
+- [配准修复验证](docs/registration-validation.md)：合成图测试结果及接口变化。
+- [八层照片验收入口](docs/registration-audit.md)：重跑命令、证据包与真实照片结果。
+
+当前先推进配准验证。上文 Quick Start 的 `run -o` 尚未由 CLI 实现，输出目前在 `runs/`。自动分割与连接提取尚未完成，空网表不代表芯片逆向成功。
+
+- [结构约束重验收](docs/registration-constrained-review.md)：新版点、冻结预算、约束拟合和真实结果。
+
+- [定位缺陷修复与同源性审查](docs/registration-localization-review.md)：2026-10-14 量测可靠性、固定预算重验收与所需来源依据。
+
+局部环配准试验入口与结果：[两层局部环试验](docs/registration-local-ring.md)。
+
+固化的两层局部候选案例与 `register-local` 命令：[案例入口](benchmarks/local-ring-aa-poly-v1/README.md)。
+
+主流程的局部配准阶段、阻塞语义与运行命令：[Pipeline 接入说明](docs/pipeline-local-registration.md)。
+
+局部像素标注草案、层语义确认和 `annotate review` 入口：[像素标注合同](docs/pixel-annotation-baseline.md)。
+
+两处内部区域的像素轮廓候选及 `annotate contours`：[材料边界候选](docs/material-contour-candidates.md)。

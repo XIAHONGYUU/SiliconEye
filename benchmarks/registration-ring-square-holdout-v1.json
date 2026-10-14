@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "scope": "local_frozen_ring_model_square_check",
+  "source_context": {
+    "same_physical_chip": true,
+    "capture": "manual_successive_delayering",
+    "producer": "user_statement_2026-10-14"
+  },
+  "reference": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "crop_xywh": [
+      1850,
+      1150,
+      1500,
+      850
+    ],
+    "fit_box_xywh": [
+      2560,
+      1440,
+      650,
+      300
+    ],
+    "check_box_xywh": [
+      2025,
+      1545,
+      100,
+      100
+    ]
+  },
+  "target": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "crop_xywh": [
+      1780,
+      970,
+      1500,
+      850
+    ],
+    "fit_box_xywh": [
+      2500,
+      1260,
+      665,
+      295
+    ],
+    "check_box_xywh": [
+      1930,
+      1365,
+      110,
+      115
+    ]
+  },
+  "fitting": {
+    "structure": "middle horizontal closed rectangular ring",
+    "model": "ring_similarity",
+    "producer": "AI_visual_candidate",
+    "status": "candidate",
+    "edge_search_band_px": 50,
+    "line_sampling": {
+      "sample_count": 48,
+      "central_fraction": 0.7,
+      "min_valid_fraction": 0.75,
+      "min_contrast": 10,
+      "max_line_p95_px": 4,
+      "trim_residual_px": 4,
+      "residual_scope": "retained_support; all-sample residuals also reported"
+    },
+    "limits": {
+      "min_scale": 0.9,
+      "max_scale": 1.1,
+      "max_rotation_deg": 5,
+      "max_corner_residual_px": 10
+    }
+  },
+  "validation": {
+    "structure": "isolated square area immediately left of vertical ring, inside left enclosure",
+    "producer": "AI_visual_candidate_then_script_edge_measurement",
+    "status": "candidate",
+    "edge_search_band_px": 20,
+    "minimum_structure_gap_px": 50,
+    "correlation_note": "four corners of one independent structure, not four independent structures",
+    "usage": "new_measurement_for_frozen_ring_model_not_project_wide_blind_test",
+    "limitation": "area appeared in earlier FIT-bank enclosure; cross-layer material edges differ; no previous per-square residual used to select ring model"
+  },
+  "budget": {
+    "scope": "pilot_macro_registration_only",
+    "status": "engineering_trial",
+    "p95_px": 8,
+    "max_px": 12,
+    "basis": "Target allocation: reference localization 3px + target localization 3px + geometric model 2px gives 8px; max 12px covers tail. These localization allocations are targets, not certified measurements. No confirmed physical scale or extraction accuracy is implied.",
+    "locked_before_registration": true
+  },
+  "frozen_transform": {
+    "baseline_manifest": "runs/registration-local-ring-v2r1/manifest.json",
+    "baseline_sha256": "bd448b156323133f52faf38bcac3fe41fd6f5cf626df103bb8310ce803ec2143",
+    "matrix_native": [
+      [
+        0.963849643365519,
+        -0.004544236520263863,
+        162.69124644917656
+      ],
+      [
+        0.004544236520263863,
+        0.963849643365519,
+        214.98616227827165
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  }
+}

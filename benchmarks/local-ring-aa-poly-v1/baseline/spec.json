@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "scope": "local_ring_similarity_diagnostic",
+  "source_context": {
+    "same_physical_chip": true,
+    "capture": "manual_successive_delayering",
+    "producer": "user_statement_2026-10-14"
+  },
+  "reference": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "crop_xywh": [
+      2100,
+      1150,
+      1250,
+      850
+    ],
+    "fit_box_xywh": [
+      2560,
+      1440,
+      650,
+      300
+    ],
+    "check_box_xywh": [
+      2250,
+      1280,
+      185,
+      625
+    ]
+  },
+  "target": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "crop_xywh": [
+      2030,
+      970,
+      1250,
+      850
+    ],
+    "fit_box_xywh": [
+      2500,
+      1260,
+      665,
+      295
+    ],
+    "check_box_xywh": [
+      2180,
+      1100,
+      190,
+      635
+    ]
+  },
+  "fitting": {
+    "structure": "middle horizontal closed rectangular ring",
+    "model": "ring_similarity",
+    "producer": "AI_visual_candidate",
+    "status": "candidate",
+    "edge_search_band_px": 50,
+    "line_sampling": {
+      "sample_count": 48,
+      "central_fraction": 0.7,
+      "min_valid_fraction": 0.75,
+      "min_contrast": 10,
+      "max_line_p95_px": 4,
+      "trim_residual_px": 4,
+      "residual_scope": "retained_support; all-sample residuals also reported"
+    },
+    "limits": {
+      "min_scale": 0.9,
+      "max_scale": 1.1,
+      "max_rotation_deg": 5,
+      "max_corner_residual_px": 10
+    }
+  },
+  "validation": {
+    "structure": "outer boundary corners of neighboring vertical closed ring",
+    "producer": "AI_visual_candidate_then_script_edge_measurement",
+    "status": "candidate",
+    "edge_search_band_px": 35,
+    "minimum_structure_gap_px": 50,
+    "correlation_note": "four corners of one independent structure, not four independent structures",
+    "usage": "previously_inspected_diagnostic_only_not_fresh_holdout"
+  },
+  "budget": {
+    "scope": "pilot_macro_registration_only",
+    "status": "engineering_trial",
+    "p95_px": 8,
+    "max_px": 12,
+    "basis": "Target allocation: reference localization 3px + target localization 3px + geometric model 2px gives 8px; max 12px covers tail. These localization allocations are targets, not certified measurements. No confirmed physical scale or extraction accuracy is implied.",
+    "locked_before_registration": true
+  }
+}

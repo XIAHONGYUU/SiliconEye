@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "reference": "aa",
+  "coordinate_system": "native_source_pixels_xy",
+  "annotation_note": "AI visual candidates selected from original unaligned crops before fitting; centers across different physical layers are uncertain. Not human ground truth. Coverage is a small lower-left region only.",
+  "annotation_run": "2026-10-13 local Codex visual inspection; no external model API",
+  "source_sha256": {
+    "sub": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+    "implant": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+    "aa": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "poly": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "m1": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "m2": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "m3": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "m4": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+  },
+  "layers": {
+    "poly": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1285,
+          2910
+        ],
+        "target_xy": [
+          1195,
+          2785
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1195,
+          3218
+        ],
+        "target_xy": [
+          1110,
+          3110
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1195,
+          3340
+        ],
+        "target_xy": [
+          1110,
+          3230
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1280,
+          3707
+        ],
+        "target_xy": [
+          1190,
+          3625
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280,
+          3834
+        ],
+        "target_xy": [
+          1190,
+          3745
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-6",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of upper small square right of row stack",
+        "reference_xy": [
+          1587,
+          3290
+        ],
+        "target_xy": [
+          1505,
+          3165
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      }
+    ],
+    "m1": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1285,
+          2910
+        ],
+        "target_xy": [
+          1165,
+          2938
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1195,
+          3218
+        ],
+        "target_xy": [
+          1075,
+          3245
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1195,
+          3340
+        ],
+        "target_xy": [
+          1075,
+          3375
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1280,
+          3707
+        ],
+        "target_xy": [
+          1175,
+          3760
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280,
+          3834
+        ],
+        "target_xy": [
+          1175,
+          3885
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-6",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of upper small square right of row stack",
+        "reference_xy": [
+          1587,
+          3290
+        ],
+        "target_xy": [
+          1485,
+          3320
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      }
+    ],
+    "sub": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1285,
+          2910
+        ],
+        "target_xy": [
+          1185,
+          2810
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1195,
+          3218
+        ],
+        "target_xy": [
+          1100,
+          3115
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1195,
+          3340
+        ],
+        "target_xy": [
+          1100,
+          3255
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1280,
+          3707
+        ],
+        "target_xy": [
+          1190,
+          3620
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280,
+          3834
+        ],
+        "target_xy": [
+          1190,
+          3752
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-6",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of upper small square right of row stack",
+        "reference_xy": [
+          1587,
+          3290
+        ],
+        "target_xy": [
+          1485,
+          3232
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      }
+    ],
+    "implant": [
+      {
+        "id": "LL-1",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of lower-left small striped bank",
+        "reference_xy": [
+          1285,
+          2910
+        ],
+        "target_xy": [
+          1320,
+          2865
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-2",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of first long row below bank",
+        "reference_xy": [
+          1195,
+          3218
+        ],
+        "target_xy": [
+          1240,
+          3160
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-3",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of second long row below bank",
+        "reference_xy": [
+          1195,
+          3340
+        ],
+        "target_xy": [
+          1240,
+          3290
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-4",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of penultimate long lower row",
+        "reference_xy": [
+          1280,
+          3707
+        ],
+        "target_xy": [
+          1310,
+          3650
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-5",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of last long lower row",
+        "reference_xy": [
+          1280,
+          3834
+        ],
+        "target_xy": [
+          1310,
+          3785
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      },
+      {
+        "id": "LL-6",
+        "role": "validation",
+        "status": "candidate",
+        "producer": "codex_visual_inspection",
+        "description": "center of upper small square right of row stack",
+        "reference_xy": [
+          1587,
+          3290
+        ],
+        "target_xy": [
+          1645,
+          3230
+        ],
+        "exclusion_radius_px": 128,
+        "uncertainty": "Coarse structural center, roughly 10-30px annotation uncertainty; layer-dependent morphology may move apparent centers. Needs human review."
+      }
+    ]
+  },
+  "unknown_layers": {
+    "m2": "No reliable homologous lower structure identified",
+    "m3": "Different wiring; no reliable homologous lower structure identified",
+    "m4": "Upper pad pattern cannot be equated to lower-layer device boundaries"
+  }
+}
