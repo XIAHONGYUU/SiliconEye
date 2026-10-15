@@ -40,6 +40,23 @@ def cmd_annotate(args: argparse.Namespace) -> None:
         from .annotation_parser import parse_command
 
         parse_command(args.input, args.output, args.pixel_per_um)
+    elif args.subcommand == "materials":
+        from .material_review import run_material_review
+
+        try:
+            result = run_material_review(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Material review export failed: {error}") from error
+        print(f"AA/poly/CT candidate review: {args.output}; {result['layers']}")
+    elif args.subcommand == "guided":
+        from .guided_materials import run_guided
+
+        try:
+            result = run_guided(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Guided material extraction failed: {error}") from error
+        print(f"Guided candidate evidence: {args.output}; status={result['material_status']}")
+        print("Positive examples used for fitting; no independent accuracy claim.")
     elif args.subcommand == "contours":
         from .material_contours import run_contours
 
@@ -167,6 +184,14 @@ def main() -> None:
     contour_parser = ann_sub.add_parser("contours", help="Build local material boundary hypotheses")
     contour_parser.add_argument("--spec", required=True)
     contour_parser.add_argument("-o", "--output", required=True)
+    guided_parser = ann_sub.add_parser(
+        "guided", help="Refine human material examples on raw images"
+    )
+    guided_parser.add_argument("--spec", required=True)
+    guided_parser.add_argument("-o", "--output", required=True)
+    materials_parser = ann_sub.add_parser("materials", help="Export AA/poly/CT in review order")
+    materials_parser.add_argument("--spec", required=True)
+    materials_parser.add_argument("-o", "--output", required=True)
     ann_parser.set_defaults(func=cmd_annotate)
 
     # ── info ──

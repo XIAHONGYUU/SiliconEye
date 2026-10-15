@@ -147,3 +147,7 @@ silicon-eye info -c configs/test_chip.yaml
 局部像素标注草案、层语义确认和 `annotate review` 入口：[像素标注合同](docs/pixel-annotation-baseline.md)。
 
 两处内部区域的像素轮廓候选及 `annotate contours`：[材料边界候选](docs/material-contour-candidates.md)。
+
+人工示例引导的 AA/poly 重新提取与 CT 遮挡处理：[示例引导说明](docs/guided-material-extraction.md)。
+
+当前局部材料版本：AA/poly 经用户目视认可，CT 仍有漏检；详见 [复核状态](benchmarks/material-review-feedback-v1.json)。

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "checkpoint": "material-review-v1",
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "source_run": "runs/material-review-v1",
+  "source_manifest_sha256": "0fdf5fbfa53b436bfbd619238df74caddbaf28194870b07115329f40827d4dbe",
+  "statement": "除了CT有漏检之外其他的还好，将现在的状态更新一个版本的github",
+  "scope": "current 1500x850 local sample only; qualitative visual review",
+  "layers": {
+    "AA": {
+      "human_review": "acceptable_for_this_local_view",
+      "mask_sha256": "594b307bc3805ed867c51e1ea2a4e7a2f63902434085c4dff9f473fd71ce31ff",
+      "center_ring_separation": "accepted"
+    },
+    "poly": {
+      "human_review": "acceptable_for_this_local_view",
+      "mask_sha256": "b4384b8072b96701430e03fbfb85efd46e09eda77cea04b41f883c31a40e4b8d"
+    },
+    "CT": {
+      "human_review": "known_missed_detections",
+      "mask_sha256": "7f1f2681cb7fa69ff394a3f5ddc82fc671a29098910045361c72cf5a47e60b2d",
+      "recall_measured": false,
+      "known_missing_locations_annotated": false
+    }
+  },
+  "limitations": [
+    "not a quantitative per-pixel ground truth mask",
+    "not a claim of full-chip or eight-layer correctness",
+    "CT missed detections remain unresolved",
+    "no device, terminal or connectivity acceptance"
+  ],
+  "next_action": "annotate missed CT locations and improve CT recall while retaining accepted AA/poly baseline"
+}
