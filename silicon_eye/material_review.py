@@ -84,7 +84,8 @@ def run_material_review(spec_path: str, output: str) -> dict:
     prompt = cv2.imread(str(evidence / "aa/human-positive.png"), 0)
     aa, unknown, aa_info = extend_aa(images["aa"], refined, domain, prompt)
     poly = cv2.imread(str(evidence / "poly/visible.png"), 0) > 0
-    ct = ct_support(images["poly"])
+    ct_profile = spec.get("ct_profile", "legacy")
+    ct = ct_support(images["poly"], profile=ct_profile)
     _, labels = cv2.connectedComponents(aa.astype(np.uint8), connectivity=8)
     origin = np.array(meta["panels"]["aa"]["source_crop_xywh"][:2])
     checks = []
@@ -109,6 +110,7 @@ def run_material_review(spec_path: str, output: str) -> dict:
         "aa_user_separation_checks": checks,
         "poly_unchanged": True,
         "ct_scope": "entire_poly_crop_not_only_poly_prompt_area",
+        "ct_profile": ct_profile,
         "ct_underlying_material": "unknown",
         "independent_accuracy_evaluated": False,
         "source_sha256": prior["source_sha256"],

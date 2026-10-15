@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "registration": {
+      "path": "runs/registration-local-poly-m1-v1/manifest.json",
+      "sha256": "6e74a0f8b4b36e7d7f3012d874a24f1f8da5f926052405dae8cdd6b1715841b2"
+    },
+    "baseline_approval": {
+      "path": "benchmarks/local-poly-repair-feedback-v1.json",
+      "sha256": "1be2067d17da006193d279986470d293e9a7fcd3335c977e280abe85329925fd"
+    },
+    "topology_review": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "terminal_spec": {
+      "path": "benchmarks/local-terminal-review-v1.json",
+      "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+    },
+    "mos_manifest": {
+      "path": "runs/local-mos-review-v1r1/manifest.json",
+      "sha256": "338adb321a66e635fa0a74c7f301bfcb091fa05336a304c662c645424e866cbe"
+    },
+    "m1_source": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    }
+  },
+  "canvas_xywh_poly_native": [
+    1780,
+    970,
+    1500,
+    850
+  ],
+  "rois": [
+    {
+      "id": "V12",
+      "xywh_poly_crop": [
+        125,
+        190,
+        225,
+        155
+      ]
+    },
+    {
+      "id": "V3",
+      "xywh_poly_crop": [
+        810,
+        375,
+        510,
+        130
+      ]
+    }
+  ],
+  "networks": [
+    {
+      "id": "N1_G",
+      "terminals": [
+        "V1_G"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            184,
+            255
+          ],
+          [
+            184,
+            238
+          ],
+          [
+            198,
+            238
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V1上端可见M1接触垫。",
+      "uncertainty": "局部垫外连接未追踪。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N12_A",
+      "terminals": [
+        "V1_A",
+        "V2_A"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            154,
+            205
+          ],
+          [
+            154,
+            316
+          ],
+          [
+            245,
+            316
+          ],
+          [
+            245,
+            276
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "连续U形M1候选，跨接V1左扩散接触组与V2左扩散接触组。",
+      "uncertainty": "CT位置对应受局部配准影响；不指定源漏极性。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N12_BG",
+      "terminals": [
+        "V1_B",
+        "V2_G"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            217,
+            301
+          ],
+          [
+            217,
+            235
+          ],
+          [
+            276,
+            235
+          ],
+          [
+            276,
+            257
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V1右侧细竖支路和顶部折线指向V2栅接触组。",
+      "uncertainty": "细支路受拍屏纹理影响，尤其底端与U形M1是否留有间隙尚待确认；与N12_A不自动合并。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N2_B",
+      "terminals": [
+        "V2_B"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            305,
+            237
+          ],
+          [
+            305,
+            298
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V2右侧可见竖向M1接触段。",
+      "uncertainty": "局部段外/上层金属连接未知。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N3_MG",
+      "terminals": [
+        "V3_G1",
+        "V3_G2",
+        "V3_M"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            845,
+            409
+          ],
+          [
+            845,
+            473
+          ]
+        ],
+        [
+          [
+            845,
+            441
+          ],
+          [
+            1258,
+            441
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V3左端竖向M1连接中间横向M1，可能将两个独立poly栅接触与共享M行相连。",
+      "uncertainty": "新M1连接假设未获人工确认；不改G1/G2的物理栅节点或poly分离裁决。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N3_A",
+      "terminals": [
+        "V3_A"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            869,
+            415
+          ],
+          [
+            1258,
+            415
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V3上排扩散接触组对应的独立水平M1候选。",
+      "uncertainty": "局部图未追踪更高层/外部连接。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N3_B",
+      "terminals": [
+        "V3_B"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            869,
+            469
+          ],
+          [
+            1258,
+            469
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V3下排扩散接触组对应的独立水平M1候选。",
+      "uncertainty": "局部图未追踪更高层/外部连接。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    }
+  ],
+  "dimension_windows": [
+    {
+      "device": "V1_Q1",
+      "xywh_poly_crop": [
+        160,
+        252,
+        60,
+        66
+      ],
+      "source_drain_axis": "x"
+    },
+    {
+      "device": "V2_Q1",
+      "xywh_poly_crop": [
+        253,
+        252,
+        50,
+        66
+      ],
+      "source_drain_axis": "x"
+    },
+    {
+      "device": "V3_Q1",
+      "xywh_poly_crop": [
+        853,
+        420,
+        420,
+        15
+      ],
+      "source_drain_axis": "y"
+    },
+    {
+      "device": "V3_Q2",
+      "xywh_poly_crop": [
+        853,
+        446,
+        420,
+        15
+      ],
+      "source_drain_axis": "y"
+    }
+  ],
+  "critical_questions": [
+    {
+      "id": "V3_M1_strap",
+      "net": "N3_MG",
+      "question": "V3左侧M1竖线及中间横线是否把G1、G2与共享扩散区M接在同一网络？",
+      "status": "candidate"
+    },
+    {
+      "id": "V12_route_gap",
+      "nets": [
+        "N12_A",
+        "N12_BG"
+      ],
+      "question": "V1右侧接触到V2栅的细M1支路，是否与底部U形源漏连线保持断开？",
+      "status": "unknown_local_gap"
+    }
+  ]
+}

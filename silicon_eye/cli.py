@@ -36,10 +36,50 @@ def cmd_run(args: argparse.Namespace) -> None:
 
 def cmd_annotate(args: argparse.Namespace) -> None:
     """Annotation subcommands."""
-    if args.subcommand == "parse":
+    if args.subcommand == "networks":
+        from .device_network_review import run_network_review
+
+        try:
+            result = run_network_review(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Device network review failed: {error}") from error
+        print(f"Device network candidates: {args.output}; {len(result['devices'])} MOS")
+    elif args.subcommand == "ct-audit":
+        from .ct_terminal_audit import run_ct_audit
+
+        try:
+            result = run_ct_audit(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"CT terminal audit failed: {error}") from error
+        print(f"Per-contact review: {args.output}; {result['review_counts']}")
+    elif args.subcommand == "poly-repair":
+        from .local_poly_repair import run_poly_repair
+
+        try:
+            result = run_poly_repair(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Poly repair export failed: {error}") from error
+        print(f"Local poly repair: {args.output}; retired={result['retired_pixels']} px")
+    elif args.subcommand == "terminals":
+        from .local_terminal_review import run_terminal_review
+
+        try:
+            result = run_terminal_review(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Terminal review export failed: {error}") from error
+        print(f"Local terminal hypotheses: {args.output}; {result['assignment_status_counts']}")
+    elif args.subcommand == "parse":
         from .annotation_parser import parse_command
 
         parse_command(args.input, args.output, args.pixel_per_um)
+    elif args.subcommand == "mos":
+        from .local_mos_review import run_mos_review
+
+        try:
+            result = run_mos_review(args.spec, args.output)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"MOS review export failed: {error}") from error
+        print(f"Local MOS hypotheses: {args.output}; {len(result['candidates'])} ROIs")
     elif args.subcommand == "materials":
         from .material_review import run_material_review
 
@@ -192,6 +232,23 @@ def main() -> None:
     materials_parser = ann_sub.add_parser("materials", help="Export AA/poly/CT in review order")
     materials_parser.add_argument("--spec", required=True)
     materials_parser.add_argument("-o", "--output", required=True)
+    mos_parser = ann_sub.add_parser("mos", help="Inspect local AA/poly crossings and nearby CT")
+    mos_parser.add_argument("--spec", required=True)
+    mos_parser.add_argument("-o", "--output", required=True)
+    terminals_parser = ann_sub.add_parser("terminals", help="Inspect local CT/terminal hypotheses")
+    terminals_parser.add_argument("--spec", required=True)
+    terminals_parser.add_argument("-o", "--output", required=True)
+    repair_parser = ann_sub.add_parser("poly-repair", help="Review local poly topology correction")
+    repair_parser.add_argument("--spec", required=True)
+    repair_parser.add_argument("-o", "--output", required=True)
+    ct_audit_parser = ann_sub.add_parser("ct-audit", help="Export enumerated CT/terminal reviews")
+    ct_audit_parser.add_argument("--spec", required=True)
+    ct_audit_parser.add_argument("-o", "--output", required=True)
+    network_parser = ann_sub.add_parser(
+        "networks", help="Review local device/M1 network candidates"
+    )
+    network_parser.add_argument("--spec", required=True)
+    network_parser.add_argument("-o", "--output", required=True)
     ann_parser.set_defaults(func=cmd_annotate)
 
     # ── info ──

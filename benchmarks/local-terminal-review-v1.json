@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "structure_approval": {
+      "path": "benchmarks/local-mos-review-feedback-v1.json",
+      "sha256": "58fb8fa1f7317eb70d8cb41e6b38d9ebc61c925205475d0a24e42214aee61d51"
+    },
+    "mos_manifest": {
+      "path": "runs/local-mos-review-v1r1/manifest.json",
+      "sha256": "338adb321a66e635fa0a74c7f301bfcb091fa05336a304c662c645424e866cbe"
+    },
+    "material_manifest": {
+      "path": "runs/material-review-v2/manifest.json",
+      "sha256": "abe9475e09e21cd733baea3c3d492b362351d5a4ef7349d2ec66855151e6675a"
+    },
+    "raw_poly": {
+      "path": "runs/material-review-v2/raw-poly.png",
+      "sha256": "8167c2639277c793d7168c669d9c7f9e9edb5f5b6fc0e7582f0307a0022b5c78"
+    },
+    "ct_mask": {
+      "path": "runs/material-review-v2/03-CT-mask.png",
+      "sha256": "5635b0cbc920c689075bc50f83c1ab4ca5ce95d48083933ec69352c5438b5e7e"
+    },
+    "poly_mask": {
+      "path": "runs/material-review-v2/02-poly-mask.png",
+      "sha256": "b4384b8072b96701430e03fbfb85efd46e09eda77cea04b41f883c31a40e4b8d"
+    }
+  },
+  "selection_actor": "AI_visual_inspection_in_current_chat",
+  "zones": [
+    {
+      "id": "V1_G",
+      "kind": "gate",
+      "xywh_poly_crop": [
+        170,
+        222,
+        41,
+        29
+      ],
+      "devices": [
+        "V1_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V1_A",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        150,
+        253,
+        18,
+        64
+      ],
+      "devices": [
+        "V1_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V1_B",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        215,
+        253,
+        18,
+        64
+      ],
+      "devices": [
+        "V1_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V2_G",
+      "kind": "gate",
+      "xywh_poly_crop": [
+        258,
+        222,
+        35,
+        29
+      ],
+      "devices": [
+        "V2_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V2_A",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        239,
+        254,
+        17,
+        64
+      ],
+      "devices": [
+        "V2_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V2_B",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        300,
+        254,
+        18,
+        64
+      ],
+      "devices": [
+        "V2_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V3_G1",
+      "kind": "gate",
+      "xywh_poly_crop": [
+        836,
+        402,
+        20,
+        32
+      ],
+      "devices": [
+        "V3_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V3_G2",
+      "kind": "gate",
+      "xywh_poly_crop": [
+        836,
+        448,
+        20,
+        29
+      ],
+      "devices": [
+        "V3_Q2"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V3_A",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        860,
+        404,
+        408,
+        19
+      ],
+      "devices": [
+        "V3_Q1"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V3_M",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        860,
+        432,
+        408,
+        18
+      ],
+      "devices": [
+        "V3_Q1",
+        "V3_Q2"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "V3_B",
+      "kind": "diffusion",
+      "xywh_poly_crop": [
+        860,
+        454,
+        408,
+        23
+      ],
+      "devices": [
+        "V3_Q2"
+      ],
+      "status": "AI_candidate",
+      "geometry_role": "inspection_window_not_material_boundary"
+    }
+  ],
+  "devices": [
+    {
+      "id": "V1_Q1",
+      "gate": "V1_G",
+      "diffusion_terminals": [
+        "V1_A",
+        "V1_B"
+      ]
+    },
+    {
+      "id": "V2_Q1",
+      "gate": "V2_G",
+      "diffusion_terminals": [
+        "V2_A",
+        "V2_B"
+      ]
+    },
+    {
+      "id": "V3_Q1",
+      "gate": "V3_G1",
+      "diffusion_terminals": [
+        "V3_A",
+        "V3_M"
+      ]
+    },
+    {
+      "id": "V3_Q2",
+      "gate": "V3_G2",
+      "diffusion_terminals": [
+        "V3_M",
+        "V3_B"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "V3_shared_middle",
+      "status": "AI_candidate_location_for_human_confirmed_sharing",
+      "description": "V3中间CT行可能位于共用扩散区；共享关系已获用户确认，具体位置本轮待复核。",
+      "zone": "V3_M"
+    },
+    {
+      "id": "V3_common_gate",
+      "status": "AI_candidate_not_merged",
+      "description": "两条栅在poly mask中端部相连；需复核是否实际同栅，保持G1/G2独立。",
+      "gates": [
+        "V3_G1",
+        "V3_G2"
+      ]
+    }
+  ],
+  "unmasked_bright_spot_review": [
+    {
+      "roi_id": "V1",
+      "xy_poly_crop": [
+        159,
+        268
+      ],
+      "status": "AI_visual_bright_spot_not_CT_ground_truth",
+      "reason": "左侧上方可见亮斑；现有CT mask未覆盖，作为漏检候选保留，不修改批准mask。"
+    },
+    {
+      "roi_id": "V2",
+      "xy_poly_crop": [
+        306,
+        270
+      ],
+      "status": "AI_visual_bright_spot_not_CT_ground_truth",
+      "reason": "右侧上方可见亮斑；现有CT mask未覆盖，作为漏检候选保留，不修改批准mask。"
+    }
+  ]
+}

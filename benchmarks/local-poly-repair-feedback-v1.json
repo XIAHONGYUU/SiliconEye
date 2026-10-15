@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "checkpoint": "local-poly-repair-v1",
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "核对正确",
+  "review_status": "approved_for_this_local_view",
+  "scope": "V3 local poly topology correction and displayed support withdrawal; qualitative visual approval, not exact pixel ground truth",
+  "source_manifest": {
+    "path": "runs/local-poly-repair-v1/manifest.json",
+    "sha256": "998b00c9fd9e5337cded3be4086ea80bad9c78e6d17a896c0d284d79ea504184"
+  },
+  "source_report": {
+    "path": "runs/local-poly-repair-v1/report.md",
+    "sha256": "eb5d55da594c46ed21f4555e034df8a287f15e0c118476a6ee948a65a662694c"
+  },
+  "displayed_artifact": {
+    "path": "runs/local-poly-repair-v1/left-end-comparison.png",
+    "sha256": "f1df64cf0a6bf46a85c1e9cdd198e2df542ec87c10ae635b9ffc5488778ec3ce"
+  },
+  "comparison_artifacts": [
+    {
+      "path": "runs/local-poly-repair-v1/V3-comparison.png",
+      "sha256": "df915c5f6a2ccf32ff1e9745740fe5edd5d64a426a73eaf0c698518b3268a6be"
+    },
+    {
+      "path": "runs/local-poly-repair-v1/left-end-comparison.png",
+      "sha256": "f1df64cf0a6bf46a85c1e9cdd198e2df542ec87c10ae635b9ffc5488778ec3ce"
+    },
+    {
+      "path": "runs/local-poly-repair-v1/right-end-comparison.png",
+      "sha256": "597d875836674a59df20663b96e9f176f1e46721c62b8498fd4b31b72f0b9dab"
+    }
+  ],
+  "baseline": {
+    "run": "runs/local-poly-repair-v1",
+    "AA": {
+      "path": "runs/local-poly-repair-v1/01-AA-mask.png",
+      "sha256": "594b307bc3805ed867c51e1ea2a4e7a2f63902434085c4dff9f473fd71ce31ff"
+    },
+    "poly_positive_support": {
+      "path": "runs/local-poly-repair-v1/02-poly-mask.png",
+      "sha256": "d9ab575de0ea37a2715276845a479b629de8ba21a92e8879d5f2a5457da60f79"
+    },
+    "CT": {
+      "path": "runs/local-poly-repair-v1/03-CT-mask.png",
+      "sha256": "5635b0cbc920c689075bc50f83c1ab4ca5ce95d48083933ec69352c5438b5e7e"
+    },
+    "poly_topology_unknown": {
+      "path": "runs/local-poly-repair-v1/poly-topology-unknown.png",
+      "sha256": "524936920f9ab318bb2ec56705bebc3880511fc328cd452a16f2bc7fa5d1c774"
+    },
+    "retired_CT_underlying_unknown": {
+      "path": "runs/local-poly-repair-v1/retired-CT-underlying-unknown.png",
+      "sha256": "2e6d3bde70bb3a0de2ebbcaecec40cc18f62fa9a1e97cfa94a8439a2c0ab16cc"
+    },
+    "unknown_masks_required": true,
+    "zero_is_not_confirmed_material_absence": true
+  },
+  "accepted_behavior": {
+    "G1_G2_local_poly_separated": true,
+    "shared_M_preserved": true,
+    "AA_CT_unchanged": true,
+    "retired_positive_support_px": 1385,
+    "topology_unknown_px": 1053,
+    "CT_underlying_unknown_px": 332
+  },
+  "prior_topology_review": {
+    "path": "benchmarks/local-terminal-review-feedback-v1.json",
+    "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+  },
+  "limitations": [
+    "Local qualitative approval only; exact pixel boundary and physical scale remain unmeasured.",
+    "Individual CT-to-terminal assignments are not approved by this feedback.",
+    "Remote metal connectivity and source/drain polarity remain unknown.",
+    "Original generated manifest and earlier material masks remain unchanged."
+  ],
+  "next_action": "Use repaired local positive support together with both unknown masks for per-CT terminal association review."
+}

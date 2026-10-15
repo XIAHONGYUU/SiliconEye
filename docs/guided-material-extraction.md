@@ -61,3 +61,104 @@ AA/poly/CT候选支持分别417130/74618/90309 px；连通分量50/26/508，仅�
 用户反馈“除了CT有漏检之外其他的还好”，并要求更新GitHub版本。[复核记录](../benchmarks/material-review-feedback-v1.json)固定了本地报告/三类mask哈希与原始意见：AA/poly在当前局部目视可接受，CT明确存在漏检。该记录不等于精确人工像素真值或全片通过，未测CT召回率，也尚未标出漏检位置。
 
 本次保存代码、参数、125项测试和复核结论为开发快照，不在此提交内继续调整CT。后续优先补充漏检位置标注、改进CT召回，并将已接受的AA/poly作为不得退化的局部比较基线。人工标注图和大体积运行图按既有规则留在本机runs/，远端参数依赖这些本机输入，未宣称无输入即可重跑。
+
+## CT重提取v2：保留AA/poly基线
+
+[本轮CT检查](../runs/material-review-v2/CT-report.md)及[参数](../benchmarks/material-review-v2.json)：新增显式`ct_profile: narrow_vertical`，允许宽>=3px、高>=5px、0.25<=宽高比<2的亮点组件；灰度>190、局部残差>18及其余限制不变。未配置该字段时仍走legacy，guided默认行为不变。
+
+```bash
+.venv/bin/silicon-eye annotate materials \
+  --spec benchmarks/material-review-v2.json \
+  -o runs/material-review-v2-next
+```
+
+v2重新导出的AA/poly mask与已获局部目视认可的v1文件字节完全相同。CT候选分量508→703，新增30075px、旧支持移除0px；30处参与调参的AI目视候选窗口覆盖26→30，不是独立召回率。更多候选也可能包含亮边/拍屏纹理误报，需用户复核，不能根据数量直接认定精度改善。
+
+新增窄CT恢复且不选长亮线、非法模式拒绝两项行为测试；全套127 passed及相关Ruff通过。原图和旧输出保留，未推送。
+
+## CT v2用户批准
+
+2026-10-15用户明确批准当前图的CT v2，认为基本没有问题。[追加复核记录](../benchmarks/material-review-feedback-v2.json)绑定上一条展示的新增支持叠加图、CT mask、报告与manifest哈希。AA/poly与原认可结果文件字节一致，因此三类材料作为当前1500×850局部基线。
+
+原运行证据保持生成时状态，人类批准单独追加，不追改历史输出。该认可仅为本图目视通过，不扩大为全片、其他区域、量化召回率或器件/连接验收。下一步在已配准局部检查MOS沟道候选与CT端子归属。
+
+## 局部MOS结构检查
+
+```bash
+.venv/bin/silicon-eye annotate mos \
+  --spec benchmarks/local-mos-review-v1.json \
+  -o runs/local-mos-review-next
+```
+
+要求本机已存在参数绑定的批准记录、材料mask、样片元数据、源照片和冻结配准；任一哈希变化拒绝运行，输出必须为新目录。[检查包](../runs/local-mos-review-v1r1/report.md)给出两处短栅及中央双横带AI候选，包含原图/配准AA/交叠/敏感性四联图。
+
+仅将AA变换到poly裁剪坐标，单位px；交叠不是确认沟道，CT相交/距离不是端子连接。宏观试验12 AA px预算换算13 poly px敏感性半径，不是局部置信界；被CT遮挡的材料及端子、器件数均保持未知。该入口不接入Pipeline确认器件阶段。
+
+2026-10-15后续人工复核：[局部结构批准](../benchmarks/local-mos-review-feedback-v1.json)确认V1/V2各一个MOS，V3为两个MOS共用源/漏扩散区。原运行结果保持生成时未知状态；追加复核记录提供新的局部器件数和共享关系，不据此确认具体CT归属、源漏极性、栅连接或精确尺寸。
+
+## 端子位置与CT归属检查
+
+```bash
+.venv/bin/silicon-eye annotate terminals \
+  --spec benchmarks/local-terminal-review-v1.json \
+  -o runs/local-terminal-review-next
+```
+
+[检查报告](../runs/local-terminal-review-v1r1/report.md)提供原图/端子窗口和CT标号图、contacts.csv、manifest.json及connections.mmd。AI在原图上提出检查窗口；脚本仅执行来源校验、窗口归属检查和导出，无运行时模型。窗口是可调整的候选提示，不是材料分割或电气连接证明。
+
+V3的共享扩散关系继承用户确认，中间CT行的位置是新候选；G1/G2在poly mask的同分量证据不自动合并栅。多端子窗口相交记conflict，裁剪外质心或无匹配不强行分配；一个CT分量可包含多处亮斑，分量数量不代表实际触点数。两处目视亮斑漏检候选单独打叉，批准的mask保持原值。仍使用px，源漏极性/体端/金属连接保持unknown。
+
+后续[人工裁决](../benchmarks/local-terminal-review-feedback-v1.json)：V3中间M为共用源漏区；G1/G2未通过局部端部poly相连。两栅保留不同节点，原poly跨栅连通分量24标为拓扑冲突，禁止据此合并。具体像素切割待原图定位；该裁决未批准逐CT连接，也不排除其他位置的金属连接。历史导出保持生成时状态，新的结构判断以追加复核记录为准。
+
+## V3 poly拓扑修正候选
+
+```bash
+.venv/bin/silicon-eye annotate poly-repair \
+  --spec benchmarks/local-poly-repair-v1.json \
+  -o runs/local-poly-repair-next
+```
+
+[修正检查包](../runs/local-poly-repair-v1/report.md)给出全景、左右端部的原图/旧新支持/差异。AI在共享M行选择分隔域，脚本从旧poly正支持中撤销该域，分别输出拓扑未知与CT下层未知，绝不将不清楚像素写成已确认非poly。端部及内部桥接同时检查，旧文件不覆盖。
+
+两栅代表点通过全图8连通分离验证；可见栅保护带、域外poly、AA/CT和M共享关系不变。不同带宽的拓扑检查仅验证候选稳健性，不等同精确像素边界验收。下游使用`02-poly-mask.png`时必须同时保留`poly-topology-unknown.png`与`retired-CT-underlying-unknown.png`；mask的0只表示没有当前正支持。该版本未自动替换已批准材料基线或逐CT归属。
+
+后续用户“核对正确”：[修正批准记录](../benchmarks/local-poly-repair-feedback-v1.json)将本次修正版及两类未知域固定为后续局部CT归属检查基线。原运行manifest保持生成时状态，批准单独追加；范围为本次局部目视修正，不扩大为精确像素真值或逐CT连接批准。
+
+## 逐CT视觉核对与候选导出
+
+```bash
+.venv/bin/silicon-eye annotate ct-audit \
+  --spec benchmarks/ct-terminal-audit-v1.json \
+  -o runs/ct-terminal-audit-next
+```
+
+[逐项核对包](../runs/ct-terminal-audit-v1r2/report.md)包含90条原有CT分量的AI看图记录、per-contact.csv、原生坐标和图格索引；运行时仅脚本校验/导出，不调用AI。AI记录显式写入参数，脚本不以窗口命中冒充视觉审阅；缺项、重复或试图自动确认为电气连接时拒绝运行。
+
+75个分量保留端子候选、7个弱亮斑存在性不确定、7个在MOS ROI外排除、C311为疑似纹理误报。14个分量含多个可见亮斑，禁止把分量数量当真实CT数量。P1/P2为既有漏检候选，P3为新增窄亮斑/条纹歧义，均未改CT mask。
+
+必须使用获批修正版poly及两类未知mask；交叠只作诊断，CT轮廓同时碰到两栅正支持也不合并栅，未知域不能充当材料负例。当前逐CT判断仍为AI候选，需与已有人工结构批准区分；异常点和归属复核后再生成CT修正。
+
+## 器件与M1网络检查（当前采用）
+
+用户调整工作粒度：关注MOS、尺寸、四端连接；逐CT审阅留作诊断历史，不作为后续推进门槛。接触区域用于支持网络判断，只将影响网络拓扑的歧义交给人工。
+
+```bash
+.venv/bin/silicon-eye register-local \
+  --spec benchmarks/registration-local-poly-m1-v1.json \
+  -o runs/registration-local-poly-m1-next
+.venv/bin/silicon-eye annotate networks \
+  --spec benchmarks/device-m1-network-v1.json \
+  -o runs/device-m1-network-next
+```
+
+网络参数绑定已生成的配准manifest；重跑配准到新目录后，需显式更新绑定路径/哈希再用于新网络实验。保持旧实验参数不变，另存新版本。
+
+[四MOS网络检查包](../runs/device-m1-network-v1r1/report.md)：AI看图提出局部M1中心线路线与接触组归属，脚本验证来源、M1-native/poly-native变换与有效覆盖，导出器件—网络候选图及原图对照。彩线非自动分割金属边界，不据路线几何邻近自动并网。
+
+七个局部网络均为候选，体端及源漏极性未知。V3两物理栅仍分开，但允许提出“经M1接到同网”的新假设；这与人工确认poly端部不连并不矛盾。几何尺寸仅显示可见支持的px跨度及截面长度，窗口截断/CT遮挡/配准会影响数值，不当真实W/L。独立环四角检查满足宏观预算，不代表微小接触已验收。
+
+后续[网络复核记录](../benchmarks/device-m1-network-feedback-v1.json)：用户确认V1/V2细支路与底部U形M1在当前局部保持断开；不扩大为远处或M2不连接。V3关系尚待查看更清晰照片和M2后判断。
+
+[原生M1/M2参考包](../runs/m1-m2-reference-v1/report.md)按`benchmarks/m1-m2-reference-v1.json`裁剪现有JPEG解码像素，输出无缩放、无叠加、无锐化PNG；原生坐标与哈希记录在manifest。M1-V3细节未作配准重采样；M2只提供宏观搜索区域及更大上下文，没有合格局部变换，不能当精确对应或用同尺寸合并。缩小定位图单独保存。
+
+最新[人工拓扑复核](../benchmarks/device-m1-m2-topology-feedback-v1.json)确认V3_G1/G2至少经M2同网。两栅物理身份与poly分离保持；公共栅网络N3_G与共享扩散N3_M是否连接仍未知，不能沿用旧N3_MG整体并网作为已确认结论。[更新器件表与图](../runs/device-m1-m2-reviewed-v1/report.md)单列这两个关系。M2精确过孔路径仍未由脚本核验，本次确认来源为用户。

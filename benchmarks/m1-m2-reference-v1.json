@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "purpose": "Native-pixel M1/M2 image references for V3 network review",
+  "inputs": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "network_review": {
+    "path": "benchmarks/device-m1-network-feedback-v1.json",
+    "sha256": "80373990b602a96adee1ba7a42d935953fbaac547bdd874e5a23dd24ce5bf4b8"
+  },
+  "registration": {
+    "path": "runs/registration-local-poly-m1-v1/manifest.json",
+    "sha256": "6e74a0f8b4b36e7d7f3012d874a24f1f8da5f926052405dae8cdd6b1715841b2"
+  },
+  "views": [
+    {
+      "id": "M1-V3-native",
+      "layer": "m1",
+      "crop_xywh_native": [
+        2468,
+        1399,
+        664,
+        294
+      ],
+      "basis": "Inverse image of the prior V3 poly ROI under candidate local M1 registration, padded 80 native pixels.",
+      "correspondence_status": "candidate_local_registration_not_exact_terminal_acceptance"
+    },
+    {
+      "id": "M1-context-native",
+      "layer": "m1",
+      "crop_xywh_native": [
+        1650,
+        1050,
+        1800,
+        1300
+      ],
+      "basis": "Broad M1 context around both device groups and registration structures.",
+      "correspondence_status": "same_M1_source_context"
+    },
+    {
+      "id": "M2-V3-search-native",
+      "layer": "m2",
+      "crop_xywh_native": [
+        2350,
+        1300,
+        1000,
+        650
+      ],
+      "basis": "AI macro-layout search area only; no M2 transform has passed local validation.",
+      "correspondence_status": "unregistered_search_area_not_exact_V3_mapping"
+    },
+    {
+      "id": "M2-context-native",
+      "layer": "m2",
+      "crop_xywh_native": [
+        1500,
+        950,
+        1950,
+        1500
+      ],
+      "basis": "Wider M2 reference context to locate the relevant routing.",
+      "correspondence_status": "unregistered_context"
+    }
+  ],
+  "processing": {
+    "resampling": false,
+    "enhancement": false,
+    "overlay_on_native_views": false,
+    "output_format": "lossless PNG of decoded source JPEG pixels"
+  },
+  "M2_registration_status": "not_established",
+  "M2_connection_decision": "unknown"
+}

@@ -43,3 +43,22 @@ def test_inconsistent_material_shapes_are_rejected():
             np.zeros((50, 50), bool),
             np.zeros((50, 50), np.uint8),
         )
+
+
+def test_narrow_ct_profile_recovers_vertical_contact_without_selecting_long_wire():
+    raw = np.full((100, 180, 3), 60, np.uint8)
+    raw[20:32, 20:25] = 250
+    raw[55:67, 30:42] = 250
+    raw[15:20, 60:170] = 250
+    legacy = ct_support(raw)
+    narrow = ct_support(raw, profile="narrow_vertical")
+    assert not legacy[26, 22]
+    assert narrow[26, 22]
+    assert legacy[61, 36] and narrow[61, 36]
+    assert not narrow[17, 100]
+    assert not np.any(legacy & ~narrow)
+
+
+def test_unknown_ct_profile_fails_instead_of_silently_changing_detection():
+    with pytest.raises(ValueError, match="unsupported CT profile"):
+        ct_support(np.zeros((50, 50, 3), np.uint8), profile="typo")

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "结合M1与M2的情况应该是两个gate连载一起了，至少在M2已经连在一起了",
+  "scope": "V3 gate-to-gate electrical connectivity via at least M2; not gate-to-shared-diffusion connectivity",
+  "sources": {
+    "prior_network_manifest": {
+      "path": "runs/device-m1-network-v1r1/manifest.json",
+      "sha256": "5026724df494bb965b2f9ebfa6d8f28688e314ff631b364ae2bccc80503d73f1"
+    },
+    "prior_network_feedback": {
+      "path": "benchmarks/device-m1-network-feedback-v1.json",
+      "sha256": "80373990b602a96adee1ba7a42d935953fbaac547bdd874e5a23dd24ce5bf4b8"
+    },
+    "reference_manifest": {
+      "path": "runs/m1-m2-reference-v1/manifest.json",
+      "sha256": "c66ecbf2bf14debfb34b4d39f1f1e259f89daeec647d1d9dd4069b5b9304b953"
+    },
+    "M1_native_detail": {
+      "path": "runs/m1-m2-reference-v1/M1-V3-native.png",
+      "sha256": "8ee75a4a901bf5d17f689664f75da2d6bbb7c43659fe8457a72a535f7590e28b"
+    },
+    "M2_search_reference": {
+      "path": "runs/m1-m2-reference-v1/M2-V3-search-native.png",
+      "sha256": "c8953abd60636c97b72f80bd26e3b14d7bb5cfcb0945587e90b7b86f3a969210"
+    },
+    "M2_wide_reference": {
+      "path": "runs/m1-m2-reference-v1/M2-context-native.png",
+      "sha256": "252c1ceb9200947c8e20464ed65646e74d3c400d0ea1dd307b1337c27df640ea"
+    },
+    "poly_topology_review": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    }
+  },
+  "decisions": [
+    {
+      "id": "V3_common_electrical_gate_net",
+      "status": "human_confirmed",
+      "physical_gate_ids": [
+        "V3_G1",
+        "V3_G2"
+      ],
+      "device_ids": [
+        "V3_Q1",
+        "V3_Q2"
+      ],
+      "common_net_id": "N3_G",
+      "connection_layer": "at_least_M2",
+      "local_poly_end_connection": false,
+      "M1_also_connects_gates": "not_decided_by_this_statement",
+      "basis": "human interpretation of M1/M2 images; not a script-validated M2 via path"
+    },
+    {
+      "id": "V3_gate_to_shared_diffusion",
+      "status": "unknown",
+      "net_ids": [
+        "N3_G",
+        "N3_M"
+      ],
+      "interpretation": "Gate-to-gate approval does not establish a connection from the common gate net to shared diffusion M.",
+      "supersedes": "prior N3_MG single-net grouping remains unaccepted as a whole"
+    }
+  ],
+  "reviewed_V3_devices": [
+    {
+      "id": "V3_Q1",
+      "physical_gate": "V3_G1",
+      "G": "N3_G",
+      "diffusion_A": "N3_A",
+      "diffusion_B": "N3_M",
+      "bulk": "unknown"
+    },
+    {
+      "id": "V3_Q2",
+      "physical_gate": "V3_G2",
+      "G": "N3_G",
+      "diffusion_A": "N3_M",
+      "diffusion_B": "N3_B",
+      "bulk": "unknown"
+    }
+  ],
+  "net_facts": {
+    "N3_G": "gate-to-gate common electrical net: human_confirmed",
+    "N3_M": "shared diffusion: inherited_human_confirmed",
+    "N3_A_N3_B": "outer diffusion/M1 mappings remain candidates",
+    "N3_G_vs_N3_M": "unknown_equivalence; distinct labels do not imply proven isolation"
+  },
+  "limitations": [
+    "M2 has not passed precise local registration; this decision is attributed to the human, not automatic measurement.",
+    "No per-via geometry, bulk, source/drain polarity, exact W/L or full-chip netlist approval.",
+    "Original candidate run and masks are unchanged; use this append-only review for the updated V3 interpretation."
+  ]
+}

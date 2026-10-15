@@ -1,0 +1,1055 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "baseline_approval": {
+      "path": "benchmarks/local-poly-repair-feedback-v1.json",
+      "sha256": "1be2067d17da006193d279986470d293e9a7fcd3335c977e280abe85329925fd"
+    },
+    "prior_terminal_manifest": {
+      "path": "runs/local-terminal-review-v1r1/manifest.json",
+      "sha256": "031430a795d87f19c7694cbf9a94de273f64ceadc00c2ce6376e12cae33cf237"
+    },
+    "mos_manifest": {
+      "path": "runs/local-mos-review-v1r1/manifest.json",
+      "sha256": "338adb321a66e635fa0a74c7f301bfcb091fa05336a304c662c645424e866cbe"
+    },
+    "terminal_spec": {
+      "path": "benchmarks/local-terminal-review-v1.json",
+      "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+    },
+    "sample": {
+      "path": "runs/human-annotation-sample-v1/manifest.json",
+      "sha256": "259017d87ba01be14c95a5622fd2ed48b55054734e0269e365d46c42b54da555"
+    }
+  },
+  "review_method": "AI inspected all 90 enumerated native raw-poly/mask thumbnails; structural human decisions inherited, CT associations remain candidates.",
+  "reviews": [
+    {
+      "ct_component_id": 245,
+      "roi_id": "V1",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 249,
+      "roi_id": "V1",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 250,
+      "roi_id": "V1",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 251,
+      "roi_id": "V1",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 255,
+      "roi_id": "V1",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V1_G",
+      "visual_note": "原图上端亮斑与栅延伸区相邻，保留栅接触候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 256,
+      "roi_id": "V1",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V1_G",
+      "visual_note": "原图上端亮斑与栅延伸区相邻，保留栅接触候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 268,
+      "roi_id": "V1",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V1_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 310,
+      "roi_id": "V1",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V1_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 246,
+      "roi_id": "V2",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 247,
+      "roi_id": "V2",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 248,
+      "roi_id": "V2",
+      "visual_detection": "outside_reviewed_MOS",
+      "association_review": "excluded",
+      "candidate_terminal": null,
+      "visual_note": "质心位于所选MOS检查ROI外的上方亮点行；不归属当前MOS。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 257,
+      "roi_id": "V2",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V2_G",
+      "visual_note": "原图上端亮斑与栅延伸区相邻，保留栅接触候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 258,
+      "roi_id": "V2",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V2_G",
+      "visual_note": "原图上端亮斑与栅延伸区相邻，保留栅接触候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 266,
+      "roi_id": "V2",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V2_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "左侧三个可见亮斑被合在一个检测分量中；不拆分成已确认触点。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 311,
+      "roi_id": "V2",
+      "visual_detection": "likely_screen_texture_false_positive",
+      "association_review": "conflict",
+      "candidate_terminal": null,
+      "visual_note": "原图为栅内部竖向拍屏纹理，缺少相邻CT那样的局部亮斑；疑似误报，端子不分配。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 312,
+      "roi_id": "V2",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V2_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 375,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_G1",
+      "visual_note": "原图上端亮斑与栅延伸区相邻，保留栅接触候选。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "左端上栅附近含上下亮斑，作为亮斑组保留，不按一个CT计数。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 376,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 377,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 378,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 379,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 380,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 381,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 382,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 383,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 384,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 385,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 386,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 387,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 388,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 389,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 390,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 391,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 392,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 393,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 394,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 395,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 397,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_A",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 398,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_A",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 399,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_A",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 400,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_A",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 408,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 409,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 410,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 411,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 412,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 413,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 414,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 415,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 416,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 417,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 418,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 419,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 420,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 421,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 423,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 424,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 425,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 426,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_M",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 427,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_M",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 428,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 429,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 430,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 431,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 432,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_M",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 434,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_M",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 438,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_G2",
+      "visual_note": "原图上端亮斑与栅延伸区相邻，保留栅接触候选。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "左端下栅附近为竖向亮斑组；接触的精确数量未定。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 439,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 441,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 442,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 443,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 444,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 445,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 449,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 450,
+      "roi_id": "V3",
+      "visual_detection": "weak_CT_or_screen_texture",
+      "association_review": "candidate_detection_uncertain",
+      "candidate_terminal": "V3_B",
+      "visual_note": "目标行存在较窄/弱亮支持，CT边界受拍屏条纹影响；仅保留所在行的端子候选。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 451,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 452,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 453,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 454,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 455,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 456,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 457,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 458,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "multiple_bright_lobes",
+      "multiplicity_note": "相邻亮斑在mask中合为同一分量；位置归属候选不等于单个触点确认。",
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 459,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 460,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 461,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 462,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 463,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 464,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    },
+    {
+      "ct_component_id": 465,
+      "roi_id": "V3",
+      "visual_detection": "CT_like_bright_support",
+      "association_review": "candidate",
+      "candidate_terminal": "V3_B",
+      "visual_note": "原图亮斑位于该扩散区接触行，保留行内端子候选；不据mask重叠推断连接。",
+      "multiplicity_review": "not_independently_counted",
+      "multiplicity_note": null,
+      "review_actor": "AI_visual_review_in_current_chat"
+    }
+  ],
+  "miss_candidates": [
+    {
+      "id": "P1",
+      "roi_id": "V1",
+      "xy_poly_crop": [
+        159,
+        268
+      ],
+      "candidate_terminal": "V1_A",
+      "visual_detection": "CT_like_bright_spot_missing_support",
+      "note": "左侧上方可见亮斑；与已检出的下方C310不同，局部无CT支持。"
+    },
+    {
+      "id": "P2",
+      "roi_id": "V2",
+      "xy_poly_crop": [
+        306,
+        270
+      ],
+      "candidate_terminal": "V2_B",
+      "visual_detection": "CT_like_bright_spot_missing_support",
+      "note": "右侧上方可见亮斑；与已检出的下方C312不同，局部无CT支持。"
+    },
+    {
+      "id": "P3",
+      "roi_id": "V3",
+      "xy_poly_crop": [
+        954,
+        466
+      ],
+      "candidate_terminal": "V3_B",
+      "visual_detection": "uncertain_narrow_bright_spot_or_screen_stripe",
+      "note": "下排窄亮斑无CT支持；与竖向拍屏条纹难区分，仅列待裁决候选。"
+    }
+  ],
+  "miss_probe_radius_px": 4,
+  "mask_edit_authorized": false
+}

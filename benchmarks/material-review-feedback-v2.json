@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "checkpoint": "material-review-v2",
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "source_run": "runs/material-review-v2",
+  "source_manifest_sha256": "abe9475e09e21cd733baea3c3d492b362351d5a4ef7349d2ec66855151e6675a",
+  "statement": "批准候选，C就这张图来看，CT基本提取的没有什么问题了",
+  "scope": "current 1500x850 local sample only; qualitative visual approval",
+  "reviewed_artifact": {
+    "path": "runs/material-review-v2/CT-new-support-overlay.png",
+    "sha256": "2d4162a56c59a8f34938fc70a7179a84f0d60146fa55f0fcefbb92d3af5a0c1e"
+  },
+  "source_report": {
+    "path": "runs/material-review-v2/CT-report.md",
+    "sha256": "8c6a12f7392feab1c86296483d81e8046817e602121f722a46974bc317b056ad"
+  },
+  "layers": {
+    "AA": {
+      "human_review": "acceptable_for_this_local_view",
+      "basis": "inherited from material-review-feedback-v1; v2 mask byte-identical",
+      "mask_sha256": "594b307bc3805ed867c51e1ea2a4e7a2f63902434085c4dff9f473fd71ce31ff",
+      "center_ring_separation": "accepted"
+    },
+    "poly": {
+      "human_review": "acceptable_for_this_local_view",
+      "basis": "inherited from material-review-feedback-v1; v2 mask byte-identical",
+      "mask_sha256": "b4384b8072b96701430e03fbfb85efd46e09eda77cea04b41f883c31a40e4b8d"
+    },
+    "CT": {
+      "human_review": "approved_for_this_local_view",
+      "basis": "explicit user approval of CT v2 displayed overlay",
+      "mask_sha256": "5635b0cbc920c689075bc50f83c1ab4ca5ce95d48083933ec69352c5438b5e7e",
+      "ct_profile": "narrow_vertical",
+      "recall_measured": false,
+      "precision_measured": false
+    }
+  },
+  "prior_review": {
+    "path": "benchmarks/material-review-feedback-v1.json",
+    "sha256": "77a1558338914cc9758fa29e6f616048bc41a512c2e5d87fe419570d3085e905"
+  },
+  "supersedes": "prior local CT known-miss review for this v2 mask only; historical v1 remains unchanged",
+  "limitations": [
+    "qualitative approval, not per-pixel ground truth",
+    "not full-chip or eight-layer acceptance",
+    "no device, terminal or connectivity acceptance"
+  ],
+  "next_action": "use the approved local AA/poly/CT baseline to evaluate MOS channel and contact-assignment candidates within the registered local region"
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "checkpoint": "local-mos-review-v1r1",
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "三者都批准，但是V3是两个MOS原漏共用",
+  "normalized_statement": "V1、V2、V3均批准；V3为两个MOS，共用源/漏扩散区。",
+  "scope": "three reviewed local ROIs only; structure approval, not exact geometry, individual CT assignments or full-chip connectivity",
+  "source_manifest": {
+    "path": "runs/local-mos-review-v1r1/manifest.json",
+    "sha256": "338adb321a66e635fa0a74c7f301bfcb091fa05336a304c662c645424e866cbe"
+  },
+  "source_report": {
+    "path": "runs/local-mos-review-v1r1/report.md",
+    "sha256": "5772f77a350d0cc8c91bf5da004646f634d8fa8b882724acd949206bece3e5ca"
+  },
+  "material_approval": {
+    "path": "benchmarks/material-review-feedback-v2.json",
+    "sha256": "ce867aaa9214e8c7cf480aabf3ee346fd4733ab637af968d881971d4281d41c4"
+  },
+  "reviewed_regions": [
+    {
+      "roi_id": "V1",
+      "xywh_poly_crop": [
+        145,
+        215,
+        90,
+        120
+      ],
+      "poly_native_xywh": [
+        1925,
+        1185,
+        90,
+        120
+      ],
+      "artifact": {
+        "path": "runs/local-mos-review-v1r1/V1.png",
+        "sha256": "69ca398d7be60a1ecd632f1ccc2d30a18d96da71cbfa483c4e83329ccd72e637"
+      },
+      "structure_review": "approved_for_this_local_view",
+      "approved_mos_count": 1,
+      "device_ids": [
+        "V1_Q1"
+      ],
+      "precise_channel_geometry": "not_independently_accepted",
+      "ct_assignments": "unknown"
+    },
+    {
+      "roi_id": "V2",
+      "xywh_poly_crop": [
+        235,
+        215,
+        95,
+        120
+      ],
+      "poly_native_xywh": [
+        2015,
+        1185,
+        95,
+        120
+      ],
+      "artifact": {
+        "path": "runs/local-mos-review-v1r1/V2.png",
+        "sha256": "ab1f0a165b20205bf1b61ea0f260d2424177d93679a5d3c40c8cc7c746ff10ab"
+      },
+      "structure_review": "approved_for_this_local_view",
+      "approved_mos_count": 1,
+      "device_ids": [
+        "V2_Q1"
+      ],
+      "precise_channel_geometry": "not_independently_accepted",
+      "ct_assignments": "unknown"
+    },
+    {
+      "roi_id": "V3",
+      "xywh_poly_crop": [
+        830,
+        400,
+        460,
+        90
+      ],
+      "poly_native_xywh": [
+        2610,
+        1370,
+        460,
+        90
+      ],
+      "artifact": {
+        "path": "runs/local-mos-review-v1r1/V3.png",
+        "sha256": "d957454c246dd69532c7262bb74e675aa08b69439fe521d618228c6ca0050ee1"
+      },
+      "structure_review": "approved_for_this_local_view",
+      "approved_mos_count": 2,
+      "device_ids": [
+        "V3_Q1",
+        "V3_Q2"
+      ],
+      "precise_channel_geometry": "not_independently_accepted",
+      "ct_assignments": "unknown",
+      "shared_diffusion": {
+        "status": "human_confirmed",
+        "participants": [
+          "V3_Q1",
+          "V3_Q2"
+        ],
+        "relation": "shared_source_drain_diffusion",
+        "source_vs_drain_assignment": "unknown",
+        "exact_boundary": "unknown",
+        "number_of_shared_terminals": null,
+        "gate_connectivity": "unknown",
+        "basis": "explicit user correction; not connected-component inference"
+      }
+    }
+  ],
+  "approved_local_mos_count": 4,
+  "limitations": [
+    "No source/drain polarity assigned.",
+    "Shared diffusion does not imply gates are tied.",
+    "No individual CT-to-terminal assignment approved.",
+    "Registration sensitivity and unknown physical scale remain unchanged.",
+    "Original candidate manifest is retained as generated."
+  ]
+}

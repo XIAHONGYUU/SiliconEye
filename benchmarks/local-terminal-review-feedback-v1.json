@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "checkpoint": "local-terminal-review-v1r1",
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "1.绿色的中间行M就是共用原漏区域 2.G1和G2没有通过端部poly连成同一个栅",
+  "scope": "V3 local shared diffusion location and absence of local end-poly gate connection only",
+  "sources": {
+    "terminal_manifest": {
+      "path": "runs/local-terminal-review-v1r1/manifest.json",
+      "sha256": "031430a795d87f19c7694cbf9a94de273f64ceadc00c2ce6376e12cae33cf237"
+    },
+    "terminal_report": {
+      "path": "runs/local-terminal-review-v1r1/report.md",
+      "sha256": "38949c2366af41bbf4ac1231e6eea4b3a9801ee34362bcf3e488212b19506ad3"
+    },
+    "reviewed_V3_image": {
+      "path": "runs/local-terminal-review-v1r1/V3-terminals.png",
+      "sha256": "de5e28fd0a93afe96b9ddeaecb21e596f53970f5c01743eeee1584cb69b2e003"
+    },
+    "terminal_spec": {
+      "path": "benchmarks/local-terminal-review-v1.json",
+      "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+    },
+    "structure_approval": {
+      "path": "benchmarks/local-mos-review-feedback-v1.json",
+      "sha256": "58fb8fa1f7317eb70d8cb41e6b38d9ebc61c925205475d0a24e42214aee61d51"
+    }
+  },
+  "decisions": [
+    {
+      "id": "V3_shared_middle",
+      "status": "human_confirmed",
+      "zone_id": "V3_M",
+      "xywh_poly_crop": [
+        860,
+        432,
+        408,
+        18
+      ],
+      "interpretation": "Middle row M is the shared source/drain diffusion region of the two MOS devices.",
+      "participants": [
+        "V3_Q1",
+        "V3_Q2"
+      ],
+      "precise_material_boundary": "not_pixel_annotated",
+      "source_drain_polarity": "unknown",
+      "individual_CT_connections": "not_reviewed"
+    },
+    {
+      "id": "V3_common_gate",
+      "status": "human_rejected",
+      "gate_ids": [
+        "V3_G1",
+        "V3_G2"
+      ],
+      "interpretation": "G1 and G2 are not joined through local end poly.",
+      "local_end_poly_connected": false,
+      "remote_metal_connectivity": "unknown",
+      "mask_topology_status": "conflict_with_human_review",
+      "conflicting_poly_component_ids": [
+        24
+      ],
+      "mask_repair_geometry": "not_yet_defined"
+    }
+  ],
+  "constraints": {
+    "keep_gate_nodes_distinct": [
+      "V3_G1",
+      "V3_G2"
+    ],
+    "forbid_merge_based_on_local_poly_component": true,
+    "shared_diffusion_node": {
+      "id": "V3_M",
+      "members": [
+        "V3_Q1",
+        "V3_Q2"
+      ],
+      "status": "human_confirmed"
+    },
+    "individual_CT_connections": "unknown",
+    "source_drain_polarity": "unknown",
+    "confirmed_netlist_ready": false
+  },
+  "limitations": [
+    "No exact cut line or pixel boundary supplied for poly mask repair.",
+    "No inference that the gates cannot connect elsewhere through metal.",
+    "No extension of this approval to all candidate CT/window associations.",
+    "Original masks and candidate artifacts remain unchanged; append this review."
+  ]
+}

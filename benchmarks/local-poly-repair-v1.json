@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "topology_review": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "material_approval": {
+      "path": "benchmarks/material-review-feedback-v2.json",
+      "sha256": "ce867aaa9214e8c7cf480aabf3ee346fd4733ab637af968d881971d4281d41c4"
+    },
+    "raw_poly": {
+      "path": "runs/material-review-v2/raw-poly.png",
+      "sha256": "8167c2639277c793d7168c669d9c7f9e9edb5f5b6fc0e7582f0307a0022b5c78"
+    },
+    "raw_aa": {
+      "path": "runs/material-review-v2/raw-aa.png",
+      "sha256": "d8bf3e4b4067fc87792a6a6af958a709dbedf2225b1f377c7d86e85a6ea2f388"
+    },
+    "poly_mask": {
+      "path": "runs/material-review-v2/02-poly-mask.png",
+      "sha256": "b4384b8072b96701430e03fbfb85efd46e09eda77cea04b41f883c31a40e4b8d"
+    },
+    "aa_mask": {
+      "path": "runs/material-review-v2/01-AA-mask.png",
+      "sha256": "594b307bc3805ed867c51e1ea2a4e7a2f63902434085c4dff9f473fd71ce31ff"
+    },
+    "ct_mask": {
+      "path": "runs/material-review-v2/03-CT-mask.png",
+      "sha256": "5635b0cbc920c689075bc50f83c1ab4ca5ce95d48083933ec69352c5438b5e7e"
+    },
+    "sample": {
+      "path": "runs/human-annotation-sample-v1/manifest.json",
+      "sha256": "259017d87ba01be14c95a5622fd2ed48b55054734e0269e365d46c42b54da555"
+    }
+  },
+  "selection_actor": "AI_visual_review_constrained_by_human_topology_decision",
+  "roi_xywh_poly_crop": [
+    820,
+    390,
+    485,
+    105
+  ],
+  "separator_xywh_poly_crop": [
+    839,
+    435,
+    440,
+    11
+  ],
+  "separator_interpretation": "Shared M row between two visible horizontal gate bands; retire uncertain poly support, do not declare material absence. Includes both end bridges and internal mask bridges.",
+  "gate_seed_pair_xy_poly_crop": [
+    [
+      1000,
+      426
+    ],
+    [
+      1000,
+      452
+    ]
+  ],
+  "protected_gate_bands_xywh": [
+    [
+      839,
+      423,
+      440,
+      8
+    ],
+    [
+      839,
+      449,
+      440,
+      8
+    ]
+  ],
+  "sensitivity_separators_xywh": [
+    [
+      839,
+      438,
+      440,
+      5
+    ],
+    [
+      839,
+      435,
+      440,
+      11
+    ],
+    [
+      839,
+      433,
+      440,
+      15
+    ]
+  ],
+  "geometry_status": "candidate_not_pixel_ground_truth",
+  "removed_support_status": "unknown_not_confirmed_non_poly"
+}

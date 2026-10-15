@@ -27,8 +27,10 @@ def read_paint(marked: np.ndarray, original: np.ndarray) -> dict:
     return {"aa": red.astype(np.uint8) * 255, "poly": blue.astype(np.uint8) * 255}
 
 
-def ct_support(image: np.ndarray) -> np.ndarray:
+def ct_support(image: np.ndarray, *, profile: str = "legacy") -> np.ndarray:
     """Bright compact residuals only; CT shape remains an inferred localization."""
+    if profile not in {"legacy", "narrow_vertical"}:
+        raise ValueError(f"unsupported CT profile: {profile}")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     smooth = cv2.GaussianBlur(gray, (5, 5), 1)
     residual = smooth.astype(float) - cv2.GaussianBlur(smooth, (0, 0), 4).astype(float)
@@ -37,7 +39,12 @@ def ct_support(image: np.ndarray) -> np.ndarray:
     result = np.zeros_like(peaks)
     for index in range(1, count):
         _, _, w, h, area = stats[index]
-        if 20 <= area <= 450 and min(w, h) >= 5 and max(w, h) <= 40 and 0.5 < w / h < 2:
+        shape_ok = (
+            min(w, h) >= 5 and 0.5 < w / h < 2
+            if profile == "legacy"
+            else w >= 3 and h >= 5 and 0.25 <= w / h < 2
+        )
+        if 20 <= area <= 450 and max(w, h) <= 40 and shape_ok:
             result[labels == index] = 1
     return cv2.dilate(result, np.ones((3, 3), np.uint8)).astype(bool)
 

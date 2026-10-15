@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "approval": {
+      "path": "benchmarks/material-review-feedback-v2.json",
+      "sha256": "ce867aaa9214e8c7cf480aabf3ee346fd4733ab637af968d881971d4281d41c4"
+    },
+    "materials": {
+      "path": "runs/material-review-v2/manifest.json",
+      "sha256": "abe9475e09e21cd733baea3c3d492b362351d5a4ef7349d2ec66855151e6675a"
+    },
+    "sample": {
+      "path": "runs/human-annotation-sample-v1/manifest.json",
+      "sha256": "259017d87ba01be14c95a5622fd2ed48b55054734e0269e365d46c42b54da555"
+    },
+    "registration": {
+      "path": "benchmarks/local-ring-aa-poly-v1/baseline/manifest.json",
+      "sha256": "bd448b156323133f52faf38bcac3fe41fd6f5cf626df103bb8310ce803ec2143"
+    }
+  },
+  "rois": [
+    {
+      "id": "V1",
+      "xywh_poly_crop": [
+        145,
+        215,
+        90,
+        120
+      ],
+      "interpretation": "AI目视候选：短竖向poly穿过AA，可见左右AA及上方CT。侧边CT可能接AA，上方CT可能接poly；归属待复核，暂不命名源漏。"
+    },
+    {
+      "id": "V2",
+      "xywh_poly_crop": [
+        235,
+        215,
+        95,
+        120
+      ],
+      "interpretation": "AI目视候选：第二处短竖向交叉；上端CT遮挡poly，不补隐藏轮廓。不因形状相似直接认定与V1为同类器件。"
+    },
+    {
+      "id": "V3",
+      "xywh_poly_crop": [
+        830,
+        400,
+        460,
+        90
+      ],
+      "interpretation": "AI目视候选：独立中央AA上有两条横向poly带，端部连接及CT遮挡使多指栅/相邻结构归属未知。轮廓连通数不等于器件数；中央AA不与环相连。"
+    }
+  ]
+}

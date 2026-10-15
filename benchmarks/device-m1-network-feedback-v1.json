@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-15",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "1.有没有更清晰的照片发给我，需要参考M2的情况。2.保持断开",
+  "source_manifest": {
+    "path": "runs/device-m1-network-v1r1/manifest.json",
+    "sha256": "5026724df494bb965b2f9ebfa6d8f28688e314ff631b364ae2bccc80503d73f1"
+  },
+  "source_report": {
+    "path": "runs/device-m1-network-v1r1/report.md",
+    "sha256": "4632edfcdb5afa7124d447b1d889e35fcafe6bd2f139dd6f048373f005ff07a3"
+  },
+  "V12_evidence": {
+    "path": "runs/device-m1-network-v1r1/V12-networks.png",
+    "sha256": "a86be09a8af79e04f85ec58fa212d9ad4ea93bb0d2175fc9fbf6e2a6d0a9379e"
+  },
+  "V3_evidence": {
+    "path": "runs/device-m1-network-v1r1/V3-networks.png",
+    "sha256": "dc2c404d89ab883c2060d89f5c6bd15d32a4536970f0e5d7481d517f34ba7e28"
+  },
+  "decisions": [
+    {
+      "id": "V12_route_gap",
+      "status": "human_confirmed",
+      "local_m1_join": false,
+      "local_route_ids": [
+        "N12_A",
+        "N12_BG"
+      ],
+      "interpretation": "Thin branch remains disconnected from the lower U-shaped M1 route in the reviewed local area.",
+      "global_net_equivalence": "unknown_including_possible_M2_or_remote_connections"
+    },
+    {
+      "id": "V3_M1_strap",
+      "status": "pending_better_images_and_M2_context",
+      "interpretation": "User requests clearer native M1 imagery and M2 reference before deciding this relation.",
+      "approved": false
+    }
+  ],
+  "limitations": [
+    "Approval is scoped to the local M1 gap only, not global electrical isolation.",
+    "No blanket approval of all device/M1 candidate connections."
+  ]
+}

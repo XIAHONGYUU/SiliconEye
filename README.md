@@ -150,4 +150,4 @@ silicon-eye info -c configs/test_chip.yaml
 
 人工示例引导的 AA/poly 重新提取与 CT 遮挡处理：[示例引导说明](docs/guided-material-extraction.md)。
 
-当前局部材料版本：AA/poly 经用户目视认可，CT 仍有漏检；详见 [复核状态](benchmarks/material-review-feedback-v1.json)。
+2026-10-15 开发快照：局部 CT v2 与 poly 分离修正获目视认可，V3 两栅至少经 M2 同网；栅与共享扩散区 M 是否相连仍未知。详见[四MOS工作流与结论快照](docs/checkpoints/2026-10-15-local-device-network.md)，实时任务仍以 `CURRENT_TASK.md` 为准。
