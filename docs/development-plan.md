@@ -14,7 +14,7 @@
 
 2026-10-16提交阶段确认：下一步先做最小顶层架构设计（数据契约、判断/裁决、最新状态应用、统一输出），交现有模块映射和最小迁移方案，再通过第二ROI检验。当前不继续优化V3细节，也不直接开展大型重构。
 
-最小架构设计见[设计v1](architecture/block-review-v1.md)和[V3契约样例](architecture/block-case-v1.example.json)。B/C受限实现已增加[统一复核入口](block-review.md)，旧入口保持原行为；下一门槛是第二ROI复用，不能以ID重命名测试代替新照片验证。
+最小架构设计见[设计v1](architecture/block-review-v1.md)和[V3契约样例](architecture/block-case-v1.example.json)。B/C受限实现已增加[统一复核入口](block-review.md)，旧入口保持原行为。第二ROI已有局部结构/材料身份和宏观配准的有范围复核，并完成[统一包入口](review-package.md)；完整尺寸/拓扑仍未验收。后续优先级见[本轮工作流评估](workflow-assessment-2026-10-16.md)，不能把同芯片协同探索当盲测泛化。
 
 | 顺序 | 工作 | 交付与验收 |
 | --- | --- | --- |

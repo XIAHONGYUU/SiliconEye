@@ -1,6 +1,6 @@
 # 当前任务
 
-## 任务合同：统一复核包入口已实现并验证
+## 任务合同：统一包与ROI2结论已推送，工作流评估完成
 
 - **目标/授权**：用户选中统一复核包入口并要求继续；本轮实现case、已验收配准、材料观察的一次联合导出。保留原结论与验收边界，不新增照片判断或零碎确认。
 - **入口**：`silicon-eye annotate review-package --spec benchmarks/review-package-roi2-v1.json --root . -o 新目录`；[使用说明](docs/review-package.md)。当前[统一包](runs/roi2-unified-package-v2/report.md)；电路仍复用annotate block，不替换历史输出。
@@ -19,9 +19,9 @@
 
 ## 唯一下一步
 
-在现有两ROI范围明确AI材料观察的规范化输入/输出：身份、候选几何、遮挡未知及来源分别登记，让会话AI判断可以直接交给已完成的统一包入口。不扩第三ROI，不先接外部模型平台，不再追问已确认材料身份；W/L与细边界继续未知。
+先补最小版本化证据输入及全新检出重放：ROI2统一请求有9项runs输入未在Git中，优先使完整示例无需原工作目录即可复现。迁移采用新规范化修订或明确恢复步骤，不追改旧裁决/哈希；不提交整个runs。
 
-现有统一包已可一次导出，暂不因软件通过升级物理验收。下一阶段先找最小契约缺口，不再新增临时案例组装脚本。
+之后再做AI观察的规范化契约与输入适配，最后少量固定新ROI验证候选生成/人工干预负担。暂不推进精细W/L、M3/M4、整芯片/仿真或外部模型平台。详见[工作流评估](docs/workflow-assessment-2026-10-16.md)。本轮仅提交与评估，未开始实施这些新任务。
 
 选择区与原poly主样片不重叠，来自同一芯片且经过目视挑选；不称独立盲测或跨芯片泛化。两符号代表已确认的两条相邻MOS栅指，不代表两个完整独立器件已确认或整个阵列仅有两个MOS；多指器件归并尚未成立。
 
@@ -182,3 +182,9 @@ V3重放保持两MOS、四端同网、两处M1映射和两个未知体端。C001
 ## 当前版本提交检查（2026-10-16）
 
 用户要求先提交GitHub再评估workflow。核验账号XIAHONGYUU（280077814），沿用已配置noreply身份；fetch后本地main与origin/main无分叉。196 tests、相关Ruff及git diff --check通过。新增docs/checkpoints/2026-10-16-roi2-reviewed.md及SVG/JSON/CSV，GitHub可直接阅读结论；runs/.venv不纳入提交，原始照片未改。ROI2复核包有9项runs输入未随Git版本发布，完整新克隆重放尚未成立，不能用本机源清单重放替代这一缺口。实际提交/推送结果以Git refs核验为准。
+
+## GitHub提交与工作流评估结果（2026-10-16）
+
+代码/测试/ROI2静态结论已推送main，远端refs/heads/main核验为6b067ca34d0a5ccd48d134f195cc588b0a625b18。账号XIAHONGYUU（280077814）、noreply身份不变。普通git push缺HTTPS凭证助手，改用本次命令范围内gh auth git-credential完成，无全局凭证配置变更。196 tests、相关Ruff/哈希与范围检查通过。
+
+评估结论：已具备会话AI协同+人工裁决+脚本重放的局部工作流，尚非运行时自动照片提取。实测只复制Git跟踪输入时，ROI2请求因缺runs/roi2-registration-gate-v1/report.md在输出前失败；共9项runs输入未版本化。下一项P0是有限证据输入及新检出复现，P1才是AI观察规范化接口，P2再做小样本候选生成/人工干预评估。详见docs/workflow-assessment-2026-10-16.md。评估文档本身另行提交归档，未实施新提取/依赖迁移。
