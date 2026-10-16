@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "actor": "reasoning_model",
+  "status": "candidate",
+  "case_id": "ROI2_finger_pair",
+  "method": "session_visual_inspection_of_native_photo_crops",
+  "context_windows_native_xywh": {
+    "poly": [
+      1650,
+      2630,
+      800,
+      500
+    ],
+    "aa": [
+      1720,
+      2750,
+      800,
+      500
+    ],
+    "m1": [
+      1590,
+      2730,
+      800,
+      500
+    ]
+  },
+  "selection": {
+    "poly_prior_primary_sample_xywh": [
+      1780,
+      970,
+      1500,
+      850
+    ],
+    "overlap_with_prior_primary_sample": false,
+    "is_blind_holdout": false,
+    "same_chip": true
+  },
+  "candidate_devices": [
+    {
+      "id": "R2_Q1",
+      "poly_native_inspection_xywh": [
+        1740,
+        2700,
+        40,
+        128
+      ]
+    },
+    {
+      "id": "R2_Q2",
+      "poly_native_inspection_xywh": [
+        1795,
+        2700,
+        40,
+        128
+      ]
+    }
+  ],
+  "interpretation": [
+    "选中下方阵列左上方相邻两条指状沟道候选；两个符号只代表所选两指，不代表整个阵列仅有两只MOS，也不预设并联合并。",
+    "poly图可见重复接触列及其间暗色纵向条；AA图对应阵列上排为长条支持区。暂提两相邻MOS指和中间扩散区共享候选。",
+    "约定A在各指左侧，B在右侧；因此共享候选为Q1.B/Q2.A。A/B不指派源漏。",
+    "M1整体结构相似，但本区无独立验收配准；M1图仅供同组上下文复核，不登记逐端映射或确定同网。"
+  ],
+  "alternatives": [
+    "暗条中的拍屏纹理或材料边界可能被误认为栅；器件存在与门数需人复核。",
+    "两指可能属于同一个多指器件；未确认栅连通和两侧扩散金属走向前不合并器件。"
+  ],
+  "unknowns": [
+    "两栅的实际连接、外侧端子和体端走向",
+    "N/P、源漏方向、物理W/L与像素边界"
+  ],
+  "review_questions": [
+    "Q1/Q2标记的两条是否确为MOS栅指，且中间扩散区为二者共用？",
+    "这两指的栅是否相连、外侧扩散端是否通过M1相连？允许回答暂不确定。"
+  ]
+}

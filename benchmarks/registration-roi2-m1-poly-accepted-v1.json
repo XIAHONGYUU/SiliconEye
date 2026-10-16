@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "document_kind": "reviewed_local_registration",
+  "profile_id": "ROI2_M1_to_poly_macro_v1",
+  "status": "human_accepted_for_limited_macro_use",
+  "decision_source": {
+    "path": "benchmarks/registration-roi2-macro-review-feedback-v1.json",
+    "sha256": "da7fa87accf69c7e54f72d1503960a4de1a0f5f035fb3b5ba06125acf3b16498"
+  },
+  "frozen_transform_source": {
+    "path": "runs/roi2-local-warp-v1/transforms.json",
+    "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0"
+  },
+  "reference": {
+    "layer": "poly",
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "unit": "native_px"
+  },
+  "target": {
+    "layer": "m1",
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "unit": "native_px"
+  },
+  "mapping_direction": "target_native_to_reference_native",
+  "model": "homography",
+  "matrix": [
+    [
+      0.9787080329117435,
+      -0.0005436022360308021,
+      46.21504214481547
+    ],
+    [
+      -0.006919378991572523,
+      0.9847418406654099,
+      -95.86370055045026
+    ],
+    [
+      -5.22842947708295e-06,
+      -1.7014197430942254e-07,
+      1.0
+    ]
+  ],
+  "reference_native_to_output_crop": [
+    [
+      1.0,
+      0.0,
+      -1550.0
+    ],
+    [
+      0.0,
+      1.0,
+      -2550.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reviewed_reference_frame_polygons_xy": [
+    [
+      [
+        1699.7177613567628,
+        2699.3797254941496
+      ],
+      [
+        3130.925925157668,
+        2671.7324575029024
+      ],
+      [
+        3132.945681199802,
+        3060.5183655152655
+      ],
+      [
+        1709.5855516329723,
+        3092.28276143895
+      ]
+    ],
+    [
+      [
+        1710.1026784980825,
+        3128.9238191515215
+      ],
+      [
+        3133.3174201308248,
+        3096.6545573726385
+      ],
+      [
+        3135.9446912358844,
+        3679.9336524782702
+      ],
+      [
+        1728.6124405233402,
+        3709.3351201073624
+      ]
+    ]
+  ],
+  "output_crop_size_wh": [
+    1700,
+    1300
+  ],
+  "allowed_uses": [
+    "ROI2 two framed array blocks macro visual overlay",
+    "coarse localization and material candidate review with native-source traceability"
+  ],
+  "not_accepted_for": [
+    "exact CT landing",
+    "fine material edges",
+    "W/L measurement",
+    "new electrical connectivity",
+    "other image regions"
+  ],
+  "historical_localization_status": "M1 automatic outer ridge sampling failed; original transform based on AI rough corners; identities later human-confirmed. No automatic-corner accuracy upgrade.",
+  "resampling": "once from native source, bilinear imagery; nearest binary masks; original raw images unchanged",
+  "reviewed_A_B_distance_px": [
+    2.115771524933356,
+    3.1412921632413915
+  ],
+  "measurement_limit": "distances of chosen ridge intersections; not certified alignment uncertainty",
+  "acceptance": {
+    "macro_overlay": true,
+    "internal_AB_identity": true,
+    "automatic_outer_edge_localization": false,
+    "contact_landing": false,
+    "fine_material_boundary": false,
+    "dimensions": false,
+    "electrical_topology": false,
+    "AA_specific_internal_registration": false
+  }
+}

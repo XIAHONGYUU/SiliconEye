@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "actor": "reasoning_model",
+  "status": "human_confirmed_material_identity_coarse_location_only",
+  "case_id": "ROI2_finger_pair",
+  "method": "session_AI_visual_interpretation_of_raw_photos; scripts only rasterize declared supports and apply unchanged CT heuristic",
+  "regions": [
+    {
+      "id": "R2_AA_support_fragment",
+      "material": "aa",
+      "frame": "aa_native",
+      "status": "human_confirmed_material_identity_coarse_location_only",
+      "native_source": "data/test_chip/tile_full/aa.jpg",
+      "core_polygon_xy": [
+        [
+          1812,
+          2857
+        ],
+        [
+          1922,
+          2855
+        ],
+        [
+          1923,
+          2934
+        ],
+        [
+          1813,
+          2936
+        ]
+      ],
+      "envelope_polygon_xy": [
+        [
+          1804,
+          2849
+        ],
+        [
+          1932,
+          2847
+        ],
+        [
+          1933,
+          2944
+        ],
+        [
+          1806,
+          2946
+        ]
+      ],
+      "boundary_semantics": {
+        "left": "approximate_candidate",
+        "right": "window_clip_not_material_edge",
+        "top": "approximate_candidate",
+        "bottom": "approximate_candidate"
+      },
+      "note": "Local fragment of upper long AA strip, not the complete array and not a connection to outer guard frame.",
+      "geometry_status": "AI_candidate_not_pixel_boundary_truth"
+    },
+    {
+      "id": "R2_poly_Q1_support",
+      "material": "poly",
+      "frame": "poly_native",
+      "device_id": "R2_Q1",
+      "status": "human_confirmed_material_identity_coarse_location_only",
+      "native_source": "data/test_chip/tile_full/poly.jpg",
+      "core_polygon_xy": [
+        [
+          1749,
+          2730
+        ],
+        [
+          1765,
+          2730
+        ],
+        [
+          1769,
+          2803
+        ],
+        [
+          1752,
+          2804
+        ]
+      ],
+      "envelope_polygon_xy": [
+        [
+          1741,
+          2710
+        ],
+        [
+          1773,
+          2710
+        ],
+        [
+          1779,
+          2824
+        ],
+        [
+          1747,
+          2828
+        ]
+      ],
+      "boundary_semantics": {
+        "all": "coarse_visual_envelope_not_true_contour"
+      },
+      "note": "Broad finger body between CT columns; screen-grid cells are not individual poly pieces. Tip and top transition uncertain.",
+      "geometry_status": "AI_candidate_not_pixel_boundary_truth"
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "material": "poly",
+      "frame": "poly_native",
+      "device_id": "R2_Q2",
+      "status": "human_confirmed_material_identity_coarse_location_only",
+      "native_source": "data/test_chip/tile_full/poly.jpg",
+      "core_polygon_xy": [
+        [
+          1805,
+          2730
+        ],
+        [
+          1821,
+          2730
+        ],
+        [
+          1825,
+          2800
+        ],
+        [
+          1809,
+          2802
+        ]
+      ],
+      "envelope_polygon_xy": [
+        [
+          1797,
+          2708
+        ],
+        [
+          1829,
+          2708
+        ],
+        [
+          1835,
+          2821
+        ],
+        [
+          1803,
+          2825
+        ]
+      ],
+      "boundary_semantics": {
+        "all": "coarse_visual_envelope_not_true_contour"
+      },
+      "note": "Broad adjacent finger body; envelope ends are approximate and not a MOS dimension.",
+      "geometry_status": "AI_candidate_not_pixel_boundary_truth"
+    }
+  ],
+  "sources": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    }
+  },
+  "registration": {
+    "path": "benchmarks/registration-roi2-m1-poly-accepted-v1.json",
+    "sha256": "c4bc67269a3315c5766854116b136b3657a2ad2c63eaeddaefe6dfe75cdce8a2",
+    "scope": "M1/poly macro overlay only; not fine AA/poly boundary alignment"
+  },
+  "crop_windows_native_xywh": {
+    "aa": [
+      1770,
+      2800,
+      270,
+      240
+    ],
+    "poly": [
+      1700,
+      2670,
+      270,
+      240
+    ]
+  },
+  "ct": {
+    "source": "poly.jpg",
+    "method": "existing ct_support profile narrow_vertical on declared context with48px padding",
+    "status": "brightness_localization_candidate_not_reviewed_ct_truth",
+    "semantics": "Where CT is plausible, underlying material remains unknown; do not cut electrical continuity."
+  },
+  "alternatives": [
+    "Blue broad bright/grid-textured strips might include field/background if material interpretation is wrong; adjacent dark CT-bearing columns are a different image feature.",
+    "Coarse AA support may omit real boundary pixels; right side is a cropped continuation, not a material terminus."
+  ],
+  "unknowns": [
+    "Actual poly edges and transition endpoints",
+    "AA/poly fine overlap in a common validated frame",
+    "Exact CT material occlusion boundaries and landing",
+    "Pixel or physical W/L"
+  ],
+  "review_question": "answered: AA/poly认对了",
+  "normalization": "Material identity and coarse location accepted by user. Core/envelope geometry remains candidate; no pixel-accurate truth or measurement inferred.",
+  "review_source": {
+    "path": "benchmarks/block-roi2-material-review-feedback-v1.json",
+    "sha256": "d1b1d1778ec271461ca6c9116ac41be13ff93f475047e3b82043e7ed823fa334"
+  }
+}

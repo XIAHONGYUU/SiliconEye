@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "scope": "internal frame ridge diagnostic only; no individual CT census or electrical changes",
+  "frozen_transform": {
+    "path": "runs/roi2-local-warp-v1/transforms.json",
+    "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0"
+  },
+  "human_frame_feedback": {
+    "path": "benchmarks/registration-roi2-frame-feedback-v1.json",
+    "sha256": "ab3b4f69ddc3e88800032aabd8952b4efad4729bc397830da3c41709802523c6"
+  },
+  "reference": "poly",
+  "target": "m1",
+  "selection": "AI internal-frame candidates chosen after outer-frame diagnostic; excluded from all fitting, not blind ground truth",
+  "fitting_allowed": false,
+  "prior_macro_budget_px": {
+    "p95": 8,
+    "max": 12
+  },
+  "sampling": {
+    "count": 24,
+    "normal_radius_px": 18,
+    "gaussian_sigma": 2.5,
+    "minimum_contrast": 10,
+    "trim_px": 4,
+    "min_valid_count": 17
+  },
+  "structures": [
+    {
+      "id": "upper_center_divider",
+      "reference_seed": [
+        [
+          2426,
+          2730
+        ],
+        [
+          2427,
+          3020
+        ]
+      ],
+      "target_seed": [
+        [
+          2392,
+          2860
+        ],
+        [
+          2403,
+          3140
+        ]
+      ],
+      "identity": "center divider between upper left/right banks",
+      "support": "internal asymmetric partition; candidate ridge identity"
+    },
+    {
+      "id": "upper_left_horizontal_separator",
+      "reference_seed": [
+        [
+          1780,
+          2988
+        ],
+        [
+          2330,
+          2976
+        ]
+      ],
+      "target_seed": [
+        [
+          1735,
+          3120
+        ],
+        [
+          2320,
+          3100
+        ]
+      ],
+      "identity": "separator above short bottom row of upper-left bank",
+      "support": "horizontal internal partition; excludes outer fit edges"
+    },
+    {
+      "id": "lower_center_divider",
+      "reference_seed": [
+        [
+          2425,
+          3175
+        ],
+        [
+          2435,
+          3650
+        ]
+      ],
+      "target_seed": [
+        [
+          2405,
+          3290
+        ],
+        [
+          2417,
+          3770
+        ]
+      ],
+      "identity": "center divider between lower left/right banks",
+      "support": "different lower-bank interior partition"
+    }
+  ]
+}

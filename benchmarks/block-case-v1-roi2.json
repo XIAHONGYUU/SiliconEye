@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "document_kind": "block_case",
+  "case_id": "ROI2_finger_pair",
+  "revision": "candidate-v1",
+  "source_base": "repository_root",
+  "sources": {
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "ai_observations": {
+      "path": "benchmarks/block-roi2-observations-v1.json",
+      "sha256": "efbb68d4a4e2952f951c37e83e337b710af39985f95e2511cccc03fed5e8ef4d"
+    }
+  },
+  "frames": [
+    {
+      "id": "poly_native",
+      "source_ref": "poly_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "aa_native",
+      "source_ref": "aa_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m1_native",
+      "source_ref": "m1_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "id": "electrical",
+      "domain": "electrical_case",
+      "extent": "selected_two_finger_candidates_only_not_entire_array"
+    },
+    {
+      "id": "identity",
+      "domain": "physical_identity",
+      "extent": "selected_adjacent_fingers_middle_diffusion_candidate"
+    }
+  ],
+  "entities": [
+    {
+      "id": "R2_Q1",
+      "kind": "device",
+      "class_label": "MOS"
+    },
+    {
+      "id": "R2_Q1.G",
+      "kind": "terminal",
+      "device_id": "R2_Q1",
+      "role": "G"
+    },
+    {
+      "id": "R2_Q1.A",
+      "kind": "terminal",
+      "device_id": "R2_Q1",
+      "role": "A"
+    },
+    {
+      "id": "R2_Q1.B",
+      "kind": "terminal",
+      "device_id": "R2_Q1",
+      "role": "B"
+    },
+    {
+      "id": "R2_Q1.Bulk",
+      "kind": "terminal",
+      "device_id": "R2_Q1",
+      "role": "Bulk"
+    },
+    {
+      "id": "R2_Q2",
+      "kind": "device",
+      "class_label": "MOS"
+    },
+    {
+      "id": "R2_Q2.G",
+      "kind": "terminal",
+      "device_id": "R2_Q2",
+      "role": "G"
+    },
+    {
+      "id": "R2_Q2.A",
+      "kind": "terminal",
+      "device_id": "R2_Q2",
+      "role": "A"
+    },
+    {
+      "id": "R2_Q2.B",
+      "kind": "terminal",
+      "device_id": "R2_Q2",
+      "role": "B"
+    },
+    {
+      "id": "R2_Q2.Bulk",
+      "kind": "terminal",
+      "device_id": "R2_Q2",
+      "role": "Bulk"
+    },
+    {
+      "id": "R2_middle",
+      "kind": "physical_region",
+      "terminal_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ]
+    }
+  ],
+  "geometry_observations": [
+    {
+      "entity_id": "R2_Q1",
+      "frame_id": "poly_native",
+      "xywh": [
+        1740,
+        2700,
+        40,
+        128
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_Q2",
+      "frame_id": "poly_native",
+      "xywh": [
+        1795,
+        2700,
+        40,
+        128
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    }
+  ],
+  "measurements": [],
+  "claims": [
+    {
+      "id": "exists1",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q1"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "exists2",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q2"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "middle_shared",
+      "predicate": "shared_physical_region",
+      "subject_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A",
+        "R2_middle"
+      ],
+      "scope_id": "identity",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "middle_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "gates_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "m1_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "outer_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.A",
+        "R2_Q2.B"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "m1_photo",
+        "ai_observations"
+      ]
+    }
+  ],
+  "review_events": [],
+  "review_inventory": {
+    "source_refs": [],
+    "event_ids": [],
+    "registration_policy": "No human review yet; do not import any V3 approvals."
+  },
+  "export_request": {
+    "mode": "current",
+    "rendering": "from_resolved_state_only",
+    "unknown_electrical_relations": "preserve",
+    "network_labels_are": "presentation_only_not_entity_identity"
+  },
+  "limitations": [
+    "All device and connection conclusions are unreviewed candidates/questions.",
+    "Selected fingers may belong to one multifinger device; two symbols do not establish total array device count.",
+    "Native per-layer context crops are not pixel registered. No M1 terminal mapping claimed.",
+    "Inspection windows are not segmentation boundaries or measured W/L; all units px.",
+    "Bulk endpoints, polarity and source/drain orientation unknown.",
+    "Same-chip visually selected ROI outside prior primary sample is not blind or cross-chip generalization."
+  ]
+}

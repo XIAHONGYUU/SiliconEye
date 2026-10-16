@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "AA/poly认对了",
+  "scope": "ROI2 displayed red AA fragment and blue Q1/Q2 poly bodies: material identity and coarse location only",
+  "decisions": [
+    {
+      "entity_id": "R2_AA_support_fragment",
+      "material": "aa",
+      "material_identity": "human_confirmed",
+      "coarse_location": "human_confirmed",
+      "pixel_boundary": "unknown",
+      "pixel_mask_truth_approved": false
+    },
+    {
+      "entity_id": "R2_poly_Q1_support",
+      "material": "poly",
+      "material_identity": "human_confirmed",
+      "coarse_location": "human_confirmed",
+      "pixel_boundary": "unknown",
+      "pixel_mask_truth_approved": false
+    },
+    {
+      "entity_id": "R2_poly_Q2_support",
+      "material": "poly",
+      "material_identity": "human_confirmed",
+      "coarse_location": "human_confirmed",
+      "pixel_boundary": "unknown",
+      "pixel_mask_truth_approved": false
+    }
+  ],
+  "not_approved": [
+    "precise envelope or core polygon pixel boundaries",
+    "CT brightness candidate truth or CT landing",
+    "fine AA/poly registration",
+    "W/L, actual scale or extra connections"
+  ],
+  "sources": {
+    "candidate_spec": {
+      "path": "benchmarks/block-roi2-material-support-candidates-v1.json",
+      "sha256": "753759c4722dfe388823ba5e0e4c1f5133f83ce6b2972eea72643dd58202ed31"
+    },
+    "review-note.md": {
+      "path": "runs/roi2-material-review-v1/review-note.md",
+      "sha256": "c556a7fecf72db05f00ca633eae31314dcd961e4676033e1bd0f9f249cb1d1ea"
+    },
+    "material-review-sheet.png": {
+      "path": "runs/roi2-material-review-v1/material-review-sheet.png",
+      "sha256": "df3a8eb397dd92e977ff9deaec44eab7b40147be9ef5eb31fd73473a914749fe"
+    },
+    "candidate-details.json": {
+      "path": "runs/roi2-material-review-v1/candidate-details.json",
+      "sha256": "753759c4722dfe388823ba5e0e4c1f5133f83ce6b2972eea72643dd58202ed31"
+    },
+    "material-manifest.json": {
+      "path": "runs/roi2-material-review-v1/material-manifest.json",
+      "sha256": "582f73638f6936aa735bb72b308cd02135acb84741e2d7cb017c352c16789cb5"
+    }
+  }
+}

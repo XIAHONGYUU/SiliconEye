@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "A/B对应，接受宏观叠图",
+  "scope": "ROI2 poly/M1 internal A/B layout junction identities and limited coarse overlay use",
+  "decisions": {
+    "A_identity": "confirmed",
+    "B_identity": "confirmed",
+    "M1_to_poly_macro_overlay": "accepted"
+  },
+  "not_approved": [
+    "CT/contact precise landing",
+    "material edge/segmentation truth",
+    "physical or pixel W/L accuracy",
+    "extra electrical connection",
+    "whole-chip or other-region registration",
+    "new AA-specific internal registration acceptance"
+  ],
+  "sources": {
+    "review_gate": {
+      "path": "benchmarks/registration-roi2-review-gate-v1.json",
+      "sha256": "52b5acb17b6e0006bca48b54812c08b7267ddc3368879d1d7a30bbd02c9a63b5"
+    },
+    "report.md": {
+      "path": "runs/roi2-registration-gate-v1/report.md",
+      "sha256": "c66e03f4f1bf30b02e86710b56f2cdf968350ecd58d974544c4e11985dcf79a4"
+    },
+    "review-sheet.png": {
+      "path": "runs/roi2-registration-gate-v1/review-sheet.png",
+      "sha256": "60b4f0880edd10257dc50a31f870c8169a7c04befd05c953e21b3199a67308a3"
+    },
+    "junction-measurements.json": {
+      "path": "runs/roi2-registration-gate-v1/junction-measurements.json",
+      "sha256": "fa702b800bbcdbd43e841902fd2fbf4cdf4db38c00f135cb1da06b6e3f9f1ba9"
+    },
+    "manifest.json": {
+      "path": "runs/roi2-registration-gate-v1/manifest.json",
+      "sha256": "47dd062a708f3ece9006840eb1495766feca1cec52afcb756bea7910ce7b2820"
+    }
+  }
+}

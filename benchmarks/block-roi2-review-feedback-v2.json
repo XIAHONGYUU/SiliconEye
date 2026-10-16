@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "1.中间扩散共享原漏共用，外侧扩散在M1无法确认，体端共用。继续推进",
+  "scope": "selected ROI2 two adjacent MOS fingers only",
+  "sources": {
+    "review-note.md": {
+      "path": "runs/block-state-roi2-reviewed-v2/review-note.md",
+      "sha256": "e7ab0df811015364f35b5af4d32ae05a1b4370c7361ba8a046004cc1277a7c6e"
+    },
+    "resolved-state.json": {
+      "path": "runs/block-state-roi2-reviewed-v2/resolved-state.json",
+      "sha256": "95a6903d927c050f65b3c47e3e42af09daa9040c1576952fb65ee7ba8f8b6ebe"
+    },
+    "manifest.json": {
+      "path": "runs/block-state-roi2-reviewed-v2/manifest.json",
+      "sha256": "c5c35604249813b719d4386e04b085e0a982ce8adbea6d4a604dc0ab0bc670b0"
+    }
+  },
+  "decisions": [
+    {
+      "id": "middle_shared",
+      "verdict": "confirm",
+      "physical_region": "R2_middle",
+      "terminals": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ],
+      "note": "Common middle source/drain diffusion; A/B convention kept, no source/drain orientation assigned."
+    },
+    {
+      "id": "body_shared",
+      "verdict": "confirm",
+      "terminals": [
+        "R2_Q1.Bulk",
+        "R2_Q2.Bulk"
+      ],
+      "note": "Body terminals share a net; no identity with middle diffusion, gate, outer diffusion or named supply asserted."
+    },
+    {
+      "id": "outer_connected",
+      "verdict": "no_evidence",
+      "terminals": [
+        "R2_Q1.A",
+        "R2_Q2.B"
+      ],
+      "note": "Unable to confirm from M1. Unknown, not different_net; no claims for upper layers."
+    }
+  ],
+  "not_confirmed": [
+    "outer diffusion equivalence",
+    "body net ties to supply or other terminal groups",
+    "N/P, source/drain orientation, physical W/L",
+    "full array connectivity or multifinger aggregation"
+  ]
+}

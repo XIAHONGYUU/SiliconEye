@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "case_id": "ROI2_finger_pair",
+  "milestone": "local_registration_for_coarse_multilayer_inspection",
+  "status": "awaiting_human_internal_identity_review",
+  "model": "frozen_homography",
+  "sources": {
+    "frozen_transform": {
+      "path": "runs/roi2-local-warp-v1/transforms.json",
+      "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0"
+    },
+    "outer_frame_review": {
+      "path": "benchmarks/registration-roi2-frame-feedback-v1.json",
+      "sha256": "ab3b4f69ddc3e88800032aabd8952b4efad4729bc397830da3c41709802523c6"
+    },
+    "internal_line_check": {
+      "path": "runs/roi2-internal-frame-check-v1/results.json",
+      "sha256": "b48bc0dc8f4802dc593898c744167eb1c47c40671f0db427dd4427991d8922fa"
+    },
+    "electrical_case": {
+      "path": "benchmarks/block-case-v1-roi2-reviewed-v3.json",
+      "sha256": "9b9abaa9982aa4a4cddf6431f9936bc58c164a5320cef26200d7eb5fa5bbe442"
+    },
+    "electrical_state": {
+      "path": "runs/block-state-roi2-reviewed-v3/resolved-state.json",
+      "sha256": "7c0103b9fc5d32aafa98d92dd1afb63841b444a5773bc148e5f0045b5f8477c1"
+    },
+    "junction_spec": {
+      "path": "benchmarks/registration-roi2-junction-check-v1.json",
+      "sha256": "bb654118b3b510b5b49bc3955197b73b3cde24caf76d897afba1c0f63ba34125"
+    }
+  },
+  "decision_request": {
+    "question": "A/B分别是否是poly与M1中同一器件分区的内部行分隔与竖框交汇位置？确认后将本配准用于ROI2宏观叠图和材料候选复核。",
+    "scope": "coarse visual review only; not exact physical ridge equality or contact/sizing validation",
+    "options": [
+      "A/B对应，接受限定用途的宏观叠图",
+      "存在对应错误，请指出A或B",
+      "无法判断，保持候选"
+    ]
+  },
+  "readiness": {
+    "outer_frame_identity_human_confirmed": true,
+    "fixed_transform_exported": true,
+    "outer_check_complete": true,
+    "three_internal_line_diagnostics_complete": true,
+    "two_2d_junction_diagnostics_complete": true,
+    "human_internal_identity_accepted": false,
+    "coarse_registration_accepted": false,
+    "contact_landing_accepted": false,
+    "dimensions_accepted": false
+  },
+  "known_limits": [
+    "M1 fit corners are AI rough seeds; automatic outer ridge localization failed.",
+    "Outer frame identity accepted by user does not certify exact points.",
+    "Two junctions share a horizontal line; vertical support overlaps prior inspected frame segments, so not fully independent of model selection.",
+    "New junction coordinates not used in fitting; candidate H frozen; no deformation tuning after checks.",
+    "A/B are in neighboring upper-right bank; exact selected leftmost-finger CT landing remains untested.",
+    "Material ridge centerlines can differ across layers; measured displacement is not certified camera registration error.",
+    "No N/P, W/L, CT landing, additional diffusion merging or external body net assignment inferred."
+  ]
+}

@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "document_kind": "block_case",
+  "case_id": "V3_block",
+  "revision": "runtime-v1",
+  "source_base": "repository_root",
+  "sources": {
+    "checkpoint": {
+      "path": "docs/checkpoints/2026-10-16-v3-reviewed.json",
+      "sha256": "f3a83ca5a5a925452aad2a3c1c5419f19251af4c3712f7a8e5f5e6ee8dd47995"
+    },
+    "structure_review": {
+      "path": "benchmarks/local-mos-review-feedback-v1.json",
+      "sha256": "58fb8fa1f7317eb70d8cb41e6b38d9ebc61c925205475d0a24e42214aee61d51"
+    },
+    "terminal_review": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "gate_pair_review": {
+      "path": "benchmarks/device-m1-m2-topology-feedback-v1.json",
+      "sha256": "0a8b1de50419cdec3ca0b4493686ab42e7cce083a14b1579f82776bf34f86614"
+    },
+    "gate_M_review": {
+      "path": "benchmarks/device-gate-diffusion-feedback-v1.json",
+      "sha256": "a72ed3d083eb5815b98ee1437f9768c9b9ea3551438e2d8f3b4d5cb23bef2b27"
+    },
+    "P2_review": {
+      "path": "benchmarks/device-network-boundary-feedback-v1.json",
+      "sha256": "944c0a128f2ff840443af2b65048902031fbe1a30cd9c2a78f70fc8597b923e5"
+    },
+    "block_review": {
+      "path": "benchmarks/v3-block-review-feedback-v1.json",
+      "sha256": "ba2470afde134b9ba17ec2487310453b5f0c169b5fc4021fc308b1de357d4320"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "frames": [
+    {
+      "id": "poly_native",
+      "source_ref": "poly_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m1_native",
+      "source_ref": "m1_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m2_native",
+      "source_ref": "m2_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "id": "block_electrical",
+      "domain": "electrical_case",
+      "extent": "selected_device_group_only"
+    },
+    {
+      "id": "block_geometry",
+      "domain": "physical_identity",
+      "extent": "selected_device_group_only"
+    },
+    {
+      "id": "poly_ends",
+      "domain": "physical_layer_region",
+      "frame_id": "poly_native",
+      "xywh": [
+        2590,
+        1345,
+        510,
+        130
+      ],
+      "extent": "local_poly_ends_not_global_electrical_isolation"
+    }
+  ],
+  "entities": [
+    {
+      "id": "V3_Q1",
+      "kind": "device",
+      "class_label": "MOS",
+      "polarity": null,
+      "source_drain_orientation": null
+    },
+    {
+      "id": "V3_Q1.G",
+      "kind": "terminal",
+      "device_id": "V3_Q1",
+      "role": "G",
+      "location": null
+    },
+    {
+      "id": "V3_Q1.A",
+      "kind": "terminal",
+      "device_id": "V3_Q1",
+      "role": "A",
+      "location": null
+    },
+    {
+      "id": "V3_Q1.B",
+      "kind": "terminal",
+      "device_id": "V3_Q1",
+      "role": "B",
+      "location": null
+    },
+    {
+      "id": "V3_Q1.Bulk",
+      "kind": "terminal",
+      "device_id": "V3_Q1",
+      "role": "Bulk",
+      "location": null
+    },
+    {
+      "id": "V3_Q2",
+      "kind": "device",
+      "class_label": "MOS",
+      "polarity": null,
+      "source_drain_orientation": null
+    },
+    {
+      "id": "V3_Q2.G",
+      "kind": "terminal",
+      "device_id": "V3_Q2",
+      "role": "G",
+      "location": null
+    },
+    {
+      "id": "V3_Q2.A",
+      "kind": "terminal",
+      "device_id": "V3_Q2",
+      "role": "A",
+      "location": null
+    },
+    {
+      "id": "V3_Q2.B",
+      "kind": "terminal",
+      "device_id": "V3_Q2",
+      "role": "B",
+      "location": null
+    },
+    {
+      "id": "V3_Q2.Bulk",
+      "kind": "terminal",
+      "device_id": "V3_Q2",
+      "role": "Bulk",
+      "location": null
+    },
+    {
+      "id": "V3_group",
+      "kind": "device_group",
+      "member_ids": [
+        "V3_Q1",
+        "V3_Q2"
+      ]
+    },
+    {
+      "id": "physical_G1",
+      "kind": "physical_region",
+      "terminal_ids": [
+        "V3_Q1.G"
+      ]
+    },
+    {
+      "id": "physical_G2",
+      "kind": "physical_region",
+      "terminal_ids": [
+        "V3_Q2.G"
+      ]
+    },
+    {
+      "id": "physical_M",
+      "kind": "physical_region",
+      "terminal_ids": [
+        "V3_Q1.B",
+        "V3_Q2.A"
+      ]
+    },
+    {
+      "id": "M1_upper",
+      "kind": "conductor_inspection_feature"
+    },
+    {
+      "id": "M1_lower",
+      "kind": "conductor_inspection_feature"
+    },
+    {
+      "id": "M2_P2",
+      "kind": "image_feature"
+    }
+  ],
+  "geometry_observations": [
+    {
+      "entity_id": "M2_P2",
+      "frame_id": "m2_native",
+      "xywh": [
+        2634,
+        1514,
+        49,
+        125
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "normalization_from_bound_evidence"
+    }
+  ],
+  "measurements": [
+    {
+      "entity_id": "V3_Q1",
+      "kind": "visible_support_proxy",
+      "unit": "px",
+      "span": 413,
+      "run_median": 12,
+      "window_clipped": true,
+      "physical_WL": null,
+      "method": "import_existing_visible_support_proxy_without_remeasurement",
+      "evidence_refs": [
+        "checkpoint"
+      ]
+    },
+    {
+      "entity_id": "V3_Q2",
+      "kind": "visible_support_proxy",
+      "unit": "px",
+      "span": 412,
+      "run_median": 12,
+      "window_clipped": true,
+      "physical_WL": null,
+      "method": "import_existing_visible_support_proxy_without_remeasurement",
+      "evidence_refs": [
+        "checkpoint"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "c_device_1",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "V3_Q1"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "structure_review"
+      ]
+    },
+    {
+      "id": "c_device_2",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "V3_Q2"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "structure_review"
+      ]
+    },
+    {
+      "id": "c_shared_M",
+      "predicate": "shared_physical_region",
+      "subject_ids": [
+        "V3_Q1.B",
+        "V3_Q2.A",
+        "physical_M"
+      ],
+      "scope_id": "block_geometry",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "terminal_review"
+      ]
+    },
+    {
+      "id": "c_poly_local_open",
+      "predicate": "joined_in_region",
+      "subject_ids": [
+        "physical_G1",
+        "physical_G2"
+      ],
+      "scope_id": "poly_ends",
+      "value": false,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "terminal_review"
+      ]
+    },
+    {
+      "id": "c_GM",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.G",
+        "V3_Q1.B",
+        "V3_Q2.G",
+        "V3_Q2.A"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "terminal_review",
+        "gate_pair_review",
+        "gate_M_review"
+      ]
+    },
+    {
+      "id": "c_map_A",
+      "predicate": "terminal_maps_to_conductor",
+      "subject_ids": [
+        "V3_Q1.A",
+        "M1_upper"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "block_review"
+      ]
+    },
+    {
+      "id": "c_map_B",
+      "predicate": "terminal_maps_to_conductor",
+      "subject_ids": [
+        "V3_Q2.B",
+        "M1_lower"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "block_review"
+      ]
+    },
+    {
+      "id": "c_P2_identity",
+      "predicate": "same_feature_identity",
+      "subject_ids": [
+        "M2_P2",
+        "V3_group"
+      ],
+      "scope_id": "block_geometry",
+      "value": true,
+      "intent": "proposal",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "P2_review"
+      ]
+    },
+    {
+      "id": "q_extra_A_GM",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.A",
+        "V3_Q1.G"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "block_review"
+      ]
+    },
+    {
+      "id": "q_extra_B_GM",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q2.B",
+        "V3_Q1.G"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "block_review"
+      ]
+    },
+    {
+      "id": "q_extra_A_B",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.A",
+        "V3_Q2.B"
+      ],
+      "scope_id": "block_electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "normalization_from_bound_reviews",
+      "evidence_refs": [
+        "block_review"
+      ]
+    }
+  ],
+  "review_events": [
+    {
+      "id": "e_device_1",
+      "claim_id": "c_device_1",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "structure_review"
+      ],
+      "source_statement": "三者都批准，但是V3是两个MOS原漏共用",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_device_2",
+      "claim_id": "c_device_2",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "structure_review"
+      ],
+      "source_statement": "三者都批准，但是V3是两个MOS原漏共用",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_shared_M",
+      "claim_id": "c_shared_M",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "terminal_review"
+      ],
+      "source_statement": "绿色的中间行M就是共用原漏区域",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_poly_local_open",
+      "claim_id": "c_poly_local_open",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "terminal_review"
+      ],
+      "source_statement": "G1和G2没有通过端部poly连成同一个栅",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_GM_unknown",
+      "claim_id": "c_GM",
+      "verdict": "defer",
+      "actor": "script",
+      "source_refs": [
+        "gate_pair_review"
+      ],
+      "source_statement": "Gate-to-gate approval does not establish a connection from the common gate net to shared diffusion M.",
+      "supersedes_event_ids": [],
+      "normalization_note": "Recorded unresolved scope, not a human instruction to defer and not a physical confirmation."
+    },
+    {
+      "id": "e_GM_confirm",
+      "claim_id": "c_GM",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "terminal_review",
+        "gate_pair_review",
+        "gate_M_review"
+      ],
+      "source_statement": "批准连接关系，继续推进",
+      "supersedes_event_ids": [
+        "e_GM_unknown"
+      ]
+    },
+    {
+      "id": "e_map_A",
+      "claim_id": "c_map_A",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "block_review"
+      ],
+      "source_statement": "1.对应",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_map_B",
+      "claim_id": "c_map_B",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "block_review"
+      ],
+      "source_statement": "1.对应",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_P2_identity",
+      "claim_id": "c_P2_identity",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "P2_review"
+      ],
+      "source_statement": "确认无误",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_no_evidence_A_GM",
+      "claim_id": "q_extra_A_GM",
+      "verdict": "no_evidence",
+      "actor": "human",
+      "source_refs": [
+        "block_review"
+      ],
+      "source_statement": "2.没有证据",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_no_evidence_B_GM",
+      "claim_id": "q_extra_B_GM",
+      "verdict": "no_evidence",
+      "actor": "human",
+      "source_refs": [
+        "block_review"
+      ],
+      "source_statement": "2.没有证据",
+      "supersedes_event_ids": []
+    },
+    {
+      "id": "e_no_evidence_A_B",
+      "claim_id": "q_extra_A_B",
+      "verdict": "no_evidence",
+      "actor": "human",
+      "source_refs": [
+        "block_review"
+      ],
+      "source_statement": "2.没有证据",
+      "supersedes_event_ids": []
+    }
+  ],
+  "review_inventory": {
+    "source_refs": [
+      "structure_review",
+      "terminal_review",
+      "gate_pair_review",
+      "gate_M_review",
+      "P2_review",
+      "block_review"
+    ],
+    "event_ids": [
+      "e_device_1",
+      "e_device_2",
+      "e_shared_M",
+      "e_poly_local_open",
+      "e_GM_unknown",
+      "e_GM_confirm",
+      "e_map_A",
+      "e_map_B",
+      "e_P2_identity",
+      "e_no_evidence_A_GM",
+      "e_no_evidence_B_GM",
+      "e_no_evidence_A_B"
+    ],
+    "registration_policy": "new review must be registered in case manifest; no directory glob"
+  },
+  "export_request": {
+    "mode": "current",
+    "rendering": "from_resolved_state_only",
+    "unknown_electrical_relations": "preserve",
+    "network_labels_are": "presentation_only_not_entity_identity"
+  },
+  "limitations": [
+    "Data-normalized legacy reviews, not fresh physical approvals.",
+    "Old annotation entries do not consume this contract; use annotate block.",
+    "This source manifest is explicit; it cannot discover unregistered later feedback."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "你可以核对一下，外框对应关系无误",
+  "scope": "ROI2 displayed poly/M1/AA outer-frame structural correspondence",
+  "decision": "frame_identity_confirmed",
+  "not_approved": [
+    "exact corner coordinates or automated M1 edge localization",
+    "internal landmark identities",
+    "CT landing accuracy",
+    "W/L or additional electrical connectivity"
+  ],
+  "sources": {
+    "report.md": {
+      "path": "runs/roi2-local-warp-v1/report.md",
+      "sha256": "0610eb1e05f0f00ada04febcbfc48b659fc0ae24570f22345f1b186ed722e750"
+    },
+    "comparison-sheet.png": {
+      "path": "runs/roi2-local-warp-v1/comparison-sheet.png",
+      "sha256": "66515c86f6b728e944c445f40a21af2d8404ef92cad0ba77cba187d49fd0a100"
+    },
+    "transforms.json": {
+      "path": "runs/roi2-local-warp-v1/transforms.json",
+      "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0"
+    },
+    "manifest.json": {
+      "path": "runs/roi2-local-warp-v1/manifest.json",
+      "sha256": "ff668569e2725e070066ef3d05ed9fe17b69da6b09e9270f770cd72871d08f51"
+    }
+  }
+}

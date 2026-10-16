@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "purpose": "ROI2 coarse overlay milestone / internal junction 2D review",
+  "model": "homography",
+  "model_matrix_frozen": [
+    [
+      0.9787080329117435,
+      -0.0005436022360308021,
+      46.21504214481547
+    ],
+    [
+      -0.006919378991572523,
+      0.9847418406654099,
+      -95.86370055045026
+    ],
+    [
+      -5.22842947708295e-06,
+      -1.7014197430942254e-07,
+      1.0
+    ]
+  ],
+  "transform_source": {
+    "path": "runs/roi2-local-warp-v1/transforms.json",
+    "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0"
+  },
+  "frame_feedback": {
+    "path": "benchmarks/registration-roi2-frame-feedback-v1.json",
+    "sha256": "ab3b4f69ddc3e88800032aabd8952b4efad4729bc397830da3c41709802523c6"
+  },
+  "refit_allowed": false,
+  "selection": "Two new internal junction locations chosen after model selection; not blind. Vertical support overlaps previously inspected frame segments; new horizontal support and 2D intersections were not fitted or scored for model selection. The two junctions share one horizontal separator, not independent structures.",
+  "identity_status": "AI_candidate_pending_human",
+  "measurement": "intersection of ridge center lines; not electrical contact points",
+  "budget": {
+    "inherited_macro_trial_p95_px": 8,
+    "max_px": 12,
+    "scope": "exploratory only; no certified point localization uncertainty"
+  },
+  "seeds": {
+    "poly": {
+      "horizontal": [
+        [
+          2480,
+          2970
+        ],
+        [
+          3080,
+          2954
+        ]
+      ],
+      "central_vertical": [
+        [
+          2426,
+          2880
+        ],
+        [
+          2427,
+          3030
+        ]
+      ],
+      "right_vertical": [
+        [
+          3132,
+          2850
+        ],
+        [
+          3133,
+          3020
+        ]
+      ]
+    },
+    "m1": {
+      "horizontal": [
+        [
+          2450,
+          3093
+        ],
+        [
+          3060,
+          3073
+        ]
+      ],
+      "central_vertical": [
+        [
+          2396,
+          3000
+        ],
+        [
+          2402,
+          3150
+        ]
+      ],
+      "right_vertical": [
+        [
+          3100,
+          2960
+        ],
+        [
+          3102,
+          3140
+        ]
+      ]
+    }
+  },
+  "sampling": {
+    "count": 24,
+    "normal_radius_px": 18,
+    "sigma": 2.5,
+    "contrast": 10,
+    "trim_px": 4,
+    "minimum_retained": 17
+  }
+}

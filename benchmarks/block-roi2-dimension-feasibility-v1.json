@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "actor": "reasoning_model",
+  "kind": "pixel_dimension_feasibility",
+  "status": "not_ready_for_WL",
+  "case_id": "ROI2_finger_pair",
+  "connection_state_id": "1686820c50f3c7d3c9cbbbf55787034edd19bf90dda76fde0eeed1ccf020537c",
+  "sources": {
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "reviewed_case": {
+      "path": "benchmarks/block-case-v1-roi2-reviewed-v3.json",
+      "sha256": "9b9abaa9982aa4a4cddf6431f9936bc58c164a5320cef26200d7eb5fa5bbe442"
+    },
+    "reviewed_state": {
+      "path": "runs/block-state-roi2-reviewed-v3/resolved-state.json",
+      "sha256": "7c0103b9fc5d32aafa98d92dd1afb63841b444a5773bc148e5f0045b5f8477c1"
+    }
+  },
+  "unit": "poly_native_px",
+  "method": {
+    "intensity": "OpenCV grayscale, vertical band median; profile length 135px",
+    "x_half_open": [
+      1720,
+      1855
+    ],
+    "bands_y_half_open": [
+      [
+        2715,
+        2735
+      ],
+      [
+        2745,
+        2765
+      ],
+      [
+        2775,
+        2795
+      ]
+    ],
+    "sigma_px": [
+      0,
+      1,
+      2
+    ],
+    "lag_search_inclusive": [
+      45,
+      65
+    ],
+    "score": "Pearson correlation between overlapping shifted profiles",
+    "peak_tie_break": "first maximum in ascending lag order",
+    "selection": "visually selected repeating-array context, not blind",
+    "interpretation": "Candidate optical repetition only; constrained lag search does not establish a material identity or global best period."
+  },
+  "sampling_results": [
+    {
+      "band_y_half_open": [
+        2715,
+        2735
+      ],
+      "gaussian_sigma_px": 0,
+      "peak_lag_px": 56,
+      "correlation": 0.9204292402366056
+    },
+    {
+      "band_y_half_open": [
+        2715,
+        2735
+      ],
+      "gaussian_sigma_px": 1,
+      "peak_lag_px": 56,
+      "correlation": 0.9455208201797707
+    },
+    {
+      "band_y_half_open": [
+        2715,
+        2735
+      ],
+      "gaussian_sigma_px": 2,
+      "peak_lag_px": 57,
+      "correlation": 0.9731420273900447
+    },
+    {
+      "band_y_half_open": [
+        2745,
+        2765
+      ],
+      "gaussian_sigma_px": 0,
+      "peak_lag_px": 56,
+      "correlation": 0.888386025087737
+    },
+    {
+      "band_y_half_open": [
+        2745,
+        2765
+      ],
+      "gaussian_sigma_px": 1,
+      "peak_lag_px": 56,
+      "correlation": 0.8804557791582824
+    },
+    {
+      "band_y_half_open": [
+        2745,
+        2765
+      ],
+      "gaussian_sigma_px": 2,
+      "peak_lag_px": 56,
+      "correlation": 0.8478584638573017
+    },
+    {
+      "band_y_half_open": [
+        2775,
+        2795
+      ],
+      "gaussian_sigma_px": 0,
+      "peak_lag_px": 56,
+      "correlation": 0.908410787463951
+    },
+    {
+      "band_y_half_open": [
+        2775,
+        2795
+      ],
+      "gaussian_sigma_px": 1,
+      "peak_lag_px": 56,
+      "correlation": 0.9163334498125356
+    },
+    {
+      "band_y_half_open": [
+        2775,
+        2795
+      ],
+      "gaussian_sigma_px": 2,
+      "peak_lag_px": 56,
+      "correlation": 0.9073657714132753
+    }
+  ],
+  "candidate_optical_repeat_lag_range_px": [
+    56,
+    57
+  ],
+  "candidate_status": "image_feature_not_MOS_dimension",
+  "measurements": [
+    {
+      "entity_id": "R2_Q1",
+      "visible_channel_span_px": null,
+      "gate_strip_width_px": null,
+      "physical_WL": null,
+      "status": "unknown",
+      "reasons": [
+        "No independently reviewed local AA/poly material masks in a common frame.",
+        "CT brightness and photographed-screen grid obscure material boundary identity.",
+        "Inspection windows are not gate edges or AA crossing endpoints."
+      ]
+    },
+    {
+      "entity_id": "R2_Q2",
+      "visible_channel_span_px": null,
+      "gate_strip_width_px": null,
+      "physical_WL": null,
+      "status": "unknown",
+      "reasons": [
+        "No independently reviewed local AA/poly material masks in a common frame.",
+        "CT brightness and photographed-screen grid obscure material boundary identity.",
+        "Inspection windows are not gate edges or AA crossing endpoints."
+      ]
+    }
+  ],
+  "uncertainty": "56-57px is the observed sensitivity range over 9 chosen settings, not a confidence interval or dimensional error budget. Neighboring bands are not independent ground truth.",
+  "reuse_assessment": {
+    "existing_geometry_proxy": "requires co-framed AA/poly/CT masks; not called with raw intensities or invented masks",
+    "case_measurements": "left empty; no positive-value placeholder written",
+    "connection_state": "unchanged",
+    "runtime_automatic_vision": "not_implemented"
+  },
+  "next_gate": "Review a single coarse material-boundary candidate for the selected pair, with screen texture and CT excluded as material identity evidence; then deterministic native-pixel measurement. No per-CT review or new case-specific script."
+}

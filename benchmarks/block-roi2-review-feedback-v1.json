@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "1.是两条相邻的mos栅指\n2.栅极不在栅极相连，但是在M1通过M1相连",
+  "scope": "ROI2 selected red Q1 / blue Q2 adjacent MOS fingers only",
+  "sources": {
+    "review-note.md": {
+      "path": "runs/block-state-roi2-v1r2/review-note.md",
+      "sha256": "473920d6972c17e4685766cff76325009a2e4917b2a948bbb00ae9884e41029d"
+    },
+    "poly-inspection-windows.png": {
+      "path": "runs/block-state-roi2-v1r2/poly-inspection-windows.png",
+      "sha256": "636d606a32557b73ed474add2ae91030f8cb7e4f91fa90b22aad410ab9436de9"
+    },
+    "evidence-sheet.png": {
+      "path": "runs/block-state-roi2-v1r2/evidence-sheet.png",
+      "sha256": "68acecedc120e384affa1f078fda86be1edcc0fb4577c3b86ed1eb594ad0bac8"
+    },
+    "manifest.json": {
+      "path": "runs/block-state-roi2-v1r2/manifest.json",
+      "sha256": "9a5973688f03dc3d336dcd8ba5df156f7cfde2a1434a0aa3e118191e0d0097f5"
+    },
+    "resolved-state.json": {
+      "path": "runs/block-state-roi2-v1r2/resolved-state.json",
+      "sha256": "f8bae1428824e0b101db36b90e799695b3e7f7d112c420df4e315207f5c92012"
+    }
+  },
+  "decisions": [
+    {
+      "id": "two_adjacent_mos_fingers",
+      "status": "human_confirmed",
+      "subjects": [
+        "R2_Q1",
+        "R2_Q2"
+      ],
+      "interpretation": "Two adjacent MOS gate fingers; not confirmation of two independent complete devices or total array count."
+    },
+    {
+      "id": "gates_layer_relation",
+      "status": "human_confirmed",
+      "subjects": [
+        "R2_Q1.G",
+        "R2_Q2.G"
+      ],
+      "poly_direct_join_in_reviewed_region": false,
+      "same_electrical_net": true,
+      "connection_layer": "M1",
+      "normalization_note": "Interpret 栅极不在栅极相连 as no direct local poly-layer join, followed by explicit M1 connection. Do not infer exact contact/metal path or different electrical nets."
+    }
+  ],
+  "not_confirmed": [
+    "middle diffusion shared / Q1.B same_net Q2.A",
+    "outer diffusion connection / Q1.A same_net Q2.B",
+    "exact M1 contact locations or path",
+    "body connection",
+    "device polarity, source/drain orientation, physical W/L",
+    "multifinger device aggregation"
+  ]
+}

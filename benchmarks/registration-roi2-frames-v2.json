@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "scope": "ROI2 array macro geometry only, not CT landing accuracy or W/L",
+  "reference": "poly",
+  "producer": "session_AI_visual_structure_candidate",
+  "structural_identity_status": "candidate_not_human_verified_point_ground_truth",
+  "ct_source": "CT bright features reside in poly.jpg; no separate raw CT photo",
+  "models": [
+    "affine",
+    "homography"
+  ],
+  "direction": "target_native_to_poly_native",
+  "fit_structure": "upper array block outer bright ridge corners",
+  "check_structure": "lower array block outer bright ridge corners; one held-out structure, four correlated corners",
+  "budget": {
+    "locked_before_fit": true,
+    "p95_px": 8,
+    "max_px": 12,
+    "basis": "Exploratory macro geometry target inherited in magnitude from prior local audit; not contact accuracy or measured localization uncertainty."
+  },
+  "line_sampling": {
+    "sample_count": 48,
+    "central_fraction": 0.65,
+    "min_valid_fraction": 0.7,
+    "min_contrast": 10,
+    "max_line_p95_px": 5,
+    "trim_residual_px": 4
+  },
+  "edge_search_band_px": 45,
+  "layers": {
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+      "crop_xywh": [
+        1550,
+        2550,
+        1700,
+        1300
+      ],
+      "fit_box_xywh": [
+        1700,
+        2690,
+        1430,
+        385
+      ],
+      "check_box_xywh": [
+        1720,
+        3120,
+        1410,
+        575
+      ]
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+      "crop_xywh": [
+        1500,
+        2650,
+        1700,
+        1300
+      ],
+      "fit_box_xywh": [
+        1675,
+        2810,
+        1430,
+        385
+      ],
+      "check_box_xywh": [
+        1690,
+        3235,
+        1425,
+        580
+      ]
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "crop_xywh": [
+        1650,
+        2650,
+        1700,
+        1300
+      ],
+      "fit_box_xywh": [
+        1780,
+        2820,
+        1390,
+        385
+      ],
+      "check_box_xywh": [
+        1785,
+        3240,
+        1390,
+        580
+      ]
+    }
+  },
+  "revision": "v2_geometry_window_correction_before_any_transform_fit",
+  "prior_attempt": {
+    "spec": "benchmarks/registration-roi2-frames-v1.json",
+    "outcome": "poly/m1 outer-edge localization failed; no transform fitted",
+    "change_reason": "Adjacent parallel rails entered constant-height edge search bands. Correct approximate expected ridge positions; thresholds unchanged. Held-out structure localization corrected before any transform residuals were calculated."
+  }
+}

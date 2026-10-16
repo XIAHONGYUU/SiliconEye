@@ -1,0 +1,293 @@
+{
+  "date": "2026-10-16",
+  "case_id": "ROI2_finger_pair",
+  "bundle_id": "652e15226f07fa308aad024fcd089cb97f65a57f5ae844b8a5d1b6be79182959",
+  "block_state_id": "4aab154bbcb952acbcdce88f129b82ebacd28e7e633167ce39f807ff9b59c02f",
+  "devices": [
+    {
+      "id": "R2_Q1",
+      "kind": "device",
+      "class_label": "MOS",
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": [],
+      "existence": true
+    },
+    {
+      "id": "R2_Q2",
+      "kind": "device",
+      "class_label": "MOS",
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": [],
+      "existence": true
+    }
+  ],
+  "terminals": [
+    {
+      "id": "R2_Q1.A",
+      "device_id": "R2_Q1",
+      "role": "A",
+      "confirmed_net_id": null,
+      "display_label": "T001",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "unknown"
+    },
+    {
+      "id": "R2_Q1.B",
+      "device_id": "R2_Q1",
+      "role": "B",
+      "confirmed_net_id": "C001",
+      "display_label": "C001",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "confirmed"
+    },
+    {
+      "id": "R2_Q1.Bulk",
+      "device_id": "R2_Q1",
+      "role": "Bulk",
+      "confirmed_net_id": "C002",
+      "display_label": "C002",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "confirmed"
+    },
+    {
+      "id": "R2_Q1.G",
+      "device_id": "R2_Q1",
+      "role": "G",
+      "confirmed_net_id": "C003",
+      "display_label": "C003",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "confirmed"
+    },
+    {
+      "id": "R2_Q2.A",
+      "device_id": "R2_Q2",
+      "role": "A",
+      "confirmed_net_id": "C001",
+      "display_label": "C001",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "confirmed"
+    },
+    {
+      "id": "R2_Q2.B",
+      "device_id": "R2_Q2",
+      "role": "B",
+      "confirmed_net_id": null,
+      "display_label": "T006",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "unknown"
+    },
+    {
+      "id": "R2_Q2.Bulk",
+      "device_id": "R2_Q2",
+      "role": "Bulk",
+      "confirmed_net_id": "C002",
+      "display_label": "C002",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "confirmed"
+    },
+    {
+      "id": "R2_Q2.G",
+      "device_id": "R2_Q2",
+      "role": "G",
+      "confirmed_net_id": "C003",
+      "display_label": "C003",
+      "mapping_status": "unknown",
+      "conductor_ids": [],
+      "render_status": "confirmed"
+    }
+  ],
+  "confirmed_components": [
+    {
+      "id": "C001",
+      "terminals": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ]
+    },
+    {
+      "id": "C002",
+      "terminals": [
+        "R2_Q1.Bulk",
+        "R2_Q2.Bulk"
+      ]
+    },
+    {
+      "id": "C003",
+      "terminals": [
+        "R2_Q1.G",
+        "R2_Q2.G"
+      ]
+    }
+  ],
+  "matrix": {
+    "terminals": [
+      "R2_Q1.A",
+      "R2_Q1.B",
+      "R2_Q1.Bulk",
+      "R2_Q1.G",
+      "R2_Q2.A",
+      "R2_Q2.B",
+      "R2_Q2.Bulk",
+      "R2_Q2.G"
+    ],
+    "values": [
+      [
+        "self",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "self",
+        "?",
+        "?",
+        "K",
+        "?",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "self",
+        "?",
+        "?",
+        "?",
+        "K",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "?",
+        "self",
+        "?",
+        "?",
+        "?",
+        "K"
+      ],
+      [
+        "?",
+        "K",
+        "?",
+        "?",
+        "self",
+        "?",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "self",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "K",
+        "?",
+        "?",
+        "?",
+        "self",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "?",
+        "K",
+        "?",
+        "?",
+        "?",
+        "self"
+      ]
+    ]
+  },
+  "electrical_acceptance": {
+    "structure_draft_ready": true,
+    "local_topology_accepted": false,
+    "four_terminal_complete": false,
+    "simulation_ready": false
+  },
+  "material_identity": "human_confirmed_coarse_location_only",
+  "registration": "human_accepted_M1_to_poly_macro_only",
+  "pixel_geometry_truth": false,
+  "dimensions": "unknown",
+  "runtime_ai_used": false,
+  "local_only_replay_inputs": [
+    {
+      "path": "runs/roi2-registration-gate-v1/report.md",
+      "sha256": "c66e03f4f1bf30b02e86710b56f2cdf968350ecd58d974544c4e11985dcf79a4"
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/review-sheet.png",
+      "sha256": "60b4f0880edd10257dc50a31f870c8169a7c04befd05c953e21b3199a67308a3"
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/junction-measurements.json",
+      "sha256": "fa702b800bbcdbd43e841902fd2fbf4cdf4db38c00f135cb1da06b6e3f9f1ba9"
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/manifest.json",
+      "sha256": "47dd062a708f3ece9006840eb1495766feca1cec52afcb756bea7910ce7b2820"
+    },
+    {
+      "path": "runs/roi2-local-warp-v1/transforms.json",
+      "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0"
+    },
+    {
+      "path": "runs/roi2-material-review-v1/review-note.md",
+      "sha256": "c556a7fecf72db05f00ca633eae31314dcd961e4676033e1bd0f9f249cb1d1ea"
+    },
+    {
+      "path": "runs/roi2-material-review-v1/material-review-sheet.png",
+      "sha256": "df3a8eb397dd92e977ff9deaec44eab7b40147be9ef5eb31fd73473a914749fe"
+    },
+    {
+      "path": "runs/roi2-material-review-v1/candidate-details.json",
+      "sha256": "753759c4722dfe388823ba5e0e4c1f5133f83ce6b2972eea72643dd58202ed31"
+    },
+    {
+      "path": "runs/roi2-material-review-v1/material-manifest.json",
+      "sha256": "582f73638f6936aa735bb72b308cd02135acb84741e2d7cb017c352c16789cb5"
+    }
+  ],
+  "sources": {
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-material-reviewed-v5.json",
+      "sha256": "13dc0ee58e195c3d901d1dd89f52c69891bdcb5698266e543dd1501ec932b0e6"
+    },
+    "package_request": {
+      "path": "benchmarks/review-package-roi2-v1.json",
+      "sha256": "4933c6428ecd842c8d9f8f81580d50c7d6af3bac912d236f22a648178ab84440"
+    }
+  },
+  "note": "Static reviewed checkpoint, not a portable full-source replay archive."
+}

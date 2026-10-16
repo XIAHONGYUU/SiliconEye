@@ -36,7 +36,27 @@ def cmd_run(args: argparse.Namespace) -> None:
 
 def cmd_annotate(args: argparse.Namespace) -> None:
     """Annotation subcommands."""
-    if args.subcommand == "networks":
+    if args.subcommand == "review-package":
+        from .review_package import run_package
+
+        try:
+            state = run_package(args.spec, args.output, args.root)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Review package failed: {error}") from error
+        print(f"Review package: {args.output}; bundle_id={state['bundle_id']}")
+        if state["status"] == "conflict":
+            raise SystemExit(2)
+    elif args.subcommand == "block":
+        from .block_export import run_block
+
+        try:
+            state = run_block(args.spec, args.output, args.root)
+        except (ValueError, OSError) as error:
+            raise SystemExit(f"Block review failed: {error}") from error
+        print(f"Block review: {args.output}; {state['status']}; state_id={state['state_id']}")
+        if state['status'] == 'conflict':
+            raise SystemExit(2)
+    elif args.subcommand == "networks":
         from .device_network_review import run_network_review
 
         try:
@@ -210,6 +230,14 @@ def main() -> None:
     ann_parser = subparsers.add_parser("annotate", help="Annotation tools")
     ann_sub = ann_parser.add_subparsers(dest="subcommand")
 
+    block_parser = ann_sub.add_parser("block", help="Resolve registered block reviews and export")
+    block_parser.add_argument("--spec", required=True)
+    block_parser.add_argument("--root", default=".", help="Explicit source repository root")
+    block_parser.add_argument("-o", "--output", required=True)
+    package_parser = ann_sub.add_parser("review-package", help="Export one unified review package")
+    package_parser.add_argument("--spec", required=True)
+    package_parser.add_argument("--root", default=".", help="Explicit source repository root")
+    package_parser.add_argument("-o", "--output", required=True)
     parse_parser = ann_sub.add_parser("parse", help="Parse color-block annotated image")
     parse_parser.add_argument("-i", "--input", required=True, help="Annotated image path")
     parse_parser.add_argument("-o", "--output", required=True, help="Output YAML config path")
