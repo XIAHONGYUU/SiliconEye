@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "kind": "frozen_evidence",
+  "description": "Only the nine historical evidence inputs missing from Git for ROI2 package replay. Original paths and bytes retained; not a full runs archive.",
+  "files": [
+    {
+      "path": "runs/roi2-local-warp-v1/transforms.json",
+      "sha256": "a706b21b6c6823261a3549bb48c397a3dffb3d3c6cae963544a93aaf73f36ef0",
+      "size": 9986
+    },
+    {
+      "path": "runs/roi2-material-review-v1/candidate-details.json",
+      "sha256": "753759c4722dfe388823ba5e0e4c1f5133f83ce6b2972eea72643dd58202ed31",
+      "size": 5255
+    },
+    {
+      "path": "runs/roi2-material-review-v1/material-manifest.json",
+      "sha256": "582f73638f6936aa735bb72b308cd02135acb84741e2d7cb017c352c16789cb5",
+      "size": 3036
+    },
+    {
+      "path": "runs/roi2-material-review-v1/material-review-sheet.png",
+      "sha256": "df3a8eb397dd92e977ff9deaec44eab7b40147be9ef5eb31fd73473a914749fe",
+      "size": 560018
+    },
+    {
+      "path": "runs/roi2-material-review-v1/review-note.md",
+      "sha256": "c556a7fecf72db05f00ca633eae31314dcd961e4676033e1bd0f9f249cb1d1ea",
+      "size": 3125
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/junction-measurements.json",
+      "sha256": "fa702b800bbcdbd43e841902fd2fbf4cdf4db38c00f135cb1da06b6e3f9f1ba9",
+      "size": 18115
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/manifest.json",
+      "sha256": "47dd062a708f3ece9006840eb1495766feca1cec52afcb756bea7910ce7b2820",
+      "size": 3261
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/report.md",
+      "sha256": "c66e03f4f1bf30b02e86710b56f2cdf968350ecd58d974544c4e11985dcf79a4",
+      "size": 2879
+    },
+    {
+      "path": "runs/roi2-registration-gate-v1/review-sheet.png",
+      "sha256": "60b4f0880edd10257dc50a31f870c8169a7c04befd05c953e21b3199a67308a3",
+      "size": 1349692
+    }
+  ]
+}

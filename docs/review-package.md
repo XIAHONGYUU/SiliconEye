@@ -1,6 +1,13 @@
 # 统一局部复核包入口
 
-在仓库根执行：
+首次克隆后，先恢复版本化的9项审核证据（保留原路径与字节，不覆盖已有不同文件）：
+
+```bash
+.venv/bin/python -m silicon_eye.evidence_archive \
+  --archive benchmarks/evidence/roi2-reviewed-inputs-v1.zip --root .
+```
+
+随后在仓库根执行：
 
 ```bash
 .venv/bin/silicon-eye annotate review-package \
