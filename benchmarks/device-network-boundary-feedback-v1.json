@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "确认无误",
+  "question": "P2 是否对应 V3 这两只 MOS？",
+  "scope": "M2 P2 to V3 device-group identity only; no per-terminal or metal/via-path approval",
+  "sources": {
+    "boundary_spec": {
+      "path": "benchmarks/device-network-boundary-v1.json",
+      "sha256": "26aa8e26e1579361471b00b1289fa3e1ce978f3e403f522a4fcd4e778aba6565"
+    },
+    "presented_manifest": {
+      "path": "runs/device-network-boundary-v1r1/manifest.json",
+      "sha256": "13b864635deea0857536271bc5d57312309e0513aadb5a9f3db6ce3bc3b432b6"
+    },
+    "presented_report": {
+      "path": "runs/device-network-boundary-v1r1/report.md",
+      "sha256": "0ce5c30047ea07465bb1049c25b45ea5191cd13d84725574e8c8b7da02a22422"
+    },
+    "M1_marked": {
+      "path": "runs/device-network-boundary-v1r1/M1-V3-boundary-native-observations.png",
+      "sha256": "c14d1a7f53a4c09455bdc8d6daf3a7a7a010d30935160ebca47bfaafd56ab7a6"
+    },
+    "M2_marked": {
+      "path": "runs/device-network-boundary-v1r1/M2-V3-boundary-search-native-observations.png",
+      "sha256": "b4e71102c404dc979d78300a99bfbefa80747c0677c0196598e71687b496eafb"
+    },
+    "M2_source": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "approved_gate_diffusion": {
+      "path": "benchmarks/device-gate-diffusion-feedback-v1.json",
+      "sha256": "a72ed3d083eb5815b98ee1437f9768c9b9ea3551438e2d8f3b4d5cb23bef2b27"
+    }
+  },
+  "decisions": [
+    {
+      "id": "M2_P2_V3_identity",
+      "status": "human_confirmed",
+      "source_layer": "m2",
+      "observation_id": "P2",
+      "observation_window_xywh_native": [
+        2634,
+        1514,
+        49,
+        125
+      ],
+      "window_geometry_status": "AI_visual_candidate_not_exact_material_boundary",
+      "corresponding_devices": [
+        "V3_Q1",
+        "V3_Q2"
+      ],
+      "interpretation": "The structure marked P2 corresponds to the V3 two-MOS group.",
+      "terminal_to_segment_mapping": "unknown",
+      "M1_M2_transform": "not_validated",
+      "connectivity_changes": []
+    }
+  ],
+  "limitations": [
+    "P1/P3/P4 identity and all previously unreviewed network mappings remain unknown/candidate.",
+    "No merge of N3_A/N3_B/N3_GM is authorized by this identity confirmation.",
+    "No source/drain, bulk, type, physical W/L or per-via approval."
+  ]
+}

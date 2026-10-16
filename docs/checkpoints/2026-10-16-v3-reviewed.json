@@ -1,0 +1,645 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-16",
+  "kind": "V3_whole_block_review_draft",
+  "status": "grouped_visible_connectivity_review_completed_with_unknowns",
+  "scope": {
+    "device_ids": [
+      "V3_Q1",
+      "V3_Q2"
+    ],
+    "poly_native_xywh": [
+      2590,
+      1345,
+      510,
+      130
+    ],
+    "boundary_policy": "logical terminal groups are not physical boundary cuts; no internal unknown hidden as external"
+  },
+  "sources": {
+    "current_manifest": {
+      "path": "runs/upper-routing-review-v1r2/manifest.json",
+      "sha256": "fb985190e7b10b517f18679631ac8b46c98f072f5bd0eb36310a8338ff827736"
+    },
+    "structure_approval": {
+      "path": "benchmarks/local-mos-review-feedback-v1.json",
+      "sha256": "58fb8fa1f7317eb70d8cb41e6b38d9ebc61c925205475d0a24e42214aee61d51"
+    },
+    "terminal_approval": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "poly_repair_approval": {
+      "path": "benchmarks/local-poly-repair-feedback-v1.json",
+      "sha256": "1be2067d17da006193d279986470d293e9a7fcd3335c977e280abe85329925fd"
+    },
+    "gate_common_approval": {
+      "path": "benchmarks/device-m1-m2-topology-feedback-v1.json",
+      "sha256": "0a8b1de50419cdec3ca0b4493686ab42e7cce083a14b1579f82776bf34f86614"
+    },
+    "gate_middle_approval": {
+      "path": "benchmarks/device-gate-diffusion-feedback-v1.json",
+      "sha256": "a72ed3d083eb5815b98ee1437f9768c9b9ea3551438e2d8f3b4d5cb23bef2b27"
+    },
+    "P2_identity_approval": {
+      "path": "benchmarks/device-network-boundary-feedback-v1.json",
+      "sha256": "944c0a128f2ff840443af2b65048902031fbe1a30cd9c2a78f70fc8597b923e5"
+    },
+    "AA_aligned": {
+      "path": "runs/local-mos-review-v1r1/aa_aligned.png",
+      "sha256": "8402c9107a5a1d0918d035f1f199ecfb8f5b94c23dd51f64d63400271638b905"
+    },
+    "raw_poly_crop": {
+      "path": "runs/local-poly-repair-v1/raw-poly.png",
+      "sha256": "8167c2639277c793d7168c669d9c7f9e9edb5f5b6fc0e7582f0307a0022b5c78"
+    },
+    "approved_CT": {
+      "path": "runs/local-poly-repair-v1/03-CT-mask.png",
+      "sha256": "5635b0cbc920c689075bc50f83c1ab4ca5ce95d48083933ec69352c5438b5e7e"
+    },
+    "M1_native": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2_native": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M1_context": {
+      "path": "runs/device-network-boundary-v1r1/M1-V3-boundary-native-observations.png",
+      "sha256": "c14d1a7f53a4c09455bdc8d6daf3a7a7a010d30935160ebca47bfaafd56ab7a6"
+    },
+    "M2_context": {
+      "path": "runs/device-network-boundary-v1r1/M2-V3-boundary-search-native-observations.png",
+      "sha256": "b4e71102c404dc979d78300a99bfbefa80747c0677c0196598e71687b496eafb"
+    },
+    "terminal_spec": {
+      "path": "benchmarks/local-terminal-review-v1.json",
+      "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+    },
+    "raw_AA_crop": {
+      "path": "runs/local-poly-repair-v1/raw-aa.png",
+      "sha256": "d8bf3e4b4067fc87792a6a6af958a709dbedf2225b1f377c7d86e85a6ea2f388"
+    },
+    "AA_poly_transform": {
+      "path": "runs/local-mos-review-v1r1/manifest.json",
+      "sha256": "338adb321a66e635fa0a74c7f301bfcb091fa05336a304c662c645424e866cbe"
+    },
+    "whole_block_feedback": {
+      "path": "benchmarks/v3-block-review-feedback-v1.json",
+      "sha256": "ba2470afde134b9ba17ec2487310453b5f0c169b5fc4021fc308b1de357d4320"
+    }
+  },
+  "devices": [
+    {
+      "id": "V3_Q1",
+      "physical_gate": "V3_G1",
+      "G": "N3_GM",
+      "diffusion_A": "N3_A",
+      "diffusion_B": "N3_GM",
+      "bulk": "unknown",
+      "source_drain_polarity": "unknown",
+      "device_type": "MOS_polarity_unknown",
+      "connection_status": "local_visible_connections_reviewed_with_unknown_net_equivalence"
+    },
+    {
+      "id": "V3_Q2",
+      "physical_gate": "V3_G2",
+      "G": "N3_GM",
+      "diffusion_A": "N3_GM",
+      "diffusion_B": "N3_B",
+      "bulk": "unknown",
+      "source_drain_polarity": "unknown",
+      "device_type": "MOS_polarity_unknown",
+      "connection_status": "local_visible_connections_reviewed_with_unknown_net_equivalence"
+    }
+  ],
+  "networks": [
+    {
+      "id": "N3_A",
+      "terminals": [
+        "V3_A"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            869,
+            415
+          ],
+          [
+            1258,
+            415
+          ]
+        ]
+      ],
+      "status": "human_confirmed_local_M1_mapping",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "Human confirms outer diffusion to corresponding M1 horizontal bar.",
+      "uncertainty": "No evidence for additional local merges; isolation and external connectivity not proven.",
+      "external_connectivity": "unknown_including_higher_metal_layers",
+      "traces_xy_m1_native": [
+        [
+          [
+            2606.5104842606193,
+            1523.4072815261338
+          ],
+          [
+            2989.370212118166,
+            1519.4338571539718
+          ]
+        ]
+      ],
+      "electrical_approval": "local_terminal_to_M1_correspondence_only"
+    },
+    {
+      "id": "N3_B",
+      "terminals": [
+        "V3_B"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            869,
+            469
+          ],
+          [
+            1258,
+            469
+          ]
+        ]
+      ],
+      "status": "human_confirmed_local_M1_mapping",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "Human confirms outer diffusion to corresponding M1 horizontal bar.",
+      "uncertainty": "No evidence for additional local merges; isolation and external connectivity not proven.",
+      "external_connectivity": "unknown_including_higher_metal_layers",
+      "traces_xy_m1_native": [
+        [
+          [
+            2607.062065021794,
+            1576.5549044163845
+          ],
+          [
+            2989.9217928793405,
+            1572.5814800442224
+          ]
+        ]
+      ],
+      "electrical_approval": "local_terminal_to_M1_correspondence_only"
+    },
+    {
+      "id": "N3_GM",
+      "terminals": [
+        "V3_G1",
+        "V3_G2",
+        "V3_M"
+      ],
+      "status": "human_confirmed_gate_diffusion_relation",
+      "traces_xy_poly_crop": [],
+      "connection_layer": "not_resolved",
+      "visual_basis": "Human confirms common gate connected to shared diffusion.",
+      "uncertainty": "Exact metal/via path not script-validated; bulk/type unknown.",
+      "traces_xy_m1_native": [],
+      "electrical_approval": "reviewed_relation_only"
+    }
+  ],
+  "dimensions": {
+    "V3_Q1": {
+      "status": "visible_support_geometry_proxy_not_physical_WL",
+      "unit": "poly_source_px",
+      "W_span_px": 413,
+      "L_run_median_px": 12.0,
+      "L_run_p10_p90_px": [
+        10.0,
+        15.0
+      ],
+      "sampling_lines": 413,
+      "source_drain_axis": "y",
+      "window_clipped": true,
+      "physical_scale": "unknown",
+      "accuracy": "not_independently_measured"
+    },
+    "V3_Q2": {
+      "status": "visible_support_geometry_proxy_not_physical_WL",
+      "unit": "poly_source_px",
+      "W_span_px": 412,
+      "L_run_median_px": 12.0,
+      "L_run_p10_p90_px": [
+        10.0,
+        14.0
+      ],
+      "sampling_lines": 412,
+      "source_drain_axis": "y",
+      "window_clipped": true,
+      "physical_scale": "unknown",
+      "accuracy": "not_independently_measured"
+    }
+  },
+  "terminals": [
+    {
+      "id": "V3_Q1.G",
+      "device": "V3_Q1",
+      "terminal": "G",
+      "physical_region": "V3_G1",
+      "net_id": "N3_GM",
+      "status": "human_confirmed_relation",
+      "display_net": "N3_GM",
+      "evidence_refs": [
+        "gate_middle_approval",
+        "terminal_approval"
+      ],
+      "scope": "network equivalence, not an accepted exact via path",
+      "inspection_window_poly_native_xywh": [
+        2616,
+        1372,
+        20,
+        32
+      ]
+    },
+    {
+      "id": "V3_Q1.A",
+      "device": "V3_Q1",
+      "terminal": "A",
+      "physical_region": "V3_A",
+      "net_id": "N3_A",
+      "status": "human_confirmed_local_M1_mapping",
+      "display_net": "N3_A",
+      "evidence_refs": [
+        "current_manifest",
+        "M1_context",
+        "terminal_spec",
+        "whole_block_feedback"
+      ],
+      "scope": "outer diffusion-to-local-M1 correspondence confirmed; external route and other-net equivalence unknown",
+      "inspection_window_poly_native_xywh": [
+        2640,
+        1374,
+        408,
+        19
+      ]
+    },
+    {
+      "id": "V3_Q1.B",
+      "device": "V3_Q1",
+      "terminal": "B",
+      "physical_region": "V3_M",
+      "net_id": "N3_GM",
+      "status": "human_confirmed_relation",
+      "display_net": "N3_GM",
+      "evidence_refs": [
+        "gate_middle_approval",
+        "terminal_approval"
+      ],
+      "scope": "network equivalence, not an accepted exact via path",
+      "inspection_window_poly_native_xywh": [
+        2640,
+        1402,
+        408,
+        18
+      ]
+    },
+    {
+      "id": "V3_Q1.Bulk",
+      "device": "V3_Q1",
+      "terminal": "Bulk",
+      "physical_region": null,
+      "net_id": null,
+      "status": "unknown",
+      "display_net": "Bulk1 ?",
+      "evidence_refs": [],
+      "scope": "no body connection assigned"
+    },
+    {
+      "id": "V3_Q2.G",
+      "device": "V3_Q2",
+      "terminal": "G",
+      "physical_region": "V3_G2",
+      "net_id": "N3_GM",
+      "status": "human_confirmed_relation",
+      "display_net": "N3_GM",
+      "evidence_refs": [
+        "gate_middle_approval",
+        "terminal_approval"
+      ],
+      "scope": "network equivalence, not an accepted exact via path",
+      "inspection_window_poly_native_xywh": [
+        2616,
+        1418,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "V3_Q2.A",
+      "device": "V3_Q2",
+      "terminal": "A",
+      "physical_region": "V3_M",
+      "net_id": "N3_GM",
+      "status": "human_confirmed_relation",
+      "display_net": "N3_GM",
+      "evidence_refs": [
+        "gate_middle_approval",
+        "terminal_approval"
+      ],
+      "scope": "network equivalence, not an accepted exact via path",
+      "inspection_window_poly_native_xywh": [
+        2640,
+        1402,
+        408,
+        18
+      ]
+    },
+    {
+      "id": "V3_Q2.B",
+      "device": "V3_Q2",
+      "terminal": "B",
+      "physical_region": "V3_B",
+      "net_id": "N3_B",
+      "status": "human_confirmed_local_M1_mapping",
+      "display_net": "N3_B",
+      "evidence_refs": [
+        "current_manifest",
+        "M1_context",
+        "terminal_spec",
+        "whole_block_feedback"
+      ],
+      "scope": "outer diffusion-to-local-M1 correspondence confirmed; external route and other-net equivalence unknown",
+      "inspection_window_poly_native_xywh": [
+        2640,
+        1424,
+        408,
+        23
+      ]
+    },
+    {
+      "id": "V3_Q2.Bulk",
+      "device": "V3_Q2",
+      "terminal": "Bulk",
+      "physical_region": null,
+      "net_id": null,
+      "status": "unknown",
+      "display_net": "Bulk2 ?",
+      "evidence_refs": [],
+      "scope": "no body connection assigned"
+    }
+  ],
+  "connection_matrix": {
+    "terminals": [
+      "V3_Q1.G",
+      "V3_Q1.A",
+      "V3_Q1.B",
+      "V3_Q1.Bulk",
+      "V3_Q2.G",
+      "V3_Q2.A",
+      "V3_Q2.B",
+      "V3_Q2.Bulk"
+    ],
+    "values": [
+      [
+        "self",
+        "?",
+        "K",
+        "?",
+        "K",
+        "K",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "self",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      [
+        "K",
+        "?",
+        "self",
+        "?",
+        "K",
+        "K",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "?",
+        "self",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      [
+        "K",
+        "?",
+        "K",
+        "?",
+        "self",
+        "K",
+        "?",
+        "?"
+      ],
+      [
+        "K",
+        "?",
+        "K",
+        "?",
+        "K",
+        "self",
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "self",
+        "?"
+      ],
+      [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "self"
+      ]
+    ],
+    "legend": {
+      "K": "human_confirmed_same_net",
+      "?": "equivalence_unknown_not_proven_open",
+      "self": "same_terminal"
+    }
+  },
+  "interface_candidates": [
+    {
+      "id": "N3_A",
+      "kind": "logical_terminal_group_not_accepted_external_cut",
+      "physical_boundary_crossing": "not_established",
+      "external_destination": "unknown",
+      "traces_xy_m1_native": [
+        [
+          [
+            2606.5104842606193,
+            1523.4072815261338
+          ],
+          [
+            2989.370212118166,
+            1519.4338571539718
+          ]
+        ]
+      ],
+      "trace_status": "AI_route_guide_not_material_boundary"
+    },
+    {
+      "id": "N3_B",
+      "kind": "logical_terminal_group_not_accepted_external_cut",
+      "physical_boundary_crossing": "not_established",
+      "external_destination": "unknown",
+      "traces_xy_m1_native": [
+        [
+          [
+            2607.062065021794,
+            1576.5549044163845
+          ],
+          [
+            2989.9217928793405,
+            1572.5814800442224
+          ]
+        ]
+      ],
+      "trace_status": "AI_route_guide_not_material_boundary"
+    },
+    {
+      "id": "N3_GM",
+      "kind": "logical_terminal_group_not_accepted_external_cut",
+      "physical_boundary_crossing": "not_established",
+      "external_destination": "unknown",
+      "traces_xy_m1_native": [],
+      "trace_status": "no_export_route_assigned"
+    }
+  ],
+  "known_facts": [
+    "two MOS and two physical poly gates",
+    "shared M diffusion",
+    "G1/G2 not joined by local end poly",
+    "both gates and shared M form N3_GM",
+    "M2 P2 identity corresponds to this group; terminal mapping unknown"
+  ],
+  "review_questions": [],
+  "full_topology_alternatives": [],
+  "alternatives_reason": "Existing evidence supports one partially specified graph, not two independently supported complete circuits; do not fabricate alternative joins.",
+  "minimal_check": {
+    "action": "grouped review completed; no further V3 image checks queued",
+    "stop": "no new discriminating evidence; freeze this branch without upper-layer expansion"
+  },
+  "deferred": [
+    "external destinations",
+    "P2 to M3 to M4 routing",
+    "individual CT counts",
+    "physical W/L calibration",
+    "device polarity and body assignment before electrical-ready gate"
+  ],
+  "acceptance": {
+    "review_draft_ready": true,
+    "local_signal_topology_accepted": false,
+    "four_terminal_reconstruction_complete": false,
+    "simulation_ready": false,
+    "grouped_visible_connectivity_review_complete": true
+  },
+  "new_electrical_joins": [],
+  "new_registration": false,
+  "new_case_script": false,
+  "material_panel_processing": {
+    "AA_photo": "existing AA_crop_to_poly_crop matrix, bilinear warp; not new registration",
+    "AA_matrix": [
+      [
+        1.0374831585295232,
+        0.004891394514279718,
+        -24.872063394971292
+      ],
+      [
+        -0.004891394514279719,
+        1.0374831585295232,
+        -8.192183152664711
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "AA_support": "old aligned binary positive support; not source photograph",
+    "poly_photo": "unchanged crop pixels",
+    "CT_support": "unchanged positive support",
+    "panel_crop_xywh_poly": [
+      810,
+      375,
+      510,
+      130
+    ]
+  },
+  "whole_block_decisions": [
+    {
+      "id": "Q1_outer_M1_mapping",
+      "status": "human_confirmed",
+      "mappings": [
+        {
+          "region": "V3_A",
+          "net_id": "N3_A",
+          "metal": "M1_upper_horizontal_bar"
+        },
+        {
+          "region": "V3_B",
+          "net_id": "N3_B",
+          "metal": "M1_lower_horizontal_bar"
+        }
+      ],
+      "scope": "local correspondence, not entire-net external connectivity or exact pixel boundaries"
+    },
+    {
+      "id": "Q2_additional_local_merges",
+      "status": "human_reported_no_evidence",
+      "affected_net_ids": [
+        "N3_A",
+        "N3_B",
+        "N3_GM"
+      ],
+      "additional_merge_approved": false,
+      "electrical_equivalence": "unknown",
+      "proven_isolation": false,
+      "interpretation": "No evidence for additional merges in the reviewed local images. Retain unknown relations; do not infer disconnection."
+    }
+  ],
+  "retained_unknowns": [
+    {
+      "id": "Q2_additional_local_merges",
+      "status": "no_evidence_unknown",
+      "block_new_work": false,
+      "scope": "retain A/B/GM equivalence unknown; no additional merge and no proven isolation"
+    },
+    {
+      "id": "electrical_properties",
+      "status": "unknown",
+      "items": [
+        "body connections",
+        "NMOS/PMOS",
+        "source/drain orientation",
+        "physical W/L",
+        "exact M2 via path",
+        "external destinations"
+      ]
+    }
+  ]
+}

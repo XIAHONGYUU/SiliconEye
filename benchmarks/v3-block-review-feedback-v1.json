@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "1.对应\n2.没有证据",
+  "scope": "V3 whole-block grouped review: outer diffusion-to-M1 mapping confirmed; no evidence of additional merging is not proof of isolation",
+  "sources": {
+    "review_card": {
+      "path": "runs/v3-block-review-v1/block-card.json",
+      "sha256": "8527c900da53aaf0b98559658a3a680a6da0db4d5a3fb0ed775f6d68adb9793b"
+    },
+    "presented_report": {
+      "path": "runs/v3-block-review-v1/report.md",
+      "sha256": "a7a3a2dc91028a689fbaa0b8858b66a602c1c27067c09af36f1e4d6e8030386f"
+    },
+    "presented_schematic": {
+      "path": "runs/v3-block-review-v1/local-schematic.svg",
+      "sha256": "61b2fb1765f1f51b22bdd795f683d77b287e1104c26cd04caa172aff115606fb"
+    },
+    "review_manifest": {
+      "path": "runs/v3-block-review-v1/manifest.json",
+      "sha256": "206c920ff3f03fdc4dd40e43d6f9d10c2485cd2f1d9694a5485013596693888b"
+    },
+    "M1_context": {
+      "path": "runs/device-network-boundary-v1r1/M1-V3-boundary-native-observations.png",
+      "sha256": "c14d1a7f53a4c09455bdc8d6daf3a7a7a010d30935160ebca47bfaafd56ab7a6"
+    },
+    "M2_context": {
+      "path": "runs/device-network-boundary-v1r1/M2-V3-boundary-search-native-observations.png",
+      "sha256": "b4e71102c404dc979d78300a99bfbefa80747c0677c0196598e71687b496eafb"
+    }
+  },
+  "decisions": [
+    {
+      "id": "Q1_outer_M1_mapping",
+      "status": "human_confirmed",
+      "mappings": [
+        {
+          "region": "V3_A",
+          "net_id": "N3_A",
+          "metal": "M1_upper_horizontal_bar"
+        },
+        {
+          "region": "V3_B",
+          "net_id": "N3_B",
+          "metal": "M1_lower_horizontal_bar"
+        }
+      ],
+      "scope": "local correspondence, not entire-net external connectivity or exact pixel boundaries"
+    },
+    {
+      "id": "Q2_additional_local_merges",
+      "status": "human_reported_no_evidence",
+      "affected_net_ids": [
+        "N3_A",
+        "N3_B",
+        "N3_GM"
+      ],
+      "additional_merge_approved": false,
+      "electrical_equivalence": "unknown",
+      "proven_isolation": false,
+      "interpretation": "No evidence for additional merges in the reviewed local images. Retain unknown relations; do not infer disconnection."
+    }
+  ],
+  "not_approved": [
+    "body connections",
+    "NMOS/PMOS",
+    "source/drain orientation",
+    "physical W/L",
+    "exact M2 via path",
+    "external destinations"
+  ]
+}

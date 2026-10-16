@@ -132,7 +132,7 @@ silicon-eye info -c configs/test_chip.yaml
 - [配准修复验证](docs/registration-validation.md)：合成图测试结果及接口变化。
 - [八层照片验收入口](docs/registration-audit.md)：重跑命令、证据包与真实照片结果。
 
-当前先推进配准验证。上文 Quick Start 的 `run -o` 尚未由 CLI 实现，输出目前在 `runs/`。自动分割与连接提取尚未完成，空网表不代表芯片逆向成功。
+当前已完成V3可见连接成组复核，下一阶段先明确最小架构接口，再做新ROI复用验证。上文 Quick Start 的 `run -o` 尚未由 CLI 实现，输出目前在 `runs/`。自动分割与连接提取尚未完成，空网表不代表芯片逆向成功。
 
 - [结构约束重验收](docs/registration-constrained-review.md)：新版点、冻结预算、约束拟合和真实结果。
 
@@ -151,3 +151,5 @@ silicon-eye info -c configs/test_chip.yaml
 人工示例引导的 AA/poly 重新提取与 CT 遮挡处理：[示例引导说明](docs/guided-material-extraction.md)。
 
 2026-10-15 开发快照：局部 CT v2 与 poly 分离修正获目视认可，V3 两栅至少经 M2 同网；栅与共享扩散区 M 是否相连仍未知。详见[四MOS工作流与结论快照](docs/checkpoints/2026-10-15-local-device-network.md)，实时任务仍以 `CURRENT_TASK.md` 为准。
+
+2026-10-16 当前结论快照：[V3已复核结构与下一阶段方向](docs/checkpoints/2026-10-16-v3-reviewed.md)。外侧A/B与M1上下横条对应已确认；没有额外并网证据，隔离关系仍未知。暂缓细节追线，先完成最小顶层架构设计。

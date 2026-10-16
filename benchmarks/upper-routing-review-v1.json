@@ -1,0 +1,746 @@
+{
+  "schema_version": 5,
+  "inputs": {
+    "registration": {
+      "path": "runs/registration-local-poly-m1-v1/manifest.json",
+      "sha256": "6e74a0f8b4b36e7d7f3012d874a24f1f8da5f926052405dae8cdd6b1715841b2"
+    },
+    "baseline_approval": {
+      "path": "benchmarks/local-poly-repair-feedback-v1.json",
+      "sha256": "1be2067d17da006193d279986470d293e9a7fcd3335c977e280abe85329925fd"
+    },
+    "topology_review": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "terminal_spec": {
+      "path": "benchmarks/local-terminal-review-v1.json",
+      "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+    },
+    "mos_manifest": {
+      "path": "runs/local-mos-review-v1r1/manifest.json",
+      "sha256": "338adb321a66e635fa0a74c7f301bfcb091fa05336a304c662c645424e866cbe"
+    },
+    "m1_source": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2_source": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "path_review": {
+      "path": "benchmarks/m2-key-path-review-v1.json",
+      "sha256": "d17d489f6ba398c4eed22476347aaf0ddcbc7cf86e5880748a63c2db3bc6edc8"
+    },
+    "prior_network_manifest": {
+      "path": "runs/device-m1-m2-connected-v1r1/manifest.json",
+      "sha256": "9a0fe6fe7ba9dbfdfc51510b6b2c0a66d256568f870a4c140f743101a9759f39"
+    },
+    "m3_source": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4_source": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    }
+  },
+  "canvas_xywh_poly_native": [
+    1780,
+    970,
+    1500,
+    850
+  ],
+  "rois": [
+    {
+      "id": "V12",
+      "xywh_poly_crop": [
+        125,
+        190,
+        225,
+        155
+      ]
+    },
+    {
+      "id": "V3",
+      "xywh_poly_crop": [
+        810,
+        375,
+        510,
+        130
+      ]
+    }
+  ],
+  "networks": [
+    {
+      "id": "N1_G",
+      "terminals": [
+        "V1_G"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            184,
+            255
+          ],
+          [
+            184,
+            238
+          ],
+          [
+            198,
+            238
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V1上端可见M1接触垫。",
+      "uncertainty": "局部垫外连接未追踪。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N12_A",
+      "terminals": [
+        "V1_A",
+        "V2_A"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            154,
+            205
+          ],
+          [
+            154,
+            316
+          ],
+          [
+            245,
+            316
+          ],
+          [
+            245,
+            276
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "连续U形M1候选，跨接V1左扩散接触组与V2左扩散接触组。",
+      "uncertainty": "CT位置对应受局部配准影响；不指定源漏极性。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N12_BG",
+      "terminals": [
+        "V1_B",
+        "V2_G"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            217,
+            301
+          ],
+          [
+            217,
+            235
+          ],
+          [
+            276,
+            235
+          ],
+          [
+            276,
+            257
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V1右侧细竖支路和顶部折线指向V2栅接触组。",
+      "uncertainty": "细支路受拍屏纹理影响，尤其底端与U形M1是否留有间隙尚待确认；与N12_A不自动合并。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N2_B",
+      "terminals": [
+        "V2_B"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            305,
+            237
+          ],
+          [
+            305,
+            298
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V2右侧可见竖向M1接触段。",
+      "uncertainty": "局部段外/上层金属连接未知。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N3_MG",
+      "terminals": [
+        "V3_G1",
+        "V3_G2",
+        "V3_M"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            845,
+            409
+          ],
+          [
+            845,
+            473
+          ]
+        ],
+        [
+          [
+            845,
+            441
+          ],
+          [
+            1258,
+            441
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V3左端竖向M1连接中间横向M1，可能将两个独立poly栅接触与共享M行相连。",
+      "uncertainty": "新M1连接假设未获人工确认；不改G1/G2的物理栅节点或poly分离裁决。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N3_A",
+      "terminals": [
+        "V3_A"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            869,
+            415
+          ],
+          [
+            1258,
+            415
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V3上排扩散接触组对应的独立水平M1候选。",
+      "uncertainty": "局部图未追踪更高层/外部连接。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    },
+    {
+      "id": "N3_B",
+      "terminals": [
+        "V3_B"
+      ],
+      "traces_xy_poly_crop": [
+        [
+          [
+            869,
+            469
+          ],
+          [
+            1258,
+            469
+          ]
+        ]
+      ],
+      "status": "AI_visual_candidate",
+      "trace_kind": "AI_route_guides_not_segmented_metal_boundaries",
+      "visual_basis": "V3下排扩散接触组对应的独立水平M1候选。",
+      "uncertainty": "局部图未追踪更高层/外部连接。",
+      "external_connectivity": "unknown_including_higher_metal_layers"
+    }
+  ],
+  "dimension_windows": [
+    {
+      "device": "V1_Q1",
+      "xywh_poly_crop": [
+        160,
+        252,
+        60,
+        66
+      ],
+      "source_drain_axis": "x"
+    },
+    {
+      "device": "V2_Q1",
+      "xywh_poly_crop": [
+        253,
+        252,
+        50,
+        66
+      ],
+      "source_drain_axis": "x"
+    },
+    {
+      "device": "V3_Q1",
+      "xywh_poly_crop": [
+        853,
+        420,
+        420,
+        15
+      ],
+      "source_drain_axis": "y"
+    },
+    {
+      "device": "V3_Q2",
+      "xywh_poly_crop": [
+        853,
+        446,
+        420,
+        15
+      ],
+      "source_drain_axis": "y"
+    }
+  ],
+  "critical_questions": [
+    {
+      "id": "V3_P2_upper_route",
+      "status": "candidate",
+      "net_ids": [
+        "N3_A",
+        "N3_GM",
+        "N3_B"
+      ],
+      "question": "P2上端是否经M3上方横向走线束向左引出？具体端子网络及准确轨道未知，不能将候选走线并入网表。"
+    }
+  ],
+  "review_records": [
+    {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    {
+      "path": "benchmarks/device-m1-network-feedback-v1.json",
+      "sha256": "80373990b602a96adee1ba7a42d935953fbaac547bdd874e5a23dd24ce5bf4b8"
+    },
+    {
+      "path": "benchmarks/device-m1-m2-topology-feedback-v1.json",
+      "sha256": "0a8b1de50419cdec3ca0b4493686ab42e7cce083a14b1579f82776bf34f86614"
+    },
+    {
+      "path": "benchmarks/device-gate-diffusion-feedback-v1.json",
+      "sha256": "a72ed3d083eb5815b98ee1437f9768c9b9ea3551438e2d8f3b4d5cb23bef2b27"
+    }
+  ],
+  "critical_views": [
+    {
+      "id": "M1-V3-boundary-native",
+      "source": "m1_source",
+      "crop_xywh_native": [
+        2300,
+        1150,
+        1050,
+        800
+      ],
+      "description": "扩展M1原图：显示V3横条及外围结构；标框仅在单独副本。",
+      "observations": [
+        {
+          "id": "A-L",
+          "xywh_native": [
+            2592,
+            1506,
+            42,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_A"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "上横条左端上下文；与附近竖结构的连接未知。"
+        },
+        {
+          "id": "A-R",
+          "xywh_native": [
+            2975,
+            1505,
+            45,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_A"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "上横条右端上下文；未见清晰外延，不代表开路。"
+        },
+        {
+          "id": "B-L",
+          "xywh_native": [
+            2592,
+            1559,
+            42,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_B"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "下横条左端上下文；纹理影响局部间隙判断。"
+        },
+        {
+          "id": "B-R",
+          "xywh_native": [
+            2975,
+            1558,
+            45,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_B"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "下横条右端上下文；更高层引出未知。"
+        }
+      ],
+      "correspondence_status": "candidate_local_mapping"
+    },
+    {
+      "id": "M1-V3-left-ends-native",
+      "source": "m1_source",
+      "crop_xywh_native": [
+        2540,
+        1470,
+        150,
+        150
+      ],
+      "description": "左端原生局部，单独提供4倍最近邻展示，不确认微小间隙。",
+      "observations": [
+        {
+          "id": "A-L",
+          "xywh_native": [
+            2592,
+            1506,
+            42,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_A"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "上横条左端上下文；与附近竖结构的连接未知。"
+        },
+        {
+          "id": "B-L",
+          "xywh_native": [
+            2592,
+            1559,
+            42,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_B"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "下横条左端上下文；纹理影响局部间隙判断。"
+        }
+      ],
+      "correspondence_status": "same_source"
+    },
+    {
+      "id": "M1-V3-right-ends-native",
+      "source": "m1_source",
+      "crop_xywh_native": [
+        2940,
+        1470,
+        150,
+        150
+      ],
+      "description": "右端原生局部，外围矩形线不自动视为引出。",
+      "observations": [
+        {
+          "id": "A-R",
+          "xywh_native": [
+            2975,
+            1505,
+            45,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_A"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "上横条右端上下文；未见清晰外延，不代表开路。"
+        },
+        {
+          "id": "B-R",
+          "xywh_native": [
+            2975,
+            1558,
+            45,
+            30
+          ],
+          "suggested_net_ids": [
+            "N3_B"
+          ],
+          "status": "AI_visual_candidate",
+          "note": "下横条右端上下文；更高层引出未知。"
+        }
+      ],
+      "correspondence_status": "same_source"
+    },
+    {
+      "id": "M2-V3-boundary-search-native",
+      "source": "m2_source",
+      "crop_xywh_native": [
+        2350,
+        1300,
+        1000,
+        650
+      ],
+      "description": "M2未配准搜索区：P1-P4只标记可见结构，全部未分配网络。",
+      "observations": [
+        {
+          "id": "P1",
+          "xywh_native": [
+            2538,
+            1564,
+            44,
+            180
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "左侧独立竖向结构，上下端可见；与M1对应未知。"
+        },
+        {
+          "id": "P2",
+          "xywh_native": [
+            2634,
+            1514,
+            49,
+            125
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "竖向结构带多个横向端部；不能凭外形推定连接哪排端子。"
+        },
+        {
+          "id": "P3",
+          "xywh_native": [
+            2715,
+            1725,
+            104,
+            35
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "水平短结构；归属及是否为层间接触区未知。"
+        },
+        {
+          "id": "P4",
+          "xywh_native": [
+            3078,
+            1400,
+            53,
+            430
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "右侧长竖线下端；不是确认的V3引出。"
+        }
+      ],
+      "correspondence_status": "unregistered"
+    },
+    {
+      "id": "M3-upper-routing-native",
+      "source": "m3_source",
+      "crop_xywh_native": [
+        1900,
+        1250,
+        1750,
+        900
+      ],
+      "description": "M3原生上下文：横向束及短段；未确认单根轨道归属。",
+      "observations": [
+        {
+          "id": "H1",
+          "xywh_native": [
+            2300,
+            1410,
+            1100,
+            155
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "上方横向走线束，不是单一网络；下缘为P2上端引出检查候选。"
+        },
+        {
+          "id": "S3",
+          "xywh_native": [
+            2738,
+            1752,
+            98,
+            28
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "水平短段，作为M2-P3同源结构候选的独立检查，不是确认过孔。"
+        },
+        {
+          "id": "H2",
+          "xywh_native": [
+            2300,
+            1800,
+            1100,
+            165
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "下方走线束与宽条，不按形状命名电源。"
+        }
+      ],
+      "correspondence_status": "unregistered"
+    },
+    {
+      "id": "M4-upper-routing-native",
+      "source": "m4_source",
+      "crop_xywh_native": [
+        2200,
+        1250,
+        1250,
+        1100
+      ],
+      "description": "M4原生上下文：纵向宽条及右侧方块；未配准。",
+      "observations": [
+        {
+          "id": "V4",
+          "xywh_native": [
+            2730,
+            1660,
+            105,
+            650
+          ],
+          "suggested_net_ids": [],
+          "status": "AI_visual_candidate",
+          "note": "中部纵向长条起始端及向下延续，未赋予V3端子网络。"
+        }
+      ],
+      "correspondence_status": "unregistered"
+    },
+    {
+      "id": "M4-spine-native",
+      "source": "m4_source",
+      "crop_xywh_native": [
+        2650,
+        1600,
+        300,
+        2600
+      ],
+      "description": "M4长条向下跨越当前窗口，片外/焊盘连接未知。",
+      "observations": [],
+      "correspondence_status": "unregistered"
+    },
+    {
+      "id": "M3-left-corridor-native",
+      "source": "m3_source",
+      "crop_xywh_native": [
+        0,
+        1400,
+        2900,
+        280
+      ],
+      "description": "向左扩展至M3原图边缘的多轨走线束搜索条带；尚未确定具体轨道或确认V3连接。",
+      "observations": [],
+      "correspondence_status": "same_source"
+    }
+  ],
+  "boundary_review": {
+    "actor": "AI_visual_reasoning_in_current_chat",
+    "status": "candidate",
+    "coordinate_unit": "source_native_px",
+    "findings": [
+      {
+        "target": "N3_A",
+        "observation": "M1上横条的可见走向仍局限于V3内部；左右端部列为检查窗口。",
+        "uncertainty": "检查范围内未辨认出通向邻接器件的连续分支，不证明电气悬空；上层引出及遮挡仍可能。"
+      },
+      {
+        "target": "N3_B",
+        "observation": "M1下横条可辨认；右端位于内侧矩形结构内，未见清晰外延。",
+        "uncertainty": "左端与公共连接的间隙受拍屏纹理影响，不以亮度阈值判定短接或断开。"
+      },
+      {
+        "target": "surrounding_rectangle",
+        "observation": "V3周围可见嵌套矩形线状结构，作为上下文保留。",
+        "uncertainty": "不将矩形线自动归入N3_A/N3_B，不据形状判定其为体端/电源/护环。"
+      },
+      {
+        "target": "M2-P2",
+        "observation": "用户已确认P2对应V3两MOS器件组。",
+        "uncertainty": "具体端子/过孔映射仍未知；P1/P3/P4未确认，不扩大并网。"
+      }
+    ],
+    "next_gate": "利用M3/M4宏观走向提出外部支路候选；先检查P2上端与M3横向束下缘的对应，不重复确认P2身份。"
+  },
+  "identity_reviews": [
+    {
+      "path": "benchmarks/device-network-boundary-feedback-v1.json",
+      "sha256": "944c0a128f2ff840443af2b65048902031fbe1a30cd9c2a78f70fc8597b923e5"
+    }
+  ],
+  "macro_diagnostic": {
+    "source": "m2_source",
+    "reference": "m3_source",
+    "model": "translation_only",
+    "status": "AI_correspondence_candidate",
+    "fit": [
+      {
+        "id": "upper_array",
+        "source_xywh": [
+          2518,
+          1334,
+          120,
+          46
+        ],
+        "reference_xywh": [
+          2540,
+          1361,
+          120,
+          44
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "short_bar_P3_S3",
+        "source_xywh": [
+          2716,
+          1728,
+          92,
+          26
+        ],
+        "reference_xywh": [
+          2738,
+          1752,
+          98,
+          28
+        ]
+      }
+    ],
+    "weight_quantiles": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "primary_quantile": 0.8,
+    "scope": "macro diagnostic only, not accepted terminal/via registration; one held-out structure selected by AI",
+    "budget_note": "Report residuals and sensitivity; no new formal acceptance threshold inferred from observed result."
+  }
+}

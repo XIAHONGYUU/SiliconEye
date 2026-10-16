@@ -13,6 +13,7 @@ import cv2
 import numpy as np
 
 from .local_terminal_review import _verified
+from .network_reviews import apply_network_reviews
 from .registration_audit import digest, write_image, write_json
 
 
@@ -83,9 +84,10 @@ def _text(image, text, point, color=(255, 255, 255), scale=.45):
                 cv2.LINE_AA)
 
 
-def draw_graph(devices: list, networks: list, colors: dict) -> np.ndarray:
-    image = np.full((780, 1100, 3), 28, np.uint8)
-    _text(image, 'LOCAL DEVICE / M1 NETWORK CANDIDATES', (30, 30), scale=.7)
+def draw_graph(devices: list, networks: list, colors: dict,
+               title='LOCAL DEVICE / M1 NETWORK CANDIDATES') -> np.ndarray:
+    image = np.full((max(780, 170+len(networks)*90), 1100, 3), 28, np.uint8)
+    _text(image, title, (30, 30), scale=.7)
     _text(image, 'A/B = unoriented diffusion terminals; Bulk = unknown', (30, 58))
     _text(image, 'Crossing lines are not junctions. Physical gates remain distinct.', (30, 80))
     net_y = {n['id']: 125+i*90 for i, n in enumerate(networks)}
@@ -107,6 +109,34 @@ def draw_graph(devices: list, networks: list, colors: dict) -> np.ndarray:
         cv2.rectangle(image, (785, y-22), (1060, y+25), colors[net], 1)
         _text(image, net, (800, y+5), colors[net], .6)
     return image
+
+
+def annotate_native_observations(image: np.ndarray, view: dict, network_ids: set) -> np.ndarray:
+    """Draw AI observation windows on a copy, using source-native coordinates only."""
+    x, y, w, h = view['crop_xywh_native']
+    if (image is None or min(x, y) < 0 or min(w, h) <= 0 or
+            x+w > image.shape[1] or y+h > image.shape[0]):
+        raise ValueError('Invalid critical native view')
+    marked = image[y:y+h, x:x+w].copy()
+    seen = set()
+    for obs in view.get('observations', []):
+        if obs['id'] in seen:
+            raise ValueError('Duplicate observation ID')
+        seen.add(obs['id'])
+        if obs['status'] != 'AI_visual_candidate':
+            raise ValueError('Observation windows cannot confirm topology')
+        if not set(obs['suggested_net_ids']) <= network_ids:
+            raise ValueError('Observation references unknown network')
+        if view.get('correspondence_status') == 'unregistered' and obs['suggested_net_ids']:
+            raise ValueError('Unregistered cross-layer observations must stay unassigned')
+        bx, by, bw, bh = obs['xywh_native']
+        if min(bw, bh) <= 0 or bx < x or by < y or bx+bw > x+w or by+bh > y+h:
+            raise ValueError('Observation outside native view')
+        a, b = (bx-x, by-y), (bx+bw-x-1, by+bh-y-1)
+        cv2.rectangle(marked, a, b, (0, 210, 255), 1)
+        _text(marked, obs['id'], (max(2, a[0]), max(18, a[1]-5)),
+              (0, 210, 255), .45)
+    return marked
 
 
 def run_network_review(spec_path: str, output: str) -> dict:
@@ -166,16 +196,27 @@ def run_network_review(spec_path: str, output: str) -> dict:
     aa = cv2.warpPerspective(masks['AA'].astype('uint8'), np.array(mos['matrix']),
                              (w, h), flags=cv2.INTER_NEAREST) > 0
     terminal_spec = json.loads(paths['terminal_spec'].read_text())
-    devices = device_connections(terminal_spec['devices'], terminal_spec['zones'], spec['networks'])
+    review_records = []
+    for binding in spec.get('review_records', []):
+        record = json.loads(_verified(root, binding).read_text())
+        for source in record.get('sources', {}).values():
+            if isinstance(source, dict) and 'path' in source and 'sha256' in source:
+                _verified(root, source)
+        review_records.append(record)
+    state = apply_network_reviews(spec['networks'], review_records)
+    networks = state['networks']
+    devices = device_connections(terminal_spec['devices'], terminal_spec['zones'], networks)
+    resolved = {f['id'] for f in state['facts'] if f['status'] == 'human_confirmed'}
+    questions = [q for q in spec['critical_questions'] if q['id'] not in resolved]
     dimensions = {d['device']: geometry_proxy(aa, masks['poly_positive_support'], masks['CT'],
                                               d['xywh_poly_crop'], d['source_drain_axis'])
                   for d in spec['dimension_windows']}
     palette = [(220, 80, 220), (70, 230, 230), (70, 150, 255), (220, 220, 60),
                (60, 230, 60), (255, 150, 70), (170, 90, 255)]
-    colors = {n['id']: palette[i % len(palette)] for i, n in enumerate(spec['networks'])}
+    colors = {n['id']: palette[i % len(palette)] for i, n in enumerate(networks)}
     overlay = aligned.copy()
     network_records = []
-    for net in spec['networks']:
+    for net in networks:
         native_traces = []
         for trace in net['traces_xy_poly_crop']:
             points = np.rint(trace).astype(int)
@@ -186,8 +227,10 @@ def run_network_review(spec_path: str, output: str) -> dict:
             cv2.polylines(overlay, [points], False, colors[net['id']], 2, cv2.LINE_AA)
             native_traces.append(poly_to_m1(trace, matrix, [ox, oy]))
         network_records.append(dict(**net, traces_xy_m1_native=native_traces,
-                                    electrical_approval='not_human_reviewed'))
-    zone_net = {t: n['id'] for n in spec['networks'] for t in n['terminals']}
+                                    electrical_approval='reviewed_relation_only'
+                                    if net['status'].startswith('human_confirmed')
+                                    else 'not_human_reviewed'))
+    zone_net = {t: n['id'] for n in networks for t in n['terminals']}
     for zone in terminal_spec['zones']:
         x, y, zw, zh = zone['xywh_poly_crop']
         color = colors[zone_net[zone['id']]]
@@ -214,7 +257,50 @@ def run_network_review(spec_path: str, output: str) -> dict:
             _text(header, title, (5, 20), scale=.5)
             panels.extend([header, panel])
         write_image(out / f"{roi['id']}-networks.png", np.vstack(panels))
-    write_image(out / 'device-network-graph.png', draw_graph(devices, spec['networks'], colors))
+    title = 'LOCAL DEVICE / M1-M2 REVIEWED RELATIONS' if review_records else (
+        'LOCAL DEVICE / M1 NETWORK CANDIDATES')
+    write_image(out / 'device-network-graph.png', draw_graph(devices, networks, colors, title))
+    if review_records:
+        from .local_schematic import render_schematic
+
+        render_schematic(out, devices, dimensions, state['unresolved_relations'])
+    critical_evidence = []
+    for view in spec.get('critical_views', []):
+        image = cv2.imread(str(paths[view['source']]))
+        x, y, rw, rh = view['crop_xywh_native']
+        if image is None or min(x, y) < 0 or min(rw, rh) <= 0 or (
+            x+rw > image.shape[1] or y+rh > image.shape[0]
+        ):
+            raise ValueError('Invalid critical native view')
+        filename = view['id']+'.png'
+        write_image(out / filename, image[y:y+rh, x:x+rw])
+        display = filename
+        if rw <= 300:
+            display = view['id']+'-zoom.png'
+            write_image(out / display, cv2.resize(image[y:y+rh, x:x+rw], (rw*4, rh*4),
+                                                 interpolation=cv2.INTER_NEAREST))
+        observation_artifact = {}
+        if view.get('observations'):
+            marked = annotate_native_observations(image, view, set(zone_net.values()))
+            annotated = view['id']+'-observations.png'
+            write_image(out / annotated, marked)
+            observation_artifact = dict(observation_artifact=annotated,
+                                        observation_sha256=digest(out / annotated))
+        critical_evidence.append(dict(**view, **observation_artifact,
+                                      artifact=filename, display=display,
+                                      sha256=digest(out / filename),
+                                      resampled=False))
+    boundary_review = spec.get('boundary_review')
+    if boundary_review:
+        prior = json.loads(paths['prior_network_manifest'].read_text())
+        old_nets = {n['id']: sorted(n['terminals']) for n in prior['networks']}
+        new_nets = {n['id']: sorted(n['terminals']) for n in network_records}
+        if devices != prior['devices'] or old_nets != new_nets:
+            raise ValueError('Boundary observation review cannot change prior topology')
+        write_json(out / 'network-boundary.json', dict(
+            analysis=boundary_review, observations=critical_evidence,
+            devices=devices, networks=network_records, topology_changed=False,
+            cross_layer_correspondence='unknown', runtime_ai_used=False))
     result = dict(status='device_network_candidates', runtime_ai_used=False,
                   source_spec=spec, spec_sha256=digest(spec_file),
                   code_sha256=digest(Path(__file__)),
@@ -223,32 +309,98 @@ def run_network_review(spec_path: str, output: str) -> dict:
                                     validation_metrics=reg['validation_metrics'],
                                     acceptance=reg['acceptance']),
                   devices=devices, networks=network_records, dimension_proxies=dimensions,
-                  critical_questions=spec['critical_questions'],
+                  critical_questions=questions,
+                  applied_review_records=spec.get('review_records', []),
+                  review_facts=state['facts'], unresolved_relations=state['unresolved_relations'],
+                  superseded_hypotheses=state['superseded_hypotheses'],
+                  critical_path_evidence=critical_evidence, boundary_review=boundary_review,
+                  helper_code_sha256={n: digest(Path(__file__).with_name(n)) for n in
+                                      ['network_reviews.py', 'local_schematic.py']},
                   inherited_human_constraints=topology['constraints'],
-                  gate_identity='G1/G2 distinct poly gates; candidate shared net only through M1',
+                  gate_identity='G1/G2 retain distinct physical identities; review layers explicit',
                   confirmed_netlist_generated=False, unit='poly_source_px')
     write_json(out / 'manifest.json', result)
-    lines = ['# 四MOS局部M1网络候选', '',
+    write_json(out / 'local-netlist.json', dict(
+        schema_version=1, kind='partial_structural_netlist_not_simulation_ready',
+        devices=devices, networks=network_records, facts=state['facts'],
+        unresolved_relations=state['unresolved_relations'], dimension_proxies=dimensions,
+        reviews=spec.get('review_records', []),
+        limitations=['bulk and MOS polarity unknown', 'image geometry is not physical W/L',
+                     'M2 precise via path not validated']))
+    gm_joined = any(f['id'] == 'V3_gate_to_shared_diffusion' for f in state['facts'])
+    gm_note = ('公共栅与共享扩散区已由用户确认同网N3_GM；具体金属/过孔路径未自动验证。'
+               if gm_joined else 'N3_G与N3_M关系仍未知，分列不代表证明断开。')
+    lines = ['# 四MOS局部电路与M1/M2关系（部分确认）' if review_records
+             else '# 四MOS局部M1网络候选', '',
              '以器件/接触区域为单位追踪连接，不要求逐个CT批准。AI看图给出路线，脚本仅校验与绘图。',
              '彩线是AI路线示意，不是自动分割的金属边界；CT mask未修改。',
-             'G1/G2仍是两个独立poly栅；若同网，本轮假设由M1跨接，不能写成poly端部相连。', '',
-             '## 优先复核两处会改变网络的关系', '']
-    for q in spec['critical_questions']:
+             'G1/G2保持两个物理poly栅；人工裁决可确认经M2同网，不能改写成poly端部相连。', '',
+             '## 尚待裁决的关键关系', '']
+    for q in questions:
         lines += [f"- {q['question']}"]
+    if not questions:
+        lines += ['当前列出的关键连接裁决已应用；其余蓝色映射仍为候选，体端及类型未知。']
+    if review_records:
+        lines += ['', '## 无需Virtuoso的局部电路示意', '',
+                  'SVG可在浏览器打开、缩放；PNG可直接查看。每个MOS独立绘制四个端子。',
+                  '同名网络代表连接；绿色为已确认关系，蓝色虚线为候选，黄色为未知。',
+                  'A/B不指派源漏方向；通用MOS符号无极性箭头，体端明确未知。',
+                  gm_note + '不输出可仿真的SPICE。', '',
+                  '[打开矢量图](local-schematic.svg)', '',
+                  '![局部电路示意](local-schematic.png)', '',
+                  '已应用的人工裁决：两栅至少经M2同网、M共用、局部poly端部不连、V1/V2局部M1断开。',
+                  '历史AI整体候选保留来源；当前连接由绑定的人工裁决生成。']
+    if boundary_review:
+        lines += ['', '## V3外侧网络与局部边界候选', '',
+                  '下述为原图观察及复核说明，确认范围按表注明；观察框不是材料分割边界。',
+                  'M1原生像素使用各自坐标；M2仅为未配准搜索区，不能按相近位置自动接线。', '',
+                  '| 网络/对象 | 当前观察 | 替代解释与未知 |', '| --- | --- | --- |']
+        for item in boundary_review['findings']:
+            lines.append(f"| {item['target']} | {item['observation']} | "
+                         f"{item['uncertainty']} |")
+        lines += ['', boundary_review['next_gate'], '']
     lines += ['', '![器件网络候选图](device-network-graph.png)', '',
               '## 器件—网络表', '', '| MOS | 栅G | 扩散端A | 扩散端B | 体端 |',
               '| --- | --- | --- | --- | --- |']
     for d in devices:
         lines.append(f"| {d['id']} | {d['G']} | {d['diffusion_A']} | {d['diffusion_B']} | 未知 |")
-    lines += ['', '所有新M1连接都是候选，不指定源漏极性或NMOS/PMOS；不同局部网络名不证明远处断开。',
+    if gm_joined:
+        lines += ['', '## V3局部拓扑归纳', '',
+                  'V3_Q1的G/B、V3_Q2的G/A同属N3_GM；两器件及两物理栅仍独立。',
+                  '当前V3有N3_A、N3_GM、N3_B三个局部信号网络名；',
+                  'N3_A/N3_B端子映射仍为候选，三者外部去向及是否远处相连未确认。',
+                  '未确定源漏与体端，不能直接命名为二极管连接、指定功能或生成仿真模型。']
+    lines += ['', '人工确认关系单独记录，其余映射为候选；不指定源漏极性或NMOS/PMOS。',
+              '不同局部网络名不证明远处断开。' + gm_note,
               '', '## 网络依据与歧义', '',
               '| 网络 | 接触组 | 原图判断 | 尚未确定 |', '| --- | --- | --- | --- |']
-    for n in spec['networks']:
+    for n in networks:
         lines.append(f"| {n['id']} | {', '.join(n['terminals'])} | "
                      f"{n['visual_basis']} | {n['uncertainty']} |")
     lines += ['', '## 原图与路线', '']
     for roi in spec['rois']:
         lines += [f"![{roi['id']}]({roi['id']}-networks.png)", '']
+    if critical_evidence:
+        lines += ['## 关键M1/M2路径核查', '',
+                  gm_note,
+                  '自动M2相似变换得到近零缩放的退化结果，已拒绝；过孔阵列身份也尚未独立确认。',
+                  '没有用残差0冒充对齐通过，也没有将搜索范围内任意M2线认作已匹配路径。',
+                  '两栅至少经M2同网的人工事实继续生效；物理poly仍为两条栅。',
+                  '所需证据是相关落点之间是否存在连通路径，不是每一个CT的数量。', '']
+        for view in critical_evidence:
+            if view.get('observations'):
+                lines += [f"### {view['id']}：AI观察窗口", '',
+                          f"![观察标号]({view['observation_artifact']})", '',
+                          '| 标号 | 原图窗口xywh（px） | 建议归属 | 判断/未知 |',
+                          '| --- | --- | --- | --- |']
+                for obs in view['observations']:
+                    names = ', '.join(obs['suggested_net_ids']) or '未分配'
+                    lines.append(f"| {obs['id']} | {obs['xywh_native']} | {names} | "
+                                 f"{obs['note']} |")
+                lines += ['']
+            lines += [view['description'], '', f"[原生像素文件]({view['artifact']})；"
+                      '小图展示版本仅最近邻放大，不增加图像信息。', '',
+                      f"![{view['id']}]({view['display']})", '']
     lines += ['## 图像几何尺寸参考（px，非真实W/L）', '',
               'W为AA/poly可见交叠跨度；L为横截面最长连续支持段的中位数及P10–P90。',
               '这些分位数只描述分割形状差异，非测量置信区间；CT遮挡、边界和跨层配准会影响数值。',
@@ -263,7 +415,7 @@ def run_network_review(spec_path: str, output: str) -> dict:
               f"独立竖环四角诊断：P95={metrics['p95_px']:.2f}px，最大={metrics['max_px']:.2f}px；",
               '满足预设宏观8/12px预算，结构对应仍为AI候选，同一环四角并非四个独立结构。',
               '配准acceptance仍unknown；没有据此宣称微小接触准确性。拟合及检查证据见绑定registration目录。',
-              '原图、已批准材料与未知域不变；尚未使用M2/注入层确认外部网络和体端。',
-              '下一关：仅复核上述两条关键M1关系，随后向外追踪网络及检查体端。']
+              '原图、已批准材料与未知域不变；M2人工判断不等于精确M2配准或过孔路径已验证。',
+              '下一关：只追踪尚未解决的关键关系，不重新请求已确认关系或逐CT验收。']
     (out / 'report.md').write_text('\n'.join(lines)+'\n')
     return result

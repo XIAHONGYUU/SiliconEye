@@ -162,3 +162,5 @@ V3的共享扩散关系继承用户确认，中间CT行的位置是新候选；G
 [原生M1/M2参考包](../runs/m1-m2-reference-v1/report.md)按`benchmarks/m1-m2-reference-v1.json`裁剪现有JPEG解码像素，输出无缩放、无叠加、无锐化PNG；原生坐标与哈希记录在manifest。M1-V3细节未作配准重采样；M2只提供宏观搜索区域及更大上下文，没有合格局部变换，不能当精确对应或用同尺寸合并。缩小定位图单独保存。
 
 最新[人工拓扑复核](../benchmarks/device-m1-m2-topology-feedback-v1.json)确认V3_G1/G2至少经M2同网。两栅物理身份与poly分离保持；公共栅网络N3_G与共享扩散N3_M是否连接仍未知，不能沿用旧N3_MG整体并网作为已确认结论。[更新器件表与图](../runs/device-m1-m2-reviewed-v1/report.md)单列这两个关系。M2精确过孔路径仍未由脚本核验，本次确认来源为用户。
+
+v2导出入口现已自动消费这些人工裁决，并生成无需Virtuoso的SVG/PNG四端MOS示意及同源局部结构化网表。命令与符号语义见[局部电路检查](local-circuit-review.md)。M2精确路径仍未验证，栅到M保持未知，旧v1参数仅用于重放历史候选。

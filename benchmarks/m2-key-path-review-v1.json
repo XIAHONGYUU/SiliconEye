@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "purpose": "Key M1/M2 path evidence, not per-contact detection",
+  "sources": {
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "reference_manifest": {
+      "path": "runs/m1-m2-reference-v1/manifest.json",
+      "sha256": "c66ecbf2bf14debfb34b4d39f1f1e259f89daeec647d1d9dd4069b5b9304b953"
+    }
+  },
+  "registration_attempt": {
+    "method": "local SIFT ratio 0.65 then similarity RANSAC 5px",
+    "features_M1": 3501,
+    "features_M2": 3501,
+    "ratio_matches": 34,
+    "reported_inliers": 9,
+    "estimated_linear_part": [
+      [
+        -1.29276253e-19,
+        -3.85151594e-20
+      ],
+      [
+        3.85151594e-20,
+        -1.29276253e-19
+      ]
+    ],
+    "decision": "rejected_degenerate_many_to_one",
+    "median_inlier_error_px": 0.0,
+    "interpretation": "Near-zero scale collapses distinct source positions to one target point; residual zero is not physical registration accuracy."
+  },
+  "manual_structure_check": {
+    "groups": "2x2/rectangular via-array candidates near the local M1/M2 area",
+    "status": "identity_ambiguous_not_fit",
+    "reason": "Layer-specific visibility and repeated arrays do not provide independently verified structural identities. No forced transform is created."
+  },
+  "M1_observation": {
+    "status": "AI_candidate",
+    "interpretation": "Left vertical route and middle horizontal route appear to approach/join in M1; insufficient independent M2 landing evidence to confirm gate-to-M equivalence."
+  },
+  "M2_path_status": "not_locally_registered",
+  "human_fact_preserved": "G1/G2 at least connected through M2",
+  "gate_to_M_relation": "unknown",
+  "next_evidence_needed": "Locate corresponding interlayer landing regions for common gate and shared M, then trace whether their metal paths meet; do not enumerate every CT."
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "review_date": "2026-10-15",
+  "reviewer": "user_in_current_chat",
+  "statement": "批准连接关系，继续推进",
+  "interpretation": "Approval applies to the outstanding N3_G to N3_M electrical connection presented in the preceding reply; does not approve other candidate mappings or exact M2 path.",
+  "sources": {
+    "prior_review": {
+      "path": "benchmarks/device-m1-m2-topology-feedback-v1.json",
+      "sha256": "0a8b1de50419cdec3ca0b4493686ab42e7cce083a14b1579f82776bf34f86614"
+    },
+    "presented_manifest": {
+      "path": "runs/device-m1-m2-current-v1r2/manifest.json",
+      "sha256": "06583f9c12e0ea56d2231d7d3b7f349019ef1741bba9c94a148c7e955c056db9"
+    },
+    "presented_schematic": {
+      "path": "runs/device-m1-m2-current-v1r2/local-schematic.png",
+      "sha256": "96690cd07da97cb03045462ddb3ac035e8a0c5026894050ed78c9018faa39000"
+    },
+    "presented_report": {
+      "path": "runs/device-m1-m2-current-v1r2/report.md",
+      "sha256": "434fb89d80f635d4327e9725309927c51372b45ca926ad9c243700499bf9abb0"
+    }
+  },
+  "decisions": [
+    {
+      "id": "V3_gate_to_shared_diffusion",
+      "status": "human_confirmed",
+      "connected": true,
+      "net_ids": [
+        "N3_G",
+        "N3_M"
+      ],
+      "common_net_id": "N3_GM",
+      "connection_layer": "not_resolved",
+      "supersedes_decision": {
+        "id": "V3_gate_to_shared_diffusion",
+        "status": "unknown",
+        "net_ids": [
+          "N3_G",
+          "N3_M"
+        ],
+        "interpretation": "Gate-to-gate approval does not establish a connection from the common gate net to shared diffusion M.",
+        "supersedes": "prior N3_MG single-net grouping remains unaccepted as a whole"
+      }
+    }
+  ]
+}

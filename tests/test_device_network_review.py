@@ -45,3 +45,39 @@ def test_dimensions_follow_channel_axis_and_never_claim_physical_scale(axis, ys,
 def test_absent_visible_overlap_does_not_invent_dimensions():
     empty = np.zeros((20, 20), bool)
     assert geometry_proxy(empty, empty, empty, [0, 0, 20, 20], 'x')['status'].startswith('unknown')
+
+
+def test_native_observation_windows_use_source_origin_without_mutating_source():
+    from silicon_eye.device_network_review import annotate_native_observations
+
+    image = np.zeros((100, 150, 3), np.uint8)
+    view = dict(crop_xywh_native=[50, 30, 70, 60], observations=[dict(
+        id='A', status='AI_visual_candidate', xywh_native=[60, 40, 20, 10],
+        suggested_net_ids=['NA'])])
+    marked = annotate_native_observations(image, view, {'NA'})
+    assert marked.shape == (60, 70, 3)
+    assert marked[10, 10].any() and marked[19, 29].any()
+    assert not image.any()
+    view['observations'][0]['xywh_native'][0] = 49
+    with pytest.raises(ValueError, match='outside native view'):
+        annotate_native_observations(image, view, {'NA'})
+
+
+def test_observation_windows_cannot_confirm_or_assign_unregistered_cross_layer_nets():
+    from silicon_eye.device_network_review import annotate_native_observations
+
+    image = np.zeros((100, 150, 3), np.uint8)
+    obs = dict(id='P1', status='human_confirmed', xywh_native=[60, 40, 20, 10],
+               suggested_net_ids=['NA'])
+    view = dict(crop_xywh_native=[50, 30, 70, 60], observations=[obs],
+                correspondence_status='unregistered')
+    with pytest.raises(ValueError, match='cannot confirm topology'):
+        annotate_native_observations(image, view, {'NA'})
+    obs['status'] = 'AI_visual_candidate'
+    with pytest.raises(ValueError, match='must stay unassigned'):
+        annotate_native_observations(image, view, {'NA'})
+    obs['suggested_net_ids'] = ['NO_SUCH_NET']
+    with pytest.raises(ValueError, match='unknown network'):
+        annotate_native_observations(image, view, {'NA'})
+    obs['suggested_net_ids'] = []
+    annotate_native_observations(image, view, {'NA'})
