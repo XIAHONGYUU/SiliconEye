@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_type": "human_W1_CT_AA_access_review",
+  "user_statement": "经 CT 接到AA 扩散端",
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-W1-material-candidate-v32.json",
+      "sha256": "164d70f93e49f272f14f505ed91c09f438dba1b460da24d4abdea66e9f40cd46"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    }
+  },
+  "reviewed_artifact": "runs/roi2-upper-AA-reviewed-W1-v32/W1-M1-poly-AA-source-review.png",
+  "decision": {
+    "M1_metal_id": "R2_corrected_gate_W1_M1_01",
+    "CT_group_id": "R2_W1_CT_ACCESS_group",
+    "AA_access_terminal_id": "R2_W1_AA_ACCESS_01",
+    "relation": "M1_via_CT_to_AA_diffusion_terminal",
+    "status": "human_confirmed",
+    "terminal_role": "S_or_D_unknown"
+  },
+  "scope_exclusions": [
+    "exact_CT_centers_or_count",
+    "precise_material_boundaries",
+    "exact_registration_acceptance",
+    "whole_AA_strip_union",
+    "channel_traversal",
+    "source_drain_assignment",
+    "absence_of_other_interfaces"
+  ]
+}

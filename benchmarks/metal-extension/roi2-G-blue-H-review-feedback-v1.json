@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "G是连接到蓝色的这根弦",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-P1-network-review-v1/G-to-P1-electrode-review.png",
+      "sha256": "474c12111199685e306561251443418e87961b0c208279d080e254ed1c5d2681"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v6.json",
+      "sha256": "71eef260022f79207f852d1bf8ff38d8e61d79a3206d79ba157b1e95be195457"
+    },
+    "prior_H_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-H-review-feedback-v1.json",
+      "sha256": "e48e7ad47b2a4b15bc822c4341aa6e3d47700df749a444def93ebf89c8a8197b"
+    },
+    "prior_G_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "J_review": {
+      "path": "benchmarks/metal-extension/roi2-J-left-continuation-review-feedback-v1.json",
+      "sha256": "b0198ce2469c40aff9a7e3ff12ec2842c987c87e69f5f5e57a1273df2acaa8e2"
+    },
+    "K_review": {
+      "path": "benchmarks/metal-extension/roi2-K-middle-M2-review-feedback-v1.json",
+      "sha256": "7424259e118485721d4d972d55b72b6a0b2853dd07e333ac555eeec2bc60cf1a"
+    },
+    "L1_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-L1-review-feedback-v1.json",
+      "sha256": "badb6e58f7a80f082db876fe05751c853395049c0de46a580810975666e4f188"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "decisions": {
+    "G_to_displayed_blue_M3_line": "confirmed",
+    "G_to_orange_N_candidate": "rejected_as_selected_landing",
+    "exact_via_pixel_boundary": "not_confirmed",
+    "P1_P2_short": "not_inferred",
+    "opposite_electrode_identity": "unresolved"
+  },
+  "normalization": "Displayed blue line is the previously marked H. Physical G-to-H connection is confirmed. This conflicts with the prior H=P2/other-terminal assignment while gate=P1 was retained. Preserve physical evidence and suspend port assignments rather than unioning capacitor terminals."
+}

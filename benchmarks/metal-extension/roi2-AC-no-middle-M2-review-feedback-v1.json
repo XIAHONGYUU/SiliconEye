@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "中间无M2接入",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-P1-diffusion-reviewed-v11/AC-extra-M2-interface-review.png",
+      "sha256": "58022d05f2ae88b1867c4f4689c551155355106aab56e9a3da05266a7e72f16b"
+    },
+    "prior_frontier": {
+      "path": "benchmarks/metal-extension/roi2-P1-frontiers-after-diffusion-v11.json",
+      "sha256": "c8aadf269ff7217fce0badd520850c44243992ad1146f6178e05633432a1b4c1"
+    }
+  },
+  "decisions": {
+    "M3_A_C_middle_additional_M2_attachment": "absent_in_reviewed_conductor_span",
+    "neighbor_B_direct_attachment_to_selected_A_C_M3": "excluded",
+    "A_C_endpoint_connections": "retains_confirmed",
+    "B_global_same_net_status": "unknown",
+    "all_other_M3_or_M4_interfaces": "not_approved_by_this_statement"
+  },
+  "scope": "Selected A-C M3 interior only; not proof that neighboring B is globally electrically isolated or that all capacitor/M4 branches are complete."
+}

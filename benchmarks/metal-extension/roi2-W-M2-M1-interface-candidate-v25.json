@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "record_type": "W_M2_visible_extent_and_M1_interface_candidate",
+  "sources": {
+    "W_L01_review": {
+      "path": "benchmarks/metal-extension/roi2-W-L01-review-feedback-v1.json",
+      "sha256": "670e186c107372f95411149e88a851152560826efca444e85130b7340a9a39c2"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "unit": "px",
+  "M2": {
+    "metal_id": "R2_corrected_gate_W_M2_01",
+    "frame_id": "m2_native",
+    "upper_pad_region_xyxy": [
+      1175,
+      3180,
+      1245,
+      3225
+    ],
+    "short_stem_centerline_xy": [
+      [
+        1212,
+        3205
+      ],
+      [
+        1217,
+        3253
+      ]
+    ],
+    "visible_extent_status": "AI_observed_short_stub",
+    "further_same_layer_continuation": "not_visibly_supported_not_asserted_absent"
+  },
+  "M1_candidate": {
+    "label": "W1?",
+    "frame_id": "m1_native",
+    "reference_brightpoint_xy": [
+      1244,
+      3220
+    ],
+    "inspection_region_xyxy": [
+      1230,
+      3200,
+      1260,
+      3245
+    ],
+    "observation": "bright spot on a short vertical M1 finger between two horizontal rails",
+    "via_identity": "candidate_V1_not_confirmed",
+    "connection_to_W_M2": "unknown",
+    "net_membership": "not_added"
+  },
+  "cross_layer_transform": null,
+  "reason_no_projection": "No accepted local M1/M2 registration at W; distant gate-region registration cannot establish this interface",
+  "outputs": [
+    "runs/roi2-W-M2-followup-v25/W-M2-M1-source-review.png",
+    "runs/roi2-W-M2-followup-v25/W-M2-M1-unmarked-wide.png"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "kind": "historical_seed_index",
+  "status": "partial_references_only_no_agent_scores",
+  "groups": [
+    {
+      "id": "v3-seed-v1",
+      "input": {
+        "path": "benchmarks/agent-eval/v3-seed-v1/input.json",
+        "sha256": "cd969c8cdfacd6f6451c9304aa7ce0d412fff31bdb8813bcefc6c7dfa3ad61bf"
+      },
+      "reference": {
+        "path": "benchmarks/agent-eval/v3-seed-v1/reference.json",
+        "sha256": "46184d54c71685b71f592faaf01a652e8d38953b329fcb0a31bb0267be660039"
+      },
+      "task_count": 1,
+      "reference_assertions": 10,
+      "split": "historical_development",
+      "agent_runs_recorded": 0,
+      "human_effort_measured": false
+    },
+    {
+      "id": "roi2-seed-v1",
+      "input": {
+        "path": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+        "sha256": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc"
+      },
+      "reference": {
+        "path": "benchmarks/agent-eval/roi2-seed-v1/reference.json",
+        "sha256": "d4d6a739577dfe5b3279e5b6eca2c9308330de253ac88585aa026f2be2ddf23b"
+      },
+      "task_count": 1,
+      "reference_assertions": 10,
+      "split": "historical_development",
+      "agent_runs_recorded": 0,
+      "human_effort_measured": false
+    }
+  ],
+  "policy": "V3 and ROI2 are historical development/review seeds from the same chip. They are not independent blind datasets. Append future batches and preserve old versions; do not invent five examples or treat five images as five independent tasks."
+}

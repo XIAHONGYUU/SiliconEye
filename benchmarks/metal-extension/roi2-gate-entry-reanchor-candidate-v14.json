@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "record_type": "gate_entry_reanchor_observation",
+  "actor": "AI",
+  "status": "new_landing_candidate_old_entry_rejected",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-A-CD-gate-reanchor-review-v1.json",
+      "sha256": "0f1f2f6b4e263708bcf7e851bb77017fb1364746d7e24c4cae97b28c4fe40fd4"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "prior_gate_entry": {
+      "path": "benchmarks/metal-extension/roi2-M1-V1-M2-review-feedback-v1.json",
+      "sha256": "67da72fb32863c4072b01ed73e85e55d520cfc0a74be9a7966be8a2748b4e7bf"
+    }
+  },
+  "known_M1_right_fold_approx_xy": [
+    2355,
+    2957
+  ],
+  "M2_reprojected_fold": [
+    {
+      "profile": "C",
+      "M2_native_xy": [
+        2315.381960412878,
+        2989.726535331521
+      ]
+    },
+    {
+      "profile": "D",
+      "M2_native_xy": [
+        2315.413032409982,
+        2984.794751297856
+      ]
+    }
+  ],
+  "new_candidate_selector": "long M2 vertical in central parallel group immediately right of old upper fork U3; near x2315 y2985..2990",
+  "old_U3_native_xy": [
+    2278,
+    3028
+  ],
+  "new_candidate_identity": "requires_review_not_auto_confirmed",
+  "consequences": [
+    "do not label A upper fork as gate access using old U3 association",
+    "retain reviewed physical A-C E-F G-H capacitor connections as local subgraph",
+    "Q1 Q2 gate to capacitor P1 same-net claim pending entry revalidation",
+    "do not relabel candidate new metal as any old A segment"
+  ],
+  "scope": "accepted C/D local display only"
+}

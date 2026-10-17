@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "producer": "reasoning_model",
+  "sources": {
+    "V2_review": {
+      "path": "benchmarks/metal-extension/roi2-V2-review-feedback-v1.json",
+      "sha256": "47a404c1b0259c501a8f003e403c5abe477c77cbbbe5c493581cceb2c9897f11"
+    },
+    "M3_proposal": {
+      "path": "benchmarks/metal-extension/roi2-V2-M3-candidate-v1.json",
+      "sha256": "43b39e5160a5ebfe61e4c86582e5498c4ad8c47c8f517dd9fcec65fe2d26b303"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-V2-reviewed-M3-proposed-v8.json",
+      "sha256": "c05dc5d9c7522697fdf4bf1ff7f5cf4b0319f364b4e717d49c2f752ba742aa37"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    }
+  },
+  "M3_correspondence_status": "candidate_not_confirmed_by_continue_instruction",
+  "conditional_track": {
+    "id": "R2_M3_segment_01",
+    "visible_paths_native_xy": [
+      [
+        [
+          2252,
+          3369
+        ],
+        [
+          2550,
+          3356
+        ],
+        [
+          3000,
+          3342
+        ],
+        [
+          3210,
+          3335
+        ]
+      ],
+      [
+        [
+          3290,
+          3331
+        ],
+        [
+          3320,
+          3330
+        ]
+      ]
+    ],
+    "continuity_across_cursor": "unknown_occluded",
+    "endpoint_status": "approximate_fading_end_no_reliable_V3_identity"
+  },
+  "image_artifacts": [
+    {
+      "frame_id": "m3_native",
+      "native_box_xywh": [
+        3230,
+        3325,
+        90,
+        110
+      ],
+      "class": "screen_cursor_and_yellow_UI_marker_not_chip_via",
+      "localization_status": "approximate"
+    }
+  ],
+  "V3_identity": "unknown",
+  "M4_gate_conductor": null,
+  "electrical_state_changed": false
+}

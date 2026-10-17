@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "核对无误，这处M1的确是连接到下图黄色短竖向段的上端",
+  "scope": "R2_Q1 gate M1 right join V1 maps to displayed yellow M2 short vertical upper endpoint",
+  "decisions": {
+    "M1_to_V1_to_M2_local_segment": "human_confirmed",
+    "M2_target_coarse_identity": "human_confirmed",
+    "pixel_endpoint_coordinates": "unknown",
+    "M2_extended_branches": "not_reviewed",
+    "V2_to_M3": "unknown"
+  },
+  "connections": [
+    {
+      "lower_conductor_id": "R2_M1_gate_segment_01",
+      "via_id": "R2_gate_V1_join_01",
+      "upper_conductor_id": "R2_M2_gate_segment_01",
+      "status": "human_confirmed"
+    }
+  ],
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-v1-M1-to-M2-endpoint-candidate-v2.json",
+      "sha256": "246eb3b5f60eddfa643267a08053f09822ded64a99c64a78532367c5d70edd56"
+    },
+    "reviewed_image": {
+      "path": "runs/roi2-v1-turn-review-v1/V1-M1-M2-review.png",
+      "sha256": "f1c0387632359bf34ee9950882423864402bb7c970a993375ec29efb7b93a37f"
+    },
+    "V1_source_review": {
+      "path": "benchmarks/metal-extension/roi2-v1-M1-join-feedback-v1.json",
+      "sha256": "19b64c8b60849cdfa82fffdaff943b9f5fb9dfb1866a367d6f74043984d805f5"
+    }
+  }
+}

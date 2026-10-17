@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "record_type": "T_M3_native_search_reference_inventory",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "unit": "px",
+  "M2_T_reference_xy": [
+    2285,
+    2183
+  ],
+  "M2_T_to_M3_existence": "previously_human_confirmed",
+  "frame_id": "m3_native",
+  "references": [
+    {
+      "label": "N01",
+      "native_reference_xy": [
+        2300,
+        2156
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N02",
+      "native_reference_xy": [
+        2300,
+        2177
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N03",
+      "native_reference_xy": [
+        2300,
+        2196
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N04",
+      "native_reference_xy": [
+        2300,
+        2213
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N05",
+      "native_reference_xy": [
+        2300,
+        2234
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N06",
+      "native_reference_xy": [
+        2300,
+        2254
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N07",
+      "native_reference_xy": [
+        2300,
+        2290
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N08",
+      "native_reference_xy": [
+        2300,
+        2310
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N09",
+      "native_reference_xy": [
+        2300,
+        2328
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N10",
+      "native_reference_xy": [
+        2300,
+        2348
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N11",
+      "native_reference_xy": [
+        2300,
+        2367
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N12",
+      "native_reference_xy": [
+        2300,
+        2385
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    },
+    {
+      "label": "N13",
+      "native_reference_xy": [
+        2300,
+        2418
+      ],
+      "status": "AI_search_row_not_confirmed_conductor_or_destination",
+      "note": "reference point only; may include weak residual rather than separate conductor"
+    }
+  ],
+  "registration": null,
+  "scope": "Native M3 horizontal-feature search rows around T; no projection or connectivity assignment; not all-chip conductor inventory"
+}

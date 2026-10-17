@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "record_type": "manual_ai_fanout_inventory",
+  "case_id": "ROI2_finger_pair",
+  "user_request": "这根M3有可能连接了两跟M2,找到这根M3之后需要将其所有连接的M2找出来",
+  "sources": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "prior_track": {
+      "path": "benchmarks/metal-extension/roi2-M3-conditional-extension-v2.json",
+      "sha256": "b118944dec5c5a2f4df7001624a3654a0d461971aece213ce1283cd08c6a1d1a"
+    },
+    "V2_review": {
+      "path": "benchmarks/metal-extension/roi2-V2-review-feedback-v1.json",
+      "sha256": "47a404c1b0259c501a8f003e403c5abe477c77cbbbe5c493581cceb2c9897f11"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-V2-reviewed-M3-proposed-v8.json",
+      "sha256": "c05dc5d9c7522697fdf4bf1ff7f5cf4b0319f364b4e717d49c2f752ba742aa37"
+    }
+  },
+  "coordinate_unit": "native_pixel",
+  "M3_id": "R2_M3_segment_01",
+  "M3_identity_status": "candidate",
+  "coverage_status": "incomplete",
+  "confirmed_distinct_M2_count": null,
+  "candidate_distinct_M2_count": null,
+  "entries": [
+    {
+      "id": "A",
+      "m2_native_xy": [
+        2231,
+        3332
+      ],
+      "m3_native_xy": [
+        2252,
+        3369
+      ],
+      "M2_id": "R2_M2_gate_segment_01",
+      "V2_id": "R2_gate_V2_01",
+      "V2_identity": "human_confirmed",
+      "M2_to_M3_edge_status": "candidate",
+      "note": "V2身份已审，所接M3仍待确认；不是新增物理批准。"
+    },
+    {
+      "id": "C",
+      "m2_native_xy": [
+        3275,
+        3308
+      ],
+      "m3_native_xy": [
+        3320,
+        3330
+      ],
+      "M2_id": null,
+      "V2_identity": "candidate",
+      "M2_to_M3_edge_status": "candidate",
+      "note": "右侧竖向M2顶部向右亮端；与M3可见右端可能对应。鼠标遮挡部分竖线及M3连续性。"
+    },
+    {
+      "id": "B",
+      "m2_native_xy": [
+        2330,
+        3300
+      ],
+      "M2_id": null,
+      "V2_identity": "unknown",
+      "M2_to_M3_edge_status": "unknown",
+      "note": "左侧另一M2短端，需要排除相邻M3；不计入已确认连接，也不宣布断开。"
+    },
+    {
+      "id": "D",
+      "m2_native_xy": [
+        3275,
+        3404
+      ],
+      "M2_id": null,
+      "V2_identity": "unknown",
+      "M2_to_M3_edge_status": "unknown",
+      "note": "右侧较低短端，可能属于C同一竖向M2；不可将两个亮端计成两根不同M2。"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "frame_id": "m2_native",
+      "native_box_xywh": [
+        2380,
+        3230,
+        770,
+        170
+      ],
+      "status": "unknown",
+      "reason": "中段多根M2交叠，尚无可靠跨层配准及逐处V2证据，不能排除额外分支。"
+    },
+    {
+      "frame_id": "m3_native",
+      "native_box_xywh": [
+        3230,
+        3325,
+        90,
+        110
+      ],
+      "status": "occluded",
+      "reason": "拍屏鼠标/UI遮挡；不补线，不当作过孔。"
+    }
+  ],
+  "counting_rule": "先枚举沿整根M3的V2，再关联M2连续导体；多个V2可能接同一M2，数量分开记录。",
+  "electrical_state_changed": false,
+  "M4_extension": "deferred_until_M3_identity_and_M2_fanout_review"
+}

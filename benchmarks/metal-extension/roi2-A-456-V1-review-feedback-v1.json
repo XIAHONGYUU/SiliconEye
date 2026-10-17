@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "是456三条线",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-A-V1-correspondence-review-v2/A-V1-correspondence-wide-review.png",
+      "sha256": "5b0ea6825349e703022ac03f4aff1108c81039c0e60af951debe4d93429bf3b4"
+    },
+    "preceding_correction": {
+      "path": "benchmarks/metal-extension/roi2-A-overlay-rejection-and-V1-markers-v2.json",
+      "sha256": "0fe4e4dc8ce30702a0e49027c0d80b3189d05850383c9e28d325ef2339cfb40f"
+    }
+  },
+  "decisions": {
+    "selected_M1_fingers": [
+      4,
+      5,
+      6
+    ],
+    "M2_LMR_to_M1_456_order": "confirmed_by_left_to_right_selection",
+    "V1_connection": "retains_human_identified_V1_interfaces",
+    "precise_pixel_centers": "not_approved",
+    "registration_accuracy": "not_approved"
+  },
+  "normalization": "Resolves exact physical marker identities in immediately preceding numbered source sheet. No approval for the old withdrawn overlay, whole-chip transform or unexplored endpoints."
+}

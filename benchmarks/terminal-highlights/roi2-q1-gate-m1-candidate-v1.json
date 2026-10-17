@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "document_kind": "terminal_highlight_candidate",
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "frame_id": "m1_native",
+  "native_source": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "window_xywh": [
+    1640,
+    2760,
+    420,
+    310
+  ],
+  "segment_id": "R2_gate_M1_upper_bar_local_candidate",
+  "polygon_native_xy": [
+    [
+      1690,
+      2820
+    ],
+    [
+      1880,
+      2814
+    ],
+    [
+      1880,
+      2836
+    ],
+    [
+      1690,
+      2843
+    ]
+  ],
+  "anchor_native_xy": [
+    1735,
+    2829
+  ],
+  "status": "candidate",
+  "producer": "reasoning_model",
+  "rationale": "已有人审确认两栅经M1同网。根据原图与宏观对应，上方公共横条靠近两栅上端，先选取其中局部段作为gate金属候选；候选锚点仅用于演示指定端子与点亮，尚未确认具体CT落点。中部横条是替代解释，不能仅凭逻辑同网排除。",
+  "evidence": [
+    {
+      "path": "benchmarks/block-roi2-review-feedback-v1.json",
+      "sha256": "347adfcc3a147a880e378f5bf4c8433a1bbabd259196b786744a5637e7c69a2d"
+    },
+    {
+      "path": "benchmarks/registration-roi2-m1-poly-accepted-v1.json",
+      "sha256": "c4bc67269a3315c5766854116b136b3657a2ad2c63eaeddaefe6dfe75cdce8a2"
+    },
+    {
+      "path": "benchmarks/agent-adapter/roi2-device-index-review-feedback-v1.json",
+      "sha256": "1593f06845ae171b12812d89edff44f7f0b77d6034606edd3c1c0af8c0bd7afa"
+    }
+  ],
+  "continuation": "unknown_stop_at_declared_segment",
+  "contact_landing": "unknown"
+}

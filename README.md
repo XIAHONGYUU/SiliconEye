@@ -4,6 +4,12 @@
 
 > 🎯 **The Gap:** Every existing IC reverse engineering tool (Degate, ChipJuice, HAL) targets *digital* standard-cell designs. Nobody handles *analog* custom layout. Silicon Eye fills that void.
 
+## Implemented scope and workflow direction
+
+The sections below describe the original product vision and roadmap, not an inventory of completed capabilities. Current verified functionality is local registration tooling, explicit human-review state replay, and a unified evidence/review package. Runtime automatic device extraction, full-chip recovery, interactive metal highlighting and simulation-ready reconstruction are not implemented.
+
+The product input is a stack of photographs of the same physical chip region. Outputs should share stable device/terminal identities across schematics, image labels, metal-port annotations and conductor highlighting. See the [photo-stack workflow architecture](docs/architecture/photo-stack-workflow-v1.md), [AI observation contract](docs/agent-observations-v1.md), and [replayable review package](docs/review-package.md). Exact boundaries, electrical links and calibration retain their own evidence and approval states.
+
 ## Why This Exists
 
 Reverse-engineering an analog chip today is a painful, manual process:
@@ -153,3 +159,9 @@ silicon-eye info -c configs/test_chip.yaml
 2026-10-15 开发快照：局部 CT v2 与 poly 分离修正获目视认可，V3 两栅至少经 M2 同网；栅与共享扩散区 M 是否相连仍未知。详见[四MOS工作流与结论快照](docs/checkpoints/2026-10-15-local-device-network.md)，实时任务仍以 `CURRENT_TASK.md` 为准。
 
 2026-10-16 当前结论快照：[V3已复核结构与下一阶段方向](docs/checkpoints/2026-10-16-v3-reviewed.md)。外侧A/B与M1上下横条对应已确认；没有额外并网证据，隔离关系仍未知。暂缓细节追线，先完成最小顶层架构设计。
+
+AI观察现可通过[最小显式适配](docs/observation-adapter-v1.md)进入case候选、材料卡和统一复核包；历史样稿不计新模型识别成绩。
+
+[器件跨层编号视图](docs/device-index-v1.md)已作为统一包可选输出：选择既有ID可对照各层原生检查窗口、宏观投影和四端表；缺少定位时明确显示未定位。
+
+2026-10-17：已识别可见共栅网络及六处 AA 接入的[最终复核稿 v33](docs/roi2-gate-network-reviewed-v33.md)，最终图稿可从[证据归档](benchmarks/evidence/README.md)恢复。[金属点亮流程 v1](docs/metal-tracing-workflow-v1.md)固化局部对齐、双向分支检查、正向版图推理与验收边界；下一轮先重走检验，再决定 skill 封装。

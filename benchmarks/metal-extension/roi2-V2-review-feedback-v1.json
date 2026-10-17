@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "确认为V2",
+  "scope": "Cyan-circled short bright tab on the displayed R2_Q1 gate M2 branch",
+  "feature_id": "R2_gate_V2_01",
+  "decisions": {
+    "via_identity": "V2_human_confirmed",
+    "M3_target_conductor": "unknown",
+    "pixel_boundary": "unknown"
+  },
+  "normalization": "Confirms the V2 identity in the preceding gate-network review context. Does not approve all yellow M2 branch geometry, a particular M3 track, exact coordinates or M4 connectivity.",
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-M2-extension-V2-candidate-v1.json",
+      "sha256": "d0081cd0553af941b67d8ac9959927ff6e02dc11b37d573545faff9d39d60cea"
+    },
+    "reviewed_image": {
+      "path": "runs/roi2-M2-to-M3-survey-v1/M2-path-V2-review.png",
+      "sha256": "302bd141ddf1b570e6c3cf6214cf7e8f681307ef2de7ab5d32bf18ab9fcce192"
+    }
+  }
+}

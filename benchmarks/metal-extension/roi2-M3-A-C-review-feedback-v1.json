@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "A、C 分别连接图中这根 M3 的左右两端",
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-M3-M2-fanout-candidate-v1.json",
+      "sha256": "6772c5f4066ee6a77162296be8c11ed88c1ed0188a11dd7b9a602b208b9c7a76"
+    },
+    "reviewed_image": {
+      "path": "runs/roi2-M3-M2-fanout-review-v1/M3-all-M2-review.png",
+      "sha256": "deb2b652bca44db5ed4bd237770b2f46c98ead380e2d6c63e375d32a19de2536"
+    }
+  },
+  "M3_id": "R2_M3_segment_01",
+  "decisions": {
+    "A_M2_to_M3_left": "confirmed",
+    "C_M2_to_same_M3_right": "confirmed",
+    "all_M2_connections_enumerated": "unknown",
+    "exact_pixel_boundaries": "unknown",
+    "B_and_D": "unknown",
+    "M4_connectivity": "unknown"
+  },
+  "connections": [
+    {
+      "id": "A",
+      "lower_conductor": "R2_M2_gate_segment_01",
+      "via_id": "R2_gate_V2_01",
+      "upper_conductor": "R2_M3_segment_01",
+      "status": "confirmed"
+    },
+    {
+      "id": "C",
+      "lower_conductor": "R2_M2_C_segment_01",
+      "via_id": "R2_gate_V2_C_01",
+      "upper_conductor": "R2_M3_segment_01",
+      "status": "confirmed"
+    }
+  ],
+  "normalization": "User confirms two displayed M2 attachments at opposite ends of the same M3, including electrical continuity of that M3 across the photographed obstruction. Coordinates and boundaries remain approximate; does not approve every M2 continuation, another device terminal, B/D, or complete branch coverage. C uses a newly assigned local segment/via ID, not a full M2 net segmentation."
+}

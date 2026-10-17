@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "record_type": "W1_M1_native_geometry_observation",
+  "sources": {
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-W1-V1-M1-review-feedback-v1.json",
+      "sha256": "89e148c86505d17d684de5d2aa28c0b90f9edbd4f2b928413cc6dd777ea5f87d"
+    }
+  },
+  "frame_id": "m1_native",
+  "unit": "px",
+  "metal_id": "R2_corrected_gate_W1_M1_01",
+  "identity_status": "human_confirmed_destination",
+  "geometry_status": "AI_reference_not_exact_mask",
+  "reference_centerline_xy": [
+    [
+      1244,
+      3213
+    ],
+    [
+      1244,
+      3249
+    ]
+  ],
+  "observations": [
+    "Visible short M1 finger with separation from upper and lower horizontal rails; no evidence to union them automatically.",
+    "No clearly supported lateral continuation from W1 in the inspected source."
+  ],
+  "material_attachment": "unknown_CT_to_AA_or_poly_not_assigned",
+  "electrical_exhaustiveness": "not_asserted",
+  "outputs": [
+    "runs/roi2-W1-M1-followup-v26/W1-short-M1-review.png"
+  ]
+}

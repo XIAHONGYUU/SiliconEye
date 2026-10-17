@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "核对判断正确",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-A-456-material-survey-v4/M1-to-CT-array-interface-review.png",
+      "sha256": "cc493635c59c402f0d344bad17970900f8e6b9b4efa209f76ad3c969cb0c57ea"
+    },
+    "preceding_observation": {
+      "path": "benchmarks/metal-extension/roi2-A-456-M1-material-observation-v1.json",
+      "sha256": "15466261ef65fe7b2e4face210cb55133d3cc561cc854c54b70159759e2c0f09"
+    }
+  },
+  "decisions": {
+    "M1_456_via_CT_to_lower_MOS_array_diffusion_terminals": "confirmed",
+    "poly_gate_attachment_for_selected_three": "not_the_reviewed_attachment",
+    "source_drain_assignment": "unknown",
+    "new_MOS_count_and_IDs": "not_assigned",
+    "channel_traversal_as_metal": "not_allowed"
+  },
+  "scope": "Approves the whole three-finger material-interface judgment, not individual CT count, exact material boundaries, or the other terminals of the MOS array."
+}

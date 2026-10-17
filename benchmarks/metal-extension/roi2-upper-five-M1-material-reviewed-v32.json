@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "record_type": "upper_M1_CT_AA_access_reviewed",
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "prior_v31": {
+      "path": "benchmarks/metal-extension/roi2-upper-five-M1-material-candidates-v31.json",
+      "sha256": "8bfb13af6f09e60235e3b07003a5510e3ca75693e550fa69de90a95c4cdc22c3"
+    },
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-upper-five-CT-AA-review-v1.json",
+      "sha256": "a650937184be87765ec6354a59df993a1ced33bef00bb5f27c64977aee52ca24"
+    }
+  },
+  "human_M1_geometry_source": {
+    "path": "benchmarks/metal-extension/roi2-N04-five-M2-to-M1-reviewed-v29.json",
+    "sha256": "22f8342b9bd02e023dd0d45dc2833c2751c6304c6465e5f6ad75c1d44094f009"
+  },
+  "unit": "px",
+  "registrations": [
+    {
+      "layer": "poly",
+      "direction": "m1_native_to_poly_native",
+      "model": "local_affine_candidate",
+      "matrix": [
+        [
+          0.9981033721804063,
+          -0.006578554984313775,
+          53.58042775517914
+        ],
+        [
+          0.011188911287917344,
+          1.0262307205992875,
+          -213.4367373230126
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "AI_fitting_M1_guard_ring_corners": [
+        [
+          2020.0,
+          1938.0
+        ],
+        [
+          2575.0,
+          1930.0
+        ],
+        [
+          2582.0,
+          2232.0
+        ]
+      ],
+      "AI_fitting_target_guard_ring_corners": [
+        [
+          2057.0,
+          1798.0
+        ],
+        [
+          2611.0,
+          1796.0
+        ],
+        [
+          2616.0,
+          2106.0
+        ]
+      ],
+      "held_out_fourth_guard_ring_corner": {
+        "M1_xy": [
+          2028,
+          2240
+        ],
+        "target_reference_xy": [
+          2064,
+          2109
+        ],
+        "predicted_target_xy": [
+          2062.99810337218,
+          2108.0111889112877
+        ],
+        "residual_px": 1.4076733363949097
+      },
+      "status": "AI_proposed_correspondences_not_human_accepted",
+      "support": "upper_left_array_guard_ring_only; J4 outside fitted envelope",
+      "not_independent_checks": "AA interior strip positions are projections, not identifiable correspondence landmarks",
+      "does_not_validate": "CT identity or precise terminal edge"
+    },
+    {
+      "layer": "aa",
+      "direction": "m1_native_to_aa_native",
+      "model": "local_affine_candidate",
+      "matrix": [
+        [
+          0.9762981164935043,
+          -0.01931816826309356,
+          194.3164147769966
+        ],
+        [
+          0.012560686125988377,
+          0.9963975999904576,
+          3.6088652439966613
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "AI_fitting_M1_guard_ring_corners": [
+        [
+          2020.0,
+          1938.0
+        ],
+        [
+          2575.0,
+          1930.0
+        ],
+        [
+          2582.0,
+          2232.0
+        ]
+      ],
+      "AI_fitting_target_guard_ring_corners": [
+        [
+          2129.0,
+          1960.0
+        ],
+        [
+          2671.0,
+          1959.0
+        ],
+        [
+          2672.0,
+          2260.0
+        ]
+      ],
+      "held_out_fourth_guard_ring_corner": {
+        "M1_xy": [
+          2028,
+          2240
+        ],
+        "target_reference_xy": [
+          2134,
+          2265
+        ],
+        "predicted_target_xy": [
+          2130.9762981164936,
+          2261.012560686126
+        ],
+        "residual_px": 5.0042427361337465
+      },
+      "status": "AI_proposed_correspondences_not_human_accepted",
+      "support": "upper_left_array_guard_ring_only; J4 outside fitted envelope",
+      "not_independent_checks": "AA interior strip positions are projections, not identifiable correspondence landmarks",
+      "does_not_validate": "CT identity or precise terminal edge"
+    }
+  ],
+  "access_candidates": [
+    {
+      "label": "J1",
+      "M1_metal_id": "R2_N04_J1_M1_candidate_01",
+      "relation": "M1_via_CT_to_AA_diffusion_access",
+      "status": "human_confirmed_CT_to_AA_diffusion_access",
+      "native_poly_CT_row_reference": [
+        [
+          2084,
+          1820
+        ],
+        [
+          2087,
+          2017
+        ]
+      ],
+      "source_CT_row_location": "AI_selected_on_native_poly_photo_not_projected_mask",
+      "M1_top_search_xy_in_poly": [
+        2086.7852158457886,
+        1822.9652046330202
+      ],
+      "source_poly_CT_row_top": [
+        2084,
+        1820
+      ],
+      "search_offset_px": 4.06815263028765,
+      "offset_meaning": "M1_endpoint_to_AI_CT_row_top_search_consistency_not_independent_physical_registration_error",
+      "terminal_role": "S_or_D_unknown",
+      "diffusion_union": "none_no_channel_traversal",
+      "exact_CT_count": null,
+      "review_source": "human_review"
+    },
+    {
+      "label": "J2",
+      "M1_metal_id": "R2_N04_J2_M1_candidate_01",
+      "relation": "M1_via_CT_to_AA_diffusion_access",
+      "status": "human_confirmed_CT_to_AA_diffusion_access",
+      "native_poly_CT_row_reference": [
+        [
+          2475,
+          1826
+        ],
+        [
+          2476,
+          2057
+        ]
+      ],
+      "source_CT_row_location": "AI_selected_on_native_poly_photo_not_projected_mask",
+      "M1_top_search_xy_in_poly": [
+        2472.0728531723785,
+        1824.2054322283584
+      ],
+      "source_poly_CT_row_top": [
+        2475,
+        1826
+      ],
+      "search_offset_px": 3.433462106601652,
+      "offset_meaning": "M1_endpoint_to_AI_CT_row_top_search_consistency_not_independent_physical_registration_error",
+      "terminal_role": "S_or_D_unknown",
+      "diffusion_union": "none_no_channel_traversal",
+      "exact_CT_count": null,
+      "review_source": "human_review"
+    },
+    {
+      "label": "J3",
+      "M1_metal_id": "R2_N04_J3_M1_candidate_01",
+      "relation": "M1_via_CT_to_AA_diffusion_access",
+      "status": "human_confirmed_CT_to_AA_diffusion_access",
+      "native_poly_CT_row_reference": [
+        [
+          2589,
+          1824
+        ],
+        [
+          2590,
+          2056
+        ]
+      ],
+      "source_CT_row_location": "AI_selected_on_native_poly_photo_not_projected_mask",
+      "M1_top_search_xy_in_poly": [
+        2584.865112783749,
+        1824.4435484832939
+      ],
+      "source_poly_CT_row_top": [
+        2589,
+        1824
+      ],
+      "search_offset_px": 4.158608847697707,
+      "offset_meaning": "M1_endpoint_to_AI_CT_row_top_search_consistency_not_independent_physical_registration_error",
+      "terminal_role": "S_or_D_unknown",
+      "diffusion_union": "none_no_channel_traversal",
+      "exact_CT_count": null,
+      "review_source": "human_review"
+    },
+    {
+      "label": "J4",
+      "M1_metal_id": "R2_N04_J4_M1_candidate_01",
+      "relation": "M1_via_CT_to_AA_diffusion_access",
+      "status": "human_confirmed_CT_to_AA_diffusion_access",
+      "native_poly_CT_row_reference": [
+        [
+          2725,
+          1826
+        ],
+        [
+          2726,
+          2020
+        ]
+      ],
+      "source_CT_row_location": "AI_selected_on_native_poly_photo_not_projected_mask",
+      "M1_top_search_xy_in_poly": [
+        2719.635382248041,
+        1821.8491286247654
+      ],
+      "source_poly_CT_row_top": [
+        2725,
+        1826
+      ],
+      "search_offset_px": 6.782982883538478,
+      "offset_meaning": "M1_endpoint_to_AI_CT_row_top_search_consistency_not_independent_physical_registration_error",
+      "terminal_role": "S_or_D_unknown",
+      "diffusion_union": "none_no_channel_traversal",
+      "exact_CT_count": null,
+      "review_source": "human_review"
+    },
+    {
+      "label": "T",
+      "M1_metal_id": "R2_N04_T_upper_M1_01",
+      "relation": "M1_via_CT_to_AA_diffusion_access",
+      "status": "human_confirmed_CT_to_AA_diffusion_access",
+      "native_poly_CT_row_reference": [
+        [
+          2338,
+          1823
+        ],
+        [
+          2339,
+          2056
+        ]
+      ],
+      "source_CT_row_location": "AI_selected_on_native_poly_photo_not_projected_mask",
+      "M1_top_search_xy_in_poly": [
+        2336.324216000859,
+        1823.709971013801
+      ],
+      "source_poly_CT_row_top": [
+        2338,
+        1823
+      ],
+      "search_offset_px": 1.819975508685347,
+      "offset_meaning": "M1_endpoint_to_AI_CT_row_top_search_consistency_not_independent_physical_registration_error",
+      "terminal_role": "S_or_D_unknown",
+      "diffusion_union": "none_no_channel_traversal",
+      "exact_CT_count": null,
+      "review_source": "human_review"
+    }
+  ],
+  "new_confirmed_material_connections": 5,
+  "question": null,
+  "figure": "runs/roi2-upper-AA-reviewed-W1-v32/upper-five-M1-CT-AA-reviewed.png",
+  "figure_rule": "independent_native_source_panels; poly/AA markers offset 7px left; AA strips are search references not accepted boundaries"
+}

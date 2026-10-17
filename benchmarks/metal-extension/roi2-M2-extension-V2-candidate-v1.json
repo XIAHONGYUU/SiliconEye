@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "producer": "reasoning_model",
+  "sources": {
+    "reviewed_case": {
+      "path": "benchmarks/block-case-v1-roi2-gate-M1-V1-M2-reviewed-v7.json",
+      "sha256": "59457acb76087f3662319c800cbbe1ff24b528df96aa2aa8f38acc3f342bcb5d"
+    },
+    "M1_V1_M2_review": {
+      "path": "benchmarks/metal-extension/roi2-M1-V1-M2-review-feedback-v1.json",
+      "sha256": "67da72fb32863c4072b01ed73e85e55d520cfc0a74be9a7966be8a2748b4e7bf"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "m2_extension": {
+    "status": "candidate_continuity_not_human_confirmed",
+    "paths_native_xy": [
+      [
+        [
+          2278,
+          3028
+        ],
+        [
+          2281,
+          3093
+        ],
+        [
+          2060,
+          3098
+        ],
+        [
+          2058,
+          3040
+        ]
+      ],
+      [
+        [
+          2168,
+          3095
+        ],
+        [
+          2166,
+          3030
+        ]
+      ],
+      [
+        [
+          2208,
+          3094
+        ],
+        [
+          2208,
+          3392
+        ]
+      ],
+      [
+        [
+          2208,
+          3333
+        ],
+        [
+          2231,
+          3332
+        ]
+      ],
+      [
+        [
+          2072,
+          3560
+        ],
+        [
+          2072,
+          3398
+        ],
+        [
+          2282,
+          3390
+        ],
+        [
+          2282,
+          3555
+        ]
+      ],
+      [
+        [
+          2178,
+          3395
+        ],
+        [
+          2178,
+          3560
+        ]
+      ]
+    ],
+    "inspection_window_xywh": [
+      2000,
+      2980,
+      350,
+      630
+    ],
+    "do_not_merge_adjacent_parallel_trunks": true
+  },
+  "v2_candidate": {
+    "id": "R2_gate_V2_candidate_01",
+    "frame_id": "m2_native",
+    "center_native_xy": [
+      2231,
+      3332
+    ],
+    "window_xywh": [
+      2218,
+      3324,
+      23,
+      16
+    ],
+    "status": "candidate",
+    "basis": "Short rightward tab/bright endpoint branches from the visually traced M2 vertical stem. Not an independent via-identity proof."
+  },
+  "M2_to_M3": {
+    "status": "unknown",
+    "registration": "not_accepted",
+    "M3_conductor_id": null,
+    "reason": "V2 identity not reviewed; cannot choose one of the repeated parallel M3 tracks by coordinate proximity."
+  },
+  "electrical_new_unions": false
+}

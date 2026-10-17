@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "record_type": "P1_network_coverage_observation",
+  "status": "candidate_not_new_human_approval",
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v6.json",
+      "sha256": "71eef260022f79207f852d1bf8ff38d8e61d79a3206d79ba157b1e95be195457"
+    },
+    "G_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "A_geometry": {
+      "path": "benchmarks/metal-extension/roi2-M2-extension-V2-candidate-v1.json",
+      "sha256": "d0081cd0553af941b67d8ac9959927ff6e02dc11b37d573545faff9d39d60cea"
+    }
+  },
+  "net_members_confirmed": [
+    "R2_Q1.G",
+    "R2_Q2.G",
+    "R2_CAP_01.P1"
+  ],
+  "do_not_union": [
+    "R2_CAP_01.P1",
+    "R2_CAP_01.P2"
+  ],
+  "unit": "px",
+  "geometry_role": "native_centerline_reference_not_exact_boundary",
+  "paths_native_xy": {
+    "m1": [
+      [
+        [
+          1732,
+          2966
+        ],
+        [
+          2355,
+          2947
+        ],
+        [
+          2355,
+          2968
+        ],
+        [
+          1720,
+          2988
+        ]
+      ]
+    ],
+    "m2": [
+      [
+        [
+          2278,
+          3028
+        ],
+        [
+          2281,
+          3093
+        ],
+        [
+          2060,
+          3098
+        ],
+        [
+          2058,
+          3040
+        ]
+      ],
+      [
+        [
+          2168,
+          3095
+        ],
+        [
+          2166,
+          3030
+        ]
+      ],
+      [
+        [
+          2208,
+          3095
+        ],
+        [
+          2208,
+          3333
+        ],
+        [
+          2231,
+          3332
+        ]
+      ],
+      [
+        [
+          3277,
+          3307
+        ],
+        [
+          3257,
+          3309
+        ],
+        [
+          3257,
+          3340
+        ]
+      ],
+      [
+        [
+          3257,
+          3397
+        ],
+        [
+          3257,
+          3404
+        ],
+        [
+          3255,
+          3807
+        ],
+        [
+          3278,
+          3807
+        ]
+      ],
+      [
+        [
+          2478,
+          3839
+        ],
+        [
+          2459,
+          3841
+        ],
+        [
+          2458,
+          3957
+        ],
+        [
+          2438,
+          3959
+        ]
+      ]
+    ],
+    "m3": [
+      [
+        [
+          2252,
+          3369
+        ],
+        [
+          2550,
+          3356
+        ],
+        [
+          3000,
+          3342
+        ],
+        [
+          3210,
+          3335
+        ]
+      ],
+      [
+        [
+          3290,
+          3331
+        ],
+        [
+          3320,
+          3330
+        ]
+      ],
+      [
+        [
+          2485,
+          3871
+        ],
+        [
+          2700,
+          3865
+        ],
+        [
+          3000,
+          3853
+        ],
+        [
+          3200,
+          3845
+        ],
+        [
+          3320,
+          3840
+        ]
+      ]
+    ]
+  },
+  "electrode_candidate": {
+    "frame": "m3_native",
+    "seed_xy": [
+      2502,
+      4110
+    ],
+    "status": "opposing_electrode_candidate_P1_assignment_not_confirmed",
+    "mask_path": "runs/roi2-P1-network-review-v1/M3-opposing-electrode-candidate-mask-native.png",
+    "roi_xywh": [
+      0,
+      3880,
+      5712,
+      404
+    ],
+    "gaussian_kernel": [
+      15,
+      3
+    ],
+    "sigma_xy": [
+      2.3,
+      0.7
+    ],
+    "connectivity": 8,
+    "threshold": 135,
+    "morphology": "none",
+    "trials": [
+      {
+        "threshold": 125,
+        "seed_label": 97,
+        "bbox_native_xywh": [
+          1658,
+          4008,
+          855,
+          276
+        ],
+        "area_px": 57656,
+        "P2_overlap_px": 0,
+        "source_bottom_reached": true
+      },
+      {
+        "threshold": 135,
+        "seed_label": 52,
+        "bbox_native_xywh": [
+          1659,
+          4008,
+          853,
+          276
+        ],
+        "area_px": 50288,
+        "P2_overlap_px": 0,
+        "source_bottom_reached": true
+      },
+      {
+        "threshold": 145,
+        "seed_label": 188,
+        "bbox_native_xywh": [
+          1660,
+          4009,
+          851,
+          275
+        ],
+        "area_px": 41738,
+        "P2_overlap_px": 0,
+        "source_bottom_reached": true
+      }
+    ]
+  },
+  "coverage": {
+    "reviewed_chain": "gate/CT/M1/V1/M2(A)/V2/M3(A-C)/M2(C)/E/M3(E-F)/M2(F-G)/capacitor P1",
+    "complete": false,
+    "open_frontiers": [
+      "G exact M3 landing and connection to opposing-electrode candidate N",
+      "M2 A lower fork and additional cross-layer attachments",
+      "M3 A-C middle corridor extra M2 attachments",
+      "MOM P1 M1/M2 electrode assignments",
+      "M4 attachment evidence",
+      "out-of-photo continuation unknown"
+    ]
+  },
+  "rejected_routes_omitted": [
+    "old upper wide M1 bar",
+    "D to other long M3",
+    "E to old M1",
+    "F/G direct to M1"
+  ],
+  "new_electrical_unions": false
+}

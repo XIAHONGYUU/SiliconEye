@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "是的，这类MOM都是这样进行操作的，多层金属重叠",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-P2-existing-stack-survey-v8/L1-M2-M1-wide-review.png",
+      "sha256": "699559d24c7258387ea7e6bd8c18b37d9b96672dac3a471ef7c127727f1f13f2"
+    },
+    "preceding_question": {
+      "path": "benchmarks/metal-extension/roi2-P2-existing-stack-survey-v8.json",
+      "sha256": "d3b9542e614185bd6dc86ba73e357a9eddb2991f9655da806b283de6cedd9ad9"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v5.json",
+      "sha256": "9da4be51c643f011621f798235c47c9260171cbbcc72d7b72edf371f18ca119e"
+    }
+  },
+  "decisions": {
+    "L1_selected_middle_M2_via_V1_to_M1_capacitor_edge": "confirmed",
+    "selected_capacitor_type": "MOM_user_identified",
+    "old_MIM_type": "superseded",
+    "same_P2_electrode_M1_M2_M3_stack": "confirmed_for_reviewed_L1_K_chain",
+    "all_geometric_overlaps_electrically_connected": "not_inferred",
+    "all_capacitor_cells_and_all_vias": "not_blanket_approved",
+    "exact_boundaries_and_per_layer_full_fingers": "unknown"
+  },
+  "normalization": "Yes answers the immediately preceding L1 interface question. MOM corrects prior MIM naming for this selected capacitor only. Multilayer overlap does not authorize arbitrary shorting or merging of the two electrodes."
+}

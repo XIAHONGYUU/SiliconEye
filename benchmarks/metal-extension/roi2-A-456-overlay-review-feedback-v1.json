@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "确认无误",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-A-456-local-overlay-v3/A-456-corrected-local-overlay-review.png",
+      "sha256": "c045e51f94a80a6ce9f91cd62b091d3a9f0de4549e06bb656fbc01aec01ffe49"
+    },
+    "registration": {
+      "path": "benchmarks/metal-extension/roi2-A-456-local-registration-v3.json",
+      "sha256": "270549738b82756ae44ae4f440e03ec209f8c79ae15ab6ebe609a050e829e1fa"
+    },
+    "marker_review": {
+      "path": "benchmarks/metal-extension/roi2-A-456-V1-review-feedback-v1.json",
+      "sha256": "f1d03ff45cca753f5180cf49ec8593c49af0ad91d230b4d3e6d01402f96e7d2d"
+    }
+  },
+  "decisions": {
+    "displayed_456_local_terminal_overlay": "accepted",
+    "M2_LMR_to_M1_456_via_V1": "retains_confirmed",
+    "whole_image_registration": "not_inferred",
+    "other_CT_or_material_attachment": "not_approved"
+  },
+  "scope": "Shown local terminal segments only; does not reinstate withdrawn v1 affine or approve entire-fork extrapolation."
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "case_id": "ROI2_finger_pair",
+  "producer": "reasoning_model",
+  "terminal_id": "R2_Q1.G",
+  "sources": {
+    "V2_review": {
+      "path": "benchmarks/metal-extension/roi2-V2-review-feedback-v1.json",
+      "sha256": "47a404c1b0259c501a8f003e403c5abe477c77cbbbe5c493581cceb2c9897f11"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "V2": {
+    "id": "R2_gate_V2_01",
+    "identity_status": "human_confirmed",
+    "frame_id": "m2_native",
+    "native_center_xy": [
+      2231,
+      3332
+    ],
+    "coordinate_status": "AI_approximate_not_pixel_truth"
+  },
+  "M3": {
+    "id": "R2_M3_segment_01",
+    "frame_id": "m3_native",
+    "endpoint_native_xy": [
+      2252,
+      3369
+    ],
+    "path_native_xy": [
+      [
+        2252,
+        3369
+      ],
+      [
+        2380,
+        3363
+      ],
+      [
+        2550,
+        3356
+      ]
+    ],
+    "status": "candidate",
+    "basis": "AI native-photo interpretation: lower track with a nearby left endpoint. No accepted M2-to-M3 registration; coordinate proximity alone does not establish correspondence.",
+    "alternative": "Adjacent parallel M3 tracks have not been excluded by independent registration."
+  },
+  "V2_to_M3": "candidate_not_human_confirmed",
+  "M4": "not_assigned",
+  "electrical_new_unions": false
+}

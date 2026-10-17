@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "record_type": "C_side_metal_trace_observation",
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-M3-A-C-review-feedback-v1.json",
+      "sha256": "35b29235a1d736980f59b312338d029469e12aed852089d55da0a2b49f4f2dfd"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-M3-A-C-reviewed-v9.json",
+      "sha256": "fad4afb41418a4b7531057bf6052005a9a752a94d0ccd2df35d9cbfb31a621b6"
+    }
+  },
+  "units": "per_layer_native_pixels",
+  "paths_native_xy": {
+    "m2": [
+      [
+        [
+          3277,
+          3307
+        ],
+        [
+          3257,
+          3309
+        ],
+        [
+          3257,
+          3340
+        ]
+      ],
+      [
+        [
+          3257,
+          3397
+        ],
+        [
+          3257,
+          3404
+        ],
+        [
+          3278,
+          3404
+        ]
+      ],
+      [
+        [
+          3257,
+          3404
+        ],
+        [
+          3256,
+          3600
+        ],
+        [
+          3255,
+          3807
+        ],
+        [
+          3278,
+          3807
+        ]
+      ]
+    ],
+    "m3": [
+      [
+        [
+          0,
+          3545
+        ],
+        [
+          1000,
+          3516
+        ],
+        [
+          2500,
+          3464
+        ],
+        [
+          3320,
+          3437
+        ],
+        [
+          4200,
+          3409
+        ],
+        [
+          5108,
+          3378
+        ]
+      ]
+    ],
+    "m1": [
+      [
+        [
+          3348,
+          3444
+        ],
+        [
+          3348,
+          3600
+        ],
+        [
+          3347,
+          3744
+        ]
+      ]
+    ]
+  },
+  "geometric_path_status": "candidate",
+  "confirmed_seed": "C M2 to reviewed M3 right endpoint only",
+  "search_scope": {
+    "m2": [
+      2950,
+      2850,
+      700,
+      1434
+    ],
+    "m1": [
+      3000,
+      3150,
+      550,
+      800
+    ],
+    "m3": [
+      0,
+      3300,
+      5712,
+      350
+    ],
+    "m4": [
+      3050,
+      3150,
+      500,
+      800
+    ]
+  },
+  "junctions": [
+    {
+      "id": "D",
+      "m2_xy": [
+        3278,
+        3404
+      ],
+      "candidate_layer": "m3",
+      "candidate_xy": [
+        3320,
+        3437
+      ],
+      "status": "candidate",
+      "reason": "Short tab and nearby sloped M3 horizontal line; no accepted pixel registration or human confirmation."
+    },
+    {
+      "id": "E",
+      "m2_xy": [
+        3278,
+        3807
+      ],
+      "candidate_layer": "m1",
+      "candidate_xy": [
+        3347,
+        3744
+      ],
+      "status": "candidate",
+      "reason": "Bottom M2 tab and isolated M1 vertical lower endpoint; not yet a proved via/landing."
+    }
+  ],
+  "occlusions": [
+    {
+      "frame": "m2_native",
+      "xywh": [
+        3220,
+        3330,
+        70,
+        70
+      ],
+      "continuity": "unknown",
+      "note": "Cursor obscures stem; separate visible paths, no filled bridge."
+    }
+  ],
+  "stops": [
+    {
+      "frame": "m3_native",
+      "xy": [
+        0,
+        3545
+      ],
+      "reason": "D candidate conductor crosses left source-image boundary; no image outside boundary."
+    },
+    {
+      "frame": "m1_native",
+      "xy": [
+        3348,
+        3444
+      ],
+      "reason": "Candidate vertical line terminates near horizontal bus; no confirmed connection."
+    }
+  ],
+  "M4_connectivity": "unknown_no_supported_edge",
+  "electrical_state_changed": false,
+  "complete_all_metals": false,
+  "candidate_specs_directory": "benchmarks/terminal-highlights/roi2-C-extension-v1"
+}

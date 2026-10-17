@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_marker_local_registration_candidate",
+  "sources": {
+    "review": {
+      "path": "benchmarks/metal-extension/roi2-A-456-V1-review-feedback-v1.json",
+      "sha256": "f1d03ff45cca753f5180cf49ec8593c49af0ad91d230b4d3e6d01402f96e7d2d"
+    },
+    "marker_coordinates": {
+      "path": "benchmarks/metal-extension/roi2-A-overlay-rejection-and-V1-markers-v2.json",
+      "sha256": "0fe4e4dc8ce30702a0e49027c0d80b3189d05850383c9e28d325ef2339cfb40f"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "direction": "m2_native_to_m1_native",
+  "model": "similarity_from_two_outer_correspondences",
+  "matrix": [
+    [
+      1.0479258596298846,
+      0.005624516728560931,
+      -83.56129653789367
+    ],
+    [
+      -0.005624516728560931,
+      1.0479258596298846,
+      -335.9336505883484
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_points_M2_xy": [
+    [
+      2072.0,
+      3560.0
+    ],
+    [
+      2178.0,
+      3560.0
+    ],
+    [
+      2282.0,
+      3555.0
+    ]
+  ],
+  "target_points_M1_xy": [
+    [
+      2107.764364168904,
+      3383.028411032463
+    ],
+    [
+      2219.0406583629892,
+      3377.439234875445
+    ],
+    [
+      2327.800672107537,
+      3376.6076332213156
+    ]
+  ],
+  "fitting_labels": [
+    "L-to-4",
+    "R-to-6"
+  ],
+  "withheld_label": "M-to-5",
+  "withheld_check_residual_px": 4.996828912741866,
+  "check_scope": "one point in the same near-collinear triple, not independent structure validation",
+  "source_point_role": "coarse endpoint reference inherited from visible M2 trace",
+  "target_point_role": "brightness centroids within AI source windows; human approved marker identity, not exact centers",
+  "scale": 1.0479409537132627,
+  "angle_deg": -0.30751982394632227,
+  "projection_scope_M2_native_xyxy": [
+    2035,
+    3500,
+    2320,
+    3575
+  ],
+  "acceptance": {
+    "marker_identity": "human_confirmed",
+    "local_projection": "candidate_for_visual_review",
+    "whole_fork_or_upstream_warp": "not_accepted",
+    "fine_via_landing_precision": "not_accepted"
+  },
+  "limits": [
+    "Nearly collinear markers do not constrain arbitrary 2D deformation",
+    "Only short terminal portions displayed, no extrapolated whole-fork overlay",
+    "Point 5 residual is not a certified alignment uncertainty",
+    "Previously withdrawn single-anchor affine not used"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "document_kind": "agent_observations",
+  "task_id": "V3_block-local-review-v1",
+  "input_packet": {
+    "path": "benchmarks/agent-eval/v3-seed-v1/input.json",
+    "sha256": "cd969c8cdfacd6f6451c9304aa7ce0d412fff31bdb8813bcefc6c7dfa3ad61bf"
+  },
+  "run_id": "set-a-new-run-id",
+  "producer": "reasoning_model",
+  "model_id": null,
+  "prompt_version": null,
+  "observations": [],
+  "human_corrections": null
+}

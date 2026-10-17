@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "kind": "partial_task_reference",
+  "input_packet": {
+    "path": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+    "sha256": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc"
+  },
+  "historical_case": {
+    "path": "benchmarks/block-case-v1-roi2-material-reviewed-v5.json",
+    "sha256": "13dc0ee58e195c3d901d1dd89f52c69891bdcb5698266e543dd1501ec932b0e6"
+  },
+  "review_sources": {
+    "human_review": {
+      "path": "benchmarks/block-roi2-review-feedback-v1.json",
+      "sha256": "347adfcc3a147a880e378f5bf4c8433a1bbabd259196b786744a5637e7c69a2d"
+    },
+    "human_review_diffusion_body": {
+      "path": "benchmarks/block-roi2-review-feedback-v2.json",
+      "sha256": "72d8dab90d6d410c972643785201aef9c54388af763a840cba33e57fea544d5d"
+    },
+    "material_human": {
+      "path": "benchmarks/block-roi2-material-review-feedback-v1.json",
+      "sha256": "d1b1d1778ec271461ca6c9116ac41be13ff93f475047e3b82043e7ed823fa334"
+    }
+  },
+  "labels": [
+    {
+      "id": "exists1",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q1"
+      ],
+      "scope_id": "electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "human_review"
+      ],
+      "normalization_note": "Selected Q1 is a MOS finger, not a complete independent-device count."
+    },
+    {
+      "id": "exists2",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q2"
+      ],
+      "scope_id": "electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "human_review"
+      ],
+      "normalization_note": "Selected Q2 is a MOS finger, not a complete independent-device count."
+    },
+    {
+      "id": "middle_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ],
+      "scope_id": "electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "human_review_diffusion_body"
+      ],
+      "normalization_note": "Shared middle source/drain maps to Q1.B and Q2.A under unchanged left/right A/B convention."
+    },
+    {
+      "id": "gates_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G"
+      ],
+      "scope_id": "electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "human_review"
+      ],
+      "normalization_note": "Electrical gate equivalence through M1; no specific M1 feature mapping or exact path inferred."
+    },
+    {
+      "id": "outer_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.A",
+        "R2_Q2.B"
+      ],
+      "scope_id": "electrical",
+      "reference_status": "unresolved",
+      "value": null,
+      "review_refs": [
+        "human_review_diffusion_body"
+      ],
+      "normalization_note": "M1 cannot confirm outer diffusion equivalence; retain unknown, not electrical separation."
+    },
+    {
+      "id": "poly_direct_join",
+      "predicate": "joined_in_region",
+      "subject_ids": [
+        "R2_poly_G1",
+        "R2_poly_G2"
+      ],
+      "scope_id": "poly_local",
+      "reference_status": "known",
+      "value": false,
+      "review_refs": [
+        "human_review"
+      ],
+      "normalization_note": "Confirmed false joined_in_region in reviewed poly context; never different_net."
+    },
+    {
+      "id": "body_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.Bulk",
+        "R2_Q2.Bulk"
+      ],
+      "scope_id": "electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "human_review_diffusion_body"
+      ],
+      "normalization_note": "Shared body only; no named supply or extra terminal union."
+    },
+    {
+      "id": "material_R2_AA_support_fragment",
+      "predicate": "material_identity",
+      "subject_ids": [
+        "R2_AA_support_fragment"
+      ],
+      "scope_id": "material_identity",
+      "reference_status": "known",
+      "value": "aa",
+      "review_refs": [
+        "material_human"
+      ],
+      "normalization_note": "Material identity/coarse location only, not core/envelope pixel truth."
+    },
+    {
+      "id": "material_R2_poly_Q1_support",
+      "predicate": "material_identity",
+      "subject_ids": [
+        "R2_poly_Q1_support"
+      ],
+      "scope_id": "material_identity",
+      "reference_status": "known",
+      "value": "poly",
+      "review_refs": [
+        "material_human"
+      ],
+      "normalization_note": "Material identity/coarse location only, not core/envelope pixel truth."
+    },
+    {
+      "id": "material_R2_poly_Q2_support",
+      "predicate": "material_identity",
+      "subject_ids": [
+        "R2_poly_Q2_support"
+      ],
+      "scope_id": "material_identity",
+      "reference_status": "known",
+      "value": "poly",
+      "review_refs": [
+        "material_human"
+      ],
+      "normalization_note": "Material identity/coarse location only, not core/envelope pixel truth."
+    }
+  ],
+  "limitations": [
+    "Historical development/review seed, not held out.",
+    "Unlisted objects/geometry/relations are unscored, not false.",
+    "No pixel segmentation, W/L, model accuracy or human effort labels available.",
+    "Human decisions normalized from recorded feedback; normalization is auditable, not automatic truth extraction."
+  ],
+  "human_corrections": null,
+  "evaluation_runs": []
+}

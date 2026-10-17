@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "1.C连续\n2.D已经超出图片了，在现有图片中没有接另外一根M3\n3.E不接下端，但是E下端有V1",
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-C-all-metal-trace-candidate-v1.json",
+      "sha256": "cd55ceb52c13879c0229bceb74088289c33c8620940c284d8adbd109c2d0ecbc"
+    },
+    "reviewed_image": {
+      "path": "runs/roi2-C-metal-light-v1/C-all-metal-review.png",
+      "sha256": "d412a5d31044ad0bfcb7b372b5732d499e2e8cf177894e9ff3045aecc4a02ba1"
+    }
+  },
+  "decisions": {
+    "C_M2_continuity": "confirmed",
+    "D_to_displayed_other_M3": "rejected",
+    "D_scope": "User states D goes beyond picture and no other M3 attachment in available pictures; exact off-image route not inferred.",
+    "E_to_displayed_M1_vertical_lower_endpoint": "rejected",
+    "E_lower_V1_identity": "confirmed",
+    "E_V1_M1_landing": "unknown",
+    "exact_pixel_geometry": "unknown"
+  },
+  "limitations": [
+    "Rejection of a displayed attachment does not imply electrically isolated nets.",
+    "V1 existence at E does not identify a specific M1 feature or a pixel-perfect via position."
+  ]
+}

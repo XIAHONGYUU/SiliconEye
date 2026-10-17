@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "record_type": "P2_network_trace_after_J_continuity_review",
+  "sources": {
+    "H_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-H-review-feedback-v1.json",
+      "sha256": "e48e7ad47b2a4b15bc822c4341aa6e3d47700df749a444def93ebf89c8a8197b"
+    },
+    "confirmed_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v3.json",
+      "sha256": "518dd5ff2a85abc3b65938f87832ad9f570fab0d557618d85f132004bf85a9c7"
+    },
+    "prior_continuation": {
+      "path": "benchmarks/metal-extension/roi2-H-continuation-candidate-v1.json",
+      "sha256": "0c12a82f28209476a92a4dfcb8abd0d302edacd0f2dea0f2b8c0a69a01325adb"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-G-M3-MIM-reviewed-v14.json",
+      "sha256": "f7f2139e80cb6de5baeb6bbc33c0f25731afb8cea854d91db246b1ef677e8a50"
+    },
+    "J_left_review": {
+      "path": "benchmarks/metal-extension/roi2-J-left-continuation-review-feedback-v1.json",
+      "sha256": "b0198ce2469c40aff9a7e3ff12ec2842c987c87e69f5f5e57a1273df2acaa8e2"
+    },
+    "current_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v4.json",
+      "sha256": "e881f5f13226d5f58d8515fd71e6a19492319a175956c206fab9244bf3012231"
+    },
+    "previous_observation": {
+      "path": "benchmarks/metal-extension/roi2-P2-network-candidate-v5.json",
+      "sha256": "9a67fde39d1dcaedb0879784c97662696c82a868847c5146c4c4690ce84c473b"
+    }
+  },
+  "seed": {
+    "native_xy": [
+      2000,
+      4007
+    ],
+    "source": "reviewed H near-line local bright maximum",
+    "identity": "R2_MIM_01.P2"
+  },
+  "extraction": {
+    "role": "deterministic brightness-component proposal guided by reviewed H; not physical proof",
+    "native_roi_xyxy": [
+      0,
+      3880,
+      5712,
+      4284
+    ],
+    "gaussian_kernel_wh": [
+      15,
+      3
+    ],
+    "sigma_x": 2.3,
+    "sigma_y": 0.7,
+    "threshold_primary": 135,
+    "sensitivity_thresholds": [
+      125,
+      135,
+      145
+    ],
+    "connectivity": 8,
+    "morphology": "none",
+    "opencv_version": "5.0.0",
+    "no_dilation_or_gap_filling": true
+  },
+  "trials": [
+    {
+      "threshold": 125,
+      "bbox_native_xyxy": [
+        0,
+        3982,
+        2504,
+        4283
+      ],
+      "area": 111006,
+      "frame_left_touch": true,
+      "frame_bottom_touch": true,
+      "frame_right_touch": false,
+      "frame_top_touch": false,
+      "seed_native_xy": [
+        2000,
+        4007
+      ]
+    },
+    {
+      "threshold": 135,
+      "bbox_native_xyxy": [
+        0,
+        3983,
+        2503,
+        4283
+      ],
+      "area": 98676,
+      "frame_left_touch": true,
+      "frame_bottom_touch": true,
+      "frame_right_touch": false,
+      "frame_top_touch": false,
+      "seed_native_xy": [
+        2000,
+        4007
+      ]
+    },
+    {
+      "threshold": 145,
+      "bbox_native_xyxy": [
+        0,
+        3984,
+        2502,
+        4283
+      ],
+      "area": 68777,
+      "frame_left_touch": true,
+      "frame_bottom_touch": true,
+      "frame_right_touch": false,
+      "frame_top_touch": false,
+      "seed_native_xy": [
+        2000,
+        4007
+      ]
+    }
+  ],
+  "visible_finger_runs_at_native_x2050_y_halfopen": [
+    [
+      4002,
+      4012
+    ],
+    [
+      4054,
+      4063
+    ],
+    [
+      4092,
+      4102
+    ],
+    [
+      4130,
+      4139
+    ],
+    [
+      4168,
+      4173
+    ],
+    [
+      4201,
+      4211
+    ],
+    [
+      4239,
+      4248
+    ]
+  ],
+  "visible_A_finger_count_in_primary_mask": 7,
+  "opposing_bus_probe_native_xy": [
+    2502,
+    4110
+  ],
+  "opposing_bus_probe_separate_in_all_trials": true,
+  "interpretation": "Leftward M3 continuation at J is confirmed; full visible component remains an AI segmentation proposal, K cross-layer membership and global coverage unknown.",
+  "decision_gate": {
+    "id": "K_M2_interface",
+    "M3_search_xywh": [
+      680,
+      4010,
+      120,
+      110
+    ],
+    "M2_search_xywh": [
+      650,
+      3960,
+      120,
+      130
+    ],
+    "question": "Does the M2 upper connection row/vertical stub in this context attach through a via to the P2 M3 conductor near K?",
+    "status": "requires_human_adjudication",
+    "reason": "No independently accepted local registration or unambiguous cross-layer via landing; screen brightness and proximity do not establish connection."
+  },
+  "coverage_frontiers": [
+    {
+      "edge": "left_source_boundary",
+      "native_xy_approx": [
+        0,
+        4075
+      ],
+      "status": "out_of_view"
+    },
+    {
+      "edge": "bottom_source_boundary",
+      "native_xy_approx": [
+        1649,
+        4283
+      ],
+      "status": "out_of_view"
+    },
+    {
+      "edge": "M2_M3_interface",
+      "status": "unknown",
+      "note": "Nearby M2 contact row and F/G routing cannot establish all P2 via memberships without independent landing evidence."
+    }
+  ],
+  "confirmed_state_changed": false,
+  "P1_P2_union": false,
+  "all_visible_metal_physical_truth_verified": false,
+  "all_net_complete": false,
+  "stopping_rule": "Continue same-layer visible extraction; stop before introducing M2-M3 K interface or outside-image connections.",
+  "J_continuity_status": "human_confirmed_local_left_continuation",
+  "same_layer_K_T_junction_observation": "visually_continuous_candidate_supported_by_raw_and_threshold_trials",
+  "all_neighbor_terminal_memberships": "not_added_to_confirmed_topology"
+}

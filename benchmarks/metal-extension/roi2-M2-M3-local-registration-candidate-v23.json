@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "record_type": "physical_interface_anchored_M2_M3_candidate_registration",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "AC_reviewed_geometry": {
+      "path": "benchmarks/metal-extension/roi2-M3-M2-fanout-reviewed-v2.json",
+      "sha256": "079dc6e19ee94ae860990d8782ce542e432c5cf7474615a410bf071f39763ee1"
+    },
+    "EF_M3_geometry": {
+      "path": "benchmarks/metal-extension/roi2-E-M3-extent-candidate-v1.json",
+      "sha256": "a676a65fabe5d57059480414e48347831682db7237dea865e4c0edf16bdd01d7"
+    },
+    "F_M2_geometry": {
+      "path": "benchmarks/metal-extension/roi2-F-M2-extension-candidate-v1.json",
+      "sha256": "1ae3267fa83c2cf7da1fa35f2e2622d486c14f234666e6d24cc541636bb0de02"
+    },
+    "S1_S2_review": {
+      "path": "benchmarks/metal-extension/roi2-S1-S2-V2-review-feedback-v1.json",
+      "sha256": "9196e7e3140a4ef804a89e156153492845fcb1dee33144ec3d960517e5a8bddb"
+    }
+  },
+  "direction": "m2_native_to_m3_native",
+  "unit": "px",
+  "model": "least_squares_affine",
+  "matrix": [
+    [
+      1.029968326724043,
+      -0.024619776144689375,
+      32.30370660921691
+    ],
+    [
+      -0.008345339718574747,
+      1.0078261309504926,
+      26.545277287962143
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "inverse_matrix": [
+    [
+      0.9710958545318072,
+      0.02372250710651932,
+      -31.9997161033305
+    ],
+    [
+      0.008041193373031994,
+      0.9924310768142931,
+      -26.604118474736673
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "anchors": [
+    {
+      "id": "A",
+      "M2_reference_xy": [
+        2231.0,
+        3332.0
+      ],
+      "M3_reference_xy": [
+        2252.0,
+        3369.0
+      ],
+      "fit_residual_px": 4.894522193331574,
+      "geometry_status": "historical_AI_approximate_pixels_on_human_reviewed_physical_interface",
+      "leave_one_out_residual_px": 27.27184772370789
+    },
+    {
+      "id": "C",
+      "M2_reference_xy": [
+        3275.0,
+        3308.0
+      ],
+      "M3_reference_xy": [
+        3320.0,
+        3330.0
+      ],
+      "fit_residual_px": 5.068682143151573,
+      "geometry_status": "historical_AI_approximate_pixels_on_human_reviewed_physical_interface",
+      "leave_one_out_residual_px": 26.334786867081224
+    },
+    {
+      "id": "E",
+      "M2_reference_xy": [
+        3278.0,
+        3807.0
+      ],
+      "M3_reference_xy": [
+        3320.0,
+        3840.0
+      ],
+      "fit_residual_px": 6.5608583123048945,
+      "geometry_status": "historical_AI_approximate_pixels_on_human_reviewed_physical_interface",
+      "leave_one_out_residual_px": 20.34530507792059
+    },
+    {
+      "id": "F",
+      "M2_reference_xy": [
+        2478.0,
+        3839.0
+      ],
+      "M3_reference_xy": [
+        2485.0,
+        3871.0
+      ],
+      "fit_residual_px": 6.386698362488062,
+      "geometry_status": "historical_AI_approximate_pixels_on_human_reviewed_physical_interface",
+      "leave_one_out_residual_px": 20.900104617574403
+    }
+  ],
+  "S1_S2_used_for_fitting": false,
+  "S1_S2_candidate_projection": {
+    "S1": [
+      2323.4816050095865,
+      3190.0659174768957
+    ],
+    "S2": [
+      2323.0138292628376,
+      3209.214613964955
+    ]
+  },
+  "sensitivity": {
+    "full_four_point_projective_S1_S2": [
+      [
+        2325.47,
+        3198.34
+      ],
+      [
+        2324.91,
+        3216.8
+      ]
+    ],
+    "T_affine_xy": [
+      2332.04,
+      2207.56
+    ],
+    "T_projective_xy": [
+      2338.87,
+      2272.92
+    ],
+    "T_extrapolation_rejected": true,
+    "reason": "T is far above supporting anchors and affine/projective predictions differ about65px; do not select its M3 from this transform."
+  },
+  "quality_status": "candidate_not_accepted_LOO_error_exceeds_fine_wire_budget",
+  "independent_coverage": "S1/S2 did not fit transform; both lie near L01 vertical terminal, exact containment not established within current uncertainty",
+  "M3_assignment_candidate": {
+    "S1": "L01",
+    "S2": "L01",
+    "status": "unconfirmed_same_wire_hypothesis_not_two_separate_M3_claim"
+  },
+  "remaining": "Refine native A/C/E/F interface centers or add a nearer independent structural correspondence, then verify S1/S2 coverage. T needs separate supported local registration.",
+  "outputs": [
+    "M2-M3-local-overlay-review.png",
+    "M2-red-M3-cyan-local-overlay-native.png"
+  ],
+  "no_confirmed_M3_edge_added": true
+}

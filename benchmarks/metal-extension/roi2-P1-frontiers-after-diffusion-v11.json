@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_type": "P1_coverage_frontier_review",
+  "sources": {
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v11.json",
+      "sha256": "d4c9bc8be8522f82c895109ad70ab8db19166c1a1cc56cbc99cd5cb4ae68e712"
+    },
+    "A_C_review": {
+      "path": "benchmarks/metal-extension/roi2-M3-A-C-review-feedback-v1.json",
+      "sha256": "35b29235a1d736980f59b312338d029469e12aed852089d55da0a2b49f4f2dfd"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "closed_material_interface": "456 M1 -> CT -> lower MOS diffusion terminals human-confirmed; S/D and device count unknown",
+  "remaining_frontiers": [
+    {
+      "id": "AC_extra_M2",
+      "status": "unknown",
+      "question": "Besides reviewed A and C, does the selected M3 have additional M2 attachments?",
+      "M2_neighbor_B_xy": [
+        2330,
+        3300
+      ],
+      "B_status": "AI neighboring-tab candidate, via and target M3 identity unknown",
+      "image": "runs/roi2-P1-diffusion-reviewed-v11/AC-extra-M2-interface-review.png"
+    },
+    {
+      "id": "MOM_unreviewed_multilayer_extent",
+      "status": "unknown"
+    },
+    {
+      "id": "M4_V3_attachment",
+      "status": "no_reliable_positive_assignment_not_proven_absent"
+    },
+    {
+      "id": "photo_exits",
+      "status": "unknown_no_extra_photo_request"
+    }
+  ],
+  "network_coverage_complete": false,
+  "review_scope": "conductor interfaces, not per-contact counting",
+  "new_registration_used": false
+}

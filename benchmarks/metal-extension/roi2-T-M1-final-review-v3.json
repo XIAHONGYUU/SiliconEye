@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "record_type": "human_T_upper_M1_identity_review",
+  "user_statement": "确认无误，继续推进到这根新被全部点亮",
+  "reviewed_artifacts": [
+    "runs/roi2-N04-five-M2-to-M1-v29/five-M2-to-M1-reviewed-source.png",
+    "runs/roi2-N04-five-M2-to-M1-v29/five-M1-native-highlight.png",
+    "runs/roi2-N04-five-M2-to-M1-v29/M1-network-overview.png"
+  ],
+  "sources": {
+    "v29_geometry": {
+      "path": "benchmarks/metal-extension/roi2-N04-five-M2-to-M1-reviewed-v29.json",
+      "sha256": "22f8342b9bd02e023dd0d45dc2833c2751c6304c6465e5f6ad75c1d44094f009"
+    }
+  },
+  "decision": "T underlying upper M1 long-finger identity and connection confirmed; continue full corrected gate-net tracing",
+  "scope_exclusions": [
+    "exact_V1_center",
+    "exact_masks",
+    "new_B_comb_cross_layer_connections",
+    "full_net_closure"
+  ]
+}

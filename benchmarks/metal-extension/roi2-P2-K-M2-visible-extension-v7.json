@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "record_type": "P2_K_middle_M2_visible_extension",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-K-middle-M2-review-feedback-v1.json",
+      "sha256": "7424259e118485721d4d972d55b72b6a0b2853dd07e333ac555eeec2bc60cf1a"
+    },
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v5.json",
+      "sha256": "9da4be51c643f011621f798235c47c9260171cbbcc72d7b72edf371f18ca119e"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "M3_visible_mask": {
+      "path": "runs/roi2-P2-network-trace-v5/M3-P2-visible-candidate-mask-native.png",
+      "sha256": "615f1003f9a891a8a4a0202bd627f2c48562851002bb6d7f96d40188b7c27076"
+    }
+  },
+  "selected_metal_id": "R2_P2_K_middle_M2_01",
+  "identity_status": "human_confirmed_local_attachment",
+  "frame_id": "m2_native",
+  "approximate_visible_centerline_xy": [
+    [
+      679,
+      4045
+    ],
+    [
+      681,
+      4100
+    ],
+    [
+      683,
+      4200
+    ],
+    [
+      685,
+      4283
+    ]
+  ],
+  "geometry_status": "AI_display_candidate_not_segmentation_truth",
+  "upper_endpoint_status": "approximate_top_of_selected_straight_strip_no_horizontal_stub",
+  "bottom_status": "reaches_source_boundary_not_physical_endpoint",
+  "excluded_local_selectors": [
+    "left conductor with leftward tab",
+    "right conductor with upper horizontal tab"
+  ],
+  "coverage_frontiers": [
+    {
+      "frame_id": "m2_native",
+      "xy": [
+        685,
+        4283
+      ],
+      "reason": "photograph bottom, continuation unavailable"
+    },
+    {
+      "frame_id": "m3_native",
+      "xy": [
+        0,
+        4075
+      ],
+      "reason": "photograph left, continuation unavailable"
+    },
+    {
+      "frame_id": "m3_native",
+      "xy": [
+        1649,
+        4283
+      ],
+      "reason": "photograph bottom, continuation unavailable"
+    }
+  ],
+  "P2_external_net_name": null,
+  "all_net_complete": false,
+  "P1_P2_union": false,
+  "next_requirement": "Evidence covering exits outside left/bottom photograph, plus any remaining cross-layer interfaces; do not invent a new endpoint."
+}

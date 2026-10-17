@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "document_kind": "device_index_review_feedback",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "批准，编号图无误",
+  "scope": "Displayed ROI2 static device ID diagram: ID correspondence and displayed coarse localization only",
+  "bundle_id": "46e13c77ea8feb79741720010aabd280d1e04ba4ce28c73a9b7beea9eaf0dd5e",
+  "decisions": {
+    "device_id_diagram": "accepted",
+    "poly_device_id_coarse_correspondence": "accepted",
+    "m1_macro_projected_id_correspondence": "accepted",
+    "aa_individual_device_localization": "unknown"
+  },
+  "normalization": "确认所示R2_Q1/R2_Q2编号及图中对应关系；AA仍未逐器件定位。实线检查窗与虚线宏观投影不升级为精确边界、CT落点、端口或金属路径真值。",
+  "electrical_decisions_changed": false,
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-device-index-static-v1/device-index.png",
+      "sha256": "5c3d687e956e30b8ffc08ec9d97254dba04f57add81f8051cb33f5d9cc2b8510"
+    },
+    "static_manifest": {
+      "path": "runs/roi2-device-index-static-v1/manifest.json",
+      "sha256": "b3c868c41bf3dc2146e1815da720c4b383993d44ecd66aa542c7e08f1dfc4a6a"
+    },
+    "device_index": {
+      "path": "runs/roi2-device-index-v3/device-index.json",
+      "sha256": "4001b5c343fefee474ecf04d6fbd7a36479619224803b1dc30ef5f0b16d9eb47"
+    }
+  }
+}

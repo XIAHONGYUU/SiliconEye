@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "record_type": "corrected_gate_M2_same_layer_trace",
+  "status": "AI_observed_reference_trace_pending_terminal_interface_review",
+  "sources": {
+    "entry_observation": {
+      "path": "benchmarks/metal-extension/roi2-gate-entry-reanchor-candidate-v14.json",
+      "sha256": "8832dee8e939de908575a2f820c1d03118b8c00ea6aa4ecec69ac98a2f1e4c41"
+    },
+    "accepted_CD_review": {
+      "path": "benchmarks/metal-extension/roi2-A-CD-gate-reanchor-review-v1.json",
+      "sha256": "0f1f2f6b4e263708bcf7e851bb77017fb1364746d7e24c4cae97b28c4fe40fd4"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "user_authorization": "继续追踪，以前犯过的一些错误不要再继续犯了，追中完之后我们可以统一复盘",
+  "entry_m2_approx_xy": [
+    2315,
+    2987
+  ],
+  "conductor_candidate_id": "R2_corrected_gate_long_M2_candidate_01",
+  "frame_id": "m2_native",
+  "unit": "px",
+  "reference_centerline_xy": [
+    [
+      2285,
+      2183
+    ],
+    [
+      2308,
+      2183
+    ],
+    [
+      2318,
+      2987
+    ],
+    [
+      2319,
+      3115
+    ],
+    [
+      2298,
+      3120
+    ],
+    [
+      2300,
+      3290
+    ],
+    [
+      2310,
+      3898
+    ],
+    [
+      2330,
+      3898
+    ]
+  ],
+  "pixel_boundary": "unknown",
+  "visible_terminal_candidates": [
+    {
+      "label": "T",
+      "native_xy": [
+        2285,
+        2183
+      ],
+      "V1_to_M1": "unknown",
+      "V2_to_M3": "unknown"
+    },
+    {
+      "label": "B",
+      "native_xy": [
+        2330,
+        3898
+      ],
+      "V1_to_M1": "unknown",
+      "V2_to_M3": "unknown"
+    }
+  ],
+  "side_branches": "none identified on the selected stripe; not a proof of absence of every via",
+  "excluded": [
+    "old U3 and A fork",
+    "neighboring parallel long M2 lines",
+    "screen moire peaks as physical conductors"
+  ],
+  "diagnostic_thresholds": {
+    "gaussian_kernel": [
+      7,
+      3
+    ],
+    "sigma": 1.2,
+    "ROI_xywh": [
+      1950,
+      1800,
+      850,
+      2484
+    ],
+    "thresholds": [
+      105,
+      120,
+      135,
+      150,
+      165
+    ],
+    "result": "105/120 leak into background; 135 merges nearby geometry; 150/165 retain upper route but fragment lower contrast. Not used for automatic full-net mask or physical approval."
+  },
+  "no_cross_layer_transform_created": true,
+  "no_net_union": true,
+  "remaining_gate": "T/B via layer and conductor destination; precise interlayer registration if needed",
+  "outputs": [
+    "runs/roi2-gate-retrace-v15/gate-M2-T-B-route-review.png",
+    "runs/roi2-gate-retrace-v15/T-three-layer-native-context.png",
+    "runs/roi2-gate-retrace-v15/B-three-layer-native-context.png"
+  ]
+}

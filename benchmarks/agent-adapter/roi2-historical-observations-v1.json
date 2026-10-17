@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "document_kind": "agent_observations",
+  "task_id": "ROI2_finger_pair-local-review-v1",
+  "input_packet": {
+    "path": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+    "sha256": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc"
+  },
+  "run_id": "roi2-historical-format-adaptation-v1",
+  "producer": "reasoning_model",
+  "model_id": null,
+  "prompt_version": "historical-reexpression-v1-not-model-eval",
+  "observations": [
+    {
+      "id": "exists1",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q1"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用已复核对象：Q1是一条MOS栅指；不推断它是独立完整器件。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "exists2",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q2"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用已复核对象：Q2是相邻MOS栅指；不据此合并或拆分完整器件。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "middle_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用人审：中间扩散共享源漏。A/B为既有几何约定，尚未指定S/D。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "gates_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用人审：两栅经M1同网；不据此生成具体金属路径。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "outer_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.A",
+        "R2_Q2.B"
+      ],
+      "scope_id": "electrical",
+      "value": null,
+      "status": "unknown",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "M1不足以确认两外侧扩散共接；保持未知，不当作隔离。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "poly_direct_join",
+      "predicate": "joined_in_region",
+      "subject_ids": [
+        "R2_poly_G1",
+        "R2_poly_G2"
+      ],
+      "scope_id": "poly_local",
+      "value": false,
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "在已复核poly范围内无直接连接；这不否定M1上的电气同网。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "body_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.Bulk",
+        "R2_Q2.Bulk"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用人审：两栅指体端共用；不推断体端连接电源或其他网络。",
+      "boundary_status": "unknown"
+    },
+    {
+      "id": "material_R2_AA_support_fragment",
+      "predicate": "material_identity",
+      "subject_ids": [
+        "R2_AA_support_fragment"
+      ],
+      "scope_id": "material_identity",
+      "value": "aa",
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用已复核材料身份和大致位置；精确边界仍未知。",
+      "boundary_status": "unknown",
+      "location": {
+        "id": "material_R2_AA_support_fragment_window",
+        "frame_id": "aa_native",
+        "xywh": [
+          1796,
+          2839,
+          146,
+          116
+        ],
+        "role": "inspection_window_not_material_boundary"
+      }
+    },
+    {
+      "id": "material_R2_poly_Q1_support",
+      "predicate": "material_identity",
+      "subject_ids": [
+        "R2_poly_Q1_support"
+      ],
+      "scope_id": "material_identity",
+      "value": "poly",
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用已复核材料身份和大致位置；精确边界仍未知。",
+      "boundary_status": "unknown",
+      "location": {
+        "id": "material_R2_poly_Q1_support_window",
+        "frame_id": "poly_native",
+        "xywh": [
+          1733,
+          2702,
+          55,
+          135
+        ],
+        "role": "inspection_window_not_material_boundary"
+      }
+    },
+    {
+      "id": "material_R2_poly_Q2_support",
+      "predicate": "material_identity",
+      "subject_ids": [
+        "R2_poly_Q2_support"
+      ],
+      "scope_id": "material_identity",
+      "value": "poly",
+      "status": "candidate",
+      "evidence_refs": [
+        "aa_photo",
+        "poly_photo",
+        "m1_photo"
+      ],
+      "rationale": "沿用已复核材料身份和大致位置；精确边界仍未知。",
+      "boundary_status": "unknown",
+      "location": {
+        "id": "material_R2_poly_Q2_support_window",
+        "frame_id": "poly_native",
+        "xywh": [
+          1789,
+          2700,
+          55,
+          134
+        ],
+        "role": "inspection_window_not_material_boundary"
+      }
+    }
+  ],
+  "human_corrections": null,
+  "purpose": "historical_reexpression"
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "record_type": "MOM_P2_M1_visible_continuation_observation",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-L1-review-feedback-v1.json",
+      "sha256": "badb6e58f7a80f082db876fe05751c853395049c0de46a580810975666e4f188"
+    },
+    "current_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v6.json",
+      "sha256": "71eef260022f79207f852d1bf8ff38d8e61d79a3206d79ba157b1e95be195457"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "selected_port": "R2_CAP_01.P2",
+  "confirmed_stack": [
+    "M3 via K/V2 to selected middle M2",
+    "selected middle M2 via L1/V1 to M1 capacitor-edge metal"
+  ],
+  "M1_display_path_candidate_xy": [
+    [
+      712,
+      4035
+    ],
+    [
+      716,
+      4150
+    ],
+    [
+      720,
+      4283
+    ]
+  ],
+  "geometry_status": "AI_coarse_reference_not_exact_segmentation",
+  "M1_array_top_observation": "Selected edge metal begins near upper capacitor array; no unambiguous visible bridge to the large horizontal metal above the array. Do not infer a global disconnection.",
+  "remaining_unresolved": [
+    "Exact M1 electrode extent among repeating contact/finger array",
+    "Any additional M4/P2 attachment",
+    "External named circuit node",
+    "Photograph-external continuations"
+  ],
+  "M1_M2_registration": "prior array-fit trials rejected; human interface approval is not exact transform approval",
+  "P1_P2_union": false,
+  "all_net_complete": false
+}

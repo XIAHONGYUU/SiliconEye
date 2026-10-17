@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "document_kind": "agent_observations",
+  "task_id": "ROI2_finger_pair-local-review-v1",
+  "input_packet": {
+    "path": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+    "sha256": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc"
+  },
+  "run_id": "set-a-new-run-id",
+  "producer": "reasoning_model",
+  "model_id": null,
+  "prompt_version": null,
+  "observations": [],
+  "human_corrections": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "从现在的视角里面可以看到，T短是向上接到M3,B段是向下接到M1,同时T和B之间还有一个从M2接到M3的接口。从现在的这个角度来说，我们只能看全向从M2到M3的接口，因为有V2可以判断，但是从M1接到M2的接口需要从M1的V1的位置进行判断",
+  "scope": "corrected gate long M2 T/B layer destinations and existence of additional interior V2; lower-layer via evidence direction",
+  "sources": {
+    "trace": {
+      "path": "benchmarks/metal-extension/roi2-corrected-gate-M2-trace-candidate-v15.json",
+      "sha256": "42addf30dfc1f969f002ad968d21be829c4268f459d0066adc41a0146897e981"
+    },
+    "T_source_review": {
+      "path": "runs/roi2-gate-endpoint-layer-review-v16/T-lower-upper-originals.png",
+      "sha256": "d1fcd1aceeaaed102a4147df06f64d3723edf18f00e55ffc09700d4e173f3473"
+    },
+    "B_source_review": {
+      "path": "runs/roi2-gate-endpoint-layer-review-v16/B-lower-upper-originals.png",
+      "sha256": "07663f1070bf12539a1a22884e03bad9b3764a251f5f8b7ef9a80ce1a7a6501e"
+    }
+  },
+  "decisions": {
+    "T_upward_to_M3": "human_confirmed",
+    "B_downward_to_M1": "human_confirmed",
+    "additional_M2_to_M3_interface_between_T_B": "human_confirmed_exists",
+    "additional_interface_native_xy": null,
+    "T_destination_M3_conductor_ID": null,
+    "B_destination_M1_conductor_ID": null,
+    "all_other_V1_interfaces_absent": "not_asserted",
+    "T_has_no_V1": "not_asserted",
+    "B_has_no_V2": "not_asserted"
+  },
+  "inspection_rule": {
+    "M1_to_M2": "inspect V1 in M1 then locate covering M2 with validated local correspondence",
+    "M2_to_M3": "inspect V2 in M2 then locate covering M3 with validated local correspondence",
+    "coverage": "inventory whole selected conductor span, not only endpoints",
+    "no_via_visible_on_M2": "does not prove absence of M1 V1 under that M2"
+  },
+  "limits": [
+    "layer destinations confirmed, exact destination conductors and pixels not yet assigned",
+    "do not assign nearby side tabs to selected M2 solely from proximity",
+    "additional interior V2 existence does not select a nearby coordinate automatically"
+  ]
+}

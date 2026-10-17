@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "record_type": "MIM_P2_pixel_localization_proposal",
+  "sources": {
+    "user_description": {
+      "path": "benchmarks/metal-extension/roi2-MIM-other-terminal-review-feedback-v1.json",
+      "sha256": "21c1dcac8f9fb4fbca17332288d4642a2d7b49e1185b32a608fa2d8c1b5b32e8"
+    },
+    "current_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v2.json",
+      "sha256": "4e5b7ce9f233260a6e40e7ad06fd81a180aef011d4750d29510b398e7876b7f0"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "P2_descriptive_identity": "human_confirmed",
+  "selected_capacitor_group": "AI_candidate_three_visible_units_native_x_1600_to_4250",
+  "group_identity_acceptance": "pending_pixel_review",
+  "paths_native_xy": {
+    "m3": [
+      [
+        1640,
+        4025
+      ],
+      [
+        1900,
+        4014
+      ],
+      [
+        2200,
+        4001
+      ],
+      [
+        2470,
+        3990
+      ]
+    ],
+    "m2": [
+      [
+        1640,
+        4005
+      ],
+      [
+        1900,
+        3994
+      ],
+      [
+        2200,
+        3982
+      ],
+      [
+        2420,
+        3973
+      ]
+    ]
+  },
+  "path_role": "M3 blue H top-edge conductor candidate; M2 amber uppermost connection-row candidate",
+  "geometry_status": "candidate_not_human_confirmed",
+  "P2_process_plate_role": "unknown",
+  "exact_interlayer_registration": "not_accepted_here",
+  "known_G_reference_M2_xy": [
+    2438,
+    3959
+  ],
+  "G_reference_is_not_P2_landing": true,
+  "no_P1_P2_union": true,
+  "electrical_state_changed": false
+}

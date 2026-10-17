@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "record_type": "human_downward_M1_review",
+  "user_statement": "批准无误，但是别忘了T那根线对应的下面的M1长竖段",
+  "sources": {
+    "prior_candidates": {
+      "path": "benchmarks/metal-extension/roi2-N04-five-M2-to-M1-candidates-v28.json",
+      "sha256": "7e889bc181d2aabbd46ca758868192353181c20112ecefd892c7da85e9145641"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "decisions": [
+    {
+      "label": "J1",
+      "M2_metal_id": "R2_N04_J1_M2_candidate",
+      "M1_metal_id": "R2_N04_J1_M1_candidate_01",
+      "via_id": "R2_N04_J1_V1_candidate",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "J2",
+      "M2_metal_id": "R2_N04_J2_M2_candidate",
+      "M1_metal_id": "R2_N04_J2_M1_candidate_01",
+      "via_id": "R2_N04_J2_V1_candidate",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "J3",
+      "M2_metal_id": "R2_N04_J3_M2_candidate",
+      "M1_metal_id": "R2_N04_J3_M1_candidate_01",
+      "via_id": "R2_N04_J3_V1_candidate",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "J4",
+      "M2_metal_id": "R2_N04_J4_M2_candidate",
+      "M1_metal_id": "R2_N04_J4_M1_candidate_01",
+      "via_id": "R2_N04_J4_V1_candidate",
+      "status": "human_confirmed_connection_and_destination_identity"
+    }
+  ],
+  "T_correction": {
+    "status": "human_asserted_additional_underlying_long_vertical_M1",
+    "M1_metal_id": "R2_N04_T_upper_M1_01",
+    "source_geometry_identification": "AI_maps_user_description_to_previously_excluded_T-U_long_finger; exact_pixels_not_human_reviewed",
+    "supersedes": "v28 excluded T-U as unsupported; retain prior file as historical judgment"
+  },
+  "scope_exclusions": [
+    "exact_V1_center_or_count",
+    "exact_masks",
+    "global_registration",
+    "full_net_closure",
+    "CT_or_material_identity"
+  ]
+}

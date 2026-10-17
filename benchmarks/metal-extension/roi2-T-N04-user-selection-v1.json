@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "record_type": "human_working_destination_selection",
+  "user_statement": "应该是NO4这条线，现在可以找NO4这条M3接到了多少M2上，可以线根据接NO4的事实修正一下图片投影",
+  "normalized_display_label": "N04",
+  "raw_user_label": "NO4",
+  "metal_id": "R2_corrected_gate_N04_M3_01",
+  "status": "user_selected_working_destination_with_tentative_wording",
+  "from_interface": "R2_corrected_gate_T_V2",
+  "source": {
+    "path": "benchmarks/metal-extension/roi2-T-M3-search-references-v26.json",
+    "sha256": "306ffe5fd0078a40315a86193137de3108107957a369a44eae145f5dd197de02"
+  },
+  "reviewed_artifact": "runs/roi2-W1-M1-followup-v26/T-M2-M3-native-search-review.png",
+  "scope": "T connects to N04 used as local point-to-line constraint; exact via landing along N04 unknown",
+  "does_not_confirm": [
+    "other_M2_attachments",
+    "exact_T_landing_pixel",
+    "whole_image_registration",
+    "other_materials_or_capacitor_membership"
+  ]
+}

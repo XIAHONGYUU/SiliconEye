@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_local_topology_companion",
+  "case_id": "ROI2_finger_pair",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-G-M3-MIM-reviewed-v14.json",
+      "sha256": "f7f2139e80cb6de5baeb6bbc33c0f25731afb8cea854d91db246b1ef677e8a50"
+    },
+    "other_terminal_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-other-terminal-review-feedback-v1.json",
+      "sha256": "21c1dcac8f9fb4fbca17332288d4642a2d7b49e1185b32a608fa2d8c1b5b32e8"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v1.json",
+      "sha256": "2f8227950026cf4d7f63703e48905621dc67a1b3876c2e2c191be878e2406a87"
+    },
+    "H_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-H-review-feedback-v1.json",
+      "sha256": "e48e7ad47b2a4b15bc822c4341aa6e3d47700df749a444def93ebf89c8a8197b"
+    },
+    "H_candidate": {
+      "path": "benchmarks/metal-extension/roi2-MIM-P2-pixel-candidate-v1.json",
+      "sha256": "64f48c2c2529e3f750839ab80fd28b4ce1d4d5be96d94c4214d4511b6ac66cf3"
+    },
+    "previous_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v2.json",
+      "sha256": "4e5b7ce9f233260a6e40e7ad06fd81a180aef011d4750d29510b398e7876b7f0"
+    },
+    "J_left_review": {
+      "path": "benchmarks/metal-extension/roi2-J-left-continuation-review-feedback-v1.json",
+      "sha256": "b0198ce2469c40aff9a7e3ff12ec2842c987c87e69f5f5e57a1273df2acaa8e2"
+    },
+    "prior_topology_v3": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v3.json",
+      "sha256": "518dd5ff2a85abc3b65938f87832ad9f570fab0d557618d85f132004bf85a9c7"
+    },
+    "K_middle_M2_review": {
+      "path": "benchmarks/metal-extension/roi2-K-middle-M2-review-feedback-v1.json",
+      "sha256": "7424259e118485721d4d972d55b72b6a0b2853dd07e333ac555eeec2bc60cf1a"
+    },
+    "previous_topology_v4": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v4.json",
+      "sha256": "e881f5f13226d5f58d8515fd71e6a19492319a175956c206fab9244bf3012231"
+    }
+  },
+  "capacitor": {
+    "id": "R2_MIM_01",
+    "id_status": "provisional_stable_reference_to_user_identified_MIM",
+    "kind": "MIM_capacitor",
+    "identity_status": "human_confirmed",
+    "value": null,
+    "physical_unit_count": null,
+    "plate_assignment": null,
+    "outline": null,
+    "ports": [
+      {
+        "id": "R2_MIM_01.P1",
+        "role": "reviewed_connected_terminal_not_top_bottom_assignment"
+      },
+      {
+        "id": "R2_MIM_01.P2",
+        "role": "other_terminal_with_human_identified_metal_external_net_unknown",
+        "physical_metal_ref": "R2_MIM_P2_top_local_metal_01"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "terminal_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G",
+        "R2_MIM_01.P1"
+      ],
+      "relation": "same_net",
+      "status": "confirmed",
+      "normalization": "Gate Q1/Q2 equivalence from existing case plus new user-confirmed chain to MIM one terminal.",
+      "source_refs": [
+        "human_review",
+        "case"
+      ]
+    }
+  ],
+  "unknowns": [
+    "R2_MIM_01.P2 external net destination",
+    "capacitance",
+    "top/bottom plate identity",
+    "exact M3 access path and capacitor boundary",
+    "all branches of connected metal",
+    "Exact H/P2 material boundary and undisplayed endpoints/branches",
+    "Electrical continuation outside source-image bottom edge",
+    "M2 via landing along H beyond human-confirmed H identity",
+    "Unreviewed neighboring capacitor-terminal membership beyond local J continuation",
+    "Continuation of selected middle K M2 beyond photograph bottom",
+    "Other P2 vias not explicitly reviewed"
+  ],
+  "do_not_union": [
+    "R2_MIM_01.P1",
+    "R2_MIM_01.P2"
+  ],
+  "coverage_status": "incomplete",
+  "generic_case_capacitor_export": "not_implemented_in_v1_MOS_schema",
+  "revision": "P2-K-middle-M2-reviewed-v5",
+  "physical_terminal_mappings": [
+    {
+      "port_id": "R2_MIM_01.P2",
+      "metal_ref": "R2_MIM_P2_top_local_metal_01",
+      "status": "human_confirmed_displayed_H_identity_and_coarse_location",
+      "selector_original": "下方三个方形电容的最左端的最上面那一条",
+      "extent": "not_across_full_picture",
+      "external_net_destination": "unknown",
+      "source_refs": [
+        "other_terminal_review",
+        "H_review",
+        "H_candidate"
+      ],
+      "native_coordinates": {
+        "frame_id": "m3_native",
+        "unit": "px",
+        "displayed_centerline_xy": [
+          [
+            1640,
+            4025
+          ],
+          [
+            1900,
+            4014
+          ],
+          [
+            2200,
+            4001
+          ],
+          [
+            2470,
+            3990
+          ]
+        ],
+        "coordinate_role": "reviewed_reference_not_exact_material_boundary"
+      },
+      "process_plate_identity": null
+    },
+    {
+      "port_id": "R2_MIM_01.P2",
+      "metal_ref": "R2_P2_K_middle_M2_01",
+      "status": "human_confirmed_local_middle_M2_attachment",
+      "selector_original": "在M2上只接入了中间的纯竖向M2",
+      "external_net_destination": "unknown",
+      "source_refs": [
+        "K_middle_M2_review"
+      ],
+      "native_coordinates": {
+        "frame_id": "m2_native",
+        "inspection_window_xywh": [
+          665,
+          4025,
+          35,
+          70
+        ],
+        "status": "candidate_window_not_boundary"
+      },
+      "process_plate_identity": null
+    }
+  ],
+  "highlight_rule": "P1 gate-net and P2 H are separate selections; never traverse dielectric as conductor. Additional P2 continuation observations remain candidate. No global different_net inferred.",
+  "conductor_continuations": [
+    {
+      "from_metal": "R2_MIM_P2_top_local_metal_01",
+      "to_metal": "R2_P2_J_left_extension_01",
+      "relation": "same_layer_continuation_at_J",
+      "status": "human_confirmed",
+      "frame_id": "m3_native",
+      "native_J_approx_xy": [
+        1640,
+        4025
+      ],
+      "source_refs": [
+        "J_left_review"
+      ],
+      "scope": "Local left continuity, not all neighboring capacitor terminal memberships or precise segmentation."
+    }
+  ],
+  "cross_layer_connections": [
+    {
+      "from_metal": "R2_P2_J_left_extension_01",
+      "to_metal": "R2_P2_K_middle_M2_01",
+      "via_id": "R2_P2_K_V2_01",
+      "from_layer": "m3",
+      "to_layer": "m2",
+      "status": "human_confirmed",
+      "source_refs": [
+        "K_middle_M2_review"
+      ],
+      "selector": "中间的纯竖向M2",
+      "exact_via_landing": "unknown"
+    }
+  ],
+  "local_attachment_exclusions": [
+    {
+      "scope": "K_M2_interface",
+      "excluded_selector": "左右邻近带横向结构的M2",
+      "source_ref": "K_middle_M2_review",
+      "does_not_assert": "global_electrical_isolation"
+    }
+  ]
+}

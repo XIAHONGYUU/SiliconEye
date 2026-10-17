@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "record_type": "P1_overall_coverage_checkpoint",
+  "sources": {
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v12.json",
+      "sha256": "2030663f501b21f4f7add717aae8bfe69a86cd6bf90d27f9ab1d40d766c4798c"
+    },
+    "geometry": {
+      "path": "benchmarks/metal-extension/roi2-P1-corrected-coverage-v2.json",
+      "sha256": "b8685d9a3b0d389c53681e3f44b90876d9bb17331f946c132811695012fbacd2"
+    },
+    "AC_review": {
+      "path": "benchmarks/metal-extension/roi2-AC-no-middle-M2-review-feedback-v1.json",
+      "sha256": "34d8d6cb6059fc76d77eb0ed11a5e7b746c30801d82452383c21e6b623bb9c5b"
+    },
+    "diffusion_review": {
+      "path": "benchmarks/metal-extension/roi2-A-456-diffusion-review-feedback-v1.json",
+      "sha256": "56bb5188e3db82be5e3d8e7c5727f7d2378854395f2a1722acd4bf083a3cc009"
+    }
+  },
+  "closed_frontiers": [
+    "G to H and P1/P2 electrode assignment",
+    "A lower-fork LMR via V1 to M1 456",
+    "M1 456 via CT to lower MOS diffusion terminals",
+    "A-C M3 no interior M2 attachment"
+  ],
+  "completion": {
+    "reviewed_route_render": "complete",
+    "full_pixel_boundary_segmentation": "not_complete",
+    "physical_full_network_coverage": "not_complete"
+  },
+  "remaining_frontiers": [
+    {
+      "id": "MOM_P1_extra_external_exits",
+      "status": "unknown",
+      "question": "Apart from H/J/K/L1 already reviewed, are there additional P1 exits to M1/M2 or via V3 to M4 in the available photos?",
+      "image": "runs/roi2-P1-overall-review-v12/MOM-P1-extra-exits-wide-review.png"
+    },
+    {
+      "id": "A_other_interfaces",
+      "status": "not_blanket_approved_by_456_review"
+    },
+    {
+      "id": "photo_exits",
+      "status": "unknown_no_new_photo_request"
+    }
+  ],
+  "do_not_traverse": [
+    "MOS channel",
+    "capacitor dielectric"
+  ],
+  "figure_rule": "Native per-layer references, candidate masks not exact boundaries, no unverified cross-layer projection",
+  "no_new_transform_or_code": true
+}

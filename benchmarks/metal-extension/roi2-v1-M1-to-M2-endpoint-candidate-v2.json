@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "producer": "reasoning_model",
+  "sources": {
+    "v1_feedback": {
+      "path": "benchmarks/metal-extension/roi2-v1-M1-join-feedback-v1.json",
+      "sha256": "19b64c8b60849cdfa82fffdaff943b9f5fb9dfb1866a367d6f74043984d805f5"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "candidate_registration": {
+      "path": "benchmarks/metal-extension/roi2-gate-upper-metal-survey-v1.json",
+      "sha256": "cadc76a8cca65362bde6f2bc6c9209246eba6d3965d94439960f1bd0067ec9ee"
+    }
+  },
+  "v1_on_M1": {
+    "presence": "human_confirmed",
+    "coarse_region": "parallel_M1_right_join",
+    "native_center_xy": [
+      2355,
+      2957
+    ],
+    "pixel_localization_status": "AI_approximate_not_human_pixel_truth"
+  },
+  "m2_target": {
+    "status": "candidate",
+    "candidate_endpoint_native_xy": [
+      2278,
+      3028
+    ],
+    "candidate_path_native_xy": [
+      [
+        2278,
+        3028
+      ],
+      [
+        2281,
+        3093
+      ],
+      [
+        2070,
+        3100
+      ]
+    ],
+    "prior_affine_projection_xy": [
+      2284.676216301842,
+      3003.222416855308
+    ],
+    "endpoint_offset_px": 25.661264399890882,
+    "registration_status": "candidate_no_contact_accuracy_acceptance",
+    "mapping_status": "unknown_until_correspondence_review"
+  },
+  "superseded_search": "Earlier left-side overlap around M2 (1727,3009) is not the user-indicated gate V1 location. No global assertion about other vias there.",
+  "m3_m4_status": "not_assigned_to_gate_network",
+  "electrical_state_changed": false
+}

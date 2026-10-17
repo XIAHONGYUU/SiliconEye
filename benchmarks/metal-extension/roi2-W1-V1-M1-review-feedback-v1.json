@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "record_type": "human_cross_layer_connection_review",
+  "user_statement": "左图 M2 的下端，通过 V1 接到右图紫框 W1 所在的短竖向 M1",
+  "reviewed_artifact": "runs/roi2-W-M2-followup-v25/W-M2-M1-source-review.png",
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-W-M2-M1-interface-candidate-v25.json",
+      "sha256": "b7515ec4f7e10837d09996ae96297f72d5c43138e1240e11a9660ba4e56505db"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "decision": {
+    "from_metal": "R2_corrected_gate_W_M2_01",
+    "to_metal": "R2_corrected_gate_W1_M1_01",
+    "via_id": "R2_corrected_gate_W1_V1",
+    "interface_label": "W1",
+    "from_layer": "m2",
+    "to_layer": "m1",
+    "via_kind": "V1",
+    "status": "human_confirmed_connection_and_destination_identity",
+    "M1_reference_xy": [
+      1244,
+      3220
+    ],
+    "M2_reference_xy": [
+      1217,
+      3253
+    ],
+    "coordinates_status": "reference_locations_not_exact_masks"
+  },
+  "scope_exclusions": [
+    "adjacent_M1_horizontal_rail_union",
+    "precise_registration_acceptance",
+    "CT_or_material_identity",
+    "exact_boundary",
+    "T_destination_identity"
+  ]
+}

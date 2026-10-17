@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "document_kind": "block_review_package",
+  "case": {
+    "path": "benchmarks/block-case-v1-roi2-material-reviewed-v5.json",
+    "sha256": "13dc0ee58e195c3d901d1dd89f52c69891bdcb5698266e543dd1501ec932b0e6"
+  },
+  "registrations": [
+    {
+      "profile": {
+        "path": "benchmarks/registration-roi2-m1-poly-accepted-v1.json",
+        "sha256": "c4bc67269a3315c5766854116b136b3657a2ad2c63eaeddaefe6dfe75cdce8a2"
+      },
+      "approval": {
+        "record": {
+          "path": "benchmarks/registration-roi2-macro-review-feedback-v1.json",
+          "sha256": "da7fa87accf69c7e54f72d1503960a4de1a0f5f035fb3b5ba06125acf3b16498"
+        },
+        "pointer": "/decisions/M1_to_poly_macro_overlay",
+        "value": "accepted"
+      },
+      "frozen_matrix_pointer": "/layers/m1/models/homography/target_to_reference_native"
+    }
+  ],
+  "materials": [
+    {
+      "path": "benchmarks/block-roi2-material-support-reviewed-v2.json",
+      "sha256": "0bd9d3795e0e4510a22ace29b904e610cec1f1aac9f4109504baa594ade33134"
+    }
+  ],
+  "device_view": {
+    "windows": [
+      {
+        "id": "aa",
+        "frame_id": "aa_native",
+        "label": "AA",
+        "xywh": [
+          1770,
+          2800,
+          270,
+          240
+        ]
+      },
+      {
+        "id": "poly",
+        "frame_id": "poly_native",
+        "label": "poly",
+        "xywh": [
+          1700,
+          2670,
+          270,
+          240
+        ]
+      },
+      {
+        "id": "m1",
+        "frame_id": "m1_native",
+        "label": "M1",
+        "xywh": [
+          1670,
+          2790,
+          270,
+          240
+        ],
+        "projection_profile_id": "ROI2_M1_to_poly_macro_v1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "status": "candidate_local_structural_registration",
+  "supersedes_display": "runs/roi2-A-upper-fork-overlay-v1/manifest.json",
+  "user_criterion": "six upper vertical lines correspond in order; visible M1 V1 should be covered by M2",
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "features": {
+    "m1_upper_tips": [
+      [
+        1762.0,
+        2864.0
+      ],
+      [
+        1872.0,
+        2860.0
+      ],
+      [
+        1983.0,
+        2856.0
+      ],
+      [
+        2094.0,
+        2852.0
+      ],
+      [
+        2209.0,
+        2848.0
+      ],
+      [
+        2315.0,
+        2845.0
+      ]
+    ],
+    "m2_upper_tips": [
+      [
+        1731.0,
+        2904.0
+      ],
+      [
+        1841.0,
+        2901.0
+      ],
+      [
+        1949.0,
+        2898.0
+      ],
+      [
+        2063.0,
+        2895.0
+      ],
+      [
+        2172.0,
+        2891.0
+      ],
+      [
+        2277.0,
+        2889.0
+      ]
+    ],
+    "identity_basis": "user specified six-line group; AI ordered tip selection",
+    "pixel_selection": "Gaussian 9x5 sigma1.8; local y-gradient peak and stripe x maximum; approximate"
+  },
+  "fit_line_numbers": [
+    1,
+    3,
+    5
+  ],
+  "held_out_line_numbers": [
+    2,
+    4,
+    6
+  ],
+  "model": "similarity; no free affine or local elastic warp",
+  "direction": "M2_native_to_M1_native",
+  "matrix": [
+    [
+      1.0137916626710615,
+      0.006387248791014599,
+      -11.411054563813888
+    ],
+    [
+      -0.006387248791014599,
+      1.0137916626710615,
+      -69.17091455815066
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "residuals_native_px": [
+    0.17658955301194504,
+    1.5109125928317473,
+    0.3491994006885312,
+    4.569072122823816,
+    0.17261049918089438,
+    0.4637517274646244
+  ],
+  "held_out_max_native_px": 4.569072122823816,
+  "scale": 1.0138117834432945,
+  "rotation_deg": -0.3609790549529178,
+  "crop_m1": [
+    1550,
+    2700,
+    2600,
+    3320
+  ],
+  "V1_not_fit_constraint": true,
+  "limits": [
+    "nearly collinear tips do not validate arbitrary 2D deformation",
+    "V1 coverage must be independently inspected",
+    "no new physical connection approved",
+    "local support only; do not apply to whole photo"
+  ],
+  "previous_anchor_rejected": "M1 approximate (2355,2957) to M2 U3 (2278,3028) forced translation",
+  "independent_check": {
+    "m1_lower_tip_candidate_xy": [
+      [
+        1758.0,
+        3012.0
+      ],
+      [
+        1870.0,
+        3008.0
+      ],
+      [
+        1982.0,
+        3004.0
+      ],
+      [
+        2094.0,
+        3000.0
+      ],
+      [
+        2206.0,
+        2996.0
+      ],
+      [
+        2318.0,
+        2992.0
+      ]
+    ],
+    "used_in_fit": false,
+    "observation": "six candidate lower tips visually fall within corresponding projected M2 vertical stripes",
+    "V1_identity": "candidate_not_independently_human_confirmed",
+    "old_U3_pixel_anchor": "rejected by structural alignment; does not revoke reviewed conductor-level connection",
+    "new_conflict": "U1 U2 U3 projected near lower M1 finger tips rather than old common-gate-right anchor; landing identity needs source review"
+  }
+}

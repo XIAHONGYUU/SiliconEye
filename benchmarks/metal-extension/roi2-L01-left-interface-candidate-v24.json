@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "record_type": "L01_other_interface_candidate_scan",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "L01_review": {
+      "path": "benchmarks/metal-extension/roi2-S1-S2-L01-review-feedback-v1.json",
+      "sha256": "523a31ed1ef73d6190216aa7e0d1b7006de8ee463a802e0ad2f6635d9b5bc8ab"
+    }
+  },
+  "unit": "px",
+  "direction": "m2_native_to_m3_native",
+  "model": "similarity",
+  "matrix": [
+    [
+      1.0126048552505313,
+      0.01363356384033132,
+      -32.50343220387978
+    ],
+    [
+      -0.01363356384033132,
+      1.0126048552505313,
+      14.606391963496339
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "anchors": [
+    {
+      "M2_xy": [
+        1448.0,
+        3238.0
+      ],
+      "M3_xy": [
+        1484.0,
+        3272.0
+      ],
+      "status": "AI_candidate_correspondence_not_human_reviewed"
+    },
+    {
+      "M2_xy": [
+        1309.0,
+        3258.0
+      ],
+      "M3_xy": [
+        1332.0,
+        3295.0
+      ],
+      "status": "AI_candidate_correspondence_not_human_reviewed"
+    },
+    {
+      "M2_xy": [
+        1248.0,
+        3277.0
+      ],
+      "M3_xy": [
+        1272.0,
+        3316.0
+      ],
+      "status": "AI_candidate_correspondence_not_human_reviewed"
+    },
+    {
+      "M2_xy": [
+        1384.0,
+        3292.0
+      ],
+      "M3_xy": [
+        1412.0,
+        3332.0
+      ],
+      "status": "AI_candidate_correspondence_not_human_reviewed"
+    },
+    {
+      "M2_xy": [
+        1119.0,
+        3317.0
+      ],
+      "M3_xy": [
+        1152.0,
+        3358.0
+      ],
+      "status": "AI_candidate_correspondence_not_human_reviewed"
+    },
+    {
+      "M2_xy": [
+        1205.0,
+        3334.0
+      ],
+      "M3_xy": [
+        1232.0,
+        3374.0
+      ],
+      "status": "AI_candidate_correspondence_not_human_reviewed"
+    }
+  ],
+  "fit_residual_px": [
+    6.332889566088511,
+    5.477218648106837,
+    3.9059527325473233,
+    3.3139907568442966,
+    6.178159268410216,
+    1.1575761636677186
+  ],
+  "leave_one_out_px": [
+    13.511314094948736,
+    6.709294613292965,
+    4.7958453302729875,
+    4.6698517340803285,
+    13.171558544271583,
+    1.6037965994126515
+  ],
+  "W_used_for_fitting": false,
+  "S_used_for_fitting": false,
+  "quality_status": "candidate_local_search_only_not_accepted_registration",
+  "W": {
+    "M2_inspection_xyxy": [
+      1175,
+      3180,
+      1245,
+      3225
+    ],
+    "M3_left_tip_xy": [
+      1228,
+      3242
+    ],
+    "M3_tip_inverse_candidate_M2_xy": [
+      1201.682658936476,
+      3203.398451492099
+    ],
+    "observation": "paired bright pads at M2 terminal near x1200,y3200; possible L01 left-end interface",
+    "status": "candidate_not_confirmed_via_or_M2_membership"
+  },
+  "span_coverage": "wide M2/M3 source inspection; no exhaustive absence assertion for other V2 or V3",
+  "remaining": [
+    "resolve W attachment with physical review",
+    "separately localize T",
+    "M4 coverage not completed"
+  ]
+}

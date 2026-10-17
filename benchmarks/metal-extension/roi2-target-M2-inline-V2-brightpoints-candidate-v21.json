@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "record_type": "inline_V2_brightpoint_observation",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "target_trace": {
+      "path": "benchmarks/metal-extension/roi2-corrected-gate-M2-trace-candidate-v15.json",
+      "sha256": "42addf30dfc1f969f002ad968d21be829c4268f459d0066adc41a0146897e981"
+    },
+    "prior_localization": {
+      "path": "benchmarks/metal-extension/roi2-target-M2-M3-interface-localization-v20.json",
+      "sha256": "4f198db15d32562478873f9b6331d7ea6ded612a5cb7bee6f326e612d6e7a071"
+    },
+    "human_interface_existence": {
+      "path": "benchmarks/metal-extension/roi2-gate-T-B-interior-interface-review-v1.json",
+      "sha256": "4b767216dd4465f213c715806b5f93b9f5962a4239f230637746fa2cd849d3f4"
+    }
+  },
+  "frame_id": "m2_native",
+  "unit": "px",
+  "target_metal": "R2_corrected_gate_long_M2_candidate_01",
+  "status": "AI_priority_interior_V2_candidate_region",
+  "candidate_region_xyxy": [
+    2285,
+    3145,
+    2315,
+    3190
+  ],
+  "reference_M2_path_nearby": [
+    [
+      2319,
+      3115
+    ],
+    [
+      2300,
+      3128
+    ],
+    [
+      2300,
+      3200
+    ]
+  ],
+  "bright_spot_measurements": [
+    {
+      "label": "S1",
+      "native_reference_xy": [
+        2300,
+        3158
+      ],
+      "local_search_radius_px": 6,
+      "smoothing_checks": [
+        {
+          "gaussian_sigma_px": 0,
+          "local_peak_xy": [
+            2300,
+            3158
+          ],
+          "peak_gray": 251
+        },
+        {
+          "gaussian_sigma_px": 1.2,
+          "local_peak_xy": [
+            2304,
+            3158
+          ],
+          "peak_gray": 222
+        },
+        {
+          "gaussian_sigma_px": 2.0,
+          "local_peak_xy": [
+            2302,
+            3158
+          ],
+          "peak_gray": 200
+        }
+      ]
+    },
+    {
+      "label": "S2",
+      "native_reference_xy": [
+        2300,
+        3177
+      ],
+      "local_search_radius_px": 6,
+      "smoothing_checks": [
+        {
+          "gaussian_sigma_px": 0,
+          "local_peak_xy": [
+            2300,
+            3177
+          ],
+          "peak_gray": 255
+        },
+        {
+          "gaussian_sigma_px": 1.2,
+          "local_peak_xy": [
+            2300,
+            3177
+          ],
+          "peak_gray": 227
+        },
+        {
+          "gaussian_sigma_px": 2.0,
+          "local_peak_xy": [
+            2302,
+            3177
+          ],
+          "peak_gray": 213
+        }
+      ]
+    }
+  ],
+  "source_observation": "Two localized bright lobes sit on the selected M2 just below its leftward bend, near (2300,3158) and (2300,3177). Their brightness persists after Gaussian sigma 1.2/2.0 px smoothing. The source shows the selected conductor continuing above and below this region.",
+  "hypothesis": {
+    "interface_id": "R2_corrected_gate_interior_V2_unlocalized",
+    "proposed_native_region_xyxy": [
+      2285,
+      3145,
+      2315,
+      3190
+    ],
+    "status": "AI_candidate_not_human_localization",
+    "exact_via_count": "unknown; two bright lobes need not mean two electrically distinct interfaces",
+    "M3_destination": null
+  },
+  "alternatives": [
+    "photographic reflection or apparent brightness from underlying structure",
+    "two lobes of one landing area rather than two distinct vias"
+  ],
+  "evidence_limits": [
+    "brightness persistence is a diagnostic, not physical proof of V2",
+    "no accepted M2-to-M3 projection or M3 coverage check yet",
+    "native M2 geometry candidate is not exact mask"
+  ],
+  "execution_correction": "Previous pass overemphasized lateral tabs and missed inline brightness. Inline target inspection replaces immediate request for user to locate V2. N near (2341,3307) remains on the neighboring M2; it is not substituted for these inline spots.",
+  "next_action": "Use this inline region together with T to locate covering M3 via source structural registration; retain unknown destination until verified.",
+  "outputs": [
+    "M2-inline-V2-brightpoints-review.png",
+    "M2-full-span-brightpoint-reference.png"
+  ],
+  "no_new_human_decision": true,
+  "no_new_M3_connection": true
+}

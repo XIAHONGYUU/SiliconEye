@@ -1,0 +1,947 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_local_topology_companion",
+  "case_id": "ROI2_finger_pair",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-G-M3-MIM-reviewed-v14.json",
+      "sha256": "f7f2139e80cb6de5baeb6bbc33c0f25731afb8cea854d91db246b1ef677e8a50"
+    },
+    "other_terminal_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-other-terminal-review-feedback-v1.json",
+      "sha256": "21c1dcac8f9fb4fbca17332288d4642a2d7b49e1185b32a608fa2d8c1b5b32e8"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v1.json",
+      "sha256": "2f8227950026cf4d7f63703e48905621dc67a1b3876c2e2c191be878e2406a87"
+    },
+    "H_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-H-review-feedback-v1.json",
+      "sha256": "e48e7ad47b2a4b15bc822c4341aa6e3d47700df749a444def93ebf89c8a8197b"
+    },
+    "H_candidate": {
+      "path": "benchmarks/metal-extension/roi2-MIM-P2-pixel-candidate-v1.json",
+      "sha256": "64f48c2c2529e3f750839ab80fd28b4ce1d4d5be96d94c4214d4511b6ac66cf3"
+    },
+    "previous_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v2.json",
+      "sha256": "4e5b7ce9f233260a6e40e7ad06fd81a180aef011d4750d29510b398e7876b7f0"
+    },
+    "J_left_review": {
+      "path": "benchmarks/metal-extension/roi2-J-left-continuation-review-feedback-v1.json",
+      "sha256": "b0198ce2469c40aff9a7e3ff12ec2842c987c87e69f5f5e57a1273df2acaa8e2"
+    },
+    "prior_topology_v3": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v3.json",
+      "sha256": "518dd5ff2a85abc3b65938f87832ad9f570fab0d557618d85f132004bf85a9c7"
+    },
+    "K_middle_M2_review": {
+      "path": "benchmarks/metal-extension/roi2-K-middle-M2-review-feedback-v1.json",
+      "sha256": "7424259e118485721d4d972d55b72b6a0b2853dd07e333ac555eeec2bc60cf1a"
+    },
+    "previous_topology_v4": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v4.json",
+      "sha256": "e881f5f13226d5f58d8515fd71e6a19492319a175956c206fab9244bf3012231"
+    },
+    "MOM_L1_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-L1-review-feedback-v1.json",
+      "sha256": "badb6e58f7a80f082db876fe05751c853395049c0de46a580810975666e4f188"
+    },
+    "previous_topology_v5": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v5.json",
+      "sha256": "9da4be51c643f011621f798235c47c9260171cbbcc72d7b72edf371f18ca119e"
+    },
+    "opposite_electrode_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-opposite-electrode-review-feedback-v1.json",
+      "sha256": "8919ebdcdcbedf50ac4c84cf1d74934cdf26db82ba2c4e04c210f204393a4c3c"
+    },
+    "prior_resolution_v7": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-resolution-v7.json",
+      "sha256": "e27d164b283a995ea74c97902aea1f8da48663ec909fe2be6655a6810980fe73"
+    },
+    "G_H_review": {
+      "path": "benchmarks/metal-extension/roi2-G-blue-H-review-feedback-v1.json",
+      "sha256": "445cde3c7f4876ec1065ba9a8ac5aed345d7ec9364fd957ac2c1bc1a146a5d25"
+    },
+    "orange_geometry": {
+      "path": "benchmarks/metal-extension/roi2-P1-network-coverage-candidate-v1.json",
+      "sha256": "3526536f52d0d5f771154962899ea3dec496b163c05f9d2a96343ba5cade478e"
+    },
+    "A456_review": {
+      "path": "benchmarks/metal-extension/roi2-A-456-V1-review-feedback-v1.json",
+      "sha256": "f1d03ff45cca753f5180cf49ec8593c49af0ad91d230b4d3e6d01402f96e7d2d"
+    },
+    "prior_v8": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v8.json",
+      "sha256": "2cf759ac22ff75c2b72bdb86119639fdd7461ee3cc77f3146ca86514799e8735"
+    },
+    "local_overlay_approval": {
+      "path": "benchmarks/metal-extension/roi2-A-456-overlay-review-feedback-v1.json",
+      "sha256": "efac0fac5d3abcde12cf613959070bff509cdf7c05be36d2e9913bd82ff9bc8e"
+    },
+    "prior_v9": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v9.json",
+      "sha256": "68b9f20a5a574312f9c854028583e8596df2ad1175afaf511bbf395c2374d84d"
+    },
+    "M1_material_observation": {
+      "path": "benchmarks/metal-extension/roi2-A-456-M1-material-observation-v1.json",
+      "sha256": "15466261ef65fe7b2e4face210cb55133d3cc561cc854c54b70159759e2c0f09"
+    },
+    "diffusion_review": {
+      "path": "benchmarks/metal-extension/roi2-A-456-diffusion-review-feedback-v1.json",
+      "sha256": "56bb5188e3db82be5e3d8e7c5727f7d2378854395f2a1722acd4bf083a3cc009"
+    },
+    "prior_v10": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v10.json",
+      "sha256": "02037996a91b7ae31c0ea09afe93d5257f6822e4629b38d2e9e2bf184a6068fb"
+    },
+    "AC_middle_review": {
+      "path": "benchmarks/metal-extension/roi2-AC-no-middle-M2-review-feedback-v1.json",
+      "sha256": "34d8d6cb6059fc76d77eb0ed11a5e7b746c30801d82452383c21e6b623bb9c5b"
+    },
+    "prior_v11": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v11.json",
+      "sha256": "d4c9bc8be8522f82c895109ad70ab8db19166c1a1cc56cbc99cd5cb4ae68e712"
+    },
+    "MOM_no_extra_exits_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-P1-no-extra-exits-review-v1.json",
+      "sha256": "3a245f17b6fc1fe0136541654b1008198d4f08452c85d46da6a42990d86912c1"
+    },
+    "prior_v12": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v12.json",
+      "sha256": "2030663f501b21f4f7add717aae8bfe69a86cd6bf90d27f9ab1d40d766c4798c"
+    },
+    "prior_v13": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v13.json",
+      "sha256": "76d52381e4dad3af1100e451db06119e6792f00f5f56e4e49b545517cfa04f56"
+    },
+    "gate_entry_correction_review": {
+      "path": "benchmarks/metal-extension/roi2-A-CD-gate-reanchor-review-v1.json",
+      "sha256": "0f1f2f6b4e263708bcf7e851bb77017fb1364746d7e24c4cae97b28c4fe40fd4"
+    },
+    "new_entry_observation": {
+      "path": "benchmarks/metal-extension/roi2-gate-entry-reanchor-candidate-v14.json",
+      "sha256": "8832dee8e939de908575a2f820c1d03118b8c00ea6aa4ecec69ac98a2f1e4c41"
+    },
+    "prior_v14": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v14.json",
+      "sha256": "1fe15b43c5f9e95678a3e0cbe8f63a97afb92cf3eeb89634abbd6ee9104e6bd4"
+    },
+    "corrected_M2_trace": {
+      "path": "benchmarks/metal-extension/roi2-corrected-gate-M2-trace-candidate-v15.json",
+      "sha256": "42addf30dfc1f969f002ad968d21be829c4268f459d0066adc41a0146897e981"
+    },
+    "prior_v15": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v15.json",
+      "sha256": "11656fb9aebcaab131295bb8f0a902dc766b63054a124cab6e78200e4681b244"
+    },
+    "T_B_interior_review": {
+      "path": "benchmarks/metal-extension/roi2-gate-T-B-interior-interface-review-v1.json",
+      "sha256": "4b767216dd4465f213c715806b5f93b9f5962a4239f230637746fa2cd849d3f4"
+    },
+    "prior_v17": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v17.json",
+      "sha256": "c0d9a820d0ae0ded6949fd12fe8c48eabcb44a060bc66a6f993261eb26abd1b3"
+    },
+    "M1_access_inventory": {
+      "path": "benchmarks/metal-extension/roi2-corrected-gate-M1-access-candidates-v18.json",
+      "sha256": "b69190859b6a7c017996b45342125fda9b58d19db73bb103a94cc1c07586299e"
+    },
+    "prior_v18": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v18.json",
+      "sha256": "e4d161b99a0eba22852ea4326d3a2ce806936db775f4c8fd0cdcb0dd5f164b28"
+    },
+    "B_identity_review": {
+      "path": "benchmarks/metal-extension/roi2-B-bottom-M1-review-feedback-v1.json",
+      "sha256": "8e0444df003669fc8d097aebc1eebdd5a65ca9b5de1c52c9fec80d1e4941732a"
+    },
+    "B_continuation_candidate": {
+      "path": "benchmarks/metal-extension/roi2-B-M1-continuation-candidate-v19.json",
+      "sha256": "c90668e4d5c3a71e57fa8b550601822d13c224240ee0853bcf5a04757c0e726e"
+    },
+    "prior_v19": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v19.json",
+      "sha256": "3ee5dedf18e3609445a30497cad9edab743b7f3c0497011d3febbd97bf03fd7f"
+    },
+    "B_visible_branches": {
+      "path": "benchmarks/metal-extension/roi2-B-M1-visible-branches-candidate-v20.json",
+      "sha256": "863298a20af2d677f940df28788a027dad6f8776e37fc4340c6b2ac34dc5da5c"
+    },
+    "target_M2_M3_localization": {
+      "path": "benchmarks/metal-extension/roi2-target-M2-M3-interface-localization-v20.json",
+      "sha256": "4f198db15d32562478873f9b6331d7ea6ded612a5cb7bee6f326e612d6e7a071"
+    },
+    "prior_v20": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v20.json",
+      "sha256": "412dbfccfb962fa190b6d3b70b81681877c6ceb95ef1998df1647af8acd12603"
+    },
+    "inline_V2_candidate": {
+      "path": "benchmarks/metal-extension/roi2-target-M2-inline-V2-brightpoints-candidate-v21.json",
+      "sha256": "1ef4f67b32feea25ff8a06f085721d5c89348439f329a8bde86702057d062d02"
+    },
+    "prior_v21": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v21.json",
+      "sha256": "5c08155ec9487e5acc5dedd769f1249149c850b877972768b7022749bbbda3dc"
+    },
+    "S1_S2_V2_review": {
+      "path": "benchmarks/metal-extension/roi2-S1-S2-V2-review-feedback-v1.json",
+      "sha256": "9196e7e3140a4ef804a89e156153492845fcb1dee33144ec3d960517e5a8bddb"
+    },
+    "prior_v22": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v22.json",
+      "sha256": "a3829da4624ba28bc5d28b1e3985419dc343c1f8aaea71de406053eedc2e4188"
+    },
+    "M2_M3_local_registration_candidate": {
+      "path": "benchmarks/metal-extension/roi2-M2-M3-local-registration-candidate-v23.json",
+      "sha256": "d237e12247f15a781da0e0d431f77aed53cdf7df42723dce9001a414db3cf500"
+    },
+    "M3_local_inventory": {
+      "path": "benchmarks/metal-extension/roi2-M3-local-numbered-inventory-v23.json",
+      "sha256": "cc988abfaee9e37098f289798fd03d86a6c3f26efb8b503b7ec2b3f668e8e371"
+    },
+    "prior_v23": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v23.json",
+      "sha256": "b5db409679e7a59e1a1798ff309da1b84a4e8dae1998c55a2c0b1972c7460b90"
+    },
+    "S1_S2_L01_review": {
+      "path": "benchmarks/metal-extension/roi2-S1-S2-L01-review-feedback-v1.json",
+      "sha256": "523a31ed1ef73d6190216aa7e0d1b7006de8ee463a802e0ad2f6635d9b5bc8ab"
+    },
+    "prior_v24": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v24.json",
+      "sha256": "98f75ceacdf44e6b266d95751564c2340e4eaf0651980fc6fc86e3cf20229a3d"
+    },
+    "W_L01_review": {
+      "path": "benchmarks/metal-extension/roi2-W-L01-review-feedback-v1.json",
+      "sha256": "670e186c107372f95411149e88a851152560826efca444e85130b7340a9a39c2"
+    },
+    "prior_v25": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v25.json",
+      "sha256": "159696ee7f010b46ab4d635d508a2e7bba9e07041263d41661b4982aa9cad626"
+    },
+    "W1_V1_M1_review": {
+      "path": "benchmarks/metal-extension/roi2-W1-V1-M1-review-feedback-v1.json",
+      "sha256": "89e148c86505d17d684de5d2aa28c0b90f9edbd4f2b928413cc6dd777ea5f87d"
+    },
+    "prior_v26": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v26.json",
+      "sha256": "8dfa4a9553a7ddb7e73ecd803f0629da9fc1894cfdf8d85e954da2b7e6a0f85e"
+    },
+    "T_N04_selection": {
+      "path": "benchmarks/metal-extension/roi2-T-N04-user-selection-v1.json",
+      "sha256": "76b26b3f680ec842cfd92a9033f8c9340199698695288d0709e8103403a47317"
+    },
+    "N04_fanout_candidates": {
+      "path": "benchmarks/metal-extension/roi2-N04-M2-fanout-candidates-v27.json",
+      "sha256": "e9250de234a705a2405e93e6795068ee35c63d851a57c3fa92a4c63a7ca5088a"
+    },
+    "prior_v27": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v27.json",
+      "sha256": "650fc3adfb816a62b224af8cad44edb49f6a9bd4bf68b028b34eb9fbb46a92c6"
+    },
+    "N04_five_M2_review": {
+      "path": "benchmarks/metal-extension/roi2-N04-five-M2-review-feedback-v1.json",
+      "sha256": "edfac86f80017076e1b8af5ef3dabbaecdb251f1bf827efeaae4c5b81ee4ba79"
+    },
+    "N04_downward_M1_candidates": {
+      "path": "benchmarks/metal-extension/roi2-N04-five-M2-to-M1-candidates-v28.json",
+      "sha256": "7e889bc181d2aabbd46ca758868192353181c20112ecefd892c7da85e9145641"
+    }
+  },
+  "capacitor": {
+    "id": "R2_CAP_01",
+    "id_status": "canonical_neutral_capacitor_ID_with_legacy_MIM_aliases",
+    "kind": "MOM_capacitor",
+    "identity_status": "human_confirmed",
+    "value": null,
+    "physical_unit_count": null,
+    "plate_assignment": null,
+    "outline": null,
+    "ports": [
+      {
+        "id": "R2_CAP_01.P1",
+        "role": "gate_connected_H_electrode",
+        "physical_metal_ref": "R2_CAP_P1_H_M3_01"
+      },
+      {
+        "id": "R2_CAP_01.P2",
+        "role": "opposing_comb_and_right_bus",
+        "physical_metal_ref": "R2_CAP_P2_comb_M3_01"
+      }
+    ],
+    "type_review_source_ref": "MOM_L1_review",
+    "prior_type": "MIM_capacitor_superseded_by_user",
+    "construction_scope": "Selected capacitor user identifies multilayer metal structure; no automatic merging of two electrodes or unrelated overlaps.",
+    "port_assignment_status": "resolved_human_review"
+  },
+  "relations": [
+    {
+      "terminal_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G",
+        "R2_CAP_01.P1"
+      ],
+      "relation": "same_net",
+      "status": "conflict_pending_gate_entry_revalidation",
+      "normalization": "Earlier gate-to-A entry selected wrong M2 line. Preserve downstream reviewed physical subgraph; gate-to-capacitor assignment is not currently reliable.",
+      "source_refs": [
+        "human_review",
+        "case",
+        "G_H_review",
+        "opposite_electrode_review",
+        "gate_entry_correction_review"
+      ]
+    }
+  ],
+  "unknowns": [
+    "Exact source-native via pixels and material boundaries",
+    "Unreviewed multilayer MOM finger assignments",
+    "M4/V3 attachments outside reviewed MOM scope",
+    "Out-of-photo continuation",
+    "P2 external net destination",
+    "Capacitance and physical unit count",
+    "A lower fork extra interfaces outside reviewed LMR via connections",
+    "Source/drain and device IDs for reviewed lower MOS diffusion accesses",
+    "A upper fork U1/U2 terminal landing identities not explicitly reviewed",
+    "Corrected gate long-M2 conductor identity and actual downstream path",
+    "All other M1 V1 interfaces along corrected long M2; scan M1 evidence across full span",
+    "Other unreviewed L01 V2/V3 interfaces",
+    "W1 short M1 CT/material attachment; no adjacent rail union supported",
+    "N04 J1/J2/J3/J4 downward M1 via ownership remains candidate"
+  ],
+  "do_not_union": [
+    "R2_CAP_01.P1",
+    "R2_CAP_01.P2"
+  ],
+  "coverage_status": "five_N04_M2_connections_reviewed_four_new_downward_M1_candidates_highlighted",
+  "generic_case_capacitor_export": "not_implemented_in_v1_MOS_schema",
+  "revision": "N04-five-M2-reviewed-four-downward-M1-candidates-v28",
+  "physical_terminal_mappings": [
+    {
+      "port_id": "R2_CAP_01.P1",
+      "metal_ref": "R2_CAP_P1_H_M3_01",
+      "status": "human_confirmed_displayed_H_identity_and_coarse_location",
+      "selector_original": "下方三个方形电容的最左端的最上面那一条",
+      "extent": "not_across_full_picture",
+      "external_net_destination": "unknown",
+      "source_refs": [
+        "other_terminal_review",
+        "H_review",
+        "H_candidate"
+      ],
+      "native_coordinates": {
+        "frame_id": "m3_native",
+        "unit": "px",
+        "displayed_centerline_xy": [
+          [
+            1640,
+            4025
+          ],
+          [
+            1900,
+            4014
+          ],
+          [
+            2200,
+            4001
+          ],
+          [
+            2470,
+            3990
+          ]
+        ],
+        "coordinate_role": "reviewed_reference_not_exact_material_boundary"
+      },
+      "process_plate_identity": null,
+      "assignment_correction_source_ref": "opposite_electrode_review"
+    },
+    {
+      "port_id": "R2_CAP_01.P1",
+      "metal_ref": "R2_CAP_P1_K_M2_01",
+      "status": "human_confirmed_local_middle_M2_attachment",
+      "selector_original": "在M2上只接入了中间的纯竖向M2",
+      "external_net_destination": "unknown",
+      "source_refs": [
+        "K_middle_M2_review"
+      ],
+      "native_coordinates": {
+        "frame_id": "m2_native",
+        "inspection_window_xywh": [
+          665,
+          4025,
+          35,
+          70
+        ],
+        "status": "candidate_window_not_boundary"
+      },
+      "process_plate_identity": null,
+      "assignment_correction_source_ref": "opposite_electrode_review"
+    },
+    {
+      "port_id": "R2_CAP_01.P1",
+      "metal_ref": "R2_CAP_P1_L1_M1_01",
+      "status": "human_confirmed_L1_M2_M1_attachment",
+      "source_refs": [
+        "MOM_L1_review"
+      ],
+      "native_coordinates": {
+        "frame_id": "m1_native",
+        "inspection_window_xywh": [
+          685,
+          4010,
+          60,
+          274
+        ],
+        "status": "candidate_window_not_material_boundary"
+      },
+      "external_net_destination": "unknown",
+      "assignment_correction_source_ref": "opposite_electrode_review"
+    },
+    {
+      "port_id": "R2_CAP_01.P2",
+      "metal_ref": "R2_CAP_P2_comb_M3_01",
+      "status": "human_confirmed_displayed_comb_and_right_bus_identity",
+      "source_refs": [
+        "opposite_electrode_review",
+        "orange_geometry"
+      ],
+      "native_coordinates": {
+        "frame_id": "m3_native",
+        "unit": "px",
+        "reference_seed_xy": [
+          2502,
+          4110
+        ],
+        "geometry_role": "pixel_mask_remains_candidate_not_exact_boundary"
+      },
+      "external_net_destination": "unknown"
+    }
+  ],
+  "highlight_rule": "Display confirmed downstream A/capacitor subgraph separately from gate. Do not call it whole gate net until corrected gate entry traced; P1/P2 remain separate capacitor ports.",
+  "conductor_continuations": [
+    {
+      "from_metal": "R2_CAP_P1_H_M3_01",
+      "to_metal": "R2_CAP_P1_J_left_M3_01",
+      "relation": "same_layer_continuation_at_J",
+      "status": "human_confirmed",
+      "frame_id": "m3_native",
+      "native_J_approx_xy": [
+        1640,
+        4025
+      ],
+      "source_refs": [
+        "J_left_review"
+      ],
+      "scope": "Local left continuity, not all neighboring capacitor terminal memberships or precise segmentation."
+    }
+  ],
+  "cross_layer_connections": [
+    {
+      "from_metal": "R2_CAP_P1_J_left_M3_01",
+      "to_metal": "R2_CAP_P1_K_M2_01",
+      "via_id": "R2_CAP_P1_K_V2_01",
+      "from_layer": "m3",
+      "to_layer": "m2",
+      "status": "human_confirmed",
+      "source_refs": [
+        "K_middle_M2_review"
+      ],
+      "selector": "中间的纯竖向M2",
+      "exact_via_landing": "unknown"
+    },
+    {
+      "from_metal": "R2_CAP_P1_K_M2_01",
+      "to_metal": "R2_CAP_P1_L1_M1_01",
+      "via_id": "R2_CAP_P1_L1_V1_01",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "status": "human_confirmed",
+      "source_refs": [
+        "MOM_L1_review"
+      ],
+      "exact_via_landing": "unknown",
+      "scope": "Reviewed capacitor-edge L1 interface only"
+    },
+    {
+      "from_metal": "R2_M2_F_segment_01",
+      "to_metal": "R2_CAP_P1_H_M3_01",
+      "via_id": "R2_CAP_P1_G_V2_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "status": "human_confirmed",
+      "source_refs": [
+        "G_H_review"
+      ],
+      "exact_via_landing": "unknown"
+    },
+    {
+      "from_metal": "R2_A_lower_fork_M2_01",
+      "branch": "L",
+      "to_metal": "R2_A_M1_finger_04",
+      "via_id": "R2_A_V1_04",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "status": "human_confirmed_correspondence",
+      "source_refs": [
+        "A456_review"
+      ],
+      "exact_via_pixel_boundary": "unknown",
+      "gate_net_assignment_dependency": "A same-layer lower-fork continuity is AI-observed; not established by fitting markers"
+    },
+    {
+      "from_metal": "R2_A_lower_fork_M2_01",
+      "branch": "M",
+      "to_metal": "R2_A_M1_finger_05",
+      "via_id": "R2_A_V1_05",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "status": "human_confirmed_correspondence",
+      "source_refs": [
+        "A456_review"
+      ],
+      "exact_via_pixel_boundary": "unknown",
+      "gate_net_assignment_dependency": "A same-layer lower-fork continuity is AI-observed; not established by fitting markers"
+    },
+    {
+      "from_metal": "R2_A_lower_fork_M2_01",
+      "branch": "R",
+      "to_metal": "R2_A_M1_finger_06",
+      "via_id": "R2_A_V1_06",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "status": "human_confirmed_correspondence",
+      "source_refs": [
+        "A456_review"
+      ],
+      "exact_via_pixel_boundary": "unknown",
+      "gate_net_assignment_dependency": "A same-layer lower-fork continuity is AI-observed; not established by fitting markers"
+    },
+    {
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "interface_label": "T",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "to_metal": "R2_corrected_gate_N04_M3_01",
+      "via_id": "R2_corrected_gate_T_V2",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "T_B_interior_review",
+        "T_N04_selection",
+        "N04_five_M2_review"
+      ]
+    },
+    {
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "interface_label": "B",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "via_kind": "V1",
+      "to_metal": "R2_corrected_gate_B_M1_01",
+      "via_id": "R2_corrected_gate_B_V1",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "T_B_interior_review",
+        "B_identity_review"
+      ]
+    },
+    {
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "interface_label": "interior_between_T_B",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "to_metal": null,
+      "via_id": "R2_corrected_gate_interior_V2_unlocalized",
+      "native_xy": null,
+      "status": "historical_aggregate_exists_resolved_into_S1_S2",
+      "source_refs": [
+        "T_B_interior_review",
+        "S1_S2_V2_review"
+      ],
+      "resolved_by_via_ids": [
+        "R2_corrected_gate_S1_V2",
+        "R2_corrected_gate_S2_V2"
+      ]
+    },
+    {
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "interface_label": "S1",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "to_metal": "R2_corrected_gate_L01_M3_01",
+      "via_id": "R2_corrected_gate_S1_V2",
+      "native_xy": [
+        2300,
+        3158
+      ],
+      "frame_id": "m2_native",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "S1_S2_V2_review",
+        "S1_S2_L01_review"
+      ]
+    },
+    {
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "interface_label": "S2",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "to_metal": "R2_corrected_gate_L01_M3_01",
+      "via_id": "R2_corrected_gate_S2_V2",
+      "native_xy": [
+        2300,
+        3177
+      ],
+      "frame_id": "m2_native",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "S1_S2_V2_review",
+        "S1_S2_L01_review"
+      ]
+    },
+    {
+      "interface_label": "W",
+      "from_metal": "R2_corrected_gate_W_M2_01",
+      "to_metal": "R2_corrected_gate_L01_M3_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "selector": "M2 W pad connects to L01 left end",
+      "M2_reference_region_xyxy": [
+        1175,
+        3180,
+        1245,
+        3225
+      ],
+      "reference_geometry_role": "review_location_not_exact_mask",
+      "via_count": null,
+      "via_id": "R2_corrected_gate_W_V2_interface",
+      "source_refs": [
+        "W_L01_review"
+      ]
+    },
+    {
+      "from_metal": "R2_corrected_gate_W_M2_01",
+      "to_metal": "R2_corrected_gate_W1_M1_01",
+      "via_id": "R2_corrected_gate_W1_V1",
+      "interface_label": "W1",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "via_kind": "V1",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "M1_reference_xy": [
+        1244,
+        3220
+      ],
+      "M2_reference_xy": [
+        1217,
+        3253
+      ],
+      "coordinates_status": "reference_locations_not_exact_masks",
+      "source_refs": [
+        "W1_V1_M1_review"
+      ]
+    },
+    {
+      "interface_label": "J1",
+      "from_metal": "R2_N04_J1_M2_candidate",
+      "to_metal": "R2_corrected_gate_N04_M3_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "via_id": "R2_N04_J1_V2",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "N04_five_M2_review"
+      ]
+    },
+    {
+      "interface_label": "J2",
+      "from_metal": "R2_N04_J2_M2_candidate",
+      "to_metal": "R2_corrected_gate_N04_M3_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "via_id": "R2_N04_J2_V2",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "N04_five_M2_review"
+      ]
+    },
+    {
+      "interface_label": "J3",
+      "from_metal": "R2_N04_J3_M2_candidate",
+      "to_metal": "R2_corrected_gate_N04_M3_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "via_id": "R2_N04_J3_V2",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "N04_five_M2_review"
+      ]
+    },
+    {
+      "interface_label": "J4",
+      "from_metal": "R2_N04_J4_M2_candidate",
+      "to_metal": "R2_corrected_gate_N04_M3_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "via_kind": "V2",
+      "via_id": "R2_N04_J4_V2",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "source_refs": [
+        "N04_five_M2_review"
+      ]
+    }
+  ],
+  "local_attachment_exclusions": [
+    {
+      "scope": "K_M2_interface",
+      "excluded_selector": "左右邻近带横向结构的M2",
+      "source_ref": "K_middle_M2_review",
+      "does_not_assert": "global_electrical_isolation"
+    },
+    {
+      "scope": "selected_A_C_M3_interior",
+      "excluded_selector": "additional middle M2 including neighboring B tab candidate",
+      "source_ref": "AC_middle_review",
+      "does_not_assert": "B globally different net or all other metal interfaces absent"
+    }
+  ],
+  "legacy_entity_aliases": {
+    "R2_MIM_01": "R2_CAP_01",
+    "R2_MIM_01.P1": "R2_CAP_01.P1",
+    "R2_MIM_01.P2": "R2_CAP_01.P2",
+    "R2_MIM_P2_top_local_metal_01": "R2_CAP_P1_H_M3_01",
+    "R2_P2_J_left_extension_01": "R2_CAP_P1_J_left_M3_01",
+    "R2_P2_K_middle_M2_01": "R2_CAP_P1_K_M2_01",
+    "R2_CAP_P2_L1_M1_edge_01": "R2_CAP_P1_L1_M1_01",
+    "R2_P2_K_V2_01": "R2_CAP_P1_K_V2_01",
+    "R2_CAP_P2_L1_V1_01": "R2_CAP_P1_L1_V1_01"
+  },
+  "assignment_correction": {
+    "supersedes": "v6 H/K/L1 mapped to P2; v7 pending conflict",
+    "current": "H/K/L1 mapped to P1; orange comb/right bus mapped to P2",
+    "source_ref": "opposite_electrode_review",
+    "physical_connections_preserved": true,
+    "electrode_geometry_status": "identity_confirmed_boundaries_candidate"
+  },
+  "local_projection_reviews": [
+    {
+      "profile": "roi2-A-456-local-registration-v3",
+      "status": "human_accepted_displayed_local_projection",
+      "source_ref": "local_overlay_approval",
+      "scope": "Only 456 terminal neighborhoods; no full-fork or whole-image accuracy acceptance"
+    }
+  ],
+  "material_attachments": [
+    {
+      "metal_refs": [
+        "R2_A_M1_finger_04",
+        "R2_A_M1_finger_05",
+        "R2_A_M1_finger_06"
+      ],
+      "hypothesis": "CT rows to lower MOS array diffusion terminals",
+      "status": "human_confirmed",
+      "device_terminal_ids": null,
+      "relation": "M1_via_CT_to_diffusion_terminals",
+      "source_refs": [
+        "diffusion_review"
+      ],
+      "terminal_role": "diffusion_S_or_D_not_assigned",
+      "scope": "Three access fingers do not establish MOS count or all terminals"
+    }
+  ],
+  "coverage_reviews": [
+    {
+      "conductor_id": "R2_M3_segment_01",
+      "span": "A-to-C",
+      "interface": "additional_M2_in_interior",
+      "status": "human_confirmed_none",
+      "source_refs": [
+        "AC_middle_review"
+      ],
+      "scope": "endpoints A/C unchanged; does not resolve other conductors"
+    },
+    {
+      "region": "reviewed_MOM_P1_area_in_available_photos",
+      "interface": "external_metal_exits_beyond_H_J_K_L1",
+      "status": "human_confirmed_none",
+      "source_refs": [
+        "MOM_no_extra_exits_review"
+      ],
+      "does_not_assert": "global absence of M4 interfaces elsewhere or out-of-photo closure"
+    }
+  ],
+  "gate_entry_correction": {
+    "old_U3_gate_entry": "rejected",
+    "new_M2_entry": "working_entry_used_after_user_instruction_to_continue_not_new_pixel_boundary_acceptance",
+    "new_native_positions": [
+      {
+        "profile": "C",
+        "M2_native_xy": [
+          2315.381960412878,
+          2989.726535331521
+        ]
+      },
+      {
+        "profile": "D",
+        "M2_native_xy": [
+          2315.413032409982,
+          2984.794751297856
+        ]
+      }
+    ],
+    "Q1_Q2_common_gate": "preserved",
+    "downstream_physical_connections": "preserved",
+    "gate_membership_of_A_capacitor_and_456": "suspended_pending_entry_retrace"
+  },
+  "corrected_gate_trace": {
+    "candidate_id": "R2_corrected_gate_long_M2_candidate_01",
+    "centerline_source_ref": "corrected_M2_trace",
+    "endpoints": {
+      "T": [
+        2285,
+        2183
+      ],
+      "B": [
+        2330,
+        3898
+      ]
+    },
+    "terminal_layer_identity": {
+      "T": "M3_upward",
+      "B": "M1_downward"
+    },
+    "physical_net_union": "none",
+    "additional_interior_V2": "human_confirmed_S1_S2_both_to_L01_right_upward_stub",
+    "downward_V1_coverage": "not_complete_requires_M1_source_inspection",
+    "reference_geometry_status": "AI_observed_not_physical_connection_exhaustiveness"
+  },
+  "interface_inspection_rule": {
+    "M1_to_M2": "inspect V1 in M1 then locate covering M2 with validated local correspondence",
+    "M2_to_M3": "inspect V2 in M2 then locate covering M3 with validated local correspondence",
+    "coverage": "inventory whole selected conductor span, not only endpoints",
+    "no_via_visible_on_M2": "does not prove absence of M1 V1 under that M2"
+  },
+  "M1_access_candidates": [
+    {
+      "id": "M1-GATE",
+      "existence": "human_reviewed_gate_entry",
+      "geometry_status": "AI_reference_centerline",
+      "source_ref": "M1_access_inventory"
+    },
+    {
+      "id": "M1-B",
+      "existence": "human_confirmed_B_to_lowest_long_M1_rail",
+      "geometry_status": "AI_reference_centerline_continuation_to_array_bus",
+      "source_ref": "M1_access_inventory",
+      "metal_id": "R2_corrected_gate_B_M1_01",
+      "source_refs": [
+        "B_identity_review",
+        "B_continuation_candidate"
+      ]
+    },
+    {
+      "id": "J1-M1",
+      "metal_id": "R2_N04_J1_M1_candidate_01",
+      "existence": "AI_candidate_downward_connection",
+      "geometry_status": "AI_reference_path_clipped_at_source_gaps",
+      "source_ref": "N04_downward_M1_candidates"
+    },
+    {
+      "id": "J2-M1",
+      "metal_id": "R2_N04_J2_M1_candidate_01",
+      "existence": "AI_candidate_downward_connection",
+      "geometry_status": "AI_reference_path_clipped_at_source_gaps",
+      "source_ref": "N04_downward_M1_candidates"
+    },
+    {
+      "id": "J3-M1",
+      "metal_id": "R2_N04_J3_M1_candidate_01",
+      "existence": "AI_candidate_downward_connection",
+      "geometry_status": "AI_reference_path_clipped_at_source_gaps",
+      "source_ref": "N04_downward_M1_candidates"
+    },
+    {
+      "id": "J4-M1",
+      "metal_id": "R2_N04_J4_M1_candidate_01",
+      "existence": "AI_candidate_downward_connection",
+      "geometry_status": "AI_reference_path_clipped_at_source_gaps",
+      "source_ref": "N04_downward_M1_candidates"
+    }
+  ],
+  "B_M1_visible_geometry": {
+    "metal_id": "R2_corrected_gate_B_M1_01",
+    "bus_and_finger_count": 5,
+    "finger_count_status": "AI_geometry_candidate_count_not_device_or_CT_count",
+    "source_ref": "B_visible_branches",
+    "no_new_cross_layer_connection": true
+  },
+  "corrected_gate_interior_V2_localization_candidate": {
+    "interface_id": "R2_corrected_gate_interior_V2_unlocalized",
+    "frame_id": "m2_native",
+    "region_xyxy": [
+      2285,
+      3145,
+      2315,
+      3190
+    ],
+    "source_ref": "inline_V2_candidate",
+    "status": "resolved_by_human_review_into_S1_S2",
+    "M3_destination": "R2_corrected_gate_L01_M3_01",
+    "review_source_ref": "S1_S2_V2_review",
+    "destination_review_source_ref": "S1_S2_L01_review"
+  },
+  "M3_destination_candidates": {
+    "S1": "L01",
+    "S2": "L01",
+    "T": "N04",
+    "status": "S1_S2_L01_and_T_N04_human_confirmed",
+    "source_ref": "S1_S2_L01_review",
+    "registration_status": "N04_local_v27_candidate_not_accepted",
+    "T_status": "human_confirmed"
+  },
+  "corrected_gate_M3_conductors": [
+    {
+      "metal_id": "R2_corrected_gate_L01_M3_01",
+      "display_label": "L01",
+      "identity_status": "human_confirmed_S1_S2_destination",
+      "geometry_source_ref": "M3_local_inventory",
+      "geometry_status": "AI_reference_centerline_not_exact_boundary",
+      "other_interfaces": "pending"
+    }
+  ],
+  "corrected_gate_W_M2": {
+    "metal_id": "R2_corrected_gate_W_M2_01",
+    "identity_status": "human_confirmed_W_pad_to_L01",
+    "geometry_status": "AI_reference_short_stub_not_exact_boundary",
+    "native_frame": "m2_native",
+    "unit": "px",
+    "reference_centerline_xy": [
+      [
+        1212,
+        3205
+      ],
+      [
+        1217,
+        3253
+      ]
+    ],
+    "lower_M1_attachment": "human_confirmed_W1_V1_to_R2_corrected_gate_W1_M1_01"
+  },
+  "N04_fanout_review": {
+    "M2_attachment_location_count": 5,
+    "source_ref": "N04_five_M2_review",
+    "absence_of_other_interfaces": "not_reviewed"
+  }
+}

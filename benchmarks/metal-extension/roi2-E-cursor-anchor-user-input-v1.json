@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "这两张图鼠标位置不变，你精准匹配一下，我认为是下面第一跟只有左侧有，右侧没有的M3",
+  "decisions": {
+    "cursor_stationary_between_photos": "human_confirmed_anchor_assumption",
+    "specific_M3": "user_proposed_left_only_track_not_final_landing_approval"
+  },
+  "sources": {
+    "prior_E_correction": {
+      "path": "benchmarks/metal-extension/roi2-E-via-layer-correction-v2.json",
+      "sha256": "bcdc75c9eae5db84fb356954730f7605c4126b633f316fa4f9e75cd0565e5867"
+    },
+    "M3_source": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "M2_source": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  }
+}

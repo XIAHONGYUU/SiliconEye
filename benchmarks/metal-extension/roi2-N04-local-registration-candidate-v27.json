@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "record_type": "T_N04_constrained_local_registration_candidate",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "T_N04_selection": {
+      "path": "benchmarks/metal-extension/roi2-T-N04-user-selection-v1.json",
+      "sha256": "76b26b3f680ec842cfd92a9033f8c9340199698695288d0709e8103403a47317"
+    }
+  },
+  "direction": "m2_native_to_m3_native",
+  "unit": "px",
+  "model": "similarity",
+  "matrix": [
+    [
+      1.064933693192644,
+      0.04055616856228937,
+      -202.31937825536798
+    ],
+    [
+      -0.04055616856228937,
+      1.064933693192644,
+      -19.63038358448973
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "inverse_matrix": [
+    [
+      0.9376656692877233,
+      -0.0357093847079788,
+      189.00694630231192
+    ],
+    [
+      0.0357093847079788,
+      0.9376656692877233,
+      25.631437274125318
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fit_scope_xyxy_M2": [
+    2000,
+    2080,
+    2670,
+    2230
+  ],
+  "structural_anchor_candidates": [
+    {
+      "source_M2_xy": [
+        2145.0,
+        2128.0
+      ],
+      "target_M3_xy": [
+        2168.0,
+        2160.0
+      ],
+      "status": "AI_candidate_correspondence_reference_pixels_not_human_calibration",
+      "selector": "N01 left staggered tip"
+    },
+    {
+      "source_M2_xy": [
+        2174.0,
+        2148.0
+      ],
+      "target_M3_xy": [
+        2200.0,
+        2178.0
+      ],
+      "status": "AI_candidate_correspondence_reference_pixels_not_human_calibration",
+      "selector": "N02 left staggered tip"
+    },
+    {
+      "source_M2_xy": [
+        2340.0,
+        2224.0
+      ],
+      "target_M3_xy": [
+        2380.0,
+        2252.0
+      ],
+      "status": "AI_candidate_correspondence_reference_pixels_not_human_calibration",
+      "selector": "N06 right staggered tip"
+    }
+  ],
+  "T_constraint": {
+    "kind": "point_to_line_no_exact_M3_x_assigned",
+    "source_M2_xy": [
+      2285.0,
+      2183.0
+    ],
+    "target_M3_line_y_eq_kx_plus_q": [
+      -0.01619092459371534,
+      2250.7838836921696
+    ],
+    "weight": 2,
+    "used_for_fit": true,
+    "independent_validation": false
+  },
+  "anchor_fit_residual_px": [
+    0.5184559069606635,
+    1.6785292717159868,
+    1.88908422926453
+  ],
+  "leave_one_structural_anchor_out_px": [
+    1.2440648448981453,
+    2.634298742367826,
+    3.4659699170870795
+  ],
+  "T_normal_residual_px": 0.778480104553439,
+  "sensitivity": {
+    "seed": 27,
+    "sample_count": 200,
+    "anchor_jitter_uniform_px": [
+      -5,
+      5
+    ],
+    "status": "sensitivity_not_measured_registration_accuracy"
+  },
+  "quality_status": "candidate_local_projection_not_accepted; all correspondence pixels remain approximate",
+  "limitations": [
+    "T constraint participates in fit and is not a validation pass",
+    "No exact T landing x can be recovered from conductor identity alone",
+    "Three structural correspondences are AI hypotheses",
+    "J1/J4 lie outside structural-anchor x support; endpoint projection is extrapolation",
+    "Do not reuse this local transform for S/W or whole chip"
+  ],
+  "outputs": [
+    "runs/roi2-N04-M2-fanout-v27/N04-corrected-local-overlay.png",
+    "runs/roi2-N04-M2-fanout-v27/N04-M2-attachment-candidates-wide.png"
+  ]
+}

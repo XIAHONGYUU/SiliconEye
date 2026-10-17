@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "record_type": "human_M3_fanout_review",
+  "user_statement": "这五处确认无误，顺着这五处M2去点亮底下的M1",
+  "sources": {
+    "candidate_inventory": {
+      "path": "benchmarks/metal-extension/roi2-N04-M2-fanout-candidates-v27.json",
+      "sha256": "e9250de234a705a2405e93e6795068ee35c63d851a57c3fa92a4c63a7ca5088a"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "reviewed_artifacts": [
+    "runs/roi2-N04-M2-fanout-v27/N04-corrected-local-overlay.png",
+    "runs/roi2-N04-M2-fanout-v27/N04-M2-attachment-candidates-wide.png"
+  ],
+  "decisions": [
+    {
+      "label": "J1",
+      "M2_metal_id": "R2_N04_J1_M2_candidate",
+      "M3_metal_id": "R2_corrected_gate_N04_M3_01",
+      "via_id": "R2_N04_J1_V2",
+      "via_kind": "V2",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "T",
+      "M2_metal_id": "R2_corrected_gate_long_M2_candidate_01",
+      "M3_metal_id": "R2_corrected_gate_N04_M3_01",
+      "via_id": "R2_corrected_gate_T_V2",
+      "via_kind": "V2",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "J2",
+      "M2_metal_id": "R2_N04_J2_M2_candidate",
+      "M3_metal_id": "R2_corrected_gate_N04_M3_01",
+      "via_id": "R2_N04_J2_V2",
+      "via_kind": "V2",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "J3",
+      "M2_metal_id": "R2_N04_J3_M2_candidate",
+      "M3_metal_id": "R2_corrected_gate_N04_M3_01",
+      "via_id": "R2_N04_J3_V2",
+      "via_kind": "V2",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "label": "J4",
+      "M2_metal_id": "R2_N04_J4_M2_candidate",
+      "M3_metal_id": "R2_corrected_gate_N04_M3_01",
+      "via_id": "R2_N04_J4_V2",
+      "via_kind": "V2",
+      "status": "human_confirmed_connection_and_destination_identity"
+    }
+  ],
+  "confirmed_M2_attachment_location_count": 5,
+  "scope_exclusions": [
+    "M2_to_M1_connections",
+    "precise_via_count_or_masks",
+    "global_registration_acceptance",
+    "absence_of_additional_V2_or_V3",
+    "old_gate_to_A_capacitor_assignment"
+  ]
+}

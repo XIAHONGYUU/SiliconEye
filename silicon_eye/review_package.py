@@ -19,7 +19,9 @@ from pydantic import Field
 
 from .block_export import run_block, write_json
 from .block_review import fingerprint, resolve_block, verify_sources
+from .device_index import DeviceViewRequest, build_device_index, render_device_index
 from .schemas.block_case import BlockCase, Record, Source
+from .terminal_highlight import prepare_highlight, render_highlights
 
 
 class Approval(Record):
@@ -40,6 +42,9 @@ class PackageRequest(Record):
     case: Source
     registrations: list[RegistrationInput] = Field(default_factory=list)
     materials: list[Source] = Field(default_factory=list)
+    observation_adaptations: list[Source] = Field(default_factory=list)
+    device_view: DeviceViewRequest | None = None
+    terminal_highlights: list[Source] = Field(default_factory=list)
 
 
 def pointer(document, path):
@@ -323,6 +328,21 @@ def run_package(spec_path, output, root="."):
         precise_registration_accepted=False, pixel_material_truth_accepted=False,
         runtime_ai_used=False, electrical_acceptance=block["acceptance"],
     )
+    if request.observation_adaptations:
+        from .observation_adapter import validate_adaptation
+
+        state["observation_adaptations"] = [
+            validate_adaptation(inputs, entry, case) for entry in request.observation_adaptations
+        ]
+        state["input_files"] = dict(sorted(inputs.files.items()))
+    if request.device_view is not None:
+        state["device_index"] = build_device_index(case, block, registrations, request.device_view)
+    if request.terminal_highlights:
+        state["terminal_highlights"] = [
+            prepare_highlight(inputs, entry, case, block, registrations)
+            for entry in request.terminal_highlights
+        ]
+        state["input_files"] = dict(sorted(inputs.files.items()))
     state["bundle_id"] = fingerprint(state)
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=".review-package-", dir=out.parent) as tmp:
@@ -332,6 +352,14 @@ def run_package(spec_path, output, root="."):
         if replay["state_id"] != block["state_id"]:
             raise ValueError("Case changed during package export")
         links = [] if block["conflicts"] else render_assets(state, inputs, stage)
+        if not block["conflicts"] and request.observation_adaptations:
+            from .observation_cards import render_observation_cards
+
+            links += render_observation_cards(state, inputs, stage)
+        if not block["conflicts"] and request.device_view is not None:
+            links += render_device_index(state, inputs, stage)
+        if not block["conflicts"] and request.terminal_highlights:
+            links += render_highlights(state, inputs, stage)
         write_json(stage / "bundle-state.json", state)
         report = [
             "# 局部器件组统一复核包", "", f"案例：{case.case_id}", "",
@@ -361,7 +389,14 @@ def run_package(spec_path, output, root="."):
                 Path(__file__), Path(__file__).with_name("block_export.py"),
                 Path(__file__).with_name("block_review.py"),
                 Path(__file__).parent / "schemas/block_case.py",
-            ]},
+            ] + ([Path(__file__).with_name("observation_adapter.py"),
+                  Path(__file__).with_name("observation_cards.py"),
+                  Path(__file__).parent / "schemas/agent_observation.py"]
+                 if request.observation_adaptations else [])
+                + ([Path(__file__).with_name("device_index.py")]
+                   if request.device_view is not None else [])
+                + ([Path(__file__).with_name("terminal_highlight.py")]
+                   if request.terminal_highlights else [])},
             outputs={str(p.relative_to(stage)): hashlib.sha256(p.read_bytes()).hexdigest()
                      for p in sorted(stage.rglob("*")) if p.is_file()},
             status=state["status"], physical_truth_verified_by_script=False,

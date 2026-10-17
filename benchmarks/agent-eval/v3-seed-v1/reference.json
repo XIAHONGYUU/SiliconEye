@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "kind": "partial_task_reference",
+  "input_packet": {
+    "path": "benchmarks/agent-eval/v3-seed-v1/input.json",
+    "sha256": "cd969c8cdfacd6f6451c9304aa7ce0d412fff31bdb8813bcefc6c7dfa3ad61bf"
+  },
+  "historical_case": {
+    "path": "benchmarks/block-case-v1-v3.json",
+    "sha256": "210569f0f2359f53d6183a7f9fbf8f8dc44404f8f68b970545d002a7bcad215e"
+  },
+  "review_sources": {
+    "structure_review": {
+      "path": "benchmarks/local-mos-review-feedback-v1.json",
+      "sha256": "58fb8fa1f7317eb70d8cb41e6b38d9ebc61c925205475d0a24e42214aee61d51"
+    },
+    "terminal_review": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "block_review": {
+      "path": "benchmarks/v3-block-review-feedback-v1.json",
+      "sha256": "ba2470afde134b9ba17ec2487310453b5f0c169b5fc4021fc308b1de357d4320"
+    },
+    "gate_pair_review": {
+      "path": "benchmarks/device-m1-m2-topology-feedback-v1.json",
+      "sha256": "0a8b1de50419cdec3ca0b4493686ab42e7cce083a14b1579f82776bf34f86614"
+    },
+    "gate_M_review": {
+      "path": "benchmarks/device-gate-diffusion-feedback-v1.json",
+      "sha256": "a72ed3d083eb5815b98ee1437f9768c9b9ea3551438e2d8f3b4d5cb23bef2b27"
+    }
+  },
+  "labels": [
+    {
+      "id": "c_device_1",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "V3_Q1"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "structure_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "c_device_2",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "V3_Q2"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "structure_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "c_poly_local_open",
+      "predicate": "joined_in_region",
+      "subject_ids": [
+        "physical_G1",
+        "physical_G2"
+      ],
+      "scope_id": "poly_ends",
+      "reference_status": "known",
+      "value": false,
+      "review_refs": [
+        "terminal_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "c_map_A",
+      "predicate": "terminal_maps_to_conductor",
+      "subject_ids": [
+        "V3_Q1.A",
+        "M1_upper"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "block_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "c_map_B",
+      "predicate": "terminal_maps_to_conductor",
+      "subject_ids": [
+        "V3_Q2.B",
+        "M1_lower"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "block_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "q_extra_A_GM",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.A",
+        "V3_Q1.G"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "unresolved",
+      "value": null,
+      "review_refs": [
+        "block_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "q_extra_B_GM",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q2.B",
+        "V3_Q1.G"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "unresolved",
+      "value": null,
+      "review_refs": [
+        "block_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "q_extra_A_B",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.A",
+        "V3_Q2.B"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "unresolved",
+      "value": null,
+      "review_refs": [
+        "block_review"
+      ],
+      "normalization_note": "Preserve reviewed scope; no_evidence means unresolved, not electrical separation."
+    },
+    {
+      "id": "gates_common",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.G",
+        "V3_Q2.G"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "terminal_review",
+        "gate_pair_review",
+        "gate_M_review"
+      ],
+      "normalization_note": "Pair derived from explicitly confirmed four-terminal same_net group, not from geometry."
+    },
+    {
+      "id": "middle_common",
+      "predicate": "same_net",
+      "subject_ids": [
+        "V3_Q1.B",
+        "V3_Q2.A"
+      ],
+      "scope_id": "block_electrical",
+      "reference_status": "known",
+      "value": true,
+      "review_refs": [
+        "terminal_review",
+        "gate_pair_review",
+        "gate_M_review"
+      ],
+      "normalization_note": "Pair derived from explicitly confirmed four-terminal same_net group."
+    }
+  ],
+  "limitations": [
+    "Historical development/review seed, not held out.",
+    "Unlisted objects/geometry/relations are unscored, not false.",
+    "No pixel segmentation, W/L, model accuracy or human effort labels available.",
+    "Human decisions normalized from recorded feedback; normalization is auditable, not automatic truth extraction."
+  ],
+  "human_corrections": null,
+  "evaluation_runs": []
+}

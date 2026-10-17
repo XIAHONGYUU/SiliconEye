@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "document_kind": "terminal_highlight_candidate",
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "frame_id": "m1_native",
+  "native_source": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "window_xywh": [
+    1660,
+    2880,
+    360,
+    150
+  ],
+  "segment_id": "R2_gate_CT_to_M1_middle_upper_bar_candidate",
+  "polygon_native_xy": [
+    [
+      1710,
+      2961
+    ],
+    [
+      1890,
+      2956
+    ],
+    [
+      1890,
+      2968
+    ],
+    [
+      1710,
+      2974
+    ]
+  ],
+  "anchor_native_xy": [
+    1732,
+    2966
+  ],
+  "status": "candidate",
+  "producer": "reasoning_model",
+  "rationale": "从poly中R2_Q1栅指主体向下端扩展，选择约(1756,2831)亮斑簇作为gate CT候选，区别于两侧竖向源漏CT列。经已批准宏观变换投影，再由原生M1局部图判读：中部两条横线中靠上的一条经过该候选落点附近；只高亮其局部段，不沿用已被否决的最上方宽横条。",
+  "evidence": [
+    {
+      "path": "benchmarks/block-roi2-review-feedback-v1.json",
+      "sha256": "347adfcc3a147a880e378f5bf4c8433a1bbabd259196b786744a5637e7c69a2d"
+    },
+    {
+      "path": "benchmarks/registration-roi2-m1-poly-accepted-v1.json",
+      "sha256": "c4bc67269a3315c5766854116b136b3657a2ad2c63eaeddaefe6dfe75cdce8a2"
+    },
+    {
+      "path": "benchmarks/agent-adapter/roi2-device-index-review-feedback-v1.json",
+      "sha256": "1593f06845ae171b12812d89edff44f7f0b77d6034606edd3c1c0af8c0bd7afa"
+    },
+    {
+      "path": "benchmarks/terminal-highlights/roi2-q1-gate-upper-bar-rejection-v1.json",
+      "sha256": "97e7d1ac973e79af3a290ee699f3fccc65e98924cb343486a9a0b1273e2c085d"
+    }
+  ],
+  "continuation": "unknown_stop_at_declared_segment",
+  "contact_landing": "unknown",
+  "contact_bridge": {
+    "gate_frame_id": "poly_native",
+    "source_context_xywh": [
+      1700,
+      2670,
+      180,
+      220
+    ],
+    "ct_window_xywh": [
+      1743,
+      2820,
+      28,
+      22
+    ],
+    "ct_center_native_xy": [
+      1756,
+      2831
+    ],
+    "registration_profile_id": "ROI2_M1_to_poly_macro_v1",
+    "target_search_radius_px": 16,
+    "status": "candidate",
+    "rationale": "候选CT位于所选gate下端扩展处亮斑簇；明亮不是充分材料证据，归属和M1落点均需复核。16px仅为本次显示搜索范围，不是验收误差预算。"
+  }
+}

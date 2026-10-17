@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "record_type": "human_via_identity_review",
+  "user_statement": "似的，这两个孔就是M2到M3的通孔",
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/metal-extension/roi2-target-M2-inline-V2-brightpoints-candidate-v21.json",
+      "sha256": "1ef4f67b32feea25ff8a06f085721d5c89348439f329a8bde86702057d062d02"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "reviewed_artifact": "runs/roi2-gate-V2-brightpoint-review-v21/M2-inline-V2-brightpoints-review.png",
+  "frame_id": "m2_native",
+  "unit": "px",
+  "decisions": [
+    {
+      "via_id": "R2_corrected_gate_S1_V2",
+      "display_label": "S1",
+      "native_reference_xy": [
+        2300,
+        3158
+      ],
+      "via_kind": "V2",
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "destination_metal": null,
+      "status": "human_confirmed_via_identity_and_M2_attachment"
+    },
+    {
+      "via_id": "R2_corrected_gate_S2_V2",
+      "display_label": "S2",
+      "native_reference_xy": [
+        2300,
+        3177
+      ],
+      "via_kind": "V2",
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "from_layer": "m2",
+      "to_layer": "m3",
+      "destination_metal": null,
+      "status": "human_confirmed_via_identity_and_M2_attachment"
+    }
+  ],
+  "scope_exclusions": [
+    "precise_via_mask",
+    "specific_M3_conductor_identity",
+    "both_vias_on_one_physical_M3_wire",
+    "accepted_M2_M3_registration",
+    "old_gate_to_A_capacitor_assignment"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_local_topology_companion",
+  "case_id": "ROI2_finger_pair",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-G-M3-MIM-reviewed-v14.json",
+      "sha256": "f7f2139e80cb6de5baeb6bbc33c0f25731afb8cea854d91db246b1ef677e8a50"
+    }
+  },
+  "capacitor": {
+    "id": "R2_MIM_01",
+    "id_status": "provisional_stable_reference_to_user_identified_MIM",
+    "kind": "MIM_capacitor",
+    "identity_status": "human_confirmed",
+    "value": null,
+    "physical_unit_count": null,
+    "plate_assignment": null,
+    "outline": null,
+    "ports": [
+      {
+        "id": "R2_MIM_01.P1",
+        "role": "reviewed_connected_terminal_not_top_bottom_assignment"
+      },
+      {
+        "id": "R2_MIM_01.P2",
+        "role": "other_terminal_destination_unknown"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "terminal_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G",
+        "R2_MIM_01.P1"
+      ],
+      "relation": "same_net",
+      "status": "confirmed",
+      "normalization": "Gate Q1/Q2 equivalence from existing case plus new user-confirmed chain to MIM one terminal.",
+      "source_refs": [
+        "human_review",
+        "case"
+      ]
+    }
+  ],
+  "unknowns": [
+    "R2_MIM_01.P2 net",
+    "capacitance",
+    "top/bottom plate identity",
+    "exact M3 access path and capacitor boundary",
+    "all branches of connected metal"
+  ],
+  "do_not_union": [
+    "R2_MIM_01.P1",
+    "R2_MIM_01.P2"
+  ],
+  "coverage_status": "incomplete",
+  "generic_case_capacitor_export": "not_implemented_in_v1_MOS_schema"
+}

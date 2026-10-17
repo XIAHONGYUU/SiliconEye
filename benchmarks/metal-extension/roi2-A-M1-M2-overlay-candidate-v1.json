@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "record_type": "candidate_M2_to_M1_visual_overlay",
+  "sources": {
+    "prior_affine": {
+      "path": "benchmarks/metal-extension/roi2-gate-upper-metal-survey-v1.json",
+      "sha256": "cadc76a8cca65362bde6f2bc6c9209246eba6d3965d94439960f1bd0067ec9ee"
+    },
+    "anchor_review": {
+      "path": "benchmarks/metal-extension/roi2-M1-V1-M2-review-feedback-v1.json",
+      "sha256": "67da72fb32863c4072b01ed73e85e55d520cfc0a74be9a7966be8a2748b4e7bf"
+    },
+    "anchor_pixel_reference": {
+      "path": "benchmarks/metal-extension/roi2-v1-M1-to-M2-endpoint-candidate-v2.json",
+      "sha256": "246eb3b5f60eddfa643267a08053f09822ded64a99c64a78532367c5d70edd56"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "direction": "m2_native_to_m1_native",
+  "method": "Invert previous AI-proposed via-array affine; apply translation correction at reviewed V1 physical correspondence using approximate source pixels. No target lower-fork endpoint used for fit.",
+  "matrix": [
+    [
+      1.1174211377249046,
+      0.025625652853091395,
+      -268.07982857649375
+    ],
+    [
+      -0.0071289159234962695,
+      0.9324483672320759,
+      149.7860144949986
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "prior_inverse_matrix": [
+    [
+      1.1174211377249046,
+      0.025625652853091395,
+      -274.90503204799114
+    ],
+    [
+      -0.0071289159234962695,
+      0.9324483672320759,
+      172.93742562692654
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "anchor_m2_xy": [
+    2278,
+    3028
+  ],
+  "anchor_m1_xy": [
+    2355,
+    2957
+  ],
+  "translation_correction_xy": [
+    6.825203471497389,
+    -23.151411131927944
+  ],
+  "translation_correction_norm_px": 24.136512586264345,
+  "crop_M1_native_xyxy": [
+    1600,
+    2780,
+    2550,
+    3800
+  ],
+  "projected_endpoints_M1_native": {
+    "L": [
+      2138.444092946514,
+      3454.5310880477045
+    ],
+    "M": [
+      2256.890733545354,
+      3453.775422959814
+    ],
+    "R": [
+      2372.9744036044785,
+      3448.37177386761
+    ]
+  },
+  "fork_paths_M2_native": [
+    [
+      [
+        2208,
+        3333
+      ],
+      [
+        2208,
+        3392
+      ]
+    ],
+    [
+      [
+        2072,
+        3560
+      ],
+      [
+        2072,
+        3398
+      ],
+      [
+        2282,
+        3390
+      ],
+      [
+        2282,
+        3555
+      ]
+    ],
+    [
+      [
+        2178,
+        3395
+      ],
+      [
+        2178,
+        3560
+      ]
+    ]
+  ],
+  "upper_reference_M2_native": [
+    [
+      [
+        2278,
+        3028
+      ],
+      [
+        2281,
+        3093
+      ],
+      [
+        2060,
+        3098
+      ],
+      [
+        2058,
+        3040
+      ]
+    ],
+    [
+      [
+        2168,
+        3095
+      ],
+      [
+        2166,
+        3030
+      ]
+    ],
+    [
+      [
+        2208,
+        3095
+      ],
+      [
+        2208,
+        3333
+      ],
+      [
+        2231,
+        3332
+      ]
+    ]
+  ],
+  "resampling": "one bilinear warp from raw M2 to cropped M1 frame",
+  "display_alpha": {
+    "m1": 0.55,
+    "m2": 0.45
+  },
+  "acceptance": {
+    "visualization_only": true,
+    "precision_registration": false,
+    "via_landing": false,
+    "electrical_state_changed": false
+  },
+  "limits": [
+    "Underlying affine points are AI proposed, not independent verified landmarks",
+    "V1 source pixels approximate; human correspondence approval is not pixel localization approval",
+    "Single anchor cannot validate affine scale/skew or local optical deformation",
+    "Lower fork endpoints extrapolated from anchor; no numerical error guarantee"
+  ]
+}

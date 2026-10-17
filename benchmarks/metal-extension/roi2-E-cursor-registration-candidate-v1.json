@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "record_type": "cursor_anchored_local_registration",
+  "sources": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "current_case": {
+      "path": "benchmarks/block-case-v1-roi2-E-via-layer-corrected-v11.json",
+      "sha256": "beb52af3c84ff6fa5cad14bbc3c12f44fdd5d6a5a34fd70337d125270c5a9daa"
+    },
+    "user_anchor_input": {
+      "path": "benchmarks/metal-extension/roi2-E-cursor-anchor-user-input-v1.json",
+      "sha256": "78d7d5c450121b4d363bfdaeac6eb65efaf050fa450d9fe1eda8f857da3862ca"
+    }
+  },
+  "direction": "m2_native_to_m3_native",
+  "model": "affine",
+  "matrix": [
+    [
+      1.000108003616333,
+      0.0006202728254720569,
+      36.20699275750667
+    ],
+    [
+      -0.009925245307385921,
+      0.9945306777954102,
+      76.78047744184732
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fitting": {
+    "support_xyxy": [
+      3160,
+      3240,
+      3380,
+      3460
+    ],
+    "feature": "largest white cursor component only",
+    "HSV_V_min": 230,
+    "HSV_S_max": 55,
+    "algorithm": "OpenCV findTransformECC MOTION_AFFINE",
+    "initial_local_matrix": [
+      [
+        1,
+        0,
+        39
+      ],
+      [
+        0,
+        1,
+        26
+      ]
+    ],
+    "criteria_max_count": 500,
+    "criteria_epsilon": 1e-07,
+    "gaussian_filter_size": 7,
+    "inputMask": null,
+    "opencv_version": "5.0.0"
+  },
+  "metrics": {
+    "ECC": 0.995444301466371,
+    "cursor_mask_IoU": 0.909272183449651,
+    "cursor_boundary_fit_p95_px": 1.0,
+    "yellow_UI_check_centers_native": {
+      "m2": [
+        3214.3267326732675,
+        3317.9257425742576
+      ],
+      "m3": [
+        3252.86925795053,
+        3344.763250883392
+      ]
+    },
+    "yellow_UI_check_residual_px": 0.12751628505993642,
+    "E_threshold_trial_xy_min": [
+      3315.6079762857407,
+      3828.295418831054
+    ],
+    "E_threshold_trial_xy_max": [
+      3320.704931561835,
+      3832.0415585897863
+    ],
+    "E_max_trial_displacement_from_primary_px": 4.340225200070417
+  },
+  "E_projection": {
+    "M2_native_xy": [
+      3278,
+      3807
+    ],
+    "M3_native_xy": [
+      3316.9224072584184,
+      3830.4238136913627
+    ],
+    "source_point_status": "AI_approximate_E_tab_center_not_pixel_truth"
+  },
+  "candidate": {
+    "id": "R2_M3_E_left_only_candidate_01",
+    "native_endpoint_approx_xy": [
+      3320,
+      3830
+    ],
+    "identity_description": "下方第一根只有左侧有、右侧没有的M3",
+    "identity_status": "candidate_user_suggestion_supported_by_cursor_fit",
+    "visible_local_path_native_xy": [
+      [
+        3000,
+        3842
+      ],
+      [
+        3200,
+        3836
+      ],
+      [
+        3320,
+        3830
+      ]
+    ],
+    "exact_boundary": "unknown"
+  },
+  "acceptance": {
+    "cursor_fit": "technically_checked",
+    "chip_structure_registration_accuracy": "not_independently_accepted",
+    "physical_E_to_specific_M3": "pending_review",
+    "unmeasured_risks": [
+      "E extrapolated roughly 465px from cursor centroid",
+      "Unknown layer-image displacement relative to stationary cursor",
+      "Local optical distortion outside fitting support",
+      "Approximate E point and M3 endpoint positions"
+    ],
+    "same_screen_marker_not_independent_chip_truth": true
+  },
+  "electrical_state_changed": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "电容的另外一端为下方三个方形电容的最左端的最上面那一条。这一条金属没有贯穿全图，可以结合M2来进行查看，可以看到M2中电容的连接处已经顶到电容的最上方了。",
+  "sources": {
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v1.json",
+      "sha256": "2f8227950026cf4d7f63703e48905621dc67a1b3876c2e2c191be878e2406a87"
+    },
+    "M2_source": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3_source": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "previous_wide_context": {
+      "path": "runs/roi2-G-wide-context-v2/manifest.json",
+      "sha256": "b4bffa16ea03a07735fabf8cee236e2932f697f29da8893165eec2f296541cf2"
+    }
+  },
+  "decisions": {
+    "MIM_other_terminal_identity": "confirmed_by_user_description",
+    "selector_original": "下方三个方形电容的最左端的最上面那一条",
+    "metal_extent_description": "该金属没有贯穿全图",
+    "cross_layer_evidence_description": "M2中电容的连接处已经顶到电容的最上方",
+    "external_net_destination": "unknown",
+    "exact_native_centerline": "unknown",
+    "top_bottom_electrode_role": "unknown"
+  },
+  "normalization": "Retain the user positional selector. Topmost in the picture is not an assignment to a process top plate. The descriptive group of three is not a claim of total capacitor count. Physical extent/coordinates remain candidate until localized independently; never join capacitor P1 and P2 through the capacitor."
+}

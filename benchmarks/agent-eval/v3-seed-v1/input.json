@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "document_kind": "local_photo_task",
+  "task_id": "V3_block-local-review-v1",
+  "case_id": "V3_block",
+  "same_chip_same_location": "human_reviewed_local_identity",
+  "sources": {
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    }
+  },
+  "frames": [
+    {
+      "id": "aa_native",
+      "source_ref": "aa_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "poly_native",
+      "source_ref": "poly_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m1_native",
+      "source_ref": "m1_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "aa_native_window",
+      "frame_id": "aa_native",
+      "xywh": [
+        2560,
+        1440,
+        650,
+        300
+      ],
+      "role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "poly_native_window",
+      "frame_id": "poly_native",
+      "xywh": [
+        2500,
+        1260,
+        665,
+        295
+      ],
+      "role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "m1_native_window",
+      "frame_id": "m1_native",
+      "xywh": [
+        2460,
+        1395,
+        650,
+        300
+      ],
+      "role": "inspection_window_not_material_boundary"
+    }
+  ],
+  "subject_ids": [
+    "V3_Q1",
+    "V3_Q1.G",
+    "V3_Q1.A",
+    "V3_Q1.B",
+    "V3_Q1.Bulk",
+    "V3_Q2",
+    "V3_Q2.G",
+    "V3_Q2.A",
+    "V3_Q2.B",
+    "V3_Q2.Bulk",
+    "V3_group",
+    "physical_G1",
+    "physical_G2",
+    "physical_M",
+    "M1_upper",
+    "M1_lower",
+    "M2_P2"
+  ],
+  "scopes": [
+    {
+      "id": "block_electrical",
+      "domain": "electrical_case",
+      "extent": "selected_device_group_only"
+    },
+    {
+      "id": "poly_ends",
+      "domain": "physical_layer_region",
+      "frame_id": "poly_native",
+      "xywh": [
+        2590,
+        1345,
+        510,
+        130
+      ],
+      "extent": "local_poly_ends_not_global_electrical_isolation"
+    },
+    {
+      "id": "material_identity",
+      "domain": "physical_identity",
+      "extent": "coarse material identity only; no pixel geometry or device count discovery"
+    }
+  ],
+  "instructions": "Review the named local objects/relations across the provided native photo windows. Do not read reference.json or historical answers during a future test. IDs identify existing review slots, not an independent device-discovery benchmark. Emit candidate/unknown with evidence. Preserve unknown boundaries, polarity, S/D and W/L; do not infer electrical disconnection from local poly separation."
+}

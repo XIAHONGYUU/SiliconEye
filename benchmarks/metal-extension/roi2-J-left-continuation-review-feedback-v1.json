@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "H在J处向左继续",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-P2-network-trace-v5/P2-visible-network-J-review.png",
+      "sha256": "8f271f47abe1d5e77f6ba1e6fc153994d44c34c444f4b7ef9e4ac2400d73b4f7"
+    },
+    "previous_observation": {
+      "path": "benchmarks/metal-extension/roi2-P2-network-candidate-v5.json",
+      "sha256": "9a67fde39d1dcaedb0879784c97662696c82a868847c5146c4c4690ce84c473b"
+    }
+  },
+  "decisions": {
+    "H_same_layer_left_continuity_at_J": "confirmed",
+    "neighbor_capacitor_shared_terminal_membership": "not_explicitly_adjudicated",
+    "all_leftward_pixels": "not_exactly_segmented",
+    "M2_cross_layer_connection": "unknown",
+    "outside_image_network": "unknown"
+  },
+  "normalization": "Confirms only H continuing left at J. Further same-layer geometry may be tracked as an AI observation, but this is not approval of all neighboring capacitor terminal identities or cross-layer vias."
+}

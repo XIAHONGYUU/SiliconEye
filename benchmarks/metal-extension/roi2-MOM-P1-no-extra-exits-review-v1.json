@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "没有其他金属向外引出",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-P1-overall-review-v12/MOM-P1-extra-exits-wide-review.png",
+      "sha256": "6a3b0165bf227401c35fc16dcbe04ae2ece7cbba179653c6472541cecc5b7cb4"
+    },
+    "preceding_coverage": {
+      "path": "benchmarks/metal-extension/roi2-P1-overall-coverage-v12.json",
+      "sha256": "9e981427d68ac5dc368253ffa5cfc1dc1c8bd17395db65777521d7e913e251db"
+    }
+  },
+  "decisions": {
+    "MOM_P1_other_external_metal_exits_in_available_photos": "none",
+    "H_J_K_L1": "retains_reviewed",
+    "additional_V3_M4_exit_in_reviewed_MOM_scope": "not_added",
+    "outside_photo_continuation": "unknown",
+    "A_fork_interfaces_elsewhere": "not_adjudicated"
+  },
+  "scope": "Answers the preceding MOM P1 external-exit question only; not an entire-chip absence-of-via assertion or a pixel segmentation approval."
+}

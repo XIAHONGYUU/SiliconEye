@@ -1,0 +1,787 @@
+{
+  "schema_version": 1,
+  "document_kind": "block_case",
+  "case_id": "ROI2_finger_pair",
+  "revision": "roi2-gate-M1-V1-M2-reviewed-v7",
+  "source_base": "repository_root",
+  "sources": {
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "ai_observations": {
+      "path": "benchmarks/block-roi2-observations-v1.json",
+      "sha256": "efbb68d4a4e2952f951c37e83e337b710af39985f95e2511cccc03fed5e8ef4d"
+    },
+    "human_review": {
+      "path": "benchmarks/block-roi2-review-feedback-v1.json",
+      "sha256": "347adfcc3a147a880e378f5bf4c8433a1bbabd259196b786744a5637e7c69a2d"
+    },
+    "human_review_diffusion_body": {
+      "path": "benchmarks/block-roi2-review-feedback-v2.json",
+      "sha256": "72d8dab90d6d410c972643785201aef9c54388af763a840cba33e57fea544d5d"
+    },
+    "material_candidates": {
+      "path": "benchmarks/block-roi2-material-support-candidates-v1.json",
+      "sha256": "753759c4722dfe388823ba5e0e4c1f5133f83ce6b2972eea72643dd58202ed31"
+    },
+    "material_identity_review": {
+      "path": "benchmarks/block-roi2-material-review-feedback-v1.json",
+      "sha256": "d1b1d1778ec271461ca6c9116ac41be13ff93f475047e3b82043e7ed823fa334"
+    },
+    "reviewed_material_observations": {
+      "path": "benchmarks/block-roi2-material-support-reviewed-v2.json",
+      "sha256": "0bd9d3795e0e4510a22ace29b904e610cec1f1aac9f4109504baa594ade33134"
+    },
+    "gate_ct_m1_review": {
+      "path": "benchmarks/terminal-highlights/roi2-q1-gate-ct-m1-review-feedback-v1.json",
+      "sha256": "ec282b2288f22b7cdb2552687d45f45e5fb5fccf275f62dad02c7693dc95f85e"
+    },
+    "gate_ct_m1_candidate": {
+      "path": "benchmarks/terminal-highlights/roi2-q1-gate-ct-m1-candidate-v2.json",
+      "sha256": "02f9c848d692e1053f66000910cc348d91f22721341bce9ef7584902ce1596b2"
+    },
+    "M1_V1_M2_review": {
+      "path": "benchmarks/metal-extension/roi2-M1-V1-M2-review-feedback-v1.json",
+      "sha256": "67da72fb32863c4072b01ed73e85e55d520cfc0a74be9a7966be8a2748b4e7bf"
+    },
+    "M1_V1_M2_candidate": {
+      "path": "benchmarks/metal-extension/roi2-v1-M1-to-M2-endpoint-candidate-v2.json",
+      "sha256": "246eb3b5f60eddfa643267a08053f09822ded64a99c64a78532367c5d70edd56"
+    },
+    "m2_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "frames": [
+    {
+      "id": "poly_native",
+      "source_ref": "poly_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "aa_native",
+      "source_ref": "aa_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m1_native",
+      "source_ref": "m1_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m2_native",
+      "source_ref": "m2_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "id": "electrical",
+      "domain": "electrical_case",
+      "extent": "selected_two_finger_candidates_only_not_entire_array",
+      "frame_id": null,
+      "xywh": null
+    },
+    {
+      "id": "identity",
+      "domain": "physical_identity",
+      "extent": "selected_adjacent_fingers_middle_diffusion_candidate",
+      "frame_id": null,
+      "xywh": null
+    },
+    {
+      "id": "poly_local",
+      "domain": "physical_layer_region",
+      "extent": "no_direct_poly_join_between_selected_gate_fingers_in_reviewed_context_only",
+      "frame_id": "poly_native",
+      "xywh": [
+        1650.0,
+        2630.0,
+        800.0,
+        500.0
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "R2_Q1",
+      "kind": "device",
+      "class_label": "MOS",
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q1.G",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q1",
+      "role": "G",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q1.A",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q1",
+      "role": "A",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q1.B",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q1",
+      "role": "B",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q1.Bulk",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q1",
+      "role": "Bulk",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q2",
+      "kind": "device",
+      "class_label": "MOS",
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q2.G",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q2",
+      "role": "G",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q2.A",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q2",
+      "role": "A",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q2.B",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q2",
+      "role": "B",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_Q2.Bulk",
+      "kind": "terminal",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": "R2_Q2",
+      "role": "Bulk",
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_middle",
+      "kind": "physical_region",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ]
+    },
+    {
+      "id": "R2_poly_G1",
+      "kind": "physical_region",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": [
+        "R2_Q1.G"
+      ]
+    },
+    {
+      "id": "R2_poly_G2",
+      "kind": "physical_region",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": [
+        "R2_Q2.G"
+      ]
+    },
+    {
+      "id": "R2_AA_support_fragment",
+      "kind": "physical_region",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_poly_Q1_support",
+      "kind": "physical_region",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "kind": "physical_region",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_M1_gate_segment_01",
+      "kind": "conductor_inspection_feature",
+      "class_label": null,
+      "polarity": null,
+      "source_drain_orientation": null,
+      "device_id": null,
+      "role": null,
+      "location": null,
+      "member_ids": [],
+      "terminal_ids": []
+    },
+    {
+      "id": "R2_M2_gate_segment_01",
+      "kind": "conductor_inspection_feature"
+    }
+  ],
+  "geometry_observations": [
+    {
+      "entity_id": "R2_Q1",
+      "frame_id": "poly_native",
+      "xywh": [
+        1740.0,
+        2700.0,
+        40.0,
+        128.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_Q2",
+      "frame_id": "poly_native",
+      "xywh": [
+        1795.0,
+        2700.0,
+        40.0,
+        128.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_poly_G1",
+      "frame_id": "poly_native",
+      "xywh": [
+        1740.0,
+        2700.0,
+        40.0,
+        128.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_poly_G2",
+      "frame_id": "poly_native",
+      "xywh": [
+        1795.0,
+        2700.0,
+        40.0,
+        128.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_AA_support_fragment",
+      "frame_id": "aa_native",
+      "xywh": [
+        1804.0,
+        2847.0,
+        130.0,
+        100.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_poly_Q1_support",
+      "frame_id": "poly_native",
+      "xywh": [
+        1741.0,
+        2710.0,
+        39.0,
+        119.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_poly_Q2_support",
+      "frame_id": "poly_native",
+      "xywh": [
+        1797.0,
+        2708.0,
+        39.0,
+        118.0
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    },
+    {
+      "entity_id": "R2_M2_gate_segment_01",
+      "frame_id": "m2_native",
+      "xywh": [
+        2270,
+        3020,
+        22,
+        85
+      ],
+      "role": "inspection_window_not_material_boundary",
+      "status": "candidate",
+      "producer": "session_reasoning_model"
+    }
+  ],
+  "measurements": [],
+  "claims": [
+    {
+      "id": "exists1",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q1"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "exists2",
+      "predicate": "device_exists",
+      "subject_ids": [
+        "R2_Q2"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "middle_shared",
+      "predicate": "shared_physical_region",
+      "subject_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A",
+        "R2_middle"
+      ],
+      "scope_id": "identity",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "middle_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.B",
+        "R2_Q2.A"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "aa_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "gates_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "poly_photo",
+        "m1_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "outer_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.A",
+        "R2_Q2.B"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "question",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "m1_photo",
+        "ai_observations"
+      ]
+    },
+    {
+      "id": "poly_direct_join",
+      "predicate": "joined_in_region",
+      "subject_ids": [
+        "R2_poly_G1",
+        "R2_poly_G2"
+      ],
+      "scope_id": "poly_local",
+      "value": false,
+      "intent": "proposal",
+      "producer": "session_reasoning_model_normalized_user_statement",
+      "evidence_refs": [
+        "poly_photo",
+        "human_review"
+      ]
+    },
+    {
+      "id": "body_connected",
+      "predicate": "same_net",
+      "subject_ids": [
+        "R2_Q1.Bulk",
+        "R2_Q2.Bulk"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model_normalized_user_statement",
+      "evidence_refs": [
+        "human_review_diffusion_body"
+      ]
+    },
+    {
+      "id": "Q1_G_to_M1_segment",
+      "predicate": "terminal_maps_to_conductor",
+      "subject_ids": [
+        "R2_Q1.G",
+        "R2_M1_gate_segment_01"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "gate_ct_m1_candidate",
+        "gate_ct_m1_review",
+        "poly_photo",
+        "m1_photo"
+      ]
+    },
+    {
+      "id": "Q1_G_to_M2_segment",
+      "predicate": "terminal_maps_to_conductor",
+      "subject_ids": [
+        "R2_Q1.G",
+        "R2_M2_gate_segment_01"
+      ],
+      "scope_id": "electrical",
+      "value": true,
+      "intent": "proposal",
+      "producer": "session_reasoning_model",
+      "evidence_refs": [
+        "M1_V1_M2_review",
+        "M1_V1_M2_candidate",
+        "m1_photo",
+        "m2_photo"
+      ]
+    }
+  ],
+  "review_events": [
+    {
+      "id": "human_exists1",
+      "claim_id": "exists1",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review"
+      ],
+      "source_statement": "1.是两条相邻的mos栅指",
+      "supersedes_event_ids": [],
+      "normalization_note": "Selected Q1 is a MOS finger, not a complete independent-device count."
+    },
+    {
+      "id": "human_exists2",
+      "claim_id": "exists2",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review"
+      ],
+      "source_statement": "1.是两条相邻的mos栅指",
+      "supersedes_event_ids": [],
+      "normalization_note": "Selected Q2 is a MOS finger, not a complete independent-device count."
+    },
+    {
+      "id": "human_gates_connected",
+      "claim_id": "gates_connected",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review"
+      ],
+      "source_statement": "2.栅极不在栅极相连，但是在M1通过M1相连",
+      "supersedes_event_ids": [],
+      "normalization_note": "Electrical gate equivalence through M1; no specific M1 feature mapping or exact path inferred."
+    },
+    {
+      "id": "human_poly_direct_join",
+      "claim_id": "poly_direct_join",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review"
+      ],
+      "source_statement": "2.栅极不在栅极相连，但是在M1通过M1相连",
+      "supersedes_event_ids": [],
+      "normalization_note": "Confirmed false joined_in_region in reviewed poly context; never different_net."
+    },
+    {
+      "id": "human_v2_middle_shared",
+      "claim_id": "middle_shared",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review_diffusion_body"
+      ],
+      "source_statement": "1.中间扩散共享原漏共用，外侧扩散在M1无法确认，体端共用。继续推进",
+      "supersedes_event_ids": [],
+      "normalization_note": "Middle diffusion shared by the selected fingers."
+    },
+    {
+      "id": "human_v2_middle_connected",
+      "claim_id": "middle_connected",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review_diffusion_body"
+      ],
+      "source_statement": "1.中间扩散共享原漏共用，外侧扩散在M1无法确认，体端共用。继续推进",
+      "supersedes_event_ids": [],
+      "normalization_note": "Shared middle source/drain maps to Q1.B and Q2.A under unchanged left/right A/B convention."
+    },
+    {
+      "id": "human_v2_body_connected",
+      "claim_id": "body_connected",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "human_review_diffusion_body"
+      ],
+      "source_statement": "1.中间扩散共享原漏共用，外侧扩散在M1无法确认，体端共用。继续推进",
+      "supersedes_event_ids": [],
+      "normalization_note": "Shared body only; no named supply or extra terminal union."
+    },
+    {
+      "id": "human_v2_outer_connected",
+      "claim_id": "outer_connected",
+      "verdict": "no_evidence",
+      "actor": "human",
+      "source_refs": [
+        "human_review_diffusion_body"
+      ],
+      "source_statement": "1.中间扩散共享原漏共用，外侧扩散在M1无法确认，体端共用。继续推进",
+      "supersedes_event_ids": [],
+      "normalization_note": "M1 cannot confirm outer diffusion equivalence; retain unknown, not electrical separation."
+    },
+    {
+      "id": "user_Q1_G_CT_M1_confirm",
+      "claim_id": "Q1_G_to_M1_segment",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "gate_ct_m1_review"
+      ],
+      "source_statement": "CT归属与M1选段确认无误",
+      "supersedes_event_ids": [],
+      "normalization_note": "User confirms CT-on-gate and displayed local M1 segment. No exact pixel contact landing, new net unions or segment continuation inferred."
+    },
+    {
+      "id": "user_Q1_G_M1_V1_M2_confirm",
+      "claim_id": "Q1_G_to_M2_segment",
+      "verdict": "confirm",
+      "actor": "human",
+      "source_refs": [
+        "M1_V1_M2_review"
+      ],
+      "source_statement": "核对无误，这处M1的确是连接到下图黄色短竖向段的上端",
+      "normalization_note": "Local upper endpoint and M1/V1/M2 correspondence only. Do not infer other branch/device connections, V2, pixel truth or new terminal unions."
+    }
+  ],
+  "review_inventory": {
+    "source_refs": [
+      "human_review",
+      "human_review_diffusion_body",
+      "gate_ct_m1_review",
+      "M1_V1_M2_review"
+    ],
+    "event_ids": [
+      "human_exists1",
+      "human_exists2",
+      "human_gates_connected",
+      "human_poly_direct_join",
+      "human_v2_middle_shared",
+      "human_v2_middle_connected",
+      "human_v2_body_connected",
+      "human_v2_outer_connected",
+      "user_Q1_G_CT_M1_confirm",
+      "user_Q1_G_M1_V1_M2_confirm"
+    ],
+    "registration_policy": "Only explicitly registered ROI2 user decisions; no V3 decisions imported. Omitted questions retain prior status."
+  },
+  "export_request": {
+    "mode": "current",
+    "rendering": "from_resolved_state_only",
+    "unknown_electrical_relations": "preserve",
+    "network_labels_are": "presentation_only_not_entity_identity"
+  },
+  "limitations": [
+    "Two adjacent MOS fingers, gates common through M1, shared middle diffusion and shared body confirmed. Outer diffusion equivalence remains unknown from M1.",
+    "Selected fingers may belong to one multifinger device; two symbols do not establish total array device count.",
+    "Native per-layer context crops are not pixel registered. M1 gate connection is user-confirmed; no exact M1 feature/terminal path mapping claimed.",
+    "Inspection windows are not segmentation boundaries or measured W/L; all units px.",
+    "Body equivalence is confirmed, but its position and ties to named supplies/other terminal groups remain unknown; polarity and source/drain orientation unknown.",
+    "Same-chip visually selected ROI outside prior primary sample is not blind or cross-chip generalization.",
+    "AA/poly material identity and coarse location human-confirmed in bound material review; core/envelope geometry remains candidate, not pixel truth. Generic schema carries only inspection windows; material decisions are retained in bound observations, not falsely encoded as electrical claims.",
+    "R2_Q1.G maps to reviewed local M1 segment through gate-end CT; exact boundary, contact pixels and continuation remain unknown. Q2 physical CT mapping not inferred from shared gate net.",
+    "R2_Q1.G maps through reviewed M1/V1 to local M2 segment. M2 extended branches, V2/M3 and other-device ties remain unreviewed."
+  ]
+}

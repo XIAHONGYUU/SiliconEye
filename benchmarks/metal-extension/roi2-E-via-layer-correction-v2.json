@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "确认E的下端没有连接到M1应该是连接到M3了，在此处没有在M1上看到打孔，但是在M2上看到打孔了",
+  "sources": {
+    "prior_review": {
+      "path": "benchmarks/metal-extension/roi2-C-D-E-review-feedback-v1.json",
+      "sha256": "701d91b33ec0077851fb3089db77772c05565f500756d6acee6052719bba89be"
+    },
+    "original_evidence": {
+      "path": "runs/roi2-E-original-evidence-v1/manifest.json",
+      "sha256": "00185dc888883892f54872d444d74770327663644256742942c8bcb90c87eaa6"
+    },
+    "previous_case": {
+      "path": "benchmarks/block-case-v1-roi2-C-continuity-E-V1-reviewed-v10.json",
+      "sha256": "5637f0a1b18e136b858903024dc9debb27c17f0e23e9a2986629e2b9942e73ed"
+    }
+  },
+  "supersedes_decisions": [
+    {
+      "source_ref": "prior_review",
+      "key": "E_lower_V1_identity",
+      "previous": "confirmed",
+      "current": "withdrawn_by_user_correction"
+    }
+  ],
+  "decisions": {
+    "E_direct_M1_connection": "human_rejected_in_reviewed_location",
+    "hole_visible_on_M2_at_E": "human_confirmed_observation",
+    "corresponding_hole_visible_on_M1": "human_reports_not_seen",
+    "E_to_M3": "candidate_user_says_should_connect",
+    "E_via_kind": "V2_candidate_not_confirmed",
+    "specific_M3_conductor": "unknown",
+    "C_continuity": "retained_confirmed",
+    "D_other_M3_rejection": "retained"
+  },
+  "normalization": "Preserves difference between confirmed observation/no-M1 connection and tentative M3 interpretation. Hole visibility on a delayered metal photo alone does not uniquely identify via stack or destination. No global different_net inferred."
+}

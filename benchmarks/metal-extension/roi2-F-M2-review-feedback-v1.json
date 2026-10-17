@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "F 通过过孔接到右下图紫圈所示的 M2 短端",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-E-M3-reviewed-v12/E-M3-lit-F-review.png",
+      "sha256": "1256d5862f2cc9fe8f72f16705c2c6dce6aca940f8a62b10bf3b95e240bbd6f3"
+    },
+    "extent_candidate": {
+      "path": "benchmarks/metal-extension/roi2-E-M3-extent-candidate-v1.json",
+      "sha256": "a676a65fabe5d57059480414e48347831682db7237dea865e4c0edf16bdd01d7"
+    }
+  },
+  "connection": {
+    "lower_conductor": "R2_M2_F_segment_01",
+    "via_id": "R2_F_V2_01",
+    "upper_conductor": "R2_M3_E_segment_01",
+    "status": "confirmed"
+  },
+  "normalization": "F is connected through a via to displayed M2 short tab; M2/M3 bridge normalized as V2. Confirms identity, not exact pixel location or entire downstream path.",
+  "G_destination": "unknown",
+  "registration_accuracy_acceptance": "not_global"
+}

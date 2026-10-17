@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "不对，这不是gate的连线\n我要看gate通过CT连接到的M1,你理解的没有问题，但是你选错了，先确认候选gate上的CT在那个位置，再通过CT找到M1并高亮",
+  "decision": "reject_upper_bar_as_R2_Q1_G_connection",
+  "scope": "Reject prior upper M1 bar selection; require gate-to-CT-to-M1 evidence chain",
+  "sources": {
+    "rejected_candidate": {
+      "path": "benchmarks/terminal-highlights/roi2-q1-gate-m1-candidate-v1.json",
+      "sha256": "c593461f915952349c0d9d54a2c546fc2dae519c9155a7863aef90a5364bc923"
+    },
+    "rejected_demo": {
+      "path": "runs/roi2-q1-gate-highlight-demo-v1/terminal-highlight-001-demo.png",
+      "sha256": "50d64be985cb53616698ac60843ae40abb447a09050ff511ddcec1696eb62fe8"
+    }
+  }
+}

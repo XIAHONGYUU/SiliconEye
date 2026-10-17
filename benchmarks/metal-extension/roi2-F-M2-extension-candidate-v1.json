@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "record_type": "F_M2_extension_observation",
+  "sources": {
+    "review": {
+      "path": "benchmarks/metal-extension/roi2-F-M2-review-feedback-v1.json",
+      "sha256": "8e507b1d631eaae15a3aa40052cf10b8535e9958c1c4f85f79b16aa1467b6b77"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-F-M2-reviewed-v13.json",
+      "sha256": "facabc3645f378a9c98acfd097485b84b3b0d2f472da4d0f9e08b5c215a33906"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "native_frame": "m2_native",
+  "visible_centerline_candidate": [
+    [
+      2478,
+      3839
+    ],
+    [
+      2459,
+      3841
+    ],
+    [
+      2458,
+      3957
+    ],
+    [
+      2438,
+      3959
+    ]
+  ],
+  "confirmed_seed": "F to shown M2 upper short tab",
+  "geometry_status": "candidate",
+  "G_native_approx_xy": [
+    2438,
+    3959
+  ],
+  "G_via_identity": "unknown",
+  "G_destination": "unknown",
+  "coverage_status": "incomplete",
+  "adjacent_M2_separate_geometry": "Do not merge neighboring parallel stem or bottom metal array by proximity.",
+  "geometry_refinement": "Vertical bright ridge measured near x2457..2462; centerline adjusted to x2459 to avoid screen grid stripe."
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "我认为C和D都没有问题，所以现在很合理了，我们的最开始的gate并不是落在你指出的那条线上，现在落得那条线你应该看的比较明确了",
+  "scope": "displayed six-line local alignment C/D and rejection of previous gate landing line",
+  "decisions": {
+    "C_down10px": "accepted_local_display",
+    "D_down15px": "accepted_local_display",
+    "old_gate_landing_line": "rejected",
+    "exact_new_conductor_ID_and_pixel_boundary": "not_explicitly_named_by_human"
+  },
+  "sources": {
+    "comparison": {
+      "path": "runs/roi2-A-six-lines-downshift-v3/downshift-comparison.png",
+      "sha256": "7ed44297068285e90f25b8ff10057587d7ea90375ee476049a834d0384401b23"
+    },
+    "profiles": {
+      "path": "benchmarks/metal-extension/roi2-A-downshift-candidates-v3.json",
+      "sha256": "67a09207ab8290aeac1a6cb767d056309169cd8dc2bda96bac87f07a6b3f247f"
+    }
+  },
+  "limits": [
+    "accepts displayed local alignment; not whole-photo registration",
+    "does not approve U1 U2 U3 same gate net",
+    "does not revalidate old gate to A to capacitor net claim"
+  ]
+}

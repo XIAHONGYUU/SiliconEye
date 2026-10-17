@@ -51,3 +51,17 @@
 输入清单可用于复放：只复制manifest.inputs中明确列出的文件到一个新根，再使用同一请求与新 `--root` 运行。保持请求和代码相同，bundle_id及产物哈希可一致；这证明软件重放，不证明照片物理事实或跨芯片泛化。
 
 验证包含已知平移的真实像素位置、来源/批准绑定、候选保留、材料包络约束、未知端子不合并、冲突诊断、生成失败不留半包和仅声明来源的隔离重放。
+
+## AI观察适配入口
+
+新增可选`observation_adaptations`来源列表，验证绑定输入后展示候选/未知卡，不覆盖既有人审。完整用法和历史样稿边界见[观察适配](observation-adapter-v1.md)。旧请求无该字段时继续按原行为导出。
+
+## 器件跨层编号输出
+
+可选`device_view`配置原生照片窗口与已核验宏观投影来源，生成`device-index.html/json/csv`。复用case稳定ID，缺少定位保留unknown，不改变电路状态。见[使用方法与边界](device-index-v1.md)。
+
+## 端子局部金属高亮候选
+
+可选`terminal_highlights`接收显式原生候选锚点与金属段，独立于case确认连接，输出静态对照、叠图和开关页。见[demo与边界](terminal-highlight-demo-v1.md)。
+
+高亮v1选段已被用户否决，当前案例请使用[gate→CT→M1证据链v2](gate-ct-metal-review-v2.md)，先复核候选接触再判断金属。

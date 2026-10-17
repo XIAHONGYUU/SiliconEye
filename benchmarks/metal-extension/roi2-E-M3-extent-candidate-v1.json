@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "record_type": "E_M3_extent_and_fanout_observation",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-E-M3-endpoint-review-feedback-v1.json",
+      "sha256": "effe0c9ed055524a188477a2f7c1dfc247debd5baf1926a05fdf137b8f3705c6"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-E-M3-endpoint-reviewed-v12.json",
+      "sha256": "9c738609a83e994e4c8d0081abec495b4fa8b854b4930e257aafda6e705f33a2"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "registration_candidate": {
+      "path": "benchmarks/metal-extension/roi2-E-cursor-registration-candidate-v1.json",
+      "sha256": "6f7ee3d5ff1b38e45dd9e87ea8555491acb5d0570c273c783c14090b359595aa"
+    }
+  },
+  "confirmed_seed": "E connects right endpoint of R2_M3_E_segment_01",
+  "native_M3_visible_centerline_candidate": [
+    [
+      2485,
+      3871
+    ],
+    [
+      2700,
+      3865
+    ],
+    [
+      3000,
+      3853
+    ],
+    [
+      3200,
+      3845
+    ],
+    [
+      3320,
+      3840
+    ]
+  ],
+  "native_geometry_status": "AI_candidate_not_exact_boundary",
+  "coarse_projection_note": "Prior E projected point y3830 is approximate; raw bright centerline at right end near3840. Human approved conductor identity, not pixel accuracy. Do not use 10px difference as measured registration error.",
+  "left_endpoint_F": {
+    "M3_native_approx_xy": [
+      2485,
+      3871
+    ],
+    "inverse_cursor_projection_M2_xy": [
+      2446.1473,
+      3839.4976
+    ],
+    "nearby_M2_tab_candidate_xy": [
+      2470,
+      3838
+    ],
+    "status": "candidate_not_confirmed",
+    "note": "About800px horizontally outside cursor fit region; nearby tip is not an accepted via landing, x offset approx24px; independent review required."
+  },
+  "interior_connections": "unknown_no_unambiguous_additional_via_identified",
+  "coverage_status": "incomplete",
+  "M4": "unknown",
+  "electrical_state_changed": "Q1.G gains reviewed E M3 local conductor only; no terminal unions"
+}

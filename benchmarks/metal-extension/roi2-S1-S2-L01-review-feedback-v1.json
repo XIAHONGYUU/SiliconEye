@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "record_type": "human_M3_destination_review",
+  "user_statement": "两个孔都接在 **L01 右端向上的短竖段**",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "prior_via_review": {
+      "path": "benchmarks/metal-extension/roi2-S1-S2-V2-review-feedback-v1.json",
+      "sha256": "9196e7e3140a4ef804a89e156153492845fcb1dee33144ec3d960517e5a8bddb"
+    },
+    "inventory": {
+      "path": "benchmarks/metal-extension/roi2-M3-local-numbered-inventory-v23.json",
+      "sha256": "cc988abfaee9e37098f289798fd03d86a6c3f26efb8b503b7ec2b3f668e8e371"
+    }
+  },
+  "reviewed_artifact": "runs/roi2-M2-M3-registration-v23/S1-S2-L01-candidate-wide.png",
+  "metal_id": "R2_corrected_gate_L01_M3_01",
+  "display_label": "L01",
+  "attachment_selector": "右端向上的短竖段",
+  "decisions": [
+    {
+      "via_id": "R2_corrected_gate_S1_V2",
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "to_metal": "R2_corrected_gate_L01_M3_01",
+      "status": "human_confirmed_connection_and_destination_identity"
+    },
+    {
+      "via_id": "R2_corrected_gate_S2_V2",
+      "from_metal": "R2_corrected_gate_long_M2_candidate_01",
+      "to_metal": "R2_corrected_gate_L01_M3_01",
+      "status": "human_confirmed_connection_and_destination_identity"
+    }
+  ],
+  "scope_exclusions": [
+    "exact_via_pixels_or_masks",
+    "exact_L01_boundary",
+    "M2_M3_registration_acceptance",
+    "other_L01_attachments",
+    "T_destination_identity",
+    "old_gate_to_A_capacitor_assignment"
+  ]
+}

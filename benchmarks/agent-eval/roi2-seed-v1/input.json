@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "document_kind": "local_photo_task",
+  "task_id": "ROI2_finger_pair-local-review-v1",
+  "case_id": "ROI2_finger_pair",
+  "same_chip_same_location": "human_reviewed_local_identity",
+  "sources": {
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    }
+  },
+  "frames": [
+    {
+      "id": "aa_native",
+      "source_ref": "aa_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "poly_native",
+      "source_ref": "poly_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    },
+    {
+      "id": "m1_native",
+      "source_ref": "m1_photo",
+      "unit": "px",
+      "coordinates": "xy_half_open",
+      "size_wh": [
+        5712,
+        4284
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "aa_native_window",
+      "frame_id": "aa_native",
+      "xywh": [
+        1770,
+        2800,
+        270,
+        240
+      ],
+      "role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "poly_native_window",
+      "frame_id": "poly_native",
+      "xywh": [
+        1700,
+        2670,
+        270,
+        240
+      ],
+      "role": "inspection_window_not_material_boundary"
+    },
+    {
+      "id": "m1_native_window",
+      "frame_id": "m1_native",
+      "xywh": [
+        1590,
+        2730,
+        800,
+        500
+      ],
+      "role": "inspection_window_not_material_boundary"
+    }
+  ],
+  "subject_ids": [
+    "R2_Q1",
+    "R2_Q1.G",
+    "R2_Q1.A",
+    "R2_Q1.B",
+    "R2_Q1.Bulk",
+    "R2_Q2",
+    "R2_Q2.G",
+    "R2_Q2.A",
+    "R2_Q2.B",
+    "R2_Q2.Bulk",
+    "R2_middle",
+    "R2_poly_G1",
+    "R2_poly_G2",
+    "R2_AA_support_fragment",
+    "R2_poly_Q1_support",
+    "R2_poly_Q2_support"
+  ],
+  "scopes": [
+    {
+      "id": "electrical",
+      "domain": "electrical_case",
+      "extent": "selected_two_finger_candidates_only_not_entire_array"
+    },
+    {
+      "id": "poly_local",
+      "domain": "physical_layer_region",
+      "extent": "no_direct_poly_join_between_selected_gate_fingers_in_reviewed_context_only",
+      "frame_id": "poly_native",
+      "xywh": [
+        1650,
+        2630,
+        800,
+        500
+      ]
+    },
+    {
+      "id": "material_identity",
+      "domain": "physical_identity",
+      "extent": "coarse material identity only; no pixel geometry or device count discovery"
+    }
+  ],
+  "instructions": "Review the named local objects/relations across the provided native photo windows. Do not read reference.json or historical answers during a future test. IDs identify existing review slots, not an independent device-discovery benchmark. Emit candidate/unknown with evidence. Preserve unknown boundaries, polarity, S/D and W/L; do not infer electrical disconnection from local poly separation."
+}

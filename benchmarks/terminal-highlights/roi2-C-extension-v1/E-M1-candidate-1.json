@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "document_kind": "terminal_highlight_candidate",
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "frame_id": "m1_native",
+  "native_source": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "window_xywh": [
+    0,
+    0,
+    5712,
+    4284
+  ],
+  "segment_id": "E-M1-candidate-1",
+  "polygon_native_xy": [
+    [
+      3344.0000964471287,
+      3599.972222891994
+    ],
+    [
+      3343.0000964471287,
+      3743.972222891994
+    ],
+    [
+      3350.9999035528713,
+      3744.027777108006
+    ],
+    [
+      3351.9999035528713,
+      3600.027777108006
+    ]
+  ],
+  "anchor_native_xy": [
+    3347.5,
+    3672.0
+  ],
+  "status": "candidate",
+  "producer": "reasoning_model",
+  "rationale": "C侧延伸的显式可见段；几何与新跨层归属未获人工确认，不能用于确认并网。",
+  "evidence": [
+    {
+      "path": "benchmarks/metal-extension/roi2-M3-A-C-review-feedback-v1.json",
+      "sha256": "35b29235a1d736980f59b312338d029469e12aed852089d55da0a2b49f4f2dfd"
+    },
+    {
+      "path": "benchmarks/block-case-v1-roi2-M3-A-C-reviewed-v9.json",
+      "sha256": "fad4afb41418a4b7531057bf6052005a9a752a94d0ccd2df35d9cbfb31a621b6"
+    }
+  ],
+  "continuation": "unknown_stop_at_declared_segment",
+  "contact_landing": "unknown"
+}

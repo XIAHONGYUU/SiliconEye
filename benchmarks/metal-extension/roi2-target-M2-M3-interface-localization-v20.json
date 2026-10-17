@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "record_type": "M2_M3_interface_localization_review",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "human_interface_review": {
+      "path": "benchmarks/metal-extension/roi2-gate-T-B-interior-interface-review-v1.json",
+      "sha256": "4b767216dd4465f213c715806b5f93b9f5962a4239f230637746fa2cd849d3f4"
+    },
+    "target_trace": {
+      "path": "benchmarks/metal-extension/roi2-corrected-gate-M2-trace-candidate-v15.json",
+      "sha256": "42addf30dfc1f969f002ad968d21be829c4268f459d0066adc41a0146897e981"
+    }
+  },
+  "target_metal": "R2_corrected_gate_long_M2_candidate_01",
+  "frame_id": "m2_native",
+  "unit": "px",
+  "human_confirmed_interfaces": [
+    {
+      "id": "R2_corrected_gate_T_V2",
+      "reference_xy": [
+        2285,
+        2183
+      ],
+      "exists": true,
+      "destination_M3": null
+    },
+    {
+      "id": "R2_corrected_gate_interior_V2_unlocalized",
+      "reference_xy": null,
+      "exists": true,
+      "destination_M3": null
+    }
+  ],
+  "neighboring_features_not_assigned": [
+    {
+      "label": "N",
+      "xy": [
+        2341,
+        3307
+      ],
+      "reason": "Short tab attaches to neighboring right-hand parallel M2 near x2321; selected target is near x2301 at this height. Do not assign by proximity."
+    },
+    {
+      "xy": [
+        2350,
+        2604
+      ],
+      "reason": "Neighboring M2 endpoint; separate from selected long M2 near x2315."
+    }
+  ],
+  "registration": {
+    "accepted_matrix_M2_to_M3": null,
+    "SIFT_probe_status": "rejected",
+    "SIFT_probe_reason": "29 ratio-test matches, only 5 RANSAC inliers; estimated linear scale approximately zero, geometrically degenerate. No projection or metal choice made from it.",
+    "far_field_frame_correspondence": "Top and bottom fence structures differ in local distortion; not used to choose among tightly spaced M3 rows."
+  },
+  "status": "needs_human_localization_of_interior_V2_before_connectivity_assignment",
+  "request": "在整段目标M2原图中指出此前确认的中间V2所在位置；若为N附近，请同时指出它与哪一条平行M2相连。",
+  "outputs": [
+    "M2-target-full-span-review.png",
+    "T-M2-M3-native-context.png"
+  ],
+  "new_M3_connections_added": false,
+  "old_gate_A_capacitor_union_restored": false
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "record_type": "existing_photos_only_P2_stack_survey",
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "K_review": {
+      "path": "benchmarks/metal-extension/roi2-K-middle-M2-review-feedback-v1.json",
+      "sha256": "7424259e118485721d4d972d55b72b6a0b2853dd07e333ac555eeec2bc60cf1a"
+    },
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v5.json",
+      "sha256": "9da4be51c643f011621f798235c47c9260171cbbcc72d7b72edf371f18ca119e"
+    },
+    "prior_trace": {
+      "path": "benchmarks/metal-extension/roi2-P2-K-M2-visible-extension-v7.json",
+      "sha256": "a9307d576bd3466e7da86e394d61d8e3ae63ebb265ed5c47963098fab4f30e3c"
+    }
+  },
+  "user_constraint": "没有出口之外的照片了，只有现有的这些照片，继续推进这条线直到必须由我介入判断",
+  "scope": "Selected middle K M2 and visible neighboring M1/M3/M4 evidence only; photo exits are unknown boundaries, not primary blockers for in-image work.",
+  "observations": [
+    {
+      "layer": "m2",
+      "status": "AI_observation",
+      "result": "No clear same-layer horizontal branch identified on selected visible middle strip; lower image truncation retained, not a real endpoint."
+    },
+    {
+      "layer": "m1",
+      "status": "candidate_M1_interface_L1",
+      "result": "Capacitor-edge vertical metal/contact-array structures present near selected M2 search context. Cannot distinguish V1-mediated connection from underlying visible structure without physical interpretation."
+    },
+    {
+      "layer": "m3",
+      "status": "retains_human_K_mapping",
+      "result": "K middle-M2-to-P2 M3 confirmation preserved; no additional independent via assignment found."
+    },
+    {
+      "layer": "m4",
+      "status": "survey_only",
+      "result": "Large vertical metal observed in wider vicinity, but no reliable V3 landing onto the selected P2 conductor; none added."
+    }
+  ],
+  "decision_gate": {
+    "id": "L1_M2_M1_interface",
+    "question": "Does selected middle pure-vertical M2 additionally connect through V1 to M1 capacitor-edge metal, or is its only evidenced local bridge the already confirmed M3 attachment?",
+    "M2_search_native_xywh": [
+      665,
+      4025,
+      35,
+      259
+    ],
+    "M1_search_native_xywh": [
+      685,
+      4010,
+      60,
+      274
+    ],
+    "position_status": "AI_search_windows_not_registered_via_landing",
+    "requires": "One interface-level human decision, not per-contact counting.",
+    "status": "requires_human_adjudication"
+  },
+  "registration_trials": {
+    "source": {
+      "path": "runs/roi2-P2-existing-stack-survey-v8/M2-M1-array-registration-trials.json",
+      "sha256": "2409de1fdb39002ee5808890900b3086c5ee177bf6cb2b477c2e5b70cf89fd66"
+    },
+    "trial_count": 5,
+    "failure_count": 4,
+    "accepted": false,
+    "reason": "Four starts did not converge; one low-correlation solution (~0.49) gives another phase. Repeated array cannot supply a stable independent landing transform."
+  },
+  "outside_image_policy": "unknown; no demand for additional photos contrary to user constraint",
+  "P1_P2_union": false,
+  "new_confirmed_connections": [],
+  "full_network_complete": false
+}

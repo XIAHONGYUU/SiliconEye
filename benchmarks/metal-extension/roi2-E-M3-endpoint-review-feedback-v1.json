@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "是的，就是指的这一根M3的右端",
+  "scope": "E attaches to the right endpoint of the lower left-only M3 in preceding cursor-aligned review",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-E-cursor-registration-v1/E-cursor-aligned-review.png",
+      "sha256": "9df8a7d3e029abb956a59f5eb2bd29ffc4190be1bdb8a4880e16da7ec412e032"
+    },
+    "registration_candidate": {
+      "path": "benchmarks/metal-extension/roi2-E-cursor-registration-candidate-v1.json",
+      "sha256": "6f7ee3d5ff1b38e45dd9e87ea8555491acb5d0570c273c783c14090b359595aa"
+    },
+    "E_layer_correction": {
+      "path": "benchmarks/metal-extension/roi2-E-via-layer-correction-v2.json",
+      "sha256": "bcdc75c9eae5db84fb356954730f7605c4126b633f316fa4f9e75cd0565e5867"
+    }
+  },
+  "connection": {
+    "lower_conductor": "R2_M2_C_lower_segment_01",
+    "via_feature_id": "R2_C_E_via_01",
+    "upper_conductor": "R2_M3_E_segment_01",
+    "status": "confirmed",
+    "via_layer_normalization": "M2-to-M3 bridge (V2), from confirmed destination, not hole brightness alone"
+  },
+  "limitations": [
+    "Confirms physical conductor correspondence at E, not exact via pixel boundary or global registration precision.",
+    "Does not approve left endpoint F or any additional branch or device-terminal connection."
+  ]
+}

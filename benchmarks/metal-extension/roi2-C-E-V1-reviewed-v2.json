@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_C_side_trace",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-C-D-E-review-feedback-v1.json",
+      "sha256": "701d91b33ec0077851fb3089db77772c05565f500756d6acee6052719bba89be"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-C-continuity-E-V1-reviewed-v10.json",
+      "sha256": "5637f0a1b18e136b858903024dc9debb27c17f0e23e9a2986629e2b9942e73ed"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "C_continuity": "confirmed",
+  "D_other_M3_candidate": "rejected_do_not_light",
+  "E_M1_vertical_candidate": "rejected_do_not_light",
+  "E_V1_identity": "human_confirmed",
+  "E_M1_landing": "unknown",
+  "M1_search_window_xywh": [
+    3180,
+    3690,
+    280,
+    160
+  ],
+  "M1_search_window_status": "AI_search_context_not_registration_or_landing",
+  "all_metals_complete": false,
+  "next_required_evidence": "Identify E V1 landing on native M1; do not propagate to M1 horizontal bars before that."
+}

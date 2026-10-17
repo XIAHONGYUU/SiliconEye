@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "document_kind": "review_package_usability_feedback",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "review_date": "2026-10-16",
+  "statement": "1.索引与材料卡容易对应\n2.区分清楚\n3.方便核对",
+  "scope": "ROI2 observation-adapter sample usability only",
+  "bundle_id": "b8d56080844c8653367c8ebe9e389a1dae5d27c1e45ade870afe5144cc0a3ce0",
+  "decisions": {
+    "index_material_card_correspondence": "accepted",
+    "candidate_reviewed_unknown_distinction": "accepted",
+    "circuit_connection_photo_cross_check": "accepted"
+  },
+  "normalization": "用户确认对应关系容易查找、状态表达清楚、核对方便；本记录仅验收复核包使用体验，不新增或替代物理裁决。",
+  "physical_decisions_changed": false,
+  "agent_accuracy_measured": false,
+  "sources": {
+    "sample_html": {
+      "path": "runs/roi2-observation-adapter-v3/review/index.html",
+      "sha256": "e562ca9eccdfe2ef4d919276b93f2004769e7fbd3afc826f4394fb412c393bf0"
+    },
+    "bundle_state": {
+      "path": "runs/roi2-observation-adapter-v3/review/bundle-state.json",
+      "sha256": "8380e04ca57761305a90d8d658fe121ea031579ed525a3e2bee2f0778fde3d28"
+    },
+    "adaptation": {
+      "path": "runs/roi2-observation-adapter-v3/adaptation.json",
+      "sha256": "0739521102b94e76056e1a43a9cff370078c41cfc2287e7cd2d0bde8333b53f1"
+    },
+    "manifest": {
+      "path": "runs/roi2-observation-adapter-v3/review/manifest.json",
+      "sha256": "b23573a1c825b96feb011d698bd279be238d9fbee421ea23dbbc1cbb1ac95720"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "蓝色H候选无误，确认执行",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-MIM-P2-marked-v3/P2-H-wide-marked-review.png",
+      "sha256": "350db741e6698cb06a82fea162873e516decddcaee0e1ab323c7b4425dfdeb10"
+    },
+    "H_candidate": {
+      "path": "benchmarks/metal-extension/roi2-MIM-P2-pixel-candidate-v1.json",
+      "sha256": "64f48c2c2529e3f750839ab80fd28b4ce1d4d5be96d94c4214d4511b6ac66cf3"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v2.json",
+      "sha256": "4e5b7ce9f233260a6e40e7ad06fd81a180aef011d4750d29510b398e7876b7f0"
+    }
+  },
+  "decisions": {
+    "H_is_MIM_P2_metal": "confirmed",
+    "H_displayed_native_location": "confirmed_coarse_centerline_reference",
+    "M2_yellow_row_via_landing": "not_approved_by_H_confirmation",
+    "external_net_destination": "unknown",
+    "all_continuations_and_branches": "not_yet_confirmed",
+    "precise_material_boundary": "unknown"
+  },
+  "normalization": "Confirms the displayed blue H identity/location as P2 and authorizes further local tracing. Does not approve every M2 yellow observation, an exact segmentation, a global registration transform or P1/P2 equivalence."
+}

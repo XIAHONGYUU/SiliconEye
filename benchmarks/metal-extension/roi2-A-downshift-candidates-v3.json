@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "record_type": "local_downshift_candidate_comparison",
+  "user_statement": "我认为M2的投影还可以更靠下一些，你可以看上面的M1上的V1,这些V1上面应该有M2才对。",
+  "base_registration": {
+    "path": "runs/roi2-A-six-lines-registration-v2/manifest.json",
+    "sha256": "1a073eed096adb03fa5a16466492bb89129fbf2fa88da21704bb627f42a0d595"
+  },
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "crop_M1_native": [
+    1550,
+    2750,
+    2600,
+    3220
+  ],
+  "criteria": [
+    "visible M1 V1 must be covered by projected M2 metal",
+    "six vertical-line ordering and lateral alignment retained",
+    "do not maximize overlap of unrelated M1 M2 conductors"
+  ],
+  "candidates": [
+    {
+      "label": "A",
+      "down_px": 0,
+      "matrix_M2_to_M1": [
+        [
+          1.0137916626710615,
+          0.006387248791014599,
+          -11.411054563813888
+        ],
+        [
+          -0.006387248791014599,
+          1.0137916626710615,
+          -69.17091455815066
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "upper_tip_residuals_px": [
+        0.17658955301194504,
+        1.5109125928317473,
+        0.3491994006885312,
+        4.569072122823816,
+        0.17261049918089438,
+        0.4637517274646244
+      ],
+      "status": "display_candidate_not_accepted"
+    },
+    {
+      "label": "B",
+      "down_px": 5,
+      "matrix_M2_to_M1": [
+        [
+          1.0137916626710615,
+          0.006387248791014599,
+          -11.411054563813888
+        ],
+        [
+          -0.006387248791014599,
+          1.0137916626710615,
+          -64.17091455815066
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "upper_tip_residuals_px": [
+        4.823758460359356,
+        5.299112673512612,
+        5.348616635207649,
+        7.187973723564677,
+        4.827688150913519,
+        5.148727967059623
+      ],
+      "status": "display_candidate_not_accepted"
+    },
+    {
+      "label": "C",
+      "down_px": 10,
+      "matrix_M2_to_M1": [
+        [
+          1.0137916626710615,
+          0.006387248791014599,
+          -11.411054563813888
+        ],
+        [
+          -0.006387248791014599,
+          1.0137916626710615,
+          -59.170914558150656
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "upper_tip_residuals_px": [
+        9.82375221071582,
+        10.192072085203597,
+        10.348596987002573,
+        11.509018743478817,
+        9.827682910051285,
+        10.139217607529558
+      ],
+      "status": "display_candidate_not_accepted"
+    },
+    {
+      "label": "D",
+      "down_px": 15,
+      "matrix_M2_to_M1": [
+        [
+          1.0137916626710615,
+          0.006387248791014599,
+          -11.411054563813888
+        ],
+        [
+          -0.006387248791014599,
+          1.0137916626710615,
+          -54.170914558150656
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "upper_tip_residuals_px": [
+        14.82375017703683,
+        15.155067523880943,
+        15.348590140087053,
+        16.224920912745223,
+        14.82768120369997,
+        15.135985851833137
+      ],
+      "status": "display_candidate_not_accepted"
+    }
+  ],
+  "selection": "not_selected",
+  "physical_connections_changed": false,
+  "limits": [
+    "V1 locations and footprints need identification; tip residual is not via coverage",
+    "vertical shift is diagnostic; does not model camera deformation",
+    "no variant human accepted yet"
+  ]
+}

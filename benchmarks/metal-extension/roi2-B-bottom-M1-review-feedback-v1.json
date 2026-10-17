@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "record_type": "human_conductor_identity_review",
+  "user_statement": "B落在这条最下方的长横线上",
+  "reviewed_artifacts": [
+    "runs/roi2-gate-M1-access-v18/M1-accesses-highlight-review.png",
+    "runs/roi2-gate-M1-access-v18/B-V1-M2-coverage-review.png"
+  ],
+  "sources": {
+    "prior_candidate": {
+      "path": "benchmarks/metal-extension/roi2-corrected-gate-M1-access-candidates-v18.json",
+      "sha256": "b69190859b6a7c017996b45342125fda9b58d19db73bb103a94cc1c07586299e"
+    }
+  },
+  "decision": {
+    "interface": "R2_corrected_gate_B_V1",
+    "destination_metal": "R2_corrected_gate_B_M1_01",
+    "display_alias": "M1-B",
+    "destination_layer": "m1",
+    "identity": "lowest_long_horizontal_M1_rail",
+    "status": "human_confirmed"
+  },
+  "scope_exclusions": [
+    "precise_pixel_boundary",
+    "right_turn_continuation",
+    "all_other_V1s_absent",
+    "old_A_or_capacitor_gate_membership"
+  ]
+}

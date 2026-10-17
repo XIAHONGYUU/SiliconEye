@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "record_type": "P1_remaining_interfaces_after_MOM_review",
+  "sources": {
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v13.json",
+      "sha256": "76d52381e4dad3af1100e451db06119e6792f00f5f56e4e49b545517cfa04f56"
+    },
+    "MOM_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-P1-no-extra-exits-review-v1.json",
+      "sha256": "3a245f17b6fc1fe0136541654b1008198d4f08452c85d46da6a42990d86912c1"
+    },
+    "A_geometry": {
+      "path": "benchmarks/metal-extension/roi2-M2-extension-V2-candidate-v1.json",
+      "sha256": "d0081cd0553af941b67d8ac9959927ff6e02dc11b37d573545faff9d39d60cea"
+    },
+    "known_U3_review": {
+      "path": "benchmarks/metal-extension/roi2-M1-V1-M2-review-feedback-v1.json",
+      "sha256": "67da72fb32863c4072b01ed73e85e55d520cfc0a74be9a7966be8a2748b4e7bf"
+    }
+  },
+  "closed_frontier": "reviewed MOM P1 external exits beyond H/J/K/L1 absent",
+  "remaining_identifiable_gate": {
+    "id": "A_upper_fork_U1_U2",
+    "status": "unknown_landing_identity",
+    "question": "Do U1 and U2 land on the same reviewed common-gate M1 as U3, or on additional conductors?",
+    "M2_native_xy": {
+      "U1": [
+        2058,
+        3040
+      ],
+      "U2": [
+        2166,
+        3030
+      ],
+      "U3": [
+        2278,
+        3028
+      ]
+    },
+    "image": "runs/roi2-P1-MOM-closed-v13/A-upper-fork-interface-review.png"
+  },
+  "full_visible_network_coverage_complete": false,
+  "photo_external_extent": "unknown",
+  "pixel_boundary_segmentation": "not_complete",
+  "MOM_exit_review_does_not_close_other_regions": true
+}

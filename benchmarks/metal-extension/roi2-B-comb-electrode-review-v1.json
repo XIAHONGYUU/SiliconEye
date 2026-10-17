@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_type": "human_B_comb_electrode_review",
+  "user_statement": "：绿色 M2、M3 梳齿通过过孔与绿色 M1 同属一个电极，而橙色母线属于另一极、保持隔离",
+  "sources": {
+    "candidate_record": {
+      "path": "benchmarks/metal-extension/roi2-gate-network-coverage-v30.json",
+      "sha256": "b385d378da6c4b2a15a0777e6f6bc308eba2757c22d98fa52ed83748eff0587f"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "reviewed_artifacts": [
+    "runs/roi2-gate-network-coverage-v30/B-comb-native-review.png",
+    "runs/roi2-gate-network-coverage-v30/B-comb-local-alignment.png"
+  ],
+  "same_electrode": {
+    "id": "R2_B_COMB_GREEN_ELECTRODE",
+    "members": {
+      "m1": "R2_corrected_gate_B_M1_01",
+      "m2": "R2_B_COMB_GREEN_M2_01",
+      "m3": "R2_B_COMB_GREEN_M3_01"
+    },
+    "status": "human_confirmed"
+  },
+  "connections": [
+    {
+      "from_metal": "R2_corrected_gate_B_M1_01",
+      "to_metal": "R2_B_COMB_GREEN_M2_01",
+      "via_kind": "V1",
+      "via_id": "R2_B_COMB_GREEN_V1_group",
+      "status": "human_confirmed_electrode_connection",
+      "exact_via_count": null
+    },
+    {
+      "from_metal": "R2_B_COMB_GREEN_M2_01",
+      "to_metal": "R2_B_COMB_GREEN_M3_01",
+      "via_kind": "V2",
+      "via_id": "R2_B_COMB_GREEN_V2_group",
+      "status": "human_confirmed_electrode_connection",
+      "exact_via_count": null
+    }
+  ],
+  "counter_electrode": {
+    "id": "R2_B_COMB_ORANGE_ELECTRODE",
+    "relation_to_green": "separate_electrode_do_not_union",
+    "status": "human_confirmed"
+  },
+  "scope_exclusions": [
+    "exact_via_centers_or_count",
+    "exact_masks",
+    "local_transform_accuracy",
+    "no_other_exits",
+    "identity_with_historical_ROI2_capacitor",
+    "upper_M1_CT_material_destinations"
+  ]
+}

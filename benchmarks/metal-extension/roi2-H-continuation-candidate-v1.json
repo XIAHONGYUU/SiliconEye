@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "record_type": "H_post_review_continuation_observation",
+  "sources": {
+    "H_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-H-review-feedback-v1.json",
+      "sha256": "e48e7ad47b2a4b15bc822c4341aa6e3d47700df749a444def93ebf89c8a8197b"
+    },
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v3.json",
+      "sha256": "518dd5ff2a85abc3b65938f87832ad9f570fab0d557618d85f132004bf85a9c7"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "reviewed_H": {
+    "port": "R2_MIM_01.P2",
+    "frame": "m3_native",
+    "centerline_reference_xy": [
+      [
+        1640,
+        4025
+      ],
+      [
+        1900,
+        4014
+      ],
+      [
+        2200,
+        4001
+      ],
+      [
+        2470,
+        3990
+      ]
+    ],
+    "identity_status": "human_confirmed",
+    "exact_boundary": "unknown"
+  },
+  "extensions": [
+    {
+      "id": "H_left_bus_extension",
+      "frame": "m3_native",
+      "candidate_centerline_xy": [
+        [
+          1640,
+          4025
+        ],
+        [
+          1644,
+          4140
+        ],
+        [
+          1649,
+          4283
+        ]
+      ],
+      "status": "AI_candidate_visible_continuation",
+      "stop": "bottom_source_boundary",
+      "reason": "Visible edge bus reaches last source row; no lower image available."
+    }
+  ],
+  "right_end_observation": {
+    "native_xy_approx": [
+      2470,
+      3990
+    ],
+    "status": "candidate_tip_before_adjacent_bus",
+    "electrical_connection_to_neighbor": "unknown_not_added"
+  },
+  "M2_yellow_row_status": "candidate_not_promoted_by_H_review",
+  "external_net": "unknown",
+  "coverage_status": "incomplete",
+  "P1_P2_union": false
+}

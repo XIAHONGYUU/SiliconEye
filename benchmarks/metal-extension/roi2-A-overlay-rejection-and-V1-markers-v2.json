@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "你这样没有对准就投影是不对的，可以在这张图中找到正确的标记位再投影，这三条黄色的M2应该是要你投影图上左侧的三条M1上，也可以看到M1上是由V1的。",
+  "sources": {
+    "rejected_overlay": {
+      "path": "runs/roi2-A-M1-M2-overlay-v1/A-fork-overlay-review.png",
+      "sha256": "38dc0b6d1eded21679e6de470e0de6977409293c9df954acc7e9367579d6ba90"
+    },
+    "rejected_transform": {
+      "path": "benchmarks/metal-extension/roi2-A-M1-M2-overlay-candidate-v1.json",
+      "sha256": "b49a1dae0f706899f713f695feca77b9d3bfbdf9a2e3b907cf61e15c3ae8c313"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "decisions": {
+    "prior_overlay_alignment": "rejected",
+    "prior_projected_LMR_coordinates": "withdrawn_as_landing_reference",
+    "M2_lower_fork_to_left_M1_via_V1": "human_identified_correspondence_pending_exact_source_marker_selection",
+    "V1_presence": "human_identified",
+    "exact_M1_triplet_native_points": "pending_disambiguation",
+    "new_transform": "not_fitted"
+  },
+  "M1_numbered_marker_candidates_native_xy": [
+    [
+      1761.294294770206,
+      3396.0
+    ],
+    [
+      1880.796928327645,
+      3389.579778156997
+    ],
+    [
+      1991.8009748172217,
+      3384.22298943948
+    ],
+    [
+      2107.764364168904,
+      3383.028411032463
+    ],
+    [
+      2219.0406583629892,
+      3377.439234875445
+    ],
+    [
+      2327.800672107537,
+      3376.6076332213156
+    ]
+  ],
+  "candidate_status": "AI coarse bright-feature candidates; numbered identities require selection before fitting",
+  "next_review_image": {
+    "path": "runs/roi2-A-V1-correspondence-review-v2/A-V1-correspondence-wide-review.png",
+    "sha256": "5b0ea6825349e703022ac03f4aff1108c81039c0e60af951debe4d93429bf3b4"
+  },
+  "no_electrical_case_update": true
+}

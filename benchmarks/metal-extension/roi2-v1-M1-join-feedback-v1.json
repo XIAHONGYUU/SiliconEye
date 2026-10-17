@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "V1是存在于M1的层侧上，我看V1是存在于两条平行M1的连接处",
+  "scope": "V1 presence in M1 image, at connection of the two parallel M1 lines",
+  "decisions": {
+    "v1_presence": "human_confirmed",
+    "coarse_region": "parallel_M1_join"
+  },
+  "normalization": "依据上一版M1折返图，解释为两条平行横线右端连接处；用户未提供像素坐标，具体中心仍由AI粗定位，不扩大为M2端子或跨层配准批准。",
+  "sources": {
+    "m1_raw": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "shown_m1_crop": {
+      "path": "runs/roi2-upper-metal-survey-v1/m1-array.png",
+      "sha256": "ac7019be3f643fed507f2aa3478809dbe47be0f5e73dcab736f703022c229da3"
+    },
+    "prior_survey": {
+      "path": "benchmarks/metal-extension/roi2-gate-upper-metal-survey-v1.json",
+      "sha256": "cadc76a8cca65362bde6f2bc6c9209246eba6d3965d94439960f1bd0067ec9ee"
+    }
+  }
+}

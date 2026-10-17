@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "是的，橙色这异端的梳齿以及右侧母线，才是电容的另外一端。",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-G-blue-H-reviewed-v2/G-H-corrected-wide-review.png",
+      "sha256": "e94acc222b668e6383616bb4df5a32856ca14797c2f00a29b665895a1c63076b"
+    },
+    "prior_G_review": {
+      "path": "benchmarks/metal-extension/roi2-G-blue-H-review-feedback-v1.json",
+      "sha256": "445cde3c7f4876ec1065ba9a8ac5aed345d7ec9364fd957ac2c1bc1a146a5d25"
+    },
+    "conflict_record": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-resolution-v7.json",
+      "sha256": "e27d164b283a995ea74c97902aea1f8da48663ec909fe2be6655a6810980fe73"
+    }
+  },
+  "decisions": {
+    "orange_comb_and_right_bus_is_other_capacitor_electrode": "confirmed",
+    "G_blue_H_electrode": "retains_confirmed",
+    "port_assignment_conflict": "resolved_by_physical_electrode_identity",
+    "exact_mask_boundary": "not_approved",
+    "all_cross_layer_vias": "not_blanket_approved"
+  },
+  "normalization": "Retain P1 as gate-connected port: old blue H belongs to P1. Orange opposing comb/right bus belongs to P2. Correct old H=P2 assignment, preserve reviewed H/J/K/L1 physical interfaces, do not short capacitor terminals."
+}

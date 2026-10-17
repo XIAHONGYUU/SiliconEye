@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "record_type": "M3_destination_search_checkpoint",
+  "sources": {
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "S1_S2_review": {
+      "path": "benchmarks/metal-extension/roi2-S1-S2-V2-review-feedback-v1.json",
+      "sha256": "9196e7e3140a4ef804a89e156153492845fcb1dee33144ec3d960517e5a8bddb"
+    },
+    "prior_failed_registration": {
+      "path": "benchmarks/metal-extension/roi2-target-M2-M3-interface-localization-v20.json",
+      "sha256": "4f198db15d32562478873f9b6331d7ea6ded612a5cb7bee6f326e612d6e7a071"
+    }
+  },
+  "status": "native_M3_context_inspected_no_accepted_structure_registration",
+  "M2_source_window_xyxy": [
+    1950,
+    2900,
+    2800,
+    3450
+  ],
+  "M3_source_window_xyxy": [
+    1950,
+    2900,
+    2900,
+    3450
+  ],
+  "observations": [
+    "Several closely spaced M3 horizontal conductors lie below the broad horizontal M3 region in this source window.",
+    "Native source coordinates are independent across photos; neither equal coordinates nor known remote cursor-fit matrix is accepted for assigning S1/S2 to an M3 wire."
+  ],
+  "M3_destination_ids": {
+    "S1": null,
+    "S2": null
+  },
+  "next_action": "Establish local structural correspondence and separately check coverage of both reviewed V2s; then follow the selected M3 wires to their other connections.",
+  "outputs": [
+    "m2-S-source-context.png",
+    "m3-S-source-context.png"
+  ],
+  "no_new_projection": true,
+  "no_M3_identity_claim": true
+}

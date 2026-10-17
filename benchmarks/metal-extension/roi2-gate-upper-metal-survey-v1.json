@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "document_kind": "upper_metal_extension_observations",
+  "case_id": "ROI2_finger_pair",
+  "terminal_id": "R2_Q1.G",
+  "producer": "reasoning_model",
+  "sources": {
+    "reviewed_case": {
+      "path": "benchmarks/block-case-v1-roi2-gate-ct-m1-reviewed-v6.json",
+      "sha256": "7e60b3e67489cdc61d0ca52d232b0273934587347b111fcb6814a570b3ce478b"
+    },
+    "seed_review": {
+      "path": "benchmarks/terminal-highlights/roi2-q1-gate-ct-m1-review-feedback-v1.json",
+      "sha256": "ec282b2288f22b7cdb2552687d45f45e5fb5fccf275f62dad02c7693dc95f85e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    }
+  },
+  "m1_extension": {
+    "frame_id": "m1_native",
+    "path_native_xy": [
+      [
+        1732,
+        2966
+      ],
+      [
+        2355,
+        2947
+      ],
+      [
+        2355,
+        2968
+      ],
+      [
+        1720,
+        2988
+      ]
+    ],
+    "status": "candidate_physical_continuity_not_human_confirmed",
+    "basis": "Visual upper/lower parallel bus and right-end fold. Only previously reviewed local segment is confirmed."
+  },
+  "m2_search": {
+    "frame_id": "m2_native",
+    "fork_paths_native_xy": [
+      [
+        [
+          1727,
+          2908
+        ],
+        [
+          1735,
+          3102
+        ],
+        [
+          1945,
+          3094
+        ],
+        [
+          1934,
+          2890
+        ]
+      ],
+      [
+        [
+          1830,
+          2900
+        ],
+        [
+          1840,
+          3099
+        ]
+      ],
+      [
+        [
+          1760,
+          3100
+        ],
+        [
+          1762,
+          3130
+        ]
+      ],
+      [
+        [
+          1840,
+          3099
+        ],
+        [
+          1842,
+          3130
+        ]
+      ]
+    ],
+    "status": "unassigned_conductor_candidate_not_confirmed_gate_net",
+    "via12_status": "unknown_no_distinct_via_proof",
+    "approximate_seed_native_xy": [
+      1727.0188899263285,
+      3008.610927343092
+    ],
+    "marker_radius_px": 24,
+    "marker_radius_is_accuracy_bound": false
+  },
+  "candidate_registration": {
+    "direction": "m1_native_to_m2_native",
+    "model": "affine",
+    "matrix": [
+      [
+        0.8947608621040738,
+        -0.024589920519540197,
+        250.22678102302862
+      ],
+      [
+        0.006840780875095254,
+        1.0722574414409431,
+        -183.55287644641032
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "source_points_xy": [
+      [
+        1947.0,
+        1939.0
+      ],
+      [
+        2007.0,
+        1939.0
+      ],
+      [
+        1949.0,
+        1976.0
+      ],
+      [
+        2007.0,
+        1976.0
+      ],
+      [
+        1983.0,
+        2695.0
+      ],
+      [
+        2026.0,
+        2694.0
+      ],
+      [
+        1985.0,
+        2749.0
+      ],
+      [
+        2027.0,
+        2749.0
+      ]
+    ],
+    "target_points_xy": [
+      [
+        1944.0,
+        1911.0
+      ],
+      [
+        1999.0,
+        1912.0
+      ],
+      [
+        1944.0,
+        1946.0
+      ],
+      [
+        1999.0,
+        1946.0
+      ],
+      [
+        1959.0,
+        2723.0
+      ],
+      [
+        1995.0,
+        2722.0
+      ],
+      [
+        1961.0,
+        2775.0
+      ],
+      [
+        1995.0,
+        2775.0
+      ]
+    ],
+    "correspondence_status": "AI_proposed_common_via_array_points_not_human_reviewed",
+    "fit_residuals_px": [
+      2.222740412267713,
+      2.7971901003239004,
+      2.980762011417838,
+      3.3518788298957194,
+      3.3351833824823682,
+      3.5092588361874286,
+      3.4986703373862227,
+      3.226695637361699
+    ],
+    "independent_structure_check": "not_performed",
+    "acceptance": "not_accepted_for_contact_landing_or_connectivity",
+    "prior_m2_orb_status": "insufficient_inliers_not_reused",
+    "basis": "Two proposed matching via arrays, upper/lower points used for fit only. Candidate localization, not a via connection proof."
+  },
+  "stopped_at": "M1_to_M2_V1_unknown",
+  "higher_layers": {
+    "m3": "source_available_no_gate_network_assignment",
+    "m4": "source_available_no_gate_network_assignment",
+    "above_m4": "no_source_photo_in_current_dataset"
+  },
+  "electrical_state_changed": false
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "在M2上只接入了中间的纯竖向M2",
+  "sources": {
+    "reviewed_image": {
+      "path": "runs/roi2-J-left-reviewed-v6/J-confirmed-P2-K-interface-review.png",
+      "sha256": "8b379d216249e1f953e0145cfcf42997aab0d0419016a8545dae22cb749d5f23"
+    },
+    "prior_observation": {
+      "path": "benchmarks/metal-extension/roi2-P2-network-after-J-candidate-v6.json",
+      "sha256": "552c14949cac27ce4556abfa9c34cc70e25a42ed0dded40a7b28628f750c09c1"
+    }
+  },
+  "scope": "K vicinity M2 interface in preceding review",
+  "decisions": {
+    "P2_M3_to_middle_pure_vertical_M2": "confirmed",
+    "adjacent_M2_with_horizontal_stubs_local_attachment": "excluded_from_this_attachment",
+    "all_other_M2_global_net_equivalence": "unknown",
+    "exact_pixel_boundary": "unknown",
+    "outside_bottom_image": "unknown"
+  },
+  "normalization": "Confirms the selected middle straight M2 only in the displayed K interface. Does not imply global different_net for adjacent conductors or approve their horizontal extensions. M2/M3 bridge normalized as V2 after confirmed layer correspondence."
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "document_kind": "gate_ct_metal_review_feedback",
+  "actor": "human",
+  "reviewer": "user_in_current_chat",
+  "statement": "CT归属与M1选段确认无误",
+  "scope": "R2_Q1.G: cyan gate-end CT cluster and displayed yellow local M1 segment in v2 only",
+  "decisions": {
+    "ct_on_R2_Q1_gate": "human_confirmed",
+    "ct_to_displayed_M1_segment": "human_confirmed",
+    "terminal_to_local_M1_segment": "human_confirmed",
+    "precise_pixel_boundary": "unknown",
+    "precise_contact_landing_coordinates": "unknown",
+    "segment_continuation": "unknown"
+  },
+  "rejected_v1_still_rejected": true,
+  "sources": {
+    "candidate": {
+      "path": "benchmarks/terminal-highlights/roi2-q1-gate-ct-m1-candidate-v2.json",
+      "sha256": "02f9c848d692e1053f66000910cc348d91f22721341bce9ef7584902ce1596b2"
+    },
+    "reviewed_image": {
+      "path": "runs/roi2-q1-gate-ct-highlight-v2/terminal-highlight-001-ct-bridge.png",
+      "sha256": "365f6fbec49ec3e21e6b327aa6f28da9be25a5f338d1b19dd557c147929d2fe3"
+    },
+    "resolved_highlight": {
+      "path": "runs/roi2-q1-gate-ct-highlight-v2/terminal-highlight-001.json",
+      "sha256": "d1c48ca9c1b8c87c7e8b3aa71738222a5521743e591fe109de2c693c4447f0e2"
+    }
+  }
+}

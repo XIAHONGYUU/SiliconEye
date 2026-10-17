@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_local_topology_companion",
+  "case_id": "ROI2_finger_pair",
+  "sources": {
+    "human_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "case": {
+      "path": "benchmarks/block-case-v1-roi2-G-M3-MIM-reviewed-v14.json",
+      "sha256": "f7f2139e80cb6de5baeb6bbc33c0f25731afb8cea854d91db246b1ef677e8a50"
+    },
+    "other_terminal_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-other-terminal-review-feedback-v1.json",
+      "sha256": "21c1dcac8f9fb4fbca17332288d4642a2d7b49e1185b32a608fa2d8c1b5b32e8"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MIM-topology-reviewed-v1.json",
+      "sha256": "2f8227950026cf4d7f63703e48905621dc67a1b3876c2e2c191be878e2406a87"
+    }
+  },
+  "capacitor": {
+    "id": "R2_MIM_01",
+    "id_status": "provisional_stable_reference_to_user_identified_MIM",
+    "kind": "MIM_capacitor",
+    "identity_status": "human_confirmed",
+    "value": null,
+    "physical_unit_count": null,
+    "plate_assignment": null,
+    "outline": null,
+    "ports": [
+      {
+        "id": "R2_MIM_01.P1",
+        "role": "reviewed_connected_terminal_not_top_bottom_assignment"
+      },
+      {
+        "id": "R2_MIM_01.P2",
+        "role": "other_terminal_with_human_identified_metal_external_net_unknown",
+        "physical_metal_ref": "R2_MIM_P2_top_local_metal_01"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "terminal_ids": [
+        "R2_Q1.G",
+        "R2_Q2.G",
+        "R2_MIM_01.P1"
+      ],
+      "relation": "same_net",
+      "status": "confirmed",
+      "normalization": "Gate Q1/Q2 equivalence from existing case plus new user-confirmed chain to MIM one terminal.",
+      "source_refs": [
+        "human_review",
+        "case"
+      ]
+    }
+  ],
+  "unknowns": [
+    "R2_MIM_01.P2 external net destination",
+    "capacitance",
+    "top/bottom plate identity",
+    "exact M3 access path and capacitor boundary",
+    "all branches of connected metal",
+    "Exact native P2 metal centerline/ends and independent M2-M3 registration at capacitor"
+  ],
+  "do_not_union": [
+    "R2_MIM_01.P1",
+    "R2_MIM_01.P2"
+  ],
+  "coverage_status": "incomplete",
+  "generic_case_capacitor_export": "not_implemented_in_v1_MOS_schema",
+  "revision": "MIM-other-terminal-located-v2",
+  "physical_terminal_mappings": [
+    {
+      "port_id": "R2_MIM_01.P2",
+      "metal_ref": "R2_MIM_P2_top_local_metal_01",
+      "status": "human_confirmed_descriptive_identity",
+      "selector_original": "下方三个方形电容的最左端的最上面那一条",
+      "extent": "not_across_full_picture",
+      "external_net_destination": "unknown",
+      "source_refs": [
+        "other_terminal_review"
+      ],
+      "native_coordinates": null,
+      "process_plate_identity": null
+    }
+  ],
+  "highlight_rule": "P1 and P2 are separate port selections. Do not traverse the capacitor as a conductor; this does not assert global different_net without evidence."
+}

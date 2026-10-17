@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "record_type": "P1_corrected_coverage_observation",
+  "sources": {
+    "topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v8.json",
+      "sha256": "2cf759ac22ff75c2b72bdb86119639fdd7461ee3cc77f3146ca86514799e8735"
+    },
+    "prior_geometry": {
+      "path": "benchmarks/metal-extension/roi2-P1-network-coverage-candidate-v1.json",
+      "sha256": "3526536f52d0d5f771154962899ea3dec496b163c05f9d2a96343ba5cade478e"
+    },
+    "stack_survey": {
+      "path": "benchmarks/metal-extension/roi2-P2-existing-stack-survey-v8.json",
+      "sha256": "d3b9542e614185bd6dc86ba73e357a9eddb2991f9655da806b283de6cedd9ad9"
+    }
+  },
+  "paths_native_xy": {
+    "m1": [
+      [
+        [
+          1732,
+          2966
+        ],
+        [
+          2355,
+          2947
+        ],
+        [
+          2355,
+          2968
+        ],
+        [
+          1720,
+          2988
+        ]
+      ],
+      [
+        [
+          712,
+          4035
+        ],
+        [
+          716,
+          4150
+        ],
+        [
+          720,
+          4283
+        ]
+      ]
+    ],
+    "m2": [
+      [
+        [
+          2278,
+          3028
+        ],
+        [
+          2281,
+          3093
+        ],
+        [
+          2060,
+          3098
+        ],
+        [
+          2058,
+          3040
+        ]
+      ],
+      [
+        [
+          2168,
+          3095
+        ],
+        [
+          2166,
+          3030
+        ]
+      ],
+      [
+        [
+          2208,
+          3095
+        ],
+        [
+          2208,
+          3333
+        ],
+        [
+          2231,
+          3332
+        ]
+      ],
+      [
+        [
+          3277,
+          3307
+        ],
+        [
+          3257,
+          3309
+        ],
+        [
+          3257,
+          3340
+        ]
+      ],
+      [
+        [
+          3257,
+          3397
+        ],
+        [
+          3257,
+          3404
+        ],
+        [
+          3255,
+          3807
+        ],
+        [
+          3278,
+          3807
+        ]
+      ],
+      [
+        [
+          2478,
+          3839
+        ],
+        [
+          2459,
+          3841
+        ],
+        [
+          2458,
+          3957
+        ],
+        [
+          2438,
+          3959
+        ]
+      ],
+      [
+        [
+          679,
+          4045
+        ],
+        [
+          681,
+          4100
+        ],
+        [
+          683,
+          4200
+        ],
+        [
+          685,
+          4283
+        ]
+      ]
+    ],
+    "m3": [
+      [
+        [
+          2252,
+          3369
+        ],
+        [
+          2550,
+          3356
+        ],
+        [
+          3000,
+          3342
+        ],
+        [
+          3210,
+          3335
+        ]
+      ],
+      [
+        [
+          3290,
+          3331
+        ],
+        [
+          3320,
+          3330
+        ]
+      ],
+      [
+        [
+          2485,
+          3871
+        ],
+        [
+          2700,
+          3865
+        ],
+        [
+          3000,
+          3853
+        ],
+        [
+          3200,
+          3845
+        ],
+        [
+          3320,
+          3840
+        ]
+      ]
+    ]
+  },
+  "geometry_status": "reference_not_exact_boundary",
+  "A_M2_lower_fork": {
+    "status": "AI_candidate_same_layer_continuity",
+    "paths_native_xy": [
+      [
+        [
+          2208,
+          3333
+        ],
+        [
+          2208,
+          3392
+        ]
+      ],
+      [
+        [
+          2072,
+          3560
+        ],
+        [
+          2072,
+          3398
+        ],
+        [
+          2282,
+          3390
+        ],
+        [
+          2282,
+          3555
+        ]
+      ],
+      [
+        [
+          2178,
+          3395
+        ],
+        [
+          2178,
+          3560
+        ]
+      ]
+    ],
+    "roi_xywh": [
+      2000,
+      3000,
+      320,
+      600
+    ],
+    "gaussian_kernel": [
+      7,
+      3
+    ],
+    "sigma_xy": [
+      1.4,
+      0.6
+    ],
+    "connectivity": 8,
+    "seeds_xy": [
+      [
+        2280,
+        3093
+      ],
+      [
+        2208,
+        3332
+      ],
+      [
+        2178,
+        3400
+      ],
+      [
+        2072,
+        3510
+      ],
+      [
+        2282,
+        3510
+      ]
+    ],
+    "threshold_trials": [
+      {
+        "threshold": 120,
+        "labels_at_native_seeds": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_same_nonbackground": true
+      },
+      {
+        "threshold": 140,
+        "labels_at_native_seeds": [
+          93,
+          93,
+          93,
+          93,
+          93
+        ],
+        "all_same_nonbackground": true
+      },
+      {
+        "threshold": 160,
+        "labels_at_native_seeds": [
+          0,
+          114,
+          114,
+          114,
+          114
+        ],
+        "all_same_nonbackground": false
+      },
+      {
+        "threshold": 180,
+        "labels_at_native_seeds": [
+          0,
+          0,
+          157,
+          180,
+          148
+        ],
+        "all_same_nonbackground": false
+      }
+    ],
+    "conclusion": "Visible T junction supports candidate. Lower thresholds connect all selected points; higher thresholds fragment; segmentation is not independent physical proof.",
+    "human_approved": false
+  },
+  "P1_M3_pixel_mask": "runs/roi2-P2-network-trace-v5/M3-P2-visible-candidate-mask-native.png",
+  "P2_M3_pixel_mask": "runs/roi2-P1-network-review-v1/M3-opposing-electrode-candidate-mask-native.png",
+  "mask_names_are_historical": true,
+  "full_network_complete": false,
+  "remaining_frontiers": [
+    "A lower fork exact cross-layer endpoints",
+    "Additional M2 fanout on M3 A-C",
+    "MOM P1 per-layer full electrode routing",
+    "M4 V3 landing",
+    "out-of-photo continuation unknown"
+  ]
+}

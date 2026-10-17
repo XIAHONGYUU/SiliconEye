@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "record_type": "reviewed_local_topology_resolution_update",
+  "revision": "G-blue-H-reviewed-v7",
+  "sources": {
+    "new_review": {
+      "path": "benchmarks/metal-extension/roi2-G-blue-H-review-feedback-v1.json",
+      "sha256": "445cde3c7f4876ec1065ba9a8ac5aed345d7ec9364fd957ac2c1bc1a146a5d25"
+    },
+    "reviewed_image": {
+      "path": "runs/roi2-P1-network-review-v1/G-to-P1-electrode-review.png",
+      "sha256": "474c12111199685e306561251443418e87961b0c208279d080e254ed1c5d2681"
+    },
+    "prior_topology": {
+      "path": "benchmarks/metal-extension/roi2-gate-MOM-topology-reviewed-v6.json",
+      "sha256": "71eef260022f79207f852d1bf8ff38d8e61d79a3206d79ba157b1e95be195457"
+    },
+    "prior_H_review": {
+      "path": "benchmarks/metal-extension/roi2-MIM-H-review-feedback-v1.json",
+      "sha256": "e48e7ad47b2a4b15bc822c4341aa6e3d47700df749a444def93ebf89c8a8197b"
+    },
+    "prior_G_review": {
+      "path": "benchmarks/metal-extension/roi2-F-G-M3-MIM-review-feedback-v1.json",
+      "sha256": "dadc8562c9b184f13d4e6279f696746cb35966419c4f64c6590c8379fa6c7d15"
+    },
+    "J_review": {
+      "path": "benchmarks/metal-extension/roi2-J-left-continuation-review-feedback-v1.json",
+      "sha256": "b0198ce2469c40aff9a7e3ff12ec2842c987c87e69f5f5e57a1273df2acaa8e2"
+    },
+    "K_review": {
+      "path": "benchmarks/metal-extension/roi2-K-middle-M2-review-feedback-v1.json",
+      "sha256": "7424259e118485721d4d972d55b72b6a0b2853dd07e333ac555eeec2bc60cf1a"
+    },
+    "L1_review": {
+      "path": "benchmarks/metal-extension/roi2-MOM-L1-review-feedback-v1.json",
+      "sha256": "badb6e58f7a80f082db876fe05751c853395049c0de46a580810975666e4f188"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "supersedes_scope": "Current capacitor physical-electrode to P1/P2 assignments from v6 are conflict pending resolution; prior physical source decisions remain preserved. This file is the current resolution overlay, not an automatic generic-case graph update.",
+  "physical_net": {
+    "id": "R2_GATE_H_NET",
+    "confirmed_terminals": [
+      "R2_Q1.G",
+      "R2_Q2.G"
+    ],
+    "confirmed_connection": {
+      "from": "R2_M3_G_MIM_access_01",
+      "to": "R2_MIM_P2_top_local_metal_01",
+      "via": "G_M2_M3",
+      "source_ref": "new_review"
+    },
+    "retained_reviewed_physical_chain": [
+      "H -> J left continuation",
+      "J/K -> selected middle M2 via V2",
+      "selected middle M2 -> L1 M1 edge via V1"
+    ],
+    "chain_source_refs": [
+      "J_review",
+      "K_review",
+      "L1_review"
+    ],
+    "precise_boundaries": "unknown"
+  },
+  "capacitor": {
+    "id": "R2_CAP_01",
+    "kind": "MOM_capacitor",
+    "port_assignment_status": "conflict",
+    "conflicting_assertions": [
+      "gate chain was normalized to P1",
+      "H was normalized to P2/other terminal",
+      "latest human confirms gate-chain G connects to H"
+    ],
+    "opposite_electrode": "unknown; orange opposing comb remains geometric candidate",
+    "ports_shorted": null
+  },
+  "do_not_union": [
+    "R2_CAP_01.P1",
+    "R2_CAP_01.P2"
+  ],
+  "coverage_status": "incomplete",
+  "next_physical_review": "Determine whether the orange opposing comb is the other capacitor electrode, or identify a mis-selected earlier H/other-terminal feature. Do not repeat G-to-blue question."
+}

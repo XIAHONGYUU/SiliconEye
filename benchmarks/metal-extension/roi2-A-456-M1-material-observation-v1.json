@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "record_type": "M1_finger_material_interface_observation",
+  "sources": {
+    "local_approval": {
+      "path": "benchmarks/metal-extension/roi2-A-456-overlay-review-feedback-v1.json",
+      "sha256": "efac0fac5d3abcde12cf613959070bff509cdf7c05be36d2e9913bd82ff9bc8e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "macro_profile": {
+      "path": "benchmarks/registration-roi2-m1-poly-accepted-v1.json",
+      "sha256": "c4bc67269a3315c5766854116b136b3657a2ad2c63eaeddaefe6dfe75cdce8a2"
+    }
+  },
+  "producer": "AI_visual_observation",
+  "scope": "M1 fingers 4/5/6 and associated array, not individual contact counting",
+  "M1_paths_native_xy": [
+    [
+      [
+        2108,
+        3383
+      ],
+      [
+        2112,
+        3470
+      ],
+      [
+        2116,
+        3556
+      ]
+    ],
+    [
+      [
+        2219,
+        3377
+      ],
+      [
+        2222,
+        3470
+      ],
+      [
+        2225,
+        3554
+      ]
+    ],
+    [
+      [
+        2328,
+        3377
+      ],
+      [
+        2332,
+        3470
+      ],
+      [
+        2335,
+        3551
+      ]
+    ]
+  ],
+  "geometry_status": "visible_coarse_centerline_candidate_not_segmentation",
+  "observations": [
+    {
+      "status": "AI_observation",
+      "result": "Selected M1 fingers have no clear further same-layer branch in the inspected visible strip; bottom references are visually finite, not proof of electrical isolation."
+    },
+    {
+      "status": "candidate",
+      "result": "Corresponding poly-photo area contains dense CT contact rows; diffusion-terminal attachment in lower MOS array is the working hypothesis, not yet reviewed AA-vs-poly material assignment."
+    }
+  ],
+  "registration": {
+    "direction": "poly_native_to_M1_cropped_frame",
+    "crop_M1_xyxy": [
+      1700,
+      3150,
+      2500,
+      3710
+    ],
+    "matrix": [
+      [
+        1.0124254729535471,
+        0.0002570813544848457,
+        -1746.7646411310498
+      ],
+      [
+        -0.009130121156671939,
+        1.0149621704114413,
+        -3052.2800214916
+      ],
+      [
+        5.342188030853077e-06,
+        1.7568752723508185e-07,
+        0.99976995261151
+      ]
+    ],
+    "basis": "Previously human-accepted M1/poly macro profile, one bilinear resampling",
+    "scope": "coarse whole-array context only, not new CT landing accuracy"
+  },
+  "terminal_ids": "not_assigned",
+  "new_device_net_unions": false,
+  "requires_review": "Are fingers 4/5/6 contacting diffusion terminals of this lower MOS array? If not, identify the material/terminal group.",
+  "full_network_complete": false
+}

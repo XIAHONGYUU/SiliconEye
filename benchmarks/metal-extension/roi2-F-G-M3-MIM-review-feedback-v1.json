@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "statement": "1.确认完毕，F与G均没有接到M1。，而是接到了M3，而在下方接入的是MIM电容那一端",
+  "sources": {
+    "wide_context_manifest": {
+      "path": "runs/roi2-G-wide-context-v2/manifest.json",
+      "sha256": "b4bffa16ea03a07735fabf8cee236e2932f697f29da8893165eec2f296541cf2"
+    },
+    "reviewed_M2_image": {
+      "path": "runs/roi2-G-wide-context-v2/m2-wide-2x-FG.png",
+      "sha256": "4dec2b85214e38692dad4cd74fbbacadb3b6675c32f8f56ac938a0e41a714160"
+    },
+    "reviewed_M1_image": {
+      "path": "runs/roi2-G-wide-context-v2/m1-wide-2x.png",
+      "sha256": "d6b2ffae5908f973ed9de235169be5e5c7d6cfc5546787c4cce614e0097f8602"
+    },
+    "reviewed_M3_image": {
+      "path": "runs/roi2-G-wide-context-v2/m3-wide-2x.png",
+      "sha256": "18782511e02e12eb0798e325e783575a10d6c0a661f7a39b404effbe3b29fff6"
+    },
+    "prior_trace": {
+      "path": "benchmarks/metal-extension/roi2-F-M2-extension-candidate-v1.json",
+      "sha256": "1ae3267fa83c2cf7da1fa35f2e2622d486c14f234666e6d24cc541636bb0de02"
+    }
+  },
+  "decisions": {
+    "F_direct_local_M1_connection": "rejected",
+    "G_direct_local_M1_connection": "rejected",
+    "F_to_M3_via": "confirmed_retains_prior_review",
+    "G_to_M3_via": "confirmed",
+    "G_M3_access_to_MIM_one_terminal": "confirmed",
+    "MIM_other_terminal": "unknown",
+    "MIM_value": "unknown",
+    "MIM_top_bottom_plate_identity": "unknown",
+    "exact_M3_landing_and_geometry": "unknown"
+  },
+  "normalization": "F/G do not locally land on M1; never interpret this as global isolation from M1 (the same gate network already has M1 elsewhere). G reaches one MIM terminal through M3. Stable provisional capacitor/port IDs identify the reviewed object without assigning plate polarity, count of capacitor units, value or exact segmentation."
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "record_type": "human_cross_layer_connection_review",
+  "user_statement": "连接到L01的左端",
+  "reviewed_artifact": "runs/roi2-L01-reviewed-v24/L01-confirmed-and-W-candidate-wide.png",
+  "sources": {
+    "W_candidate": {
+      "path": "benchmarks/metal-extension/roi2-L01-left-interface-candidate-v24.json",
+      "sha256": "2868e7ae786138a3dff979fe9caaf48cd17ce2624a1e16cef71e3a26fa98f68b"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "decision": {
+    "interface_label": "W",
+    "from_metal": "R2_corrected_gate_W_M2_01",
+    "to_metal": "R2_corrected_gate_L01_M3_01",
+    "from_layer": "m2",
+    "to_layer": "m3",
+    "via_kind": "V2",
+    "interface_id": "R2_corrected_gate_W_V2_interface",
+    "status": "human_confirmed_connection_and_destination_identity",
+    "selector": "M2 W pad connects to L01 left end",
+    "M2_reference_region_xyxy": [
+      1175,
+      3180,
+      1245,
+      3225
+    ],
+    "reference_geometry_role": "review_location_not_exact_mask",
+    "via_count": null
+  },
+  "scope_exclusions": [
+    "exact_via_count_or_masks",
+    "lower_W_to_M1_connection",
+    "precise_registration_acceptance",
+    "all_other_L01_interfaces",
+    "T_destination",
+    "old_gate_to_A_capacitor_assignment"
+  ]
+}
