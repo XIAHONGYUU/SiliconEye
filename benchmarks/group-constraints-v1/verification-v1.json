@@ -1,0 +1,49 @@
+{
+  "run": "runs/group-constraints-v1f",
+  "software_tests_passed": 296,
+  "ruff": "passed",
+  "manifest_files_checked": 37,
+  "source_and_frozen_inputs_unchanged": true,
+  "all_195_objects_valid_HV": true,
+  "per_layer_new_geometries_separated": true,
+  "svg_native_dimensions_checked": true,
+  "gate_states": {
+    "D01": "pass",
+    "R01": "pass",
+    "T01": "unknown",
+    "T02": "fail"
+  },
+  "injected_fault_instances_detected": 20,
+  "injected_fault_instances_total": 20,
+  "unique_fault_categories": 9,
+  "contact_geometry_states": {
+    "photo_peak_support": 109,
+    "inferred_candidate": 13,
+    "source_slot_ambiguous": 1
+  },
+  "old_parent_model_sha256": "64919873fe6f8847e2b7dc93fedbb75034cb946fae0af230eec3ff2e09a12094",
+  "new_model_sha256": "7e034557241cde58c4a03387fb1ac5ed276c16028b1ead3633f1b2ef624beb99",
+  "run_manifest_sha256": "d3aa0516a287fc4f3802aeaa9b41d8604d34090f409f1a8ab86c4af2e3cca3e2",
+  "code_sha256": "d169e1ba15f2c738802c4d57eb2db1dacaf0e1718c3d6c70af48b8e137311c3d",
+  "browser_interaction": "not_automated_preexisting_policy_boundary",
+  "physical_acceptance": false,
+  "blind_AI_eval": false,
+  "source_observations_not_independent_human_geometry_truth": true,
+  "thresholds_unchanged_between_trials": true,
+  "protocol_revision": "D01 cropped centroids were replaced by visible corners after development inspection; holdouts were used during development",
+  "assets_sha256": {
+    "D01-layout-comparison.png": "54bd885c39c263120c34e14fa369d67d4ad2a5814e84f3c710e28e43dcae6412",
+    "T01-layout-comparison.png": "de4cbfbe02b0b63eb6cb8d41f4ce3da586f457c98e3a825d398c0e8905511b2b",
+    "T01-poly-comparison.png": "c8668a3652f346922b89db931e426bd3a497ff8734fe0dabea147b1f982aa70c",
+    "R01-aa-comparison.png": "126ca4724a10041b9d39c7908a0592dd35ea2209ce3819e969163ab2dd23a2e7",
+    "R01-layout-comparison.png": "f76a3d88f0a3c09c1401e2c8384ddc72366fc507f2e2183f6d2f9bc00c4822e6",
+    "T02-poly-comparison.png": "59505891f85299179409d577d644115f808e7353ffd63f080e0a09ca8dbbdf7f",
+    "D01-aa-comparison.png": "a8973b7d6bd24f60bf88da1ccf5b556946ab6e160298019214eb791bbffb1ecd",
+    "T02-layout-comparison.png": "dbac35c09eef06283fe6f0c39159fe5fefebb42568432bf72da7920a94fae7b2"
+  },
+  "static_doc_links_checked": 87,
+  "page_script_syntax": "node --check passed",
+  "review_data_script_syntax": "node --check passed",
+  "current_task_archived_to": "docs/history/current-task-before-2026-10-18-group-constraint-validation.md",
+  "current_task_archive_sha256": "a3c7bf43198c10c0b9e6f87591ad5063fe6de51e9e4fae2f76e8ad8b3f5c3ecf"
+}

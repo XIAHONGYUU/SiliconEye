@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "prior_review": {
+    "path": "benchmarks/aa-context-review-v1/human-context-review-v1.json",
+    "sha256": "abf104d5ef6613127d2d52ec346d66cf84e4b0750fc0b0e97d0e1fe7d65f3fb2"
+  },
+  "user_verbatim": "正常来说，大片电阻周围也会围一圈环的，我不知道你的Q4是否确认的就是这圈环",
+  "assistant_clarification": "Q4拟指电阻外围环下侧AA横条靠电阻内部一侧的边界；排除电阻内部误报不等于删除外围环。",
+  "scope": "修正Q4的定位与解释，保留原人审记录，不把一般版图经验当作全环存在和精确边界的新增批准。",
+  "constraints": [
+    "电阻内部非AA与电阻外围AA环分开。",
+    "保护已有AA环横条，不能将其随电阻误报一起删除。",
+    "环的内外精确边界、全周连续性尚未完成提取验收。",
+    "用户否定的是错误扩宽，不是外围环存在。"
+  ],
+  "new_dense_annotation": false
+}

@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "reviewer": "human_user",
+  "scope": "F01-F12 whole visible AA scene; qualified feedback, not blanket approval",
+  "artifacts": [
+    {
+      "path": "benchmarks/full-scene-regular-v1/model-v1.json",
+      "sha256": "6c8d6e5bf3f547a0cb00ce076ded1a0eead362895fff1af6bb3c5d15571cbec6"
+    },
+    {
+      "path": "benchmarks/full-scene-regular-v1/coverage-v1.json",
+      "sha256": "f55c36eebb2602ea278a5e4375a047199258a043b7667dafc4372dcc696ea145"
+    },
+    {
+      "path": "runs/full-scene-regular-v1d/index.html",
+      "sha256": "9f9f9acba152710cdbf7309284bcee39a2f6e43dd02b1bbb61909bf14ce65f51"
+    }
+  ],
+  "overall_material_completeness": "failed_human_review",
+  "exact_geometry_approved": false,
+  "CT_stage": "deferred_until_AA_review",
+  "frames": [
+    {
+      "id": "F01",
+      "AA_native_bbox": [
+        0,
+        185.0,
+        1428,
+        1551.3333333333333
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。左下角的MOSAA未提取，CT也没有提取。孔和待和确认CT基本正确，有些MOS管只提取了单边沟道的孔",
+      "findings": [
+        "missing_guard_ring",
+        "missing_lower_left_MOS_AA",
+        "one_sided_CT"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F02",
+      "AA_native_bbox": [
+        1428,
+        185.0,
+        2856,
+        1551.3333333333333
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。孔和待和CT基本正确，有几个有缺失与偏出的情况。",
+      "findings": [
+        "missing_guard_ring",
+        "CT_missing_or_offset"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F03",
+      "AA_native_bbox": [
+        2856,
+        185.0,
+        4284,
+        1551.3333333333333
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。孔和待和CT基本正确，有几个有缺失与偏出的情况。",
+      "findings": [
+        "missing_guard_ring",
+        "CT_missing_or_offset"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F04",
+      "AA_native_bbox": [
+        4284,
+        185.0,
+        5712,
+        1551.3333333333333
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "：MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。。孔和待和CT基本正确，有几个有缺失与偏出的情况。",
+      "findings": [
+        "missing_guard_ring",
+        "CT_missing_or_offset"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F05",
+      "AA_native_bbox": [
+        0,
+        1551.3333333333333,
+        1428,
+        2917.6666666666665
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。。孔和待和CT基本正确，有几个有缺失与偏出的情况。。左下角的MOSAA未提取，CT也没有提取。",
+      "findings": [
+        "missing_guard_ring",
+        "missing_lower_left_MOS_AA",
+        "CT_missing_or_offset"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F06",
+      "AA_native_bbox": [
+        1428,
+        1551.3333333333333,
+        2856,
+        2917.6666666666665
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。。孔和待和CT基本正确，有几个有缺失与偏出的情况。。中间下方的MOSAA未提取，CT也没有提取。中间靠右的四个大mos因为方向斜了，所以你在中间补了一块，这个地方比较突兀且有问题。",
+      "findings": [
+        "missing_guard_ring",
+        "missing_lower_middle_MOS_AA",
+        "false_fill_between_four_MOS",
+        "CT_missing_or_offset"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F07",
+      "AA_native_bbox": [
+        2856,
+        1551.3333333333333,
+        4284,
+        2917.6666666666665
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "MOS管AA提取基本正确提取基本正确，靠左侧的三条环AA没有提取出来。",
+      "findings": [
+        "three_left_rings_missing"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F08",
+      "AA_native_bbox": [
+        4284,
+        1551.3333333333333,
+        5712,
+        2917.6666666666665
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "左侧环的AA基本没有提取出来",
+      "findings": [
+        "left_ring_missing"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F09",
+      "AA_native_bbox": [
+        0,
+        2917.6666666666665,
+        1428,
+        4284.0
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "中间环的AA基本没有提取出来，有些CT提取成了Poly上的CT",
+      "findings": [
+        "middle_ring_missing",
+        "CT_landing_material_error"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F10",
+      "AA_native_bbox": [
+        1428,
+        2917.6666666666665,
+        2856,
+        4284.0
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "中间大片管子和环的AA，CT同理没有提取出来，右侧靠下的CELL管子和环的AA糊在一起了。右侧靠上与中间的AA环没有提取出来 。",
+      "findings": [
+        "middle_MOS_and_ring_missing",
+        "lower_right_cell_AA_ring_false_merge",
+        "upper_right_and_middle_rings_missing"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F11",
+      "AA_native_bbox": [
+        2856,
+        2917.6666666666665,
+        4284,
+        4284.0
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "右侧中间的管子AA与环的AA基本缺失，CT同理。",
+      "findings": [
+        "right_middle_MOS_and_ring_missing"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    },
+    {
+      "id": "F12",
+      "AA_native_bbox": [
+        4284,
+        2917.6666666666665,
+        5712,
+        4284.0
+      ],
+      "display_window_only": true,
+      "verbatim_feedback": "右侧有环缺失，dummy中间有一个dummyAA缺失。",
+      "findings": [
+        "right_ring_missing",
+        "one_dummy_instance_missing"
+      ],
+      "status": "changes_required",
+      "object_ids": "pending_source_localization"
+    }
+  ],
+  "cross_layer_rule": {
+    "AA_continuity": "judge_from_AA_evidence_with_design_structure",
+    "CT_or_M1_gap_implies_AA_gap": false,
+    "expected_ring_implies_automatic_closure": false
+  },
+  "prior_195_objects": "preserve_frozen_records; any conflicting correction requires explicit scoped revision, never silent overwrite",
+  "CT_note": "F09 is user-reported landing/material error; do not infer all unclassified bright points are poly CT"
+}

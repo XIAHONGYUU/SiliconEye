@@ -1,0 +1,17 @@
+{
+  "kind": "regional_planning_validation_contract",
+  "sample": "SE_RGN_C03",
+  "frozen_first_observation": {
+    "path": "benchmarks/region-skill-validation-v1/first-observation.json",
+    "sha256": "ff18c6999b585ae97ec13cd8dc1357244a60eb84a3748565fe731c4d324e4571"
+  },
+  "checks_before_packaging": [
+    "preserve candidate/confirmed/unknown states from input",
+    "verify source hashes, native image size and bounds",
+    "reuse one parameterized review renderer without hardcoded case answers",
+    "one page switches 8 native source frames and offers wider local context",
+    "invalid hashes/bounds and existing output fail without replacing evidence",
+    "preserve 21 historical reviewed decisions byte-identically"
+  ],
+  "decision_rule": "May package an interactive candidate-planning workflow after mechanical/reuse checks. New C03 physical accuracy remains unscored until human review; no automatic approval or cross-chip performance claim."
+}

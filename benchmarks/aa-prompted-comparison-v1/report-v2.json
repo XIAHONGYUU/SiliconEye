@@ -1,0 +1,214 @@
+{
+  "status": "prompted_development_comparison_not_blind_validation",
+  "results": [
+    {
+      "case": "S03",
+      "method": "before_adaptive",
+      "tp": 1,
+      "fn": 3,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 0.25,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 0.625,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S03",
+      "method": "before_rf",
+      "tp": 0,
+      "fn": 4,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 0.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 0.5,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S03",
+      "method": "before_grabcut",
+      "tp": 0,
+      "fn": 4,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 0.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 0.5,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S03",
+      "method": "local_rf",
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S03",
+      "method": "local_gc_fixed",
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S03",
+      "method": "local_gc_refine",
+      "tp": 4,
+      "fn": 0,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.75,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S05",
+      "method": "before_adaptive",
+      "tp": 3,
+      "fn": 1,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 0.75,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 0.875,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S05",
+      "method": "before_rf",
+      "tp": 3,
+      "fn": 1,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 0.75,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.375,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S05",
+      "method": "before_grabcut",
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S05",
+      "method": "local_rf",
+      "tp": 3,
+      "fn": 1,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 0.75,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 0.875,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S05",
+      "method": "local_gc_fixed",
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    },
+    {
+      "case": "S05",
+      "method": "local_gc_refine",
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "human_confirmed_nonprompt_centers_only"
+    }
+  ],
+  "summary": [
+    {
+      "method": "before_adaptive",
+      "AA_hit": 4,
+      "AA_total": 8,
+      "background_false_positive": 0,
+      "background_total": 4
+    },
+    {
+      "method": "before_rf",
+      "AA_hit": 3,
+      "AA_total": 8,
+      "background_false_positive": 2,
+      "background_total": 4
+    },
+    {
+      "method": "before_grabcut",
+      "AA_hit": 4,
+      "AA_total": 8,
+      "background_false_positive": 2,
+      "background_total": 4
+    },
+    {
+      "method": "local_rf",
+      "AA_hit": 7,
+      "AA_total": 8,
+      "background_false_positive": 0,
+      "background_total": 4
+    },
+    {
+      "method": "local_gc_fixed",
+      "AA_hit": 8,
+      "AA_total": 8,
+      "background_false_positive": 2,
+      "background_total": 4
+    },
+    {
+      "method": "local_gc_refine",
+      "AA_hit": 8,
+      "AA_total": 8,
+      "background_false_positive": 3,
+      "background_total": 4
+    }
+  ],
+  "source_sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+  "code_sha256": "a8626793d1dd009efe6cdc3b165065b789482dff3bfa3c4062a9159cb0dd050e",
+  "spec_sha256": "3f7daca820e46f42a824cbf477754d06b14ea72d15f1f754263d2d0fe69e0244",
+  "human_review": {
+    "path": "benchmarks/aa-prompted-comparison-v1/human-label-review-v2.json",
+    "sha256": "1960eac6970c077d99a26e47d09391c46ab2e03cf523407415f4b017dd662ede"
+  },
+  "prompt_budget_per_case": {
+    "S03": {
+      "AA": 2,
+      "background": 1
+    },
+    "S05": {
+      "AA": 2,
+      "background": 2
+    }
+  },
+  "neighborhood_sampling": "AA radius3/background radius1 is AI assumption, not human pixel truth",
+  "full_mask_accepted": false,
+  "geometry_processed": false,
+  "CT_processed": false
+}

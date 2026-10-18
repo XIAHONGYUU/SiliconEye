@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "reviewer": "human_user",
+  "verbatim": "U这里是电阻内部非AA",
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "context_image": {
+    "path": "docs/assets/aa-prompted-comparison-v1/U-native-context.png",
+    "sha256": "3d289828211e427a42a4f6aa9074521416bb80cfef7037fc513c96d5e3ac12ee"
+  },
+  "supersedes_pending": {
+    "path": "benchmarks/aa-prompted-comparison-v1/pending-U-v1.json",
+    "sha256": "4b589d1dc3e3ac39b9dc7fd9392a855046d442e454bf248df9c16752402ca773"
+  },
+  "native_xy": [
+    3750,
+    3350
+  ],
+  "class_name": "background",
+  "scope": "U所在电阻内部为非AA；不批准整个矩形的精确边界，不确定电阻材料类型。",
+  "dense_mask_accepted": false
+}

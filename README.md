@@ -10,6 +10,10 @@ The sections below describe the original product vision and roadmap, not an inve
 
 The product input is a stack of photographs of the same physical chip region. Outputs should share stable device/terminal identities across schematics, image labels, metal-port annotations and conductor highlighting. See the [photo-stack workflow architecture](docs/architecture/photo-stack-workflow-v1.md), [AI observation contract](docs/agent-observations-v1.md), and [replayable review package](docs/review-package.md). Exact boundaries, electrical links and calibration retain their own evidence and approval states.
 
+Current AA direction: [multi-method candidates and AI contextual review (v8)](docs/architecture/aa-extraction-workflow-v8.md). Representative bright/dark scribbles, texture RF, algorithm-disagreement views, contextual Agent judgment and scoped human decisions form a repeatable local workflow. Exact full-frame boundaries, automatic contextual correction and the AA skill are not yet implemented.
+
+See the [2026-10-18 checkpoint](docs/checkpoints/2026-10-18-aa-workflow-reviewed.md) for results, reviewed constraints, evidence restoration and the next skill milestone. [Open the committed review sheet](docs/assets/aa-context-review-v1/review-sheet.png). Earlier geometry-first AA/CT experiments remain development references; they are not the current acceptance path. The sole live execution entry is [CURRENT_TASK.md](CURRENT_TASK.md).
+
 ## Why This Exists
 
 Reverse-engineering an analog chip today is a painful, manual process:
@@ -167,3 +171,5 @@ AI观察现可通过[最小显式适配](docs/observation-adapter-v1.md)进入ca
 2026-10-17：已识别可见共栅网络及六处 AA 接入的[最终复核稿 v33](docs/roi2-gate-network-reviewed-v33.md)，最终图稿可从[证据归档](benchmarks/evidence/README.md)恢复。[金属点亮流程 v1](docs/metal-tracing-workflow-v1.md)固化局部对齐、双向分支检查、正向版图推理与验收边界；下一轮先重走检验，再决定 skill 封装。
 
 2026-10-18：当前方向为[顶层设计 v2](docs/architecture/photo-stack-workflow-v2.md)：输入规范化与质量门 → 区域规划 → 可修订分层版图 → 器件/网络联合提取与输出。见[八张照片初查及下一操作](docs/eight-photo-next-step-2026-10-18.md)；暂缓金属 skill 封装。
+
+2026-10-18 全幅纠偏：[当前顶层设计 v3](docs/architecture/photo-stack-workflow-v3.md)明确完整照片上的连续材料层抽取；区域/器件粗观察作为理解与评测支线，不切割图层或网络。

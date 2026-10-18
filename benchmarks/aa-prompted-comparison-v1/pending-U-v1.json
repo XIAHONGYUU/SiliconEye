@@ -1,0 +1,22 @@
+{
+  "id": "U",
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "native_xy": [
+    3750,
+    3350
+  ],
+  "wide_context_native_box": [
+    3100,
+    1900,
+    5350,
+    3820
+  ],
+  "experiment_case": "S05",
+  "local_RF_predicts_AA": true,
+  "identity": "unknown_pending_human_material_judgment",
+  "question": "电阻区域内部、U标记的这一块是AA还是背景/非AA？",
+  "not_part_of_approved_centers": true
+}

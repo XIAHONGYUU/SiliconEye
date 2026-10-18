@@ -1,0 +1,4 @@
+interface:
+  display_name: "Silicon Eye 整体观察与区域评测"
+  short_description: "全图器件粗观察与评测、工艺回查和可切层复核，不限制分层抽取范围"
+  default_prompt: "使用 $silicon-eye-region-planning 分析这组多层芯片照片，生成整体结构观察、区域评测记录和可切层复核页。"

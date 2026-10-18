@@ -1,0 +1,3472 @@
+{
+  "schema_version": 1,
+  "purpose": "same_chip_development_validation_of_v5_not_blind_model_evaluation",
+  "parent_model": {
+    "path": "benchmarks/full-scene-aa-ct-v1/model-v1.json",
+    "sha256": "64919873fe6f8847e2b7dc93fedbb75034cb946fae0af230eec3ff2e09a12094"
+  },
+  "recognition": {
+    "agent": "current_conversation_agent; no external vision API",
+    "policy_document": "docs/architecture/photo-stack-workflow-v5.md",
+    "policy_sha256": "6d00af0d823ec09136733a15b27fd841497e6cfdfc91f002d771b6dcb953a2ab",
+    "observation_time": "before constraint implementation and measurements",
+    "sample_selection": "AI inspected native AA/poly wide windows; frozen group hypotheses",
+    "not_blind": true
+  },
+  "limits": {
+    "dummy_holdout_median_px": 8,
+    "dummy_holdout_p95_px": 16,
+    "CT_holdout_median_px": 4,
+    "CT_holdout_p95_px": 8,
+    "ring_corner_p95_px": 8,
+    "normalized_geometry_tolerance": 0.01,
+    "CT_landing_margin": 2
+  },
+  "groups": [
+    {
+      "id": "D01",
+      "kind": "rectangle_array",
+      "interpretation": "bottom dummy candidate, two rows x 34 visible-indexed columns; cropped slots remain inferred",
+      "rows": 2,
+      "cols": 34,
+      "square": true,
+      "observations": [
+        {
+          "id": "AA-F00118",
+          "row": 0,
+          "col": 0,
+          "native_center_xy": [
+            139.14816699258114,
+            4154.348143672047
+          ],
+          "native_outline_xy": [
+            [
+              83.9088943357189,
+              4106.38432712073
+            ],
+            [
+              192.30950766543944,
+              4102.52398176211
+            ],
+            [
+              194.2456180310428,
+              4202.188817651771
+            ],
+            [
+              85.94787240856776,
+              4206.210279676941
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00114",
+          "row": 0,
+          "col": 1,
+          "native_center_xy": [
+            285.96822686615025,
+            4154.5970566092365
+          ],
+          "native_outline_xy": [
+            [
+              232.1566358367823,
+              4107.212664625485
+            ],
+            [
+              337.8642148051743,
+              4103.438367676706
+            ],
+            [
+              339.64428466087696,
+              4201.862103303356
+            ],
+            [
+              234.03555973619416,
+              4205.791903622454
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00111",
+          "row": 0,
+          "col": 2,
+          "native_center_xy": [
+            430.4745322646061,
+            4154.904892923972
+          ],
+          "native_outline_xy": [
+            [
+              378.6045334997091,
+              4107.061606897257
+            ],
+            [
+              480.5522901389205,
+              4103.413634675311
+            ],
+            [
+              482.2163035869349,
+              4202.629905915071
+            ],
+            [
+              380.3644501569503,
+              4206.429387793385
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00108",
+          "row": 0,
+          "col": 3,
+          "native_center_xy": [
+            577.0648415310653,
+            4155.616883396182
+          ],
+          "native_outline_xy": [
+            [
+              525.4954506502061,
+              4107.884594155489
+            ],
+            [
+              626.980347849731,
+              4104.24372440618
+            ],
+            [
+              628.5070407953611,
+              4203.231444912597
+            ],
+            [
+              527.1171897983427,
+              4207.023126523538
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00106",
+          "row": 0,
+          "col": 4,
+          "native_center_xy": [
+            722.4251700338731,
+            4155.337008491659
+          ],
+          "native_outline_xy": [
+            [
+              669.5205272993896,
+              4107.771819994167
+            ],
+            [
+              773.8073521729441,
+              4104.022328248025
+            ],
+            [
+              775.1969805591951,
+              4202.782771004192
+            ],
+            [
+              671.007397341906,
+              4206.687232532099
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00104",
+          "row": 0,
+          "col": 5,
+          "native_center_xy": [
+            869.8209448054278,
+            4154.455871248132
+          ],
+          "native_outline_xy": [
+            [
+              818.2998019448679,
+              4106.456501149566
+            ],
+            [
+              919.9476537084441,
+              4102.795574521249
+            ],
+            [
+              921.2142632941321,
+              4202.33615452153
+            ],
+            [
+              819.6617316775189,
+              4206.149666641486
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00101",
+          "row": 0,
+          "col": 6,
+          "native_center_xy": [
+            1017.0700246930165,
+            4153.057006329538
+          ],
+          "native_outline_xy": [
+            [
+              963.1551721000482,
+              4105.263968577959
+            ],
+            [
+              1069.7203006511636,
+              4101.419321761147
+            ],
+            [
+              1070.846952355881,
+              4200.727779972541
+            ],
+            [
+              964.3813078754829,
+              4204.732392447169
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00099",
+          "row": 0,
+          "col": 7,
+          "native_center_xy": [
+            1165.7834881979354,
+            4151.585522530833
+          ],
+          "native_outline_xy": [
+            [
+              1111.6372875943707,
+              4102.918344642978
+            ],
+            [
+              1218.7816544832058,
+              4099.047807972658
+            ],
+            [
+              1219.789602369691,
+              4200.126789251876
+            ],
+            [
+              1112.7468167838483,
+              4204.161407682609
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00097",
+          "row": 0,
+          "col": 8,
+          "native_center_xy": [
+            1312.7247636840896,
+            4148.661344808492
+          ],
+          "native_outline_xy": [
+            [
+              1259.4226422793004,
+              4099.582524656598
+            ],
+            [
+              1365.0112560009375,
+              4095.7649091669764
+            ],
+            [
+              1365.8896890823291,
+              4197.613839441748
+            ],
+            [
+              1260.4017181614915,
+              4201.594760063859
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00095",
+          "row": 0,
+          "col": 9,
+          "native_center_xy": [
+            1460.591680778551,
+            4146.688725103702
+          ],
+          "native_outline_xy": [
+            [
+              1408.6715342962525,
+              4098.18256247396
+            ],
+            [
+              1511.6487487927272,
+              4094.4529669079593
+            ],
+            [
+              1512.3806844216474,
+              4195.072368127529
+            ],
+            [
+              1409.5002195672946,
+              4198.959670488919
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00093",
+          "row": 0,
+          "col": 10,
+          "native_center_xy": [
+            1607.2344483442619,
+            4143.2527280146405
+          ],
+          "native_outline_xy": [
+            [
+              1556.1482977991918,
+              4094.834715221332
+            ],
+            [
+              1657.5973720369134,
+              4091.1573146409996
+            ],
+            [
+              1658.1926981819631,
+              4191.549520124465
+            ],
+            [
+              1556.8385070819481,
+              4195.382294765686
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00090",
+          "row": 0,
+          "col": 11,
+          "native_center_xy": [
+            1755.317203648407,
+            4141.739457388488
+          ],
+          "native_outline_xy": [
+            [
+              1704.0096487140195,
+              4093.452364884064
+            ],
+            [
+              1806.038753310645,
+              4089.747601842534
+            ],
+            [
+              1806.4957635097944,
+              4189.905148726347
+            ],
+            [
+              1704.5616453591902,
+              4193.766173297204
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00088",
+          "row": 0,
+          "col": 12,
+          "native_center_xy": [
+            1904.27128814277,
+            4138.689773836101
+          ],
+          "native_outline_xy": [
+            [
+              1853.269713343889,
+              4090.0165807389058
+            ],
+            [
+              1954.8222896643185,
+              4086.3259672650065
+            ],
+            [
+              1955.1444740838774,
+              4187.240439429184
+            ],
+            [
+              1853.6869334893615,
+              4191.088129612805
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00086",
+          "row": 0,
+          "col": 13,
+          "native_center_xy": [
+            2049.403080034481,
+            4136.264488314044
+          ],
+          "native_outline_xy": [
+            [
+              1996.6140237437394,
+              4087.7763270674736
+            ],
+            [
+              2101.871009310166,
+              4083.946185630691
+            ],
+            [
+              2102.0561085037975,
+              4184.627704365479
+            ],
+            [
+              1996.8971777932732,
+              4188.620655672662
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00085",
+          "row": 0,
+          "col": 14,
+          "native_center_xy": [
+            2197.499036384978,
+            4135.193577233951
+          ],
+          "native_outline_xy": [
+            [
+              2143.4680993272314,
+              4087.369356927725
+            ],
+            [
+              2251.3429737177757,
+              4083.435580721875
+            ],
+            [
+              2251.3889259751036,
+              4182.8929526729125
+            ],
+            [
+              2143.6130956803786,
+              4186.991949886386
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00084",
+          "row": 0,
+          "col": 15,
+          "native_center_xy": [
+            2343.864519487279,
+            4132.691349391612
+          ],
+          "native_outline_xy": [
+            [
+              2290.667761580618,
+              4083.9715937942633
+            ],
+            [
+              2397.011617330699,
+              4080.09034610616
+            ],
+            [
+              2396.9226331634454,
+              4181.2841289609
+            ],
+            [
+              2290.6778879215362,
+              4185.3314801843435
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00083",
+          "row": 0,
+          "col": 16,
+          "native_center_xy": [
+            2488.0076765938397,
+            4130.748809695027
+          ],
+          "native_outline_xy": [
+            [
+              2438.2104574266223,
+              4081.534753021263
+            ],
+            [
+              2537.9017063662436,
+              4077.8916639127256
+            ],
+            [
+              2537.6798014203123,
+              4179.8392369758685
+            ],
+            [
+              2438.081934852978,
+              4183.639550762126
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00081",
+          "row": 0,
+          "col": 17,
+          "native_center_xy": [
+            2634.5538580683633,
+            4129.189828663763
+          ],
+          "native_outline_xy": [
+            [
+              2584.0309277911824,
+              4081.107668808545
+            ],
+            [
+              2685.301959757764,
+              4077.3989888188203
+            ],
+            [
+              2684.9494449690283,
+              4177.1507971202955
+            ],
+            [
+              2583.7710162163053,
+              4181.016122489063
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00080",
+          "row": 0,
+          "col": 18,
+          "native_center_xy": [
+            2780.4141763755524,
+            4127.149943458494
+          ],
+          "native_outline_xy": [
+            [
+              2731.215353318292,
+              4078.6515554627254
+            ],
+            [
+              2829.979450437956,
+              4075.030083997516
+            ],
+            [
+              2829.490428732347,
+              4175.527505771479
+            ],
+            [
+              2730.817100965058,
+              4179.303243303381
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00077",
+          "row": 0,
+          "col": 19,
+          "native_center_xy": [
+            2926.0962964974988,
+            4125.587677850017
+          ],
+          "native_outline_xy": [
+            [
+              2875.6669925043625,
+              4078.233214310553
+            ],
+            [
+              2977.010222107615,
+              4074.5093072937934
+            ],
+            [
+              2976.398728399976,
+              4172.823005107288
+            ],
+            [
+              2875.1464017942276,
+              4176.7021336745975
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00076",
+          "row": 0,
+          "col": 20,
+          "native_center_xy": [
+            3070.090471640253,
+            4123.584679897901
+          ],
+          "native_outline_xy": [
+            [
+              3018.4472824221816,
+              4075.9068601558542
+            ],
+            [
+              3122.3497458207944,
+              4072.0840755064046
+            ],
+            [
+              3121.601088898252,
+              4171.1401070822685
+            ],
+            [
+              3017.7923078111344,
+              4175.123609360647
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00074",
+          "row": 0,
+          "col": 21,
+          "native_center_xy": [
+            3213.918751618169,
+            4121.572082619617
+          ],
+          "native_outline_xy": [
+            [
+              3161.57858705665,
+              4073.554121937116
+            ],
+            [
+              3267.009870950369,
+              4069.670180614852
+            ],
+            [
+              3266.1227249973354,
+              4169.465098665537
+            ],
+            [
+              3160.7869845138653,
+              4173.51372190457
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00072",
+          "row": 0,
+          "col": 22,
+          "native_center_xy": [
+            3359.077320799421,
+            4119.493520879981
+          ],
+          "native_outline_xy": [
+            [
+              3307.044894888093,
+              4072.0705454684935
+            ],
+            [
+              3411.9832155337836,
+              4068.1982509267855
+            ],
+            [
+              3410.975136942244,
+              4166.793811338188
+            ],
+            [
+              3306.1305436245284,
+              4170.828428681356
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00071",
+          "row": 0,
+          "col": 23,
+          "native_center_xy": [
+            3502.5653473870934,
+            4116.979657964386
+          ],
+          "native_outline_xy": [
+            [
+              3451.8465090154546,
+              4068.6602693132345
+            ],
+            [
+              3554.310892141709,
+              4064.876085028591
+            ],
+            [
+              3553.153996136894,
+              4165.175016114485
+            ],
+            [
+              3450.782485361091,
+              4169.120806370312
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00069",
+          "row": 0,
+          "col": 24,
+          "native_center_xy": [
+            3644.3913266438526,
+            4114.996357494482
+          ],
+          "native_outline_xy": [
+            [
+              3594.9579955958593,
+              4067.23182767116
+            ],
+            [
+              3694.97157162787,
+              4063.5319489154554
+            ],
+            [
+              3693.700069844866,
+              4162.640505385078
+            ],
+            [
+              3593.775853663443,
+              4166.496609869845
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00068",
+          "row": 0,
+          "col": 25,
+          "native_center_xy": [
+            3789.491114097244,
+            4113.833760012089
+          ],
+          "native_outline_xy": [
+            [
+              3740.3646992603994,
+              4065.700292469914
+            ],
+            [
+              3839.9075852643973,
+              4062.011649016603
+            ],
+            [
+              3838.4935749593246,
+              4161.84577894783
+            ],
+            [
+              3739.0400589549313,
+              4165.691419203589
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00067",
+          "row": 0,
+          "col": 26,
+          "native_center_xy": [
+            3932.424650898282,
+            4113.211690655521
+          ],
+          "native_outline_xy": [
+            [
+              3884.085572195078,
+              4065.1725651957686
+            ],
+            [
+              3982.183980097589,
+              4061.529839118305
+            ],
+            [
+              3980.642813681017,
+              4161.130650501256
+            ],
+            [
+              3882.632058736871,
+              4164.928090316614
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00065",
+          "row": 0,
+          "col": 27,
+          "native_center_xy": [
+            4075.198730872985,
+            4111.139682232049
+          ],
+          "native_outline_xy": [
+            [
+              4026.1811959940615,
+              4062.768032943912
+            ],
+            [
+              4125.776903018345,
+              4059.0650723651447
+            ],
+            [
+              4124.091961151002,
+              4159.388664834178
+            ],
+            [
+              4024.5856712881523,
+              4163.250211740227
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00063",
+          "row": 0,
+          "col": 28,
+          "native_center_xy": [
+            4217.297331751867,
+            4109.554353191
+          ],
+          "native_outline_xy": [
+            [
+              4166.611477192753,
+              4062.322207231072
+            ],
+            [
+              4269.63162360163,
+              4058.483936724156
+            ],
+            [
+              4267.85264680726,
+              4156.664854543239
+            ],
+            [
+              4164.922797459305,
+              4160.664040243931
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00059",
+          "row": 0,
+          "col": 29,
+          "native_center_xy": [
+            4360.173723767906,
+            4108.397017587343
+          ],
+          "native_outline_xy": [
+            [
+              4309.316146535655,
+              4060.8165158159345
+            ],
+            [
+              4412.821748074619,
+              4056.9537372495224
+            ],
+            [
+              4410.899384588148,
+              4155.854103155762
+            ],
+            [
+              4307.484943377007,
+              4159.8801213884735
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00058",
+          "row": 0,
+          "col": 30,
+          "native_center_xy": [
+            4503.829688404572,
+            4106.715252147083
+          ],
+          "native_outline_xy": [
+            [
+              4453.27948253704,
+              4059.245791701535
+            ],
+            [
+              4556.297212926101,
+              4055.39482975099
+            ],
+            [
+              4554.249086336872,
+              4154.061876651594
+            ],
+            [
+              4451.3216440910555,
+              4158.075308447373
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00057",
+          "row": 0,
+          "col": 31,
+          "native_center_xy": [
+            4645.84661646746,
+            4105.078098646603
+          ],
+          "native_outline_xy": [
+            [
+              4595.599412697972,
+              4057.718466589742
+            ],
+            [
+              4698.135947143444,
+              4053.879132300882
+            ],
+            [
+              4695.964102218549,
+              4152.315467230841
+            ],
+            [
+              4593.5169987623385,
+              4156.316511935368
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00056",
+          "row": 0,
+          "col": 32,
+          "native_center_xy": [
+            4786.264354413328,
+            4102.540074904416
+          ],
+          "native_outline_xy": [
+            [
+              4737.270885804676,
+              4055.2516198776602
+            ],
+            [
+              4837.425934016801,
+              4051.4967978901122
+            ],
+            [
+              4835.133164136013,
+              4149.708209278439
+            ],
+            [
+              4735.065050072535,
+              4153.620989423898
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00054",
+          "row": 0,
+          "col": 33,
+          "native_center_xy": [
+            4926.990980338945,
+            4099.505980356749
+          ],
+          "native_outline_xy": [
+            [
+              4880.181658857576,
+              4052.7249194200936
+            ],
+            [
+              4976.074179989511,
+              4049.1254394401035
+            ],
+            [
+              4973.684797617293,
+              4146.17160682461
+            ],
+            [
+              4877.874312294355,
+              4149.920874286369
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": false,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00050",
+          "row": 1,
+          "col": 0,
+          "native_center_xy": [
+            146.31594483230162,
+            4264.4790657565745
+          ],
+          "native_outline_xy": [
+            [
+              94.50275045998725,
+              4245.5936274541955
+            ],
+            [
+              197.22072919140717,
+              4241.717241206323
+            ],
+            [
+              198.0282162182296,
+              4283.32771854793
+            ],
+            [
+              95.35098043406038,
+              4287.2677995160375
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00049",
+          "row": 1,
+          "col": 1,
+          "native_center_xy": [
+            292.4099803755224,
+            4264.496990375227
+          ],
+          "native_outline_xy": [
+            [
+              240.3161267306261,
+              4246.1826982149905
+            ],
+            [
+              343.67091268465845,
+              4242.272667812871
+            ],
+            [
+              344.40220787366997,
+              4282.77555450207
+            ],
+            [
+              241.0872433184644,
+              4286.7481085613035
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00047",
+          "row": 1,
+          "col": 2,
+          "native_center_xy": [
+            436.1986413360333,
+            4264.577585813521
+          ],
+          "native_outline_xy": [
+            [
+              386.54586646443937,
+              4245.715318957403
+            ],
+            [
+              485.0637262093927,
+              4241.980640476763
+            ],
+            [
+              485.7576294616043,
+              4283.404224638063
+            ],
+            [
+              387.27850850055705,
+              4287.199987276962
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00044",
+          "row": 1,
+          "col": 3,
+          "native_center_xy": [
+            582.611238963343,
+            4264.532595845865
+          ],
+          "native_outline_xy": [
+            [
+              533.2188136586819,
+              4246.218494391848
+            ],
+            [
+              631.289982569965,
+              4242.49163033225
+            ],
+            [
+              631.9110416044975,
+              4282.812353959867
+            ],
+            [
+              533.877329599925,
+              4286.598539542009
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00045",
+          "row": 1,
+          "col": 4,
+          "native_center_xy": [
+            729.4023563103192,
+            4261.930019364084
+          ],
+          "native_outline_xy": [
+            [
+              679.2039824506638,
+              4245.711795996584
+            ],
+            [
+              778.9986377100593,
+              4241.911704688467
+            ],
+            [
+              779.5069994794163,
+              4278.117959972224
+            ],
+            [
+              679.7464970365951,
+              4281.972381177822
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00042",
+          "row": 1,
+          "col": 5,
+          "native_center_xy": [
+            875.591689991202,
+            4264.3601397768125
+          ],
+          "native_outline_xy": [
+            [
+              826.7004175616686,
+              4246.130119420482
+            ],
+            [
+              923.8817910489935,
+              4242.420505062126
+            ],
+            [
+              924.3917004807342,
+              4282.556131421243
+            ],
+            [
+              827.2471152460049,
+              4286.324523514117
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00040",
+          "row": 1,
+          "col": 6,
+          "native_center_xy": [
+            1020.5311505292974,
+            4263.794310717456
+          ],
+          "native_outline_xy": [
+            [
+              968.1062406347673,
+              4244.746475880578
+            ],
+            [
+              1072.3748018756369,
+              4240.759867237149
+            ],
+            [
+              1072.8513763452947,
+              4282.804110104354
+            ],
+            [
+              968.6240763431895,
+              4286.856933343716
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00038",
+          "row": 1,
+          "col": 7,
+          "native_center_xy": [
+            1168.0207965808506,
+            4263.107051029844
+          ],
+          "native_outline_xy": [
+            [
+              1116.3899673760247,
+              4243.08161961668
+            ],
+            [
+              1219.1100257274043,
+              4239.147851277188
+            ],
+            [
+              1219.548670258999,
+              4283.0925503158305
+            ],
+            [
+              1116.871003413977,
+              4287.094653353549
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00037",
+          "row": 1,
+          "col": 8,
+          "native_center_xy": [
+            1315.3589249014774,
+            4262.40236570134
+          ],
+          "native_outline_xy": [
+            [
+              1262.9188601457295,
+              4241.465408362309
+            ],
+            [
+              1367.2971004703097,
+              4237.461670764809
+            ],
+            [
+              1367.6919708087673,
+              4283.296595231492
+            ],
+            [
+              1263.3585599302817,
+              4287.372923968566
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00036",
+          "row": 1,
+          "col": 9,
+          "native_center_xy": [
+            1462.0052647494456,
+            4260.706051841137
+          ],
+          "native_outline_xy": [
+            [
+              1411.9517694709998,
+              4238.738138326886
+            ],
+            [
+              1511.6116336610214,
+              4234.910757003489
+            ],
+            [
+              1511.9592256928006,
+              4282.630280860373
+            ],
+            [
+              1412.3438232031835,
+              4286.529984429953
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00034",
+          "row": 1,
+          "col": 10,
+          "native_center_xy": [
+            1608.5057134240387,
+            4259.493383961036
+          ],
+          "native_outline_xy": [
+            [
+              1558.1753496790943,
+              4236.104876713738
+            ],
+            [
+              1658.4340512199406,
+              4232.249838738413
+            ],
+            [
+              1658.7340182350813,
+              4282.834464447674
+            ],
+            [
+              1558.5226247416103,
+              4286.766804166862
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00033",
+          "row": 1,
+          "col": 11,
+          "native_center_xy": [
+            1756.428512979159,
+            4258.204588556842
+          ],
+          "native_outline_xy": [
+            [
+              1706.88421506416,
+              4233.362187533156
+            ],
+            [
+              1805.627699121712,
+              4229.560823061068
+            ],
+            [
+              1805.8720381775436,
+              4282.996460330065
+            ],
+            [
+              1707.177660195963,
+              4286.878434370089
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00032",
+          "row": 1,
+          "col": 12,
+          "native_center_xy": [
+            1905.226503781363,
+            4256.860702005317
+          ],
+          "native_outline_xy": [
+            [
+              1854.8975528930494,
+              4230.6323262085225
+            ],
+            [
+              1955.2706575151576,
+              4226.763562182636
+            ],
+            [
+              1955.450310136841,
+              4283.034282892394
+            ],
+            [
+              1855.1296493712991,
+              4286.989536631569
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00029",
+          "row": 1,
+          "col": 13,
+          "native_center_xy": [
+            2051.2411462828395,
+            4255.604427297044
+          ],
+          "native_outline_xy": [
+            [
+              1999.0930398885146,
+              4228.035882180112
+            ],
+            [
+              2103.1676667453576,
+              4224.019612143582
+            ],
+            [
+              2103.2757414584084,
+              4283.112963731553
+            ],
+            [
+              1999.258091192686,
+              4287.223630192027
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00028",
+          "row": 1,
+          "col": 14,
+          "native_center_xy": [
+            2197.095838990462,
+            4254.8254206757165
+          ],
+          "native_outline_xy": [
+            [
+              2144.708116767103,
+              4226.355820946312
+            ],
+            [
+              2249.338685260472,
+              4222.311616051956
+            ],
+            [
+              2249.367994257579,
+              4283.232216663203
+            ],
+            [
+              2144.79634291229,
+              4287.374481816419
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00027",
+          "row": 1,
+          "col": 15,
+          "native_center_xy": [
+            2343.302155232068,
+            4253.028534559825
+          ],
+          "native_outline_xy": [
+            [
+              2291.7144789881613,
+              4222.638670854827
+            ],
+            [
+              2394.830935315858,
+              4218.649796385383
+            ],
+            [
+              2394.7752689628933,
+              4283.3509104574305
+            ],
+            [
+              2291.7203360634962,
+              4287.442659110692
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00026",
+          "row": 1,
+          "col": 16,
+          "native_center_xy": [
+            2488.825013471524,
+            4252.218845818629
+          ],
+          "native_outline_xy": [
+            [
+              2439.06182293445,
+              4221.839519920067
+            ],
+            [
+              2538.6214850703195,
+              4217.980526022551
+            ],
+            [
+              2538.4803680111618,
+              4282.5323402286085
+            ],
+            [
+              2438.979831702252,
+              4286.49065703168
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00025",
+          "row": 1,
+          "col": 17,
+          "native_center_xy": [
+            2634.1789282074146,
+            4251.392844310022
+          ],
+          "native_outline_xy": [
+            [
+              2584.692480690986,
+              4220.10602020045
+            ],
+            [
+              2683.7913621647126,
+              4216.25874939722
+            ],
+            [
+              2683.5575009740182,
+              4282.611466750389
+            ],
+            [
+              2584.518972386235,
+              4286.560592836301
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00024",
+          "row": 1,
+          "col": 18,
+          "native_center_xy": [
+            2779.869852967849,
+            4250.5306245776665
+          ],
+          "native_outline_xy": [
+            [
+              2730.6626387951746,
+              4218.340999088366
+            ],
+            [
+              2829.300761287959,
+              4214.50550804986
+            ],
+            [
+              2828.9691709563012,
+              4282.649668185423
+            ],
+            [
+              2730.3925972864913,
+              4286.58951894097
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00023",
+          "row": 1,
+          "col": 19,
+          "native_center_xy": [
+            2925.8911718709405,
+            4249.146512539869
+          ],
+          "native_outline_xy": [
+            [
+              2876.968014597485,
+              4215.571446217201
+            ],
+            [
+              2975.146308236745,
+              4211.749275970772
+            ],
+            [
+              2974.7059959442613,
+              4282.647231772484
+            ],
+            [
+              2876.591287764154,
+              4286.577724080488
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00021",
+          "row": 1,
+          "col": 20,
+          "native_center_xy": [
+            3068.703654501664,
+            4248.353389421147
+          ],
+          "native_outline_xy": [
+            [
+              3017.535781583489,
+              4213.982670404191
+            ],
+            [
+              3120.302025249685,
+              4209.9755241964995
+            ],
+            [
+              3119.753470772868,
+              4282.644806884029
+            ],
+            [
+              3017.055289822139,
+              4286.768439160294
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00020",
+          "row": 1,
+          "col": 21,
+          "native_center_xy": [
+            3212.8604739820207,
+            4247.484433797386
+          ],
+          "native_outline_xy": [
+            [
+              3162.488963877635,
+              4212.20493579356
+            ],
+            [
+              3263.776263016696,
+              4208.249186941865
+            ],
+            [
+              3263.11594604683,
+              4282.682660388519
+            ],
+            [
+              3161.897194637559,
+              4286.756276256411
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00019",
+          "row": 1,
+          "col": 22,
+          "native_center_xy": [
+            3357.34524295237,
+            4246.097319088382
+          ],
+          "native_outline_xy": [
+            [
+              3305.7545291940883,
+              4211.441255160137
+            ],
+            [
+              3409.564084276598,
+              4207.378967136245
+            ],
+            [
+              3408.8153775062688,
+              4280.6723839315
+            ],
+            [
+              3305.0748371407612,
+              4284.853904213068
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00017",
+          "row": 1,
+          "col": 23,
+          "native_center_xy": [
+            3501.643413313075,
+            4245.178406368766
+          ],
+          "native_outline_xy": [
+            [
+              3452.3640793298046,
+              4207.632059657508
+            ],
+            [
+              3551.717669508333,
+              4203.741067859649
+            ],
+            [
+              3550.8083601766593,
+              4282.637600553643
+            ],
+            [
+              3451.5256966325305,
+              4286.651709203217
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00016",
+          "row": 1,
+          "col": 24,
+          "native_center_xy": [
+            3643.2794966268866,
+            4244.8229922753635
+          ],
+          "native_outline_xy": [
+            [
+              3594.2849998490406,
+              4206.882581750723
+            ],
+            [
+              3693.1822591567984,
+              4203.001809242354
+            ],
+            [
+              3692.1600985273626,
+              4282.675204763728
+            ],
+            [
+              3593.3339657074016,
+              4286.680017505431
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00015",
+          "row": 1,
+          "col": 25,
+          "native_center_xy": [
+            3786.2330810033786,
+            4243.911359237065
+          ],
+          "native_outline_xy": [
+            [
+              3737.5325786269677,
+              4205.099168399058
+            ],
+            [
+              3835.9712571827768,
+              4201.230298062413
+            ],
+            [
+              3834.8197784561025,
+              4282.63285248057
+            ],
+            [
+              3736.453257578293,
+              4286.628158526331
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00014",
+          "row": 1,
+          "col": 26,
+          "native_center_xy": [
+            3930.951359754155,
+            4243.862100778293
+          ],
+          "native_outline_xy": [
+            [
+              3883.041073622002,
+              4204.165803429013
+            ],
+            [
+              3980.036014966439,
+              4200.346171724815
+            ],
+            [
+              3978.7498692528175,
+              4283.4657850618205
+            ],
+            [
+              3881.827347479445,
+              4287.412921777714
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00013",
+          "row": 1,
+          "col": 27,
+          "native_center_xy": [
+            4074.020340174068,
+            4242.898336323432
+          ],
+          "native_outline_xy": [
+            [
+              4024.9402268257686,
+              4202.397131557329
+            ],
+            [
+              4124.408498976752,
+              4198.473945364192
+            ],
+            [
+              4122.983034072434,
+              4283.302645853137
+            ],
+            [
+              4023.5903702832966,
+              4287.35958975528
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00012",
+          "row": 1,
+          "col": 28,
+          "native_center_xy": [
+            4215.930554459773,
+            4241.958615608014
+          ],
+          "native_outline_xy": [
+            [
+              4166.179653690696,
+              4200.636682704544
+            ],
+            [
+              4267.1281615204,
+              4196.648867058356
+            ],
+            [
+              4265.560273391506,
+              4283.179897715732
+            ],
+            [
+              4164.689847605748,
+              4287.306507362276
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00011",
+          "row": 1,
+          "col": 29,
+          "native_center_xy": [
+            4358.142161355808,
+            4240.984388860455
+          ],
+          "native_outline_xy": [
+            [
+              4307.731712321583,
+              4198.84610959281
+            ],
+            [
+              4410.142491473741,
+              4194.794192526799
+            ],
+            [
+              4408.427648140425,
+              4283.018211725253
+            ],
+            [
+              4306.097432595967,
+              4287.214023058872
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        },
+        {
+          "id": "AA-F00010",
+          "row": 1,
+          "col": 30,
+          "native_center_xy": [
+            4500.636734349021,
+            4240.449533283704
+          ],
+          "native_outline_xy": [
+            [
+              4450.531988132037,
+              4197.936266835094
+            ],
+            [
+              4552.463013475234,
+              4193.895448340262
+            ],
+            [
+              4550.617133681136,
+              4282.857292916143
+            ],
+            [
+              4448.766763223152,
+              4287.042865518246
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00009",
+          "row": 1,
+          "col": 31,
+          "native_center_xy": [
+            4642.477589318081,
+            4238.972263811822
+          ],
+          "native_outline_xy": [
+            [
+              4592.697085730292,
+              4195.137718867241
+            ],
+            [
+              4694.153443079663,
+              4191.111010017754
+            ],
+            [
+              4692.133543353382,
+              4282.697135841046
+            ],
+            [
+              4590.759625138657,
+              4286.872519523593
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00008",
+          "row": 1,
+          "col": 32,
+          "native_center_xy": [
+            4783.16452114935,
+            4237.992602301868
+          ],
+          "native_outline_xy": [
+            [
+              4736.041443289193,
+              4195.109264406794
+            ],
+            [
+              4832.2620987904875,
+              4191.2814273759395
+            ],
+            [
+              4830.174463856003,
+              4280.772983997224
+            ],
+            [
+              4734.030011768709,
+              4284.73891388885
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "fit"
+        },
+        {
+          "id": "AA-F00007",
+          "row": 1,
+          "col": 33,
+          "native_center_xy": [
+            4922.267239569222,
+            4236.1154432543135
+          ],
+          "native_outline_xy": [
+            [
+              4875.962483027873,
+              4190.484179495088
+            ],
+            [
+              4970.794916600475,
+              4186.710102025669
+            ],
+            [
+              4968.459399020231,
+              4281.635747623802
+            ],
+            [
+              4873.706428268141,
+              4285.554518014159
+            ]
+          ],
+          "outline_role": "old_photo_outline_observation_not_ground_truth",
+          "clipped_source_bottom": true,
+          "split": "holdout"
+        }
+      ],
+      "source_frame": "aa",
+      "native_window": [
+        0,
+        3850,
+        5150,
+        4284
+      ],
+      "physical_acceptance": "pending"
+    },
+    {
+      "id": "R01",
+      "kind": "closed_ring",
+      "interpretation": "AA-G003 continuous ring; existing qualitative identity retained, new equal width candidate",
+      "object_id": "AA-G003",
+      "source_frame": "aa",
+      "native_window": [
+        2450,
+        1350,
+        3320,
+        1820
+      ],
+      "physical_acceptance": "new_geometry_pending"
+    },
+    {
+      "id": "T01",
+      "kind": "contact_array",
+      "interpretation": "U01 wide MOS in capacitor connection: four internal CT columns, not four MOS devices; 24 proposed rows",
+      "rows": 24,
+      "cols": 4,
+      "observations": [
+        {
+          "id": "CT-F05173",
+          "row": 0,
+          "col": 3,
+          "native_center_xy": [
+            1584.0,
+            1788.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05174",
+          "row": 0,
+          "col": 2,
+          "native_center_xy": [
+            1190.0,
+            1791.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05176",
+          "row": 0,
+          "col": 1,
+          "native_center_xy": [
+            806.0,
+            1793.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05178",
+          "row": 0,
+          "col": 0,
+          "native_center_xy": [
+            406.5,
+            1795.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05196",
+          "row": 1,
+          "col": 3,
+          "native_center_xy": [
+            1584.0,
+            1798.5
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05200",
+          "row": 1,
+          "col": 2,
+          "native_center_xy": [
+            1191.0,
+            1801.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05201",
+          "row": 1,
+          "col": 1,
+          "native_center_xy": [
+            806.0,
+            1804.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05203",
+          "row": 1,
+          "col": 0,
+          "native_center_xy": [
+            408.0,
+            1806.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05209",
+          "row": 2,
+          "col": 3,
+          "native_center_xy": [
+            1585.0,
+            1814.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05216",
+          "row": 2,
+          "col": 2,
+          "native_center_xy": [
+            1192.0,
+            1822.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05236",
+          "row": 2,
+          "col": 1,
+          "native_center_xy": [
+            807.0,
+            1824.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05267",
+          "row": 2,
+          "col": 0,
+          "native_center_xy": [
+            409.3333333333333,
+            1826.6666666666667
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05293",
+          "row": 3,
+          "col": 3,
+          "native_center_xy": [
+            1585.0,
+            1829.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05354",
+          "row": 3,
+          "col": 1,
+          "native_center_xy": [
+            807.5,
+            1835.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05368",
+          "row": 3,
+          "col": 0,
+          "native_center_xy": [
+            410.0,
+            1837.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05405",
+          "row": 4,
+          "col": 3,
+          "native_center_xy": [
+            1586.0,
+            1845.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05409",
+          "row": 4,
+          "col": 2,
+          "native_center_xy": [
+            1192.5,
+            1847.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05417",
+          "row": 4,
+          "col": 1,
+          "native_center_xy": [
+            808.0,
+            1850.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05419",
+          "row": 4,
+          "col": 0,
+          "native_center_xy": [
+            411.0,
+            1853.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05466",
+          "row": 5,
+          "col": 3,
+          "native_center_xy": [
+            1586.0,
+            1860.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05517",
+          "row": 5,
+          "col": 1,
+          "native_center_xy": [
+            809.0,
+            1866.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05579",
+          "row": 6,
+          "col": 3,
+          "native_center_xy": [
+            1586.0,
+            1875.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05587",
+          "row": 6,
+          "col": 2,
+          "native_center_xy": [
+            1198.0,
+            1878.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05592",
+          "row": 6,
+          "col": 1,
+          "native_center_xy": [
+            810.0,
+            1881.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05593",
+          "row": 6,
+          "col": 0,
+          "native_center_xy": [
+            412.0,
+            1884.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05622",
+          "row": 7,
+          "col": 1,
+          "native_center_xy": [
+            810.0,
+            1896.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05626",
+          "row": 7,
+          "col": 0,
+          "native_center_xy": [
+            412.5,
+            1899.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05631",
+          "row": 8,
+          "col": 3,
+          "native_center_xy": [
+            1587.0,
+            1901.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05643",
+          "row": 8,
+          "col": 2,
+          "native_center_xy": [
+            1194.0,
+            1904.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05656",
+          "row": 8,
+          "col": 1,
+          "native_center_xy": [
+            811.0,
+            1912.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05662",
+          "row": 8,
+          "col": 0,
+          "native_center_xy": [
+            413.6666666666667,
+            1914.3333333333333
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05667",
+          "row": 9,
+          "col": 3,
+          "native_center_xy": [
+            1587.0,
+            1917.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05703",
+          "row": 10,
+          "col": 3,
+          "native_center_xy": [
+            1588.0,
+            1931.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05711",
+          "row": 10,
+          "col": 2,
+          "native_center_xy": [
+            1195.0,
+            1935.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05715",
+          "row": 10,
+          "col": 1,
+          "native_center_xy": [
+            812.0,
+            1938.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05718",
+          "row": 10,
+          "col": 0,
+          "native_center_xy": [
+            415.0,
+            1941.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05738",
+          "row": 11,
+          "col": 3,
+          "native_center_xy": [
+            1588.0,
+            1947.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05756",
+          "row": 11,
+          "col": 0,
+          "native_center_xy": [
+            415.0,
+            1956.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05772",
+          "row": 12,
+          "col": 3,
+          "native_center_xy": [
+            1589.0,
+            1962.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05780",
+          "row": 12,
+          "col": 2,
+          "native_center_xy": [
+            1196.0,
+            1965.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05782",
+          "row": 12,
+          "col": 1,
+          "native_center_xy": [
+            813.0,
+            1969.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05786",
+          "row": 12,
+          "col": 0,
+          "native_center_xy": [
+            415.6666666666667,
+            1971.3333333333333
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05807",
+          "row": 13,
+          "col": 3,
+          "native_center_xy": [
+            1589.0,
+            1978.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05818",
+          "row": 13,
+          "col": 1,
+          "native_center_xy": [
+            813.5,
+            1984.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05827",
+          "row": 13,
+          "col": 0,
+          "native_center_xy": [
+            417.0,
+            1987.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05833",
+          "row": 14,
+          "col": 3,
+          "native_center_xy": [
+            1590.0,
+            1988.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05839",
+          "row": 14,
+          "col": 2,
+          "native_center_xy": [
+            1197.0,
+            1991.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05849",
+          "row": 14,
+          "col": 1,
+          "native_center_xy": [
+            814.0,
+            1999.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05863",
+          "row": 14,
+          "col": 0,
+          "native_center_xy": [
+            417.5,
+            2002.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05877",
+          "row": 15,
+          "col": 3,
+          "native_center_xy": [
+            1590.0,
+            2009.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05886",
+          "row": 15,
+          "col": 2,
+          "native_center_xy": [
+            1203.0,
+            2011.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05897",
+          "row": 15,
+          "col": 1,
+          "native_center_xy": [
+            815.0,
+            2014.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05906",
+          "row": 16,
+          "col": 3,
+          "native_center_xy": [
+            1590.6666666666667,
+            2018.6666666666667
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05912",
+          "row": 16,
+          "col": 2,
+          "native_center_xy": [
+            1202.6666666666667,
+            2021.3333333333333
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05916",
+          "row": 16,
+          "col": 1,
+          "native_center_xy": [
+            815.0,
+            2025.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05920",
+          "row": 16,
+          "col": 0,
+          "native_center_xy": [
+            418.5,
+            2028.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05939",
+          "row": 17,
+          "col": 3,
+          "native_center_xy": [
+            1591.0,
+            2034.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05945",
+          "row": 17,
+          "col": 2,
+          "native_center_xy": [
+            1203.0,
+            2037.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05951",
+          "row": 17,
+          "col": 1,
+          "native_center_xy": [
+            816.0,
+            2045.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05955",
+          "row": 17,
+          "col": 0,
+          "native_center_xy": [
+            420.0,
+            2048.5
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05956",
+          "row": 18,
+          "col": 3,
+          "native_center_xy": [
+            1591.0,
+            2049.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05963",
+          "row": 18,
+          "col": 2,
+          "native_center_xy": [
+            1204.0,
+            2052.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05966",
+          "row": 18,
+          "col": 1,
+          "native_center_xy": [
+            816.0,
+            2056.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05968",
+          "row": 18,
+          "col": 0,
+          "native_center_xy": [
+            421.0,
+            2059.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05976",
+          "row": 19,
+          "col": 3,
+          "native_center_xy": [
+            1591.3333333333333,
+            2064.3333333333335
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05982",
+          "row": 19,
+          "col": 2,
+          "native_center_xy": [
+            1204.0,
+            2068.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F05996",
+          "row": 19,
+          "col": 1,
+          "native_center_xy": [
+            817.0,
+            2071.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06013",
+          "row": 19,
+          "col": 0,
+          "native_center_xy": [
+            420.5,
+            2074.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06014",
+          "row": 20,
+          "col": 3,
+          "native_center_xy": [
+            1592.0,
+            2074.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06025",
+          "row": 20,
+          "col": 2,
+          "native_center_xy": [
+            1200.0,
+            2078.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06031",
+          "row": 20,
+          "col": 1,
+          "native_center_xy": [
+            817.0,
+            2086.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06042",
+          "row": 20,
+          "col": 0,
+          "native_center_xy": [
+            421.5,
+            2090.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06046",
+          "row": 21,
+          "col": 3,
+          "native_center_xy": [
+            1592.0,
+            2095.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06050",
+          "row": 21,
+          "col": 2,
+          "native_center_xy": [
+            1200.0,
+            2098.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06055",
+          "row": 21,
+          "col": 1,
+          "native_center_xy": [
+            818.0,
+            2102.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06056",
+          "row": 21,
+          "col": 0,
+          "native_center_xy": [
+            422.0,
+            2105.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06057",
+          "row": 22,
+          "col": 3,
+          "native_center_xy": [
+            1593.0,
+            2105.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06071",
+          "row": 22,
+          "col": 2,
+          "native_center_xy": [
+            1201.0,
+            2108.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06089",
+          "row": 22,
+          "col": 1,
+          "native_center_xy": [
+            819.0,
+            2112.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06092",
+          "row": 21,
+          "col": 0,
+          "native_center_xy": [
+            422.0,
+            2115.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06098",
+          "row": 23,
+          "col": 3,
+          "native_center_xy": [
+            1593.0,
+            2121.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06099",
+          "row": 23,
+          "col": 2,
+          "native_center_xy": [
+            1206.0,
+            2123.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06105",
+          "row": 23,
+          "col": 1,
+          "native_center_xy": [
+            819.0,
+            2132.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F06106",
+          "row": 23,
+          "col": 0,
+          "native_center_xy": [
+            423.5,
+            2136.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        }
+      ],
+      "source_frame": "poly",
+      "native_window": [
+        250,
+        1720,
+        1760,
+        2230
+      ],
+      "aa_object_id": "AA-W01",
+      "dimension_assumption": "8 relative unit squares, not process dimension",
+      "channel_zones": null,
+      "upper_metal": null,
+      "physical_acceptance": "pending"
+    },
+    {
+      "id": "T02",
+      "kind": "contact_array",
+      "interpretation": "M03 MOS region: three neighboring AA units with shared 3x3 CT motif, not a MOS count",
+      "rows": 3,
+      "cols": 9,
+      "motif_cols": 3,
+      "cell_pitch": 134.0,
+      "origin_center_xy": [
+        1606.0,
+        1428.0
+      ],
+      "motif_pitch_xy": [
+        54.0,
+        13.0
+      ],
+      "size_wh": [
+        8.0,
+        8.0
+      ],
+      "aa_object_id": "AA-F01620",
+      "AA_materials": [
+        {
+          "id": "T02-AA-0",
+          "layer": "AA",
+          "primitive": "rectangle",
+          "outer_xyxy": [
+            1598.0,
+            1416.0,
+            1722.0,
+            1470.0
+          ],
+          "hole_xyxy": null,
+          "previous_object_id": "AA-F01620",
+          "status": "candidate_shared_parameter_revision"
+        },
+        {
+          "id": "T02-AA-1",
+          "layer": "AA",
+          "primitive": "rectangle",
+          "outer_xyxy": [
+            1732.0,
+            1416.0,
+            1856.0,
+            1470.0
+          ],
+          "hole_xyxy": null,
+          "previous_object_id": "AA-F01618",
+          "status": "candidate_shared_parameter_revision"
+        },
+        {
+          "id": "T02-AA-2",
+          "layer": "AA",
+          "primitive": "rectangle",
+          "outer_xyxy": [
+            1866.0,
+            1416.0,
+            1990.0,
+            1470.0
+          ],
+          "hole_xyxy": null,
+          "previous_object_id": "AA-F01619",
+          "status": "candidate_shared_parameter_revision"
+        }
+      ],
+      "observations": [
+        {
+          "id": "CT-F03748",
+          "row": 0,
+          "col": 2,
+          "cell": 0,
+          "native_center_xy": [
+            1523.0,
+            1239.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03768",
+          "row": 0,
+          "col": 0,
+          "cell": 0,
+          "native_center_xy": [
+            1399.0,
+            1240.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03769",
+          "row": 0,
+          "col": 1,
+          "cell": 0,
+          "native_center_xy": [
+            1461.0,
+            1240.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03779",
+          "row": 1,
+          "col": 2,
+          "cell": 0,
+          "native_center_xy": [
+            1523.0,
+            1249.5
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03790",
+          "row": 1,
+          "col": 0,
+          "cell": 0,
+          "native_center_xy": [
+            1399.0,
+            1251.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03791",
+          "row": 1,
+          "col": 1,
+          "cell": 0,
+          "native_center_xy": [
+            1461.0,
+            1250.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03867",
+          "row": 2,
+          "col": 0,
+          "cell": 0,
+          "native_center_xy": [
+            1404.0,
+            1271.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03868",
+          "row": 2,
+          "col": 1,
+          "cell": 0,
+          "native_center_xy": [
+            1461.0,
+            1271.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03869",
+          "row": 2,
+          "col": 2,
+          "cell": 0,
+          "native_center_xy": [
+            1524.0,
+            1271.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03749",
+          "row": 0,
+          "col": 3,
+          "cell": 1,
+          "native_center_xy": [
+            1549.0,
+            1239.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03750",
+          "row": 0,
+          "col": 4,
+          "cell": 1,
+          "native_center_xy": [
+            1611.0,
+            1239.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03751",
+          "row": 0,
+          "col": 5,
+          "cell": 1,
+          "native_center_xy": [
+            1674.0,
+            1239.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03780",
+          "row": 1,
+          "col": 3,
+          "cell": 1,
+          "native_center_xy": [
+            1549.0,
+            1249.5
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03781",
+          "row": 1,
+          "col": 4,
+          "cell": 1,
+          "native_center_xy": [
+            1611.0,
+            1249.5
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03782",
+          "row": 1,
+          "col": 5,
+          "cell": 1,
+          "native_center_xy": [
+            1674.0,
+            1249.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03857",
+          "row": 2,
+          "col": 3,
+          "cell": 1,
+          "native_center_xy": [
+            1549.6666666666667,
+            1266.3333333333333
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03870",
+          "row": 2,
+          "col": 4,
+          "cell": 1,
+          "native_center_xy": [
+            1612.0,
+            1270.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03871",
+          "row": 2,
+          "col": 5,
+          "cell": 1,
+          "native_center_xy": [
+            1674.0,
+            1270.5
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03736",
+          "row": -1,
+          "col": 6,
+          "cell": 2,
+          "native_center_xy": [
+            1720.0,
+            1229.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03752",
+          "row": 0,
+          "col": 6,
+          "cell": 2,
+          "native_center_xy": [
+            1700.0,
+            1239.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03753",
+          "row": 0,
+          "col": 7,
+          "cell": 2,
+          "native_center_xy": [
+            1762.0,
+            1239.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03754",
+          "row": 0,
+          "col": 8,
+          "cell": 2,
+          "native_center_xy": [
+            1825.0,
+            1239.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03783",
+          "row": 1,
+          "col": 7,
+          "cell": 2,
+          "native_center_xy": [
+            1762.0,
+            1249.5
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03792",
+          "row": 1,
+          "col": 6,
+          "cell": 2,
+          "native_center_xy": [
+            1700.0,
+            1250.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03793",
+          "row": 1,
+          "col": 8,
+          "cell": 2,
+          "native_center_xy": [
+            1825.0,
+            1250.0
+          ],
+          "split": "holdout",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03846",
+          "row": 2,
+          "col": 8,
+          "cell": 2,
+          "native_center_xy": [
+            1820.0,
+            1265.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03858",
+          "row": 2,
+          "col": 7,
+          "cell": 2,
+          "native_center_xy": [
+            1763.0,
+            1266.0
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        },
+        {
+          "id": "CT-F03872",
+          "row": 2,
+          "col": 6,
+          "cell": 2,
+          "native_center_xy": [
+            1700.3333333333333,
+            1270.6666666666667
+          ],
+          "split": "fit",
+          "observation_role": "old_source_peak_not_human_hole_truth"
+        }
+      ],
+      "source_frame": "poly",
+      "native_window": [
+        1420,
+        1120,
+        2020,
+        1370
+      ],
+      "channel_zones": null,
+      "upper_metal": null,
+      "physical_acceptance": "pending"
+    }
+  ],
+  "extends_prior_spec": {
+    "path": "benchmarks/group-constraints-v1/spec-v1.json",
+    "sha256": "bec8d6719c59b4315e668434fe5577d5c99ad8985afc420ecd0acdd16f5c9a85",
+    "changes": "T01 semantic clarification from existing U01 review; extra T02 held-out development sample; all original thresholds and coordinates unchanged"
+  },
+  "semantic_reference": {
+    "path": "benchmarks/region-planning/eight-photo-regions-reviewed-v3.json",
+    "sha256": "d15ecd9f01ca76bcf74e40fe41f36ece83fd47d73adbcbd8d64d872e081d207a",
+    "uses": {
+      "D01": "U04 dummy AA regional classification",
+      "T01": "U01 wide MOS capacitor connection",
+      "T02": "M03 MOS regional classification; not per-AA transistor counts"
+    }
+  }
+}

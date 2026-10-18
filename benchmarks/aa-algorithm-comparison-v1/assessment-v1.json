@@ -1,0 +1,17 @@
+{
+  "status": "no_production_winner",
+  "leading_sparse_agreement": "grabcut_frozen_gmm",
+  "counterexamples": [
+    {
+      "case": "S03",
+      "finding": "all tested methods miss most dark MOS interior; RF and both GrabCut variants have zero recall on these AI draft positive scribbles"
+    },
+    {
+      "case": "S05",
+      "finding": "RF and fixed-GMM GrabCut label all three very narrow background scribbles as foreground; source label identity still requires human review"
+    }
+  ],
+  "recommendation": "verify S03/S05 sparse AA/background labels first; retain random forest and fixed-GMM GrabCut as candidates; no geometry restoration or new training until a fresh test split/protocol is frozen",
+  "qualification": "engineering proposal, not verified superiority of random forest",
+  "test_scope": "four heldout spatial windows on same development chip, sparse AI annotations, not dense human truth"
+}

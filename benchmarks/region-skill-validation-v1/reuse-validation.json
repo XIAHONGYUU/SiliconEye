@@ -1,0 +1,41 @@
+{
+  "kind": "region_workflow_reuse_validation",
+  "date": "2026-10-18",
+  "checks": [
+    {
+      "check": "existing output rejected without overwriting evidence",
+      "status": "pass"
+    },
+    {
+      "check": "hash invalid input rejected before output publication",
+      "status": "pass"
+    },
+    {
+      "check": "bounds invalid input rejected before output publication",
+      "status": "pass"
+    },
+    {
+      "check": "duplicate invalid input rejected before output publication",
+      "status": "pass"
+    },
+    {
+      "check": "data_output invalid input rejected before output publication",
+      "status": "pass"
+    },
+    {
+      "check": "same renderer replays 21 human-reviewed regions and 58 native windows without altering decisions",
+      "status": "pass"
+    },
+    {
+      "check": "first C03 prediction remains candidate and is not labeled independent blind test",
+      "status": "pass"
+    }
+  ],
+  "all_mechanical_checks_passed": true,
+  "fresh_human_reference_for_C03": false,
+  "C03_physical_correctness": "unscored",
+  "browser_interaction": "not_tested",
+  "cross_chip_performance": "not_measured",
+  "historical_plan_sha256": "9a40e464091fc032b16ec9e9ba3d6361f6dc6a2ea1098d70ebf9efb96bfce9cc",
+  "decision": "package narrow interactive candidate-planning skill; retain explicit human regional review gate; no automatic physical acceptance claim"
+}

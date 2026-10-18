@@ -2,21 +2,29 @@
 
 ## 当前目标与授权
 
-2026-10-18 用户批准调整顶层方向：先标准化输入和建立可修订分层版图，再以统一数据进行器件/网络分析及输出。已授权整理设计、调整计划并提交 Git；本轮不新增远端推送授权，不沿用昨日推送请求扩大本轮范围。
+2026-10-18阶段结束：用户认可AA提取已形成有效方法，要求保存今日工作、更新顶层文档并提交本地Git；明天争取封装AA skill。本轮不推送远端，不新建skill或继续修订mask。
 
-- 内层 silicon-eye 仓库、.venv；原图 data/ 不改，派生试验 runs/。仅用现有八图，没有额外照片，不要求补拍。
-- 暂缓原定金属独立重走和 skill 封装；不声称已执行。无新增付费视觉服务、平台或生产 skill 实现。
-- 最近已核验远端 main=5f78c9c1a63b07680ee0808a98468a23a963fe81；本轮 Git 提交以日志为准。
+方法入口：[AA工作流v8](docs/architecture/aa-extraction-workflow-v8.md)。结果/恢复：[今日检查点](docs/checkpoints/2026-10-18-aa-workflow-reviewed.md)。仍用现有八图，原始data不可改；无新增付费视觉服务。
 
-## 最新状态与唯一下一步
+## 最新结果与唯一下一步
 
-**下一步：以八图为样本生成整体区域规划图及区域表，分类 MOS 阵列、电容/电阻候选、主要互连和未知；随后选既有 Q1/Q2 局部做 AA/poly/CT/M1 分层复原样稿。** 不先恢复整网扩展，也不先创建 skill。
+**唯一下一步（下次工作）：按已审语义先完成局部修订对照、再在不同窗口验证，在此基础上封装实验版AA skill。复用现有工具和记录，明确材料门、未知边界及人工复核；不扩大到CT/其他层/追线。**
 
-- [顶层设计 v2](docs/architecture/photo-stack-workflow-v2.md)：标准照片栈→区域规划→可修订分层版图→器件/端口与网络联合提取→多种输出。
-- [八图初查与下一操作](docs/eight-photo-next-step-2026-10-18.md)、[逐图来源及设计样本](benchmarks/photo-stack/eight-photo-intake-v1.json)。
-- 本轮已核对八图完整解码、RGB、5712×4284、字节数和哈希，并查看全图缩略总览；未逐区域全分辨率判读。
-- CT/V1/V2 没有独立源图，需从相关照片提取为语义层；照片标签与材料层不可等同。
-- 初查允许粗区域规划，不批准全图精细配准、材料掩膜、自动并网或器件计数。有效区与共同覆盖仍待建立。
+- 工作方法：代表性明暗笔画 → 多方法候选 → 同坐标分歧 → AI结合整体结构/正向设计复核 → 人工裁决 → 有证据的局部修订 → 材料门 → 正交重建。不是多数票融合、矩形裁剪或按经验补环；交互Agent判断尚未变成独立运行时视觉模型。
+- [九条笔画身份](benchmarks/aa-scribble-comparison-v1/human-stroke-review-v1.json)已审：A01–A05为AA、N01–N04非AA。样稿无N05，不补造。原12检查中心保持不训练，三个种子与同窗口重复运行不算独立数据集。
+- [Q1–Q4裁决](benchmarks/aa-context-review-v1/human-context-review-v1.json)：排除电阻内部误报、两条AA隔离、暗AA内部不挖空、拒绝向电阻扩宽。[Q4澄清](benchmarks/aa-context-review-v1/Q4-scope-clarification-v1.json)：指电阻外围环下侧AA横条内侧边界，必须保护外围环，不能随电阻误报删除。精确边界/整环全周尚未通过。
+- 纹理RF及纹理＋结构RF三个种子均8/8 AA、0/4 BG误报；两GrabCut仍误填2/4 BG。电阻内部残余误报存在，完整mask、新窗口迁移及自动上下文修订未验收，不宣称全幅自动化或skill已完成。
+- [今日复核图（已入Git）](docs/assets/aa-context-review-v1/review-sheet.png)、[本地复核页](runs/aa-context-review-v1b/index.html)、[参数与Q坐标](benchmarks/aa-context-review-v1/spec-v1.json)、[笔画对照](docs/aa-scribble-comparison-v1.md)、[综合算法评估](docs/aa-texture-structure-v1.md)。旧报告/失败mask/裁决保持原样；当前未生成语义修订mask。
+- 原有全幅AA/CT/195保留对象不变，旧100初始化疑点留档。照片尺度、工艺、精确尺寸与完整连通未确定。材料、几何、端口和连接分别验收。
+- 七个关键runs已明确归档，恢复索引：[AA证据归档](benchmarks/evidence/aa-workday-2026-10-18-index.json)。.venv/runs仍忽略，不把所有历史运行视为已保存。各归档用 `.venv/bin/python -m silicon_eye.evidence_archive --archive 路径 --root .` 恢复。
+- 本轮软件基准324测试通过，相关Ruff/哈希/输入输出/分歧/JS通过；真实材料仍保留上述失败与未知。浏览器交互未自动实测。Git提交结果由本次结束报告给出。
+
+## 已审基准及历史范围
+
+- [局部组验证](docs/group-constraints-validation-v1.md)保留 D01/R01/T01/T02 的原数值和 20 个故障样本，不作为当前范围禁令；[当前设计 v5](docs/architecture/photo-stack-workflow-v5.md)按结构组/共享参数和证据双门工作。
+- [P01–P06 全部已审](docs/orthogonal-aa-polygons-v1.md)、[已审模型](benchmarks/orthogonal-aa-polygons-v1/model-v1-reviewed.json)。P05/P06 是有未建模延续的局部材料片段，不是断点或独立岛。
+- [AA/CT 与三环人审](docs/geometry-reconstruction-v2.md)保留旧结构、120 CT 存在/大致位置及整体排列批准；精确尺寸/全图配准/电气连接未获批准。[旧全幅 v1h](docs/full-scene-aa-ct-v1.md)保留作开发对照。
+- [区域分类 v3](docs/region-planning-reviewed-v3.md)、[区域 skill 验证](docs/region-skill-validation-v1.md)、[PDK 回查](docs/reference/pdk-recognition-guide-v1.md)、[八图来源](benchmarks/photo-stack/eight-photo-intake-v1.json)。U01 是宽 MOS 电容接法，U04 是底部 dummy；区域条目不是器件数。
 
 ## 数据及质量约定
 
@@ -24,7 +32,7 @@
 - 保留材料存在/不存在/未知三种状态，另存有效覆盖；native 坐标和公共参考变换分开。每对象有来源、状态、修订和稳定 ID。
 - 10 px/μm、N/P、S/D、W/L、工艺规则均未确定。sub/implant 保留来源标签，不新增掺杂语义真值。
 - 区域框、材料身份、精确几何、端口和连通分别验收。质量门按用途/区域判断，不以总 PASS 代替物理结论。
-- skill 候选包含输入、规划、分层复原、追线、器件端口、输出、三维、总控和质量复核；尚未实现，不先建空壳。
+- 区域观察已封装交互 skill 与参数化出图工具；职责已收窄为整体理解/评测支线，不决定分层抽取范围。输入、分层复原、追线、器件端口、输出、三维、总控和质量复核等其他 skill 仍未实现。
 
 ## 既有已审事实与恢复入口
 
@@ -37,9 +45,22 @@
 - [昨日走线协议](docs/metal-tracing-workflow-v1.md)待分层样稿可用后复用。开发过的同芯片数据只算回归，不算盲测。
 - 证据恢复：`.venv/bin/python -m silicon_eye.evidence_archive --archive benchmarks/evidence/roi2-network-reviewed-v33.zip --root .`；旧九项示例输入用同目录 roi2-reviewed-inputs-v1.zip。不是全部 runs 历史。
 - 统一包：`.venv/bin/silicon-eye annotate review-package --spec benchmarks/review-package-roi2-v1.json --root . -o 新目录`。浏览器预览曾被策略拒绝，不用 CDP 绕过；用静态图交付。
-- 5f78c9c 提交前 248 tests 及相关 Ruff 通过；本轮仅文档、源图清单与缩略图变动，不冒充本轮重测或物理真值。
 
 ## 按需历史
 
-- [方向调整前完整入口](docs/history/current-task-before-2026-10-18-layer-reconstruction.md)：保留昨日全部状态、裁决边界与恢复信息。
-- [v33 整合前历史](docs/history/current-task-before-2026-10-17-v33-reviewed-network.md)：详细追踪依据及更早入口。
+- [本轮全幅扩展前完整入口](docs/history/current-task-before-2026-10-18-full-scene-regular-extension.md)：字节完整保留 T02 诊断、原验证结果及当时范围，旧“不扩大到全幅”已由用户新指令接续。
+- [组约束验证前入口](docs/history/current-task-before-2026-10-18-group-constraint-validation.md)、[全幅纠偏前入口](docs/history/current-task-before-2026-10-18-full-frame-correction.md)、[方向调整前入口](docs/history/current-task-before-2026-10-18-layer-reconstruction.md)、[v33 历史](docs/history/current-task-before-2026-10-17-v33-reviewed-network.md)。
+
+- [AA 优先纠偏前完整入口](docs/history/current-task-before-2026-10-18-aa-first-review.md)：原文逐字节归档，旧联合验收下一步由本次人审反馈接续。
+
+- [AA 补标前完整入口](docs/history/current-task-before-2026-10-18-aa-completion.md)：注明来源/日期并完整保留原文字节。
+
+- [算法对照前完整入口](docs/history/current-task-before-2026-10-18-aa-algorithm-comparison.md)：注明来源/日期，完整保留原文字节。
+
+- [少量提示实验前完整入口](docs/history/current-task-before-2026-10-18-aa-prompted-comparison.md)：注明来源/日期并完整保留原文字节。
+
+- [纹理结构验证前入口](docs/history/current-task-before-2026-10-18-aa-texture-structure.md)：原文完整归档，包含U确认及追加提示失败结果。
+
+- [笔画对照前入口](docs/history/current-task-before-2026-10-18-aa-scribble-comparison.md)：原文完整归档，保留前轮纹理/结构结论。
+
+- [今日阶段收束前完整入口](docs/history/current-task-before-2026-10-18-aa-workday-checkpoint.md)：原文字节完整归档，保留所有历史验收与恢复入口。

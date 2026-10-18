@@ -1,0 +1,36 @@
+{
+  "kind": "current_agent_semantic_scope_review_not_blind_recognition_score",
+  "prior_spec_sha256": "bec8d6719c59b4315e668434fe5577d5c99ad8985afc420ecd0acdd16f5c9a85",
+  "reviewed_region_reference": {
+    "path": "benchmarks/region-planning/eight-photo-regions-reviewed-v3.json",
+    "sha256": "d15ecd9f01ca76bcf74e40fe41f36ece83fd47d73adbcbd8d64d872e081d207a",
+    "uses": {
+      "D01": "U04 dummy AA regional classification",
+      "T01": "U01 wide MOS capacitor connection",
+      "T02": "M03 MOS regional classification; not per-AA transistor counts"
+    }
+  },
+  "findings": [
+    {
+      "group": "D01",
+      "reference": "U04",
+      "result": "dummy AA regional interpretation consistent; count 68 and exact geometry new candidates"
+    },
+    {
+      "group": "R01",
+      "reference": "AA-G003 existing reviewed parent",
+      "result": "ring structure retained; equal width and local projection new candidates"
+    },
+    {
+      "group": "T01",
+      "reference": "U01",
+      "result": "initial scope insufficiently explicit; four CT columns belong to wide MOS in capacitor connection, not four MOS; corrected in spec-v2"
+    },
+    {
+      "group": "T02",
+      "reference": "M03",
+      "result": "three adjacent AA units in confirmed MOS region; number of MOS devices and CT truth not confirmed"
+    }
+  ],
+  "conclusion": "Three structural descriptions can be applied to selected observations; geometry and semantic errors remain detectable; no measured causal prompt improvement or automatic recognition accuracy"
+}

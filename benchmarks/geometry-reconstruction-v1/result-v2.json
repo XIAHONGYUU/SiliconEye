@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_directory": "runs/geometry-reconstruction-v2c",
+  "report": {
+    "AA_geometries": 35,
+    "CT_proposed_slots": 478,
+    "CT_positive_geometry_count": 399,
+    "CT_human_confirmed_count": 120,
+    "CT_new_ring_positions": 289,
+    "CT_new_ring_positive_candidates": 210,
+    "CT_unknown_slots": 79,
+    "fullframe_coverage": false,
+    "independent_physical_acceptance": false,
+    "full_distortion_correction": false,
+    "max_AA_backprojection_corner_shift_px": 5.247349819526959,
+    "normalization_fit": {
+      "anchor_count": 30,
+      "median_fit_residual_px": 1.1301733903283213,
+      "max_fit_residual_px": 1.577825747560088,
+      "independent_validation": false,
+      "fullframe_distortion_eliminated": false
+    }
+  },
+  "model_sha256": "1f2c45c31240aa4f8bbe5ebf6feef59ade9cb38d9ca97525847351927c406fd9",
+  "manifest_sha256": "aef278c6a8973b75031884eca528a4617d426a4a7878295ff2396fda9abb8659",
+  "verification": {
+    "pytest_passed": 275,
+    "targeted_ruff": "passed",
+    "old_geometry_coordinates": "all_224_objects_unchanged",
+    "static_output_hashes": "passed",
+    "source_hashes": "unchanged",
+    "svg_parsing_and_size": "passed",
+    "static_page_links": "passed",
+    "browser_interaction": "not_tested",
+    "new_ring_physical_acceptance": "pending"
+  }
+}

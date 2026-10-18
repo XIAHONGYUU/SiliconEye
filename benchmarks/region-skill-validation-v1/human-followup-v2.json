@@ -1,0 +1,22 @@
+{
+  "kind": "region_skill_validation_human_followup",
+  "date": "2026-10-18",
+  "prior_mechanical_validation": "benchmarks/region-skill-validation-v1/reuse-validation.json",
+  "prior_packaging_record": "benchmarks/region-skill-validation-v1/packaging.json",
+  "human_review": {
+    "path": "benchmarks/region-skill-validation-v1/C03-human-review-v1.json",
+    "sha256": "902cf49b8581368e56cea6bd6375a405423cf482dd139f637eab946dbbcdd4b1"
+  },
+  "first_prediction_match": {
+    "field": "regional_category",
+    "prediction": "CAP",
+    "review": "CAP",
+    "match": true,
+    "corrections_to_regional_category": 0
+  },
+  "scope": "one same-chip previously seen-photo development sample; not blind generalization evidence",
+  "skill_availability": "listed_in_current_session_available_skills_catalog",
+  "UI_skill_picker_tested": false,
+  "physical_gate": "C03 regional category reviewed; all pixel/electrical gates unchanged",
+  "next": "M05 Q1/Q2 AA/poly/CT/M1 material reconstruction sample"
+}

@@ -1,0 +1,37 @@
+{
+  "AA_records": 303,
+  "retained_objects_unchanged": 195,
+  "retained_CT_records": 601,
+  "new_CT_records": 3683,
+  "unclassified_CT_geometry_records": 6581,
+  "CT_source_observations": 11339,
+  "CT_disposition_counts": {
+    "material_assignment_unknown": 7059,
+    "near_retained_or_prior_observation": 388,
+    "retained_geometry_source": 111,
+    "unknown_CT_landing_or_template": 2544,
+    "geometry_proximity_suppressed": 65,
+    "observed_CT_template_candidate": 1163,
+    "template_position_unknown": 9
+  },
+  "AA_row_and_ring_groups": 13,
+  "AA_groups_applied": 12,
+  "AA_groups_deferred": 1,
+  "AA_boundary_extensions": 2,
+  "AA_boundary_conflicts": 1,
+  "CT_groups": 178,
+  "AA_unresolved_observations": 100,
+  "display_counts": {
+    "AA": 303,
+    "CT": 1671,
+    "inferred": 181,
+    "pending": 2432,
+    "unknown": 6581
+  },
+  "full_photo_scope_processed": true,
+  "physical_full_frame_completeness": false,
+  "full_contact_legality": "unknown_missing_channel_upper_material_and_process",
+  "photo_peak_residual_scope": "diagnostic_only_not_automatic_geometry_veto",
+  "global_deformation_field": "not_stitched_local_group_hypotheses",
+  "new_human_review": "pending"
+}

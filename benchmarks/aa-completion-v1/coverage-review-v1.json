@@ -1,0 +1,349 @@
+{
+  "frames": [
+    {
+      "id": "F01",
+      "feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。左下角的MOSAA未提取，CT也没有提取。孔和待和确认CT基本正确，有些MOS管只提取了单边沟道的孔",
+      "source_bbox": [
+        0,
+        185.0,
+        1428,
+        1551.3333333333333
+      ],
+      "new_candidate_ids": [
+        "AA2-LEFT-STAIR-GUARD-0",
+        "AA2-LEFT-STAIR-AA0-0",
+        "AA2-LEFT-STAIR-AA1-0",
+        "AA2-LEFT-STAIR-AA2-0",
+        "AA2-LEFT-STAIR-AA3-0",
+        "AA2-LEFT-STAIR-AA4-0",
+        "AA2-LEFT-STAIR-AA5-0",
+        "AA2-LEFT-STAIR-AA6-0",
+        "AA2-UPPER-INNER-A-AA-0",
+        "AA2-UPPER-INNER-B-AA-0",
+        "AA2-MIDDLE-UPPER-AA-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0",
+        "AA2-TOP-H1-AA-0",
+        "AA2-TOP-H2-AA-0",
+        "AA2-TOP-H3-AA-0",
+        "AA2-ROW-GUARD-AA-0",
+        "AA2-TOP-STEP-1-AA-0",
+        "AA2-TOP-STEP-2-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F02",
+      "feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。孔和待和CT基本正确，有几个有缺失与偏出的情况。",
+      "source_bbox": [
+        1428,
+        185.0,
+        2856,
+        1551.3333333333333
+      ],
+      "new_candidate_ids": [
+        "AA2-UPPER-INNER-A-AA-0",
+        "AA2-UPPER-INNER-B-AA-0",
+        "AA2-MIDDLE-UPPER-AA-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0",
+        "AA2-TOP-H1-AA-0",
+        "AA2-TOP-H2-AA-0",
+        "AA2-TOP-H3-AA-0",
+        "AA2-ROW-GUARD-AA-0",
+        "AA2-TOP-STEP-1-AA-0",
+        "AA2-TOP-STEP-2-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F03",
+      "feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。孔和待和CT基本正确，有几个有缺失与偏出的情况。",
+      "source_bbox": [
+        2856,
+        185.0,
+        4284,
+        1551.3333333333333
+      ],
+      "new_candidate_ids": [
+        "AA2-UPPER-INNER-A-AA-0",
+        "AA2-UPPER-INNER-B-AA-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0",
+        "AA2-TOP-H1-AA-0",
+        "AA2-TOP-H2-AA-0",
+        "AA2-TOP-H3-AA-0",
+        "AA2-ROW-GUARD-AA-0",
+        "AA2-TOP-STEP-1-AA-0",
+        "AA2-TOP-STEP-2-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F04",
+      "feedback": "：MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。。孔和待和CT基本正确，有几个有缺失与偏出的情况。",
+      "source_bbox": [
+        4284,
+        185.0,
+        5712,
+        1551.3333333333333
+      ],
+      "new_candidate_ids": [
+        "AA2-UPPER-COMPLEX-GUARD-AA-0",
+        "AA2-OUTER-VERTICAL-1-AA-0",
+        "AA2-OUTER-VERTICAL-2-AA-0",
+        "AA2-OUTER-VERTICAL-3-AA-0",
+        "AA2-TOP-H1-AA-0",
+        "AA2-TOP-H2-AA-0",
+        "AA2-TOP-H3-AA-0",
+        "AA2-ROW-GUARD-AA-0",
+        "AA2-TOP-STEP-1-AA-0",
+        "AA2-TOP-STEP-2-AA-0",
+        "AA2-TOP-UPTURN-1-AA-0",
+        "AA2-TOP-UPTURN-2-AA-0",
+        "AA2-RIGHT-EDGE-1-AA-0",
+        "AA2-RIGHT-EDGE-2-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F05",
+      "feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。。孔和待和CT基本正确，有几个有缺失与偏出的情况。。左下角的MOSAA未提取，CT也没有提取。",
+      "source_bbox": [
+        0,
+        1551.3333333333333,
+        1428,
+        2917.6666666666665
+      ],
+      "new_candidate_ids": [
+        "AA2-LEFT-STAIR-GUARD-0",
+        "AA2-LEFT-STAIR-AA0-0",
+        "AA2-LEFT-STAIR-AA1-0",
+        "AA2-LEFT-STAIR-AA2-0",
+        "AA2-LEFT-STAIR-AA3-0",
+        "AA2-LEFT-STAIR-AA4-0",
+        "AA2-LEFT-STAIR-AA5-0",
+        "AA2-LEFT-STAIR-AA6-0",
+        "AA2-MIDDLE-UPPER-AA-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F06",
+      "feedback": "MOS管AA提取基本正确提取基本正确，外围的环的AA基本没有提取到位。。孔和待和CT基本正确，有几个有缺失与偏出的情况。。中间下方的MOSAA未提取，CT也没有提取。中间靠右的四个大mos因为方向斜了，所以你在中间补了一块，这个地方比较突兀且有问题。",
+      "source_bbox": [
+        1428,
+        1551.3333333333333,
+        2856,
+        2917.6666666666665
+      ],
+      "new_candidate_ids": [
+        "AA2-MIDDLE-MOS-GUARD-A-0",
+        "AA2-MIDDLE-MOS-GUARD-B-0",
+        "AA2-MIDDLE-MOS-GUARD-C-0",
+        "AA2-MIDDLE-MOS-A1-0",
+        "AA2-MIDDLE-MOS-A2-0",
+        "AA2-MIDDLE-MOS-A3-0",
+        "AA2-MIDDLE-MOS-B1-0",
+        "AA2-MIDDLE-MOS-C0-0",
+        "AA2-MIDDLE-MOS-C1-0",
+        "AA2-MIDDLE-MOS-C2-0",
+        "AA2-MIDDLE-MOS-C3-0",
+        "AA2-LOWER-MOS-GRID-GUARD-UPPER-0",
+        "AA2-LOWER-MOS-GRID-MOS-1-0",
+        "AA2-LOWER-MOS-GRID-MOS-3-0",
+        "AA2-MIDDLE-UPPER-AA-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F07",
+      "feedback": "MOS管AA提取基本正确提取基本正确，靠左侧的三条环AA没有提取出来。",
+      "source_bbox": [
+        2856,
+        1551.3333333333333,
+        4284,
+        2917.6666666666665
+      ],
+      "new_candidate_ids": [
+        "AA2-MIDDLE-MOS-GUARD-B-0",
+        "AA2-MIDDLE-MOS-GUARD-C-0",
+        "AA2-MIDDLE-MOS-B1-0",
+        "AA2-MIDDLE-MOS-B2-0",
+        "AA2-MIDDLE-MOS-C3-0",
+        "AA2-LOWER-MOS-GRID-GUARD-UPPER-0",
+        "AA2-LOWER-MOS-GRID-MOS-3-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F08",
+      "feedback": "左侧环的AA基本没有提取出来",
+      "source_bbox": [
+        4284,
+        1551.3333333333333,
+        5712,
+        2917.6666666666665
+      ],
+      "new_candidate_ids": [
+        "AA2-OUTER-VERTICAL-1-AA-0",
+        "AA2-OUTER-VERTICAL-2-AA-0",
+        "AA2-OUTER-VERTICAL-3-AA-0",
+        "AA2-RIGHT-EDGE-2-AA-0",
+        "AA2-RIGHT-EDGE-3-AA-0",
+        "AA2-RIGHT-EDGE-4-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F09",
+      "feedback": "中间环的AA基本没有提取出来，有些CT提取成了Poly上的CT",
+      "source_bbox": [
+        0,
+        2917.6666666666665,
+        1428,
+        4284.0
+      ],
+      "new_candidate_ids": [
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-4",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-6",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-7",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA3-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA4-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA1-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA2-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA5-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA6-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA1-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA5-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F10",
+      "feedback": "中间大片管子和环的AA，CT同理没有提取出来，右侧靠下的CELL管子和环的AA糊在一起了。右侧靠上与中间的AA环没有提取出来 。",
+      "source_bbox": [
+        1428,
+        2917.6666666666665,
+        2856,
+        4284.0
+      ],
+      "new_candidate_ids": [
+        "AA2-LOWER-MOS-GRID-GUARD-UPPER-0",
+        "AA2-LOWER-MOS-GRID-GUARD-LOWER-0",
+        "AA2-LOWER-MOS-GRID-MOS-1-0",
+        "AA2-LOWER-MOS-GRID-MOS-2-0",
+        "AA2-LOWER-MOS-GRID-MOS-3-0",
+        "AA2-LOWER-MOS-GRID-MOS-4-0",
+        "AA2-LOWER-MOS-GRID-MOS-5-0",
+        "AA2-LOWER-MOS-GRID-MOS-6-0",
+        "AA2-LOWER-MOS-GRID-MOS-7-0",
+        "AA2-LOWER-MOS-GRID-MOS-8-0",
+        "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+        "AA2-LOWER-MOS-GRID-STRIP-UR-0",
+        "AA2-LOWER-MOS-GRID-STRIP-LL-0",
+        "AA2-LOWER-MOS-GRID-STRIP-LR-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-4",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-7",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-DUMMY1-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-DUMMY2-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA6-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+        "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F11",
+      "feedback": "右侧中间的管子AA与环的AA基本缺失，CT同理。",
+      "source_bbox": [
+        2856,
+        2917.6666666666665,
+        4284,
+        4284.0
+      ],
+      "new_candidate_ids": [
+        "AA2-LOWER-MOS-GRID-GUARD-UPPER-0",
+        "AA2-LOWER-MOS-GRID-GUARD-LOWER-0",
+        "AA2-LOWER-MOS-GRID-MOS-3-0",
+        "AA2-LOWER-MOS-GRID-MOS-4-0",
+        "AA2-LOWER-MOS-GRID-MOS-7-0",
+        "AA2-LOWER-MOS-GRID-MOS-8-0",
+        "AA2-LOWER-MOS-GRID-STRIP-UR-0",
+        "AA2-LOWER-MOS-GRID-STRIP-LR-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    },
+    {
+      "id": "F12",
+      "feedback": "右侧有环缺失，dummy中间有一个dummyAA缺失。",
+      "source_bbox": [
+        4284,
+        2917.6666666666665,
+        5712,
+        4284.0
+      ],
+      "new_candidate_ids": [
+        "AA2-RIGHT-DUMMY-R1-0",
+        "AA2-RIGHT-DUMMY-R2-0",
+        "AA2-RIGHT-DUMMY-R3-0",
+        "AA2-RIGHT-DUMMY-R4-0",
+        "AA2-OUTER-VERTICAL-1-AA-0",
+        "AA2-OUTER-VERTICAL-2-AA-0",
+        "AA2-OUTER-VERTICAL-3-AA-0",
+        "AA2-RIGHT-EDGE-4-AA-0",
+        "AA2-RIGHT-EDGE-5-AA-0"
+      ],
+      "scope": "display_only_not_layer_partition",
+      "state": "candidate_revision_pending_human_coverage_review"
+    }
+  ],
+  "physical_completeness": false,
+  "remaining_observations": {
+    "path": "benchmarks/full-scene-regular-v1/unresolved-AA-v1.json",
+    "sha256": "6c71eb627a282a1d9dc5c25b358a6211363e327678049725ce73468015972148"
+  },
+  "boundary_conflicts": {
+    "path": "benchmarks/full-scene-regular-v1/boundary-AA-conflicts-v1.json",
+    "sha256": "471584622802e210156ae959251bdf8ecaf65f6a0308de708069745358e1b039"
+  },
+  "note": "all 12 windows revisited; no measured recall or independent all-AA truth"
+}

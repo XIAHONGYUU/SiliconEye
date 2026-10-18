@@ -1,0 +1,30 @@
+{
+  "kind": "skill_packaging_record",
+  "date": "2026-10-18",
+  "skill": "silicon-eye-region-planning",
+  "package_scope": "interactive_candidate_planning_with_human_review",
+  "source_directory": "skills/silicon-eye-region-planning",
+  "installed_directory": "/home/zuoky/.codex/skills/silicon-eye-region-planning",
+  "discovery_status": "files_installed_in_default_directory_not_new_session_UI_discovery_tested",
+  "files": [
+    {
+      "relative_path": "SKILL.md",
+      "sha256": "2dfcef403d65b181769cae880eb0046995b93d9aa1903f654760f4ea6754477e"
+    },
+    {
+      "relative_path": "agents/openai.yaml",
+      "sha256": "58e3a2b02cecd558dbac6d83cb22391acb57dfa7b390ad24970de8dae3dbb96c"
+    },
+    {
+      "relative_path": "references/contract.md",
+      "sha256": "5eafb61e45d40161e5896681075b1fd11e9b120ab31b7440fccd297ef5874c3a"
+    },
+    {
+      "relative_path": "scripts/build_review.py",
+      "sha256": "580b5555f4c894f5949e9787e4922cab4da856edfb7066deb90c3eef8604bc7f"
+    }
+  ],
+  "physical_C03_classification": "awaiting_human_review",
+  "browser_interaction": "blocked_file_protocol_not_bypassed",
+  "git_status": "uncommitted_no_push"
+}

@@ -1,0 +1,437 @@
+{
+  "initial_local_ring_hypothesis": [
+    [
+      0.963849643365519,
+      -0.004544236520263863,
+      162.69124644917656
+    ],
+    [
+      0.004544236520263863,
+      0.963849643365519,
+      214.98616227827165
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "matrix": [
+    [
+      0.9451359218690942,
+      -0.016192915830782882,
+      188.86921957637412
+    ],
+    [
+      -0.0012486866572507872,
+      0.9458622739974877,
+      234.42558653804673
+    ],
+    [
+      -3.4098235842837674e-06,
+      -3.00915622180498e-06,
+      1.0
+    ]
+  ],
+  "direction": "poly_native_to_aa_native",
+  "model": "homography_candidate",
+  "match_method": "one_to_one_geometry_gated_object_envelopes",
+  "unique_pairs": 37,
+  "inliers": 34,
+  "inlier_error_percentiles_px": [
+    0.9121098220348358,
+    1.7791103720664978,
+    2.1259361326694473,
+    3.2590391635894775
+  ],
+  "heldout_count": 12,
+  "heldout_error_percentiles_px": [
+    0.8103183507919312,
+    2.716521060466767,
+    3.026137566566467,
+    3.265141010284424
+  ],
+  "status": "candidate_no_fullframe_precision_acceptance",
+  "anchors": [
+    {
+      "poly_native_xy": [
+        3644.0,
+        1312.5
+      ],
+      "aa_native_xy": [
+        3671.0,
+        1496.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3640.5,
+        1625.5
+      ],
+      "aa_native_xy": [
+        3666.5,
+        1799.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3641.5,
+        1470.0
+      ],
+      "aa_native_xy": [
+        3669.0,
+        1648.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3798.5,
+        1311.0
+      ],
+      "aa_native_xy": [
+        3821.5,
+        1496.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3796.0,
+        1468.5
+      ],
+      "aa_native_xy": [
+        3819.5,
+        1648.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3793.5,
+        1625.0
+      ],
+      "aa_native_xy": [
+        3817.0,
+        1798.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3949.5,
+        1467.5
+      ],
+      "aa_native_xy": [
+        3968.5,
+        1647.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3951.0,
+        1311.0
+      ],
+      "aa_native_xy": [
+        3971.5,
+        1495.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3947.0,
+        1623.0
+      ],
+      "aa_native_xy": [
+        3966.5,
+        1798.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4099.5,
+        1621.5
+      ],
+      "aa_native_xy": [
+        4114.0,
+        1798.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4103.5,
+        1310.5
+      ],
+      "aa_native_xy": [
+        4119.5,
+        1496.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4101.5,
+        1467.5
+      ],
+      "aa_native_xy": [
+        4117.0,
+        1647.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4252.0,
+        1467.0
+      ],
+      "aa_native_xy": [
+        4263.5,
+        1647.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4253.5,
+        1311.0
+      ],
+      "aa_native_xy": [
+        4266.0,
+        1496.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4250.0,
+        1620.5
+      ],
+      "aa_native_xy": [
+        4261.5,
+        1797.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4401.0,
+        1466.5
+      ],
+      "aa_native_xy": [
+        4409.5,
+        1648.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4402.0,
+        1311.5
+      ],
+      "aa_native_xy": [
+        4412.0,
+        1498.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4398.0,
+        1621.0
+      ],
+      "aa_native_xy": [
+        4407.0,
+        1798.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4550.5,
+        1312.0
+      ],
+      "aa_native_xy": [
+        4557.5,
+        1498.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4549.0,
+        1467.0
+      ],
+      "aa_native_xy": [
+        4555.5,
+        1649.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        1511.0,
+        3172.0
+      ],
+      "aa_native_xy": [
+        1590.0,
+        3282.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4546.5,
+        1621.0
+      ],
+      "aa_native_xy": [
+        4553.0,
+        1798.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4695.0,
+        1467.0
+      ],
+      "aa_native_xy": [
+        4700.0,
+        1649.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4847.5,
+        1312.5
+      ],
+      "aa_native_xy": [
+        4848.0,
+        1499.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4692.5,
+        1620.0
+      ],
+      "aa_native_xy": [
+        4697.5,
+        1799.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4844.0,
+        1467.0
+      ],
+      "aa_native_xy": [
+        4844.5,
+        1650.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4697.0,
+        1312.5
+      ],
+      "aa_native_xy": [
+        4704.0,
+        1499.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4840.5,
+        1621.5
+      ],
+      "aa_native_xy": [
+        4841.0,
+        1799.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4990.5,
+        1620.0
+      ],
+      "aa_native_xy": [
+        4986.0,
+        1799.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4996.5,
+        1311.0
+      ],
+      "aa_native_xy": [
+        4994.0,
+        1500.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4993.0,
+        1467.0
+      ],
+      "aa_native_xy": [
+        4990.5,
+        1650.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        3043.0,
+        4019.5
+      ],
+      "aa_native_xy": [
+        3070.0,
+        4124.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        2896.0,
+        4022.5
+      ],
+      "aa_native_xy": [
+        2926.0,
+        4126.0
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    },
+    {
+      "poly_native_xy": [
+        4943.0,
+        3540.5
+      ],
+      "aa_native_xy": [
+        4940.0,
+        3678.5
+      ],
+      "status": "AI_automatic_envelope_correspondence_candidate"
+    }
+  ],
+  "prior_initializer": {
+    "path": "benchmarks/local-ring-aa-poly-v1/baseline/manifest.json",
+    "sha256": "bd448b156323133f52faf38bcac3fe41fd6f5cf626df103bb8310ce803ec2143",
+    "scope": "local ring only; used as a search initializer, not full-frame approval"
+  },
+  "exclusions": "degenerate SIFT homography rejected: nonunique targets, extreme distortion; not used"
+}

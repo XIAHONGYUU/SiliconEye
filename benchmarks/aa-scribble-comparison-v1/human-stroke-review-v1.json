@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "reviewer": "human_user",
+  "verbatim": "A01至A05始终位于AA区域，N01至N05始终位于非AA区域。",
+  "spec": {
+    "path": "benchmarks/aa-scribble-comparison-v1/spec-v1.json",
+    "sha256": "644b73bf216bc0737ab6cd284d62138e1e60411ce6a7a951267ab61c852352ba"
+  },
+  "displayed_samples": [
+    {
+      "path": "runs/aa-scribble-comparison-v1b/S03/strokes.png",
+      "sha256": "9720926584bb5649897214a124a7cb58e15521351b91ddcd4df883ca0dde59db"
+    },
+    {
+      "path": "runs/aa-scribble-comparison-v1b/S05/strokes.png",
+      "sha256": "e502220925edcab342905d4949155fd4cd71ebb0053d2e9a4e20f4e170ba7bc9"
+    }
+  ],
+  "approved_strokes": [
+    {
+      "id": "A01",
+      "case": "S03",
+      "class_name": "AA",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "A02",
+      "case": "S03",
+      "class_name": "AA",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "N01",
+      "case": "S03",
+      "class_name": "background",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "N02",
+      "case": "S05",
+      "class_name": "background",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "N03",
+      "case": "S05",
+      "class_name": "background",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "A03",
+      "case": "S05",
+      "class_name": "AA",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "A04",
+      "case": "S05",
+      "class_name": "AA",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "A05",
+      "case": "S05",
+      "class_name": "AA",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    },
+    {
+      "id": "N04",
+      "case": "S05",
+      "class_name": "background",
+      "status": "human_confirmed_material_along_displayed_stroke"
+    }
+  ],
+  "unmatched_mentioned_ids": [
+    "N05"
+  ],
+  "unmatched_reason": "当前锁定样稿无N05，不臆造坐标或扩大裁决。",
+  "scope": "确认现有九条笔画沿线的材料身份，不批准完整AA边界、区域mask或算法。原实验在批准前使用AI草稿运行，历史报告不追溯改写。",
+  "full_mask_accepted": false
+}

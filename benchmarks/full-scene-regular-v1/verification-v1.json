@@ -1,0 +1,30 @@
+{
+  "run": "runs/full-scene-regular-v1d",
+  "software_tests_passed": 305,
+  "ruff": "passed",
+  "retained_195_objects_exactly_unchanged": true,
+  "source_and_frozen_inputs_unchanged": true,
+  "objects_unique_valid_HV": 11168,
+  "AA_no_intersections": true,
+  "CT_no_intersections": true,
+  "source_observation_dispositions_exactly_once": 11339,
+  "SVG_native_sizes_checked": 27,
+  "manifest_files_checked": 44,
+  "code_sha256": "b85fa5225c1c9e251e64c67190a8042bb92a1779d5c55a92ddf585bdbde6976c",
+  "model_sha256": "6c8d6e5bf3f547a0cb00ce076ded1a0eead362895fff1af6bb3c5d15571cbec6",
+  "report_sha256": "bf24eb5d193992e12d6c4398a90e468964f06c8e5e0f4b2846f05647a888d240",
+  "manifest_sha256": "279423a45909193335809a3b0f32d1b80a734921fcad3429ddffd9b6b650861a",
+  "browser_interaction": "not_automated_preexisting_policy_boundary",
+  "physical_fullframe_acceptance": false,
+  "assets_sha256": {
+    "aa-source-overlay.png": "0dfab98004d421702849744c4592ad870f0a44f5b7d64b1b2ce4c6dc0cfc7819",
+    "poly-source-overlay.png": "31c91cdce59100b0a8b5ceb70a785642ac0ae63ad8a01c387f8889b7596fdbd2",
+    "overview.png": "adca3ab971cb89e988d6d24188aa3f90049ba8c30bd86ed318b2d05782ad3221"
+  },
+  "retained_legacy_CT_exactly_unchanged": 478,
+  "local_doc_links_checked": 105,
+  "page_script_syntax": "node --check passed",
+  "review_data_script_syntax": "node --check passed",
+  "current_task_archive": "docs/history/current-task-before-2026-10-18-full-scene-regular-extension.md",
+  "current_task_archive_sha256": "3dcde9833423591c661796b62a6e4745d76fe1e45a9330ff67a91bd399e67a2f"
+}

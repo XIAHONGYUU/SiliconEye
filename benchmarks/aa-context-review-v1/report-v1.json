@@ -1,0 +1,78 @@
+{
+  "status": "human_review_required",
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "spec_sha256": "e28518af065f12d02234515e7246a35be241c499d4cf026064e6f6af7d29792b",
+  "code_sha256": "3bba8d8ce555a7cb2e483d8c131629650fc3f3bceba28830bc40fdb85b43733b",
+  "stats": {
+    "S03": {
+      "all_predict_background": 8997,
+      "all_predict_AA": 171825,
+      "disagree": 8178
+    },
+    "S05": {
+      "all_predict_background": 35725,
+      "all_predict_AA": 83960,
+      "disagree": 34315
+    }
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "native_bbox": [
+        3420,
+        3335,
+        3980,
+        3390
+      ],
+      "title": "电阻内部：残余绿色应按误报复核",
+      "judgment": "U及N02/N03已确认非AA。RF残余亮暗条纹不应因局部颜色像AA就保留。",
+      "status": "材料语义已审；框只是复核范围，不是精确边界",
+      "check": "是否同意：这块电阻内部的绿色属于误报？"
+    },
+    {
+      "id": "Q2",
+      "native_bbox": [
+        3440,
+        3428,
+        3980,
+        3446
+      ],
+      "title": "两条AA之间：保留隔离",
+      "judgment": "N04已确认非AA，RF与GrabCut在此分歧。连续平滑不能跨过真实间隙。",
+      "status": "笔画非AA已审；完整间隙边界待审",
+      "check": "是否同意：保留此处非AA间隙，不接受GrabCut的连片？"
+    },
+    {
+      "id": "Q3",
+      "native_bbox": [
+        3890,
+        3480,
+        3990,
+        3550
+      ],
+      "title": "下侧MOS内部：保留暗AA",
+      "judgment": "A04/A05及原检查点支持AA；较暗条纹不应被逐条挖空。现RF已恢复旧漏检点。",
+      "status": "笔画/中心已审；区域精确边界未审",
+      "check": "是否同意：这里整体属于AA内部，暗纹不应作为缺口？"
+    },
+    {
+      "id": "Q4",
+      "native_bbox": [
+        3420,
+        3391,
+        3980,
+        3413
+      ],
+      "title": "上侧AA的上边界：仍待确定",
+      "judgment": "电阻非AA与下方AA横条之间存在光晕/亮边。不能只凭环通常连续就确定边界或补宽。",
+      "status": "unknown：不生成精确边界",
+      "check": "此处候选绿色是否向电阻内部扩宽？如不清楚可保持未知。"
+    }
+  ],
+  "fused_mask_created": false,
+  "geometry_changed": false,
+  "note": "S05 only for AI contextual conclusions; S03 is an algorithm control. Agreement of 12 correlated outputs is not independent confidence. No numeric target-process DRC or physical scale is known."
+}

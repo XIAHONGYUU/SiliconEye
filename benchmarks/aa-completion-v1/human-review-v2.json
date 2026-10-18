@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "reviewer": "human_user",
+  "model": {
+    "path": "benchmarks/aa-completion-v1/model-v1.json",
+    "sha256": "6b85e1319c781d6ecfffc92b893fbc6f4e1f6901dc8371d18245d2e5cd2ddb44"
+  },
+  "page": {
+    "path": "runs/aa-completion-v1k/index.html",
+    "sha256": "070152e6867dfc5ab733ca252aef611f7671d9d812a4965c205f71aa40933c49"
+  },
+  "findings": [
+    {
+      "scope": "F01-F04",
+      "verbatim_feedback": "中间靠下，有两条相邻的AA被识别为一条。",
+      "state": "correction_required",
+      "object_localization": "pending_native_source_review"
+    },
+    {
+      "scope": "F05-F06",
+      "verbatim_feedback": "两个大MOS之间没有环。",
+      "state": "correction_required",
+      "object_localization": "pending_native_source_review"
+    },
+    {
+      "scope": "F09",
+      "verbatim_feedback": "中间两个大mos之间没有环，右侧中间环的结构错了",
+      "state": "correction_required",
+      "object_localization": "pending_native_source_review"
+    },
+    {
+      "scope": "F10",
+      "verbatim_feedback": "中间不规则的AA右下角哪一个缺口有问题",
+      "state": "correction_required",
+      "object_localization": "pending_native_source_review"
+    },
+    {
+      "scope": "F11",
+      "verbatim_feedback": "中间电阻的环和mos管的环之间有间距",
+      "state": "correction_required",
+      "object_localization": "pending_native_source_review"
+    },
+    {
+      "scope": "F12",
+      "verbatim_feedback": "基本没有问题。",
+      "state": "qualitatively_usable_not_exact_boundary_approval",
+      "object_localization": "pending_native_source_review"
+    }
+  ],
+  "overall": "human_topology_and_coverage_review_not_passed",
+  "new_request": "discuss actual AA algorithms, alternatives and whether they were tried; no new segmentation experiment run this turn"
+}

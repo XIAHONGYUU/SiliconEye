@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "kind": "pdk_reading_index",
+  "accessed_date": "2026-10-18",
+  "local_guide": "docs/reference/pdk-recognition-guide-v1.md",
+  "full_pdk_installed": false,
+  "official_text_mirrored": false,
+  "target_chip_process": "unknown",
+  "sources": [
+    {
+      "source_id": "GF-L",
+      "pdk": "GF180MCU",
+      "title": "4.1 Drawn layer definition",
+      "url": "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html",
+      "read_scope": "relevant chapter sections only",
+      "keywords": [
+        "COMP",
+        "Contact",
+        "Via1",
+        "RES_MK",
+        "Dummy"
+      ],
+      "revision": "unversioned latest/main web documentation",
+      "use": "structural analogy not target process rules"
+    },
+    {
+      "source_id": "GF-R",
+      "pdk": "GF180MCU",
+      "title": "10.1 P+ Poly Resistor",
+      "url": "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_01.html",
+      "read_scope": "relevant chapter sections only",
+      "keywords": [
+        "SAB",
+        "RES_MK",
+        "PRES.9"
+      ],
+      "revision": "unversioned latest/main web documentation",
+      "use": "structural analogy not target process rules"
+    },
+    {
+      "source_id": "GF-C",
+      "pdk": "GF180MCU",
+      "title": "10.4.1 MIM Option A",
+      "url": "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_10_4_1.html",
+      "read_scope": "relevant chapter sections only",
+      "keywords": [
+        "FuseTop",
+        "bottom plate",
+        "MIM.10"
+      ],
+      "revision": "unversioned latest/main web documentation",
+      "use": "structural analogy not target process rules"
+    },
+    {
+      "source_id": "SKY-L",
+      "pdk": "SKY130",
+      "title": "Layers Reference",
+      "url": "https://skywater-pdk.readthedocs.io/en/main/rules/layers.html",
+      "read_scope": "relevant chapter sections only",
+      "keywords": [
+        "poly_licon1",
+        "prec_resistor",
+        "tap"
+      ],
+      "revision": "unversioned latest/main web documentation",
+      "use": "structural analogy not target process rules"
+    },
+    {
+      "source_id": "SKY-S",
+      "pdk": "SKY130",
+      "title": "Summary of Key Periphery Rules",
+      "url": "https://skywater-pdk.readthedocs.io/en/main/rules/summary.html",
+      "read_scope": "relevant chapter sections only",
+      "keywords": [
+        "licon",
+        "li",
+        "mcon",
+        "via"
+      ],
+      "revision": "unversioned latest/main web documentation",
+      "use": "structural analogy not target process rules"
+    },
+    {
+      "source_id": "SKY-D",
+      "pdk": "SKY130",
+      "title": "Device Details",
+      "url": "https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html",
+      "read_scope": "relevant chapter sections only",
+      "keywords": [
+        "Generic resistors",
+        "MiM capacitors",
+        "Vertical Parallel Plate"
+      ],
+      "revision": "unversioned latest/main web documentation",
+      "use": "structural analogy not target process rules"
+    },
+    {
+      "source_id": "GF-G",
+      "pdk": "GF180MCU",
+      "title": "3.0 Layout Information",
+      "url": "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_03.html",
+      "read_scope": "relevant rule sections only; deck not executed",
+      "keywords": [
+        "grid",
+        "45",
+        "90"
+      ],
+      "revision": "unversioned main/latest documentation",
+      "use": "structural relationship analogy; no target-process DRC claim",
+      "accessed_date": "2026-10-18"
+    },
+    {
+      "source_id": "GF-CO",
+      "pdk": "GF180MCU",
+      "title": "Official KLayout Contact DRC rule deck",
+      "url": "https://foss-eda-tools.googlesource.com/globalfoundries-pdk/libs/gf180mcu_fd_pr/+/refs/heads/main/rules/klayout/drc/rule_decks/contact.drc",
+      "read_scope": "relevant rule sections only; deck not executed",
+      "keywords": [
+        "CO.1",
+        "CO.2",
+        "CO.3",
+        "CO.4",
+        "CO.6",
+        "CO.7",
+        "CO.10",
+        "CO.11"
+      ],
+      "revision": "unversioned main/latest documentation",
+      "use": "structural relationship analogy; no target-process DRC claim",
+      "accessed_date": "2026-10-18"
+    },
+    {
+      "source_id": "SKY-P",
+      "pdk": "SKY130",
+      "title": "Periphery rules: general and licon",
+      "url": "https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html",
+      "read_scope": "relevant rule sections only; deck not executed",
+      "keywords": [
+        "x.2",
+        "x.3",
+        "licon.1",
+        "licon.4",
+        "licon.11",
+        "licon.17"
+      ],
+      "revision": "unversioned main/latest documentation",
+      "use": "structural relationship analogy; no target-process DRC claim",
+      "accessed_date": "2026-10-18"
+    }
+  ]
+}

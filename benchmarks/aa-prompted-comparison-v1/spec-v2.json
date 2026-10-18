@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "human_review": {
+    "path": "benchmarks/aa-algorithm-comparison-v1/human-label-review-v1.json",
+    "sha256": "b7446cad6b917003bed9020fdaf10cde665847de6965d55bf3f075ed6979d516"
+  },
+  "baseline_report": {
+    "path": "benchmarks/aa-algorithm-comparison-v1/report-v1.json",
+    "sha256": "285917522b9d98677ff3a654e127fe9055a96f81d22e5f3039b3f5709f4343fa"
+  },
+  "baseline_run": "runs/aa-algorithm-comparison-v1a",
+  "cases": [
+    {
+      "id": "S03",
+      "name": "大 MOS 间隙二",
+      "native_bbox": [
+        100,
+        3180,
+        800,
+        3450
+      ],
+      "prompts": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            200,
+            3250
+          ],
+          "radius": 3,
+          "center_status": "human_confirmed",
+          "neighborhood_status": "AI_sampling_assumption_not_human_pixel_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            200,
+            3390
+          ],
+          "radius": 3,
+          "center_status": "human_confirmed",
+          "neighborhood_status": "AI_sampling_assumption_not_human_pixel_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            200,
+            3310
+          ],
+          "radius": 1,
+          "center_status": "human_confirmed",
+          "neighborhood_status": "AI_sampling_assumption_not_human_pixel_truth"
+        }
+      ],
+      "checks": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            400,
+            3250
+          ]
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            650,
+            3250
+          ]
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            400,
+            3390
+          ]
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            650,
+            3390
+          ]
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            400,
+            3310
+          ]
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            650,
+            3310
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "电阻与 MOS 环间距",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "prompts": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3500,
+            3420
+          ],
+          "radius": 3,
+          "center_status": "human_confirmed",
+          "neighborhood_status": "AI_sampling_assumption_not_human_pixel_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3500,
+            3510
+          ],
+          "radius": 3,
+          "center_status": "human_confirmed",
+          "neighborhood_status": "AI_sampling_assumption_not_human_pixel_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3500,
+            3437
+          ],
+          "radius": 1,
+          "center_status": "human_confirmed",
+          "neighborhood_status": "AI_sampling_assumption_not_human_pixel_truth"
+        }
+      ],
+      "checks": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3750,
+            3418
+          ]
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3950,
+            3415
+          ]
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3750,
+            3510
+          ]
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3950,
+            3510
+          ]
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3750,
+            3434
+          ]
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3950,
+            3431
+          ]
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "seed": 20261018,
+    "feature_sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "forest_trees": 100,
+    "forest_max_depth": 14,
+    "grabcut_iterations": 3
+  },
+  "methods": [
+    "local_random_forest",
+    "local_grabcut_frozen",
+    "local_grabcut_refine"
+  ],
+  "scope": "development experiment on two previously observed cases; same three local prompts per case for RF and GrabCut; remaining approved center pixels only for checking",
+  "restrictions": [
+    "prompt centers and check centers disjoint",
+    "prompt neighborhoods inferred not approved",
+    "not chip-level or new-window blind testing",
+    "do not compare changed prompt budget as pure algorithm superiority",
+    "no CT or geometric completion"
+  ],
+  "baseline_manifest": {
+    "path": "benchmarks/aa-algorithm-comparison-v1/manifest-v1.json",
+    "sha256": "01c01b80c904f82da4a8ebbec8c7eef533483a29280fc3e6f8417fb08653d0fd"
+  },
+  "previous_spec": "benchmarks/aa-prompted-comparison-v1/spec-v1.json"
+}

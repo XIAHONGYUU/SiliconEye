@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "full visible AA and CT source frames; preserve selected geometry; inferred and unclassified separate",
+  "inputs": {
+    "base_scene": {
+      "path": "benchmarks/full-scene-aa-ct-v1/model-v1.json",
+      "sha256": "64919873fe6f8847e2b7dc93fedbb75034cb946fae0af230eec3ff2e09a12094"
+    },
+    "retained_geometry": {
+      "path": "benchmarks/group-constraints-v1/model-v1.json",
+      "sha256": "7e034557241cde58c4a03387fb1ac5ed276c16028b1ead3633f1b2ef624beb99"
+    },
+    "retained_parent": {
+      "path": "benchmarks/orthogonal-aa-polygons-v1/model-v1-reviewed.json",
+      "sha256": "bf93f6be3b44f4c11cf52749c2d6aa3811f4abd8630e3f1fab0f1a9b2d95feae"
+    },
+    "source_peaks": {
+      "path": "benchmarks/full-scene-aa-ct-v1/source-CT-peaks-v1.json",
+      "sha256": "75e0c28ba14b47c8bf45d032d53f5a327cb8c01e7752b29491e5386505d67680"
+    },
+    "deferred_AA": {
+      "path": "benchmarks/full-scene-aa-ct-v1/deferred-AA-v1.json",
+      "sha256": "435329006d76537f36c68babd4469ef4124c08e967d9737f7d4f2ac23343f8ca"
+    },
+    "previous_spec": {
+      "path": "benchmarks/full-scene-regular-v1/spec-v1.json",
+      "sha256": "d174bcdc8ee47b294ec1ad7a799798456195e35069a5044d845140824219a207"
+    }
+  },
+  "AA": {
+    "size_relative_tolerance": 0.09,
+    "baseline_tolerance": 9.0,
+    "max_shift": 8.0,
+    "pitch_relative_tolerance": 0.08,
+    "min_group_size": 3
+  },
+  "CT": {
+    "square_side": 8.0,
+    "weighted_center_radius": 6,
+    "axis_cluster": 3.5,
+    "max_axis_shift": 6.0,
+    "min_pitch": 10.0,
+    "max_slots_per_AA": 6000,
+    "max_inferred_fraction": 0.2,
+    "min_grid_support": 0.55,
+    "AA_margin": 2.0,
+    "duplicate_radius": 6.0,
+    "periodic_min_coherence": 0.6,
+    "periodic_max_median_shift": 2.5,
+    "dense_pitch_max": 24.0,
+    "dense_pitch_step": 0.15
+  },
+  "boundary_state": "source image edges, missing material and unavailable channel/upper metal stay unknown",
+  "human_authorization": "retain geometry and extend whole image AA/CT; no precise dimension/process/net approval",
+  "CT_scope": "all source-frame CT observations; AA-associated candidates and non-AA/unclassified candidates separated; no poly layer identity assumed"
+}

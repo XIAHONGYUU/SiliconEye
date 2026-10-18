@@ -1,0 +1,1217 @@
+{
+  "schema_version": 1,
+  "scope": "sparse_geometry_pilot_on_full_scene_not_full_reconstruction",
+  "canvas_wh": [
+    5712,
+    4284
+  ],
+  "unit": "relative_layout_unit_nominally_reference_pixel_not_um",
+  "sources": {
+    "aa": {
+      "layer": "aa",
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12173200
+    },
+    "poly": {
+      "layer": "poly",
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 13473622
+    }
+  },
+  "registration": {
+    "path": "benchmarks/full-frame-aa-ct-v1/registration-candidate-v1.json",
+    "sha256": "d806e6da43b11b6e2c7b1351ad2793cc269e2eb65ea7953b93e26f1b67dd7e7e"
+  },
+  "aa_observations": [
+    {
+      "id": "AA-G001",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          2287,
+          1310
+        ],
+        [
+          2411,
+          1311
+        ],
+        [
+          2418,
+          1881
+        ],
+        [
+          2294,
+          1880
+        ]
+      ],
+      "observed_hole_native_xy": [
+        [
+          2300,
+          1325
+        ],
+        [
+          2398,
+          1327
+        ],
+        [
+          2404,
+          1865
+        ],
+        [
+          2305,
+          1865
+        ]
+      ],
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth"
+    },
+    {
+      "id": "AA-G002",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          2311,
+          1337
+        ],
+        [
+          2383,
+          1336
+        ],
+        [
+          2389,
+          1842
+        ],
+        [
+          2317,
+          1843
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth"
+    },
+    {
+      "id": "AA-G003",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          2558,
+          1433
+        ],
+        [
+          3216,
+          1432
+        ],
+        [
+          3215,
+          1740
+        ],
+        [
+          2560,
+          1744
+        ]
+      ],
+      "observed_hole_native_xy": [
+        [
+          2577,
+          1452
+        ],
+        [
+          3196,
+          1450
+        ],
+        [
+          3197,
+          1724
+        ],
+        [
+          2583,
+          1726
+        ]
+      ],
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth"
+    },
+    {
+      "id": "AA-G004",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          2647,
+          1523
+        ],
+        [
+          3127,
+          1519
+        ],
+        [
+          3130,
+          1652
+        ],
+        [
+          2654,
+          1657
+        ]
+      ],
+      "observed_hole_native_xy": [
+        [
+          2665,
+          1540
+        ],
+        [
+          3109,
+          1539
+        ],
+        [
+          3114,
+          1635
+        ],
+        [
+          2670,
+          1639
+        ]
+      ],
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth"
+    },
+    {
+      "id": "AA-G005",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          2695,
+          1555
+        ],
+        [
+          3093,
+          1555
+        ],
+        [
+          3093,
+          1619
+        ],
+        [
+          2695,
+          1619
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth"
+    },
+    {
+      "id": "AA-G101",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3618,
+          1443
+        ],
+        [
+          3723,
+          1443
+        ],
+        [
+          3723,
+          1548
+        ],
+        [
+          3618,
+          1548
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 0,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G102",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3769,
+          1443
+        ],
+        [
+          3873,
+          1443
+        ],
+        [
+          3873,
+          1548
+        ],
+        [
+          3769,
+          1548
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 1,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G103",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3920,
+          1443
+        ],
+        [
+          4022,
+          1443
+        ],
+        [
+          4022,
+          1547
+        ],
+        [
+          3920,
+          1547
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 2,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G104",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4067,
+          1444
+        ],
+        [
+          4171,
+          1444
+        ],
+        [
+          4171,
+          1547
+        ],
+        [
+          4067,
+          1547
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 3,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G105",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4212,
+          1443
+        ],
+        [
+          4319,
+          1443
+        ],
+        [
+          4319,
+          1548
+        ],
+        [
+          4212,
+          1548
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 4,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G106",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4357,
+          1445
+        ],
+        [
+          4465,
+          1445
+        ],
+        [
+          4465,
+          1549
+        ],
+        [
+          4357,
+          1549
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 5,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G107",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4504,
+          1446
+        ],
+        [
+          4610,
+          1446
+        ],
+        [
+          4610,
+          1549
+        ],
+        [
+          4504,
+          1549
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 6,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G108",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4651,
+          1447
+        ],
+        [
+          4756,
+          1447
+        ],
+        [
+          4756,
+          1550
+        ],
+        [
+          4651,
+          1550
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 7,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G109",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4796,
+          1448
+        ],
+        [
+          4899,
+          1448
+        ],
+        [
+          4899,
+          1550
+        ],
+        [
+          4796,
+          1550
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 8,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G110",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4943,
+          1448
+        ],
+        [
+          5044,
+          1448
+        ],
+        [
+          5044,
+          1551
+        ],
+        [
+          4943,
+          1551
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 0,
+      "column": 9,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G111",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3616,
+          1595
+        ],
+        [
+          3721,
+          1595
+        ],
+        [
+          3721,
+          1700
+        ],
+        [
+          3616,
+          1700
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 0,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G112",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3767,
+          1596
+        ],
+        [
+          3871,
+          1596
+        ],
+        [
+          3871,
+          1699
+        ],
+        [
+          3767,
+          1699
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 1,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G113",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3916,
+          1596
+        ],
+        [
+          4020,
+          1596
+        ],
+        [
+          4020,
+          1698
+        ],
+        [
+          3916,
+          1698
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 2,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G114",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4065,
+          1596
+        ],
+        [
+          4168,
+          1596
+        ],
+        [
+          4168,
+          1698
+        ],
+        [
+          4065,
+          1698
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 3,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G115",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4210,
+          1596
+        ],
+        [
+          4316,
+          1596
+        ],
+        [
+          4316,
+          1698
+        ],
+        [
+          4210,
+          1698
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 4,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G116",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4356,
+          1597
+        ],
+        [
+          4462,
+          1597
+        ],
+        [
+          4462,
+          1699
+        ],
+        [
+          4356,
+          1699
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 5,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G117",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4502,
+          1598
+        ],
+        [
+          4608,
+          1598
+        ],
+        [
+          4608,
+          1699
+        ],
+        [
+          4502,
+          1699
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 6,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G118",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4648,
+          1598
+        ],
+        [
+          4751,
+          1598
+        ],
+        [
+          4751,
+          1700
+        ],
+        [
+          4648,
+          1700
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 7,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G119",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4793,
+          1599
+        ],
+        [
+          4895,
+          1599
+        ],
+        [
+          4895,
+          1700
+        ],
+        [
+          4793,
+          1700
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 8,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G120",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4939,
+          1599
+        ],
+        [
+          5041,
+          1599
+        ],
+        [
+          5041,
+          1700
+        ],
+        [
+          4939,
+          1700
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 1,
+      "column": 9,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G121",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3614,
+          1746
+        ],
+        [
+          3718,
+          1746
+        ],
+        [
+          3718,
+          1850
+        ],
+        [
+          3614,
+          1850
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 0,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G122",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3765,
+          1747
+        ],
+        [
+          3868,
+          1747
+        ],
+        [
+          3868,
+          1849
+        ],
+        [
+          3765,
+          1849
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 1,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G123",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          3915,
+          1747
+        ],
+        [
+          4017,
+          1747
+        ],
+        [
+          4017,
+          1849
+        ],
+        [
+          3915,
+          1849
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 2,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G124",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4062,
+          1745
+        ],
+        [
+          4165,
+          1745
+        ],
+        [
+          4165,
+          1849
+        ],
+        [
+          4062,
+          1849
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 3,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G125",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4208,
+          1747
+        ],
+        [
+          4314,
+          1747
+        ],
+        [
+          4314,
+          1847
+        ],
+        [
+          4208,
+          1847
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 4,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G126",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4354,
+          1747
+        ],
+        [
+          4459,
+          1747
+        ],
+        [
+          4459,
+          1848
+        ],
+        [
+          4354,
+          1848
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 5,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G127",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4499,
+          1748
+        ],
+        [
+          4606,
+          1748
+        ],
+        [
+          4606,
+          1848
+        ],
+        [
+          4499,
+          1848
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 6,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G128",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4645,
+          1747
+        ],
+        [
+          4749,
+          1747
+        ],
+        [
+          4749,
+          1849
+        ],
+        [
+          4645,
+          1849
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 7,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G129",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4788,
+          1746
+        ],
+        [
+          4892,
+          1746
+        ],
+        [
+          4892,
+          1849
+        ],
+        [
+          4788,
+          1849
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 8,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    },
+    {
+      "id": "AA-G130",
+      "layer": "AA",
+      "source_frame": "aa",
+      "observed_outer_native_xy": [
+        [
+          4935,
+          1749
+        ],
+        [
+          5036,
+          1749
+        ],
+        [
+          5036,
+          1849
+        ],
+        [
+          4935,
+          1849
+        ]
+      ],
+      "observed_hole_native_xy": null,
+      "status": "candidate",
+      "boundary_status": "AI_observation_optical_edge_not_lithographic_truth",
+      "group": "dummy-grid",
+      "row": 2,
+      "column": 9,
+      "observation_method": "prior_mask_envelope_initializer_visually_checked_as_group"
+    }
+  ],
+  "normalization": {
+    "method": "projective_fit_dummy_center_lattice_candidate",
+    "group": "dummy-grid",
+    "origin_xy": [
+      3668,
+      1496
+    ],
+    "pitch_xy": [
+      148,
+      151
+    ],
+    "equal_dummy_size_xy": [
+      104,
+      104
+    ],
+    "grid_step": 1
+  },
+  "ct_arrays": [
+    {
+      "id": "CT-A01",
+      "aa_object_id": "AA-G002",
+      "origin_aa_native_xy": [
+        2315,
+        1348
+      ],
+      "pitch_seed_xy": [
+        29.5,
+        14.25
+      ],
+      "columns": 3,
+      "rows": 35,
+      "square_side": 8
+    },
+    {
+      "id": "CT-A02",
+      "aa_object_id": "AA-G005",
+      "origin_aa_native_xy": [
+        2704.5,
+        1560.5
+      ],
+      "pitch_seed_xy": [
+        14,
+        25.5
+      ],
+      "columns": 28,
+      "rows": 3,
+      "square_side": 8
+    }
+  ],
+  "support": {
+    "record_path": "benchmarks/geometry-reconstruction-v1/ct-lattice-initializer-support-v1.json",
+    "record_sha256": "c6fd281f6833d211302026b09af9c3c34712f91832a1355b2c8c89cf3ec81355",
+    "max_single_component_native_size": 22,
+    "grid_fit_residual_limit": 3,
+    "min_peak_gray": 195,
+    "min_local_prominence": 12,
+    "selection": "single_brightness_support_subset_for_two_pilot_array_fits_not_full_CT_layer"
+  },
+  "review_windows": [
+    {
+      "id": "overview",
+      "label": "样稿整体（其余未重建）",
+      "aa_native_xyxy": [
+        2200,
+        1250,
+        5150,
+        1950
+      ]
+    },
+    {
+      "id": "nested",
+      "label": "嵌套环与独立 AA 条",
+      "aa_native_xyxy": [
+        2450,
+        1330,
+        3350,
+        1830
+      ]
+    },
+    {
+      "id": "tall",
+      "label": "长条 AA 与 CT 阵列",
+      "aa_native_xyxy": [
+        2200,
+        1250,
+        2490,
+        1940
+      ]
+    },
+    {
+      "id": "dummy",
+      "label": "重复 dummy AA",
+      "aa_native_xyxy": [
+        3520,
+        1360,
+        5090,
+        1890
+      ]
+    }
+  ],
+  "approval": "candidate_no_new_human_geometry_or_contact_acceptance"
+}

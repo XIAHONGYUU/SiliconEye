@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "purpose": "full-frame AA and geometrically associated CT candidates; no region-category cropping",
+  "sources": {
+    "aa": {
+      "layer": "aa",
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12173200
+    },
+    "poly": {
+      "layer": "poly",
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 13473622
+    }
+  },
+  "excluded_native_boxes": {
+    "aa": [
+      [
+        0,
+        0,
+        5712,
+        185
+      ],
+      [
+        3290,
+        3280,
+        3370,
+        3370
+      ]
+    ],
+    "poly": [
+      [
+        3270,
+        3150,
+        3350,
+        3240
+      ]
+    ]
+  },
+  "exclusion_status": "AI-observed UI/cursor pixel windows; UI role human-confirmed, exact bounds candidate",
+  "aa": {
+    "threshold": 156,
+    "blur_sigma": 1.5,
+    "max_completion_area_px": 650000,
+    "max_completion_short_side_px": 600,
+    "min_edge_fraction": 0.25,
+    "mean_edge_fraction": 0.65,
+    "three_sides_fraction": 0.8,
+    "weak_fourth_side_fraction": 0.08
+  },
+  "ct_profile": "narrow_vertical",
+  "registration": {
+    "path": "benchmarks/full-frame-aa-ct-v1/registration-candidate-v1.json",
+    "sha256": "d806e6da43b11b6e2c7b1351ad2793cc269e2eb65ea7953b93e26f1b67dd7e7e"
+  },
+  "association_guard_band": {
+    "base_px": 12,
+    "outside_anchor_hull_growth_px_per_px": 0.012,
+    "max_px": 60,
+    "meaning": "working geometric exclusion band, not statistical confidence or accepted registration error"
+  },
+  "development_separation_checks_native_xy": [
+    [
+      [
+        2900,
+        1590
+      ],
+      [
+        2850,
+        1530
+      ]
+    ]
+  ],
+  "unit": "px",
+  "approval_status": "candidate_only_not_material_truth"
+}

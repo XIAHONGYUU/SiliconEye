@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "human_review_state_only_no_algorithm_change",
+  "reviewed_model_sha256": "bf93f6be3b44f4c11cf52749c2d6aa3811f4abd8630e3f1fab0f1a9b2d95feae",
+  "review_record_sha256": "990c8d7da62e84dfa2feb6c7665c01f049789d1c3d77617f1198fa1b0ad5b48e",
+  "base_model_sha256": "710fd422a07a195f8735b7f42a65bd43fec281f3d75284a11752424346d2a7d2",
+  "checks": {
+    "base_matches_frozen_run": true,
+    "all_519_geometries_unchanged": true,
+    "old_513_objects_and_reviews_unchanged": true,
+    "algorithm_statuses_preserved": true,
+    "continuation_semantics_preserved": true,
+    "all_six_requested_objects_reviewed": true,
+    "new_software_tests_run": false
+  },
+  "next_step": "expand_full_frame_AA_CT_geometry_with_explicit_coverage_and_unknowns"
+}

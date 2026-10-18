@@ -1,0 +1,10 @@
+{
+  "user_instruction": "保留几何并将提取范围扩展到整个图片的AA和CT",
+  "retained_input": {
+    "path": "benchmarks/group-constraints-v1/model-v1.json",
+    "sha256": "7e034557241cde58c4a03387fb1ac5ed276c16028b1ead3633f1b2ef624beb99"
+  },
+  "objects_retained_exactly": 195,
+  "scope": "geometry retained and whole-photo scope authorized",
+  "precise_dimensions_or_process_DRC_or_nets_approved": false
+}

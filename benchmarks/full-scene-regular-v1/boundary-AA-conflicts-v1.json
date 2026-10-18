@@ -1,0 +1,51 @@
+[
+  {
+    "object": {
+      "id": "AA-F00128",
+      "layout_observation_bbox_xywh": [
+        4947,
+        3989,
+        104,
+        104
+      ],
+      "layer": "AA",
+      "primitive": "orthogonal_polygon",
+      "outer_xy": [
+        [
+          4947.0,
+          3989.0
+        ],
+        [
+          5050.0,
+          3989.0
+        ],
+        [
+          5050.0,
+          4092.0
+        ],
+        [
+          4947.0,
+          4092.0
+        ]
+      ],
+      "holes_xy": [],
+      "outer_xyxy": [
+        4947.0,
+        3989.0,
+        5050.0,
+        4092.0
+      ],
+      "hole_xyxy": null,
+      "status": "candidate",
+      "revision_role": "scene_AA_candidate",
+      "observation_method": "full_frame_support_line_fit_not_material_truth",
+      "max_outline_fit_shift_layout_units": 4.47213595499958,
+      "connectivity": "geometry_candidate_not_electrical_net",
+      "dimension_status": "relative_layout_units_not_um"
+    },
+    "reason": "retained_boundary_frame_conflict",
+    "references": [
+      "D01-00-33"
+    ]
+  }
+]

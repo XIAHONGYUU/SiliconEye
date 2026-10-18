@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "human_material_decision": "U resistor interior non-AA",
+  "U_is_training_not_independent_test": true,
+  "original_check_centers_unchanged": 12,
+  "local_rf": {
+    "AA_hit": 7,
+    "AA_total": 8,
+    "background_false_positive": 0,
+    "background_total": 4,
+    "U_before_AA": true,
+    "U_after_AA": false,
+    "new_false_negative_native_xy": [
+      3950,
+      3510
+    ]
+  },
+  "diagnostic_only": {
+    "native_box": [
+      3410,
+      3330,
+      4000,
+      3395
+    ],
+    "box_status": "AI-chosen interior probe rectangle, not human-approved dense truth",
+    "before_AA_fraction": 0.9995045632333768,
+    "after_AA_fraction": 0.3189308996088657
+  },
+  "verdict": "FAIL: residual resistor false positives and regression at confirmed AA center; no full-frame promotion",
+  "next": "Keep these failure cases frozen. Evaluate texture/structural features with region-level checks before any orthogonal reconstruction; do not add inferred rings or hand-clip masks."
+}

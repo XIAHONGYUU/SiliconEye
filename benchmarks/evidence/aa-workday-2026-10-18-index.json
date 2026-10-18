@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "scope": "Seven explicitly frozen AA evaluation/review runs only; not all project runs.",
+  "archives": [
+    {
+      "path": "benchmarks/evidence/aa-algorithm-comparison-v1a-evidence.zip",
+      "sha256": "7c8c91112e206aec4f60abf6fb5ffc816fd5d1e6ce16dac0e61ab078625af4e7",
+      "files": 149,
+      "bytes": 28630433
+    },
+    {
+      "path": "benchmarks/evidence/aa-prompted-comparison-v1a-evidence.zip",
+      "sha256": "e83095162b06a9423e870713973e77215c55a739a902be8c9038e23e546937fa",
+      "files": 39,
+      "bytes": 6543656
+    },
+    {
+      "path": "benchmarks/evidence/aa-prompted-comparison-v1b-evidence.zip",
+      "sha256": "b38f877b6e947f0abec718446c32549cb18a9df55d56f212257ed9b3b77605b8",
+      "files": 39,
+      "bytes": 6479160
+    },
+    {
+      "path": "benchmarks/evidence/aa-prompted-comparison-v1c-evidence.zip",
+      "sha256": "70982183b14a7c7aeff0c6ae3ee1e9043be4a4ded8e90f2fbd7a9ad0700accd6",
+      "files": 39,
+      "bytes": 6513613
+    },
+    {
+      "path": "benchmarks/evidence/aa-texture-structure-v1b-evidence.zip",
+      "sha256": "820787400b1a7bfdab67890a3a693ac480fb94ea3fc8121cd2f810f5b938f568",
+      "files": 69,
+      "bytes": 9492759
+    },
+    {
+      "path": "benchmarks/evidence/aa-scribble-comparison-v1b-evidence.zip",
+      "sha256": "8791195ae9740f70be1a80244794157aa6459841ec97ae0176253626ab584a58",
+      "files": 93,
+      "bytes": 18387438
+    },
+    {
+      "path": "benchmarks/evidence/aa-context-review-v1b-evidence.zip",
+      "sha256": "9916d15cf197561dd649a0b681a71e56eccbda5b665177dff279898a49b3c9c1",
+      "files": 33,
+      "bytes": 14004027
+    }
+  ],
+  "source_photographs": "Already tracked under data/test_chip/tile_full; unchanged.",
+  "restore": "python -m silicon_eye.evidence_archive --archive ARCHIVE --root PROJECT_ROOT"
+}

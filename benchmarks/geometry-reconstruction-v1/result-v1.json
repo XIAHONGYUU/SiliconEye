@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_directory": "runs/geometry-reconstruction-v1b",
+  "model_sha256": "5ecd3e51400986096b5034cffb657d6a65235a9ec81c2cfc80cf547b5bd7a6e1",
+  "manifest_sha256": "bff3da36a903374eed526019e711b1e68a29e9f8bbe77bb5557dea43f15b8762",
+  "report": {
+    "AA_geometries": 35,
+    "CT_proposed_slots": 189,
+    "CT_brightness_supported_candidates": 153,
+    "CT_unknown_slots": 36,
+    "fullframe_coverage": false,
+    "independent_physical_acceptance": false,
+    "full_distortion_correction": false,
+    "max_AA_backprojection_corner_shift_px": 5.247349819526959,
+    "normalization_fit": {
+      "anchor_count": 30,
+      "median_fit_residual_px": 1.1301733903283213,
+      "max_fit_residual_px": 1.577825747560088,
+      "independent_validation": false,
+      "fullframe_distortion_eliminated": false
+    }
+  },
+  "verification": {
+    "pytest_passed": 271,
+    "targeted_ruff": "passed",
+    "static_output_hashes": "passed",
+    "svg_parsing_and_sizes": "passed",
+    "static_page_links": "passed",
+    "source_hashes": "unchanged",
+    "browser_interaction": "not_tested",
+    "physical_material_acceptance": "pending",
+    "fullframe_reconstruction": false
+  }
+}

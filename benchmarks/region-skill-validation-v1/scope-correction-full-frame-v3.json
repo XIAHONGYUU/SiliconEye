@@ -1,0 +1,26 @@
+{
+  "kind": "skill_scope_correction",
+  "date": "2026-10-18",
+  "scope": "qualitative observation/evaluation only; full-frame material extraction and global connectivity independent of region boxes",
+  "basis": "docs/architecture/photo-stack-workflow-v3.md",
+  "prior_installation": "benchmarks/region-skill-validation-v1/packaging.json",
+  "source_and_installed_files": [
+    {
+      "relative_path": "SKILL.md",
+      "sha256": "5fc40a8184f82dac079add807f10ca215de7eab5c969d9af584239ce402fd0a5"
+    },
+    {
+      "relative_path": "agents/openai.yaml",
+      "sha256": "ec2d9729281999bddb66918473dc22f8ae5659e72d064858ae4c11989793c031"
+    },
+    {
+      "relative_path": "references/contract.md",
+      "sha256": "9ec4035f63928f9fc3b364e222ba9acca4f22f400f06f832fb738f6b3271c7f2"
+    },
+    {
+      "relative_path": "scripts/build_review.py",
+      "sha256": "580b5555f4c894f5949e9787e4922cab4da856edfb7066deb90c3eef8604bc7f"
+    }
+  ],
+  "renderer_changed": false
+}

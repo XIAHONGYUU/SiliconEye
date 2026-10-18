@@ -1,0 +1,17 @@
+{
+  "tests": "322 passed",
+  "ruff": "pass",
+  "source_and_dependency_hashes": true,
+  "manifest_verified": true,
+  "all_center_scores_recomputed": true,
+  "training_excludes_radius10_around_checks": true,
+  "all_30_masks_identical_across_validation_only_revision": true,
+  "page_js_syntax": true,
+  "browser_interaction_tested": false,
+  "versions": {
+    "python": "3.12.3",
+    "opencv": "5.0.0",
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1"
+  }
+}

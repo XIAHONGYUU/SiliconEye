@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "previous_protocol": {
+    "path": "benchmarks/aa-texture-structure-v1/spec-v1.json",
+    "sha256": "4a5e2f4ef1d953912cb7cfa3b63cb73daa7a4212e23421b215adbf1724ef9dc9"
+  },
+  "baseline_run": "runs/aa-texture-structure-v1b",
+  "baseline_manifest": {
+    "path": "benchmarks/aa-texture-structure-v1/manifest-v1.json",
+    "sha256": "342e7f2bb77499ba663f34ca11553cd59c8fc6419f627ec859f99711cd4725e4"
+  },
+  "check_guard_radius": 10,
+  "strokes": {
+    "S03": [
+      {
+        "id": "A01",
+        "class_name": "AA",
+        "native_points": [
+          [
+            180,
+            3245
+          ],
+          [
+            720,
+            3245
+          ]
+        ],
+        "thickness": 3,
+        "reason": "上侧暗MOS内部，跨明暗纹理",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "A02",
+        "class_name": "AA",
+        "native_points": [
+          [
+            180,
+            3390
+          ],
+          [
+            720,
+            3390
+          ]
+        ],
+        "thickness": 3,
+        "reason": "下侧MOS内部，跨明暗纹理",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "N01",
+        "class_name": "background",
+        "native_points": [
+          [
+            180,
+            3310
+          ],
+          [
+            720,
+            3310
+          ]
+        ],
+        "thickness": 1,
+        "reason": "上下AA之间的窄间隙",
+        "status": "AI_draft_not_human_pixel_truth"
+      }
+    ],
+    "S05": [
+      {
+        "id": "N02",
+        "class_name": "background",
+        "native_points": [
+          [
+            3420,
+            3350
+          ],
+          [
+            3980,
+            3350
+          ]
+        ],
+        "thickness": 3,
+        "reason": "U所在电阻内部，横跨亮暗条纹",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "N03",
+        "class_name": "background",
+        "native_points": [
+          [
+            3420,
+            3375
+          ],
+          [
+            3980,
+            3375
+          ]
+        ],
+        "thickness": 3,
+        "reason": "电阻内部第二条笔画，覆盖不同纵向纹理",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "A03",
+        "class_name": "AA",
+        "native_points": [
+          [
+            3440,
+            3422
+          ],
+          [
+            3980,
+            3414
+          ]
+        ],
+        "thickness": 3,
+        "reason": "上侧AA横条内部，沿照片轻微倾斜",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "A04",
+        "class_name": "AA",
+        "native_points": [
+          [
+            3440,
+            3495
+          ],
+          [
+            3980,
+            3495
+          ]
+        ],
+        "thickness": 3,
+        "reason": "下侧MOS内部较亮部分",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "A05",
+        "class_name": "AA",
+        "native_points": [
+          [
+            3440,
+            3518
+          ],
+          [
+            3980,
+            3518
+          ]
+        ],
+        "thickness": 3,
+        "reason": "下侧MOS内部较暗部分",
+        "status": "AI_draft_not_human_pixel_truth"
+      },
+      {
+        "id": "N04",
+        "class_name": "background",
+        "native_points": [
+          [
+            3440,
+            3438
+          ],
+          [
+            3980,
+            3431
+          ]
+        ],
+        "thickness": 1,
+        "reason": "两条AA之间的窄间隙",
+        "status": "AI_draft_not_human_pixel_truth"
+      }
+    ]
+  },
+  "restrictions": [
+    "New strokes are AI drafts grounded in source and existing human material decisions, not newly approved dense labels.",
+    "Do not tune strokes or seed selection against the 12 check scores.",
+    "Check radius10 exclusion is applied to raster training labels. Feature neighborhoods may overlap nearby context; this is not spatial blind testing.",
+    "No full-frame propagation, geometry or CT changes."
+  ]
+}

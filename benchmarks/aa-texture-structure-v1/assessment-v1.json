@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "aggregate": [
+    {
+      "mode": "color",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 1,
+          "background_total": 4
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.5953324641460235,
+        0.6632073011734029
+      ],
+      "resistor_probe_AA_fraction_mean": 0.6283441981747067,
+      "mean_fit_predict_seconds": 0.37090893383477425
+    },
+    {
+      "mode": "texture",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.26709256844850066,
+        0.3189308996088657
+      ],
+      "resistor_probe_AA_fraction_mean": 0.2848500651890482,
+      "mean_fit_predict_seconds": 0.35134832799910026
+    },
+    {
+      "mode": "structure",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.13885267275097785,
+        0.28526727509778355
+      ],
+      "resistor_probe_AA_fraction_mean": 0.1974793568013907,
+      "mean_fit_predict_seconds": 0.3596832633350762
+    },
+    {
+      "mode": "combined",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 7,
+          "AA_total": 8,
+          "background_false_positive": 0,
+          "background_total": 4
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.19282920469361148,
+        0.23898305084745763
+      ],
+      "resistor_probe_AA_fraction_mean": 0.22348544111255975,
+      "mean_fit_predict_seconds": 0.39485024933552876
+    }
+  ],
+  "independent_windows": 2,
+  "random_seeds_not_independent_datasets": true,
+  "verdict": "not accepted: all arms retain a known AA false negative; all retain resistor false positives",
+  "structural_scope": "Measured directional neighborhood statistics, not device semantics or topology constraints",
+  "next": "Acquire representative sparse region strokes/negative examples with human review; keep existing centers out of training; evaluate region continuity, separation and remaining unknowns before geometry."
+}

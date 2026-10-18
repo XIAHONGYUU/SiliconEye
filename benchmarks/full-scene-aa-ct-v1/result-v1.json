@@ -1,0 +1,103 @@
+{
+  "run": "runs/full-scene-aa-ct-v1h",
+  "report": {
+    "AA_geometries": 304,
+    "AA_added_polygons": 263,
+    "AA_preserved": 41,
+    "CT_proposed_slots": 4149,
+    "CT_positive_geometry_count": 3142,
+    "CT_unknown_slots": 1007,
+    "CT_preserved_unknown_slots": 79,
+    "AA_deferred_proposals": 135,
+    "AA_already_represented_observations": 35,
+    "AA_unresolved_proposals": 100,
+    "new_CT_positive": 2743,
+    "new_CT_boundary_unknown": 928,
+    "CT_unassigned_source_peaks": 7051,
+    "source_CT_peak_observations": 11339,
+    "CT_duplicates_suppressed": 617,
+    "CT_suppression_meaning": "geometry_overlap_or_proximity_not_physical_duplicate_proof",
+    "CT_human_confirmed_count": 120,
+    "canvas_wh": [
+      5860,
+      4587
+    ],
+    "raw_canvas_wh": [
+      5712,
+      4284
+    ],
+    "parent_objects_unchanged": true,
+    "fullframe_physical_acceptance": false,
+    "residual_initializer_support_pixels": 2426638,
+    "coverage_metric_meaning": "support_residual_not_ground_truth_missing_AA",
+    "new_geometry_human_review": "pending"
+  },
+  "checks": {
+    "output_manifest_files": 39,
+    "parent_objects_unchanged": 519,
+    "source_hashes_unchanged": true,
+    "code_hashes_match": true,
+    "all_AA_valid_orthogonal": 304,
+    "new_AA_no_intersections": 263,
+    "new_CT_no_overlap_or_contact": 3671,
+    "old_AA_pixels_unchanged": true,
+    "source_peak_disposition_consistent": true,
+    "SVGs_valid_native_sizes": 22,
+    "HTML_static_references": 9,
+    "browser_interaction": "not_tested_policy_boundary",
+    "software_tests_passed": 287,
+    "ruff": "passed",
+    "physical_fullframe_acceptance": false,
+    "page_javascript_syntax": "node --check passed",
+    "git_diff_check": "passed",
+    "CT_status_partition_consistent": true
+  },
+  "model_sha256": "64919873fe6f8847e2b7dc93fedbb75034cb946fae0af230eec3ff2e09a12094",
+  "manifest_sha256": "097100aff5c22c0d610627af306fe74188c88e9d0f364ee0a5fb897781aa7726",
+  "review_status": "pending",
+  "source_peaks_are_not_physical_contact_count": true,
+  "frozen_files_sha256": {
+    "deferred-AA-v1.json": "435329006d76537f36c68babd4469ef4124c08e967d9737f7d4f2ac23343f8ca",
+    "spec-v1.json": "ca84b0c91d92b291baec2acdee16ddcce079e1cad07578528bb30813e8befaa9",
+    "unassigned-CT-v1.json": "d8c06a6594516a90c5ebdd1f901ee4d2fbdf44ec6caf0ba252605aac23582918",
+    "coverage-v1.json": "532b27439a65baf30f735443309a815f519dd6270d1f7fc774aafdd213691c8c",
+    "model-v1.json": "64919873fe6f8847e2b7dc93fedbb75034cb946fae0af230eec3ff2e09a12094",
+    "source-CT-peaks-v1.json": "75e0c28ba14b47c8bf45d032d53f5a327cb8c01e7752b29491e5386505d67680"
+  },
+  "static_review_assets": {
+    "poly-left-wide.png": "f697e5a721c503dfa505fb1e202b9f7c334db2844c0beb4e25ed053a39d19821",
+    "aa-right-wide.png": "182269603101e77f80e6a6deaf613d77c8a157399dfbc6b2c5c32daf714bdc13",
+    "aa-source-overlay.png": "88ff015a166a10b700b8cab0eddc69d9a78e9149885d75df70166ff4e3ba61b0",
+    "aa-left-wide.png": "54a1a8945b171275a335e970667bf4d4a938ec1b67b9c5ac8e8176366ff9983b",
+    "poly-source-overlay.png": "3f7b875350bda6c7b5a77dfa60606ef30611a19009fdba599129c3845674b477",
+    "poly-right-wide.png": "77a662b769ea109f31943dcecb40e0ec20e4c52a723ab701514f838191bb006b",
+    "overview.png": "96ec93bc19433ab3633aa411c51dc18d60ba2ac7bb5e25d2e12dc3201cd7edd0"
+  },
+  "static_overlay_provenance": {
+    "source_frames": [
+      "aa",
+      "poly"
+    ],
+    "geometry_source": "model-v1.json",
+    "only_new_candidates_drawn": true,
+    "native_wide_windows": {
+      "left-wide": [
+        0,
+        1750,
+        2200,
+        4050
+      ],
+      "right-wide": [
+        3000,
+        1850,
+        5400,
+        3950
+      ]
+    },
+    "pair_order": "raw_photo_left_then_overlay_right",
+    "transform": "inverse native_to_layout for corresponding source frame",
+    "AA_strokes": "cyan",
+    "CT_strokes": "purple; positive new candidates only",
+    "pixel_overlays_derive_from_geometry_not_new_segmentation": true
+  }
+}

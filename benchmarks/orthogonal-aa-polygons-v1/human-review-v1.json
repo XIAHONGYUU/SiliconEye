@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reviewed_model_path": "benchmarks/orthogonal-aa-polygons-v1/model-v1.json",
+  "reviewed_model_sha256": "710fd422a07a195f8735b7f42a65bd43fec281f3d75284a11752424346d2a7d2",
+  "source": "user_current_conversation_2026-10-18",
+  "verbatim": "P01-P06全部正确",
+  "question_context": "P01–P04 台阶方向、凹角与间隙；P05/P06 折线走向、宽度及相互间隙。截口为未建模延续，不是真实断点。",
+  "decisions": [
+    {
+      "scope": "AA_qualitative_polygon_shape_relative_width_and_separation",
+      "object_ids": [
+        "AA-P01",
+        "AA-P02",
+        "AA-P03",
+        "AA-P04",
+        "AA-P05",
+        "AA-P06"
+      ]
+    }
+  ],
+  "not_accepted": [
+    "calibrated_physical_dimensions",
+    "pixel_exact_boundaries",
+    "fullframe_geometry_coverage",
+    "electrical_connections",
+    "unmodeled_continuation_geometry",
+    "fullframe_distortion_correction"
+  ],
+  "prior_review_records": [
+    "benchmarks/geometry-reconstruction-v1/human-review-v1.json",
+    "benchmarks/geometry-reconstruction-v1/human-review-v2.json"
+  ]
+}

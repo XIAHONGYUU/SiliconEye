@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "kind": "human_region_classification_review",
+  "review_id": "eight-photo-regions-human-review-v1",
+  "date": "2026-10-18",
+  "reviewer": "user",
+  "source": "explicit user message in current chat",
+  "reviewed_plan": {
+    "path": "benchmarks/region-planning/eight-photo-regions-v1.json",
+    "sha256": "d180257564bb8187225e3f4af71fa111822efb8bf324642fa535b7eb4d67406b"
+  },
+  "scope": "regional category and coarse planning scope; no new exact boundaries, registration, terminal map or global device count",
+  "decisions": [
+    {
+      "region_id": "SE_RGN_M01",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M02",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M03",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M04",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M05",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M06",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M07",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M08",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_M09",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_R01",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_C01",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_C02",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_I01",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_I02",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_I03",
+      "user_statement": "正确"
+    },
+    {
+      "region_id": "SE_RGN_U01",
+      "user_statement": "这个应该是MOS管做电容解法，是mos管，宽mos管"
+    },
+    {
+      "region_id": "SE_RGN_U02",
+      "user_statement": "这个是单独衬底的mos管，一横一竖两个mos管"
+    },
+    {
+      "region_id": "SE_RGN_U03",
+      "user_statement": "这个是dummy的AA，M1上是dummy的M1"
+    },
+    {
+      "region_id": "SE_RGN_U04",
+      "user_statement": "这个也是dummy的AA，M1上是dummy的M1"
+    },
+    {
+      "region_id": "SE_RGN_U05",
+      "user_statement": "这个是衬底环及其上面的金属"
+    },
+    {
+      "region_id": "SE_RGN_U06",
+      "user_statement": "这个是照片上沿没有意义，是界面遮挡。"
+    }
+  ],
+  "presentation_requirement": "Preserve one-page layer switching as a review interface requirement."
+}

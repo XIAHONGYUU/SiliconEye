@@ -1,0 +1,983 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "scope": "native AA only; no CT, no geometric completion, no modification to existing reconstruction",
+  "annotation_status": "AI draft sparse scribbles; human regional feedback is not dense pixel truth",
+  "split_policy": "four spatial train windows and four heldout windows frozen before algorithm outputs; all same development chip, not blind chip-level validation",
+  "cases": [
+    {
+      "id": "S01",
+      "name": "相邻长条 AA 与窄间隙",
+      "native_bbox": [
+        150,
+        1020,
+        850,
+        1360
+      ],
+      "split": "train",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            300,
+            1128
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            650,
+            1133
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            350,
+            1266
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            650,
+            1268
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            400,
+            1186
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            400,
+            1216
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            700,
+            1315
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            300,
+            1080
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            650,
+            1090
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            400,
+            1162
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            650,
+            1162
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            400,
+            1202
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            650,
+            1202
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            400,
+            1240
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            500,
+            1295
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "大 MOS 间隙一",
+      "native_bbox": [
+        900,
+        2190,
+        1550,
+        2420
+      ],
+      "split": "holdout",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1000,
+            2235
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1200,
+            2235
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1400,
+            2235
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1000,
+            2370
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1200,
+            2370
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1450,
+            2370
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1000,
+            2298
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1200,
+            2298
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1400,
+            2298
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "name": "大 MOS 间隙二",
+      "native_bbox": [
+        100,
+        3180,
+        800,
+        3450
+      ],
+      "split": "holdout",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            200,
+            3250
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            400,
+            3250
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            650,
+            3250
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            200,
+            3390
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            400,
+            3390
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            650,
+            3390
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            200,
+            3310
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            400,
+            3310
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            650,
+            3310
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "折线与小 AA",
+      "native_bbox": [
+        1000,
+        3360,
+        1470,
+        3650
+      ],
+      "split": "train",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1120,
+            3450
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1310,
+            3450
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1390,
+            3450
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1120,
+            3599
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1300,
+            3599
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1045,
+            3440
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1100,
+            3520
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1250,
+            3510
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1370,
+            3520
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1250,
+            3550
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1100,
+            3550
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1068,
+            3460
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "电阻与 MOS 环间距",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "split": "holdout",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3500,
+            3420
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3750,
+            3418
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3950,
+            3415
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3500,
+            3510
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3750,
+            3510
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3950,
+            3510
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3500,
+            3447
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3750,
+            3445
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3950,
+            3442
+          ],
+          "radius": 3,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "dummy 阵列",
+      "native_bbox": [
+        3900,
+        1410,
+        4600,
+        1850
+      ],
+      "split": "train",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3950,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            4100,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            4250,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            4400,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            4550,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            3950,
+            1630
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            4250,
+            1630
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            4400,
+            1790
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4030,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4180,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4330,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4480,
+            1480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4150,
+            1560
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4300,
+            1705
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            4540,
+            1710
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            3930,
+            1555
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "大 MOS 内部与边界",
+      "native_bbox": [
+        730,
+        370,
+        1610,
+        540
+      ],
+      "split": "train",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            780,
+            440
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1000,
+            440
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1250,
+            440
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1450,
+            440
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1550,
+            440
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1000,
+            400
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            1450,
+            480
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            800,
+            380
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1100,
+            380
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1450,
+            380
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            900,
+            515
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1300,
+            515
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            1550,
+            515
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "底部器件与环",
+      "native_bbox": [
+        2460,
+        2780,
+        3170,
+        3130
+      ],
+      "split": "holdout",
+      "annotations": [
+        {
+          "class_name": "AA",
+          "native_xy": [
+            2550,
+            2890
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            2750,
+            2890
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            2950,
+            2890
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            2550,
+            3030
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            2750,
+            3030
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "AA",
+          "native_xy": [
+            2950,
+            3030
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            2550,
+            2955
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            2750,
+            2955
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            2950,
+            2955
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        },
+        {
+          "class_name": "background",
+          "native_xy": [
+            2480,
+            2860
+          ],
+          "radius": 4,
+          "source": "AI_draft_from_source_photo_not_human_pixel_ground_truth"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "seed": 20261018,
+    "blur_sigma": 1.2,
+    "feature_sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "forest_trees": 100,
+    "forest_max_depth": 14,
+    "max_training_pixels_per_class": 4000,
+    "adaptive_block": 51,
+    "adaptive_c": -5,
+    "illumination_sigma": 40,
+    "grabcut_refine_iterations": 3
+  },
+  "methods": [
+    "fixed156",
+    "otsu",
+    "adaptive",
+    "corrected_otsu",
+    "random_forest",
+    "grabcut_frozen_gmm",
+    "grabcut"
+  ],
+  "grabcut_scope": "same foreground/background training colors as random forest; pooled training GMM then fixed-model graph cut per window, no heldout labels used",
+  "evaluation": "heldout sparse balanced accuracy, AA recall, background false-positive rate; not full-mask IoU or full-scene recall",
+  "previous_spec": "benchmarks/aa-algorithm-comparison-v1/spec-v1.json",
+  "revision_note": "Before first algorithm run: include standard three-iteration GrabCut alongside frozen-GMM control; cases, labels and splits unchanged."
+}

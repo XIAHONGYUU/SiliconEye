@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "kind": "AI_coarse_region_plan",
+  "plan_id": "region-skill-validation-C03-v1",
+  "date": "2026-10-18",
+  "status": "candidate_not_human_reviewed",
+  "sources": {
+    "sub": {
+      "layer": "sub",
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 13869468
+    },
+    "implant": {
+      "layer": "implant",
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 11259382
+    },
+    "aa": {
+      "layer": "aa",
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12173200
+    },
+    "poly": {
+      "layer": "poly",
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 13473622
+    },
+    "m1": {
+      "layer": "m1",
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12754880
+    },
+    "m2": {
+      "layer": "m2",
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12402247
+    },
+    "m3": {
+      "layer": "m3",
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12141880
+    },
+    "m4": {
+      "layer": "m4",
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0",
+      "width": 5712,
+      "height": 4284,
+      "mode": "RGB",
+      "bytes": 12362281
+    }
+  },
+  "regions": [
+    {
+      "region_id": "SE_RGN_C03",
+      "label": "C03",
+      "category": "CAP",
+      "title": "上边缘密集金属结构：金属电容候选",
+      "status": "candidate",
+      "producer": "same_Agent_visual_inspection",
+      "views": [
+        {
+          "frame_id": "test_chip_tile_full_m1_native",
+          "source_layer": "m1",
+          "bbox_xyxy": [
+            1680,
+            100,
+            2100,
+            250
+          ],
+          "geometry_status": "coarse_native_core_window",
+          "correspondence_status": "AI_macro_correspondence_hypothesis_not_accepted_registration"
+        },
+        {
+          "frame_id": "test_chip_tile_full_m2_native",
+          "source_layer": "m2",
+          "bbox_xyxy": [
+            1700,
+            150,
+            2120,
+            260
+          ],
+          "geometry_status": "coarse_native_core_window",
+          "correspondence_status": "AI_macro_correspondence_hypothesis_not_accepted_registration"
+        },
+        {
+          "frame_id": "test_chip_tile_full_m3_native",
+          "source_layer": "m3",
+          "bbox_xyxy": [
+            1700,
+            205,
+            2130,
+            300
+          ],
+          "geometry_status": "coarse_native_core_window",
+          "correspondence_status": "AI_macro_correspondence_hypothesis_not_accepted_registration"
+        },
+        {
+          "frame_id": "test_chip_tile_full_m4_native",
+          "source_layer": "m4",
+          "bbox_xyxy": [
+            1700,
+            110,
+            2120,
+            220
+          ],
+          "geometry_status": "coarse_native_core_window",
+          "correspondence_status": "AI_macro_correspondence_hypothesis_not_accepted_registration"
+        }
+      ],
+      "observation": "M1/M2/M3 可见密集平行细线、端部弯折和亮点组；M4 可见相邻长条交错折返形态。倾向多层金属电容。",
+      "alternative_explanations": "局部蛇形互连/金属电阻、测试结构或 dummy 尚未通过端口证据完全排除。",
+      "next_check": "核对该上边缘结构是否为金属电容，还是应归为电阻、互连、dummy；本轮不要求判断数量、极性或容量。",
+      "pdk_refs": [
+        "SKY-D",
+        "GF-C"
+      ],
+      "device_count": null,
+      "unknowns": [
+        "两极及各层接口未复核",
+        "各窗口是否严格对应同一个单元尚未验收",
+        "精确边界、单元数、容量与照片外延伸未知"
+      ]
+    }
+  ],
+  "coverage_policy": {
+    "representation": "local_validation_windows_not_full_frame_partition",
+    "unboxed_pixels": "unclassified_unknown",
+    "classification_approval": "none_for_C03"
+  },
+  "validation_context": {
+    "prior_reference": "benchmarks/region-planning/eight-photo-regions-reviewed-v2.json",
+    "prior_answers_visible_to_agent": true,
+    "earlier_full_frame_photos_seen": true,
+    "same_chip_same_photos": true,
+    "independent_blind_test": false,
+    "selection": "four native core windows outside all previous coarse region boxes; context crops may include reviewed areas",
+    "core_window_overlap_audit": [
+      {
+        "frame": "m1",
+        "bbox_xyxy": [
+          1680,
+          100,
+          2100,
+          250
+        ],
+        "intersecting_prior_region_ids": []
+      },
+      {
+        "frame": "m2",
+        "bbox_xyxy": [
+          1700,
+          150,
+          2120,
+          260
+        ],
+        "intersecting_prior_region_ids": []
+      },
+      {
+        "frame": "m3",
+        "bbox_xyxy": [
+          1700,
+          205,
+          2130,
+          300
+        ],
+        "intersecting_prior_region_ids": []
+      },
+      {
+        "frame": "m4",
+        "bbox_xyxy": [
+          1700,
+          110,
+          2120,
+          220
+        ],
+        "intersecting_prior_region_ids": []
+      }
+    ]
+  }
+}

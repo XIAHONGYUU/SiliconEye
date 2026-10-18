@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "prompt_spec": {
+    "path": "benchmarks/aa-prompted-comparison-v1/spec-v4.json",
+    "sha256": "3f7daca820e46f42a824cbf477754d06b14ea72d15f1f754263d2d0fe69e0244"
+  },
+  "seeds": [
+    20261018,
+    20261019,
+    20261020
+  ],
+  "features": {
+    "feature_sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "tensor_sigmas": [
+      3,
+      9
+    ],
+    "directional_widths": [
+      15,
+      31,
+      63
+    ]
+  },
+  "excluded_native_boxes": [
+    [
+      3290,
+      3280,
+      3400,
+      3400
+    ]
+  ],
+  "diagnostic_boxes": {
+    "S05": [
+      {
+        "id": "resistor_interior",
+        "native_bbox": [
+          3410,
+          3330,
+          4000,
+          3395
+        ],
+        "status": "AI-selected region inside human-identified resistor; no dense ground truth"
+      }
+    ]
+  },
+  "protocol": "Frozen before first run. Four feature arms, same prompts and check centers, no coordinate features or geometric completion. Three seeds for stability, not three independent datasets."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_directory": "runs/orthogonal-aa-polygons-v1b",
+  "model_sha256": "710fd422a07a195f8735b7f42a65bd43fec281f3d75284a11752424346d2a7d2",
+  "manifest_sha256": "ea90295240869514021242424f78f3d6e8f186953babd3277e2d7997f10bfcaf",
+  "report": {
+    "AA_geometries": 41,
+    "AA_added_polygons": 6,
+    "review_focus": "orthogonal_AA_polygons_pending_human_review",
+    "CT_proposed_slots": 478,
+    "CT_positive_geometry_count": 399,
+    "CT_human_confirmed_count": 120,
+    "CT_new_ring_positions": 289,
+    "CT_new_ring_positive_candidates": 210,
+    "CT_unknown_slots": 79,
+    "fullframe_coverage": false,
+    "independent_physical_acceptance": false,
+    "full_distortion_correction": false,
+    "max_AA_backprojection_corner_shift_px": 5.247349819526959,
+    "normalization_fit": {
+      "anchor_count": 30,
+      "median_fit_residual_px": 1.1301733903283213,
+      "max_fit_residual_px": 1.577825747560088,
+      "independent_validation": false,
+      "fullframe_distortion_eliminated": false
+    }
+  },
+  "per_new_polygon_max_backprojection_shift_px": {
+    "AA-P01": 4.907466449892558,
+    "AA-P02": 4.717137786596226,
+    "AA-P03": 5.102577671959309,
+    "AA-P04": 4.493635927562248,
+    "AA-P05": 2.9169010069965395,
+    "AA-P06": 2.9651397636489873
+  },
+  "verification": {
+    "pytest_passed": 279,
+    "targeted_ruff": "passed",
+    "parent_513_objects_and_reviews": "unchanged",
+    "parent_arrays": "unchanged",
+    "parent_AA_raster": "pixel_identical",
+    "source_hashes": "unchanged",
+    "manifest_hashes": "passed",
+    "svg_parsing_and_full_canvas": "passed",
+    "static_page_and_document_links": "passed",
+    "browser_interaction": "not_tested",
+    "physical_acceptance": "pending"
+  },
+  "acceptance_items": [
+    "AA-P01",
+    "AA-P02",
+    "AA-P03",
+    "AA-P04",
+    "AA-P05",
+    "AA-P06"
+  ]
+}

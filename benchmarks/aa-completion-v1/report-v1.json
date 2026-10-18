@@ -1,0 +1,25 @@
+{
+  "AA_objects": 336,
+  "new_structural_objects": 89,
+  "groups": 25,
+  "superseded": 56,
+  "active_intersection_conflicts": [],
+  "geometry_gate": "pass",
+  "isolation_gate": "no_area_overlaps",
+  "coverage_gate": "pending_independent_human_review",
+  "evidence_gate": "pending_independent_boundary_review",
+  "CT_processed": false,
+  "geometry_gate_scope": "valid_positive_orthogonal_objects_only",
+  "isolation_gate_scope": "no_active_area_overlap_not_electrical_isolation_acceptance",
+  "parent_unresolved_AA_observations": 100,
+  "unresolved_AA_reference": {
+    "path": "benchmarks/full-scene-regular-v1/unresolved-AA-v1.json",
+    "sha256": "6c71eb627a282a1d9dc5c25b358a6211363e327678049725ce73468015972148"
+  },
+  "parent_boundary_conflict_reference": {
+    "path": "benchmarks/full-scene-regular-v1/boundary-AA-conflicts-v1.json",
+    "sha256": "471584622802e210156ae959251bdf8ecaf65f6a0308de708069745358e1b039"
+  },
+  "physical_completeness": false,
+  "retained_AA_unchanged": 72
+}

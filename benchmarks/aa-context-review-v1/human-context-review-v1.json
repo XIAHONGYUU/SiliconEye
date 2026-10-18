@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "reviewer": "human_user",
+  "spec": {
+    "path": "benchmarks/aa-context-review-v1/spec-v1.json",
+    "sha256": "e28518af065f12d02234515e7246a35be241c499d4cf026064e6f6af7d29792b"
+  },
+  "review_sheet": {
+    "path": "runs/aa-context-review-v1b/review-sheet.png",
+    "sha256": "a72b6c9e16a99bfd5cd117cd8b2ebd5dd43fe266651b9e92635735d7874b2e59"
+  },
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "decisions": [
+    {
+      "id": "Q1",
+      "verbatim": "电阻内部残余绿色属于误报。正确",
+      "decision": "confirmed",
+      "constraint": "reject_AA_false_positives_in_resistor_interior",
+      "semantic": "本处电阻内部非AA，残余绿色是误报。",
+      "review_native_bbox": [
+        3420,
+        3335,
+        3980,
+        3390
+      ],
+      "bbox_role": "AI_review_locator_not_human_dense_polygon",
+      "exact_boundary_status": "not_annotated"
+    },
+    {
+      "id": "Q2",
+      "verbatim": "两条 AA 之间保持隔离，不接受 GrabCut 的连片。正确",
+      "decision": "confirmed",
+      "constraint": "preserve_non_AA_separation_between_the_two_AA_regions",
+      "semantic": "本处两条AA隔离，不接受跨间隙连片。",
+      "review_native_bbox": [
+        3440,
+        3428,
+        3980,
+        3446
+      ],
+      "bbox_role": "AI_review_locator_not_human_dense_polygon",
+      "exact_boundary_status": "not_annotated"
+    },
+    {
+      "id": "Q3",
+      "verbatim": "暗纹属于 AA 内部，不应逐条挖空。正确",
+      "decision": "confirmed",
+      "constraint": "do_not_punch_holes_for_internal_dark_texture",
+      "semantic": "本处暗纹属于AA内部，不作为材料缺口。",
+      "review_native_bbox": [
+        3890,
+        3480,
+        3990,
+        3550
+      ],
+      "bbox_role": "AI_review_locator_not_human_dense_polygon",
+      "exact_boundary_status": "not_annotated"
+    },
+    {
+      "id": "Q4",
+      "verbatim": "否，正常版图不会向电阻扩散",
+      "decision": "AA_extension_into_resistor_rejected",
+      "constraint": "do_not_expand_upper_AA_into_resistor_interior",
+      "semantic": "用户否定本处上侧AA向电阻内部扩宽；精确边界尚未标注。",
+      "review_native_bbox": [
+        3420,
+        3391,
+        3980,
+        3413
+      ],
+      "bbox_role": "AI_review_locator_not_human_dense_polygon",
+      "exact_boundary_status": "not_annotated"
+    }
+  ],
+  "scope": "本次S05上下文材料/隔离/内部连续性约束。不推广为所有工艺的通用规则，不批准任意矩形内全部像素或精确边界。",
+  "semantic_constraints_confirmed": true,
+  "dense_mask_accepted": false,
+  "geometry_changed": false,
+  "algorithms_approved_for_full_frame": false,
+  "next": "Prepare source-evidence-backed local revision under these constraints; preserve unknown exact boundaries and compare before/after. No direct rectangle clipping or majority mask fusion."
+}

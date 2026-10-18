@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "summary": [
+    {
+      "method": "rf_color",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 7,
+          "background_false_positive": 2
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 7,
+          "background_false_positive": 2
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 7,
+          "background_false_positive": 2
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.06460090453489793,
+        0.06961251680723628
+      ],
+      "previous_same_probe_support_AA_fractions": [
+        0.6246791345801247,
+        0.5934482337122601,
+        0.6611355580002445
+      ]
+    },
+    {
+      "method": "rf_texture",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 8,
+          "background_false_positive": 0
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 8,
+          "background_false_positive": 0
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 8,
+          "background_false_positive": 0
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.13042415352646375,
+        0.13152426353746485
+      ],
+      "previous_same_probe_support_AA_fractions": [
+        0.3174734140080675,
+        0.2668683535020169,
+        0.2653709815425987
+      ]
+    },
+    {
+      "method": "rf_combined",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 8,
+          "background_false_positive": 0
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 8,
+          "background_false_positive": 0
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 8,
+          "background_false_positive": 0
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.14909546510206576,
+        0.15398484292873732
+      ],
+      "previous_same_probe_support_AA_fractions": [
+        0.19254981053660922,
+        0.23808214154748808,
+        0.2379293484904046
+      ]
+    },
+    {
+      "method": "gc_fixed",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 8,
+          "background_false_positive": 2
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 8,
+          "background_false_positive": 2
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 8,
+          "background_false_positive": 2
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.024752475247524754,
+        0.02499694413885833
+      ],
+      "previous_same_probe_support_AA_fractions": []
+    },
+    {
+      "method": "gc_refine",
+      "per_seed": [
+        {
+          "seed": 20261018,
+          "AA_hit": 8,
+          "background_false_positive": 2
+        },
+        {
+          "seed": 20261019,
+          "AA_hit": 8,
+          "background_false_positive": 2
+        },
+        {
+          "seed": 20261020,
+          "AA_hit": 8,
+          "background_false_positive": 2
+        }
+      ],
+      "resistor_probe_AA_fraction_range": [
+        0.0,
+        0.0
+      ],
+      "previous_same_probe_support_AA_fractions": []
+    }
+  ],
+  "status": "candidate_strokes_pending_human_review",
+  "verdict": "RF texture and combined pass original center checks but retain resistor false positives; GrabCut fills confirmed gaps; no full-mask acceptance",
+  "next": "Human review of nine stroke identities and regional segmentation; do not tune strokes to pass existing centers.",
+  "warning": "Additional training pixels are correlated, inferred labels. Same-window guard bands do not establish spatial independence or blind generalization."
+}

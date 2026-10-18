@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "parent_model": {
+    "path": "benchmarks/orthogonal-aa-polygons-v1/model-v1-reviewed.json",
+    "sha256": "bf93f6be3b44f4c11cf52749c2d6aa3811f4abd8630e3f1fab0f1a9b2d95feae"
+  },
+  "initializer": {
+    "path": "benchmarks/full-frame-aa-ct-v1/spec-v1.json",
+    "sha256": "380594e098236e7247169277445517437bb1f5824744c027bc52031ef60f780f",
+    "role": "observation_proposals_not_final_geometry"
+  },
+  "aa": {
+    "min_area": 150,
+    "min_short_side": 6,
+    "approximation_px": 5,
+    "max_vertices": 40,
+    "max_boundary_shift_px": 8,
+    "min_area_ratio": 0.8,
+    "max_area_ratio": 1.25,
+    "working_residual_band_px": 8
+  },
+  "ct": {
+    "peak_gray": 205,
+    "peak_residual": 16,
+    "peak_neighborhood": 11,
+    "max_peak_plateau_span": 9,
+    "square_side": 8,
+    "axis_cluster_px": 2.5,
+    "max_regularization_shift": 3,
+    "duplicate_radius": 7,
+    "pitch_min": 9,
+    "pitch_max": 100,
+    "periodic_snap_residual": 2.5,
+    "max_manual_AA_shift_for_landing": 8
+  },
+  "manual_AA_observations": [
+    {
+      "id": "AA-W01",
+      "native_corners": [
+        [
+          0,
+          1936
+        ],
+        [
+          2060,
+          1938
+        ],
+        [
+          2060,
+          2278
+        ],
+        [
+          0,
+          2270
+        ]
+      ],
+      "visible_photo_edge": "left"
+    },
+    {
+      "id": "AA-W02",
+      "native_corners": [
+        [
+          0,
+          2327
+        ],
+        [
+          2060,
+          2325
+        ],
+        [
+          2060,
+          2655
+        ],
+        [
+          0,
+          2662
+        ]
+      ],
+      "visible_photo_edge": "left"
+    },
+    {
+      "id": "AA-W03",
+      "native_corners": [
+        [
+          0,
+          2803
+        ],
+        [
+          860,
+          2808
+        ],
+        [
+          860,
+          3296
+        ],
+        [
+          0,
+          3291
+        ]
+      ],
+      "visible_photo_edge": "left"
+    },
+    {
+      "id": "AA-W04",
+      "native_corners": [
+        [
+          0,
+          3340
+        ],
+        [
+          860,
+          3341
+        ],
+        [
+          860,
+          3827
+        ],
+        [
+          0,
+          3822
+        ]
+      ],
+      "visible_photo_edge": "left"
+    },
+    {
+      "id": "AA-W05",
+      "native_corners": [
+        [
+          3252,
+          3447
+        ],
+        [
+          4741,
+          3427
+        ],
+        [
+          4741,
+          3772
+        ],
+        [
+          3252,
+          3793
+        ]
+      ],
+      "native_hole_corners": [
+        [
+          3272,
+          3468
+        ],
+        [
+          4720,
+          3448
+        ],
+        [
+          4720,
+          3751
+        ],
+        [
+          3272,
+          3771
+        ]
+      ]
+    },
+    {
+      "id": "AA-W06",
+      "native_corners": [
+        [
+          3280,
+          3475
+        ],
+        [
+          4707,
+          3457
+        ],
+        [
+          4707,
+          3737
+        ],
+        [
+          3280,
+          3757
+        ]
+      ]
+    },
+    {
+      "id": "AA-W07",
+      "native_corners": [
+        [
+          3217,
+          1987
+        ],
+        [
+          5262,
+          1992
+        ],
+        [
+          5234,
+          3423
+        ],
+        [
+          3225,
+          3434
+        ]
+      ],
+      "native_hole_corners": [
+        [
+          3238,
+          2008
+        ],
+        [
+          5240,
+          2013
+        ],
+        [
+          5214,
+          3403
+        ],
+        [
+          3246,
+          3413
+        ]
+      ]
+    },
+    {
+      "id": "AA-W08",
+      "native_corners": [
+        [
+          858,
+          1534
+        ],
+        [
+          1935,
+          1533
+        ],
+        [
+          1935,
+          1750
+        ],
+        [
+          861,
+          1757
+        ]
+      ]
+    }
+  ],
+  "manual_observation_basis": "AI source observation of four clipped left AA mesas, right lower AA/ring, large right ring and middle-left AA; all unreviewed. Border cuts are not physical endpoints.",
+  "scope": "full-frame proposals with explicit deferred support; no full-coverage acceptance or electrical net inference",
+  "additional_excluded_native_boxes": {
+    "aa": [
+      [
+        3270,
+        3250,
+        3420,
+        3435
+      ]
+    ]
+  },
+  "additional_exclusion_reason": "AI visual review: original cursor exclusion clips the pointer; exclude remaining screen cursor, not physical AA"
+}

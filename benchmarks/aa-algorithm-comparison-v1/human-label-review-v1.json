@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-18",
+  "reviewer": "human_user",
+  "verbatim": "是的，红圈中心为AA,篮圈中心为背景。",
+  "image": {
+    "path": "docs/assets/aa-algorithm-comparison-v1/critical-label-review.png",
+    "sha256": "678e1c6c63292cad7d7d4c608c38f6c050bbd4d946a3ab4319ef4c11e7573b93"
+  },
+  "spec": {
+    "path": "benchmarks/aa-algorithm-comparison-v1/spec-v4.json",
+    "sha256": "6221f001843662e37a7ee540b172c942906d87a9a6a66eb1033610fbf96289cf"
+  },
+  "scope": "S03 and S05 displayed circle centers only; not the full seed rectangles, boundaries or scene",
+  "cases": [
+    {
+      "id": "S03",
+      "approved_centers": [
+        {
+          "native_xy": [
+            200,
+            3250
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            400,
+            3250
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            650,
+            3250
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            200,
+            3390
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            400,
+            3390
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            650,
+            3390
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            200,
+            3310
+          ],
+          "class_name": "background"
+        },
+        {
+          "native_xy": [
+            400,
+            3310
+          ],
+          "class_name": "background"
+        },
+        {
+          "native_xy": [
+            650,
+            3310
+          ],
+          "class_name": "background"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "approved_centers": [
+        {
+          "native_xy": [
+            3500,
+            3420
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            3750,
+            3418
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            3950,
+            3415
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            3500,
+            3510
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            3750,
+            3510
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            3950,
+            3510
+          ],
+          "class_name": "AA"
+        },
+        {
+          "native_xy": [
+            3500,
+            3437
+          ],
+          "class_name": "background"
+        },
+        {
+          "native_xy": [
+            3750,
+            3434
+          ],
+          "class_name": "background"
+        },
+        {
+          "native_xy": [
+            3950,
+            3431
+          ],
+          "class_name": "background"
+        }
+      ]
+    }
+  ],
+  "dense_mask_accepted": false,
+  "algorithm_output_accepted": false
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "kind": "architecture_gap_review_not_new_material_extraction",
+  "model_path": "benchmarks/full-scene-aa-ct-v1/model-v1.json",
+  "model_sha256": "64919873fe6f8847e2b7dc93fedbb75034cb946fae0af230eec3ff2e09a12094",
+  "inspection": {
+    "AA_objects_checked": 304,
+    "AA_objects_with_non_HV_edges": [],
+    "new_objects_with_template_id": 0,
+    "CT_groups_by_AA_object": 181
+  },
+  "interpretation": "Individual orthogonality is present; group-aligned geometry, contact legal zones and full cross-layer checks are missing",
+  "code_references": {
+    "AA_independent_fit": "silicon_eye/scene_geometry.py:124",
+    "CT_local_axis_snap": "silicon_eye/scene_geometry.py:221",
+    "CT_AA_landing_only": "silicon_eye/scene_geometry.py:258"
+  },
+  "new_constraint_gates_implemented": false,
+  "new_DRC_run": false,
+  "new_source_image_processing": false,
+  "prior_human_reviews_changed": false,
+  "source_ids": [
+    "GF-G",
+    "GF-CO",
+    "SKY-P"
+  ],
+  "current_design": "docs/architecture/photo-stack-workflow-v5.md"
+}

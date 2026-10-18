@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "run": "runs/aa-scribble-comparison-v1b",
+  "run_manifest": {
+    "path": "benchmarks/aa-scribble-comparison-v1/manifest-v1.json",
+    "sha256": "5a0b1c80577586d721837ad24427845e57fd42304581966370b2a53d309d11ca"
+  },
+  "stroke_review": {
+    "path": "benchmarks/aa-scribble-comparison-v1/human-stroke-review-v1.json",
+    "sha256": "a472c27ac8fc7a4911ea18e24640e5d66cb02f0c89ecb76403a6fcb5a7ada586"
+  },
+  "wide_context_native_bbox": [
+    3100,
+    1900,
+    5350,
+    3820
+  ],
+  "context_native_bbox": [
+    3200,
+    3240,
+    4160,
+    3660
+  ],
+  "methods": [
+    "rf_texture",
+    "rf_combined",
+    "gc_fixed",
+    "gc_refine"
+  ],
+  "seeds": [
+    20261018,
+    20261019,
+    20261020
+  ],
+  "display_seed": 20261018,
+  "questions": [
+    {
+      "id": "Q1",
+      "native_bbox": [
+        3420,
+        3335,
+        3980,
+        3390
+      ],
+      "title": "电阻内部：残余绿色应按误报复核",
+      "judgment": "U及N02/N03已确认非AA。RF残余亮暗条纹不应因局部颜色像AA就保留。",
+      "status": "材料语义已审；框只是复核范围，不是精确边界",
+      "check": "是否同意：这块电阻内部的绿色属于误报？"
+    },
+    {
+      "id": "Q2",
+      "native_bbox": [
+        3440,
+        3428,
+        3980,
+        3446
+      ],
+      "title": "两条AA之间：保留隔离",
+      "judgment": "N04已确认非AA，RF与GrabCut在此分歧。连续平滑不能跨过真实间隙。",
+      "status": "笔画非AA已审；完整间隙边界待审",
+      "check": "是否同意：保留此处非AA间隙，不接受GrabCut的连片？"
+    },
+    {
+      "id": "Q3",
+      "native_bbox": [
+        3890,
+        3480,
+        3990,
+        3550
+      ],
+      "title": "下侧MOS内部：保留暗AA",
+      "judgment": "A04/A05及原检查点支持AA；较暗条纹不应被逐条挖空。现RF已恢复旧漏检点。",
+      "status": "笔画/中心已审；区域精确边界未审",
+      "check": "是否同意：这里整体属于AA内部，暗纹不应作为缺口？"
+    },
+    {
+      "id": "Q4",
+      "native_bbox": [
+        3420,
+        3391,
+        3980,
+        3413
+      ],
+      "title": "上侧AA的上边界：仍待确定",
+      "judgment": "电阻非AA与下方AA横条之间存在光晕/亮边。不能只凭环通常连续就确定边界或补宽。",
+      "status": "unknown：不生成精确边界",
+      "check": "此处候选绿色是否向电阻内部扩宽？如不清楚可保持未知。"
+    }
+  ],
+  "restrictions": [
+    "No fused segmentation mask; review annotations only.",
+    "Unanimity is not truth: RF pair and GrabCut pair share assumptions; three seeds are not independent sources.",
+    "No technology-specific numeric DRC or physical width inferred.",
+    "Outside S03/S05 no segmentation was computed."
+  ]
+}

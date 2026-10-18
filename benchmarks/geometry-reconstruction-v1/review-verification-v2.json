@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "review_record_and_state_only_no_algorithm_change",
+  "reviewed_model_sha256": "b5581e22fc0a7e53047dcd60baeeeeaa4e415143493c993c1d08c48ec2216932",
+  "review_record_sha256": "f3b21d53b38c882189bd92f301db83943bd06a543c5956f6bf76c25188e7604f",
+  "base_model_sha256": "1f2c45c31240aa4f8bbe5ebf6feef59ade9cb38d9ca97525847351927c406fd9",
+  "checks": {
+    "base_model_matches_previous_manifest": true,
+    "all_513_object_coordinates_unchanged": true,
+    "algorithm_statuses_preserved": true,
+    "all_12_ring_runs_scoped": true,
+    "ring_slot_count": 289,
+    "algorithm_unknown_count_preserved": 79,
+    "new_software_tests_run": false
+  },
+  "next_step": "validate_orthogonal_polygon_geometry_then_expand_full_frame_AA_CT_coverage"
+}

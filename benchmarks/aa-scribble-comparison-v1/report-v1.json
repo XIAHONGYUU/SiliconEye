@@ -1,0 +1,718 @@
+{
+  "status": "AI_draft_stroke_development_comparison",
+  "rows": [
+    {
+      "case": "S03",
+      "method": "rf_color",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.75,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "rf_texture",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "rf_combined",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "gc_fixed",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {}
+    },
+    {
+      "case": "S03",
+      "method": "gc_refine",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {}
+    },
+    {
+      "case": "S03",
+      "method": "rf_color",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.75,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "rf_texture",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "rf_combined",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "gc_fixed",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {}
+    },
+    {
+      "case": "S03",
+      "method": "gc_refine",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {}
+    },
+    {
+      "case": "S03",
+      "method": "rf_color",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.75,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "rf_texture",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "rf_combined",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {},
+      "previous_center_only": {
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 1.0,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 1.0,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S03",
+      "method": "gc_fixed",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {}
+    },
+    {
+      "case": "S03",
+      "method": "gc_refine",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {}
+    },
+    {
+      "case": "S05",
+      "method": "rf_color",
+      "seed": 20261018,
+      "tp": 3,
+      "fn": 1,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 0.75,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.625,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.06961251680723628,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_texture",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.13152426353746485,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_combined",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.14909546510206576,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "gc_fixed",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.024752475247524754,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      }
+    },
+    {
+      "case": "S05",
+      "method": "gc_refine",
+      "seed": 20261018,
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.0,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_color",
+      "seed": 20261019,
+      "tp": 3,
+      "fn": 1,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 0.75,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.625,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.06460090453489793,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_texture",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.13042415352646375,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_combined",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.15398484292873732,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "gc_fixed",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.02499694413885833,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      }
+    },
+    {
+      "case": "S05",
+      "method": "gc_refine",
+      "seed": 20261019,
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.0,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_color",
+      "seed": 20261020,
+      "tp": 3,
+      "fn": 1,
+      "fp": 1,
+      "tn": 1,
+      "AA_recall": 0.75,
+      "background_false_positive": 0.5,
+      "balanced_accuracy": 0.625,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.06563989732306565,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 1,
+        "tn": 1,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.5,
+        "balanced_accuracy": 0.625,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_texture",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.13079085686346412,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "rf_combined",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 0,
+      "tn": 2,
+      "AA_recall": 1.0,
+      "background_false_positive": 0.0,
+      "balanced_accuracy": 1.0,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.15166238846106833,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      },
+      "previous_center_only": {
+        "tp": 3,
+        "fn": 1,
+        "fp": 0,
+        "tn": 2,
+        "AA_recall": 0.75,
+        "background_false_positive": 0.0,
+        "balanced_accuracy": 0.875,
+        "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy"
+      }
+    },
+    {
+      "case": "S05",
+      "method": "gc_fixed",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.024752475247524754,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      }
+    },
+    {
+      "case": "S05",
+      "method": "gc_refine",
+      "seed": 20261020,
+      "tp": 4,
+      "fn": 0,
+      "fp": 2,
+      "tn": 0,
+      "AA_recall": 1.0,
+      "background_false_positive": 1.0,
+      "balanced_accuracy": 0.5,
+      "scope": "sparse_AI_draft_labels_only_not_full_frame_accuracy",
+      "diagnostic": {
+        "resistor_interior": {
+          "predicted_AA_fraction": 0.0,
+          "pixels": 32724,
+          "status": "AI_box_not_dense_truth_training_pixels_excluded"
+        }
+      }
+    }
+  ],
+  "training_pixels": {
+    "S03": {
+      "AA": 5062,
+      "background": 505
+    },
+    "S05": {
+      "AA": 7782,
+      "background": 6131
+    }
+  },
+  "training_labels_status": "original_centers_human_confirmed_new_strokes_AI_draft",
+  "source_sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+  "dependency_code_sha256": {
+    "aa_prompted_eval.py": "a8626793d1dd009efe6cdc3b165065b789482dff3bfa3c4062a9159cb0dd050e",
+    "aa_texture_eval.py": "a44c85c9c7df2f423d15a8d4947ce1b0ff44ec70119ea6cfdde20539db660490",
+    "aa_segmentation_eval.py": "9512ecbe5e2a3177381618da45bea6aa84c10d65016f121fc561876a4d69de3e"
+  },
+  "spec_sha256": "644b73bf216bc0737ab6cd284d62138e1e60411ce6a7a951267ab61c852352ba",
+  "code_sha256": "97cffe19d9f6a5963b446de2244658f6f2aafaf3b9142d3e61eacb777e5894b6",
+  "stroke_labels_human_approved": false,
+  "full_mask_accepted": false,
+  "geometry_processed": false,
+  "note": "Same raster samples used by RF and GMM; GrabCut additionally fixes all stroke pixels as hard labels, RF does not. Budget differs from old center-only runs. Only original 12 human check centers are scored; no dense or blind metrics."
+}

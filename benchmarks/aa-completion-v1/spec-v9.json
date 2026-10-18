@@ -1,0 +1,2686 @@
+{
+  "schema_version": 1,
+  "base": {
+    "path": "benchmarks/full-scene-regular-v1/model-v1.json",
+    "sha256": "6c8d6e5bf3f547a0cb00ce076ded1a0eead362895fff1af6bb3c5d15571cbec6"
+  },
+  "retained": {
+    "path": "benchmarks/group-constraints-v1/model-v1.json",
+    "sha256": "7e034557241cde58c4a03387fb1ac5ed276c16028b1ead3633f1b2ef624beb99"
+  },
+  "human_review": {
+    "path": "benchmarks/full-scene-regular-v1/human-review-v1.json",
+    "sha256": "c11a6bb5e634c84a29b5ae08d7ecb9499d054fe6d8e4868e245f90d2a3a68037"
+  },
+  "groups": [
+    {
+      "id": "LEFT-STAIR",
+      "native_box": [
+        0,
+        1358,
+        835,
+        1846
+      ],
+      "source_quad": [
+        [
+          0,
+          1358
+        ],
+        [
+          835,
+          1358
+        ],
+        [
+          835,
+          1846
+        ],
+        [
+          0,
+          1846
+        ]
+      ],
+      "parts": [
+        {
+          "id": "GUARD",
+          "kind": "polygon",
+          "outer": [
+            [
+              0,
+              1358
+            ],
+            [
+              835,
+              1358
+            ],
+            [
+              835,
+              1846
+            ],
+            [
+              0,
+              1846
+            ]
+          ],
+          "holes": [
+            [
+              [
+                0,
+                1374
+              ],
+              [
+                819,
+                1374
+              ],
+              [
+                819,
+                1830
+              ],
+              [
+                0,
+                1830
+              ]
+            ]
+          ]
+        },
+        {
+          "id": "AA0",
+          "kind": "rectangle",
+          "bounds": [
+            0,
+            1538,
+            317,
+            1668
+          ]
+        },
+        {
+          "id": "AA1",
+          "kind": "rectangle",
+          "bounds": [
+            333,
+            1538,
+            396,
+            1792
+          ]
+        },
+        {
+          "id": "AA2",
+          "kind": "rectangle",
+          "bounds": [
+            414,
+            1538,
+            477,
+            1792
+          ]
+        },
+        {
+          "id": "AA3",
+          "kind": "rectangle",
+          "bounds": [
+            495,
+            1538,
+            560,
+            1792
+          ]
+        },
+        {
+          "id": "AA4",
+          "kind": "rectangle",
+          "bounds": [
+            577,
+            1538,
+            642,
+            1792
+          ]
+        },
+        {
+          "id": "AA5",
+          "kind": "rectangle",
+          "bounds": [
+            659,
+            1538,
+            724,
+            1734
+          ]
+        },
+        {
+          "id": "AA6",
+          "kind": "rectangle",
+          "bounds": [
+            741,
+            1538,
+            806,
+            1640
+          ]
+        }
+      ],
+      "reason": "F01/F05 left lower missing MOS and enclosing AA",
+      "replace_box": [
+        0,
+        1348,
+        840,
+        1860
+      ]
+    },
+    {
+      "id": "MIDDLE-MOS",
+      "native_box": [
+        2122,
+        1948,
+        3171,
+        2663
+      ],
+      "source_quad": [
+        [
+          2122,
+          1948
+        ],
+        [
+          3171,
+          1948
+        ],
+        [
+          3171,
+          2663
+        ],
+        [
+          2122,
+          2663
+        ]
+      ],
+      "parts": [
+        {
+          "id": "GUARD-A",
+          "kind": "frame",
+          "bounds": [
+            2122,
+            1948,
+            2679,
+            2271
+          ],
+          "width": 14
+        },
+        {
+          "id": "GUARD-B",
+          "kind": "frame",
+          "bounds": [
+            2693,
+            1948,
+            3171,
+            2238
+          ],
+          "width": 14
+        },
+        {
+          "id": "GUARD-C",
+          "kind": "frame",
+          "bounds": [
+            2160,
+            2295,
+            3052,
+            2663
+          ],
+          "width": 14
+        },
+        {
+          "id": "A1",
+          "kind": "rectangle",
+          "bounds": [
+            2155,
+            1982,
+            2274,
+            2183
+          ]
+        },
+        {
+          "id": "A2",
+          "kind": "polygon",
+          "outer": [
+            [
+              2288,
+              1982
+            ],
+            [
+              2517,
+              1982
+            ],
+            [
+              2517,
+              2229
+            ],
+            [
+              2398,
+              2229
+            ],
+            [
+              2398,
+              2183
+            ],
+            [
+              2288,
+              2183
+            ]
+          ],
+          "holes": []
+        },
+        {
+          "id": "A3",
+          "kind": "rectangle",
+          "bounds": [
+            2533,
+            1982,
+            2648,
+            2229
+          ]
+        },
+        {
+          "id": "B1",
+          "kind": "rectangle",
+          "bounds": [
+            2722,
+            1982,
+            2924,
+            2182
+          ]
+        },
+        {
+          "id": "B2",
+          "kind": "rectangle",
+          "bounds": [
+            2939,
+            1982,
+            3141,
+            2182
+          ]
+        },
+        {
+          "id": "C0",
+          "kind": "rectangle",
+          "bounds": [
+            2189,
+            2332,
+            2475,
+            2608
+          ]
+        },
+        {
+          "id": "C1",
+          "kind": "rectangle",
+          "bounds": [
+            2486,
+            2332,
+            2605,
+            2608
+          ]
+        },
+        {
+          "id": "C2",
+          "kind": "rectangle",
+          "bounds": [
+            2617,
+            2332,
+            2736,
+            2608
+          ]
+        },
+        {
+          "id": "C3",
+          "kind": "rectangle",
+          "bounds": [
+            2747,
+            2332,
+            3020,
+            2608
+          ]
+        }
+      ],
+      "reason": "F06 four-MOS false filler, lower missing AA and guard rings",
+      "replace_box": [
+        2108,
+        1925,
+        3190,
+        2685
+      ]
+    },
+    {
+      "id": "LOWER-MOS-GRID",
+      "native_box": [
+        1774,
+        2811,
+        3173,
+        3814
+      ],
+      "source_quad": [
+        [
+          1774,
+          2811
+        ],
+        [
+          3173,
+          2798
+        ],
+        [
+          3173,
+          3799
+        ],
+        [
+          1790,
+          3814
+        ]
+      ],
+      "parts": [
+        {
+          "id": "GUARD-UPPER",
+          "kind": "polygon",
+          "outer": [
+            [
+              1774,
+              2811
+            ],
+            [
+              3173,
+              2811
+            ],
+            [
+              3173,
+              3213
+            ],
+            [
+              1774,
+              3213
+            ]
+          ],
+          "holes": [
+            [
+              [
+                1788,
+                2825
+              ],
+              [
+                2472,
+                2825
+              ],
+              [
+                2472,
+                3099
+              ],
+              [
+                1788,
+                3099
+              ]
+            ],
+            [
+              [
+                2486,
+                2825
+              ],
+              [
+                3159,
+                2825
+              ],
+              [
+                3159,
+                3099
+              ],
+              [
+                2486,
+                3099
+              ]
+            ],
+            [
+              [
+                1788,
+                3111
+              ],
+              [
+                2472,
+                3111
+              ],
+              [
+                2472,
+                3199
+              ],
+              [
+                1788,
+                3199
+              ]
+            ],
+            [
+              [
+                2486,
+                3111
+              ],
+              [
+                3159,
+                3111
+              ],
+              [
+                3159,
+                3199
+              ],
+              [
+                2486,
+                3199
+              ]
+            ]
+          ]
+        },
+        {
+          "id": "GUARD-LOWER",
+          "kind": "polygon",
+          "outer": [
+            [
+              1776,
+              3226
+            ],
+            [
+              3173,
+              3226
+            ],
+            [
+              3173,
+              3814
+            ],
+            [
+              1776,
+              3814
+            ]
+          ],
+          "holes": [
+            [
+              [
+                1790,
+                3240
+              ],
+              [
+                2472,
+                3240
+              ],
+              [
+                2472,
+                3331
+              ],
+              [
+                1790,
+                3331
+              ]
+            ],
+            [
+              [
+                2486,
+                3240
+              ],
+              [
+                3159,
+                3240
+              ],
+              [
+                3159,
+                3331
+              ],
+              [
+                2486,
+                3331
+              ]
+            ],
+            [
+              [
+                1790,
+                3343
+              ],
+              [
+                2472,
+                3343
+              ],
+              [
+                2472,
+                3800
+              ],
+              [
+                1790,
+                3800
+              ]
+            ],
+            [
+              [
+                2486,
+                3343
+              ],
+              [
+                3159,
+                3343
+              ],
+              [
+                3159,
+                3800
+              ],
+              [
+                2486,
+                3800
+              ]
+            ]
+          ]
+        },
+        {
+          "id": "MOS-1",
+          "kind": "rectangle",
+          "bounds": [
+            1803,
+            2841,
+            2460,
+            2946
+          ]
+        },
+        {
+          "id": "MOS-2",
+          "kind": "rectangle",
+          "bounds": [
+            1803,
+            2977,
+            2460,
+            3086
+          ]
+        },
+        {
+          "id": "MOS-3",
+          "kind": "rectangle",
+          "bounds": [
+            2502,
+            2841,
+            3143,
+            2946
+          ]
+        },
+        {
+          "id": "MOS-4",
+          "kind": "rectangle",
+          "bounds": [
+            2502,
+            2977,
+            3143,
+            3086
+          ]
+        },
+        {
+          "id": "MOS-5",
+          "kind": "rectangle",
+          "bounds": [
+            1810,
+            3357,
+            2460,
+            3556
+          ]
+        },
+        {
+          "id": "MOS-6",
+          "kind": "rectangle",
+          "bounds": [
+            1810,
+            3588,
+            2460,
+            3781
+          ]
+        },
+        {
+          "id": "MOS-7",
+          "kind": "rectangle",
+          "bounds": [
+            2502,
+            3357,
+            3143,
+            3556
+          ]
+        },
+        {
+          "id": "MOS-8",
+          "kind": "rectangle",
+          "bounds": [
+            2502,
+            3588,
+            3143,
+            3781
+          ]
+        },
+        {
+          "id": "STRIP-UL",
+          "kind": "polygon",
+          "outer": [
+            [
+              1835,
+              3124
+            ],
+            [
+              2388,
+              3124
+            ],
+            [
+              2388,
+              3148
+            ],
+            [
+              2342,
+              3148
+            ],
+            [
+              2342,
+              3177
+            ],
+            [
+              1835,
+              3177
+            ]
+          ],
+          "holes": []
+        },
+        {
+          "id": "STRIP-UR",
+          "kind": "polygon",
+          "outer": [
+            [
+              2574,
+              3124
+            ],
+            [
+              3117,
+              3124
+            ],
+            [
+              3117,
+              3177
+            ],
+            [
+              2622,
+              3177
+            ],
+            [
+              2622,
+              3148
+            ],
+            [
+              2574,
+              3148
+            ]
+          ],
+          "holes": []
+        },
+        {
+          "id": "STRIP-LL",
+          "kind": "polygon",
+          "outer": [
+            [
+              1836,
+              3263
+            ],
+            [
+              2340,
+              3263
+            ],
+            [
+              2340,
+              3287
+            ],
+            [
+              2385,
+              3287
+            ],
+            [
+              2385,
+              3319
+            ],
+            [
+              1836,
+              3319
+            ]
+          ],
+          "holes": []
+        },
+        {
+          "id": "STRIP-LR",
+          "kind": "polygon",
+          "outer": [
+            [
+              2577,
+              3263
+            ],
+            [
+              3117,
+              3263
+            ],
+            [
+              3117,
+              3319
+            ],
+            [
+              2622,
+              3319
+            ],
+            [
+              2622,
+              3287
+            ],
+            [
+              2577,
+              3287
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "reason": "F10/F11 missing MOS AA, guard network and isolated AA strips",
+      "replace_box": [
+        1750,
+        2780,
+        3190,
+        3830
+      ]
+    },
+    {
+      "id": "UPPER-INNER-A",
+      "native_box": [
+        1036,
+        696,
+        4087,
+        816
+      ],
+      "source_quad": [
+        [
+          1036,
+          696
+        ],
+        [
+          4087,
+          696
+        ],
+        [
+          4087,
+          816
+        ],
+        [
+          1036,
+          816
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "frame",
+          "bounds": [
+            1036,
+            696,
+            4087,
+            816
+          ],
+          "width": 12
+        }
+      ],
+      "reason": "missing enclosing or nested AA frame; independent of CT gaps",
+      "replace_box": null,
+      "layout_box": [
+        1180.8203,
+        740,
+        4069.2535,
+        845.2648
+      ]
+    },
+    {
+      "id": "UPPER-INNER-B",
+      "native_box": [
+        1044,
+        840,
+        4085,
+        1021
+      ],
+      "source_quad": [
+        [
+          1044,
+          840
+        ],
+        [
+          4085,
+          840
+        ],
+        [
+          4085,
+          1021
+        ],
+        [
+          1044,
+          1021
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "frame",
+          "bounds": [
+            1044,
+            840,
+            4085,
+            1021
+          ],
+          "width": 12
+        }
+      ],
+      "reason": "missing enclosing or nested AA frame; independent of CT gaps",
+      "replace_box": null
+    },
+    {
+      "id": "MIDDLE-UPPER",
+      "native_box": [
+        838,
+        1358,
+        2232,
+        1788
+      ],
+      "source_quad": [
+        [
+          838,
+          1358
+        ],
+        [
+          2232,
+          1358
+        ],
+        [
+          2232,
+          1788
+        ],
+        [
+          838,
+          1788
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "frame",
+          "bounds": [
+            838,
+            1358,
+            2232,
+            1788
+          ],
+          "width": 14
+        }
+      ],
+      "reason": "missing enclosing or nested AA frame; independent of CT gaps",
+      "replace_box": null
+    },
+    {
+      "id": "LEFT-GUARD-NETWORK",
+      "native_box": [
+        0,
+        1898,
+        2100,
+        3950
+      ],
+      "source_quad": [
+        [
+          0,
+          1898
+        ],
+        [
+          2100,
+          1898
+        ],
+        [
+          2100,
+          3950
+        ],
+        [
+          0,
+          3950
+        ]
+      ],
+      "parts": [
+        {
+          "id": "SHARED-GUARDS",
+          "kind": "union",
+          "parts": [
+            {
+              "id": "LEFT-WIDE-AA",
+              "kind": "difference",
+              "bounds": [
+                0,
+                1898,
+                2100,
+                2704
+              ],
+              "holes": [
+                [
+                  0,
+                  1914,
+                  2084,
+                  2295
+                ],
+                [
+                  0,
+                  2311,
+                  2084,
+                  2688
+                ]
+              ]
+            },
+            {
+              "id": "LEFT-BOTTOM-OUTER-AA",
+              "kind": "difference",
+              "bounds": [
+                0,
+                2704,
+                946,
+                3950
+              ],
+              "holes": [
+                [
+                  0,
+                  2720,
+                  930,
+                  3934
+                ]
+              ]
+            },
+            {
+              "id": "LEFT-BOTTOM-INNER-AA",
+              "kind": "difference",
+              "bounds": [
+                0,
+                2752,
+                904,
+                3884
+              ],
+              "holes": [
+                [
+                  0,
+                  2766,
+                  890,
+                  3308
+                ],
+                [
+                  0,
+                  3322,
+                  890,
+                  3870
+                ]
+              ]
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-GUARD-OUTER",
+              "kind": "frame",
+              "bounds": [
+                934,
+                2700,
+                1665,
+                3152
+              ],
+              "width": 14
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-GUARD-INNER",
+              "kind": "frame",
+              "bounds": [
+                952,
+                2752,
+                1647,
+                3100
+              ],
+              "width": 12
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-ROW1-GUARD",
+              "kind": "frame",
+              "bounds": [
+                969,
+                3168,
+                1447,
+                3264
+              ],
+              "width": 12
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-ROW1-AA",
+              "kind": "rectangle",
+              "bounds": [
+                1007,
+                3200,
+                1412,
+                3229
+              ]
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-ROW2-GUARD",
+              "kind": "frame",
+              "bounds": [
+                969,
+                3283,
+                1447,
+                3394
+              ],
+              "width": 12
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-ROW2-AA",
+              "kind": "rectangle",
+              "bounds": [
+                1009,
+                3328,
+                1415,
+                3354
+              ]
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-BRANCH-GUARD",
+              "kind": "polygon",
+              "outer": [
+                [
+                  1042,
+                  3394
+                ],
+                [
+                  1459,
+                  3394
+                ],
+                [
+                  1459,
+                  3656
+                ],
+                [
+                  1042,
+                  3656
+                ]
+              ],
+              "holes": [
+                [
+                  [
+                    1056,
+                    3408
+                  ],
+                  [
+                    1445,
+                    3408
+                  ],
+                  [
+                    1445,
+                    3518
+                  ],
+                  [
+                    1056,
+                    3518
+                  ]
+                ],
+                [
+                  [
+                    1056,
+                    3532
+                  ],
+                  [
+                    1445,
+                    3532
+                  ],
+                  [
+                    1445,
+                    3642
+                  ],
+                  [
+                    1056,
+                    3642
+                  ]
+                ]
+              ]
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-ROW3-GUARD",
+              "kind": "frame",
+              "bounds": [
+                969,
+                3656,
+                1665,
+                3768
+              ],
+              "width": 12
+            },
+            {
+              "id": "LOWER-LEFT-CELLS-ROW4-GUARD",
+              "kind": "frame",
+              "bounds": [
+                974,
+                3772,
+                1670,
+                3904
+              ],
+              "width": 12
+            }
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-MOS",
+          "kind": "rectangle",
+          "bounds": [
+            994,
+            2800,
+            1603,
+            3053
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-DUMMY1",
+          "kind": "rectangle",
+          "bounds": [
+            1542,
+            3228,
+            1643,
+            3336
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-DUMMY2",
+          "kind": "rectangle",
+          "bounds": [
+            1542,
+            3373,
+            1643,
+            3481
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-BRANCH-AA1",
+          "kind": "rectangle",
+          "bounds": [
+            1090,
+            3430,
+            1196,
+            3486
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-BRANCH-AA2",
+          "kind": "rectangle",
+          "bounds": [
+            1211,
+            3430,
+            1418,
+            3486
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-BRANCH-AA3",
+          "kind": "rectangle",
+          "bounds": [
+            1090,
+            3586,
+            1196,
+            3619
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-BRANCH-AA4",
+          "kind": "rectangle",
+          "bounds": [
+            1211,
+            3586,
+            1418,
+            3619
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA1",
+          "kind": "rectangle",
+          "bounds": [
+            1017,
+            3695,
+            1080,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA2",
+          "kind": "rectangle",
+          "bounds": [
+            1094,
+            3695,
+            1156,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA3",
+          "kind": "rectangle",
+          "bounds": [
+            1165,
+            3695,
+            1227,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA4",
+          "kind": "rectangle",
+          "bounds": [
+            1242,
+            3695,
+            1304,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA5",
+          "kind": "rectangle",
+          "bounds": [
+            1336,
+            3695,
+            1397,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA6",
+          "kind": "rectangle",
+          "bounds": [
+            1410,
+            3695,
+            1471,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA7",
+          "kind": "rectangle",
+          "bounds": [
+            1482,
+            3695,
+            1543,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW3-AA8",
+          "kind": "rectangle",
+          "bounds": [
+            1556,
+            3695,
+            1620,
+            3724
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA1",
+          "kind": "rectangle",
+          "bounds": [
+            1017,
+            3823,
+            1080,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA2",
+          "kind": "rectangle",
+          "bounds": [
+            1094,
+            3823,
+            1156,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA3",
+          "kind": "rectangle",
+          "bounds": [
+            1165,
+            3823,
+            1227,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA4",
+          "kind": "rectangle",
+          "bounds": [
+            1242,
+            3823,
+            1304,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA5",
+          "kind": "rectangle",
+          "bounds": [
+            1336,
+            3823,
+            1397,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA6",
+          "kind": "rectangle",
+          "bounds": [
+            1410,
+            3823,
+            1471,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA7",
+          "kind": "rectangle",
+          "bounds": [
+            1482,
+            3823,
+            1543,
+            3852
+          ]
+        },
+        {
+          "id": "LOWER-LEFT-CELLS-ROW4-AA8",
+          "kind": "rectangle",
+          "bounds": [
+            1556,
+            3823,
+            1620,
+            3852
+          ]
+        }
+      ],
+      "replace_box": [
+        925,
+        2685,
+        1680,
+        3920
+      ],
+      "reason": "AA source shows shared guard rails; restore full material without filling enclosed device AA"
+    },
+    {
+      "id": "UPPER-COMPLEX-GUARD",
+      "native_box": [
+        0,
+        1024,
+        5220,
+        1899
+      ],
+      "source_quad": [
+        [
+          0,
+          1024
+        ],
+        [
+          5220,
+          1024
+        ],
+        [
+          5220,
+          1899
+        ],
+        [
+          0,
+          1899
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "compound_enclosure",
+          "outer_boxes": [
+            [
+              0,
+              1214,
+              5212,
+              1358
+            ],
+            [
+              2264,
+              1299,
+              2436,
+              1899
+            ],
+            [
+              2487,
+              1353,
+              3290,
+              1815
+            ],
+            [
+              0,
+              1024,
+              5220,
+              1221
+            ]
+          ],
+          "inner_boxes": [
+            [
+              0,
+              1230,
+              5198,
+              1344
+            ],
+            [
+              2278,
+              1313,
+              2422,
+              1885
+            ],
+            [
+              2501,
+              1367,
+              3276,
+              1801
+            ],
+            [
+              0,
+              1040,
+              5204,
+              1205
+            ]
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "source-supported upper AA frame branches around the vertical and horizontal MOS; no AA rail across their interiors"
+    },
+    {
+      "id": "RIGHT-DUMMY",
+      "native_box": [
+        4890,
+        3490,
+        4992,
+        4018.36
+      ],
+      "layout_box": [
+        4906.928753290842,
+        3507.92,
+        5008.928753290842,
+        4036.28
+      ],
+      "source_quad": [
+        [
+          4894,
+          3490
+        ],
+        [
+          4993,
+          3490
+        ],
+        [
+          4983,
+          4013
+        ],
+        [
+          4884,
+          4013
+        ]
+      ],
+      "parts": [
+        {
+          "id": "R1",
+          "kind": "rectangle",
+          "bounds": [
+            4890,
+            3490.0,
+            4992,
+            3592.0
+          ]
+        },
+        {
+          "id": "R2",
+          "kind": "rectangle",
+          "bounds": [
+            4890,
+            3632.12,
+            4992,
+            3734.12
+          ]
+        },
+        {
+          "id": "R3",
+          "kind": "rectangle",
+          "bounds": [
+            4890,
+            3774.24,
+            4992,
+            3876.24
+          ]
+        },
+        {
+          "id": "R4",
+          "kind": "rectangle",
+          "bounds": [
+            4890,
+            3916.36,
+            4992,
+            4018.36
+          ]
+        }
+      ],
+      "replace_box": [
+        4860,
+        3470,
+        5020,
+        4030
+      ],
+      "reason": "four observed vertical dummies; shared dimensions/pitch with D01, source-backed fourth instance, bottom source row remains unchanged"
+    },
+    {
+      "id": "OUTER-VERTICAL-1",
+      "native_box": [
+        5328,
+        185,
+        5342,
+        4284
+      ],
+      "source_quad": [
+        [
+          5328,
+          185
+        ],
+        [
+          5342,
+          185
+        ],
+        [
+          5218,
+          4284
+        ],
+        [
+          5204,
+          4284
+        ]
+      ],
+      "layout_box": [
+        5390,
+        300,
+        5404,
+        4290
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            5328,
+            185,
+            5342,
+            4284
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "visible continuous vertical AA rail; top and bottom continuation unknown; no invented join to horizontal rails"
+    },
+    {
+      "id": "OUTER-VERTICAL-2",
+      "native_box": [
+        5413,
+        185,
+        5425,
+        4284
+      ],
+      "source_quad": [
+        [
+          5413,
+          185
+        ],
+        [
+          5425,
+          185
+        ],
+        [
+          5292,
+          4284
+        ],
+        [
+          5280,
+          4284
+        ]
+      ],
+      "layout_box": [
+        5480,
+        300,
+        5492,
+        4290
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            5413,
+            185,
+            5425,
+            4284
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "visible continuous vertical AA rail; top and bottom continuation unknown; no invented join to horizontal rails"
+    },
+    {
+      "id": "OUTER-VERTICAL-3",
+      "native_box": [
+        5563,
+        185,
+        5583,
+        4284
+      ],
+      "source_quad": [
+        [
+          5563,
+          185
+        ],
+        [
+          5583,
+          185
+        ],
+        [
+          5445,
+          4284
+        ],
+        [
+          5425,
+          4284
+        ]
+      ],
+      "layout_box": [
+        5635,
+        300,
+        5655,
+        4290
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            5563,
+            185,
+            5583,
+            4284
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "visible continuous vertical AA rail; top and bottom continuation unknown; no invented join to horizontal rails"
+    },
+    {
+      "id": "TOP-H1",
+      "native_box": [
+        0,
+        215,
+        5245,
+        231
+      ],
+      "source_quad": [
+        [
+          0,
+          215
+        ],
+        [
+          5245,
+          263
+        ],
+        [
+          5245,
+          279
+        ],
+        [
+          0,
+          231
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            0,
+            215,
+            5245,
+            231
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row"
+    },
+    {
+      "id": "TOP-H2",
+      "native_box": [
+        0,
+        299,
+        5286,
+        313
+      ],
+      "source_quad": [
+        [
+          0,
+          299
+        ],
+        [
+          5286,
+          344
+        ],
+        [
+          5286,
+          358
+        ],
+        [
+          0,
+          313
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            0,
+            299,
+            5286,
+            313
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row",
+      "layout_box": [
+        268,
+        370,
+        5271,
+        384
+      ]
+    },
+    {
+      "id": "TOP-H3",
+      "native_box": [
+        0,
+        340,
+        5115,
+        357
+      ],
+      "source_quad": [
+        [
+          0,
+          340
+        ],
+        [
+          5115,
+          383
+        ],
+        [
+          5115,
+          400
+        ],
+        [
+          0,
+          357
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            0,
+            340,
+            5115,
+            357
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row"
+    },
+    {
+      "id": "ROW-GUARD",
+      "native_box": [
+        0,
+        665,
+        5115,
+        679
+      ],
+      "source_quad": [
+        [
+          0,
+          665
+        ],
+        [
+          5115,
+          700
+        ],
+        [
+          5115,
+          714
+        ],
+        [
+          0,
+          679
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            0,
+            665,
+            5115,
+            679
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row",
+      "layout_box": [
+        262,
+        720,
+        5105,
+        734
+      ]
+    },
+    {
+      "id": "TOP-STEP-1",
+      "native_box": [
+        0,
+        509,
+        5115,
+        543
+      ],
+      "source_quad": [
+        [
+          0,
+          509
+        ],
+        [
+          5115,
+          546
+        ],
+        [
+          5115,
+          580
+        ],
+        [
+          0,
+          543
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "polygon",
+          "outer": [
+            [
+              0,
+              529
+            ],
+            [
+              4650,
+              529
+            ],
+            [
+              4650,
+              509
+            ],
+            [
+              4830,
+              509
+            ],
+            [
+              4830,
+              529
+            ],
+            [
+              5115,
+              529
+            ],
+            [
+              5115,
+              543
+            ],
+            [
+              4816,
+              543
+            ],
+            [
+              4816,
+              523
+            ],
+            [
+              4664,
+              523
+            ],
+            [
+              4664,
+              543
+            ],
+            [
+              0,
+              543
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row",
+      "layout_box": [
+        265,
+        580,
+        5101,
+        614
+      ]
+    },
+    {
+      "id": "TOP-STEP-2",
+      "native_box": [
+        0,
+        542,
+        5115,
+        574
+      ],
+      "source_quad": [
+        [
+          0,
+          542
+        ],
+        [
+          5115,
+          579
+        ],
+        [
+          5115,
+          611
+        ],
+        [
+          0,
+          574
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "polygon",
+          "outer": [
+            [
+              0,
+              562
+            ],
+            [
+              4650,
+              562
+            ],
+            [
+              4650,
+              542
+            ],
+            [
+              4830,
+              542
+            ],
+            [
+              4830,
+              562
+            ],
+            [
+              5115,
+              562
+            ],
+            [
+              5115,
+              574
+            ],
+            [
+              4818,
+              574
+            ],
+            [
+              4818,
+              554
+            ],
+            [
+              4662,
+              554
+            ],
+            [
+              4662,
+              574
+            ],
+            [
+              0,
+              574
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row",
+      "layout_box": [
+        264,
+        616,
+        5102,
+        648
+      ]
+    },
+    {
+      "id": "TOP-UPTURN-1",
+      "native_box": [
+        5235,
+        185,
+        5247,
+        270
+      ],
+      "source_quad": [
+        [
+          5235,
+          185
+        ],
+        [
+          5247,
+          185
+        ],
+        [
+          5247,
+          270
+        ],
+        [
+          5235,
+          270
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            5235,
+            185,
+            5247,
+            270
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row"
+    },
+    {
+      "id": "TOP-UPTURN-2",
+      "native_box": [
+        5276,
+        185,
+        5288,
+        350
+      ],
+      "source_quad": [
+        [
+          5276,
+          185
+        ],
+        [
+          5288,
+          185
+        ],
+        [
+          5288,
+          350
+        ],
+        [
+          5276,
+          350
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "rectangle",
+          "bounds": [
+            5276,
+            185,
+            5288,
+            350
+          ]
+        }
+      ],
+      "replace_box": null,
+      "reason": "AA source-supported upper guard strip; step and isolated endpoint retained, not a CT row"
+    },
+    {
+      "id": "RIGHT-EDGE-1",
+      "native_box": [
+        0,
+        462,
+        100,
+        1547
+      ],
+      "source_quad": [
+        [
+          5684,
+          462
+        ],
+        [
+          5712,
+          462
+        ],
+        [
+          5712,
+          1547
+        ],
+        [
+          5684,
+          1547
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "difference",
+          "bounds": [
+            0,
+            462,
+            100,
+            1547
+          ],
+          "holes": [
+            [
+              14,
+              469,
+              112,
+              1540
+            ]
+          ],
+          "observed_source": {
+            "kind": "polygon",
+            "outer": [
+              [
+                5684,
+                462
+              ],
+              [
+                5712,
+                462
+              ],
+              [
+                5712,
+                1547
+              ],
+              [
+                5644,
+                1547
+              ]
+            ],
+            "holes": [
+              [
+                [
+                  5698,
+                  469
+                ],
+                [
+                  5725,
+                  469
+                ],
+                [
+                  5725,
+                  1540
+                ],
+                [
+                  5658,
+                  1540
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "replace_box": null,
+      "reason": "five stacked neighbor-cell guard sections visible at right edge; source side-wall slope and shared horizontal rails measured separately; right continuation outside photo unknown; shared canonical side wall and shared cut levels, 14 unit wall; width outside the visible photo remains unknown",
+      "layout_box": [
+        5760,
+        443.24537969473863,
+        5860,
+        1541.3837577295385
+      ]
+    },
+    {
+      "id": "RIGHT-EDGE-2",
+      "native_box": [
+        0,
+        1547,
+        100,
+        2227
+      ],
+      "source_quad": [
+        [
+          5644,
+          1547
+        ],
+        [
+          5712,
+          1547
+        ],
+        [
+          5712,
+          2227
+        ],
+        [
+          5644,
+          2227
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "difference",
+          "bounds": [
+            0,
+            1547,
+            100,
+            2227
+          ],
+          "holes": [
+            [
+              14,
+              1554,
+              112,
+              2220
+            ]
+          ],
+          "observed_source": {
+            "kind": "polygon",
+            "outer": [
+              [
+                5644,
+                1547
+              ],
+              [
+                5712,
+                1547
+              ],
+              [
+                5712,
+                2227
+              ],
+              [
+                5618,
+                2227
+              ]
+            ],
+            "holes": [
+              [
+                [
+                  5658,
+                  1554
+                ],
+                [
+                  5725,
+                  1554
+                ],
+                [
+                  5725,
+                  2220
+                ],
+                [
+                  5632,
+                  2220
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "replace_box": null,
+      "reason": "five stacked neighbor-cell guard sections visible at right edge; source side-wall slope and shared horizontal rails measured separately; right continuation outside photo unknown; shared canonical side wall and shared cut levels, 14 unit wall; width outside the visible photo remains unknown",
+      "layout_box": [
+        5760,
+        1541.3837577295385,
+        5860,
+        2241.221729542954
+      ]
+    },
+    {
+      "id": "RIGHT-EDGE-3",
+      "native_box": [
+        0,
+        2227,
+        100,
+        2894
+      ],
+      "source_quad": [
+        [
+          5618,
+          2227
+        ],
+        [
+          5712,
+          2227
+        ],
+        [
+          5712,
+          2894
+        ],
+        [
+          5618,
+          2894
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "difference",
+          "bounds": [
+            0,
+            2227,
+            100,
+            2894
+          ],
+          "holes": [
+            [
+              14,
+              2234,
+              112,
+              2887
+            ]
+          ],
+          "observed_source": {
+            "kind": "polygon",
+            "outer": [
+              [
+                5618,
+                2227
+              ],
+              [
+                5712,
+                2227
+              ],
+              [
+                5712,
+                2894
+              ],
+              [
+                5590,
+                2894
+              ]
+            ],
+            "holes": [
+              [
+                [
+                  5632,
+                  2234
+                ],
+                [
+                  5725,
+                  2234
+                ],
+                [
+                  5725,
+                  2887
+                ],
+                [
+                  5604,
+                  2887
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "replace_box": null,
+      "reason": "five stacked neighbor-cell guard sections visible at right edge; source side-wall slope and shared horizontal rails measured separately; right continuation outside photo unknown; shared canonical side wall and shared cut levels, 14 unit wall; width outside the visible photo remains unknown",
+      "layout_box": [
+        5760,
+        2241.221729542954,
+        5860,
+        2936.569930288125
+      ]
+    },
+    {
+      "id": "RIGHT-EDGE-4",
+      "native_box": [
+        0,
+        2894,
+        100,
+        3547
+      ],
+      "source_quad": [
+        [
+          5590,
+          2894
+        ],
+        [
+          5712,
+          2894
+        ],
+        [
+          5712,
+          3547
+        ],
+        [
+          5590,
+          3547
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "difference",
+          "bounds": [
+            0,
+            2894,
+            100,
+            3547
+          ],
+          "holes": [
+            [
+              14,
+              2901,
+              112,
+              3540
+            ]
+          ],
+          "observed_source": {
+            "kind": "polygon",
+            "outer": [
+              [
+                5590,
+                2894
+              ],
+              [
+                5712,
+                2894
+              ],
+              [
+                5712,
+                3547
+              ],
+              [
+                5568,
+                3547
+              ]
+            ],
+            "holes": [
+              [
+                [
+                  5604,
+                  2901
+                ],
+                [
+                  5725,
+                  2901
+                ],
+                [
+                  5725,
+                  3540
+                ],
+                [
+                  5582,
+                  3540
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "replace_box": null,
+      "reason": "five stacked neighbor-cell guard sections visible at right edge; source side-wall slope and shared horizontal rails measured separately; right continuation outside photo unknown; shared canonical side wall and shared cut levels, 14 unit wall; width outside the visible photo remains unknown",
+      "layout_box": [
+        5760,
+        2936.569930288125,
+        5860,
+        3626.016586521369
+      ]
+    },
+    {
+      "id": "RIGHT-EDGE-5",
+      "native_box": [
+        0,
+        3547,
+        100,
+        4185
+      ],
+      "source_quad": [
+        [
+          5568,
+          3547
+        ],
+        [
+          5712,
+          3547
+        ],
+        [
+          5712,
+          4185
+        ],
+        [
+          5568,
+          4185
+        ]
+      ],
+      "parts": [
+        {
+          "id": "AA",
+          "kind": "difference",
+          "bounds": [
+            0,
+            3547,
+            100,
+            4185
+          ],
+          "holes": [
+            [
+              14,
+              3554,
+              112,
+              4178
+            ]
+          ],
+          "observed_source": {
+            "kind": "polygon",
+            "outer": [
+              [
+                5568,
+                3547
+              ],
+              [
+                5712,
+                3547
+              ],
+              [
+                5712,
+                4185
+              ],
+              [
+                5542,
+                4185
+              ]
+            ],
+            "holes": [
+              [
+                [
+                  5582,
+                  3554
+                ],
+                [
+                  5725,
+                  3554
+                ],
+                [
+                  5725,
+                  4178
+                ],
+                [
+                  5556,
+                  4178
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "replace_box": null,
+      "reason": "five stacked neighbor-cell guard sections visible at right edge; source side-wall slope and shared horizontal rails measured separately; right continuation outside photo unknown; shared canonical side wall and shared cut levels, 14 unit wall; width outside the visible photo remains unknown",
+      "layout_box": [
+        5760,
+        3626.016586521369,
+        5860,
+        4308.09153546699
+      ]
+    }
+  ],
+  "role": "AI source observations and reconstruction hypotheses, not human-confirmed geometry",
+  "units": "relative_layout_units_and_native_source_pixels",
+  "CT": "frozen historical references only; not processed",
+  "reject_ids": [
+    {
+      "id": "AA-F02066",
+      "reason": "top screenshot/interface-edge candidate, not accepted material; moved to unresolved observations"
+    }
+  ],
+  "row_regularization": [
+    {
+      "id": "UPPER-MOS-ROW-2",
+      "object_ids": [
+        "AA-F01707",
+        "AA-F01708",
+        "AA-F01709",
+        "AA-F01710",
+        "AA-F01711",
+        "AA-F01712",
+        "AA-F01713",
+        "AA-F01714",
+        "AA-F01715",
+        "AA-F01716",
+        "AA-F01717",
+        "AA-F01718",
+        "AA-F01719",
+        "AA-F01720",
+        "AA-F01721",
+        "AA-F01722",
+        "AA-F01723",
+        "AA-F01724",
+        "AA-F01725",
+        "AA-F01726",
+        "AA-F01727",
+        "AA-F01728",
+        "AA-F01729",
+        "AA-F01730",
+        "AA-F01731"
+      ],
+      "top": 670,
+      "height": 32,
+      "reason": "source shows a shared horizontal row; align relative design baseline and height to leave distinct AA guard tracks; source boundaries preserved separately"
+    }
+  ],
+  "supersede_ids": [
+    {
+      "id": "AA-F01988",
+      "replacements": [
+        "AA2-TOP-UPTURN-2-AA-0"
+      ],
+      "reason": "old small upper-guard turn fragment retained in revision history; full upturn reconstructed as a candidate"
+    }
+  ],
+  "unresolved_AA": {
+    "path": "benchmarks/full-scene-regular-v1/unresolved-AA-v1.json",
+    "sha256": "6c71eb627a282a1d9dc5c25b358a6211363e327678049725ce73468015972148"
+  },
+  "boundary_conflicts": {
+    "path": "benchmarks/full-scene-regular-v1/boundary-AA-conflicts-v1.json",
+    "sha256": "471584622802e210156ae959251bdf8ecaf65f6a0308de708069745358e1b039"
+  }
+}

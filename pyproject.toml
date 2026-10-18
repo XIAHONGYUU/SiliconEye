@@ -36,6 +36,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+segmentation-eval = ["scikit-learn>=1.5,<2"]
 sam = [
     # SAM 3 for device segmentation (install separately due to size)
     # pip install git+https://github.com/facebookresearch/sam3.git

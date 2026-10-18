@@ -1,0 +1,1258 @@
+{
+  "results": [
+    {
+      "group_id": "D01",
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "heldout_photo_observations",
+          "state": "pass",
+          "fit_count": 100,
+          "holdout_count": 54,
+          "fit_median_px": 2.868700029335599,
+          "holdout_median_px": 2.9560786350871364,
+          "holdout_p95_px": 8.22439536568416,
+          "holdout_max_px": 11.67628161705073,
+          "median_limit_px": 8,
+          "p95_limit_px": 16,
+          "truth_scope": "same_chip_derived_observations_not_independent_human_ground_truth"
+        }
+      ],
+      "old_checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        }
+      ],
+      "human_review": "pending",
+      "machine_state": "pass"
+    },
+    {
+      "group_id": "R01",
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "continuous_constant_width_ring",
+          "state": "pass"
+        },
+        {
+          "rule": "heldout_photo_observations",
+          "state": "pass",
+          "fit_count": 4,
+          "holdout_count": 4,
+          "fit_median_px": 4.547473508864641e-13,
+          "holdout_median_px": 1.79720601029888,
+          "holdout_p95_px": 3.9874826158792316,
+          "holdout_max_px": 4.311095333201352,
+          "median_limit_px": 8,
+          "p95_limit_px": 8,
+          "truth_scope": "same_chip_derived_observations_not_independent_human_ground_truth"
+        }
+      ],
+      "old_checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "continuous_constant_width_ring",
+          "state": "fail"
+        }
+      ],
+      "human_review": "pending",
+      "machine_state": "pass"
+    },
+    {
+      "group_id": "T01",
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        },
+        {
+          "rule": "heldout_photo_observations",
+          "state": "pass",
+          "fit_count": 65,
+          "holdout_count": 17,
+          "fit_median_px": 2.2431507280138976,
+          "holdout_median_px": 3.3082492120120013,
+          "holdout_p95_px": 5.4325968798404505,
+          "holdout_max_px": 6.333826577918377,
+          "median_limit_px": 4,
+          "p95_limit_px": 8,
+          "truth_scope": "same_chip_derived_observations_not_independent_human_ground_truth"
+        },
+        {
+          "rule": "source_slot_ambiguity",
+          "state": "unknown",
+          "slots": [
+            [
+              21,
+              0
+            ]
+          ]
+        }
+      ],
+      "old_checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "fail"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ],
+      "human_review": "pending",
+      "machine_state": "unknown"
+    },
+    {
+      "group_id": "T02",
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        },
+        {
+          "rule": "heldout_photo_observations",
+          "state": "fail",
+          "fit_count": 18,
+          "holdout_count": 9,
+          "fit_median_px": 1.7730652485219254,
+          "holdout_median_px": 5.196972127608857,
+          "holdout_p95_px": 5.600625360658245,
+          "holdout_max_px": 5.664471439858973,
+          "median_limit_px": 4,
+          "p95_limit_px": 8,
+          "truth_scope": "same_chip_derived_observations_not_independent_human_ground_truth"
+        },
+        {
+          "rule": "unmatched_photo_observations",
+          "state": "unknown",
+          "ids": [
+            "CT-F03736"
+          ]
+        }
+      ],
+      "old_checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "fail"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ],
+      "human_review": "pending",
+      "machine_state": "fail"
+    }
+  ],
+  "fault_trials": [
+    {
+      "group_id": "D01",
+      "mutation": "row_shift",
+      "expected_rule": "shared_baselines_pitch_and_shape",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        }
+      ]
+    },
+    {
+      "group_id": "D01",
+      "mutation": "wrong_size",
+      "expected_rule": "shared_size",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        }
+      ]
+    },
+    {
+      "group_id": "D01",
+      "mutation": "missing_slot",
+      "expected_rule": "unique_complete_slot_inventory",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        }
+      ]
+    },
+    {
+      "group_id": "D01",
+      "mutation": "extra_slot",
+      "expected_rule": "unique_complete_slot_inventory",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "fail"
+        }
+      ]
+    },
+    {
+      "group_id": "R01",
+      "mutation": "ring_gap",
+      "expected_rule": "continuous_constant_width_ring",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "continuous_constant_width_ring",
+          "state": "fail"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "row_shift",
+      "expected_rule": "shared_baselines_pitch_and_shape",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "wrong_size",
+      "expected_rule": "shared_size",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "missing_slot",
+      "expected_rule": "unique_complete_slot_inventory",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "extra_slot",
+      "expected_rule": "unique_complete_slot_inventory",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "fail"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "outside_AA",
+      "expected_rule": "AA_landing_enclosure",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "fail"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "synthetic_known_channel_contact",
+      "expected_rule": "channel_exclusion",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "fail"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "synthetic_missing_upper_coverage",
+      "expected_rule": "upper_metal_enclosure",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "fail"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "row_shift",
+      "expected_rule": "shared_baselines_pitch_and_shape",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "fail"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "wrong_size",
+      "expected_rule": "shared_size",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "missing_slot",
+      "expected_rule": "unique_complete_slot_inventory",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "extra_slot",
+      "expected_rule": "unique_complete_slot_inventory",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "fail"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "fail"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "outside_AA",
+      "expected_rule": "AA_landing_enclosure",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "fail"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "fail"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "synthetic_known_channel_contact",
+      "expected_rule": "channel_exclusion",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "fail"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "unknown",
+          "missing": "upper_metal"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T02",
+      "mutation": "synthetic_missing_upper_coverage",
+      "expected_rule": "upper_metal_enclosure",
+      "detected": true,
+      "synthetic_fault": true,
+      "checks": [
+        {
+          "rule": "valid_nonempty_geometry",
+          "state": "pass"
+        },
+        {
+          "rule": "HV_edges",
+          "state": "pass"
+        },
+        {
+          "rule": "unique_complete_slot_inventory",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_size",
+          "state": "pass"
+        },
+        {
+          "rule": "shared_baselines_pitch_and_shape",
+          "state": "pass"
+        },
+        {
+          "rule": "nonoverlapping_members",
+          "state": "pass"
+        },
+        {
+          "rule": "AA_landing_enclosure",
+          "state": "pass"
+        },
+        {
+          "rule": "channel_exclusion",
+          "state": "unknown",
+          "missing": "channel_zones"
+        },
+        {
+          "rule": "upper_metal_enclosure",
+          "state": "fail"
+        },
+        {
+          "rule": "target_process_numeric_DRC",
+          "state": "unknown",
+          "missing": "target process, calibrated scale and complete layer stack"
+        }
+      ]
+    },
+    {
+      "group_id": "T01",
+      "mutation": "coherent_template_photo_mismatch",
+      "expected_rule": "heldout_photo_observations",
+      "synthetic_fault": true,
+      "detected": true,
+      "holdout_p95_px": 49.523396600869866
+    }
+  ],
+  "injected_faults_detected": 20,
+  "injected_faults_total": 20,
+  "same_chip_development_run_not_blind_AI_eval": true,
+  "automatic_prompt_recognition_benchmark": false,
+  "physical_legality": "pending missing channel/upper-layer evidence and process",
+  "frozen_policy_and_observations": {
+    "agent": "current_conversation_agent; no external vision API",
+    "policy_document": "docs/architecture/photo-stack-workflow-v5.md",
+    "policy_sha256": "6d00af0d823ec09136733a15b27fd841497e6cfdfc91f002d771b6dcb953a2ab",
+    "observation_time": "before constraint implementation and measurements",
+    "sample_selection": "AI inspected native AA/poly wide windows; frozen group hypotheses",
+    "not_blind": true
+  },
+  "physical_acceptance": "pending_human_review_and_missing_material_evidence",
+  "full_scene_expansion_ready": false,
+  "failed_photo_groups": [
+    "T02"
+  ]
+}

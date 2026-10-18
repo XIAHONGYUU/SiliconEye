@@ -1,0 +1,120 @@
+{
+  "stage": "before_first_algorithm_run",
+  "basis": "source photographs and intensity profiles only, not output scores",
+  "edits": [
+    {
+      "case": "S01",
+      "old_xy": [
+        400,
+        1186
+      ],
+      "new_xy": [
+        400,
+        1195
+      ],
+      "radius": 3,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S01",
+      "old_xy": [
+        400,
+        1216
+      ],
+      "new_xy": [
+        400,
+        1223
+      ],
+      "radius": 3,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S01",
+      "old_xy": [
+        400,
+        1202
+      ],
+      "new_xy": [
+        400,
+        1209
+      ],
+      "radius": 1,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S01",
+      "old_xy": [
+        650,
+        1202
+      ],
+      "new_xy": [
+        650,
+        1211
+      ],
+      "radius": 1,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S04",
+      "old_xy": [
+        1100,
+        3550
+      ],
+      "new_xy": [
+        1100,
+        3570
+      ],
+      "radius": 4,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S05",
+      "old_xy": [
+        3500,
+        3447
+      ],
+      "new_xy": [
+        3500,
+        3437
+      ],
+      "radius": 1,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S05",
+      "old_xy": [
+        3750,
+        3445
+      ],
+      "new_xy": [
+        3750,
+        3434
+      ],
+      "radius": 1,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S05",
+      "old_xy": [
+        3950,
+        3442
+      ],
+      "new_xy": [
+        3950,
+        3431
+      ],
+      "radius": 1,
+      "reason": "native source-only label QA before first algorithm output; avoid AA edges/rails in background seeds"
+    },
+    {
+      "case": "S08",
+      "old_xy": [
+        2480,
+        2860
+      ],
+      "new_xy": null,
+      "reason": "ambiguous negative was on visible dividing AA wall; removed before algorithm run"
+    }
+  ],
+  "spec_sha256": "047f989d1ff1b6f663e0302b276f2b2040c8d1db8375b6b821408c39080fad5d"
+}

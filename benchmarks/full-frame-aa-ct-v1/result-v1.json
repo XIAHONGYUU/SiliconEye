@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "run_directory": "runs/full-frame-aa-ct-v1b",
+  "report": {
+    "status": "candidate_full_frame_extraction",
+    "unit": "px",
+    "full_canvas_wh": [
+      5712,
+      4284
+    ],
+    "region_categories_used": false,
+    "sources": {
+      "aa": {
+        "layer": "aa",
+        "path": "data/test_chip/tile_full/aa.jpg",
+        "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 12173200
+      },
+      "poly": {
+        "layer": "poly",
+        "path": "data/test_chip/tile_full/poly.jpg",
+        "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 13473622
+      }
+    },
+    "spec_sha256": "380594e098236e7247169277445517437bb1f5824744c027bc52031ef60f780f",
+    "registration": {
+      "path": "benchmarks/full-frame-aa-ct-v1/registration-candidate-v1.json",
+      "sha256": "d806e6da43b11b6e2c7b1351ad2793cc269e2eb65ea7953b93e26f1b67dd7e7e"
+    },
+    "registration_acceptance": "not_human_accepted_fullframe",
+    "AA_positive_pixels": 6870518,
+    "AA_inferred_pixels": 2418282,
+    "AA_unknown_pixels": 3212105,
+    "AA_completion_count": 452,
+    "CT_support_components": 8767,
+    "CT_AA_candidate_components": 1123,
+    "CT_unknown_components": 7168,
+    "counts_are_physical_contact_counts": false,
+    "materials_accepted": false,
+    "development_AA_separation_checks": [
+      {
+        "native_points": [
+          [
+            2900,
+            1590
+          ],
+          [
+            2850,
+            1530
+          ]
+        ],
+        "labels": [
+          435,
+          425
+        ],
+        "passed": true,
+        "independent_validation": false
+      }
+    ],
+    "zero_mask_meaning": "no positive support; not human-confirmed material absence",
+    "unknown_mask_semantics": "boundary/threshold uncertainty can overlap positive support",
+    "guard_band_semantics": "working rule, not a measured confidence interval",
+    "code_sha256": {
+      "full_frame_materials.py": "782346e4a83ffdb11c9f53d28d402e1754b37dd205d33f56498780c7d2f4507f",
+      "guided_materials.py": "c5938f781a1fee74ea5aa890d872db1bbf66ea57ca15ff9b3271263224a53e89"
+    }
+  },
+  "manifest_sha256": "66e9391439d80ffd79df0d3df144bd17b303f796b80f95af246a9275ef2a2963",
+  "verification": {
+    "pytest_passed": 265,
+    "targeted_ruff": "passed",
+    "output_hashes": "passed",
+    "static_html_references": "passed",
+    "browser_interaction": "not_tested",
+    "physical_acceptance": "pending"
+  },
+  "known_gaps": [
+    "dark_AA_interior_incomplete",
+    "CT_false_positives_and_misses",
+    "registration_not_human_accepted_fullframe",
+    "majority_CT_ownership_unresolved"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "human_region_classification_review",
+  "review_id": "C03-metal-capacitor-human-review-v1",
+  "date": "2026-10-18",
+  "reviewer": "user",
+  "user_statement": "C03这一排结构是属于金属电容",
+  "reviewed_candidate": {
+    "path": "benchmarks/region-skill-validation-v1/first-observation.json",
+    "sha256": "ff18c6999b585ae97ec13cd8dc1357244a60eb84a3748565fe731c4d324e4571"
+  },
+  "decision": {
+    "region_id": "SE_RGN_C03",
+    "category": "CAP",
+    "device_family": "metal_capacitor",
+    "status": "human_confirmed_regional_classification"
+  },
+  "scope": "C03 upper-edge row belongs to metal capacitors; no new subtype, device count, exact geometry, registration, terminal or net approval",
+  "not_determined": [
+    "MIM/MOM subtype",
+    "unit count and grouping",
+    "plate polarity and capacitance",
+    "exact pixel boundaries and cross-layer correspondence",
+    "terminal mapping and electrical connectivity"
+  ]
+}

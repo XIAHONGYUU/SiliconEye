@@ -35,17 +35,20 @@ def ct_support(image: np.ndarray, *, profile: str = "legacy") -> np.ndarray:
     smooth = cv2.GaussianBlur(gray, (5, 5), 1)
     residual = smooth.astype(float) - cv2.GaussianBlur(smooth, (0, 0), 4).astype(float)
     peaks = ((smooth > 190) & (residual > 18)).astype(np.uint8)
-    count, labels, stats, _ = cv2.connectedComponentsWithStats(peaks)
-    result = np.zeros_like(peaks)
-    for index in range(1, count):
-        _, _, w, h, area = stats[index]
-        shape_ok = (
-            min(w, h) >= 5 and 0.5 < w / h < 2
-            if profile == "legacy"
-            else w >= 3 and h >= 5 and 0.25 <= w / h < 2
-        )
-        if 20 <= area <= 450 and max(w, h) <= 40 and shape_ok:
-            result[labels == index] = 1
+    _, labels, stats, _ = cv2.connectedComponentsWithStats(peaks)
+    # Resolve accepted labels once; per-label full-image scans become prohibitive
+    # on full native photographs while giving the same component selection.
+    _, _, width, height, area = stats.T
+    if profile == "legacy":
+        shape_ok = ((np.minimum(width, height) >= 5)
+                    & (width > 0.5 * height) & (width < 2 * height))
+    else:
+        shape_ok = ((width >= 3) & (height >= 5)
+                    & (width >= 0.25 * height) & (width < 2 * height))
+    accepted = ((area >= 20) & (area <= 450)
+                & (np.maximum(width, height) <= 40) & shape_ok)
+    accepted[0] = False
+    result = accepted[labels].astype(np.uint8)
     return cv2.dilate(result, np.ones((3, 3), np.uint8)).astype(bool)
 
 
