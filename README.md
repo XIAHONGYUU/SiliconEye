@@ -165,3 +165,5 @@ AI观察现可通过[最小显式适配](docs/observation-adapter-v1.md)进入ca
 [器件跨层编号视图](docs/device-index-v1.md)已作为统一包可选输出：选择既有ID可对照各层原生检查窗口、宏观投影和四端表；缺少定位时明确显示未定位。
 
 2026-10-17：已识别可见共栅网络及六处 AA 接入的[最终复核稿 v33](docs/roi2-gate-network-reviewed-v33.md)，最终图稿可从[证据归档](benchmarks/evidence/README.md)恢复。[金属点亮流程 v1](docs/metal-tracing-workflow-v1.md)固化局部对齐、双向分支检查、正向版图推理与验收边界；下一轮先重走检验，再决定 skill 封装。
+
+2026-10-18：当前方向为[顶层设计 v2](docs/architecture/photo-stack-workflow-v2.md)：输入规范化与质量门 → 区域规划 → 可修订分层版图 → 器件/网络联合提取与输出。见[八张照片初查及下一操作](docs/eight-photo-next-step-2026-10-18.md)；暂缓金属 skill 封装。

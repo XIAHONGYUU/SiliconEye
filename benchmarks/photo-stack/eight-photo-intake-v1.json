@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "document_kind": "photo_stack_intake_design_sample",
+  "implementation_status": "design_record_not_runtime_PhotoStack_schema",
+  "sample_id": "test_chip_tile_full_intake_20261018",
+  "chip_id": "test_chip",
+  "scene_id": "tile_full",
+  "identity_evidence": "prior_human_same_chip_delayering_statement_and_reviewed_local_correspondences_not_image_size",
+  "capture_source": "optical_microscope_screen_photographed_by_hand_original_microscope_files_unavailable",
+  "physical_scale": {
+    "status": "unknown",
+    "unit": "px",
+    "legacy_10_px_per_um": "unverified_do_not_use_for_measurement"
+  },
+  "frames": [
+    {
+      "frame_id": "test_chip_tile_full_sub_native",
+      "source": {
+        "layer": "sub",
+        "path": "data/test_chip/tile_full/sub.jpg",
+        "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 13869468
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "existing_project_label_not_new_physical_validation",
+      "semantic_interpretation": "unknown",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_implant_native",
+      "source": {
+        "layer": "implant",
+        "path": "data/test_chip/tile_full/implant.jpg",
+        "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 11259382
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "existing_project_label_not_new_physical_validation",
+      "semantic_interpretation": "unknown",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_aa_native",
+      "source": {
+        "layer": "aa",
+        "path": "data/test_chip/tile_full/aa.jpg",
+        "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 12173200
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "human_confirmed_aa_poly",
+      "semantic_interpretation": "existing_project_layer_identity",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_poly_native",
+      "source": {
+        "layer": "poly",
+        "path": "data/test_chip/tile_full/poly.jpg",
+        "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 13473622
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "human_confirmed_aa_poly",
+      "semantic_interpretation": "existing_project_layer_identity",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_m1_native",
+      "source": {
+        "layer": "m1",
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 12754880
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "existing_project_label_not_new_physical_validation",
+      "semantic_interpretation": "existing_project_layer_identity",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_m2_native",
+      "source": {
+        "layer": "m2",
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 12402247
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "existing_project_label_not_new_physical_validation",
+      "semantic_interpretation": "existing_project_layer_identity",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_m3_native",
+      "source": {
+        "layer": "m3",
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 12141880
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "existing_project_label_not_new_physical_validation",
+      "semantic_interpretation": "existing_project_layer_identity",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    },
+    {
+      "frame_id": "test_chip_tile_full_m4_native",
+      "source": {
+        "layer": "m4",
+        "path": "data/test_chip/tile_full/m4.jpg",
+        "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0",
+        "width": 5712,
+        "height": 4284,
+        "mode": "RGB",
+        "bytes": 12362281
+      },
+      "coordinate_system": {
+        "origin": "top_left",
+        "axes": "x_right_y_down",
+        "unit": "px",
+        "bounds_xyxy_half_open": [
+          0,
+          0,
+          5712,
+          4284
+        ]
+      },
+      "photo_label_status": "existing_project_label_not_new_physical_validation",
+      "semantic_interpretation": "existing_project_layer_identity",
+      "usable_region_status": "not_yet_delineated",
+      "registration_status": "no_full_frame_precision_acceptance"
+    }
+  ],
+  "reference_frame_id": "test_chip_tile_full_aa_native",
+  "reference_frame_status": "proposed_only_no_identity_transform_for_other_frames",
+  "transforms": [],
+  "common_coverage": {
+    "status": "unknown_not_full_rectangular_intersection"
+  },
+  "semantic_layers_to_reconstruct": [
+    "AA",
+    "poly",
+    "CT",
+    "M1",
+    "V1",
+    "M2",
+    "V2",
+    "M3",
+    "V3",
+    "M4"
+  ],
+  "semantic_layer_note": "No separate CT or via photos; visibility and source evidence must be established per region. List is a target inventory, not proof of recoverability.",
+  "quality_gates": {
+    "source_integrity": "pass_decode_and_hash_inventory",
+    "regional_planning": "allowed_with_candidate_labels",
+    "whole_frame_precise_registration": "not_accepted",
+    "pixel_geometry": "not_accepted",
+    "automated_connectivity": "not_accepted"
+  },
+  "next_pilot": {
+    "case_id": "ROI2_finger_pair",
+    "source_windows_ref": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+    "role": "historical_inspection_windows_not_exact_boundaries_or_new_approvals",
+    "initial_layers": [
+      "AA",
+      "poly",
+      "CT",
+      "M1"
+    ],
+    "later_extension": [
+      "V1",
+      "M2"
+    ],
+    "status": "planned_no_new_masks_generated"
+  },
+  "contact_sheet": "docs/assets/eight-layer-contact-sheet-2026-10-18.jpg"
+}
