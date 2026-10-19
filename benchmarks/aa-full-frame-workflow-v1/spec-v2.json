@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "base": {
+    "path": "benchmarks/aa-completion-v1/model-v1.json",
+    "sha256": "6b85e1319c781d6ecfffc92b893fbc6f4e1f6901dc8371d18245d2e5cd2ddb44"
+  },
+  "protected": {
+    "path": "benchmarks/group-constraints-v1/model-v1.json",
+    "sha256": "7e034557241cde58c4a03387fb1ac5ed276c16028b1ead3633f1b2ef624beb99"
+  },
+  "previous_human_review": {
+    "path": "benchmarks/aa-completion-v1/human-review-v2.json",
+    "sha256": "89fea9c80c72d999c70a6872458142ae6a776ab416f7fae4cf5b1c75cbda67c2"
+  },
+  "local_adoption": {
+    "path": "benchmarks/aa-skill-three-task-v1/acceptance-v1.json",
+    "sha256": "cecdce76e92571fae5216875279e5ae25566004efdefa82c5f67bcfe9e6eab88"
+  },
+  "unresolved_observations": {
+    "path": "benchmarks/full-scene-regular-v1/unresolved-AA-v1.json",
+    "sha256": "6c71eb627a282a1d9dc5c25b358a6211363e327678049725ce73468015972148"
+  },
+  "bound_conflicts": {
+    "path": "benchmarks/full-scene-regular-v1/boundary-AA-conflicts-v1.json",
+    "sha256": "471584622802e210156ae959251bdf8ecaf65f6a0308de708069745358e1b039"
+  },
+  "skill": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/skill-under-test.md",
+    "sha256": "b7987921ac1d73effc3a25ffedee792458d51dab0948d6a6bd0d0b5523280d80"
+  },
+  "method": "Reuse full-frame vector geometry; AI-defined scoped corrections, optional existing edge locator; no full-frame model training/inference.",
+  "settings": {
+    "correspondence_residual_limit_px": 0.5,
+    "domain_leak_area_px2": 0.05,
+    "curve_settings": {
+      "blur_x": 31,
+      "blur_y": 5,
+      "curve_sigma": 3,
+      "uncertainty_px": 3,
+      "min_evidence": 1
+    }
+  },
+  "revisions": [
+    {
+      "id": "FIX-01",
+      "object_id": "AA2-UPPER-COMPLEX-GUARD-AA-0",
+      "kind": "canonical_rebuild",
+      "part": {
+        "id": "AA",
+        "kind": "compound_enclosure",
+        "outer_boxes": [
+          [
+            0,
+            1224,
+            5212,
+            1358
+          ],
+          [
+            2264,
+            1299,
+            2436,
+            1899
+          ],
+          [
+            2487,
+            1353,
+            3290,
+            1815
+          ],
+          [
+            0,
+            1024,
+            5220,
+            1216
+          ]
+        ],
+        "inner_boxes": [
+          [
+            0,
+            1240,
+            5198,
+            1344
+          ],
+          [
+            2278,
+            1313,
+            2422,
+            1885
+          ],
+          [
+            2501,
+            1367,
+            3276,
+            1801
+          ],
+          [
+            0,
+            1040,
+            5204,
+            1196
+          ]
+        ]
+      },
+      "expected_components": 2,
+      "allowed_native_bbox": [
+        0,
+        1170,
+        5220,
+        1275
+      ],
+      "reason": "F01-F04: preserve two neighboring AA tracks; old compound rectangles overlapped and joined them.",
+      "edge_locator": {
+        "case": {
+          "id": "UPPER-DOUBLE",
+          "native_bbox": [
+            0,
+            1165,
+            5220,
+            1275
+          ],
+          "x_span": [
+            0,
+            5190
+          ],
+          "semantics": "User confirmed two adjacent AA tracks were merged. AI identifies two photo-bright bands, edge locator measures their boundaries only.",
+          "curves": [
+            {
+              "id": "first_top",
+              "kind": "rise",
+              "search_native_y": [
+                1178,
+                1218
+              ]
+            },
+            {
+              "id": "first_bottom",
+              "kind": "fall",
+              "search_native_y": [
+                1198,
+                1226
+              ]
+            },
+            {
+              "id": "second_top",
+              "kind": "rise",
+              "search_native_y": [
+                1210,
+                1248
+              ]
+            },
+            {
+              "id": "second_bottom",
+              "kind": "fall",
+              "search_native_y": [
+                1226,
+                1270
+              ]
+            }
+          ],
+          "regions": []
+        },
+        "canonical_anchor_y": [
+          1170,
+          1196,
+          1216,
+          1224,
+          1240,
+          1275
+        ],
+        "curve_ids": [
+          null,
+          "first_top",
+          "first_bottom",
+          "second_top",
+          "second_bottom",
+          null
+        ],
+        "repair_radius_px": 5
+      },
+      "question": "新描出的两条AA轮廓是否贴合，端部过渡是否合理？两条隔离的语义沿用原裁决。"
+    },
+    {
+      "id": "FIX-02",
+      "object_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "kind": "canonical_cut",
+      "cut_boxes": [
+        [
+          0,
+          2295,
+          2084,
+          2311
+        ]
+      ],
+      "expected_components": 1,
+      "allowed_native_bbox": [
+        0,
+        2295,
+        2084,
+        2311
+      ],
+      "reason": "F05-F06: user says no AA guard between the two large MOS; remove only the template transverse guard, preserve outer enclosure and MOS material.",
+      "question": null
+    },
+    {
+      "id": "FIX-03",
+      "object_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+      "kind": "canonical_cut",
+      "cut_boxes": [
+        [
+          0,
+          3308,
+          890,
+          3322
+        ]
+      ],
+      "expected_components": 1,
+      "allowed_native_bbox": [
+        0,
+        3308,
+        890,
+        3322
+      ],
+      "reason": "F09: user says no guard between lower-left large MOS; remove only template crossbar.",
+      "question": null
+    },
+    {
+      "id": "FIX-04",
+      "object_id": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+      "kind": "approved_polygon",
+      "geometry": {
+        "path": "docs/assets/aa-skill-three-task-v1/T2-B1-candidate.json",
+        "sha256": "2079a172283bf22fa4fc1cdb4a45f7f3f2a7a77a7cb8464bebea4646c72c0906"
+      },
+      "review": {
+        "path": "benchmarks/aa-skill-three-task-v1/human-review-v1.json",
+        "sha256": "310e0e310e71650f2d5a80c9e8f55013559bf9faeb3996fb80422b259206759b"
+      },
+      "axes": [
+        "H",
+        "V",
+        "H",
+        "V",
+        "H",
+        "V"
+      ],
+      "allowed_native_bbox": [
+        1820,
+        3110,
+        2405,
+        3190
+      ],
+      "reason": "User confirmed blue B1 fits AA better; integrate that exact native contour into the existing full-frame working version.",
+      "question": null
+    },
+    {
+      "id": "FIX-05",
+      "object_id": "AA-W05",
+      "kind": "source_correspondence",
+      "allowed_native_bbox": [
+        3200,
+        3370,
+        4780,
+        3840
+      ],
+      "reason": "F11 / reviewed S05 two-ring gap: use the object recorded native_corners and native_hole_corners instead of a conflicting global back-projection; layout geometry is unchanged.",
+      "question": "仅核查本轮源图对应的整体位置；S05双环局部身份和间隙已确认，不再询问。"
+    },
+    {
+      "id": "FIX-06",
+      "object_id": "AA-W07",
+      "kind": "source_correspondence",
+      "allowed_native_bbox": [
+        3150,
+        1900,
+        5350,
+        3500
+      ],
+      "reason": "F11 resistor outer ring correspondence: retain original native corner observations and hole; do not fill resistor interior or remove its perimeter.",
+      "question": null
+    }
+  ],
+  "review_windows": [
+    {
+      "id": "D01",
+      "bbox": [
+        0,
+        1100,
+        5300,
+        1390
+      ],
+      "revisions": [
+        "FIX-01"
+      ],
+      "state": "new_edge_candidate_existing_separation_decision"
+    },
+    {
+      "id": "D02",
+      "bbox": [
+        0,
+        1850,
+        2180,
+        2750
+      ],
+      "revisions": [
+        "FIX-02"
+      ],
+      "state": "known_guard_removal_not_new_identity_question"
+    },
+    {
+      "id": "D03",
+      "bbox": [
+        0,
+        2710,
+        1720,
+        3950
+      ],
+      "revisions": [
+        "FIX-03"
+      ],
+      "state": "known_guard_removal_and_unresolved_F09_ring_shape"
+    },
+    {
+      "id": "D04",
+      "bbox": [
+        1650,
+        2940,
+        2550,
+        3340
+      ],
+      "revisions": [
+        "FIX-04"
+      ],
+      "state": "human_accepted_local_boundary_do_not_reask"
+    },
+    {
+      "id": "D05",
+      "bbox": [
+        3100,
+        3270,
+        4800,
+        3630
+      ],
+      "revisions": [
+        "FIX-05",
+        "FIX-06"
+      ],
+      "state": "source_correspondence_repair_existing_two_ring_relationship"
+    }
+  ],
+  "remaining_decisions": [
+    {
+      "id": "Q-F09-RING",
+      "state": "needs_precise_object_localization",
+      "bbox": [
+        850,
+        2680,
+        1720,
+        3200
+      ],
+      "prior_feedback": "右侧中间环的结构错了",
+      "question": "原F09右侧中间环的结构问题具体指外环R1、内环R2，还是两环之间的连接？仅定位旧问题，不重问AA身份。"
+    }
+  ],
+  "release_criteria": {
+    "source_and_coordinates": "locked and per-object correspondence, no blind global overlay",
+    "scope_nonregression": "all non-target objects byte-equivalent; approved blue native contour identical",
+    "geometry": "all positive valid orthogonal, no new overlaps; retained AA objects unchanged",
+    "semantics": "known false bars removed, neighboring tracks separated; AI checks all full-frame views",
+    "human": "new ambiguous boundaries localized, old approved facts reused; full-frame completeness requires evidence",
+    "reproducibility": "one spec entry, no case coordinates in code, outputs/negative tests restored",
+    "status": "experimental until these gates are actually satisfied"
+  },
+  "restrictions": [
+    "No CT or net changes",
+    "No new ML training or remote models",
+    "Original models/reviews and photo bytes immutable",
+    "Do not claim pixel accuracy, runtime improvement or whole-frame acceptance from geometry PASS"
+  ],
+  "revision_note": "Retry only unsupported source-edge columns within five pixels of neighboring supported traces. No layout topology or material role change; no training.",
+  "inspection_windows": [
+    {
+      "id": "F01",
+      "bbox": [
+        0,
+        185,
+        1428,
+        1551
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F02",
+      "bbox": [
+        1428,
+        185,
+        2856,
+        1551
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F03",
+      "bbox": [
+        2856,
+        185,
+        4284,
+        1551
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F04",
+      "bbox": [
+        4284,
+        185,
+        5712,
+        1551
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F05",
+      "bbox": [
+        0,
+        1551,
+        1428,
+        2918
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F06",
+      "bbox": [
+        1428,
+        1551,
+        2856,
+        2918
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F07",
+      "bbox": [
+        2856,
+        1551,
+        4284,
+        2918
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F08",
+      "bbox": [
+        4284,
+        1551,
+        5712,
+        2918
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F09",
+      "bbox": [
+        0,
+        2918,
+        1428,
+        4284
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F10",
+      "bbox": [
+        1428,
+        2918,
+        2856,
+        4284
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F11",
+      "bbox": [
+        2856,
+        2918,
+        4284,
+        4284
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    },
+    {
+      "id": "F12",
+      "bbox": [
+        4284,
+        2918,
+        5712,
+        4284
+      ],
+      "state": "AI全幅巡检；复用旧审查范围，不重启人审"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tests": "334 passed",
+  "ruff": true,
+  "skill_validator": true,
+  "input_and_dependency_locks": true,
+  "manifest": true,
+  "all_nine_masks_identical_to_first_run": true,
+  "all_topology_gates_recomputed": true,
+  "tri_state_and_domain_verified": true,
+  "archive_restore": true,
+  "page_JS_syntax": true,
+  "browser_interaction_tested": false,
+  "scope_gate_revision": "Significant boundary neighbors separated from target components; no segmentation changed to pass gates.",
+  "dense_ground_truth_available": false,
+  "new_segmentation_human_accepted": false
+}

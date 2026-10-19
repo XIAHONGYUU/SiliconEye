@@ -1,0 +1,29 @@
+{
+  "tests": "17 passed",
+  "ruff": "passed",
+  "browser_interaction": "not_automatically_tested",
+  "scope": "upper F01-F04, U01-U09 only",
+  "review_segments": 27,
+  "dedicated_ambiguity_views": 1,
+  "raw_match_candidates": 316,
+  "AI_rejected_matches": 11,
+  "candidate_native_bodies": 305,
+  "previous_template_slots": 269,
+  "already_accepted_bodies": 8,
+  "new_unmerged_source_observations": 297,
+  "all_666_parent_objects_unchanged": true,
+  "all_accepted_objects_equal": true,
+  "S03_pair_identity_and_outlines_retained": true,
+  "native_candidate_polygons_valid_and_nonoverlapping_within_rows": true,
+  "AA_topology_hypothesis_assignments": 81,
+  "AA_design_relationship_gate": "pending_not_run_for_new_inventory",
+  "GDS_and_physical_DRC": "not_claimed",
+  "unknown_wide_rectangle": "Q01 excluded_from_count_and_not_classified_as_background",
+  "cropped_left_edge": "unknown_not_completed",
+  "sources_sha256_verified": true,
+  "code_sha256": {
+    "silicon_eye/poly_gate_matching.py": "14f3af04b57a4fcff1f9ec622cb4de903fddb8467a344b344f31455e23f08518",
+    "silicon_eye/poly_local_revision.py": "91075519dc9f20920345bd34f38ee13882103de6368253d15226de854a9d16c3"
+  },
+  "development_runs": "matching and batch a/b are implementation iterations, not independent accuracy experiments"
+}

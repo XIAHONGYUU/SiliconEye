@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "status": "adopted_local_working_geometry_not_fullframe_complete",
+  "source": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+  },
+  "native_canvas_wh": [
+    5712,
+    4284
+  ],
+  "objects": [
+    {
+      "id": "V3_G1",
+      "native_outline": [
+        [
+          2619.0,
+          1390.5
+        ],
+        [
+          3059.0,
+          1390.5
+        ],
+        [
+          3059.0,
+          1399.5
+        ],
+        [
+          2619.0,
+          1399.5
+        ]
+      ],
+      "layout_outline": [
+        [
+          2619.0,
+          1390.0
+        ],
+        [
+          3059.0,
+          1390.0
+        ],
+        [
+          3059.0,
+          1400.0
+        ],
+        [
+          2619.0,
+          1400.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "human_material_review_and_local_topology_review",
+      "material_boundary": "AI_candidate_not_pixel_truth",
+      "native_to_layout": [
+        [
+          1.0000000000000002,
+          -1.1590308410179704e-30,
+          -2.021494335560887e-13
+        ],
+        [
+          -3.087005821106224e-16,
+          1.1111111111111112,
+          -154.99999999999895
+        ],
+        [
+          2.52323414687536e-20,
+          -3.7088777178435177e-34,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration",
+      "material": "poly",
+      "approval": "human_accepted_displayed_body_position_and_width",
+      "approval_source": "benchmarks/poly-reconstruction-v1/human-review-v2.json",
+      "scope": "horizontal_visible_body_only_existing_unknowns_preserved"
+    },
+    {
+      "id": "V3_G2",
+      "native_outline": [
+        [
+          2619.0,
+          1416.5
+        ],
+        [
+          3059.0,
+          1416.5
+        ],
+        [
+          3059.0,
+          1428.5
+        ],
+        [
+          2619.0,
+          1428.5
+        ]
+      ],
+      "layout_outline": [
+        [
+          2619.0,
+          1416.0
+        ],
+        [
+          3059.0,
+          1416.0
+        ],
+        [
+          3059.0,
+          1428.0
+        ],
+        [
+          2619.0,
+          1428.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "human_material_review_and_local_topology_review",
+      "material_boundary": "AI_candidate_not_pixel_truth",
+      "native_to_layout": [
+        [
+          0.9999999999999942,
+          -5.899733843122489e-29,
+          8.080713034078205e-12
+        ],
+        [
+          -1.2227528285445791e-15,
+          0.999999999999997,
+          -0.49999999999630845
+        ],
+        [
+          -1.008636566524399e-18,
+          -1.9458931190541477e-32,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration",
+      "material": "poly",
+      "approval": "human_accepted_displayed_body_position_and_width",
+      "approval_source": "benchmarks/poly-reconstruction-v1/human-review-v2.json",
+      "scope": "horizontal_visible_body_only_existing_unknowns_preserved"
+    },
+    {
+      "id": "R2_poly_Q1_support",
+      "device_id": "R2_Q1",
+      "type": "adjacent_vertical_MOS_gate_finger",
+      "layout_outline": [
+        [
+          1742.0,
+          2706.0
+        ],
+        [
+          1778.0,
+          2706.0
+        ],
+        [
+          1778.0,
+          2840.0
+        ],
+        [
+          1742.0,
+          2840.0
+        ]
+      ],
+      "native_to_layout": [
+        [
+          1.0270270270271644,
+          -0.05405405405397656,
+          102.32432432409912
+        ],
+        [
+          0.028743028743032445,
+          1.0060060060062692,
+          -67.242385242757
+        ],
+        [
+          -1.5797219032299619e-19,
+          4.74965506339166e-17,
+          1.0
+        ]
+      ],
+      "native_outline": [
+        [
+          1739,
+          2707
+        ],
+        [
+          1774,
+          2706
+        ],
+        [
+          1781,
+          2839
+        ],
+        [
+          1746,
+          2840
+        ]
+      ],
+      "material": "poly",
+      "approval": "human_accepted_displayed_body_and_terminal_expression",
+      "approval_source": "benchmarks/poly-vertical-reassessment-v3/human-review-v1.json",
+      "scope": "displayed_vertical_Q1_Q2",
+      "omitted_extensions_or_leads": "none_reported_by_human_in_scope",
+      "precise_pixel_edges": "not_measured"
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "device_id": "R2_Q2",
+      "type": "adjacent_vertical_MOS_gate_finger",
+      "layout_outline": [
+        [
+          1798.0,
+          2706.0
+        ],
+        [
+          1834.0,
+          2706.0
+        ],
+        [
+          1834.0,
+          2838.0
+        ],
+        [
+          1798.0,
+          2838.0
+        ]
+      ],
+      "native_to_layout": [
+        [
+          1.0270153447159962,
+          -0.05446293494715065,
+          101.88415820181397
+        ],
+        [
+          0.028528204020151018,
+          0.9984871406957817,
+          -47.11432893889975
+        ],
+        [
+          9.556721307471569e-17,
+          -5.562609432318089e-17,
+          1.0
+        ]
+      ],
+      "native_outline": [
+        [
+          1795,
+          2706
+        ],
+        [
+          1830,
+          2705
+        ],
+        [
+          1837,
+          2837
+        ],
+        [
+          1802,
+          2838
+        ]
+      ],
+      "material": "poly",
+      "approval": "human_accepted_displayed_body_and_terminal_expression",
+      "approval_source": "benchmarks/poly-vertical-reassessment-v3/human-review-v1.json",
+      "scope": "displayed_vertical_Q1_Q2",
+      "omitted_extensions_or_leads": "none_reported_by_human_in_scope",
+      "precise_pixel_edges": "not_measured"
+    }
+  ],
+  "coordinates": "native_polygons_in_full_photo_frame; layouts_are_local_regularized_correspondences_not_joint_registered_layer",
+  "outside_accepted_objects": "unprocessed_or_unknown_not_non_POLY",
+  "immutable_history": [
+    "benchmarks/poly-reconstruction-v1/report-v1.json",
+    "benchmarks/poly-vertical-reassessment-v3/report-v1.json"
+  ],
+  "CT_unknowns_and_old_topology_unknowns": "preserved_no_relabeling",
+  "fullframe_next": "AI理解全幅器件与AA/POLY上下文后生成完整主体候选；保留四个已审对象；算法只修细节；只提交新增歧义",
+  "fullframe_extraction_complete": false,
+  "POLY_skill_packaged": false
+}

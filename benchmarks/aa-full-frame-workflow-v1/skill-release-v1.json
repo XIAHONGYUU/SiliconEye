@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "version": "1.0.0",
+  "kind": "repository_skill_human_in_loop_AA_workflow",
+  "scope": "Current-chip evidence-backed AI judgment, regular geometry, scoped full-frame continuation and review; no universal automatic extraction claim.",
+  "skill_files": [
+    {
+      "path": "skills/silicon-eye-aa-reconstruction/SKILL.md",
+      "sha256": "eeaedc3dd3117e918f32ef0388ec8da7b4959afd42f1476ca399194c347f5b2d"
+    },
+    {
+      "path": "skills/silicon-eye-aa-reconstruction/agents/openai.yaml",
+      "sha256": "13168f1d6d66e7f99c398448306e55cc119052e1a0fdda9103d3fd40e6af5b9f"
+    },
+    {
+      "path": "skills/silicon-eye-aa-reconstruction/references/full-frame-validation.md",
+      "sha256": "18d349887f84e9a7cbcd15f0fc1596f41bb275e15fe18948eeda5daafa71f9d5"
+    },
+    {
+      "path": "skills/silicon-eye-aa-reconstruction/references/quality-contract.md",
+      "sha256": "431cfdd5f152ffd3f53c2ca20091d6e95092068b9e12a3e67f490659fbf95ec7"
+    },
+    {
+      "path": "skills/silicon-eye-aa-reconstruction/references/tool-contract.md",
+      "sha256": "099228843f794cca5263984b07625cf70f3b6dc3b7767bc52332eb3c7fd8b097"
+    }
+  ],
+  "runtime_source": {
+    "path": "silicon_eye/aa_layer_revision.py",
+    "sha256": "64887488a3562678fcca66cde232645241cb723238da88ebff65867ee2095f60"
+  },
+  "tests": {
+    "path": "tests/test_aa_layer_revision.py",
+    "sha256": "9ee1598c8c98150b1635ed2a89840aa0c046bc2d38f5d7c4ec748418e89a6791"
+  },
+  "workflow": {
+    "path": "docs/architecture/aa-extraction-workflow-v9.md",
+    "sha256": "a50e18831e5fb59390c89f0e58e624e3f64203b57e3a8676fefe4495c0e4bf78"
+  },
+  "acceptance": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/acceptance-v1.json",
+    "sha256": "09b04acc83d9c487824e0b10c71c2fb23eaf1278ed3097cd27af55bfc23a6a5e"
+  },
+  "prior_software_verification": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/verification-v1.json",
+    "sha256": "ad0ea2023e5ef069a920a0d30d6bb7441df03e93e1422b1e7fc1c97e69b6f56f"
+  },
+  "tested_instruction_snapshot": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/skill-under-test.md",
+    "sha256": "b7987921ac1d73effc3a25ffedee792458d51dab0948d6a6bd0d0b5523280d80"
+  },
+  "global_installation": false,
+  "independent_agent_evaluation": false,
+  "wholeframe_dense_material_acceptance": false,
+  "release_change_scope": "Documentation, recorded human decision and capability scope; no runtime geometry/code changes in this packaging turn."
+}

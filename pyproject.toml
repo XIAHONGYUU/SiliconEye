@@ -59,6 +59,9 @@ build-backend = "setuptools.build_meta"
 where = ["."]
 include = ["silicon_eye*"]
 
+[tool.setuptools.package-data]
+silicon_eye = ["poly_full_frame_review.html"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py311"

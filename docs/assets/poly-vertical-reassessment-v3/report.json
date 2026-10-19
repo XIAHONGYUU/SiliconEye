@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "method": "current_agent_visual_reassessment_with_wide_native_context; script_only_draws_declared_candidates",
+  "baseline": {
+    "path": "benchmarks/poly-reconstruction-v1/baseline-v1.json",
+    "sha256": "361e28987bd89c46c0f577c002e7b802e3135b2c2a37b3585b8d2b3ab0c36cc3"
+  },
+  "human_feedback": {
+    "path": "benchmarks/poly-reconstruction-v1/human-review-v2.json",
+    "sha256": "566dcb28993bb89cdb8ad06076e41aaf38a31ece6b4e10b0ca4d96dfe0c7ed07"
+  },
+  "sources": {
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    }
+  },
+  "windows": {
+    "poly_context": [
+      1520,
+      2510,
+      2090,
+      3000
+    ],
+    "poly_detail": [
+      1640,
+      2600,
+      2010,
+      2940
+    ],
+    "aa_context": [
+      1580,
+      2660,
+      2200,
+      3150
+    ]
+  },
+  "objects": [
+    {
+      "id": "R2_poly_Q1_support",
+      "device_id": "R2_Q1",
+      "type": "adjacent_vertical_MOS_gate_finger",
+      "type_status": "consistent_with_existing_reviewed_device_identity",
+      "old_B1_native_outline": [
+        [
+          1747.945945945946,
+          2730.0
+        ],
+        [
+          1773.1418918918919,
+          2730.0
+        ],
+        [
+          1776.1418918918919,
+          2804.0
+        ],
+        [
+          1750.945945945946,
+          2804.0
+        ]
+      ],
+      "observed_outline_native_xy": [
+        [
+          1739,
+          2707
+        ],
+        [
+          1774,
+          2706
+        ],
+        [
+          1781,
+          2839
+        ],
+        [
+          1746,
+          2840
+        ]
+      ],
+      "edge_axes": [
+        "H",
+        "V",
+        "H",
+        "V"
+      ],
+      "geometry_status": "AI_candidate_pending_human_review",
+      "interpretation": "wider_and_longer_visible_gate_body_candidate_not_complete_terminal_routing",
+      "end_zones_native_xyxy": [
+        [
+          1734,
+          2697,
+          1781,
+          2721
+        ],
+        [
+          1736,
+          2820,
+          1791,
+          2865
+        ]
+      ],
+      "uncertain": [
+        "exact_left_right_edges",
+        "top_transition",
+        "bottom_contact_or_flare_shape",
+        "poly_extensions_outside_body"
+      ],
+      "evidence": [
+        "continuous_broad_strip_between_CT_columns_in_poly_native",
+        "same_orientation_and_repeat_as_adjacent_fingers",
+        "AA_image_contains_corresponding_vertical_channel_pattern_qualitative_only"
+      ],
+      "not_evidence": [
+        "screen_grid_is_not_poly_array",
+        "CT_bright_dot_does_not_define_poly_outer_boundary",
+        "old_core_is_not_complete_gate"
+      ],
+      "layout_outline": [
+        [
+          1742.0,
+          2706.0
+        ],
+        [
+          1778.0,
+          2706.0
+        ],
+        [
+          1778.0,
+          2840.0
+        ],
+        [
+          1742.0,
+          2840.0
+        ]
+      ],
+      "native_to_layout": [
+        [
+          1.0270270270271644,
+          -0.05405405405397656,
+          102.32432432409912
+        ],
+        [
+          0.028743028743032445,
+          1.0060060060062692,
+          -67.242385242757
+        ],
+        [
+          -1.5797219032299619e-19,
+          4.74965506339166e-17,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "device_id": "R2_Q2",
+      "type": "adjacent_vertical_MOS_gate_finger",
+      "type_status": "consistent_with_existing_reviewed_device_identity",
+      "old_B1_native_outline": [
+        [
+          1802.9444444444443,
+          2730.0
+        ],
+        [
+          1823.7777777777778,
+          2730.0
+        ],
+        [
+          1827.7777777777778,
+          2802.0
+        ],
+        [
+          1806.9444444444443,
+          2802.0
+        ]
+      ],
+      "observed_outline_native_xy": [
+        [
+          1795,
+          2706
+        ],
+        [
+          1830,
+          2705
+        ],
+        [
+          1837,
+          2837
+        ],
+        [
+          1802,
+          2838
+        ]
+      ],
+      "edge_axes": [
+        "H",
+        "V",
+        "H",
+        "V"
+      ],
+      "geometry_status": "AI_candidate_pending_human_review",
+      "interpretation": "wider_and_longer_visible_gate_body_candidate_not_complete_terminal_routing",
+      "end_zones_native_xyxy": [
+        [
+          1790,
+          2697,
+          1837,
+          2721
+        ],
+        [
+          1792,
+          2820,
+          1847,
+          2865
+        ]
+      ],
+      "uncertain": [
+        "exact_left_right_edges",
+        "top_transition",
+        "bottom_contact_or_flare_shape",
+        "poly_extensions_outside_body"
+      ],
+      "evidence": [
+        "continuous_broad_strip_between_CT_columns_in_poly_native",
+        "same_orientation_and_repeat_as_adjacent_fingers",
+        "AA_image_contains_corresponding_vertical_channel_pattern_qualitative_only"
+      ],
+      "not_evidence": [
+        "screen_grid_is_not_poly_array",
+        "CT_bright_dot_does_not_define_poly_outer_boundary",
+        "old_core_is_not_complete_gate"
+      ],
+      "layout_outline": [
+        [
+          1798.0,
+          2706.0
+        ],
+        [
+          1834.0,
+          2706.0
+        ],
+        [
+          1834.0,
+          2838.0
+        ],
+        [
+          1798.0,
+          2838.0
+        ]
+      ],
+      "native_to_layout": [
+        [
+          1.0270153447159962,
+          -0.05446293494715065,
+          101.88415820181397
+        ],
+        [
+          0.028528204020151018,
+          0.9984871406957817,
+          -47.11432893889975
+        ],
+        [
+          9.556721307471569e-17,
+          -5.562609432318089e-17,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "layout_unit": "relative_poly_layout_pixel_not_um",
+  "AA_to_POLY_projection": false,
+  "AA_channel_relation": "qualitative_context_not_fine_registration_or_new_AA_contour",
+  "new_net_or_CT_assignments": false,
+  "horizontal_approved_geometry_changed": false,
+  "new_geometry_adopted": false,
+  "questions": [
+    "Q1：按两条竖向MOS栅指的主体及端部过渡来表达，是否合理？不重问已审POLY身份。",
+    "Q2：蓝色新轮廓的左右范围、上下长度是否已接近实际？如仍偏小，请指出方向。",
+    "Q3：橙色上下端过渡范围是否合理；是否还有明显遗漏的扩宽/引出？具体连接不在本轮裁决。"
+  ],
+  "status": "AI_geometry_candidate_pending_human_review",
+  "technical_checks": "source_locks_valid_HV_geometry_no_overlap_old_core_containment",
+  "completeness": "broader_body_hypothesis_end_transitions_still_unknown",
+  "inference": "visual_AI_not_algorithm_detection",
+  "code_sha256": "49142089f12c959ed91d0972ebe4422a7422f851c44988750b6f9de2f87c0131",
+  "spec_sha256": "b0076c184fbad97564c65a372a6d37795abf2ade7ed61d20e6642d76c34b7fb2"
+}

@@ -1,0 +1,116 @@
+{
+  "id": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+  "layer": "AA",
+  "primitive": "orthogonal_polygon",
+  "outer_xy": [
+    [
+      1900.7455,
+      3160.9067
+    ],
+    [
+      2384.3991,
+      3160.9067
+    ],
+    [
+      2384.3991,
+      3131.8726
+    ],
+    [
+      2428.6693,
+      3131.8726
+    ],
+    [
+      2428.6693,
+      3107.856
+    ],
+    [
+      1900.7455,
+      3107.856
+    ]
+  ],
+  "holes_xy": [],
+  "outer_xyxy": [
+    1900.7455,
+    3107.856,
+    2428.6693,
+    3160.9067
+  ],
+  "hole_xyxy": null,
+  "status": "candidate",
+  "dimension_status": "relative_layout_units_not_um",
+  "electrical_connection": "unknown",
+  "structure_group": "LOWER-MOS-GRID",
+  "revision_role": "AA_only_structural_completion",
+  "source_observation": {
+    "id": "STRIP-UL",
+    "kind": "polygon",
+    "outer": [
+      [
+        1835,
+        3124
+      ],
+      [
+        2388,
+        3124
+      ],
+      [
+        2388,
+        3148
+      ],
+      [
+        2342,
+        3148
+      ],
+      [
+        2342,
+        3177
+      ],
+      [
+        1835,
+        3177
+      ]
+    ],
+    "holes": []
+  },
+  "source_photo": {
+    "layer": "aa",
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "width": 5712,
+    "height": 4284,
+    "mode": "RGB",
+    "bytes": 12173200
+  },
+  "evidence": "F10/F11 missing MOS AA, guard network and isolated AA strips",
+  "physical_continuation": "unknown_outside_photo",
+  "source_state": "AI_observation_not_human_confirmed",
+  "source_geometry": {
+    "outer_xy": [
+      [
+        1840.7503698541336,
+        3179.0774815422155
+      ],
+      [
+        2346.2192208622228,
+        3174.0918297473313
+      ],
+      [
+        2345.9439760485197,
+        3145.016432717202
+      ],
+      [
+        2391.7811683284376,
+        3144.5663872741184
+      ],
+      [
+        2391.5658884083796,
+        3120.4909327197643
+      ],
+      [
+        1839.9389375803455,
+        3125.886407800196
+      ]
+    ],
+    "holes_xy": []
+  }
+}

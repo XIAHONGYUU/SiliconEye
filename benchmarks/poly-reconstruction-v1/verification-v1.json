@@ -1,0 +1,21 @@
+{
+  "status": "technical_checks_pass_new_geometry_human_review_pending",
+  "tests": "35 passed",
+  "ruff": "passed",
+  "frozen_references_verified": 15,
+  "AA_unchanged": true,
+  "old_POLY_and_unknown_masks_unchanged": true,
+  "generated_manifest_verified": true,
+  "native_to_layout_max_corner_error_px": 5.4687393003405305e-05,
+  "orthogonal_edges_and_no_pair_overlap": "passed",
+  "unknown_states_preserved": "passed",
+  "page_resources_and_JS_syntax": "passed",
+  "browser_interaction": "not_automatically_tested",
+  "archive": "benchmarks/evidence/poly-reconstruction-v1d-evidence.zip",
+  "archive_sha256": "4be6376fb421b6c7de7457c1e3f549ff3c3f36812dc1dbe1bcfc5e2e3040557d",
+  "archive_files_restored_and_hash_checked": 45,
+  "independent_physical_cases": 2,
+  "views": 3,
+  "accuracy_gain": "not_established_pending_review",
+  "dense_fullframe_POLY": "not_started"
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "human_review": {
+    "path": "benchmarks/aa-context-review-v1/human-context-review-v1.json",
+    "sha256": "abf104d5ef6613127d2d52ec346d66cf84e4b0750fc0b0e97d0e1fe7d65f3fb2"
+  },
+  "clarification": {
+    "path": "benchmarks/aa-context-review-v1/Q4-scope-clarification-v1.json",
+    "sha256": "25eedc3d8cc32e1019b83048b5fd69171ebcc3f30535487a0c815c10b127de39"
+  },
+  "baseline_manifest": {
+    "path": "benchmarks/aa-scribble-comparison-v1/manifest-v1.json",
+    "sha256": "5a0b1c80577586d721837ad24427845e57fd42304581966370b2a53d309d11ca"
+  },
+  "settings": {
+    "blur_x": 31,
+    "blur_y": 5,
+    "curve_sigma": 3,
+    "uncertainty_px": 3,
+    "min_evidence": 1
+  },
+  "cases": [
+    {
+      "id": "S05",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "x_span": [
+        3420,
+        3980
+      ],
+      "semantics": "Existing human context constraints; boundary search bands AI hypotheses",
+      "curves": [
+        {
+          "id": "ring_inner",
+          "kind": "rise",
+          "search_native_y": [
+            3398,
+            3422
+          ]
+        },
+        {
+          "id": "ring_outer",
+          "kind": "fall",
+          "search_native_y": [
+            3420,
+            3440
+          ]
+        },
+        {
+          "id": "gap_valley",
+          "kind": "valley",
+          "search_native_y": [
+            3428,
+            3442
+          ]
+        },
+        {
+          "id": "mos_top",
+          "kind": "rise",
+          "search_native_y": [
+            3460,
+            3480
+          ]
+        }
+      ],
+      "regions": [
+        {
+          "material": 0,
+          "above": "ring_inner",
+          "margin": 3
+        },
+        {
+          "material": 1,
+          "between": [
+            "ring_inner",
+            "ring_outer"
+          ],
+          "margin": 3
+        },
+        {
+          "material": 0,
+          "around": "gap_valley",
+          "radius": 1
+        },
+        {
+          "material": 1,
+          "below": "mos_top",
+          "margin": 3,
+          "censored_at_crop": true
+        }
+      ],
+      "human_check_source": {
+        "path": "benchmarks/aa-prompted-comparison-v1/spec-v4.json",
+        "sha256": "3f7daca820e46f42a824cbf477754d06b14ea72d15f1f754263d2d0fe69e0244"
+      },
+      "comparison_overlay": {
+        "path": "runs/aa-scribble-comparison-v1b/S05/rf_texture-20261018-overlay.png",
+        "sha256": "72cb8b8a1f5f868bacee78502a04ad9275e694264e50c078ca7c39c4d6011444"
+      },
+      "review_question": "电阻内部非AA与外围AA横条是否分清，间隙是否保留，暗AA内部是否完整？未知过渡带是否合理？下方未定亮暗条带仍未补画。"
+    },
+    {
+      "id": "S02",
+      "native_bbox": [
+        900,
+        2190,
+        1550,
+        2420
+      ],
+      "x_span": [
+        930,
+        1520
+      ],
+      "semantics": "AI-only transfer hypothesis: two AA interiors separated by visible dark gap. Human material review pending.",
+      "curves": [
+        {
+          "id": "upper_edge",
+          "kind": "fall",
+          "search_native_y": [
+            2265,
+            2300
+          ]
+        },
+        {
+          "id": "lower_edge",
+          "kind": "rise",
+          "search_native_y": [
+            2310,
+            2350
+          ]
+        }
+      ],
+      "regions": [
+        {
+          "material": 1,
+          "above": "upper_edge",
+          "margin": 3,
+          "censored_at_crop": true
+        },
+        {
+          "material": 0,
+          "between": [
+            "upper_edge",
+            "lower_edge"
+          ],
+          "margin": 3
+        },
+        {
+          "material": 1,
+          "below": "lower_edge",
+          "margin": 3,
+          "censored_at_crop": true
+        }
+      ],
+      "review_question": "两块AA内部与中间非AA间隙是否认对？此窗口身份及精确边界未审，非新芯片盲测。"
+    }
+  ],
+  "restrictions": [
+    "Not an automatic material recognizer: AI selects semantic regions and bounded edge searches.",
+    "All geometry inferred and pending review, including accepted material cores.",
+    "No majority fusion, dilation, rectangle clearing, GDS export or CT changes.",
+    "Unknown is a state, never silently scored as background.",
+    "New S02 has appeared in earlier algorithm exploration; transfer across workflow windows, not blind data."
+  ]
+}

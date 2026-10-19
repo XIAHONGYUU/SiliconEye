@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "model": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "human_review": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/human-review-v1.json",
+    "sha256": "ca7ed4f76d37011aa20d6d4b087de35b0b60c3a0e1c6705dff654496ca7b19fb"
+  },
+  "native_model_intersection_area": 0.0,
+  "native_model_min_distance": 4.000000000000001,
+  "layout_intersection_area": 0.0,
+  "layout_min_distance_relative_units": 3.66852547348617,
+  "vertical_cross_sections": [
+    {
+      "native_y": 2800,
+      "R1_intersection": "MULTILINESTRING ((930 2800, 948 2800), (1651.0000000000002 2800, 1665.0000000000002 2800))",
+      "R2_intersection": "MULTILINESTRING ((952 2800, 964 2800), (1635.0000000000002 2800, 1647.0000000000002 2800))"
+    },
+    {
+      "native_y": 2900,
+      "R1_intersection": "MULTILINESTRING ((930 2900, 948 2900), (1651.0000000000002 2900, 1665.0000000000002 2900))",
+      "R2_intersection": "MULTILINESTRING ((952 2900, 964 2900), (1635.0000000000002 2900, 1647.0000000000002 2900))"
+    },
+    {
+      "native_y": 3000,
+      "R1_intersection": "MULTILINESTRING ((930 3000, 948 3000), (1651.0000000000002 3000, 1665.0000000000002 3000))",
+      "R2_intersection": "MULTILINESTRING ((952 3000, 964 3000), (1635.0000000000002 3000, 1647.0000000000002 3000))"
+    }
+  ],
+  "result": "PASS_noncontact_geometry_consistent_with_human_review",
+  "metric_limitation": "模型距离用于检查正间隙，不是独立照片尺寸测量或真实工艺间距。R1稳定ID含框外结构，本次人工确认只覆盖复核框。",
+  "material_gap_label": "human_confirmed_nonAA_relation_not_dense_pixel_label",
+  "geometry_changed": false
+}

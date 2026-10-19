@@ -1,0 +1,35 @@
+{
+  "related_tests": "34 passed",
+  "ruff": "PASS",
+  "inputs_unchanged": true,
+  "declared_scope_only": true,
+  "non_target_objects_unchanged": 330,
+  "protected_AA_unchanged": 72,
+  "valid_orthogonal_objects": 337,
+  "layout_area_overlaps": 0,
+  "approved_native_outline_identical": true,
+  "known_center_regression": {
+    "before": 6,
+    "after": 12,
+    "total": 12,
+    "not_fullframe_accuracy": true
+  },
+  "AI_fullframe_windows_inspected": 12,
+  "new_human_review_requests": 1,
+  "global_ML_training_or_inference": false,
+  "CT_updated": false,
+  "geometry_package_and_all_scope_assets_verified": true,
+  "browser_interaction_tested": false,
+  "complete_material_coverage": "NOT_ACCEPTED",
+  "skill_release": "NOT_READY_one_critical_ring_localization_remaining",
+  "report": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/report-v1.json",
+    "sha256": "e799aafa7423bd00fbc7fcba631daef5b0629b4db9db5946fa14c8370f7c1ecb"
+  },
+  "source_code": {
+    "path": "silicon_eye/aa_layer_revision.py",
+    "sha256": "64887488a3562678fcca66cde232645241cb723238da88ebff65867ee2095f60"
+  },
+  "review_page_JS_syntax": "PASS",
+  "skill_structure": "PASS"
+}

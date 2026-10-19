@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "reviewer": "interactive_AI_agent",
+  "source_report": {
+    "path": "runs/aa-native-canvas-v1a/report.json",
+    "sha256": "18e43e6a2daa6caa74a15996fabe688bb2a5845798f6a7530cf5ca95ba45cb35"
+  },
+  "basis": [
+    "Full-native overview and all 12 AA tile overlays visually inspected.",
+    "Existing human resistor-interior non-AA decisions consulted; precise masks remain unapproved."
+  ],
+  "tile_notes": {
+    "N01": {
+      "status": "needs_review",
+      "summary": "横向AA条与阵列有候选；环内外边界未知较多，环外绿色斑带需检查是否过宽。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N02": {
+      "status": "needs_review",
+      "summary": "已审竖环局部回填可追溯；其上方MOS/横条阵列未整块验收，条间绿色与碎片需看原图。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N03": {
+      "status": "needs_review",
+      "summary": "多排MOS内部已有候选；横条间、dummy周围仍有成片绿色疑点，不能只看器件内部。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N04": {
+      "status": "needs_review",
+      "summary": "右侧长竖环与顶部横环的边界/分离仍有未知和散点，未恢复成完整确定环。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N05": {
+      "status": "needs_review",
+      "summary": "S02已审局部保留；中下大AA内部仍有大片未知/条纹漏空疑点，需检查材料连续性。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N06": {
+      "status": "needs_review",
+      "summary": "已审竖环与内部条位置保留；周边暗AA覆盖和环外背景仍较破碎，局部通过不等于整块通过。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N07": {
+      "status": "needs_revision",
+      "summary": "大电阻左上内部仍有绿色散点/片段；结合既有电阻内部非AA语义应优先修订。上方dummy外围也待核。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N08": {
+      "status": "needs_revision",
+      "summary": "大电阻右上内部及其边缘存在绿色误涂疑点，右侧竖环边界未知；应分别保护环和清理内部。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N09": {
+      "status": "needs_review",
+      "summary": "已审折线局部仍在；两个大AA内部与下侧dummy周围的覆盖、未知孔洞及背景斑点需整体核对。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N10": {
+      "status": "needs_revision",
+      "summary": "台阶/折线已审局部保留；下部背景大片绿色可疑，其他MOS内部仍有纵向未知条带。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N11": {
+      "status": "needs_revision",
+      "summary": "S05已审双环与暗AA局部已回填；大电阻左下内部其余散点仍需按非AA语义修订，不能只保住小窗口。",
+      "human_status": "pending_whole_tile_review"
+    },
+    "N12": {
+      "status": "needs_revision",
+      "summary": "大电阻右下内部、dummy周边及右侧环的内外分界需修订/核对，存在非AA误涂与未知并存。",
+      "human_status": "pending_whole_tile_review"
+    }
+  },
+  "scope": "Qualitative AI triage, not pixel truth or human acceptance. needs_revision includes clearly suspicious global extrapolation; exact regions/boundaries not labeled.",
+  "full_frame_pass": false
+}

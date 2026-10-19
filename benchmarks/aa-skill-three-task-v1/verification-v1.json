@@ -1,0 +1,15 @@
+{
+  "scoped_execution": "same_agent_known_cases",
+  "source_and_all_locked_references_unchanged": true,
+  "output_manifest_and_all_page_links": true,
+  "reused_S05_byte_identical": true,
+  "B1_valid_orthogonal_six_edges": true,
+  "B0_local_bridge_detected_and_rejected": true,
+  "fullframe_training_or_inference": false,
+  "new_dense_accuracy_or_runtime_claim": false,
+  "original_model_adopted_or_replaced": false,
+  "browser_interaction_tested": false,
+  "production_code_modified": false,
+  "script_ruff": "PASS",
+  "report_sha256": "a09f52bf430dd2b1cb85d4a113660f730f23df491255a19b717e8a0d0ae603da"
+}

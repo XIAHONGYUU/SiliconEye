@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "evaluation": "same_agent_open_book_known_case_regression_not_independent_blind_test",
+  "references": {
+    "skill": {
+      "path": "benchmarks/aa-skill-three-task-v1/skill-under-test.md",
+      "sha256": "912818d191827f3687fec94b7d88cda33dda7eb234c1577641c2f1b0956e79ab"
+    },
+    "quality_contract": {
+      "path": "skills/silicon-eye-aa-reconstruction/references/quality-contract.md",
+      "sha256": "7e3d37de9470badbc04eb593e01ccda1a57e1bb60e979fe49ef361c35a281dda"
+    },
+    "workflow": {
+      "path": "docs/architecture/aa-extraction-workflow-v9.md",
+      "sha256": "a50e18831e5fb59390c89f0e58e624e3f64203b57e3a8676fefe4495c0e4bf78"
+    },
+    "source": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "direct_model": {
+      "path": "benchmarks/aa-completion-v1/model-v1.json",
+      "sha256": "6b85e1319c781d6ecfffc92b893fbc6f4e1f6901dc8371d18245d2e5cd2ddb44"
+    },
+    "direct_review": {
+      "path": "benchmarks/aa-completion-v1/human-review-v2.json",
+      "sha256": "89fea9c80c72d999c70a6872458142ae6a776ab416f7fae4cf5b1c75cbda67c2"
+    },
+    "coordinate_model": {
+      "path": "runs/orthogonal-aa-polygons-v1b/model.json",
+      "sha256": "710fd422a07a195f8735b7f42a65bd43fec281f3d75284a11752424346d2a7d2"
+    },
+    "shape_spec": {
+      "path": "benchmarks/aa-shape-validation-v1/spec-v1.json",
+      "sha256": "09d36ab13703001bbafd12e6727ae2314f286b59f314a88896747029a5f6e7e7"
+    },
+    "shape_review": {
+      "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+      "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+    },
+    "original_polygon_review": {
+      "path": "benchmarks/orthogonal-aa-polygons-v1/human-review-v1.json",
+      "sha256": "990c8d7da62e84dfa2feb6c7665c01f049789d1c3d77617f1198fa1b0ad5b48e"
+    },
+    "b0_detail": {
+      "path": "runs/aa-shape-validation-v1e/P01/gc_fixed-mask.png",
+      "sha256": "b947b0dd662eee627c9eeaf642d8113baf92275700fed340e0e2273ee03fe94a"
+    },
+    "s05_states": {
+      "path": "runs/aa-semantic-revision-v2a/S05/states.npy",
+      "sha256": "62ec24c2e991e063bb18540bd6e3eb16d8dd184bb3b8813f76a829db5c11ca7d"
+    },
+    "s05_domain": {
+      "path": "runs/aa-semantic-revision-v2a/S05/processing-domain.png",
+      "sha256": "2a9191c7ff380cde7e11a89f6ec4932d8978d398119db27dc3685ac1d2890057"
+    },
+    "s05_review": {
+      "path": "benchmarks/aa-semantic-revision-v1/human-two-ring-review-v1.json",
+      "sha256": "0c7aa1ade79ba847b0dc7c3bc0df2ff1ce1a63c143835451738bcd2e9b9d52e4"
+    },
+    "s05_report": {
+      "path": "runs/aa-semantic-revision-v2a/report.json",
+      "sha256": "d6f2927bdf00a42268edef8f3819e9bb9c3a34994c6bb3e3b6e23ec007a47c6f"
+    },
+    "s05_context_review": {
+      "path": "benchmarks/aa-context-review-v1/human-context-review-v1.json",
+      "sha256": "abf104d5ef6613127d2d52ec346d66cf84e4b0750fc0b0e97d0e1fe7d65f3fb2"
+    },
+    "b0_regression": {
+      "path": "runs/aa-scribble-comparison-v1b/S05/gc_fixed-20261018-mask.png",
+      "sha256": "9a335eecbd950e6b4e66da6df64ee100bdbf3a76c0468c6e4dad01ca19463af8"
+    }
+  },
+  "training_or_fullframe_inference": false,
+  "tasks": {
+    "T1": {
+      "request": "整理已经确认的S05双环成果，不重新提取。",
+      "expected": [
+        "reuse_exact_existing_states_and_scope",
+        "no_training_or_new_material",
+        "no_repeat_identity_question"
+      ],
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ]
+    },
+    "T2": {
+      "request": "比较旧全幅台阶AA凹角与算法辅助后规则几何的细节质量。",
+      "direct_object": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+      "detail_case": "P01",
+      "native_bbox": [
+        1750,
+        3050,
+        2450,
+        3225
+      ],
+      "context_bbox": [
+        1650,
+        2940,
+        2550,
+        3340
+      ],
+      "b1_observation": {
+        "id": "AA-P01-B1-local",
+        "label": "algorithm_assisted_AI_revised_staircase",
+        "observed_outline_native_xy": [
+          [
+            1835,
+            3129
+          ],
+          [
+            2384,
+            3125
+          ],
+          [
+            2385,
+            3151
+          ],
+          [
+            2336,
+            3152
+          ],
+          [
+            2335,
+            3175
+          ],
+          [
+            1835,
+            3175
+          ]
+        ],
+        "edge_axes": [
+          "H",
+          "V",
+          "H",
+          "V",
+          "H",
+          "V"
+        ],
+        "observed_holes": [],
+        "continuation_ports": []
+      },
+      "ai_basis": "原图显示右下凹角；复用已审P01六边拓扑。缓存GrabCut边界支持上边/下边/凹角定位；AI忽略像素毛刺，用六个转角假设交现有正交拟合。该坐标是AI候选，不是人工精确边界标签。",
+      "expected": [
+        "same_six_edge_topology_no_holes",
+        "orthogonal_regular_geometry",
+        "show_A_B0_B1_on_same_source",
+        "no_adoption_without_supported_detail_improvement"
+      ],
+      "stopping": "one_B1_hypothesis_no_parameter_sweep; exact boundary uncertainty remains pending; no original model replacement"
+    },
+    "T3": {
+      "request": "检查既有算法候选是否破坏S05双环隔离，拒绝不合格替换。",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "connection_test_native_bbox": [
+        3420,
+        3405,
+        3980,
+        3460
+      ],
+      "expected": [
+        "detect_local_bridge_from_existing_B0",
+        "reject_replacement",
+        "retain_accepted_local_states",
+        "no_reask_known_gap"
+      ],
+      "limitation": "local material connectivity test; does not infer electrical or whole-ring connectivity"
+    }
+  },
+  "adoption_rule": "Quality-first: preserve already approved scope; T2 requires supported detail improvement without structural regression; otherwise candidate_only. T1/T3 can pass without claiming T2 material acceptance.",
+  "runtime_skill_path": "skills/silicon-eye-aa-reconstruction/SKILL.md"
+}

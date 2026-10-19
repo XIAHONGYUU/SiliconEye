@@ -1,0 +1,1902 @@
+{
+  "schema_version": 1,
+  "inventory": {
+    "path": "benchmarks/poly-small-gate-batch-v2/source-inventory-v1.json",
+    "sha256": "f75a3b87d5521faecc355659ebb910b2812590fe94d425354d738b4a0acd7458"
+  },
+  "AA_model": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "parent_model": {
+    "path": "benchmarks/poly-small-gate-batch-v2/model-v1.json",
+    "sha256": "d02573e9e0764c8ce7c596159ce34a7f6045a4e0a2d867c19c359b9ef4a829d6"
+  },
+  "sources": {
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    }
+  },
+  "relations": [
+    {
+      "id": "U01-A01",
+      "scope": "U01",
+      "AA_object_id": "AA-F01744",
+      "poly_observation_ids": [
+        "SG-U01-001",
+        "SG-U01-002",
+        "SG-U01-003"
+      ],
+      "slot_count": 5,
+      "slot_indices": [
+        2,
+        3,
+        4
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "partial_POLY_photo_coverage_hypothesis"
+    },
+    {
+      "id": "U01-A02",
+      "scope": "U01",
+      "AA_object_id": "AA-F01745",
+      "poly_observation_ids": [
+        "SG-U01-004"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U01-A03",
+      "scope": "U01",
+      "AA_object_id": "AA-F01734",
+      "poly_observation_ids": [
+        "SG-U01-005"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U01-A04",
+      "scope": "U01",
+      "AA_object_id": "AA-F01735",
+      "poly_observation_ids": [
+        "SG-U01-006"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U01-A05",
+      "scope": "U01",
+      "AA_object_id": "AA-F01736",
+      "poly_observation_ids": [
+        "SG-U01-007"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U01-A06",
+      "scope": "U01",
+      "AA_object_id": "AA-F01737",
+      "poly_observation_ids": [
+        "SG-U01-008"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U02-A01",
+      "scope": "U02",
+      "AA_object_id": "AA-F01740",
+      "poly_observation_ids": [
+        "SG-U02-001"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U02-A02",
+      "scope": "U02",
+      "AA_object_id": "AA-F01741",
+      "poly_observation_ids": [
+        "SG-U02-002"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U02-A03",
+      "scope": "U02",
+      "AA_object_id": "AA-F01742",
+      "poly_observation_ids": [
+        "SG-U02-003"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U02-A04",
+      "scope": "U02",
+      "AA_object_id": "AA-F01743",
+      "poly_observation_ids": [
+        "SG-U02-004"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U03-A01",
+      "scope": "U03",
+      "AA_object_id": "AA-F01750",
+      "poly_observation_ids": [
+        "SG-U03-001"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U03-A02",
+      "scope": "U03",
+      "AA_object_id": "AA-F01751",
+      "poly_observation_ids": [
+        "SG-U03-002",
+        "SG-U03-003",
+        "SG-U03-004",
+        "SG-U03-005"
+      ],
+      "slot_count": 4,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U03-A03",
+      "scope": "U03",
+      "AA_object_id": "AA-F01753",
+      "poly_observation_ids": [
+        "SG-U03-006",
+        "SG-U03-007",
+        "SG-U03-008"
+      ],
+      "slot_count": 3,
+      "slot_indices": [
+        0,
+        1,
+        2
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U03-A04",
+      "scope": "U03",
+      "AA_object_id": "AA-F01752",
+      "poly_observation_ids": [
+        "SG-U03-009",
+        "SG-U03-010"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A01",
+      "scope": "U04",
+      "AA_object_id": "AA-F01709",
+      "poly_observation_ids": [
+        "SG-U04-001",
+        "SG-U04-002"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A02",
+      "scope": "U04",
+      "AA_object_id": "AA-F01710",
+      "poly_observation_ids": [
+        "SG-U04-003"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A03",
+      "scope": "U04",
+      "AA_object_id": "AA-F01712",
+      "poly_observation_ids": [
+        "SG-U04-004"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A04",
+      "scope": "U04",
+      "AA_object_id": "AA-F01711",
+      "poly_observation_ids": [
+        "SG-U04-005"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A05",
+      "scope": "U04",
+      "AA_object_id": "AA-F01713",
+      "poly_observation_ids": [
+        "SG-U04-006"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A06",
+      "scope": "U04",
+      "AA_object_id": "AA-F01714",
+      "poly_observation_ids": [
+        "SG-U04-007",
+        "SG-U04-008",
+        "SG-U04-009",
+        "SG-U04-010",
+        "SG-U04-011",
+        "SG-U04-012",
+        "SG-U04-013",
+        "SG-U04-014",
+        "SG-U04-015",
+        "SG-U04-016",
+        "SG-U04-017",
+        "SG-U04-018",
+        "SG-U04-019",
+        "SG-U04-020",
+        "SG-U04-021",
+        "SG-U04-022",
+        "SG-U04-023"
+      ],
+      "slot_count": 17,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A07",
+      "scope": "U04",
+      "AA_object_id": "AA-F01715",
+      "poly_observation_ids": [
+        "SG-U04-024",
+        "SG-U04-025",
+        "SG-U04-026",
+        "SG-U04-027",
+        "SG-U04-028"
+      ],
+      "slot_count": 5,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A08",
+      "scope": "U04",
+      "AA_object_id": "AA-F01717",
+      "poly_observation_ids": [
+        "SG-U04-029"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A09",
+      "scope": "U04",
+      "AA_object_id": "AA-F01716",
+      "poly_observation_ids": [
+        "SG-U04-030"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A10",
+      "scope": "U04",
+      "AA_object_id": "AA-F01718",
+      "poly_observation_ids": [
+        "SG-U04-031"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A11",
+      "scope": "U04",
+      "AA_object_id": "AA-F01719",
+      "poly_observation_ids": [
+        "SG-U04-032"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A12",
+      "scope": "U04",
+      "AA_object_id": "AA-F01720",
+      "poly_observation_ids": [
+        "SG-U04-033",
+        "SG-U04-034"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A13",
+      "scope": "U04",
+      "AA_object_id": "AA-F01721",
+      "poly_observation_ids": [
+        "SG-U04-035",
+        "SG-U04-036",
+        "SG-U04-037",
+        "SG-U04-038",
+        "SG-U04-039",
+        "SG-U04-040",
+        "SG-U04-041",
+        "SG-U04-042"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A14",
+      "scope": "U04",
+      "AA_object_id": "AA-F01722",
+      "poly_observation_ids": [
+        "SG-U04-043",
+        "SG-U04-044",
+        "SG-U04-045",
+        "SG-U04-046"
+      ],
+      "slot_count": 4,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A15",
+      "scope": "U04",
+      "AA_object_id": "AA-F01723",
+      "poly_observation_ids": [
+        "SG-U04-047"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A16",
+      "scope": "U04",
+      "AA_object_id": "AA-F01724",
+      "poly_observation_ids": [
+        "SG-U04-048",
+        "SG-U04-049",
+        "SG-U04-050",
+        "SG-U04-051",
+        "SG-U04-052",
+        "SG-U04-053",
+        "SG-U04-054",
+        "SG-U04-055",
+        "SG-U04-056",
+        "SG-U04-057",
+        "SG-U04-058",
+        "SG-U04-059",
+        "SG-U04-060"
+      ],
+      "slot_count": 13,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A17",
+      "scope": "U04",
+      "AA_object_id": "AA-F01726",
+      "poly_observation_ids": [
+        "SG-U04-061",
+        "SG-U04-062",
+        "SG-U04-063",
+        "SG-U04-064",
+        "SG-U04-065"
+      ],
+      "slot_count": 5,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A18",
+      "scope": "U04",
+      "AA_object_id": "AA-F01725",
+      "poly_observation_ids": [
+        "SG-U04-066"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A19",
+      "scope": "U04",
+      "AA_object_id": "AA-F01727",
+      "poly_observation_ids": [
+        "SG-U04-067",
+        "SG-U04-068",
+        "SG-U04-069",
+        "SG-U04-070"
+      ],
+      "slot_count": 4,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A20",
+      "scope": "U04",
+      "AA_object_id": "AA-F01728",
+      "poly_observation_ids": [
+        "SG-U04-071",
+        "SG-U04-072",
+        "SG-U04-073"
+      ],
+      "slot_count": 3,
+      "slot_indices": [
+        0,
+        1,
+        2
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A21",
+      "scope": "U04",
+      "AA_object_id": "AA-F01729",
+      "poly_observation_ids": [
+        "SG-U04-074",
+        "SG-U04-075"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A22",
+      "scope": "U04",
+      "AA_object_id": "AA-F01730",
+      "poly_observation_ids": [
+        "SG-U04-076",
+        "SG-U04-077",
+        "SG-U04-078",
+        "SG-U04-079"
+      ],
+      "slot_count": 4,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U04-A23",
+      "scope": "U04",
+      "AA_object_id": "AA-F01731",
+      "poly_observation_ids": [
+        "SG-U04-080"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A01",
+      "scope": "U05",
+      "AA_object_id": "AA-F01687",
+      "poly_observation_ids": [
+        "G54-P01"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A02",
+      "scope": "U05",
+      "AA_object_id": "AA-F01691",
+      "poly_observation_ids": [
+        "G54-P02"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A03",
+      "scope": "U05",
+      "AA_object_id": "AA-F01690",
+      "poly_observation_ids": [
+        "G54-P03"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A04",
+      "scope": "U05",
+      "AA_object_id": "AA-F01689",
+      "poly_observation_ids": [
+        "G54-P04"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A05",
+      "scope": "U05",
+      "AA_object_id": "AA-F01688",
+      "poly_observation_ids": [
+        "SG-U05-005"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A06",
+      "scope": "U05",
+      "AA_object_id": "AA-F01692",
+      "poly_observation_ids": [
+        "SG-U05-006"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A07",
+      "scope": "U05",
+      "AA_object_id": "AA-F01693",
+      "poly_observation_ids": [
+        "SG-U05-007"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A08",
+      "scope": "U05",
+      "AA_object_id": "AA-F01694",
+      "poly_observation_ids": [
+        "SG-U05-008"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A09",
+      "scope": "U05",
+      "AA_object_id": "AA-F01695",
+      "poly_observation_ids": [
+        "SG-U05-009"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A10",
+      "scope": "U05",
+      "AA_object_id": "AA-F01696",
+      "poly_observation_ids": [
+        "SG-U05-010"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A11",
+      "scope": "U05",
+      "AA_object_id": "AA-F01697",
+      "poly_observation_ids": [
+        "SG-U05-011",
+        "SG-U05-012",
+        "SG-U05-013"
+      ],
+      "slot_count": 3,
+      "slot_indices": [
+        0,
+        1,
+        2
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A12",
+      "scope": "U05",
+      "AA_object_id": "AA-F01698",
+      "poly_observation_ids": [
+        "S03-01",
+        "S03-02"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A13",
+      "scope": "U05",
+      "AA_object_id": "AA-F01699",
+      "poly_observation_ids": [
+        "S03-03",
+        "S03-04",
+        "S03-05"
+      ],
+      "slot_count": 3,
+      "slot_indices": [
+        0,
+        1,
+        2
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A14",
+      "scope": "U05",
+      "AA_object_id": "AA-F01700",
+      "poly_observation_ids": [
+        "S03-06",
+        "S03-07"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A15",
+      "scope": "U05",
+      "AA_object_id": "AA-F01701",
+      "poly_observation_ids": [
+        "SG-U05-021",
+        "SG-U05-022",
+        "SG-U05-023",
+        "SG-U05-024",
+        "SG-U05-025"
+      ],
+      "slot_count": 5,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A16",
+      "scope": "U05",
+      "AA_object_id": "AA-F01702",
+      "poly_observation_ids": [
+        "SG-U05-026",
+        "SG-U05-027",
+        "SG-U05-028"
+      ],
+      "slot_count": 3,
+      "slot_indices": [
+        0,
+        1,
+        2
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A17",
+      "scope": "U05",
+      "AA_object_id": "AA-F01703",
+      "poly_observation_ids": [
+        "SG-U05-029",
+        "SG-U05-030",
+        "SG-U05-031",
+        "SG-U05-032",
+        "SG-U05-033"
+      ],
+      "slot_count": 5,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A18",
+      "scope": "U05",
+      "AA_object_id": "AA-F01704",
+      "poly_observation_ids": [
+        "SG-U05-034",
+        "SG-U05-035",
+        "SG-U05-036"
+      ],
+      "slot_count": 3,
+      "slot_indices": [
+        0,
+        1,
+        2
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A19",
+      "scope": "U05",
+      "AA_object_id": "AA-F01705",
+      "poly_observation_ids": [
+        "SG-U05-037",
+        "SG-U05-038",
+        "SG-U05-039",
+        "SG-U05-040",
+        "SG-U05-041",
+        "SG-U05-042",
+        "SG-U05-043",
+        "SG-U05-044",
+        "SG-U05-045"
+      ],
+      "slot_count": 9,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U05-A20",
+      "scope": "U05",
+      "AA_object_id": "AA-F01706",
+      "poly_observation_ids": [
+        "SG-U05-046",
+        "SG-U05-047",
+        "SG-U05-048",
+        "SG-U05-049",
+        "SG-U05-050"
+      ],
+      "slot_count": 5,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A01",
+      "scope": "U06",
+      "AA_object_id": "AA-F01662",
+      "poly_observation_ids": [
+        "G55-P01"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A02",
+      "scope": "U06",
+      "AA_object_id": "AA-F01661",
+      "poly_observation_ids": [
+        "G55-P02"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A03",
+      "scope": "U06",
+      "AA_object_id": "AA-F01660",
+      "poly_observation_ids": [
+        "G55-P03"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A04",
+      "scope": "U06",
+      "AA_object_id": "AA-F01663",
+      "poly_observation_ids": [
+        "G55-P04"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A05",
+      "scope": "U06",
+      "AA_object_id": "AA-F01664",
+      "poly_observation_ids": [
+        "SG-U06-005"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A06",
+      "scope": "U06",
+      "AA_object_id": "AA-F01665",
+      "poly_observation_ids": [
+        "SG-U06-006"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A07",
+      "scope": "U06",
+      "AA_object_id": "AA-F01666",
+      "poly_observation_ids": [
+        "SG-U06-007"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A08",
+      "scope": "U06",
+      "AA_object_id": "AA-F01667",
+      "poly_observation_ids": [
+        "SG-U06-008"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A09",
+      "scope": "U06",
+      "AA_object_id": "AA-F01668",
+      "poly_observation_ids": [
+        "SG-U06-009"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U06-A10",
+      "scope": "U06",
+      "AA_object_id": "AA-F01669",
+      "poly_observation_ids": [
+        "SG-U06-010"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A01",
+      "scope": "U07",
+      "AA_object_id": "AA-F01649",
+      "poly_observation_ids": [
+        "SG-U07-001",
+        "SG-U07-002",
+        "SG-U07-003",
+        "SG-U07-004",
+        "SG-U07-005",
+        "SG-U07-006",
+        "SG-U07-007",
+        "SG-U07-008"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A02",
+      "scope": "U07",
+      "AA_object_id": "AA-F01650",
+      "poly_observation_ids": [
+        "SG-U07-009",
+        "SG-U07-010",
+        "SG-U07-011",
+        "SG-U07-012",
+        "SG-U07-013",
+        "SG-U07-014",
+        "SG-U07-015",
+        "SG-U07-016"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A03",
+      "scope": "U07",
+      "AA_object_id": "AA-F01651",
+      "poly_observation_ids": [
+        "SG-U07-017",
+        "SG-U07-018",
+        "SG-U07-019",
+        "SG-U07-020",
+        "SG-U07-021",
+        "SG-U07-022",
+        "SG-U07-023",
+        "SG-U07-024"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A04",
+      "scope": "U07",
+      "AA_object_id": "AA-F01657",
+      "poly_observation_ids": [
+        "SG-U07-025",
+        "SG-U07-026"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A05",
+      "scope": "U07",
+      "AA_object_id": "AA-F01652",
+      "poly_observation_ids": [
+        "SG-U07-027",
+        "SG-U07-028",
+        "SG-U07-029",
+        "SG-U07-030",
+        "SG-U07-031",
+        "SG-U07-032",
+        "SG-U07-033",
+        "SG-U07-034"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A06",
+      "scope": "U07",
+      "AA_object_id": "AA-F01653",
+      "poly_observation_ids": [
+        "SG-U07-035",
+        "SG-U07-036",
+        "SG-U07-037",
+        "SG-U07-038",
+        "SG-U07-039",
+        "SG-U07-040",
+        "SG-U07-041",
+        "SG-U07-042"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A07",
+      "scope": "U07",
+      "AA_object_id": "AA-F01655",
+      "poly_observation_ids": [
+        "SG-U07-043",
+        "SG-U07-044",
+        "SG-U07-045",
+        "SG-U07-046",
+        "SG-U07-047",
+        "SG-U07-048",
+        "SG-U07-049",
+        "SG-U07-050"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A08",
+      "scope": "U07",
+      "AA_object_id": "AA-F01654",
+      "poly_observation_ids": [
+        "SG-U07-051",
+        "SG-U07-052",
+        "SG-U07-053",
+        "SG-U07-054",
+        "SG-U07-055",
+        "SG-U07-056",
+        "SG-U07-057",
+        "SG-U07-058"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U07-A09",
+      "scope": "U07",
+      "AA_object_id": "AA-F01656",
+      "poly_observation_ids": [
+        "SG-U07-059",
+        "SG-U07-060",
+        "SG-U07-061",
+        "SG-U07-062",
+        "SG-U07-063",
+        "SG-U07-064",
+        "SG-U07-065",
+        "SG-U07-066"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A01",
+      "scope": "U08",
+      "AA_object_id": "AA-F01623",
+      "poly_observation_ids": [
+        "SG-U08-001",
+        "SG-U08-002",
+        "SG-U08-003",
+        "SG-U08-004",
+        "SG-U08-005",
+        "SG-U08-006",
+        "SG-U08-007",
+        "SG-U08-008"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A02",
+      "scope": "U08",
+      "AA_object_id": "AA-F01625",
+      "poly_observation_ids": [
+        "SG-U08-009",
+        "SG-U08-010",
+        "SG-U08-011",
+        "SG-U08-012",
+        "SG-U08-013",
+        "SG-U08-014",
+        "SG-U08-015",
+        "SG-U08-016"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A03",
+      "scope": "U08",
+      "AA_object_id": "AA-F01629",
+      "poly_observation_ids": [
+        "SG-U08-017",
+        "SG-U08-018",
+        "SG-U08-019",
+        "SG-U08-020",
+        "SG-U08-021",
+        "SG-U08-022",
+        "SG-U08-023",
+        "SG-U08-024"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A04",
+      "scope": "U08",
+      "AA_object_id": "AA-F01628",
+      "poly_observation_ids": [
+        "SG-U08-025"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A05",
+      "scope": "U08",
+      "AA_object_id": "AA-F01627",
+      "poly_observation_ids": [
+        "SG-U08-026"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A06",
+      "scope": "U08",
+      "AA_object_id": "AA-F01626",
+      "poly_observation_ids": [
+        "SG-U08-027",
+        "SG-U08-028"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A07",
+      "scope": "U08",
+      "AA_object_id": "AA-F01630",
+      "poly_observation_ids": [
+        "SG-U08-029",
+        "SG-U08-030",
+        "SG-U08-031",
+        "SG-U08-032",
+        "SG-U08-033",
+        "SG-U08-034",
+        "SG-U08-035",
+        "SG-U08-036"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A08",
+      "scope": "U08",
+      "AA_object_id": "AA-F01631",
+      "poly_observation_ids": [
+        "SG-U08-037",
+        "SG-U08-038",
+        "SG-U08-039",
+        "SG-U08-040",
+        "SG-U08-041",
+        "SG-U08-042",
+        "SG-U08-043",
+        "SG-U08-044"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A09",
+      "scope": "U08",
+      "AA_object_id": "AA-F01633",
+      "poly_observation_ids": [
+        "SG-U08-045",
+        "SG-U08-046",
+        "SG-U08-047",
+        "SG-U08-048",
+        "SG-U08-049",
+        "SG-U08-050",
+        "SG-U08-051",
+        "SG-U08-052"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A10",
+      "scope": "U08",
+      "AA_object_id": "AA-F01632",
+      "poly_observation_ids": [
+        "SG-U08-053",
+        "SG-U08-054",
+        "SG-U08-055",
+        "SG-U08-056",
+        "SG-U08-057",
+        "SG-U08-058",
+        "SG-U08-059",
+        "SG-U08-060"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U08-A11",
+      "scope": "U08",
+      "AA_object_id": "AA-F01634",
+      "poly_observation_ids": [
+        "SG-U08-061",
+        "SG-U08-062",
+        "SG-U08-063",
+        "SG-U08-064",
+        "SG-U08-065",
+        "SG-U08-066",
+        "SG-U08-067",
+        "SG-U08-068"
+      ],
+      "slot_count": 8,
+      "slot_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U09-A01",
+      "scope": "U09",
+      "AA_object_id": "T02-AA-0",
+      "poly_observation_ids": [
+        "SG-U09-001",
+        "SG-U09-002"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U09-A02",
+      "scope": "U09",
+      "AA_object_id": "T02-AA-1",
+      "poly_observation_ids": [
+        "SG-U09-003",
+        "SG-U09-004"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U09-A03",
+      "scope": "U09",
+      "AA_object_id": "T02-AA-2",
+      "poly_observation_ids": [
+        "SG-U09-005",
+        "SG-U09-006"
+      ],
+      "slot_count": 2,
+      "slot_indices": [
+        0,
+        1
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U09-A04",
+      "scope": "U09",
+      "AA_object_id": "AA-F01617",
+      "poly_observation_ids": [
+        "SG-U09-007"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U09-A05",
+      "scope": "U09",
+      "AA_object_id": "AA-F01615",
+      "poly_observation_ids": [
+        "SG-U09-008"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    },
+    {
+      "id": "U09-A06",
+      "scope": "U09",
+      "AA_object_id": "AA-F01616",
+      "poly_observation_ids": [
+        "SG-U09-009"
+      ],
+      "slot_count": 1,
+      "slot_indices": [
+        0
+      ],
+      "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+      "evidence": "native AA island order, visible channel/array breaks and POLY terminal/body sequence; no nearest-AA selection",
+      "coverage": "observed_sequence_complete_candidate"
+    }
+  ],
+  "unresolved": [
+    {
+      "poly_observation_id": "SG-U04-W01",
+      "scope": "U04",
+      "status": "human_wide_POLY_identity_kept_AA_relation_unresolved",
+      "AA_object_id": null,
+      "reason": "AA photo at the corresponding stepped-ring gap has no visible device AA; do not assign the neighboring active or infer a MOS from POLY identity alone",
+      "poly_bbox": [
+        4450,
+        330,
+        5000,
+        510
+      ],
+      "aa_bbox": [
+        4350,
+        570,
+        5100,
+        705
+      ]
+    }
+  ],
+  "relative_budgets": {
+    "gate_width_px": 28,
+    "poly_extension_px": 8,
+    "lateral_margin_px": 8,
+    "min_intergate_gap_px": 8,
+    "units": "AA_working_layout_relative_pixels_not_foundry_rules"
+  },
+  "prior_hypothesis_revision": [
+    {
+      "scope": "U01",
+      "old": "first AA assigned four bodies, followed by four singles",
+      "new": "first three complete bodies assigned to last three slots of a five-channel AA hypothesis; fourth long body on next tall AA; final four short bodies on four short AA islands",
+      "basis": "AA native image shows additional left-hand channel traces outside/at the POLY photo coverage; body heights and AA island sequence do not support the earlier count alignment",
+      "acceptance": "AI_reassessment_not_human_confirmed"
+    }
+  ],
+  "AA_row_alignments": [
+    {
+      "reference_AA_id": "AA-F01687",
+      "AA_object_ids": [
+        "AA-F01697",
+        "AA-F01698",
+        "AA-F01699",
+        "AA-F01700",
+        "AA-F01701",
+        "AA-F01702",
+        "AA-F01703",
+        "AA-F01704",
+        "AA-F01705",
+        "AA-F01706"
+      ],
+      "evidence": "U05 is one horizontal device row: first ten working AA islands share y=784.25..814.25 while the next ten retain y drift 775..758 from older photo fitting; align entire ten-island row family, freeze native source polygons, retain widths/IDs/other AA. Independent row-regularity reason, not just the final five 0.53px guard collisions.",
+      "status": "AI_working_geometry_proposal_not_human_approved"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "prior_spec": {
+    "path": "benchmarks/orthogonal-aa-polygons-v1/spec-v1.json",
+    "sha256": "53bca20fbbf500794581f0fa5e7c006f76de5ac7b2a11f0250aa74606f6f2ac2"
+  },
+  "prior_structure_review": {
+    "path": "benchmarks/orthogonal-aa-polygons-v1/human-review-v1.json",
+    "sha256": "990c8d7da62e84dfa2feb6c7665c01f049789d1c3d77617f1198fa1b0ad5b48e"
+  },
+  "settings": {
+    "seed": 20261019,
+    "seed_margin": 3,
+    "background_outer_margin": 6,
+    "domain_margin": 12,
+    "max_training_pixels_per_class": 4000,
+    "forest_trees": 100,
+    "forest_max_depth": 14,
+    "feature_sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "uncertainty_px": 2,
+    "grabcut_iterations": 3,
+    "significant_area": 25
+  },
+  "cases": [
+    {
+      "id": "V01",
+      "title": "竖向AA环与内部AA条",
+      "native_bbox": [
+        2220,
+        1250,
+        2480,
+        1940
+      ],
+      "objects": [
+        {
+          "id": "AA-G001",
+          "outer_native_xy": [
+            [
+              2287,
+              1310
+            ],
+            [
+              2411,
+              1311
+            ],
+            [
+              2418,
+              1881
+            ],
+            [
+              2294,
+              1880
+            ]
+          ],
+          "holes_native_xy": [
+            [
+              [
+                2300,
+                1325
+              ],
+              [
+                2398,
+                1327
+              ],
+              [
+                2404,
+                1865
+              ],
+              [
+                2305,
+                1865
+              ]
+            ]
+          ]
+        },
+        {
+          "id": "AA-G002",
+          "outer_native_xy": [
+            [
+              2311,
+              1337
+            ],
+            [
+              2383,
+              1336
+            ],
+            [
+              2389,
+              1842
+            ],
+            [
+              2317,
+              1843
+            ]
+          ],
+          "holes_native_xy": []
+        }
+      ],
+      "expected_topology": {
+        "components": 2,
+        "holes": 1
+      },
+      "review_status": "Existing ring geometry is a localization prior; new segmentation boundaries pending.",
+      "prior_shape_status": "See original geometry pilot and scoped review, not transferred dense truth."
+    },
+    {
+      "id": "P01",
+      "title": "台阶AA与右下凹角",
+      "native_bbox": [
+        1750,
+        3050,
+        2450,
+        3225
+      ],
+      "objects": [
+        {
+          "id": "AA-P01",
+          "outer_native_xy": [
+            [
+              1832,
+              3130
+            ],
+            [
+              2387,
+              3126
+            ],
+            [
+              2387,
+              3153
+            ],
+            [
+              2337,
+              3154
+            ],
+            [
+              2337,
+              3176
+            ],
+            [
+              1833,
+              3178
+            ]
+          ],
+          "holes_native_xy": [],
+          "continuation_ports": []
+        }
+      ],
+      "expected_topology": {
+        "components": 1,
+        "holes": 0
+      },
+      "review_status": "P01 structure already reviewed; new segmentation is not approved."
+    },
+    {
+      "id": "B01",
+      "title": "两条邻近折线AA，带框外延续",
+      "native_bbox": [
+        930,
+        3300,
+        1520,
+        3720
+      ],
+      "objects": [
+        {
+          "id": "AA-P05",
+          "outer_native_xy": [
+            [
+              1036,
+              3410
+            ],
+            [
+              1055,
+              3410
+            ],
+            [
+              1058,
+              3510
+            ],
+            [
+              1218,
+              3510
+            ],
+            [
+              1218,
+              3531
+            ],
+            [
+              1037,
+              3531
+            ]
+          ],
+          "holes_native_xy": [],
+          "continuation_ports": [
+            {
+              "native_xy": [
+                1046,
+                3410
+              ],
+              "edge_index": 0,
+              "meaning": "continues_up_into_unmodeled_AA_not_physical_endpoint"
+            }
+          ]
+        },
+        {
+          "id": "AA-P06",
+          "outer_native_xy": [
+            [
+              1037,
+              3540
+            ],
+            [
+              1218,
+              3540
+            ],
+            [
+              1218,
+              3558
+            ],
+            [
+              1057,
+              3558
+            ],
+            [
+              1057,
+              3625
+            ],
+            [
+              1037,
+              3625
+            ]
+          ],
+          "holes_native_xy": [],
+          "continuation_ports": [
+            {
+              "native_xy": [
+                1047,
+                3625
+              ],
+              "edge_index": 4,
+              "meaning": "continues_down_into_unmodeled_AA_not_physical_endpoint"
+            }
+          ]
+        }
+      ],
+      "expected_topology": {
+        "components": 2,
+        "holes": 0
+      },
+      "review_status": "P05/P06 local bends and separation reviewed; continuation ports are not physical endpoints."
+    }
+  ],
+  "restrictions": [
+    "All seed pixels are AI sampling assumptions derived from coarse prior outlines, not newly human-confirmed dense labels.",
+    "Same sampled pixels for RF training and GrabCut color GMM/hard seeds; mechanisms differ.",
+    "Only the source-image narrow domain is evaluated. Unknown/unprocessed regions are never background truth.",
+    "No pixel IoU, blind-generalization claim, formal geometry, CT or inferred electrical connections.",
+    "Do not silently fill failed holes, close gaps or regularize curves to make topology pass."
+  ]
+}

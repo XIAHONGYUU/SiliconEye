@@ -1,0 +1,645 @@
+{
+  "schema_version": 1,
+  "scope": "upper_small_MOS_local_observation_only",
+  "parent_model": {
+    "path": "benchmarks/poly-small-mos-local-v1/model-v1.json",
+    "sha256": "d5546ab9a3dbcd87a77e12b3a83c8b644d65a7b97ed16ce19126325141ef64ae"
+  },
+  "sources": {
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    }
+  },
+  "AA_model": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "revisions": [
+    {
+      "object_id": "G55-P01",
+      "expected_geometry_sha256": "f3866db08da9938d56339f3c5e00c83d05177963c6e52c8479ab921dc419447c",
+      "native_outline": [
+        [
+          950,
+          650
+        ],
+        [
+          982,
+          650
+        ],
+        [
+          982,
+          710
+        ],
+        [
+          950,
+          710
+        ]
+      ],
+      "layout_outline": [
+        [
+          950,
+          650
+        ],
+        [
+          982,
+          650
+        ],
+        [
+          982,
+          710
+        ],
+        [
+          950,
+          710
+        ]
+      ],
+      "evidence": {
+        "source": "poly native observation; AA island correspondence hypothesis",
+        "poly_bbox": [
+          900,
+          620,
+          1270,
+          725
+        ],
+        "AA_target_id": "AA-F01662",
+        "AA_target_status": "AI_local_correspondence_candidate_not_fine_registration",
+        "observed_end_side": "top",
+        "extent_uncertainty_px": [
+          3,
+          6
+        ],
+        "note": "逐个观察灰色主体和端部范围；不将亮点直接归为CT，不沿整排扩展",
+        "human_feedback_ref": {
+          "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+          "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+        },
+        "candidate_edge_shift_px": 4,
+        "shift_status": "AI_proposal_not_exact_human_coordinate"
+      },
+      "reason": "依据人工反馈只将左边界右移4px；上/下/右边及对象编号不变；不采用AA裁剪。"
+    },
+    {
+      "object_id": "G55-P02",
+      "expected_geometry_sha256": "ed63e06d4399903c7d9df88349ddf228b487e249d7364388a27a54de81332dfe",
+      "native_outline": [
+        [
+          1032,
+          650
+        ],
+        [
+          1064,
+          650
+        ],
+        [
+          1064,
+          710
+        ],
+        [
+          1032,
+          710
+        ]
+      ],
+      "layout_outline": [
+        [
+          1032,
+          650
+        ],
+        [
+          1064,
+          650
+        ],
+        [
+          1064,
+          710
+        ],
+        [
+          1032,
+          710
+        ]
+      ],
+      "evidence": {
+        "source": "poly native observation; AA island correspondence hypothesis",
+        "poly_bbox": [
+          900,
+          620,
+          1270,
+          725
+        ],
+        "AA_target_id": "AA-F01661",
+        "AA_target_status": "AI_local_correspondence_candidate_not_fine_registration",
+        "observed_end_side": "top",
+        "extent_uncertainty_px": [
+          3,
+          6
+        ],
+        "note": "逐个观察灰色主体和端部范围；不将亮点直接归为CT，不沿整排扩展",
+        "human_feedback_ref": {
+          "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+          "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+        },
+        "candidate_edge_shift_px": 4,
+        "shift_status": "AI_proposal_not_exact_human_coordinate"
+      },
+      "reason": "依据人工反馈只将左边界右移4px；上/下/右边及对象编号不变；不采用AA裁剪。"
+    },
+    {
+      "object_id": "G55-P03",
+      "expected_geometry_sha256": "e5d656f5cb8e0fa5de059c54edec5cc1e6525c40532289df60a9850694afd6ea",
+      "native_outline": [
+        [
+          1113,
+          651
+        ],
+        [
+          1145,
+          651
+        ],
+        [
+          1145,
+          711
+        ],
+        [
+          1113,
+          711
+        ]
+      ],
+      "layout_outline": [
+        [
+          1114,
+          650
+        ],
+        [
+          1146,
+          650
+        ],
+        [
+          1146,
+          710
+        ],
+        [
+          1114,
+          710
+        ]
+      ],
+      "evidence": {
+        "source": "poly native observation; AA island correspondence hypothesis",
+        "poly_bbox": [
+          900,
+          620,
+          1270,
+          725
+        ],
+        "AA_target_id": "AA-F01660",
+        "AA_target_status": "AI_local_correspondence_candidate_not_fine_registration",
+        "observed_end_side": "top",
+        "extent_uncertainty_px": [
+          3,
+          6
+        ],
+        "note": "逐个观察灰色主体和端部范围；不将亮点直接归为CT，不沿整排扩展",
+        "human_feedback_ref": {
+          "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+          "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+        },
+        "candidate_edge_shift_px": 4,
+        "shift_status": "AI_proposal_not_exact_human_coordinate"
+      },
+      "reason": "依据人工反馈只将左边界右移4px；上/下/右边及对象编号不变；不采用AA裁剪。"
+    },
+    {
+      "object_id": "G55-P04",
+      "expected_geometry_sha256": "3bccc9bef5258fb499547625d6b770a6543cf9d55d27a6383642339e7e92a9eb",
+      "native_outline": [
+        [
+          1195,
+          651
+        ],
+        [
+          1227,
+          651
+        ],
+        [
+          1227,
+          711
+        ],
+        [
+          1195,
+          711
+        ]
+      ],
+      "layout_outline": [
+        [
+          1196,
+          650
+        ],
+        [
+          1228,
+          650
+        ],
+        [
+          1228,
+          710
+        ],
+        [
+          1196,
+          710
+        ]
+      ],
+      "evidence": {
+        "source": "poly native observation; AA island correspondence hypothesis",
+        "poly_bbox": [
+          900,
+          620,
+          1270,
+          725
+        ],
+        "AA_target_id": "AA-F01663",
+        "AA_target_status": "AI_local_correspondence_candidate_not_fine_registration",
+        "observed_end_side": "top",
+        "extent_uncertainty_px": [
+          3,
+          6
+        ],
+        "note": "逐个观察灰色主体和端部范围；不将亮点直接归为CT，不沿整排扩展",
+        "human_feedback_ref": {
+          "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+          "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+        },
+        "candidate_edge_shift_px": 4,
+        "shift_status": "AI_proposal_not_exact_human_coordinate"
+      },
+      "reason": "依据人工反馈只将左边界右移4px；上/下/右边及对象编号不变；不采用AA裁剪。"
+    }
+  ],
+  "cases": [
+    {
+      "id": "S01",
+      "title": "F01：内框上排前四条小栅",
+      "poly_bbox": [
+        850,
+        480,
+        1320,
+        615
+      ],
+      "aa_bbox": [
+        1000,
+        690,
+        1440,
+        825
+      ],
+      "object_ids": [
+        "G54-P01",
+        "G54-P02",
+        "G54-P03",
+        "G54-P04"
+      ],
+      "finding": "用户确认完整覆盖；保持四条范围，绿色显示，不重审。",
+      "question": "无；本轮未修改。",
+      "review_state": "human_accepted_displayed_extent"
+    },
+    {
+      "id": "S02",
+      "title": "F01：内框下排前四条小栅",
+      "poly_bbox": [
+        850,
+        615,
+        1320,
+        775
+      ],
+      "aa_bbox": [
+        1000,
+        835,
+        1440,
+        1025
+      ],
+      "object_ids": [
+        "G55-P01",
+        "G55-P02",
+        "G55-P03",
+        "G55-P04"
+      ],
+      "finding": "上下端已经确认。本轮只将四条左边界右移4原生像素，宽36→32；上、下、右边保持。4px是新候选，不是人工指定精确值。",
+      "question": "左侧收窄后，是否消除了过粗/包入两侧AA接触区的问题，同时仍完整覆盖POLY？"
+    },
+    {
+      "id": "S03",
+      "title": "F02：中部不同长度AA与密集小栅",
+      "poly_bbox": [
+        1850,
+        480,
+        2400,
+        615
+      ],
+      "aa_bbox": [
+        1800,
+        695,
+        2470,
+        820
+      ],
+      "object_ids": [
+        "G54-P13",
+        "G54-P14",
+        "G54-P15",
+        "G54-P16",
+        "G54-P17"
+      ],
+      "finding": "用户确认03/04是两条独立栅，可结合CT辅助区分。本轮保持两条隔离，不合并；其他条及精确边界未获整批批准。",
+      "question": "03/04独立身份已确认，不重问；本轮未修改来源轮廓。",
+      "proposed_objects": [
+        {
+          "id": "S03-01",
+          "native_outline": [
+            [
+              1927,
+              501
+            ],
+            [
+              1963,
+              501
+            ],
+            [
+              1963,
+              565
+            ],
+            [
+              1927,
+              565
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-02",
+          "native_outline": [
+            [
+              1987,
+              522
+            ],
+            [
+              2025,
+              522
+            ],
+            [
+              2025,
+              575
+            ],
+            [
+              1987,
+              575
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-03",
+          "native_outline": [
+            [
+              2070,
+              500
+            ],
+            [
+              2106,
+              500
+            ],
+            [
+              2106,
+              567
+            ],
+            [
+              2070,
+              567
+            ]
+          ],
+          "status": "human_identity_confirmed_extent_candidate",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值",
+          "identity_review": "human_confirmed_two_distinct_gates",
+          "review_ref": {
+            "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+            "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+          }
+        },
+        {
+          "id": "S03-04",
+          "native_outline": [
+            [
+              2115,
+              501
+            ],
+            [
+              2151,
+              501
+            ],
+            [
+              2151,
+              568
+            ],
+            [
+              2115,
+              568
+            ]
+          ],
+          "status": "human_identity_confirmed_extent_candidate",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值",
+          "identity_review": "human_confirmed_two_distinct_gates",
+          "review_ref": {
+            "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+            "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+          }
+        },
+        {
+          "id": "S03-05",
+          "native_outline": [
+            [
+              2166,
+              524
+            ],
+            [
+              2204,
+              524
+            ],
+            [
+              2204,
+              576
+            ],
+            [
+              2166,
+              576
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-06",
+          "native_outline": [
+            [
+              2238,
+              501
+            ],
+            [
+              2276,
+              501
+            ],
+            [
+              2276,
+              570
+            ],
+            [
+              2238,
+              570
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-07",
+          "native_outline": [
+            [
+              2292,
+              526
+            ],
+            [
+              2330,
+              526
+            ],
+            [
+              2330,
+              577
+            ],
+            [
+              2292,
+              577
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "F03：右侧不等长AA结构",
+      "poly_bbox": [
+        2900,
+        480,
+        3430,
+        620
+      ],
+      "aa_bbox": [
+        2800,
+        700,
+        3400,
+        830
+      ],
+      "object_ids": [
+        "G54-P26",
+        "G54-P27",
+        "G54-P28",
+        "G54-P29",
+        "G54-P30"
+      ],
+      "finding": "宽AA与密集条纹使旧等间距候选缺少逐栅依据；不把图像条纹或亮点逐个当栅。这里暂不改几何。",
+      "question": "本窗口待D02代表结构澄清后重新计数，不要求现在逐条确认。"
+    },
+    {
+      "id": "D04",
+      "title": "F04：上部长排的节距变化",
+      "poly_bbox": [
+        4320,
+        350,
+        4850,
+        495
+      ],
+      "aa_bbox": [
+        4180,
+        565,
+        4810,
+        665
+      ],
+      "object_ids": [
+        "G53-P57",
+        "G53-P58",
+        "G53-P59",
+        "G53-P60",
+        "G53-P61",
+        "G53-P62"
+      ],
+      "finding": "不同长度器件交错，照片中的端部不是简单上下交替；旧66槽模板尚无逐对象数量证据。这里暂不改几何。",
+      "question": "本窗口保留为待重判，不要求复核整排；不能据此认定当前橙色框就是实际栅。"
+    }
+  ],
+  "protected_scope": [
+    "existing_bottom_joint_design",
+    "F05-GATE",
+    "U10",
+    "all_unaddressed_objects"
+  ],
+  "acceptance": "pending_human_review",
+  "coordinate_contract": {
+    "native_outline": "POLY original pixel frame",
+    "layout_outline": "parent photo review atlas; not common AA design coordinates",
+    "AA_bbox": "unregistered source navigation, not point transform"
+  },
+  "unresolved": "只待S02新左边界候选复核；S01范围与S03-03/04独立身份不重问。F01-F04其余小栅及其精确AA对应仍待继续处理。",
+  "local_alignment_sets": [
+    {
+      "ids": [
+        "G55-P01",
+        "G55-P02",
+        "G55-P03",
+        "G55-P04"
+      ],
+      "equal_width_px": 32,
+      "equal_pitch_px": 82,
+      "common_top_and_bottom": true,
+      "scope": "photo_review_atlas_not_joint_design"
+    }
+  ],
+  "human_review": {
+    "path": "benchmarks/poly-small-mos-local-v2/human-review-v1.json",
+    "sha256": "043be39855665962c64fdf070cd4443775390c2b79e8c2fefe8eac3202d51539"
+  },
+  "protected_object_ids": [
+    "G54-P01",
+    "G54-P02",
+    "G54-P03",
+    "G54-P04"
+  ]
+}

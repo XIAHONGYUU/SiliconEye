@@ -1,0 +1,300 @@
+{
+  "id": "P-E01",
+  "name": "V3左端与CT遮挡：不能补出端部跨栅桥",
+  "native_bbox": [
+    2550,
+    1320,
+    2760,
+    1510
+  ],
+  "context": "端部尖亮点不是POLY轮廓。左端引出/接触精确形状未知；右侧是观察窗口截断，不是材料终点。",
+  "question": "此处只核查未知范围和可见栅带表达，不重新询问两栅是否通过端部相连。",
+  "direct": [
+    {
+      "id": "V3_G1_left",
+      "native_outline": [
+        [
+          2619.0,
+          1393.0
+        ],
+        [
+          2735.0,
+          1393.0
+        ],
+        [
+          2735.0,
+          1401.0
+        ],
+        [
+          2619.0,
+          1401.0
+        ]
+      ],
+      "layout_outline": [
+        [
+          2619.0,
+          1393.0
+        ],
+        [
+          2735.0,
+          1393.0
+        ],
+        [
+          2735.0,
+          1401.0
+        ],
+        [
+          2619.0,
+          1401.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "same_V3_known_case_end_context_not_independent_sample",
+      "native_to_layout": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    },
+    {
+      "id": "V3_G2_left",
+      "native_outline": [
+        [
+          2619.0,
+          1419.0
+        ],
+        [
+          2735.0,
+          1419.0
+        ],
+        [
+          2735.0,
+          1427.0
+        ],
+        [
+          2619.0,
+          1427.0
+        ]
+      ],
+      "layout_outline": [
+        [
+          2619.0,
+          1419.0
+        ],
+        [
+          2735.0,
+          1419.0
+        ],
+        [
+          2735.0,
+          1427.0
+        ],
+        [
+          2619.0,
+          1427.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "same_V3_known_case_end_context_not_independent_sample",
+      "native_to_layout": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    }
+  ],
+  "refined": [
+    {
+      "id": "V3_G1_left",
+      "native_outline": [
+        [
+          2619.0,
+          1390.5
+        ],
+        [
+          2735.0,
+          1390.5
+        ],
+        [
+          2735.0,
+          1400.5
+        ],
+        [
+          2619.0,
+          1400.5
+        ]
+      ],
+      "layout_outline": [
+        [
+          2619.0,
+          1390.0
+        ],
+        [
+          2735.0,
+          1390.0
+        ],
+        [
+          2735.0,
+          1400.0
+        ],
+        [
+          2619.0,
+          1400.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "same_V3_known_case_end_context_not_independent_sample",
+      "material_boundary": "AI_candidate_not_pixel_truth",
+      "native_to_layout": [
+        [
+          0.9999999999999672,
+          -5.855655521389515e-30,
+          4.3875799545291864e-11
+        ],
+        [
+          -9.211348194322424e-15,
+          0.9999999999999836,
+          -0.4999999999753561
+        ],
+        [
+          -6.125368411724982e-18,
+          -0.0,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    },
+    {
+      "id": "V3_G2_left",
+      "native_outline": [
+        [
+          2619.0,
+          1416.5
+        ],
+        [
+          2735.0,
+          1416.5
+        ],
+        [
+          2735.0,
+          1428.5
+        ],
+        [
+          2619.0,
+          1428.5
+        ]
+      ],
+      "layout_outline": [
+        [
+          2619.0,
+          1416.0
+        ],
+        [
+          2735.0,
+          1416.0
+        ],
+        [
+          2735.0,
+          1428.0
+        ],
+        [
+          2619.0,
+          1428.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "same_V3_known_case_end_context_not_independent_sample",
+      "material_boundary": "AI_candidate_not_pixel_truth",
+      "native_to_layout": [
+        [
+          0.9999999999999657,
+          1.8599300330450118e-28,
+          4.571734769108226e-11
+        ],
+        [
+          -9.637572907307157e-15,
+          0.9999999999999827,
+          -0.4999999999738026
+        ],
+        [
+          -6.382461409637252e-18,
+          6.67220096130477e-32,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "V3_G1_left",
+      "status": "candidate_normal_edges_from_algorithm_support",
+      "supported_fraction": 0.7727272727272727,
+      "normal_interval": [
+        -0.3125,
+        0.9375
+      ],
+      "mean_corner_change_px": 1.5,
+      "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+      "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+    },
+    {
+      "id": "V3_G2_left",
+      "status": "candidate_normal_edges_from_algorithm_support",
+      "supported_fraction": 0.7727272727272727,
+      "normal_interval": [
+        -0.3125,
+        1.1875
+      ],
+      "mean_corner_change_px": 2.0,
+      "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+      "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+    }
+  ],
+  "regular_geometry": "PASS",
+  "pair_overlap_gate": "PASS",
+  "pair_overlaps": [],
+  "B0_center_component_labels": [
+    1,
+    2
+  ],
+  "B0_component_labels_not_material_truth": true,
+  "unknown_pixels": 5658,
+  "identity_reconfirmation_required": false,
+  "quality_improvement": "NEEDS_REVIEW",
+  "full_gate_shape": "NOT_COMPLETED_visible_fragments_only"
+}

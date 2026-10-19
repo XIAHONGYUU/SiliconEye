@@ -1,0 +1,63 @@
+<!doctype html><meta charset="utf-8"><title>AA全幅接续与质量复核</title>
+<style>body{font-family:sans-serif;
+background:#19212d;
+color:#eee;
+margin:24px}a{color:#8edcff}
+select{padding:8px}img{width:100%;
+background:#111}.pair{display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px}
+@media(max-width:900px){.pair{grid-template-columns:1fr}}#note{line-height:1.6}</style>
+<h1>AA全幅：R1/R2局部关系已确认</h1><p>用户已确认两环之间为非AA，横向结果基本正常，左右竖向环虽近仍保持分离。维持当前图形，不重算或扩大批准范围。</p><p>可以封装当前已验证范围的人机协作工作流；全幅稠密材料完整性仍未获人工批准。</p>
+
+<p>黄色为旧版，蓝色为修订后。原图叠加使用逐对象来源；规则版图单独显示重建坐标，不能直接当照片投影。</p>
+
+
+<p>没有全图重训/模型推断或CT更新。既有语义不重复询问，旧问题不等于新批准。全幅材料完整性尚未验收。</p>
+
+<select id="scope"></select>
+<select id="mode"><option value="after">修订后叠加</option>
+<option value="before">旧版叠加</option><option value="source">原图</option>
+<option value="layout">规则AA版图（重建坐标）</option></select>
+<p id="note"></p>
+
+<div class="pair"><div>原图与上下文<img id="raw"></div>
+<div id="resultlabel">所选结果<img id="result"></div>
+</div>
+
+<h2>本轮检查范围</h2><p>AI已完成F01–F12宏观巡检；无需重新逐块人审。已有检查中心6/12 → 12/12，仅为已知稀疏中心回归，不是全幅准确率。<a href="ai-review-v1.json">AI初检</a> · <a href="center-regression-v1.json">中心对照</a></p><p id="stats"></p>
+
+<p id="questions"></p>
+<p>全幅AI巡检与局部变更结果另见人工/AI复核记录；不要求重新验收全部检查块。</p>
+
+
+<p><a href="../../../benchmarks/aa-full-frame-workflow-v1/acceptance-v1.json">后续验收状态</a> · <a href="../../../benchmarks/aa-full-frame-workflow-v1/human-review-v1.json">人工裁决</a></p><p><a href="report.json">执行时质量门/变更记录（历史状态）</a> ·
+<a href="model.json">全幅AA几何</a> · <a href="spec.json">输入/假设</a></p>
+
+<script src="reviewed-data.js"></script><script>
+const el=id=>document.getElementById(id);
+for(const w of DATA.windows){let o=document.createElement('option');
+o.value=w.id;
+o.textContent=w.id+' '+w.state;
+el('scope').append(o);
+}
+function update(){const w=DATA.windows.find(v=>v.id===el('scope').value);
+const mode=el('mode').value,dir=w.id==='FULL'?'':w.id+'/';
+
+el('raw').src=dir+'source.jpg';
+el('result').src=mode==='layout'?'layout-AA.svg':dir+mode+'.jpg';
+
+el('note').textContent=w.state+'；原生范围 '+w.bbox.join(', ')+
+'；规则版图模式始终显示整层共同重建坐标。';
+}
+el('stats').textContent='对象 '+DATA.report.before_objects+' → '+DATA.report.after_objects+
+'；未改对象 '+DATA.report.unchanged_objects+
+'；保留AA '+DATA.report.protected_AA_unchanged+
+'；几何面积交叠 '+DATA.report.layout_intersection_conflicts.length+
+'。对象数不是覆盖率或准确率。';
+
+el('questions').textContent=DATA.report.remaining_decisions.length ? DATA.report.remaining_decisions.map(q=>q.id+'：'+q.question).join('；') : '当前关键环结构问题已闭合，不重复要求分块验收。';
+for(const name of ['scope','mode'])el(name).addEventListener('change',update);
+update();
+
+</script>

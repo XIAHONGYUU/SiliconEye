@@ -1,0 +1,300 @@
+{
+  "id": "P-V01",
+  "name": "ROI2竖向双栅：主体与端部范围",
+  "native_bbox": [
+    1660,
+    2630,
+    1920,
+    2880
+  ],
+  "context": "采用已审core作为A的直接观察。core不是完整栅极外形；上下端及接触引出仍有未知，不以矩形封口推出栅长或连接。",
+  "question": "两条竖向POLY主体的新候选是否贴合？端部范围不清处保留未知。",
+  "direct": [
+    {
+      "id": "R2_poly_Q1_support",
+      "native_outline": [
+        [
+          1749.0,
+          2730.0
+        ],
+        [
+          1765.0,
+          2730.0
+        ],
+        [
+          1769.0,
+          2803.0
+        ],
+        [
+          1752.0,
+          2804.0
+        ]
+      ],
+      "layout_outline": [
+        [
+          1750.0,
+          2730.0
+        ],
+        [
+          1767.0,
+          2730.0
+        ],
+        [
+          1767.0,
+          2804.0
+        ],
+        [
+          1750.0,
+          2804.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "human_ROI2_identity_and_coarse_location_review",
+      "native_to_layout": [
+        [
+          2.5498359507610617,
+          -11.837828832119543,
+          14685.757731910768
+        ],
+        [
+          16.295074517808505,
+          -26.989336627724718,
+          24632.714695086
+        ],
+        [
+          0.005968891764765054,
+          -0.006947386158220646,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "native_outline": [
+        [
+          1805.0,
+          2730.0
+        ],
+        [
+          1821.0,
+          2730.0
+        ],
+        [
+          1825.0,
+          2800.0
+        ],
+        [
+          1809.0,
+          2802.0
+        ]
+      ],
+      "layout_outline": [
+        [
+          1807.0,
+          2730.0
+        ],
+        [
+          1823.0,
+          2730.0
+        ],
+        [
+          1823.0,
+          2801.0
+        ],
+        [
+          1807.0,
+          2801.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "human_ROI2_identity_and_coarse_location_review",
+      "native_to_layout": [
+        [
+          -0.5986754966888308,
+          0.08333763366868452,
+          1357.882600843044
+        ],
+        [
+          -1.3148705599036643,
+          0.42614317250055944,
+          1972.5954244434338
+        ],
+        [
+          -0.000481637567730272,
+          5.447091539802248e-05,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    }
+  ],
+  "refined": [
+    {
+      "id": "R2_poly_Q1_support",
+      "native_outline": [
+        [
+          1747.945945945946,
+          2730.0
+        ],
+        [
+          1773.1418918918919,
+          2730.0
+        ],
+        [
+          1776.1418918918919,
+          2804.0
+        ],
+        [
+          1750.945945945946,
+          2804.0
+        ]
+      ],
+      "layout_outline": [
+        [
+          1749.0,
+          2730.0
+        ],
+        [
+          1775.0,
+          2730.0
+        ],
+        [
+          1775.0,
+          2804.0
+        ],
+        [
+          1749.0,
+          2804.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "human_ROI2_identity_and_coarse_location_review",
+      "material_boundary": "AI_candidate_not_pixel_truth",
+      "native_to_layout": [
+        [
+          1.0319129866040149,
+          -0.041834310267732176,
+          59.47956935884735
+        ],
+        [
+          5.137250513937523e-15,
+          1.000000000000003,
+          -8.88232009714426e-12
+        ],
+        [
+          1.9054511551635144e-18,
+          -7.724801980392628e-20,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "native_outline": [
+        [
+          1802.9444444444443,
+          2730.0
+        ],
+        [
+          1823.7777777777778,
+          2730.0
+        ],
+        [
+          1827.7777777777778,
+          2802.0
+        ],
+        [
+          1806.9444444444443,
+          2802.0
+        ]
+      ],
+      "layout_outline": [
+        [
+          1805.0,
+          2730.0
+        ],
+        [
+          1826.0,
+          2730.0
+        ],
+        [
+          1826.0,
+          2802.0
+        ],
+        [
+          1805.0,
+          2802.0
+        ]
+      ],
+      "extent": "visible_body_fragment_not_complete_gate",
+      "physical_tangent_ends": "unknown_or_observation_scope",
+      "identity": "human_ROI2_identity_and_coarse_location_review",
+      "material_boundary": "AI_candidate_not_pixel_truth",
+      "native_to_layout": [
+        [
+          1.0079980312547019,
+          -0.05599989062470409,
+          140.51523727350425
+        ],
+        [
+          2.495731154222292e-16,
+          1.0000000000016978,
+          -2.347823787237715e-09
+        ],
+        [
+          -1.4590148005467193e-28,
+          3.0692673564388e-16,
+          1.0
+        ]
+      ],
+      "layout_unit": "relative_poly_layout_pixel_not_um",
+      "coordinate_scope": "local_body_correspondence_not_AA_registration"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "R2_poly_Q1_support",
+      "status": "candidate_normal_edges_from_algorithm_support",
+      "supported_fraction": 1.0,
+      "normal_interval": [
+        -0.06587837837837837,
+        1.5088682432432432
+      ],
+      "mean_corner_change_px": 4.36539038413785,
+      "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+      "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+    },
+    {
+      "id": "R2_poly_Q2_support",
+      "status": "candidate_normal_edges_from_algorithm_support",
+      "supported_fraction": 0.7592592592592593,
+      "normal_interval": [
+        -0.1284722222222222,
+        1.1736111111111112
+      ],
+      "mean_corner_change_px": 2.5779401000417046,
+      "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+      "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+    }
+  ],
+  "regular_geometry": "PASS",
+  "pair_overlap_gate": "PASS",
+  "pair_overlaps": [],
+  "B0_center_component_labels": [
+    2,
+    1
+  ],
+  "B0_component_labels_not_material_truth": true,
+  "unknown_pixels": 0,
+  "identity_reconfirmation_required": false,
+  "quality_improvement": "NEEDS_REVIEW",
+  "full_gate_shape": "NOT_COMPLETED_visible_fragments_only"
+}

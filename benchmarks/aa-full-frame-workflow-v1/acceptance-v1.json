@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "previous_report": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/report-v1.json",
+    "sha256": "e799aafa7423bd00fbc7fcba631daef5b0629b4db9db5946fa14c8370f7c1ecb"
+  },
+  "human_review": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/human-review-v1.json",
+    "sha256": "ca7ed4f76d37011aa20d6d4b087de35b0b60c3a0e1c6705dff654496ca7b19fb"
+  },
+  "separation_check": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/ring-separation-verification-v1.json",
+    "sha256": "aaa7fd1945217a7b46bfc2180a126816fb0291f16c0ca91f46196590d6b9bf87"
+  },
+  "resolved_decisions": [
+    "Q-F09-RING"
+  ],
+  "known_critical_structure_decisions_pending": [],
+  "fullframe_working_version": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "gates": {
+    "source_and_nonregression": "PASS_as_previously_verified",
+    "geometry_and_known_centers": "PASS_as_previously_verified",
+    "local_ring_relation": "PASS_human_confirmed",
+    "fullframe_workflow_execution": "PASS_scoped_human_in_loop",
+    "whole_frame_dense_material_completeness": "NOT_HUMAN_ACCEPTED",
+    "skill_packaging": "READY_scoped_repository_v1_not_universal_auto_extraction"
+  },
+  "geometry_recomputed": false,
+  "no_new_approval_inferred": "No fullframe exact-boundary or pixel-truth approval inferred from this local reply."
+}

@@ -1,0 +1,472 @@
+{
+  "status": "full_native_candidate_not_fullframe_acceptance",
+  "canvas_wh": [
+    5712,
+    4284
+  ],
+  "source_sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+  "spec_sha256": "a1b18b6a85f604cbb4607b4fb8c1ddd582632d44bb3b8acd80e0c44625531c73",
+  "code_sha256": "dd1b1f1946d800f8d826128144e84afb0c3e7e0f1d14acd2b50e2f0ba26260f3",
+  "feature_code_sha256": "9512ecbe5e2a3177381618da45bea6aa84c10d65016f121fc561876a4d69de3e",
+  "training_pixels_per_class": {
+    "0": 4000,
+    "1": 4000
+  },
+  "placements": [
+    {
+      "id": "S05",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "local_to_native": [
+        [
+          1,
+          0,
+          3300
+        ],
+        [
+          0,
+          1,
+          3330
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "processed_pixels": 128800,
+      "global_model_disagreement_pixels": 6640,
+      "review_scope": "Human reviewed local candidate/material relationship, NOT dense pixel truth."
+    },
+    {
+      "id": "S02",
+      "native_bbox": [
+        900,
+        2190,
+        1550,
+        2420
+      ],
+      "local_to_native": [
+        [
+          1,
+          0,
+          900
+        ],
+        [
+          0,
+          1,
+          2190
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "processed_pixels": 135700,
+      "global_model_disagreement_pixels": 1400,
+      "review_scope": "Human reviewed local candidate/material relationship, NOT dense pixel truth."
+    },
+    {
+      "id": "V01",
+      "native_bbox": [
+        2220,
+        1250,
+        2480,
+        1940
+      ],
+      "local_to_native": [
+        [
+          1,
+          0,
+          2220
+        ],
+        [
+          0,
+          1,
+          1250
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "processed_pixels": 88480,
+      "global_model_disagreement_pixels": 7,
+      "review_scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved."
+    },
+    {
+      "id": "P01",
+      "native_bbox": [
+        1750,
+        3050,
+        2450,
+        3225
+      ],
+      "local_to_native": [
+        [
+          1,
+          0,
+          1750
+        ],
+        [
+          0,
+          1,
+          3050
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "processed_pixels": 41489,
+      "global_model_disagreement_pixels": 514,
+      "review_scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved."
+    },
+    {
+      "id": "B01",
+      "native_bbox": [
+        930,
+        3300,
+        1520,
+        3720
+      ],
+      "local_to_native": [
+        [
+          1,
+          0,
+          930
+        ],
+        [
+          0,
+          1,
+          3300
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "processed_pixels": 22270,
+      "global_model_disagreement_pixels": 595,
+      "review_scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved."
+    }
+  ],
+  "tiles": [
+    {
+      "id": "N01",
+      "native_bbox": [
+        0,
+        185,
+        1428,
+        1551
+      ],
+      "context_native_bbox": [
+        0,
+        89,
+        1524,
+        1647
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 749302,
+        "candidate_non_AA_pixels": 14227,
+        "unknown_pixels": 1187119,
+        "local_context_pixels": 0,
+        "conflict_pixels": 0,
+        "adaptive_disagreement_pixels": 334749
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N02",
+      "native_bbox": [
+        1428,
+        185,
+        2856,
+        1551
+      ],
+      "context_native_bbox": [
+        1332,
+        89,
+        2952,
+        1647
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 992188,
+        "candidate_non_AA_pixels": 23190,
+        "unknown_pixels": 935270,
+        "local_context_pixels": 37536,
+        "conflict_pixels": 6,
+        "adaptive_disagreement_pixels": 500598
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N03",
+      "native_bbox": [
+        2856,
+        185,
+        4284,
+        1551
+      ],
+      "context_native_bbox": [
+        2760,
+        89,
+        4380,
+        1647
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 1069459,
+        "candidate_non_AA_pixels": 13177,
+        "unknown_pixels": 868012,
+        "local_context_pixels": 0,
+        "conflict_pixels": 0,
+        "adaptive_disagreement_pixels": 600841
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N04",
+      "native_bbox": [
+        4284,
+        185,
+        5712,
+        1551
+      ],
+      "context_native_bbox": [
+        4188,
+        89,
+        5712,
+        1647
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 807063,
+        "candidate_non_AA_pixels": 30335,
+        "unknown_pixels": 1113250,
+        "local_context_pixels": 0,
+        "conflict_pixels": 0,
+        "adaptive_disagreement_pixels": 520167
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N05",
+      "native_bbox": [
+        0,
+        1551,
+        1428,
+        2918
+      ],
+      "context_native_bbox": [
+        0,
+        1455,
+        1524,
+        3014
+      ],
+      "stats": {
+        "valid_pixels": 1952076,
+        "candidate_AA_pixels": 999627,
+        "candidate_non_AA_pixels": 32277,
+        "unknown_pixels": 920172,
+        "local_context_pixels": 114540,
+        "conflict_pixels": 1174,
+        "adaptive_disagreement_pixels": 601132
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N06",
+      "native_bbox": [
+        1428,
+        1551,
+        2856,
+        2918
+      ],
+      "context_native_bbox": [
+        1332,
+        1455,
+        2952,
+        3014
+      ],
+      "stats": {
+        "valid_pixels": 1952076,
+        "candidate_AA_pixels": 884039,
+        "candidate_non_AA_pixels": 21768,
+        "unknown_pixels": 1046269,
+        "local_context_pixels": 72104,
+        "conflict_pixels": 227,
+        "adaptive_disagreement_pixels": 424548
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N07",
+      "native_bbox": [
+        2856,
+        1551,
+        4284,
+        2918
+      ],
+      "context_native_bbox": [
+        2760,
+        1455,
+        4380,
+        3014
+      ],
+      "stats": {
+        "valid_pixels": 1952076,
+        "candidate_AA_pixels": 564814,
+        "candidate_non_AA_pixels": 32929,
+        "unknown_pixels": 1354333,
+        "local_context_pixels": 0,
+        "conflict_pixels": 0,
+        "adaptive_disagreement_pixels": 338880
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N08",
+      "native_bbox": [
+        4284,
+        1551,
+        5712,
+        2918
+      ],
+      "context_native_bbox": [
+        4188,
+        1455,
+        5712,
+        3014
+      ],
+      "stats": {
+        "valid_pixels": 1952076,
+        "candidate_AA_pixels": 583136,
+        "candidate_non_AA_pixels": 414400,
+        "unknown_pixels": 954540,
+        "local_context_pixels": 0,
+        "conflict_pixels": 0,
+        "adaptive_disagreement_pixels": 478827
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N09",
+      "native_bbox": [
+        0,
+        2918,
+        1428,
+        4284
+      ],
+      "context_native_bbox": [
+        0,
+        2822,
+        1524,
+        4284
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 1084326,
+        "candidate_non_AA_pixels": 38679,
+        "unknown_pixels": 827643,
+        "local_context_pixels": 22270,
+        "conflict_pixels": 595,
+        "adaptive_disagreement_pixels": 668995
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N10",
+      "native_bbox": [
+        1428,
+        2918,
+        2856,
+        4284
+      ],
+      "context_native_bbox": [
+        1332,
+        2822,
+        2952,
+        4284
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 931091,
+        "candidate_non_AA_pixels": 79342,
+        "unknown_pixels": 940215,
+        "local_context_pixels": 41489,
+        "conflict_pixels": 514,
+        "adaptive_disagreement_pixels": 486198
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N11",
+      "native_bbox": [
+        2856,
+        2918,
+        4284,
+        4284
+      ],
+      "context_native_bbox": [
+        2760,
+        2822,
+        4380,
+        4284
+      ],
+      "stats": {
+        "valid_pixels": 1937448,
+        "candidate_AA_pixels": 885060,
+        "candidate_non_AA_pixels": 310286,
+        "unknown_pixels": 742102,
+        "local_context_pixels": 128800,
+        "conflict_pixels": 6640,
+        "adaptive_disagreement_pixels": 644792
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    },
+    {
+      "id": "N12",
+      "native_bbox": [
+        4284,
+        2918,
+        5712,
+        4284
+      ],
+      "context_native_bbox": [
+        4188,
+        2822,
+        5712,
+        4284
+      ],
+      "stats": {
+        "valid_pixels": 1950648,
+        "candidate_AA_pixels": 1036842,
+        "candidate_non_AA_pixels": 252428,
+        "unknown_pixels": 661378,
+        "local_context_pixels": 0,
+        "conflict_pixels": 0,
+        "adaptive_disagreement_pixels": 839446
+      },
+      "human_review_status": "not_reviewed_as_a_whole_tile"
+    }
+  ],
+  "valid_pixels": 23400288,
+  "AA_pixels": 10586947,
+  "non_AA_pixels": 1263038,
+  "unknown_pixels": 11550303,
+  "local_context_pixels": 416739,
+  "conflict_pixels": 9156,
+  "full_frame_human_accepted": false,
+  "note": "Global probabilities are uncalibrated candidate scores. Local context candidates, including unknown boundaries, explicitly override global model within processing domains. Equal-tier local contradictions remain unknown; disagreement flags remain. Review context coverage is not dense human-reviewed pixel coverage."
+}

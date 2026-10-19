@@ -1,0 +1,928 @@
+{
+  "status": "local_POLY_geometry_candidates_require_review_before_fullframe",
+  "steps": {
+    "freeze_AA": "DONE",
+    "reuse_POLY_history": "DONE",
+    "representative_comparison": "EXECUTED_NEW_GEOMETRY_PENDING",
+    "fullframe_POLY": "NOT_STARTED_until_local_method_validated",
+    "skill_packaging": "NOT_STARTED_until_validation"
+  },
+  "source": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+  },
+  "baseline": {
+    "path": "benchmarks/poly-reconstruction-v1/baseline-v1.json",
+    "sha256": "361e28987bd89c46c0f577c002e7b802e3135b2c2a37b3585b8d2b3ab0c36cc3"
+  },
+  "cases": [
+    {
+      "id": "P-H01",
+      "name": "V3横向双栅：保持局部POLY分离",
+      "native_bbox": [
+        2550,
+        1310,
+        3130,
+        1510
+      ],
+      "context": "三排CT亮点与两条横向栅带分开解释；CT仅遮挡参考，不在此阶段分配连接。",
+      "question": "新规则几何的两条栅带宽度和位置是否合理？身份与端部不互连的既有裁决不重问。",
+      "direct": [
+        {
+          "id": "V3_G1",
+          "native_outline": [
+            [
+              2619.0,
+              1393.0
+            ],
+            [
+              3059.0,
+              1393.0
+            ],
+            [
+              3059.0,
+              1401.0
+            ],
+            [
+              2619.0,
+              1401.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1393.0
+            ],
+            [
+              3059.0,
+              1393.0
+            ],
+            [
+              3059.0,
+              1401.0
+            ],
+            [
+              2619.0,
+              1401.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_material_review_and_local_topology_review",
+          "native_to_layout": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        },
+        {
+          "id": "V3_G2",
+          "native_outline": [
+            [
+              2619.0,
+              1419.0
+            ],
+            [
+              3059.0,
+              1419.0
+            ],
+            [
+              3059.0,
+              1427.0
+            ],
+            [
+              2619.0,
+              1427.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1419.0
+            ],
+            [
+              3059.0,
+              1419.0
+            ],
+            [
+              3059.0,
+              1427.0
+            ],
+            [
+              2619.0,
+              1427.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_material_review_and_local_topology_review",
+          "native_to_layout": [
+            [
+              0.9999999999999543,
+              1.4966682437834541e-28,
+              6.468781873794724e-11
+            ],
+            [
+              -1.1532868366241674e-14,
+              0.9999999999999754,
+              3.5246092912963236e-11
+            ],
+            [
+              -8.074349270000972e-18,
+              5.006984919088545e-32,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        }
+      ],
+      "refined": [
+        {
+          "id": "V3_G1",
+          "native_outline": [
+            [
+              2619.0,
+              1390.5
+            ],
+            [
+              3059.0,
+              1390.5
+            ],
+            [
+              3059.0,
+              1399.5
+            ],
+            [
+              2619.0,
+              1399.5
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1390.0
+            ],
+            [
+              3059.0,
+              1390.0
+            ],
+            [
+              3059.0,
+              1400.0
+            ],
+            [
+              2619.0,
+              1400.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_material_review_and_local_topology_review",
+          "material_boundary": "AI_candidate_not_pixel_truth",
+          "native_to_layout": [
+            [
+              1.0000000000000002,
+              -1.1590308410179704e-30,
+              -2.021494335560887e-13
+            ],
+            [
+              -3.087005821106224e-16,
+              1.1111111111111112,
+              -154.99999999999895
+            ],
+            [
+              2.52323414687536e-20,
+              -3.7088777178435177e-34,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        },
+        {
+          "id": "V3_G2",
+          "native_outline": [
+            [
+              2619.0,
+              1416.5
+            ],
+            [
+              3059.0,
+              1416.5
+            ],
+            [
+              3059.0,
+              1428.5
+            ],
+            [
+              2619.0,
+              1428.5
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1416.0
+            ],
+            [
+              3059.0,
+              1416.0
+            ],
+            [
+              3059.0,
+              1428.0
+            ],
+            [
+              2619.0,
+              1428.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_material_review_and_local_topology_review",
+          "material_boundary": "AI_candidate_not_pixel_truth",
+          "native_to_layout": [
+            [
+              0.9999999999999942,
+              -5.899733843122489e-29,
+              8.080713034078205e-12
+            ],
+            [
+              -1.2227528285445791e-15,
+              0.999999999999997,
+              -0.49999999999630845
+            ],
+            [
+              -1.008636566524399e-18,
+              -1.9458931190541477e-32,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        }
+      ],
+      "measurements": [
+        {
+          "id": "V3_G1",
+          "status": "candidate_normal_edges_from_algorithm_support",
+          "supported_fraction": 0.7215568862275449,
+          "normal_interval": [
+            -0.3125,
+            0.8125
+          ],
+          "mean_corner_change_px": 2.0,
+          "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+          "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+        },
+        {
+          "id": "V3_G2",
+          "status": "candidate_normal_edges_from_algorithm_support",
+          "supported_fraction": 0.7215568862275449,
+          "normal_interval": [
+            -0.3125,
+            1.1875
+          ],
+          "mean_corner_change_px": 2.0,
+          "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+          "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+        }
+      ],
+      "regular_geometry": "PASS",
+      "pair_overlap_gate": "PASS",
+      "pair_overlaps": [],
+      "B0_center_component_labels": [
+        1,
+        2
+      ],
+      "B0_component_labels_not_material_truth": true,
+      "unknown_pixels": 5692,
+      "identity_reconfirmation_required": false,
+      "quality_improvement": "NEEDS_REVIEW",
+      "full_gate_shape": "NOT_COMPLETED_visible_fragments_only",
+      "approved_prior": "retained_unchanged_not_replaced_by_new_candidate"
+    },
+    {
+      "id": "P-V01",
+      "name": "ROI2竖向双栅：主体与端部范围",
+      "native_bbox": [
+        1660,
+        2630,
+        1920,
+        2880
+      ],
+      "context": "采用已审core作为A的直接观察。core不是完整栅极外形；上下端及接触引出仍有未知，不以矩形封口推出栅长或连接。",
+      "question": "两条竖向POLY主体的新候选是否贴合？端部范围不清处保留未知。",
+      "direct": [
+        {
+          "id": "R2_poly_Q1_support",
+          "native_outline": [
+            [
+              1749.0,
+              2730.0
+            ],
+            [
+              1765.0,
+              2730.0
+            ],
+            [
+              1769.0,
+              2803.0
+            ],
+            [
+              1752.0,
+              2804.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              1750.0,
+              2730.0
+            ],
+            [
+              1767.0,
+              2730.0
+            ],
+            [
+              1767.0,
+              2804.0
+            ],
+            [
+              1750.0,
+              2804.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_ROI2_identity_and_coarse_location_review",
+          "native_to_layout": [
+            [
+              2.5498359507610617,
+              -11.837828832119543,
+              14685.757731910768
+            ],
+            [
+              16.295074517808505,
+              -26.989336627724718,
+              24632.714695086
+            ],
+            [
+              0.005968891764765054,
+              -0.006947386158220646,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        },
+        {
+          "id": "R2_poly_Q2_support",
+          "native_outline": [
+            [
+              1805.0,
+              2730.0
+            ],
+            [
+              1821.0,
+              2730.0
+            ],
+            [
+              1825.0,
+              2800.0
+            ],
+            [
+              1809.0,
+              2802.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              1807.0,
+              2730.0
+            ],
+            [
+              1823.0,
+              2730.0
+            ],
+            [
+              1823.0,
+              2801.0
+            ],
+            [
+              1807.0,
+              2801.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_ROI2_identity_and_coarse_location_review",
+          "native_to_layout": [
+            [
+              -0.5986754966888308,
+              0.08333763366868452,
+              1357.882600843044
+            ],
+            [
+              -1.3148705599036643,
+              0.42614317250055944,
+              1972.5954244434338
+            ],
+            [
+              -0.000481637567730272,
+              5.447091539802248e-05,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        }
+      ],
+      "refined": [
+        {
+          "id": "R2_poly_Q1_support",
+          "native_outline": [
+            [
+              1747.945945945946,
+              2730.0
+            ],
+            [
+              1773.1418918918919,
+              2730.0
+            ],
+            [
+              1776.1418918918919,
+              2804.0
+            ],
+            [
+              1750.945945945946,
+              2804.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              1749.0,
+              2730.0
+            ],
+            [
+              1775.0,
+              2730.0
+            ],
+            [
+              1775.0,
+              2804.0
+            ],
+            [
+              1749.0,
+              2804.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_ROI2_identity_and_coarse_location_review",
+          "material_boundary": "AI_candidate_not_pixel_truth",
+          "native_to_layout": [
+            [
+              1.0319129866040149,
+              -0.041834310267732176,
+              59.47956935884735
+            ],
+            [
+              5.137250513937523e-15,
+              1.000000000000003,
+              -8.88232009714426e-12
+            ],
+            [
+              1.9054511551635144e-18,
+              -7.724801980392628e-20,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        },
+        {
+          "id": "R2_poly_Q2_support",
+          "native_outline": [
+            [
+              1802.9444444444443,
+              2730.0
+            ],
+            [
+              1823.7777777777778,
+              2730.0
+            ],
+            [
+              1827.7777777777778,
+              2802.0
+            ],
+            [
+              1806.9444444444443,
+              2802.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              1805.0,
+              2730.0
+            ],
+            [
+              1826.0,
+              2730.0
+            ],
+            [
+              1826.0,
+              2802.0
+            ],
+            [
+              1805.0,
+              2802.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "human_ROI2_identity_and_coarse_location_review",
+          "material_boundary": "AI_candidate_not_pixel_truth",
+          "native_to_layout": [
+            [
+              1.0079980312547019,
+              -0.05599989062470409,
+              140.51523727350425
+            ],
+            [
+              2.495731154222292e-16,
+              1.0000000000016978,
+              -2.347823787237715e-09
+            ],
+            [
+              -1.4590148005467193e-28,
+              3.0692673564388e-16,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        }
+      ],
+      "measurements": [
+        {
+          "id": "R2_poly_Q1_support",
+          "status": "candidate_normal_edges_from_algorithm_support",
+          "supported_fraction": 1.0,
+          "normal_interval": [
+            -0.06587837837837837,
+            1.5088682432432432
+          ],
+          "mean_corner_change_px": 4.36539038413785,
+          "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+          "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+        },
+        {
+          "id": "R2_poly_Q2_support",
+          "status": "candidate_normal_edges_from_algorithm_support",
+          "supported_fraction": 0.7592592592592593,
+          "normal_interval": [
+            -0.1284722222222222,
+            1.1736111111111112
+          ],
+          "mean_corner_change_px": 2.5779401000417046,
+          "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+          "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+        }
+      ],
+      "regular_geometry": "PASS",
+      "pair_overlap_gate": "PASS",
+      "pair_overlaps": [],
+      "B0_center_component_labels": [
+        2,
+        1
+      ],
+      "B0_component_labels_not_material_truth": true,
+      "unknown_pixels": 0,
+      "identity_reconfirmation_required": false,
+      "quality_improvement": "NEEDS_REVIEW",
+      "full_gate_shape": "NOT_COMPLETED_visible_fragments_only"
+    },
+    {
+      "id": "P-E01",
+      "name": "V3左端与CT遮挡：不能补出端部跨栅桥",
+      "native_bbox": [
+        2550,
+        1320,
+        2760,
+        1510
+      ],
+      "context": "端部尖亮点不是POLY轮廓。左端引出/接触精确形状未知；右侧是观察窗口截断，不是材料终点。",
+      "question": "此处只核查未知范围和可见栅带表达，不重新询问两栅是否通过端部相连。",
+      "direct": [
+        {
+          "id": "V3_G1_left",
+          "native_outline": [
+            [
+              2619.0,
+              1393.0
+            ],
+            [
+              2735.0,
+              1393.0
+            ],
+            [
+              2735.0,
+              1401.0
+            ],
+            [
+              2619.0,
+              1401.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1393.0
+            ],
+            [
+              2735.0,
+              1393.0
+            ],
+            [
+              2735.0,
+              1401.0
+            ],
+            [
+              2619.0,
+              1401.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "same_V3_known_case_end_context_not_independent_sample",
+          "native_to_layout": [
+            [
+              1.0,
+              0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        },
+        {
+          "id": "V3_G2_left",
+          "native_outline": [
+            [
+              2619.0,
+              1419.0
+            ],
+            [
+              2735.0,
+              1419.0
+            ],
+            [
+              2735.0,
+              1427.0
+            ],
+            [
+              2619.0,
+              1427.0
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1419.0
+            ],
+            [
+              2735.0,
+              1419.0
+            ],
+            [
+              2735.0,
+              1427.0
+            ],
+            [
+              2619.0,
+              1427.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "same_V3_known_case_end_context_not_independent_sample",
+          "native_to_layout": [
+            [
+              1.0,
+              0.0,
+              -0.0
+            ],
+            [
+              0.0,
+              1.0,
+              -0.0
+            ],
+            [
+              -0.0,
+              -0.0,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        }
+      ],
+      "refined": [
+        {
+          "id": "V3_G1_left",
+          "native_outline": [
+            [
+              2619.0,
+              1390.5
+            ],
+            [
+              2735.0,
+              1390.5
+            ],
+            [
+              2735.0,
+              1400.5
+            ],
+            [
+              2619.0,
+              1400.5
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1390.0
+            ],
+            [
+              2735.0,
+              1390.0
+            ],
+            [
+              2735.0,
+              1400.0
+            ],
+            [
+              2619.0,
+              1400.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "same_V3_known_case_end_context_not_independent_sample",
+          "material_boundary": "AI_candidate_not_pixel_truth",
+          "native_to_layout": [
+            [
+              0.9999999999999672,
+              -5.855655521389515e-30,
+              4.3875799545291864e-11
+            ],
+            [
+              -9.211348194322424e-15,
+              0.9999999999999836,
+              -0.4999999999753561
+            ],
+            [
+              -6.125368411724982e-18,
+              -0.0,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        },
+        {
+          "id": "V3_G2_left",
+          "native_outline": [
+            [
+              2619.0,
+              1416.5
+            ],
+            [
+              2735.0,
+              1416.5
+            ],
+            [
+              2735.0,
+              1428.5
+            ],
+            [
+              2619.0,
+              1428.5
+            ]
+          ],
+          "layout_outline": [
+            [
+              2619.0,
+              1416.0
+            ],
+            [
+              2735.0,
+              1416.0
+            ],
+            [
+              2735.0,
+              1428.0
+            ],
+            [
+              2619.0,
+              1428.0
+            ]
+          ],
+          "extent": "visible_body_fragment_not_complete_gate",
+          "physical_tangent_ends": "unknown_or_observation_scope",
+          "identity": "same_V3_known_case_end_context_not_independent_sample",
+          "material_boundary": "AI_candidate_not_pixel_truth",
+          "native_to_layout": [
+            [
+              0.9999999999999657,
+              1.8599300330450118e-28,
+              4.571734769108226e-11
+            ],
+            [
+              -9.637572907307157e-15,
+              0.9999999999999827,
+              -0.4999999999738026
+            ],
+            [
+              -6.382461409637252e-18,
+              6.67220096130477e-32,
+              1.0
+            ]
+          ],
+          "layout_unit": "relative_poly_layout_pixel_not_um",
+          "coordinate_scope": "local_body_correspondence_not_AA_registration"
+        }
+      ],
+      "measurements": [
+        {
+          "id": "V3_G1_left",
+          "status": "candidate_normal_edges_from_algorithm_support",
+          "supported_fraction": 0.7727272727272727,
+          "normal_interval": [
+            -0.3125,
+            0.9375
+          ],
+          "mean_corner_change_px": 1.5,
+          "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+          "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+        },
+        {
+          "id": "V3_G2_left",
+          "status": "candidate_normal_edges_from_algorithm_support",
+          "supported_fraction": 0.7727272727272727,
+          "normal_interval": [
+            -0.3125,
+            1.1875
+          ],
+          "mean_corner_change_px": 2.0,
+          "tangent_end_status": "AI_visible_fragment_extent_not_measured_terminal",
+          "quality_improvement": "NOT_ESTABLISHED_without_source_review"
+        }
+      ],
+      "regular_geometry": "PASS",
+      "pair_overlap_gate": "PASS",
+      "pair_overlaps": [],
+      "B0_center_component_labels": [
+        1,
+        2
+      ],
+      "B0_component_labels_not_material_truth": true,
+      "unknown_pixels": 5658,
+      "identity_reconfirmation_required": false,
+      "quality_improvement": "NEEDS_REVIEW",
+      "full_gate_shape": "NOT_COMPLETED_visible_fragments_only"
+    }
+  ],
+  "AA_unchanged": true,
+  "CT_assignments_performed": false,
+  "fullframe_model_training": false,
+  "aa_to_poly_projection_applied": false,
+  "code_sha256": "2232ee50c327f698af387a8c66493c41cad908669939fb919e56df6b832ca4f4",
+  "spec_sha256": "6788a84e3ee2a30e198c78fa88bc3ebe26c1d2de6c092b9951229231a854656e",
+  "limitations": "AI-selected cores guide local GrabCut; not independent discovery, pixel truth or full-gate reconstruction. E01 overlaps H01."
+}

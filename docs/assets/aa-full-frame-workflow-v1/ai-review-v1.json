@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "reviewer": "interactive_AI_same_agent",
+  "after_model": {
+    "path": "runs/aa-full-frame-workflow-v1d/model.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "evidence": "Full-frame overview, F01-F12 after/source comparisons and D01/D02/D03/D05 wide contexts inspected; not an independent agent or human approval.",
+  "frames": [
+    {
+      "id": "F01",
+      "assessment": "MOS/dummy主体保留；上方相邻轨道按旧裁决分开；源边界修订属于新候选，不扩大精确批准。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F02",
+      "assessment": "既有MOS/环覆盖保留；上方双轨分离，无新的宏观误连；竖环/内部AA条旧验收不重问。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F03",
+      "assessment": "长条、阵列及上方双轨结构保留；源图投影使用对象对应，不用全局比例覆盖。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F04",
+      "assessment": "右侧长环/转角/阵列保留；双轨定位末端30列未由本次算法验证，保留候选边界，不默认为精确通过。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F05",
+      "assessment": "移除两大MOS之间误补横环，两个MOS本体和外围AA保留；不再混入CT。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F06",
+      "assessment": "上侧左大MOS中间横环删除，附近独立MOS/环未改；无新全幅分割回退。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F07",
+      "assessment": "dummy与电阻外环保持，内部非AA保持未填；旧三个内环结构未被算法并片。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F08",
+      "assessment": "右侧长环沿原模型保留，没有根据亮点挖孔或断开；精确宽度非本轮测量。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F09",
+      "assessment": "下组大MOS之间误补横环删除；右侧中间环的旧结构反馈仍需精确定位，未自行裁决。",
+      "status": "needs_target_localization"
+    },
+    {
+      "id": "F10",
+      "assessment": "已批准蓝色台阶源轮廓原样纳入；既有其他折线、MOS和环保持；本轮未发现宏观新增遗漏。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F11",
+      "assessment": "电阻外环/MOS环使用原生角点对应，12中心回归全部符合；间隙关系恢复，非精确全环验收。",
+      "status": "no_new_macro_regression_observed"
+    },
+    {
+      "id": "F12",
+      "assessment": "复用用户基本无问题的dummy/外围环范围，不重新提取；不升级为整图精确真值。",
+      "status": "no_new_macro_regression_observed"
+    }
+  ],
+  "open_material_structure": [
+    "Q-F09-RING"
+  ],
+  "boundary_limitations": [
+    "Upper locator last30 columns outside eligible span; exact edges remain candidate.",
+    "Human global pixel truth and all-ring exact boundary verification unavailable."
+  ],
+  "full_frame_pass": false
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "user_text": [
+    "1.对应合理只整齐",
+    "2.这个点是否对应错误，不应该有这个问题。"
+  ],
+  "decisions": [
+    {
+      "scope": "U05",
+      "status": "human_approved_displayed_correspondence_and_row_alignment",
+      "AA_ids": [
+        "AA-F01697",
+        "AA-F01698",
+        "AA-F01699",
+        "AA-F01700",
+        "AA-F01701",
+        "AA-F01702",
+        "AA-F01703",
+        "AA-F01704",
+        "AA-F01705",
+        "AA-F01706"
+      ],
+      "meaning": "U05所示对应与整排AA对齐合理；不扩大为全幅305条关系、精确尺寸、CT或网络批准。"
+    },
+    {
+      "scope": "SG-U04-W01",
+      "status": "source_correspondence_disputed",
+      "identity": "human_confirmed_wide_POLY_unchanged",
+      "meaning": "用户质疑当前跨层点位对应。不得据此得出没有AA、场区POLY或缺失器件结论。先核对独立结构标记和实际对应位置。"
+    }
+  ],
+  "geometry_changed": false,
+  "next_action": "明天核查宽POLY的真实AA/POLY位置对应，今晚停止几何扩展。",
+  "previous_snapshot": "index.html"
+}

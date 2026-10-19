@@ -1,175 +1,42 @@
-# Silicon Eye 🔬
+# Silicon Eye
 
-**AI-assisted analog circuit reverse engineering — from multi-layer die images to clean, human-readable SPICE netlists.**
+从同一位置的多层芯片照片，逐步恢复材料层、器件与连接，输出可复核的版图、电路和编号视图。
 
-> 🎯 **The Gap:** Every existing IC reverse engineering tool (Degate, ChipJuice, HAL) targets *digital* standard-cell designs. Nobody handles *analog* custom layout. Silicon Eye fills that void.
+## 从这里开始
 
-## Implemented scope and workflow direction
+| 入口 | 用途 |
+| --- | --- |
+| [CURRENT_TASK.md](CURRENT_TASK.md) | 唯一实时状态：当前授权、最新验收、未知、下一步 |
+| [开发计划](docs/development-plan.md) | 阶段顺序与完成条件 |
+| [照片栈总架构](docs/architecture/photo-stack-workflow-v3.md) | 全幅共同坐标与区域观察的边界 |
+| [AA工作流v9](docs/architecture/aa-extraction-workflow-v9.md) | AI直接提取与算法辅助修订，共同以质量提升为目标 |
+| [固定基线](docs/baseline.md) | 项目基准与限制 |
+| [项目规则](AGENTS.md) | 长期执行约定 |
 
-The sections below describe the original product vision and roadmap, not an inventory of completed capabilities. Current verified functionality is local registration tooling, explicit human-review state replay, and a unified evidence/review package. Runtime automatic device extraction, full-chip recovery, interactive metal highlighting and simulation-ready reconstruction are not implemented.
+## 当前能力
 
-The product input is a stack of photographs of the same physical chip region. Outputs should share stable device/terminal identities across schematics, image labels, metal-port annotations and conductor highlighting. See the [photo-stack workflow architecture](docs/architecture/photo-stack-workflow-v1.md), [AI observation contract](docs/agent-observations-v1.md), and [replayable review package](docs/review-package.md). Exact boundaries, electrical links and calibration retain their own evidence and approval states.
+已实现配准和证据复核工具、区域观察skill、多种AA分割/样本对照和同坐标分歧图；交互Agent结合上下文作材料判断，人工裁决关键语义。已形成有效的局部AA工作方法，已生成局部修订和不同窗口候选；[AA skill v1](skills/silicon-eye-aa-reconstruction/SKILL.md)已在仓库封装为人机协作v1，局部与全幅接续有验证证据，尚未全局安装；当前按[接续与质量控制修订](docs/checkpoints/2026-10-19-aa-control-repair.md)复用成果、限定变更并作前后比较。
 
-Current AA direction: [multi-method candidates and AI contextual review (v8)](docs/architecture/aa-extraction-workflow-v8.md). Representative bright/dark scribbles, texture RF, algorithm-disagreement views, contextual Agent judgment and scoped human decisions form a repeatable local workflow. Exact full-frame boundaries, automatic contextual correction and the AA skill are not yet implemented.
+全幅材料精确恢复、自动上下文修订、完整器件/网络提取、仿真就绪网表仍未完成。具体实现、软件测试、物理结论和人审范围分别记录，不以候选或程序成功代表验收。
 
-See the [2026-10-18 checkpoint](docs/checkpoints/2026-10-18-aa-workflow-reviewed.md) for results, reviewed constraints, evidence restoration and the next skill milestone. [Open the committed review sheet](docs/assets/aa-context-review-v1/review-sheet.png). Earlier geometry-first AA/CT experiments remain development references; they are not the current acceptance path. The sole live execution entry is [CURRENT_TASK.md](CURRENT_TASK.md).
+[最新全幅原生坐标检查点](docs/checkpoints/2026-10-19-aa-native-canvas.md)提供12块复核页与AI质量初检，全图候选尚未通过；[形状验证](docs/checkpoints/2026-10-19-aa-shape-validation.md)保留竖环/台阶/折线结果；[带状局部接续](docs/checkpoints/2026-10-19-aa-semantic-pilot.md)保留此前结果。[2026-10-18检查点](docs/checkpoints/2026-10-18-aa-workflow-reviewed.md)保存已推送版本与七份证据归档恢复入口；[已审复核图](docs/assets/aa-context-review-v1/review-sheet.png)可直接查看。原始八图在data/，不可修改；runs/与.venv/不入Git。所有输出保留来源、原生坐标、版本、有效范围和未知状态。
 
-## Why This Exists
+[全幅AA接续与定向修订](docs/checkpoints/2026-10-19-aa-full-frame-workflow.md)提供共同版图、逐对象原图对应和同页切换；R1/R2关键间隙关系已确认，仓库skill已封装为v1；全幅稠密材料真值、精确边界和新芯片泛化仍未验证。
 
-Reverse-engineering an analog chip today is a painful, manual process:
+[POLY v3联合重建](docs/checkpoints/2026-10-19-poly-full-frame-v3.md)优先满足AA/POLY相对结构：撤回普通凸形端部、保留已审U10、修订F05范围，生成下中部140条AA关系约束候选。照片坐标与设计坐标分开，未完成全幅联合布局或真实工艺DRC；方法见[联合重建架构](docs/architecture/layout-reconstruction-v1.md)。
 
-1. Take 10+ layer photographs of a decapped die
-2. Manually trace every transistor, resistor, and capacitor across layers
-3. Piece together a flat netlist — errors are common, especially when done by layout engineers who see geometry but not function
-4. Analog designers then spend hours rebuilding a readable schematic from the mess
+[2026-10-19日终状态](docs/checkpoints/2026-10-19-aa-poly-day-close.md)：U05小栅/AA所示对应与整排对齐已审；宽POLY跨层点位对应存疑，下一步先核查位置。完整候选、已审范围和未知分开记录。
 
-**Silicon Eye automates the first bottleneck: image → devices.** It uses modern computer vision (SAM3 for segmentation) and rule-based heuristics to extract transistors from die images, group matched pairs (current mirrors, diff pairs), filter dummy devices, and merge passive components — then exports a clean netlist.
-
-## Comparison: What Exists vs Silicon Eye
-
-| Capability | Degate | ChipJuice | HAL | **Silicon Eye** |
-|---|---|---|---|---|
-| Digital standard cells | ✅ | ✅ | ✅ (post-extraction) | — |
-| Analog custom layout | ❌ | ❌ | ❌ | ✅ |
-| Transistor-level extraction | ❌ | ❌ | ❌ | ✅ |
-| Device segmentation (CV) | Template match only | ❌ | N/A | ✅ SAM3 + rule-based |
-| Multi-layer die images | Manual align | Partial | N/A | ✅ Stitcher + aligner |
-| Matched-pair grouping | ❌ | ❌ | ❌ | ✅ |
-| Dummy device filtering | ❌ | ❌ | ❌ | ✅ |
-| R/C passive merging | ❌ | ❌ | ❌ | ✅ |
-| Human annotation support | ❌ | Limited | N/A | ✅ Color-block + YAML |
-| Open source | ✅ | ❌ (€€€€) | ✅ | ✅ (MIT) |
-| SPICE netlist output | ❌ | ❌ | ❌ | ✅ |
-| Active development | ❌ (2011) | ✅ | ✅ | ✅ |
-
-## Architecture
-
-```
-Multi-layer die images + sparse human annotations (color blocks)
-  │
-  ▼
-┌─────────────────────────────────────────────┐
-│ Phase 1: Image → Devices                    │
-│  Stitcher → Segmenter → Layer Matcher       │
-│  → DeviceList (JSON)                        │
-└─────────────────────────────────────────────┘
-  │
-  ▼
-┌─────────────────────────────────────────────┐
-│ Phase 2: Devices → Clean Netlist            │
-│  Grouper → Dummy Filter → Passive Merger    │
-│  → CleanNetlist (JSON + SPICE)              │
-└─────────────────────────────────────────────┘
-  │
-  ▼
-┌─────────────────────────────────────────────┐
-│ Phase 3: Netlist → Schematic (future)       │
-│  Topology Cluster → Exporter                │
-└─────────────────────────────────────────────┘
-```
-
-## Quick Start
+## 本地运行
 
 ```bash
-# Install
-pip install silicon-eye
-
-# Or from source
-git clone https://github.com/your-org/silicon-eye
-cd silicon-eye
-pip install -e .
-
-# Annotate a die image (paint color blocks in any image editor)
-# 🔴 NMOS  🔵 PMOS  🟢 Resistor  🟡 MIM  🟣 MOM  ⚫ DUMMY
-
-# Parse annotations
-silicon-eye annotate parse -i chip_annotated.png -o chip_config.yaml
-
-# Run the pipeline
-silicon-eye run -c chip_config.yaml -o results/
-
-# Output: results/phase1_devices.json, results/phase2_netlist.spice
+python -m venv .venv
+.venv/bin/python -m pip install -e '.[dev,segmentation-eval]'
+.venv/bin/python -m pytest -q
 ```
 
-## Annotation Guide
+各工具命令与冻结参数见当前任务及相应实验文档。物理尺度/工艺未知，不输出虚假工艺尺寸或把PDK经验当成照片事实。
 
-Use any image editor to paint colored rectangles on a copy of your die image:
+## 历史按需阅读
 
-| Color | Hex | Meaning |
-|---|---|---|
-| 🔴 Red | `#FF0000` | NMOS transistor |
-| 🔵 Blue | `#0000FF` | PMOS transistor |
-| 🟢 Green | `#00FF00` | Resistor |
-| 🟡 Yellow | `#FFFF00` | MIM capacitor |
-| 🟣 Purple | `#800080` | MOM capacitor |
-| ⚫ Gray | `#808080` | DUMMY (ignore) |
-
-The parser (`silicon-eye annotate parse`) extracts bounding boxes and labels from the colored regions. Additional metadata (net labels, region types) goes in the YAML config.
-
-## Supported Devices (v0.1)
-
-| Device | Extraction Method |
-|---|---|
-| NMOS | poly ∩ p-diffusion |
-| PMOS | poly ∩ n-diffusion (in n-well) |
-| Poly Resistor | poly strip + contact holes |
-| N-well Resistor | n-well strip + contacts |
-| MIM Capacitor | parallel metal plates (CTM/MTM layer) |
-| MOM Capacitor | interdigitated finger pattern |
-
-## Project Status
-
-**Pre-alpha.** Phase 1 and Phase 2 skeletons exist. SAM3 integration and real-die-image tuning in progress.
-
-## License
-
-MIT — see LICENSE file.
-
-## 本机开发入口
-
-```bash
-cd /home/zuoky/project_siliconeyes/silicon-eye
-source .venv/bin/activate
-silicon-eye --help
-silicon-eye info -c configs/test_chip.yaml
-```
-
-- [CURRENT_TASK.md](CURRENT_TASK.md)：唯一实时任务入口。
-- [AGENTS.md](AGENTS.md)：项目约定与验证边界。
-- [开发计划](docs/development-plan.md)：阶段顺序及验收。
-- [初始基线](docs/baseline.md)：环境及已复现问题。
-- [AI/脚本分工与验证设计](docs/ai-script-validation.md)：职责、判断接口及独立验收。
-- [配准修复验证](docs/registration-validation.md)：合成图测试结果及接口变化。
-- [八层照片验收入口](docs/registration-audit.md)：重跑命令、证据包与真实照片结果。
-
-当前已完成V3可见连接成组复核，下一阶段先明确最小架构接口，再做新ROI复用验证。上文 Quick Start 的 `run -o` 尚未由 CLI 实现，输出目前在 `runs/`。自动分割与连接提取尚未完成，空网表不代表芯片逆向成功。
-
-- [结构约束重验收](docs/registration-constrained-review.md)：新版点、冻结预算、约束拟合和真实结果。
-
-- [定位缺陷修复与同源性审查](docs/registration-localization-review.md)：2026-10-14 量测可靠性、固定预算重验收与所需来源依据。
-
-局部环配准试验入口与结果：[两层局部环试验](docs/registration-local-ring.md)。
-
-固化的两层局部候选案例与 `register-local` 命令：[案例入口](benchmarks/local-ring-aa-poly-v1/README.md)。
-
-主流程的局部配准阶段、阻塞语义与运行命令：[Pipeline 接入说明](docs/pipeline-local-registration.md)。
-
-局部像素标注草案、层语义确认和 `annotate review` 入口：[像素标注合同](docs/pixel-annotation-baseline.md)。
-
-两处内部区域的像素轮廓候选及 `annotate contours`：[材料边界候选](docs/material-contour-candidates.md)。
-
-人工示例引导的 AA/poly 重新提取与 CT 遮挡处理：[示例引导说明](docs/guided-material-extraction.md)。
-
-2026-10-15 开发快照：局部 CT v2 与 poly 分离修正获目视认可，V3 两栅至少经 M2 同网；栅与共享扩散区 M 是否相连仍未知。详见[四MOS工作流与结论快照](docs/checkpoints/2026-10-15-local-device-network.md)，实时任务仍以 `CURRENT_TASK.md` 为准。
-
-2026-10-16 当前结论快照：[V3已复核结构与下一阶段方向](docs/checkpoints/2026-10-16-v3-reviewed.md)。外侧A/B与M1上下横条对应已确认；没有额外并网证据，隔离关系仍未知。暂缓细节追线，先完成最小顶层架构设计。
-
-AI观察现可通过[最小显式适配](docs/observation-adapter-v1.md)进入case候选、材料卡和统一复核包；历史样稿不计新模型识别成绩。
-
-[器件跨层编号视图](docs/device-index-v1.md)已作为统一包可选输出：选择既有ID可对照各层原生检查窗口、宏观投影和四端表；缺少定位时明确显示未定位。
-
-2026-10-17：已识别可见共栅网络及六处 AA 接入的[最终复核稿 v33](docs/roi2-gate-network-reviewed-v33.md)，最终图稿可从[证据归档](benchmarks/evidence/README.md)恢复。[金属点亮流程 v1](docs/metal-tracing-workflow-v1.md)固化局部对齐、双向分支检查、正向版图推理与验收边界；下一轮先重走检验，再决定 skill 封装。
-
-2026-10-18：当前方向为[顶层设计 v2](docs/architecture/photo-stack-workflow-v2.md)：输入规范化与质量门 → 区域规划 → 可修订分层版图 → 器件/网络联合提取与输出。见[八张照片初查及下一操作](docs/eight-photo-next-step-2026-10-18.md)；暂缓金属 skill 封装。
-
-2026-10-18 全幅纠偏：[当前顶层设计 v3](docs/architecture/photo-stack-workflow-v3.md)明确完整照片上的连续材料层抽取；区域/器件粗观察作为理解与评测支线，不切割图层或网络。
+[原README完整归档](docs/history/2026-10-19-before-top-level-README.md)保留早期愿景、能力对比、路线图和使用样例；其中产品愿景不代表当前实现。原开发计划和历史任务入口同样完整归档，由CURRENT_TASK链接定位，不维护多份竞争的实时状态。

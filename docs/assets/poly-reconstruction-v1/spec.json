@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "path": "benchmarks/poly-reconstruction-v1/baseline-v1.json",
+    "sha256": "361e28987bd89c46c0f577c002e7b802e3135b2c2a37b3585b8d2b3ab0c36cc3"
+  },
+  "source": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+  },
+  "settings": {
+    "search_radius_px": 8,
+    "grabcut_iterations": 3,
+    "normal_search_fraction": 0.65,
+    "trim_tangent_fraction": 0.12,
+    "minimum_supported_fraction": 0.4,
+    "max_normal_shift_fraction": 0.6
+  },
+  "cases": [
+    {
+      "id": "P-H01",
+      "name": "V3横向双栅：保持局部POLY分离",
+      "native_bbox": [
+        2550,
+        1310,
+        3130,
+        1510
+      ],
+      "objects": [
+        {
+          "id": "V3_G1",
+          "observed_outline_native_xy": [
+            [
+              2619,
+              1393
+            ],
+            [
+              3059,
+              1393
+            ],
+            [
+              3059,
+              1401
+            ],
+            [
+              2619,
+              1401
+            ]
+          ],
+          "edge_axes": [
+            "H",
+            "V",
+            "H",
+            "V"
+          ]
+        },
+        {
+          "id": "V3_G2",
+          "observed_outline_native_xy": [
+            [
+              2619,
+              1419
+            ],
+            [
+              3059,
+              1419
+            ],
+            [
+              3059,
+              1427
+            ],
+            [
+              2619,
+              1427
+            ]
+          ],
+          "edge_axes": [
+            "H",
+            "V",
+            "H",
+            "V"
+          ]
+        }
+      ],
+      "expected_components": 2,
+      "source_of_identity": "human_material_review_and_local_topology_review",
+      "prior_positive": {
+        "path": "runs/local-poly-repair-v1/02-poly-mask.png",
+        "sha256": "d9ab575de0ea37a2715276845a479b629de8ba21a92e8879d5f2a5457da60f79",
+        "native_origin_xy": [
+          1780,
+          970
+        ]
+      },
+      "context": "三排CT亮点与两条横向栅带分开解释；CT仅遮挡参考，不在此阶段分配连接。",
+      "new_question": "新规则几何的两条栅带宽度和位置是否合理？身份与端部不互连的既有裁决不重问。"
+    },
+    {
+      "id": "P-V01",
+      "name": "ROI2竖向双栅：主体与端部范围",
+      "native_bbox": [
+        1660,
+        2630,
+        1920,
+        2880
+      ],
+      "objects": [
+        {
+          "id": "R2_poly_Q1_support",
+          "observed_outline_native_xy": [
+            [
+              1749,
+              2730
+            ],
+            [
+              1765,
+              2730
+            ],
+            [
+              1769,
+              2803
+            ],
+            [
+              1752,
+              2804
+            ]
+          ],
+          "edge_axes": [
+            "H",
+            "V",
+            "H",
+            "V"
+          ]
+        },
+        {
+          "id": "R2_poly_Q2_support",
+          "observed_outline_native_xy": [
+            [
+              1805,
+              2730
+            ],
+            [
+              1821,
+              2730
+            ],
+            [
+              1825,
+              2800
+            ],
+            [
+              1809,
+              2802
+            ]
+          ],
+          "edge_axes": [
+            "H",
+            "V",
+            "H",
+            "V"
+          ]
+        }
+      ],
+      "expected_components": 2,
+      "source_of_identity": "human_ROI2_identity_and_coarse_location_review",
+      "context": "采用已审core作为A的直接观察。core不是完整栅极外形；上下端及接触引出仍有未知，不以矩形封口推出栅长或连接。",
+      "new_question": "两条竖向POLY主体的新候选是否贴合？端部范围不清处保留未知。"
+    },
+    {
+      "id": "P-E01",
+      "name": "V3左端与CT遮挡：不能补出端部跨栅桥",
+      "native_bbox": [
+        2550,
+        1320,
+        2760,
+        1510
+      ],
+      "objects": [
+        {
+          "id": "V3_G1_left",
+          "observed_outline_native_xy": [
+            [
+              2619,
+              1393
+            ],
+            [
+              2735,
+              1393
+            ],
+            [
+              2735,
+              1401
+            ],
+            [
+              2619,
+              1401
+            ]
+          ],
+          "edge_axes": [
+            "H",
+            "V",
+            "H",
+            "V"
+          ]
+        },
+        {
+          "id": "V3_G2_left",
+          "observed_outline_native_xy": [
+            [
+              2619,
+              1419
+            ],
+            [
+              2735,
+              1419
+            ],
+            [
+              2735,
+              1427
+            ],
+            [
+              2619,
+              1427
+            ]
+          ],
+          "edge_axes": [
+            "H",
+            "V",
+            "H",
+            "V"
+          ]
+        }
+      ],
+      "expected_components": 2,
+      "source_of_identity": "same_V3_known_case_end_context_not_independent_sample",
+      "unknown_native_boxes": [
+        [
+          2600,
+          1350,
+          2648,
+          1450
+        ]
+      ],
+      "context": "端部尖亮点不是POLY轮廓。左端引出/接触精确形状未知；右侧是观察窗口截断，不是材料终点。",
+      "new_question": "此处只核查未知范围和可见栅带表达，不重新询问两栅是否通过端部相连。"
+    }
+  ],
+  "quality_gates": [
+    "AA/原图/旧裁决哈希不变",
+    "两个材料对象不合并，记录B0连通风险",
+    "A与B1均输出有来源的HV规则几何",
+    "CT/端部未知不作确定非POLY，不臆造CT连接",
+    "算法支持不足或越界时保留A并写失败，不降低门",
+    "局部新几何尚待审，不直接全图外推或正式封装"
+  ],
+  "mode": "three_representative_views_with_known_identity; E01_overlaps_H01; not_blind_generalization"
+}

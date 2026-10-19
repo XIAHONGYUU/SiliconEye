@@ -1,0 +1,18 @@
+{
+  "source_and_spec_code_hashes": true,
+  "manifest": true,
+  "tri_state_values": true,
+  "processing_domain_unknown": true,
+  "replay_states_identical": true,
+  "no_state_changes_after_processing_metadata_added": true,
+  "top_level_archives_match_previous_commit": true,
+  "JS_syntax": true,
+  "tests": "328 passed",
+  "skill_validator": "pass",
+  "skill_execution": "same-Agent explicit-path protocol replay, not global discovery or independent test",
+  "S02_human_review": false,
+  "full_mask_accepted": false,
+  "browser_interaction_tested": false,
+  "evidence_archive_restored_and_states_identical": true,
+  "current_entry_links_verified": true
+}

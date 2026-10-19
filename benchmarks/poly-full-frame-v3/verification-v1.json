@@ -1,0 +1,44 @@
+{
+  "status": "generic_geometry_constraints_pass_human_design_review_pending",
+  "tests": "30 passed",
+  "ruff": "PASS",
+  "frozen_references_verified": 15,
+  "existing_local_4_objects_unchanged": true,
+  "U10_2_geometries_unchanged": true,
+  "ordinary_rectangles": 664,
+  "resistor_18_regular_geometries_unchanged": true,
+  "source_and_layout_overlaps": 0,
+  "negative_scope_intersections": 0,
+  "max_source_correspondence_error_px": 0.0002446151570438815,
+  "AA_model_unchanged": true,
+  "AA_guided_objects": 140,
+  "constraint_summary": {
+    "objects": 140,
+    "failure_counts": {
+      "no_target_AA_overlap": 0,
+      "guard_intrusion": 0,
+      "insufficient_top_extension": 0,
+      "insufficient_bottom_extension": 0,
+      "non_target_AA_overlap": 0,
+      "non_rectangular": 0
+    },
+    "failure_objects": {
+      "no_target_AA_overlap": [],
+      "guard_intrusion": [],
+      "insufficient_top_extension": [],
+      "insufficient_bottom_extension": [],
+      "non_target_AA_overlap": [],
+      "non_rectangular": []
+    },
+    "status": "PASS",
+    "scope": "generic_geometric_relationships_not_foundry_DRC_or_material_truth"
+  },
+  "photo_fit_failure_does_not_block_explicit_AA_relative_design": "synthetic_failure_path_test_passed; failed_photo_overlay_not_drawn",
+  "budget_units": "relative_layout_pixels_not_um_not_foundry_rules",
+  "foundry_DRC": "not_run_process_and_physical_scale_unknown",
+  "semantic_correspondence_and_geometry_accuracy": "not_proved_by_constructed_constraints",
+  "fullframe_joint_reconstruction_complete": false,
+  "browser_interaction": "not_automatically_tested",
+  "gate_CT_and_nets": "not_assigned",
+  "constraint_code_sha256": "4e414d2c00d5203e0787bee4af2f67dcbbd78d498d2a2d4bc5ebcc706dd8dff7"
+}

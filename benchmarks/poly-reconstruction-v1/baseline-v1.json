@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "purpose": "Freeze AA working layer and recover approved POLY material/topology before any new reconstruction.",
+  "references": {
+    "aa_model": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+    },
+    "aa_acceptance": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/acceptance-v1.json",
+      "sha256": "09b04acc83d9c487824e0b10c71c2fb23eaf1278ed3097cd27af55bfc23a6a5e"
+    },
+    "aa_skill_release": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/skill-release-v1.json",
+      "sha256": "a695d60e81f33a164f36c1ee3a793ca1780efd597800e0e1d95114f9b90481c8"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "annotation": {
+      "path": "runs/human-annotation-sample-v1/annotation-sheet-market.png",
+      "sha256": "ce074bd179765c26451ab9bc750dc2e63a251892a7ecda0d6d338e89605df029"
+    },
+    "annotation_coordinates": {
+      "path": "runs/human-annotation-sample-v1/manifest.json",
+      "sha256": "259017d87ba01be14c95a5622fd2ed48b55054734e0269e365d46c42b54da555"
+    },
+    "material_review": {
+      "path": "benchmarks/material-review-feedback-v2.json",
+      "sha256": "ce867aaa9214e8c7cf480aabf3ee346fd4733ab637af968d881971d4281d41c4"
+    },
+    "poly_repair_review": {
+      "path": "benchmarks/local-poly-repair-feedback-v1.json",
+      "sha256": "1be2067d17da006193d279986470d293e9a7fcd3335c977e280abe85329925fd"
+    },
+    "poly_topology": {
+      "path": "benchmarks/local-terminal-review-feedback-v1.json",
+      "sha256": "259214dbccc3f520f8dc0de7698f5bf7f2bf14eab39a89242149526fa45ad740"
+    },
+    "poly_positive": {
+      "path": "runs/local-poly-repair-v1/02-poly-mask.png",
+      "sha256": "d9ab575de0ea37a2715276845a479b629de8ba21a92e8879d5f2a5457da60f79"
+    },
+    "topology_unknown": {
+      "path": "runs/local-poly-repair-v1/poly-topology-unknown.png",
+      "sha256": "524936920f9ab318bb2ec56705bebc3880511fc328cd452a16f2bc7fa5d1c774"
+    },
+    "CT_underlying_unknown": {
+      "path": "runs/local-poly-repair-v1/retired-CT-underlying-unknown.png",
+      "sha256": "2e6d3bde70bb3a0de2ebbcaecec40cc18f62fa9a1e97cfa94a8439a2c0ab16cc"
+    },
+    "roi2_identity": {
+      "path": "benchmarks/block-roi2-material-review-feedback-v1.json",
+      "sha256": "d1b1d1778ec271461ca6c9116ac41be13ff93f475047e3b82043e7ed823fa334"
+    },
+    "roi2_support": {
+      "path": "benchmarks/block-roi2-material-support-reviewed-v2.json",
+      "sha256": "0bd9d3795e0e4510a22ace29b904e610cec1f1aac9f4109504baa594ade33134"
+    }
+  },
+  "inherited_facts": [
+    "蓝色标注为POLY的几乎全部示例，非精确像素标签。",
+    "V3 G1/G2没有通过局部端部POLY相连。",
+    "ROI2 Q1/Q2 POLY主体身份和粗位置已审，精确包络/端部未审。",
+    "CT可接AA或POLY；遮挡处未知不能当作非POLY。",
+    "局部poly不连与远处经金属同网是不同关系。"
+  ],
+  "unknown_preservation": "旧02-poly-mask的0不是确定非POLY，必须连同topology_unknown和CT_underlying_unknown保留。",
+  "annotation_crop_poly_xywh": [
+    1780,
+    970,
+    1500,
+    850
+  ],
+  "aa_role": "冻结已有几何与裁决，未审精细边界继续保留；本轮不改AA、不作未经确认的AA→POLY全局投影。",
+  "status": "frozen_local_baseline_not_fullframe_POLY_truth"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "human_review": {
+    "path": "benchmarks/aa-skill-three-task-v1/human-review-v1.json",
+    "sha256": "310e0e310e71650f2d5a80c9e8f55013559bf9faeb3996fb80422b259206759b"
+  },
+  "original_report": {
+    "path": "benchmarks/aa-skill-three-task-v1/report-v1.json",
+    "sha256": "a09f52bf430dd2b1cb85d4a113660f730f23df491255a19b717e8a0d0ae603da"
+  },
+  "tasks": {
+    "T1": "PASS_scoped_reuse",
+    "T2": "PASS_human_confirmed_local_quality_improvement",
+    "T3": "PASS_local_regression_rejection"
+  },
+  "selection": {
+    "object": "AA-P01-B1-local",
+    "replaces_local_working_reference": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+    "geometry": {
+      "path": "docs/assets/aa-skill-three-task-v1/T2-B1-candidate.json",
+      "sha256": "2079a172283bf22fa4fc1cdb4a45f7f3f2a7a77a7cb8464bebea4646c72c0906"
+    },
+    "scope": "当前台阶AA蓝色B1轮廓较黄色A更贴合材料；采用为该对象的后续局部工作版本。",
+    "monolithic_fullframe_model_rewritten": false
+  },
+  "overall": "three_known_case_tasks_passed_with_scoped_human_review_not_fullframe_or_general_skill_acceptance"
+}

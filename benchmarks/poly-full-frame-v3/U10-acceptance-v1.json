@@ -1,0 +1,15 @@
+{
+  "actor": "human",
+  "statement": "U10 poly裁决正确",
+  "source": "current_user_message",
+  "objects": [
+    "G68-P01",
+    "G68-P02"
+  ],
+  "scope": "displayed_material_identity_and_geometry_scope_not_pixel_or_CT_truth",
+  "source_geometry_and_prior_layout_unchanged": true,
+  "review_ref": {
+    "path": "benchmarks/poly-full-frame-v3/human-review-v1.json",
+    "sha256": "77f515414e704f1637385590bceac9fff1db18ee43fda986611ad162c70bf7f9"
+  }
+}

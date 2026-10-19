@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "local_representative_gate_passed",
+  "vertical_review": {
+    "path": "benchmarks/poly-vertical-reassessment-v3/human-review-v1.json",
+    "sha256": "16d03abc1d7505e7672371a91cd98be7789766f3bf50516d7ddd7dc3edcdd7bb"
+  },
+  "adopted_model": {
+    "path": "benchmarks/poly-vertical-reassessment-v3/accepted-local-model-v1.json",
+    "sha256": "3ded782fad306a4a8595842dfe68ab5f37a501626ffc1cb74d5930bc1594b536"
+  },
+  "horizontal_objects_reused_unchanged": 2,
+  "vertical_objects_adopted_unchanged_from_v3": 2,
+  "next_phase": "fullframe_POLY_candidate_reconstruction",
+  "limitations": [
+    "两个独立局部物理案例，不是独立盲测或跨芯片泛化",
+    "v1算法辅助竖向结果曾失败，v3通过来自AI宽上下文重新观察",
+    "不证明所有算法或完整skill已经通过",
+    "无新的孔归属/连接/物理尺寸结论"
+  ]
+}

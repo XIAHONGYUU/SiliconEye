@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "source": "current_user_message",
+  "review_target": {
+    "path": "benchmarks/poly-vertical-reassessment-v3/report-v1.json",
+    "sha256": "8ef2ec0b0fc89e77f9192fa048c9dd53980370f6e5b5e6e44c21d6ce02e57284"
+  },
+  "decisions": [
+    {
+      "question": "Q1 主体与端部表达",
+      "verbatim": "基本合理",
+      "verdict": "accepted"
+    },
+    {
+      "question": "Q2 蓝色范围",
+      "verbatim": "基本接近实际，可以通过，没有明显的方向偏差",
+      "verdict": "accepted_at_displayed_geometry_tolerance"
+    },
+    {
+      "question": "Q3 扩宽或引出遗漏",
+      "verbatim": "无遗漏扩展和引出。",
+      "verdict": "no_omitted_extensions_or_leads_in_displayed_Q1_Q2"
+    }
+  ],
+  "scope": [
+    "R2_Q1和R2_Q2的本轮显示主体及端部表达",
+    "显示范围内无遗漏扩宽/引出，关闭本轮这项人工疑点"
+  ],
+  "not_approved": [
+    "全幅POLY完整性",
+    "像素级精确边界或物理W/L",
+    "CT归属和新增网络关系",
+    "其他器件/电阻的POLY形状"
+  ],
+  "prior_vertical_undersize_feedback": "superseded_for_v3_only_keep_v1_failure_evidence",
+  "status": "local_vertical_geometry_accepted"
+}

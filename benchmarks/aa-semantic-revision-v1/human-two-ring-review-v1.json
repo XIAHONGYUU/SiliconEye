@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "reviewer": "human_user",
+  "verbatim": "位置与两条环之间间隙合理",
+  "spec": {
+    "path": "benchmarks/aa-semantic-revision-v1/spec-v2.json",
+    "sha256": "8a34daff305898d4180fb043cd3df367a19fbec22bbbb8466a36199fa946a466"
+  },
+  "reviewed_overlay": {
+    "path": "docs/assets/aa-semantic-revision-v2/revision-overlay.png",
+    "sha256": "ce2bd19237ecb96bf545b8e4274b27ff2afa13548bc2b134714e5915562ec60e"
+  },
+  "prior_structure_review": {
+    "path": "benchmarks/aa-semantic-revision-v1/human-semantic-review-v1.json",
+    "sha256": "eb7b60eb1e3f0a89f2edfedb9147a808caeac4ba19363624c8d66491e5475d50"
+  },
+  "accepted": {
+    "case": "S05",
+    "local_two_ring_positions": true,
+    "local_inter_ring_gap": true
+  },
+  "not_accepted": [
+    "逐像素精确内外边界",
+    "整环全周闭合",
+    "父器件归属",
+    "电气连接",
+    "全幅AA恢复"
+  ],
+  "scope": "承接上一轮新增第二环问题，批准v2局部位置与两环间隙。浏览器上下文仍显示旧v1页面，不据此覆盖用户对上一条新图的明确答复。",
+  "full_mask_accepted": false
+}

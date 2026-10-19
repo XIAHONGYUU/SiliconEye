@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "kind": "frozen_evidence",
+  "files": [
+    {
+      "path": "runs/human-annotation-sample-v1/annotation-sheet-market.png",
+      "size": 3989989,
+      "sha256": "ce074bd179765c26451ab9bc750dc2e63a251892a7ecda0d6d338e89605df029"
+    },
+    {
+      "path": "runs/human-annotation-sample-v1/manifest.json",
+      "size": 1461,
+      "sha256": "259017d87ba01be14c95a5622fd2ed48b55054734e0269e365d46c42b54da555"
+    },
+    {
+      "path": "runs/local-poly-repair-v1/02-poly-mask.png",
+      "size": 12632,
+      "sha256": "d9ab575de0ea37a2715276845a479b629de8ba21a92e8879d5f2a5457da60f79"
+    },
+    {
+      "path": "runs/local-poly-repair-v1/poly-topology-unknown.png",
+      "size": 3247,
+      "sha256": "524936920f9ab318bb2ec56705bebc3880511fc328cd452a16f2bc7fa5d1c774"
+    },
+    {
+      "path": "runs/local-poly-repair-v1/retired-CT-underlying-unknown.png",
+      "size": 2953,
+      "sha256": "2e6d3bde70bb3a0de2ebbcaecec40cc18f62fa9a1e97cfa94a8439a2c0ab16cc"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/A.png",
+      "size": 105019,
+      "sha256": "f9da529e79ca988d8b4425e76d3e13cabdf643dec1ed8ede6de0ecef4df2d166"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/B0-visible.png",
+      "size": 604,
+      "sha256": "c0c2553ad82e0a7d6f19a2d887f9bf3a58529dae3a74bd17b9f5284d4ee45150"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/B0.png",
+      "size": 104782,
+      "sha256": "ff200a3ac28a1e43d36e76cba34426af5729bfb7329572c637d5ea64ef0b7b27"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/B1-states.npy",
+      "size": 40028,
+      "sha256": "e14688c9914a7970c3df9dd7d96189300bbfe078d79e7a82f57c3e7f17258a13"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/B1.png",
+      "size": 104965,
+      "sha256": "b86d0e3d3c5f9415915e932aa7e1ddde8e5551c95ce11457f796033583375e27"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/comparison.png",
+      "size": 104681,
+      "sha256": "d7d93fe864ea395c1e89204062b43b79a9f0578480095397fc086826ba9b6927"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/layout.svg",
+      "size": 331,
+      "sha256": "0fd02045d9f0da1e6a222a00c189d3f1180a0cebf4b8d7e37ad55a9ba7b49e99"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/objects.json",
+      "size": 6482,
+      "sha256": "f8f876138e770eb34b3a50452b2916d53e5126a2881126cba591cad30c2dce40"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/source.png",
+      "size": 105212,
+      "sha256": "471b1159730b3b193fb9a91438fa2227e559304b3362a8710277e3d410702048"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/uncertainty.png",
+      "size": 104341,
+      "sha256": "99d08f67fe65eed305080fa3bad1d6fc931607183b3d44d74ecadf9d9e4a6995"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-E01/unknown.png",
+      "size": 1000,
+      "sha256": "16f727cdf2d11e48c3e9f44a6a91b15d00cfd57e118629b89febcad13a63439c"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/A.png",
+      "size": 303560,
+      "sha256": "f963030dfdfe1a677d6318c5426c880d20bd15c0ab8d176a42bc3d47fa50e190"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/B0-visible.png",
+      "size": 1299,
+      "sha256": "5f69dd4f4574f22fd827b4ac06b5e290eaedd790e1c6a395284405700dec9d41"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/B0.png",
+      "size": 302939,
+      "sha256": "bcc3abf1ffb35497a3a1fbffb6ae36429ef34bdbb55c4a06ac7f6d671e3a6bef"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/B1-states.npy",
+      "size": 116128,
+      "sha256": "fea7f60b6bda376c57a4bb8991b45f846329ec0f71bbdda3a865dea16579eb0b"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/B1.png",
+      "size": 303359,
+      "sha256": "16d91267933b4b3786a3244d74ece6f09f97dd12f653a10ca28f0deb30502df3"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/approved-prior.png",
+      "size": 1245,
+      "sha256": "4686b8dcba07839c2ee744a6e3ec36b5328aa64c13fb3f77b2b3004f9b80f660"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/comparison.png",
+      "size": 301987,
+      "sha256": "205392ac5d101fdd9d6721669727d6788c7d0bb874f40c3f50dd8ac465e2b09f"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/layout.svg",
+      "size": 331,
+      "sha256": "ecef924c49d12978d8c57f7723424f8e420e76de5b4928fd85a6030646a00ef6"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/objects.json",
+      "size": 6636,
+      "sha256": "3b4d218d7ee855881baee0448e1318d5c3ed459f57280c5e18e58ac3acc004e1"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/source.png",
+      "size": 304559,
+      "sha256": "3e84b510a869f2da0405d1097be5ddc778283e22c685357b64794bc9e463ef9d"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/uncertainty.png",
+      "size": 303840,
+      "sha256": "333da0c1b21a63ddcf98e76189230de0cc70ad035786283b1804a082901c6471"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-H01/unknown.png",
+      "size": 2378,
+      "sha256": "6c63e3763219e7fda7f2acd21f3d23d7bb7e007192a4d3f66aaf06046ca1b2e0"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/A.png",
+      "size": 171067,
+      "sha256": "e2bb91997d11e119d9788efb464d95cd41f0978a050cf059fb9a79872b9e6575"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/B0-visible.png",
+      "size": 900,
+      "sha256": "565206ecdc977e0cc7b1b77fd4946c62995575cb7f33b5681fcdda5e12dea5f7"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/B0.png",
+      "size": 169769,
+      "sha256": "3f49c984c48c7b17063c8984b89428bb23f6c10632cf6980a05d28bab20a1406"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/B1-states.npy",
+      "size": 65128,
+      "sha256": "eb0b8653b29cb817a475d844a6577df0ea3e000040e6d898edf057ab83ad3076"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/B1.png",
+      "size": 170726,
+      "sha256": "6ed12f92f19c49828cad0a16599155d5ba6984e021c08ae4336b713d92681900"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/comparison.png",
+      "size": 171203,
+      "sha256": "2fe91fe059ae71d8a03fa62de76683c0505f97698b049d06dbb7bf53f12f1f06"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/layout.svg",
+      "size": 330,
+      "sha256": "1dca9dd3b9b257e15854f15d8c976ab7c8ff2bb46160e875a1270d49ca33f3ce"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/objects.json",
+      "size": 6914,
+      "sha256": "a8764cc5fbc489f98b6aedd8dd279f2c9e770241432ff82c188e334a381e696d"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/source.png",
+      "size": 170459,
+      "sha256": "1919a48ddcbd1419dcb70df080aa4da16ab016ec3f2b83607eae33905ae06e97"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/uncertainty.png",
+      "size": 170459,
+      "sha256": "1919a48ddcbd1419dcb70df080aa4da16ab016ec3f2b83607eae33905ae06e97"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/P-V01/unknown.png",
+      "size": 328,
+      "sha256": "0fc34f5d762f69d8fc40327297e95d3ca7a9e8c2b49f6fb123b8f657c10c2b12"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/baseline.json",
+      "size": 3651,
+      "sha256": "361e28987bd89c46c0f577c002e7b802e3135b2c2a37b3585b8d2b3ab0c36cc3"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/data.js",
+      "size": 13936,
+      "sha256": "eee63ee10621d5b40487e34b73c808ca6d0bbdd379789a4c5b4c7590d34bd807"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/index.html",
+      "size": 2388,
+      "sha256": "bd2cb145994319f7cdeb33a59a9dc368912dedf84fa90436cd81fa74360652b8"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/manifest.json",
+      "size": 3509,
+      "sha256": "f5c2361378faf5d7b8f6ca81f35bf9cfbf8978d6e738d23b3338fe1cbdf97ac3"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/report.json",
+      "size": 24772,
+      "sha256": "810b650b41a2464c4bd12144dfa8ebc5f8bf8ba08b45ce9228ebd0dc46e1040b"
+    },
+    {
+      "path": "runs/poly-reconstruction-v1d/spec.json",
+      "size": 6108,
+      "sha256": "6788a84e3ee2a30e198c78fa88bc3ebe26c1d2de6c092b9951229231a854656e"
+    }
+  ]
+}

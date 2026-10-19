@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "canvas_wh": [
+    5712,
+    4284
+  ],
+  "unit": "source_native_pixel",
+  "coordinate_system": "aa.jpg native; all local placement is integer translation, no warp",
+  "source_valid_bbox": [
+    0,
+    185,
+    5712,
+    4284
+  ],
+  "excluded_native_boxes": [
+    [
+      3290,
+      3280,
+      3400,
+      3400
+    ]
+  ],
+  "validity_note": "Reuse prior top UI and cursor operational exclusions; not material labels.",
+  "training": [
+    {
+      "id": "S03",
+      "native_bbox": [
+        100,
+        3180,
+        800,
+        3450
+      ],
+      "labels": {
+        "path": "runs/aa-scribble-comparison-v1b/S03/samples.npy",
+        "sha256": "f15fe62149aec4abc5dbf6fb71076a5c4029b833d436ae4d6acb85de5ef12608"
+      }
+    },
+    {
+      "id": "S05",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "labels": {
+        "path": "runs/aa-scribble-comparison-v1b/S05/samples.npy",
+        "sha256": "1c2299ddc28ca8004f4e0b34cec949169806ac502e14d2d47792ba5e37b02f6d"
+      }
+    }
+  ],
+  "training_review": {
+    "path": "benchmarks/aa-scribble-comparison-v1/human-stroke-review-v1.json",
+    "sha256": "a472c27ac8fc7a4911ea18e24640e5d66cb02f0c89ecb76403a6fcb5a7ada586"
+  },
+  "settings": {
+    "seed": 20261019,
+    "feature_sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "forest_trees": 100,
+    "forest_max_depth": 14,
+    "min_samples_leaf": 3,
+    "max_training_pixels_per_class": 4000,
+    "strip_height": 384,
+    "halo": 48,
+    "AA_threshold": 0.8,
+    "non_AA_threshold": 0.2,
+    "context_margin": 96,
+    "adaptive_block": 51,
+    "adaptive_c": -5,
+    "blur_sigma": 1.2
+  },
+  "local_candidates": [
+    {
+      "id": "S05",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "states": {
+        "path": "runs/aa-semantic-revision-v2a/S05/states.npy",
+        "sha256": "62ec24c2e991e063bb18540bd6e3eb16d8dd184bb3b8813f76a829db5c11ca7d"
+      },
+      "domain": {
+        "path": "runs/aa-semantic-revision-v2a/S05/processing-domain.png",
+        "sha256": "2a9191c7ff380cde7e11a89f6ec4932d8978d398119db27dc3685ac1d2890057"
+      },
+      "human_review": {
+        "path": "benchmarks/aa-semantic-revision-v1/human-two-ring-review-v1.json",
+        "sha256": "0c7aa1ade79ba847b0dc7c3bc0df2ff1ce1a63c143835451738bcd2e9b9d52e4"
+      },
+      "scope": "Human reviewed local candidate/material relationship, NOT dense pixel truth."
+    },
+    {
+      "id": "S02",
+      "native_bbox": [
+        900,
+        2190,
+        1550,
+        2420
+      ],
+      "states": {
+        "path": "runs/aa-semantic-revision-v2a/S02/states.npy",
+        "sha256": "166a2af027a4954dd8301f2af9c248c1ea2d6429a31a72c4051aaf0aee67ecac"
+      },
+      "domain": {
+        "path": "runs/aa-semantic-revision-v2a/S02/processing-domain.png",
+        "sha256": "331311556438fee2e79e0fed64b08447758ae708635cac7e6352d5d1f6bcdfe2"
+      },
+      "human_review": {
+        "path": "benchmarks/aa-semantic-revision-v1/human-semantic-review-v1.json",
+        "sha256": "eb7b60eb1e3f0a89f2edfedb9147a808caeac4ba19363624c8d66491e5475d50"
+      },
+      "scope": "Human reviewed local candidate/material relationship, NOT dense pixel truth."
+    },
+    {
+      "id": "V01",
+      "native_bbox": [
+        2220,
+        1250,
+        2480,
+        1940
+      ],
+      "states": {
+        "path": "runs/aa-shape-validation-v1e/V01/rf_texture-states.npy",
+        "sha256": "2da9430032b02409c39d8b7eb9308369c69b09f3400aa7cb649718f75e833a1a"
+      },
+      "domain": {
+        "path": "runs/aa-shape-validation-v1e/V01/processing-domain.png",
+        "sha256": "6249c73a4d6af19c11636f38ae7439033d59bfbbe1d4943a757682da907da299"
+      },
+      "human_review": {
+        "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+        "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+      },
+      "method": "rf_texture",
+      "scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved."
+    },
+    {
+      "id": "P01",
+      "native_bbox": [
+        1750,
+        3050,
+        2450,
+        3225
+      ],
+      "states": {
+        "path": "runs/aa-shape-validation-v1e/P01/gc_fixed-states.npy",
+        "sha256": "40540d3dfeb46eb6d05d02b589d1364ddb94b02125956dc5b5e84de38cace85c"
+      },
+      "domain": {
+        "path": "runs/aa-shape-validation-v1e/P01/processing-domain.png",
+        "sha256": "533d6f2e69d3cc5dcbc7185525e1f72cfc975c91d1cfbfa329f71422c075ed24"
+      },
+      "human_review": {
+        "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+        "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+      },
+      "method": "gc_fixed",
+      "scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved."
+    },
+    {
+      "id": "B01",
+      "native_bbox": [
+        930,
+        3300,
+        1520,
+        3720
+      ],
+      "states": {
+        "path": "runs/aa-shape-validation-v1e/B01/gc_fixed-states.npy",
+        "sha256": "1b0a7aef385ca07d179f82f3c4d1eeba536d41deddb7c7b045516e6074fb9407"
+      },
+      "domain": {
+        "path": "runs/aa-shape-validation-v1e/B01/processing-domain.png",
+        "sha256": "9dd74ba84c9194d21bcea306ae82016d67b596b026e56580c0dbbaa5f2bfb5e0"
+      },
+      "human_review": {
+        "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+        "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+      },
+      "method": "gc_fixed",
+      "scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved."
+    }
+  ],
+  "grid": {
+    "columns": 4,
+    "rows": 3,
+    "prefix": "N"
+  },
+  "restrictions": [
+    "Full-frame model uses limited local training, no full-frame acceptance or new-frame blind test.",
+    "Probability thresholds are uncalibrated development settings, not material confidence.",
+    "Local candidates preferred only within explicit processed domains, including their unknown bands; no dense human truth inferred.",
+    "Material disagreement between equally ranked local candidates becomes unknown; no majority voting.",
+    "Global/local disagreement and adaptive reference disagreement are exported separately.",
+    "No native photo edits, scaling/warping into formal GDS, CT or connectivity changes."
+  ]
+}

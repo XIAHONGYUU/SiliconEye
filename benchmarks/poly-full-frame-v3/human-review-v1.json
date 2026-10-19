@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "source": "current_user_message",
+  "decisions": [
+    {
+      "scope": "normal_MOS_POLY",
+      "judgment": "一般为矩形，批量凸形/狗骨头不合适",
+      "action": "withdraw_unreviewed_widened_terminal_template_keep_rectangular_full_extent"
+    },
+    {
+      "scope": "U10",
+      "judgment": "poly裁决正确",
+      "action": "retain_v2_displayed_geometry_and_identity"
+    },
+    {
+      "scope": "F05_middle_large_MOS",
+      "judgment": "POLY过小，漏gate连接处",
+      "action": "new_full_extent_candidate_with_contact_side_context; exact_target_interpretation_recorded"
+    },
+    {
+      "scope": "joint_AA_POLY",
+      "judgment": "POLY相对AA偏上，侵入环AA，未伸过下方AA",
+      "action": "AA_relative_reconstruction_not_global_photo_shift"
+    },
+    {
+      "scope": "joint_middle_right_short_rows",
+      "judgment": "一个MOS和AA无交叠",
+      "action": "explicit_target_AA_relationship_and_positive_overlap_gate"
+    }
+  ],
+  "workflow_direction": "从重建GDS出发，以相对位置和正向设计结构验证为核心；可结合上下层定向微调工作AA/POLY，但原始证据保留",
+  "not_approved": [
+    "任意端部形状或精确CT归属",
+    "具体PDK数值DRC通过",
+    "完整全幅材料真值",
+    "U10之外新增候选已通过"
+  ]
+}

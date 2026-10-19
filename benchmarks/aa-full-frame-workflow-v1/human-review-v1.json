@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "reviewer": "human_user",
+  "verbatim": "R2与R1之间应该为非AA区域，现在来看，该位置的横向结果基本正常，但是这个摩斯左右竖向环之间内侧间距比较紧，但是也反应出来没有挨着。",
+  "reviewed_model": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "reviewed_source": {
+    "path": "docs/assets/aa-full-frame-workflow-v1/Q-F09-RING/source.jpg",
+    "sha256": "6f1807f95c3d6b69292602bcc4ae9430cb0b059cae2a87f05183652de5a64cdd"
+  },
+  "reviewed_overlay": {
+    "path": "docs/assets/aa-full-frame-workflow-v1/Q-F09-RING/after.jpg",
+    "sha256": "75d9c2db7189402e294ef15ec50c0bb3afcc6b6c0b7d283a4f61653af5694a0e"
+  },
+  "decision": "human_confirmed_local_nonAA_gap_and_separated_rings",
+  "accepted_relations": [
+    {
+      "id": "Q-F09-RING",
+      "scope_native_bbox": [
+        850,
+        2680,
+        1720,
+        3200
+      ],
+      "objects": {
+        "R1": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+        "R2": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5"
+      },
+      "relations": [
+        "R1与R2之间为非AA",
+        "当前横向结果基本正常",
+        "左右竖向AA环内侧间距虽紧但不接触"
+      ],
+      "interpretation": "不扩宽、不并环、不因间隙窄而填平；维持当前几何。"
+    }
+  ],
+  "not_accepted": [
+    "全幅每个像素材料真值或完整性",
+    "精确光刻边界与物理间距",
+    "R1对象框外延续与其他对象身份",
+    "器件电气连接或CT",
+    "独立Agent或新芯片泛化"
+  ],
+  "geometry_changed": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "technical_invariants_pass_new_material_and_joint_projection_pending",
+  "tests": "25 passed",
+  "ruff": "PASS",
+  "frozen_sources_verified": 15,
+  "accepted_local_objects_unchanged": 4,
+  "resistor_layouts_preserved": 18,
+  "cross_row_constraint_sets": 5,
+  "cross_row_max_layout_residual_px": 0,
+  "native_and_layout_overlaps": 0,
+  "non_POLY_scope_intersections": 0,
+  "max_native_to_layout_corner_error_px": 0.0002446151570438815,
+  "AA_model_changed": false,
+  "joint_registration": "candidate_4_AI_outer_corners_2_heldout_AI_internal_junctions",
+  "joint_working_budget_px": 12,
+  "joint_errors_px": [
+    6.345940117955927,
+    7.984103315229416
+  ],
+  "joint_reviewed": false,
+  "joint_AA_relation_warnings": [
+    "G43r2-P11"
+  ],
+  "page_JS_resources_links": "checked",
+  "browser_interaction": "not_automatically_tested",
+  "fullframe_complete": false,
+  "CT_connections_inferred": false,
+  "skill_packaged": false,
+  "joint_code_sha256": "db330576f548e37b23b070dbfd944aa9281baca9abf3e86bbcf0ef3256a6d8e3"
+}

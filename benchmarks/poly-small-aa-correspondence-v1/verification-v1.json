@@ -1,0 +1,30 @@
+{
+  "tests": "23 passed",
+  "ruff": "passed",
+  "browser_interaction": "not_automatically_tested",
+  "observations_accounted": 306,
+  "assigned_AA_candidates": 305,
+  "unresolved_wide_POLY": 1,
+  "relation_groups": 93,
+  "unobserved_source_slots": 2,
+  "baseline_geometry": {
+    "PASS": 300,
+    "CONFLICT": 5,
+    "BLOCKED": 0
+  },
+  "proposed_geometry": {
+    "PASS": 305,
+    "CONFLICT": 0,
+    "BLOCKED": 0
+  },
+  "AA_working_objects_modified": 10,
+  "AA_other_objects_unchanged": 327,
+  "all_AA_native_polygons_unchanged": true,
+  "all_AA_x_bounds_unchanged": true,
+  "all_POLY_native_polygons_unchanged": true,
+  "all_666_parent_objects_unchanged": true,
+  "SVG_XML_and_local_resources": "verified",
+  "AA_row_revision": "proposal_not_human_approved",
+  "material_truth_and_foundry_DRC": "not_claimed",
+  "code_sha256": "ded15f86ec0db507e7eba5c58345f955987c215440032c92277f6384ff2402fb"
+}

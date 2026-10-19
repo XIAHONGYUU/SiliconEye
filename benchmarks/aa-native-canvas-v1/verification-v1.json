@@ -1,0 +1,46 @@
+{
+  "tests": "339 passed",
+  "ruff": true,
+  "source_and_code_hashes": true,
+  "manifest_verified": true,
+  "native_shape_and_tristate": true,
+  "global_probability_threshold_recomputed": true,
+  "all_five_local_arrays_preserved_in_domain": true,
+  "local_unknown_bands_preserved": true,
+  "equal_rank_conflict_unit_test": true,
+  "provenance_bitmaps_verified": true,
+  "tile_partition_exact": true,
+  "all_tile_counts_recomputed": true,
+  "strip_halo_unit_test": true,
+  "page_JS_syntax": true,
+  "AI_notes_separate_from_human_review": true,
+  "prior_skill_baseline_snapshot_preserved": true,
+  "archive_restore": true,
+  "full_frame_human_accepted": false,
+  "browser_interaction_tested": false,
+  "archives": [
+    {
+      "path": "benchmarks/evidence/aa-native-canvas-v1a-part01.zip",
+      "sha256": "d5b710bf8ccae1ce678394b8327c5f4c0f61a6e2b91689b4b3724a2abd8ab1eb",
+      "bytes": 67109755,
+      "files": 16
+    },
+    {
+      "path": "benchmarks/evidence/aa-native-canvas-v1a-part02.zip",
+      "sha256": "361f2fe88fdb8ef05dd6233876c5d32febcbab9b14a0f5dd1a32097d849284c4",
+      "bytes": 67116228,
+      "files": 56
+    },
+    {
+      "path": "benchmarks/evidence/aa-native-canvas-v1a-part03.zip",
+      "sha256": "f4225d40cc1493bf40037416c4e010719dbc17a1b02d5150a76ccc3ce6639c83",
+      "bytes": 27892157,
+      "files": 29
+    }
+  ],
+  "archive_index": {
+    "path": "benchmarks/evidence/aa-native-canvas-v1a-index.json",
+    "sha256": "64761af780cdef5e3185dbe3701962b5a67f145da66d138e0f39206c1231532d"
+  },
+  "all_archive_parts_restored_and_all_files_verified": true
+}

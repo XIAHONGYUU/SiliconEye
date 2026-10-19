@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewer": "human_user",
+  "verbatim": "V01、P01、B01 判断新候选均合理",
+  "reviewed_spec": {
+    "path": "benchmarks/aa-shape-validation-v1/spec-v1.json",
+    "sha256": "09d36ab13703001bbafd12e6727ae2314f286b59f314a88896747029a5f6e7e7"
+  },
+  "reviewed_report": {
+    "path": "benchmarks/aa-shape-validation-v1/report-v1.json",
+    "sha256": "cf3d06d4bfabf6e0546d9acf89f8d5d97c27c11f705e56155d4e5c9a244dd0a2"
+  },
+  "reviewed_sheet": {
+    "path": "docs/assets/aa-shape-validation-v1/review-sheet.png",
+    "sha256": "366d87a5567fe35b76d59a71809fc968edb54d51c4cc1bd1a0c4ce421cfc271a"
+  },
+  "accepted_cases": [
+    {
+      "id": "V01",
+      "status": "human_accepted_local_candidate_reasonableness",
+      "scope": "内侧竖环、环孔及内部AA条的新候选整体合理"
+    },
+    {
+      "id": "P01",
+      "status": "human_accepted_local_candidate_reasonableness",
+      "scope": "台阶及凹角的新候选整体合理"
+    },
+    {
+      "id": "B01",
+      "status": "human_accepted_local_candidate_reasonableness",
+      "scope": "邻近折线/间隙的新候选整体合理，保留原延续语义"
+    }
+  ],
+  "not_accepted": [
+    "每种算法每个像素的稠密材料真值",
+    "精确光刻边界/物理尺寸",
+    "图外延续的真实连接",
+    "未建模邻居的完整覆盖",
+    "全幅恢复",
+    "电气连接"
+  ],
+  "algorithm_reports_unchanged": true,
+  "scope": "案例级的新候选和关键结构复核，不把所有边缘碎片自动升级为确定AA，不改写历史软件门或逐算法通过。",
+  "full_frame_accepted": false
+}

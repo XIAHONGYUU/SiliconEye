@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "experimental_skill_with_five_scoped_human_reviewed_cases",
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "skill": {
+    "path": "skills/silicon-eye-aa-reconstruction/SKILL.md",
+    "sha256": "3f830dd0a1065b6c51733fb06d04f43ae8b685e0c651c9f7e1961ec7eabfdebe"
+  },
+  "cases": [
+    {
+      "id": "S02",
+      "human_review": {
+        "path": "benchmarks/aa-semantic-revision-v1/human-semantic-review-v1.json",
+        "sha256": "eb7b60eb1e3f0a89f2edfedb9147a808caeac4ba19363624c8d66491e5475d50"
+      },
+      "scope": "material_relationship"
+    },
+    {
+      "id": "S05",
+      "human_review": {
+        "path": "benchmarks/aa-semantic-revision-v1/human-two-ring-review-v1.json",
+        "sha256": "0c7aa1ade79ba847b0dc7c3bc0df2ff1ce1a63c143835451738bcd2e9b9d52e4"
+      },
+      "scope": "two_local_ring_positions_and_gap"
+    },
+    {
+      "id": "V01",
+      "human_review": {
+        "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+        "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+      },
+      "scope": "local_candidate_reasonableness"
+    },
+    {
+      "id": "P01",
+      "human_review": {
+        "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+        "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+      },
+      "scope": "local_candidate_reasonableness"
+    },
+    {
+      "id": "B01",
+      "human_review": {
+        "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+        "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+      },
+      "scope": "local_candidate_reasonableness"
+    }
+  ],
+  "rules": [
+    "同一芯片已知案例回归，不是独立盲测。",
+    "保留粗轮廓/AI语义先验、来源坐标和未知状态。",
+    "人审范围逐例不同，不计为统一像素准确率。",
+    "不把未建模/框外延续当物理不存在或断点。"
+  ],
+  "global_installation": false,
+  "full_frame_ready": false
+}

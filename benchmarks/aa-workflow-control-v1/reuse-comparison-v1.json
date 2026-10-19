@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "mode": "read_existing_arrays_only_no_training_or_inference",
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "spec": {
+    "path": "benchmarks/aa-native-canvas-v1/spec-v1.json",
+    "sha256": "a1b18b6a85f604cbb4607b4fb8c1ddd582632d44bb3b8acd80e0c44625531c73"
+  },
+  "canvas": {
+    "path": "runs/aa-native-canvas-v1a/states.npy",
+    "sha256": "02945361932ebe6942a9aa45484a816176a7a30f21aa5ed3f8ba9d71c2e9bf15"
+  },
+  "baseline": {
+    "path": "benchmarks/aa-skill-baseline-v2.json",
+    "sha256": "d0cc7f73e9662f74c725ab5dc0142b4bef3973b92f54d22c60bff2f44448d896"
+  },
+  "local_comparisons": [
+    {
+      "id": "S05",
+      "native_bbox": [
+        3300,
+        3330,
+        4000,
+        3560
+      ],
+      "references": {
+        "states": {
+          "path": "runs/aa-semantic-revision-v2a/S05/states.npy",
+          "sha256": "62ec24c2e991e063bb18540bd6e3eb16d8dd184bb3b8813f76a829db5c11ca7d"
+        },
+        "domain": {
+          "path": "runs/aa-semantic-revision-v2a/S05/processing-domain.png",
+          "sha256": "2a9191c7ff380cde7e11a89f6ec4932d8978d398119db27dc3685ac1d2890057"
+        },
+        "human_review": {
+          "path": "benchmarks/aa-semantic-revision-v1/human-two-ring-review-v1.json",
+          "sha256": "0c7aa1ade79ba847b0dc7c3bc0df2ff1ce1a63c143835451738bcd2e9b9d52e4"
+        }
+      },
+      "scope": "Human reviewed local candidate/material relationship, NOT dense pixel truth.",
+      "compared_pixels": 128800,
+      "changes": {
+        "-1_to_0": 0,
+        "-1_to_1": 0,
+        "0_to_-1": 0,
+        "0_to_1": 0,
+        "1_to_-1": 0,
+        "1_to_0": 0
+      },
+      "global_to_local_changed_pixels": 30748,
+      "decision": "reuse_existing_local_no_recompute",
+      "material_reacceptance": "not_performed_or_required_for_unchanged_scope"
+    },
+    {
+      "id": "S02",
+      "native_bbox": [
+        900,
+        2190,
+        1550,
+        2420
+      ],
+      "references": {
+        "states": {
+          "path": "runs/aa-semantic-revision-v2a/S02/states.npy",
+          "sha256": "166a2af027a4954dd8301f2af9c248c1ea2d6429a31a72c4051aaf0aee67ecac"
+        },
+        "domain": {
+          "path": "runs/aa-semantic-revision-v2a/S02/processing-domain.png",
+          "sha256": "331311556438fee2e79e0fed64b08447758ae708635cac7e6352d5d1f6bcdfe2"
+        },
+        "human_review": {
+          "path": "benchmarks/aa-semantic-revision-v1/human-semantic-review-v1.json",
+          "sha256": "eb7b60eb1e3f0a89f2edfedb9147a808caeac4ba19363624c8d66491e5475d50"
+        }
+      },
+      "scope": "Human reviewed local candidate/material relationship, NOT dense pixel truth.",
+      "compared_pixels": 135700,
+      "changes": {
+        "-1_to_0": 0,
+        "-1_to_1": 0,
+        "0_to_-1": 0,
+        "0_to_1": 0,
+        "1_to_-1": 0,
+        "1_to_0": 0
+      },
+      "global_to_local_changed_pixels": 64539,
+      "decision": "reuse_existing_local_no_recompute",
+      "material_reacceptance": "not_performed_or_required_for_unchanged_scope"
+    },
+    {
+      "id": "V01",
+      "native_bbox": [
+        2220,
+        1250,
+        2480,
+        1940
+      ],
+      "references": {
+        "states": {
+          "path": "runs/aa-shape-validation-v1e/V01/rf_texture-states.npy",
+          "sha256": "2da9430032b02409c39d8b7eb9308369c69b09f3400aa7cb649718f75e833a1a"
+        },
+        "domain": {
+          "path": "runs/aa-shape-validation-v1e/V01/processing-domain.png",
+          "sha256": "6249c73a4d6af19c11636f38ae7439033d59bfbbe1d4943a757682da907da299"
+        },
+        "human_review": {
+          "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+          "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+        }
+      },
+      "scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved.",
+      "compared_pixels": 88480,
+      "changes": {
+        "-1_to_0": 0,
+        "-1_to_1": 0,
+        "0_to_-1": 0,
+        "0_to_1": 0,
+        "1_to_-1": 0,
+        "1_to_0": 0
+      },
+      "global_to_local_changed_pixels": 47088,
+      "decision": "reuse_existing_local_no_recompute",
+      "material_reacceptance": "not_performed_or_required_for_unchanged_scope"
+    },
+    {
+      "id": "P01",
+      "native_bbox": [
+        1750,
+        3050,
+        2450,
+        3225
+      ],
+      "references": {
+        "states": {
+          "path": "runs/aa-shape-validation-v1e/P01/gc_fixed-states.npy",
+          "sha256": "40540d3dfeb46eb6d05d02b589d1364ddb94b02125956dc5b5e84de38cace85c"
+        },
+        "domain": {
+          "path": "runs/aa-shape-validation-v1e/P01/processing-domain.png",
+          "sha256": "533d6f2e69d3cc5dcbc7185525e1f72cfc975c91d1cfbfa329f71422c075ed24"
+        },
+        "human_review": {
+          "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+          "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+        }
+      },
+      "scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved.",
+      "compared_pixels": 41489,
+      "changes": {
+        "-1_to_0": 0,
+        "-1_to_1": 0,
+        "0_to_-1": 0,
+        "0_to_1": 0,
+        "1_to_-1": 0,
+        "1_to_0": 0
+      },
+      "global_to_local_changed_pixels": 28023,
+      "decision": "reuse_existing_local_no_recompute",
+      "material_reacceptance": "not_performed_or_required_for_unchanged_scope"
+    },
+    {
+      "id": "B01",
+      "native_bbox": [
+        930,
+        3300,
+        1520,
+        3720
+      ],
+      "references": {
+        "states": {
+          "path": "runs/aa-shape-validation-v1e/B01/gc_fixed-states.npy",
+          "sha256": "1b0a7aef385ca07d179f82f3c4d1eeba536d41deddb7c7b045516e6074fb9407"
+        },
+        "domain": {
+          "path": "runs/aa-shape-validation-v1e/B01/processing-domain.png",
+          "sha256": "9dd74ba84c9194d21bcea306ae82016d67b596b026e56580c0dbbaa5f2bfb5e0"
+        },
+        "human_review": {
+          "path": "benchmarks/aa-shape-validation-v1/human-review-v1.json",
+          "sha256": "2998195c1543c8892cc68c59a216b29adb0ea1f1af66d70b6d33bc55891d9966"
+        }
+      },
+      "scope": "Case-level qualitative approval; boundary fragments/precise pixels not individually approved.",
+      "compared_pixels": 22270,
+      "changes": {
+        "-1_to_0": 0,
+        "-1_to_1": 0,
+        "0_to_-1": 0,
+        "0_to_1": 0,
+        "1_to_-1": 0,
+        "1_to_0": 0
+      },
+      "global_to_local_changed_pixels": 13760,
+      "decision": "reuse_existing_local_no_recompute",
+      "material_reacceptance": "not_performed_or_required_for_unchanged_scope"
+    }
+  ],
+  "scope": "Assembly preservation only; neither a dense accuracy benchmark nor a semantic or speed improvement claim.",
+  "gates": {
+    "local_assembly_preservation": "PASS",
+    "whole_frame_material": "FAIL_known_semantic_errors",
+    "full_frame_algorithm_nonregression": "NOT_CHECKED_no_matched_full_frame_before_after",
+    "efficiency_improvement": "NOT_MEASURED",
+    "formal_geometry": "NOT_APPLICABLE_photo_candidate"
+  },
+  "decision": "Do not adopt global RF as default; retain five locals and earlier full-frame candidates with existing defect lists. No N01-N12 restart.",
+  "recompute": {
+    "now": [],
+    "conditional": [
+      "Locate unresolved resistor-interior false-positive boundaries from existing photos; repair only evidenced region, protect outer rings.",
+      "For other prior F01-F12 defects, check current existing candidates first; do not retrain unchanged accepted scopes."
+    ]
+  },
+  "known_failure_reference": {
+    "path": "benchmarks/aa-native-canvas-v1/ai-review-v1.json",
+    "sha256": "e010792aa0b4c2701fbf35bc325db7144b77e1ebb7abc9a188b3b57144a7a7df"
+  },
+  "earlier_full_frame_review": {
+    "path": "benchmarks/aa-completion-v1/human-review-v2.json",
+    "sha256": "89fea9c80c72d999c70a6872458142ae6a776ab416f7fae4cf5b1c75cbda67c2"
+  }
+}

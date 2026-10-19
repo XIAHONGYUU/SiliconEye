@@ -1,0 +1,438 @@
+{
+  "status": "prior_guided_same_chip_shape_regression_needs_review",
+  "rows": [
+    {
+      "case": "V01",
+      "method": "rf_texture",
+      "expected_topology": {
+        "components": 2,
+        "holes": 1
+      },
+      "binary_topology": {
+        "components": 3,
+        "holes": 1,
+        "small_components": 0
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 2,
+        "holes": 1,
+        "small_components": 10
+      },
+      "topology_gate": "NEEDS_REVIEW",
+      "scoped_topology": {
+        "target": {
+          "components": 2,
+          "holes": 1,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 1,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 2,
+          "holes": 1,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 4000,
+      "changed_from_prior_pixels": 4112,
+      "AA_pixels": 48051,
+      "non_AA_pixels": 24465,
+      "unknown_pixels": 106884,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "V01",
+      "method": "gc_fixed",
+      "expected_topology": {
+        "components": 2,
+        "holes": 1
+      },
+      "binary_topology": {
+        "components": 4,
+        "holes": 1,
+        "small_components": 3
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 2,
+        "holes": 1,
+        "small_components": 15
+      },
+      "topology_gate": "NEEDS_REVIEW",
+      "scoped_topology": {
+        "target": {
+          "components": 2,
+          "holes": 1,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 2,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 2,
+          "holes": 1,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 4000,
+      "changed_from_prior_pixels": 4043,
+      "AA_pixels": 47010,
+      "non_AA_pixels": 25354,
+      "unknown_pixels": 107036,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "V01",
+      "method": "gc_refine",
+      "expected_topology": {
+        "components": 2,
+        "holes": 1
+      },
+      "binary_topology": {
+        "components": 6,
+        "holes": 1,
+        "small_components": 5
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 2,
+        "holes": 1,
+        "small_components": 12
+      },
+      "topology_gate": "NEEDS_REVIEW",
+      "scoped_topology": {
+        "target": {
+          "components": 2,
+          "holes": 1,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 4,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 2,
+          "holes": 1,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 4000,
+      "changed_from_prior_pixels": 4137,
+      "AA_pixels": 46403,
+      "non_AA_pixels": 25968,
+      "unknown_pixels": 107029,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "P01",
+      "method": "rf_texture",
+      "expected_topology": {
+        "components": 1,
+        "holes": 0
+      },
+      "binary_topology": {
+        "components": 1,
+        "holes": 0,
+        "small_components": 4
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 1,
+        "holes": 0,
+        "small_components": 0
+      },
+      "topology_gate": "NEEDS_REVIEW",
+      "scoped_topology": {
+        "target": {
+          "components": 1,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 1,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 4000,
+      "changed_from_prior_pixels": 1202,
+      "AA_pixels": 23842,
+      "non_AA_pixels": 12798,
+      "unknown_pixels": 85860,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "P01",
+      "method": "gc_fixed",
+      "expected_topology": {
+        "components": 1,
+        "holes": 0
+      },
+      "binary_topology": {
+        "components": 1,
+        "holes": 0,
+        "small_components": 0
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 1,
+        "holes": 0,
+        "small_components": 0
+      },
+      "topology_gate": "PASS",
+      "scoped_topology": {
+        "target": {
+          "components": 1,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 1,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 4000,
+      "changed_from_prior_pixels": 1975,
+      "AA_pixels": 23723,
+      "non_AA_pixels": 12969,
+      "unknown_pixels": 85808,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "P01",
+      "method": "gc_refine",
+      "expected_topology": {
+        "components": 1,
+        "holes": 0
+      },
+      "binary_topology": {
+        "components": 1,
+        "holes": 0,
+        "small_components": 0
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 1,
+        "holes": 0,
+        "small_components": 0
+      },
+      "topology_gate": "PASS",
+      "scoped_topology": {
+        "target": {
+          "components": 1,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 1,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 4000,
+      "changed_from_prior_pixels": 1971,
+      "AA_pixels": 23710,
+      "non_AA_pixels": 12984,
+      "unknown_pixels": 85806,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "B01",
+      "method": "rf_texture",
+      "expected_topology": {
+        "components": 2,
+        "holes": 0
+      },
+      "binary_topology": {
+        "components": 4,
+        "holes": 0,
+        "small_components": 0
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 3,
+        "holes": 0,
+        "small_components": 3
+      },
+      "topology_gate": "NEEDS_REVIEW",
+      "scoped_topology": {
+        "target": {
+          "components": 2,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 2,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 2,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 1
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 3936,
+      "changed_from_prior_pixels": 1671,
+      "AA_pixels": 8363,
+      "non_AA_pixels": 9015,
+      "unknown_pixels": 230422,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "B01",
+      "method": "gc_fixed",
+      "expected_topology": {
+        "components": 2,
+        "holes": 0
+      },
+      "binary_topology": {
+        "components": 2,
+        "holes": 0,
+        "small_components": 0
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 2,
+        "holes": 0,
+        "small_components": 0
+      },
+      "topology_gate": "PASS",
+      "scoped_topology": {
+        "target": {
+          "components": 2,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 2,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 3936,
+      "changed_from_prior_pixels": 1624,
+      "AA_pixels": 7613,
+      "non_AA_pixels": 10176,
+      "unknown_pixels": 230011,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    },
+    {
+      "case": "B01",
+      "method": "gc_refine",
+      "expected_topology": {
+        "components": 2,
+        "holes": 0
+      },
+      "binary_topology": {
+        "components": 2,
+        "holes": 0,
+        "small_components": 0
+      },
+      "AA_core_signature_matches_expected": true,
+      "AA_core_topology": {
+        "components": 2,
+        "holes": 0,
+        "small_components": 0
+      },
+      "topology_gate": "PASS",
+      "scoped_topology": {
+        "target": {
+          "components": 2,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "scoped_AA_core_topology": {
+        "target": {
+          "components": 2,
+          "holes": 0,
+          "small_components": 0
+        },
+        "clipped_unmodeled_components": 0,
+        "unexplained_interior_components": 0
+      },
+      "pixel_truth_available": false,
+      "full_mask_accepted": false,
+      "samples_AA": 4000,
+      "samples_non_AA": 3936,
+      "changed_from_prior_pixels": 1611,
+      "AA_pixels": 7555,
+      "non_AA_pixels": 10251,
+      "unknown_pixels": 229994,
+      "warning": "Topology gate checks raw and core signatures, not boundary truth. Extra edge fragments do not by themselves prove the main ring is broken."
+    }
+  ],
+  "source_sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+  "spec_sha256": "09d36ab13703001bbafd12e6727ae2314f286b59f314a88896747029a5f6e7e7",
+  "code_sha256": "6227c5449a136c6f7d30afc92afe8079da8e7478e07ab30b0223117812d4395d",
+  "dependency_hashes": {
+    "aa_scribble_eval.py": "97cffe19d9f6a5963b446de2244658f6f2aafaf3b9142d3e61eacb777e5894b6",
+    "aa_segmentation_eval.py": "9512ecbe5e2a3177381618da45bea6aa84c10d65016f121fc561876a4d69de3e"
+  },
+  "seed_status": "AI-derived from coarse geometry; not approved dense material pixels",
+  "CT_processed": false,
+  "formal_geometry_changed": false
+}

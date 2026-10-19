@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "evaluation": "same_agent_open_book_known_case_regression_not_independent_blind_test",
+  "plan_sha256": "8332e7cd2a3a895838ff478c24d7d5beded064ffb9598bdcea6ce44894e4b844",
+  "runner_sha256": "cf04020a91d62424b7446dc40fb5b42bd0415dfe7fd840d2de621baf1f86fead",
+  "tasks": {
+    "T1": {
+      "status": "PASS_scoped_reuse",
+      "changed_material_pixels": 0,
+      "new_training": false,
+      "new_inference": false,
+      "repeat_human_questions": 0,
+      "approval_scope": "existing local two-ring position/gap; not exact dense truth"
+    },
+    "T2": {
+      "status": "NEEDS_REVIEW_quality_gain_not_established",
+      "new_training": false,
+      "new_inference": false,
+      "cached_B0": true,
+      "new_B1_regular_geometry": true,
+      "valid_polygon": true,
+      "orthogonal": true,
+      "components": 1,
+      "holes": 0,
+      "edges": 6,
+      "topology_preserved": true,
+      "direct_native_notch": [
+        2345.9439760485197,
+        3145.016432717202
+      ],
+      "B1_native_notch": [
+        2335.394855058533,
+        3152.1407818661146
+      ],
+      "historical_AI_observation": [
+        2337,
+        3154
+      ],
+      "A_distance_to_AI_observation_px": 12.676718371923169,
+      "B1_distance_to_AI_observation_px": 2.4562537231495516,
+      "metric_limitation": "Historical AI observation is not independent precise boundary truth.",
+      "decision": "candidate_only_do_not_replace_original",
+      "human_corrections_this_execution": 0,
+      "runtime_comparison": "NOT_MEASURED_cached_inputs"
+    },
+    "T3": {
+      "status": "PASS_rejected_regression",
+      "retained_shared_components": [],
+      "rejected_shared_components": [
+        1
+      ],
+      "decision": "reject_B0_retain_existing_S05",
+      "evidence_scope": "local span only; no electrical/whole-ring conclusion",
+      "anchor_scope": "AI edge cores under human reviewed local two-ring relationship",
+      "repeat_human_questions": 0
+    }
+  },
+  "inputs_unchanged": true,
+  "overall": "scoped_reuse_and_regression_rejection_demonstrated; quality_gain_pending",
+  "scope": "same agent executes and judges known cases; not independent skill evaluation"
+}

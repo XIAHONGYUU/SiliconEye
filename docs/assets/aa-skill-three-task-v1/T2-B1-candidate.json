@@ -1,0 +1,179 @@
+{
+  "object": {
+    "id": "AA-P01-B1-local",
+    "label": "algorithm_assisted_AI_revised_staircase",
+    "observed_outline_native_xy": [
+      [
+        1835,
+        3129
+      ],
+      [
+        2384,
+        3125
+      ],
+      [
+        2385,
+        3151
+      ],
+      [
+        2336,
+        3152
+      ],
+      [
+        2335,
+        3175
+      ],
+      [
+        1835,
+        3175
+      ]
+    ],
+    "edge_axes": [
+      "H",
+      "V",
+      "H",
+      "V",
+      "H",
+      "V"
+    ],
+    "observed_holes": [],
+    "continuation_ports": [],
+    "layer": "AA",
+    "primitive": "orthogonal_polygon",
+    "status": "candidate",
+    "revision_role": "added_polygon_aa",
+    "outer_xy": [
+      [
+        1901.0,
+        3103.0
+      ],
+      [
+        2425.0,
+        3103.0
+      ],
+      [
+        2425.0,
+        3133.0
+      ],
+      [
+        2378.0,
+        3133.0
+      ],
+      [
+        2378.0,
+        3150.0
+      ],
+      [
+        1901.0,
+        3150.0
+      ]
+    ],
+    "holes_xy": [],
+    "outer_xyxy": [
+      1901.0,
+      3103.0,
+      2425.0,
+      3150.0
+    ],
+    "hole_xyxy": null,
+    "max_corner_backprojection_shift_px": 5.853489910541104,
+    "corner_backprojection_shift_px": [
+      3.8230282035023437,
+      3.9640907445034923,
+      0.6919864301990227,
+      0.6213050249354448,
+      5.853489910541104,
+      5.230523249738473
+    ],
+    "dimension_status": "relative_candidate_not_measured_process_dimension",
+    "electrical_connection": "unknown"
+  },
+  "aa_native_to_layout": [
+    [
+      0.864931534856318,
+      -0.020098222641663617,
+      273.96989891637503
+    ],
+    [
+      -0.026485945339016506,
+      0.9099876240743966,
+      132.21338343241538
+    ],
+    [
+      -1.4980528231344488e-05,
+      -8.56887245864007e-06,
+      1.0
+    ]
+  ],
+  "native_outline": [
+    [
+      1834.5027970245558,
+      3132.7905585137264
+    ],
+    [
+      2384.334578955398,
+      3121.0500541328693
+    ],
+    [
+      2384.3118835111486,
+      3151.0730815801035
+    ],
+    [
+      2335.394855058533,
+      3152.1407818661146
+    ],
+    [
+      2335.389590901418,
+      3169.1594894861546
+    ],
+    [
+      1834.7050082614485,
+      3180.2221981329935
+    ]
+  ],
+  "scope": "single object candidate only; not installed in main AA layer",
+  "algorithm_dependency": {
+    "path": "runs/aa-shape-validation-v1e/P01/gc_fixed-mask.png",
+    "sha256": "b947b0dd662eee627c9eeaf642d8113baf92275700fed340e0e2273ee03fe94a"
+  },
+  "ai_hypothesis": {
+    "id": "AA-P01-B1-local",
+    "label": "algorithm_assisted_AI_revised_staircase",
+    "observed_outline_native_xy": [
+      [
+        1835,
+        3129
+      ],
+      [
+        2384,
+        3125
+      ],
+      [
+        2385,
+        3151
+      ],
+      [
+        2336,
+        3152
+      ],
+      [
+        2335,
+        3175
+      ],
+      [
+        1835,
+        3175
+      ]
+    ],
+    "edge_axes": [
+      "H",
+      "V",
+      "H",
+      "V",
+      "H",
+      "V"
+    ],
+    "observed_holes": [],
+    "continuation_ports": []
+  }
+}

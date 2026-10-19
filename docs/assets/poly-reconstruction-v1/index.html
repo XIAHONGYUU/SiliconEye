@@ -1,0 +1,50 @@
+<!doctype html><meta charset="utf-8"><title>POLY局部规则复原对照</title>
+<style>body{font-family:sans-serif;
+background:#18202b;
+color:#eee;
+max-width:1200px;
+margin:25px auto}
+img{width:100%;
+image-rendering:auto}a{color:#86d8ff}.pair{display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px}
+select{padding:9px}@media(max-width:800px){.pair{grid-template-columns:1fr}}</style>
+<h1>POLY：复用既有身份，比较新规则几何</h1>
+<p>黄色=A直接观察，绿色=B0算法候选，蓝色=B1算法辅助后AI规则几何。橙色为遮挡/端部未知。当前只恢复可见主体片段，不把矩形封口当作真实栅端。</p>
+<p>AA基线已冻结；没有未经确认的跨层投影，没有CT归属判断或全图模型外推。横/竖栅身份及局部不相连的既有裁决不重复询问。</p>
+<select id="case"></select><select id="mode"><option value="comparison">A/B1叠加对照</option>
+<option value="A">A：直接观察</option><option value="B0">B0：局部算法</option>
+<option value="B1">B1：规则几何候选</option><option value="uncertainty">遮挡/端部未知</option>
+<option value="layout">纯规则几何</option></select><p id="note"></p>
+<div class="pair"><div>原始POLY与宽上下文<img id="source"></div>
+<div>所选结果<img id="result"></div>
+</div>
+
+<p><a href="original-human-annotation.png">查看原始红/蓝人工标注样片</a> · <a href="../../checkpoints/2026-10-19-poly-reconstruction.md">范围与质量检查说明</a></p><h2>本轮核查清单</h2><ul id="questions"></ul>
+<p>只需核查新轮廓的位置/宽度和未知表达；不重新裁决是不是POLY，不逐个CT核对。局部方法通过后再推进全幅和skill封装。</p>
+<p><a href="report.json">结果</a> ·
+<a href="spec.json">冻结假设</a> ·
+<a href="baseline.json">原标注与AA基线</a></p>
+<script src="data.js"></script><script>
+const el=id=>document.getElementById(id);
+
+for(const c of DATA.cases){let o=document.createElement('option');
+o.value=c.id;
+o.textContent=c.id+' '+c.name;
+el('case').append(o);
+
+let li=document.createElement('li');
+li.textContent=c.id+'：'+c.question;
+el('questions').append(li);
+}
+function update(){const c=DATA.cases.find(v=>v.id===el('case').value),mode=el('mode').value;
+
+el('source').src=c.id+'/source.png';
+el('result').src=c.id+'/'+(mode==='layout'?'layout.svg':mode+'.png');
+
+el('note').textContent=c.context+'；原生范围 '+c.native_bbox.join(', ')+'。新精确边界未审。';
+}
+for(const x of ['case','mode'])el(x).addEventListener('change',update);
+update();
+
+</script>

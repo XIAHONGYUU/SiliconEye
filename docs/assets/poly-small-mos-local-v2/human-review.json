@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "source": "current_user_message_2026-10-19",
+  "reviewed_artifact": "docs/assets/poly-small-mos-local-v1/index.html",
+  "decisions": [
+    {
+      "scope": "S01",
+      "judgment": "完整覆盖",
+      "status": "human_accepted_displayed_extent",
+      "objects": [
+        "G54-P01",
+        "G54-P02",
+        "G54-P03",
+        "G54-P04"
+      ]
+    },
+    {
+      "scope": "S02",
+      "judgment": "上下端完整，但是左侧过粗，侵入AA区",
+      "action": "retain_top_bottom_right_propose_left_edge_inward_only",
+      "exact_new_left_edge": "not_specified_requires_candidate",
+      "objects": [
+        "G55-P01",
+        "G55-P02",
+        "G55-P03",
+        "G55-P04"
+      ]
+    },
+    {
+      "scope": "S03 (previous page D02)",
+      "objects": [
+        "S03-03",
+        "S03-04"
+      ],
+      "judgment": "两条独立的栅极，可以辅助CT判断",
+      "status": "human_confirmed_two_distinct_gates",
+      "limits": "不是全部7条精确边界或电连接批准"
+    }
+  ],
+  "method": "CT分布可辅助判定栅主体数量/端部；不能仅凭亮点归属直接断言接触材料或电连接"
+}

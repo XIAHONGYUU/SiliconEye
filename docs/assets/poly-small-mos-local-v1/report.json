@@ -1,0 +1,368 @@
+{
+  "changed_ids": [
+    "G54-P01",
+    "G54-P02",
+    "G54-P03",
+    "G54-P04",
+    "G55-P01",
+    "G55-P02",
+    "G55-P03",
+    "G55-P04"
+  ],
+  "unchanged_objects": 658,
+  "geometry_gate": "PASS_for_edited_objects_only",
+  "local_alignment_sets_checked": [
+    {
+      "ids": [
+        "G54-P01",
+        "G54-P02",
+        "G54-P03",
+        "G54-P04"
+      ],
+      "equal_width_px": 36,
+      "equal_pitch_px": 82,
+      "common_top_and_bottom": true,
+      "scope": "photo_review_atlas_not_joint_design"
+    },
+    {
+      "ids": [
+        "G55-P01",
+        "G55-P02",
+        "G55-P03",
+        "G55-P04"
+      ],
+      "equal_width_px": 36,
+      "equal_pitch_px": 82,
+      "common_top_and_bottom": true,
+      "scope": "photo_review_atlas_not_joint_design"
+    }
+  ],
+  "AA_relationship_gate": "not_run_no_fine_registration_or_joint_geometry_for_new_scope",
+  "recognition_gate": "pending_human_review_not_full_frame_accepted",
+  "no_array_regeneration": true,
+  "sources_verified": true,
+  "unaffected_objects_equal": true,
+  "cases": [
+    {
+      "id": "S01",
+      "title": "F01：内框上排前四条小栅",
+      "poly_bbox": [
+        850,
+        480,
+        1320,
+        615
+      ],
+      "aa_bbox": [
+        1000,
+        690,
+        1440,
+        825
+      ],
+      "object_ids": [
+        "G54-P01",
+        "G54-P02",
+        "G54-P03",
+        "G54-P04"
+      ],
+      "finding": "可见矩形主体及下侧端部重复出现；旧模板使第2、4条向上缩短/伸出，与局部端部观察不一致。本轮逐对象重画范围，原AA不改。",
+      "question": "蓝色四条是否各覆盖一条完整POLY主体及下端？其中一条是否实际应拆成两栅？"
+    },
+    {
+      "id": "S02",
+      "title": "F01：内框下排前四条小栅",
+      "poly_bbox": [
+        850,
+        615,
+        1320,
+        775
+      ],
+      "aa_bbox": [
+        1000,
+        835,
+        1440,
+        1025
+      ],
+      "object_ids": [
+        "G55-P01",
+        "G55-P02",
+        "G55-P03",
+        "G55-P04"
+      ],
+      "finding": "可见上侧端部及向下延伸主体；旧模板的交替方向和长度不适用。新范围仍为像素级候选，不推断上侧亮点电连接。",
+      "question": "蓝色四条的上端和下端是否完整，是否误包入两侧AA接触区？"
+    },
+    {
+      "id": "D02",
+      "title": "F02：中部不同长度AA与密集小栅",
+      "poly_bbox": [
+        1850,
+        480,
+        2400,
+        615
+      ],
+      "aa_bbox": [
+        1800,
+        695,
+        2470,
+        820
+      ],
+      "object_ids": [
+        "G54-P13",
+        "G54-P14",
+        "G54-P15",
+        "G54-P16",
+        "G54-P17"
+      ],
+      "finding": "旧模板在此取5个槽；逐个观察可提出7条主体候选，中间有两条很近的竖向主体。新7条独立保存，尚未替换旧编号，也未安排到共同AA设计坐标。AA小岛长度不同，不能每岛默认一栅。",
+      "question": "蓝色7条是否各为独立POLY栅？重点S03-03与S03-04：应分开两条，还是一条宽栅？边界仍为候选。",
+      "proposed_objects": [
+        {
+          "id": "S03-01",
+          "native_outline": [
+            [
+              1927,
+              501
+            ],
+            [
+              1963,
+              501
+            ],
+            [
+              1963,
+              565
+            ],
+            [
+              1927,
+              565
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-02",
+          "native_outline": [
+            [
+              1987,
+              522
+            ],
+            [
+              2025,
+              522
+            ],
+            [
+              2025,
+              575
+            ],
+            [
+              1987,
+              575
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-03",
+          "native_outline": [
+            [
+              2070,
+              500
+            ],
+            [
+              2106,
+              500
+            ],
+            [
+              2106,
+              567
+            ],
+            [
+              2070,
+              567
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-04",
+          "native_outline": [
+            [
+              2115,
+              501
+            ],
+            [
+              2151,
+              501
+            ],
+            [
+              2151,
+              568
+            ],
+            [
+              2115,
+              568
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-05",
+          "native_outline": [
+            [
+              2166,
+              524
+            ],
+            [
+              2204,
+              524
+            ],
+            [
+              2204,
+              576
+            ],
+            [
+              2166,
+              576
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-06",
+          "native_outline": [
+            [
+              2238,
+              501
+            ],
+            [
+              2276,
+              501
+            ],
+            [
+              2276,
+              570
+            ],
+            [
+              2238,
+              570
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        },
+        {
+          "id": "S03-07",
+          "native_outline": [
+            [
+              2292,
+              526
+            ],
+            [
+              2330,
+              526
+            ],
+            [
+              2330,
+              577
+            ],
+            [
+              2292,
+              577
+            ]
+          ],
+          "status": "AI_observation_not_human_confirmed",
+          "coordinate_space": "POLY_original_pixels",
+          "AA_assignment": "unknown_pending_local_correspondence",
+          "layout_outline": null,
+          "electrical_connection": "unknown",
+          "evidence": "本窗口灰色主体及端部独立观察；不使用整排首尾插值"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "F03：右侧不等长AA结构",
+      "poly_bbox": [
+        2900,
+        480,
+        3430,
+        620
+      ],
+      "aa_bbox": [
+        2800,
+        700,
+        3400,
+        830
+      ],
+      "object_ids": [
+        "G54-P26",
+        "G54-P27",
+        "G54-P28",
+        "G54-P29",
+        "G54-P30"
+      ],
+      "finding": "宽AA与密集条纹使旧等间距候选缺少逐栅依据；不把图像条纹或亮点逐个当栅。这里暂不改几何。",
+      "question": "本窗口待D02代表结构澄清后重新计数，不要求现在逐条确认。"
+    },
+    {
+      "id": "D04",
+      "title": "F04：上部长排的节距变化",
+      "poly_bbox": [
+        4320,
+        350,
+        4850,
+        495
+      ],
+      "aa_bbox": [
+        4180,
+        565,
+        4810,
+        665
+      ],
+      "object_ids": [
+        "G53-P57",
+        "G53-P58",
+        "G53-P59",
+        "G53-P60",
+        "G53-P61",
+        "G53-P62"
+      ],
+      "finding": "不同长度器件交错，照片中的端部不是简单上下交替；旧66槽模板尚无逐对象数量证据。这里暂不改几何。",
+      "question": "本窗口保留为待重判，不要求复核整排；不能据此认定当前橙色框就是实际栅。"
+    }
+  ],
+  "parent_model": {
+    "path": "benchmarks/poly-full-frame-v3/model-v1.json",
+    "sha256": "22eff18e92eb5d05421034e93a3c955f5396acf79b2067e394ba7daa9ce00c8c"
+  },
+  "scope": "native_observations_and_photo_atlas; inherited_joint_design_unchanged",
+  "unmerged_observation_count": 7
+}

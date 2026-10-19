@@ -1,0 +1,4 @@
+interface:
+  display_name: "Silicon Eye AA复原 v1"
+  short_description: "AI主导AA直接提取，按需指挥算法修订细节，以同等成图标准提升质量"
+  default_prompt: "使用 $silicon-eye-aa-reconstruction 接续已有AA成果，以AI直接提取为基线，按需指挥算法改善细节，用同规格前后对照验证质量提升。"

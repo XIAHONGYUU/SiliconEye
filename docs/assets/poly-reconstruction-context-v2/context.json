@@ -1,0 +1,68 @@
+{
+  "contexts": [
+    {
+      "layer": "poly",
+      "source": "data/test_chip/tile_full/poly.jpg",
+      "source_sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+      "native_bbox": [
+        1520,
+        2510,
+        2090,
+        3000
+      ],
+      "relationship": "unregistered_context_only_not_pixel_overlay"
+    },
+    {
+      "layer": "aa",
+      "source": "data/test_chip/tile_full/aa.jpg",
+      "source_sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+      "native_bbox": [
+        1580,
+        2660,
+        2200,
+        3150
+      ],
+      "relationship": "unregistered_context_only_not_pixel_overlay"
+    }
+  ],
+  "human_feedback": {
+    "schema_version": 1,
+    "source": "current_user_message",
+    "status": "partial_acceptance_with_vertical_extent_rejection",
+    "reviews": [
+      {
+        "id": "P-H01",
+        "verbatim": "两条横向 POLY 的蓝色位置、宽度合理",
+        "accepted_scope": "displayed_horizontal_body_position_and_width",
+        "full_gate_endpoints": "not_approved"
+      },
+      {
+        "id": "P-V01",
+        "verbatim": "两条竖向 POLY 的情况蓝色比黄色更贴合，但是和实际的尺寸相差很远。比实际的尺寸小很多。",
+        "relative_fit": "B1_better_than_A",
+        "actual_extent": "rejected_undersized",
+        "full_shape_quality_gate": "FAIL",
+        "which_dimensions_and_true_boundaries": "not_specified_do_not_infer"
+      }
+    ],
+    "user_guidance": [
+      "POLY照片包含AA信息，不能按纯净单层颜色分割",
+      "AA中部分暗线是沟道线索，对应上方POLY",
+      "MOS与电阻区域作为POLY查找的结构线索"
+    ],
+    "interpretation_boundaries": [
+      "不是每条暗线都是沟道",
+      "MOS栅应结合AA交叠判断，但POLY可延伸到AA外",
+      "本芯片电阻区域线索可用于查找；不能泛化为所有工艺电阻必为POLY",
+      "局部对应核实前不投影AA轮廓"
+    ],
+    "cause_analysis": {
+      "confirmed_implementation": "A来自旧core，B1只改法向两侧，切线端点固定；不能从内部支持恢复完整外形",
+      "scope_mismatch": "只核查位置/宽度不足以判断真实器件范围，缩小了用户要恢复层几何的目标",
+      "inference_limit": "尚不能仅凭反馈确定实际缺的是长度、宽度还是端部引出，不机械放大"
+    },
+    "next_gate": "重新理解竖向完整外形与AA关系，验证局部对应后生成候选；保持已审横向不变"
+  },
+  "new_geometry_generated": false,
+  "registration_applied": false
+}

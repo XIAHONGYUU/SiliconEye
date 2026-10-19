@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "parent_model": {
+    "path": "benchmarks/poly-small-mos-local-v3/accepted-local-model-v1.json",
+    "sha256": "5f94b32a12ab56232d754ca1d37336eecdc900b06476a085fe4cf52d2a7c3eb7"
+  },
+  "source": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+  },
+  "blur_sigma_px": 1.1,
+  "template_padding_px": 8,
+  "template_object_ids": [
+    "G54-P01",
+    "G54-P02",
+    "G54-P03",
+    "G54-P04",
+    "G55-P01",
+    "G55-P02",
+    "G55-P03",
+    "G55-P04"
+  ],
+  "threshold": 0.5,
+  "min_center_separation_px": 24,
+  "regions": [
+    {
+      "id": "U01",
+      "bbox": [
+        0,
+        170,
+        590,
+        320
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。左上短MOS端部交错；不能把AA/CT外观当POLY完整外形",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U02",
+      "bbox": [
+        1810,
+        190,
+        2200,
+        330
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。上排短器件与过渡，完整POLY范围待判",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U03",
+      "bbox": [
+        3980,
+        190,
+        4640,
+        340
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。右上短器件与端部交错，栅形待判",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U04",
+      "bbox": [
+        0,
+        345,
+        5170,
+        475
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。上部长小器件排，POLY主体/端部连续关系待判",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U05",
+      "bbox": [
+        900,
+        495,
+        4070,
+        607
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。上中短器件排，材料与端部关系待判",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U06",
+      "bbox": [
+        900,
+        630,
+        1750,
+        765
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。上中左短器件，不能将CT亮点轮廓作为栅形",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U07",
+      "bbox": [
+        0,
+        865,
+        5220,
+        1015
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。中上第一长排短MOS；完整主体/引出待观察",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U08",
+      "bbox": [
+        0,
+        1023,
+        5220,
+        1145
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。中上第二长排短MOS，端部局部不清",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    },
+    {
+      "id": "U09",
+      "bbox": [
+        1370,
+        1195,
+        2095,
+        1315
+      ],
+      "reason": "POLY主体已补候选；具体数量、端部形状与引出仍待复核。左中混合短器件/端部；本轮不补CT连接",
+      "material_presence": "user_reports_POLY_present_in_displayed_orange_scope_not_entire_box"
+    }
+  ]
+}

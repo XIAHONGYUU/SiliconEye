@@ -1,0 +1,157 @@
+{
+  "status": "full_frame_candidate_requires_material_review",
+  "before_objects": 336,
+  "after_objects": 337,
+  "unchanged_objects": 330,
+  "protected_AA_unchanged": 72,
+  "revisions": [
+    {
+      "id": "FIX-05",
+      "object_id": "AA-W05",
+      "kind": "source_correspondence",
+      "new_ids": [
+        "AA-W05"
+      ],
+      "source_changed_area_px2": 36595.655519708635,
+      "changed_outside_allowed_domain_px2": 0.0,
+      "details": {
+        "layout_geometry_unchanged": true,
+        "source_observation": "existing native_corners, not global back-projection"
+      }
+    },
+    {
+      "id": "FIX-06",
+      "object_id": "AA-W07",
+      "kind": "source_correspondence",
+      "new_ids": [
+        "AA-W07"
+      ],
+      "source_changed_area_px2": 77412.08478011846,
+      "changed_outside_allowed_domain_px2": 0.0,
+      "details": {
+        "layout_geometry_unchanged": true,
+        "source_observation": "existing native_corners, not global back-projection"
+      }
+    },
+    {
+      "id": "FIX-04",
+      "object_id": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+      "kind": "approved_polygon",
+      "new_ids": [
+        "AA2-LOWER-MOS-GRID-STRIP-UL-0"
+      ],
+      "source_changed_area_px2": 4004.78312053256,
+      "changed_outside_allowed_domain_px2": 0.0,
+      "details": {
+        "source_correspondence_fit_residual_px": 0.19239821135797286,
+        "approved_native_outline_unchanged": true
+      }
+    },
+    {
+      "id": "FIX-02",
+      "object_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "kind": "canonical_cut",
+      "new_ids": [
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+      ],
+      "source_changed_area_px2": 33344.00000000001,
+      "changed_outside_allowed_domain_px2": 9.531504474580288e-10,
+      "details": {}
+    },
+    {
+      "id": "FIX-03",
+      "object_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+      "kind": "canonical_cut",
+      "new_ids": [
+        "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+      ],
+      "source_changed_area_px2": 12460.000000000004,
+      "changed_outside_allowed_domain_px2": 4.0748190159615253e-10,
+      "details": {}
+    },
+    {
+      "id": "FIX-01",
+      "object_id": "AA2-UPPER-COMPLEX-GUARD-AA-0",
+      "kind": "canonical_rebuild",
+      "new_ids": [
+        "AA2-UPPER-COMPLEX-GUARD-AA-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0-split01"
+      ],
+      "source_changed_area_px2": 156414.13250411724,
+      "changed_outside_allowed_domain_px2": 2.0478783424910585e-11,
+      "details": {
+        "evidence": {
+          "first_top": {
+            "min": 1.293548583984375,
+            "median": 19.36935806274414
+          },
+          "first_bottom": {
+            "min": 6.7354888916015625,
+            "median": 16.21451187133789
+          },
+          "second_top": {
+            "min": 9.6741943359375,
+            "median": 18.861289978027344
+          },
+          "second_bottom": {
+            "min": 4.683872222900391,
+            "median": 18.969356536865234
+          }
+        },
+        "eligible_columns": 5190,
+        "conflicting_pixels": 0,
+        "locally_repaired_columns": 575,
+        "local_repair_scope": "image-supported retry near robust neighboring traces; not truth",
+        "warped_evidence_columns": 5190,
+        "unsupported_columns": 30,
+        "boundary_evidence_file": "boundary-evidence.json"
+      }
+    }
+  ],
+  "gates": {
+    "source": "PASS",
+    "unchanged_objects": "PASS",
+    "protected_AA": "PASS",
+    "orthogonal_geometry": "PASS",
+    "area_overlaps": "PASS",
+    "complete_material_coverage": "NOT_ACCEPTED",
+    "skill_fullframe_release": "NOT_READY"
+  },
+  "layout_intersection_conflicts": [],
+  "remaining_decisions": [
+    {
+      "id": "Q-F09-RING",
+      "state": "needs_precise_object_localization",
+      "bbox": [
+        850,
+        2680,
+        1720,
+        3200
+      ],
+      "prior_feedback": "右侧中间环的结构错了",
+      "question": "原F09右侧中间环的结构问题具体指外环R1、内环R2，还是两环之间的连接？仅定位旧问题，不重问AA身份。",
+      "landmarks": [
+        {
+          "label": "R1",
+          "native_xy": [
+            1260,
+            2704
+          ]
+        },
+        {
+          "label": "R2",
+          "native_xy": [
+            1260,
+            2757
+          ]
+        }
+      ]
+    }
+  ],
+  "ML_training": false,
+  "ML_inference": false,
+  "CT_updated": false,
+  "raw_photo_unchanged": true,
+  "code_sha256": "64887488a3562678fcca66cde232645241cb723238da88ebff65867ee2095f60",
+  "spec_sha256": "beacc7f9d5f8d833952959de757a9deb3ebf8c444fd80e7271405578a4966bd1"
+}

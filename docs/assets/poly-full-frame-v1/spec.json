@@ -1,0 +1,2744 @@
+{
+  "schema_version": 1,
+  "mode": "full_native_canvas_AI_declared_array_candidates_with_explicit_unresolved_coverage",
+  "source": {
+    "path": "data/test_chip/tile_full/poly.jpg",
+    "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+  },
+  "aa_source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "baseline": {
+    "path": "benchmarks/poly-reconstruction-v1/baseline-v1.json",
+    "sha256": "361e28987bd89c46c0f577c002e7b802e3135b2c2a37b3585b8d2b3ab0c36cc3"
+  },
+  "accepted_local_model": {
+    "path": "benchmarks/poly-vertical-reassessment-v3/accepted-local-model-v1.json",
+    "sha256": "3ded782fad306a4a8595842dfe68ab5f37a501626ffc1cb74d5930bc1594b536"
+  },
+  "region_context": {
+    "path": "benchmarks/region-planning/eight-photo-regions-reviewed-v3.json",
+    "sha256": "d15ecd9f01ca76bcf74e40fe41f36ece83fd47d73adbcbd8d64d872e081d207a"
+  },
+  "native_canvas_wh": [
+    5712,
+    4284
+  ],
+  "layout_canvas_wh": [
+    5712,
+    4284
+  ],
+  "layout_unit": "relative_reconstruction_pixel_not_um",
+  "groups": [
+    {
+      "id": "G01",
+      "name": "上部左侧长栅指A",
+      "kind": "MOS_gate_body",
+      "count": 16,
+      "first_native_outline": [
+        [
+          631.0,
+          174
+        ],
+        [
+          665.0,
+          174
+        ],
+        [
+          670.0,
+          292
+        ],
+        [
+          636.0,
+          292
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1429.0,
+          179
+        ],
+        [
+          1463.0,
+          179
+        ],
+        [
+          1468.0,
+          299
+        ],
+        [
+          1434.0,
+          299
+        ]
+      ],
+      "layout_y": [
+        176,
+        296
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G02",
+      "name": "上部左侧长栅指B",
+      "kind": "MOS_gate_body",
+      "count": 4,
+      "first_native_outline": [
+        [
+          1537.5,
+          178
+        ],
+        [
+          1572.5,
+          178
+        ],
+        [
+          1576.5,
+          300
+        ],
+        [
+          1541.5,
+          300
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1713.5,
+          180
+        ],
+        [
+          1748.5,
+          180
+        ],
+        [
+          1752.5,
+          301
+        ],
+        [
+          1717.5,
+          301
+        ]
+      ],
+      "layout_y": [
+        179,
+        300
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G03",
+      "name": "上部中间长栅指",
+      "kind": "MOS_gate_body",
+      "count": 8,
+      "first_native_outline": [
+        [
+          2298.0,
+          195
+        ],
+        [
+          2332.0,
+          195
+        ],
+        [
+          2336.0,
+          309
+        ],
+        [
+          2302.0,
+          309
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2658.0,
+          198
+        ],
+        [
+          2692.0,
+          198
+        ],
+        [
+          2696.0,
+          313
+        ],
+        [
+          2662.0,
+          313
+        ]
+      ],
+      "layout_y": [
+        196,
+        311
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G04",
+      "name": "上部中右孤立指组",
+      "kind": "MOS_gate_body",
+      "count": 2,
+      "first_native_outline": [
+        [
+          2804.0,
+          197
+        ],
+        [
+          2836.0,
+          197
+        ],
+        [
+          2839.0,
+          315
+        ],
+        [
+          2807.0,
+          315
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2884.0,
+          199
+        ],
+        [
+          2916.0,
+          199
+        ],
+        [
+          2919.0,
+          316
+        ],
+        [
+          2887.0,
+          316
+        ]
+      ],
+      "layout_y": [
+        198,
+        316
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G05",
+      "name": "上部右侧长栅指A",
+      "kind": "MOS_gate_body",
+      "count": 7,
+      "first_native_outline": [
+        [
+          3042.5,
+          200
+        ],
+        [
+          3077.5,
+          200
+        ],
+        [
+          3079.5,
+          317
+        ],
+        [
+          3044.5,
+          317
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3350.5,
+          202
+        ],
+        [
+          3385.5,
+          202
+        ],
+        [
+          3387.5,
+          320
+        ],
+        [
+          3352.5,
+          320
+        ]
+      ],
+      "layout_y": [
+        201,
+        318
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G06",
+      "name": "上部右侧长栅指B",
+      "kind": "MOS_gate_body",
+      "count": 10,
+      "first_native_outline": [
+        [
+          3463.0,
+          202
+        ],
+        [
+          3497.0,
+          202
+        ],
+        [
+          3499.0,
+          320
+        ],
+        [
+          3465.0,
+          320
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3918.0,
+          207
+        ],
+        [
+          3952.0,
+          207
+        ],
+        [
+          3954.0,
+          325
+        ],
+        [
+          3920.0,
+          325
+        ]
+      ],
+      "layout_y": [
+        204,
+        322
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G07",
+      "name": "右上单独长栅指组",
+      "kind": "MOS_gate_body",
+      "count": 3,
+      "first_native_outline": [
+        [
+          4923.0,
+          209
+        ],
+        [
+          4957.0,
+          209
+        ],
+        [
+          4958.0,
+          324
+        ],
+        [
+          4924.0,
+          324
+        ]
+      ],
+      "last_native_outline": [
+        [
+          5012.0,
+          210
+        ],
+        [
+          5046.0,
+          210
+        ],
+        [
+          5047.0,
+          326
+        ],
+        [
+          5013.0,
+          326
+        ]
+      ],
+      "layout_y": [
+        210,
+        325
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G08",
+      "name": "上中块下排指组A",
+      "kind": "MOS_gate_body",
+      "count": 2,
+      "first_native_outline": [
+        [
+          1751.0,
+          676
+        ],
+        [
+          1785.0,
+          676
+        ],
+        [
+          1787.0,
+          787
+        ],
+        [
+          1753.0,
+          787
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1821.0,
+          677
+        ],
+        [
+          1855.0,
+          677
+        ],
+        [
+          1857.0,
+          787
+        ],
+        [
+          1823.0,
+          787
+        ]
+      ],
+      "layout_y": [
+        676,
+        787
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G09",
+      "name": "上中块下排指组B",
+      "kind": "MOS_gate_body",
+      "count": 2,
+      "first_native_outline": [
+        [
+          1922.5,
+          676
+        ],
+        [
+          1957.5,
+          676
+        ],
+        [
+          1959.5,
+          786
+        ],
+        [
+          1924.5,
+          786
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1992.5,
+          676
+        ],
+        [
+          2027.5,
+          676
+        ],
+        [
+          2029.5,
+          786
+        ],
+        [
+          1994.5,
+          786
+        ]
+      ],
+      "layout_y": [
+        676,
+        786
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G10",
+      "name": "上中块下排指组C",
+      "kind": "MOS_gate_body",
+      "count": 2,
+      "first_native_outline": [
+        [
+          2091.5,
+          675
+        ],
+        [
+          2126.5,
+          675
+        ],
+        [
+          2128.5,
+          785
+        ],
+        [
+          2093.5,
+          785
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2161.5,
+          675
+        ],
+        [
+          2196.5,
+          675
+        ],
+        [
+          2198.5,
+          785
+        ],
+        [
+          2163.5,
+          785
+        ]
+      ],
+      "layout_y": [
+        675,
+        785
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G11",
+      "name": "上中块下排指组D",
+      "kind": "MOS_gate_body",
+      "count": 3,
+      "first_native_outline": [
+        [
+          2259.5,
+          675
+        ],
+        [
+          2294.5,
+          675
+        ],
+        [
+          2295.5,
+          784
+        ],
+        [
+          2260.5,
+          784
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2362.5,
+          675
+        ],
+        [
+          2397.5,
+          675
+        ],
+        [
+          2398.5,
+          784
+        ],
+        [
+          2363.5,
+          784
+        ]
+      ],
+      "layout_y": [
+        675,
+        784
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G12",
+      "name": "上中块下排指组E",
+      "kind": "MOS_gate_body",
+      "count": 3,
+      "first_native_outline": [
+        [
+          2478.5,
+          675
+        ],
+        [
+          2513.5,
+          675
+        ],
+        [
+          2514.5,
+          784
+        ],
+        [
+          2479.5,
+          784
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2581.5,
+          675
+        ],
+        [
+          2616.5,
+          675
+        ],
+        [
+          2617.5,
+          784
+        ],
+        [
+          2582.5,
+          784
+        ]
+      ],
+      "layout_y": [
+        675,
+        784
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G13",
+      "name": "上中块下排指组F",
+      "kind": "MOS_gate_body",
+      "count": 3,
+      "first_native_outline": [
+        [
+          2722.5,
+          676
+        ],
+        [
+          2757.5,
+          676
+        ],
+        [
+          2758.5,
+          784
+        ],
+        [
+          2723.5,
+          784
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2819.5,
+          676
+        ],
+        [
+          2854.5,
+          676
+        ],
+        [
+          2855.5,
+          784
+        ],
+        [
+          2820.5,
+          784
+        ]
+      ],
+      "layout_y": [
+        676,
+        784
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G14",
+      "name": "上中块下排指组G",
+      "kind": "MOS_gate_body",
+      "count": 3,
+      "first_native_outline": [
+        [
+          2927.5,
+          676
+        ],
+        [
+          2962.5,
+          676
+        ],
+        [
+          2963.5,
+          784
+        ],
+        [
+          2928.5,
+          784
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3024.5,
+          676
+        ],
+        [
+          3059.5,
+          676
+        ],
+        [
+          3060.5,
+          784
+        ],
+        [
+          3025.5,
+          784
+        ]
+      ],
+      "layout_y": [
+        676,
+        784
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G15",
+      "name": "上中块下排指组H",
+      "kind": "MOS_gate_body",
+      "count": 2,
+      "first_native_outline": [
+        [
+          3152.5,
+          676
+        ],
+        [
+          3187.5,
+          676
+        ],
+        [
+          3188.5,
+          784
+        ],
+        [
+          3153.5,
+          784
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3217.5,
+          676
+        ],
+        [
+          3252.5,
+          676
+        ],
+        [
+          3253.5,
+          784
+        ],
+        [
+          3218.5,
+          784
+        ]
+      ],
+      "layout_y": [
+        676,
+        784
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G16",
+      "name": "上中块下排指组I",
+      "kind": "MOS_gate_body",
+      "count": 6,
+      "first_native_outline": [
+        [
+          3344.5,
+          677
+        ],
+        [
+          3379.5,
+          677
+        ],
+        [
+          3380.5,
+          785
+        ],
+        [
+          3345.5,
+          785
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3571.5,
+          678
+        ],
+        [
+          3606.5,
+          678
+        ],
+        [
+          3607.5,
+          785
+        ],
+        [
+          3572.5,
+          785
+        ]
+      ],
+      "layout_y": [
+        678,
+        785
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G17",
+      "name": "上中块下排指组J",
+      "kind": "MOS_gate_body",
+      "count": 7,
+      "first_native_outline": [
+        [
+          3656.5,
+          678
+        ],
+        [
+          3691.5,
+          678
+        ],
+        [
+          3692.5,
+          787
+        ],
+        [
+          3657.5,
+          787
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3932.5,
+          678
+        ],
+        [
+          3967.5,
+          678
+        ],
+        [
+          3968.5,
+          787
+        ],
+        [
+          3933.5,
+          787
+        ]
+      ],
+      "layout_y": [
+        678,
+        787
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G18",
+      "name": "左中长栅指主排",
+      "kind": "MOS_gate_body",
+      "count": 15,
+      "first_native_outline": [
+        [
+          731.5,
+          1352
+        ],
+        [
+          782.5,
+          1352
+        ],
+        [
+          788.5,
+          1591
+        ],
+        [
+          737.5,
+          1591
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1778.5,
+          1348
+        ],
+        [
+          1829.5,
+          1348
+        ],
+        [
+          1835.5,
+          1585
+        ],
+        [
+          1784.5,
+          1585
+        ]
+      ],
+      "layout_y": [
+        1350,
+        1588
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G19",
+      "name": "左中上排短栅指A",
+      "kind": "MOS_gate_body",
+      "count": 3,
+      "first_native_outline": [
+        [
+          746.5,
+          1218
+        ],
+        [
+          793.5,
+          1218
+        ],
+        [
+          796.5,
+          1301
+        ],
+        [
+          749.5,
+          1301
+        ]
+      ],
+      "last_native_outline": [
+        [
+          908.5,
+          1217
+        ],
+        [
+          955.5,
+          1217
+        ],
+        [
+          958.5,
+          1299
+        ],
+        [
+          911.5,
+          1299
+        ]
+      ],
+      "layout_y": [
+        1218,
+        1300
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G20",
+      "name": "左中上排短栅指B",
+      "kind": "MOS_gate_body",
+      "count": 5,
+      "first_native_outline": [
+        [
+          1157.5,
+          1205
+        ],
+        [
+          1182.5,
+          1205
+        ],
+        [
+          1185.5,
+          1298
+        ],
+        [
+          1160.5,
+          1298
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1329.5,
+          1204
+        ],
+        [
+          1354.5,
+          1204
+        ],
+        [
+          1357.5,
+          1297
+        ],
+        [
+          1332.5,
+          1297
+        ]
+      ],
+      "layout_y": [
+        1204,
+        1298
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G21",
+      "name": "左中阶梯栅指1",
+      "kind": "MOS_gate_body",
+      "count": 1,
+      "first_native_outline": [
+        [
+          183.5,
+          1353
+        ],
+        [
+          236.5,
+          1353
+        ],
+        [
+          244.5,
+          1624
+        ],
+        [
+          191.5,
+          1624
+        ]
+      ],
+      "last_native_outline": [
+        [
+          183.5,
+          1353
+        ],
+        [
+          236.5,
+          1353
+        ],
+        [
+          244.5,
+          1624
+        ],
+        [
+          191.5,
+          1624
+        ]
+      ],
+      "layout_y": [
+        1353,
+        1624
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G22",
+      "name": "左中阶梯栅指2",
+      "kind": "MOS_gate_body",
+      "count": 1,
+      "first_native_outline": [
+        [
+          268.5,
+          1350
+        ],
+        [
+          321.5,
+          1350
+        ],
+        [
+          329.5,
+          1624
+        ],
+        [
+          276.5,
+          1624
+        ]
+      ],
+      "last_native_outline": [
+        [
+          268.5,
+          1350
+        ],
+        [
+          321.5,
+          1350
+        ],
+        [
+          329.5,
+          1624
+        ],
+        [
+          276.5,
+          1624
+        ]
+      ],
+      "layout_y": [
+        1350,
+        1624
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G23",
+      "name": "左中阶梯栅指3",
+      "kind": "MOS_gate_body",
+      "count": 1,
+      "first_native_outline": [
+        [
+          353.5,
+          1348
+        ],
+        [
+          406.5,
+          1348
+        ],
+        [
+          414.5,
+          1620
+        ],
+        [
+          361.5,
+          1620
+        ]
+      ],
+      "last_native_outline": [
+        [
+          353.5,
+          1348
+        ],
+        [
+          406.5,
+          1348
+        ],
+        [
+          414.5,
+          1620
+        ],
+        [
+          361.5,
+          1620
+        ]
+      ],
+      "layout_y": [
+        1348,
+        1620
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G24",
+      "name": "左中阶梯栅指4",
+      "kind": "MOS_gate_body",
+      "count": 1,
+      "first_native_outline": [
+        [
+          438.5,
+          1345
+        ],
+        [
+          491.5,
+          1345
+        ],
+        [
+          498.5,
+          1585
+        ],
+        [
+          445.5,
+          1585
+        ]
+      ],
+      "last_native_outline": [
+        [
+          438.5,
+          1345
+        ],
+        [
+          491.5,
+          1345
+        ],
+        [
+          498.5,
+          1585
+        ],
+        [
+          445.5,
+          1585
+        ]
+      ],
+      "layout_y": [
+        1345,
+        1585
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G25",
+      "name": "左中阶梯栅指5",
+      "kind": "MOS_gate_body",
+      "count": 1,
+      "first_native_outline": [
+        [
+          523.5,
+          1342
+        ],
+        [
+          576.5,
+          1342
+        ],
+        [
+          582.5,
+          1541
+        ],
+        [
+          529.5,
+          1541
+        ]
+      ],
+      "last_native_outline": [
+        [
+          523.5,
+          1342
+        ],
+        [
+          576.5,
+          1342
+        ],
+        [
+          582.5,
+          1541
+        ],
+        [
+          529.5,
+          1541
+        ]
+      ],
+      "layout_y": [
+        1342,
+        1541
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G26",
+      "name": "左中阶梯栅指6",
+      "kind": "MOS_gate_body",
+      "count": 1,
+      "first_native_outline": [
+        [
+          604.5,
+          1340
+        ],
+        [
+          641.5,
+          1340
+        ],
+        [
+          645.5,
+          1463
+        ],
+        [
+          608.5,
+          1463
+        ]
+      ],
+      "last_native_outline": [
+        [
+          604.5,
+          1340
+        ],
+        [
+          641.5,
+          1340
+        ],
+        [
+          645.5,
+          1463
+        ],
+        [
+          608.5,
+          1463
+        ]
+      ],
+      "layout_y": [
+        1340,
+        1463
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G27",
+      "name": "宽MOS上排主体",
+      "kind": "wide_MOS_gate_body_candidate",
+      "count": 5,
+      "first_native_outline": [
+        [
+          28.0,
+          1792
+        ],
+        [
+          394.0,
+          1792
+        ],
+        [
+          402.0,
+          2128
+        ],
+        [
+          36.0,
+          2128
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1605.0,
+          1784
+        ],
+        [
+          1971.0,
+          1784
+        ],
+        [
+          1979.0,
+          2114
+        ],
+        [
+          1613.0,
+          2114
+        ]
+      ],
+      "layout_y": [
+        1788,
+        2121
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G28",
+      "name": "宽MOS下排主体",
+      "kind": "wide_MOS_gate_body_candidate",
+      "count": 5,
+      "first_native_outline": [
+        [
+          43.5,
+          2192
+        ],
+        [
+          408.5,
+          2192
+        ],
+        [
+          416.5,
+          2529
+        ],
+        [
+          51.5,
+          2529
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1620.5,
+          2175
+        ],
+        [
+          1985.5,
+          2175
+        ],
+        [
+          1993.5,
+          2512
+        ],
+        [
+          1628.5,
+          2512
+        ]
+      ],
+      "layout_y": [
+        2184,
+        2520
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G29",
+      "name": "中部左上较短指",
+      "kind": "MOS_gate_body",
+      "count": 4,
+      "first_native_outline": [
+        [
+          2096.5,
+          1810
+        ],
+        [
+          2131.5,
+          1810
+        ],
+        [
+          2134.5,
+          2034
+        ],
+        [
+          2099.5,
+          2034
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2264.5,
+          1808
+        ],
+        [
+          2299.5,
+          1808
+        ],
+        [
+          2302.5,
+          2032
+        ],
+        [
+          2267.5,
+          2032
+        ]
+      ],
+      "layout_y": [
+        1809,
+        2033
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G30",
+      "name": "中部左上较长指",
+      "kind": "MOS_gate_body",
+      "count": 5,
+      "first_native_outline": [
+        [
+          2320.5,
+          1808
+        ],
+        [
+          2355.5,
+          1808
+        ],
+        [
+          2358.5,
+          2092
+        ],
+        [
+          2323.5,
+          2092
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2544.5,
+          1806
+        ],
+        [
+          2579.5,
+          1806
+        ],
+        [
+          2582.5,
+          2088
+        ],
+        [
+          2547.5,
+          2088
+        ]
+      ],
+      "layout_y": [
+        1807,
+        2090
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G31",
+      "name": "中部右上指组",
+      "kind": "MOS_gate_body",
+      "count": 9,
+      "first_native_outline": [
+        [
+          2668.0,
+          1812
+        ],
+        [
+          2700.0,
+          1812
+        ],
+        [
+          2703.0,
+          2028
+        ],
+        [
+          2671.0,
+          2028
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3060.0,
+          1808
+        ],
+        [
+          3092.0,
+          1808
+        ],
+        [
+          3095.0,
+          2021
+        ],
+        [
+          3063.0,
+          2021
+        ]
+      ],
+      "layout_y": [
+        1810,
+        2024
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G32",
+      "name": "中部下排长指",
+      "kind": "MOS_gate_body",
+      "count": 15,
+      "first_native_outline": [
+        [
+          2143.0,
+          2193
+        ],
+        [
+          2177.0,
+          2193
+        ],
+        [
+          2183.0,
+          2482
+        ],
+        [
+          2149.0,
+          2482
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2927.0,
+          2183
+        ],
+        [
+          2961.0,
+          2183
+        ],
+        [
+          2967.0,
+          2471
+        ],
+        [
+          2933.0,
+          2471
+        ]
+      ],
+      "layout_y": [
+        2188,
+        2476
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G33",
+      "name": "左下宽栅指上排",
+      "kind": "MOS_gate_body",
+      "count": 7,
+      "first_native_outline": [
+        [
+          20.0,
+          2714
+        ],
+        [
+          106.0,
+          2714
+        ],
+        [
+          118.0,
+          3224
+        ],
+        [
+          32.0,
+          3224
+        ]
+      ],
+      "last_native_outline": [
+        [
+          676.0,
+          2703
+        ],
+        [
+          762.0,
+          2703
+        ],
+        [
+          774.0,
+          3210
+        ],
+        [
+          688.0,
+          3210
+        ]
+      ],
+      "layout_y": [
+        2708,
+        3217
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G34",
+      "name": "左下宽栅指下排",
+      "kind": "MOS_gate_body",
+      "count": 7,
+      "first_native_outline": [
+        [
+          39.0,
+          3270
+        ],
+        [
+          125.0,
+          3270
+        ],
+        [
+          137.0,
+          3754
+        ],
+        [
+          51.0,
+          3754
+        ]
+      ],
+      "last_native_outline": [
+        [
+          695.0,
+          3255
+        ],
+        [
+          781.0,
+          3255
+        ],
+        [
+          793.0,
+          3739
+        ],
+        [
+          707.0,
+          3739
+        ]
+      ],
+      "layout_y": [
+        3262,
+        3746
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G35",
+      "name": "左下内侧独立指组",
+      "kind": "MOS_gate_body",
+      "count": 10,
+      "first_native_outline": [
+        [
+          907.5,
+          2709
+        ],
+        [
+          946.5,
+          2709
+        ],
+        [
+          954.5,
+          2944
+        ],
+        [
+          915.5,
+          2944
+        ]
+      ],
+      "last_native_outline": [
+        [
+          1457.5,
+          2701
+        ],
+        [
+          1496.5,
+          2701
+        ],
+        [
+          1504.5,
+          2936
+        ],
+        [
+          1465.5,
+          2936
+        ]
+      ],
+      "layout_y": [
+        2705,
+        2940
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G36",
+      "name": "下中左上排",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          1739.5,
+          2707
+        ],
+        [
+          1774.5,
+          2707
+        ],
+        [
+          1781.5,
+          2840
+        ],
+        [
+          1746.5,
+          2840
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2355.5,
+          2698
+        ],
+        [
+          2390.5,
+          2698
+        ],
+        [
+          2397.5,
+          2831
+        ],
+        [
+          2362.5,
+          2831
+        ]
+      ],
+      "layout_y": [
+        2706,
+        2840
+      ],
+      "approved_slots": {
+        "0": "R2_poly_Q1_support",
+        "1": "R2_poly_Q2_support"
+      },
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G37",
+      "name": "下中右上排",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          2465.5,
+          2698
+        ],
+        [
+          2498.5,
+          2698
+        ],
+        [
+          2504.5,
+          2831
+        ],
+        [
+          2471.5,
+          2831
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3063.5,
+          2689
+        ],
+        [
+          3096.5,
+          2689
+        ],
+        [
+          3102.5,
+          2822
+        ],
+        [
+          3069.5,
+          2822
+        ]
+      ],
+      "layout_y": [
+        2706,
+        2840
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G38",
+      "name": "下中左第二排",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          1747.0,
+          2865
+        ],
+        [
+          1781.0,
+          2865
+        ],
+        [
+          1787.0,
+          2972
+        ],
+        [
+          1753.0,
+          2972
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2363.0,
+          2854
+        ],
+        [
+          2397.0,
+          2854
+        ],
+        [
+          2403.0,
+          2961
+        ],
+        [
+          2369.0,
+          2961
+        ]
+      ],
+      "layout_y": [
+        2865,
+        2972
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G39",
+      "name": "下中右第二排",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          2472.5,
+          2851
+        ],
+        [
+          2505.5,
+          2851
+        ],
+        [
+          2510.5,
+          2958
+        ],
+        [
+          2477.5,
+          2958
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3070.5,
+          2842
+        ],
+        [
+          3103.5,
+          2842
+        ],
+        [
+          3108.5,
+          2949
+        ],
+        [
+          3075.5,
+          2949
+        ]
+      ],
+      "layout_y": [
+        2865,
+        2972
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G40",
+      "name": "下中左第三排短指",
+      "kind": "MOS_gate_body",
+      "count": 11,
+      "first_native_outline": [
+        [
+          1762.0,
+          3008
+        ],
+        [
+          1794.0,
+          3008
+        ],
+        [
+          1798.0,
+          3083
+        ],
+        [
+          1766.0,
+          3083
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2290.0,
+          2996
+        ],
+        [
+          2322.0,
+          2996
+        ],
+        [
+          2326.0,
+          3071
+        ],
+        [
+          2294.0,
+          3071
+        ]
+      ],
+      "layout_y": [
+        3008,
+        3083
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G41",
+      "name": "下中右第三排短指",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          2529.5,
+          2995
+        ],
+        [
+          2560.5,
+          2995
+        ],
+        [
+          2564.5,
+          3070
+        ],
+        [
+          2533.5,
+          3070
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3079.5,
+          2987
+        ],
+        [
+          3110.5,
+          2987
+        ],
+        [
+          3114.5,
+          3062
+        ],
+        [
+          3083.5,
+          3062
+        ]
+      ],
+      "layout_y": [
+        3008,
+        3083
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G42",
+      "name": "下中左第四排短指",
+      "kind": "MOS_gate_body",
+      "count": 11,
+      "first_native_outline": [
+        [
+          1774.5,
+          3138
+        ],
+        [
+          1805.5,
+          3138
+        ],
+        [
+          1809.5,
+          3212
+        ],
+        [
+          1778.5,
+          3212
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2302.5,
+          3128
+        ],
+        [
+          2333.5,
+          3128
+        ],
+        [
+          2337.5,
+          3202
+        ],
+        [
+          2306.5,
+          3202
+        ]
+      ],
+      "layout_y": [
+        3138,
+        3212
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G43",
+      "name": "下中右第四排短指",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          2542.5,
+          3125
+        ],
+        [
+          2573.5,
+          3125
+        ],
+        [
+          2577.5,
+          3199
+        ],
+        [
+          2546.5,
+          3199
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3092.5,
+          3117
+        ],
+        [
+          3123.5,
+          3117
+        ],
+        [
+          3127.5,
+          3191
+        ],
+        [
+          3096.5,
+          3191
+        ]
+      ],
+      "layout_y": [
+        3138,
+        3212
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G44",
+      "name": "下中左第五排长指",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          1752.5,
+          3255
+        ],
+        [
+          1787.5,
+          3255
+        ],
+        [
+          1793.5,
+          3458
+        ],
+        [
+          1758.5,
+          3458
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2368.5,
+          3243
+        ],
+        [
+          2403.5,
+          3243
+        ],
+        [
+          2409.5,
+          3446
+        ],
+        [
+          2374.5,
+          3446
+        ]
+      ],
+      "layout_y": [
+        3255,
+        3458
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G45",
+      "name": "下中右第五排长指",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          2471.5,
+          3240
+        ],
+        [
+          2504.5,
+          3240
+        ],
+        [
+          2509.5,
+          3441
+        ],
+        [
+          2476.5,
+          3441
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3069.5,
+          3230
+        ],
+        [
+          3102.5,
+          3230
+        ],
+        [
+          3107.5,
+          3431
+        ],
+        [
+          3074.5,
+          3431
+        ]
+      ],
+      "layout_y": [
+        3255,
+        3458
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G46",
+      "name": "下中左第六排长指",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          1764.5,
+          3488
+        ],
+        [
+          1799.5,
+          3488
+        ],
+        [
+          1805.5,
+          3702
+        ],
+        [
+          1770.5,
+          3702
+        ]
+      ],
+      "last_native_outline": [
+        [
+          2380.5,
+          3475
+        ],
+        [
+          2415.5,
+          3475
+        ],
+        [
+          2421.5,
+          3689
+        ],
+        [
+          2386.5,
+          3689
+        ]
+      ],
+      "layout_y": [
+        3488,
+        3702
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G47",
+      "name": "下中右第六排长指",
+      "kind": "MOS_gate_body",
+      "count": 12,
+      "first_native_outline": [
+        [
+          2483.5,
+          3470
+        ],
+        [
+          2516.5,
+          3470
+        ],
+        [
+          2521.5,
+          3685
+        ],
+        [
+          2488.5,
+          3685
+        ]
+      ],
+      "last_native_outline": [
+        [
+          3081.5,
+          3461
+        ],
+        [
+          3114.5,
+          3461
+        ],
+        [
+          3119.5,
+          3676
+        ],
+        [
+          3086.5,
+          3676
+        ]
+      ],
+      "layout_y": [
+        3488,
+        3702
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G48",
+      "name": "右侧电阻长条主体",
+      "kind": "resistor_POLY_body_candidate",
+      "count": 18,
+      "first_native_outline": [
+        [
+          3235.0,
+          1863
+        ],
+        [
+          3325.0,
+          1863
+        ],
+        [
+          3293.0,
+          3272
+        ],
+        [
+          3203.0,
+          3272
+        ]
+      ],
+      "last_native_outline": [
+        [
+          5110.0,
+          1835
+        ],
+        [
+          5200.0,
+          1835
+        ],
+        [
+          5168.0,
+          3243
+        ],
+        [
+          5078.0,
+          3243
+        ]
+      ],
+      "layout_y": [
+        1849,
+        3258
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    },
+    {
+      "id": "G49",
+      "name": "右下宽栅指单排",
+      "kind": "wide_MOS_gate_body_candidate",
+      "count": 12,
+      "first_native_outline": [
+        [
+          3239.5,
+          3350
+        ],
+        [
+          3344.5,
+          3350
+        ],
+        [
+          3350.5,
+          3632
+        ],
+        [
+          3245.5,
+          3632
+        ]
+      ],
+      "last_native_outline": [
+        [
+          4607.5,
+          3324
+        ],
+        [
+          4712.5,
+          3324
+        ],
+        [
+          4718.5,
+          3604
+        ],
+        [
+          4613.5,
+          3604
+        ]
+      ],
+      "layout_y": [
+        3337,
+        3618
+      ],
+      "approved_slots": {},
+      "body_scope": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+      "method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+      "candidate_count_not_device_count": true
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "U01",
+      "bbox": [
+        0,
+        170,
+        590,
+        320
+      ],
+      "reason": "左上短MOS端部交错；不能把AA/CT外观当POLY完整外形"
+    },
+    {
+      "id": "U02",
+      "bbox": [
+        1810,
+        190,
+        2200,
+        330
+      ],
+      "reason": "上排短器件与过渡，完整POLY范围待判"
+    },
+    {
+      "id": "U03",
+      "bbox": [
+        3980,
+        190,
+        4640,
+        340
+      ],
+      "reason": "右上短器件与端部交错，栅形待判"
+    },
+    {
+      "id": "U04",
+      "bbox": [
+        0,
+        345,
+        5170,
+        475
+      ],
+      "reason": "上部长小器件排，POLY主体/端部连续关系待判"
+    },
+    {
+      "id": "U05",
+      "bbox": [
+        900,
+        495,
+        4070,
+        607
+      ],
+      "reason": "上中短器件排，材料与端部关系待判"
+    },
+    {
+      "id": "U06",
+      "bbox": [
+        900,
+        630,
+        1750,
+        765
+      ],
+      "reason": "上中左短器件，不能将CT亮点轮廓作为栅形"
+    },
+    {
+      "id": "U07",
+      "bbox": [
+        0,
+        865,
+        5220,
+        1015
+      ],
+      "reason": "中上第一长排短MOS；完整主体/引出待观察"
+    },
+    {
+      "id": "U08",
+      "bbox": [
+        0,
+        1023,
+        5220,
+        1145
+      ],
+      "reason": "中上第二长排短MOS，端部局部不清"
+    },
+    {
+      "id": "U09",
+      "bbox": [
+        1370,
+        1195,
+        2095,
+        1315
+      ],
+      "reason": "左中混合短器件/端部；本轮不补CT连接"
+    },
+    {
+      "id": "U10",
+      "bbox": [
+        2170,
+        1110,
+        2395,
+        1750
+      ],
+      "reason": "独立衬底竖向MOS的完整POLY形状需单独核对"
+    },
+    {
+      "id": "U11",
+      "bbox": [
+        2560,
+        1335,
+        3100,
+        1480
+      ],
+      "reason": "横向已审主体以外的端部；既有不互连裁决保持"
+    },
+    {
+      "id": "U12",
+      "bbox": [
+        855,
+        3060,
+        1370,
+        3145
+      ],
+      "reason": "左下短器件第一排，材料/边界不确定"
+    },
+    {
+      "id": "U13",
+      "bbox": [
+        870,
+        3190,
+        1380,
+        3285
+      ],
+      "reason": "左下短器件第二排，端部交错"
+    },
+    {
+      "id": "U14",
+      "bbox": [
+        930,
+        3310,
+        1385,
+        3440
+      ],
+      "reason": "左下局部POLY引出形状待判"
+    },
+    {
+      "id": "U15",
+      "bbox": [
+        940,
+        3460,
+        1390,
+        3550
+      ],
+      "reason": "左下短MOS完整外形待判"
+    },
+    {
+      "id": "U16",
+      "bbox": [
+        870,
+        3560,
+        1580,
+        3680
+      ],
+      "reason": "左下短MOS倒数第二排，非背景"
+    },
+    {
+      "id": "U17",
+      "bbox": [
+        870,
+        3700,
+        1580,
+        3815
+      ],
+      "reason": "左下短MOS末排，非背景"
+    },
+    {
+      "id": "U18",
+      "bbox": [
+        0,
+        1250,
+        180,
+        1500
+      ],
+      "reason": "照片左沿截断的器件，不能闭合为完整POLY"
+    },
+    {
+      "id": "U19",
+      "bbox": [
+        0,
+        2650,
+        28,
+        3800
+      ],
+      "reason": "照片左沿大器件截断，边界不是材料终止"
+    },
+    {
+      "id": "U20",
+      "bbox": [
+        0,
+        0,
+        5712,
+        115
+      ],
+      "reason": "上沿条带含金属电容/环等结构，不能凭条带外观增添POLY"
+    },
+    {
+      "id": "U21",
+      "bbox": [
+        5320,
+        0,
+        5712,
+        4284
+      ],
+      "reason": "右沿环/局部其他可见结构，不以连续亮环生成POLY"
+    },
+    {
+      "id": "U22",
+      "bbox": [
+        0,
+        1766,
+        45,
+        2598
+      ],
+      "reason": "宽MOS在照片左沿截断，候选主体不代表真实封闭终止"
+    }
+  ],
+  "do_not_promote_regions_to_material": [
+    "dummy_AA_is_not_POLY",
+    "substrate_ring_is_not_POLY",
+    "metal_capacitor_is_not_POLY"
+  ],
+  "unobserved_area_state": "unknown_not_negative",
+  "AA_to_POLY_registration": "none_context_only",
+  "fullframe_completeness": "not_accepted; difficult_short_devices_explicitly_unresolved",
+  "review_grid": {
+    "columns": 4,
+    "rows": 3,
+    "purpose": "display_only_objects_not_clipped_into_tiles"
+  },
+  "geometry_method": "AI declares first/last full visible body quadrilaterals and repetition count; script interpolates native candidates and fits equal-size/pitch axis-aligned group layout; no claimed autonomous detection",
+  "quality_gates": [
+    "all four accepted objects byte-equivalent geometry retained",
+    "valid HV polygons in common candidate layout",
+    "no positive-area overlap between distinct bodies",
+    "image and frozen input hashes unchanged",
+    "candidate is not confirmed; unknown not background",
+    "native/layout matrices and display transforms stored",
+    "CT ownership and network inference not performed"
+  ],
+  "human_questions": [
+    "各分块蓝色主体有无明显漏画、偏小或偏大？已审绿色不重问。",
+    "Q-R：右侧紫色长条作为电阻POLY主体候选，宽度/长度及数量是否合理？不推定端部串并联。",
+    "Q-W：宽MOS区域按宽主体重建是否合理？不将大片AA直接视为已审POLY。",
+    "橙色框是未解决区域，不是POLY轮廓。优先指出其中可明确恢复的主体形状。"
+  ],
+  "aa_context_navigation_offset_xy": [
+    60,
+    170
+  ],
+  "aa_context_navigation_semantics": "coarse_wide_crop_to_include_nearby_corresponding_structures_not_registration_not_used_for_geometry"
+}

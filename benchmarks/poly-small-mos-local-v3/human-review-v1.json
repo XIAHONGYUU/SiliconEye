@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "source": "current_user_message_2026-10-19",
+  "interpretation": "右边两个何时按右边两个合适理解",
+  "reviewed_artifact": "docs/assets/poly-small-mos-local-v2/index.html",
+  "decisions": [
+    {
+      "scope": [
+        "G55-P03",
+        "G55-P04"
+      ],
+      "judgment": "右边两个合适",
+      "action": "protect_displayed_geometry"
+    },
+    {
+      "scope": [
+        "G55-P01",
+        "G55-P02"
+      ],
+      "judgment": "越靠左越偏，可能间距不对",
+      "status": "source_position_needs_revision_not_width_reduction_alone",
+      "action": "recheck_local_photo_correspondence_keep_right_two"
+    }
+  ],
+  "limits": "用户未指定像素偏移量或认定畸变模型；下面8/4px为AI观察提出的来源位置候选。"
+}

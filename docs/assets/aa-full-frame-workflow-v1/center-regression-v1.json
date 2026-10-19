@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "checks": {
+    "path": "benchmarks/aa-prompted-comparison-v1/spec-v4.json",
+    "sha256": "3f7daca820e46f42a824cbf477754d06b14ea72d15f1f754263d2d0fe69e0244"
+  },
+  "human_review": {
+    "path": "benchmarks/aa-prompted-comparison-v1/human-label-review-v2.json",
+    "sha256": "1960eac6970c077d99a26e47d09391c46ab2e03cf523407415f4b017dd662ede"
+  },
+  "before_model": {
+    "path": "benchmarks/aa-completion-v1/model-v1.json",
+    "sha256": "6b85e1319c781d6ecfffc92b893fbc6f4e1f6901dc8371d18245d2e5cd2ddb44"
+  },
+  "after_model": {
+    "path": "runs/aa-full-frame-workflow-v1d/model.json",
+    "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+  },
+  "rows": [
+    {
+      "case": "S03",
+      "native_xy": [
+        400,
+        3250
+      ],
+      "expected": 1,
+      "before": 1,
+      "after": 1,
+      "before_correct": true,
+      "after_correct": true
+    },
+    {
+      "case": "S03",
+      "native_xy": [
+        650,
+        3250
+      ],
+      "expected": 1,
+      "before": 1,
+      "after": 1,
+      "before_correct": true,
+      "after_correct": true
+    },
+    {
+      "case": "S03",
+      "native_xy": [
+        400,
+        3390
+      ],
+      "expected": 1,
+      "before": 1,
+      "after": 1,
+      "before_correct": true,
+      "after_correct": true
+    },
+    {
+      "case": "S03",
+      "native_xy": [
+        650,
+        3390
+      ],
+      "expected": 1,
+      "before": 1,
+      "after": 1,
+      "before_correct": true,
+      "after_correct": true
+    },
+    {
+      "case": "S03",
+      "native_xy": [
+        400,
+        3310
+      ],
+      "expected": 0,
+      "before": 1,
+      "after": 0,
+      "before_correct": false,
+      "after_correct": true
+    },
+    {
+      "case": "S03",
+      "native_xy": [
+        650,
+        3310
+      ],
+      "expected": 0,
+      "before": 1,
+      "after": 0,
+      "before_correct": false,
+      "after_correct": true
+    },
+    {
+      "case": "S05",
+      "native_xy": [
+        3750,
+        3418
+      ],
+      "expected": 1,
+      "before": 0,
+      "after": 1,
+      "before_correct": false,
+      "after_correct": true
+    },
+    {
+      "case": "S05",
+      "native_xy": [
+        3950,
+        3415
+      ],
+      "expected": 1,
+      "before": 0,
+      "after": 1,
+      "before_correct": false,
+      "after_correct": true
+    },
+    {
+      "case": "S05",
+      "native_xy": [
+        3750,
+        3510
+      ],
+      "expected": 1,
+      "before": 1,
+      "after": 1,
+      "before_correct": true,
+      "after_correct": true
+    },
+    {
+      "case": "S05",
+      "native_xy": [
+        3950,
+        3510
+      ],
+      "expected": 1,
+      "before": 1,
+      "after": 1,
+      "before_correct": true,
+      "after_correct": true
+    },
+    {
+      "case": "S05",
+      "native_xy": [
+        3750,
+        3434
+      ],
+      "expected": 0,
+      "before": 1,
+      "after": 0,
+      "before_correct": false,
+      "after_correct": true
+    },
+    {
+      "case": "S05",
+      "native_xy": [
+        3950,
+        3431
+      ],
+      "expected": 0,
+      "before": 1,
+      "after": 0,
+      "before_correct": false,
+      "after_correct": true
+    }
+  ],
+  "before_correct": 6,
+  "after_correct": 12,
+  "total": 12,
+  "scope": "Previously seen human-confirmed centers only, not dense truth, fullframe accuracy or independent data. Used for post-run nonregression; not training this run."
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh">
+<meta charset="utf-8">
+<title>竖向POLY重新判断 v3</title>
+<style>body{font-family:sans-serif;
+background:#18202b;
+color:#eee;
+max-width:1450px;
+margin:24px auto;
+padding:16px}a{color:#86d8ff}select,button{padding:10px;
+margin:4px}img{width:100%;
+height:auto}#layout{width:220px}.pair{display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px}.table{overflow:auto}table{border-collapse:collapse}td,th{padding:8px;
+border:1px solid #586372}
+.warning{color:#ffd486}
+@media(max-width:850px){.pair{grid-template-columns:1fr}}</style>
+<h1>竖向POLY：重新判断较完整的栅体范围</h1>
+<p>判断：Q1、Q2是相邻的竖向MOS栅指；蓝色为本轮AI重新观察的较完整主体候选，黄色为上一轮偏小的B1（此次仅用作对照）。未改已审横向POLY。</p>
+<p>这次重新观察上下延伸及两侧范围，没有按固定倍数放大。照片中的网格是拍屏纹理，亮点是CT线索，均不直接决定栅体轮廓。新范围仍需验收，未写回正式POLY层。</p>
+<select id="view">
+<option value="poly_detail">放大：保留邻近器件与环的上下文</option>
+<option value="poly_context">宽视野：阵列相对位置</option>
+</select>
+<select id="mode">
+<option value="comparison">旧黄色 / 新蓝色叠加</option>
+<option value="new">仅本轮蓝色候选</option>
+<option value="old">上一轮偏小轮廓</option>
+<option value="ends">蓝色主体 + 橙色端部待核</option>
+<option value="raw">纯原图</option>
+</select>
+<p id="range">
+</p>
+<div class="pair">
+<div>同一窗口纯原图<img id="source">
+</div>
+<div>所选结果（点击图片打开原像素）<a id="open">
+<img id="result">
+</a>
+</div>
+</div>
+<h2>本轮一次核查清单</h2>
+<ol id="questions">
+</ol>
+<p class="warning">蓝色矩形端边是候选主体范围，不是已确认的物理终止；
+橙色表示真实端部过渡、扩宽/接触引出形状仍需核查，不表示非POLY。没有新增CT归属或连接判断。</p>
+<h2>AA / POLY宽上下文</h2>
+<p>两图保持各自原生坐标，未细配准，没有把AA暗线直接投影成POLY。AA的竖向沟道线索用于理解方向与阵列，不提供本轮精确边界。</p>
+<div class="pair">
+<div>AA原生窗口<img src="aa_context-raw.png">
+</div>
+<div>POLY原生窗口<img src="poly_context-raw.png">
+</div>
+</div>
+<h2>规则几何候选</h2>
+<p>纯规则图与原图轮廓分开保存，局部矩阵仅记录对象来源对应；没有公共全幅配准或物理尺寸含义。</p>
+<img id="layout" src="layout.svg">
+<p>
+<a href="report.json">判断、候选坐标与来源记录</a> ·
+<a href="../../checkpoints/2026-10-19-poly-vertical-reassessment.md">复核说明</a>
+</p>
+<script src="data.js">
+</script>
+<script>
+const el=id=>document.getElementById(id);
+
+function update(){let v=el('view').value,m=el('mode').value;
+el('source').src=v+'-raw.png';
+el('result').src=v+'-'+m+'.png';
+el('open').href=el('result').src;
+el('range').textContent='POLY原生范围 '+DATA.windows[v].join(', ')+'；原图与叠加使用同一窗口';
+}
+for(const q of DATA.questions){let li=document.createElement('li');
+li.textContent=q;
+el('questions').append(li);
+}
+for(const id of ['view','mode'])el(id).addEventListener('change',update);
+update();
+
+</script>
+</html>

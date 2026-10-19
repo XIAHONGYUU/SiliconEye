@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewer": "human_user",
+  "verbatim_answers": {
+    "S05": "未知过度带是有两条相邻非常近的环",
+    "S02": "合理"
+  },
+  "reviewed_spec": {
+    "path": "benchmarks/aa-semantic-revision-v1/spec-v1.json",
+    "sha256": "209d82bbf25b44f50ba093964cfb1e3982fbed4a75553735e0e702854e4a17a4"
+  },
+  "reviewed_image": {
+    "path": "docs/assets/aa-semantic-revision-v1/review-sheet.png",
+    "sha256": "dce1cfc60952685f3e9251fd2e5bb1acebda7655ab9c6dafb3b18e7343e70c3e"
+  },
+  "decisions": [
+    {
+      "case": "S05",
+      "status": "human_corrected_structure",
+      "semantic": "过渡区域包含两条相邻很近的AA环，需要分别保留其局部段，原先只保留一条不完整。",
+      "not_approved": [
+        "第二环精确边界",
+        "全周闭合与连接",
+        "两环分别归属哪个器件"
+      ]
+    },
+    {
+      "case": "S02",
+      "status": "human_confirmed_material_relationship",
+      "semantic": "两块AA与中间非AA间隙的材料判断合理。",
+      "not_approved": [
+        "逐像素稠密边界",
+        "物理尺寸",
+        "电气连接"
+      ]
+    }
+  ],
+  "full_frame_accepted": false
+}

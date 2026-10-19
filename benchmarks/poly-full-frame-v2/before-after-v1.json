@@ -1,0 +1,231 @@
+{
+  "parent": {
+    "path": "benchmarks/poly-full-frame-v1/model-v1.json",
+    "sha256": "83782ca167a188d8bb922cdfc8db5fa3aa5ed88a13937535e7f786b18c320bef"
+  },
+  "objects_before": 353,
+  "objects_after": 666,
+  "approved_4_unchanged": true,
+  "resistor_18_layouts_unchanged": true,
+  "negative_scopes": [
+    {
+      "id": "U19",
+      "native_bbox": [
+        0,
+        2650,
+        28,
+        3800
+      ],
+      "decision": "human_confirmed_non_POLY_in_displayed_scope"
+    },
+    {
+      "id": "U22",
+      "native_bbox": [
+        0,
+        1766,
+        45,
+        2598
+      ],
+      "decision": "human_confirmed_non_POLY_in_displayed_scope"
+    }
+  ],
+  "shared_column_relations": [
+    {
+      "id": "MATCH-LARGE-LEFT",
+      "max_old_edge_difference_px": 19.000000000000114,
+      "max_new_edge_difference_px": 0
+    },
+    {
+      "id": "MATCH-LOWER-L-12",
+      "max_old_edge_difference_px": 25.5,
+      "max_new_edge_difference_px": 0
+    },
+    {
+      "id": "MATCH-LOWER-R-12",
+      "max_old_edge_difference_px": 17.500000000000455,
+      "max_new_edge_difference_px": 0
+    },
+    {
+      "id": "MATCH-SHORT-L-11",
+      "max_old_edge_difference_px": 12.500000000000455,
+      "max_new_edge_difference_px": 0
+    },
+    {
+      "id": "MATCH-SHORT-R-11",
+      "max_old_edge_difference_px": 13.000000000000455,
+      "max_new_edge_difference_px": 0
+    }
+  ],
+  "short_row_counts": {
+    "G41": [
+      12,
+      11
+    ],
+    "G43": [
+      12,
+      11
+    ]
+  },
+  "old_count_candidate_IDs_retired": [
+    "G41-P01",
+    "G41-P02",
+    "G41-P03",
+    "G41-P04",
+    "G41-P05",
+    "G41-P06",
+    "G41-P07",
+    "G41-P08",
+    "G41-P09",
+    "G41-P10",
+    "G41-P11",
+    "G41-P12",
+    "G43-P01",
+    "G43-P02",
+    "G43-P03",
+    "G43-P04",
+    "G43-P05",
+    "G43-P06",
+    "G43-P07",
+    "G43-P08",
+    "G43-P09",
+    "G43-P10",
+    "G43-P11",
+    "G43-P12"
+  ],
+  "coarse_positive_scope_coverage": [
+    {
+      "id": "U01",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 10,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U02",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 5,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U03",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 9,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U04",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 66,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U05",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 38,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U06",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 10,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U07",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 60,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U08",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 62,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U09",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 9,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U10",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 2,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U11",
+      "old_intersecting_candidates": 2,
+      "new_intersecting_candidates": 2,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U12",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 8,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U13",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 8,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U14",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 6,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U15",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 5,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U16",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 8,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U17",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 8,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U18",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 1,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U20",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 0,
+      "not_pixel_completeness": true
+    },
+    {
+      "id": "U21",
+      "old_intersecting_candidates": 0,
+      "new_intersecting_candidates": 0,
+      "not_pixel_completeness": true
+    }
+  ],
+  "scope_coverage_is_not_recall_or_ground_truth": true,
+  "remaining_no_candidate_scopes": [
+    "U20",
+    "U21"
+  ],
+  "joint_check_errors_px": [
+    6.345940117955927,
+    7.984103315229416
+  ],
+  "joint_objects": 140,
+  "joint_AA_relation_warnings": [
+    "G43r2-P11"
+  ],
+  "adoption_status": "new_geometry_and_new_projection_pending_human_review"
+}

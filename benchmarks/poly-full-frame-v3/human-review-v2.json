@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "source": "current_user_message_2026-10-19",
+  "reviewed_artifact": "docs/assets/poly-full-frame-v3/index.html",
+  "decisions": [
+    {
+      "scope": "page_bottom_old_new_joint_layout_comparison",
+      "judgment": "通过评审没有问题",
+      "status": "human_accepted_displayed_joint_relationships",
+      "limits": "仅页面展示范围；不代表全幅POLY、精确尺寸、CT归属、实际PDK DRC或电气连接通过"
+    },
+    {
+      "scope": "F05-GATE",
+      "judgment": "基本满足需求",
+      "status": "human_accepted_displayed_scope",
+      "limits": "不推导精确CT归属和电气连接"
+    },
+    {
+      "scope": "F01-F04_small_MOS_former_orange_regions",
+      "judgment": "gate识别有问题，需要仔细处理",
+      "status": "recognition_not_accepted_requires_local_reassessment",
+      "interpretation": "用户F0～F04四张图按F01–F04记录；不扩大到已审下方联合图",
+      "technical_boundary": "规则形状与阵列检查通过不代表材料存在、数量、位置或范围正确"
+    }
+  ],
+  "geometry_changes_this_update": false,
+  "next_action": "先核查F01–F04小MOS的原图AA/POLY对应、数量与实际栅范围；限定局部修改并比较，保留已审范围"
+}
