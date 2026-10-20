@@ -1,0 +1,122 @@
+{
+  "method": "AI context review of complete source/model overview and targeted detail crops; scripted geometry checks cover every active object; no claim of exhaustive pixel truth",
+  "tiles": [
+    {
+      "id": "F01",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [
+        "Q3"
+      ],
+      "status": "new_human_questions"
+    },
+    {
+      "id": "F02",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [
+        "Q1",
+        "Q3"
+      ],
+      "status": "new_human_questions"
+    },
+    {
+      "id": "F03",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [
+        "Q1"
+      ],
+      "status": "new_human_questions"
+    },
+    {
+      "id": "F04",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [],
+      "status": "no_additional_issue_found_in_current_scan_not_dense_pixel_ground_truth"
+    },
+    {
+      "id": "F05",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [
+        "Q4"
+      ],
+      "status": "new_human_questions"
+    },
+    {
+      "id": "F06",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [
+        "Q2",
+        "Q4"
+      ],
+      "status": "new_human_questions"
+    },
+    {
+      "id": "F07",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [
+        "Q2"
+      ],
+      "status": "new_human_questions"
+    },
+    {
+      "id": "F08",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [],
+      "status": "no_additional_issue_found_in_current_scan_not_dense_pixel_ground_truth"
+    },
+    {
+      "id": "F09",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [],
+      "status": "no_additional_issue_found_in_current_scan_not_dense_pixel_ground_truth"
+    },
+    {
+      "id": "F10",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [],
+      "status": "no_additional_issue_found_in_current_scan_not_dense_pixel_ground_truth"
+    },
+    {
+      "id": "F11",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [],
+      "status": "no_additional_issue_found_in_current_scan_not_dense_pixel_ground_truth"
+    },
+    {
+      "id": "F12",
+      "scope": "full source overview scan plus common-layout geometry audit; grid is viewing only",
+      "pending_issue_refs": [],
+      "status": "no_additional_issue_found_in_current_scan_not_dense_pixel_ground_truth"
+    }
+  ],
+  "known_edge_scopes": [
+    "U20: photo UI occlusion",
+    "U21: neighboring right-edge partial photo only"
+  ],
+  "known_fragment_exceptions": [
+    {
+      "ids": [
+        "V3_G1",
+        "V3_G2"
+      ],
+      "reason": "Previously approved horizontal body fragments, not complete gate extents; separation preserved; do not force vertical endcap checks."
+    },
+    {
+      "ids": [
+        "G68-P01",
+        "G68-P02"
+      ],
+      "reason": "U10 separately reviewed nonrectangular geometry; preserved legacy geometry; joint placement remains candidate."
+    },
+    {
+      "ids": [
+        "G67-P01"
+      ],
+      "reason": "Existing left-photo boundary fragment; do not invent out-of-photo closure."
+    }
+  ],
+  "human_review_scope_not_expanded": true,
+  "source_grid_canvas_wh": [
+    5712,
+    4284
+  ]
+}

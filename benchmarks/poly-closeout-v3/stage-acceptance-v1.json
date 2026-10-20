@@ -1,0 +1,49 @@
+{
+  "stage": "POLY_v1_working_baseline_for_CT",
+  "date": "2026-10-20",
+  "locked_files": {
+    "model-v1.json": "ba2aafa2080f4bec2f1dec589a2fbdf2f254e23dbb75ac772b6730dfaa5d591a",
+    "report-v1.json": "e7b384c6ddfc03fb6376c0d7aa9c02096bb91068b4f5721c4e8df6b021208dd1",
+    "human-review-v1.json": "24a5b57651e761231ce738642c20abe9c536691de54a21e384e5dee6be3dfa21",
+    "spec-v1.json": "9b4c95d764ae3774bf89453096805d8ec832e8b7cafee4fe9fcdb31ae5ca4f31"
+  },
+  "human_approved": [
+    "Q1 displayed relationship",
+    "Q2 displayed relationship",
+    "Q3 right MOS count six",
+    "Q4 displayed relationship and AA false-positive retirement"
+  ],
+  "not_approved": [
+    "exact new six boundaries",
+    "physical scale or foundry DRC",
+    "CT ownership or electrical nets"
+  ],
+  "remaining_warnings": [
+    {
+      "id": "V3_G1",
+      "group": "LOCAL",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "V3_G2",
+      "group": "LOCAL",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G67-P01",
+      "group": "G67",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G68-P01",
+      "group": "G68",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G68-P02",
+      "group": "G68",
+      "reason": "AA_relation_not_explicitly_verified"
+    }
+  ],
+  "new_human_questions": []
+}

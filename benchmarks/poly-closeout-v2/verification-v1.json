@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "full_pytest": "382 passed in 13.42s",
+  "targeted_after_feedback_text_lock": "10 passed",
+  "ruff": "PASS changed Python files",
+  "protected_inputs": "PASS all locked hashes unchanged",
+  "SVG_XML_PNG_and_page_resources": "PASS",
+  "browser_interaction": "not_automatically_tested",
+  "native_and_working_source_roles": "projected native locators remain labelled provisional; explicit Q3 source candidates kept distinct",
+  "material_objects": 699,
+  "effective_AA_objects": 336,
+  "explicit_AA_targets": 675,
+  "geometric_conflicts": 0,
+  "AA_retired_only_with_explicit_human_decision": [
+    "AA-F00872"
+  ],
+  "G28_P05_gate_not_shortened": true,
+  "unchanged_other_objects": "checked by regression against parent, excluding only explicit Q1/Q2/Q3 scope retirements",
+  "AA_step_cross_section": "2 short plus 2 long gates over A2, not outer-bbox height",
+  "right_count_5": "AI_candidate_human_only_estimated_gt4",
+  "final_release": "BLOCKED_pending_right_count_and_revised_display_review",
+  "code_sha256": "3836da2a9b729b67e15b6c7e668c210e97b35fc0b20ab5dddd60c07e7e69df9a",
+  "template_sha256": "1cdad3c688123a61131b229774b33e1d1a54626a0e6487ea2b6d282c6ea0ff20",
+  "JS_syntax": "PASS",
+  "JS_callbacks": "PASS simulated DOM tiles/layers/view modes; no claim of browser rendering"
+}

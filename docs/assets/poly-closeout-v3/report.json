@@ -1,0 +1,43 @@
+{
+  "objects": 700,
+  "superseded_records": 348,
+  "retired_IDs": 340,
+  "resistor_bodies": 19,
+  "explicit_AA_targets": 676,
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "warnings": [
+    {
+      "id": "V3_G1",
+      "group": "LOCAL",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "V3_G2",
+      "group": "LOCAL",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G67-P01",
+      "group": "G67",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G68-P01",
+      "group": "G68",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G68-P02",
+      "group": "G68",
+      "reason": "AA_relation_not_explicitly_verified"
+    }
+  ],
+  "geometry_status": "PASS",
+  "polygon_geometry_status": "PASS",
+  "release_status": "READY_FOR_CT_working_baseline",
+  "fullframe_material_truth": false,
+  "CT_or_net_assignment": false,
+  "not_foundry_DRC": true,
+  "human_review_issues": []
+}

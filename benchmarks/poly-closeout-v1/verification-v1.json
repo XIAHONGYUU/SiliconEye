@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-20",
+  "pytest": "378 passed in 9.72s",
+  "new_regression_tests": 6,
+  "ruff": "PASS (changed Python files)",
+  "static_resources_and_SVG_XML_and_PNG": "PASS",
+  "JS_syntax": "PASS",
+  "JS_navigation_and_layer_and_issue_callbacks": "PASS simulated DOM; not browser rendering",
+  "manual_visual_inspection": [
+    "full-frame source overlay",
+    "full-frame common-layout candidate",
+    "upper short row AA/POLY source",
+    "middle MOS AA/POLY source",
+    "lower left short devices AA/POLY source",
+    "Q3 native marked ambiguous rectangle",
+    "Q4 native AA short-edge mark"
+  ],
+  "protected_input_hashes": "PASS all spec inputs unchanged",
+  "software_tests_do_not_prove_material_truth": true,
+  "material_objects": 703,
+  "explicit_target_overlap_and_extension_checks": 605,
+  "one_non_target_AA_conflict": "G28-P05 vs AA-F00872 (Q4)",
+  "polygon_geometry_status": "PASS",
+  "strict_joint_geometry_status": "FAIL",
+  "human_questions": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "release_status": "BLOCKED",
+  "browser_rendering": "not_automatically_tested",
+  "module_sha256": "55f7f43f29612f9370204cc68cc655279186d32650d700f95aa4958eea993873",
+  "template_sha256": "b949ac2c9fb421134b3460967e70c1fae7f736dc2653cba7a2477ed47f16687f",
+  "spec_sha256": "edf2f4c4fcb41842db6f830478b688c639126f450d9fcea825cd97e2b3d05a2c"
+}

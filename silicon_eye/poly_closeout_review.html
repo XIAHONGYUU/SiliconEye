@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh"><meta charset="utf-8">
+<title>POLY全幅收口：统一候选与待核清单</title>
+<style>
+body{max-width:1440px;margin:24px auto;padding:0 18px;background:#101a26;color:#e5edf4;font:16px system-ui}
+section{background:#1b2c3c;border-radius:10px;margin:20px 0;padding:18px}
+a{color:#88ceff}button,select{padding:7px;font:inherit;margin:3px}
+button{cursor:pointer}.notice{border-left:5px solid #f5b954;padding:12px}
+.question{font-weight:600;color:#bfe8ff}.scroll{overflow:auto;margin-top:14px}
+img{max-width:100%;height:auto}#layout{width:100%;height:72vh;display:block;background:#111c28}
+.issue-select+div img{min-width:800px;max-height:1000px}
+table{border-collapse:collapse}td,th{border:1px solid #597184;padding:8px;text-align:left}
+</style>
+<h1>POLY全幅收口候选</h1>
+<p class="notice">一个有效模型，{{COUNT}}个POLY材料对象（不是MOS/电阻器件计数）。
+{{RETIRED}}个旧候选ID退休；已审来源与关系按原范围保留。
+{{REVIEW_NOTICE}}</p>
+<p>AA为绿色；POLY已审显示关系为蓝色，其他联合几何候选为橙色，电阻类POLY为紫色。
+新增加的AA关系仍是AI候选。颜色不代表精确尺寸或CT、电连接已经批准。</p>
+<p><a href="#Q1">Q1 上中排数量</a> · <a href="#Q2">Q2 中部两排数量</a> ·
+<a href="#Q3">Q3 左中矩形身份</a> · <a href="#Q4">Q4 F05栅端/AA短条</a> · <a href="model.json">唯一有效模型</a> ·
+<a href="report.json">技术检查</a> · <a href="issues.json">完整问题清单</a></p>
+<p><a href="source-overview.png">原始POLY照片上的候选总览</a> ·
+<a href="overview.png">共同设计坐标总览</a></p>
+<section><h2>统一AA/POLY规则图</h2>
+<p>{{NAV}}</p>
+<label><input id="show-aa" type="checkbox" checked>AA</label>
+<label><input id="show-poly" type="checkbox" checked>POLY</label>
+<p id="view-label">全幅：分块只是查看窗口，不裁断对象。</p>
+{{SVG}}
+<p>该图统一在AA工作设计坐标中；来源轮廓、原图坐标、旧已审图册几何另外保存。
+{{TARGETS}}条有明确AA目标的关系通过目标交叠与端部预算检查；{{AA_NOTE}}；其余保留问题或既有片段范围。
+共同坐标与正交检查不能替代材料识别。规则预算为相对像素，不是真实PDK DRC。</p></section>
+{{ISSUES}}
+<section><h2>保留与未完成范围</h2>
+<p>宽POLY SG-U04-W01 已按人工裁决归为电阻，未补AA。
+U05、小栅S01/S02、下中部已审联合关系、U10来源和原始层模型均保持相应批准范围。</p>
+<p>U10的共同坐标派生位置没有随来源批准而自动通过；V3_G1/G2仍是既有水平主体片段，
+左沿G67保留照片截断。顶部界面遮挡及右沿相邻芯片不扩充材料，不按背景验收。
+CT逐孔归属、阻值、精确工艺尺寸和网络属于后续任务。</p>
+<p>本页保留Q1–Q4的处理视图，无需重新核对全部{{COUNT}}对象。
+当前采纳及待核状态以页面顶部和各处理视图说明为准。</p></section>
+<script>
+const layout=document.getElementById('layout');
+for(const button of document.querySelectorAll('[data-box]')){
+ button.onclick=()=>{layout.setAttribute('viewBox',button.dataset.box);
+ document.getElementById('view-label').textContent=button.textContent+'：仅改变查看范围';};
+}
+function layers(){
+ for(const name of ['AA','POLY']){
+ const visible=document.getElementById('show-'+name.toLowerCase()).checked;
+ layout.querySelector('[data-layer="'+name+'"]').style.display=visible?'':'none';
+ }
+}
+document.getElementById('show-aa').onchange=layers;
+document.getElementById('show-poly').onchange=layers;
+for(const select of document.querySelectorAll('.issue-select')){
+ select.onchange=()=>{const choice=select.value;
+ const suffix=['layout','alternative','before'].includes(choice)?'.svg':'.png';
+ document.getElementById('image-'+select.dataset.issue).src=select.dataset.issue+'-'+choice+suffix;};
+}
+</script></html>

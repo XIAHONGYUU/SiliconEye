@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-20",
+  "scope": "SG-U04-W01_local_source_correspondence_only",
+  "user_anchor": "宽POLY上方拐弯的AA",
+  "sources": {
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    }
+  },
+  "protected": {
+    "AA": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+    },
+    "working_AA": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/AA-working-model-v1.json",
+      "sha256": "0d17a23c3e6965095894b0bc6c0caa647cc2bf8406aa76047b6f7b6037b0745c"
+    },
+    "POLY_parent": {
+      "path": "benchmarks/poly-small-gate-batch-v2/model-v1.json",
+      "sha256": "d02573e9e0764c8ce7c596159ce34a7f6045a4e0a2d867c19c359b9ef4a829d6"
+    },
+    "joint_candidate": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/model-v1.json",
+      "sha256": "909d87c351c2ba9dca324d755aa8eb2466a74e4eb1a6e5411303dbff3f7d0432"
+    },
+    "prior_human_review": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/human-review-v1.json",
+      "sha256": "58792b64de80cb2b7388df1b15b4d79bfa7ce98a8b92648d94bbf872935a4f49"
+    }
+  },
+  "observation_id": "SG-U04-W01",
+  "poly_native_bbox": [
+    4694,
+    402,
+    4806,
+    452
+  ],
+  "gaussian_sigma_px": 3,
+  "step_fit_poly_roi": [
+    4500,
+    315,
+    5020,
+    350
+  ],
+  "step_search_aa_roi": [
+    4460,
+    510,
+    5060,
+    590
+  ],
+  "lower_step_poly_roi": [
+    4520,
+    352,
+    5000,
+    386
+  ],
+  "lower_step_search_aa_roi": [
+    4513,
+    567,
+    5013,
+    615
+  ],
+  "line_sample_half_width": 8,
+  "scale_fit_samples": [
+    {
+      "id": "fit-top",
+      "x_poly": 4750,
+      "poly_y_search": [
+        319,
+        351
+      ],
+      "aa_y_search": [
+        540,
+        578
+      ]
+    },
+    {
+      "id": "fit-bottom",
+      "x_poly": 4930,
+      "poly_y_search": [
+        460,
+        515
+      ],
+      "aa_y_search": [
+        680,
+        725
+      ]
+    }
+  ],
+  "held_out_samples": [
+    {
+      "id": "upper-left",
+      "x_poly": 4570,
+      "poly_y_search": [
+        319,
+        351
+      ],
+      "aa_y_search": [
+        540,
+        578
+      ]
+    },
+    {
+      "id": "upper-right",
+      "x_poly": 4900,
+      "poly_y_search": [
+        319,
+        351
+      ],
+      "aa_y_search": [
+        540,
+        578
+      ]
+    },
+    {
+      "id": "lower-step-center",
+      "x_poly": 4750,
+      "poly_y_search": [
+        350,
+        387
+      ],
+      "aa_y_search": [
+        575,
+        610
+      ]
+    },
+    {
+      "id": "lower-step-left",
+      "x_poly": 4570,
+      "poly_y_search": [
+        350,
+        387
+      ],
+      "aa_y_search": [
+        575,
+        610
+      ]
+    },
+    {
+      "id": "lower-step-right",
+      "x_poly": 4900,
+      "poly_y_search": [
+        350,
+        387
+      ],
+      "aa_y_search": [
+        575,
+        610
+      ]
+    },
+    {
+      "id": "bottom-left",
+      "x_poly": 4410,
+      "poly_y_search": [
+        460,
+        515
+      ],
+      "aa_y_search": [
+        680,
+        725
+      ]
+    },
+    {
+      "id": "bottom-right",
+      "x_poly": 5080,
+      "poly_y_search": [
+        460,
+        515
+      ],
+      "aa_y_search": [
+        680,
+        725
+      ]
+    }
+  ],
+  "diagnostic_budget": {
+    "max_line_residual_px": 5,
+    "min_step_NCC": 0.85,
+    "max_step_dx_difference_px": 3,
+    "units": "native_image_pixels_local_broad_ring_center_diagnostic_not_foundry_rules"
+  },
+  "poly_display_roi": [
+    4280,
+    250,
+    5220,
+    530
+  ],
+  "aa_display_roi": [
+    4280,
+    490,
+    5220,
+    750
+  ],
+  "prior_aa_display_roi": [
+    4350,
+    570,
+    5100,
+    705
+  ],
+  "model_edit_authorized": false,
+  "next_human_review": "核对标记一致的原图及叠图；如位置对应成立，再判断该宽POLY下的AA如何表达。不得从当前AA模型空白推断原片非AA或场区POLY。"
+}

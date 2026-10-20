@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20",
+  "user_text": [
+    "Q1批准",
+    "Q2批准",
+    "Q3右侧为6条mos",
+    "Q4确认批准无误"
+  ],
+  "approved_display_scopes": [
+    "Q1",
+    "Q2",
+    "Q4"
+  ],
+  "right_scope": "Q3-RIGHT",
+  "right_MOS_count": 6,
+  "right_count_status": "human_confirmed_overrides_AI_5",
+  "approval_limits": [
+    "Q3右侧新6条几何由已确认数量和AA约束生成，不等于原图精确边界批准",
+    "不扩展为实际工艺尺寸、CT归属、电连接或真实PDK DRC批准"
+  ],
+  "evaluation_failure": {
+    "previous_AI_count": 5,
+    "human_count": 6,
+    "case": "AA five valleys and six POLY bright columns did not give correct MOS count",
+    "retain_original_profile_evidence": true
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-20",
+  "observation_id": "SG-U04-W01",
+  "source_to_target": "POLY_native_to_AA_native_local_only",
+  "source_hashes": {
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    }
+  },
+  "protected_hashes": {
+    "AA": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+    },
+    "working_AA": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/AA-working-model-v1.json",
+      "sha256": "0d17a23c3e6965095894b0bc6c0caa647cc2bf8406aa76047b6f7b6037b0745c"
+    },
+    "POLY_parent": {
+      "path": "benchmarks/poly-small-gate-batch-v2/model-v1.json",
+      "sha256": "d02573e9e0764c8ce7c596159ce34a7f6045a4e0a2d867c19c359b9ef4a829d6"
+    },
+    "joint_candidate": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/model-v1.json",
+      "sha256": "909d87c351c2ba9dca324d755aa8eb2466a74e4eb1a6e5411303dbff3f7d0432"
+    },
+    "prior_human_review": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/human-review-v1.json",
+      "sha256": "58792b64de80cb2b7388df1b15b4d79bfa7ce98a8b92648d94bbf872935a4f49"
+    }
+  },
+  "initial_step_translation": {
+    "dx": 2,
+    "dy": 222,
+    "NCC": 0.9285864233970642,
+    "search_boundary_hit": false
+  },
+  "held_out_lower_step_translation": {
+    "dx": 3,
+    "dy": 222,
+    "NCC": 0.9429575800895691,
+    "search_boundary_hit": false
+  },
+  "scale_fit_line_samples": [
+    {
+      "id": "fit-top",
+      "poly_xy": [
+        4750,
+        331
+      ],
+      "aa_xy": [
+        4752,
+        553
+      ]
+    },
+    {
+      "id": "fit-bottom",
+      "poly_xy": [
+        4930,
+        489
+      ],
+      "aa_xy": [
+        4932,
+        704
+      ]
+    }
+  ],
+  "held_out_line_samples": [
+    {
+      "id": "upper-left",
+      "poly_xy": [
+        4570,
+        344
+      ],
+      "aa_xy": [
+        4572,
+        566
+      ],
+      "translation_residual_y_px": 0.0,
+      "local_affine_residual_y_px": 0.5759493670886684
+    },
+    {
+      "id": "upper-right",
+      "poly_xy": [
+        4900,
+        346
+      ],
+      "aa_xy": [
+        4902,
+        567
+      ],
+      "translation_residual_y_px": -1.0,
+      "local_affine_residual_y_px": -0.3354430379746134
+    },
+    {
+      "id": "lower-step-center",
+      "poly_xy": [
+        4750,
+        360
+      ],
+      "aa_xy": [
+        4752,
+        583
+      ],
+      "translation_residual_y_px": 1.0,
+      "local_affine_residual_y_px": 2.2848101265823573
+    },
+    {
+      "id": "lower-step-left",
+      "poly_xy": [
+        4570,
+        372
+      ],
+      "aa_xy": [
+        4572,
+        593
+      ],
+      "translation_residual_y_px": -1.0,
+      "local_affine_residual_y_px": 0.8164556962026097
+    },
+    {
+      "id": "lower-step-right",
+      "poly_xy": [
+        4900,
+        374
+      ],
+      "aa_xy": [
+        4902,
+        594
+      ],
+      "translation_residual_y_px": -2.0,
+      "local_affine_residual_y_px": -0.09493670886067207
+    },
+    {
+      "id": "bottom-left",
+      "poly_xy": [
+        4410,
+        486
+      ],
+      "aa_xy": [
+        4412,
+        702
+      ],
+      "translation_residual_y_px": -6.0,
+      "local_affine_residual_y_px": 0.8670886075949795
+    },
+    {
+      "id": "bottom-right",
+      "poly_xy": [
+        5080,
+        490
+      ],
+      "aa_xy": [
+        5082,
+        705
+      ],
+      "translation_residual_y_px": -7.0,
+      "local_affine_residual_y_px": 0.04430379746841595
+    }
+  ],
+  "translation_max_abs_y_residual_px": 7.0,
+  "affine_max_abs_y_residual_px": 2.2848101265823573,
+  "matrix": [
+    [
+      1.0,
+      0.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.9556962025316457,
+      236.66455696202522
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "projected_POLY_bbox_AA_native": [
+    4696,
+    620.8544303797468,
+    4808,
+    668.6392405063291
+  ],
+  "diagnostic_checks": {
+    "upper_step_NCC": true,
+    "held_out_lower_step_NCC": true,
+    "held_out_lower_step_dx": true,
+    "spatial_line_holdouts": true
+  },
+  "diagnostic_status": "PASS",
+  "prior_crop_problem": "AA crop y>=570 excluded upper stepped AA at y~553",
+  "correspondence_status": "AI_landmark_candidate_pending_human_review",
+  "AA_assignment": null,
+  "material_identity": "human_confirmed_wide_POLY_kept",
+  "geometry_changed": false,
+  "unchanged_locked_inputs": true,
+  "limitations": [
+    "Local frame landmarks only; no global registration claim",
+    "Spatial holdouts from same photo pair, not new evaluation data",
+    "AA material under projected W remains unresolved; no field-POLY inference",
+    "Broad bright-band centers have appearance-dependent uncertainty",
+    "No MOS/CT/net inference or foundry DRC"
+  ],
+  "next_human_review": "核对标记一致的原图及叠图；如位置对应成立，再判断该宽POLY下的AA如何表达。不得从当前AA模型空白推断原片非AA或场区POLY。",
+  "existing_AA_model_source_intersections": [],
+  "model_intersection_interpretation": "No overlap in this reconstruction is not evidence of non-AA in raw photos"
+}

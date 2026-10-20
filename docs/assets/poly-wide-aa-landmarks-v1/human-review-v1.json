@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-20",
+  "user_text": "紫色框没有AA表明这是一个电阻。",
+  "observation_id": "SG-U04-W01",
+  "reviewed_page": "docs/assets/poly-wide-aa-landmarks-v1/index.html",
+  "evidence": {
+    "path": "benchmarks/poly-wide-aa-landmarks-v1/report-v1.json",
+    "sha256": "e1713c7eb36df779c04b2094da681ab5dceebc88cfba2e0b4c550e766cffe263"
+  },
+  "decisions": {
+    "material": "POLY",
+    "material_status": "human_confirmed_kept",
+    "AA_in_displayed_projected_region": "human_confirmed_non_AA",
+    "device_class": "resistor",
+    "device_class_status": "human_confirmed",
+    "previous_MOS_gate_interpretation": "superseded_by_resistor_classification",
+    "AA_target_assignment": "not_applicable_for_this_resistor_body",
+    "local_correspondence": "accepted_for_this_displayed_classification_scope_not_fullframe_registration"
+  },
+  "scope_limits": {
+    "exact_boundary": "not_newly_approved",
+    "resistor_process_option": "unknown",
+    "resistance_ohms": "unknown",
+    "terminals_and_CT": "not_reviewed",
+    "network_connections": "not_reviewed",
+    "general_rule": "Local human classification; lack of AA alone is not a universal resistor classifier"
+  },
+  "geometry_changed": false,
+  "supersedes": [
+    "Earlier wide-POLY gate device interpretation",
+    "AA relationship unresolved for this displayed body"
+  ],
+  "accounting": {
+    "source_observations": 306,
+    "AA_association_candidates": 305,
+    "human_confirmed_resistor_without_AA_assignment": 1,
+    "meaning": "Do not force this resistor into MOS/AA correspondence or insert artificial AA"
+  },
+  "protected_inputs": {
+    "AA": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+    },
+    "working_AA": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/AA-working-model-v1.json",
+      "sha256": "0d17a23c3e6965095894b0bc6c0caa647cc2bf8406aa76047b6f7b6037b0745c"
+    },
+    "POLY_parent": {
+      "path": "benchmarks/poly-small-gate-batch-v2/model-v1.json",
+      "sha256": "d02573e9e0764c8ce7c596159ce34a7f6045a4e0a2d867c19c359b9ef4a829d6"
+    },
+    "joint_candidate": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/model-v1.json",
+      "sha256": "909d87c351c2ba9dca324d755aa8eb2466a74e4eb1a6e5411303dbff3f7d0432"
+    },
+    "prior_human_review": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/human-review-v1.json",
+      "sha256": "58792b64de80cb2b7388df1b15b4d79bfa7ce98a8b92648d94bbf872935a4f49"
+    }
+  }
+}

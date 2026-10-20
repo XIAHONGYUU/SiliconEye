@@ -1,0 +1,147 @@
+[
+  {
+    "id": "Q1",
+    "title": "上中部横排：旧33条与AA分组不一致",
+    "groups": [
+      "Q1"
+    ],
+    "poly_bbox": [
+      1640,
+      600,
+      4220,
+      815
+    ],
+    "aa_bbox": [
+      1700,
+      755,
+      4280,
+      1055
+    ],
+    "work_bbox": [
+      1840,
+      860,
+      4070,
+      1050
+    ],
+    "finding": "已改用30条、较小尺寸及AA相对位置；旧33条全部退休。",
+    "question": "原图观察轮廓中部分为投影定位估计；请以联合图与未标记原图核对本次修订，不将估计框当精确边界。",
+    "alternative_counts": [
+      2,
+      1,
+      2,
+      1,
+      4,
+      2,
+      4,
+      2,
+      8,
+      4
+    ],
+    "alternative_AA_ids": [
+      "AA-F01670",
+      "AA-F01671",
+      "AA-F01672",
+      "AA-F01673",
+      "AA-F01674",
+      "AA-F01675",
+      "AA-F01676",
+      "AA-F01677",
+      "AA-F01678",
+      "AA-F01679"
+    ],
+    "alternative_width_px": 22,
+    "issue_status": "requires_human_count_decision_not_automatic_recount",
+    "current_material_objects": 30
+  },
+  {
+    "id": "Q2",
+    "title": "中部MOS：右上排和下排疑有多提",
+    "groups": [
+      "Q2"
+    ],
+    "poly_bbox": [
+      2080,
+      1710,
+      3200,
+      2650
+    ],
+    "aa_bbox": [
+      2080,
+      1870,
+      3230,
+      2780
+    ],
+    "work_bbox": [
+      2160,
+      1910,
+      3210,
+      2660
+    ],
+    "finding": "三个分区由9/9/15改为8/8/14。左上以2+4+2解释，中央台阶AA的4条栅按局部高度分成2短、2长。",
+    "question": "数量按你的反馈修正；新位置与尺寸仍是待验收候选。",
+    "issue_status": "requires_human_count_decision_not_automatic_recount",
+    "current_material_objects": 30
+  },
+  {
+    "id": "Q3",
+    "title": "左中部均匀矩形：材料身份尚不清楚",
+    "groups": [
+      "Q3"
+    ],
+    "poly_bbox": [
+      650,
+      1120,
+      1450,
+      1350
+    ],
+    "aa_bbox": [
+      700,
+      1260,
+      1500,
+      1550
+    ],
+    "work_bbox": [
+      970,
+      1350,
+      1600,
+      1530
+    ],
+    "finding": "宽MOS及左侧四MOS保持；右侧按用户明确裁决由5改为6条。原五谷/六亮列记录保留为算法漏判。",
+    "question": "六MOS数量已确认，不重复询问数量；新增几何按AA相对位置生成，精确边界与CT/连接待后续证据修订。",
+    "unknown_AA_id": "AA-F01622",
+    "issue_status": "requires_human_material_identity_not_filled_as_POLY",
+    "current_material_objects": 11
+  },
+  {
+    "id": "Q4",
+    "title": "F05末根栅端与AA短条的联合位置冲突",
+    "groups": [
+      "G28"
+    ],
+    "poly_bbox": [
+      1400,
+      2310,
+      2120,
+      2690
+    ],
+    "aa_bbox": [
+      1470,
+      2470,
+      2160,
+      2790
+    ],
+    "work_bbox": [
+      1700,
+      2510,
+      2180,
+      2720
+    ],
+    "finding": "蓝色AA-F00872按人工裁决从有效AA层退休；原记录与照片保留。大MOS POLY没有缩短，假冲突因此解除。",
+    "question": "本项误提语义已确认；只检查修订图有无意外变化，不再询问环/残片身份。",
+    "highlight_AA_ids": [
+      "AA-F00872"
+    ],
+    "issue_status": "requires_human_AA_role_and_separation_review_before_joint_spacing_revision",
+    "current_material_objects": 5
+  }
+]

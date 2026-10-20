@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<title>宽POLY：拐弯AA局部对应复核</title>
+<style>body{background:#101923;color:#e5edf5;font:16px system-ui;
+max-width:1250px;margin:24px auto;padding:0 18px}
+a{color:#8ecbff}
+img{max-width:100%;height:auto}
+section{background:#1a2b39;padding:16px;margin:18px 0;border-radius:10px}
+button,select,input{font:inherit}
+table{border-collapse:collapse}
+td,th{padding:7px;border:1px solid #607386}
+.stack{position:relative}
+.stack img{display:block;width:100%}
+#top{position:absolute;left:0;top:0}
+.notice{border-left:5px solid #eab64f;padding:14px}</style>
+<h1>宽POLY：以其上方拐弯AA匹配</h1>
+<p class="notice">黄色 A–I 是同一结构的对应标记；
+紫色 W 在 POLY 图是已确认宽POLY的既有观察框，
+在 AA 图仅表示投影位置，<strong>不是新提取的 AA 边界</strong>。
+宽POLY身份不重问，AA归属尚未裁决。</p>
+<section><h2>1. 原图与编号：保留上下环、两侧器件参照</h2>
+<select id="native">
+<option value="marked">编号图</option>
+<option value="raw">不遮挡原图</option>
+</select>
+<h3>POLY 原生坐标</h3>
+<img id="poly" src="poly-marked.png">
+<h3>AA 原生坐标</h3>
+<img id="aa" src="aa-marked.png"></section>
+<section><h2>2. 相同 AA 坐标下切层与叠图</h2>
+<select id="layer">
+<option value="blend">滑动叠图</option>
+<option value="aa">AA</option>
+<option value="poly">已对齐POLY</option>
+<option value="marked">编号叠图</option>
+</select>
+<label>POLY透明度 <input id="alpha" type="range" min="0" max="100" value="50"></label>
+<div class="stack" id="stack">
+<img src="aa-raw.png">
+<img id="top" src="poly-aligned.png" style="opacity:.5"></div>
+<img id="single" hidden src="overlay-marked.png"></section><section><h2>3. 匹配及独立位置检查</h2><p>上侧拐弯平移估计 dx=2, dy=222 px，NCC=0.929。直接平移对下方横环最大偏差 7.00 px，不能称已精准对齐。使用上侧拐弯中心A与下方横环中心B估计局部纵向比例 0.955696；保留 x+2，y=0.955696×y+236.664557。其余7个位置检查最大纵向残差 2.28 px；下侧拐弯独立匹配 NCC=0.943。只适用于本局部，诊断预算5px不是实际PDK规则。</p><table><tr><th>未参与纵向拟合的位置</th><th>POLY实测</th><th>AA实测</th><th>平移残差Y</th><th>局部缩放残差Y</th></tr><tr><td>upper-left</td><td>[4570, 344]</td><td>[4572, 566]</td><td>0.00</td><td>0.58</td></tr><tr><td>upper-right</td><td>[4900, 346]</td><td>[4902, 567]</td><td>-1.00</td><td>-0.34</td></tr><tr><td>lower-step-center</td><td>[4750, 360]</td><td>[4752, 583]</td><td>1.00</td><td>2.28</td></tr><tr><td>lower-step-left</td><td>[4570, 372]</td><td>[4572, 593]</td><td>-1.00</td><td>0.82</td></tr><tr><td>lower-step-right</td><td>[4900, 374]</td><td>[4902, 594]</td><td>-2.00</td><td>-0.09</td></tr><tr><td>bottom-left</td><td>[4410, 486]</td><td>[4412, 702]</td><td>-6.00</td><td>0.87</td></tr><tr><td>bottom-right</td><td>[5080, 490]</td><td>[5082, 705]</td><td>-7.00</td><td>0.04</td></tr></table></section><section><h2>4. 此次修正与待判断</h2>
+<p>昨天的AA裁剪从y=570开始，截掉了上侧拐弯的凸起（约y=553）；旧页面上下参照不完整。现在通过同一拐弯、另一条平行环和下方横环检查位置，未把紫框强行移到邻近AA。</p>
+<p>紫框仍处于拐弯下方、两侧AA之间。当前AA重建模型对此处没有分配器件AA，但这不能证明原图中没有AA，更不能据此改判为场区POLY。请先核对本页标记和叠图是否指向同一位置；若对应成立，再确定这里AA的实际范围或可见性。</p>
+<p>本轮没有修改AA/POLY层几何或已审关系；U05及昨天批准范围保持。</p>
+<p><a href="report.json">变换、位置测量与保护记录</a> ·
+<a href="spec.json">参数和来源哈希</a> ·
+<a href="../poly-small-aa-correspondence-v1/reviewed.html">昨日已审记录</a></p></section>
+<script>
+const native=document.getElementById('native');
+const layer=document.getElementById('layer'),alpha=document.getElementById('alpha');
+native.onchange=()=>{for(const n of ['aa','poly']){
+document.getElementById(n).src=n+'-'+native.value+'.png';}};
+function update(){
+const mode=layer.value,stack=document.getElementById('stack');
+const single=document.getElementById('single');
+stack.hidden=mode!=='blend';single.hidden=mode==='blend';
+single.src=mode==='aa'?'aa-raw.png':mode==='poly'?'poly-aligned.png':'overlay-marked.png';
+document.getElementById('top').style.opacity=alpha.value/100;
+}
+layer.onchange=update;alpha.oninput=update;update();
+</script></html>

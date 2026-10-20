@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "page_local_links": "PASS",
+  "protected_inputs_hashes": "PASS",
+  "source_hashes": "PASS",
+  "held_out_samples": 7,
+  "max_abs_y_residual_px": 2.2848101265823573,
+  "matching_reproducibility": "reports from v1b and v1c equal before additional model-intersection audit",
+  "source_report_reproducibility": true,
+  "ruff": "PASS",
+  "manual_image_inspection": "native labels and affine overlay inspected",
+  "browser_interaction": "not_automatically_tested",
+  "human_approval": "pending",
+  "script_sha256": "5d87d4983a5fb359b513ca07d42d7a5df79f5514b32ead2ab9a0ff9a77b7efe8",
+  "AA_assignment": "unresolved",
+  "no_new_MOS_or_net_inferred": true,
+  "page_javascript_syntax": "PASS (node --check)"
+}

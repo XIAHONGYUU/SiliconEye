@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "observation_id": "SG-U04-W01",
+  "kind": "review_overlay_not_replacement_geometry_model",
+  "based_on": {
+    "path": "benchmarks/poly-wide-aa-landmarks-v1/report-v1.json",
+    "sha256": "e1713c7eb36df779c04b2094da681ab5dceebc88cfba2e0b4c550e766cffe263"
+  },
+  "human_review": {
+    "path": "benchmarks/poly-wide-aa-landmarks-v1/human-review-v1.json",
+    "sha256": "a966bf7e7e9e11804e2905d4085795ea348d85b0c06dc28f11f83cb743d59cb4"
+  },
+  "effective_state": {
+    "material": "POLY",
+    "material_status": "human_confirmed_kept",
+    "AA_in_displayed_projected_region": "human_confirmed_non_AA",
+    "device_class": "resistor",
+    "device_class_status": "human_confirmed",
+    "previous_MOS_gate_interpretation": "superseded_by_resistor_classification",
+    "AA_target_assignment": "not_applicable_for_this_resistor_body",
+    "local_correspondence": "accepted_for_this_displayed_classification_scope_not_fullframe_registration"
+  },
+  "unknowns": {
+    "exact_boundary": "not_newly_approved",
+    "resistor_process_option": "unknown",
+    "resistance_ohms": "unknown",
+    "terminals_and_CT": "not_reviewed",
+    "network_connections": "not_reviewed",
+    "general_rule": "Local human classification; lack of AA alone is not a universal resistor classifier"
+  },
+  "geometry_changed": false,
+  "source_and_prior_models_unchanged": true
+}

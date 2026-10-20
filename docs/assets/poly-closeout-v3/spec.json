@@ -1,0 +1,1706 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "parent": {
+      "path": "benchmarks/poly-small-gate-batch-v2/model-v1.json",
+      "sha256": "d02573e9e0764c8ce7c596159ce34a7f6045a4e0a2d867c19c359b9ef4a829d6"
+    },
+    "inventory": {
+      "path": "benchmarks/poly-small-gate-batch-v2/source-inventory-v1.json",
+      "sha256": "f75a3b87d5521faecc355659ebb910b2812590fe94d425354d738b4a0acd7458"
+    },
+    "AA": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/AA-working-model-v1.json",
+      "sha256": "0d17a23c3e6965095894b0bc6c0caa647cc2bf8406aa76047b6f7b6037b0745c"
+    },
+    "small_joint": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/model-v1.json",
+      "sha256": "909d87c351c2ba9dca324d755aa8eb2466a74e4eb1a6e5411303dbff3f7d0432"
+    },
+    "lower_joint": {
+      "path": "docs/assets/poly-full-frame-v3/joint/report.json",
+      "sha256": "9fce32076125b70359bbd026b057df6d2a02a091badc994ea5ced1365096d07b"
+    },
+    "wide_review": {
+      "path": "benchmarks/poly-wide-aa-landmarks-v1/reviewed-state-v1.json",
+      "sha256": "da759765671d28ae5b762db2592a189091967b5a703e9b333fa1b4ff05a24e6f"
+    },
+    "U05_review": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/human-review-v1.json",
+      "sha256": "58792b64de80cb2b7388df1b15b4d79bfa7ce98a8b92648d94bbf872935a4f49"
+    },
+    "full_review": {
+      "path": "benchmarks/poly-full-frame-v3/human-review-v2.json",
+      "sha256": "828a653c29fe96070e8f112719ef179103051109ad9a9e92900397aca2f62343"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "wide_match": {
+      "path": "benchmarks/poly-wide-aa-landmarks-v1/report-v1.json",
+      "sha256": "e1713c7eb36df779c04b2094da681ab5dceebc88cfba2e0b4c550e766cffe263"
+    },
+    "revision_parent": {
+      "path": "benchmarks/poly-closeout-v2/model-v1.json",
+      "sha256": "af9cad57885b8bebc0335eaddb6c92f500b3d262367a24350eea41fbb1b7b214"
+    },
+    "revision_feedback": {
+      "path": "benchmarks/poly-closeout-v2/human-review-v1.json",
+      "sha256": "a08c0309b7bc50ec8b1cbc1b9cb9dad75fdad13685573ed14a407e302e3e99b0"
+    },
+    "count_approval": {
+      "path": "benchmarks/poly-closeout-v3/human-review-v1.json",
+      "sha256": "24a5b57651e761231ce738642c20abe9c536691de54a21e384e5dee6be3dfa21"
+    }
+  },
+  "replace_scope_groups": {
+    "U01": [
+      "G50"
+    ],
+    "U02": [
+      "G51"
+    ],
+    "U03": [
+      "G52"
+    ],
+    "U04": [
+      "G53"
+    ],
+    "U05": [
+      "G54"
+    ],
+    "U06": [
+      "G55"
+    ],
+    "U07": [
+      "G56",
+      "G57"
+    ],
+    "U08": [
+      "G58",
+      "G59",
+      "G60"
+    ],
+    "U09": [
+      "G69"
+    ]
+  },
+  "relative_budget": {
+    "gate_extension_px": 8,
+    "units": "relative_layout_pixels_not_foundry_rules"
+  },
+  "protected_source_ids": [
+    "V3_G1",
+    "V3_G2",
+    "R2_poly_Q1_support",
+    "R2_poly_Q2_support",
+    "G54-P01",
+    "G54-P02",
+    "G54-P03",
+    "G54-P04",
+    "G55-P01",
+    "G55-P02",
+    "G55-P03",
+    "G55-P04",
+    "G68-P01",
+    "G68-P02"
+  ],
+  "cross_row_sets": [
+    {
+      "id": "MATCH-LARGE-LEFT",
+      "groups": [
+        "G33",
+        "G34"
+      ],
+      "reference": "G33"
+    },
+    {
+      "id": "MATCH-LOWER-L-12",
+      "groups": [
+        "G36",
+        "G38",
+        "G44",
+        "G46"
+      ],
+      "reference": "G36"
+    },
+    {
+      "id": "MATCH-LOWER-R-12",
+      "groups": [
+        "G37",
+        "G39",
+        "G45",
+        "G47"
+      ],
+      "reference": "G37"
+    },
+    {
+      "id": "MATCH-SHORT-L-11",
+      "groups": [
+        "G40",
+        "G42"
+      ],
+      "reference": "G40"
+    },
+    {
+      "id": "MATCH-SHORT-R-11",
+      "groups": [
+        "G41",
+        "G43"
+      ],
+      "reference": "G41"
+    }
+  ],
+  "review_grid": [
+    4,
+    3
+  ],
+  "unobserved_slots_must_stay_empty": true,
+  "unknown_scopes": [
+    "U20: photo UI occlusion",
+    "U21: neighboring right-edge partial photo only"
+  ],
+  "not_device_count": true,
+  "guard_AA_ids": [
+    "R01-ring",
+    "AA-G001",
+    "AA-G004",
+    "AA-W05",
+    "AA-W07",
+    "AA2-LEFT-STAIR-GUARD-0",
+    "AA2-MIDDLE-MOS-GUARD-A-0",
+    "AA2-MIDDLE-MOS-GUARD-B-0",
+    "AA2-MIDDLE-MOS-GUARD-C-0",
+    "AA2-LOWER-MOS-GRID-GUARD-UPPER-0",
+    "AA2-LOWER-MOS-GRID-GUARD-LOWER-0",
+    "AA2-UPPER-INNER-A-AA-0",
+    "AA2-UPPER-INNER-B-AA-0",
+    "AA2-MIDDLE-UPPER-AA-0",
+    "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+    "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2",
+    "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-4",
+    "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+    "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-7",
+    "AA2-UPPER-COMPLEX-GUARD-AA-0",
+    "AA2-UPPER-COMPLEX-GUARD-AA-0-split01",
+    "AA2-OUTER-VERTICAL-1-AA-0",
+    "AA2-OUTER-VERTICAL-2-AA-0",
+    "AA2-OUTER-VERTICAL-3-AA-0",
+    "AA2-TOP-H1-AA-0",
+    "AA2-TOP-H2-AA-0",
+    "AA2-TOP-H3-AA-0",
+    "AA2-ROW-GUARD-AA-0",
+    "AA2-TOP-STEP-1-AA-0",
+    "AA2-TOP-STEP-2-AA-0",
+    "AA2-TOP-UPTURN-1-AA-0",
+    "AA2-TOP-UPTURN-2-AA-0",
+    "AA2-RIGHT-EDGE-1-AA-0",
+    "AA2-RIGHT-EDGE-2-AA-0",
+    "AA2-RIGHT-EDGE-3-AA-0",
+    "AA2-RIGHT-EDGE-4-AA-0",
+    "AA2-RIGHT-EDGE-5-AA-0"
+  ],
+  "guard_role_note": "Explicit per-object roles; LEFT-GUARD-NETWORK group also contains active AA, dummy and resistor enclosure. A group name is not a material role.",
+  "new_joint_relations": [
+    {
+      "id": "G01",
+      "object_ids": [
+        "G01-P01",
+        "G01-P02",
+        "G01-P03",
+        "G01-P04",
+        "G01-P05",
+        "G01-P06",
+        "G01-P07",
+        "G01-P08",
+        "G01-P09",
+        "G01-P10",
+        "G01-P11",
+        "G01-P12",
+        "G01-P13",
+        "G01-P14",
+        "G01-P15",
+        "G01-P16"
+      ],
+      "AA_id": "AA-F01755",
+      "width_px": 29,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G02",
+      "object_ids": [
+        "G02-P01",
+        "G02-P02",
+        "G02-P03",
+        "G02-P04"
+      ],
+      "AA_id": "AA-F01757",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G03",
+      "object_ids": [
+        "G03-P01",
+        "G03-P02",
+        "G03-P03",
+        "G03-P04",
+        "G03-P05",
+        "G03-P06",
+        "G03-P07",
+        "G03-P08"
+      ],
+      "AA_id": "AA-F01780",
+      "width_px": 31,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G04",
+      "object_ids": [
+        "G04-P01",
+        "G04-P02"
+      ],
+      "AA_id": "AA-F01785",
+      "width_px": 29,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G07",
+      "object_ids": [
+        "G07-P01",
+        "G07-P02",
+        "G07-P03"
+      ],
+      "AA_id": "AA-F01868",
+      "width_px": 34,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G18",
+      "object_ids": [
+        "G18-P01",
+        "G18-P02",
+        "G18-P03",
+        "G18-P04",
+        "G18-P05",
+        "G18-P06",
+        "G18-P07",
+        "G18-P08",
+        "G18-P09",
+        "G18-P10",
+        "G18-P11",
+        "G18-P12",
+        "G18-P13",
+        "G18-P14",
+        "G18-P15"
+      ],
+      "AA_id": "AA-W08",
+      "width_px": 44,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G27",
+      "object_ids": [
+        "G27-P01",
+        "G27-P02",
+        "G27-P03",
+        "G27-P04",
+        "G27-P05"
+      ],
+      "AA_id": "AA-W01",
+      "width_px": 310,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G28",
+      "object_ids": [
+        "G28-P01",
+        "G28-P02",
+        "G28-P03",
+        "G28-P04",
+        "G28-P05"
+      ],
+      "AA_id": "AA-W02",
+      "width_px": 317,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G33",
+      "object_ids": [
+        "G33-P01",
+        "G33-P02",
+        "G33-P03",
+        "G33-P04",
+        "G33-P05",
+        "G33-P06",
+        "G33-P07"
+      ],
+      "AA_id": "AA-W03",
+      "width_px": 66,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G34",
+      "object_ids": [
+        "G34-P01",
+        "G34-P02",
+        "G34-P03",
+        "G34-P04",
+        "G34-P05",
+        "G34-P06",
+        "G34-P07"
+      ],
+      "AA_id": "AA-W04",
+      "width_px": 66,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G35",
+      "object_ids": [
+        "G35-P01",
+        "G35-P02",
+        "G35-P03",
+        "G35-P04",
+        "G35-P05",
+        "G35-P06",
+        "G35-P07",
+        "G35-P08",
+        "G35-P09",
+        "G35-P10"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "width_px": 34,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G49",
+      "object_ids": [
+        "G49-P01",
+        "G49-P02",
+        "G49-P03",
+        "G49-P04",
+        "G49-P05",
+        "G49-P06",
+        "G49-P07",
+        "G49-P08",
+        "G49-P09",
+        "G49-P10",
+        "G49-P11",
+        "G49-P12"
+      ],
+      "AA_id": "AA-W06",
+      "width_px": 100,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G61",
+      "object_ids": [
+        "G61-P01",
+        "G61-P02",
+        "G61-P03",
+        "G61-P04",
+        "G61-P05",
+        "G61-P06",
+        "G61-P07",
+        "G61-P08"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1",
+      "width_px": 25,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G62",
+      "object_ids": [
+        "G62-P01",
+        "G62-P02",
+        "G62-P03",
+        "G62-P04",
+        "G62-P05",
+        "G62-P06",
+        "G62-P07",
+        "G62-P08"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-6",
+      "width_px": 25,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G05-G06-left",
+      "object_ids": [
+        "G05-P01",
+        "G05-P02",
+        "G05-P03",
+        "G05-P04",
+        "G05-P05",
+        "G05-P06",
+        "G05-P07",
+        "G06-P01",
+        "G06-P02",
+        "G06-P03",
+        "G06-P04",
+        "G06-P05"
+      ],
+      "AA_id": "AA-F01803",
+      "width_px": 32,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G06-right",
+      "object_ids": [
+        "G06-P06",
+        "G06-P07",
+        "G06-P08",
+        "G06-P09",
+        "G06-P10"
+      ],
+      "AA_id": "AA-F01804",
+      "width_px": 32,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G21",
+      "object_ids": [
+        "G21-P01"
+      ],
+      "AA_id": "AA2-LEFT-STAIR-AA1-0",
+      "width_px": 40,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G22",
+      "object_ids": [
+        "G22-P01"
+      ],
+      "AA_id": "AA2-LEFT-STAIR-AA2-0",
+      "width_px": 40,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G23",
+      "object_ids": [
+        "G23-P01"
+      ],
+      "AA_id": "AA2-LEFT-STAIR-AA3-0",
+      "width_px": 40,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G24",
+      "object_ids": [
+        "G24-P01"
+      ],
+      "AA_id": "AA2-LEFT-STAIR-AA4-0",
+      "width_px": 40,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G25",
+      "object_ids": [
+        "G25-P01"
+      ],
+      "AA_id": "AA2-LEFT-STAIR-AA5-0",
+      "width_px": 40,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G26",
+      "object_ids": [
+        "G26-P01"
+      ],
+      "AA_id": "AA2-LEFT-STAIR-AA6-0",
+      "width_px": 40,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-1",
+      "object_ids": [
+        "G65-P01"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA1-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-2",
+      "object_ids": [
+        "G65-P02"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA2-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-3",
+      "object_ids": [
+        "G65-P03"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-4",
+      "object_ids": [
+        "G65-P04"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-5",
+      "object_ids": [
+        "G65-P05"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA5-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-6",
+      "object_ids": [
+        "G65-P06"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA6-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-7",
+      "object_ids": [
+        "G65-P07"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G65-8",
+      "object_ids": [
+        "G65-P08"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-1",
+      "object_ids": [
+        "G66-P01"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA1-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-2",
+      "object_ids": [
+        "G66-P02"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-3",
+      "object_ids": [
+        "G66-P03"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-4",
+      "object_ids": [
+        "G66-P04"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-5",
+      "object_ids": [
+        "G66-P05"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA5-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-6",
+      "object_ids": [
+        "G66-P06"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-7",
+      "object_ids": [
+        "G66-P07"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G66-8",
+      "object_ids": [
+        "G66-P08"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0",
+      "width_px": 30,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+    },
+    {
+      "id": "G63-L",
+      "object_ids": [
+        "G63-P01",
+        "G63-P02"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0",
+      "width_px": 27,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI side-by-side inspection: six-body row split 2+4 across two AA; five-body row split 2+3. New relative layout candidate, no CT/net assignment."
+    },
+    {
+      "id": "G63-R",
+      "object_ids": [
+        "G63-P03",
+        "G63-P04",
+        "G63-P05",
+        "G63-P06"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0",
+      "width_px": 27,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI side-by-side inspection: six-body row split 2+4 across two AA; five-body row split 2+3. New relative layout candidate, no CT/net assignment."
+    },
+    {
+      "id": "G64-L",
+      "object_ids": [
+        "G64-P01",
+        "G64-P02"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA3-0",
+      "width_px": 27,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI side-by-side inspection: six-body row split 2+4 across two AA; five-body row split 2+3. New relative layout candidate, no CT/net assignment."
+    },
+    {
+      "id": "G64-R",
+      "object_ids": [
+        "G64-P03",
+        "G64-P04",
+        "G64-P05"
+      ],
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA4-0",
+      "width_px": 27,
+      "margin_px": 8,
+      "extension_px": 8,
+      "evidence": "AI side-by-side inspection: six-body row split 2+4 across two AA; five-body row split 2+3. New relative layout candidate, no CT/net assignment."
+    }
+  ],
+  "wide_layout_frame": {
+    "upper_AA_id": "AA2-TOP-STEP-2-AA-0",
+    "lower_AA_id": "AA2-ROW-GUARD-AA-0",
+    "basis": "Preserve observed fractional position between the matched bent AA and lower straight AA; global photo-to-layout mapping alone falsely intrudes guard, contrary to user-confirmed non-AA body."
+  },
+  "review_issues": [
+    {
+      "id": "Q1",
+      "title": "上中部横排：旧33条与AA分组不一致",
+      "groups": [
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14",
+        "G15",
+        "G16",
+        "G17"
+      ],
+      "poly_bbox": [
+        1640,
+        600,
+        4220,
+        815
+      ],
+      "aa_bbox": [
+        1700,
+        755,
+        4280,
+        1055
+      ],
+      "work_bbox": [
+        1840,
+        860,
+        4070,
+        1050
+      ],
+      "finding": "旧首尾插值留下33条主体；部分跨到相邻AA/落入间隙。按原图及10块AA的沟道模式，AI提出2/1/2/1/4/2/4/2/8/4，共30条的替代解释，尚未采用。",
+      "question": "这10块AA是否依次对应2、1、2、1、4、2、4、2、8、4条栅？若不对，请按从左到右修正。",
+      "alternative_counts": [
+        2,
+        1,
+        2,
+        1,
+        4,
+        2,
+        4,
+        2,
+        8,
+        4
+      ],
+      "alternative_AA_ids": [
+        "AA-F01670",
+        "AA-F01671",
+        "AA-F01672",
+        "AA-F01673",
+        "AA-F01674",
+        "AA-F01675",
+        "AA-F01676",
+        "AA-F01677",
+        "AA-F01678",
+        "AA-F01679"
+      ],
+      "alternative_width_px": 22,
+      "issue_status": "requires_human_count_decision_not_automatic_recount"
+    },
+    {
+      "id": "Q2",
+      "title": "中部MOS：右上排和下排疑有多提",
+      "groups": [
+        "G29",
+        "G30",
+        "G31",
+        "G32"
+      ],
+      "poly_bbox": [
+        2080,
+        1710,
+        3200,
+        2650
+      ],
+      "aa_bbox": [
+        2080,
+        1870,
+        3230,
+        2780
+      ],
+      "work_bbox": [
+        2160,
+        1910,
+        3210,
+        2660
+      ],
+      "finding": "原4+5、9、15条模板仍在有效候选中。AA原图支持右上两岛各4条（共8）；下排四岛疑为5/2/2/5（共14），与旧9/15不符。左上台阶AA的长短栅需随局部AA高度表达，不能用其外接矩形统一栅长。",
+      "question": "请确认右上排是否8条（4+4），下排是否14条（5+2+2+5）？左上4+5条保留候选，未整批改判。",
+      "issue_status": "requires_human_count_decision_not_automatic_recount"
+    },
+    {
+      "id": "Q3",
+      "title": "左中部均匀矩形：材料身份尚不清楚",
+      "groups": [
+        "G19",
+        "G20"
+      ],
+      "poly_bbox": [
+        650,
+        1120,
+        1450,
+        1350
+      ],
+      "aa_bbox": [
+        700,
+        1260,
+        1500,
+        1550
+      ],
+      "work_bbox": [
+        970,
+        1350,
+        1600,
+        1530
+      ],
+      "finding": "两小AA和右侧长AA附近保留旧3+5条主体候选；中间AA-F01622对应原图均匀矩形没有POLY材料对象。POLY照片包含AA信息，不能仅凭矩形外观补画POLY。",
+      "question": "中央紫色虚框矩形是POLY/宽MOS栅，还是仅AA/dummy？同时请看两侧旧3+5条是否有明显多漏。",
+      "unknown_poly_native_bbox": [
+        977,
+        1205,
+        1141,
+        1328
+      ],
+      "unknown_AA_id": "AA-F01622",
+      "issue_status": "requires_human_material_identity_not_filled_as_POLY"
+    },
+    {
+      "id": "Q4",
+      "title": "F05末根栅端与AA短条的联合位置冲突",
+      "groups": [
+        "G28"
+      ],
+      "poly_bbox": [
+        1400,
+        2310,
+        2120,
+        2690
+      ],
+      "aa_bbox": [
+        1470,
+        2470,
+        2160,
+        2790
+      ],
+      "work_bbox": [
+        1700,
+        2510,
+        2180,
+        2720
+      ],
+      "finding": "G28-P05按现有大AA上下各伸出8像素的关系构造后，与AA-F00872短条交叠约4工作像素。两份来源轮廓在旧AA模型中记为不同对象，但不能据此证明物理独立；该短条可能是外围环，也可能是上方大AA边缘的残余分段。不能先删除、合并或缩栅消除告警；8像素也不是已知工艺规则。",
+      "question": "蓝色短条是独立的外围环/AA，还是上方大AA的边缘残片？若是同一块AA的残片，我会去重；若独立，则保留隔离并修订局部间距。",
+      "highlight_AA_ids": [
+        "AA-F00872"
+      ],
+      "issue_status": "requires_human_AA_role_and_separation_review_before_joint_spacing_revision"
+    }
+  ],
+  "known_exceptions": [
+    {
+      "ids": [
+        "V3_G1",
+        "V3_G2"
+      ],
+      "reason": "Previously approved horizontal body fragments, not complete gate extents; separation preserved; do not force vertical endcap checks."
+    },
+    {
+      "ids": [
+        "G68-P01",
+        "G68-P02"
+      ],
+      "reason": "U10 separately reviewed nonrectangular geometry; preserved legacy geometry; joint placement remains candidate."
+    },
+    {
+      "ids": [
+        "G67-P01"
+      ],
+      "reason": "Existing left-photo boundary fragment; do not invent out-of-photo closure."
+    }
+  ],
+  "revision": {
+    "patches": [
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01670",
+        "count": 2,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01670",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01671",
+        "count": 1,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01671",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01672",
+        "count": 2,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01672",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01673",
+        "count": 1,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01673",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01674",
+        "count": 4,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01674",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01675",
+        "count": 2,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01675",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01676",
+        "count": 4,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01676",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01677",
+        "count": 2,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01677",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01678",
+        "count": 8,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01678",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q1",
+        "AA_id": "AA-F01679",
+        "count": 4,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01679",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-A1-0",
+        "count": 2,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "A1",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-A2-0",
+        "count": 4,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "A2",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-A3-0",
+        "count": 2,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "A3",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-B1-0",
+        "count": 4,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "B1",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-B2-0",
+        "count": 4,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "B2",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-C0-0",
+        "count": 5,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "C0",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-C1-0",
+        "count": 2,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "C1",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-C2-0",
+        "count": 2,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "C2",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q2",
+        "AA_id": "AA2-MIDDLE-MOS-C3-0",
+        "count": 5,
+        "width_px": 30,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "C3",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "derived_photo_locator_from_recorded_AA_projection_not_precise_source_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q3",
+        "AA_id": "AA-F01613",
+        "count": 2,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01613",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "AI_visible_body_candidate_supported_by_profile_or_human_count_not_pixel_approved",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted",
+        "native_outlines": [
+          [
+            [
+              745.0,
+              1205
+            ],
+            [
+              769.0,
+              1205
+            ],
+            [
+              769.0,
+              1315
+            ],
+            [
+              745.0,
+              1315
+            ]
+          ],
+          [
+            [
+              798.0,
+              1205
+            ],
+            [
+              822.0,
+              1205
+            ],
+            [
+              822.0,
+              1315
+            ],
+            [
+              798.0,
+              1315
+            ]
+          ]
+        ]
+      },
+      {
+        "scope": "Q3",
+        "AA_id": "AA-F01614",
+        "count": 2,
+        "width_px": 22,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "AA-F01614",
+        "native_outline": null,
+        "centers_layout_x": null,
+        "source_geometry_status": "AI_visible_body_candidate_supported_by_profile_or_human_count_not_pixel_approved",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted",
+        "native_outlines": [
+          [
+            [
+              852.0,
+              1205
+            ],
+            [
+              876.0,
+              1205
+            ],
+            [
+              876.0,
+              1315
+            ],
+            [
+              852.0,
+              1315
+            ]
+          ],
+          [
+            [
+              905.0,
+              1205
+            ],
+            [
+              929.0,
+              1205
+            ],
+            [
+              929.0,
+              1315
+            ],
+            [
+              905.0,
+              1315
+            ]
+          ]
+        ]
+      },
+      {
+        "scope": "Q3",
+        "AA_id": "AA-F01622",
+        "count": 1,
+        "width_px": 148,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "WIDE",
+        "native_outline": [
+          [
+            977,
+            1205
+          ],
+          [
+            1141,
+            1205
+          ],
+          [
+            1141,
+            1328
+          ],
+          [
+            977,
+            1328
+          ]
+        ],
+        "centers_layout_x": null,
+        "source_geometry_status": "AI_source_body_candidate_not_precise_human_boundary",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted"
+      },
+      {
+        "scope": "Q3",
+        "AA_id": "AA-F01621",
+        "count": 5,
+        "width_px": 12,
+        "margin_px": 8,
+        "extension_px": 8,
+        "tag": "RIGHT",
+        "native_outline": null,
+        "centers_layout_x": [
+          1428.556753883375,
+          1455.0382052247094,
+          1481.519656566044,
+          1508.0011079073784,
+          1534.482559248713
+        ],
+        "source_geometry_status": "AI_visible_body_candidate_supported_by_profile_or_human_count_not_pixel_approved",
+        "geometry_status": "AI_joint_candidate_after_human_feedback_not_fullframe_accepted",
+        "native_outlines": [
+          [
+            [
+              1174.0,
+              1205
+            ],
+            [
+              1188.0,
+              1205
+            ],
+            [
+              1188.0,
+              1315
+            ],
+            [
+              1174.0,
+              1315
+            ]
+          ],
+          [
+            [
+              1204.0,
+              1205
+            ],
+            [
+              1218.0,
+              1205
+            ],
+            [
+              1218.0,
+              1315
+            ],
+            [
+              1204.0,
+              1315
+            ]
+          ],
+          [
+            [
+              1235.0,
+              1205
+            ],
+            [
+              1249.0,
+              1205
+            ],
+            [
+              1249.0,
+              1315
+            ],
+            [
+              1235.0,
+              1315
+            ]
+          ],
+          [
+            [
+              1266.0,
+              1205
+            ],
+            [
+              1280.0,
+              1205
+            ],
+            [
+              1280.0,
+              1315
+            ],
+            [
+              1266.0,
+              1315
+            ]
+          ],
+          [
+            [
+              1298.0,
+              1205
+            ],
+            [
+              1312.0,
+              1205
+            ],
+            [
+              1312.0,
+              1315
+            ],
+            [
+              1298.0,
+              1315
+            ]
+          ]
+        ]
+      }
+    ],
+    "replace_groups": {
+      "Q1": [
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14",
+        "G15",
+        "G16",
+        "G17"
+      ],
+      "Q2": [
+        "G29",
+        "G30",
+        "G31",
+        "G32"
+      ],
+      "Q3": [
+        "G19",
+        "G20"
+      ]
+    },
+    "retire_AA_ids": [
+      "AA-F00872"
+    ],
+    "profile_checks": [
+      {
+        "source": "aa",
+        "roi": [
+          1287,
+          1410,
+          1465,
+          1460
+        ],
+        "sigmas": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "mode": "minima",
+        "expected_count": 5
+      },
+      {
+        "source": "poly",
+        "roi": [
+          1138,
+          1220,
+          1350,
+          1280
+        ],
+        "sigmas": [
+          6
+        ],
+        "mode": "maxima",
+        "expected_count": 6
+      }
+    ],
+    "review_panels": [
+      {
+        "id": "Q1",
+        "title": "上中部横排：旧33条与AA分组不一致",
+        "groups": [
+          "Q1"
+        ],
+        "poly_bbox": [
+          1640,
+          600,
+          4220,
+          815
+        ],
+        "aa_bbox": [
+          1700,
+          755,
+          4280,
+          1055
+        ],
+        "work_bbox": [
+          1840,
+          860,
+          4070,
+          1050
+        ],
+        "finding": "已改用30条、较小尺寸及AA相对位置；旧33条全部退休。",
+        "question": "原图观察轮廓中部分为投影定位估计；请以联合图与未标记原图核对本次修订，不将估计框当精确边界。",
+        "alternative_counts": [
+          2,
+          1,
+          2,
+          1,
+          4,
+          2,
+          4,
+          2,
+          8,
+          4
+        ],
+        "alternative_AA_ids": [
+          "AA-F01670",
+          "AA-F01671",
+          "AA-F01672",
+          "AA-F01673",
+          "AA-F01674",
+          "AA-F01675",
+          "AA-F01676",
+          "AA-F01677",
+          "AA-F01678",
+          "AA-F01679"
+        ],
+        "alternative_width_px": 22,
+        "issue_status": "requires_human_count_decision_not_automatic_recount"
+      },
+      {
+        "id": "Q2",
+        "title": "中部MOS：右上排和下排疑有多提",
+        "groups": [
+          "Q2"
+        ],
+        "poly_bbox": [
+          2080,
+          1710,
+          3200,
+          2650
+        ],
+        "aa_bbox": [
+          2080,
+          1870,
+          3230,
+          2780
+        ],
+        "work_bbox": [
+          2160,
+          1910,
+          3210,
+          2660
+        ],
+        "finding": "三个分区由9/9/15改为8/8/14。左上以2+4+2解释，中央台阶AA的4条栅按局部高度分成2短、2长。",
+        "question": "数量按你的反馈修正；新位置与尺寸仍是待验收候选。",
+        "issue_status": "requires_human_count_decision_not_automatic_recount"
+      },
+      {
+        "id": "Q3",
+        "title": "左中部均匀矩形：材料身份尚不清楚",
+        "groups": [
+          "Q3"
+        ],
+        "poly_bbox": [
+          650,
+          1120,
+          1450,
+          1350
+        ],
+        "aa_bbox": [
+          700,
+          1260,
+          1500,
+          1550
+        ],
+        "work_bbox": [
+          970,
+          1350,
+          1600,
+          1530
+        ],
+        "finding": "宽矩形确认为宽POLY MOS；左侧改为两组各2个共4个MOS，右侧改为5条更细更密候选。",
+        "question": "右侧5条得到AA暗沟道与POLY亮列间隔支持，但你只确认推测大于四个，请重点看右侧数量、宽度及间距。",
+        "unknown_AA_id": "AA-F01622",
+        "issue_status": "requires_human_material_identity_not_filled_as_POLY"
+      },
+      {
+        "id": "Q4",
+        "title": "F05末根栅端与AA短条的联合位置冲突",
+        "groups": [
+          "G28"
+        ],
+        "poly_bbox": [
+          1400,
+          2310,
+          2120,
+          2690
+        ],
+        "aa_bbox": [
+          1470,
+          2470,
+          2160,
+          2790
+        ],
+        "work_bbox": [
+          1700,
+          2510,
+          2180,
+          2720
+        ],
+        "finding": "蓝色AA-F00872按人工裁决从有效AA层退休；原记录与照片保留。大MOS POLY没有缩短，假冲突因此解除。",
+        "question": "本项误提语义已确认；只检查修订图有无意外变化，不再询问环/残片身份。",
+        "highlight_AA_ids": [
+          "AA-F00872"
+        ],
+        "issue_status": "requires_human_AA_role_and_separation_review_before_joint_spacing_revision"
+      }
+    ],
+    "pending_issues": [
+      {
+        "id": "R1",
+        "scope": "Q3-RIGHT",
+        "title": "右侧细密栅具体数量及修订图最后复核",
+        "question": "右侧现按5条窄栅候选表达；AA暗沟道与亮列间隔支持5条，但用户只确认大于四个。请结合原图核对数量和尺寸。",
+        "status": "AI_count_5_pending_human_exact_count_and_displayed_geometry_review"
+      }
+    ]
+  },
+  "final_count_revision": {
+    "old_ids": [
+      "CL2-Q3-RIGHT-01",
+      "CL2-Q3-RIGHT-02",
+      "CL2-Q3-RIGHT-03",
+      "CL2-Q3-RIGHT-04",
+      "CL2-Q3-RIGHT-05"
+    ],
+    "count": 6,
+    "AA_id": "AA-F01621",
+    "width_px": 12,
+    "margin_px": 8,
+    "extension_px": 8,
+    "id_prefix": "CL3-Q3-RIGHT",
+    "approved_scope_groups": [
+      "Q1",
+      "Q2"
+    ],
+    "stage_scope": "POLY_v1_working_baseline_for_CT_with_explicit_boundary_unknowns"
+  }
+}

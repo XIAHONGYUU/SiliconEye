@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-20",
+  "user_text": {
+    "Q1": "当前统一候选poly尺寸太大且偏移太多，数量假设替代与实时更为贴近",
+    "Q2": "当前统一候选在右上方与下方，包括左上方的mos都多识别了一个，数量假设替代更复合实际。",
+    "Q3": "为宽poly的mos管，左侧应该为2X2四个mos管，右侧的mos管更细且更密集，推测大于四个",
+    "Q4": "蓝色短条AA是当时AA,提取错误，这个点的mos和左边mos一样都是大mos"
+  },
+  "decisions": {
+    "Q1": {
+      "adopt_preferred_count_hypothesis": 30,
+      "geometry": "smaller_and_repositioned_alternative_preferred_not_exact_boundary_approval"
+    },
+    "Q2": {
+      "upper_left": 8,
+      "upper_right": 8,
+      "lower": 14,
+      "basis": "each original zone 9/9/15 has one excess; left maps to G29+G30 combined, not one deletion from both groups"
+    },
+    "Q3": {
+      "wide_body": "human_confirmed_wide_POLY_MOS",
+      "left_MOS_count": 4,
+      "left_structure": "two AA islands with two devices each (2x2)",
+      "right_count": "human_estimate_gt4_exact_unknown",
+      "right_geometry": "thinner_and_denser"
+    },
+    "Q4": {
+      "AA_false_positive_id": "AA-F00872",
+      "action": "retire effective AA object; preserve source and old model",
+      "MOS": "retain large MOS geometry; do not shorten gate to clear false AA"
+    }
+  },
+  "not_approved": [
+    "Q3 right exact count",
+    "all new exact source boundaries",
+    "CT ownership",
+    "new network connections",
+    "fullframe final release"
+  ],
+  "interpretation_notes": [
+    "Q1的实时按实物理解：偏好替代方案，不扩展为精确像素边界批准。",
+    "Q2左上按G29与G30共同构成的上左MOS区9→8解释，不分别从两组各删一个。",
+    "Q3的2X2按两块AA各两MOS记录；具体栅间电连接未知。",
+    "Q3右侧大于四个属于用户估计，5条为AI进一步观察候选。"
+  ]
+}

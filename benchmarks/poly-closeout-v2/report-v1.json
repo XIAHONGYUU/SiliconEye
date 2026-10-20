@@ -1,0 +1,51 @@
+{
+  "objects": 699,
+  "superseded_records": 343,
+  "retired_IDs": 335,
+  "resistor_bodies": 19,
+  "explicit_AA_targets": 675,
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "warnings": [
+    {
+      "id": "V3_G1",
+      "group": "LOCAL",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "V3_G2",
+      "group": "LOCAL",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G67-P01",
+      "group": "G67",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G68-P01",
+      "group": "G68",
+      "reason": "AA_relation_not_explicitly_verified"
+    },
+    {
+      "id": "G68-P02",
+      "group": "G68",
+      "reason": "AA_relation_not_explicitly_verified"
+    }
+  ],
+  "geometry_status": "PASS",
+  "polygon_geometry_status": "PASS",
+  "release_status": "BLOCKED_until_new_issues_reviewed",
+  "fullframe_material_truth": false,
+  "CT_or_net_assignment": false,
+  "not_foundry_DRC": true,
+  "human_review_issues": [
+    {
+      "id": "R1",
+      "scope": "Q3-RIGHT",
+      "title": "右侧细密栅具体数量及修订图最后复核",
+      "question": "右侧现按5条窄栅候选表达；AA暗沟道与亮列间隔支持5条，但用户只确认大于四个。请结合原图核对数量和尺寸。",
+      "status": "AI_count_5_pending_human_exact_count_and_displayed_geometry_review"
+    }
+  ]
+}

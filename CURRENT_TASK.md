@@ -1,33 +1,33 @@
 # 当前任务
 
-## 当前目标与授权
+## 目标与授权
 
-2026-10-19 日终：用户要求记录本轮裁决，将今日修改提交 Git 并推送 GitHub；今晚停止几何扩展，明天再讨论宽 POLY 对应问题。本文件是唯一实时任务入口。
+2026-10-20：POLY本轮收口复核完成，保存工作基线及人工裁决。用户现已授权提交并推送本轮POLY版本，随后继续CT提取；此前4a2fb6c已推送。本文件为唯一实时入口。
 
 ## 最新验收与证据
 
-- [日终检查点](docs/checkpoints/2026-10-19-aa-poly-day-close.md)汇总今日工作与限制。
-- [最新已审页面](docs/assets/poly-small-aa-correspondence-v1/reviewed.html)、[人工记录](benchmarks/poly-small-aa-correspondence-v1/human-review-v1.json)：**U05 所示对应及整排AA对齐合理，通过该显示范围**。十个AA工作对象 AA-F01697..AA-F01706 的整排对齐得到认可；原生来源不变。不是全幅305条关系或精确尺寸、CT、网络的整批批准。
-- **宽POLY SG-U04-W01：身份已确认，当前跨层点位对应受到质疑。** 旧选区可能对应错误；撤回以该选区推断“没有器件AA/场区POLY”的结论。原候选快照保留，仅作历史。
-- 当前来源账目306条，305条AA对应候选、93组、1条宽POLY关系未明；2个未完整观察槽位不补画。原AA工作几何检查300通过/5冲突，新工作候选305通过；这是相对像素结构检查，不能证明物理真值或真实PDK DRC。
-- AA采用[已审全幅入口](docs/assets/aa-full-frame-workflow-v1/reviewed.html)及[模型](benchmarks/aa-full-frame-workflow-v1/model-v1.json)。仓库[AA skill v1](skills/silicon-eye-aa-reconstruction/SKILL.md)已封装，未全局安装；POLY skill尚未封装。
+- [POLY v1工作基线检查点](docs/checkpoints/2026-10-20-poly-v1-working-baseline.md)、[统一复核页](docs/assets/poly-closeout-v3/index.html)、[有效模型](benchmarks/poly-closeout-v3/model-v1.json)、[锁定记录](benchmarks/poly-closeout-v3/stage-acceptance-v1.json)。v1/v2保留作历史。
+- 用户原话：Q1批准；Q2批准；Q3右侧为6条mos；Q4确认批准无误。[原话记录](benchmarks/poly-closeout-v3/human-review-v1.json)。
+- Q3旧5条退休、新增6条规则栅。六条数量已确认，精确边界仍未知；其他对象几何与原生定位不改。Q1/Q2/Q4不再重复索要批准。
+- 有效POLY700个材料对象、AA336个、676条明确AA目标关系；不是器件总数。多边形合法，已声明结构错误0、POLY正面积互相交叠0。仍保留5项AA关系未明确验证警告，不宣称全幅真值或真实PDK DRC通过。
+- 原AI以五谷判断5条为错误，原profile证据不改写，保留[Agent评测反例](benchmarks/poly-closeout-v3/agent-evaluation-v1.json)。不得调参伪造六谷支持。
+- 383项全套测试和相关Ruff通过；输入哈希与静态资源验证通过。[验证记录](benchmarks/poly-closeout-v3/verification-v1.json)。浏览器真实渲染未自动实测。
 
-## 唯一下一步（明天）
+## 唯一下一步
 
-重新核清 SG-U04-W01 在 AA/POLY 原图中的实际对应位置，先使用独立结构标记验证，再讨论目标AA及局部几何。不得沿用有争议点位推出器件缺失，不重问已确认的宽POLY身份，不重跑整幅已审AA。
+在锁定AA/POLY工作基线上开展CT候选及AA/POLY归属复核，先规定允许位置、未知状态与局部质量门，再处理全幅。不重复重建已审AA/POLY、不自动推断网络。用户已授权继续CT提取；先提交POLY基线，再建立规则约束的CT候选与局部验证。
 
 ## 持续生效的边界
 
-- [联合重建架构](docs/architecture/layout-reconstruction-v1.md)：来源坐标与规则设计坐标分离，几何可定向修订，材料身份、隔离及编号不可悄改。当前305条联合候选独立保存，原始照片及原AA基线不覆盖。
-- S01/S02累计8条来源显示范围、S03-03/04两独立栅身份保持；下中部140条已审联合关系、F05范围、U10及18条电阻主体保持。不能扩大批准范围。
-- R1/R2之间非AA、近邻竖环隔离；V3无局部端部POLY桥，远处金属同网不改变材料隔离。原八图、195保留对象和旧网络v33裁决维持。
-- AI主导判断，算法辅助细节；统一成图标准、局部接续、同条件前后比较、质量门防退化。不再从头要求整幅重复验收。CT可辅助数量/端部/独立性，不单凭亮点确定材料或电连接。
-- 工艺及物理尺度未知，所有预算为相对像素；未做真实PDK DRC/LVS或完整网表验收。浏览器交互未自动实测。
+- 下中部140条联合几何、U05、S01/S02来源范围、S03-03/04独立性、U10、18条旧电阻主体及SG-U04-W01电阻保留。Q3新宽MOS与SG-U04-W01是不同对象。
+- AA-F00872仅依人工明确裁决从有效层退休；原始AA源模型、照片不覆盖。设计坐标、原图坐标、旧图册来源分开保留。新原图定位估计不等于精确边界真值。
+- V3两水平主体隔离，不补POLY桥；照片外G67不补闭合，界面遮挡和邻片不扩充材料。U10原形状已审，联合定位的候选边界继续保留。
+- R1/R2非AA间隙、近邻环隔离、原八图、195保留对象及旧网络v33历史裁决保持。AA仓库skill v1未全局安装；POLY skill未封装。
+- 工艺/尺度、极性、真实W/L、CT逐孔归属、阻值和新增网络未确认；未做真实DRC/LVS。
 
-## 复现与历史
+## 复现与交接
 
-- 当前[联合候选](benchmarks/poly-small-aa-correspondence-v1/model-v1.json)、[分离AA工作候选](benchmarks/poly-small-aa-correspondence-v1/AA-working-model-v1.json)、[来源清单](benchmarks/poly-small-gate-batch-v2/source-inventory-v1.json)与人工记录一起使用，旧模型自身的未审标签不覆盖新裁决。
-- 复现候选：`.venv/bin/python -m silicon_eye.poly_aa_correspondence --root . --spec benchmarks/poly-small-aa-correspondence-v1/spec-v1.json --output runs/新的复核目录`。该命令生成候选，不自动转移人审批准。
-- 验证：`.venv/bin/python -m pytest -q`；相关Python文件 Ruff；`git diff --check`。
-- 原图 data/ 不改写；runs/、.venv/ 不入Git。今日代码、基准、复核资产和证据归档按用户授权提交推送。
-- [整理前完整入口](docs/history/current-task-before-2026-10-19-day-close.md)保留所有此前接续命令及历史链接；[开发计划](docs/development-plan.md)保留长期阶段顺序。
+- `.venv/bin/python -m silicon_eye.poly_closeout --root . --spec benchmarks/poly-closeout-v3/spec-v1.json --output runs/新的验收输出目录`
+- `.venv/bin/python -m pytest -q`；相关Ruff；`git diff --check`。
+- data/不改；runs/、.venv/不入Git。本地待提交包括今日宽POLY匹配、电阻裁决、v1/v2收口和v3数量修订、代码、基准、复核资产及文档。
+- [本轮前完整入口](docs/history/current-task-before-2026-10-20-poly-acceptance-v3.md)、[v2前入口](docs/history/current-task-before-2026-10-20-poly-feedback-v2.md)保留历史恢复命令。长期顺序见[开发计划](docs/development-plan.md)。
