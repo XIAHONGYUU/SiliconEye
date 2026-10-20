@@ -1,0 +1,235 @@
+{
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-middle-mos-confirmed-v2/model-v1.json",
+      "sha256": "551cece7be91ba21774911b48f869dcf948883aecdb69fc6d3d6ec3dba20f798"
+    },
+    "source_paths": {
+      "path": "benchmarks/ct-middle-mos-v1/spec-v1.json",
+      "sha256": "7c865157a90dbf43f00a96b99d9c75b523f11290a7a7b066e2dbbaed00665045"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "prior_acceptance": {
+      "path": "benchmarks/ct-middle-mos-confirmed-v2/acceptance-v1.json",
+      "sha256": "2b44a7407c529294ed6c998e3b7ef6fc4dcf833f3a7ad2ab1327dfb65b516045"
+    }
+  },
+  "group_id": "Q2",
+  "regions": {
+    "A": {
+      "title": "上左：阶梯组",
+      "poly_bbox": [
+        2010,
+        1750,
+        2645,
+        2140
+      ],
+      "poly_quad": [
+        [
+          2053,
+          1798
+        ],
+        [
+          2613,
+          1796
+        ],
+        [
+          2617,
+          2109
+        ],
+        [
+          2062,
+          2116
+        ]
+      ],
+      "m1_quad": [
+        [
+          2003,
+          1939
+        ],
+        [
+          2573,
+          1929
+        ],
+        [
+          2582,
+          2230
+        ],
+        [
+          2034,
+          2247
+        ]
+      ],
+      "gate_prefixes": [
+        "CL2-Q2-A"
+      ],
+      "m1_lead_rois": [
+        {
+          "id": "A-L1",
+          "native_bbox": [
+            2070,
+            2150,
+            2300,
+            2200
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        },
+        {
+          "id": "A-L2",
+          "native_bbox": [
+            2310,
+            2190,
+            2570,
+            2235
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        }
+      ]
+    },
+    "B": {
+      "title": "上右：两组四指",
+      "poly_bbox": [
+        2620,
+        1750,
+        3160,
+        2120
+      ],
+      "poly_quad": [
+        [
+          2648,
+          1796
+        ],
+        [
+          3119,
+          1794
+        ],
+        [
+          3122,
+          2071
+        ],
+        [
+          2653,
+          2075
+        ]
+      ],
+      "m1_quad": [
+        [
+          2605,
+          1927
+        ],
+        [
+          3079,
+          1918
+        ],
+        [
+          3086,
+          2200
+        ],
+        [
+          2612,
+          2209
+        ]
+      ],
+      "gate_prefixes": [
+        "CL2-Q2-B"
+      ],
+      "m1_lead_rois": [
+        {
+          "id": "B-L1",
+          "native_bbox": [
+            2630,
+            2135,
+            3070,
+            2195
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        }
+      ]
+    },
+    "C": {
+      "title": "下方：多组栅指",
+      "poly_bbox": [
+        2050,
+        2110,
+        3050,
+        2550
+      ],
+      "poly_quad": [
+        [
+          2097,
+          2158
+        ],
+        [
+          3003,
+          2152
+        ],
+        [
+          3005,
+          2508
+        ],
+        [
+          2104,
+          2515
+        ]
+      ],
+      "m1_quad": [
+        [
+          2067,
+          2294
+        ],
+        [
+          2953,
+          2274
+        ],
+        [
+          2967,
+          2631
+        ],
+        [
+          2076,
+          2650
+        ]
+      ],
+      "gate_prefixes": [
+        "CL2-Q2-C"
+      ],
+      "m1_lead_rois": [
+        {
+          "id": "C-L1",
+          "native_bbox": [
+            2135,
+            2295,
+            2400,
+            2330
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        },
+        {
+          "id": "C-L2",
+          "native_bbox": [
+            2115,
+            2580,
+            2920,
+            2635
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        }
+      ]
+    }
+  },
+  "peak_gray": 180,
+  "peak_residual": 10,
+  "max_column_error_px": 6,
+  "scope": "photo evidence audit only; no material or electrical output changes"
+}

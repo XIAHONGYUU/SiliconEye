@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<title>CT联合规则重建 v2</title><style>body{max-width:1400px;margin:24px auto;background:#111c28;
+color:#eee;font:16px sans-serif}img{width:100%}select{padding:8px}a{color:#65baff}
+section{padding:16px;border:1px solid #567;margin:20px 0}</style>
+<p style="background:#742e29;padding:16px">此版源图对应已被用户纠正：误选宽MOS孔列并漏最右列；联合几何保留。<a href="../ct-source-correspondence-v3/index.html">打开最新源图对应修订</a></p><h1>CT联合重建：先通过自检，再交人工验收</h1>
+<p>本页只重建右侧已确认六条MOS区域的扩散CT，未宣告整个窗口完成。
+绿色AA、黄色POLY、蓝色CT。已审AA/POLY不变。孔与孔不重叠，同列竖直、同行水平，纵向等间距；
+CT完整落在AA且避开POLY沟道。所有孔都有实际亮峰支持。</p>
+<p>局部列对应仍为AI候选；相对像素检查不是目标工艺DRC，M1包围与电连接未知。
+左侧宽MOS、下端栅连接亮点和其他窗口尚未导出为合格CT几何，旧473个观察完整保留。</p>
+<section><h2>联合设计图</h2><p>只检查右侧六MOS的CT子集，不把未处理处解释成没有孔。</p>
+<select onchange="document.getElementById('design').src=this.value">
+<option value="layout.svg">AA＋POLY＋CT</option>
+<option value="base.svg">既有AA＋POLY（未改动）</option>
+</select><img id="design" src="layout.svg"></section>
+<section><h2>同一位置原图与观察支持（十字为实际亮点）</h2>
+<select onchange="document.getElementById('source').src=this.value">
+<option value="source.png">原图＋实际亮点</option><option value="raw.png">纯原图</option>
+</select><img id="source" src="source.png"></section>
+<p><a href="report.json">硬性质量门</a> ·
+<a href="fit.json">局部匹配与光学尺寸观察</a></p></html>

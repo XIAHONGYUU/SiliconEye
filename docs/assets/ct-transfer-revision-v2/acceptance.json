@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-20",
+  "review_state": "human_accepted",
+  "scope": "displayed_local_CT_transfer_and_RIGHT6_relative_geometry",
+  "accepted_contact_count": 130,
+  "accepted_family_counts": {
+    "RIGHT6-DIFF": 42,
+    "RIGHT6-GATE": 11,
+    "WIDE-DIFF": 12,
+    "WIDE-GATE": 11,
+    "RING-TOP": 32,
+    "RING-LEFT": 15,
+    "RESISTOR-TOP": 7
+  },
+  "authoritative_review_record": "human-review-v2.json",
+  "prior_candidate_fields": "Historical model candidate labels preserved; acceptance is recorded by this scoped ledger",
+  "supersedes": "RIGHT6 v5 local endpoint geometry only; prior decisions and original snapshots retained",
+  "not_accepted": [
+    "full ring or full-frame CT coverage",
+    "exact optical boundaries or process dimensions",
+    "M1 routing or electrical net completion"
+  ],
+  "locked_files": {
+    "model-v1.json": "5773d146c5ceb6c75e1454e514235edc1f9347b1a6f4a916e538b09f094a91c4",
+    "material-model-v1.json": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac",
+    "human-review-v2.json": "e201b8efd4c4a31816e54e5b8b7923f0e03a99ee45490ea692401f3207e2df57",
+    "report-v1.json": "adcee7ad161af239818f2717c6d6ecb0fdf018f31da99c1562d4593fb951aa77",
+    "spec-v1.json": "ceb55f3ac6513d88848705f78cd9dfa60d64e12d076eaaefe7254aec546943bc",
+    "ledger-v1.json": "ab42b95e05a61c35269c94eebf31b430d8d8c32032b7e5888f1381b4b74a200c"
+  }
+}

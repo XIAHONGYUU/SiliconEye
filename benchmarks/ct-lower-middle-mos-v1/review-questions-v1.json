@@ -1,0 +1,82 @@
+{
+  "status": "pending_human_review",
+  "questions": [
+    {
+      "id": "A",
+      "scope": "上左24栅：G36/G38",
+      "question": "源漏与相向的下端／上端栅CT是否正确？R2_Q1下端簇已有归属确认，本次两孔均落原已审窗口。"
+    },
+    {
+      "id": "B",
+      "scope": "上右24栅：G37/G39",
+      "question": "源漏、两排相向栅端与左右环对应是否正确？原图最右源漏列与右侧环已分开取样。"
+    },
+    {
+      "id": "C",
+      "scope": "中间左22短栅：G40/G42",
+      "question": "CT与已审阶梯AA对应是否合理？G40-P08仅1个强栅峰；G42最右源漏边列未取得可靠孔位。G40阶梯旁一列CT横向移3.83相对px以满足包围，AA/POLY不改。"
+    },
+    {
+      "id": "D",
+      "scope": "中间右22短栅：G41/G43",
+      "question": "上／下端栅CT和AA缺口附近归属是否合理？G41-03、G43-03及G43-10各仅1个强栅峰；两组最左源漏边列仍待确认。"
+    },
+    {
+      "id": "E",
+      "scope": "下左24长栅：G44/G46",
+      "question": "源漏、两排相向栅端及外围环是否合理？"
+    },
+    {
+      "id": "F",
+      "scope": "下右24长栅：G45/G47",
+      "question": "源漏、两排相向栅端及外围环是否合理？G47-P01上端目前只有1个可靠峰，未按其他栅补第二孔。"
+    }
+  ],
+  "single_supported_gate_contacts": [
+    {
+      "gate_id": "G40-P08",
+      "group": "G40",
+      "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+      "terminal_direction": "bottom",
+      "direction_status": "AI_photo_candidate_not_inherited_Q2_decision",
+      "status": "measured_terminal_candidates",
+      "contact_count": 1
+    },
+    {
+      "gate_id": "G41r2-P03",
+      "group": "G41",
+      "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0",
+      "terminal_direction": "bottom",
+      "direction_status": "AI_photo_candidate_not_inherited_Q2_decision",
+      "status": "measured_terminal_candidates",
+      "contact_count": 1
+    },
+    {
+      "gate_id": "G43r2-P03",
+      "group": "G43",
+      "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LR-0",
+      "terminal_direction": "top",
+      "direction_status": "AI_photo_candidate_not_inherited_Q2_decision",
+      "status": "measured_terminal_candidates",
+      "contact_count": 1
+    },
+    {
+      "gate_id": "G43r2-P10",
+      "group": "G43",
+      "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LR-0",
+      "terminal_direction": "top",
+      "direction_status": "AI_photo_candidate_not_inherited_Q2_decision",
+      "status": "measured_terminal_candidates",
+      "contact_count": 1
+    },
+    {
+      "gate_id": "G47-P01",
+      "group": "G47",
+      "AA_target": "AA2-LOWER-MOS-GRID-MOS-8-0",
+      "terminal_direction": "top",
+      "direction_status": "AI_photo_candidate_not_inherited_Q2_decision",
+      "status": "measured_terminal_candidates",
+      "contact_count": 1
+    }
+  ]
+}

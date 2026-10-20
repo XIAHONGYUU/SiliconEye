@@ -1,0 +1,34 @@
+{
+  "accessed_date": "2026-10-20",
+  "target_process": "unknown",
+  "scale": "relative_pixels_only",
+  "sources": [
+    {
+      "url": "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_07_13.html",
+      "sections": [
+        "CO.1",
+        "CO.2",
+        "CO.3",
+        "CO.4",
+        "CO.6",
+        "CO.7",
+        "CO.8",
+        "CO.10",
+        "CO.11"
+      ]
+    },
+    {
+      "url": "https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html#licon",
+      "sections": [
+        "licon.1",
+        "licon.3",
+        "licon.4",
+        "licon.8",
+        "licon.11",
+        "licon.17"
+      ],
+      "non_equivalence": "licon/li/mcon is not assumed identical to project CT"
+    }
+  ],
+  "rules_used_as": "structural analogy; numeric values not adopted; no deck run"
+}

@@ -1,0 +1,21 @@
+{
+  "pytest_passed": 420,
+  "ruff": "PASS",
+  "all_53_reviewed_records_identical": true,
+  "material_model_hash_unchanged": true,
+  "input_and_implementation_hashes": "PASS",
+  "whole_proposal_geometry": "PASS",
+  "new_candidate_counts": {
+    "WIDE-DIFF": 12,
+    "WIDE-GATE": 11,
+    "RING-TOP": 30,
+    "RING-LEFT": 4,
+    "RESISTOR-TOP": 7
+  },
+  "no_rule_generated_missing_holes": true,
+  "HTML_SVG_PNG_resources": "PASS",
+  "human_review": "pending_three_transfer_cases_only",
+  "browser_rendering": "not automatically tested",
+  "pytest_seconds": 13.79,
+  "simulated_DOM_callbacks": "PASS; not browser rendering"
+}

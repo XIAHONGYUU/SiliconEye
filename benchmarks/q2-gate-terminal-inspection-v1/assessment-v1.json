@@ -1,0 +1,44 @@
+{
+  "scope": "30 Q2 gates, 60 endpoints and 60 side zones",
+  "observations": {
+    "A": {
+      "gates": 8,
+      "top_compact_peak_observations": 2,
+      "bottom_compact_peak_observations": 35,
+      "interpretation": "Measured optical support only, not unique contact counts or proof of terminal identity"
+    },
+    "B": {
+      "gates": 8,
+      "top_compact_peak_observations": 13,
+      "bottom_compact_peak_observations": 29,
+      "interpretation": "Measured optical support only, not unique contact counts or proof of terminal identity"
+    },
+    "C": {
+      "gates": 14,
+      "top_compact_peak_observations": 3,
+      "bottom_compact_peak_observations": 77,
+      "interpretation": "Measured optical support only, not unique contact counts or proof of terminal identity"
+    }
+  },
+  "source_hypothesis": "Bottom caps of A/B/C deserve priority review; C has upper and lower M1 lead region candidates. No same-gate/common-net inference.",
+  "alignment_status": {
+    "A": {
+      "median_x": 3.0,
+      "max_x": 8,
+      "precise_projection": "BLOCKED"
+    },
+    "B": {
+      "median_x": 2.5,
+      "max_x": 9,
+      "precise_projection": "BLOCKED"
+    },
+    "C": {
+      "median_x": 5.5,
+      "max_x": 12,
+      "precise_projection": "BLOCKED"
+    }
+  },
+  "confirmed_CT_added": 0,
+  "existing_1825_CT_unchanged": true,
+  "AA_POLY_unchanged": true
+}

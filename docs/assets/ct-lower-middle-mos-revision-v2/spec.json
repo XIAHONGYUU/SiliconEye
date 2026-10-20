@@ -1,0 +1,5418 @@
+{
+  "operation": "apply_local_review_revision",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-left-large-mos-revision-v2/material-model-v1.json",
+      "sha256": "31aa6058261857d2b220c053e90f1f46b7006a78dc09bbf32e879beac9a89136"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/model-v1.json",
+      "sha256": "724687911a61698fc18eed085bb2597ea398aeeb9c863cd596eb65587a37b1ec"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/spec-v1.json",
+      "sha256": "29d02de43d7d805ef2656aa7bbae81714bd19952eb56d3e0bbfd0b3bbc121f37"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/human-review-v1.json",
+      "sha256": "c528b06d2382559ab5136785c3596698ec892a9eab45acd01b857af91cbe1042"
+    },
+    "new_contacts": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/new-contacts-v1.json",
+      "sha256": "14e9f9d4069877f13432b4c4e202e8dba7711df63987cbf64c0533e67e66461b"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/unknown-sites-v1.json",
+      "sha256": "f2052b0fcb737df41721960a400b77c504972c48837b0dd18553aa9233184c7e"
+    },
+    "original_unknown_sites": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/unknown-sites-v1.json",
+      "sha256": "ca07449b6ec76dc947cb9def2770f19d3ac430d9492e69be9bcee9d541f98a35"
+    },
+    "original_slot_audit": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/unknown-slot-audit-v1.json",
+      "sha256": "0054fa85928e7a8c6b75c55338789c650803119534c5dc8101a940c685bc935c"
+    },
+    "row_reconstruction": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/row-reconstruction-v1.json",
+      "sha256": "b801273afafb0bea75b25791cd0405d0212cd399c102a5ed4b95a204d04f9a33"
+    },
+    "excluded_sites": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/excluded-sites-v1.json",
+      "sha256": "66435e4b5c55dcc31ee318a9367b2572f7d36dbb3c8d955a6165e49b2b6b051d"
+    },
+    "O_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/O-layout.svg",
+      "sha256": "8a26e120976297c961449ebb3582e73f730929fd91442e20e8f0ba982021cd4f"
+    },
+    "O_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/O-m1.png",
+      "sha256": "f5ebfff9fa07dac8519ef03eae80eacf94983b0bf72d3e31145811520a4fa3a6"
+    },
+    "A_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/A-layout.svg",
+      "sha256": "49ea96aa89262e71237366c6fefa7a9e695590d3f1c3990931d89e9966e55296"
+    },
+    "A_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/A-m1.png",
+      "sha256": "f3b97e852b59743c29e180eeeaf0a64088e42eeb41dc73842764dc38932c8bb4"
+    },
+    "B_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/B-layout.svg",
+      "sha256": "ab90cee6dff74944545955ecf4405166525d001be2ade006b754b9f2e4a51199"
+    },
+    "B_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/B-m1.png",
+      "sha256": "d1deecae631ef584abadcb1f4fafcdbf3b807c5726c711dbc7339f60d10fb735"
+    },
+    "C_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/C-layout.svg",
+      "sha256": "826a8de83cc1072671920df26ccb8c73e61f06e2edb0886cc731648fe1bc571f"
+    },
+    "C_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/C-m1.png",
+      "sha256": "40d469b5ff13cf948b67c2e9fe9f1b7a9223cbcdb397d8612140e7a3c4f67b4a"
+    },
+    "D_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/D-layout.svg",
+      "sha256": "daa49584b6764f381fba7c5e59941ab0c8a11d67b7344b554d78120cf15afa26"
+    },
+    "D_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/D-m1.png",
+      "sha256": "5432e0aa81091e9015f0879bac276311dde9696f7765d1b97a98fe8095dfc993"
+    },
+    "E_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/E-layout.svg",
+      "sha256": "816a2bdac43d7e65c11750a234063bc2f74d2c287fd13f9312892fb9e1623daf"
+    },
+    "E_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/E-m1.png",
+      "sha256": "ebc8bb87ce64073a5f0f5d6f40e38d5b8df43f240da58cff27e5ca9351992744"
+    },
+    "F_before": {
+      "path": "docs/assets/ct-lower-middle-mos-v1/F-layout.svg",
+      "sha256": "8f1d917c16ef10c70f14827fdbca3853754a46a28fcda0cd3ddd11bab3c5a486"
+    },
+    "F_m1-context": {
+      "path": "benchmarks/ct-lower-middle-mos-v1/source-context/F-m1.png",
+      "sha256": "31361e80c350d1ad3c67b1062f861451f9ec4680216f0274dd7d394982ac3f3f"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "material_changes": {
+    "objects": [],
+    "AA_objects": []
+  },
+  "contact_changes": [
+    {
+      "id": "CTT-MM-G41-SD02-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD02-S000",
+        "family": "MM-G41-SD02",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2658.439315,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2655.939315,
+            3111.356
+          ],
+          [
+            2660.939315,
+            3111.356
+          ],
+          [
+            2660.939315,
+            3116.356
+          ],
+          [
+            2655.939315,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2583.7666015625,
+            3016.0
+          ],
+          "peak_gray": 245.81829833984375,
+          "local_residual": 86.76756286621094,
+          "native_center": [
+            2583.7666015625,
+            3016.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD02-17",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2584.178984848483,
+              2999.5072727272727
+            ],
+            [
+              2583.678984848483,
+              3019.5072727272727
+            ],
+            [
+              2583.178984848483,
+              3039.5072727272727
+            ]
+          ],
+          "source_roi": [
+            2579,
+            2995,
+            2589,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD02-S000",
+        "family": "MM-G41-SD02",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2658.439315,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2655.939315,
+            3131.856
+          ],
+          [
+            2660.939315,
+            3131.856
+          ],
+          [
+            2660.939315,
+            3136.856
+          ],
+          [
+            2655.939315,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2583.7666015625,
+            3016.0
+          ],
+          "peak_gray": 245.81829833984375,
+          "local_residual": 86.76756286621094,
+          "native_center": [
+            2583.7666015625,
+            3016.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD02-17",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2584.178984848483,
+              2999.5072727272727
+            ],
+            [
+              2583.678984848483,
+              3019.5072727272727
+            ],
+            [
+              2583.178984848483,
+              3039.5072727272727
+            ]
+          ],
+          "source_roi": [
+            2579,
+            2995,
+            2589,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD02-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD02-S001",
+        "family": "MM-G41-SD02",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2658.439315,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2655.939315,
+            3152.356
+          ],
+          [
+            2660.939315,
+            3152.356
+          ],
+          [
+            2660.939315,
+            3157.356
+          ],
+          [
+            2655.939315,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2584.3916015625,
+            3031.0
+          ],
+          "peak_gray": 246.02586364746094,
+          "local_residual": 119.0835952758789,
+          "native_center": [
+            2584.3916015625,
+            3031.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD02-32",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2584.178984848483,
+              2999.5072727272727
+            ],
+            [
+              2583.678984848483,
+              3019.5072727272727
+            ],
+            [
+              2583.178984848483,
+              3039.5072727272727
+            ]
+          ],
+          "source_roi": [
+            2579,
+            2995,
+            2589,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD02-S001",
+        "family": "MM-G41-SD02",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2658.439315,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2655.939315,
+            3152.356
+          ],
+          [
+            2660.939315,
+            3152.356
+          ],
+          [
+            2660.939315,
+            3157.356
+          ],
+          [
+            2655.939315,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2584.3916015625,
+            3031.0
+          ],
+          "peak_gray": 246.02586364746094,
+          "local_residual": 119.0835952758789,
+          "native_center": [
+            2584.3916015625,
+            3031.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD02-32",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2584.178984848483,
+              2999.5072727272727
+            ],
+            [
+              2583.678984848483,
+              3019.5072727272727
+            ],
+            [
+              2583.178984848483,
+              3039.5072727272727
+            ]
+          ],
+          "source_roi": [
+            2579,
+            2995,
+            2589,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD03-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD03-S000",
+        "family": "MM-G41-SD03",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2706.520745,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2704.020745,
+            3111.356
+          ],
+          [
+            2709.020745,
+            3111.356
+          ],
+          [
+            2709.020745,
+            3116.356
+          ],
+          [
+            2704.020745,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2632.7666015625,
+            3015.0
+          ],
+          "peak_gray": 250.57894897460938,
+          "local_residual": 99.20161437988281,
+          "native_center": [
+            2632.7666015625,
+            3015.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD03-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2633.1663030303016,
+              2999.0145454545454
+            ],
+            [
+              2632.666303030302,
+              3019.0145454545454
+            ],
+            [
+              2632.1663030303025,
+              3039.0145454545454
+            ]
+          ],
+          "source_roi": [
+            2628,
+            2995,
+            2638,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD03-S000",
+        "family": "MM-G41-SD03",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2706.520745,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2704.020745,
+            3131.856
+          ],
+          [
+            2709.020745,
+            3131.856
+          ],
+          [
+            2709.020745,
+            3136.856
+          ],
+          [
+            2704.020745,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2632.7666015625,
+            3015.0
+          ],
+          "peak_gray": 250.57894897460938,
+          "local_residual": 99.20161437988281,
+          "native_center": [
+            2632.7666015625,
+            3015.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD03-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2633.1663030303016,
+              2999.0145454545454
+            ],
+            [
+              2632.666303030302,
+              3019.0145454545454
+            ],
+            [
+              2632.1663030303025,
+              3039.0145454545454
+            ]
+          ],
+          "source_roi": [
+            2628,
+            2995,
+            2638,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD03-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD03-S001",
+        "family": "MM-G41-SD03",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2706.520745,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2704.020745,
+            3152.356
+          ],
+          [
+            2709.020745,
+            3152.356
+          ],
+          [
+            2709.020745,
+            3157.356
+          ],
+          [
+            2704.020745,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2634.3916015625,
+            3030.0
+          ],
+          "peak_gray": 245.73776245117188,
+          "local_residual": 104.32363891601562,
+          "native_center": [
+            2634.3916015625,
+            3030.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD03-31",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2633.1663030303016,
+              2999.0145454545454
+            ],
+            [
+              2632.666303030302,
+              3019.0145454545454
+            ],
+            [
+              2632.1663030303025,
+              3039.0145454545454
+            ]
+          ],
+          "source_roi": [
+            2628,
+            2995,
+            2638,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD03-S001",
+        "family": "MM-G41-SD03",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2706.520745,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2704.020745,
+            3152.356
+          ],
+          [
+            2709.020745,
+            3152.356
+          ],
+          [
+            2709.020745,
+            3157.356
+          ],
+          [
+            2704.020745,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2634.3916015625,
+            3030.0
+          ],
+          "peak_gray": 245.73776245117188,
+          "local_residual": 104.32363891601562,
+          "native_center": [
+            2634.3916015625,
+            3030.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD03-31",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2633.1663030303016,
+              2999.0145454545454
+            ],
+            [
+              2632.666303030302,
+              3019.0145454545454
+            ],
+            [
+              2632.1663030303025,
+              3039.0145454545454
+            ]
+          ],
+          "source_roi": [
+            2628,
+            2995,
+            2638,
+            3044
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD04-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD04-S000",
+        "family": "MM-G41-SD04",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2754.702175,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2752.202175,
+            3111.356
+          ],
+          [
+            2757.202175,
+            3111.356
+          ],
+          [
+            2757.202175,
+            3116.356
+          ],
+          [
+            2752.202175,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2684.041748046875,
+            3014.0
+          ],
+          "peak_gray": 246.8615264892578,
+          "local_residual": 92.90434265136719,
+          "native_center": [
+            2684.041748046875,
+            3014.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD04-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2684.1068939393926,
+              2998.521818181818
+            ],
+            [
+              2686.6068939393926,
+              3018.521818181818
+            ],
+            [
+              2689.106893939393,
+              3038.521818181818
+            ]
+          ],
+          "source_roi": [
+            2680,
+            2994,
+            2694,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD04-S000",
+        "family": "MM-G41-SD04",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2754.702175,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2752.202175,
+            3131.856
+          ],
+          [
+            2757.202175,
+            3131.856
+          ],
+          [
+            2757.202175,
+            3136.856
+          ],
+          [
+            2752.202175,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2684.041748046875,
+            3014.0
+          ],
+          "peak_gray": 246.8615264892578,
+          "local_residual": 92.90434265136719,
+          "native_center": [
+            2684.041748046875,
+            3014.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD04-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2684.1068939393926,
+              2998.521818181818
+            ],
+            [
+              2686.6068939393926,
+              3018.521818181818
+            ],
+            [
+              2689.106893939393,
+              3038.521818181818
+            ]
+          ],
+          "source_roi": [
+            2680,
+            2994,
+            2694,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD04-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD04-S001",
+        "family": "MM-G41-SD04",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2754.702175,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2752.202175,
+            3152.356
+          ],
+          [
+            2757.202175,
+            3152.356
+          ],
+          [
+            2757.202175,
+            3157.356
+          ],
+          [
+            2752.202175,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2687.916748046875,
+            3029.0
+          ],
+          "peak_gray": 243.80787658691406,
+          "local_residual": 113.42619323730469,
+          "native_center": [
+            2687.916748046875,
+            3029.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD04-31",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2684.1068939393926,
+              2998.521818181818
+            ],
+            [
+              2686.6068939393926,
+              3018.521818181818
+            ],
+            [
+              2689.106893939393,
+              3038.521818181818
+            ]
+          ],
+          "source_roi": [
+            2680,
+            2994,
+            2694,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD04-S001",
+        "family": "MM-G41-SD04",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2754.702175,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2752.202175,
+            3152.356
+          ],
+          [
+            2757.202175,
+            3152.356
+          ],
+          [
+            2757.202175,
+            3157.356
+          ],
+          [
+            2752.202175,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2687.916748046875,
+            3029.0
+          ],
+          "peak_gray": 243.80787658691406,
+          "local_residual": 113.42619323730469,
+          "native_center": [
+            2687.916748046875,
+            3029.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD04-31",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2684.1068939393926,
+              2998.521818181818
+            ],
+            [
+              2686.6068939393926,
+              3018.521818181818
+            ],
+            [
+              2689.106893939393,
+              3038.521818181818
+            ]
+          ],
+          "source_roi": [
+            2680,
+            2994,
+            2694,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD05-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD05-S000",
+        "family": "MM-G41-SD05",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2802.883605,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2800.383605,
+            3111.356
+          ],
+          [
+            2805.383605,
+            3111.356
+          ],
+          [
+            2805.383605,
+            3116.356
+          ],
+          [
+            2800.383605,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2732.0,
+            3014.0
+          ],
+          "peak_gray": 251.1145477294922,
+          "local_residual": 97.50686645507812,
+          "native_center": [
+            2732.0,
+            3014.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD05-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2731.999999999999,
+              2998.029090909091
+            ],
+            [
+              2731.999999999999,
+              3018.029090909091
+            ],
+            [
+              2731.999999999999,
+              3038.029090909091
+            ]
+          ],
+          "source_roi": [
+            2727,
+            2994,
+            2736,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD05-S000",
+        "family": "MM-G41-SD05",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2802.883605,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2800.383605,
+            3131.856
+          ],
+          [
+            2805.383605,
+            3131.856
+          ],
+          [
+            2805.383605,
+            3136.856
+          ],
+          [
+            2800.383605,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2732.0,
+            3014.0
+          ],
+          "peak_gray": 251.1145477294922,
+          "local_residual": 97.50686645507812,
+          "native_center": [
+            2732.0,
+            3014.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD05-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2731.999999999999,
+              2998.029090909091
+            ],
+            [
+              2731.999999999999,
+              3018.029090909091
+            ],
+            [
+              2731.999999999999,
+              3038.029090909091
+            ]
+          ],
+          "source_roi": [
+            2727,
+            2994,
+            2736,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD05-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD05-S001",
+        "family": "MM-G41-SD05",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2802.883605,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2800.383605,
+            3152.356
+          ],
+          [
+            2805.383605,
+            3152.356
+          ],
+          [
+            2805.383605,
+            3157.356
+          ],
+          [
+            2800.383605,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2733.0,
+            3028.0
+          ],
+          "peak_gray": 251.10043334960938,
+          "local_residual": 116.15472412109375,
+          "native_center": [
+            2733.0,
+            3028.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD05-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2731.999999999999,
+              2998.029090909091
+            ],
+            [
+              2731.999999999999,
+              3018.029090909091
+            ],
+            [
+              2731.999999999999,
+              3038.029090909091
+            ]
+          ],
+          "source_roi": [
+            2727,
+            2994,
+            2736,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD05-S001",
+        "family": "MM-G41-SD05",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2802.883605,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2800.383605,
+            3152.356
+          ],
+          [
+            2805.383605,
+            3152.356
+          ],
+          [
+            2805.383605,
+            3157.356
+          ],
+          [
+            2800.383605,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2733.0,
+            3028.0
+          ],
+          "peak_gray": 251.10043334960938,
+          "local_residual": 116.15472412109375,
+          "native_center": [
+            2733.0,
+            3028.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD05-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2731.999999999999,
+              2998.029090909091
+            ],
+            [
+              2731.999999999999,
+              3018.029090909091
+            ],
+            [
+              2731.999999999999,
+              3038.029090909091
+            ]
+          ],
+          "source_roi": [
+            2727,
+            2994,
+            2736,
+            3043
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD06-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD06-S000",
+        "family": "MM-G41-SD06",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2851.0650349999996,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2848.5650349999996,
+            3111.356
+          ],
+          [
+            2853.5650349999996,
+            3111.356
+          ],
+          [
+            2853.5650349999996,
+            3116.356
+          ],
+          [
+            2848.5650349999996,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2780.0,
+            3013.0
+          ],
+          "peak_gray": 249.06033325195312,
+          "local_residual": 56.20623779296875,
+          "native_center": [
+            2780.0,
+            3013.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD06-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2780.999999999999,
+              2997.5363636363636
+            ],
+            [
+              2780.9999999999995,
+              3017.5363636363636
+            ],
+            [
+              2781.0,
+              3037.5363636363636
+            ]
+          ],
+          "source_roi": [
+            2776,
+            2993,
+            2785,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD06-S000",
+        "family": "MM-G41-SD06",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2851.0650349999996,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2848.5650349999996,
+            3131.856
+          ],
+          [
+            2853.5650349999996,
+            3131.856
+          ],
+          [
+            2853.5650349999996,
+            3136.856
+          ],
+          [
+            2848.5650349999996,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2780.0,
+            3013.0
+          ],
+          "peak_gray": 249.06033325195312,
+          "local_residual": 56.20623779296875,
+          "native_center": [
+            2780.0,
+            3013.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD06-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2780.999999999999,
+              2997.5363636363636
+            ],
+            [
+              2780.9999999999995,
+              3017.5363636363636
+            ],
+            [
+              2781.0,
+              3037.5363636363636
+            ]
+          ],
+          "source_roi": [
+            2776,
+            2993,
+            2785,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD06-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD06-S001",
+        "family": "MM-G41-SD06",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2851.0650349999996,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2848.5650349999996,
+            3152.356
+          ],
+          [
+            2853.5650349999996,
+            3152.356
+          ],
+          [
+            2853.5650349999996,
+            3157.356
+          ],
+          [
+            2848.5650349999996,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2782.0,
+            3027.0
+          ],
+          "peak_gray": 245.95611572265625,
+          "local_residual": 103.40435791015625,
+          "native_center": [
+            2782.0,
+            3027.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD06-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2780.999999999999,
+              2997.5363636363636
+            ],
+            [
+              2780.9999999999995,
+              3017.5363636363636
+            ],
+            [
+              2781.0,
+              3037.5363636363636
+            ]
+          ],
+          "source_roi": [
+            2776,
+            2993,
+            2785,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD06-S001",
+        "family": "MM-G41-SD06",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2851.0650349999996,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2848.5650349999996,
+            3152.356
+          ],
+          [
+            2853.5650349999996,
+            3152.356
+          ],
+          [
+            2853.5650349999996,
+            3157.356
+          ],
+          [
+            2848.5650349999996,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2782.0,
+            3027.0
+          ],
+          "peak_gray": 245.95611572265625,
+          "local_residual": 103.40435791015625,
+          "native_center": [
+            2782.0,
+            3027.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD06-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2780.999999999999,
+              2997.5363636363636
+            ],
+            [
+              2780.9999999999995,
+              3017.5363636363636
+            ],
+            [
+              2781.0,
+              3037.5363636363636
+            ]
+          ],
+          "source_roi": [
+            2776,
+            2993,
+            2785,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD07-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD07-S000",
+        "family": "MM-G41-SD07",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2899.246465,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2896.746465,
+            3111.356
+          ],
+          [
+            2901.746465,
+            3111.356
+          ],
+          [
+            2901.746465,
+            3116.356
+          ],
+          [
+            2896.746465,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2834.566650390625,
+            3011.0
+          ],
+          "peak_gray": 245.05816650390625,
+          "local_residual": 97.726318359375,
+          "native_center": [
+            2834.566650390625,
+            3011.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD07-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2836.660121212122,
+              2997.0436363636363
+            ],
+            [
+              2833.660121212122,
+              3017.0436363636363
+            ],
+            [
+              2830.660121212122,
+              3037.0436363636363
+            ]
+          ],
+          "source_roi": [
+            2826,
+            2993,
+            2841,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD07-S000",
+        "family": "MM-G41-SD07",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2899.246465,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2896.746465,
+            3131.856
+          ],
+          [
+            2901.746465,
+            3131.856
+          ],
+          [
+            2901.746465,
+            3136.856
+          ],
+          [
+            2896.746465,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2834.566650390625,
+            3011.0
+          ],
+          "peak_gray": 245.05816650390625,
+          "local_residual": 97.726318359375,
+          "native_center": [
+            2834.566650390625,
+            3011.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD07-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2836.660121212122,
+              2997.0436363636363
+            ],
+            [
+              2833.660121212122,
+              3017.0436363636363
+            ],
+            [
+              2830.660121212122,
+              3037.0436363636363
+            ]
+          ],
+          "source_roi": [
+            2826,
+            2993,
+            2841,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD07-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD07-S001",
+        "family": "MM-G41-SD07",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2899.246465,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2896.746465,
+            3152.356
+          ],
+          [
+            2901.746465,
+            3152.356
+          ],
+          [
+            2901.746465,
+            3157.356
+          ],
+          [
+            2896.746465,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2834.316650390625,
+            3026.0
+          ],
+          "peak_gray": 240.89508056640625,
+          "local_residual": 107.5267333984375,
+          "native_center": [
+            2834.316650390625,
+            3026.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD07-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2836.660121212122,
+              2997.0436363636363
+            ],
+            [
+              2833.660121212122,
+              3017.0436363636363
+            ],
+            [
+              2830.660121212122,
+              3037.0436363636363
+            ]
+          ],
+          "source_roi": [
+            2826,
+            2993,
+            2841,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD07-S001",
+        "family": "MM-G41-SD07",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2899.246465,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2896.746465,
+            3152.356
+          ],
+          [
+            2901.746465,
+            3152.356
+          ],
+          [
+            2901.746465,
+            3157.356
+          ],
+          [
+            2896.746465,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2834.316650390625,
+            3026.0
+          ],
+          "peak_gray": 240.89508056640625,
+          "local_residual": 107.5267333984375,
+          "native_center": [
+            2834.316650390625,
+            3026.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD07-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2836.660121212122,
+              2997.0436363636363
+            ],
+            [
+              2833.660121212122,
+              3017.0436363636363
+            ],
+            [
+              2830.660121212122,
+              3037.0436363636363
+            ]
+          ],
+          "source_roi": [
+            2826,
+            2993,
+            2841,
+            3042
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD08-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD08-S000",
+        "family": "MM-G41-SD08",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2947.427895,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2944.927895,
+            3111.356
+          ],
+          [
+            2949.927895,
+            3111.356
+          ],
+          [
+            2949.927895,
+            3116.356
+          ],
+          [
+            2944.927895,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2881.0,
+            3011.0
+          ],
+          "peak_gray": 249.91453552246094,
+          "local_residual": 90.8538818359375,
+          "native_center": [
+            2881.0,
+            3011.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD08-15",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2880.0,
+              2996.550909090909
+            ],
+            [
+              2880.0,
+              3016.550909090909
+            ],
+            [
+              2880.0,
+              3036.550909090909
+            ]
+          ],
+          "source_roi": [
+            2876,
+            2992,
+            2884,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD08-S000",
+        "family": "MM-G41-SD08",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2947.427895,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2944.927895,
+            3131.856
+          ],
+          [
+            2949.927895,
+            3131.856
+          ],
+          [
+            2949.927895,
+            3136.856
+          ],
+          [
+            2944.927895,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2881.0,
+            3011.0
+          ],
+          "peak_gray": 249.91453552246094,
+          "local_residual": 90.8538818359375,
+          "native_center": [
+            2881.0,
+            3011.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD08-15",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2880.0,
+              2996.550909090909
+            ],
+            [
+              2880.0,
+              3016.550909090909
+            ],
+            [
+              2880.0,
+              3036.550909090909
+            ]
+          ],
+          "source_roi": [
+            2876,
+            2992,
+            2884,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD08-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD08-S001",
+        "family": "MM-G41-SD08",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2947.427895,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2944.927895,
+            3152.356
+          ],
+          [
+            2949.927895,
+            3152.356
+          ],
+          [
+            2949.927895,
+            3157.356
+          ],
+          [
+            2944.927895,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2881.0,
+            3025.0
+          ],
+          "peak_gray": 245.05169677734375,
+          "local_residual": 111.96942138671875,
+          "native_center": [
+            2881.0,
+            3025.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD08-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2880.0,
+              2996.550909090909
+            ],
+            [
+              2880.0,
+              3016.550909090909
+            ],
+            [
+              2880.0,
+              3036.550909090909
+            ]
+          ],
+          "source_roi": [
+            2876,
+            2992,
+            2884,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD08-S001",
+        "family": "MM-G41-SD08",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2947.427895,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2944.927895,
+            3152.356
+          ],
+          [
+            2949.927895,
+            3152.356
+          ],
+          [
+            2949.927895,
+            3157.356
+          ],
+          [
+            2944.927895,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2881.0,
+            3025.0
+          ],
+          "peak_gray": 245.05169677734375,
+          "local_residual": 111.96942138671875,
+          "native_center": [
+            2881.0,
+            3025.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD08-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2880.0,
+              2996.550909090909
+            ],
+            [
+              2880.0,
+              3016.550909090909
+            ],
+            [
+              2880.0,
+              3036.550909090909
+            ]
+          ],
+          "source_roi": [
+            2876,
+            2992,
+            2884,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD09-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD09-S000",
+        "family": "MM-G41-SD09",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2995.609325,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            2993.109325,
+            3111.356
+          ],
+          [
+            2998.109325,
+            3111.356
+          ],
+          [
+            2998.109325,
+            3116.356
+          ],
+          [
+            2993.109325,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2928.0,
+            3010.0
+          ],
+          "peak_gray": 249.70285034179688,
+          "local_residual": 90.86605834960938,
+          "native_center": [
+            2928.0,
+            3010.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD09-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2929.0000000000005,
+              2996.0581818181818
+            ],
+            [
+              2929.0000000000005,
+              3016.0581818181818
+            ],
+            [
+              2929.0,
+              3036.0581818181818
+            ]
+          ],
+          "source_roi": [
+            2925,
+            2992,
+            2934,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD09-S000",
+        "family": "MM-G41-SD09",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2995.609325,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            2993.109325,
+            3131.856
+          ],
+          [
+            2998.109325,
+            3131.856
+          ],
+          [
+            2998.109325,
+            3136.856
+          ],
+          [
+            2993.109325,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2928.0,
+            3010.0
+          ],
+          "peak_gray": 249.70285034179688,
+          "local_residual": 90.86605834960938,
+          "native_center": [
+            2928.0,
+            3010.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD09-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2929.0000000000005,
+              2996.0581818181818
+            ],
+            [
+              2929.0000000000005,
+              3016.0581818181818
+            ],
+            [
+              2929.0,
+              3036.0581818181818
+            ]
+          ],
+          "source_roi": [
+            2925,
+            2992,
+            2934,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD09-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD09-S001",
+        "family": "MM-G41-SD09",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2995.609325,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2993.109325,
+            3152.356
+          ],
+          [
+            2998.109325,
+            3152.356
+          ],
+          [
+            2998.109325,
+            3157.356
+          ],
+          [
+            2993.109325,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2929.0,
+            3024.0
+          ],
+          "peak_gray": 241.25982666015625,
+          "local_residual": 118.4679946899414,
+          "native_center": [
+            2929.0,
+            3024.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD09-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2929.0000000000005,
+              2996.0581818181818
+            ],
+            [
+              2929.0000000000005,
+              3016.0581818181818
+            ],
+            [
+              2929.0,
+              3036.0581818181818
+            ]
+          ],
+          "source_roi": [
+            2925,
+            2992,
+            2934,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD09-S001",
+        "family": "MM-G41-SD09",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2995.609325,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            2993.109325,
+            3152.356
+          ],
+          [
+            2998.109325,
+            3152.356
+          ],
+          [
+            2998.109325,
+            3157.356
+          ],
+          [
+            2993.109325,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2929.0,
+            3024.0
+          ],
+          "peak_gray": 241.25982666015625,
+          "local_residual": 118.4679946899414,
+          "native_center": [
+            2929.0,
+            3024.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD09-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2929.0000000000005,
+              2996.0581818181818
+            ],
+            [
+              2929.0000000000005,
+              3016.0581818181818
+            ],
+            [
+              2929.0,
+              3036.0581818181818
+            ]
+          ],
+          "source_roi": [
+            2925,
+            2992,
+            2934,
+            3041
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD10-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD10-S000",
+        "family": "MM-G41-SD10",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3043.790755,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            3041.290755,
+            3111.356
+          ],
+          [
+            3046.290755,
+            3111.356
+          ],
+          [
+            3046.290755,
+            3116.356
+          ],
+          [
+            3041.290755,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2978.0,
+            3009.0
+          ],
+          "peak_gray": 242.28955078125,
+          "local_residual": 73.23991394042969,
+          "native_center": [
+            2978.0,
+            3009.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD10-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2978.0,
+              2995.5654545454545
+            ],
+            [
+              2978.0,
+              3015.5654545454545
+            ],
+            [
+              2978.0,
+              3035.5654545454545
+            ]
+          ],
+          "source_roi": [
+            2974,
+            2991,
+            2982,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD10-S000",
+        "family": "MM-G41-SD10",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3043.790755,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            3041.290755,
+            3131.856
+          ],
+          [
+            3046.290755,
+            3131.856
+          ],
+          [
+            3046.290755,
+            3136.856
+          ],
+          [
+            3041.290755,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2978.0,
+            3009.0
+          ],
+          "peak_gray": 242.28955078125,
+          "local_residual": 73.23991394042969,
+          "native_center": [
+            2978.0,
+            3009.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD10-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2978.0,
+              2995.5654545454545
+            ],
+            [
+              2978.0,
+              3015.5654545454545
+            ],
+            [
+              2978.0,
+              3035.5654545454545
+            ]
+          ],
+          "source_roi": [
+            2974,
+            2991,
+            2982,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD10-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD10-S001",
+        "family": "MM-G41-SD10",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3043.790755,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            3041.290755,
+            3152.356
+          ],
+          [
+            3046.290755,
+            3152.356
+          ],
+          [
+            3046.290755,
+            3157.356
+          ],
+          [
+            3041.290755,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2977.0,
+            3024.0
+          ],
+          "peak_gray": 239.8529510498047,
+          "local_residual": 113.40512084960938,
+          "native_center": [
+            2977.0,
+            3024.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD10-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2978.0,
+              2995.5654545454545
+            ],
+            [
+              2978.0,
+              3015.5654545454545
+            ],
+            [
+              2978.0,
+              3035.5654545454545
+            ]
+          ],
+          "source_roi": [
+            2974,
+            2991,
+            2982,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD10-S001",
+        "family": "MM-G41-SD10",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3043.790755,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            3041.290755,
+            3152.356
+          ],
+          [
+            3046.290755,
+            3152.356
+          ],
+          [
+            3046.290755,
+            3157.356
+          ],
+          [
+            3041.290755,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2977.0,
+            3024.0
+          ],
+          "peak_gray": 239.8529510498047,
+          "local_residual": 113.40512084960938,
+          "native_center": [
+            2977.0,
+            3024.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD10-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2978.0,
+              2995.5654545454545
+            ],
+            [
+              2978.0,
+              3015.5654545454545
+            ],
+            [
+              2978.0,
+              3035.5654545454545
+            ]
+          ],
+          "source_roi": [
+            2974,
+            2991,
+            2982,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD11-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD11-S000",
+        "family": "MM-G41-SD11",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3091.9721849999996,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            3089.4721849999996,
+            3111.356
+          ],
+          [
+            3094.4721849999996,
+            3111.356
+          ],
+          [
+            3094.4721849999996,
+            3116.356
+          ],
+          [
+            3089.4721849999996,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3027.0,
+            3008.0
+          ],
+          "peak_gray": 250.8892364501953,
+          "local_residual": 108.83201599121094,
+          "native_center": [
+            3027.0,
+            3008.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD11-13",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3028.0,
+              2995.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3015.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3035.072727272727
+            ]
+          ],
+          "source_roi": [
+            3023,
+            2991,
+            3032,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD11-S000",
+        "family": "MM-G41-SD11",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3091.9721849999996,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            3089.4721849999996,
+            3131.856
+          ],
+          [
+            3094.4721849999996,
+            3131.856
+          ],
+          [
+            3094.4721849999996,
+            3136.856
+          ],
+          [
+            3089.4721849999996,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3027.0,
+            3008.0
+          ],
+          "peak_gray": 250.8892364501953,
+          "local_residual": 108.83201599121094,
+          "native_center": [
+            3027.0,
+            3008.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD11-13",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3028.0,
+              2995.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3015.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3035.072727272727
+            ]
+          ],
+          "source_roi": [
+            3023,
+            2991,
+            3032,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD11-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD11-S001",
+        "family": "MM-G41-SD11",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3091.9721849999996,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            3089.4721849999996,
+            3152.356
+          ],
+          [
+            3094.4721849999996,
+            3152.356
+          ],
+          [
+            3094.4721849999996,
+            3157.356
+          ],
+          [
+            3089.4721849999996,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3029.0,
+            3023.0
+          ],
+          "peak_gray": 245.5784454345703,
+          "local_residual": 99.88914489746094,
+          "native_center": [
+            3029.0,
+            3023.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD11-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3028.0,
+              2995.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3015.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3035.072727272727
+            ]
+          ],
+          "source_roi": [
+            3023,
+            2991,
+            3032,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD11-S001",
+        "family": "MM-G41-SD11",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3091.9721849999996,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            3089.4721849999996,
+            3152.356
+          ],
+          [
+            3094.4721849999996,
+            3152.356
+          ],
+          [
+            3094.4721849999996,
+            3157.356
+          ],
+          [
+            3089.4721849999996,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3029.0,
+            3023.0
+          ],
+          "peak_gray": 245.5784454345703,
+          "local_residual": 99.88914489746094,
+          "native_center": [
+            3029.0,
+            3023.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD11-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3028.0,
+              2995.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3015.072727272727
+            ],
+            [
+              3027.9999999999995,
+              3035.072727272727
+            ]
+          ],
+          "source_roi": [
+            3023,
+            2991,
+            3032,
+            3040
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD12-S000",
+      "before": {
+        "id": "CTT-MM-G41-SD12-S000",
+        "family": "MM-G41-SD12",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3135.0629,
+          3113.856
+        ],
+        "layout_outline": [
+          [
+            3132.5629,
+            3111.356
+          ],
+          [
+            3137.5629,
+            3111.356
+          ],
+          [
+            3137.5629,
+            3116.356
+          ],
+          [
+            3132.5629,
+            3116.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3076.0,
+            3007.0
+          ],
+          "peak_gray": 245.50335693359375,
+          "local_residual": 73.66357421875,
+          "native_center": [
+            3076.0,
+            3007.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD12-13",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3076.9999999999995,
+              2994.58
+            ],
+            [
+              3076.9999999999995,
+              3014.58
+            ],
+            [
+              3076.9999999999995,
+              3034.58
+            ]
+          ],
+          "source_roi": [
+            3072,
+            2990,
+            3081,
+            3039
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD12-S000",
+        "family": "MM-G41-SD12",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3135.0629,
+          3134.356
+        ],
+        "layout_outline": [
+          [
+            3132.5629,
+            3131.856
+          ],
+          [
+            3137.5629,
+            3131.856
+          ],
+          [
+            3137.5629,
+            3136.856
+          ],
+          [
+            3132.5629,
+            3136.856
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3076.0,
+            3007.0
+          ],
+          "peak_gray": 245.50335693359375,
+          "local_residual": 73.66357421875,
+          "native_center": [
+            3076.0,
+            3007.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD12-13",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3076.9999999999995,
+              2994.58
+            ],
+            [
+              3076.9999999999995,
+              3014.58
+            ],
+            [
+              3076.9999999999995,
+              3034.58
+            ]
+          ],
+          "source_roi": [
+            3072,
+            2990,
+            3081,
+            3039
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G41-SD12-S001",
+      "before": {
+        "id": "CTT-MM-G41-SD12-S001",
+        "family": "MM-G41-SD12",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3135.0629,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            3132.5629,
+            3152.356
+          ],
+          [
+            3137.5629,
+            3152.356
+          ],
+          [
+            3137.5629,
+            3157.356
+          ],
+          [
+            3132.5629,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3076.0,
+            3022.0
+          ],
+          "peak_gray": 243.5189666748047,
+          "local_residual": 79.607177734375,
+          "native_center": [
+            3076.0,
+            3022.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD12-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3076.9999999999995,
+              2994.58
+            ],
+            [
+              3076.9999999999995,
+              3014.58
+            ],
+            [
+              3076.9999999999995,
+              3034.58
+            ]
+          ],
+          "source_roi": [
+            3072,
+            2990,
+            3081,
+            3039
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      },
+      "after": {
+        "id": "CTT-MM-G41-SD12-S001",
+        "family": "MM-G41-SD12",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3135.0629,
+          3154.856
+        ],
+        "layout_outline": [
+          [
+            3132.5629,
+            3152.356
+          ],
+          [
+            3137.5629,
+            3152.356
+          ],
+          [
+            3137.5629,
+            3157.356
+          ],
+          [
+            3132.5629,
+            3157.356
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3076.0,
+            3022.0
+          ],
+          "peak_gray": 243.5189666748047,
+          "local_residual": 79.607177734375,
+          "native_center": [
+            3076.0,
+            3022.0
+          ],
+          "source_observation_id": "PROFILE-MM-G41-SD12-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3076.9999999999995,
+              2994.58
+            ],
+            [
+              3076.9999999999995,
+              3014.58
+            ],
+            [
+              3076.9999999999995,
+              3034.58
+            ]
+          ],
+          "source_roi": [
+            3072,
+            2990,
+            3081,
+            3039
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-UR-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD01-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD01-S001",
+        "family": "MM-G42-SD01",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1905.6918,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            1903.1918,
+            3294.6987
+          ],
+          [
+            1908.1918,
+            3294.6987
+          ],
+          [
+            1908.1918,
+            3299.6987
+          ],
+          [
+            1903.1918,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1772.0,
+            3181.0
+          ],
+          "peak_gray": 240.51109313964844,
+          "local_residual": 51.25651550292969,
+          "native_center": [
+            1772.0,
+            3181.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD01-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1772.9999999999993,
+              3153.0
+            ],
+            [
+              1772.9999999999995,
+              3174.5
+            ],
+            [
+              1772.9999999999998,
+              3196.0
+            ]
+          ],
+          "source_roi": [
+            1768,
+            3149,
+            1777,
+            3200
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD01-S001",
+        "family": "MM-G42-SD01",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1905.6918,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            1903.1918,
+            3272.6487
+          ],
+          [
+            1908.1918,
+            3272.6487
+          ],
+          [
+            1908.1918,
+            3277.6487
+          ],
+          [
+            1903.1918,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1772.0,
+            3181.0
+          ],
+          "peak_gray": 240.51109313964844,
+          "local_residual": 51.25651550292969,
+          "native_center": [
+            1772.0,
+            3181.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD01-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1772.9999999999993,
+              3153.0
+            ],
+            [
+              1772.9999999999995,
+              3174.5
+            ],
+            [
+              1772.9999999999998,
+              3196.0
+            ]
+          ],
+          "source_roi": [
+            1768,
+            3149,
+            1777,
+            3200
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD02-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD02-S001",
+        "family": "MM-G42-SD02",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1948.3572100000001,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            1945.8572100000001,
+            3294.6987
+          ],
+          [
+            1950.8572100000001,
+            3294.6987
+          ],
+          [
+            1950.8572100000001,
+            3299.6987
+          ],
+          [
+            1945.8572100000001,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1825.0,
+            3181.0
+          ],
+          "peak_gray": 250.53538513183594,
+          "local_residual": 97.03364562988281,
+          "native_center": [
+            1825.0,
+            3181.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD02-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1822.999999999999,
+              3152.294909090909
+            ],
+            [
+              1822.999999999999,
+              3173.794909090909
+            ],
+            [
+              1822.999999999999,
+              3195.294909090909
+            ]
+          ],
+          "source_roi": [
+            1818,
+            3148,
+            1827,
+            3200
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD02-S001",
+        "family": "MM-G42-SD02",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1948.3572100000001,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            1945.8572100000001,
+            3272.6487
+          ],
+          [
+            1950.8572100000001,
+            3272.6487
+          ],
+          [
+            1950.8572100000001,
+            3277.6487
+          ],
+          [
+            1945.8572100000001,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1825.0,
+            3181.0
+          ],
+          "peak_gray": 250.53538513183594,
+          "local_residual": 97.03364562988281,
+          "native_center": [
+            1825.0,
+            3181.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD02-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1822.999999999999,
+              3152.294909090909
+            ],
+            [
+              1822.999999999999,
+              3173.794909090909
+            ],
+            [
+              1822.999999999999,
+              3195.294909090909
+            ]
+          ],
+          "source_roi": [
+            1818,
+            3148,
+            1827,
+            3200
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD03-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD03-S001",
+        "family": "MM-G42-SD03",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1995.68803,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            1993.18803,
+            3294.6987
+          ],
+          [
+            1998.18803,
+            3294.6987
+          ],
+          [
+            1998.18803,
+            3299.6987
+          ],
+          [
+            1993.18803,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1873.0,
+            3180.0
+          ],
+          "peak_gray": 249.82078552246094,
+          "local_residual": 85.41128540039062,
+          "native_center": [
+            1873.0,
+            3180.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD03-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1873.0000000000002,
+              3151.5898181818184
+            ],
+            [
+              1873.0,
+              3173.0898181818184
+            ],
+            [
+              1872.9999999999998,
+              3194.5898181818184
+            ]
+          ],
+          "source_roi": [
+            1868,
+            3147,
+            1878,
+            3199
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD03-S001",
+        "family": "MM-G42-SD03",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1995.68803,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            1993.18803,
+            3272.6487
+          ],
+          [
+            1998.18803,
+            3272.6487
+          ],
+          [
+            1998.18803,
+            3277.6487
+          ],
+          [
+            1993.18803,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1873.0,
+            3180.0
+          ],
+          "peak_gray": 249.82078552246094,
+          "local_residual": 85.41128540039062,
+          "native_center": [
+            1873.0,
+            3180.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD03-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1873.0000000000002,
+              3151.5898181818184
+            ],
+            [
+              1873.0,
+              3173.0898181818184
+            ],
+            [
+              1872.9999999999998,
+              3194.5898181818184
+            ]
+          ],
+          "source_roi": [
+            1868,
+            3147,
+            1878,
+            3199
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD04-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD04-S001",
+        "family": "MM-G42-SD04",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2043.01885,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2040.51885,
+            3294.6987
+          ],
+          [
+            2045.51885,
+            3294.6987
+          ],
+          [
+            2045.51885,
+            3299.6987
+          ],
+          [
+            2040.51885,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1923.5919189453125,
+            3179.0
+          ],
+          "peak_gray": 243.10714721679688,
+          "local_residual": 99.42010498046875,
+          "native_center": [
+            1923.5919189453125,
+            3179.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD04-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1918.6898413842832,
+              3150.884727272727
+            ],
+            [
+              1921.673799567412,
+              3172.384727272727
+            ],
+            [
+              1924.6577577505407,
+              3193.884727272727
+            ]
+          ],
+          "source_roi": [
+            1914,
+            3146,
+            1929,
+            3198
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD04-S001",
+        "family": "MM-G42-SD04",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2043.01885,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2040.51885,
+            3272.6487
+          ],
+          [
+            2045.51885,
+            3272.6487
+          ],
+          [
+            2045.51885,
+            3277.6487
+          ],
+          [
+            2040.51885,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1923.5919189453125,
+            3179.0
+          ],
+          "peak_gray": 243.10714721679688,
+          "local_residual": 99.42010498046875,
+          "native_center": [
+            1923.5919189453125,
+            3179.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD04-29",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1918.6898413842832,
+              3150.884727272727
+            ],
+            [
+              1921.673799567412,
+              3172.384727272727
+            ],
+            [
+              1924.6577577505407,
+              3193.884727272727
+            ]
+          ],
+          "source_roi": [
+            1914,
+            3146,
+            1929,
+            3198
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD05-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD05-S001",
+        "family": "MM-G42-SD05",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2090.34967,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2087.84967,
+            3294.6987
+          ],
+          [
+            2092.84967,
+            3294.6987
+          ],
+          [
+            2092.84967,
+            3299.6987
+          ],
+          [
+            2087.84967,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1974.890380859375,
+            3178.0
+          ],
+          "peak_gray": 238.51051330566406,
+          "local_residual": 71.81521606445312,
+          "native_center": [
+            1974.890380859375,
+            3178.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD05-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1968.9791125385073,
+              3150.1796363636363
+            ],
+            [
+              1972.0018234253132,
+              3171.6796363636363
+            ],
+            [
+              1975.0245343121192,
+              3193.1796363636363
+            ]
+          ],
+          "source_roi": [
+            1964,
+            3146,
+            1980,
+            3198
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD05-S001",
+        "family": "MM-G42-SD05",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2090.34967,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2087.84967,
+            3272.6487
+          ],
+          [
+            2092.84967,
+            3272.6487
+          ],
+          [
+            2092.84967,
+            3277.6487
+          ],
+          [
+            2087.84967,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1974.890380859375,
+            3178.0
+          ],
+          "peak_gray": 238.51051330566406,
+          "local_residual": 71.81521606445312,
+          "native_center": [
+            1974.890380859375,
+            3178.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD05-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1968.9791125385073,
+              3150.1796363636363
+            ],
+            [
+              1972.0018234253132,
+              3171.6796363636363
+            ],
+            [
+              1975.0245343121192,
+              3193.1796363636363
+            ]
+          ],
+          "source_roi": [
+            1964,
+            3146,
+            1980,
+            3198
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD06-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD06-S001",
+        "family": "MM-G42-SD06",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2137.68049,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2135.18049,
+            3294.6987
+          ],
+          [
+            2140.18049,
+            3294.6987
+          ],
+          [
+            2140.18049,
+            3299.6987
+          ],
+          [
+            2135.18049,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2024.0753173828125,
+            3177.0
+          ],
+          "peak_gray": 246.8216552734375,
+          "local_residual": 69.72581481933594,
+          "native_center": [
+            2024.0753173828125,
+            3177.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD06-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2019.850478468899,
+              3149.4745454545455
+            ],
+            [
+              2022.3694042079037,
+              3170.9745454545455
+            ],
+            [
+              2024.8883299469087,
+              3192.4745454545455
+            ]
+          ],
+          "source_roi": [
+            2015,
+            3145,
+            2029,
+            3197
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD06-S001",
+        "family": "MM-G42-SD06",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2137.68049,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2135.18049,
+            3272.6487
+          ],
+          [
+            2140.18049,
+            3272.6487
+          ],
+          [
+            2140.18049,
+            3277.6487
+          ],
+          [
+            2135.18049,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2024.0753173828125,
+            3177.0
+          ],
+          "peak_gray": 246.8216552734375,
+          "local_residual": 69.72581481933594,
+          "native_center": [
+            2024.0753173828125,
+            3177.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD06-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2019.850478468899,
+              3149.4745454545455
+            ],
+            [
+              2022.3694042079037,
+              3170.9745454545455
+            ],
+            [
+              2024.8883299469087,
+              3192.4745454545455
+            ]
+          ],
+          "source_roi": [
+            2015,
+            3145,
+            2029,
+            3197
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD07-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD07-S001",
+        "family": "MM-G42-SD07",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2185.01131,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2182.51131,
+            3294.6987
+          ],
+          [
+            2187.51131,
+            3294.6987
+          ],
+          [
+            2187.51131,
+            3299.6987
+          ],
+          [
+            2182.51131,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2074.0,
+            3175.0
+          ],
+          "peak_gray": 246.22793579101562,
+          "local_residual": 81.50341796875,
+          "native_center": [
+            2074.0,
+            3175.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD07-27",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2074.0,
+              3148.7694545454547
+            ],
+            [
+              2074.0,
+              3170.2694545454547
+            ],
+            [
+              2074.0,
+              3191.7694545454547
+            ]
+          ],
+          "source_roi": [
+            2070,
+            3144,
+            2078,
+            3196
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD07-S001",
+        "family": "MM-G42-SD07",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2185.01131,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2182.51131,
+            3272.6487
+          ],
+          [
+            2187.51131,
+            3272.6487
+          ],
+          [
+            2187.51131,
+            3277.6487
+          ],
+          [
+            2182.51131,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2074.0,
+            3175.0
+          ],
+          "peak_gray": 246.22793579101562,
+          "local_residual": 81.50341796875,
+          "native_center": [
+            2074.0,
+            3175.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD07-27",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2074.0,
+              3148.7694545454547
+            ],
+            [
+              2074.0,
+              3170.2694545454547
+            ],
+            [
+              2074.0,
+              3191.7694545454547
+            ]
+          ],
+          "source_roi": [
+            2070,
+            3144,
+            2078,
+            3196
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD08-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD08-S001",
+        "family": "MM-G42-SD08",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2232.34213,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2229.84213,
+            3294.6987
+          ],
+          [
+            2234.84213,
+            3294.6987
+          ],
+          [
+            2234.84213,
+            3299.6987
+          ],
+          [
+            2229.84213,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2124.0,
+            3174.0
+          ],
+          "peak_gray": 244.79042053222656,
+          "local_residual": 90.44889831542969,
+          "native_center": [
+            2124.0,
+            3174.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD08-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2124.9999999999995,
+              3148.064363636364
+            ],
+            [
+              2124.9999999999995,
+              3169.564363636364
+            ],
+            [
+              2124.9999999999995,
+              3191.064363636364
+            ]
+          ],
+          "source_roi": [
+            2120,
+            3144,
+            2129,
+            3196
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD08-S001",
+        "family": "MM-G42-SD08",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2232.34213,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2229.84213,
+            3272.6487
+          ],
+          [
+            2234.84213,
+            3272.6487
+          ],
+          [
+            2234.84213,
+            3277.6487
+          ],
+          [
+            2229.84213,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2124.0,
+            3174.0
+          ],
+          "peak_gray": 244.79042053222656,
+          "local_residual": 90.44889831542969,
+          "native_center": [
+            2124.0,
+            3174.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD08-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2124.9999999999995,
+              3148.064363636364
+            ],
+            [
+              2124.9999999999995,
+              3169.564363636364
+            ],
+            [
+              2124.9999999999995,
+              3191.064363636364
+            ]
+          ],
+          "source_roi": [
+            2120,
+            3144,
+            2129,
+            3196
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD09-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD09-S001",
+        "family": "MM-G42-SD09",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2279.67295,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2277.17295,
+            3294.6987
+          ],
+          [
+            2282.17295,
+            3294.6987
+          ],
+          [
+            2282.17295,
+            3299.6987
+          ],
+          [
+            2277.17295,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2174.0,
+            3174.0
+          ],
+          "peak_gray": 247.20584106445312,
+          "local_residual": 91.97392272949219,
+          "native_center": [
+            2174.0,
+            3174.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD09-27",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2174.9999999999995,
+              3147.3592727272726
+            ],
+            [
+              2174.9999999999995,
+              3168.8592727272726
+            ],
+            [
+              2174.999999999999,
+              3190.3592727272726
+            ]
+          ],
+          "source_roi": [
+            2170,
+            3143,
+            2179,
+            3195
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD09-S001",
+        "family": "MM-G42-SD09",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2279.67295,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2277.17295,
+            3272.6487
+          ],
+          [
+            2282.17295,
+            3272.6487
+          ],
+          [
+            2282.17295,
+            3277.6487
+          ],
+          [
+            2277.17295,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2174.0,
+            3174.0
+          ],
+          "peak_gray": 247.20584106445312,
+          "local_residual": 91.97392272949219,
+          "native_center": [
+            2174.0,
+            3174.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD09-27",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2174.9999999999995,
+              3147.3592727272726
+            ],
+            [
+              2174.9999999999995,
+              3168.8592727272726
+            ],
+            [
+              2174.999999999999,
+              3190.3592727272726
+            ]
+          ],
+          "source_roi": [
+            2170,
+            3143,
+            2179,
+            3195
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD10-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD10-S001",
+        "family": "MM-G42-SD10",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2327.0037700000003,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2324.5037700000003,
+            3294.6987
+          ],
+          [
+            2329.5037700000003,
+            3294.6987
+          ],
+          [
+            2329.5037700000003,
+            3299.6987
+          ],
+          [
+            2324.5037700000003,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2222.507568359375,
+            3172.0
+          ],
+          "peak_gray": 246.84564208984375,
+          "local_residual": 124.41532135009766,
+          "native_center": [
+            2222.507568359375,
+            3172.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD10-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2220.9989927246515,
+              3146.6541818181818
+            ],
+            [
+              2223.9752003670455,
+              3168.1541818181818
+            ],
+            [
+              2226.951408009439,
+              3189.6541818181818
+            ]
+          ],
+          "source_roi": [
+            2216,
+            3142,
+            2231,
+            3194
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD10-S001",
+        "family": "MM-G42-SD10",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2327.0037700000003,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2324.5037700000003,
+            3272.6487
+          ],
+          [
+            2329.5037700000003,
+            3272.6487
+          ],
+          [
+            2329.5037700000003,
+            3277.6487
+          ],
+          [
+            2324.5037700000003,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2222.507568359375,
+            3172.0
+          ],
+          "peak_gray": 246.84564208984375,
+          "local_residual": 124.41532135009766,
+          "native_center": [
+            2222.507568359375,
+            3172.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD10-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2220.9989927246515,
+              3146.6541818181818
+            ],
+            [
+              2223.9752003670455,
+              3168.1541818181818
+            ],
+            [
+              2226.951408009439,
+              3189.6541818181818
+            ]
+          ],
+          "source_roi": [
+            2216,
+            3142,
+            2231,
+            3194
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G42-SD11-S001",
+      "before": {
+        "id": "CTT-MM-G42-SD11-S001",
+        "family": "MM-G42-SD11",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2374.33459,
+          3297.1987
+        ],
+        "layout_outline": [
+          [
+            2371.83459,
+            3294.6987
+          ],
+          [
+            2376.83459,
+            3294.6987
+          ],
+          [
+            2376.83459,
+            3299.6987
+          ],
+          [
+            2371.83459,
+            3299.6987
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2274.580810546875,
+            3171.0
+          ],
+          "peak_gray": 246.17027282714844,
+          "local_residual": 83.3619384765625,
+          "native_center": [
+            2274.580810546875,
+            3171.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD11-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2275.167739398309,
+              3145.949090909091
+            ],
+            [
+              2274.663954250508,
+              3167.449090909091
+            ],
+            [
+              2274.1601691027067,
+              3188.949090909091
+            ]
+          ],
+          "source_roi": [
+            2270,
+            3141,
+            2280,
+            3193
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      },
+      "after": {
+        "id": "CTT-MM-G42-SD11-S001",
+        "family": "MM-G42-SD11",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2374.33459,
+          3275.1487
+        ],
+        "layout_outline": [
+          [
+            2371.83459,
+            3272.6487
+          ],
+          [
+            2376.83459,
+            3272.6487
+          ],
+          [
+            2376.83459,
+            3277.6487
+          ],
+          [
+            2371.83459,
+            3277.6487
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2274.580810546875,
+            3171.0
+          ],
+          "peak_gray": 246.17027282714844,
+          "local_residual": 83.3619384765625,
+          "native_center": [
+            2274.580810546875,
+            3171.0
+          ],
+          "source_observation_id": "PROFILE-MM-G42-SD11-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_path_profile_peak_with_AI_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              2275.167739398309,
+              3145.949090909091
+            ],
+            [
+              2274.663954250508,
+              3167.449090909091
+            ],
+            [
+              2274.1601691027067,
+              3188.949090909091
+            ]
+          ],
+          "source_roi": [
+            2270,
+            3141,
+            2280,
+            3193
+          ],
+          "sigma": 0.65
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+      }
+    },
+    {
+      "id": "CTT-MM-G47-G01-S000",
+      "before": {
+        "id": "CTT-MM-G47-G01-S000",
+        "family": "MM-G47-G01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          2562.664,
+          3570.055
+        ],
+        "layout_outline": [
+          [
+            2560.164,
+            3567.555
+          ],
+          [
+            2565.164,
+            3567.555
+          ],
+          [
+            2565.164,
+            3572.555
+          ],
+          [
+            2560.164,
+            3572.555
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2484,
+            3469
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 43.38330723216859,
+          "source_roi": [
+            2468,
+            3453,
+            2503,
+            3470
+          ],
+          "AI_bar_hint_y": 3461.6196666666665,
+          "native_center": [
+            2484,
+            3469
+          ],
+          "source_observation_id": "MM-G47-G01-OBS00",
+          "evidence_tier": "terminal_2d_measured_local_peak",
+          "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+          "supported": true
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G47-P01"
+      },
+      "after": {
+        "id": "CTT-MM-G47-G01-S000",
+        "family": "MM-G47-G01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          2556.664,
+          3570.055
+        ],
+        "layout_outline": [
+          [
+            2554.164,
+            3567.555
+          ],
+          [
+            2559.164,
+            3567.555
+          ],
+          [
+            2559.164,
+            3572.555
+          ],
+          [
+            2554.164,
+            3572.555
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2484,
+            3469
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 43.38330723216859,
+          "source_roi": [
+            2468,
+            3453,
+            2503,
+            3470
+          ],
+          "AI_bar_hint_y": 3461.6196666666665,
+          "native_center": [
+            2484,
+            3469
+          ],
+          "source_observation_id": "MM-G47-G01-OBS00",
+          "evidence_tier": "terminal_2d_measured_local_peak",
+          "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+          "supported": true
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G47-P01"
+      }
+    }
+  ],
+  "review_images": [
+    {
+      "input_key": "O_before",
+      "output_name": "O-before.svg"
+    },
+    {
+      "input_key": "O_m1-context",
+      "output_name": "O-m1-context.png"
+    },
+    {
+      "input_key": "A_before",
+      "output_name": "A-before.svg"
+    },
+    {
+      "input_key": "A_m1-context",
+      "output_name": "A-m1-context.png"
+    },
+    {
+      "input_key": "B_before",
+      "output_name": "B-before.svg"
+    },
+    {
+      "input_key": "B_m1-context",
+      "output_name": "B-m1-context.png"
+    },
+    {
+      "input_key": "C_before",
+      "output_name": "C-before.svg"
+    },
+    {
+      "input_key": "C_m1-context",
+      "output_name": "C-m1-context.png"
+    },
+    {
+      "input_key": "D_before",
+      "output_name": "D-before.svg"
+    },
+    {
+      "input_key": "D_m1-context",
+      "output_name": "D-m1-context.png"
+    },
+    {
+      "input_key": "E_before",
+      "output_name": "E-before.svg"
+    },
+    {
+      "input_key": "E_m1-context",
+      "output_name": "E-m1-context.png"
+    },
+    {
+      "input_key": "F_before",
+      "output_name": "F-before.svg"
+    },
+    {
+      "input_key": "F_m1-context",
+      "output_name": "F-m1-context.png"
+    }
+  ],
+  "cases": [
+    {
+      "id": "O",
+      "title": "140条栅与两个环网总览",
+      "source_bbox": [
+        1660,
+        2615,
+        3175,
+        3740
+      ],
+      "layout_bbox": [
+        1825,
+        2780,
+        3210,
+        3820
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "A",
+      "title": "上左24栅：G36下端＋G38上端",
+      "source_bbox": [
+        1675,
+        2670,
+        2440,
+        2995
+      ],
+      "layout_bbox": [
+        1835,
+        2790,
+        2520,
+        3100
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "B",
+      "title": "上右24栅：G37下端＋G39上端",
+      "source_bbox": [
+        2420,
+        2650,
+        3170,
+        2980
+      ],
+      "layout_bbox": [
+        2510,
+        2790,
+        3205,
+        3100
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "C",
+      "title": "C：上下排大多数三排孔；下排右端补孔，红叉排除",
+      "source_bbox": [
+        1690,
+        2960,
+        2435,
+        3250
+      ],
+      "layout_bbox": [
+        1835,
+        3075,
+        2520,
+        3340
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "D",
+      "title": "D：上下排大多数三排孔；阶梯边列局部补孔",
+      "source_bbox": [
+        2430,
+        2945,
+        3170,
+        3230
+      ],
+      "layout_bbox": [
+        2510,
+        3075,
+        3205,
+        3340
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "E",
+      "title": "下左24长栅：G44下端＋G46上端",
+      "source_bbox": [
+        1700,
+        3210,
+        2450,
+        3740
+      ],
+      "layout_bbox": [
+        1835,
+        3310,
+        2520,
+        3810
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "F",
+      "title": "F：G47-P01单栅孔改为两孔",
+      "source_bbox": [
+        2435,
+        3190,
+        3175,
+        3725
+      ],
+      "layout_bbox": [
+        2510,
+        3310,
+        3205,
+        3810
+      ],
+      "scope": "原AA/POLY和照片不改；已批橙框纳入。C/D仅修源漏排布和边列，F单孔改双孔；不重审其他区域。",
+      "additional_modes": [
+        [
+          "before",
+          "svg",
+          "修订前联合图"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1原图（独立坐标）"
+        ]
+      ]
+    }
+  ],
+  "review_title": "中下部CT局部修订：C/D三排源漏、边列与F双孔",
+  "review_notes": "143个已批橙框按人工确认纳入，未伪造算法亮峰；C红叉明确排除。C/D大多数完整AA源漏列按三排重建，阶梯边列保留例外，不扩AA。F补第二栅CT。新增与移动几何仍供局部复核；原照片观察、材料对象、旧4940基准不变。"
+}

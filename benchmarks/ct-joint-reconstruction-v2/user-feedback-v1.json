@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-20",
+  "instruction": "孔不能重叠、有最小间距、孔列不能歪斜，重建应与现有AA/POLY匹配；先自行判断是否符合正向设计标准",
+  "adopted_as": [
+    "generation constraints",
+    "hard export gate",
+    "local family and material correspondence",
+    "raw observations kept separate from reconstructed cuts"
+  ],
+  "does_not_approve": "new contact identities, physical dimensions or net assignment"
+}

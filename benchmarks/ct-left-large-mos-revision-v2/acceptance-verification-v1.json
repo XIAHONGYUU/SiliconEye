@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20",
+  "status": "PASS",
+  "prior_locked_files_unchanged": {
+    "model-v1.json": "393cb3e8b5da94d326b2bc1bf037afd1f6fc3b61653e14aab29b1a776cb5e212",
+    "material-model-v1.json": "31aa6058261857d2b220c053e90f1f46b7006a78dc09bbf32e879beac9a89136",
+    "spec-v1.json": "a52773fd9da7da21bb03fe286da0816e957f992d11d4a31c63b811ac1edb1f6d",
+    "report-v1.json": "02f4bb30a662dfb025d51d8def2473cdf4e49d0fe9f6bb08543a62db1f5321d7",
+    "ledger-v1.json": "f178d7ecfe47e14df468dcf9f545ebb483f6925cd388a019b60bb106092c8ae0",
+    "new-contacts-v1.json": "60c49c4114a1216970546167f55caaf3c681bd9edc2f068e09ad39bd539046a2",
+    "unknown-sites-v1.json": "9a74a8bca23130104866727e30899e8f2d41fdc513c83db63da74a4508509e00",
+    "human-review-v1.json": "91495491df7251da0bea8eaea7f4d2444cc7b79371d407292a5d206f6c93fdcb",
+    "scoped-acceptance-v1.json": "54713b5e4dec99d39d574d85e8292a7b116d3da6ab7497961c541a90fbec84b8"
+  },
+  "latest_decision_ref": "human-review-v2.json",
+  "acceptance_sha256": "4fb890a03216f5b5ec1a9ed4fe601d15221992384176c3cbed76b45eb57ce86b",
+  "previous_2709_records": "exact_equal",
+  "current_models": "4940 contacts,695 POLY,335 AA unchanged",
+  "tests": "previous442 passed; no extraction/code changes this acceptance turn",
+  "checks": [
+    "all previous snapshot hashes unchanged",
+    "current and checkpoint relative links valid",
+    "review page references exist",
+    "prior page and current task entry archived exactly"
+  ],
+  "unknown_slots_not_promoted": true
+}

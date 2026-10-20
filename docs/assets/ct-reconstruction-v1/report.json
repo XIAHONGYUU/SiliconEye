@@ -1,0 +1,433 @@
+{
+  "implementation_sha256": "0df50eeabee8dc04040a3c798055a531abbbf4c3303bcca935acf92a1175b6e7",
+  "stage": "local_CT_pilot_not_fullframe_release",
+  "scopes": [
+    {
+      "id": "CT01",
+      "observations": 51,
+      "hypotheses": {
+        "unknown": 37,
+        "AA_candidate": 14
+      },
+      "evidence_tiers": {
+        "compact_shape": 36,
+        "relaxed_shape": 15
+      },
+      "spacing_conflicts": [
+        [
+          "CT-CT01-0004",
+          "CT-CT01-0038"
+        ],
+        [
+          "CT-CT01-0004",
+          "CT-CT01-0037"
+        ],
+        [
+          "CT-CT01-0014",
+          "CT-CT01-0016"
+        ],
+        [
+          "CT-CT01-0018",
+          "CT-CT01-0025"
+        ],
+        [
+          "CT-CT01-0019",
+          "CT-CT01-0023"
+        ],
+        [
+          "CT-CT01-0020",
+          "CT-CT01-0024"
+        ],
+        [
+          "CT-CT01-0022",
+          "CT-CT01-0027"
+        ],
+        [
+          "CT-CT01-0030",
+          "CT-CT01-0035"
+        ],
+        [
+          "CT-CT01-0031",
+          "CT-CT01-0032"
+        ],
+        [
+          "CT-CT01-0033",
+          "CT-CT01-0050"
+        ],
+        [
+          "CT-CT01-0036",
+          "CT-CT01-0051"
+        ],
+        [
+          "CT-CT01-0042",
+          "CT-CT01-0046"
+        ],
+        [
+          "CT-CT01-0043",
+          "CT-CT01-0045"
+        ],
+        [
+          "CT-CT01-0049",
+          "CT-CT01-0050"
+        ]
+      ]
+    },
+    {
+      "id": "CT02",
+      "observations": 153,
+      "hypotheses": {
+        "AA_candidate": 25,
+        "unknown": 128
+      },
+      "evidence_tiers": {
+        "compact_shape": 135,
+        "relaxed_shape": 18
+      },
+      "spacing_conflicts": [
+        [
+          "CT-CT02-0001",
+          "CT-CT02-0148"
+        ],
+        [
+          "CT-CT02-0013",
+          "CT-CT02-0143"
+        ],
+        [
+          "CT-CT02-0015",
+          "CT-CT02-0016"
+        ],
+        [
+          "CT-CT02-0031",
+          "CT-CT02-0041"
+        ],
+        [
+          "CT-CT02-0032",
+          "CT-CT02-0043"
+        ],
+        [
+          "CT-CT02-0038",
+          "CT-CT02-0042"
+        ],
+        [
+          "CT-CT02-0050",
+          "CT-CT02-0062"
+        ],
+        [
+          "CT-CT02-0054",
+          "CT-CT02-0059"
+        ],
+        [
+          "CT-CT02-0055",
+          "CT-CT02-0060"
+        ],
+        [
+          "CT-CT02-0058",
+          "CT-CT02-0066"
+        ],
+        [
+          "CT-CT02-0080",
+          "CT-CT02-0097"
+        ],
+        [
+          "CT-CT02-0087",
+          "CT-CT02-0088"
+        ],
+        [
+          "CT-CT02-0091",
+          "CT-CT02-0092"
+        ],
+        [
+          "CT-CT02-0095",
+          "CT-CT02-0096"
+        ],
+        [
+          "CT-CT02-0102",
+          "CT-CT02-0121"
+        ],
+        [
+          "CT-CT02-0104",
+          "CT-CT02-0122"
+        ],
+        [
+          "CT-CT02-0105",
+          "CT-CT02-0123"
+        ],
+        [
+          "CT-CT02-0106",
+          "CT-CT02-0124"
+        ],
+        [
+          "CT-CT02-0108",
+          "CT-CT02-0109"
+        ],
+        [
+          "CT-CT02-0109",
+          "CT-CT02-0110"
+        ],
+        [
+          "CT-CT02-0111",
+          "CT-CT02-0129"
+        ],
+        [
+          "CT-CT02-0112",
+          "CT-CT02-0118"
+        ],
+        [
+          "CT-CT02-0113",
+          "CT-CT02-0120"
+        ],
+        [
+          "CT-CT02-0140",
+          "CT-CT02-0141"
+        ],
+        [
+          "CT-CT02-0145",
+          "CT-CT02-0146"
+        ],
+        [
+          "CT-CT02-0146",
+          "CT-CT02-0147"
+        ]
+      ]
+    },
+    {
+      "id": "CT03",
+      "observations": 77,
+      "hypotheses": {
+        "AA_candidate": 29,
+        "unknown": 28,
+        "POLY_candidate": 20
+      },
+      "evidence_tiers": {
+        "compact_shape": 66,
+        "relaxed_shape": 11
+      },
+      "spacing_conflicts": [
+        [
+          "CT-CT03-0005",
+          "CT-CT03-0006"
+        ],
+        [
+          "CT-CT03-0006",
+          "CT-CT03-0007"
+        ],
+        [
+          "CT-CT03-0010",
+          "CT-CT03-0011"
+        ],
+        [
+          "CT-CT03-0025",
+          "CT-CT03-0026"
+        ],
+        [
+          "CT-CT03-0032",
+          "CT-CT03-0033"
+        ],
+        [
+          "CT-CT03-0034",
+          "CT-CT03-0035"
+        ],
+        [
+          "CT-CT03-0037",
+          "CT-CT03-0038"
+        ],
+        [
+          "CT-CT03-0046",
+          "CT-CT03-0072"
+        ],
+        [
+          "CT-CT03-0048",
+          "CT-CT03-0049"
+        ],
+        [
+          "CT-CT03-0050",
+          "CT-CT03-0051"
+        ],
+        [
+          "CT-CT03-0063",
+          "CT-CT03-0064"
+        ],
+        [
+          "CT-CT03-0065",
+          "CT-CT03-0066"
+        ],
+        [
+          "CT-CT03-0067",
+          "CT-CT03-0068"
+        ],
+        [
+          "CT-CT03-0068",
+          "CT-CT03-0069"
+        ],
+        [
+          "CT-CT03-0070",
+          "CT-CT03-0071"
+        ]
+      ]
+    },
+    {
+      "id": "CT04",
+      "observations": 192,
+      "hypotheses": {
+        "unknown": 152,
+        "AA_candidate": 40
+      },
+      "evidence_tiers": {
+        "compact_shape": 162,
+        "relaxed_shape": 30
+      },
+      "spacing_conflicts": [
+        [
+          "CT-CT04-0018",
+          "CT-CT04-0020"
+        ],
+        [
+          "CT-CT04-0023",
+          "CT-CT04-0026"
+        ],
+        [
+          "CT-CT04-0024",
+          "CT-CT04-0027"
+        ],
+        [
+          "CT-CT04-0028",
+          "CT-CT04-0030"
+        ],
+        [
+          "CT-CT04-0029",
+          "CT-CT04-0031"
+        ],
+        [
+          "CT-CT04-0036",
+          "CT-CT04-0039"
+        ],
+        [
+          "CT-CT04-0037",
+          "CT-CT04-0040"
+        ],
+        [
+          "CT-CT04-0043",
+          "CT-CT04-0170"
+        ],
+        [
+          "CT-CT04-0044",
+          "CT-CT04-0169"
+        ],
+        [
+          "CT-CT04-0047",
+          "CT-CT04-0048"
+        ],
+        [
+          "CT-CT04-0063",
+          "CT-CT04-0064"
+        ],
+        [
+          "CT-CT04-0070",
+          "CT-CT04-0174"
+        ],
+        [
+          "CT-CT04-0071",
+          "CT-CT04-0072"
+        ],
+        [
+          "CT-CT04-0071",
+          "CT-CT04-0073"
+        ],
+        [
+          "CT-CT04-0072",
+          "CT-CT04-0073"
+        ],
+        [
+          "CT-CT04-0075",
+          "CT-CT04-0174"
+        ],
+        [
+          "CT-CT04-0077",
+          "CT-CT04-0082"
+        ],
+        [
+          "CT-CT04-0078",
+          "CT-CT04-0176"
+        ],
+        [
+          "CT-CT04-0086",
+          "CT-CT04-0087"
+        ],
+        [
+          "CT-CT04-0088",
+          "CT-CT04-0178"
+        ],
+        [
+          "CT-CT04-0100",
+          "CT-CT04-0102"
+        ],
+        [
+          "CT-CT04-0110",
+          "CT-CT04-0114"
+        ],
+        [
+          "CT-CT04-0112",
+          "CT-CT04-0116"
+        ],
+        [
+          "CT-CT04-0119",
+          "CT-CT04-0123"
+        ],
+        [
+          "CT-CT04-0121",
+          "CT-CT04-0125"
+        ],
+        [
+          "CT-CT04-0122",
+          "CT-CT04-0127"
+        ],
+        [
+          "CT-CT04-0130",
+          "CT-CT04-0131"
+        ],
+        [
+          "CT-CT04-0131",
+          "CT-CT04-0132"
+        ],
+        [
+          "CT-CT04-0145",
+          "CT-CT04-0148"
+        ],
+        [
+          "CT-CT04-0146",
+          "CT-CT04-0149"
+        ],
+        [
+          "CT-CT04-0150",
+          "CT-CT04-0151"
+        ],
+        [
+          "CT-CT04-0152",
+          "CT-CT04-0192"
+        ],
+        [
+          "CT-CT04-0157",
+          "CT-CT04-0159"
+        ],
+        [
+          "CT-CT04-0164",
+          "CT-CT04-0165"
+        ]
+      ]
+    }
+  ],
+  "observed_candidates": 473,
+  "baseline_unchanged": true,
+  "new_holes_from_rules": 0,
+  "geometry_status": "PASS_square_primitives",
+  "spacing_status": "HOLD_conflicts_not_automatically_deleted",
+  "release_status": "HOLD_local_projection_and_landing_review",
+  "real_PDK_DRC": "not_run_process_and_scale_unknown",
+  "M1_enclosure": "not_checked",
+  "fullframe_coverage": false,
+  "counts_are_physical_contacts": false,
+  "baseline_ref": {
+    "path": "benchmarks/poly-closeout-v3/model-v1.json",
+    "sha256": "ba2aafa2080f4bec2f1dec589a2fbdf2f254e23dbb75ac772b6730dfaa5d591a"
+  }
+}

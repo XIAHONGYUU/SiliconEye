@@ -1,0 +1,139 @@
+{
+  "operation": "review_revision",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-right6-reviewed-v5/material-model-v1.json",
+      "sha256": "83f88884d8c805175dd0a9aa015e9f4801750317b3a9905959df8d4bfe542ecc"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-transfer-v1/model-v1.json",
+      "sha256": "a4a7dda329e5663a97ced5d96790d1d6f8c0f30623087ed359c54e36e186f346"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-transfer-revision-v2/human-review-v1.json",
+      "sha256": "8134130991c59e6192b3562e1b3b6c1e1eea5b0d71f8a6648f7af7e88701d66c"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "bus_bbox": [
+    1407,
+    1500,
+    1560,
+    1507
+  ],
+  "contact_shifts": {
+    "RIGHT6-GATE": [
+      0,
+      -5
+    ]
+  },
+  "retired_families": [
+    "RING-TOP",
+    "RING-LEFT"
+  ],
+  "profile_rows": [
+    {
+      "id": "RING-TOP",
+      "axis": 0,
+      "source_roi": [
+        3188,
+        1829,
+        3650,
+        1841
+      ],
+      "source_origin": 3201.5,
+      "source_pitch": 14.15,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3263,
+        2001.5
+      ],
+      "layout_pitch": 14.15,
+      "material": "AA",
+      "target": "AA-W07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2
+    },
+    {
+      "id": "RING-LEFT",
+      "axis": 1,
+      "source_roi": [
+        3182,
+        1845,
+        3193,
+        2065
+      ],
+      "source_origin": 1848.6,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3247.5,
+        2014.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA-W07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2
+    }
+  ],
+  "cases": [
+    {
+      "id": "W1",
+      "title": "相邻宽MOS",
+      "source_bbox": [
+        920,
+        1170,
+        1390,
+        1380
+      ],
+      "layout_bbox": [
+        1190,
+        1370,
+        1595,
+        1540
+      ],
+      "scope": "宽MOS保持已审结果。只核对六管共栅端部是否与宽MOS相对位置合理；六栅指与共栅关系不变。"
+    },
+    {
+      "id": "R1",
+      "title": "电阻阵列外围环：左上角",
+      "source_bbox": [
+        3100,
+        1770,
+        3670,
+        2070
+      ],
+      "layout_bbox": [
+        3200,
+        1950,
+        3750,
+        2240
+      ],
+      "scope": "只核对环左上子段新补查孔列；内部电阻7孔保持已审结果。横向32、竖向数量按实测峰输出，不宣称全环。"
+    }
+  ],
+  "rationale": {
+    "source_gate_row_median_y": {
+      "RIGHT6": 1319,
+      "WIDE": 1320
+    },
+    "old_layout_gate_row_y": {
+      "RIGHT6": 1508.5,
+      "WIDE": 1503.5
+    },
+    "candidate_common_layout_gate_y": 1503.5,
+    "basis": "Actual photo row agreement within optical sampling uncertainty and approved WIDE endpoint height1507; preserve six fingers and shared-gate topology. Relative geometry candidate, not process dimensional measurement."
+  }
+}

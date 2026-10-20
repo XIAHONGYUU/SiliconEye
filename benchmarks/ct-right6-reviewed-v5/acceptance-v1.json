@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20",
+  "scope": "RIGHT6_local_AA_POLY_CT_displayed_relationships",
+  "review_state": "human_accepted",
+  "accepted_SD_contacts": 42,
+  "accepted_gate_contacts": 11,
+  "confirmed_gate_fingers": 6,
+  "confirmed_common_gate": "POLY-RIGHT6-COMMON",
+  "remaining_unknown_slots_in_this_review": 0,
+  "authoritative_review_record": "human-review-v1.json",
+  "prior_candidate_fields": "Historical per-object candidate labels are preserved; this linked review ledger records current scoped acceptance",
+  "locked_files": {
+    "model-v1.json": "dc41723146e54bd3b008bbccb33d835292517d68750bd4567a3814e35631ea04",
+    "material-model-v1.json": "83f88884d8c805175dd0a9aa015e9f4801750317b3a9905959df8d4bfe542ecc",
+    "human-review-v1.json": "1154898fb6d679d465798dd40468ae150009b77a0e7abb2b827d9c8add89f636",
+    "report-v1.json": "03b6897a03bd2ba75a1c6eb09729cf5575d6775cf716e1c2ead1677211297680",
+    "spec-v1.json": "ee9c0501c5d90fa190d7be319cc9677a03bd179f87b2f934526237cb3334792f"
+  },
+  "not_accepted": [
+    "physical process dimensions",
+    "M1 enclosure or upper metal routing",
+    "full-frame CT material truth"
+  ],
+  "prior_records_unchanged": 52,
+  "human_promoted_contact": "CTJ-RIGHT6-GATE-H01",
+  "promotion_evidence": "human confirmation; no invented optical peak measurements"
+}

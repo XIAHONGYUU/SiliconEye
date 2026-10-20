@@ -1,0 +1,21 @@
+{
+  "pytest_full": {
+    "passed": 393,
+    "seconds": 13.18
+  },
+  "pytest_final_parameterized_change": {
+    "passed": 10,
+    "seconds": 0.47
+  },
+  "ruff": "PASS",
+  "input_and_baseline_hashes": "PASS",
+  "implementation_hash": "PASS",
+  "HTML_SVG_PNG_resources": "PASS",
+  "unique_DOM_ids": "PASS",
+  "all_new_ownership_unknown": true,
+  "zero_unreviewed_periodic_snap": true,
+  "browser_rendering": "not automatically tested",
+  "simulated_DOM_select_callbacks": "PASS; not browser rendering",
+  "current_document_links": "PASS",
+  "git_diff_check": "PASS"
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "30 Q2 bottom POLY contact rows only",
+  "parent_CT_records_preserved": 1825,
+  "new_gate_CT_candidates": 60,
+  "total_CT_snapshot": 1885,
+  "gate_counts": {
+    "A": 8,
+    "B": 8,
+    "C": 14
+  },
+  "candidate_CT_counts": {
+    "A": 16,
+    "B": 16,
+    "C": 28
+  },
+  "observed_counts_per_gate": 2,
+  "count_status": "AI candidate count from measured row peaks, not yet human per-cut approval",
+  "weaker_optical_peaks_retained": 2,
+  "material_models": "unchanged",
+  "POLY_gate_ids": [
+    "CL2-Q2-A1-01",
+    "CL2-Q2-A1-02",
+    "CL2-Q2-A2-01",
+    "CL2-Q2-A2-02",
+    "CL2-Q2-A2-03",
+    "CL2-Q2-A2-04",
+    "CL2-Q2-A3-01",
+    "CL2-Q2-A3-02",
+    "CL2-Q2-B1-01",
+    "CL2-Q2-B1-02",
+    "CL2-Q2-B1-03",
+    "CL2-Q2-B1-04",
+    "CL2-Q2-B2-01",
+    "CL2-Q2-B2-02",
+    "CL2-Q2-B2-03",
+    "CL2-Q2-B2-04",
+    "CL2-Q2-C0-01",
+    "CL2-Q2-C0-02",
+    "CL2-Q2-C0-03",
+    "CL2-Q2-C0-04",
+    "CL2-Q2-C0-05",
+    "CL2-Q2-C1-01",
+    "CL2-Q2-C1-02",
+    "CL2-Q2-C2-01",
+    "CL2-Q2-C2-02",
+    "CL2-Q2-C3-01",
+    "CL2-Q2-C3-02",
+    "CL2-Q2-C3-03",
+    "CL2-Q2-C3-04",
+    "CL2-Q2-C3-05"
+  ],
+  "M1_role": "Human-confirmed bottom exit plus visible M1 lead-region cross-check, not coordinate transfer",
+  "M1_assignment": "unknown",
+  "not_claimed": [
+    "physical process dimensions",
+    "exact optical boundary truth",
+    "common-gate connectivity",
+    "precise M1 contact projection",
+    "new electrical nets"
+  ]
+}

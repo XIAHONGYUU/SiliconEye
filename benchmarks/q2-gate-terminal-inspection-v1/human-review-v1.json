@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-20",
+  "user_verbatim": "1.A,B下方短亮条包含栅CT\n2.实际全部在下端引出",
+  "scope": "Q2 A/B/C, QG01–QG30 in gate terminal inspection v1",
+  "confirmed": {
+    "AB_bottom_bright_bars_contain_gate_CT": true,
+    "all_30_gates_terminal_exit_side": "bottom"
+  },
+  "gate_ids": [
+    "CL2-Q2-A1-01",
+    "CL2-Q2-A1-02",
+    "CL2-Q2-A2-01",
+    "CL2-Q2-A2-02",
+    "CL2-Q2-A2-03",
+    "CL2-Q2-A2-04",
+    "CL2-Q2-A3-01",
+    "CL2-Q2-A3-02",
+    "CL2-Q2-B1-01",
+    "CL2-Q2-B1-02",
+    "CL2-Q2-B1-03",
+    "CL2-Q2-B1-04",
+    "CL2-Q2-B2-01",
+    "CL2-Q2-B2-02",
+    "CL2-Q2-B2-03",
+    "CL2-Q2-B2-04",
+    "CL2-Q2-C0-01",
+    "CL2-Q2-C0-02",
+    "CL2-Q2-C0-03",
+    "CL2-Q2-C0-04",
+    "CL2-Q2-C0-05",
+    "CL2-Q2-C1-01",
+    "CL2-Q2-C1-02",
+    "CL2-Q2-C2-01",
+    "CL2-Q2-C2-02",
+    "CL2-Q2-C3-01",
+    "CL2-Q2-C3-02",
+    "CL2-Q2-C3-03",
+    "CL2-Q2-C3-04",
+    "CL2-Q2-C3-05"
+  ],
+  "still_unknown": [
+    "per-gate CT count and precise cut positions",
+    "exact terminal POLY boundary",
+    "whether gates share POLY or metal connectivity",
+    "specific M1 segment assignment"
+  ],
+  "not_inferred": "C upper M1 candidate is not automatically assigned as a gate lead; bottom-side confirmation does not establish a common gate.",
+  "preservation": "existing1825 CT and AA/POLY geometry unchanged",
+  "locked_snapshot_refs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-middle-mos-confirmed-v2/model-v1.json",
+      "sha256": "551cece7be91ba21774911b48f869dcf948883aecdb69fc6d3d6ec3dba20f798"
+    },
+    "source_paths": {
+      "path": "benchmarks/ct-middle-mos-v1/spec-v1.json",
+      "sha256": "7c865157a90dbf43f00a96b99d9c75b523f11290a7a7b066e2dbbaed00665045"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "prior_acceptance": {
+      "path": "benchmarks/ct-middle-mos-confirmed-v2/acceptance-v1.json",
+      "sha256": "2b44a7407c529294ed6c998e3b7ef6fc4dcf833f3a7ad2ab1327dfb65b516045"
+    }
+  }
+}

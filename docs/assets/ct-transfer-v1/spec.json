@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-right6-reviewed-v5/material-model-v1.json",
+      "sha256": "83f88884d8c805175dd0a9aa015e9f4801750317b3a9905959df8d4bfe542ecc"
+    },
+    "protected_contacts": {
+      "path": "benchmarks/ct-right6-reviewed-v5/model-v1.json",
+      "sha256": "dc41723146e54bd3b008bbccb33d835292517d68750bd4567a3814e35631ea04"
+    },
+    "acceptance": {
+      "path": "benchmarks/ct-right6-reviewed-v5/acceptance-v1.json",
+      "sha256": "8106853cd504d0abe4f62abae07729001199d480f572e6b7609312c13860e3c6"
+    },
+    "observations": {
+      "path": "benchmarks/ct-reconstruction-v1/model-v1.json",
+      "sha256": "ab9edcbc090d65a8b3b7b9cf98e40934cb87ce6340ded4c183e9a72011a442e6"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "families": [
+    {
+      "id": "WIDE-DIFF",
+      "AA_target": "AA-F01622",
+      "gate_ids": [
+        "CL2-Q3-WIDE-01"
+      ],
+      "native_columns_at_first_row": [
+        964,
+        1144
+      ],
+      "native_column_drift_per_row": 0.3,
+      "native_first_row_y": 1220,
+      "native_row_pitch": 14.5,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        1205,
+        1305
+      ],
+      "search_radius_xy": [
+        5,
+        4
+      ],
+      "min_gray": 200,
+      "min_residual": 16,
+      "min_gate_body_contrast": 20,
+      "source_boundary_constraints": {
+        "first_column_native_x_range": [
+          958,
+          974
+        ],
+        "last_column_native_x_range": [
+          1137,
+          1152
+        ],
+        "excluded_column_native_x_ranges": [
+          [
+            1158,
+            1173
+          ]
+        ]
+      },
+      "basis": "AI wide MOS boundaries from source; do not reuse neighboring RIGHT6 contact columns"
+    }
+  ],
+  "rows": [
+    {
+      "id": "WIDE-GATE",
+      "material": "POLY",
+      "target": "CL2-Q3-WIDE-01",
+      "axis": 0,
+      "source_roi": [
+        980,
+        1310,
+        1135,
+        1326
+      ],
+      "source_origin": 983,
+      "source_pitch": 14.7,
+      "source_fit_tolerance": 4,
+      "layout_origin": [
+        1234.5,
+        1503.5
+      ],
+      "layout_pitch": 13.26,
+      "min_gray": 190,
+      "min_residual": 16
+    },
+    {
+      "id": "RING-TOP",
+      "material": "AA",
+      "target": "AA-W07",
+      "axis": 0,
+      "source_roi": [
+        3188,
+        1825,
+        3650,
+        1844
+      ],
+      "source_origin": 3203,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3264.5,
+        2001.5
+      ],
+      "layout_pitch": 14,
+      "min_gray": 190,
+      "min_residual": 16
+    },
+    {
+      "id": "RING-LEFT",
+      "material": "AA",
+      "target": "AA-W07",
+      "axis": 1,
+      "source_roi": [
+        3178,
+        1845,
+        3198,
+        2040
+      ],
+      "source_origin": 1848,
+      "source_pitch": 15,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3247.5,
+        2014.5
+      ],
+      "layout_pitch": 15,
+      "min_gray": 190,
+      "min_residual": 16
+    },
+    {
+      "id": "RESISTOR-TOP",
+      "material": "POLY",
+      "target": "G48-P01",
+      "axis": 0,
+      "source_roi": [
+        3223,
+        1860,
+        3325,
+        1883
+      ],
+      "source_origin": 3231,
+      "source_pitch": 14,
+      "source_fit_tolerance": 4,
+      "layout_origin": [
+        3281.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "min_gray": 190,
+      "min_residual": 16
+    }
+  ],
+  "cases": [
+    {
+      "id": "W1",
+      "title": "相邻宽MOS",
+      "source_bbox": [
+        920,
+        1170,
+        1390,
+        1380
+      ],
+      "layout_bbox": [
+        1190,
+        1370,
+        1595,
+        1540
+      ],
+      "scope": "核对宽栅两侧源漏孔与下端栅CT；右侧灰蓝RIGHT6为已审背景，不重复验收。"
+    },
+    {
+      "id": "R1",
+      "title": "电阻阵列外围环：左上角",
+      "source_bbox": [
+        3100,
+        1770,
+        3670,
+        2070
+      ],
+      "layout_bbox": [
+        3200,
+        1950,
+        3750,
+        2210
+      ],
+      "scope": "核对环的顶部及左侧观测支持部分；不将环内电阻端部孔归入环，也不宣称整圈孔已完整。"
+    },
+    {
+      "id": "E1",
+      "title": "第一条长电阻上端",
+      "source_bbox": [
+        3140,
+        1790,
+        3380,
+        2010
+      ],
+      "layout_bbox": [
+        3220,
+        1960,
+        3410,
+        2170
+      ],
+      "scope": "核对第一条电阻上端POLY接触，旁边环孔分开显示；未处理电阻底端或其余17条电阻。"
+    }
+  ],
+  "correspondence_status": "AI local boundary/row hypotheses awaiting human review; no global projection used",
+  "coverage": "local supported subsets; do not treat unobserved positions as absence"
+}

@@ -1,0 +1,288 @@
+[
+  {
+    "id": "WIDE-DIFF",
+    "native_row_fit": [
+      1220.547619047619,
+      14.714285714285491
+    ],
+    "native_y_fit_RMS_px": 1.7031716445484142,
+    "photo_residual_core_width_median_px": 8.0,
+    "photo_residual_core_width_range_px": [
+      3,
+      13
+    ],
+    "gate_body_contrasts": [
+      73.50675675675677
+    ],
+    "correspondence": "AI_local_family_match_not_human_accepted",
+    "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+    "source_observations": [
+      {
+        "column": 0,
+        "row": 0,
+        "native_center": [
+          963,
+          1219
+        ],
+        "supported": true,
+        "peak_gray": 248.0,
+        "residual": 60.05113285224843,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 1.4142135623730951
+      },
+      {
+        "column": 0,
+        "row": 1,
+        "native_center": [
+          964,
+          1235
+        ],
+        "supported": true,
+        "peak_gray": 248.0,
+        "residual": 62.114739319834314,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.5830951894845067
+      },
+      {
+        "column": 0,
+        "row": 2,
+        "native_center": [
+          961,
+          1252
+        ],
+        "supported": true,
+        "peak_gray": 236.0,
+        "residual": 63.16481563965138,
+        "residual_core_width_px": 11,
+        "seed_distance_px": 4.6861498055440105
+      },
+      {
+        "column": 0,
+        "row": 3,
+        "native_center": [
+          965,
+          1265
+        ],
+        "supported": true,
+        "peak_gray": 246.0,
+        "residual": 62.65231615315349,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 1.5033296378372925
+      },
+      {
+        "column": 0,
+        "row": 4,
+        "native_center": [
+          965,
+          1282
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 56.10732345598828,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 4.004996878900159
+      },
+      {
+        "column": 0,
+        "row": 5,
+        "native_center": [
+          966,
+          1294
+        ],
+        "supported": true,
+        "peak_gray": 241.0,
+        "residual": 61.2060618983931,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 1.5811388300841898
+      },
+      {
+        "column": 1,
+        "row": 0,
+        "native_center": [
+          1144,
+          1221
+        ],
+        "supported": true,
+        "peak_gray": 248.0,
+        "residual": 68.1019964767888,
+        "residual_core_width_px": 13,
+        "seed_distance_px": 1.0
+      },
+      {
+        "column": 1,
+        "row": 1,
+        "native_center": [
+          1143,
+          1234
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 63.90253224330948,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 1.3928388277183694
+      },
+      {
+        "column": 1,
+        "row": 2,
+        "native_center": [
+          1144,
+          1253
+        ],
+        "supported": true,
+        "peak_gray": 245.0,
+        "residual": 70.15065321095702,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 4.0447496832313234
+      },
+      {
+        "column": 1,
+        "row": 3,
+        "native_center": [
+          1144,
+          1262
+        ],
+        "supported": true,
+        "peak_gray": 236.0,
+        "residual": 67.5998661959573,
+        "residual_core_width_px": 3,
+        "seed_distance_px": 1.749285568453637
+      },
+      {
+        "column": 1,
+        "row": 4,
+        "native_center": [
+          1146,
+          1278
+        ],
+        "supported": true,
+        "peak_gray": 246.0,
+        "residual": 67.38417632015143,
+        "residual_core_width_px": 10,
+        "seed_distance_px": 0.7999999999999545
+      },
+      {
+        "column": 1,
+        "row": 5,
+        "native_center": [
+          1145,
+          1293
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 64.43658210054261,
+        "residual_core_width_px": 9,
+        "seed_distance_px": 0.7071067811865476
+      }
+    ]
+  },
+  {
+    "id": "WIDE-GATE",
+    "occupied_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "unobserved_slots": [],
+    "exclusions_not_deleted_evidence": [],
+    "correspondence": "AI_local_row_and_material_hypothesis",
+    "completeness": "observed_row_subset_not_full_material_coverage"
+  },
+  {
+    "id": "RING-TOP",
+    "occupied_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      31
+    ],
+    "unobserved_slots": [
+      29,
+      30
+    ],
+    "exclusions_not_deleted_evidence": [
+      {
+        "source_id": "CT-CT03-0001",
+        "reason": "source_lattice_residual",
+        "residual": 5.666666666666515
+      },
+      {
+        "source_id": "CT-CT03-0002",
+        "reason": "source_lattice_residual",
+        "residual": 6.0
+      },
+      {
+        "source_id": "CT-CT03-0007",
+        "reason": "alternate_peak_same_slot"
+      },
+      {
+        "source_id": "CT-CT03-0068",
+        "reason": "alternate_peak_same_slot"
+      }
+    ],
+    "correspondence": "AI_local_row_and_material_hypothesis",
+    "completeness": "observed_row_subset_not_full_material_coverage"
+  },
+  {
+    "id": "RING-LEFT",
+    "occupied_slots": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "unobserved_slots": [],
+    "exclusions_not_deleted_evidence": [],
+    "correspondence": "AI_local_row_and_material_hypothesis",
+    "completeness": "observed_row_subset_not_full_material_coverage"
+  },
+  {
+    "id": "RESISTOR-TOP",
+    "occupied_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "unobserved_slots": [],
+    "exclusions_not_deleted_evidence": [],
+    "correspondence": "AI_local_row_and_material_hypothesis",
+    "completeness": "observed_row_subset_not_full_material_coverage"
+  }
+]

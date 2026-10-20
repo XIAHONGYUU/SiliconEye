@@ -1,0 +1,16 @@
+{
+  "full_tests": "439 passed in18.82s",
+  "ruff": "PASS silicon_eye/ct_transfer.py tests/test_ct_transfer.py",
+  "geometry": "PASS2709 contacts,0 overlap,0 gap violations,min edge gap4.4 relative px",
+  "parent_preservation": "2656 complete CT records;335 unrelated AA;694 unrelated POLY identical",
+  "source_preservation": "all inputs hashed; translated contacts source_evidence identical",
+  "assets": "SVG XML / PNG decode / local references and simulated select callbacks PASS",
+  "visual_review": "T-preview.png inspected; rightmost AA/POLY same row as neighbors",
+  "browser_render": "not tested: browser security blocks file protocol; no workaround attempted",
+  "locked_files": {
+    "model-v1.json": "4fe368880560d7ed27541812e5391bd4fcdcb8c2f64a62864cc551b9a2bb653d",
+    "material-model-v1.json": "e0ca21af912503f94caafb23aa058143541f820e23284f997b8e3521f052a058",
+    "report-v1.json": "7058f06336e437bdafa0aeee17ee307483d9a0c28105a9c63145bc005d90416a",
+    "acceptance-v1.json": "35e81f6e635b669160e3515f9f65e100a16e8c8cda94957a1219f2a17b8d9c8b"
+  }
+}

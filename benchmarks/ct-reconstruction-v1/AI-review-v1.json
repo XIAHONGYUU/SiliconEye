@@ -1,0 +1,37 @@
+{
+  "status": "candidate_not_human_approved",
+  "counts": [
+    {
+      "id": "CT01",
+      "compact": 36,
+      "supplement": 15,
+      "spacing_conflicts": 14
+    },
+    {
+      "id": "CT02",
+      "compact": 135,
+      "supplement": 18,
+      "spacing_conflicts": 26
+    },
+    {
+      "id": "CT03",
+      "compact": 66,
+      "supplement": 11,
+      "spacing_conflicts": 15
+    },
+    {
+      "id": "CT04",
+      "compact": 162,
+      "supplement": 30,
+      "spacing_conflicts": 34
+    }
+  ],
+  "observations": [
+    "Original source patches show real bright compact contacts arranged in columns and around rings",
+    "Some visible contacts are missed by the original compact-shape support filter",
+    "Brightness threshold change alone yielded no additional observations",
+    "Relaxed-shape actual peaks have row support but remain unknown; false positives and missed contacts still possible",
+    "Inherited global projection is not sufficient for final CT ownership; do not repeat unverified cross-layer projection"
+  ],
+  "next": "Verify local AA/POLY-to-photo correspondences before revising contact ownership. No full-frame approval request."
+}

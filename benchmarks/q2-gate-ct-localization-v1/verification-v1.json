@@ -1,0 +1,22 @@
+{
+  "pytest": "433 passed in 18.29s",
+  "ruff": "PASS",
+  "prior_1825_records_identical": true,
+  "all_AA_POLY_hashes_unchanged": true,
+  "whole_proposal_geometry": "PASS",
+  "all_60_new_contacts_target_their_own_POLY": true,
+  "M1_enclosure_and_nets": "unknown",
+  "source_supported_locations": 60,
+  "weaker_peaks_retained": 2,
+  "counts_not_forced_by_algorithm": "synthetic blank/one/two supported peaks and weak-extra rejection tests PASS",
+  "optical_measurement_implementation_sha256": "682b4fb22c285ad3fca4dcb94f365ba3a85dd26d6ae9cbec4b79be0b9f8b30bf",
+  "CT_transfer_implementation_sha256": "668a1330d0d42b5616285818fb84112e255d05c0fe98d19f0d4102cce3f81a76",
+  "HTML_SVG_PNG_resources": "PASS",
+  "simulated_switches": "PASS",
+  "visual_inspection": [
+    "A canonical",
+    "GA source overlay",
+    "C canonical"
+  ],
+  "browser_rendering": "not automatically tested"
+}

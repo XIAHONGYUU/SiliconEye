@@ -1,0 +1,26 @@
+{
+  "total": 4940,
+  "unchanged_parent_contacts": 4631,
+  "revised_contacts": 24,
+  "new_contacts": 285,
+  "new_by_case": {
+    "A": 16,
+    "C": 237,
+    "E": 29,
+    "F": 3
+  },
+  "AA_count": 335,
+  "POLY_count": 695,
+  "material_aliases": {
+    "AA2-LEFT-STAIR-AA5-0": "AA-LEFT-STAIR-SHARED-56",
+    "AA2-LEFT-STAIR-AA6-0": "AA-LEFT-STAIR-SHARED-56"
+  },
+  "scoped_acceptance_ref": "scoped-acceptance-v1.json",
+  "remaining_unknowns": [
+    "exact weak CT boundaries",
+    "M1/net assignment",
+    "whether middle terminal bands join the5 wide gates on POLY",
+    "full-frame coverage"
+  ],
+  "whole_layer_complete": false
+}

@@ -1,0 +1,38 @@
+{
+  "full_pytest": {
+    "passed": 404,
+    "seconds": 13.69
+  },
+  "ruff": "PASS",
+  "input_hashes_and_unchanged_baseline": "PASS",
+  "implementation_hash": "PASS",
+  "geometry_report": {
+    "status": "PASS",
+    "errors": [],
+    "positive_area_overlap_pairs": [],
+    "min_gap_violations": [],
+    "minimum_edge_gap_px": 8.761306122449014,
+    "minimum_AA_enclosure_px": 1.5,
+    "minimum_POLY_clearance_px": 1.5,
+    "contact_count": 42,
+    "physical_PDK_DRC": false,
+    "scope": "explicit_family_subset_not_full_CT_layer",
+    "baseline_ref": {
+      "path": "benchmarks/poly-closeout-v3/model-v1.json",
+      "sha256": "ba2aafa2080f4bec2f1dec589a2fbdf2f254e23dbb75ac772b6730dfaa5d591a"
+    },
+    "correspondence_status": "AI_candidate",
+    "M1_enclosure": "unknown",
+    "net_inference": false,
+    "implementation_sha256": "e933adeccfe99bb978c6bf8f8421a6fe3359c8a3c4570e00a97a572a3df79b21",
+    "retained_prior_observations": 473,
+    "phase": "geometry_and_material_landing_PASS; material_truth_not_human_accepted"
+  },
+  "HTML_SVG_PNG_resources": "PASS",
+  "browser_rendering": "not automatically tested",
+  "visual_inspection": "PIL preview and source-support patch inspected separately",
+  "human_approval": "pending_for_new_CT_family",
+  "simulated_DOM_callbacks": "PASS; not browser rendering",
+  "current_document_links": "PASS",
+  "git_diff_check": "PASS"
+}

@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "baseline": {
+      "path": "benchmarks/poly-closeout-v3/model-v1.json",
+      "sha256": "ba2aafa2080f4bec2f1dec589a2fbdf2f254e23dbb75ac772b6730dfaa5d591a"
+    },
+    "baseline_acceptance": {
+      "path": "benchmarks/poly-closeout-v3/stage-acceptance-v1.json",
+      "sha256": "72aad21e2c41fd0bf25eea86c1e54c22ac8890b2bec6cf46207547b033907929"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "prior_observations": {
+      "path": "benchmarks/ct-reconstruction-v1/model-v1.json",
+      "sha256": "ab9edcbc090d65a8b3b7b9cf98e40934cb87ce6340ded4c183e9a72011a442e6"
+    },
+    "geometry_parent": {
+      "path": "benchmarks/ct-source-correspondence-v3/model-v1.json",
+      "sha256": "334a33f48bd7c3a9ae5405c3d631ed2733255ea99176e6a29db823b3fa518c74"
+    },
+    "previous_source_image": {
+      "path": "docs/assets/ct-source-correspondence-v3/source.png",
+      "sha256": "3f5ab5d074fade571a2fb8117c3bed1436fa1bbb9e53e6dc4a291489c8cd8732"
+    },
+    "gate_review": {
+      "path": "benchmarks/ct-gate-bus-v4/human-review-v1.json",
+      "sha256": "478b39af0254edf248bc5dad7de23aa5a5705b71e1320b5a9a960f6832d45d2a"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "size_basis": "Optical residual cores measured before proposal; 5 relative px trial, not physical process size. Prior arbitrary 8 px was not measured. No adaptive shrinking to pass gate.",
+  "families": [
+    {
+      "id": "RIGHT6-DIFF",
+      "AA_target": "AA-F01621",
+      "gate_ids": [
+        "CL3-Q3-RIGHT-01",
+        "CL3-Q3-RIGHT-02",
+        "CL3-Q3-RIGHT-03",
+        "CL3-Q3-RIGHT-04",
+        "CL3-Q3-RIGHT-05",
+        "CL3-Q3-RIGHT-06"
+      ],
+      "native_columns_at_first_row": [
+        1164,
+        1195,
+        1227,
+        1258,
+        1289,
+        1320,
+        1351
+      ],
+      "native_column_drift_per_row": 0.3,
+      "native_first_row_y": 1220,
+      "native_row_pitch": 14.5,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        1205,
+        1305
+      ],
+      "search_radius_xy": [
+        5,
+        4
+      ],
+      "min_gray": 200,
+      "min_residual": 16,
+      "min_gate_body_contrast": 20,
+      "basis": "Human corrected source group boundaries; AI localized the next seven columns. Existing joint design geometry is preserved.",
+      "column_pitch_constraint": "uniform_in_design_coordinates",
+      "source_boundary_constraints": {
+        "first_column_native_x_range": [
+          1158,
+          1173
+        ],
+        "last_column_native_x_range": [
+          1345,
+          1361
+        ],
+        "excluded_column_native_x_ranges": [
+          [
+            1135,
+            1152
+          ]
+        ],
+        "basis": "User excludes neighboring wide MOS column and includes rightmost narrow MOS column; numeric windows localized by AI, not human pixel confirmation"
+      }
+    }
+  ],
+  "native_bbox": [
+    900,
+    1170,
+    1450,
+    1380
+  ],
+  "layout_bbox": [
+    1375,
+    1380,
+    1590,
+    1530
+  ],
+  "poly_connections": [
+    {
+      "id": "POLY-RIGHT6-COMMON",
+      "gate_ids": [
+        "CL3-Q3-RIGHT-01",
+        "CL3-Q3-RIGHT-02",
+        "CL3-Q3-RIGHT-03",
+        "CL3-Q3-RIGHT-04",
+        "CL3-Q3-RIGHT-05",
+        "CL3-Q3-RIGHT-06"
+      ],
+      "bus_layout_bbox": [
+        1407,
+        1501,
+        1560,
+        1516
+      ],
+      "native_bus_bbox": [
+        1174,
+        1310,
+        1355,
+        1328
+      ],
+      "unrelated_POLY_gap_px": 3,
+      "identity": "human_confirmed_common_gate",
+      "extent": "AI_candidate"
+    }
+  ],
+  "poly_contact_rows": [
+    {
+      "id": "RIGHT6-GATE",
+      "POLY_target": "POLY-RIGHT6-COMMON",
+      "first_layout_x": 1413.5,
+      "layout_pitch": 14,
+      "layout_y": 1508.5,
+      "min_gray": 205,
+      "min_residual": 16,
+      "observed_slots": [
+        {
+          "slot": 0,
+          "source_observation_id": "CT-CT02-0081"
+        },
+        {
+          "slot": 2,
+          "source_observation_id": "CT-CT02-0082"
+        },
+        {
+          "slot": 3,
+          "source_observation_id": "CT-CT02-0083"
+        },
+        {
+          "slot": 4,
+          "source_observation_id": "CT-CT02-0084"
+        },
+        {
+          "slot": 5,
+          "source_observation_id": "CT-CT02-0085"
+        },
+        {
+          "slot": 6,
+          "source_observation_id": "CT-CT02-0086"
+        },
+        {
+          "slot": 7,
+          "source_observation_id": "CT-CT02-0087"
+        },
+        {
+          "slot": 8,
+          "source_observation_id": "CT-CT02-0088"
+        },
+        {
+          "slot": 9,
+          "source_observation_id": "CT-CT02-0089"
+        },
+        {
+          "slot": 10,
+          "source_observation_id": "CT-CT02-0090"
+        }
+      ],
+      "unobserved_slot_indices": [
+        1
+      ],
+      "unobserved_slot_meaning": "potential missing observation, no manufactured contact and no absence claim",
+      "support": "real peaks retained from prior observations, not contact count inferred from MOS count"
+    }
+  ],
+  "retain_accepted_contact_records": true
+}

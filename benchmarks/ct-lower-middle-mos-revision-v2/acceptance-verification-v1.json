@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "snapshot_7044_CT_695_POLY_335_AA_unchanged": true,
+  "prior_frozen_files": {
+    "material-model-v1.json": "ad6442559087ed435dca2f5ec56f55be8bed9bdc3979022235f30ff75beb868a",
+    "spec-v1.json": "8e284a90b88f62e0c4ccc30e49f67f617cf8c0a254b68a8b7902043cfab4e4bc",
+    "ledger-v1.json": "52560f0c463193f43cc03aa3f0cd376eac85eafa9624373beded7c41c8f90242",
+    "verification-v1.json": "7c3450ecd40344d14bec3c10a0ce836270ccd59b8f0d678c45e132e7554a373c",
+    "scoped-acceptance-v1.json": "9bcb7fa039dceeaed11d0f2bbfe0a6a4e2e3da629090e6f0e3be8b2f838502c4",
+    "row-reconstruction-v1.json": "b801273afafb0bea75b25791cd0405d0212cd399c102a5ed4b95a204d04f9a33",
+    "report-v1.json": "0e210f8d06966d39d2c43935e9d25c23114f53901e81082e9bb7cd766af28b06",
+    "human-review-v1.json": "c528b06d2382559ab5136785c3596698ec892a9eab45acd01b857af91cbe1042",
+    "new-contacts-v1.json": "14e9f9d4069877f13432b4c4e202e8dba7711df63987cbf64c0533e67e66461b",
+    "unknown-sites-v1.json": "f2052b0fcb737df41721960a400b77c504972c48837b0dd18553aa9233184c7e",
+    "coverage-v1.json": "0617762168143f303697ba45126a3400268cb2941a4aaf3934256346f45c1a4c",
+    "excluded-sites-v1.json": "66435e4b5c55dcc31ee318a9367b2572f7d36dbb3c8d955a6165e49b2b6b051d",
+    "stage-quality-v1.json": "b3a5883e4bcdc5125a5eac42a6c71421ee2a023019cf322844d2f3ab7a1b54f7",
+    "model-v1.json": "fa6f8eae45baaa196a829c1c2f0b88b5d0016d52be11f94583a7c5fe70672d38"
+  },
+  "acceptance_sha256": "7eddd605014c45803c36edcf4eca8282b78dbfa997e208873b5b911d2895714c",
+  "coverage_inventory_sha256": "46c71f536d2e9cae2a9db248f3902ff21009722c09eb324132694b9bcb6eafdb",
+  "remaining_requested_local_reviews": 0,
+  "new_extraction_run": false,
+  "tests": "previous49 passed; no extraction or code changes this acceptance turn",
+  "checks": [
+    "all original snapshot and verification hashes unchanged",
+    "original review page and current task archived exactly",
+    "new page and document links valid",
+    "695 material inventory aligns with current CT ownership IDs"
+  ],
+  "whole_frame_complete": false
+}

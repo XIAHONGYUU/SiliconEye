@@ -1,0 +1,2764 @@
+{
+  "gates": [
+    {
+      "alias": "UG01",
+      "gate_id": "G55-P01",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01662-COL-0",
+      "right_column": "UP-AA-F01662-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        957,
+        635,
+        989,
+        669
+      ],
+      "source_row_bbox": [
+        957,
+        653,
+        989,
+        666
+      ],
+      "prior_derived_endpoint_y": 650,
+      "observations": [
+        {
+          "native_center": [
+            964,
+            659
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 43.4668134160666,
+          "profile_gray": 249.5082244873047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            980,
+            659
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 42.54768984972361,
+          "profile_gray": 244.53872680664062,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            964,
+            659
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 43.4668134160666,
+          "profile_gray": 249.5082244873047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            980,
+            659
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 42.54768984972361,
+          "profile_gray": 244.53872680664062,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG02",
+      "gate_id": "G55-P02",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01661-COL-0",
+      "right_column": "UP-AA-F01661-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1036,
+        636,
+        1072,
+        669
+      ],
+      "source_row_bbox": [
+        1036,
+        654,
+        1072,
+        667
+      ],
+      "prior_derived_endpoint_y": 650,
+      "observations": [
+        {
+          "native_center": [
+            1050,
+            660
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 36.32407436644564,
+          "profile_gray": 245.7866668701172,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1060,
+            660
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 46.752730822518856,
+          "profile_gray": 246.49569702148438,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1050,
+            660
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 36.32407436644564,
+          "profile_gray": 245.7866668701172,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1060,
+            660
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 46.752730822518856,
+          "profile_gray": 246.49569702148438,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG03",
+      "gate_id": "G55-P03",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01660-COL-0",
+      "right_column": "UP-AA-F01660-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1116,
+        637,
+        1152,
+        670
+      ],
+      "source_row_bbox": [
+        1116,
+        654,
+        1152,
+        667
+      ],
+      "prior_derived_endpoint_y": 651,
+      "observations": [
+        {
+          "native_center": [
+            1124,
+            660
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 47.32431366262094,
+          "profile_gray": 247.31784057617188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1140,
+            660
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.4692518911678,
+          "profile_gray": 245.09039306640625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1124,
+            660
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 47.32431366262094,
+          "profile_gray": 247.31784057617188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1140,
+            660
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.4692518911678,
+          "profile_gray": 245.09039306640625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG04",
+      "gate_id": "G55-P04",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01663-COL-0",
+      "right_column": "UP-AA-F01663-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1196,
+        638,
+        1232,
+        670
+      ],
+      "source_row_bbox": [
+        1196,
+        655,
+        1232,
+        668
+      ],
+      "prior_derived_endpoint_y": 651,
+      "observations": [
+        {
+          "native_center": [
+            1209,
+            661
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 36.31927403084612,
+          "profile_gray": 244.4136505126953,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1220,
+            661
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 47.8614368208423,
+          "profile_gray": 244.34791564941406,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1209,
+            661
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 36.31927403084612,
+          "profile_gray": 244.4136505126953,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1220,
+            661
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 47.8614368208423,
+          "profile_gray": 244.34791564941406,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG05",
+      "gate_id": "SG-U06-005",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01664-COL-0",
+      "right_column": "UP-AA-F01664-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1276,
+        638,
+        1312,
+        671
+      ],
+      "source_row_bbox": [
+        1276,
+        656,
+        1312,
+        669
+      ],
+      "prior_derived_endpoint_y": 652,
+      "observations": [
+        {
+          "native_center": [
+            1289,
+            662
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 41.76256219293356,
+          "profile_gray": 242.4511260986328,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1300,
+            662
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 62.12209080340335,
+          "profile_gray": 234.7678680419922,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1289,
+            662
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 41.76256219293356,
+          "profile_gray": 242.4511260986328,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1300,
+            662
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 62.12209080340335,
+          "profile_gray": 234.7678680419922,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG06",
+      "gate_id": "SG-U06-006",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01665-COL-0",
+      "right_column": "UP-AA-F01665-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1356,
+        639,
+        1392,
+        671
+      ],
+      "source_row_bbox": [
+        1356,
+        656,
+        1392,
+        669
+      ],
+      "prior_derived_endpoint_y": 652,
+      "observations": [
+        {
+          "native_center": [
+            1368,
+            662
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 58.72060128490699,
+          "profile_gray": 233.60989379882812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1379,
+            662
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.1086475521538,
+          "profile_gray": 242.17478942871094,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1368,
+            662
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 58.72060128490699,
+          "profile_gray": 233.60989379882812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1379,
+            662
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.1086475521538,
+          "profile_gray": 242.17478942871094,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG07",
+      "gate_id": "SG-U06-007",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01666-COL-0",
+      "right_column": "UP-AA-F01666-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1436,
+        639,
+        1472,
+        672
+      ],
+      "source_row_bbox": [
+        1436,
+        657,
+        1472,
+        670
+      ],
+      "prior_derived_endpoint_y": 653,
+      "observations": [
+        {
+          "native_center": [
+            1447,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 44.34078857288469,
+          "profile_gray": 243.63389587402344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1459,
+            663
+          ],
+          "peak_gray": 236.0,
+          "local_residual": 46.45721344696659,
+          "profile_gray": 218.96945190429688,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1447,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 44.34078857288469,
+          "profile_gray": 243.63389587402344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1459,
+            663
+          ],
+          "peak_gray": 236.0,
+          "local_residual": 46.45721344696659,
+          "profile_gray": 218.96945190429688,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG08",
+      "gate_id": "SG-U06-008",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01667-COL-0",
+      "right_column": "UP-AA-F01667-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1516,
+        640,
+        1552,
+        672
+      ],
+      "source_row_bbox": [
+        1516,
+        657,
+        1552,
+        670
+      ],
+      "prior_derived_endpoint_y": 653,
+      "observations": [
+        {
+          "native_center": [
+            1526,
+            663
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 58.5766547138891,
+          "profile_gray": 243.16966247558594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1542,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 48.72448007480992,
+          "profile_gray": 243.4268798828125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1526,
+            663
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 58.5766547138891,
+          "profile_gray": 243.16966247558594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1542,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 48.72448007480992,
+          "profile_gray": 243.4268798828125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG09",
+      "gate_id": "SG-U06-009",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01668-COL-0",
+      "right_column": "UP-AA-F01668-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1596,
+        640,
+        1632,
+        672
+      ],
+      "source_row_bbox": [
+        1596,
+        657,
+        1632,
+        670
+      ],
+      "prior_derived_endpoint_y": 653,
+      "observations": [
+        {
+          "native_center": [
+            1606,
+            663
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 40.402527900361804,
+          "profile_gray": 244.8639373779297,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1621,
+            663
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 60.222289491865524,
+          "profile_gray": 238.97178649902344,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1606,
+            663
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 40.402527900361804,
+          "profile_gray": 244.8639373779297,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1621,
+            663
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 60.222289491865524,
+          "profile_gray": 238.97178649902344,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG10",
+      "gate_id": "SG-U06-010",
+      "region": "TINY",
+      "side": "top",
+      "min_gray": 210,
+      "left_column": "UP-AA-F01669-COL-0",
+      "right_column": "UP-AA-F01669-COL-1",
+      "ring_row": "UP-RING-TOP",
+      "source_roi": [
+        1676,
+        640,
+        1712,
+        672
+      ],
+      "source_row_bbox": [
+        1676,
+        657,
+        1712,
+        670
+      ],
+      "prior_derived_endpoint_y": 653,
+      "observations": [
+        {
+          "native_center": [
+            1684,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 50.57427057326723,
+          "profile_gray": 246.21841430664062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1699,
+            663
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.12751367476568,
+          "profile_gray": 239.67486572265625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1684,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 50.57427057326723,
+          "profile_gray": 246.21841430664062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1699,
+            663
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.12751367476568,
+          "profile_gray": 239.67486572265625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG11",
+      "gate_id": "CL2-Q1-AA-F01670-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01670-COL-0",
+      "right_column": "UP-AA-F01670-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        1754,
+        759,
+        1790,
+        799
+      ],
+      "source_row_bbox": [
+        1754,
+        778,
+        1790,
+        791
+      ],
+      "prior_derived_endpoint_y": 780.4462212614256,
+      "observations": [
+        {
+          "native_center": [
+            1769,
+            784
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 43.48925760523875,
+          "profile_gray": 245.23590087890625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1779,
+            784
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.225634071165075,
+          "profile_gray": 241.38209533691406,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1769,
+            784
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 43.48925760523875,
+          "profile_gray": 245.23590087890625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1779,
+            784
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.225634071165075,
+          "profile_gray": 241.38209533691406,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG12",
+      "gate_id": "CL2-Q1-AA-F01670-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01670-COL-1",
+      "right_column": "UP-AA-F01670-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        1806,
+        760,
+        1842,
+        800
+      ],
+      "source_row_bbox": [
+        1806,
+        778,
+        1842,
+        791
+      ],
+      "prior_derived_endpoint_y": 781.2581746162014,
+      "observations": [
+        {
+          "native_center": [
+            1816,
+            784
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 54.93558585896096,
+          "profile_gray": 236.02479553222656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1832,
+            784
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 65.93609007307626,
+          "profile_gray": 227.8679656982422,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1816,
+            784
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 54.93558585896096,
+          "profile_gray": 236.02479553222656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1832,
+            784
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 65.93609007307626,
+          "profile_gray": 227.8679656982422,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG13",
+      "gate_id": "CL2-Q1-AA-F01671-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01671-COL-0",
+      "right_column": "UP-AA-F01671-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        1936,
+        761,
+        1972,
+        801
+      ],
+      "source_row_bbox": [
+        1936,
+        778,
+        1972,
+        791
+      ],
+      "prior_derived_endpoint_y": 782.4545764126706,
+      "observations": [
+        {
+          "native_center": [
+            1951,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 47.704013381934715,
+          "profile_gray": 241.20086669921875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1962,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 55.908544269521684,
+          "profile_gray": 243.23651123046875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1951,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 47.704013381934715,
+          "profile_gray": 241.20086669921875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1962,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 55.908544269521684,
+          "profile_gray": 243.23651123046875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG14",
+      "gate_id": "CL2-Q1-AA-F01672-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01672-COL-0",
+      "right_column": "UP-AA-F01672-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2066,
+        762,
+        2102,
+        802
+      ],
+      "source_row_bbox": [
+        2066,
+        778,
+        2102,
+        791
+      ],
+      "prior_derived_endpoint_y": 783.6571092219041,
+      "observations": [
+        {
+          "native_center": [
+            2081,
+            784
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 44.64139229337195,
+          "profile_gray": 246.2549285888672,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2092,
+            784
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 48.45985673458094,
+          "profile_gray": 241.15512084960938,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2081,
+            784
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 44.64139229337195,
+          "profile_gray": 246.2549285888672,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2092,
+            784
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 48.45985673458094,
+          "profile_gray": 241.15512084960938,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG15",
+      "gate_id": "CL2-Q1-AA-F01672-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01672-COL-1",
+      "right_column": "UP-AA-F01672-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2118,
+        763,
+        2154,
+        803
+      ],
+      "source_row_bbox": [
+        2118,
+        778,
+        2154,
+        791
+      ],
+      "prior_derived_endpoint_y": 784.459639174249,
+      "observations": [
+        {
+          "native_center": [
+            2133,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 48.72071305636484,
+          "profile_gray": 241.98989868164062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2144,
+            784
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 63.778115666353216,
+          "profile_gray": 229.93675231933594,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2133,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 48.72071305636484,
+          "profile_gray": 241.98989868164062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2144,
+            784
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 63.778115666353216,
+          "profile_gray": 229.93675231933594,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG16",
+      "gate_id": "CL2-Q1-AA-F01673-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01673-COL-0",
+      "right_column": "UP-AA-F01673-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2248,
+        762,
+        2284,
+        802
+      ],
+      "source_row_bbox": [
+        2248,
+        778,
+        2284,
+        791
+      ],
+      "prior_derived_endpoint_y": 783.4759731207221,
+      "observations": [
+        {
+          "native_center": [
+            2263,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 44.512577576440634,
+          "profile_gray": 244.30880737304688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2273,
+            784
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 44.8775458772507,
+          "profile_gray": 246.57254028320312,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2263,
+            784
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 44.512577576440634,
+          "profile_gray": 244.30880737304688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2273,
+            784
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 44.8775458772507,
+          "profile_gray": 246.57254028320312,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG17",
+      "gate_id": "CL2-Q1-AA-F01674-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01674-COL-0",
+      "right_column": "UP-AA-F01674-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2378,
+        763,
+        2413,
+        803
+      ],
+      "source_row_bbox": [
+        2378,
+        779,
+        2413,
+        792
+      ],
+      "prior_derived_endpoint_y": 784.607545511277,
+      "observations": [
+        {
+          "native_center": [
+            2393,
+            785
+          ],
+          "peak_gray": 240.0,
+          "local_residual": 50.771510864282504,
+          "profile_gray": 225.94410705566406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2403,
+            785
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 47.17872814593122,
+          "profile_gray": 240.5974578857422,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2393,
+            785
+          ],
+          "peak_gray": 240.0,
+          "local_residual": 50.771510864282504,
+          "profile_gray": 225.94410705566406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2403,
+            785
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 47.17872814593122,
+          "profile_gray": 240.5974578857422,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG18",
+      "gate_id": "CL2-Q1-AA-F01674-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01674-COL-1",
+      "right_column": "UP-AA-F01674-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2429,
+        764,
+        2465,
+        804
+      ],
+      "source_row_bbox": [
+        2429,
+        779,
+        2465,
+        792
+      ],
+      "prior_derived_endpoint_y": 785.239786070993,
+      "observations": [
+        {
+          "native_center": [
+            2444,
+            785
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 51.43130517654842,
+          "profile_gray": 245.06956481933594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2455,
+            785
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 51.83428713754077,
+          "profile_gray": 245.08697509765625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2444,
+            785
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 51.43130517654842,
+          "profile_gray": 245.06956481933594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2455,
+            785
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 51.83428713754077,
+          "profile_gray": 245.08697509765625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG19",
+      "gate_id": "CL2-Q1-AA-F01674-03",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01674-COL-2",
+      "right_column": "UP-AA-F01674-COL-3",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2481,
+        764,
+        2517,
+        804
+      ],
+      "source_row_bbox": [
+        2481,
+        780,
+        2517,
+        793
+      ],
+      "prior_derived_endpoint_y": 785.8705671819075,
+      "observations": [
+        {
+          "native_center": [
+            2496,
+            786
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 48.101405302589995,
+          "profile_gray": 236.57205200195312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2511,
+            786
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 58.4971532015542,
+          "profile_gray": 238.74899291992188,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2496,
+            786
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 48.101405302589995,
+          "profile_gray": 236.57205200195312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2511,
+            786
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 58.4971532015542,
+          "profile_gray": 238.74899291992188,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG20",
+      "gate_id": "CL2-Q1-AA-F01674-04",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01674-COL-3",
+      "right_column": "UP-AA-F01674-COL-4",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2533,
+        765,
+        2569,
+        805
+      ],
+      "source_row_bbox": [
+        2533,
+        780,
+        2569,
+        793
+      ],
+      "prior_derived_endpoint_y": 786.4998938916282,
+      "observations": [
+        {
+          "native_center": [
+            2547,
+            786
+          ],
+          "peak_gray": 242.0,
+          "local_residual": 61.05108551777499,
+          "profile_gray": 224.65162658691406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2558,
+            786
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.376394809230646,
+          "profile_gray": 242.5155487060547,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2547,
+            786
+          ],
+          "peak_gray": 242.0,
+          "local_residual": 61.05108551777499,
+          "profile_gray": 224.65162658691406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2558,
+            786
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.376394809230646,
+          "profile_gray": 242.5155487060547,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG21",
+      "gate_id": "CL2-Q1-AA-F01675-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01675-COL-0",
+      "right_column": "UP-AA-F01675-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2662,
+        766,
+        2697,
+        805
+      ],
+      "source_row_bbox": [
+        2662,
+        780,
+        2697,
+        793
+      ],
+      "prior_derived_endpoint_y": 787.5356724454574,
+      "observations": [
+        {
+          "native_center": [
+            2671,
+            786
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 55.253644532003904,
+          "profile_gray": 245.3627166748047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2687,
+            786
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 45.682993636407815,
+          "profile_gray": 244.67657470703125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2671,
+            786
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 55.253644532003904,
+          "profile_gray": 245.3627166748047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2687,
+            786
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 45.682993636407815,
+          "profile_gray": 244.67657470703125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG22",
+      "gate_id": "CL2-Q1-AA-F01675-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01675-COL-1",
+      "right_column": "UP-AA-F01675-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2713,
+        767,
+        2749,
+        805
+      ],
+      "source_row_bbox": [
+        2713,
+        781,
+        2749,
+        794
+      ],
+      "prior_derived_endpoint_y": 788.3348668698617,
+      "observations": [
+        {
+          "native_center": [
+            2727,
+            787
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 46.45312869184855,
+          "profile_gray": 245.41616821289062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2738,
+            787
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 42.51232390410826,
+          "profile_gray": 246.4105987548828,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2727,
+            787
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 46.45312869184855,
+          "profile_gray": 245.41616821289062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2738,
+            787
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 42.51232390410826,
+          "profile_gray": 246.4105987548828,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG23",
+      "gate_id": "CL2-Q1-AA-F01676-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01676-COL-0",
+      "right_column": "UP-AA-F01676-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2842,
+        766,
+        2877,
+        805
+      ],
+      "source_row_bbox": [
+        2842,
+        781,
+        2877,
+        794
+      ],
+      "prior_derived_endpoint_y": 787.2152271128582,
+      "observations": [
+        {
+          "native_center": [
+            2856,
+            787
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 57.83322046162988,
+          "profile_gray": 231.85696411132812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2866,
+            787
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 44.04246632280919,
+          "profile_gray": 247.4825439453125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2856,
+            787
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 57.83322046162988,
+          "profile_gray": 231.85696411132812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2866,
+            787
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 44.04246632280919,
+          "profile_gray": 247.4825439453125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG24",
+      "gate_id": "CL2-Q1-AA-F01676-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01676-COL-1",
+      "right_column": "UP-AA-F01676-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2893,
+        766,
+        2928,
+        805
+      ],
+      "source_row_bbox": [
+        2893,
+        781,
+        2928,
+        794
+      ],
+      "prior_derived_endpoint_y": 787.8353198680146,
+      "observations": [
+        {
+          "native_center": [
+            2907,
+            787
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.220025688601055,
+          "profile_gray": 244.39620971679688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2917,
+            787
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 48.137127701527874,
+          "profile_gray": 244.39205932617188,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2907,
+            787
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.220025688601055,
+          "profile_gray": 244.39620971679688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2917,
+            787
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 48.137127701527874,
+          "profile_gray": 244.39205932617188,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG25",
+      "gate_id": "CL2-Q1-AA-F01676-03",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01676-COL-2",
+      "right_column": "UP-AA-F01676-COL-3",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2944,
+        767,
+        2979,
+        805
+      ],
+      "source_row_bbox": [
+        2944,
+        781,
+        2979,
+        794
+      ],
+      "prior_derived_endpoint_y": 788.4540019723477,
+      "observations": [
+        {
+          "native_center": [
+            2953,
+            787
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 53.072913518601894,
+          "profile_gray": 243.32298278808594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2968,
+            787
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 62.80368675209803,
+          "profile_gray": 239.2407684326172,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2953,
+            787
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 53.072913518601894,
+          "profile_gray": 243.32298278808594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2968,
+            787
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 62.80368675209803,
+          "profile_gray": 239.2407684326172,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG26",
+      "gate_id": "CL2-Q1-AA-F01676-04",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01676-COL-3",
+      "right_column": "UP-AA-F01676-COL-4",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        2995,
+        768,
+        3030,
+        805
+      ],
+      "source_row_bbox": [
+        2995,
+        782,
+        3030,
+        795
+      ],
+      "prior_derived_endpoint_y": 789.0712782340287,
+      "observations": [
+        {
+          "native_center": [
+            3004,
+            788
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.009289919200825,
+          "profile_gray": 246.42283630371094,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3019,
+            788
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 42.4476656557228,
+          "profile_gray": 239.05197143554688,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3004,
+            788
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.009289919200825,
+          "profile_gray": 246.42283630371094,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3019,
+            788
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 42.4476656557228,
+          "profile_gray": 239.05197143554688,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG27",
+      "gate_id": "CL2-Q1-AA-F01677-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01677-COL-0",
+      "right_column": "UP-AA-F01677-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3123,
+        766,
+        3158,
+        806
+      ],
+      "source_row_bbox": [
+        3123,
+        782,
+        3158,
+        795
+      ],
+      "prior_derived_endpoint_y": 787.9561598520567,
+      "observations": [
+        {
+          "native_center": [
+            3132,
+            788
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 38.691625523405776,
+          "profile_gray": 243.53433227539062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3147,
+            788
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.48093695184775,
+          "profile_gray": 243.86964416503906,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3132,
+            788
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 38.691625523405776,
+          "profile_gray": 243.53433227539062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3147,
+            788
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.48093695184775,
+          "profile_gray": 243.86964416503906,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG28",
+      "gate_id": "CL2-Q1-AA-F01677-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01677-COL-1",
+      "right_column": "UP-AA-F01677-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3174,
+        767,
+        3209,
+        806
+      ],
+      "source_row_bbox": [
+        3174,
+        782,
+        3209,
+        795
+      ],
+      "prior_derived_endpoint_y": 788.7588774437074,
+      "observations": [
+        {
+          "native_center": [
+            3188,
+            788
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 42.895662733576614,
+          "profile_gray": 233.98277282714844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3198,
+            788
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 40.08165694285552,
+          "profile_gray": 246.3579864501953,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3188,
+            788
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 42.895662733576614,
+          "profile_gray": 233.98277282714844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3198,
+            788
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 40.08165694285552,
+          "profile_gray": 246.3579864501953,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG29",
+      "gate_id": "CL2-Q1-AA-F01678-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-0",
+      "right_column": "UP-AA-F01678-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3302,
+        766,
+        3336,
+        806
+      ],
+      "source_row_bbox": [
+        3302,
+        783,
+        3336,
+        796
+      ],
+      "prior_derived_endpoint_y": 787.6590279452643,
+      "observations": [
+        {
+          "native_center": [
+            3310,
+            789
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 55.659823915006,
+          "profile_gray": 246.56649780273438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3325,
+            789
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 43.32778092903274,
+          "profile_gray": 245.32913208007812,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3310,
+            789
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 55.659823915006,
+          "profile_gray": 246.56649780273438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3325,
+            789
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 43.32778092903274,
+          "profile_gray": 245.32913208007812,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG30",
+      "gate_id": "CL2-Q1-AA-F01678-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-1",
+      "right_column": "UP-AA-F01678-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3352,
+        767,
+        3387,
+        806
+      ],
+      "source_row_bbox": [
+        3352,
+        783,
+        3387,
+        796
+      ],
+      "prior_derived_endpoint_y": 788.2232072178499,
+      "observations": [
+        {
+          "native_center": [
+            3366,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 39.912030161845024,
+          "profile_gray": 243.14195251464844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3375,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 41.20731137163193,
+          "profile_gray": 243.8849334716797,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3366,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 39.912030161845024,
+          "profile_gray": 243.14195251464844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3375,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 41.20731137163193,
+          "profile_gray": 243.8849334716797,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG31",
+      "gate_id": "CL2-Q1-AA-F01678-03",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-2",
+      "right_column": "UP-AA-F01678-COL-3",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3403,
+        767,
+        3438,
+        807
+      ],
+      "source_row_bbox": [
+        3403,
+        783,
+        3438,
+        796
+      ],
+      "prior_derived_endpoint_y": 788.7862176943762,
+      "observations": [
+        {
+          "native_center": [
+            3412,
+            789
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 47.66591266054522,
+          "profile_gray": 243.01754760742188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3427,
+            789
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 57.464169684263624,
+          "profile_gray": 240.45948791503906,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3412,
+            789
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 47.66591266054522,
+          "profile_gray": 243.01754760742188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3427,
+            789
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 57.464169684263624,
+          "profile_gray": 240.45948791503906,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG32",
+      "gate_id": "CL2-Q1-AA-F01678-04",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-3",
+      "right_column": "UP-AA-F01678-COL-4",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3454,
+        768,
+        3487,
+        807
+      ],
+      "source_row_bbox": [
+        3454,
+        783,
+        3487,
+        796
+      ],
+      "prior_derived_endpoint_y": 789.3480630031332,
+      "observations": [
+        {
+          "native_center": [
+            3462,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 44.76417660210183,
+          "profile_gray": 243.5463104248047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3477,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.84934229952003,
+          "profile_gray": 246.47923278808594,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3462,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 44.76417660210183,
+          "profile_gray": 243.5463104248047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3477,
+            789
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.84934229952003,
+          "profile_gray": 246.47923278808594,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG33",
+      "gate_id": "CL2-Q1-AA-F01678-05",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-4",
+      "right_column": "UP-AA-F01678-COL-5",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3503,
+        768,
+        3537,
+        808
+      ],
+      "source_row_bbox": [
+        3503,
+        783,
+        3537,
+        796
+      ],
+      "prior_derived_endpoint_y": 789.9087467574083,
+      "observations": [
+        {
+          "native_center": [
+            3513,
+            789
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 63.41989941767801,
+          "profile_gray": 237.67770385742188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3527,
+            789
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 43.499145736875136,
+          "profile_gray": 242.1187286376953,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3513,
+            789
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 63.41989941767801,
+          "profile_gray": 237.67770385742188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3527,
+            789
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 43.499145736875136,
+          "profile_gray": 242.1187286376953,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG34",
+      "gate_id": "CL2-Q1-AA-F01678-06",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-5",
+      "right_column": "UP-AA-F01678-COL-6",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3553,
+        769,
+        3586,
+        809
+      ],
+      "source_row_bbox": [
+        3553,
+        784,
+        3586,
+        797
+      ],
+      "prior_derived_endpoint_y": 790.468272555565,
+      "observations": [
+        {
+          "native_center": [
+            3564,
+            790
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 42.22424385447897,
+          "profile_gray": 242.0604705810547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3578,
+            790
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 56.83447988824719,
+          "profile_gray": 232.5384979248047,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3564,
+            790
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 42.22424385447897,
+          "profile_gray": 242.0604705810547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3578,
+            790
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 56.83447988824719,
+          "profile_gray": 232.5384979248047,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG35",
+      "gate_id": "CL2-Q1-AA-F01678-07",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-6",
+      "right_column": "UP-AA-F01678-COL-7",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3602,
+        770,
+        3636,
+        809
+      ],
+      "source_row_bbox": [
+        3602,
+        784,
+        3636,
+        797
+      ],
+      "prior_derived_endpoint_y": 791.0266439811179,
+      "observations": [
+        {
+          "native_center": [
+            3614,
+            790
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 37.584649303455905,
+          "profile_gray": 242.0033721923828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3629,
+            790
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 40.95861621352606,
+          "profile_gray": 242.5125732421875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3614,
+            790
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 37.584649303455905,
+          "profile_gray": 242.0033721923828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3629,
+            790
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 40.95861621352606,
+          "profile_gray": 242.5125732421875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG36",
+      "gate_id": "CL2-Q1-AA-F01678-08",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01678-COL-7",
+      "right_column": "UP-AA-F01678-COL-8",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3652,
+        770,
+        3686,
+        810
+      ],
+      "source_row_bbox": [
+        3652,
+        785,
+        3686,
+        798
+      ],
+      "prior_derived_endpoint_y": 791.5838646028113,
+      "observations": [
+        {
+          "native_center": [
+            3665,
+            791
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 59.447314124961196,
+          "profile_gray": 242.3134765625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3679,
+            791
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 43.35910726322592,
+          "profile_gray": 241.57008361816406,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3665,
+            791
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 59.447314124961196,
+          "profile_gray": 242.3134765625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3679,
+            791
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 43.35910726322592,
+          "profile_gray": 241.57008361816406,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG37",
+      "gate_id": "CL2-Q1-AA-F01679-01",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01679-COL-0",
+      "right_column": "UP-AA-F01679-COL-1",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3778,
+        767,
+        3812,
+        807
+      ],
+      "source_row_bbox": [
+        3778,
+        785,
+        3812,
+        798
+      ],
+      "prior_derived_endpoint_y": 788.3779849210819,
+      "observations": [
+        {
+          "native_center": [
+            3790,
+            791
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 56.18013934046658,
+          "profile_gray": 238.7552947998047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3805,
+            791
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.05771958663507,
+          "profile_gray": 244.76499938964844,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3790,
+            791
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 56.18013934046658,
+          "profile_gray": 238.7552947998047,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3805,
+            791
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.05771958663507,
+          "profile_gray": 244.76499938964844,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG38",
+      "gate_id": "CL2-Q1-AA-F01679-02",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01679-COL-1",
+      "right_column": "UP-AA-F01679-COL-2",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3828,
+        768,
+        3862,
+        808
+      ],
+      "source_row_bbox": [
+        3828,
+        786,
+        3862,
+        799
+      ],
+      "prior_derived_endpoint_y": 789.0039832871638,
+      "observations": [
+        {
+          "native_center": [
+            3844,
+            792
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 31.76070206545114,
+          "profile_gray": 244.44451904296875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3854,
+            792
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 40.558542233710995,
+          "profile_gray": 235.89456176757812,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3844,
+            792
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 31.76070206545114,
+          "profile_gray": 244.44451904296875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3854,
+            792
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 40.558542233710995,
+          "profile_gray": 235.89456176757812,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG39",
+      "gate_id": "CL2-Q1-AA-F01679-03",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01679-COL-2",
+      "right_column": "UP-AA-F01679-COL-3",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3878,
+        768,
+        3912,
+        808
+      ],
+      "source_row_bbox": [
+        3878,
+        786,
+        3912,
+        799
+      ],
+      "prior_derived_endpoint_y": 789.6285409478521,
+      "observations": [
+        {
+          "native_center": [
+            3890,
+            792
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 44.85263221166872,
+          "profile_gray": 243.30299377441406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3905,
+            792
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 50.456614312519434,
+          "profile_gray": 244.28009033203125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3890,
+            792
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 44.85263221166872,
+          "profile_gray": 243.30299377441406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3905,
+            792
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 50.456614312519434,
+          "profile_gray": 244.28009033203125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "UG40",
+      "gate_id": "CL2-Q1-AA-F01679-04",
+      "region": "MAIN",
+      "side": "bottom",
+      "min_gray": 225,
+      "left_column": "UP-AA-F01679-COL-3",
+      "right_column": "UP-AA-F01679-COL-4",
+      "ring_row": "UP-RING-BOTTOM",
+      "source_roi": [
+        3928,
+        769,
+        3961,
+        809
+      ],
+      "source_row_bbox": [
+        3928,
+        787,
+        3961,
+        800
+      ],
+      "prior_derived_endpoint_y": 790.2516628710025,
+      "observations": [
+        {
+          "native_center": [
+            3940,
+            793
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 58.34303386418728,
+          "profile_gray": 242.26856994628906,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3955,
+            793
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 45.21555892239601,
+          "profile_gray": 243.633056640625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3940,
+            793
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 58.34303386418728,
+          "profile_gray": 242.26856994628906,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3955,
+            793
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 45.21555892239601,
+          "profile_gray": 243.633056640625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    }
+  ]
+}

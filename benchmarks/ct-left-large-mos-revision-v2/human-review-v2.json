@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-20",
+  "user_feedback_verbatim": [
+    "A：合理批准",
+    "C：合理批准",
+    "F：合理批准"
+  ],
+  "review_state": "human_accepted_displayed_local_revisions",
+  "scope": [
+    "A shared G25/G26 AA and left cropped wide-MOS AA/POLY matching and contacts",
+    "C displayed opposite terminal bands and contacts of upper/lower wide MOS rows",
+    "F displayed added3 gate contacts and two-contact phase"
+  ],
+  "parent_human_review_ref": "human-review-v1.json",
+  "prior_partial_acceptance_ref": "scoped-acceptance-v1.json",
+  "preserved_limits": [
+    "B accepted at connection level with extra/missing CT count caveat",
+    "Prior661 geometric detail caveat unchanged",
+    "Unknown inspection slots are not promoted to CT",
+    "F source support stays weak/context-guided; approval is not an independently detected strong peak",
+    "C five-wide-gate common-POLY topology and M1/net remain unknown",
+    "Relative pixels only; no real PDK DRC/LVS or whole-frame completion"
+  ]
+}

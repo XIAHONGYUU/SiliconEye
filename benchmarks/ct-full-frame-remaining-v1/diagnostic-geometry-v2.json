@@ -1,0 +1,63 @@
+{
+  "status": "FAIL",
+  "errors": [
+    {
+      "id": "CTR-G-CL2-Q3-AA-F01614-02-bottom-000",
+      "reason": "source_peak_reused"
+    }
+  ],
+  "positive_area_overlap_pairs": [
+    [
+      "CTX-CTT-BAND-AA-G004-00-S000",
+      "CTX-CTT-BAND-AA-G004-02-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA-W05-00-S000",
+      "CTX-CTT-BAND-AA-W05-02-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA-W05-00-S102",
+      "CTX-CTT-BAND-AA-W05-03-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-UPPER-0-01-S098",
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-UPPER-0-05-S020"
+    ]
+  ],
+  "min_gap_violations": [
+    [
+      "CTX-CTT-BAND-AA-G001-00-S003",
+      "CTX-CTT-BAND-AA-G001-03-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA-G004-00-S000",
+      "CTX-CTT-BAND-AA-G004-02-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA-W05-00-S000",
+      "CTX-CTT-BAND-AA-W05-02-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA-W05-00-S102",
+      "CTX-CTT-BAND-AA-W05-03-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-UPPER-0-01-S098",
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-UPPER-0-05-S020"
+    ],
+    [
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-LOWER-0-01-S097",
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-LOWER-0-05-S006"
+    ],
+    [
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-LOWER-0-02-S097",
+      "CTX-CTT-BAND-AA2-LOWER-MOS-GRID-GUARD-LOWER-0-05-S039"
+    ]
+  ],
+  "minimum_edge_gap_px": 0.0,
+  "minimum_AA_enclosure_px": 0.9999999999999999,
+  "minimum_POLY_clearance_px": 1.4999999999997726,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 9539,
+  "physical_PDK_DRC": false
+}

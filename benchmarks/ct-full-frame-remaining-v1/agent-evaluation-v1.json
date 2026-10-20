@@ -1,0 +1,27 @@
+{
+  "dataset_kind": "single_session_development_counterexamples_not_held_out_accuracy_test",
+  "cases": [
+    {
+      "id": "CE-source-host",
+      "observation": "Q3 four-gate endpoint search reused source points already assigned in existing G18 and guard records",
+      "failure": "one optical point has incompatible host assignments; correct ownership remains undecided",
+      "action": "withhold four gate assignments and dependent16 SD records; request actual terminal source landmark"
+    },
+    {
+      "id": "CE-ring-row",
+      "observation": "G49 photo contains three neighbouring upper rows; initial POLY-end and ring locators selected the wrong row",
+      "action": "independent frame-row and13 SD-column reinspection; upper row assigned to AA guard, only bottom gate contacts exported"
+    },
+    {
+      "id": "CE-native-box",
+      "observation": "109 weak/missing SD columns reinspected within bounded source windows;142 further optical candidates found; three tiny-body source maps recovered from gate-bar anchors",
+      "action": "source geometry is a locator, not a material truth mask; source peaks still pass whole-model ownership/spacing gate"
+    },
+    {
+      "id": "CE-quality",
+      "observation": "geometric safety alone can pass a partial/inaccurate layer",
+      "action": "separate safe-subset PASS from whole-frame HOLD; block entire source-path recipe after ownership counterexample"
+    }
+  ],
+  "human_truth_status": "Q1/Q2/Q3 pending; no accuracy or recall claim"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "all_three_contact_classes_processed_ready_for_batch_review",
+  "items": [
+    {
+      "id": "T",
+      "scope": "Left10 tiny MOS",
+      "question": "源漏每侧两孔、栅上端两孔的位置与方向是否合理？末端器件保留旧AA/POLY相对位置。"
+    },
+    {
+      "id": "L/M/R",
+      "scope": "Right30 long gates",
+      "question": "六行源漏孔与各栅下端两孔是否对应正确、规则排列是否合理？"
+    },
+    {
+      "id": "RING",
+      "scope": "Enclosing ring all four sides, O/RT/RB plus T/R corners",
+      "question": "蓝色候选是否属于本环，橙框51处应如何裁决？上环相位有拍屏网格干扰，尚不作为确认孔。"
+    }
+  ],
+  "no_repeat_review": "old1885 contacts and material models unchanged; no gate-CT direction/count approval borrowed from Q2"
+}

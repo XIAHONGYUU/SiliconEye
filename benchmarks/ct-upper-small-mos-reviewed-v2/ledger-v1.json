@@ -1,0 +1,2618 @@
+{
+  "canonical_translations": [
+    {
+      "layer": "AA",
+      "id": "AA-F01669",
+      "delta_xy": [
+        0.0,
+        7.0
+      ],
+      "before": {
+        "id": "AA-F01669",
+        "layout_observation_bbox_xywh": [
+          1839,
+          912,
+          62,
+          30
+        ],
+        "layer": "AA",
+        "primitive": "orthogonal_polygon",
+        "outer_xy": [
+          [
+            1839.0,
+            912.0
+          ],
+          [
+            1900.0,
+            912.0
+          ],
+          [
+            1900.0,
+            941.0
+          ],
+          [
+            1839.0,
+            941.0
+          ]
+        ],
+        "holes_xy": [],
+        "outer_xyxy": [
+          1839.0,
+          912.0,
+          1900.0,
+          941.0
+        ],
+        "hole_xyxy": null,
+        "status": "candidate",
+        "revision_role": "scene_AA_candidate",
+        "observation_method": "full_frame_support_line_fit_not_material_truth",
+        "max_outline_fit_shift_layout_units": 1.0,
+        "connectivity": "geometry_candidate_not_electrical_net",
+        "dimension_status": "relative_layout_units_not_um"
+      },
+      "after": {
+        "id": "AA-F01669",
+        "layout_observation_bbox_xywh": [
+          1839,
+          912,
+          62,
+          30
+        ],
+        "layer": "AA",
+        "primitive": "orthogonal_polygon",
+        "outer_xy": [
+          [
+            1839.0,
+            919.0
+          ],
+          [
+            1900.0,
+            919.0
+          ],
+          [
+            1900.0,
+            948.0
+          ],
+          [
+            1839.0,
+            948.0
+          ]
+        ],
+        "holes_xy": [],
+        "outer_xyxy": [
+          1839.0,
+          919.0,
+          1900.0,
+          948.0
+        ],
+        "hole_xyxy": null,
+        "status": "candidate",
+        "revision_role": "scene_AA_candidate",
+        "observation_method": "full_frame_support_line_fit_not_material_truth",
+        "max_outline_fit_shift_layout_units": 1.0,
+        "connectivity": "geometry_candidate_not_electrical_net",
+        "dimension_status": "relative_layout_units_not_um"
+      }
+    },
+    {
+      "layer": "POLY",
+      "id": "SG-U06-010",
+      "delta_xy": [
+        0.0,
+        7.0
+      ],
+      "before": {
+        "id": "SG-U06-010",
+        "material": "POLY",
+        "native_outline": [
+          [
+            1677,
+            653
+          ],
+          [
+            1709,
+            653
+          ],
+          [
+            1709,
+            713
+          ],
+          [
+            1677,
+            713
+          ]
+        ],
+        "source_record": {
+          "id": "SG-U06-010",
+          "material": "poly",
+          "kind": "MOS_gate_body_candidate",
+          "native_outline": [
+            [
+              1677,
+              653
+            ],
+            [
+              1709,
+              653
+            ],
+            [
+              1709,
+              713
+            ],
+            [
+              1677,
+              713
+            ]
+          ],
+          "layout_outline": null,
+          "coordinate_space": "POLY_original_pixels",
+          "status": "AI_visually_reviewed_candidate_not_human_confirmed",
+          "template_match": {
+            "raw_index": 10,
+            "template_id": "G55-P04",
+            "score": 0.9220676422119141,
+            "raw_bbox": [
+              1674,
+              653,
+              1706,
+              713
+            ]
+          },
+          "source_method": "template_location_assistance_plus_AI_structure_and_extent_review",
+          "source_boundary_uncertainty_px": [
+            3,
+            8
+          ],
+          "electrical_connection": "unknown",
+          "terminal_CT_assignment": "unknown_not_inferred_from_bright_points",
+          "inventory_scope": "U06"
+        },
+        "source_scope": "U06",
+        "group_id": "U06",
+        "kind": "MOS_gate_body_candidate",
+        "acceptance": {
+          "material": "AI_visually_reviewed_candidate_not_human_confirmed",
+          "joint_geometry": "AI_candidate",
+          "electrical": "unknown"
+        },
+        "AA_target": "AA-F01669",
+        "terminal_status": "not_individually_verified",
+        "geometry_method": "explicit_small_AA_relation",
+        "layout_outline": [
+          [
+            1855.5,
+            904.0
+          ],
+          [
+            1883.5,
+            904.0
+          ],
+          [
+            1883.5,
+            949.0
+          ],
+          [
+            1855.5,
+            949.0
+          ]
+        ],
+        "relation_record": {
+          "source_poly_id": "SG-U06-010",
+          "AA_object_id": "AA-F01669",
+          "relation_id": "U06-A10",
+          "scope": "U06",
+          "slot_index": 0,
+          "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+          "source_native_outline": [
+            [
+              1677,
+              653
+            ],
+            [
+              1709,
+              653
+            ],
+            [
+              1709,
+              713
+            ],
+            [
+              1677,
+              713
+            ]
+          ],
+          "joint_layout_outline": [
+            [
+              1855.5,
+              904.0
+            ],
+            [
+              1883.5,
+              904.0
+            ],
+            [
+              1883.5,
+              949.0
+            ],
+            [
+              1855.5,
+              949.0
+            ]
+          ],
+          "source_review": "AI_visually_reviewed_candidate_not_human_confirmed",
+          "geometry_check": {
+            "status": "PASS",
+            "reasons": [],
+            "target_overlap_area": 812.0,
+            "non_target_AA_intersections": [],
+            "top_extension_px": 8,
+            "bottom_extension_px": 8,
+            "rectangular": true,
+            "scope": "relative_structure_not_foundry_DRC_or_material_truth"
+          }
+        }
+      },
+      "after": {
+        "id": "SG-U06-010",
+        "material": "POLY",
+        "native_outline": [
+          [
+            1677,
+            653
+          ],
+          [
+            1709,
+            653
+          ],
+          [
+            1709,
+            713
+          ],
+          [
+            1677,
+            713
+          ]
+        ],
+        "source_record": {
+          "id": "SG-U06-010",
+          "material": "poly",
+          "kind": "MOS_gate_body_candidate",
+          "native_outline": [
+            [
+              1677,
+              653
+            ],
+            [
+              1709,
+              653
+            ],
+            [
+              1709,
+              713
+            ],
+            [
+              1677,
+              713
+            ]
+          ],
+          "layout_outline": null,
+          "coordinate_space": "POLY_original_pixels",
+          "status": "AI_visually_reviewed_candidate_not_human_confirmed",
+          "template_match": {
+            "raw_index": 10,
+            "template_id": "G55-P04",
+            "score": 0.9220676422119141,
+            "raw_bbox": [
+              1674,
+              653,
+              1706,
+              713
+            ]
+          },
+          "source_method": "template_location_assistance_plus_AI_structure_and_extent_review",
+          "source_boundary_uncertainty_px": [
+            3,
+            8
+          ],
+          "electrical_connection": "unknown",
+          "terminal_CT_assignment": "unknown_not_inferred_from_bright_points",
+          "inventory_scope": "U06"
+        },
+        "source_scope": "U06",
+        "group_id": "U06",
+        "kind": "MOS_gate_body_candidate",
+        "acceptance": {
+          "material": "AI_visually_reviewed_candidate_not_human_confirmed",
+          "joint_geometry": "AI_candidate",
+          "electrical": "unknown"
+        },
+        "AA_target": "AA-F01669",
+        "terminal_status": "not_individually_verified",
+        "geometry_method": "explicit_small_AA_relation",
+        "layout_outline": [
+          [
+            1855.5,
+            911.0
+          ],
+          [
+            1883.5,
+            911.0
+          ],
+          [
+            1883.5,
+            956.0
+          ],
+          [
+            1855.5,
+            956.0
+          ]
+        ],
+        "relation_record": {
+          "source_poly_id": "SG-U06-010",
+          "AA_object_id": "AA-F01669",
+          "relation_id": "U06-A10",
+          "scope": "U06",
+          "slot_index": 0,
+          "association_status": "AI_structural_correspondence_candidate_not_human_confirmed",
+          "source_native_outline": [
+            [
+              1677,
+              653
+            ],
+            [
+              1709,
+              653
+            ],
+            [
+              1709,
+              713
+            ],
+            [
+              1677,
+              713
+            ]
+          ],
+          "joint_layout_outline": [
+            [
+              1855.5,
+              904.0
+            ],
+            [
+              1883.5,
+              904.0
+            ],
+            [
+              1883.5,
+              949.0
+            ],
+            [
+              1855.5,
+              949.0
+            ]
+          ],
+          "source_review": "AI_visually_reviewed_candidate_not_human_confirmed",
+          "geometry_check": {
+            "status": "PASS",
+            "reasons": [],
+            "target_overlap_area": 812.0,
+            "non_target_AA_intersections": [],
+            "top_extension_px": 8,
+            "bottom_extension_px": 8,
+            "rectangular": true,
+            "scope": "relative_structure_not_foundry_DRC_or_material_truth"
+          }
+        }
+      }
+    },
+    {
+      "layer": "CT",
+      "id": "CTT-UP-UG10-GATE-S000",
+      "delta_xy": [
+        0.0,
+        7.0
+      ],
+      "before": {
+        "id": "CTT-UP-UG10-GATE-S000",
+        "family": "UP-UG10-GATE",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1864.5,
+          908.0
+        ],
+        "layout_outline": [
+          [
+            1862.0,
+            905.5
+          ],
+          [
+            1867.0,
+            905.5
+          ],
+          [
+            1867.0,
+            910.5
+          ],
+          [
+            1862.0,
+            910.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1684,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 50.57427057326723,
+          "source_row_bbox": [
+            1676,
+            657,
+            1712,
+            670
+          ],
+          "terminal_side": "top",
+          "terminal_side_status": "AI_candidate_for_this_region_not_inherited_Q2_approval",
+          "source_diffusion_columns": [
+            "UP-AA-F01669-COL-0",
+            "UP-AA-F01669-COL-1"
+          ],
+          "native_center": [
+            1684,
+            663
+          ],
+          "source_observation_id": "UP-GATE-UG10-OBS-0",
+          "evidence_tier": "measured_terminal_row_AI_side_hypothesis",
+          "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+          "supported": true
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "SG-U06-010"
+      },
+      "after": {
+        "id": "CTT-UP-UG10-GATE-S000",
+        "family": "UP-UG10-GATE",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1864.5,
+          915.0
+        ],
+        "layout_outline": [
+          [
+            1862.0,
+            912.5
+          ],
+          [
+            1867.0,
+            912.5
+          ],
+          [
+            1867.0,
+            917.5
+          ],
+          [
+            1862.0,
+            917.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1684,
+            663
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 50.57427057326723,
+          "source_row_bbox": [
+            1676,
+            657,
+            1712,
+            670
+          ],
+          "terminal_side": "top",
+          "terminal_side_status": "AI_candidate_for_this_region_not_inherited_Q2_approval",
+          "source_diffusion_columns": [
+            "UP-AA-F01669-COL-0",
+            "UP-AA-F01669-COL-1"
+          ],
+          "native_center": [
+            1684,
+            663
+          ],
+          "source_observation_id": "UP-GATE-UG10-OBS-0",
+          "evidence_tier": "measured_terminal_row_AI_side_hypothesis",
+          "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+          "supported": true
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "SG-U06-010"
+      }
+    },
+    {
+      "layer": "CT",
+      "id": "CTT-UP-UG10-GATE-S001",
+      "delta_xy": [
+        0.0,
+        7.0
+      ],
+      "before": {
+        "id": "CTT-UP-UG10-GATE-S001",
+        "family": "UP-UG10-GATE",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1874.5,
+          908.0
+        ],
+        "layout_outline": [
+          [
+            1872.0,
+            905.5
+          ],
+          [
+            1877.0,
+            905.5
+          ],
+          [
+            1877.0,
+            910.5
+          ],
+          [
+            1872.0,
+            910.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1699,
+            663
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.12751367476568,
+          "source_row_bbox": [
+            1676,
+            657,
+            1712,
+            670
+          ],
+          "terminal_side": "top",
+          "terminal_side_status": "AI_candidate_for_this_region_not_inherited_Q2_approval",
+          "source_diffusion_columns": [
+            "UP-AA-F01669-COL-0",
+            "UP-AA-F01669-COL-1"
+          ],
+          "native_center": [
+            1699,
+            663
+          ],
+          "source_observation_id": "UP-GATE-UG10-OBS-1",
+          "evidence_tier": "measured_terminal_row_AI_side_hypothesis",
+          "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+          "supported": true
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "SG-U06-010"
+      },
+      "after": {
+        "id": "CTT-UP-UG10-GATE-S001",
+        "family": "UP-UG10-GATE",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1874.5,
+          915.0
+        ],
+        "layout_outline": [
+          [
+            1872.0,
+            912.5
+          ],
+          [
+            1877.0,
+            912.5
+          ],
+          [
+            1877.0,
+            917.5
+          ],
+          [
+            1872.0,
+            917.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1699,
+            663
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.12751367476568,
+          "source_row_bbox": [
+            1676,
+            657,
+            1712,
+            670
+          ],
+          "terminal_side": "top",
+          "terminal_side_status": "AI_candidate_for_this_region_not_inherited_Q2_approval",
+          "source_diffusion_columns": [
+            "UP-AA-F01669-COL-0",
+            "UP-AA-F01669-COL-1"
+          ],
+          "native_center": [
+            1699,
+            663
+          ],
+          "source_observation_id": "UP-GATE-UG10-OBS-1",
+          "evidence_tier": "measured_terminal_row_AI_side_hypothesis",
+          "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+          "supported": true
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "SG-U06-010"
+      }
+    }
+  ],
+  "previous_unknown_slots": [
+    {
+      "id": "UNKNOWN-UP-RING-TOP-2",
+      "family": "UP-RING-TOP",
+      "slot": 2,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1227.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1232.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1232.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1227.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1229.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        935.0,
+        621.35
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-11",
+      "family": "UP-RING-TOP",
+      "slot": 11,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1344.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1349.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1349.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1344.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1346.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1065.5,
+        622.655
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-12",
+      "family": "UP-RING-TOP",
+      "slot": 12,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1357.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1362.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1362.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1357.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1359.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1080.0,
+        622.8
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-13",
+      "family": "UP-RING-TOP",
+      "slot": 13,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1370.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1375.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1375.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1370.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1372.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1094.5,
+        622.945
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-20",
+      "family": "UP-RING-TOP",
+      "slot": 20,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1461.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1466.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1466.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1461.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1463.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1196.0,
+        623.96
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-30",
+      "family": "UP-RING-TOP",
+      "slot": 30,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1591.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1596.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1596.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1591.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1593.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1341.0,
+        624.846
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-38",
+      "family": "UP-RING-TOP",
+      "slot": 38,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1695.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1700.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1700.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1695.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1697.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1457.0,
+        625.542
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-50",
+      "family": "UP-RING-TOP",
+      "slot": 50,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1851.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1856.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1856.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1851.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1853.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1631.0,
+        626.586
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-55",
+      "family": "UP-RING-TOP",
+      "slot": 55,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1916.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1921.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1921.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1916.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1918.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1703.5,
+        627.007
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-58",
+      "family": "UP-RING-TOP",
+      "slot": 58,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1955.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1960.1936999999998,
+          871.5553500000001
+        ],
+        [
+          1960.1936999999998,
+          876.5553500000001
+        ],
+        [
+          1955.1936999999998,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1957.6936999999998,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1747.0,
+        627.094
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-68",
+      "family": "UP-RING-TOP",
+      "slot": 68,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2085.1937,
+          871.5553500000001
+        ],
+        [
+          2090.1937,
+          871.5553500000001
+        ],
+        [
+          2090.1937,
+          876.5553500000001
+        ],
+        [
+          2085.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2087.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1892.0,
+        627.384
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-69",
+      "family": "UP-RING-TOP",
+      "slot": 69,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2098.1937,
+          871.5553500000001
+        ],
+        [
+          2103.1937,
+          871.5553500000001
+        ],
+        [
+          2103.1937,
+          876.5553500000001
+        ],
+        [
+          2098.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2100.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1906.5,
+        627.413
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-73",
+      "family": "UP-RING-TOP",
+      "slot": 73,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2150.1937,
+          871.5553500000001
+        ],
+        [
+          2155.1937,
+          871.5553500000001
+        ],
+        [
+          2155.1937,
+          876.5553500000001
+        ],
+        [
+          2150.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2152.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        1964.5,
+        627.529
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-77",
+      "family": "UP-RING-TOP",
+      "slot": 77,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2202.1937,
+          871.5553500000001
+        ],
+        [
+          2207.1937,
+          871.5553500000001
+        ],
+        [
+          2207.1937,
+          876.5553500000001
+        ],
+        [
+          2202.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2204.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2022.5,
+        627.645
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-78",
+      "family": "UP-RING-TOP",
+      "slot": 78,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2215.1937,
+          871.5553500000001
+        ],
+        [
+          2220.1937,
+          871.5553500000001
+        ],
+        [
+          2220.1937,
+          876.5553500000001
+        ],
+        [
+          2215.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2217.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2037.0,
+        627.674
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-88",
+      "family": "UP-RING-TOP",
+      "slot": 88,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2345.1937,
+          871.5553500000001
+        ],
+        [
+          2350.1937,
+          871.5553500000001
+        ],
+        [
+          2350.1937,
+          876.5553500000001
+        ],
+        [
+          2345.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2347.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2182.0,
+        627.964
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-100",
+      "family": "UP-RING-TOP",
+      "slot": 100,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2501.1937,
+          871.5553500000001
+        ],
+        [
+          2506.1937,
+          871.5553500000001
+        ],
+        [
+          2506.1937,
+          876.5553500000001
+        ],
+        [
+          2501.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2503.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2356.0,
+        628.52
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-107",
+      "family": "UP-RING-TOP",
+      "slot": 107,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2592.1937,
+          871.5553500000001
+        ],
+        [
+          2597.1937,
+          871.5553500000001
+        ],
+        [
+          2597.1937,
+          876.5553500000001
+        ],
+        [
+          2592.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2594.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2457.5,
+        628.8583333333333
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-117",
+      "family": "UP-RING-TOP",
+      "slot": 117,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2722.1937,
+          871.5553500000001
+        ],
+        [
+          2727.1937,
+          871.5553500000001
+        ],
+        [
+          2727.1937,
+          876.5553500000001
+        ],
+        [
+          2722.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2724.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2602.5,
+        629.3416666666667
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-118",
+      "family": "UP-RING-TOP",
+      "slot": 118,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2735.1937,
+          871.5553500000001
+        ],
+        [
+          2740.1937,
+          871.5553500000001
+        ],
+        [
+          2740.1937,
+          876.5553500000001
+        ],
+        [
+          2735.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2737.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2617.0,
+        629.39
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-144",
+      "family": "UP-RING-TOP",
+      "slot": 144,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3073.1937,
+          871.5553500000001
+        ],
+        [
+          3078.1937,
+          871.5553500000001
+        ],
+        [
+          3078.1937,
+          876.5553500000001
+        ],
+        [
+          3073.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3075.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        2994.0,
+        631.2933333333333
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-146",
+      "family": "UP-RING-TOP",
+      "slot": 146,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3099.1937,
+          871.5553500000001
+        ],
+        [
+          3104.1937,
+          871.5553500000001
+        ],
+        [
+          3104.1937,
+          876.5553500000001
+        ],
+        [
+          3099.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3101.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3023.0,
+        631.4866666666667
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-150",
+      "family": "UP-RING-TOP",
+      "slot": 150,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3151.1937,
+          871.5553500000001
+        ],
+        [
+          3156.1937,
+          871.5553500000001
+        ],
+        [
+          3156.1937,
+          876.5553500000001
+        ],
+        [
+          3151.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3153.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3081.0,
+        631.8733333333333
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-151",
+      "family": "UP-RING-TOP",
+      "slot": 151,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3164.1937,
+          871.5553500000001
+        ],
+        [
+          3169.1937,
+          871.5553500000001
+        ],
+        [
+          3169.1937,
+          876.5553500000001
+        ],
+        [
+          3164.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3166.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3095.5,
+        631.97
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-164",
+      "family": "UP-RING-TOP",
+      "slot": 164,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3333.1937,
+          871.5553500000001
+        ],
+        [
+          3338.1937,
+          871.5553500000001
+        ],
+        [
+          3338.1937,
+          876.5553500000001
+        ],
+        [
+          3333.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3335.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3284.0,
+        633.2266666666667
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-172",
+      "family": "UP-RING-TOP",
+      "slot": 172,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3437.1937,
+          871.5553500000001
+        ],
+        [
+          3442.1937,
+          871.5553500000001
+        ],
+        [
+          3442.1937,
+          876.5553500000001
+        ],
+        [
+          3437.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3439.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3400.0,
+        634.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-177",
+      "family": "UP-RING-TOP",
+      "slot": 177,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3502.1937,
+          871.5553500000001
+        ],
+        [
+          3507.1937,
+          871.5553500000001
+        ],
+        [
+          3507.1937,
+          876.5553500000001
+        ],
+        [
+          3502.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3504.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3472.5,
+        634.6531531531532
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-184",
+      "family": "UP-RING-TOP",
+      "slot": 184,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3593.1937,
+          871.5553500000001
+        ],
+        [
+          3598.1937,
+          871.5553500000001
+        ],
+        [
+          3598.1937,
+          876.5553500000001
+        ],
+        [
+          3593.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3595.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3574.0,
+        635.5675675675676
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-201",
+      "family": "UP-RING-TOP",
+      "slot": 201,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3814.1937,
+          871.5553500000001
+        ],
+        [
+          3819.1937,
+          871.5553500000001
+        ],
+        [
+          3819.1937,
+          876.5553500000001
+        ],
+        [
+          3814.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3816.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3820.5,
+        637.7882882882883
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-204",
+      "family": "UP-RING-TOP",
+      "slot": 204,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3853.1937,
+          871.5553500000001
+        ],
+        [
+          3858.1937,
+          871.5553500000001
+        ],
+        [
+          3858.1937,
+          876.5553500000001
+        ],
+        [
+          3853.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3855.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3864.0,
+        638.1801801801802
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-210",
+      "family": "UP-RING-TOP",
+      "slot": 210,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3931.1937,
+          871.5553500000001
+        ],
+        [
+          3936.1937,
+          871.5553500000001
+        ],
+        [
+          3936.1937,
+          876.5553500000001
+        ],
+        [
+          3931.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3933.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3951.0,
+        638.9639639639639
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-212",
+      "family": "UP-RING-TOP",
+      "slot": 212,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3957.1937,
+          871.5553500000001
+        ],
+        [
+          3962.1937,
+          871.5553500000001
+        ],
+        [
+          3962.1937,
+          876.5553500000001
+        ],
+        [
+          3957.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3959.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        3980.0,
+        639.2252252252252
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-218",
+      "family": "UP-RING-TOP",
+      "slot": 218,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4035.1937,
+          871.5553500000001
+        ],
+        [
+          4040.1937,
+          871.5553500000001
+        ],
+        [
+          4040.1937,
+          876.5553500000001
+        ],
+        [
+          4035.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        4037.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        4067.0,
+        640.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-TOP-219",
+      "family": "UP-RING-TOP",
+      "slot": 219,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4048.1937,
+          871.5553500000001
+        ],
+        [
+          4053.1937,
+          871.5553500000001
+        ],
+        [
+          4053.1937,
+          876.5553500000001
+        ],
+        [
+          4048.1937,
+          876.5553500000001
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        4050.6937,
+        874.0553500000001
+      ],
+      "estimated_native_center": [
+        4081.5,
+        640.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-2",
+      "family": "UP-RING-BOTTOM",
+      "slot": 2,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1227.1936999999998,
+          1034.27555
+        ],
+        [
+          1232.1936999999998,
+          1034.27555
+        ],
+        [
+          1232.1936999999998,
+          1039.27555
+        ],
+        [
+          1227.1936999999998,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1229.6936999999998,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        935.0,
+        819.0875
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-55",
+      "family": "UP-RING-BOTTOM",
+      "slot": 55,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1916.1936999999998,
+          1034.27555
+        ],
+        [
+          1921.1936999999998,
+          1034.27555
+        ],
+        [
+          1921.1936999999998,
+          1039.27555
+        ],
+        [
+          1916.1936999999998,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1918.6936999999998,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        1703.5,
+        821.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-56",
+      "family": "UP-RING-BOTTOM",
+      "slot": 56,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1929.1936999999998,
+          1034.27555
+        ],
+        [
+          1934.1936999999998,
+          1034.27555
+        ],
+        [
+          1934.1936999999998,
+          1039.27555
+        ],
+        [
+          1929.1936999999998,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        1931.6936999999998,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        1718.0,
+        821.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-77",
+      "family": "UP-RING-BOTTOM",
+      "slot": 77,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          2202.1937,
+          1034.27555
+        ],
+        [
+          2207.1937,
+          1034.27555
+        ],
+        [
+          2207.1937,
+          1039.27555
+        ],
+        [
+          2202.1937,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        2204.6937,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        2022.5,
+        821.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-150",
+      "family": "UP-RING-BOTTOM",
+      "slot": 150,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          3151.1937,
+          1034.27555
+        ],
+        [
+          3156.1937,
+          1034.27555
+        ],
+        [
+          3156.1937,
+          1039.27555
+        ],
+        [
+          3151.1937,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        3153.6937,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        3081.0,
+        819.9366666666666
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-216",
+      "family": "UP-RING-BOTTOM",
+      "slot": 216,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4009.1937,
+          1034.27555
+        ],
+        [
+          4014.1937,
+          1034.27555
+        ],
+        [
+          4014.1937,
+          1039.27555
+        ],
+        [
+          4009.1937,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        4011.6937,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        4038.0,
+        828.6636636636637
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-217",
+      "family": "UP-RING-BOTTOM",
+      "slot": 217,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4022.1937,
+          1034.27555
+        ],
+        [
+          4027.1937,
+          1034.27555
+        ],
+        [
+          4027.1937,
+          1039.27555
+        ],
+        [
+          4022.1937,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        4024.6937,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        4052.5,
+        828.8378378378378
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-218",
+      "family": "UP-RING-BOTTOM",
+      "slot": 218,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4035.1937,
+          1034.27555
+        ],
+        [
+          4040.1937,
+          1034.27555
+        ],
+        [
+          4040.1937,
+          1039.27555
+        ],
+        [
+          4035.1937,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        4037.6937,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        4067.0,
+        829.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-BOTTOM-219",
+      "family": "UP-RING-BOTTOM",
+      "slot": 219,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4048.1937,
+          1034.27555
+        ],
+        [
+          4053.1937,
+          1034.27555
+        ],
+        [
+          4053.1937,
+          1039.27555
+        ],
+        [
+          4048.1937,
+          1039.27555
+        ]
+      ],
+      "axis": 0,
+      "layout_center": [
+        4050.6937,
+        1036.77555
+      ],
+      "estimated_native_center": [
+        4081.5,
+        829.0
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-LEFT-0",
+      "family": "UP-RING-LEFT",
+      "slot": 0,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1189.1936999999998,
+          883.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          883.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          888.5553500000001
+        ],
+        [
+          1189.1936999999998,
+          888.5553500000001
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        1191.6936999999998,
+        886.0553500000001
+      ],
+      "estimated_native_center": [
+        893.0443037974684,
+        652
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-LEFT-3",
+      "family": "UP-RING-LEFT",
+      "slot": 3,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1189.1936999999998,
+          922.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          922.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          927.5553500000001
+        ],
+        [
+          1189.1936999999998,
+          927.5553500000001
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        1191.6936999999998,
+        925.0553500000001
+      ],
+      "estimated_native_center": [
+        893.3101265822785,
+        694
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-LEFT-4",
+      "family": "UP-RING-LEFT",
+      "slot": 4,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1189.1936999999998,
+          935.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          935.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          940.5553500000001
+        ],
+        [
+          1189.1936999999998,
+          940.5553500000001
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        1191.6936999999998,
+        938.0553500000001
+      ],
+      "estimated_native_center": [
+        893.3987341772151,
+        708
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-LEFT-9",
+      "family": "UP-RING-LEFT",
+      "slot": 9,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1189.1936999999998,
+          1000.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          1000.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          1005.5553500000001
+        ],
+        [
+          1189.1936999999998,
+          1005.5553500000001
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        1191.6936999999998,
+        1003.0553500000001
+      ],
+      "estimated_native_center": [
+        893.8417721518987,
+        778
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-LEFT-10",
+      "family": "UP-RING-LEFT",
+      "slot": 10,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1189.1936999999998,
+          1013.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          1013.5553500000001
+        ],
+        [
+          1194.1936999999998,
+          1018.5553500000001
+        ],
+        [
+          1189.1936999999998,
+          1018.5553500000001
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        1191.6936999999998,
+        1016.0553500000001
+      ],
+      "estimated_native_center": [
+        893.9303797468355,
+        792
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-LEFT-11",
+      "family": "UP-RING-LEFT",
+      "slot": 11,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          1189.1936999999998,
+          1026.55535
+        ],
+        [
+          1194.1936999999998,
+          1026.55535
+        ],
+        [
+          1194.1936999999998,
+          1031.55535
+        ],
+        [
+          1189.1936999999998,
+          1031.55535
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        1191.6936999999998,
+        1029.05535
+      ],
+      "estimated_native_center": [
+        894.0,
+        806
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-RIGHT-0",
+      "family": "UP-RING-RIGHT",
+      "slot": 0,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4061.566,
+          883.5553500000001
+        ],
+        [
+          4066.566,
+          883.5553500000001
+        ],
+        [
+          4066.566,
+          888.5553500000001
+        ],
+        [
+          4061.566,
+          888.5553500000001
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        4064.066,
+        886.0553500000001
+      ],
+      "estimated_native_center": [
+        4077.0,
+        657
+      ]
+    },
+    {
+      "id": "UNKNOWN-UP-RING-RIGHT-11",
+      "family": "UP-RING-RIGHT",
+      "slot": 11,
+      "status": "inspection_slot_unknown_not_a_contact",
+      "layout_outline": [
+        [
+          4061.566,
+          1026.55535
+        ],
+        [
+          4066.566,
+          1026.55535
+        ],
+        [
+          4066.566,
+          1031.55535
+        ],
+        [
+          4061.566,
+          1031.55535
+        ]
+      ],
+      "axis": 1,
+      "layout_center": [
+        4064.066,
+        1029.05535
+      ],
+      "estimated_native_center": [
+        4077.0,
+        811
+      ]
+    }
+  ],
+  "confirmed_slots": [
+    {
+      "family": "UP-RING-TOP",
+      "slot": 2,
+      "contact_id": "CTH-UP-RING-TOP-S002"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 11,
+      "contact_id": "CTH-UP-RING-TOP-S011"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 12,
+      "contact_id": "CTH-UP-RING-TOP-S012"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 13,
+      "contact_id": "CTH-UP-RING-TOP-S013"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 20,
+      "contact_id": "CTH-UP-RING-TOP-S020"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 30,
+      "contact_id": "CTH-UP-RING-TOP-S030"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 38,
+      "contact_id": "CTH-UP-RING-TOP-S038"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 50,
+      "contact_id": "CTH-UP-RING-TOP-S050"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 55,
+      "contact_id": "CTH-UP-RING-TOP-S055"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 58,
+      "contact_id": "CTH-UP-RING-TOP-S058"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 68,
+      "contact_id": "CTH-UP-RING-TOP-S068"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 69,
+      "contact_id": "CTH-UP-RING-TOP-S069"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 73,
+      "contact_id": "CTH-UP-RING-TOP-S073"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 77,
+      "contact_id": "CTH-UP-RING-TOP-S077"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 78,
+      "contact_id": "CTH-UP-RING-TOP-S078"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 88,
+      "contact_id": "CTH-UP-RING-TOP-S088"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 100,
+      "contact_id": "CTH-UP-RING-TOP-S100"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 107,
+      "contact_id": "CTH-UP-RING-TOP-S107"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 117,
+      "contact_id": "CTH-UP-RING-TOP-S117"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 118,
+      "contact_id": "CTH-UP-RING-TOP-S118"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 144,
+      "contact_id": "CTH-UP-RING-TOP-S144"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 146,
+      "contact_id": "CTH-UP-RING-TOP-S146"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 150,
+      "contact_id": "CTH-UP-RING-TOP-S150"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 151,
+      "contact_id": "CTH-UP-RING-TOP-S151"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 164,
+      "contact_id": "CTH-UP-RING-TOP-S164"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 172,
+      "contact_id": "CTH-UP-RING-TOP-S172"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 177,
+      "contact_id": "CTH-UP-RING-TOP-S177"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 184,
+      "contact_id": "CTH-UP-RING-TOP-S184"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 201,
+      "contact_id": "CTH-UP-RING-TOP-S201"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 204,
+      "contact_id": "CTH-UP-RING-TOP-S204"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 210,
+      "contact_id": "CTH-UP-RING-TOP-S210"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 212,
+      "contact_id": "CTH-UP-RING-TOP-S212"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 218,
+      "contact_id": "CTH-UP-RING-TOP-S218"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 219,
+      "contact_id": "CTH-UP-RING-TOP-S219"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 2,
+      "contact_id": "CTH-UP-RING-BOTTOM-S002"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 55,
+      "contact_id": "CTH-UP-RING-BOTTOM-S055"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 56,
+      "contact_id": "CTH-UP-RING-BOTTOM-S056"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 77,
+      "contact_id": "CTH-UP-RING-BOTTOM-S077"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 150,
+      "contact_id": "CTH-UP-RING-BOTTOM-S150"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 216,
+      "contact_id": "CTH-UP-RING-BOTTOM-S216"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 217,
+      "contact_id": "CTH-UP-RING-BOTTOM-S217"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 218,
+      "contact_id": "CTH-UP-RING-BOTTOM-S218"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 219,
+      "contact_id": "CTH-UP-RING-BOTTOM-S219"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 0,
+      "contact_id": "CTH-UP-RING-LEFT-S000"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 3,
+      "contact_id": "CTH-UP-RING-LEFT-S003"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 4,
+      "contact_id": "CTH-UP-RING-LEFT-S004"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 9,
+      "contact_id": "CTH-UP-RING-LEFT-S009"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 10,
+      "contact_id": "CTH-UP-RING-LEFT-S010"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 11,
+      "contact_id": "CTH-UP-RING-LEFT-S011"
+    },
+    {
+      "family": "UP-RING-RIGHT",
+      "slot": 0,
+      "contact_id": "CTH-UP-RING-RIGHT-S000"
+    },
+    {
+      "family": "UP-RING-RIGHT",
+      "slot": 11,
+      "contact_id": "CTH-UP-RING-RIGHT-S011"
+    }
+  ]
+}

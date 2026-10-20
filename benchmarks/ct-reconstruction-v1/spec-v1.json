@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "inputs": {
+    "baseline": {
+      "path": "benchmarks/poly-closeout-v3/model-v1.json",
+      "sha256": "ba2aafa2080f4bec2f1dec589a2fbdf2f254e23dbb75ac772b6730dfaa5d591a"
+    },
+    "AA_projection": {
+      "path": "benchmarks/poly-small-aa-correspondence-v1/AA-working-model-v1.json",
+      "sha256": "0d17a23c3e6965095894b0bc6c0caa647cc2bf8406aa76047b6f7b6037b0745c"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "baseline_acceptance": {
+      "path": "benchmarks/poly-closeout-v3/stage-acceptance-v1.json",
+      "sha256": "72aad21e2c41fd0bf25eea86c1e54c22ac8890b2bec6cf46207547b033907929"
+    }
+  },
+  "detector": {
+    "peak_gray": 190,
+    "peak_residual": 16,
+    "peak_neighborhood": 11,
+    "max_peak_plateau_span": 9
+  },
+  "geometry": {
+    "square_side": 8,
+    "axis_cluster_px": 2.5,
+    "max_regularization_shift": 3,
+    "pitch_min": 9,
+    "pitch_max": 100,
+    "periodic_snap_residual": 2.5,
+    "enclosure_px": 1,
+    "min_gap_px": 2,
+    "allow_regularization": false,
+    "local_family_reviewed": false
+  },
+  "rules_status": "relative_pixel_working_budgets_not_target_foundry_rules",
+  "scopes": [
+    {
+      "id": "CT01",
+      "title": "上方小MOS",
+      "native_bbox": [
+        1720,
+        610,
+        2200,
+        810
+      ],
+      "review_focus": "扩散侧孔列与栅端落孔分开；不把沟道纹理当孔"
+    },
+    {
+      "id": "CT02",
+      "title": "Q3右侧六条MOS及邻近宽MOS",
+      "native_bbox": [
+        900,
+        1170,
+        1450,
+        1380
+      ],
+      "review_focus": "六条MOS数量只作结构上下文，不据此自动补六组孔"
+    },
+    {
+      "id": "CT03",
+      "title": "长条电阻上端与外围环",
+      "native_bbox": [
+        3120,
+        1760,
+        3650,
+        2050
+      ],
+      "review_focus": "电阻端孔与环孔分开；电阻体中部不按亮纹补孔"
+    },
+    {
+      "id": "CT04",
+      "title": "竖向环及转角",
+      "native_bbox": [
+        2060,
+        1160,
+        2420,
+        1690
+      ],
+      "review_focus": "环连续不等于CT连续；保留真实断孔和未知"
+    }
+  ],
+  "detector_comparison": {
+    "strict_peak_gray": 205,
+    "candidate_peak_gray": 190,
+    "same_existing_compact_bright_residual_support": true,
+    "not_recall_or_precision_measurement": true,
+    "lowering_brightness_only_added_observations": 0,
+    "supplement_status": "actual_observed_peaks_with_two_neighbor_axis_support_all_remain_unknown"
+  },
+  "supplement": {
+    "neighborhood": 11,
+    "peak_gray": 205,
+    "peak_residual": 16,
+    "crop_border_px": 8,
+    "max_peak_plateau_span": 9,
+    "duplicate_radius": 6,
+    "neighbor_radius": 45,
+    "axis_tolerance": 4,
+    "min_neighbors": 2
+  }
+}

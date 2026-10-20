@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<title>CT源图对应修订 v3</title><style>body{max-width:1400px;margin:24px auto;background:#111c28;
+color:#eee;font:16px sans-serif}img{width:100%}select{padding:8px}a{color:#65baff}
+section{padding:16px;border:1px solid #567;margin:20px 0}</style>
+<p>本轮局部增加共栅横带；已审源漏CT与AA保持不变。红框为排除的宽MOS孔列；蓝色C1–C7为当前七列，最右C7现已纳入。边界坐标由AI据用户定性反馈定位，仍待复核。</p><p>本页补充与原橙色位置已获用户确认；<a href="../ct-right6-reviewed-v5/index.html">打开已审版本（53个CT）</a>。</p><h1>源漏CT已确认：补充共栅POLY和栅接触</h1>
+<p>蓝色源漏CT原有42孔保持不变。用户确认六MOS的栅在POLY上相连；
+本次将六栅指及下端横带合并为同一POLY实体，六个栅指编号继续保留。</p>
+<p>另加入10个有明确照片亮点支持的栅极CT候选，均被共栅POLY完整包围且位于AA之外。
+行列位置仍按规则几何重建；一处可能漏检的槽位保留未知，未凭预期补孔。
+原图紫色十字为新增栅极接触、蓝色为已审源漏接触；橙框问号仅是待核位置，不是CT对象。横带精确边界及新增CT仍待复核，M1归属未知。</p>
+<section><h2>联合设计图</h2><p>检查六栅共用横带及其接触；其他区域未覆盖。</p>
+<select onchange="document.getElementById('design').src=this.value">
+<option value="layout.svg">AA＋POLY＋全部CT</option><option value="before.svg">修订前：六独立栅指＋已审源漏CT</option>
+<option value="base.svg">含共栅带的AA＋POLY</option>
+</select><img id="design" src="layout.svg"></section>
+<section><h2>同一位置原图与观察支持（十字为实际亮点）</h2>
+<select onchange="document.getElementById('source').src=this.value">
+<option value="source.png">原图＋实际亮点</option><option value="source-before.png">修正前错误对应（对照）</option><option value="raw.png">纯原图</option>
+</select><img id="source" src="source.png"></section>
+<p><a href="report.json">硬性质量门</a> ·
+<a href="fit.json">局部匹配与光学尺寸观察</a></p></html>

@@ -1,0 +1,17 @@
+{
+  "status": "partial_candidate_coverage_with_explicit_unknowns",
+  "expected_gate_regions": 55,
+  "counts": {
+    "SD": 1161,
+    "gate": 134,
+    "ring": 651
+  },
+  "new_candidate_contacts": 1946,
+  "retained": 2709,
+  "total": 4655,
+  "inspection_slots": 119,
+  "unresolved_ref": "unresolved-gates-v1.json",
+  "geometry_proposal_ref": "geometry-conflict-v1.json",
+  "whole_layer_complete": false,
+  "needs_human_review": true
+}

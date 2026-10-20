@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 1.4999999999999998,
+  "minimum_POLY_clearance_px": 1.4999999999999998,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 2658,
+  "physical_PDK_DRC": false,
+  "protected_contact_count": 1885,
+  "previously_accepted_contact_count": 130,
+  "retained_working_geometry_count": 1755,
+  "new_contact_count": 773,
+  "protected_materials_unchanged": true,
+  "scope": "whole UPPER-INNER-B guard frame: 10 tiny plus30 Q1 gates; SD, terminal and ring contact candidates",
+  "human_review": "pending_new_cases_only",
+  "photo_correspondence": "AI_local_candidates",
+  "implementation_sha256": "668a1330d0d42b5616285818fb84112e255d05c0fe98d19f0d4102cce3f81a76",
+  "shared_geometry_implementation_sha256": "0eea032f50e1e98b8893744923d620b19c857776a67622cd2b3a069a0bd155e5"
+}

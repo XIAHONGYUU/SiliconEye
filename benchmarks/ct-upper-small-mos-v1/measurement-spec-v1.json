@@ -1,0 +1,437 @@
+{
+  "operation": "terminal_row_measurement",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "contacts": {
+      "path": "benchmarks/q2-gate-ct-localization-v1/model-v1.json",
+      "sha256": "6865d237a012b85585fa540a0d5a4bea5cfc368f4bd1094e2008bb7090a2bcb2"
+    },
+    "source_paths": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-paths-v1.json",
+      "sha256": "b8006f10555165498dbb976da08b3ed8d93cd43fc72e4c6b46cbdd68af991b4e"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    }
+  },
+  "bottom_localization": {
+    "search_above": 21,
+    "search_below": 19,
+    "ring_margin": 14,
+    "column_inset": 8,
+    "profile_min_gray": 180,
+    "peak_min_distance": 8,
+    "min_gray": 225,
+    "min_residual": 18,
+    "gates": [
+      {
+        "alias": "UG01",
+        "gate_id": "G55-P01",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01662-COL-0",
+        "right_column": "UP-AA-F01662-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG02",
+        "gate_id": "G55-P02",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01661-COL-0",
+        "right_column": "UP-AA-F01661-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG03",
+        "gate_id": "G55-P03",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01660-COL-0",
+        "right_column": "UP-AA-F01660-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG04",
+        "gate_id": "G55-P04",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01663-COL-0",
+        "right_column": "UP-AA-F01663-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG05",
+        "gate_id": "SG-U06-005",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01664-COL-0",
+        "right_column": "UP-AA-F01664-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG06",
+        "gate_id": "SG-U06-006",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01665-COL-0",
+        "right_column": "UP-AA-F01665-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG07",
+        "gate_id": "SG-U06-007",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01666-COL-0",
+        "right_column": "UP-AA-F01666-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG08",
+        "gate_id": "SG-U06-008",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01667-COL-0",
+        "right_column": "UP-AA-F01667-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG09",
+        "gate_id": "SG-U06-009",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01668-COL-0",
+        "right_column": "UP-AA-F01668-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG10",
+        "gate_id": "SG-U06-010",
+        "region": "TINY",
+        "side": "top",
+        "min_gray": 210,
+        "left_column": "UP-AA-F01669-COL-0",
+        "right_column": "UP-AA-F01669-COL-1",
+        "ring_row": "UP-RING-TOP"
+      },
+      {
+        "alias": "UG11",
+        "gate_id": "CL2-Q1-AA-F01670-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01670-COL-0",
+        "right_column": "UP-AA-F01670-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG12",
+        "gate_id": "CL2-Q1-AA-F01670-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01670-COL-1",
+        "right_column": "UP-AA-F01670-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG13",
+        "gate_id": "CL2-Q1-AA-F01671-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01671-COL-0",
+        "right_column": "UP-AA-F01671-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG14",
+        "gate_id": "CL2-Q1-AA-F01672-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01672-COL-0",
+        "right_column": "UP-AA-F01672-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG15",
+        "gate_id": "CL2-Q1-AA-F01672-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01672-COL-1",
+        "right_column": "UP-AA-F01672-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG16",
+        "gate_id": "CL2-Q1-AA-F01673-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01673-COL-0",
+        "right_column": "UP-AA-F01673-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG17",
+        "gate_id": "CL2-Q1-AA-F01674-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01674-COL-0",
+        "right_column": "UP-AA-F01674-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG18",
+        "gate_id": "CL2-Q1-AA-F01674-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01674-COL-1",
+        "right_column": "UP-AA-F01674-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG19",
+        "gate_id": "CL2-Q1-AA-F01674-03",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01674-COL-2",
+        "right_column": "UP-AA-F01674-COL-3",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG20",
+        "gate_id": "CL2-Q1-AA-F01674-04",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01674-COL-3",
+        "right_column": "UP-AA-F01674-COL-4",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG21",
+        "gate_id": "CL2-Q1-AA-F01675-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01675-COL-0",
+        "right_column": "UP-AA-F01675-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG22",
+        "gate_id": "CL2-Q1-AA-F01675-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01675-COL-1",
+        "right_column": "UP-AA-F01675-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG23",
+        "gate_id": "CL2-Q1-AA-F01676-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01676-COL-0",
+        "right_column": "UP-AA-F01676-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG24",
+        "gate_id": "CL2-Q1-AA-F01676-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01676-COL-1",
+        "right_column": "UP-AA-F01676-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG25",
+        "gate_id": "CL2-Q1-AA-F01676-03",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01676-COL-2",
+        "right_column": "UP-AA-F01676-COL-3",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG26",
+        "gate_id": "CL2-Q1-AA-F01676-04",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01676-COL-3",
+        "right_column": "UP-AA-F01676-COL-4",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG27",
+        "gate_id": "CL2-Q1-AA-F01677-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01677-COL-0",
+        "right_column": "UP-AA-F01677-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG28",
+        "gate_id": "CL2-Q1-AA-F01677-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01677-COL-1",
+        "right_column": "UP-AA-F01677-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG29",
+        "gate_id": "CL2-Q1-AA-F01678-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-0",
+        "right_column": "UP-AA-F01678-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG30",
+        "gate_id": "CL2-Q1-AA-F01678-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-1",
+        "right_column": "UP-AA-F01678-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG31",
+        "gate_id": "CL2-Q1-AA-F01678-03",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-2",
+        "right_column": "UP-AA-F01678-COL-3",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG32",
+        "gate_id": "CL2-Q1-AA-F01678-04",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-3",
+        "right_column": "UP-AA-F01678-COL-4",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG33",
+        "gate_id": "CL2-Q1-AA-F01678-05",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-4",
+        "right_column": "UP-AA-F01678-COL-5",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG34",
+        "gate_id": "CL2-Q1-AA-F01678-06",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-5",
+        "right_column": "UP-AA-F01678-COL-6",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG35",
+        "gate_id": "CL2-Q1-AA-F01678-07",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-6",
+        "right_column": "UP-AA-F01678-COL-7",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG36",
+        "gate_id": "CL2-Q1-AA-F01678-08",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01678-COL-7",
+        "right_column": "UP-AA-F01678-COL-8",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG37",
+        "gate_id": "CL2-Q1-AA-F01679-01",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01679-COL-0",
+        "right_column": "UP-AA-F01679-COL-1",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG38",
+        "gate_id": "CL2-Q1-AA-F01679-02",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01679-COL-1",
+        "right_column": "UP-AA-F01679-COL-2",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG39",
+        "gate_id": "CL2-Q1-AA-F01679-03",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01679-COL-2",
+        "right_column": "UP-AA-F01679-COL-3",
+        "ring_row": "UP-RING-BOTTOM"
+      },
+      {
+        "alias": "UG40",
+        "gate_id": "CL2-Q1-AA-F01679-04",
+        "region": "MAIN",
+        "side": "bottom",
+        "min_gray": 225,
+        "left_column": "UP-AA-F01679-COL-3",
+        "right_column": "UP-AA-F01679-COL-4",
+        "ring_row": "UP-RING-BOTTOM"
+      }
+    ]
+  }
+}

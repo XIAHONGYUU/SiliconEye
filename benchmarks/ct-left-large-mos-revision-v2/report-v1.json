@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 1.4999999999999998,
+  "minimum_POLY_clearance_px": 1.4999999999999998,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 4940,
+  "physical_PDK_DRC": false,
+  "unchanged_parent_contacts": 4631,
+  "revised_contact_count": 24,
+  "new_contact_count": 285,
+  "material_revision_ids": [
+    "G67-P01",
+    "G25-P01",
+    "G26-P01",
+    "AA2-LEFT-STAIR-AA0-0",
+    "AA2-LEFT-STAIR-AA5-0",
+    "AA2-LEFT-STAIR-AA6-0",
+    "AA-LEFT-STAIR-SHARED-56",
+    "AA-W04"
+  ],
+  "human_review": "scoped decisions retained; revised geometry and new CT pending review",
+  "implementation_sha256": "085cb43dd9081fd93b3c9ed43b0ef2e9d0915f1c30a7974f1bb9a4bf79d5bde6"
+}

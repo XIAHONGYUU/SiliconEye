@@ -1,0 +1,528 @@
+{
+  "contacts": [
+    {
+      "id": "CTSD2-G65-P04-left-0",
+      "family": "SD2-G65-P04-left",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+      "layout_center": [
+        1352.3168,
+        3653.60805
+      ],
+      "layout_outline": [
+        [
+          1349.8168,
+          3651.10805
+        ],
+        [
+          1354.8168,
+          3651.10805
+        ],
+        [
+          1354.8168,
+          3656.10805
+        ],
+        [
+          1349.8168,
+          3656.10805
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          1157,
+          3616
+        ],
+        "peak_gray": 245.0,
+        "local_residual": 86.20221893333283,
+        "source_roi": [
+          1147,
+          3587,
+          1176,
+          3626
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+        "native_gate_bar_anchor": [
+          1188.0,
+          3635.0
+        ]
+      },
+      "status": "AI_context_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTSD2-G65-P04-right-0",
+      "family": "SD2-G65-P04-right",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+      "layout_center": [
+        1401.7561,
+        3653.60805
+      ],
+      "layout_outline": [
+        [
+          1399.2561,
+          3651.10805
+        ],
+        [
+          1404.2561,
+          3651.10805
+        ],
+        [
+          1404.2561,
+          3656.10805
+        ],
+        [
+          1399.2561,
+          3656.10805
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          1207,
+          3615
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 60.24213119760512,
+        "source_roi": [
+          1201,
+          3587,
+          1230,
+          3626
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+        "native_gate_bar_anchor": [
+          1188.0,
+          3635.0
+        ]
+      },
+      "status": "AI_context_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTSD2-G65-P08-left-0",
+      "family": "SD2-G65-P08-left",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+      "layout_center": [
+        1644.3729,
+        3653.60805
+      ],
+      "layout_outline": [
+        [
+          1641.8729,
+          3651.10805
+        ],
+        [
+          1646.8729,
+          3651.10805
+        ],
+        [
+          1646.8729,
+          3656.10805
+        ],
+        [
+          1641.8729,
+          3656.10805
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          1485,
+          3608
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 78.16577842589973,
+        "source_roi": [
+          1475,
+          3579,
+          1504,
+          3618
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+        "native_gate_bar_anchor": [
+          1516.0,
+          3627.0
+        ]
+      },
+      "status": "AI_context_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTSD2-G65-P08-right-0",
+      "family": "SD2-G65-P08-right",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+      "layout_center": [
+        1696.2549,
+        3653.60805
+      ],
+      "layout_outline": [
+        [
+          1693.7549,
+          3651.10805
+        ],
+        [
+          1698.7549,
+          3651.10805
+        ],
+        [
+          1698.7549,
+          3656.10805
+        ],
+        [
+          1693.7549,
+          3656.10805
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          1535,
+          3607
+        ],
+        "peak_gray": 244.0,
+        "local_residual": 55.480020959873286,
+        "source_roi": [
+          1529,
+          3579,
+          1558,
+          3618
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+        "native_gate_bar_anchor": [
+          1516.0,
+          3627.0
+        ]
+      },
+      "status": "AI_context_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTSD2-G66-P07-left-0",
+      "family": "SD2-G66-P07-left",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+      "layout_center": [
+        1575.2847,
+        3780.25025
+      ],
+      "layout_outline": [
+        [
+          1572.7847,
+          3777.75025
+        ],
+        [
+          1577.7847,
+          3777.75025
+        ],
+        [
+          1577.7847,
+          3782.75025
+        ],
+        [
+          1572.7847,
+          3782.75025
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          1413,
+          3740
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 60.43597400917963,
+        "source_roi": [
+          1402,
+          3730,
+          1431,
+          3769
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+        "native_gate_bar_anchor": [
+          1443.0,
+          3720.0
+        ]
+      },
+      "status": "AI_context_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTSD2-G66-P07-right-0",
+      "family": "SD2-G66-P07-right",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+      "layout_center": [
+        1624.2242,
+        3780.25025
+      ],
+      "layout_outline": [
+        [
+          1621.7242,
+          3777.75025
+        ],
+        [
+          1626.7242,
+          3777.75025
+        ],
+        [
+          1626.7242,
+          3782.75025
+        ],
+        [
+          1621.7242,
+          3782.75025
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          1459,
+          3739
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 62.62337890866834,
+        "source_roi": [
+          1456,
+          3730,
+          1485,
+          3769
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+        "native_gate_bar_anchor": [
+          1443.0,
+          3720.0
+        ]
+      },
+      "status": "AI_context_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    }
+  ],
+  "regions": [
+    {
+      "gate_id": "G65-P04",
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+      "source_gate_bar_center": [
+        1188.0,
+        3635.0
+      ],
+      "side": "bottom",
+      "source_locator": "observed gate-bar anchor; old native box not imposed as material boundary",
+      "columns": [
+        {
+          "side": "left",
+          "source_roi": [
+            1147,
+            3587,
+            1176,
+            3626
+          ],
+          "observations": [
+            {
+              "native_center": [
+                1157,
+                3616
+              ],
+              "peak_gray": 245.0,
+              "local_residual": 86.20221893333283,
+              "source_roi": [
+                1147,
+                3587,
+                1176,
+                3626
+              ]
+            }
+          ]
+        },
+        {
+          "side": "right",
+          "source_roi": [
+            1201,
+            3587,
+            1230,
+            3626
+          ],
+          "observations": [
+            {
+              "native_center": [
+                1207,
+                3615
+              ],
+              "peak_gray": 251.0,
+              "local_residual": 60.24213119760512,
+              "source_roi": [
+                1201,
+                3587,
+                1230,
+                3626
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gate_id": "G65-P08",
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+      "source_gate_bar_center": [
+        1516.0,
+        3627.0
+      ],
+      "side": "bottom",
+      "source_locator": "observed gate-bar anchor; old native box not imposed as material boundary",
+      "columns": [
+        {
+          "side": "left",
+          "source_roi": [
+            1475,
+            3579,
+            1504,
+            3618
+          ],
+          "observations": [
+            {
+              "native_center": [
+                1485,
+                3608
+              ],
+              "peak_gray": 248.0,
+              "local_residual": 78.16577842589973,
+              "source_roi": [
+                1475,
+                3579,
+                1504,
+                3618
+              ]
+            }
+          ]
+        },
+        {
+          "side": "right",
+          "source_roi": [
+            1529,
+            3579,
+            1558,
+            3618
+          ],
+          "observations": [
+            {
+              "native_center": [
+                1535,
+                3607
+              ],
+              "peak_gray": 244.0,
+              "local_residual": 55.480020959873286,
+              "source_roi": [
+                1529,
+                3579,
+                1558,
+                3618
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gate_id": "G66-P07",
+      "AA_id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+      "source_gate_bar_center": [
+        1443.0,
+        3720.0
+      ],
+      "side": "top",
+      "source_locator": "observed gate-bar anchor; old native box not imposed as material boundary",
+      "columns": [
+        {
+          "side": "left",
+          "source_roi": [
+            1402,
+            3730,
+            1431,
+            3769
+          ],
+          "observations": [
+            {
+              "native_center": [
+                1413,
+                3740
+              ],
+              "peak_gray": 246.0,
+              "local_residual": 60.43597400917963,
+              "source_roi": [
+                1402,
+                3730,
+                1431,
+                3769
+              ]
+            }
+          ]
+        },
+        {
+          "side": "right",
+          "source_roi": [
+            1456,
+            3730,
+            1485,
+            3769
+          ],
+          "observations": [
+            {
+              "native_center": [
+                1459,
+                3739
+              ],
+              "peak_gray": 248.0,
+              "local_residual": 62.62337890866834,
+              "source_roi": [
+                1456,
+                3730,
+                1485,
+                3769
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

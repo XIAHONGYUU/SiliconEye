@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 8.761306122449014,
+  "minimum_AA_enclosure_px": 1.5,
+  "minimum_POLY_clearance_px": 1.5,
+  "contact_count": 42,
+  "physical_PDK_DRC": false,
+  "scope": "explicit_family_subset_not_full_CT_layer",
+  "baseline_ref": {
+    "path": "benchmarks/poly-closeout-v3/model-v1.json",
+    "sha256": "ba2aafa2080f4bec2f1dec589a2fbdf2f254e23dbb75ac772b6730dfaa5d591a"
+  },
+  "correspondence_status": "AI_candidate_after_human_boundary_correction",
+  "layout_preserved": true,
+  "M1_enclosure": "unknown",
+  "net_inference": false,
+  "implementation_sha256": "741bb2eb258864c912709c41817683b8f12ee3c6aeba75bfce7600c301072b24",
+  "retained_prior_observations": 473,
+  "phase": "geometry_and_material_landing_PASS; material_truth_not_human_accepted"
+}

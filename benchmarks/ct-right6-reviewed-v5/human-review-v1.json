@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-20",
+  "user_text": "确认补充无误，橙色候选没有问题",
+  "accepted_scope": "v4 displayed common gate bus and ten gate contacts; orange slot confirmed as contact",
+  "confirmed_slots": [
+    {
+      "family": "RIGHT6-GATE",
+      "slot": 1,
+      "contact_id": "CTJ-RIGHT6-GATE-H01"
+    }
+  ],
+  "limits": [
+    "local displayed relationships only",
+    "not physical process size or M1 connectivity",
+    "newly promoted contact is human-supported, not newly algorithm-detected"
+  ]
+}

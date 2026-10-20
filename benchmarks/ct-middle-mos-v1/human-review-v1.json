@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "user_verbatim": "1.批准通过，只是有一个共性问题就是需要注意，从现在的生成组合图，靠近AA边缘的ct相较于中间的CT距离poly的距离比较近，如果不会将其识别为Gate端的CT则不需要修改，因为对正常使用没有本质影响。",
+  "scope": "Displayed A/B/C new source-drain and guard-ring CT candidates only",
+  "decision": "accepted_for_displayed_material_correspondence_and_normal_use",
+  "accepted_new_contacts": 986,
+  "accepted_types": {
+    "source_drain": 630,
+    "guard_ring": 356
+  },
+  "geometry_action": "keep unchanged; no edge-distance cosmetic adjustment",
+  "technical_check": {
+    "all_new_contacts_explicitly_AA_targeted": true,
+    "no_new_POLY_targeted_contacts": true,
+    "whole_geometry_gate": "PASS",
+    "minimum_POLY_clearance_px": 1.4999999999999998
+  },
+  "classification_rule": "AA edge proximity to POLY does not identify a gate contact. Use landing material, source correspondence and enclosure/exclusion checks; if conflicting leave unknown.",
+  "still_unknown": [
+    "48 inspection slots are not contacts",
+    "gate-terminal CT in GA/GC and other local endpoints",
+    "M1 enclosure and electrical net connectivity"
+  ],
+  "prior_661_status": "relationship basically accepted; no blanket geometric approval",
+  "model_snapshot_sha256": "3d405da0c1f5c851768496f7b0f23afc05ffa30f57e26c42c79bc6710c727be2"
+}

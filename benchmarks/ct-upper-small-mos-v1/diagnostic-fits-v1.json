@@ -1,0 +1,3741 @@
+{
+  "fits": [
+    {
+      "id": "UP-AA-F01662",
+      "native_row_fit": [
+        679.5,
+        17.0000000000001
+      ],
+      "native_y_fit_RMS_px": 0.5,
+      "photo_residual_core_width_median_px": 6.0,
+      "photo_residual_core_width_range_px": [
+        3,
+        10
+      ],
+      "gate_body_contrasts": [
+        45.41176470588235
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            948,
+            679
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 46.48406260727651,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 2.23606797749979
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            950,
+            696
+          ],
+          "supported": true,
+          "peak_gray": 198.0,
+          "residual": 42.31990140085486,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.5239750654127997
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1002,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 54.44174656587734,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 5.0990195135927845
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            998,
+            697
+          ],
+          "supported": true,
+          "peak_gray": 204.0,
+          "residual": 54.19357210472802,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.307054399011854
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01661",
+      "native_row_fit": [
+        677.9999999999999,
+        19.0
+      ],
+      "native_y_fit_RMS_px": 1.4142135623730951,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        11
+      ],
+      "gate_body_contrasts": [
+        32.89999999999998
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1023,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 58.161408674495476,
+          "residual_core_width_px": 11,
+          "seed_distance_px": 5.190956077641184
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1025,
+            697
+          ],
+          "supported": false,
+          "peak_gray": 179.0,
+          "residual": 38.966980909297604,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.2708599786599764
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1082,
+            676
+          ],
+          "supported": true,
+          "peak_gray": 230.0,
+          "residual": 65.76373126387588,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.753783537812298
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1078,
+            697
+          ],
+          "supported": false,
+          "peak_gray": 178.0,
+          "residual": 33.424244257493825,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.449188641162563
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01660",
+      "native_row_fit": [
+        679.4999999999999,
+        16.500000000000114
+      ],
+      "native_y_fit_RMS_px": 2.7613402542968153,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        3,
+        11
+      ],
+      "gate_body_contrasts": [
+        38.0
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1109,
+            677
+          ],
+          "supported": true,
+          "peak_gray": 239.0,
+          "residual": 55.107089849911944,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.89816547290918
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1110,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 219.0,
+          "residual": 47.152012052575316,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.526262185374219
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1163,
+            682
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 55.186814092679725,
+          "residual_core_width_px": 11,
+          "seed_distance_px": 3.0069960093089607
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1158,
+            699
+          ],
+          "supported": true,
+          "peak_gray": 186.0,
+          "residual": 42.48878304379062,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.7006114359656737
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01663",
+      "native_row_fit": [
+        682.0,
+        14.000000000000083
+      ],
+      "native_y_fit_RMS_px": 2.23606797749979,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        3,
+        9
+      ],
+      "gate_body_contrasts": [
+        17.864285714285728
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1183,
+            681
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 59.27656195669951,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 5.140819487202417
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1184,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 195.0,
+          "residual": 37.7951738946002,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.003051568792753
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1243,
+            683
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 65.50654433474455,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 3.1061270096375515
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1243,
+            699
+          ],
+          "supported": true,
+          "peak_gray": 188.0,
+          "residual": 51.000728357920764,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.217881577285011
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01664",
+      "native_row_fit": [
+        680.0,
+        17.0
+      ],
+      "native_y_fit_RMS_px": 2.23606797749979,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        3,
+        5
+      ],
+      "gate_body_contrasts": [
+        34.58823529411765
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1268,
+            681
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 64.03951834613875,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 1.5950000000000273
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1269,
+            694
+          ],
+          "supported": true,
+          "peak_gray": 213.0,
+          "residual": 46.87399912924471,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.8384018390637276
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1322,
+            679
+          ],
+          "supported": true,
+          "peak_gray": 237.0,
+          "residual": 53.579442780885614,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.1138819866398935
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1323,
+            700
+          ],
+          "supported": true,
+          "peak_gray": 198.0,
+          "residual": 53.04677444513851,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.638590842055417
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01665",
+      "native_row_fit": [
+        682.5,
+        15.00000000000001
+      ],
+      "native_y_fit_RMS_px": 2.0615528128088303,
+      "photo_residual_core_width_median_px": 3.5,
+      "photo_residual_core_width_range_px": [
+        2,
+        9
+      ],
+      "gate_body_contrasts": [
+        31.77333333333334
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1343,
+            684
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 58.09640043430568,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 5.100002450979803
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1349,
+            700
+          ],
+          "supported": true,
+          "peak_gray": 195.0,
+          "residual": 53.18029610089363,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 3.217533993604447
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1401,
+            681
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 60.81102987716281,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.2315969618190508
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1401,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 199.0,
+          "residual": 44.98738992183365,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.302721216300451
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01666",
+      "native_row_fit": [
+        683.4999999999999,
+        14.000000000000124
+      ],
+      "native_y_fit_RMS_px": 1.8027756377319946,
+      "photo_residual_core_width_median_px": 3.5,
+      "photo_residual_core_width_range_px": [
+        2,
+        5
+      ],
+      "gate_body_contrasts": [
+        30.228571428571428
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1427,
+            684
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 71.84672034160766,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 1.1687707217414467
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1433,
+            700
+          ],
+          "supported": true,
+          "peak_gray": 192.0,
+          "residual": 51.66810441924406,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.7713538273095875
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1485,
+            683
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 58.045546212434886,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 5.015578231869181
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1485,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 208.0,
+          "residual": 44.39511092403009,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 5.679658880601972
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01667",
+      "native_row_fit": [
+        684.4999999999999,
+        11.500000000000108
+      ],
+      "native_y_fit_RMS_px": 0.3535533905932738,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        10
+      ],
+      "gate_body_contrasts": [
+        37.224999999999966
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1512,
+            684
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 53.01552155585074,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 4.005249680107348
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1507,
+            696
+          ],
+          "supported": true,
+          "peak_gray": 206.0,
+          "residual": 45.0849217840715,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.9860828280813714
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1564,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 240.0,
+          "residual": 65.1950206136786,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.177562088108338
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1559,
+            696
+          ],
+          "supported": true,
+          "peak_gray": 211.0,
+          "residual": 50.62892614206004,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.9860828280813714
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01668",
+      "native_row_fit": [
+        683.4999999999999,
+        12.500000000000108
+      ],
+      "native_y_fit_RMS_px": 1.0606601717798212,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        3
+      ],
+      "gate_body_contrasts": [
+        20.738461538461536
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1590,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 67.44194044429477,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.1559278744892927
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1590,
+            696
+          ],
+          "supported": true,
+          "peak_gray": 199.0,
+          "residual": 49.32364718150646,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.0725437344325326
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1642,
+            682
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 55.31746355700443,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.9695159538214675
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1643,
+            696
+          ],
+          "supported": true,
+          "peak_gray": 208.0,
+          "residual": 49.63004632972576,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 3.8393391358410622
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01669",
+      "native_row_fit": [
+        684.5,
+        10.500000000000139
+      ],
+      "native_y_fit_RMS_px": 0.3535533905932738,
+      "photo_residual_core_width_median_px": 3.5,
+      "photo_residual_core_width_range_px": [
+        2,
+        9
+      ],
+      "gate_body_contrasts": [
+        20.972727272727298
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1663,
+            684
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 64.00982493776635,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 5.0352780459474165
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1663,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 195.0,
+          "residual": 44.17617348330745,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.037095742159413
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1721,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 59.28131991694846,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.0788999026786394
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1721,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 197.0,
+          "residual": 43.47054571411502,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 3.7744569145773017
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01670",
+      "native_row_fit": [
+        677.7619047619047,
+        14.47619047619047
+      ],
+      "native_y_fit_RMS_px": 1.9295999608909262,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        6
+      ],
+      "gate_body_contrasts": [
+        41.27931034482759,
+        51.01609195402298
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1747,
+            679
+          ],
+          "supported": true,
+          "peak_gray": 222.0,
+          "residual": 66.84492634188703,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.0
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1747,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 73.84241291086181,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.005617112013165
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            1747,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 74.26707271152165,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.0223748416156617
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            1747,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 73.47891820116178,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.0965856099730842
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            1748,
+            737
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 71.79208595181422,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.5612496949730827
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            1748,
+            753
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 72.06889001194847,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.366062299143245
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            1748,
+            764
+          ],
+          "supported": true,
+          "peak_gray": 207.0,
+          "residual": 63.78096263736742,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.1470910553584694
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1799,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 227.0,
+          "residual": 65.58036153725001,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.0
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1799,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 70.4777356919673,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.005617112013165
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            1799,
+            704
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 70.07041673118866,
+          "residual_core_width_px": 6,
+          "seed_distance_px": 3.0149626863362626
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            1800,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 79.63324417237988,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.7613914953808911
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            1800,
+            733
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 74.83080506794744,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.5612496949730827
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            1800,
+            753
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 73.3691912178482,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.366062299143245
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            1801,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 185.0,
+          "residual": 55.95409805361916,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.900000000000091
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            1851,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 228.0,
+          "residual": 49.70434461077997,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.0
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            1851,
+            692
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 49.21932951080095,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.0111874208078477
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            1851,
+            704
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 49.313005867814724,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 3.0149626863362626
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            1852,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 50.77079324101993,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.7613914953808911
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            1852,
+            733
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 51.479758607962424,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.5612496949730827
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            1852,
+            753
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 57.09575933967682,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.366062299143245
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            1853,
+            764
+          ],
+          "supported": true,
+          "peak_gray": 191.0,
+          "residual": 46.16412324902046,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 3.0675723300356794
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01671",
+      "native_row_fit": [
+        678.7678571428571,
+        14.053571428571427
+      ],
+      "native_y_fit_RMS_px": 2.6560961840218766,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        5
+      ],
+      "gate_body_contrasts": [
+        51.77058823529413
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            1929,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 239.0,
+          "residual": 60.35798797003304,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.090000000000032
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            1929,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 71.4631022127273,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.912876179998516
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            1929,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 72.53771489025203,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 2.9254230463301862
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            1930,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 71.73671402456227,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.452790418470654
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            1930,
+            736
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 67.3116867664512,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.6025292509029951
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            1930,
+            748
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 65.05305467329438,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.5904825805243084
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            1930,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 185.0,
+          "residual": 40.19811475679552,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.106679852279479
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            1986,
+            679
+          ],
+          "supported": true,
+          "peak_gray": 220.0,
+          "residual": 51.81855062625203,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.08213537796859
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            1986,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 232.0,
+          "residual": 49.14133745799734,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.466111660031915
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            1981,
+            704
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 49.170130347589804,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 3.921492062978035
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            1981,
+            723
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 52.91671893446983,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.1792370414806814
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            1982,
+            732
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 49.116082341842144,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.224701172864119
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            1982,
+            753
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 54.83273770392165,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.5511406618156083
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            1977,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 194.0,
+          "residual": 49.391294884379505,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 3.23080485328337
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01672",
+      "native_row_fit": [
+        679.2023809523807,
+        13.964285714285742
+      ],
+      "native_y_fit_RMS_px": 2.74037172445795,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        9
+      ],
+      "gate_body_contrasts": [
+        51.74698795180723,
+        57.41445783132528
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            2059,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 228.0,
+          "residual": 54.94981029215498,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.5599999999999454
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            2054,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 54.08772247788255,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 6.657033874031183
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            2054,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 57.26143971970333,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 5.896066485378019
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            2054,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 233.0,
+          "residual": 57.665905816356315,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.584332012409398
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            2054,
+            737
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 57.87514860673599,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.421945273293288
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            2054,
+            748
+          ],
+          "supported": true,
+          "peak_gray": 241.0,
+          "residual": 56.72650816772793,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.961461478233981
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            2060,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 210.0,
+          "residual": 51.80437151231638,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.4583734460004596
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            2111,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 70.14065028903431,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.440000000000055
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            2111,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 75.25809119122655,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.562466438232673
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            2111,
+            704
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 78.71097718930952,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.569857765839066
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            2112,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 82.07964871164887,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.554380905698282
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            2112,
+            734
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 73.68677782997244,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.0188739622580187
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            2112,
+            749
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 71.77193153179229,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.3443762496663862
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            2113,
+            764
+          ],
+          "supported": false,
+          "peak_gray": 166.0,
+          "residual": 43.74992129515209,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.9535741060620886
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            2163,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 42.59234670114074,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.440000000000055
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            2168,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 236.0,
+          "residual": 49.55972571339578,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.8786699295721725
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            2163,
+            704
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 45.76571146938778,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.569857765839066
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            2163,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 48.31942340076486,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 0.718401002226316
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            2164,
+            732
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 50.108989775073155,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.832556259372384
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            2164,
+            753
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 49.140413149902514,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.0026821343592576
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            2164,
+            764
+          ],
+          "supported": true,
+          "peak_gray": 202.0,
+          "residual": 50.770982599800334,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.9808079159777923
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01673",
+      "native_row_fit": [
+        679.25,
+        14.107142857142836
+      ],
+      "native_y_fit_RMS_px": 2.73581685745793,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        9
+      ],
+      "gate_body_contrasts": [
+        51.297619047619065
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            2241,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 236.0,
+          "residual": 57.222510336194375,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.5299999999999727
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            2241,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 63.21039874943122,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.472516070401566
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            2241,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 62.99107843044982,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.480055803223923
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            2241,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 70.63759810972613,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 1.5373353570382478
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            2241,
+            732
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 65.37378056388644,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.502808373912377
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            2242,
+            753
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 70.75600895322373,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.324521456128103
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            2241,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 191.0,
+          "residual": 47.76138731867391,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.628859068113066
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            2292,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 226.0,
+          "residual": 49.464917257510535,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.777892010218866
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            2298,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 56.30524244818179,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.819340144031619
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            2298,
+            706
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 54.64623234023168,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 6.334895421394272
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            2298,
+            723
+          ],
+          "supported": true,
+          "peak_gray": 241.0,
+          "residual": 50.94477264364974,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 5.470228514422231
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            2293,
+            733
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 49.22160890326376,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.510088690923952
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            2294,
+            754
+          ],
+          "supported": true,
+          "peak_gray": 239.0,
+          "residual": 45.32539546397703,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.0762639678674946
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            2289,
+            764
+          ],
+          "supported": true,
+          "peak_gray": 194.0,
+          "residual": 48.01960480452257,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.4308745240826743
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01674",
+      "native_row_fit": [
+        680.6428571428568,
+        13.95714285714289
+      ],
+      "native_y_fit_RMS_px": 3.253506742339568,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        10
+      ],
+      "gate_body_contrasts": [
+        43.139285714285734,
+        45.05000000000001,
+        56.64761904761903,
+        50.980952380952374
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            2371,
+            680
+          ],
+          "supported": true,
+          "peak_gray": 226.0,
+          "residual": 49.97028873935801,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.1200000000000045
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            2366,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 49.319421380974575,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 7.0524392943150644
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            2366,
+            707
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 52.153930513185315,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 5.641311904158315
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            2371,
+            723
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 53.86953808662685,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.2070211265756066
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            2366,
+            738
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 53.18840946633577,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 4.40163605946707
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            2371,
+            754
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 57.156900292965815,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.02408003794316
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            2371,
+            764
+          ],
+          "supported": true,
+          "peak_gray": 214.0,
+          "residual": 63.16311312101925,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.3031283073246662
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            2422,
+            687
+          ],
+          "supported": true,
+          "peak_gray": 241.0,
+          "residual": 65.3223526120891,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.8799999999999955
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            2422,
+            692
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 76.49332979687716,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.122729678259304
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            2422,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 77.88316934734578,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 5.128781531709082
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            2423,
+            722
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 78.56216738905553,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.5684431081882058
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            2423,
+            734
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 76.0023750368942,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.419773749865455
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            2423,
+            749
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 72.9084396663082,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 3.5772754995946325
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            2423,
+            761
+          ],
+          "supported": false,
+          "peak_gray": 173.0,
+          "residual": 34.675776114480044,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 5.461172035378523
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            2473,
+            686
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 47.930752968230735,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.006794229805165
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            2479,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 50.75439543390263,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 7.262017625977025
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            2474,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 54.32635019784101,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 5.128781531709082
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            2474,
+            724
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 61.01002036640574,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 0.4657252408876261
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            2474,
+            733
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 59.979567593837345,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 5.155036372325605
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            2474,
+            755
+          ],
+          "supported": true,
+          "peak_gray": 239.0,
+          "residual": 62.81204139962881,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.9760544349860227
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            2470,
+            765
+          ],
+          "supported": false,
+          "peak_gray": 164.0,
+          "residual": 38.36812850576672,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.2961189298930713
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "native_center": [
+            2525,
+            685
+          ],
+          "supported": true,
+          "peak_gray": 237.0,
+          "residual": 48.18555304708141,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.048671841966592
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "native_center": [
+            2526,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 52.38655152640155,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 3.1236036880500793
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "native_center": [
+            2526,
+            705
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 54.241405057246766,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 5.128781531709082
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "native_center": [
+            2526,
+            724
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 59.72108199513454,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 0.4657252408876261
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "native_center": [
+            2526,
+            733
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 60.243443091953,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.155036372325605
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "native_center": [
+            2527,
+            755
+          ],
+          "supported": true,
+          "peak_gray": 231.0,
+          "residual": 60.17491097470753,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.369999999999996
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "native_center": [
+            2527,
+            770
+          ],
+          "supported": false,
+          "peak_gray": 158.0,
+          "residual": 42.45500644894601,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 4.3202314752800355
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "native_center": [
+            2577,
+            687
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 56.83474074579712,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.9814054241749846
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "native_center": [
+            2577,
+            692
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 61.75034030123453,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 4.206768355876026
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "native_center": [
+            2578,
+            706
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 65.18175005179441,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.130907890524812
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "native_center": [
+            2578,
+            723
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 69.34385832046567,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.2070211265756066
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "native_center": [
+            2578,
+            733
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 69.28593081642703,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 5.155036372325605
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "native_center": [
+            2578,
+            750
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 61.816116101217915,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.2487552112224263
+        },
+        {
+          "column": 4,
+          "row": 6,
+          "native_center": [
+            2578,
+            766
+          ],
+          "supported": true,
+          "peak_gray": 204.0,
+          "residual": 51.84094042551942,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.9079647570253842
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01675",
+      "native_row_fit": [
+        681.6190476190474,
+        14.142857142857151
+      ],
+      "native_y_fit_RMS_px": 2.8050812333377335,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        10
+      ],
+      "gate_body_contrasts": [
+        45.88470588235293,
+        51.18352941176471
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            2654,
+            682
+          ],
+          "supported": true,
+          "peak_gray": 229.0,
+          "residual": 46.48525492592836,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.836191711123838
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            2660,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 228.0,
+          "residual": 45.72240010725946,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.865427881785709
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            2660,
+            707
+          ],
+          "supported": true,
+          "peak_gray": 229.0,
+          "residual": 45.954880488688076,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 6.978653165188939
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            2655,
+            725
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 52.27469165162688,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 0.7029224708314545
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            2655,
+            735
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 50.41274118108146,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.579475952551729
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            2655,
+            756
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 50.758801998395825,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.57178926041777
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            2655,
+            765
+          ],
+          "supported": true,
+          "peak_gray": 205.0,
+          "residual": 45.16354048219958,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.6947356085523455
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            2706,
+            689
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 47.03669062726897,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.460000000000036
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            2701,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 55.89539726445588,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 6.643350058517072
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            2707,
+            707
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 58.61852894416538,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 4.722456987628383
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            2701,
+            724
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 63.430681862218364,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.803550770003534
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            2701,
+            739
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 58.987876001305864,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 4.433012519720733
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            2707,
+            756
+          ],
+          "supported": true,
+          "peak_gray": 236.0,
+          "residual": 60.223603932818946,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.018956773456715
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            2702,
+            766
+          ],
+          "supported": false,
+          "peak_gray": 151.0,
+          "residual": 23.70734104679474,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 3.461444785057148
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            2757,
+            682
+          ],
+          "supported": true,
+          "peak_gray": 238.0,
+          "residual": 60.82555812599347,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 1.836191711123838
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            2758,
+            698
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 63.51706681458512,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.48383881613618057
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            2758,
+            707
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 63.288318112555515,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.549901097826169
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            2758,
+            724
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 66.75808889234008,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 1.60440019945141
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            2758,
+            735
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 64.68206766038679,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.579475952551729
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            2758,
+            756
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 64.51710088313104,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.57178926041777
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            2759,
+            766
+          ],
+          "supported": true,
+          "peak_gray": 201.0,
+          "residual": 50.5676295913257,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.4457309745759517
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01676",
+      "native_row_fit": [
+        681.9214285714284,
+        14.32142857142859
+      ],
+      "native_y_fit_RMS_px": 2.720706690909404,
+      "photo_residual_core_width_median_px": 4.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        10
+      ],
+      "gate_body_contrasts": [
+        50.638372093023264,
+        39.5325581395349,
+        45.638372093023264,
+        44.10232558139538
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            2835,
+            682
+          ],
+          "supported": true,
+          "peak_gray": 224.0,
+          "residual": 46.19868669086236,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.4400000000000546
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            2830,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 50.84897344732039,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 7.288079308020715
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            2830,
+            709
+          ],
+          "supported": true,
+          "peak_gray": 241.0,
+          "residual": 48.358667046808165,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 5.824396964493292
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            2830,
+            724
+          ],
+          "supported": true,
+          "peak_gray": 241.0,
+          "residual": 49.035342021890784,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 5.162954580470559
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            2835,
+            735
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 47.99953661543756,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.472988214860369
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            2830,
+            751
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 52.396216178359595,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.4677326196514375
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            2835,
+            767
+          ],
+          "supported": true,
+          "peak_gray": 204.0,
+          "residual": 54.0684451393432,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.6981166037702833
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            2886,
+            689
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 66.84604892727492,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.559999999999945
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            2886,
+            694
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 71.76322278875782,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.4425330612163725
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            2886,
+            708
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 76.44260938645075,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.450123593789345
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            2886,
+            725
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 77.38184120455355,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 1.5086749152816168
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            2886,
+            738
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 73.26763849642191,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.5126878039263367
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            2886,
+            757
+          ],
+          "supported": true,
+          "peak_gray": 236.0,
+          "residual": 75.14589685316182,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.6676019193274922
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            2882,
+            772
+          ],
+          "supported": false,
+          "peak_gray": 138.0,
+          "residual": 24.497757209826844,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 4.720550815317959
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            2937,
+            689
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 56.42343242593438,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.559999999999945
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            2937,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 66.73947311405635,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 3.443268795781184
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            2937,
+            707
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 65.61658452208047,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 5.4482657791264835
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            2938,
+            726
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 67.13301357300767,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 1.515288751360453
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            2938,
+            739
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 68.03210646367512,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 2.152579847531763
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            2938,
+            757
+          ],
+          "supported": true,
+          "peak_gray": 236.0,
+          "residual": 68.92352517994232,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.100983714887861
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            2938,
+            767
+          ],
+          "supported": false,
+          "peak_gray": 156.0,
+          "residual": 31.541930453783962,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.384030201151089
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "native_center": [
+            2983,
+            683
+          ],
+          "supported": true,
+          "peak_gray": 207.0,
+          "residual": 48.01566062678913,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.2032297662125355
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "native_center": [
+            2983,
+            693
+          ],
+          "supported": true,
+          "peak_gray": 238.0,
+          "residual": 61.01031275864901,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 7.288079308020715
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "native_center": [
+            2983,
+            709
+          ],
+          "supported": true,
+          "peak_gray": 235.0,
+          "residual": 56.125779552401525,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 5.824396964493292
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "native_center": [
+            2983,
+            725
+          ],
+          "supported": true,
+          "peak_gray": 234.0,
+          "residual": 58.9253533619997,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.772431246230982
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "native_center": [
+            2983,
+            741
+          ],
+          "supported": true,
+          "peak_gray": 234.0,
+          "residual": 55.05350215569899,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 4.435493208201399
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "native_center": [
+            2989,
+            757
+          ],
+          "supported": true,
+          "peak_gray": 239.0,
+          "residual": 61.68765732835092,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.100983714887861
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "native_center": [
+            2989,
+            768
+          ],
+          "supported": false,
+          "peak_gray": 161.0,
+          "residual": 36.67699934664893,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.950282030886916
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "native_center": [
+            3040,
+            683
+          ],
+          "supported": true,
+          "peak_gray": 229.0,
+          "residual": 55.51879447648807,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.753168560064935
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "native_center": [
+            3034,
+            694
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 52.92797277068277,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 6.575416336628397
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "native_center": [
+            3034,
+            709
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 53.87349377957048,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 5.824396964493292
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "native_center": [
+            3034,
+            726
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 58.13145876554228,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.571225218691561
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "native_center": [
+            3034,
+            741
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 55.11588587370906,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.435493208201399
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "native_center": [
+            3034,
+            751
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 50.11153177612945,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 5.4677326196514375
+        },
+        {
+          "column": 4,
+          "row": 6,
+          "native_center": [
+            3040,
+            767
+          ],
+          "supported": true,
+          "peak_gray": 215.0,
+          "residual": 57.29564367619801,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.384030201151089
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01677",
+      "native_row_fit": [
+        684.7380952380951,
+        13.690476190476158
+      ],
+      "native_y_fit_RMS_px": 2.5559498857751723,
+      "photo_residual_core_width_median_px": 3.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        9
+      ],
+      "gate_body_contrasts": [
+        43.15609756097561,
+        33.50609756097563
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            3116,
+            684
+          ],
+          "supported": true,
+          "peak_gray": 228.0,
+          "residual": 49.60558910423413,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.8450000000000273
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            3111,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 237.0,
+          "residual": 53.118332695648064,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.855401155293494
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            3111,
+            709
+          ],
+          "supported": true,
+          "peak_gray": 230.0,
+          "residual": 49.52741657222833,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.750112962017639
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            3116,
+            727
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 48.632757594857736,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.9573531218938404
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            3111,
+            741
+          ],
+          "supported": true,
+          "peak_gray": 230.0,
+          "residual": 51.11108370432993,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.480404557626559
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            3111,
+            752
+          ],
+          "supported": true,
+          "peak_gray": 232.0,
+          "residual": 52.399574211605284,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.731188794656848
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            3116,
+            767
+          ],
+          "supported": true,
+          "peak_gray": 217.0,
+          "residual": 56.93099304555679,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.983961293314697
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            3162,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 232.0,
+          "residual": 45.606490099368045,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 6.501078756637223
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            3162,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 55.37518122467492,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 6.855401155293494
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            3162,
+            710
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 55.95737893519697,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 6.072398619985227
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            3162,
+            726
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 61.749569256679166,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.909839610415167
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            3162,
+            741
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 56.974614542937246,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.480404557626559
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            3162,
+            752
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 57.90756379035082,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 5.731188794656848
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            3167,
+            768
+          ],
+          "supported": true,
+          "peak_gray": 181.0,
+          "residual": 43.80946967578558,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 2.052809051032332
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            3218,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 231.0,
+          "residual": 50.02801362360418,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.154999999999973
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            3218,
+            695
+          ],
+          "supported": true,
+          "peak_gray": 245.0,
+          "residual": 63.78845122581626,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.847321425282244
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            3218,
+            711
+          ],
+          "supported": true,
+          "peak_gray": 240.0,
+          "residual": 63.008909548433394,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.8607734968012175
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            3218,
+            726
+          ],
+          "supported": true,
+          "peak_gray": 235.0,
+          "residual": 64.12316203474748,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.8990853061408108
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            3218,
+            742
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 68.1103958958688,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 0.6196975068530471
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            3218,
+            752
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 64.4556230649078,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.9174641032178212
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            3218,
+            768
+          ],
+          "supported": true,
+          "peak_gray": 213.0,
+          "residual": 57.50729103641069,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.052809051032332
+        }
+      ]
+    },
+    {
+      "id": "UP-AA-F01679",
+      "native_row_fit": [
+        688.6071428571425,
+        14.035714285714327
+      ],
+      "native_y_fit_RMS_px": 2.501224190067654,
+      "photo_residual_core_width_median_px": 7.0,
+      "photo_residual_core_width_range_px": [
+        2,
+        13
+      ],
+      "gate_body_contrasts": [
+        45.82380952380953,
+        38.417857142857144,
+        34.39047619047619,
+        49.68214285714285
+      ],
+      "correspondence": "AI_local_family_match_not_human_accepted",
+      "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+      "source_observations": [
+        {
+          "column": 0,
+          "row": 0,
+          "native_center": [
+            3770,
+            694
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 42.05742604602406,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.9814054241749846
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "native_center": [
+            3769,
+            699
+          ],
+          "supported": true,
+          "peak_gray": 247.0,
+          "residual": 47.80702266561869,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 4.516292727448001
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "native_center": [
+            3770,
+            714
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 43.944658766894435,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 3.1975615709474265
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "native_center": [
+            3770,
+            730
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 47.851935235103866,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 1.2477579893553918
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "native_center": [
+            3770,
+            744
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 46.72066225679515,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 1.1892854997855153
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "native_center": [
+            3770,
+            761
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 48.9288487899876,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.8965494984312914
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "native_center": [
+            3774,
+            771
+          ],
+          "supported": true,
+          "peak_gray": 208.0,
+          "residual": 43.76422123432829,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 4.438963843060757
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "native_center": [
+            3820,
+            694
+          ],
+          "supported": true,
+          "peak_gray": 238.0,
+          "residual": 46.810775911694805,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.9814054241749846
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "native_center": [
+            3820,
+            701
+          ],
+          "supported": true,
+          "peak_gray": 250.0,
+          "residual": 51.32614806125312,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 2.284053414436682
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "native_center": [
+            3821,
+            713
+          ],
+          "supported": true,
+          "peak_gray": 251.0,
+          "residual": 54.946077111927934,
+          "residual_core_width_px": 7,
+          "seed_distance_px": 4.130907890524812
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "native_center": [
+            3819,
+            731
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 60.68108183712303,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 1.5546382215810097
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "native_center": [
+            3820,
+            741
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 57.327162119723226,
+          "residual_core_width_px": 5,
+          "seed_distance_px": 4.139371933035266
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "native_center": [
+            3820,
+            761
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 64.91726258248087,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 1.8965494984312914
+        },
+        {
+          "column": 1,
+          "row": 6,
+          "native_center": [
+            3820,
+            771
+          ],
+          "supported": false,
+          "peak_gray": 169.0,
+          "residual": 32.99371741289133,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 2.1223571801183705
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "native_center": [
+            3875,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 212.0,
+          "residual": 37.074588847828295,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 4.095656235574465
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "native_center": [
+            3870,
+            700
+          ],
+          "supported": true,
+          "peak_gray": 244.0,
+          "residual": 50.27593283879912,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 3.233713036124244
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "native_center": [
+            3870,
+            715
+          ],
+          "supported": true,
+          "peak_gray": 240.0,
+          "residual": 55.66412873029722,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 2.232576986354505
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "native_center": [
+            3875,
+            731
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 58.8073223193758,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 4.451617683494213
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "native_center": [
+            3870,
+            746
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 57.82076429054311,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 0.9666436778875992
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "native_center": [
+            3875,
+            762
+          ],
+          "supported": true,
+          "peak_gray": 237.0,
+          "residual": 59.11365691628825,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 5.554898738951051
+        },
+        {
+          "column": 2,
+          "row": 6,
+          "native_center": [
+            3870,
+            772
+          ],
+          "supported": false,
+          "peak_gray": 168.0,
+          "residual": 31.2564276534047,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.1244554237496442
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "native_center": [
+            3920,
+            690
+          ],
+          "supported": true,
+          "peak_gray": 197.0,
+          "residual": 32.93953186472075,
+          "residual_core_width_px": 2,
+          "seed_distance_px": 1.332066064427734
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "native_center": [
+            3920,
+            701
+          ],
+          "supported": true,
+          "peak_gray": 249.0,
+          "residual": 51.14358303588122,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 2.284053414436682
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "native_center": [
+            3920,
+            714
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 53.088198359417305,
+          "residual_core_width_px": 8,
+          "seed_distance_px": 3.1975615709474265
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "native_center": [
+            3920,
+            732
+          ],
+          "supported": true,
+          "peak_gray": 248.0,
+          "residual": 56.9242168118125,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 1.037737924526319
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "native_center": [
+            3920,
+            743
+          ],
+          "supported": true,
+          "peak_gray": 243.0,
+          "residual": 52.189036749651024,
+          "residual_core_width_px": 7,
+          "seed_distance_px": 2.1574058496259094
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "native_center": [
+            3920,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 240.0,
+          "residual": 58.963892809600594,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 3.888045781623458
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "native_center": [
+            3920,
+            773
+          ],
+          "supported": false,
+          "peak_gray": 171.0,
+          "residual": 32.07001324340803,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.15620499351807834
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "native_center": [
+            3970,
+            691
+          ],
+          "supported": true,
+          "peak_gray": 236.0,
+          "residual": 44.10289033526195,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 1.8799999999999955
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "native_center": [
+            3975,
+            701
+          ],
+          "supported": true,
+          "peak_gray": 241.0,
+          "residual": 39.95837220844089,
+          "residual_core_width_px": 10,
+          "seed_distance_px": 5.56928182084557
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "native_center": [
+            3970,
+            715
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 39.98410414483217,
+          "residual_core_width_px": 9,
+          "seed_distance_px": 2.1411212016138013
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "native_center": [
+            3970,
+            732
+          ],
+          "supported": true,
+          "peak_gray": 252.0,
+          "residual": 43.610127665531394,
+          "residual_core_width_px": 13,
+          "seed_distance_px": 0.9883825170448071
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "native_center": [
+            3970,
+            743
+          ],
+          "supported": true,
+          "peak_gray": 246.0,
+          "residual": 42.707855682512445,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 2.2032702966272453
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "native_center": [
+            3970,
+            763
+          ],
+          "supported": true,
+          "peak_gray": 242.0,
+          "residual": 42.979992422350364,
+          "residual_core_width_px": 4,
+          "seed_distance_px": 3.951822364428842
+        },
+        {
+          "column": 4,
+          "row": 6,
+          "native_center": [
+            3969,
+            773
+          ],
+          "supported": true,
+          "peak_gray": 211.0,
+          "residual": 45.712847983277754,
+          "residual_core_width_px": 3,
+          "seed_distance_px": 0.15620499351807834
+        }
+      ]
+    }
+  ],
+  "failed": [
+    "UP-AA-F01678"
+  ]
+}

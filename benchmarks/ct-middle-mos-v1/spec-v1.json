@@ -1,0 +1,3921 @@
+{
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "protected_contacts": {
+      "path": "benchmarks/ct-transfer-revision-v2/model-v1.json",
+      "sha256": "5773d146c5ceb6c75e1454e514235edc1f9347b1a6f4a916e538b09f094a91c4"
+    },
+    "acceptance": {
+      "path": "benchmarks/ct-transfer-revision-v2/acceptance-v1.json",
+      "sha256": "ff46b7ca96edd6fdcc91a1c2d6d4f62b22eec1da30046015acbb45aa59509136"
+    },
+    "observations": {
+      "path": "benchmarks/ct-reconstruction-v1/model-v1.json",
+      "sha256": "ab9edcbc090d65a8b3b7b9cf98e40934cb87ce6340ded4c183e9a72011a442e6"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "retained_contacts": {
+      "path": "benchmarks/ct-ring-resistor-extension-v1/model-v1.json",
+      "sha256": "f0d39a77dacaa0f91cc59ee71955fb32a1b5e4d0b519e0aa5e2f454c0e9271e0"
+    },
+    "relationship_review": {
+      "path": "benchmarks/ct-ring-resistor-extension-v1/human-review-v1.json",
+      "sha256": "77c9d0c8879276b837c76133d9f24836104dcdf1cbd63442bd14ac807120a9be"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "families": [],
+  "rows": [],
+  "profile_rows": [
+    {
+      "id": "Q2-A1-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2079.0,
+          1821
+        ],
+        [
+          2084.0,
+          1846
+        ],
+        [
+          2084.0,
+          1871
+        ],
+        [
+          2085.0,
+          1896
+        ],
+        [
+          2085.0,
+          1921
+        ],
+        [
+          2086.0,
+          1946
+        ],
+        [
+          2086.0,
+          1971
+        ],
+        [
+          2087.0,
+          1996
+        ],
+        [
+          2087.0,
+          2021
+        ],
+        [
+          2088.0,
+          2028
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2073.0,
+        1815.0,
+        2094.0,
+        2034.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2210.3777,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2084.5,
+          1821
+        ],
+        [
+          2089,
+          2028
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-A1-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2140.0,
+          1821
+        ],
+        [
+          2140.0,
+          1846
+        ],
+        [
+          2141.0,
+          1871
+        ],
+        [
+          2141.0,
+          1896
+        ],
+        [
+          2142.0,
+          1921
+        ],
+        [
+          2142.0,
+          1946
+        ],
+        [
+          2143.0,
+          1971
+        ],
+        [
+          2143.0,
+          1996
+        ],
+        [
+          2144.0,
+          2021
+        ],
+        [
+          2144.0,
+          2028
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2134.0,
+        1815.0,
+        2150.0,
+        2034.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2262.8469999999998,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2141.5,
+          1821
+        ],
+        [
+          2146,
+          2028
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-A1-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2196.0,
+          1821
+        ],
+        [
+          2196.0,
+          1846
+        ],
+        [
+          2197.0,
+          1871
+        ],
+        [
+          2198.0,
+          1896
+        ],
+        [
+          2198.0,
+          1921
+        ],
+        [
+          2199.0,
+          1946
+        ],
+        [
+          2199.0,
+          1971
+        ],
+        [
+          2199.0,
+          1996
+        ],
+        [
+          2200.0,
+          2021
+        ],
+        [
+          2200.0,
+          2028
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2190.0,
+        1815.0,
+        2206.0,
+        2034.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2315.3163,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2197.5,
+          1821
+        ],
+        [
+          2202,
+          2028
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-A2-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2222.0,
+          1821
+        ],
+        [
+          2227.0,
+          1846
+        ],
+        [
+          2224.0,
+          1871
+        ],
+        [
+          2224.0,
+          1896
+        ],
+        [
+          2229.0,
+          1921
+        ],
+        [
+          2224.0,
+          1946
+        ],
+        [
+          2229.0,
+          1971
+        ],
+        [
+          2226.0,
+          1996
+        ],
+        [
+          2227.0,
+          2021
+        ],
+        [
+          2226.0,
+          2028
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2216.0,
+        1815.0,
+        2235.0,
+        2034.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2336.6312,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2224.5,
+          1821
+        ],
+        [
+          2229,
+          2028
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-A2-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2278.0,
+          1821
+        ],
+        [
+          2278.0,
+          1846
+        ],
+        [
+          2279.0,
+          1871
+        ],
+        [
+          2280.0,
+          1896
+        ],
+        [
+          2280.0,
+          1921
+        ],
+        [
+          2281.0,
+          1946
+        ],
+        [
+          2281.0,
+          1971
+        ],
+        [
+          2281.0,
+          1996
+        ],
+        [
+          2282.0,
+          2021
+        ],
+        [
+          2286.0,
+          2028
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2272.0,
+        1815.0,
+        2292.0,
+        2034.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2384.4036166666665,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2279.5,
+          1821
+        ],
+        [
+          2284,
+          2028
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-A2-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2335.0,
+          1821
+        ],
+        [
+          2339.0,
+          1846
+        ],
+        [
+          2335.0,
+          1871
+        ],
+        [
+          2336.0,
+          1896
+        ],
+        [
+          2337.0,
+          1921
+        ],
+        [
+          2337.0,
+          1946
+        ],
+        [
+          2337.0,
+          1971
+        ],
+        [
+          2338.0,
+          1996
+        ],
+        [
+          2338.0,
+          2021
+        ],
+        [
+          2343.0,
+          2046
+        ],
+        [
+          2338.0,
+          2071
+        ],
+        [
+          2338.0,
+          2080
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2329.0,
+        1815.0,
+        2349.0,
+        2086.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2441.94845,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2336.5,
+          1821
+        ],
+        [
+          2341,
+          2080
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        16
+      ]
+    },
+    {
+      "id": "Q2-A2-SD-4",
+      "axis": 1,
+      "source_path": [
+        [
+          2390.0,
+          1821
+        ],
+        [
+          2391.0,
+          1846
+        ],
+        [
+          2391.0,
+          1871
+        ],
+        [
+          2391.0,
+          1896
+        ],
+        [
+          2392.0,
+          1921
+        ],
+        [
+          2392.0,
+          1946
+        ],
+        [
+          2393.0,
+          1971
+        ],
+        [
+          2393.0,
+          1996
+        ],
+        [
+          2394.0,
+          2021
+        ],
+        [
+          2394.0,
+          2046
+        ],
+        [
+          2399.0,
+          2071
+        ],
+        [
+          2399.0,
+          2080
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2384.0,
+        1815.0,
+        2405.0,
+        2086.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2499.4932833333332,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2391.5,
+          1821
+        ],
+        [
+          2396,
+          2080
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        16
+      ]
+    },
+    {
+      "id": "Q2-A2-SD-5",
+      "axis": 1,
+      "source_path": [
+        [
+          2445.0,
+          1821
+        ],
+        [
+          2446.0,
+          1846
+        ],
+        [
+          2447.0,
+          1871
+        ],
+        [
+          2447.0,
+          1896
+        ],
+        [
+          2447.0,
+          1921
+        ],
+        [
+          2448.0,
+          1946
+        ],
+        [
+          2448.0,
+          1971
+        ],
+        [
+          2448.0,
+          1996
+        ],
+        [
+          2449.0,
+          2021
+        ],
+        [
+          2449.0,
+          2046
+        ],
+        [
+          2450.0,
+          2071
+        ],
+        [
+          2450.0,
+          2080
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2439.0,
+        1815.0,
+        2456.0,
+        2086.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2547.2657,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2446.5,
+          1821
+        ],
+        [
+          2451,
+          2080
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        16
+      ]
+    },
+    {
+      "id": "Q2-A3-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2471.0,
+          1821
+        ],
+        [
+          2472.0,
+          1846
+        ],
+        [
+          2472.0,
+          1871
+        ],
+        [
+          2472.0,
+          1896
+        ],
+        [
+          2473.0,
+          1921
+        ],
+        [
+          2473.0,
+          1946
+        ],
+        [
+          2473.0,
+          1971
+        ],
+        [
+          2474.0,
+          1996
+        ],
+        [
+          2474.0,
+          2021
+        ],
+        [
+          2474.0,
+          2046
+        ],
+        [
+          2475.0,
+          2071
+        ],
+        [
+          2475.0,
+          2080
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2465.0,
+        1815.0,
+        2481.0,
+        2086.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2570.601,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2472.5,
+          1821
+        ],
+        [
+          2477,
+          2080
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        16
+      ]
+    },
+    {
+      "id": "Q2-A3-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2529.5,
+          1821
+        ],
+        [
+          2534,
+          2080
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2521.0,
+        1815.0,
+        2546.0,
+        2086.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2621.82715,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2529.5,
+          1821
+        ],
+        [
+          2534,
+          2080
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        16
+      ]
+    },
+    {
+      "id": "Q2-A3-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2587.0,
+          1821
+        ],
+        [
+          2587.0,
+          1846
+        ],
+        [
+          2587.0,
+          1871
+        ],
+        [
+          2587.0,
+          1896
+        ],
+        [
+          2588.0,
+          1921
+        ],
+        [
+          2588.0,
+          1946
+        ],
+        [
+          2589.0,
+          1971
+        ],
+        [
+          2589.0,
+          1996
+        ],
+        [
+          2589.0,
+          2021
+        ],
+        [
+          2589.0,
+          2046
+        ],
+        [
+          2590.0,
+          2071
+        ],
+        [
+          2590.0,
+          2080
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2581.0,
+        1815.0,
+        2596.0,
+        2086.0
+      ],
+      "source_origin": 1828,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2673.0533,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-A3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2587.5,
+          1821
+        ],
+        [
+          2592,
+          2080
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        16
+      ]
+    },
+    {
+      "id": "Q2-B1-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2677.0,
+          1818
+        ],
+        [
+          2672.0,
+          1843
+        ],
+        [
+          2673.0,
+          1868
+        ],
+        [
+          2674.0,
+          1893
+        ],
+        [
+          2674.0,
+          1918
+        ],
+        [
+          2674.0,
+          1943
+        ],
+        [
+          2674.0,
+          1968
+        ],
+        [
+          2675.0,
+          1993
+        ],
+        [
+          2679.0,
+          2018
+        ],
+        [
+          2684.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2666.0,
+        1812.0,
+        2690.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2752.3411,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2673.5,
+          1818
+        ],
+        [
+          2678,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B1-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2722.0,
+          1818
+        ],
+        [
+          2723.0,
+          1843
+        ],
+        [
+          2723.0,
+          1868
+        ],
+        [
+          2723.0,
+          1893
+        ],
+        [
+          2723.0,
+          1918
+        ],
+        [
+          2724.0,
+          1943
+        ],
+        [
+          2724.0,
+          1968
+        ],
+        [
+          2725.0,
+          1993
+        ],
+        [
+          2725.0,
+          2018
+        ],
+        [
+          2725.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2716.0,
+        1812.0,
+        2731.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2796.2504,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2722.5,
+          1818
+        ],
+        [
+          2727,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B1-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2773.0,
+          1818
+        ],
+        [
+          2773.0,
+          1843
+        ],
+        [
+          2773.0,
+          1868
+        ],
+        [
+          2773.0,
+          1893
+        ],
+        [
+          2773.0,
+          1918
+        ],
+        [
+          2774.0,
+          1943
+        ],
+        [
+          2774.0,
+          1968
+        ],
+        [
+          2774.0,
+          1993
+        ],
+        [
+          2774.0,
+          2018
+        ],
+        [
+          2774.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2767.0,
+        1812.0,
+        2780.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2846.069,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2772.5,
+          1818
+        ],
+        [
+          2777,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B1-SD-4",
+      "axis": 1,
+      "source_path": [
+        [
+          2822.0,
+          1818
+        ],
+        [
+          2823.0,
+          1843
+        ],
+        [
+          2823.0,
+          1868
+        ],
+        [
+          2823.0,
+          1893
+        ],
+        [
+          2824.0,
+          1918
+        ],
+        [
+          2824.0,
+          1943
+        ],
+        [
+          2824.0,
+          1968
+        ],
+        [
+          2824.0,
+          1993
+        ],
+        [
+          2824.0,
+          2018
+        ],
+        [
+          2824.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2816.0,
+        1812.0,
+        2830.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2895.8876,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2823.5,
+          1818
+        ],
+        [
+          2828,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B1-SD-5",
+      "axis": 1,
+      "source_path": [
+        [
+          2872.0,
+          1818
+        ],
+        [
+          2872.0,
+          1843
+        ],
+        [
+          2873.0,
+          1868
+        ],
+        [
+          2873.0,
+          1893
+        ],
+        [
+          2873.0,
+          1918
+        ],
+        [
+          2873.0,
+          1943
+        ],
+        [
+          2873.0,
+          1968
+        ],
+        [
+          2873.0,
+          1993
+        ],
+        [
+          2873.0,
+          2018
+        ],
+        [
+          2870.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2864.0,
+        1812.0,
+        2879.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2939.7969,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2872.5,
+          1818
+        ],
+        [
+          2877,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B2-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2893.0,
+          1818
+        ],
+        [
+          2897.0,
+          1843
+        ],
+        [
+          2897.0,
+          1868
+        ],
+        [
+          2898.0,
+          1893
+        ],
+        [
+          2898.0,
+          1918
+        ],
+        [
+          2898.0,
+          1943
+        ],
+        [
+          2898.0,
+          1968
+        ],
+        [
+          2898.0,
+          1993
+        ],
+        [
+          2898.0,
+          2018
+        ],
+        [
+          2898.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2887.0,
+        1812.0,
+        2904.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2962.3613,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2897.5,
+          1818
+        ],
+        [
+          2902,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B2-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2947.0,
+          1818
+        ],
+        [
+          2947.0,
+          1843
+        ],
+        [
+          2947.0,
+          1868
+        ],
+        [
+          2947.0,
+          1893
+        ],
+        [
+          2947.0,
+          1918
+        ],
+        [
+          2948.0,
+          1943
+        ],
+        [
+          2948.0,
+          1968
+        ],
+        [
+          2948.0,
+          1993
+        ],
+        [
+          2948.0,
+          2018
+        ],
+        [
+          2948.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2941.0,
+        1812.0,
+        2954.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3006.497566666667,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2946.5,
+          1818
+        ],
+        [
+          2951,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B2-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          3001.0,
+          1818
+        ],
+        [
+          2997.0,
+          1843
+        ],
+        [
+          2997.0,
+          1868
+        ],
+        [
+          2997.0,
+          1893
+        ],
+        [
+          2997.0,
+          1918
+        ],
+        [
+          2997.0,
+          1943
+        ],
+        [
+          2998.0,
+          1968
+        ],
+        [
+          2998.0,
+          1993
+        ],
+        [
+          2998.0,
+          2018
+        ],
+        [
+          3003.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2991.0,
+        1812.0,
+        3009.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3056.7700999999997,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2996.5,
+          1818
+        ],
+        [
+          3001,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B2-SD-4",
+      "axis": 1,
+      "source_path": [
+        [
+          3047.0,
+          1818
+        ],
+        [
+          3047.0,
+          1843
+        ],
+        [
+          3047.0,
+          1868
+        ],
+        [
+          3047.0,
+          1893
+        ],
+        [
+          3047.0,
+          1918
+        ],
+        [
+          3047.0,
+          1943
+        ],
+        [
+          3047.0,
+          1968
+        ],
+        [
+          3047.0,
+          1993
+        ],
+        [
+          3047.0,
+          2018
+        ],
+        [
+          3047.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        3041.0,
+        1812.0,
+        3053.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3107.0426333333335,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          3046.5,
+          1818
+        ],
+        [
+          3051,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-B2-SD-5",
+      "axis": 1,
+      "source_path": [
+        [
+          3096.0,
+          1818
+        ],
+        [
+          3097.0,
+          1843
+        ],
+        [
+          3096.0,
+          1868
+        ],
+        [
+          3097.0,
+          1893
+        ],
+        [
+          3097.0,
+          1918
+        ],
+        [
+          3097.0,
+          1943
+        ],
+        [
+          3097.0,
+          1968
+        ],
+        [
+          3097.0,
+          1993
+        ],
+        [
+          3097.0,
+          2018
+        ],
+        [
+          3096.0,
+          2026
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        3090.0,
+        1812.0,
+        3103.0,
+        2032.0
+      ],
+      "source_origin": 1825,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3151.1789,
+        1985.5
+      ],
+      "layout_pitch": 13.25,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-B2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          3096.5,
+          1818
+        ],
+        [
+          3101,
+          2026
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "Q2-C0-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2127.0,
+          2185
+        ],
+        [
+          2127.0,
+          2210
+        ],
+        [
+          2128.0,
+          2235
+        ],
+        [
+          2128.0,
+          2260
+        ],
+        [
+          2128.0,
+          2285
+        ],
+        [
+          2129.0,
+          2310
+        ],
+        [
+          2129.0,
+          2335
+        ],
+        [
+          2130.0,
+          2360
+        ],
+        [
+          2130.0,
+          2385
+        ],
+        [
+          2130.0,
+          2410
+        ],
+        [
+          2130.0,
+          2435
+        ],
+        [
+          2130.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2121.0,
+        2179.0,
+        2136.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2242.6025,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C0-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2128.5,
+          2185
+        ],
+        [
+          2133,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C0-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2183.0,
+          2185
+        ],
+        [
+          2183.0,
+          2210
+        ],
+        [
+          2183.0,
+          2235
+        ],
+        [
+          2184.0,
+          2260
+        ],
+        [
+          2184.0,
+          2285
+        ],
+        [
+          2184.0,
+          2310
+        ],
+        [
+          2185.0,
+          2335
+        ],
+        [
+          2185.0,
+          2360
+        ],
+        [
+          2186.0,
+          2385
+        ],
+        [
+          2186.0,
+          2410
+        ],
+        [
+          2186.0,
+          2435
+        ],
+        [
+          2187.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2177.0,
+        2179.0,
+        2193.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2289.90815,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C0-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2183.5,
+          2185
+        ],
+        [
+          2188,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C0-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2239.0,
+          2185
+        ],
+        [
+          2239.0,
+          2210
+        ],
+        [
+          2239.0,
+          2235
+        ],
+        [
+          2240.0,
+          2260
+        ],
+        [
+          2240.0,
+          2285
+        ],
+        [
+          2240.0,
+          2310
+        ],
+        [
+          2241.0,
+          2335
+        ],
+        [
+          2241.0,
+          2360
+        ],
+        [
+          2242.0,
+          2385
+        ],
+        [
+          2242.0,
+          2410
+        ],
+        [
+          2242.0,
+          2435
+        ],
+        [
+          2242.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2233.0,
+        2179.0,
+        2248.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2346.51945,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C0-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2239.5,
+          2185
+        ],
+        [
+          2244,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C0-SD-4",
+      "axis": 1,
+      "source_path": [
+        [
+          2294.0,
+          2185
+        ],
+        [
+          2295.0,
+          2210
+        ],
+        [
+          2295.0,
+          2235
+        ],
+        [
+          2295.0,
+          2260
+        ],
+        [
+          2296.0,
+          2285
+        ],
+        [
+          2296.0,
+          2310
+        ],
+        [
+          2297.0,
+          2335
+        ],
+        [
+          2297.0,
+          2360
+        ],
+        [
+          2297.0,
+          2385
+        ],
+        [
+          2297.0,
+          2410
+        ],
+        [
+          2298.0,
+          2435
+        ],
+        [
+          2298.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2288.0,
+        2179.0,
+        2304.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2403.1307500000003,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C0-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2295.5,
+          2185
+        ],
+        [
+          2300,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C0-SD-5",
+      "axis": 1,
+      "source_path": [
+        [
+          2351.0,
+          2185
+        ],
+        [
+          2351.0,
+          2210
+        ],
+        [
+          2356.0,
+          2235
+        ],
+        [
+          2356.0,
+          2260
+        ],
+        [
+          2356.0,
+          2285
+        ],
+        [
+          2357.0,
+          2310
+        ],
+        [
+          2352.0,
+          2335
+        ],
+        [
+          2357.0,
+          2360
+        ],
+        [
+          2357.0,
+          2385
+        ],
+        [
+          2358.0,
+          2410
+        ],
+        [
+          2358.0,
+          2435
+        ],
+        [
+          2354.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2345.0,
+        2179.0,
+        2364.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2459.74205,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C0-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2355.5,
+          2185
+        ],
+        [
+          2360,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C0-SD-6",
+      "axis": 1,
+      "source_path": [
+        [
+          2405.0,
+          2185
+        ],
+        [
+          2410.0,
+          2210
+        ],
+        [
+          2411.0,
+          2235
+        ],
+        [
+          2411.0,
+          2260
+        ],
+        [
+          2408.0,
+          2285
+        ],
+        [
+          2408.0,
+          2310
+        ],
+        [
+          2408.0,
+          2335
+        ],
+        [
+          2408.0,
+          2360
+        ],
+        [
+          2409.0,
+          2385
+        ],
+        [
+          2408.0,
+          2410
+        ],
+        [
+          2413.0,
+          2435
+        ],
+        [
+          2408.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2399.0,
+        2179.0,
+        2419.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2507.0477,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C0-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2408.5,
+          2185
+        ],
+        [
+          2413,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C1-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2431.0,
+          2185
+        ],
+        [
+          2436.0,
+          2210
+        ],
+        [
+          2431.0,
+          2235
+        ],
+        [
+          2436.0,
+          2260
+        ],
+        [
+          2433.0,
+          2285
+        ],
+        [
+          2436.0,
+          2310
+        ],
+        [
+          2434.0,
+          2335
+        ],
+        [
+          2434.0,
+          2360
+        ],
+        [
+          2434.0,
+          2385
+        ],
+        [
+          2434.0,
+          2410
+        ],
+        [
+          2434.0,
+          2435
+        ],
+        [
+          2434.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2425.0,
+        2179.0,
+        2442.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2525.5758,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2432.5,
+          2185
+        ],
+        [
+          2437,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C1-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2486.0,
+          2185
+        ],
+        [
+          2487.0,
+          2210
+        ],
+        [
+          2487.0,
+          2235
+        ],
+        [
+          2487.0,
+          2260
+        ],
+        [
+          2488.0,
+          2285
+        ],
+        [
+          2488.0,
+          2310
+        ],
+        [
+          2488.0,
+          2335
+        ],
+        [
+          2488.0,
+          2360
+        ],
+        [
+          2489.0,
+          2385
+        ],
+        [
+          2489.0,
+          2410
+        ],
+        [
+          2489.0,
+          2435
+        ],
+        [
+          2485.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2479.0,
+        2179.0,
+        2495.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2578.6411,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2487.5,
+          2185
+        ],
+        [
+          2492,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C1-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2541.0,
+          2185
+        ],
+        [
+          2542.0,
+          2210
+        ],
+        [
+          2542.0,
+          2235
+        ],
+        [
+          2542.0,
+          2260
+        ],
+        [
+          2543.0,
+          2285
+        ],
+        [
+          2543.0,
+          2310
+        ],
+        [
+          2543.0,
+          2335
+        ],
+        [
+          2543.0,
+          2360
+        ],
+        [
+          2544.0,
+          2385
+        ],
+        [
+          2544.0,
+          2410
+        ],
+        [
+          2544.0,
+          2435
+        ],
+        [
+          2544.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2535.0,
+        2179.0,
+        2550.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2631.7064,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C1-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2542.5,
+          2185
+        ],
+        [
+          2547,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C2-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2567.0,
+          2185
+        ],
+        [
+          2567.0,
+          2210
+        ],
+        [
+          2567.0,
+          2235
+        ],
+        [
+          2567.0,
+          2260
+        ],
+        [
+          2568.0,
+          2285
+        ],
+        [
+          2568.0,
+          2310
+        ],
+        [
+          2568.0,
+          2335
+        ],
+        [
+          2568.0,
+          2360
+        ],
+        [
+          2569.0,
+          2385
+        ],
+        [
+          2569.0,
+          2410
+        ],
+        [
+          2569.0,
+          2435
+        ],
+        [
+          2569.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2561.0,
+        2179.0,
+        2575.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2651.2394,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2567.5,
+          2185
+        ],
+        [
+          2572,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C2-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2621.0,
+          2185
+        ],
+        [
+          2622.0,
+          2210
+        ],
+        [
+          2622.0,
+          2235
+        ],
+        [
+          2622.0,
+          2260
+        ],
+        [
+          2623.0,
+          2285
+        ],
+        [
+          2623.0,
+          2310
+        ],
+        [
+          2623.0,
+          2335
+        ],
+        [
+          2623.0,
+          2360
+        ],
+        [
+          2623.0,
+          2385
+        ],
+        [
+          2623.0,
+          2410
+        ],
+        [
+          2624.0,
+          2435
+        ],
+        [
+          2623.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2615.0,
+        2179.0,
+        2630.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2704.5432,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2623.5,
+          2185
+        ],
+        [
+          2628,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C2-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2677.0,
+          2185
+        ],
+        [
+          2681.0,
+          2210
+        ],
+        [
+          2681.0,
+          2235
+        ],
+        [
+          2681.0,
+          2260
+        ],
+        [
+          2682.0,
+          2285
+        ],
+        [
+          2682.0,
+          2310
+        ],
+        [
+          2682.0,
+          2335
+        ],
+        [
+          2682.0,
+          2360
+        ],
+        [
+          2683.0,
+          2385
+        ],
+        [
+          2683.0,
+          2410
+        ],
+        [
+          2683.0,
+          2435
+        ],
+        [
+          2683.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2671.0,
+        2179.0,
+        2689.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2757.847,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C2-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2681.5,
+          2185
+        ],
+        [
+          2686,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C3-SD-1",
+      "axis": 1,
+      "source_path": [
+        [
+          2701.0,
+          2185
+        ],
+        [
+          2706.0,
+          2210
+        ],
+        [
+          2706.0,
+          2235
+        ],
+        [
+          2706.0,
+          2260
+        ],
+        [
+          2707.0,
+          2285
+        ],
+        [
+          2703.0,
+          2310
+        ],
+        [
+          2708.0,
+          2335
+        ],
+        [
+          2703.0,
+          2360
+        ],
+        [
+          2708.0,
+          2385
+        ],
+        [
+          2708.0,
+          2410
+        ],
+        [
+          2708.0,
+          2435
+        ],
+        [
+          2703.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2695.0,
+        2179.0,
+        2714.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2776.4629,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2706.5,
+          2185
+        ],
+        [
+          2711,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C3-SD-2",
+      "axis": 1,
+      "source_path": [
+        [
+          2756.0,
+          2185
+        ],
+        [
+          2757.0,
+          2210
+        ],
+        [
+          2757.0,
+          2235
+        ],
+        [
+          2757.0,
+          2260
+        ],
+        [
+          2762.0,
+          2285
+        ],
+        [
+          2757.0,
+          2310
+        ],
+        [
+          2757.0,
+          2335
+        ],
+        [
+          2757.0,
+          2360
+        ],
+        [
+          2762.0,
+          2385
+        ],
+        [
+          2757.0,
+          2410
+        ],
+        [
+          2762.0,
+          2435
+        ],
+        [
+          2762.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2750.0,
+        2179.0,
+        2768.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2822.7963124999997,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2756.5,
+          2185
+        ],
+        [
+          2761,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C3-SD-3",
+      "axis": 1,
+      "source_path": [
+        [
+          2811.0,
+          2185
+        ],
+        [
+          2811.0,
+          2210
+        ],
+        [
+          2811.0,
+          2235
+        ],
+        [
+          2811.0,
+          2260
+        ],
+        [
+          2812.0,
+          2285
+        ],
+        [
+          2811.0,
+          2310
+        ],
+        [
+          2812.0,
+          2335
+        ],
+        [
+          2812.0,
+          2360
+        ],
+        [
+          2812.0,
+          2385
+        ],
+        [
+          2812.0,
+          2410
+        ],
+        [
+          2812.0,
+          2435
+        ],
+        [
+          2807.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2801.0,
+        2179.0,
+        2818.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2877.4631375,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2811.5,
+          2185
+        ],
+        [
+          2816,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C3-SD-4",
+      "axis": 1,
+      "source_path": [
+        [
+          2865.0,
+          2185
+        ],
+        [
+          2865.0,
+          2210
+        ],
+        [
+          2866.0,
+          2235
+        ],
+        [
+          2866.0,
+          2260
+        ],
+        [
+          2866.0,
+          2285
+        ],
+        [
+          2866.0,
+          2310
+        ],
+        [
+          2866.0,
+          2335
+        ],
+        [
+          2866.0,
+          2360
+        ],
+        [
+          2866.0,
+          2385
+        ],
+        [
+          2867.0,
+          2410
+        ],
+        [
+          2867.0,
+          2435
+        ],
+        [
+          2862.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2856.0,
+        2179.0,
+        2873.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2932.1299625,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2865.5,
+          2185
+        ],
+        [
+          2870,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C3-SD-5",
+      "axis": 1,
+      "source_path": [
+        [
+          2919.0,
+          2185
+        ],
+        [
+          2920.0,
+          2210
+        ],
+        [
+          2920.0,
+          2235
+        ],
+        [
+          2920.0,
+          2260
+        ],
+        [
+          2920.0,
+          2285
+        ],
+        [
+          2920.0,
+          2310
+        ],
+        [
+          2920.0,
+          2335
+        ],
+        [
+          2921.0,
+          2360
+        ],
+        [
+          2921.0,
+          2385
+        ],
+        [
+          2921.0,
+          2410
+        ],
+        [
+          2921.0,
+          2435
+        ],
+        [
+          2916.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2910.0,
+        2179.0,
+        2927.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2986.7967875000004,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2919.5,
+          2185
+        ],
+        [
+          2924,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-C3-SD-6",
+      "axis": 1,
+      "source_path": [
+        [
+          2974.0,
+          2185
+        ],
+        [
+          2974.0,
+          2210
+        ],
+        [
+          2974.0,
+          2235
+        ],
+        [
+          2974.0,
+          2260
+        ],
+        [
+          2974.0,
+          2285
+        ],
+        [
+          2975.0,
+          2310
+        ],
+        [
+          2975.0,
+          2335
+        ],
+        [
+          2975.0,
+          2360
+        ],
+        [
+          2975.0,
+          2385
+        ],
+        [
+          2975.0,
+          2410
+        ],
+        [
+          2975.0,
+          2435
+        ],
+        [
+          2975.0,
+          2460
+        ]
+      ],
+      "band_half_width": 2,
+      "source_roi": [
+        2968.0,
+        2179.0,
+        2981.0,
+        2466.0
+      ],
+      "source_origin": 2192,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3033.1302,
+        2330.5
+      ],
+      "layout_pitch": 14.5,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-C3-0",
+      "min_gray": 180,
+      "min_residual": 6,
+      "sigma": 1.6,
+      "source_path_seed": [
+        [
+          2973.5,
+          2185
+        ],
+        [
+          2978,
+          2460
+        ]
+      ],
+      "source_path_method": "local mean-ridge measurements in AI assigned diffusion column; no cross-layer blind projection",
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "Q2-A-RING-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          2062,
+          1798
+        ],
+        [
+          2604,
+          1796
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2056.0,
+        1790.0,
+        2610.0,
+        1804.0
+      ],
+      "source_origin": 2069,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2194.7592,
+        1951.18785
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-A-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-A-RING-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          2071,
+          2116
+        ],
+        [
+          2608,
+          2109
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2065.0,
+        2103.0,
+        2614.0,
+        2122.0
+      ],
+      "source_origin": 2078,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2194.7592,
+        2255.5092999999997
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-A-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-A-RING-LEFT",
+      "axis": 1,
+      "source_path": [
+        [
+          2053,
+          1807
+        ],
+        [
+          2062,
+          2107
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2047.0,
+        1801.0,
+        2068.0,
+        2113.0
+      ],
+      "source_origin": 1814,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2181.7592,
+        1964.18785
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-A-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-A-RING-RIGHT",
+      "axis": 1,
+      "source_path": [
+        [
+          2613,
+          1805
+        ],
+        [
+          2617,
+          2100
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2607.0,
+        1799.0,
+        2623.0,
+        2106.0
+      ],
+      "source_origin": 1812,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2700.1560499999996,
+        1964.18785
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-A-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-B-RING-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          2657,
+          1796
+        ],
+        [
+          3110,
+          1794
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2651.0,
+        1788.0,
+        3116.0,
+        1802.0
+      ],
+      "source_origin": 2664,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2740.13065,
+        1951.18785
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-B-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-B-RING-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          2662,
+          2075
+        ],
+        [
+          3113,
+          2071
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2656.0,
+        2065.0,
+        3119.0,
+        2081.0
+      ],
+      "source_origin": 2669,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2740.13065,
+        2222.9272499999997
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-B-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-B-RING-LEFT",
+      "axis": 1,
+      "source_path": [
+        [
+          2648,
+          1805
+        ],
+        [
+          2653,
+          2066
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2642.0,
+        1799.0,
+        2659.0,
+        2072.0
+      ],
+      "source_origin": 1812,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2727.13065,
+        1964.18785
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-B-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-B-RING-RIGHT",
+      "axis": 1,
+      "source_path": [
+        [
+          3119,
+          1803
+        ],
+        [
+          3122,
+          2062
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        3113.0,
+        1797.0,
+        3128.0,
+        2068.0
+      ],
+      "source_origin": 1810,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3177.6706,
+        1964.18785
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-B-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-C-RING-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          2106,
+          2158
+        ],
+        [
+          2994,
+          2152
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2100.0,
+        2146.0,
+        3000.0,
+        2164.0
+      ],
+      "source_origin": 2113,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2230.7479000000003,
+        2293.0522
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-C-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-C-RING-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          2113,
+          2515
+        ],
+        [
+          2996,
+          2508
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2107.0,
+        2502.0,
+        3002.0,
+        2521.0
+      ],
+      "source_origin": 2120,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2230.7479000000003,
+        2644.04735
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-C-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-C-RING-LEFT",
+      "axis": 1,
+      "source_path": [
+        [
+          2097,
+          2167
+        ],
+        [
+          2104,
+          2506
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2091.0,
+        2161.0,
+        2110.0,
+        2512.0
+      ],
+      "source_origin": 2174,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2217.7479000000003,
+        2306.0522
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-C-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "Q2-C-RING-RIGHT",
+      "axis": 1,
+      "source_path": [
+        [
+          3003,
+          2161
+        ],
+        [
+          3005,
+          2499
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        2997.0,
+        2155.0,
+        3011.0,
+        2505.0
+      ],
+      "source_origin": 2168,
+      "source_pitch": 14.1,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        3061.4836999999998,
+        2306.0522
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-MIDDLE-MOS-GUARD-C-0",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 1.6
+    }
+  ],
+  "cases": [
+    {
+      "id": "O",
+      "title": "位置总览",
+      "source_bbox": [
+        2010,
+        1750,
+        3160,
+        2550
+      ],
+      "layout_bbox": [
+        2140,
+        1900,
+        3220,
+        2690
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "A",
+      "title": "上左A：阶梯AA及外围环",
+      "source_bbox": [
+        2010,
+        1750,
+        2645,
+        2140
+      ],
+      "layout_bbox": [
+        2140,
+        1900,
+        2730,
+        2290
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "B",
+      "title": "上右B：两组四指及外围环",
+      "source_bbox": [
+        2620,
+        1750,
+        3160,
+        2120
+      ],
+      "layout_bbox": [
+        2700,
+        1900,
+        3220,
+        2270
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "C",
+      "title": "下方C：多组栅指及外围环",
+      "source_bbox": [
+        2050,
+        2110,
+        3050,
+        2550
+      ],
+      "layout_bbox": [
+        2170,
+        2250,
+        3110,
+        2690
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "GA",
+      "title": "上左A栅端原图细看",
+      "source_bbox": [
+        2040,
+        1980,
+        2640,
+        2140
+      ],
+      "layout_bbox": [
+        2190,
+        2140,
+        2690,
+        2265
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "GC",
+      "title": "下方C栅端原图细看",
+      "source_bbox": [
+        2100,
+        2400,
+        3020,
+        2540
+      ],
+      "layout_bbox": [
+        2220,
+        2560,
+        3055,
+        2655
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    }
+  ],
+  "scope": "Q2 middle MOS A/B upper and C lower; no other listed batches",
+  "source_correspondence": "AI local path landmarks in poly source, not historical AA source outlines or a blind global projection",
+  "source_uncertainty": "inspection slots are prompts for review, not evidence of a physically missing contact; no generated filler",
+  "review_notes": "电阻左侧两组MOS按原图分成上左A、上右B、下方C三个子阵列。先核对源漏CT及各自外围环。栅端亮边不能直接当成CT，暂列未知，不据此推断无引出或独立栅。灰蓝为此前791个保留CT，原130个完全已审，其余661的连接关系基本通过但几何细节未定稿。",
+  "review_title": "Q2中部MOS：A／B／C源漏与环CT，栅端暂列未知"
+}

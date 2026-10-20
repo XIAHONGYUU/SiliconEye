@@ -1,0 +1,373 @@
+{
+  "operation": "confirm_review_slots",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-upper-small-mos-v1/model-v1.json",
+      "sha256": "9ccc23047f41c972c8fa4b0a00a1627089adfcf5bf45ffe972f6eaa55e68c0b1"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-upper-small-mos-v1/unknown-sites-v1.json",
+      "sha256": "194281487d7234ac923a4a6c2f87a8ba4b921b45f4facc8b5774156d749dc74e"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-upper-small-mos-v1/spec-v1.json",
+      "sha256": "c0dd2e195857056afba0a86d4439d67294f4cb56365cfa2fd78e47105cec205e"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-upper-small-mos-reviewed-v2/human-review-v1.json",
+      "sha256": "a9856e744a44989c6f0b39f375cddefcf7c8b92557b2384fc260a49419be12c3"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "m1_context_O": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/O-m1.png",
+      "sha256": "df2c7559ef1c802cf79a0bc1789b33ea11ade8417ee2e69d5aedb07b734882cb"
+    },
+    "m1_context_T": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/T-m1.png",
+      "sha256": "51e74c48bacd20111865faaa791e2fc2be0bbb09782b807d0776644fc783501b"
+    },
+    "m1_context_L": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/L-m1.png",
+      "sha256": "2252e136f9f28a6e8f129d42109848f38ffa1177987cdaee204ea7524e19ccc1"
+    },
+    "m1_context_M": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/M-m1.png",
+      "sha256": "99523ca681a6d54c9cfc890c7396b196fe23a1c226b5f52aa36032febc9fda17"
+    },
+    "m1_context_R": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/R-m1.png",
+      "sha256": "4f3f319c3748c4091d46c88a581144a91fec37ce28f8da3f15b1112183b50ac8"
+    },
+    "m1_context_RT": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/RT-m1.png",
+      "sha256": "a5cfacede65e9d46171957fb192d2a190a46c9dfa13edc7d4617e1ecb624ab62"
+    },
+    "m1_context_RB": {
+      "path": "benchmarks/ct-upper-small-mos-v1/source-context/RB-m1.png",
+      "sha256": "2161137c05c7e75bd1973309ace630b0b4bc9c8d534fdf5b7045e3d965ff6ef3"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "T_before": {
+      "path": "docs/assets/ct-upper-small-mos-v1/T-layout.svg",
+      "sha256": "2a3e3fa29864811fc09874afbde750902cb21652bc66c2e650564441135c3e04"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "cases": [
+    {
+      "id": "O",
+      "title": "完整范围与三类CT总览",
+      "source_bbox": [
+        860,
+        590,
+        4130,
+        850
+      ],
+      "layout_bbox": [
+        1155,
+        840,
+        4110,
+        1070
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "T",
+      "title": "左侧10个小MOS：源漏＋上端栅CT＋环",
+      "source_bbox": [
+        860,
+        610,
+        1740,
+        835
+      ],
+      "layout_bbox": [
+        1170,
+        860,
+        1908,
+        1058
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ],
+        [
+          "before",
+          "svg",
+          "修订前：最右小MOS高7px"
+        ]
+      ]
+    },
+    {
+      "id": "L",
+      "title": "右侧长栅左段：6条栅",
+      "source_bbox": [
+        1710,
+        630,
+        2330,
+        835
+      ],
+      "layout_bbox": [
+        1905,
+        860,
+        2440,
+        1058
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "M",
+      "title": "右侧长栅中段：10条栅",
+      "source_bbox": [
+        2330,
+        630,
+        3080,
+        840
+      ],
+      "layout_bbox": [
+        2440,
+        860,
+        3125,
+        1058
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "R",
+      "title": "右侧长栅右段：14条栅",
+      "source_bbox": [
+        3080,
+        630,
+        4130,
+        845
+      ],
+      "layout_bbox": [
+        3125,
+        860,
+        4110,
+        1058
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "RT",
+      "title": "上环完整已确认CT",
+      "source_bbox": [
+        860,
+        600,
+        4130,
+        665
+      ],
+      "layout_bbox": [
+        1170,
+        850,
+        4110,
+        900
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ]
+      ]
+    },
+    {
+      "id": "RB",
+      "title": "下环完整已确认CT",
+      "source_bbox": [
+        860,
+        790,
+        4130,
+        850
+      ],
+      "layout_bbox": [
+        1170,
+        1015,
+        4110,
+        1060
+      ],
+      "scope": "本组CT已审通过；仅T最右小MOS的AA/POLY及2个上端栅CT下移7相对px。灰蓝为原CT，蓝色为51人工确认环孔。原图定位不变，M1独立坐标仅供对照。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域对照（独立坐标）"
+        ]
+      ]
+    }
+  ],
+  "review_images": [
+    {
+      "input_key": "m1_context_O",
+      "output_name": "O-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        820,
+        590,
+        4100,
+        1010
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "m1_context_T",
+      "output_name": "T-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        850,
+        620,
+        1750,
+        1000
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "m1_context_L",
+      "output_name": "L-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        1690,
+        620,
+        2330,
+        1000
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "m1_context_M",
+      "output_name": "M-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        2310,
+        620,
+        3080,
+        1000
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "m1_context_R",
+      "output_name": "R-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        3020,
+        620,
+        4100,
+        1000
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "m1_context_RT",
+      "output_name": "RT-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        820,
+        610,
+        4100,
+        700
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "m1_context_RB",
+      "output_name": "RB-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        820,
+        900,
+        4100,
+        1010
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "T_before",
+      "output_name": "T-before.svg"
+    }
+  ],
+  "local_translations": [
+    {
+      "layer": "AA",
+      "id": "AA-F01669",
+      "delta_xy": [
+        0,
+        7
+      ]
+    },
+    {
+      "layer": "POLY",
+      "id": "SG-U06-010",
+      "delta_xy": [
+        0,
+        7
+      ]
+    },
+    {
+      "layer": "CT",
+      "id": "CTT-UP-UG10-GATE-S000",
+      "delta_xy": [
+        0,
+        7
+      ]
+    },
+    {
+      "layer": "CT",
+      "id": "CTT-UP-UG10-GATE-S001",
+      "delta_xy": [
+        0,
+        7
+      ]
+    }
+  ],
+  "gate_terminal_CT_status": "upper40 gates approved; M1 assignment and nets unknown",
+  "review_title": "上方40栅CT已审：T最右小MOS局部对齐修订",
+  "review_notes": "T、L/M/R与外围环已获批准；51橙框以人工确认CT纳入，不伪造算法亮峰。T最右AA/POLY下移7相对px，两个上端栅孔随端部移动，4个源漏孔与所有原图定位保持不变。其他2656个已有CT完整记录、335个无关AA及694个无关POLY不变。当前2709孔；不代表全幅提取完成或真实PDK DRC通过。"
+}

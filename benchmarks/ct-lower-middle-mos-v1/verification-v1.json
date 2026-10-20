@@ -1,0 +1,22 @@
+{
+  "status": "technical_checks_pass_new_batch_human_review_pending",
+  "focused_tests": "49 passed in4.46s: test_ct_transfer, test_ct_joint_reconstruction, test_gate_terminal_localization",
+  "ruff": "PASS relevant changed module and tests",
+  "whole_geometry": "6874 CT PASS:0 overlap,0 min-gap violations,min AA enclosure1.056015px,min CT edge gap4.4px; physical_PDK_DRC=false",
+  "input_and_parent_preservation": "all inputs hashed before/after;4940 CT records exact-equal prefix;695 POLY and335 AA read unchanged from locked baseline",
+  "acceptance_metadata": "inherited4940 snapshot is not treated as whole-snapshot human acceptance;1895 explicit parent scoped contact IDs retained separately",
+  "R2_prior": "new native centers1754/1764,y2831 both inside prior human-reviewed cluster1743..1771,2820..2842; exact new cut geometry not inherited as approved",
+  "unknown_slot_gate": "1 material-conflicting review grid slot shown as red cross, not contact; all144 grid observations retained in audit",
+  "static_and_visual": "SVG XML,PNG decode,local references and simulated select callbacks PASS;A/C/D/E/F canonical previews inspected",
+  "browser_render": "not performed: browser security policy disallows file URLs, no workaround attempted",
+  "whole_layer_complete": false,
+  "locked_files": {
+    "spec-v1.json": "29d02de43d7d805ef2656aa7bbae81714bd19952eb56d3e0bbfd0b3bbc121f37",
+    "model-v1.json": "724687911a61698fc18eed085bb2597ea398aeeb9c863cd596eb65587a37b1ec",
+    "report-v1.json": "86858c6ab640fcb446ad531e9d4a917b6188785b6cbdd4d0809ee8e9f249ddc0",
+    "coverage-v1.json": "2ebc33186ff9f4cc47f4de1854a05c01cf2336e754a17b66fb623fa40343f2e5",
+    "review-questions-v1.json": "00d2d9cf7c180ffe1ba194938a70dd59255519ab7d04d555a79622d076fafb1f",
+    "unknown-slot-audit-v1.json": "0054fa85928e7a8c6b75c55338789c650803119534c5dc8101a940c685bc935c",
+    "prior-R2-crosscheck-v1.json": "ebc9beb9b3e8990b9680e156172072b9f0b0c82f99dc4a692b5840ed231cb934"
+  }
+}

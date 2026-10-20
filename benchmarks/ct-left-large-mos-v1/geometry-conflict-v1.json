@@ -1,0 +1,1762 @@
+{
+  "status": "proposed_only_requires_human_material_review",
+  "reason": "Existing AA-W04 right edge989, last POLY right987 leaves2px; at least7px needed; propose AA right+6 to995 for review",
+  "material_id": "AA-W04",
+  "before": {
+    "id": "AA-W04",
+    "native_corners": [
+      [
+        0,
+        3340
+      ],
+      [
+        860,
+        3341
+      ],
+      [
+        860,
+        3827
+      ],
+      [
+        0,
+        3822
+      ]
+    ],
+    "visible_photo_edge": "left",
+    "layer": "AA",
+    "primitive": "rectangle",
+    "outer_xyxy": [
+      208.0,
+      3276.0,
+      989.0,
+      3748.0
+    ],
+    "hole_xyxy": null,
+    "max_manual_corner_shift_px": 16.599949196617047,
+    "status": "candidate",
+    "revision_role": "scene_AA_candidate",
+    "scope": "visible_fragment_photo_edge_not_physical_endpoint",
+    "dimension_status": "relative_layout_units_not_um"
+  },
+  "after": {
+    "id": "AA-W04",
+    "native_corners": [
+      [
+        0,
+        3340
+      ],
+      [
+        860,
+        3341
+      ],
+      [
+        860,
+        3827
+      ],
+      [
+        0,
+        3822
+      ]
+    ],
+    "visible_photo_edge": "left",
+    "layer": "AA",
+    "primitive": "rectangle",
+    "outer_xyxy": [
+      208.0,
+      3276.0,
+      995,
+      3748.0
+    ],
+    "hole_xyxy": null,
+    "max_manual_corner_shift_px": 16.599949196617047,
+    "status": "candidate",
+    "revision_role": "scene_AA_candidate",
+    "scope": "visible_fragment_photo_edge_not_physical_endpoint",
+    "dimension_status": "relative_layout_units_not_um"
+  },
+  "proposed_row": {
+    "id": "LL-G34-SD08",
+    "axis": 1,
+    "material": "AA",
+    "target": "AA-W04",
+    "source_path": [
+      [
+        750.8638817408556,
+        3290.0
+      ],
+      [
+        753.3577299799248,
+        3359.1666666666665
+      ],
+      [
+        755.9247567836537,
+        3428.3333333333335
+      ],
+      [
+        758.5649621520425,
+        3497.5
+      ],
+      [
+        761.2783460850912,
+        3566.6666666666665
+      ],
+      [
+        764.0649085827998,
+        3635.8333333333335
+      ],
+      [
+        766.9246496451683,
+        3705.0
+      ]
+    ],
+    "source_roi": [
+      746,
+      3286,
+      771,
+      3709
+    ],
+    "source_origin": 3298.0,
+    "source_pitch": 14.5,
+    "source_fit_tolerance": 5.7,
+    "track_local_spacing": true,
+    "layout_origin": [
+      991,
+      3282.0
+    ],
+    "layout_pitch": 16.4,
+    "min_gray": 174,
+    "min_residual": 14,
+    "sigma": 0.65,
+    "band_half_width": 2,
+    "inspection_slot_range": [
+      0,
+      28
+    ]
+  },
+  "source_evidence_preserved": true,
+  "proposed_contact_count": 29,
+  "proposed_contacts": [
+    {
+      "id": "CTT-LL-G34-SD08-S000",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3282.0
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3279.5
+        ],
+        [
+          993.5,
+          3279.5
+        ],
+        [
+          993.5,
+          3284.5
+        ],
+        [
+          988.5,
+          3284.5
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          750.15234375,
+          3298.0
+        ],
+        "peak_gray": 231.97314453125,
+        "local_residual": 99.10777282714844,
+        "native_center": [
+          750.15234375,
+          3298.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-8",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S001",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 1,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3298.4
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3295.9
+        ],
+        [
+          993.5,
+          3295.9
+        ],
+        [
+          993.5,
+          3300.9
+        ],
+        [
+          988.5,
+          3300.9
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          750.5128784179688,
+          3308.0
+        ],
+        "peak_gray": 240.6194610595703,
+        "local_residual": 107.75408935546875,
+        "native_center": [
+          750.5128784179688,
+          3308.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-18",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S002",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 2,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3314.8
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3312.3
+        ],
+        [
+          993.5,
+          3312.3
+        ],
+        [
+          993.5,
+          3317.3
+        ],
+        [
+          988.5,
+          3317.3
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          753.0176391601562,
+          3322.0
+        ],
+        "peak_gray": 234.58676147460938,
+        "local_residual": 105.16348266601562,
+        "native_center": [
+          753.0176391601562,
+          3322.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-32",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S003",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 3,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3331.2
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3328.7
+        ],
+        [
+          993.5,
+          3328.7
+        ],
+        [
+          993.5,
+          3333.7
+        ],
+        [
+          988.5,
+          3333.7
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          752.5584716796875,
+          3337.0
+        ],
+        "peak_gray": 217.3457794189453,
+        "local_residual": 78.26414489746094,
+        "native_center": [
+          752.5584716796875,
+          3337.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-47",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S004",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 4,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3347.6
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3345.1
+        ],
+        [
+          993.5,
+          3345.1
+        ],
+        [
+          993.5,
+          3350.1
+        ],
+        [
+          988.5,
+          3350.1
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          753.0993041992188,
+          3352.0
+        ],
+        "peak_gray": 229.5494842529297,
+        "local_residual": 76.23822021484375,
+        "native_center": [
+          753.0993041992188,
+          3352.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-62",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S005",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 5,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3364.0
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3361.5
+        ],
+        [
+          993.5,
+          3361.5
+        ],
+        [
+          993.5,
+          3366.5
+        ],
+        [
+          988.5,
+          3366.5
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          753.6484375,
+          3367.0
+        ],
+        "peak_gray": 216.44668579101562,
+        "local_residual": 91.55302429199219,
+        "native_center": [
+          753.6484375,
+          3367.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-77",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S006",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 6,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3380.4
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3377.9
+        ],
+        [
+          993.5,
+          3377.9
+        ],
+        [
+          993.5,
+          3382.9
+        ],
+        [
+          988.5,
+          3382.9
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          753.1680297851562,
+          3381.0
+        ],
+        "peak_gray": 236.5598602294922,
+        "local_residual": 110.76354217529297,
+        "native_center": [
+          753.1680297851562,
+          3381.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-91",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S007",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 7,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3396.8
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3394.3
+        ],
+        [
+          993.5,
+          3394.3
+        ],
+        [
+          993.5,
+          3399.3
+        ],
+        [
+          988.5,
+          3399.3
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          754.5762939453125,
+          3392.0
+        ],
+        "peak_gray": 190.11805725097656,
+        "local_residual": 74.90251922607422,
+        "native_center": [
+          754.5762939453125,
+          3392.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-102",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S008",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 8,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3413.2
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3410.7
+        ],
+        [
+          993.5,
+          3410.7
+        ],
+        [
+          993.5,
+          3415.7
+        ],
+        [
+          988.5,
+          3415.7
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          754.0958862304688,
+          3406.0
+        ],
+        "peak_gray": 237.98361206054688,
+        "local_residual": 82.36073303222656,
+        "native_center": [
+          754.0958862304688,
+          3406.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-116",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S009",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 9,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3429.6
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3427.1
+        ],
+        [
+          993.5,
+          3427.1
+        ],
+        [
+          993.5,
+          3432.1
+        ],
+        [
+          988.5,
+          3432.1
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          754.652587890625,
+          3421.0
+        ],
+        "peak_gray": 237.75169372558594,
+        "local_residual": 129.26776123046875,
+        "native_center": [
+          754.652587890625,
+          3421.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-131",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S010",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 10,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3446.0
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3443.5
+        ],
+        [
+          993.5,
+          3443.5
+        ],
+        [
+          993.5,
+          3448.5
+        ],
+        [
+          988.5,
+          3448.5
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          755.2174072265625,
+          3436.0
+        ],
+        "peak_gray": 235.62969970703125,
+        "local_residual": 76.72309875488281,
+        "native_center": [
+          755.2174072265625,
+          3436.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-146",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S011",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 11,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3462.4
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3459.9
+        ],
+        [
+          993.5,
+          3459.9
+        ],
+        [
+          993.5,
+          3464.9
+        ],
+        [
+          988.5,
+          3464.9
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          755.7899780273438,
+          3451.0
+        ],
+        "peak_gray": 241.3438720703125,
+        "local_residual": 103.76014709472656,
+        "native_center": [
+          755.7899780273438,
+          3451.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-161",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S012",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 12,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3478.8
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3476.3
+        ],
+        [
+          993.5,
+          3476.3
+        ],
+        [
+          993.5,
+          3481.3
+        ],
+        [
+          988.5,
+          3481.3
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          758.3243408203125,
+          3465.0
+        ],
+        "peak_gray": 232.99331665039062,
+        "local_residual": 97.39044189453125,
+        "native_center": [
+          758.3243408203125,
+          3465.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-175",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S013",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 13,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3495.2
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3492.7
+        ],
+        [
+          993.5,
+          3492.7
+        ],
+        [
+          993.5,
+          3497.7
+        ],
+        [
+          988.5,
+          3497.7
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          756.8969116210938,
+          3480.0
+        ],
+        "peak_gray": 233.97164916992188,
+        "local_residual": 84.87030029296875,
+        "native_center": [
+          756.8969116210938,
+          3480.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-190",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S014",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 14,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3511.6
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3509.1
+        ],
+        [
+          993.5,
+          3509.1
+        ],
+        [
+          993.5,
+          3514.1
+        ],
+        [
+          988.5,
+          3514.1
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          758.2786254882812,
+          3490.0
+        ],
+        "peak_gray": 232.1706085205078,
+        "local_residual": 83.06925964355469,
+        "native_center": [
+          758.2786254882812,
+          3490.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-200",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S015",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 15,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3528.0
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3525.5
+        ],
+        [
+          993.5,
+          3525.5
+        ],
+        [
+          993.5,
+          3530.5
+        ],
+        [
+          988.5,
+          3530.5
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          758.0160522460938,
+          3509.0
+        ],
+        "peak_gray": 231.17071533203125,
+        "local_residual": 50.36601257324219,
+        "native_center": [
+          758.0160522460938,
+          3509.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-219",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S016",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 16,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3544.4
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3541.9
+        ],
+        [
+          993.5,
+          3541.9
+        ],
+        [
+          993.5,
+          3546.9
+        ],
+        [
+          988.5,
+          3546.9
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          758.4083862304688,
+          3519.0
+        ],
+        "peak_gray": 240.60537719726562,
+        "local_residual": 93.03770446777344,
+        "native_center": [
+          758.4083862304688,
+          3519.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-229",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S017",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 17,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3560.8
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3558.3
+        ],
+        [
+          993.5,
+          3558.3
+        ],
+        [
+          993.5,
+          3563.3
+        ],
+        [
+          988.5,
+          3563.3
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          760.996826171875,
+          3534.0
+        ],
+        "peak_gray": 241.80831909179688,
+        "local_residual": 97.25892639160156,
+        "native_center": [
+          760.996826171875,
+          3534.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-244",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S018",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 18,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3577.2
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3574.7
+        ],
+        [
+          993.5,
+          3574.7
+        ],
+        [
+          993.5,
+          3579.7
+        ],
+        [
+          988.5,
+          3579.7
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          759.5852661132812,
+          3549.0
+        ],
+        "peak_gray": 241.23480224609375,
+        "local_residual": 116.0511245727539,
+        "native_center": [
+          759.5852661132812,
+          3549.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-259",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S019",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 19,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3593.6
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3591.1
+        ],
+        [
+          993.5,
+          3591.1
+        ],
+        [
+          993.5,
+          3596.1
+        ],
+        [
+          988.5,
+          3596.1
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          760.1344604492188,
+          3563.0
+        ],
+        "peak_gray": 239.41795349121094,
+        "local_residual": 93.46412658691406,
+        "native_center": [
+          760.1344604492188,
+          3563.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-273",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S020",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 20,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3610.0
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3607.5
+        ],
+        [
+          993.5,
+          3607.5
+        ],
+        [
+          993.5,
+          3612.5
+        ],
+        [
+          988.5,
+          3612.5
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          761.533447265625,
+          3573.0
+        ],
+        "peak_gray": 234.5780029296875,
+        "local_residual": 88.62417602539062,
+        "native_center": [
+          761.533447265625,
+          3573.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-283",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S021",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 21,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3626.4
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3623.9
+        ],
+        [
+          993.5,
+          3623.9
+        ],
+        [
+          993.5,
+          3628.9
+        ],
+        [
+          988.5,
+          3628.9
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          761.1378173828125,
+          3588.0
+        ],
+        "peak_gray": 234.00559997558594,
+        "local_residual": 113.91875457763672,
+        "native_center": [
+          761.1378173828125,
+          3588.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-298",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S022",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 22,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3642.8
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3640.3
+        ],
+        [
+          993.5,
+          3640.3
+        ],
+        [
+          993.5,
+          3645.3
+        ],
+        [
+          988.5,
+          3645.3
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          762.7018432617188,
+          3602.0
+        ],
+        "peak_gray": 241.28688049316406,
+        "local_residual": 113.71192169189453,
+        "native_center": [
+          762.7018432617188,
+          3602.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-312",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S023",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 23,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3659.2
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3656.7
+        ],
+        [
+          993.5,
+          3656.7
+        ],
+        [
+          993.5,
+          3661.7
+        ],
+        [
+          988.5,
+          3661.7
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          764.30615234375,
+          3617.0
+        ],
+        "peak_gray": 229.73077392578125,
+        "local_residual": 104.77196502685547,
+        "native_center": [
+          764.30615234375,
+          3617.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-327",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S024",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 24,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3675.6
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3673.1
+        ],
+        [
+          993.5,
+          3673.1
+        ],
+        [
+          993.5,
+          3678.1
+        ],
+        [
+          988.5,
+          3678.1
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          764.8701782226562,
+          3631.0
+        ],
+        "peak_gray": 230.44354248046875,
+        "local_residual": 102.45590209960938,
+        "native_center": [
+          764.8701782226562,
+          3631.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-341",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S025",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 25,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3692.0
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3689.5
+        ],
+        [
+          993.5,
+          3689.5
+        ],
+        [
+          993.5,
+          3694.5
+        ],
+        [
+          988.5,
+          3694.5
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          764.4852294921875,
+          3646.0
+        ],
+        "peak_gray": 229.3204803466797,
+        "local_residual": 74.48379516601562,
+        "native_center": [
+          764.4852294921875,
+          3646.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-356",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S026",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 26,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3708.4
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3705.9
+        ],
+        [
+          993.5,
+          3705.9
+        ],
+        [
+          993.5,
+          3710.9
+        ],
+        [
+          988.5,
+          3710.9
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          766.1054077148438,
+          3661.0
+        ],
+        "peak_gray": 223.45126342773438,
+        "local_residual": 124.2959976196289,
+        "native_center": [
+          766.1054077148438,
+          3661.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-371",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S027",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 27,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3724.8
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3722.3
+        ],
+        [
+          993.5,
+          3722.3
+        ],
+        [
+          993.5,
+          3727.3
+        ],
+        [
+          988.5,
+          3727.3
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          766.5188598632812,
+          3671.0
+        ],
+        "peak_gray": 227.84010314941406,
+        "local_residual": 128.6848373413086,
+        "native_center": [
+          766.5188598632812,
+          3671.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-381",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    },
+    {
+      "id": "CTT-LL-G34-SD08-S028",
+      "family": "LL-G34-SD08",
+      "column": 0,
+      "row": 28,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        991,
+        3741.2
+      ],
+      "layout_outline": [
+        [
+          988.5,
+          3738.7
+        ],
+        [
+          993.5,
+          3738.7
+        ],
+        [
+          993.5,
+          3743.7
+        ],
+        [
+          988.5,
+          3743.7
+        ]
+      ],
+      "source_evidence": {
+        "source_native_center_xy": [
+          765.0977172851562,
+          3685.0
+        ],
+        "peak_gray": 245.00244140625,
+        "local_residual": 124.57246398925781,
+        "native_center": [
+          765.0977172851562,
+          3685.0
+        ],
+        "source_observation_id": "PROFILE-LL-G34-SD08-395",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "supported": true
+      },
+      "source_frame": "poly",
+      "status": "AI_transfer_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-W04"
+    }
+  ],
+  "before_gate": {
+    "status": "FAIL",
+    "errors": [
+      {
+        "id": "CTT-LL-G34-SD08-S000",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S001",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S002",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S003",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S004",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S005",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S006",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S007",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S008",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S009",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S010",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S011",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S012",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S013",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S014",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S015",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S016",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S017",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S018",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S019",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S020",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S021",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S022",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S023",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S024",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S025",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S026",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S027",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CTT-LL-G34-SD08-S028",
+        "reason": "AA_enclosure_failed"
+      }
+    ],
+    "positive_area_overlap_pairs": [],
+    "min_gap_violations": [],
+    "minimum_edge_gap_px": 4.400000000000091,
+    "minimum_AA_enclosure_px": 0.0,
+    "minimum_POLY_clearance_px": 1.4999999999999998,
+    "minimum_POLY_enclosure_px": 0.9999999999999999,
+    "contact_count": 4684,
+    "physical_PDK_DRC": false
+  },
+  "after_gate": {
+    "status": "PASS",
+    "errors": [],
+    "positive_area_overlap_pairs": [],
+    "min_gap_violations": [],
+    "minimum_edge_gap_px": 4.400000000000091,
+    "minimum_AA_enclosure_px": 1.4999999999999998,
+    "minimum_POLY_clearance_px": 1.4999999999999998,
+    "minimum_POLY_enclosure_px": 0.9999999999999999,
+    "contact_count": 4684,
+    "physical_PDK_DRC": false
+  },
+  "current_effective_model_excludes_proposed_contacts": true,
+  "physical_PDK_DRC": false
+}

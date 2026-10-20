@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "user_verbatim": "1.评审通过\n2.评审通过",
+  "review_page": "docs/assets/ct-transfer-revision-v2/index.html",
+  "decisions": [
+    {
+      "item": 1,
+      "scope": "W1 RIGHT6 common-gate endpoint relative to approved WIDE",
+      "decision": "accepted"
+    },
+    {
+      "item": 2,
+      "scope": "R1 ring upper-left subset: top32 and left15 contacts",
+      "decision": "accepted"
+    }
+  ],
+  "prior_accepted_scope": [
+    "RIGHT6 six gate fingers and shared-gate topology",
+    "RIGHT6 42 diffusion contacts",
+    "WIDE23",
+    "RESISTOR-TOP7"
+  ],
+  "not_claimed": [
+    "full ring or full-frame CT coverage",
+    "exact optical boundaries or process dimensions",
+    "M1 routing or electrical net completion"
+  ]
+}

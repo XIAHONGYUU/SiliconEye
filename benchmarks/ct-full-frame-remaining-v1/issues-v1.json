@@ -1,0 +1,62 @@
+{
+  "issues": [
+    {
+      "id": "CTR-REM-T02-AA-2-SD01-003",
+      "target": "T02-AA-2",
+      "status": "material_landing_conflict_not_exported",
+      "candidate": {
+        "id": "CTR-REM-T02-AA-2-SD01-003",
+        "family": "REM-T02-AA-2-SD01",
+        "column": 0,
+        "row": 3,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1928.0,
+          1467.0
+        ],
+        "layout_outline": [
+          [
+            1925.5,
+            1464.5
+          ],
+          [
+            1930.5,
+            1464.5
+          ],
+          [
+            1930.5,
+            1469.5
+          ],
+          [
+            1925.5,
+            1469.5
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "source_native_center_xy": [
+            1763.0,
+            1271.0
+          ],
+          "peak_gray": 237.53013610839844,
+          "local_residual": 136.42700958251953,
+          "native_center": [
+            1763.0,
+            1271.0
+          ],
+          "source_observation_id": "PROFILE-REM-T02-AA-2-SD01-51",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true
+        },
+        "terminal_role": "source_drain_diffusion_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "T02-AA-2"
+      }
+    }
+  ]
+}

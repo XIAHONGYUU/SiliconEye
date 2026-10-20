@@ -1,0 +1,20 @@
+{
+  "full_pytest": "426 passed in 14.22s",
+  "related_tests": "11 passed; final code retested",
+  "ruff": "PASS",
+  "all_130_reviewed_contact_records_identical": true,
+  "material_model_unchanged": true,
+  "input_and_acceptance_hashes": "PASS",
+  "whole_proposal_geometry": "PASS",
+  "minimum_edge_gap_px": 4.400000000000091,
+  "HTML_SVG_PNG_resources": "PASS",
+  "simulated_select_callbacks": "PASS",
+  "visual_inspection": [
+    "overview canonical",
+    "lower-right source contacts",
+    "upper-right source contacts"
+  ],
+  "browser_rendering": "not automatically tested",
+  "human_review": "pending_new_scope_only",
+  "implementation_sha256": "850546dba2d73687296b98db4dd289829f900e2106e3d0d51d1dd7c161cd593d"
+}

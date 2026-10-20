@@ -1,0 +1,240 @@
+{
+  "group_sides": {
+    "G61": "bottom",
+    "G62": "top",
+    "G65": "bottom",
+    "G66": "top"
+  },
+  "source": "AI inspection of raw full-row bars and repeated devices, not inheritance of Q2 direction",
+  "retired_unaccepted_candidates": [
+    {
+      "candidate": {
+        "id": "CTR-G-G66-P05-bottom-000",
+        "family": "G-G66-P05-bottom",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1457.7853,
+          3798.613
+        ],
+        "layout_outline": [
+          [
+            1455.2853,
+            3796.113
+          ],
+          [
+            1460.2853,
+            3796.113
+          ],
+          [
+            1460.2853,
+            3801.113
+          ],
+          [
+            1455.2853,
+            3801.113
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            1279.0,
+            3796.0
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 66.62849517600617,
+          "source_roi": [
+            1274,
+            3768,
+            1306,
+            3797
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G66-P05"
+      },
+      "reason": "AI full-row photo context: opposite end is guard/internal diffusion, not independently established gate terminal",
+      "terminal_side": "top"
+    },
+    {
+      "candidate": {
+        "id": "CTR-G-G66-P05-bottom-001",
+        "family": "G-G66-P05-bottom",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1469.7853,
+          3798.613
+        ],
+        "layout_outline": [
+          [
+            1467.2853,
+            3796.113
+          ],
+          [
+            1472.2853,
+            3796.113
+          ],
+          [
+            1472.2853,
+            3801.113
+          ],
+          [
+            1467.2853,
+            3801.113
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            1294.0,
+            3796.0
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 61.288269441179835,
+          "source_roi": [
+            1274,
+            3768,
+            1306,
+            3797
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G66-P05"
+      },
+      "reason": "AI full-row photo context: opposite end is guard/internal diffusion, not independently established gate terminal",
+      "terminal_side": "top"
+    },
+    {
+      "candidate": {
+        "id": "CTR-G-G66-P07-bottom-000",
+        "family": "G-G66-P07-bottom",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1593.75445,
+          3798.613
+        ],
+        "layout_outline": [
+          [
+            1591.25445,
+            3796.113
+          ],
+          [
+            1596.25445,
+            3796.113
+          ],
+          [
+            1596.25445,
+            3801.113
+          ],
+          [
+            1591.25445,
+            3801.113
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            1450.0,
+            3792.0
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 55.31783225520206,
+          "source_roi": [
+            1438,
+            3764,
+            1471,
+            3793
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G66-P07"
+      },
+      "reason": "AI full-row photo context: opposite end is guard/internal diffusion, not independently established gate terminal",
+      "terminal_side": "top"
+    },
+    {
+      "candidate": {
+        "id": "CTR-G-G66-P07-bottom-001",
+        "family": "G-G66-P07-bottom",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1605.75445,
+          3798.613
+        ],
+        "layout_outline": [
+          [
+            1603.25445,
+            3796.113
+          ],
+          [
+            1608.25445,
+            3796.113
+          ],
+          [
+            1608.25445,
+            3801.113
+          ],
+          [
+            1603.25445,
+            3801.113
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            1465.0,
+            3792.0
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 50.4175323754184,
+          "source_roi": [
+            1438,
+            3764,
+            1471,
+            3793
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G66-P07"
+      },
+      "reason": "AI full-row photo context: opposite end is guard/internal diffusion, not independently established gate terminal",
+      "terminal_side": "top"
+    }
+  ],
+  "parent7044_not_changed": true
+}

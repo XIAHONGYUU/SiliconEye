@@ -1,0 +1,305 @@
+{
+  "user_feedback_verbatim": [
+    "1T CT均没有问题，但是做右侧的mos的AA和poly整体偏上了，可以微调修正过来",
+    "L／M／R：右侧30条长栅——源漏CT及下端栅CT，批准没有问题",
+    "外围环及待查部位批准没有问题"
+  ],
+  "scope": "UPPER-INNER-B: T10 and L/M/R30 gates, SD/gate/ring contacts and51 displayed ring slots",
+  "local_translation_interpretation": "T panel rightmost tiny MOS; canonical AA/POLY down7, its2 gate CT follow terminal;4 SD unchanged; native evidence unchanged",
+  "local_translations": [
+    {
+      "layer": "AA",
+      "id": "AA-F01669",
+      "delta_xy": [
+        0,
+        7
+      ]
+    },
+    {
+      "layer": "POLY",
+      "id": "SG-U06-010",
+      "delta_xy": [
+        0,
+        7
+      ]
+    },
+    {
+      "layer": "CT",
+      "id": "CTT-UP-UG10-GATE-S000",
+      "delta_xy": [
+        0,
+        7
+      ]
+    },
+    {
+      "layer": "CT",
+      "id": "CTT-UP-UG10-GATE-S001",
+      "delta_xy": [
+        0,
+        7
+      ]
+    }
+  ],
+  "confirmed_slots": [
+    {
+      "family": "UP-RING-TOP",
+      "slot": 2,
+      "contact_id": "CTH-UP-RING-TOP-S002"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 11,
+      "contact_id": "CTH-UP-RING-TOP-S011"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 12,
+      "contact_id": "CTH-UP-RING-TOP-S012"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 13,
+      "contact_id": "CTH-UP-RING-TOP-S013"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 20,
+      "contact_id": "CTH-UP-RING-TOP-S020"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 30,
+      "contact_id": "CTH-UP-RING-TOP-S030"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 38,
+      "contact_id": "CTH-UP-RING-TOP-S038"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 50,
+      "contact_id": "CTH-UP-RING-TOP-S050"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 55,
+      "contact_id": "CTH-UP-RING-TOP-S055"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 58,
+      "contact_id": "CTH-UP-RING-TOP-S058"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 68,
+      "contact_id": "CTH-UP-RING-TOP-S068"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 69,
+      "contact_id": "CTH-UP-RING-TOP-S069"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 73,
+      "contact_id": "CTH-UP-RING-TOP-S073"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 77,
+      "contact_id": "CTH-UP-RING-TOP-S077"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 78,
+      "contact_id": "CTH-UP-RING-TOP-S078"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 88,
+      "contact_id": "CTH-UP-RING-TOP-S088"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 100,
+      "contact_id": "CTH-UP-RING-TOP-S100"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 107,
+      "contact_id": "CTH-UP-RING-TOP-S107"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 117,
+      "contact_id": "CTH-UP-RING-TOP-S117"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 118,
+      "contact_id": "CTH-UP-RING-TOP-S118"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 144,
+      "contact_id": "CTH-UP-RING-TOP-S144"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 146,
+      "contact_id": "CTH-UP-RING-TOP-S146"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 150,
+      "contact_id": "CTH-UP-RING-TOP-S150"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 151,
+      "contact_id": "CTH-UP-RING-TOP-S151"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 164,
+      "contact_id": "CTH-UP-RING-TOP-S164"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 172,
+      "contact_id": "CTH-UP-RING-TOP-S172"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 177,
+      "contact_id": "CTH-UP-RING-TOP-S177"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 184,
+      "contact_id": "CTH-UP-RING-TOP-S184"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 201,
+      "contact_id": "CTH-UP-RING-TOP-S201"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 204,
+      "contact_id": "CTH-UP-RING-TOP-S204"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 210,
+      "contact_id": "CTH-UP-RING-TOP-S210"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 212,
+      "contact_id": "CTH-UP-RING-TOP-S212"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 218,
+      "contact_id": "CTH-UP-RING-TOP-S218"
+    },
+    {
+      "family": "UP-RING-TOP",
+      "slot": 219,
+      "contact_id": "CTH-UP-RING-TOP-S219"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 2,
+      "contact_id": "CTH-UP-RING-BOTTOM-S002"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 55,
+      "contact_id": "CTH-UP-RING-BOTTOM-S055"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 56,
+      "contact_id": "CTH-UP-RING-BOTTOM-S056"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 77,
+      "contact_id": "CTH-UP-RING-BOTTOM-S077"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 150,
+      "contact_id": "CTH-UP-RING-BOTTOM-S150"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 216,
+      "contact_id": "CTH-UP-RING-BOTTOM-S216"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 217,
+      "contact_id": "CTH-UP-RING-BOTTOM-S217"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 218,
+      "contact_id": "CTH-UP-RING-BOTTOM-S218"
+    },
+    {
+      "family": "UP-RING-BOTTOM",
+      "slot": 219,
+      "contact_id": "CTH-UP-RING-BOTTOM-S219"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 0,
+      "contact_id": "CTH-UP-RING-LEFT-S000"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 3,
+      "contact_id": "CTH-UP-RING-LEFT-S003"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 4,
+      "contact_id": "CTH-UP-RING-LEFT-S004"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 9,
+      "contact_id": "CTH-UP-RING-LEFT-S009"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 10,
+      "contact_id": "CTH-UP-RING-LEFT-S010"
+    },
+    {
+      "family": "UP-RING-LEFT",
+      "slot": 11,
+      "contact_id": "CTH-UP-RING-LEFT-S011"
+    },
+    {
+      "family": "UP-RING-RIGHT",
+      "slot": 0,
+      "contact_id": "CTH-UP-RING-RIGHT-S000"
+    },
+    {
+      "family": "UP-RING-RIGHT",
+      "slot": 11,
+      "contact_id": "CTH-UP-RING-RIGHT-S011"
+    }
+  ],
+  "limitations": [
+    "canonical local adjustment executed under user authorization, not exact photo boundary annotation",
+    "M1/net and real PDK DRC not confirmed",
+    "historical661 detail caveat unchanged"
+  ]
+}

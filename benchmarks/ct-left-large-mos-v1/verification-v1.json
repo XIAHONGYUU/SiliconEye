@@ -1,0 +1,20 @@
+{
+  "status": "technical_checks_pass_human_review_pending",
+  "full_tests": "440 passed in17.63s",
+  "focused_tests": "47 passed in5.32s before additional regression included in full suite",
+  "ruff": "PASS ct_transfer.py test_ct_transfer.py",
+  "source_inputs": "all hashed before/after extraction; original2709 CT records exact-equal; effective AA/POLY unchanged",
+  "geometry": "whole4655 PASS,0 overlap,0 minimum-gap violations",
+  "gate_negative_case": "29 measured G34 rightmost SD contacts blocked on original AA; explicit+6 AA proposal passes same budget",
+  "static_assets": "all referenced local SVG/PNG/JSON exist; SVG XML valid; PNG decode valid; six select callbacks simulated",
+  "browser_render": "not performed; browser policy prohibits file URLs, no workaround attempted",
+  "human_review": "pending, no new acceptance written",
+  "locked_files": {
+    "spec-v1.json": "a8cd6d0ad1b085672a9ef013a0683f8fae53a9a935e056c163ecc854f067f1ac",
+    "model-v1.json": "80e38d8400287c33654a80c1ed4cecddccbf67f22d955a830bb198b420a1a6f0",
+    "report-v1.json": "31dc021e58c41f134f485d76d9e2e629e0838d48cf7fa4b0f43808b017ab636b",
+    "coverage-v1.json": "a5ea39063c7b1af83e70b69619ec1b5a20f1a9b16c23e2cf3d2f48dec2e4ac9c",
+    "geometry-conflict-v1.json": "fe677e6c6623d5807d4fb35ad23bf78c0584541a5dc86d6bbd3a8eacace5b910"
+  },
+  "visual_review": "A/B/C/D/E/F canonical PNG previews inspected; E proposal remains separate, missing SD column clearly visible"
+}

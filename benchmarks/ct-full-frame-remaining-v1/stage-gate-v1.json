@@ -1,0 +1,44 @@
+{
+  "status": "HOLD_human_terminal_and_source_correspondence_decisions",
+  "safe_subset_geometry": "PASS",
+  "prior_contact_count": 7044,
+  "new_candidate_count": 2960,
+  "new_by_landing": {
+    "POLY": 1015,
+    "AA": 1945
+  },
+  "working_snapshot_count": 10004,
+  "inspected_unreferenced_POLY_materials": 409,
+  "new_direct_CT_references": 401,
+  "historical_body_fragments_retained": 2,
+  "remaining_unresolved_terminal_material_ids": [
+    "G68-P01",
+    "G68-P02",
+    "CL2-Q3-AA-F01613-01",
+    "CL2-Q3-AA-F01613-02",
+    "CL2-Q3-AA-F01614-01",
+    "CL2-Q3-AA-F01614-02"
+  ],
+  "quarantined_candidate_count": 403,
+  "quarantined_is_not_missing_hole_count": true,
+  "deferred_path_count": 8,
+  "AA_disposition": {
+    "prior_body_CT_scopes": 55,
+    "new_body_families_inspected": 115,
+    "prior_guard_scopes_preserved": 12,
+    "new_guard_or_strip_objects_inspected": 29,
+    "dummy_objects_no_CT_inferred": 108,
+    "compact_unassociated_AA_unknown": 11,
+    "neighbour_edge_objects_not_extended": 5
+  },
+  "all335_AA_objects_have_disposition": true,
+  "all695_POLY_objects_have_disposition": true,
+  "whole_frame_human_accepted": false,
+  "physical_PDK_DRC": false,
+  "blocking_human_cases": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ],
+  "not_repeating_exact_hole_count_review": true
+}

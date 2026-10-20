@@ -1,0 +1,6703 @@
+{
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-upper-small-mos-reviewed-v2/material-model-v1.json",
+      "sha256": "e0ca21af912503f94caafb23aa058143541f820e23284f997b8e3521f052a058"
+    },
+    "protected_contacts": {
+      "path": "benchmarks/ct-upper-small-mos-reviewed-v2/model-v1.json",
+      "sha256": "4fe368880560d7ed27541812e5391bd4fcdcb8c2f64a62864cc551b9a2bb653d"
+    },
+    "acceptance": {
+      "path": "benchmarks/ct-upper-small-mos-reviewed-v2/acceptance-v1.json",
+      "sha256": "35e81f6e635b669160e3515f9f65e100a16e8c8cda94957a1219f2a17b8d9c8b"
+    },
+    "observations": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-observations-v1.json",
+      "sha256": "a2ad211770b349ed56d881c9e44f9e019934855b22fcb3a27d0707bb4558d743"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "source_path_audit": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-path-audit-v1.json",
+      "sha256": "efb7bf54bba6f3a236d844d0ead9f878e127a9047da2219de8a73a6e7027d2da"
+    },
+    "unresolved_gate_evidence": {
+      "path": "benchmarks/ct-left-large-mos-v1/unresolved-gates-v1.json",
+      "sha256": "ac9f9a3f6930157afd29424ed14f9e95cce939459b4b5b8b7983d10e0c083535"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "A_m1": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/A-m1.png",
+      "sha256": "63c520cba16dc2f98f339db73e6441a1dc21faa9ec6f19a0072954a40f83b0e5"
+    },
+    "B_m1": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/B-m1.png",
+      "sha256": "89b5351c80bf36714966b74aae605928f4263d54c5998534f40f99c69e0c4936"
+    },
+    "C_m1": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/C-m1.png",
+      "sha256": "ecfb56b61527deb17cca34c32f32e71cb0ab88a9359c8b6232d048057bc50b80"
+    },
+    "D_m1": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/D-m1.png",
+      "sha256": "14cd9653d703277222b8764f3f22661aef1f54151820a3ff72f4452256c159b3"
+    },
+    "E_m1": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/E-m1.png",
+      "sha256": "f96a724a22ab7e9898c6e5334962f2bc22c9bbcce8208ac9087d5a2ca0828ff0"
+    },
+    "F_m1": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/F-m1.png",
+      "sha256": "c23218a7e0e5ba47ba95101db1ed86547914ad4978984dca612e4d8edb475a41"
+    },
+    "C_gate_bands": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/C-band-evidence.png",
+      "sha256": "0cb4628da51ac0d395ff52c2a2f855b8134e995ddce39374b35c5fe97efd86a4"
+    },
+    "E_proposal": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/Eproposal-layout.svg",
+      "sha256": "b8818ea74ce35ec5aa740f3f35e390b2b50a062f2fc01a42c7e09d0ff894ce8d"
+    },
+    "geometry_conflict": {
+      "path": "benchmarks/ct-left-large-mos-v1/geometry-conflict-v1.json",
+      "sha256": "fe677e6c6623d5807d4fb35ad23bf78c0584541a5dc86d6bbd3a8eacace5b910"
+    },
+    "E_withheld": {
+      "path": "benchmarks/ct-left-large-mos-v1/source-context/E-withheld-evidence.png",
+      "sha256": "15efe89eef59ef62c79deed136d727c07edf59068a74e27b6147cb23737617c8"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "families": [],
+  "rows": [
+    {
+      "id": "LL-STAIR1-GATE",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G21-P01",
+      "source_roi": [
+        180,
+        1323,
+        218,
+        1383
+      ],
+      "source_origin": 191,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        561.951,
+        1546.8547
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-STAIR2-GATE",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G22-P01",
+      "source_roi": [
+        264,
+        1320,
+        303,
+        1380
+      ],
+      "source_origin": 280,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        634.1731,
+        1546.8547
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-STAIR3-GATE",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G23-P01",
+      "source_roi": [
+        356,
+        1318,
+        388,
+        1378
+      ],
+      "source_origin": 360,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        707.4701500000001,
+        1546.8547
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-STAIR4-GATE",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G24-P01",
+      "source_roi": [
+        434,
+        1315,
+        473,
+        1375
+      ],
+      "source_origin": 446,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        780.95065,
+        1546.8547
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-STAIR5-GATE",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G25-P01",
+      "source_roi": [
+        520,
+        1312,
+        559,
+        1372
+      ],
+      "source_origin": 536,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        854.6160500000001,
+        1546.8547
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G18-G01",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P01",
+      "source_roi": [
+        745,
+        1322,
+        799,
+        1382
+      ],
+      "source_origin": 758,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1030.0,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G02",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P02",
+      "source_roi": [
+        819,
+        1321,
+        874,
+        1381
+      ],
+      "source_origin": 831,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1096.357142857143,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G03",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P03",
+      "source_roi": [
+        894,
+        1321,
+        948,
+        1381
+      ],
+      "source_origin": 915,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1168.7142857142858,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G18-G04",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P04",
+      "source_roi": [
+        968,
+        1321,
+        1021,
+        1381
+      ],
+      "source_origin": 979,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1229.0714285714287,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G05",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P05",
+      "source_roi": [
+        1041,
+        1320,
+        1095,
+        1380
+      ],
+      "source_origin": 1053,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1295.4285714285716,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G06",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P06",
+      "source_roi": [
+        1115,
+        1320,
+        1168,
+        1380
+      ],
+      "source_origin": 1126,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1361.7857142857142,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G07",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P07",
+      "source_roi": [
+        1188,
+        1320,
+        1241,
+        1380
+      ],
+      "source_origin": 1203,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1428.142857142857,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G08",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P08",
+      "source_roi": [
+        1261,
+        1320,
+        1313,
+        1380
+      ],
+      "source_origin": 1272,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1494.5,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G09",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P09",
+      "source_roi": [
+        1333,
+        1319,
+        1386,
+        1379
+      ],
+      "source_origin": 1349,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1560.857142857143,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G10",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P10",
+      "source_roi": [
+        1406,
+        1319,
+        1463,
+        1379
+      ],
+      "source_origin": 1417,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1627.2142857142858,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G11",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P11",
+      "source_roi": [
+        1483,
+        1319,
+        1531,
+        1379
+      ],
+      "source_origin": 1494,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1693.5714285714287,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G12",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P12",
+      "source_roi": [
+        1551,
+        1318,
+        1609,
+        1378
+      ],
+      "source_origin": 1567,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1759.9285714285716,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G13",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P13",
+      "source_roi": [
+        1629,
+        1318,
+        1682,
+        1378
+      ],
+      "source_origin": 1640,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1826.2857142857142,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G14",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P14",
+      "source_roi": [
+        1702,
+        1318,
+        1755,
+        1378
+      ],
+      "source_origin": 1713,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1892.6428571428573,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G18-G15",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G18-P15",
+      "source_roi": [
+        1775,
+        1318,
+        1828,
+        1378
+      ],
+      "source_origin": 1786,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1959.0,
+        1539.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "LL-G33-G01",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P01",
+      "source_roi": [
+        15,
+        2684,
+        101,
+        2744
+      ],
+      "source_origin": 27,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        235.0,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G33-G02",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P02",
+      "source_roi": [
+        121,
+        2682,
+        210,
+        2742
+      ],
+      "source_origin": 135,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        350.8333333333333,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G33-G03",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P03",
+      "source_roi": [
+        230,
+        2680,
+        320,
+        2740
+      ],
+      "source_origin": 246,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        466.66666666666663,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G33-G04",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P04",
+      "source_roi": [
+        340,
+        2678,
+        435,
+        2738
+      ],
+      "source_origin": 355,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        582.5,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G33-G05",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P05",
+      "source_roi": [
+        455,
+        2676,
+        545,
+        2736
+      ],
+      "source_origin": 469,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        698.3333333333333,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G33-G06",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P06",
+      "source_roi": [
+        565,
+        2674,
+        655,
+        2734
+      ],
+      "source_origin": 579,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        814.1666666666666,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G33-G07",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G33-P07",
+      "source_roi": [
+        675,
+        2673,
+        718,
+        2733
+      ],
+      "source_origin": 690,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        948.0,
+        2754.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G34-G01",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P01",
+      "source_roi": [
+        77,
+        3724,
+        160,
+        3784
+      ],
+      "source_origin": 94,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        235.0,
+        3752.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G34-G02",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P02",
+      "source_roi": [
+        180,
+        3721,
+        266,
+        3781
+      ],
+      "source_origin": 198,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        356.8333333333333,
+        3752.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "LL-G34-G03",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P03",
+      "source_roi": [
+        286,
+        3719,
+        373,
+        3779
+      ],
+      "source_origin": 306,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        466.66666666666663,
+        3752.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G34-G04",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P04",
+      "source_roi": [
+        393,
+        3716,
+        482,
+        3776
+      ],
+      "source_origin": 410,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        582.5,
+        3752.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G34-G05",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P05",
+      "source_roi": [
+        502,
+        3714,
+        588,
+        3774
+      ],
+      "source_origin": 506,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        694.3333333333333,
+        3752.0
+      ],
+      "layout_pitch": 11.2,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "LL-G34-G06",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P06",
+      "source_roi": [
+        608,
+        3711,
+        695,
+        3771
+      ],
+      "source_origin": 625,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        814.1666666666666,
+        3752.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-G34-G07",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G34-P07",
+      "source_roi": [
+        715,
+        3709,
+        756,
+        3769
+      ],
+      "source_origin": 732,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        948.0,
+        3752.0
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G01",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P01",
+      "source_roi": [
+        911,
+        2914,
+        952,
+        2966
+      ],
+      "source_origin": 924,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1138.6711,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G03",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P03",
+      "source_roi": [
+        1035,
+        2912,
+        1076,
+        2966
+      ],
+      "source_origin": 1047,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1259.0413,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "LL-G35-G04",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P04",
+      "source_roi": [
+        1096,
+        2911,
+        1132,
+        2966
+      ],
+      "source_origin": 1108,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1310.2264,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G05",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P05",
+      "source_roi": [
+        1152,
+        2910,
+        1192,
+        2966
+      ],
+      "source_origin": 1169,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1367.4115,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G06",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P06",
+      "source_roi": [
+        1212,
+        2909,
+        1258,
+        2966
+      ],
+      "source_origin": 1230,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1424.5966,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G07",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P07",
+      "source_roi": [
+        1278,
+        2908,
+        1314,
+        2966
+      ],
+      "source_origin": 1291,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1481.7817,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G08",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P08",
+      "source_roi": [
+        1334,
+        2907,
+        1375,
+        2966
+      ],
+      "source_origin": 1351,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1538.9668000000001,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G09",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P09",
+      "source_roi": [
+        1395,
+        2906,
+        1441,
+        2966
+      ],
+      "source_origin": 1412,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1596.1519,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "LL-G35-G10",
+      "axis": 0,
+      "material": "POLY",
+      "target": "G35-P10",
+      "source_roi": [
+        1461,
+        2906,
+        1502,
+        2966
+      ],
+      "source_origin": 1472,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1653.337,
+        3012.6277
+      ],
+      "layout_pitch": 12.0,
+      "min_gray": 205,
+      "min_residual": 16,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    }
+  ],
+  "profile_rows": [
+    {
+      "id": "LL-STAIR1-SD1",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA1-0",
+      "source_path": [
+        [
+          170.80000000000004,
+          1370.0
+        ],
+        [
+          173.40000000000006,
+          1430.0
+        ],
+        [
+          176.00000000000006,
+          1490.0
+        ],
+        [
+          178.60000000000008,
+          1550.0
+        ],
+        [
+          181.20000000000005,
+          1610.0
+        ]
+      ],
+      "source_roi": [
+        166,
+        1366,
+        186,
+        1614
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        543.9252,
+        1556.8547
+      ],
+      "layout_pitch": 16.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-STAIR1-SD2",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA1-0",
+      "source_path": [
+        [
+          228.94285714285726,
+          1370.0
+        ],
+        [
+          231.2285714285715,
+          1430.0
+        ],
+        [
+          233.65714285714293,
+          1490.0
+        ],
+        [
+          236.22857142857148,
+          1550.0
+        ],
+        [
+          238.94285714285718,
+          1610.0
+        ]
+      ],
+      "source_roi": [
+        224,
+        1366,
+        243,
+        1614
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        591.9768,
+        1556.8547
+      ],
+      "layout_pitch": 16.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-STAIR2-SD1",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA2-0",
+      "source_path": [
+        [
+          254.9543176194406,
+          1370.0
+        ],
+        [
+          258.15038214272914,
+          1449.3333333333333
+        ],
+        [
+          261.8475037297689,
+          1528.6666666666667
+        ],
+        [
+          266.04568238055975,
+          1608.0
+        ]
+      ],
+      "source_roi": [
+        250,
+        1366,
+        271,
+        1612
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        616.11255,
+        1556.8547
+      ],
+      "layout_pitch": 16.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-STAIR2-SD2",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA2-0",
+      "source_path": [
+        [
+          313.90355941881876,
+          1370.0
+        ],
+        [
+          317.30118647293966,
+          1449.3333333333333
+        ],
+        [
+          320.6988135270606,
+          1528.6666666666667
+        ],
+        [
+          324.0964405811816,
+          1608.0
+        ]
+      ],
+      "source_roi": [
+        309,
+        1366,
+        329,
+        1612
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        664.23365,
+        1556.8547
+      ],
+      "layout_pitch": 16.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-STAIR3-SD1",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA3-0",
+      "source_path": [
+        [
+          346.0038557901928,
+          1370.0
+        ],
+        [
+          349.00128526339756,
+          1448.3333333333333
+        ],
+        [
+          351.99871473660227,
+          1526.6666666666667
+        ],
+        [
+          354.9961442098069,
+          1605.0
+        ]
+      ],
+      "source_roi": [
+        342,
+        1366,
+        359,
+        1609
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        688.9267750000001,
+        1556.8547
+      ],
+      "layout_pitch": 16.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-STAIR3-SD2",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA3-0",
+      "source_path": [
+        [
+          398.19928090326437,
+          1370.0
+        ],
+        [
+          404.4040428786196,
+          1448.3333333333333
+        ],
+        [
+          408.60452227644384,
+          1526.6666666666667
+        ],
+        [
+          410.80071909673734,
+          1605.0
+        ]
+      ],
+      "source_roi": [
+        394,
+        1366,
+        415,
+        1609
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        738.0135250000001,
+        1556.8547
+      ],
+      "layout_pitch": 16.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-STAIR4-SD1",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA4-0",
+      "source_path": [
+        [
+          424.8958427270266,
+          1370.0
+        ],
+        [
+          428.2986142423421,
+          1436.6666666666667
+        ],
+        [
+          431.7013857576576,
+          1503.3333333333333
+        ],
+        [
+          435.10415727297305,
+          1570.0
+        ]
+      ],
+      "source_roi": [
+        420,
+        1366,
+        440,
+        1574
+      ],
+      "source_origin": 1382.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        762.370675,
+        1556.8547
+      ],
+      "layout_pitch": 18.9,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-STAIR4-SD2",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA4-0",
+      "source_path": [
+        [
+          483.99553611687276,
+          1370.0
+        ],
+        [
+          486.9985120389576,
+          1436.6666666666667
+        ],
+        [
+          490.00148796104247,
+          1503.3333333333333
+        ],
+        [
+          493.0044638831274,
+          1570.0
+        ]
+      ],
+      "source_roi": [
+        479,
+        1366,
+        498,
+        1574
+      ],
+      "source_origin": 1382.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        811.530625,
+        1556.8547
+      ],
+      "layout_pitch": 18.9,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-STAIR5-SD1",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA5-0",
+      "source_path": [
+        [
+          510.99999999999966,
+          1370.0
+        ],
+        [
+          513.9999999999998,
+          1449.0
+        ],
+        [
+          517.9999999999997,
+          1528.0
+        ]
+      ],
+      "source_roi": [
+        506,
+        1366,
+        522,
+        1532
+      ],
+      "source_origin": 1378.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        835.999325,
+        1556.8547
+      ],
+      "layout_pitch": 19.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        9
+      ]
+    },
+    {
+      "id": "LL-STAIR5-SD2",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA5-0",
+      "source_path": [
+        [
+          569.9999999999995,
+          1370.0
+        ],
+        [
+          573.9999999999999,
+          1449.0
+        ],
+        [
+          582.9999999999998,
+          1528.0
+        ]
+      ],
+      "source_roi": [
+        565,
+        1366,
+        587,
+        1532
+      ],
+      "source_origin": 1378.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        885.2327750000001,
+        1556.8547
+      ],
+      "layout_pitch": 19.2,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        9
+      ]
+    },
+    {
+      "id": "LL-STAIR6-SD2",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-AA6-0",
+      "source_path": [
+        [
+          633.9999999999998,
+          1370.0
+        ],
+        [
+          636.0,
+          1410.0
+        ],
+        [
+          637.0000000000005,
+          1450.0
+        ]
+      ],
+      "source_roi": [
+        629,
+        1366,
+        642,
+        1454
+      ],
+      "source_origin": 1388.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        959.120725,
+        1556.8547
+      ],
+      "layout_pitch": 28.0,
+      "min_gray": 178,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "LL-G18-SD01",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          735.9535437951523,
+          1370.0
+        ],
+        [
+          738.1499527931268,
+          1438.3333333333333
+        ],
+        [
+          740.8475902630252,
+          1506.6666666666667
+        ],
+        [
+          744.0464562048475,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        731,
+        1366,
+        749,
+        1579
+      ],
+      "source_origin": 1377.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1016.0,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD02",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          809.953543795152,
+          1370.0
+        ],
+        [
+          813.1524097369747,
+          1438.3333333333333
+        ],
+        [
+          815.8500472068732,
+          1506.6666666666667
+        ],
+        [
+          818.0464562048475,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        805,
+        1366,
+        823,
+        1579
+      ],
+      "source_origin": 1377.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1075.1785714285716,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD03",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          884.9026631898428,
+          1370.0
+        ],
+        [
+          887.3008877299474,
+          1438.3333333333333
+        ],
+        [
+          889.699112270052,
+          1506.6666666666667
+        ],
+        [
+          892.0973368101564,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        880,
+        1366,
+        897,
+        1579
+      ],
+      "source_origin": 1378.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1141.5357142857142,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD04",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          958.1047108109261,
+          1370.0
+        ],
+        [
+          960.7015702703086,
+          1438.3333333333333
+        ],
+        [
+          963.2984297296911,
+          1506.6666666666667
+        ],
+        [
+          965.8952891890733,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        954,
+        1366,
+        970,
+        1579
+      ],
+      "source_origin": 1383.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1207.8928571428573,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD05",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1031.9026631898428,
+          1370.0
+        ],
+        [
+          1034.3008877299476,
+          1438.3333333333333
+        ],
+        [
+          1036.6991122700522,
+          1506.6666666666667
+        ],
+        [
+          1039.0973368101568,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1027,
+        1366,
+        1044,
+        1579
+      ],
+      "source_origin": 1377.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1274.25,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD06",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1105.0029496003076,
+          1370.0
+        ],
+        [
+          1107.0009832001026,
+          1438.3333333333333
+        ],
+        [
+          1108.9990167998976,
+          1506.6666666666667
+        ],
+        [
+          1110.9970503996924,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1101,
+        1366,
+        1115,
+        1579
+      ],
+      "source_origin": 1377.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1340.607142857143,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "LL-G18-SD07",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1178.0029496003074,
+          1370.0
+        ],
+        [
+          1180.0009832001022,
+          1438.3333333333333
+        ],
+        [
+          1181.999016799897,
+          1506.6666666666667
+        ],
+        [
+          1183.9970503996917,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1174,
+        1366,
+        1188,
+        1579
+      ],
+      "source_origin": 1377.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1406.9642857142858,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "LL-G18-SD08",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1251.0029496003071,
+          1370.0
+        ],
+        [
+          1253.0009832001022,
+          1438.3333333333333
+        ],
+        [
+          1254.9990167998972,
+          1506.6666666666667
+        ],
+        [
+          1256.9970503996917,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1247,
+        1366,
+        1261,
+        1579
+      ],
+      "source_origin": 1376.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1473.3214285714284,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": "LL-G18-SD09",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1323.9520689949984,
+          1370.0
+        ],
+        [
+          1325.1494611930752,
+          1438.3333333333333
+        ],
+        [
+          1326.8480818630762,
+          1506.6666666666667
+        ],
+        [
+          1329.0479310050011,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1319,
+        1366,
+        1334,
+        1579
+      ],
+      "source_origin": 1376.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1539.6785714285716,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        13
+      ]
+    },
+    {
+      "id": "LL-G18-SD10",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1396.1541166160803,
+          1370.0
+        ],
+        [
+          1397.550143733436,
+          1438.3333333333333
+        ],
+        [
+          1399.447399322715,
+          1506.6666666666667
+        ],
+        [
+          1401.8458833839175,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1392,
+        1366,
+        1406,
+        1579
+      ],
+      "source_origin": 1391.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1606.0357142857142,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD11",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1473.952068994998,
+          1370.0
+        ],
+        [
+          1476.151918136923,
+          1438.3333333333333
+        ],
+        [
+          1477.8505388069243,
+          1506.6666666666667
+        ],
+        [
+          1479.047931005001,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1469,
+        1366,
+        1484,
+        1579
+      ],
+      "source_origin": 1391.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1672.3928571428573,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD12",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1541.1032360107713,
+          1370.0
+        ],
+        [
+          1542.701078670257,
+          1438.3333333333333
+        ],
+        [
+          1544.298921329742,
+          1506.6666666666667
+        ],
+        [
+          1545.8967639892267,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1537,
+        1366,
+        1550,
+        1579
+      ],
+      "source_origin": 1390.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1738.75,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD13",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1619.952068994998,
+          1370.0
+        ],
+        [
+          1621.1494611930752,
+          1438.3333333333333
+        ],
+        [
+          1622.8480818630762,
+          1506.6666666666667
+        ],
+        [
+          1625.047931005001,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1615,
+        1366,
+        1630,
+        1579
+      ],
+      "source_origin": 1391.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1805.107142857143,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD14",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1692.9520689949977,
+          1370.0
+        ],
+        [
+          1694.1494611930748,
+          1438.3333333333333
+        ],
+        [
+          1695.8480818630758,
+          1506.6666666666667
+        ],
+        [
+          1698.0479310050005,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1688,
+        1366,
+        1703,
+        1579
+      ],
+      "source_origin": 1391.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1871.4642857142858,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD15",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1765.0029496003067,
+          1370.0
+        ],
+        [
+          1767.000983200102,
+          1438.3333333333333
+        ],
+        [
+          1768.999016799897,
+          1506.6666666666667
+        ],
+        [
+          1770.9970503996915,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1761,
+        1366,
+        1775,
+        1579
+      ],
+      "source_origin": 1390.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1937.8214285714287,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G18-SD16",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W08",
+      "source_path": [
+        [
+          1838.9520689949975,
+          1370.0
+        ],
+        [
+          1840.149461193075,
+          1438.3333333333333
+        ],
+        [
+          1841.848081863076,
+          1506.6666666666667
+        ],
+        [
+          1844.0479310050007,
+          1575.0
+        ]
+      ],
+      "source_roi": [
+        1834,
+        1366,
+        1849,
+        1579
+      ],
+      "source_origin": 1391.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1997.0,
+        1549.0
+      ],
+      "layout_pitch": 14.2,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        12
+      ]
+    },
+    {
+      "id": "LL-G27-SD01",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W01",
+      "source_path": [
+        [
+          11.357142857142719,
+          1785.0
+        ],
+        [
+          15.814285714285575,
+          1854.0
+        ],
+        [
+          19.771428571428487,
+          1923.0
+        ],
+        [
+          23.2285714285714,
+          1992.0
+        ],
+        [
+          26.18571428571437,
+          2061.0
+        ],
+        [
+          28.642857142857338,
+          2130.0
+        ]
+      ],
+      "source_roi": [
+        7,
+        1781,
+        33,
+        2134
+      ],
+      "source_origin": 1798.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        240.0,
+        1935.0
+      ],
+      "layout_pitch": 13.5,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        22
+      ]
+    },
+    {
+      "id": "LL-G27-SD02",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W01",
+      "source_path": [
+        [
+          407.1071428571426,
+          1785.0
+        ],
+        [
+          409.83571428571406,
+          1854.0
+        ],
+        [
+          412.885714285714,
+          1923.0
+        ],
+        [
+          416.2571428571426,
+          1992.0
+        ],
+        [
+          419.94999999999965,
+          2061.0
+        ],
+        [
+          423.9642857142852,
+          2130.0
+        ]
+      ],
+      "source_roi": [
+        403,
+        1781,
+        428,
+        2134
+      ],
+      "source_origin": 1796.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        593.375,
+        1935.0
+      ],
+      "layout_pitch": 13.5,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        22
+      ]
+    },
+    {
+      "id": "LL-G27-SD03",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W01",
+      "source_path": [
+        [
+          805.9642857142854,
+          1785.0
+        ],
+        [
+          808.2071428571425,
+          1854.0
+        ],
+        [
+          810.6285714285708,
+          1923.0
+        ],
+        [
+          813.2285714285707,
+          1992.0
+        ],
+        [
+          816.007142857142,
+          2061.0
+        ],
+        [
+          818.9642857142848,
+          2130.0
+        ]
+      ],
+      "source_roi": [
+        801,
+        1781,
+        823,
+        2134
+      ],
+      "source_origin": 1793.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        982.125,
+        1935.0
+      ],
+      "layout_pitch": 13.5,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        22
+      ]
+    },
+    {
+      "id": "LL-G27-SD04",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W01",
+      "source_path": [
+        [
+          1189.8571428571418,
+          1785.0
+        ],
+        [
+          1192.3714285714273,
+          1854.0
+        ],
+        [
+          1194.7428571428559,
+          1923.0
+        ],
+        [
+          1196.9714285714272,
+          1992.0
+        ],
+        [
+          1199.0571428571413,
+          2061.0
+        ],
+        [
+          1200.9999999999982,
+          2130.0
+        ]
+      ],
+      "source_roi": [
+        1185,
+        1781,
+        1205,
+        2134
+      ],
+      "source_origin": 1791.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1370.875,
+        1935.0
+      ],
+      "layout_pitch": 13.5,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        23
+      ]
+    },
+    {
+      "id": "LL-G27-SD05",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W01",
+      "source_path": [
+        [
+          1584.1428571428553,
+          1785.0
+        ],
+        [
+          1585.8857142857128,
+          1854.0
+        ],
+        [
+          1587.62857142857,
+          1923.0
+        ],
+        [
+          1589.371428571427,
+          1992.0
+        ],
+        [
+          1591.114285714284,
+          2061.0
+        ],
+        [
+          1592.8571428571408,
+          2130.0
+        ]
+      ],
+      "source_roi": [
+        1580,
+        1781,
+        1597,
+        2134
+      ],
+      "source_origin": 1798.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1759.625,
+        1935.0
+      ],
+      "layout_pitch": 13.5,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        22
+      ]
+    },
+    {
+      "id": "LL-G27-SD06",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W01",
+      "source_path": [
+        [
+          2004.8214285714266,
+          1785.0
+        ],
+        [
+          2006.3785714285698,
+          1854.0
+        ],
+        [
+          2007.971428571427,
+          1923.0
+        ],
+        [
+          2009.5999999999983,
+          1992.0
+        ],
+        [
+          2011.2642857142837,
+          2061.0
+        ],
+        [
+          2012.9642857142835,
+          2130.0
+        ]
+      ],
+      "source_roi": [
+        2000,
+        1781,
+        2017,
+        2134
+      ],
+      "source_origin": 1792.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2113.0,
+        1935.0
+      ],
+      "layout_pitch": 13.5,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        22
+      ]
+    },
+    {
+      "id": "LL-G28-SD01",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W02",
+      "source_path": [
+        [
+          33.39285714285714,
+          2210.0
+        ],
+        [
+          36.92142857142859,
+          2276.0
+        ],
+        [
+          40.48571428571431,
+          2342.0
+        ],
+        [
+          44.08571428571432,
+          2408.0
+        ],
+        [
+          47.72142857142859,
+          2474.0
+        ],
+        [
+          51.392857142857125,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        29,
+        2206,
+        56,
+        2544
+      ],
+      "source_origin": 2227.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        233.0,
+        2309.0
+      ],
+      "layout_pitch": 14.0,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        21
+      ]
+    },
+    {
+      "id": "LL-G28-SD02",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W02",
+      "source_path": [
+        [
+          426.99999999999983,
+          2210.0
+        ],
+        [
+          429.9999999999999,
+          2276.0
+        ],
+        [
+          432.99999999999994,
+          2342.0
+        ],
+        [
+          436.0,
+          2408.0
+        ],
+        [
+          439.0,
+          2474.0
+        ],
+        [
+          441.99999999999994,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        422,
+        2206,
+        446,
+        2544
+      ],
+      "source_origin": 2223.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        589.75,
+        2309.0
+      ],
+      "layout_pitch": 14.0,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        21
+      ]
+    },
+    {
+      "id": "LL-G28-SD03",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W02",
+      "source_path": [
+        [
+          822.8571428571428,
+          2210.0
+        ],
+        [
+          825.0571428571427,
+          2276.0
+        ],
+        [
+          827.3999999999999,
+          2342.0
+        ],
+        [
+          829.8857142857141,
+          2408.0
+        ],
+        [
+          832.5142857142855,
+          2474.0
+        ],
+        [
+          835.2857142857141,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        818,
+        2206,
+        840,
+        2544
+      ],
+      "source_origin": 2219.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        978.25,
+        2309.0
+      ],
+      "layout_pitch": 14.0,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        22
+      ]
+    },
+    {
+      "id": "LL-G28-SD04",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W02",
+      "source_path": [
+        [
+          1203.6428571428569,
+          2210.0
+        ],
+        [
+          1205.2714285714285,
+          2276.0
+        ],
+        [
+          1208.6857142857143,
+          2342.0
+        ],
+        [
+          1213.8857142857141,
+          2408.0
+        ],
+        [
+          1220.8714285714282,
+          2474.0
+        ],
+        [
+          1229.6428571428567,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        1199,
+        2206,
+        1234,
+        2544
+      ],
+      "source_origin": 2226.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1366.75,
+        2309.0
+      ],
+      "layout_pitch": 14.0,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        17
+      ]
+    },
+    {
+      "id": "LL-G28-SD05",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W02",
+      "source_path": [
+        [
+          1596.2142857142856,
+          2210.0
+        ],
+        [
+          1595.8142857142852,
+          2276.0
+        ],
+        [
+          1597.1999999999994,
+          2342.0
+        ],
+        [
+          1600.3714285714277,
+          2408.0
+        ],
+        [
+          1605.3285714285705,
+          2474.0
+        ],
+        [
+          1612.0714285714275,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        1591,
+        2206,
+        1617,
+        2544
+      ],
+      "source_origin": 2221.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1755.25,
+        2309.0
+      ],
+      "layout_pitch": 14.0,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "LL-G28-SD06",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W02",
+      "source_path": [
+        [
+          2013.8571428571422,
+          2210.0
+        ],
+        [
+          2015.0857142857137,
+          2276.0
+        ],
+        [
+          2016.885714285714,
+          2342.0
+        ],
+        [
+          2019.2571428571425,
+          2408.0
+        ],
+        [
+          2022.1999999999996,
+          2474.0
+        ],
+        [
+          2025.7142857142849,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        2009,
+        2206,
+        2030,
+        2544
+      ],
+      "source_origin": 2222.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2112.0,
+        2309.0
+      ],
+      "layout_pitch": 14.0,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        21
+      ]
+    },
+    {
+      "id": "LL-G33-SD01",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          5.833333333333087,
+          2730.0
+        ],
+        [
+          10.09523809523779,
+          2795.0
+        ],
+        [
+          14.142857142856826,
+          2860.0
+        ],
+        [
+          17.97619047619014,
+          2925.0
+        ],
+        [
+          21.59523809523779,
+          2990.0
+        ],
+        [
+          24.999999999999716,
+          3055.0
+        ],
+        [
+          28.19047619047592,
+          3120.0
+        ],
+        [
+          31.166666666666345,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        1,
+        2726,
+        36,
+        3189
+      ],
+      "source_origin": 2736.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        222.0,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "LL-G33-SD02",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          111.74999999999997,
+          2730.0
+        ],
+        [
+          115.39285714285708,
+          2795.0
+        ],
+        [
+          119.03571428571422,
+          2860.0
+        ],
+        [
+          122.67857142857136,
+          2925.0
+        ],
+        [
+          126.32142857142853,
+          2990.0
+        ],
+        [
+          129.96428571428564,
+          3055.0
+        ],
+        [
+          133.60714285714278,
+          3120.0
+        ],
+        [
+          137.24999999999991,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        107,
+        2726,
+        142,
+        3189
+      ],
+      "source_origin": 2740.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        316.91666666666663,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "LL-G33-SD03",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          220.99999999999997,
+          2730.0
+        ],
+        [
+          224.2619047619047,
+          2795.0
+        ],
+        [
+          227.57142857142853,
+          2860.0
+        ],
+        [
+          230.9285714285714,
+          2925.0
+        ],
+        [
+          234.33333333333326,
+          2990.0
+        ],
+        [
+          237.78571428571422,
+          3055.0
+        ],
+        [
+          241.28571428571422,
+          3120.0
+        ],
+        [
+          244.83333333333326,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        216,
+        2726,
+        249,
+        3189
+      ],
+      "source_origin": 2739.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        432.75,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "LL-G33-SD04",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          330.75,
+          2730.0
+        ],
+        [
+          334.13095238095235,
+          2795.0
+        ],
+        [
+          337.46428571428567,
+          2860.0
+        ],
+        [
+          340.75,
+          2925.0
+        ],
+        [
+          343.9880952380952,
+          2990.0
+        ],
+        [
+          347.17857142857144,
+          3055.0
+        ],
+        [
+          350.32142857142856,
+          3120.0
+        ],
+        [
+          353.41666666666663,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        326,
+        2726,
+        358,
+        3189
+      ],
+      "source_origin": 2737.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        548.5833333333333,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        31
+      ]
+    },
+    {
+      "id": "LL-G33-SD05",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          445.7916666666667,
+          2730.0
+        ],
+        [
+          448.577380952381,
+          2795.0
+        ],
+        [
+          451.44642857142867,
+          2860.0
+        ],
+        [
+          454.39880952380963,
+          2925.0
+        ],
+        [
+          457.4345238095239,
+          2990.0
+        ],
+        [
+          460.55357142857156,
+          3055.0
+        ],
+        [
+          463.75595238095246,
+          3120.0
+        ],
+        [
+          467.04166666666674,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        441,
+        2726,
+        472,
+        3189
+      ],
+      "source_origin": 2736.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        664.4166666666666,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        31
+      ]
+    },
+    {
+      "id": "LL-G33-SD06",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          555.0416666666665,
+          2730.0
+        ],
+        [
+          558.0416666666665,
+          2795.0
+        ],
+        [
+          560.9821428571427,
+          2860.0
+        ],
+        [
+          563.8630952380951,
+          2925.0
+        ],
+        [
+          566.6845238095236,
+          2990.0
+        ],
+        [
+          569.4464285714283,
+          3055.0
+        ],
+        [
+          572.1488095238093,
+          3120.0
+        ],
+        [
+          574.7916666666664,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        551,
+        2726,
+        579,
+        3189
+      ],
+      "source_origin": 2749.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        780.25,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "LL-G33-SD07",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          665.7499999999997,
+          2730.0
+        ],
+        [
+          668.3928571428569,
+          2795.0
+        ],
+        [
+          671.0357142857142,
+          2860.0
+        ],
+        [
+          673.6785714285714,
+          2925.0
+        ],
+        [
+          676.3214285714286,
+          2990.0
+        ],
+        [
+          678.9642857142858,
+          3055.0
+        ],
+        [
+          681.6071428571429,
+          3120.0
+        ],
+        [
+          684.25,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        661,
+        2726,
+        689,
+        3189
+      ],
+      "source_origin": 2742.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        896.0833333333333,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "LL-G33-SD08",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W03",
+      "source_path": [
+        [
+          728.1249999999993,
+          2730.0
+        ],
+        [
+          730.9107142857138,
+          2795.0
+        ],
+        [
+          733.6607142857139,
+          2860.0
+        ],
+        [
+          736.3749999999997,
+          2925.0
+        ],
+        [
+          739.0535714285711,
+          2990.0
+        ],
+        [
+          741.6964285714282,
+          3055.0
+        ],
+        [
+          744.3035714285711,
+          3120.0
+        ],
+        [
+          746.8749999999995,
+          3185.0
+        ]
+      ],
+      "source_roi": [
+        724,
+        2726,
+        751,
+        3189
+      ],
+      "source_origin": 2746.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        991.0,
+        2764.0
+      ],
+      "layout_pitch": 14.8,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "LL-G34-SD01",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          40.25121811554823,
+          3290.0
+        ],
+        [
+          45.07323600859144,
+          3359.1666666666665
+        ],
+        [
+          49.779498737272945,
+          3428.3333333333335
+        ],
+        [
+          54.370006301592866,
+          3497.5
+        ],
+        [
+          58.84475870155097,
+          3566.6666666666665
+        ],
+        [
+          63.20375593714755,
+          3635.8333333333335
+        ],
+        [
+          67.44699800838231,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        36,
+        3286,
+        72,
+        3709
+      ],
+      "source_origin": 3305.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        217.0,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        28
+      ]
+    },
+    {
+      "id": "LL-G34-SD02",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          144.41748900890337,
+          3290.0
+        ],
+        [
+          148.50159131975389,
+          3359.1666666666665
+        ],
+        [
+          152.70790316160907,
+          3428.3333333333335
+        ],
+        [
+          157.03642453446886,
+          3497.5
+        ],
+        [
+          161.48715543833333,
+          3566.6666666666665
+        ],
+        [
+          166.06009587320244,
+          3635.8333333333335
+        ],
+        [
+          170.75524583907622,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        140,
+        3286,
+        175,
+        3709
+      ],
+      "source_origin": 3304.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        316.91666666666663,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        28
+      ]
+    },
+    {
+      "id": "LL-G34-SD03",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          251.03577431526355,
+          3290.0
+        ],
+        [
+          254.92966226608283,
+          3359.1666666666665
+        ],
+        [
+          258.99336257353673,
+          3428.3333333333335
+        ],
+        [
+          263.2268752376252,
+          3497.5
+        ],
+        [
+          267.63020025834834,
+          3566.6666666666665
+        ],
+        [
+          272.2033376357061,
+          3635.8333333333335
+        ],
+        [
+          276.94628736969844,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        247,
+        3286,
+        281,
+        3709
+      ],
+      "source_origin": 3308.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        432.75,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        27
+      ]
+    },
+    {
+      "id": "LL-G34-SD04",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          358.4853070394805,
+          3290.0
+        ],
+        [
+          362.64341908864753,
+          3359.1666666666665
+        ],
+        [
+          366.78019505543,
+          3428.3333333333335
+        ],
+        [
+          370.8956349398278,
+          3497.5
+        ],
+        [
+          374.9897387418411,
+          3566.6666666666665
+        ],
+        [
+          379.06250646146975,
+          3635.8333333333335
+        ],
+        [
+          383.11393809871385,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        354,
+        3286,
+        388,
+        3709
+      ],
+      "source_origin": 3306.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        548.5833333333333,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        28
+      ]
+    },
+    {
+      "id": "LL-G34-SD05",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          471.20095703431014,
+          3290.0
+        ],
+        [
+          474.57275897928434,
+          3359.1666666666665
+        ],
+        [
+          477.99482393505224,
+          3428.3333333333335
+        ],
+        [
+          481.46715190161353,
+          3497.5
+        ],
+        [
+          484.98974287896846,
+          3566.6666666666665
+        ],
+        [
+          488.56259686711695,
+          3635.8333333333335
+        ],
+        [
+          492.1857138660589,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        467,
+        3286,
+        497,
+        3709
+      ],
+      "source_origin": 3299.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        664.4166666666666,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        28
+      ]
+    },
+    {
+      "id": "LL-G34-SD06",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          580.1275348044218,
+          3290.0
+        ],
+        [
+          582.929421187307,
+          3359.1666666666665
+        ],
+        [
+          585.8525319525824,
+          3428.3333333333335
+        ],
+        [
+          588.8968671002478,
+          3497.5
+        ],
+        [
+          592.0624266303034,
+          3566.6666666666665
+        ],
+        [
+          595.3492105427493,
+          3635.8333333333335
+        ],
+        [
+          598.7572188375852,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        576,
+        3286,
+        603,
+        3709
+      ],
+      "source_origin": 3302.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        780.25,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        28
+      ]
+    },
+    {
+      "id": "LL-G34-SD07",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA-W04",
+      "source_path": [
+        [
+          688.0082899569641,
+          3290.0
+        ],
+        [
+          691.0010433041883,
+          3359.1666666666665
+        ],
+        [
+          693.9958663152165,
+          3428.3333333333335
+        ],
+        [
+          696.9927589900485,
+          3497.5
+        ],
+        [
+          699.9917213286843,
+          3566.6666666666665
+        ],
+        [
+          702.992753331124,
+          3635.8333333333335
+        ],
+        [
+          705.9958549973676,
+          3705.0
+        ]
+      ],
+      "source_roi": [
+        684,
+        3286,
+        710,
+        3709
+      ],
+      "source_origin": 3299.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        896.0833333333333,
+        3282.0
+      ],
+      "layout_pitch": 16.4,
+      "min_gray": 174,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        28
+      ]
+    },
+    {
+      "id": "LL-G35-SD01",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          895.0458151056766,
+          2730.0
+        ],
+        [
+          896.8499454787373,
+          2791.6666666666665
+        ],
+        [
+          899.1527354082862,
+          2853.3333333333335
+        ],
+        [
+          901.9541848943231,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        891,
+        2726,
+        906,
+        2919
+      ],
+      "source_origin": 2743.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1123.6711,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD02",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          956.0458151056771,
+          2730.0
+        ],
+        [
+          958.8472645917142,
+          2791.6666666666665
+        ],
+        [
+          961.1500545212632,
+          2853.3333333333335
+        ],
+        [
+          962.9541848943243,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        952,
+        2726,
+        967,
+        2919
+      ],
+      "source_origin": 2742.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1173.2636499999999,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD03",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1017.8971169556736,
+          2730.0
+        ],
+        [
+          1020.2990389852243,
+          2791.6666666666665
+        ],
+        [
+          1022.7009610147751,
+          2853.3333333333335
+        ],
+        [
+          1025.1028830443258,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1013,
+        2726,
+        1030,
+        2919
+      ],
+      "source_origin": 2741.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1230.44875,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD04",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1078.897116955674,
+          2730.0
+        ],
+        [
+          1081.2990389852246,
+          2791.6666666666665
+        ],
+        [
+          1083.7009610147752,
+          2853.3333333333335
+        ],
+        [
+          1086.102883044326,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1074,
+        2726,
+        1091,
+        2919
+      ],
+      "source_origin": 2741.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1287.6338500000002,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD05",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1135.9967849048646,
+          2730.0
+        ],
+        [
+          1137.9989283016214,
+          2791.6666666666665
+        ],
+        [
+          1140.0010716983782,
+          2853.3333333333335
+        ],
+        [
+          1142.003215095135,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1131,
+        2726,
+        1147,
+        2919
+      ],
+      "source_origin": 2740.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1344.8189499999999,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD06",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1201.3954567016285,
+          2730.0
+        ],
+        [
+          1201.7984855672094,
+          2791.6666666666665
+        ],
+        [
+          1202.2015144327904,
+          2853.3333333333335
+        ],
+        [
+          1202.604543298371,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1197,
+        2726,
+        1207,
+        2919
+      ],
+      "source_origin": 2750.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1402.00405,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD07",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1258.2419359089217,
+          2730.0
+        ],
+        [
+          1259.2540141871991,
+          2791.6666666666665
+        ],
+        [
+          1262.7593902479166,
+          2853.3333333333335
+        ],
+        [
+          1268.7580640910742,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1254,
+        2726,
+        1273,
+        2919
+      ],
+      "source_origin": 2749.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1459.1891500000002,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD08",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1323.3954567016285,
+          2730.0
+        ],
+        [
+          1323.7984855672094,
+          2791.6666666666665
+        ],
+        [
+          1324.2015144327902,
+          2853.3333333333335
+        ],
+        [
+          1324.604543298371,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1319,
+        2726,
+        1329,
+        2919
+      ],
+      "source_origin": 2748.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1516.37425,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD09",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1383.7516339008084,
+          2730.0
+        ],
+        [
+          1386.7438424160441,
+          2791.6666666666665
+        ],
+        [
+          1387.2427531488402,
+          2853.3333333333335
+        ],
+        [
+          1385.2483660991966,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1379,
+        2726,
+        1392,
+        2919
+      ],
+      "source_origin": 2748.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1573.55935,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD10",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1444.8480867548633,
+          2730.0
+        ],
+        [
+          1447.4480218081096,
+          2791.6666666666665
+        ],
+        [
+          1449.549297304868,
+          2853.3333333333335
+        ],
+        [
+          1451.151913245139,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1440,
+        2726,
+        1456,
+        2919
+      ],
+      "source_origin": 2747.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1630.7444500000001,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-G35-SD11",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-MOS-0",
+      "source_path": [
+        [
+          1506.9477547040526,
+          2730.0
+        ],
+        [
+          1508.1505920115292,
+          2791.6666666666665
+        ],
+        [
+          1509.8520888754938,
+          2853.3333333333335
+        ],
+        [
+          1512.052245295946,
+          2915.0
+        ]
+      ],
+      "source_roi": [
+        1502,
+        2726,
+        1517,
+        2919
+      ],
+      "source_origin": 2746.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1680.337,
+        2768.0851
+      ],
+      "layout_pitch": 21.3,
+      "min_gray": 180,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        11
+      ]
+    },
+    {
+      "id": "LL-RING-STAIR-T",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-GUARD-0",
+      "source_path": [
+        [
+          10.0,
+          1201.1295041707237
+        ],
+        [
+          70.45454545454545,
+          1199.9014041562373
+        ],
+        [
+          130.9090909090909,
+          1199.1026904342607
+        ],
+        [
+          191.36363636363637,
+          1198.733363004794
+        ],
+        [
+          251.8181818181818,
+          1198.7934218678372
+        ],
+        [
+          312.27272727272725,
+          1199.2828670233903
+        ],
+        [
+          372.72727272727275,
+          1200.2016984714533
+        ],
+        [
+          433.1818181818182,
+          1201.5499162120261
+        ],
+        [
+          493.6363636363636,
+          1203.3275202451089
+        ],
+        [
+          554.0909090909091,
+          1205.5345105707015
+        ],
+        [
+          614.5454545454545,
+          1208.170887188804
+        ],
+        [
+          675.0,
+          1211.2366500994165
+        ]
+      ],
+      "source_roi": [
+        6,
+        1194,
+        679,
+        1216
+      ],
+      "source_origin": 17.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        255,
+        1389
+      ],
+      "layout_pitch": 21.1,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        34
+      ]
+    },
+    {
+      "id": "LL-RING-STAIR-R",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-GUARD-0",
+      "source_path": [
+        [
+          676.8394274626415,
+          1220.0
+        ],
+        [
+          679.3138767590297,
+          1281.4285714285713
+        ],
+        [
+          681.7883260554179,
+          1342.857142857143
+        ],
+        [
+          684.2627753518061,
+          1404.2857142857142
+        ],
+        [
+          686.7372246481943,
+          1465.7142857142858
+        ],
+        [
+          689.2116739445826,
+          1527.142857142857
+        ],
+        [
+          691.6861232409708,
+          1588.5714285714284
+        ],
+        [
+          694.160572537359,
+          1650.0
+        ]
+      ],
+      "source_roi": [
+        672,
+        1216,
+        699,
+        1654
+      ],
+      "source_origin": 1236.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        982.7,
+        1403
+      ],
+      "layout_pitch": 15.9,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        26
+      ]
+    },
+    {
+      "id": "LL-RING-STAIR-B",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-STAIR-GUARD-0",
+      "source_path": [
+        [
+          10.0,
+          1683.0667178964507
+        ],
+        [
+          71.81818181818181,
+          1682.6946798118033
+        ],
+        [
+          133.63636363636363,
+          1682.3397061491637
+        ],
+        [
+          195.45454545454547,
+          1682.0017969085318
+        ],
+        [
+          257.27272727272725,
+          1681.6809520899078
+        ],
+        [
+          319.0909090909091,
+          1681.3771716932918
+        ],
+        [
+          380.90909090909093,
+          1681.0904557186834
+        ],
+        [
+          442.72727272727275,
+          1680.820804166083
+        ],
+        [
+          504.54545454545456,
+          1680.5682170354903
+        ],
+        [
+          566.3636363636364,
+          1680.3326943269055
+        ],
+        [
+          628.1818181818182,
+          1680.1142360403285
+        ],
+        [
+          690.0,
+          1679.9128421757594
+        ]
+      ],
+      "source_roi": [
+        6,
+        1675,
+        694,
+        1688
+      ],
+      "source_origin": 16.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        255,
+        1834
+      ],
+      "layout_pitch": 16.3,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        44
+      ]
+    },
+    {
+      "id": "LL-RING-A15-T",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-MIDDLE-UPPER-AA-0",
+      "source_path": [
+        [
+          720.0,
+          1184.1081145809067
+        ],
+        [
+          781.9565217391305,
+          1183.8418437305331
+        ],
+        [
+          843.9130434782609,
+          1183.5611909144907
+        ],
+        [
+          905.8695652173913,
+          1183.266156132779
+        ],
+        [
+          967.8260869565217,
+          1182.9567393853981
+        ],
+        [
+          1029.7826086956522,
+          1182.6329406723482
+        ],
+        [
+          1091.7391304347825,
+          1182.2947599936292
+        ],
+        [
+          1153.695652173913,
+          1181.942197349241
+        ],
+        [
+          1215.6521739130435,
+          1181.5752527391837
+        ],
+        [
+          1277.608695652174,
+          1181.1939261634573
+        ],
+        [
+          1339.5652173913045,
+          1180.7982176220617
+        ],
+        [
+          1401.5217391304348,
+          1180.3881271149971
+        ],
+        [
+          1463.4782608695652,
+          1179.9636546422632
+        ],
+        [
+          1525.4347826086957,
+          1179.5248002038604
+        ],
+        [
+          1587.391304347826,
+          1179.0715637997882
+        ],
+        [
+          1649.3478260869565,
+          1178.6039454300471
+        ],
+        [
+          1711.304347826087,
+          1178.1219450946369
+        ],
+        [
+          1773.2608695652175,
+          1177.6255627935575
+        ],
+        [
+          1835.217391304348,
+          1177.1147985268087
+        ],
+        [
+          1897.1739130434783,
+          1176.5896522943913
+        ],
+        [
+          1959.1304347826087,
+          1176.0501240963044
+        ],
+        [
+          2021.0869565217392,
+          1175.4962139325485
+        ],
+        [
+          2083.0434782608695,
+          1174.9279218031234
+        ],
+        [
+          2145.0,
+          1174.3452477080293
+        ]
+      ],
+      "source_roi": [
+        716,
+        1170,
+        2149,
+        1189
+      ],
+      "source_origin": 734.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1013,
+        1381.6
+      ],
+      "layout_pitch": 16.0,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        78
+      ]
+    },
+    {
+      "id": "LL-RING-A15-L",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-MIDDLE-UPPER-AA-0",
+      "source_path": [
+        [
+          709.0740239866186,
+          1210.0
+        ],
+        [
+          710.7160159910791,
+          1273.3333333333333
+        ],
+        [
+          712.3580079955395,
+          1336.6666666666667
+        ],
+        [
+          714.0,
+          1400.0
+        ],
+        [
+          715.6419920044605,
+          1463.3333333333333
+        ],
+        [
+          717.2839840089209,
+          1526.6666666666667
+        ],
+        [
+          718.9259760133814,
+          1590.0
+        ]
+      ],
+      "source_roi": [
+        705,
+        1206,
+        723,
+        1594
+      ],
+      "source_origin": 1231.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        999.3,
+        1403
+      ],
+      "layout_pitch": 15.6,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        23
+      ]
+    },
+    {
+      "id": "LL-RING-A15-R",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-MIDDLE-UPPER-AA-0",
+      "source_path": [
+        [
+          2154.728331520632,
+          1200.0
+        ],
+        [
+          2148.9954850756258,
+          1263.3333333333333
+        ],
+        [
+          2144.9276053875606,
+          1326.6666666666667
+        ],
+        [
+          2142.524692456437,
+          1390.0
+        ],
+        [
+          2141.7867462822546,
+          1453.3333333333333
+        ],
+        [
+          2142.713766865013,
+          1516.6666666666667
+        ],
+        [
+          2145.305754204713,
+          1580.0
+        ]
+      ],
+      "source_roi": [
+        2137,
+        1196,
+        2159,
+        1584
+      ],
+      "source_origin": 1319.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2273,
+        1402
+      ],
+      "layout_pitch": 21.1,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        17
+      ]
+    },
+    {
+      "id": "LL-RING-A15-B",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-MIDDLE-UPPER-AA-0",
+      "source_path": [
+        [
+          730.0,
+          1609.4295634696314
+        ],
+        [
+          790.6086956521739,
+          1607.9823202990772
+        ],
+        [
+          851.2173913043479,
+          1606.6240739509676
+        ],
+        [
+          911.8260869565217,
+          1605.3548244253027
+        ],
+        [
+          972.4347826086956,
+          1604.1745717220822
+        ],
+        [
+          1033.0434782608695,
+          1603.0833158413066
+        ],
+        [
+          1093.6521739130435,
+          1602.0810567829753
+        ],
+        [
+          1154.2608695652175,
+          1601.1677945470888
+        ],
+        [
+          1214.8695652173913,
+          1600.343529133647
+        ],
+        [
+          1275.4782608695652,
+          1599.6082605426498
+        ],
+        [
+          1336.086956521739,
+          1598.961988774097
+        ],
+        [
+          1396.695652173913,
+          1598.4047138279889
+        ],
+        [
+          1457.304347826087,
+          1597.9364357043255
+        ],
+        [
+          1517.913043478261,
+          1597.5571544031068
+        ],
+        [
+          1578.5217391304348,
+          1597.2668699243327
+        ],
+        [
+          1639.1304347826087,
+          1597.065582268003
+        ],
+        [
+          1699.7391304347825,
+          1596.953291434118
+        ],
+        [
+          1760.3478260869565,
+          1596.9299974226778
+        ],
+        [
+          1820.9565217391305,
+          1596.995700233682
+        ],
+        [
+          1881.5652173913043,
+          1597.150399867131
+        ],
+        [
+          1942.1739130434783,
+          1597.3940963230245
+        ],
+        [
+          2002.7826086956522,
+          1597.7267896013627
+        ],
+        [
+          2063.391304347826,
+          1598.1484797021456
+        ],
+        [
+          2124.0,
+          1598.6591666253728
+        ]
+      ],
+      "source_roi": [
+        726,
+        1592,
+        2128,
+        1614
+      ],
+      "source_origin": 736.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1013,
+        1780
+      ],
+      "layout_pitch": 13.8,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        90
+      ]
+    },
+    {
+      "id": "LL-RING-WIDE-T",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "source_path": [
+        [
+          12.0,
+          1756.7266780249906
+        ],
+        [
+          72.0909090909091,
+          1756.1550085889207
+        ],
+        [
+          132.1818181818182,
+          1755.557270639799
+        ],
+        [
+          192.27272727272728,
+          1754.9334641776256
+        ],
+        [
+          252.36363636363637,
+          1754.283589202401
+        ],
+        [
+          312.4545454545455,
+          1753.6076457141241
+        ],
+        [
+          372.54545454545456,
+          1752.9056337127959
+        ],
+        [
+          432.6363636363636,
+          1752.177553198416
+        ],
+        [
+          492.72727272727275,
+          1751.4234041709844
+        ],
+        [
+          552.8181818181819,
+          1750.6431866305013
+        ],
+        [
+          612.909090909091,
+          1749.8369005769666
+        ],
+        [
+          673.0,
+          1749.0045460103802
+        ],
+        [
+          733.0909090909091,
+          1748.146122930742
+        ],
+        [
+          793.1818181818182,
+          1747.2616313380522
+        ],
+        [
+          853.2727272727273,
+          1746.3510712323107
+        ],
+        [
+          913.3636363636364,
+          1745.4144426135176
+        ],
+        [
+          973.4545454545455,
+          1744.451745481673
+        ],
+        [
+          1033.5454545454545,
+          1743.4629798367766
+        ],
+        [
+          1093.6363636363637,
+          1742.4481456788287
+        ],
+        [
+          1153.7272727272727,
+          1741.407243007829
+        ],
+        [
+          1213.818181818182,
+          1740.3402718237778
+        ],
+        [
+          1273.909090909091,
+          1739.2472321266748
+        ],
+        [
+          1334.0,
+          1738.1281239165203
+        ],
+        [
+          1394.0909090909092,
+          1736.982947193314
+        ],
+        [
+          1454.1818181818182,
+          1735.8117019570561
+        ],
+        [
+          1514.2727272727273,
+          1734.6143882077467
+        ],
+        [
+          1574.3636363636365,
+          1733.3910059453856
+        ],
+        [
+          1634.4545454545455,
+          1732.1415551699727
+        ],
+        [
+          1694.5454545454545,
+          1730.8660358815082
+        ],
+        [
+          1754.6363636363637,
+          1729.5644480799922
+        ],
+        [
+          1814.7272727272727,
+          1728.2367917654244
+        ],
+        [
+          1874.818181818182,
+          1726.8830669378049
+        ],
+        [
+          1934.909090909091,
+          1725.503273597134
+        ],
+        [
+          1995.0,
+          1724.0974117434112
+        ]
+      ],
+      "source_roi": [
+        8,
+        1720,
+        1999,
+        1761
+      ],
+      "source_origin": 25.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        231,
+        1899.7
+      ],
+      "layout_pitch": 65.3,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        29
+      ]
+    },
+    {
+      "id": "LL-RING-WIDE-R",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "source_path": [
+        [
+          2055.082142857143,
+          1760.0
+        ],
+        [
+          2057.020054945055,
+          1820.0
+        ],
+        [
+          2058.896153846154,
+          1880.0
+        ],
+        [
+          2060.71043956044,
+          1940.0
+        ],
+        [
+          2062.4629120879126,
+          2000.0
+        ],
+        [
+          2064.153571428572,
+          2060.0
+        ],
+        [
+          2065.782417582418,
+          2120.0
+        ],
+        [
+          2067.3494505494514,
+          2180.0
+        ],
+        [
+          2068.854670329671,
+          2240.0
+        ],
+        [
+          2070.2980769230776,
+          2300.0
+        ],
+        [
+          2071.679670329671,
+          2360.0
+        ],
+        [
+          2072.999450549451,
+          2420.0
+        ],
+        [
+          2074.2574175824184,
+          2480.0
+        ],
+        [
+          2075.453571428572,
+          2540.0
+        ]
+      ],
+      "source_roi": [
+        2051,
+        1756,
+        2080,
+        2544
+      ],
+      "source_origin": 1797.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        2145.5,
+        1915
+      ],
+      "layout_pitch": 34.2,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        21
+      ]
+    },
+    {
+      "id": "LL-RING-WIDE-B",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "source_path": [
+        [
+          18.0,
+          2588.820200583052
+        ],
+        [
+          78.66666666666666,
+          2587.853529787807
+        ],
+        [
+          139.33333333333331,
+          2586.8987935202463
+        ],
+        [
+          200.0,
+          2585.95599178037
+        ],
+        [
+          260.66666666666663,
+          2585.0251245681775
+        ],
+        [
+          321.3333333333333,
+          2584.10619188367
+        ],
+        [
+          382.0,
+          2583.1991937268467
+        ],
+        [
+          442.66666666666663,
+          2582.3041300977075
+        ],
+        [
+          503.3333333333333,
+          2581.4210009962526
+        ],
+        [
+          564.0,
+          2580.549806422482
+        ],
+        [
+          624.6666666666666,
+          2579.690546376396
+        ],
+        [
+          685.3333333333333,
+          2578.8432208579943
+        ],
+        [
+          746.0,
+          2578.007829867277
+        ],
+        [
+          806.6666666666666,
+          2577.184373404244
+        ],
+        [
+          867.3333333333333,
+          2576.3728514688955
+        ],
+        [
+          928.0,
+          2575.573264061231
+        ],
+        [
+          988.6666666666666,
+          2574.785611181251
+        ],
+        [
+          1049.3333333333333,
+          2574.0098928289553
+        ],
+        [
+          1110.0,
+          2573.246109004344
+        ],
+        [
+          1170.6666666666665,
+          2572.494259707417
+        ],
+        [
+          1231.3333333333333,
+          2571.754344938174
+        ],
+        [
+          1292.0,
+          2571.026364696616
+        ],
+        [
+          1352.6666666666665,
+          2570.310318982742
+        ],
+        [
+          1413.3333333333333,
+          2569.6062077965526
+        ],
+        [
+          1474.0,
+          2568.914031138047
+        ],
+        [
+          1534.6666666666665,
+          2568.2337890072263
+        ],
+        [
+          1595.3333333333333,
+          2567.5654814040895
+        ],
+        [
+          1656.0,
+          2566.9091083286376
+        ],
+        [
+          1716.6666666666665,
+          2566.2646697808696
+        ],
+        [
+          1777.3333333333333,
+          2565.632165760786
+        ],
+        [
+          1838.0,
+          2565.0115962683867
+        ],
+        [
+          1898.6666666666665,
+          2564.402961303672
+        ],
+        [
+          1959.3333333333333,
+          2563.8062608666414
+        ],
+        [
+          2020.0,
+          2563.221494957295
+        ]
+      ],
+      "source_roi": [
+        14,
+        2559,
+        2024,
+        2593
+      ],
+      "source_origin": 628.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        231,
+        2661
+      ],
+      "layout_pitch": 29.1,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        65
+      ]
+    },
+    {
+      "id": "LL-RING-LOWOUT-T",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "source_path": [
+        [
+          10.0,
+          2655.799999999999
+        ],
+        [
+          70.0,
+          2654.907692307692
+        ],
+        [
+          130.0,
+          2654.0153846153844
+        ],
+        [
+          190.0,
+          2653.1230769230774
+        ],
+        [
+          250.0,
+          2652.23076923077
+        ],
+        [
+          310.0,
+          2651.3384615384625
+        ],
+        [
+          370.0,
+          2650.4461538461546
+        ],
+        [
+          430.0,
+          2649.553846153847
+        ],
+        [
+          490.0,
+          2648.6615384615393
+        ],
+        [
+          550.0,
+          2647.769230769232
+        ],
+        [
+          610.0,
+          2646.876923076924
+        ],
+        [
+          670.0,
+          2645.984615384616
+        ],
+        [
+          730.0,
+          2645.092307692308
+        ],
+        [
+          790.0,
+          2644.2000000000003
+        ]
+      ],
+      "source_roi": [
+        6,
+        2640,
+        794,
+        2660
+      ],
+      "source_origin": 21.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        231,
+        2676.5
+      ],
+      "layout_pitch": 16.6,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        49
+      ]
+    },
+    {
+      "id": "LL-RING-LOWOUT-R",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "source_path": [
+        [
+          818.7789701116757,
+          2670.0
+        ],
+        [
+          821.2202010912794,
+          2732.777777777778
+        ],
+        [
+          823.5600290519516,
+          2795.5555555555557
+        ],
+        [
+          825.7984539936923,
+          2858.3333333333335
+        ],
+        [
+          827.9354759165017,
+          2921.1111111111113
+        ],
+        [
+          829.9710948203794,
+          2983.8888888888887
+        ],
+        [
+          831.905310705326,
+          3046.6666666666665
+        ],
+        [
+          833.7381235713408,
+          3109.4444444444443
+        ],
+        [
+          835.4695334184244,
+          3172.222222222222
+        ],
+        [
+          837.0995402465762,
+          3235.0
+        ],
+        [
+          838.6281440557968,
+          3297.777777777778
+        ],
+        [
+          840.055344846086,
+          3360.5555555555557
+        ],
+        [
+          841.3811426174436,
+          3423.3333333333335
+        ],
+        [
+          842.6055373698698,
+          3486.1111111111113
+        ],
+        [
+          843.7285291033645,
+          3548.8888888888887
+        ],
+        [
+          844.7501178179277,
+          3611.6666666666665
+        ],
+        [
+          845.6703035135595,
+          3674.4444444444443
+        ],
+        [
+          846.4890861902599,
+          3737.222222222222
+        ],
+        [
+          847.2064658480288,
+          3800.0
+        ]
+      ],
+      "source_roi": [
+        814,
+        2666,
+        852,
+        3804
+      ],
+      "source_origin": 3679.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1068.3,
+        2698
+      ],
+      "layout_pitch": 145.0,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        8
+      ]
+    },
+    {
+      "id": "LL-RING-LOWOUT-B",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+      "source_path": [
+        [
+          12.0,
+          3857.273659371955
+        ],
+        [
+          72.21428571428572,
+          3854.627155943398
+        ],
+        [
+          132.42857142857144,
+          3852.136215568771
+        ],
+        [
+          192.64285714285714,
+          3849.800838248074
+        ],
+        [
+          252.85714285714286,
+          3847.6210239813067
+        ],
+        [
+          313.07142857142856,
+          3845.596772768469
+        ],
+        [
+          373.2857142857143,
+          3843.728084609561
+        ],
+        [
+          433.5,
+          3842.014959504583
+        ],
+        [
+          493.7142857142857,
+          3840.457397453535
+        ],
+        [
+          553.9285714285714,
+          3839.0553984564167
+        ],
+        [
+          614.1428571428571,
+          3837.808962513228
+        ],
+        [
+          674.3571428571429,
+          3836.7180896239693
+        ],
+        [
+          734.5714285714286,
+          3835.7827797886403
+        ],
+        [
+          794.7857142857143,
+          3835.0030330072414
+        ],
+        [
+          855.0,
+          3834.378849279772
+        ]
+      ],
+      "source_roi": [
+        8,
+        3830,
+        859,
+        3862
+      ],
+      "source_origin": 228.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        231,
+        3883.8
+      ],
+      "layout_pitch": 18.9,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        43
+      ]
+    },
+    {
+      "id": "LL-RING-LOWIN-T",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+      "source_path": [
+        [
+          10.0,
+          2663.002403046001
+        ],
+        [
+          73.91666666666666,
+          2662.002503464582
+        ],
+        [
+          137.83333333333331,
+          2661.0024945978294
+        ],
+        [
+          201.75,
+          2660.0023764457433
+        ],
+        [
+          265.66666666666663,
+          2659.002149008323
+        ],
+        [
+          329.5833333333333,
+          2658.0018122855695
+        ],
+        [
+          393.5,
+          2657.0013662774822
+        ],
+        [
+          457.41666666666663,
+          2656.000810984061
+        ],
+        [
+          521.3333333333333,
+          2655.000146405306
+        ],
+        [
+          585.25,
+          2653.9993725412173
+        ],
+        [
+          649.1666666666666,
+          2652.998489391795
+        ],
+        [
+          713.0833333333333,
+          2651.997496957039
+        ],
+        [
+          777.0,
+          2650.996395236949
+        ]
+      ],
+      "source_roi": [
+        6,
+        2646,
+        781,
+        2668
+      ],
+      "source_origin": 479.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        231,
+        2722.2
+      ],
+      "layout_pitch": 43.2,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        18
+      ]
+    },
+    {
+      "id": "LL-RING-LOWIN-R",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+      "source_path": [
+        [
+          776.5285290325074,
+          2680.0
+        ],
+        [
+          779.5155791047493,
+          2741.470588235294
+        ],
+        [
+          782.432140929338,
+          2802.9411764705883
+        ],
+        [
+          785.2782145062731,
+          2864.4117647058824
+        ],
+        [
+          788.053799835555,
+          2925.8823529411766
+        ],
+        [
+          790.7588969171835,
+          2987.3529411764707
+        ],
+        [
+          793.3935057511587,
+          3048.823529411765
+        ],
+        [
+          795.9576263374805,
+          3110.2941176470586
+        ],
+        [
+          798.451258676149,
+          3171.764705882353
+        ],
+        [
+          800.8744027671642,
+          3233.235294117647
+        ],
+        [
+          803.227058610526,
+          3294.7058823529414
+        ],
+        [
+          805.5092262062344,
+          3356.176470588235
+        ],
+        [
+          807.7209055542895,
+          3417.6470588235293
+        ],
+        [
+          809.8620966546914,
+          3479.1176470588234
+        ],
+        [
+          811.9327995074398,
+          3540.5882352941176
+        ],
+        [
+          813.9330141125348,
+          3602.0588235294117
+        ],
+        [
+          815.8627404699766,
+          3663.529411764706
+        ],
+        [
+          817.721978579765,
+          3725.0
+        ]
+      ],
+      "source_roi": [
+        772,
+        2676,
+        822,
+        3729
+      ],
+      "source_origin": 2700.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1030.7,
+        2740
+      ],
+      "layout_pitch": 14.7,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        72
+      ]
+    },
+    {
+      "id": "LL-RING-LOWIN-B",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+      "source_path": [
+        [
+          12.0,
+          3800.316495087078
+        ],
+        [
+          73.76923076923077,
+          3795.207955164631
+        ],
+        [
+          135.53846153846155,
+          3790.5430472464463
+        ],
+        [
+          197.3076923076923,
+          3786.3217713325234
+        ],
+        [
+          259.0769230769231,
+          3782.544127422862
+        ],
+        [
+          320.8461538461538,
+          3779.210115517463
+        ],
+        [
+          382.6153846153846,
+          3776.3197356163255
+        ],
+        [
+          444.38461538461536,
+          3773.8729877194496
+        ],
+        [
+          506.15384615384613,
+          3771.8698718268356
+        ],
+        [
+          567.9230769230769,
+          3770.3103879384835
+        ],
+        [
+          629.6923076923076,
+          3769.194536054393
+        ],
+        [
+          691.4615384615385,
+          3768.522316174565
+        ],
+        [
+          753.2307692307692,
+          3768.2937282989983
+        ],
+        [
+          815.0,
+          3768.5087724276937
+        ]
+      ],
+      "source_roi": [
+        8,
+        3764,
+        819,
+        3805
+      ],
+      "source_origin": 376.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        231,
+        3819.4
+      ],
+      "layout_pitch": 26.8,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        29
+      ]
+    },
+    {
+      "id": "LL-RING-D-T",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+      "source_path": [
+        [
+          850.0,
+          2640.267837826834
+        ],
+        [
+          912.7272727272727,
+          2638.7787434489787
+        ],
+        [
+          975.4545454545455,
+          2637.303585213106
+        ],
+        [
+          1038.1818181818182,
+          2635.842363119216
+        ],
+        [
+          1100.909090909091,
+          2634.395077167308
+        ],
+        [
+          1163.6363636363635,
+          2632.961727357382
+        ],
+        [
+          1226.3636363636365,
+          2631.542313689439
+        ],
+        [
+          1289.090909090909,
+          2630.136836163478
+        ],
+        [
+          1351.8181818181818,
+          2628.7452947794995
+        ],
+        [
+          1414.5454545454545,
+          2627.3676895375033
+        ],
+        [
+          1477.2727272727273,
+          2626.0040204374895
+        ],
+        [
+          1540.0,
+          2624.654287479458
+        ]
+      ],
+      "source_roi": [
+        846,
+        2620,
+        1544,
+        2645
+      ],
+      "source_origin": 870.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1099,
+        2721.2
+      ],
+      "layout_pitch": 18.4,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        33
+      ]
+    },
+    {
+      "id": "LL-RING-D-L",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+      "source_path": [
+        [
+          846.1402390418201,
+          2680.0
+        ],
+        [
+          849.0199707419554,
+          2748.75
+        ],
+        [
+          851.0480699336434,
+          2817.5
+        ],
+        [
+          852.2245366168843,
+          2886.25
+        ],
+        [
+          852.5493707916777,
+          2955.0
+        ]
+      ],
+      "source_roi": [
+        842,
+        2676,
+        857,
+        2959
+      ],
+      "source_origin": 2844.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1086.6,
+        2737
+      ],
+      "layout_pitch": 40.4,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        7
+      ]
+    },
+    {
+      "id": "LL-RING-D-R",
+      "axis": 1,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+      "source_path": [
+        [
+          1560.1958294866913,
+          2670.0
+        ],
+        [
+          1562.7926463543997,
+          2737.5
+        ],
+        [
+          1564.3932612223684,
+          2805.0
+        ],
+        [
+          1564.9976740905977,
+          2872.5
+        ],
+        [
+          1564.6058849590872,
+          2940.0
+        ]
+      ],
+      "source_roi": [
+        1556,
+        2666,
+        1569,
+        2944
+      ],
+      "source_origin": 2874.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1719.9,
+        2737
+      ],
+      "layout_pitch": 70.7,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "LL-RING-D-B",
+      "axis": 0,
+      "material": "AA",
+      "target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-5",
+      "source_path": [
+        [
+          870.0,
+          2980.965390349304
+        ],
+        [
+          930.9090909090909,
+          2979.6989557403394
+        ],
+        [
+          991.8181818181818,
+          2978.4325211313753
+        ],
+        [
+          1052.7272727272727,
+          2977.1660865224108
+        ],
+        [
+          1113.6363636363635,
+          2975.8996519134466
+        ],
+        [
+          1174.5454545454545,
+          2974.633217304482
+        ],
+        [
+          1235.4545454545455,
+          2973.366782695518
+        ],
+        [
+          1296.3636363636365,
+          2972.1003480865534
+        ],
+        [
+          1357.2727272727273,
+          2970.833913477589
+        ],
+        [
+          1418.181818181818,
+          2969.567478868624
+        ],
+        [
+          1479.090909090909,
+          2968.3010442596596
+        ],
+        [
+          1540.0,
+          2967.034609650695
+        ]
+      ],
+      "source_roi": [
+        866,
+        2963,
+        1544,
+        2985
+      ],
+      "source_origin": 883.0,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.7,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1099,
+        3048.7
+      ],
+      "layout_pitch": 35.7,
+      "min_gray": 185,
+      "min_residual": 14,
+      "sigma": 0.65,
+      "band_half_width": 2,
+      "inspection_slot_range": [
+        0,
+        17
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "A",
+      "title": "左侧阶梯6栅：源漏、上端栅CT及可见环",
+      "source_bbox": [
+        0,
+        1150,
+        730,
+        1720
+      ],
+      "layout_bbox": [
+        220,
+        1360,
+        995,
+        1870
+      ],
+      "scope": "本批蓝色AA孔、紫色栅孔；灰蓝2709个已有CT保留。橙色为空位检查槽，不等于实际孔。照片斜移仅记录于原生路径，规则设计保持横平竖直。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域（独立坐标，非投影）"
+        ]
+      ]
+    },
+    {
+      "id": "B",
+      "title": "相邻15条长栅：源漏、上端栅CT及下环",
+      "source_bbox": [
+        700,
+        1150,
+        2170,
+        1650
+      ],
+      "layout_bbox": [
+        993,
+        1360,
+        2290,
+        1810
+      ],
+      "scope": "本批蓝色AA孔、紫色栅孔；灰蓝2709个已有CT保留。橙色为空位检查槽，不等于实际孔。照片斜移仅记录于原生路径，规则设计保持横平竖直。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域（独立坐标，非投影）"
+        ]
+      ]
+    },
+    {
+      "id": "C",
+      "title": "左侧两排宽MOS：源漏和外围环；栅端归属待判",
+      "source_bbox": [
+        0,
+        1700,
+        2080,
+        2630
+      ],
+      "layout_bbox": [
+        208,
+        1875,
+        2165,
+        2671
+      ],
+      "scope": "本批蓝色AA孔、紫色栅孔；灰蓝2709个已有CT保留。橙色为空位检查槽，不等于实际孔。照片斜移仅记录于原生路径，规则设计保持横平竖直。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域（独立坐标，非投影）"
+        ],
+        [
+          "gate-bands",
+          "png",
+          "宽MOS端部亮带：待确认材料归属"
+        ]
+      ]
+    },
+    {
+      "id": "D",
+      "title": "左下上排7栅：源漏、上端栅CT与内外环",
+      "source_bbox": [
+        0,
+        2600,
+        860,
+        3260
+      ],
+      "layout_bbox": [
+        190,
+        2668,
+        1080,
+        3270
+      ],
+      "scope": "本批蓝色AA孔、紫色栅孔；灰蓝2709个已有CT保留。橙色为空位检查槽，不等于实际孔。照片斜移仅记录于原生路径，规则设计保持横平竖直。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域（独立坐标，非投影）"
+        ]
+      ]
+    },
+    {
+      "id": "E",
+      "title": "左下下排7栅：源漏、下端栅CT与内外环",
+      "source_bbox": [
+        0,
+        3210,
+        880,
+        3910
+      ],
+      "layout_bbox": [
+        190,
+        3250,
+        1080,
+        3910
+      ],
+      "scope": "本批蓝色AA孔、紫色栅孔；灰蓝2709个已有CT保留。橙色为空位检查槽，不等于实际孔。照片斜移仅记录于原生路径，规则设计保持横平竖直。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域（独立坐标，非投影）"
+        ],
+        [
+          "proposal",
+          "svg",
+          "待批准建议：AA右缘+6px，恢复右端源漏列"
+        ],
+        [
+          "withheld",
+          "png",
+          "原图：右端未导出孔列（橙圈）"
+        ]
+      ]
+    },
+    {
+      "id": "F",
+      "title": "右邻10条长栅：源漏、下端栅CT及环",
+      "source_bbox": [
+        815,
+        2610,
+        1590,
+        3030
+      ],
+      "layout_bbox": [
+        1075,
+        2700,
+        1755,
+        3120
+      ],
+      "scope": "本批蓝色AA孔、紫色栅孔；灰蓝2709个已有CT保留。橙色为空位检查槽，不等于实际孔。照片斜移仅记录于原生路径，规则设计保持横平竖直。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1原图区域（独立坐标，非投影）"
+        ]
+      ]
+    }
+  ],
+  "scope": "Left stair6+adjacent15,wide10,lowerleft14+adjacent10=55 gates; visible SD, supported terminal rows and guard segments",
+  "review_title": "左侧／左下大MOS：55条栅对应区域CT候选",
+  "review_notes": "源漏、栅端与环分别取证后联合核查。左侧两排宽MOS的全宽亮带与AA环归属尚未确定，10条宽栅的栅端CT保留未知；未凭亮带补栅孔。所有数量为观察支持候选，既有2709孔和AA/POLY不改，源图坐标与规则坐标分开。左下下排最右源漏列因既有AA/POLY间隙仅2px未导出，见E的AA微调建议。A第6栅左侧孔列及F第2栅下端CT仍缺可靠定位；F第3栅目前仅1个强峰，不按其他栅补孔。",
+  "review_images": [
+    {
+      "input_key": "A_m1",
+      "output_name": "A-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        0,
+        1420,
+        740,
+        1880
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "B_m1",
+      "output_name": "B-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        650,
+        1300,
+        2150,
+        1840
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "C_m1",
+      "output_name": "C-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        0,
+        1840,
+        2040,
+        2780
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "D_m1",
+      "output_name": "D-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        0,
+        2740,
+        840,
+        3440
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "E_m1",
+      "output_name": "E-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        0,
+        3320,
+        870,
+        4050
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "F_m1",
+      "output_name": "F-m1-context.png",
+      "source_frame": "m1",
+      "source_native_bbox": [
+        760,
+        2720,
+        1640,
+        3200
+      ],
+      "source_photo_input": "m1_photo"
+    },
+    {
+      "input_key": "C_gate_bands",
+      "output_name": "C-gate-bands.png",
+      "source_frame": "poly",
+      "source_native_bbox": [
+        0,
+        1695,
+        2090,
+        2630
+      ]
+    },
+    {
+      "input_key": "E_proposal",
+      "output_name": "E-proposal.svg"
+    },
+    {
+      "input_key": "E_withheld",
+      "output_name": "E-withheld.png",
+      "source_native_bbox": [
+        0,
+        3210,
+        880,
+        3910
+      ],
+      "source_frame": "poly"
+    }
+  ]
+}

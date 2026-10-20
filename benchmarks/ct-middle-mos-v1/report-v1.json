@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 1.4999999999999998,
+  "minimum_POLY_clearance_px": 1.4999999999999998,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 1777,
+  "physical_PDK_DRC": false,
+  "protected_contact_count": 791,
+  "previously_accepted_contact_count": 130,
+  "retained_working_geometry_count": 661,
+  "new_contact_count": 986,
+  "protected_materials_unchanged": true,
+  "scope": "Q2 middle MOS A/B upper and C lower; no other listed batches",
+  "human_review": "pending_new_cases_only",
+  "photo_correspondence": "AI_local_candidates",
+  "implementation_sha256": "4cb651b605c2e1e945524b70a1075c6f634c62e5b604aa07c90ac1e464d509a2",
+  "shared_geometry_implementation_sha256": "5b42a5d2f58649a2c11980b08074d6f6ffa270175ec99c21dcb9ff6afe1a1396"
+}

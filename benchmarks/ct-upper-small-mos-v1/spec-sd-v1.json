@@ -1,0 +1,817 @@
+{
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "protected_contacts": {
+      "path": "benchmarks/ct-transfer-revision-v2/model-v1.json",
+      "sha256": "5773d146c5ceb6c75e1454e514235edc1f9347b1a6f4a916e538b09f094a91c4"
+    },
+    "acceptance": {
+      "path": "benchmarks/ct-transfer-revision-v2/acceptance-v1.json",
+      "sha256": "ff46b7ca96edd6fdcc91a1c2d6d4f62b22eec1da30046015acbb45aa59509136"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "retained_contacts": {
+      "path": "benchmarks/q2-gate-ct-localization-v1/model-v1.json",
+      "sha256": "6865d237a012b85585fa540a0d5a4bea5cfc368f4bd1094e2008bb7090a2bcb2"
+    },
+    "parent_scope_acceptance": {
+      "path": "benchmarks/q2-gate-ct-localization-v1/acceptance-v1.json",
+      "sha256": "fb5c4dbb1691437b3e0c054194313149c8578d192e4902e701cdebd31c25a738"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "families": [
+    {
+      "id": "UP-AA-F01662",
+      "AA_target": "AA-F01662",
+      "gate_ids": [
+        "G55-P01"
+      ],
+      "native_columns_at_first_row": [
+        949,
+        997
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 681.0,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        674.0,
+        702.0
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01661",
+      "AA_target": "AA-F01661",
+      "gate_ids": [
+        "G55-P02"
+      ],
+      "native_columns_at_first_row": [
+        1028,
+        1080
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 681.395,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        674.395,
+        702.395
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01660",
+      "AA_target": "AA-F01660",
+      "gate_ids": [
+        "G55-P03"
+      ],
+      "native_columns_at_first_row": [
+        1108,
+        1160
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 681.795,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        674.795,
+        702.795
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01663",
+      "AA_target": "AA-F01663",
+      "gate_ids": [
+        "G55-P04"
+      ],
+      "native_columns_at_first_row": [
+        1188,
+        1240
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 682.195,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        675.195,
+        703.195
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01664",
+      "AA_target": "AA-F01664",
+      "gate_ids": [
+        "SG-U06-005"
+      ],
+      "native_columns_at_first_row": [
+        1268,
+        1320
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 682.595,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        675.595,
+        703.595
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01665",
+      "AA_target": "AA-F01665",
+      "gate_ids": [
+        "SG-U06-006"
+      ],
+      "native_columns_at_first_row": [
+        1348,
+        1400
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 682.995,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        675.995,
+        703.995
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01666",
+      "AA_target": "AA-F01666",
+      "gate_ids": [
+        "SG-U06-007"
+      ],
+      "native_columns_at_first_row": [
+        1428,
+        1480
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 683.395,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        676.395,
+        704.395
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01667",
+      "AA_target": "AA-F01667",
+      "gate_ids": [
+        "SG-U06-008"
+      ],
+      "native_columns_at_first_row": [
+        1508,
+        1560
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 683.795,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        676.795,
+        704.795
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01668",
+      "AA_target": "AA-F01668",
+      "gate_ids": [
+        "SG-U06-009"
+      ],
+      "native_columns_at_first_row": [
+        1588,
+        1640
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 684.195,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        677.195,
+        705.195
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 927.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01669",
+      "AA_target": "AA-F01669",
+      "gate_ids": [
+        "SG-U06-010"
+      ],
+      "native_columns_at_first_row": [
+        1668,
+        1720
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 684.595,
+      "native_row_pitch": 14,
+      "row_count": 2,
+      "native_AA_y_bounds": [
+        677.595,
+        705.595
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 175,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 920.0,
+      "layout_row_pitch": 13
+    },
+    {
+      "id": "UP-AA-F01670",
+      "AA_target": "AA-F01670",
+      "gate_ids": [
+        "CL2-Q1-AA-F01670-01",
+        "CL2-Q1-AA-F01670-02"
+      ],
+      "native_columns_at_first_row": [
+        1747,
+        1799,
+        1851
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 679.0,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        672.0,
+        756.0
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01671",
+      "AA_target": "AA-F01671",
+      "gate_ids": [
+        "CL2-Q1-AA-F01671-01"
+      ],
+      "native_columns_at_first_row": [
+        1929,
+        1981
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 679.91,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        672.91,
+        756.91
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01672",
+      "AA_target": "AA-F01672",
+      "gate_ids": [
+        "CL2-Q1-AA-F01672-01",
+        "CL2-Q1-AA-F01672-02"
+      ],
+      "native_columns_at_first_row": [
+        2059,
+        2111,
+        2163
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 680.56,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        673.56,
+        757.56
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01673",
+      "AA_target": "AA-F01673",
+      "gate_ids": [
+        "CL2-Q1-AA-F01673-01"
+      ],
+      "native_columns_at_first_row": [
+        2241,
+        2293
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 681.47,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        674.47,
+        758.47
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01674",
+      "AA_target": "AA-F01674",
+      "gate_ids": [
+        "CL2-Q1-AA-F01674-01",
+        "CL2-Q1-AA-F01674-02",
+        "CL2-Q1-AA-F01674-03",
+        "CL2-Q1-AA-F01674-04"
+      ],
+      "native_columns_at_first_row": [
+        2371,
+        2422,
+        2474,
+        2526,
+        2578
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 682.12,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        675.12,
+        759.12
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01675",
+      "AA_target": "AA-F01675",
+      "gate_ids": [
+        "CL2-Q1-AA-F01675-01",
+        "CL2-Q1-AA-F01675-02"
+      ],
+      "native_columns_at_first_row": [
+        2655,
+        2706,
+        2758
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 683.54,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        676.54,
+        760.54
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01676",
+      "AA_target": "AA-F01676",
+      "gate_ids": [
+        "CL2-Q1-AA-F01676-01",
+        "CL2-Q1-AA-F01676-02",
+        "CL2-Q1-AA-F01676-03",
+        "CL2-Q1-AA-F01676-04"
+      ],
+      "native_columns_at_first_row": [
+        2835,
+        2886,
+        2937,
+        2988,
+        3039
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 684.44,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        677.44,
+        761.44
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01677",
+      "AA_target": "AA-F01677",
+      "gate_ids": [
+        "CL2-Q1-AA-F01677-01",
+        "CL2-Q1-AA-F01677-02"
+      ],
+      "native_columns_at_first_row": [
+        3116,
+        3167,
+        3218
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 685.845,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        678.845,
+        762.845
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01678",
+      "AA_target": "AA-F01678",
+      "gate_ids": [
+        "CL2-Q1-AA-F01678-01",
+        "CL2-Q1-AA-F01678-02",
+        "CL2-Q1-AA-F01678-03",
+        "CL2-Q1-AA-F01678-04",
+        "CL2-Q1-AA-F01678-05",
+        "CL2-Q1-AA-F01678-06",
+        "CL2-Q1-AA-F01678-07",
+        "CL2-Q1-AA-F01678-08"
+      ],
+      "native_columns_at_first_row": [
+        3295,
+        3345,
+        3396,
+        3447,
+        3496,
+        3546,
+        3595,
+        3645,
+        3695
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 686.74,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        679.74,
+        763.74
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    },
+    {
+      "id": "UP-AA-F01679",
+      "AA_target": "AA-F01679",
+      "gate_ids": [
+        "CL2-Q1-AA-F01679-01",
+        "CL2-Q1-AA-F01679-02",
+        "CL2-Q1-AA-F01679-03",
+        "CL2-Q1-AA-F01679-04"
+      ],
+      "native_columns_at_first_row": [
+        3771,
+        3821,
+        3871,
+        3921,
+        3970
+      ],
+      "native_column_drift_per_row": -0.15,
+      "native_first_row_y": 689.12,
+      "native_row_pitch": 14,
+      "row_count": 6,
+      "native_AA_y_bounds": [
+        682.12,
+        766.12
+      ],
+      "search_radius_xy": [
+        5,
+        5
+      ],
+      "min_gray": 180,
+      "min_residual": 16,
+      "min_gate_body_contrast": 12,
+      "layout_row_origin": 915,
+      "layout_row_pitch": 14
+    }
+  ],
+  "rows": [],
+  "profile_rows": [
+    {
+      "id": "UP-RING-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          900,
+          621
+        ],
+        [
+          1200,
+          624
+        ],
+        [
+          1700,
+          627
+        ],
+        [
+          2200,
+          628
+        ],
+        [
+          2800,
+          630
+        ],
+        [
+          3400,
+          634
+        ],
+        [
+          4066,
+          640
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        894,
+        615,
+        4072,
+        646
+      ],
+      "source_origin": 906,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 3.7,
+      "track_local_spacing": false,
+      "layout_origin": [
+        1203.6936999999998,
+        874.0553500000001
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-UPPER-INNER-B-AA-0",
+      "min_gray": 175,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "UP-RING-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          900,
+          819
+        ],
+        [
+          1700,
+          821
+        ],
+        [
+          2200,
+          821
+        ],
+        [
+          2800,
+          819
+        ],
+        [
+          3400,
+          821
+        ],
+        [
+          4066,
+          829
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        894,
+        813,
+        4072,
+        835
+      ],
+      "source_origin": 906,
+      "source_pitch": 14.5,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1203.6936999999998,
+        1036.77555
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-UPPER-INNER-B-AA-0",
+      "min_gray": 175,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "UP-RING-LEFT",
+      "axis": 1,
+      "source_path": [
+        [
+          893,
+          645
+        ],
+        [
+          894,
+          803
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        887,
+        639,
+        900,
+        809
+      ],
+      "source_origin": 652,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        1191.6936999999998,
+        886.0553500000001
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-UPPER-INNER-B-AA-0",
+      "min_gray": 175,
+      "min_residual": 6,
+      "sigma": 1.6
+    },
+    {
+      "id": "UP-RING-RIGHT",
+      "axis": 1,
+      "source_path": [
+        [
+          4077,
+          650
+        ],
+        [
+          4077,
+          817
+        ]
+      ],
+      "band_half_width": 4,
+      "source_roi": [
+        4071,
+        644,
+        4083,
+        823
+      ],
+      "source_origin": 657,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "track_local_spacing": true,
+      "layout_origin": [
+        4064.066,
+        886.0553500000001
+      ],
+      "layout_pitch": 13,
+      "material": "AA",
+      "target": "AA2-UPPER-INNER-B-AA-0",
+      "min_gray": 175,
+      "min_residual": 6,
+      "sigma": 1.6
+    }
+  ],
+  "cases": [],
+  "scope": "whole UPPER-INNER-B guard frame: 10 tiny plus30 Q1 gates; SD, terminal and ring contact candidates"
+}

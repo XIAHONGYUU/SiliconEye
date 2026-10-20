@@ -1,0 +1,6433 @@
+{
+  "objects": [
+    {
+      "id": "LL-STAIR1-GATE-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          191,
+          1342
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 52.717865668885366,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          180,
+          1323,
+          218,
+          1383
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR1-GATE-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          206,
+          1342
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 44.572430704010856,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          180,
+          1323,
+          218,
+          1383
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR2-GATE-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          280,
+          1342
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 34.67557102283223,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          264,
+          1320,
+          303,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR2-GATE-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          291,
+          1342
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 43.95048383219748,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          264,
+          1320,
+          303,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR3-GATE-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          360,
+          1341
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 48.48323986109071,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          356,
+          1318,
+          388,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR3-GATE-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          376,
+          1341
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 60.499803956703374,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          356,
+          1318,
+          388,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR4-GATE-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          446,
+          1341
+        ],
+        "peak_gray": 254.0,
+        "local_residual": 49.53405189929546,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          434,
+          1315,
+          473,
+          1375
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR4-GATE-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          462,
+          1341
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 45.74332451974482,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          434,
+          1315,
+          473,
+          1375
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR5-GATE-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          536,
+          1345
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 32.57196449402656,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          520,
+          1312,
+          559,
+          1372
+        ]
+      }
+    },
+    {
+      "id": "LL-STAIR5-GATE-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          548,
+          1345
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 39.14516271001307,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          520,
+          1312,
+          559,
+          1372
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G01-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          758,
+          1362
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 61.39685007458479,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          745,
+          1322,
+          799,
+          1382
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G01-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          773,
+          1362
+        ],
+        "peak_gray": 254.0,
+        "local_residual": 46.808585696198776,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          745,
+          1322,
+          799,
+          1382
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G01-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          789,
+          1362
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 60.09106281754211,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          745,
+          1322,
+          799,
+          1382
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G02-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          831,
+          1362
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 45.55647065798473,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          819,
+          1321,
+          874,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G02-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          852,
+          1362
+        ],
+        "peak_gray": 254.0,
+        "local_residual": 42.69320991862301,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          819,
+          1321,
+          874,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G02-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          863,
+          1362
+        ],
+        "peak_gray": 254.0,
+        "local_residual": 48.19429145783579,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          819,
+          1321,
+          874,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G03-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          915,
+          1325
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 69.53943861148664,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          894,
+          1321,
+          948,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G03-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          930,
+          1325
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 57.69219163275258,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          894,
+          1321,
+          948,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G04-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          979,
+          1362
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 69.6979135977333,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          968,
+          1321,
+          1021,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G04-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          995,
+          1362
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 51.80757701945922,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          968,
+          1321,
+          1021,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G04-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1011,
+          1362
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 61.66216808492581,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          968,
+          1321,
+          1021,
+          1381
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G05-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1053,
+          1361
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 47.75693552435541,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1041,
+          1320,
+          1095,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G05-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1069,
+          1361
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 41.226639182146585,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1041,
+          1320,
+          1095,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G05-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1084,
+          1361
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 51.00993914619855,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1041,
+          1320,
+          1095,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G06-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1126,
+          1361
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 46.51362193595844,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1115,
+          1320,
+          1168,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G06-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1142,
+          1361
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 61.05765998672027,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1115,
+          1320,
+          1168,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G06-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1157,
+          1361
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 46.729707888772936,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1115,
+          1320,
+          1168,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G07-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1203,
+          1320
+        ],
+        "peak_gray": 226.0,
+        "local_residual": 48.940845869157954,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1188,
+          1320,
+          1241,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G07-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1213,
+          1320
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 44.93787279458931,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1188,
+          1320,
+          1241,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G07-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1229,
+          1320
+        ],
+        "peak_gray": 243.0,
+        "local_residual": 63.28037199130827,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1188,
+          1320,
+          1241,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G08-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1272,
+          1360
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 44.14261711144334,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1261,
+          1320,
+          1313,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G08-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1287,
+          1360
+        ],
+        "peak_gray": 243.0,
+        "local_residual": 55.26971830265808,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1261,
+          1320,
+          1313,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G08-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1303,
+          1360
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 48.980396636743194,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1261,
+          1320,
+          1313,
+          1380
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G09-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1349,
+          1356
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 38.63322477758717,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1333,
+          1319,
+          1386,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G09-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1360,
+          1356
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 39.93752938557657,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1333,
+          1319,
+          1386,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G09-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1376,
+          1356
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 42.53264464913079,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1333,
+          1319,
+          1386,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G10-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1417,
+          1355
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 55.393959183542734,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1406,
+          1319,
+          1463,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G10-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1437,
+          1355
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 40.78790537137536,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1406,
+          1319,
+          1463,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G10-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1448,
+          1355
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 51.35170177002712,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1406,
+          1319,
+          1463,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G11-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1494,
+          1355
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 43.04556829088668,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1483,
+          1319,
+          1531,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G11-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1510,
+          1355
+        ],
+        "peak_gray": 244.0,
+        "local_residual": 58.737909000300306,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1483,
+          1319,
+          1531,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G11-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1521,
+          1355
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 42.36810619590065,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1483,
+          1319,
+          1531,
+          1379
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G12-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1567,
+          1355
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 57.545233467635995,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1551,
+          1318,
+          1609,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G12-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1583,
+          1355
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 47.119074860507595,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1551,
+          1318,
+          1609,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G12-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1598,
+          1355
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 52.79918750317324,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1551,
+          1318,
+          1609,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G13-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1640,
+          1355
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 46.54094484530597,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1629,
+          1318,
+          1682,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G13-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1656,
+          1355
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 40.18029828783753,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1629,
+          1318,
+          1682,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G13-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1666,
+          1355
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 39.44803672733926,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1629,
+          1318,
+          1682,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G14-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1713,
+          1355
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 45.7728912509715,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1702,
+          1318,
+          1755,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G14-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1729,
+          1355
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 51.69932180493248,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1702,
+          1318,
+          1755,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G14-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1744,
+          1355
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 45.339028345240536,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1702,
+          1318,
+          1755,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G15-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1786,
+          1355
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 56.63489326195662,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1775,
+          1318,
+          1828,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G15-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1801,
+          1355
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 41.87105573616739,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1775,
+          1318,
+          1828,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G18-G15-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1817,
+          1355
+        ],
+        "peak_gray": 242.0,
+        "local_residual": 47.10605095277407,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1775,
+          1318,
+          1828,
+          1378
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G01-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          27,
+          2690
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 56.92198309941986,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          15,
+          2684,
+          101,
+          2744
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G01-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          42,
+          2690
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 79.12001827773867,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          15,
+          2684,
+          101,
+          2744
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G01-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          57,
+          2690
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 64.33793935842121,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          15,
+          2684,
+          101,
+          2744
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G01-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          74,
+          2690
+        ],
+        "peak_gray": 230.0,
+        "local_residual": 61.03739670272472,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          15,
+          2684,
+          101,
+          2744
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G01-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          85,
+          2690
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 61.440662532342145,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          15,
+          2684,
+          101,
+          2744
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G02-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          135,
+          2689
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 66.25160715216194,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          121,
+          2682,
+          210,
+          2742
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G02-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          151,
+          2689
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 59.540351520696504,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          121,
+          2682,
+          210,
+          2742
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G02-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          166,
+          2689
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 80.58625689567364,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          121,
+          2682,
+          210,
+          2742
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G02-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          182,
+          2689
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 62.78496908482245,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          121,
+          2682,
+          210,
+          2742
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G02-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          198,
+          2689
+        ],
+        "peak_gray": 220.0,
+        "local_residual": 61.53949893692365,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          121,
+          2682,
+          210,
+          2742
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G03-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          246,
+          2687
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 52.59120523747552,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          230,
+          2680,
+          320,
+          2740
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G03-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          259,
+          2687
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 54.772817406503805,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          230,
+          2680,
+          320,
+          2740
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G03-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          276,
+          2687
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 57.41706719205973,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          230,
+          2680,
+          320,
+          2740
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G03-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          288,
+          2687
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 56.15862832436818,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          230,
+          2680,
+          320,
+          2740
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G03-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          307,
+          2687
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 61.44365856272131,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          230,
+          2680,
+          320,
+          2740
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G04-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          355,
+          2686
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 57.07049754544971,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          340,
+          2678,
+          435,
+          2738
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G04-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          371,
+          2686
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 60.114522624539546,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          340,
+          2678,
+          435,
+          2738
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G04-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          386,
+          2686
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 62.738456331733715,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          340,
+          2678,
+          435,
+          2738
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G04-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          402,
+          2686
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 57.16921849816836,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          340,
+          2678,
+          435,
+          2738
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G04-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          413,
+          2686
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 57.70926819338396,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          340,
+          2678,
+          435,
+          2738
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G05-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          469,
+          2684
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 55.77401346291805,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          455,
+          2676,
+          545,
+          2736
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G05-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          480,
+          2684
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 58.878333350708175,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          455,
+          2676,
+          545,
+          2736
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G05-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          497,
+          2684
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 56.994414698673324,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          455,
+          2676,
+          545,
+          2736
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G05-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          511,
+          2684
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 61.30246635017701,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          455,
+          2676,
+          545,
+          2736
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G05-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          527,
+          2684
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 55.91208493383624,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          455,
+          2676,
+          545,
+          2736
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G06-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          579,
+          2682
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 51.663715908967106,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          565,
+          2674,
+          655,
+          2734
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G06-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          595,
+          2682
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 49.01700310041306,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          565,
+          2674,
+          655,
+          2734
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G06-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          606,
+          2682
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 56.62857607435615,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          565,
+          2674,
+          655,
+          2734
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G06-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          622,
+          2682
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 60.730553367446106,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          565,
+          2674,
+          655,
+          2734
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G06-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          637,
+          2682
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 55.94401749483174,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          565,
+          2674,
+          655,
+          2734
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G07-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          690,
+          2681
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 51.16898661069348,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          675,
+          2673,
+          718,
+          2733
+        ]
+      }
+    },
+    {
+      "id": "LL-G33-G07-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          700,
+          2681
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 55.720871583452464,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          675,
+          2673,
+          718,
+          2733
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G01-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          94,
+          3747
+        ],
+        "peak_gray": 235.0,
+        "local_residual": 50.482650731167666,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          77,
+          3724,
+          160,
+          3784
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G01-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          108,
+          3747
+        ],
+        "peak_gray": 230.0,
+        "local_residual": 54.26776395122866,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          77,
+          3724,
+          160,
+          3784
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G01-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          123,
+          3747
+        ],
+        "peak_gray": 232.0,
+        "local_residual": 50.24941619331898,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          77,
+          3724,
+          160,
+          3784
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G01-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          138,
+          3747
+        ],
+        "peak_gray": 212.0,
+        "local_residual": 48.818317063922024,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          77,
+          3724,
+          160,
+          3784
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G01-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          151,
+          3747
+        ],
+        "peak_gray": 226.0,
+        "local_residual": 53.36001687793561,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          77,
+          3724,
+          160,
+          3784
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G02-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          198,
+          3746
+        ],
+        "peak_gray": 237.0,
+        "local_residual": 61.064117050433794,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          180,
+          3721,
+          266,
+          3781
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G02-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          213,
+          3746
+        ],
+        "peak_gray": 237.0,
+        "local_residual": 57.562536240610086,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          180,
+          3721,
+          266,
+          3781
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G02-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          228,
+          3746
+        ],
+        "peak_gray": 237.0,
+        "local_residual": 65.68396306278692,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          180,
+          3721,
+          266,
+          3781
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G02-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          242,
+          3746
+        ],
+        "peak_gray": 243.0,
+        "local_residual": 63.97998932255712,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          180,
+          3721,
+          266,
+          3781
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G03-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          306,
+          3745
+        ],
+        "peak_gray": 237.0,
+        "local_residual": 51.28888236627313,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          286,
+          3719,
+          373,
+          3779
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G03-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          319,
+          3745
+        ],
+        "peak_gray": 238.0,
+        "local_residual": 60.937239913117764,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          286,
+          3719,
+          373,
+          3779
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G03-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          334,
+          3745
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 59.393258343892995,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          286,
+          3719,
+          373,
+          3779
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G03-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          347,
+          3745
+        ],
+        "peak_gray": 243.0,
+        "local_residual": 63.45658813581062,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          286,
+          3719,
+          373,
+          3779
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G03-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          363,
+          3745
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 70.01715167891217,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          286,
+          3719,
+          373,
+          3779
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G04-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          410,
+          3744
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 61.9578892631809,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          393,
+          3716,
+          482,
+          3776
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G04-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          426,
+          3744
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 62.53460662787219,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          393,
+          3716,
+          482,
+          3776
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G04-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          439,
+          3744
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 73.13592563000535,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          393,
+          3716,
+          482,
+          3776
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G04-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          454,
+          3744
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 73.56045974895233,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          393,
+          3716,
+          482,
+          3776
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G04-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          466,
+          3744
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 69.15272964799675,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          393,
+          3716,
+          482,
+          3776
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G05-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          506,
+          3773
+        ],
+        "peak_gray": 245.0,
+        "local_residual": 88.2300234191205,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          502,
+          3714,
+          588,
+          3774
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G05-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          521,
+          3773
+        ],
+        "peak_gray": 245.0,
+        "local_residual": 90.71553720104401,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          502,
+          3714,
+          588,
+          3774
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G05-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          532,
+          3773
+        ],
+        "peak_gray": 238.0,
+        "local_residual": 82.70277756185567,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          502,
+          3714,
+          588,
+          3774
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G05-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          551,
+          3773
+        ],
+        "peak_gray": 234.0,
+        "local_residual": 78.89495700512146,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          502,
+          3714,
+          588,
+          3774
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G05-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          562,
+          3773
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 85.91279683071403,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          502,
+          3714,
+          588,
+          3774
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G05-OBS05",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          577,
+          3773
+        ],
+        "peak_gray": 227.0,
+        "local_residual": 74.83446600653176,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          502,
+          3714,
+          588,
+          3774
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G06-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          625,
+          3741
+        ],
+        "peak_gray": 244.0,
+        "local_residual": 71.81974151430614,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          608,
+          3711,
+          695,
+          3771
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G06-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          641,
+          3741
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 75.14605826385079,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          608,
+          3711,
+          695,
+          3771
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G06-OBS02",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          652,
+          3741
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 75.9033029060098,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          608,
+          3711,
+          695,
+          3771
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G06-OBS03",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          667,
+          3741
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 74.88841040855888,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          608,
+          3711,
+          695,
+          3771
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G06-OBS04",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          682,
+          3741
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 80.30156912527036,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          608,
+          3711,
+          695,
+          3771
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G07-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          732,
+          3739
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 71.77493608514288,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          715,
+          3709,
+          756,
+          3769
+        ]
+      }
+    },
+    {
+      "id": "LL-G34-G07-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          743,
+          3739
+        ],
+        "peak_gray": 251.0,
+        "local_residual": 75.91750453524804,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          715,
+          3709,
+          756,
+          3769
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G01-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          924,
+          2947
+        ],
+        "peak_gray": 223.0,
+        "local_residual": 65.58515661803787,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          911,
+          2914,
+          952,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G01-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          939,
+          2947
+        ],
+        "peak_gray": 224.0,
+        "local_residual": 64.0622324639364,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          911,
+          2914,
+          952,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G03-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1047,
+          2945
+        ],
+        "peak_gray": 225.0,
+        "local_residual": 64.95656054981609,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1035,
+          2912,
+          1076,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G04-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1108,
+          2944
+        ],
+        "peak_gray": 228.0,
+        "local_residual": 66.62912306357492,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1096,
+          2911,
+          1132,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G04-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1124,
+          2944
+        ],
+        "peak_gray": 234.0,
+        "local_residual": 73.93767303613811,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1096,
+          2911,
+          1132,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G05-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1169,
+          2944
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 72.88748944226211,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1152,
+          2910,
+          1192,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G05-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1184,
+          2944
+        ],
+        "peak_gray": 239.0,
+        "local_residual": 74.17464898212458,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1152,
+          2910,
+          1192,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G06-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1230,
+          2943
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 77.31329032809674,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1212,
+          2909,
+          1258,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G06-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1245,
+          2943
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 77.02945489927293,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1212,
+          2909,
+          1258,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G07-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1291,
+          2942
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 77.73305647647445,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1278,
+          2908,
+          1314,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G07-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1306,
+          2942
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 78.17274360138316,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1278,
+          2908,
+          1314,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G08-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1351,
+          2942
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 78.75634154898856,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1334,
+          2907,
+          1375,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G08-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1366,
+          2942
+        ],
+        "peak_gray": 244.0,
+        "local_residual": 87.77810314224288,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1334,
+          2907,
+          1375,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G09-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1412,
+          2941
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 71.14993843095317,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1395,
+          2906,
+          1441,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G09-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1427,
+          2941
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 83.82758578307786,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1395,
+          2906,
+          1441,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G10-OBS00",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1472,
+          2940
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 70.89712224793544,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1461,
+          2906,
+          1502,
+          2966
+        ]
+      }
+    },
+    {
+      "id": "LL-G35-G10-OBS01",
+      "evidence_tier": "terminal_2d_measured_local_peak",
+      "source_observation": {
+        "source_native_center_xy": [
+          1487,
+          2940
+        ],
+        "peak_gray": 233.0,
+        "local_residual": 70.33101538245893,
+        "evidence_type": "2d_terminal_row_peaks_after_AI_material_correspondence",
+        "source_roi": [
+          1461,
+          2906,
+          1502,
+          2966
+        ]
+      }
+    }
+  ],
+  "terminal_measurements": [
+    {
+      "gate_id": "G21-P01",
+      "side": "top",
+      "left_column": "LL-STAIR1-SD1",
+      "right_column": "LL-STAIR1-SD2",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        180,
+        1323,
+        218,
+        1383
+      ],
+      "source_row_bbox": [
+        180,
+        1336,
+        218,
+        1349
+      ],
+      "prior_derived_endpoint_y": 1353.0,
+      "observations": [
+        {
+          "native_center": [
+            191,
+            1342
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 52.717865668885366,
+          "profile_gray": 246.34295654296875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            206,
+            1342
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 44.572430704010856,
+          "profile_gray": 247.1313934326172,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            191,
+            1342
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 52.717865668885366,
+          "profile_gray": 246.34295654296875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            206,
+            1342
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 44.572430704010856,
+          "profile_gray": 247.1313934326172,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-STAIR1-GATE"
+    },
+    {
+      "gate_id": "G22-P01",
+      "side": "top",
+      "left_column": "LL-STAIR2-SD1",
+      "right_column": "LL-STAIR2-SD2",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        264,
+        1320,
+        303,
+        1380
+      ],
+      "source_row_bbox": [
+        264,
+        1336,
+        303,
+        1349
+      ],
+      "prior_derived_endpoint_y": 1350.0,
+      "observations": [
+        {
+          "native_center": [
+            280,
+            1342
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 34.67557102283223,
+          "profile_gray": 244.1695556640625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            291,
+            1342
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 43.95048383219748,
+          "profile_gray": 247.60166931152344,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            280,
+            1342
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 34.67557102283223,
+          "profile_gray": 244.1695556640625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            291,
+            1342
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 43.95048383219748,
+          "profile_gray": 247.60166931152344,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-STAIR2-GATE"
+    },
+    {
+      "gate_id": "G23-P01",
+      "side": "top",
+      "left_column": "LL-STAIR3-SD1",
+      "right_column": "LL-STAIR3-SD2",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        356,
+        1318,
+        388,
+        1378
+      ],
+      "source_row_bbox": [
+        356,
+        1335,
+        388,
+        1348
+      ],
+      "prior_derived_endpoint_y": 1348.0,
+      "observations": [
+        {
+          "native_center": [
+            360,
+            1341
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 48.48323986109071,
+          "profile_gray": 241.9713592529297,
+          "supported": true
+        },
+        {
+          "native_center": [
+            376,
+            1341
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 60.499803956703374,
+          "profile_gray": 241.67832946777344,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            360,
+            1341
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 48.48323986109071,
+          "profile_gray": 241.9713592529297,
+          "supported": true
+        },
+        {
+          "native_center": [
+            376,
+            1341
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 60.499803956703374,
+          "profile_gray": 241.67832946777344,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-STAIR3-GATE"
+    },
+    {
+      "gate_id": "G24-P01",
+      "side": "top",
+      "left_column": "LL-STAIR4-SD1",
+      "right_column": "LL-STAIR4-SD2",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        434,
+        1315,
+        473,
+        1375
+      ],
+      "source_row_bbox": [
+        434,
+        1335,
+        473,
+        1348
+      ],
+      "prior_derived_endpoint_y": 1345.0,
+      "observations": [
+        {
+          "native_center": [
+            446,
+            1341
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 49.53405189929546,
+          "profile_gray": 249.47769165039062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            462,
+            1341
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 45.74332451974482,
+          "profile_gray": 245.999267578125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            446,
+            1341
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 49.53405189929546,
+          "profile_gray": 249.47769165039062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            462,
+            1341
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 45.74332451974482,
+          "profile_gray": 245.999267578125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-STAIR4-GATE"
+    },
+    {
+      "gate_id": "G25-P01",
+      "side": "top",
+      "left_column": "LL-STAIR5-SD1",
+      "right_column": "LL-STAIR5-SD2",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        520,
+        1312,
+        559,
+        1372
+      ],
+      "source_row_bbox": [
+        520,
+        1339,
+        559,
+        1352
+      ],
+      "prior_derived_endpoint_y": 1342.0,
+      "observations": [
+        {
+          "native_center": [
+            536,
+            1345
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 32.57196449402656,
+          "profile_gray": 244.0760955810547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            548,
+            1345
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 39.14516271001307,
+          "profile_gray": 249.77430725097656,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            536,
+            1345
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 32.57196449402656,
+          "profile_gray": 244.0760955810547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            548,
+            1345
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 39.14516271001307,
+          "profile_gray": 249.77430725097656,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-STAIR5-GATE"
+    },
+    {
+      "gate_id": "G18-P01",
+      "side": "top",
+      "left_column": "LL-G18-SD01",
+      "right_column": "LL-G18-SD02",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        745,
+        1322,
+        799,
+        1382
+      ],
+      "source_row_bbox": [
+        745,
+        1356,
+        799,
+        1369
+      ],
+      "prior_derived_endpoint_y": 1352.0,
+      "observations": [
+        {
+          "native_center": [
+            758,
+            1362
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 61.39685007458479,
+          "profile_gray": 230.48785400390625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            773,
+            1362
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 46.808585696198776,
+          "profile_gray": 247.40687561035156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            789,
+            1362
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 60.09106281754211,
+          "profile_gray": 246.20909118652344,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            758,
+            1362
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 61.39685007458479,
+          "profile_gray": 230.48785400390625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            773,
+            1362
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 46.808585696198776,
+          "profile_gray": 247.40687561035156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            789,
+            1362
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 60.09106281754211,
+          "profile_gray": 246.20909118652344,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G01"
+    },
+    {
+      "gate_id": "G18-P02",
+      "side": "top",
+      "left_column": "LL-G18-SD02",
+      "right_column": "LL-G18-SD03",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        819,
+        1321,
+        874,
+        1381
+      ],
+      "source_row_bbox": [
+        819,
+        1356,
+        874,
+        1369
+      ],
+      "prior_derived_endpoint_y": 1351.7142857142858,
+      "observations": [
+        {
+          "native_center": [
+            831,
+            1362
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 45.55647065798473,
+          "profile_gray": 246.47216796875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            852,
+            1362
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 42.69320991862301,
+          "profile_gray": 243.55641174316406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            863,
+            1362
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 48.19429145783579,
+          "profile_gray": 246.45510864257812,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            831,
+            1362
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 45.55647065798473,
+          "profile_gray": 246.47216796875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            852,
+            1362
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 42.69320991862301,
+          "profile_gray": 243.55641174316406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            863,
+            1362
+          ],
+          "peak_gray": 254.0,
+          "local_residual": 48.19429145783579,
+          "profile_gray": 246.45510864257812,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G02"
+    },
+    {
+      "gate_id": "G18-P03",
+      "side": "top",
+      "left_column": "LL-G18-SD03",
+      "right_column": "LL-G18-SD04",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        894,
+        1321,
+        948,
+        1381
+      ],
+      "source_row_bbox": [
+        894,
+        1319,
+        948,
+        1332
+      ],
+      "prior_derived_endpoint_y": 1351.4285714285716,
+      "observations": [
+        {
+          "native_center": [
+            915,
+            1325
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 69.53943861148664,
+          "profile_gray": 237.40283203125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            930,
+            1325
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.69219163275258,
+          "profile_gray": 245.2447967529297,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            915,
+            1325
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 69.53943861148664,
+          "profile_gray": 237.40283203125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            930,
+            1325
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.69219163275258,
+          "profile_gray": 245.2447967529297,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G03"
+    },
+    {
+      "gate_id": "G18-P04",
+      "side": "top",
+      "left_column": "LL-G18-SD04",
+      "right_column": "LL-G18-SD05",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        968,
+        1321,
+        1021,
+        1381
+      ],
+      "source_row_bbox": [
+        968,
+        1356,
+        1021,
+        1369
+      ],
+      "prior_derived_endpoint_y": 1351.142857142857,
+      "observations": [
+        {
+          "native_center": [
+            979,
+            1362
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 69.6979135977333,
+          "profile_gray": 226.5699005126953,
+          "supported": true
+        },
+        {
+          "native_center": [
+            995,
+            1362
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 51.80757701945922,
+          "profile_gray": 243.30804443359375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1011,
+            1362
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 61.66216808492581,
+          "profile_gray": 241.7958221435547,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            979,
+            1362
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 69.6979135977333,
+          "profile_gray": 226.5699005126953,
+          "supported": true
+        },
+        {
+          "native_center": [
+            995,
+            1362
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 51.80757701945922,
+          "profile_gray": 243.30804443359375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1011,
+            1362
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 61.66216808492581,
+          "profile_gray": 241.7958221435547,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G04"
+    },
+    {
+      "gate_id": "G18-P05",
+      "side": "top",
+      "left_column": "LL-G18-SD05",
+      "right_column": "LL-G18-SD06",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1041,
+        1320,
+        1095,
+        1380
+      ],
+      "source_row_bbox": [
+        1041,
+        1355,
+        1095,
+        1368
+      ],
+      "prior_derived_endpoint_y": 1350.857142857143,
+      "observations": [
+        {
+          "native_center": [
+            1053,
+            1361
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 47.75693552435541,
+          "profile_gray": 246.47283935546875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1069,
+            1361
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 41.226639182146585,
+          "profile_gray": 243.06578063964844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1084,
+            1361
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 51.00993914619855,
+          "profile_gray": 237.59356689453125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1053,
+            1361
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 47.75693552435541,
+          "profile_gray": 246.47283935546875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1069,
+            1361
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 41.226639182146585,
+          "profile_gray": 243.06578063964844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1084,
+            1361
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 51.00993914619855,
+          "profile_gray": 237.59356689453125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G05"
+    },
+    {
+      "gate_id": "G18-P06",
+      "side": "top",
+      "left_column": "LL-G18-SD06",
+      "right_column": "LL-G18-SD07",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1115,
+        1320,
+        1168,
+        1380
+      ],
+      "source_row_bbox": [
+        1115,
+        1355,
+        1168,
+        1368
+      ],
+      "prior_derived_endpoint_y": 1350.5714285714284,
+      "observations": [
+        {
+          "native_center": [
+            1126,
+            1361
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 46.51362193595844,
+          "profile_gray": 245.39163208007812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1142,
+            1361
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 61.05765998672027,
+          "profile_gray": 241.23350524902344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1157,
+            1361
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 46.729707888772936,
+          "profile_gray": 240.9429473876953,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1126,
+            1361
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 46.51362193595844,
+          "profile_gray": 245.39163208007812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1142,
+            1361
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 61.05765998672027,
+          "profile_gray": 241.23350524902344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1157,
+            1361
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 46.729707888772936,
+          "profile_gray": 240.9429473876953,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G06"
+    },
+    {
+      "gate_id": "G18-P07",
+      "side": "top",
+      "left_column": "LL-G18-SD07",
+      "right_column": "LL-G18-SD08",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1188,
+        1320,
+        1241,
+        1380
+      ],
+      "source_row_bbox": [
+        1188,
+        1314,
+        1241,
+        1327
+      ],
+      "prior_derived_endpoint_y": 1350.2857142857142,
+      "observations": [
+        {
+          "native_center": [
+            1203,
+            1320
+          ],
+          "peak_gray": 226.0,
+          "local_residual": 48.940845869157954,
+          "profile_gray": 205.52110290527344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1213,
+            1320
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 44.93787279458931,
+          "profile_gray": 245.02883911132812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1229,
+            1320
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 63.28037199130827,
+          "profile_gray": 228.61502075195312,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1203,
+            1320
+          ],
+          "peak_gray": 226.0,
+          "local_residual": 48.940845869157954,
+          "profile_gray": 205.52110290527344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1213,
+            1320
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 44.93787279458931,
+          "profile_gray": 245.02883911132812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1229,
+            1320
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 63.28037199130827,
+          "profile_gray": 228.61502075195312,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G07"
+    },
+    {
+      "gate_id": "G18-P08",
+      "side": "top",
+      "left_column": "LL-G18-SD08",
+      "right_column": "LL-G18-SD09",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1261,
+        1320,
+        1313,
+        1380
+      ],
+      "source_row_bbox": [
+        1261,
+        1354,
+        1313,
+        1367
+      ],
+      "prior_derived_endpoint_y": 1350.0,
+      "observations": [
+        {
+          "native_center": [
+            1272,
+            1360
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.14261711144334,
+          "profile_gray": 242.7033233642578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1287,
+            1360
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 55.26971830265808,
+          "profile_gray": 232.78204345703125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1303,
+            1360
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 48.980396636743194,
+          "profile_gray": 237.9984130859375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1272,
+            1360
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.14261711144334,
+          "profile_gray": 242.7033233642578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1287,
+            1360
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 55.26971830265808,
+          "profile_gray": 232.78204345703125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1303,
+            1360
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 48.980396636743194,
+          "profile_gray": 237.9984130859375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G08"
+    },
+    {
+      "gate_id": "G18-P09",
+      "side": "top",
+      "left_column": "LL-G18-SD09",
+      "right_column": "LL-G18-SD10",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1333,
+        1319,
+        1386,
+        1379
+      ],
+      "source_row_bbox": [
+        1333,
+        1350,
+        1386,
+        1363
+      ],
+      "prior_derived_endpoint_y": 1349.7142857142858,
+      "observations": [
+        {
+          "native_center": [
+            1349,
+            1356
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 38.63322477758717,
+          "profile_gray": 243.8738250732422,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1360,
+            1356
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 39.93752938557657,
+          "profile_gray": 239.30284118652344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1376,
+            1356
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 42.53264464913079,
+          "profile_gray": 242.3213348388672,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1349,
+            1356
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 38.63322477758717,
+          "profile_gray": 243.8738250732422,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1360,
+            1356
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 39.93752938557657,
+          "profile_gray": 239.30284118652344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1376,
+            1356
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 42.53264464913079,
+          "profile_gray": 242.3213348388672,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G09"
+    },
+    {
+      "gate_id": "G18-P10",
+      "side": "top",
+      "left_column": "LL-G18-SD10",
+      "right_column": "LL-G18-SD11",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1406,
+        1319,
+        1463,
+        1379
+      ],
+      "source_row_bbox": [
+        1406,
+        1349,
+        1463,
+        1362
+      ],
+      "prior_derived_endpoint_y": 1349.4285714285716,
+      "observations": [
+        {
+          "native_center": [
+            1417,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 55.393959183542734,
+          "profile_gray": 239.05270385742188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1437,
+            1355
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 40.78790537137536,
+          "profile_gray": 244.30303955078125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1448,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 51.35170177002712,
+          "profile_gray": 242.9443359375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1417,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 55.393959183542734,
+          "profile_gray": 239.05270385742188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1437,
+            1355
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 40.78790537137536,
+          "profile_gray": 244.30303955078125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1448,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 51.35170177002712,
+          "profile_gray": 242.9443359375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G10"
+    },
+    {
+      "gate_id": "G18-P11",
+      "side": "top",
+      "left_column": "LL-G18-SD11",
+      "right_column": "LL-G18-SD12",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1483,
+        1319,
+        1531,
+        1379
+      ],
+      "source_row_bbox": [
+        1483,
+        1349,
+        1531,
+        1362
+      ],
+      "prior_derived_endpoint_y": 1349.142857142857,
+      "observations": [
+        {
+          "native_center": [
+            1494,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 43.04556829088668,
+          "profile_gray": 244.93240356445312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1510,
+            1355
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 58.737909000300306,
+          "profile_gray": 225.63150024414062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1521,
+            1355
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 42.36810619590065,
+          "profile_gray": 240.66815185546875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1494,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 43.04556829088668,
+          "profile_gray": 244.93240356445312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1510,
+            1355
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 58.737909000300306,
+          "profile_gray": 225.63150024414062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1521,
+            1355
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 42.36810619590065,
+          "profile_gray": 240.66815185546875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G11"
+    },
+    {
+      "gate_id": "G18-P12",
+      "side": "top",
+      "left_column": "LL-G18-SD12",
+      "right_column": "LL-G18-SD13",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1551,
+        1318,
+        1609,
+        1378
+      ],
+      "source_row_bbox": [
+        1551,
+        1349,
+        1609,
+        1362
+      ],
+      "prior_derived_endpoint_y": 1348.857142857143,
+      "observations": [
+        {
+          "native_center": [
+            1567,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 57.545233467635995,
+          "profile_gray": 244.24505615234375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1583,
+            1355
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 47.119074860507595,
+          "profile_gray": 238.4414825439453,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1598,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 52.79918750317324,
+          "profile_gray": 243.51171875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1567,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 57.545233467635995,
+          "profile_gray": 244.24505615234375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1583,
+            1355
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 47.119074860507595,
+          "profile_gray": 238.4414825439453,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1598,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 52.79918750317324,
+          "profile_gray": 243.51171875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G12"
+    },
+    {
+      "gate_id": "G18-P13",
+      "side": "top",
+      "left_column": "LL-G18-SD13",
+      "right_column": "LL-G18-SD14",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1629,
+        1318,
+        1682,
+        1378
+      ],
+      "source_row_bbox": [
+        1629,
+        1349,
+        1682,
+        1362
+      ],
+      "prior_derived_endpoint_y": 1348.5714285714284,
+      "observations": [
+        {
+          "native_center": [
+            1640,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 46.54094484530597,
+          "profile_gray": 240.88011169433594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1656,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.18029828783753,
+          "profile_gray": 245.65977478027344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1666,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 39.44803672733926,
+          "profile_gray": 241.3921661376953,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1640,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 46.54094484530597,
+          "profile_gray": 240.88011169433594,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1656,
+            1355
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 40.18029828783753,
+          "profile_gray": 245.65977478027344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1666,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 39.44803672733926,
+          "profile_gray": 241.3921661376953,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G13"
+    },
+    {
+      "gate_id": "G18-P14",
+      "side": "top",
+      "left_column": "LL-G18-SD14",
+      "right_column": "LL-G18-SD15",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1702,
+        1318,
+        1755,
+        1378
+      ],
+      "source_row_bbox": [
+        1702,
+        1349,
+        1755,
+        1362
+      ],
+      "prior_derived_endpoint_y": 1348.2857142857142,
+      "observations": [
+        {
+          "native_center": [
+            1713,
+            1355
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 45.7728912509715,
+          "profile_gray": 245.57666015625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1729,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.69932180493248,
+          "profile_gray": 241.3774871826172,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1744,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.339028345240536,
+          "profile_gray": 242.8923797607422,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1713,
+            1355
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 45.7728912509715,
+          "profile_gray": 245.57666015625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1729,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.69932180493248,
+          "profile_gray": 241.3774871826172,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1744,
+            1355
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.339028345240536,
+          "profile_gray": 242.8923797607422,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G14"
+    },
+    {
+      "gate_id": "G18-P15",
+      "side": "top",
+      "left_column": "LL-G18-SD15",
+      "right_column": "LL-G18-SD16",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1775,
+        1318,
+        1828,
+        1378
+      ],
+      "source_row_bbox": [
+        1775,
+        1349,
+        1828,
+        1362
+      ],
+      "prior_derived_endpoint_y": 1348.0,
+      "observations": [
+        {
+          "native_center": [
+            1786,
+            1355
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 56.63489326195662,
+          "profile_gray": 233.97605895996094,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1801,
+            1355
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 41.87105573616739,
+          "profile_gray": 242.07757568359375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1817,
+            1355
+          ],
+          "peak_gray": 242.0,
+          "local_residual": 47.10605095277407,
+          "profile_gray": 234.96592712402344,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1786,
+            1355
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 56.63489326195662,
+          "profile_gray": 233.97605895996094,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1801,
+            1355
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 41.87105573616739,
+          "profile_gray": 242.07757568359375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1817,
+            1355
+          ],
+          "peak_gray": 242.0,
+          "local_residual": 47.10605095277407,
+          "profile_gray": 234.96592712402344,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G18-G15"
+    },
+    {
+      "gate_id": "G33-P01",
+      "side": "top",
+      "left_column": "LL-G33-SD01",
+      "right_column": "LL-G33-SD02",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        15,
+        2684,
+        101,
+        2744
+      ],
+      "source_row_bbox": [
+        15,
+        2684,
+        101,
+        2697
+      ],
+      "prior_derived_endpoint_y": 2714.0,
+      "observations": [
+        {
+          "native_center": [
+            27,
+            2690
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 56.92198309941986,
+          "profile_gray": 243.9903106689453,
+          "supported": true
+        },
+        {
+          "native_center": [
+            42,
+            2690
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 79.12001827773867,
+          "profile_gray": 231.21546936035156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            57,
+            2690
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 64.33793935842121,
+          "profile_gray": 241.60328674316406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            74,
+            2690
+          ],
+          "peak_gray": 230.0,
+          "local_residual": 61.03739670272472,
+          "profile_gray": 206.9245147705078,
+          "supported": true
+        },
+        {
+          "native_center": [
+            85,
+            2690
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 61.440662532342145,
+          "profile_gray": 229.46275329589844,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            27,
+            2690
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 56.92198309941986,
+          "profile_gray": 243.9903106689453,
+          "supported": true
+        },
+        {
+          "native_center": [
+            42,
+            2690
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 79.12001827773867,
+          "profile_gray": 231.21546936035156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            57,
+            2690
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 64.33793935842121,
+          "profile_gray": 241.60328674316406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            74,
+            2690
+          ],
+          "peak_gray": 230.0,
+          "local_residual": 61.03739670272472,
+          "profile_gray": 206.9245147705078,
+          "supported": true
+        },
+        {
+          "native_center": [
+            85,
+            2690
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 61.440662532342145,
+          "profile_gray": 229.46275329589844,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G01"
+    },
+    {
+      "gate_id": "G33-P02",
+      "side": "top",
+      "left_column": "LL-G33-SD02",
+      "right_column": "LL-G33-SD03",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        121,
+        2682,
+        210,
+        2742
+      ],
+      "source_row_bbox": [
+        121,
+        2683,
+        210,
+        2696
+      ],
+      "prior_derived_endpoint_y": 2712.166666666667,
+      "observations": [
+        {
+          "native_center": [
+            135,
+            2689
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 66.25160715216194,
+          "profile_gray": 242.26246643066406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            151,
+            2689
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 59.540351520696504,
+          "profile_gray": 241.0929718017578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            166,
+            2689
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 80.58625689567364,
+          "profile_gray": 235.10214233398438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            182,
+            2689
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 62.78496908482245,
+          "profile_gray": 238.9486846923828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            198,
+            2689
+          ],
+          "peak_gray": 220.0,
+          "local_residual": 61.53949893692365,
+          "profile_gray": 193.7860107421875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            135,
+            2689
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 66.25160715216194,
+          "profile_gray": 242.26246643066406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            151,
+            2689
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 59.540351520696504,
+          "profile_gray": 241.0929718017578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            166,
+            2689
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 80.58625689567364,
+          "profile_gray": 235.10214233398438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            182,
+            2689
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 62.78496908482245,
+          "profile_gray": 238.9486846923828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            198,
+            2689
+          ],
+          "peak_gray": 220.0,
+          "local_residual": 61.53949893692365,
+          "profile_gray": 193.7860107421875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G02"
+    },
+    {
+      "gate_id": "G33-P03",
+      "side": "top",
+      "left_column": "LL-G33-SD03",
+      "right_column": "LL-G33-SD04",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        230,
+        2680,
+        320,
+        2740
+      ],
+      "source_row_bbox": [
+        230,
+        2681,
+        320,
+        2694
+      ],
+      "prior_derived_endpoint_y": 2710.3333333333335,
+      "observations": [
+        {
+          "native_center": [
+            246,
+            2687
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 52.59120523747552,
+          "profile_gray": 234.99453735351562,
+          "supported": true
+        },
+        {
+          "native_center": [
+            259,
+            2687
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 54.772817406503805,
+          "profile_gray": 236.75521850585938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            276,
+            2687
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 57.41706719205973,
+          "profile_gray": 241.9645538330078,
+          "supported": true
+        },
+        {
+          "native_center": [
+            288,
+            2687
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 56.15862832436818,
+          "profile_gray": 234.39175415039062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            307,
+            2687
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 61.44365856272131,
+          "profile_gray": 235.44973754882812,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            246,
+            2687
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 52.59120523747552,
+          "profile_gray": 234.99453735351562,
+          "supported": true
+        },
+        {
+          "native_center": [
+            259,
+            2687
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 54.772817406503805,
+          "profile_gray": 236.75521850585938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            276,
+            2687
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 57.41706719205973,
+          "profile_gray": 241.9645538330078,
+          "supported": true
+        },
+        {
+          "native_center": [
+            288,
+            2687
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 56.15862832436818,
+          "profile_gray": 234.39175415039062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            307,
+            2687
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 61.44365856272131,
+          "profile_gray": 235.44973754882812,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G03"
+    },
+    {
+      "gate_id": "G33-P04",
+      "side": "top",
+      "left_column": "LL-G33-SD04",
+      "right_column": "LL-G33-SD05",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        340,
+        2678,
+        435,
+        2738
+      ],
+      "source_row_bbox": [
+        340,
+        2680,
+        435,
+        2693
+      ],
+      "prior_derived_endpoint_y": 2708.5,
+      "observations": [
+        {
+          "native_center": [
+            355,
+            2686
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.07049754544971,
+          "profile_gray": 241.84088134765625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            371,
+            2686
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 60.114522624539546,
+          "profile_gray": 240.33106994628906,
+          "supported": true
+        },
+        {
+          "native_center": [
+            386,
+            2686
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 62.738456331733715,
+          "profile_gray": 241.27777099609375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            402,
+            2686
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 57.16921849816836,
+          "profile_gray": 239.74029541015625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            413,
+            2686
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 57.70926819338396,
+          "profile_gray": 231.92550659179688,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            355,
+            2686
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.07049754544971,
+          "profile_gray": 241.84088134765625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            371,
+            2686
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 60.114522624539546,
+          "profile_gray": 240.33106994628906,
+          "supported": true
+        },
+        {
+          "native_center": [
+            386,
+            2686
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 62.738456331733715,
+          "profile_gray": 241.27777099609375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            402,
+            2686
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 57.16921849816836,
+          "profile_gray": 239.74029541015625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            413,
+            2686
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 57.70926819338396,
+          "profile_gray": 231.92550659179688,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G04"
+    },
+    {
+      "gate_id": "G33-P05",
+      "side": "top",
+      "left_column": "LL-G33-SD05",
+      "right_column": "LL-G33-SD06",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        455,
+        2676,
+        545,
+        2736
+      ],
+      "source_row_bbox": [
+        455,
+        2678,
+        545,
+        2691
+      ],
+      "prior_derived_endpoint_y": 2706.666666666667,
+      "observations": [
+        {
+          "native_center": [
+            469,
+            2684
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 55.77401346291805,
+          "profile_gray": 239.9988555908203,
+          "supported": true
+        },
+        {
+          "native_center": [
+            480,
+            2684
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 58.878333350708175,
+          "profile_gray": 243.0879669189453,
+          "supported": true
+        },
+        {
+          "native_center": [
+            497,
+            2684
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 56.994414698673324,
+          "profile_gray": 238.9989776611328,
+          "supported": true
+        },
+        {
+          "native_center": [
+            511,
+            2684
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 61.30246635017701,
+          "profile_gray": 242.34622192382812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            527,
+            2684
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 55.91208493383624,
+          "profile_gray": 243.7903594970703,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            469,
+            2684
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 55.77401346291805,
+          "profile_gray": 239.9988555908203,
+          "supported": true
+        },
+        {
+          "native_center": [
+            480,
+            2684
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 58.878333350708175,
+          "profile_gray": 243.0879669189453,
+          "supported": true
+        },
+        {
+          "native_center": [
+            497,
+            2684
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 56.994414698673324,
+          "profile_gray": 238.9989776611328,
+          "supported": true
+        },
+        {
+          "native_center": [
+            511,
+            2684
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 61.30246635017701,
+          "profile_gray": 242.34622192382812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            527,
+            2684
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 55.91208493383624,
+          "profile_gray": 243.7903594970703,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G05"
+    },
+    {
+      "gate_id": "G33-P06",
+      "side": "top",
+      "left_column": "LL-G33-SD06",
+      "right_column": "LL-G33-SD07",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        565,
+        2674,
+        655,
+        2734
+      ],
+      "source_row_bbox": [
+        565,
+        2676,
+        655,
+        2689
+      ],
+      "prior_derived_endpoint_y": 2704.833333333333,
+      "observations": [
+        {
+          "native_center": [
+            579,
+            2682
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 51.663715908967106,
+          "profile_gray": 233.56600952148438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            595,
+            2682
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 49.01700310041306,
+          "profile_gray": 236.7918701171875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            606,
+            2682
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 56.62857607435615,
+          "profile_gray": 247.71826171875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            622,
+            2682
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 60.730553367446106,
+          "profile_gray": 239.3583221435547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            637,
+            2682
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 55.94401749483174,
+          "profile_gray": 238.61117553710938,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            579,
+            2682
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 51.663715908967106,
+          "profile_gray": 233.56600952148438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            595,
+            2682
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 49.01700310041306,
+          "profile_gray": 236.7918701171875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            606,
+            2682
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 56.62857607435615,
+          "profile_gray": 247.71826171875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            622,
+            2682
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 60.730553367446106,
+          "profile_gray": 239.3583221435547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            637,
+            2682
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 55.94401749483174,
+          "profile_gray": 238.61117553710938,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G06"
+    },
+    {
+      "gate_id": "G33-P07",
+      "side": "top",
+      "left_column": "LL-G33-SD07",
+      "right_column": "LL-G33-SD08",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        675,
+        2673,
+        718,
+        2733
+      ],
+      "source_row_bbox": [
+        675,
+        2675,
+        718,
+        2688
+      ],
+      "prior_derived_endpoint_y": 2703.0,
+      "observations": [
+        {
+          "native_center": [
+            690,
+            2681
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.16898661069348,
+          "profile_gray": 238.66860961914062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            700,
+            2681
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 55.720871583452464,
+          "profile_gray": 242.7694854736328,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            690,
+            2681
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.16898661069348,
+          "profile_gray": 238.66860961914062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            700,
+            2681
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 55.720871583452464,
+          "profile_gray": 242.7694854736328,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G33-G07"
+    },
+    {
+      "gate_id": "G34-P01",
+      "side": "bottom",
+      "left_column": "LL-G34-SD01",
+      "right_column": "LL-G34-SD02",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        77,
+        3724,
+        160,
+        3784
+      ],
+      "source_row_bbox": [
+        77,
+        3741,
+        160,
+        3754
+      ],
+      "prior_derived_endpoint_y": 3754.0,
+      "observations": [
+        {
+          "native_center": [
+            94,
+            3747
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 50.482650731167666,
+          "profile_gray": 228.48233032226562,
+          "supported": true
+        },
+        {
+          "native_center": [
+            108,
+            3747
+          ],
+          "peak_gray": 230.0,
+          "local_residual": 54.26776395122866,
+          "profile_gray": 221.21047973632812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            123,
+            3747
+          ],
+          "peak_gray": 232.0,
+          "local_residual": 50.24941619331898,
+          "profile_gray": 226.45387268066406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            138,
+            3747
+          ],
+          "peak_gray": 212.0,
+          "local_residual": 48.818317063922024,
+          "profile_gray": 202.44717407226562,
+          "supported": true
+        },
+        {
+          "native_center": [
+            151,
+            3747
+          ],
+          "peak_gray": 226.0,
+          "local_residual": 53.36001687793561,
+          "profile_gray": 213.7317657470703,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            94,
+            3747
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 50.482650731167666,
+          "profile_gray": 228.48233032226562,
+          "supported": true
+        },
+        {
+          "native_center": [
+            108,
+            3747
+          ],
+          "peak_gray": 230.0,
+          "local_residual": 54.26776395122866,
+          "profile_gray": 221.21047973632812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            123,
+            3747
+          ],
+          "peak_gray": 232.0,
+          "local_residual": 50.24941619331898,
+          "profile_gray": 226.45387268066406,
+          "supported": true
+        },
+        {
+          "native_center": [
+            138,
+            3747
+          ],
+          "peak_gray": 212.0,
+          "local_residual": 48.818317063922024,
+          "profile_gray": 202.44717407226562,
+          "supported": true
+        },
+        {
+          "native_center": [
+            151,
+            3747
+          ],
+          "peak_gray": 226.0,
+          "local_residual": 53.36001687793561,
+          "profile_gray": 213.7317657470703,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G01"
+    },
+    {
+      "gate_id": "G34-P02",
+      "side": "bottom",
+      "left_column": "LL-G34-SD02",
+      "right_column": "LL-G34-SD03",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        180,
+        3721,
+        266,
+        3781
+      ],
+      "source_row_bbox": [
+        180,
+        3740,
+        266,
+        3753
+      ],
+      "prior_derived_endpoint_y": 3751.5,
+      "observations": [
+        {
+          "native_center": [
+            198,
+            3746
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 61.064117050433794,
+          "profile_gray": 228.87948608398438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            213,
+            3746
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 57.562536240610086,
+          "profile_gray": 229.34732055664062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            228,
+            3746
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 65.68396306278692,
+          "profile_gray": 224.47140502929688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            242,
+            3746
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 63.97998932255712,
+          "profile_gray": 229.7924041748047,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            198,
+            3746
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 61.064117050433794,
+          "profile_gray": 228.87948608398438,
+          "supported": true
+        },
+        {
+          "native_center": [
+            213,
+            3746
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 57.562536240610086,
+          "profile_gray": 229.34732055664062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            228,
+            3746
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 65.68396306278692,
+          "profile_gray": 224.47140502929688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            242,
+            3746
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 63.97998932255712,
+          "profile_gray": 229.7924041748047,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G02"
+    },
+    {
+      "gate_id": "G34-P03",
+      "side": "bottom",
+      "left_column": "LL-G34-SD03",
+      "right_column": "LL-G34-SD04",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        286,
+        3719,
+        373,
+        3779
+      ],
+      "source_row_bbox": [
+        286,
+        3739,
+        373,
+        3752
+      ],
+      "prior_derived_endpoint_y": 3749.0,
+      "observations": [
+        {
+          "native_center": [
+            306,
+            3745
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 51.28888236627313,
+          "profile_gray": 228.65982055664062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            319,
+            3745
+          ],
+          "peak_gray": 238.0,
+          "local_residual": 60.937239913117764,
+          "profile_gray": 226.001220703125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            334,
+            3745
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 59.393258343892995,
+          "profile_gray": 230.38099670410156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            347,
+            3745
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 63.45658813581062,
+          "profile_gray": 230.34735107421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            363,
+            3745
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 70.01715167891217,
+          "profile_gray": 233.86874389648438,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            306,
+            3745
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 51.28888236627313,
+          "profile_gray": 228.65982055664062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            319,
+            3745
+          ],
+          "peak_gray": 238.0,
+          "local_residual": 60.937239913117764,
+          "profile_gray": 226.001220703125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            334,
+            3745
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 59.393258343892995,
+          "profile_gray": 230.38099670410156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            347,
+            3745
+          ],
+          "peak_gray": 243.0,
+          "local_residual": 63.45658813581062,
+          "profile_gray": 230.34735107421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            363,
+            3745
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 70.01715167891217,
+          "profile_gray": 233.86874389648438,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G03"
+    },
+    {
+      "gate_id": "G34-P04",
+      "side": "bottom",
+      "left_column": "LL-G34-SD04",
+      "right_column": "LL-G34-SD05",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        393,
+        3716,
+        482,
+        3776
+      ],
+      "source_row_bbox": [
+        393,
+        3738,
+        482,
+        3751
+      ],
+      "prior_derived_endpoint_y": 3746.5,
+      "observations": [
+        {
+          "native_center": [
+            410,
+            3744
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 61.9578892631809,
+          "profile_gray": 229.00180053710938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            426,
+            3744
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 62.53460662787219,
+          "profile_gray": 226.56982421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            439,
+            3744
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 73.13592563000535,
+          "profile_gray": 238.96859741210938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            454,
+            3744
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 73.56045974895233,
+          "profile_gray": 230.6910858154297,
+          "supported": true
+        },
+        {
+          "native_center": [
+            466,
+            3744
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 69.15272964799675,
+          "profile_gray": 227.31936645507812,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            410,
+            3744
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 61.9578892631809,
+          "profile_gray": 229.00180053710938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            426,
+            3744
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 62.53460662787219,
+          "profile_gray": 226.56982421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            439,
+            3744
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 73.13592563000535,
+          "profile_gray": 238.96859741210938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            454,
+            3744
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 73.56045974895233,
+          "profile_gray": 230.6910858154297,
+          "supported": true
+        },
+        {
+          "native_center": [
+            466,
+            3744
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 69.15272964799675,
+          "profile_gray": 227.31936645507812,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G04"
+    },
+    {
+      "gate_id": "G34-P05",
+      "side": "bottom",
+      "left_column": "LL-G34-SD05",
+      "right_column": "LL-G34-SD06",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        502,
+        3714,
+        588,
+        3774
+      ],
+      "source_row_bbox": [
+        502,
+        3767,
+        588,
+        3780
+      ],
+      "prior_derived_endpoint_y": 3744.0,
+      "observations": [
+        {
+          "native_center": [
+            506,
+            3773
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 88.2300234191205,
+          "profile_gray": 218.79684448242188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            521,
+            3773
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 90.71553720104401,
+          "profile_gray": 219.4464111328125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            532,
+            3773
+          ],
+          "peak_gray": 238.0,
+          "local_residual": 82.70277756185567,
+          "profile_gray": 211.85134887695312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            551,
+            3773
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 78.89495700512146,
+          "profile_gray": 212.842041015625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            562,
+            3773
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 85.91279683071403,
+          "profile_gray": 216.71380615234375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            577,
+            3773
+          ],
+          "peak_gray": 227.0,
+          "local_residual": 74.83446600653176,
+          "profile_gray": 203.18386840820312,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            506,
+            3773
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 88.2300234191205,
+          "profile_gray": 218.79684448242188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            521,
+            3773
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 90.71553720104401,
+          "profile_gray": 219.4464111328125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            532,
+            3773
+          ],
+          "peak_gray": 238.0,
+          "local_residual": 82.70277756185567,
+          "profile_gray": 211.85134887695312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            551,
+            3773
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 78.89495700512146,
+          "profile_gray": 212.842041015625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            562,
+            3773
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 85.91279683071403,
+          "profile_gray": 216.71380615234375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            577,
+            3773
+          ],
+          "peak_gray": 227.0,
+          "local_residual": 74.83446600653176,
+          "profile_gray": 203.18386840820312,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G05"
+    },
+    {
+      "gate_id": "G34-P06",
+      "side": "bottom",
+      "left_column": "LL-G34-SD06",
+      "right_column": "LL-G34-SD07",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        608,
+        3711,
+        695,
+        3771
+      ],
+      "source_row_bbox": [
+        608,
+        3735,
+        695,
+        3748
+      ],
+      "prior_derived_endpoint_y": 3741.5,
+      "observations": [
+        {
+          "native_center": [
+            625,
+            3741
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 71.81974151430614,
+          "profile_gray": 229.0223846435547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            641,
+            3741
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 75.14605826385079,
+          "profile_gray": 237.03282165527344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            652,
+            3741
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 75.9033029060098,
+          "profile_gray": 233.95733642578125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            667,
+            3741
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 74.88841040855888,
+          "profile_gray": 227.2373046875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            682,
+            3741
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 80.30156912527036,
+          "profile_gray": 222.30393981933594,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            625,
+            3741
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 71.81974151430614,
+          "profile_gray": 229.0223846435547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            641,
+            3741
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 75.14605826385079,
+          "profile_gray": 237.03282165527344,
+          "supported": true
+        },
+        {
+          "native_center": [
+            652,
+            3741
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 75.9033029060098,
+          "profile_gray": 233.95733642578125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            667,
+            3741
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 74.88841040855888,
+          "profile_gray": 227.2373046875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            682,
+            3741
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 80.30156912527036,
+          "profile_gray": 222.30393981933594,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G06"
+    },
+    {
+      "gate_id": "G34-P07",
+      "side": "bottom",
+      "left_column": "LL-G34-SD07",
+      "right_column": "LL-G34-SD08",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        715,
+        3709,
+        756,
+        3769
+      ],
+      "source_row_bbox": [
+        715,
+        3733,
+        756,
+        3746
+      ],
+      "prior_derived_endpoint_y": 3739.0,
+      "observations": [
+        {
+          "native_center": [
+            732,
+            3739
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 71.77493608514288,
+          "profile_gray": 235.94322204589844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            743,
+            3739
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 75.91750453524804,
+          "profile_gray": 234.4327850341797,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            732,
+            3739
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 71.77493608514288,
+          "profile_gray": 235.94322204589844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            743,
+            3739
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 75.91750453524804,
+          "profile_gray": 234.4327850341797,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G34-G07"
+    },
+    {
+      "gate_id": "G35-P01",
+      "side": "bottom",
+      "left_column": "LL-G35-SD01",
+      "right_column": "LL-G35-SD02",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        911,
+        2914,
+        952,
+        2966
+      ],
+      "source_row_bbox": [
+        911,
+        2941,
+        952,
+        2954
+      ],
+      "prior_derived_endpoint_y": 2944.0,
+      "observations": [
+        {
+          "native_center": [
+            924,
+            2947
+          ],
+          "peak_gray": 223.0,
+          "local_residual": 65.58515661803787,
+          "profile_gray": 193.70057678222656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            939,
+            2947
+          ],
+          "peak_gray": 224.0,
+          "local_residual": 64.0622324639364,
+          "profile_gray": 196.574951171875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            924,
+            2947
+          ],
+          "peak_gray": 223.0,
+          "local_residual": 65.58515661803787,
+          "profile_gray": 193.70057678222656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            939,
+            2947
+          ],
+          "peak_gray": 224.0,
+          "local_residual": 64.0622324639364,
+          "profile_gray": 196.574951171875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G01"
+    },
+    {
+      "gate_id": "G35-P03",
+      "side": "bottom",
+      "left_column": "LL-G35-SD03",
+      "right_column": "LL-G35-SD04",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1035,
+        2912,
+        1076,
+        2966
+      ],
+      "source_row_bbox": [
+        1035,
+        2939,
+        1076,
+        2952
+      ],
+      "prior_derived_endpoint_y": 2942.222222222222,
+      "observations": [
+        {
+          "native_center": [
+            1047,
+            2945
+          ],
+          "peak_gray": 225.0,
+          "local_residual": 64.95656054981609,
+          "profile_gray": 195.4096221923828,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1047,
+            2945
+          ],
+          "peak_gray": 225.0,
+          "local_residual": 64.95656054981609,
+          "profile_gray": 195.4096221923828,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G03"
+    },
+    {
+      "gate_id": "G35-P04",
+      "side": "bottom",
+      "left_column": "LL-G35-SD04",
+      "right_column": "LL-G35-SD05",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1096,
+        2911,
+        1132,
+        2966
+      ],
+      "source_row_bbox": [
+        1096,
+        2938,
+        1132,
+        2951
+      ],
+      "prior_derived_endpoint_y": 2941.3333333333335,
+      "observations": [
+        {
+          "native_center": [
+            1108,
+            2944
+          ],
+          "peak_gray": 228.0,
+          "local_residual": 66.62912306357492,
+          "profile_gray": 196.95008850097656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1124,
+            2944
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 73.93767303613811,
+          "profile_gray": 209.54156494140625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1108,
+            2944
+          ],
+          "peak_gray": 228.0,
+          "local_residual": 66.62912306357492,
+          "profile_gray": 196.95008850097656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1124,
+            2944
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 73.93767303613811,
+          "profile_gray": 209.54156494140625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G04"
+    },
+    {
+      "gate_id": "G35-P05",
+      "side": "bottom",
+      "left_column": "LL-G35-SD05",
+      "right_column": "LL-G35-SD06",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1152,
+        2910,
+        1192,
+        2966
+      ],
+      "source_row_bbox": [
+        1152,
+        2938,
+        1192,
+        2951
+      ],
+      "prior_derived_endpoint_y": 2940.4444444444443,
+      "observations": [
+        {
+          "native_center": [
+            1169,
+            2944
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 72.88748944226211,
+          "profile_gray": 218.6165008544922,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1184,
+            2944
+          ],
+          "peak_gray": 239.0,
+          "local_residual": 74.17464898212458,
+          "profile_gray": 218.87928771972656,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1169,
+            2944
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 72.88748944226211,
+          "profile_gray": 218.6165008544922,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1184,
+            2944
+          ],
+          "peak_gray": 239.0,
+          "local_residual": 74.17464898212458,
+          "profile_gray": 218.87928771972656,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G05"
+    },
+    {
+      "gate_id": "G35-P06",
+      "side": "bottom",
+      "left_column": "LL-G35-SD06",
+      "right_column": "LL-G35-SD07",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1212,
+        2909,
+        1258,
+        2966
+      ],
+      "source_row_bbox": [
+        1212,
+        2937,
+        1258,
+        2950
+      ],
+      "prior_derived_endpoint_y": 2939.5555555555557,
+      "observations": [
+        {
+          "native_center": [
+            1230,
+            2943
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 77.31329032809674,
+          "profile_gray": 225.50344848632812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1245,
+            2943
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 77.02945489927293,
+          "profile_gray": 215.3050537109375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1230,
+            2943
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 77.31329032809674,
+          "profile_gray": 225.50344848632812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1245,
+            2943
+          ],
+          "peak_gray": 241.0,
+          "local_residual": 77.02945489927293,
+          "profile_gray": 215.3050537109375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G06"
+    },
+    {
+      "gate_id": "G35-P07",
+      "side": "bottom",
+      "left_column": "LL-G35-SD07",
+      "right_column": "LL-G35-SD08",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1278,
+        2908,
+        1314,
+        2966
+      ],
+      "source_row_bbox": [
+        1278,
+        2936,
+        1314,
+        2949
+      ],
+      "prior_derived_endpoint_y": 2938.666666666667,
+      "observations": [
+        {
+          "native_center": [
+            1291,
+            2942
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 77.73305647647445,
+          "profile_gray": 224.43307495117188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1306,
+            2942
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 78.17274360138316,
+          "profile_gray": 224.84295654296875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1291,
+            2942
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 77.73305647647445,
+          "profile_gray": 224.43307495117188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1306,
+            2942
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 78.17274360138316,
+          "profile_gray": 224.84295654296875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G07"
+    },
+    {
+      "gate_id": "G35-P08",
+      "side": "bottom",
+      "left_column": "LL-G35-SD08",
+      "right_column": "LL-G35-SD09",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1334,
+        2907,
+        1375,
+        2966
+      ],
+      "source_row_bbox": [
+        1334,
+        2936,
+        1375,
+        2949
+      ],
+      "prior_derived_endpoint_y": 2937.777777777778,
+      "observations": [
+        {
+          "native_center": [
+            1351,
+            2942
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 78.75634154898856,
+          "profile_gray": 222.9633331298828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1366,
+            2942
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 87.77810314224288,
+          "profile_gray": 221.29742431640625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1351,
+            2942
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 78.75634154898856,
+          "profile_gray": 222.9633331298828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1366,
+            2942
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 87.77810314224288,
+          "profile_gray": 221.29742431640625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G08"
+    },
+    {
+      "gate_id": "G35-P09",
+      "side": "bottom",
+      "left_column": "LL-G35-SD09",
+      "right_column": "LL-G35-SD10",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1395,
+        2906,
+        1441,
+        2966
+      ],
+      "source_row_bbox": [
+        1395,
+        2935,
+        1441,
+        2948
+      ],
+      "prior_derived_endpoint_y": 2936.888888888889,
+      "observations": [
+        {
+          "native_center": [
+            1412,
+            2941
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 71.14993843095317,
+          "profile_gray": 233.89523315429688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1427,
+            2941
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 83.82758578307786,
+          "profile_gray": 226.04779052734375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1412,
+            2941
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 71.14993843095317,
+          "profile_gray": 233.89523315429688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1427,
+            2941
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 83.82758578307786,
+          "profile_gray": 226.04779052734375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G09"
+    },
+    {
+      "gate_id": "G35-P10",
+      "side": "bottom",
+      "left_column": "LL-G35-SD10",
+      "right_column": "LL-G35-SD11",
+      "ring_row": "TEMP-RING",
+      "source_roi": [
+        1461,
+        2906,
+        1502,
+        2966
+      ],
+      "source_row_bbox": [
+        1461,
+        2934,
+        1502,
+        2947
+      ],
+      "prior_derived_endpoint_y": 2936.0,
+      "observations": [
+        {
+          "native_center": [
+            1472,
+            2940
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 70.89712224793544,
+          "profile_gray": 226.6469268798828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1487,
+            2940
+          ],
+          "peak_gray": 233.0,
+          "local_residual": 70.33101538245893,
+          "profile_gray": 212.54367065429688,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            1472,
+            2940
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 70.89712224793544,
+          "profile_gray": 226.6469268798828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            1487,
+            2940
+          ],
+          "peak_gray": 233.0,
+          "local_residual": 70.33101538245893,
+          "profile_gray": 212.54367065429688,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI terminal position and direction candidates; not human approved in this batch",
+      "alias": "LL-G35-G10"
+    }
+  ],
+  "meaning": "2D terminal measurements plus raw band profiles; no invented peaks"
+}

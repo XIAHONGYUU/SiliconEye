@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 1.5,
+  "minimum_POLY_clearance_px": 1.5,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 791,
+  "physical_PDK_DRC": false,
+  "protected_contact_count": 130,
+  "new_contact_count": 661,
+  "protected_materials_unchanged": true,
+  "scope": "AA-W07 visible perimeter and G48 resistor endpoints only",
+  "human_review": "pending_new_cases_only",
+  "photo_correspondence": "AI_local_candidates",
+  "implementation_sha256": "850546dba2d73687296b98db4dd289829f900e2106e3d0d51d1dd7c161cd593d",
+  "shared_geometry_implementation_sha256": "5b42a5d2f58649a2c11980b08074d6f6ffa270175ec99c21dcb9ff6afe1a1396"
+}

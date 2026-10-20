@@ -31,6 +31,14 @@
 
 [最新POLY v1工作基线](docs/checkpoints/2026-10-20-poly-v1-working-baseline.md)：Q1/Q2/Q4已批准，Q3右侧按人工确认修正为6条MOS；[统一复核页](docs/assets/poly-closeout-v3/index.html)保留前后对照。383项测试通过，可作为后续CT的工作基线；精确边界、尺度及未明确关系仍保留未知。[v2修订](docs/checkpoints/2026-10-20-poly-closeout-v2.md)作为历史保留。
 
+## CT当前检查点
+
+[CT全幅剩余范围复核包](docs/assets/ct-full-frame-remaining-v1/index.html)保存10004条工作记录（原7044＋新增2960候选）和未改动的695 POLY／335 AA材料对象。安全候选子集的几何检查通过；**整层仍HOLD，未全幅定稿，未封装CT skill**。Q1左侧四管栅端、Q2 U10端部和Q3环／栅端来源对应等待人工裁决；只做相关局部修订，不要求重审全部孔。[当前任务](CURRENT_TASK.md)是唯一实时入口，[全幅检查点](docs/checkpoints/2026-10-20-ct-full-frame-remaining.md)保存证据与限制，[日终交接](docs/checkpoints/2026-10-20-ct-github-handoff.md)保存本次Git提交范围与验证。
+
+[CT重建工作流](docs/architecture/ct-reconstruction-workflow-v1.md)记录源图定位、AA/POLY联合约束、规则孔阵列、来源反例隔离和整层质量门。几何PASS、程序测试通过与物理批准分别记录，不能互相替代；工艺及尺度未知，尚未执行真实PDK DRC/LVS。
+
+已审范围按原批准保留：[RIGHT6](docs/checkpoints/2026-10-20-right6-ct-reviewed.md)、[局部迁移修订](docs/checkpoints/2026-10-20-ct-transfer-revision.md)、[Q2栅CT](docs/checkpoints/2026-10-20-q2-gate-ct-localization.md)、[上方小MOS](docs/checkpoints/2026-10-20-ct-upper-small-mos-reviewed.md)、[左侧大MOS修订](docs/checkpoints/2026-10-20-ct-left-large-mos-revision.md)、[中下部C/D/F修订](docs/checkpoints/2026-10-20-ct-lower-middle-mos-revision.md)。[此前README完整原文](docs/history/2026-10-20-before-ct-github-README.md)保留各阶段过程，不能将历史待审文字当作当前状态。
+
 ## 本地运行
 
 ```bash

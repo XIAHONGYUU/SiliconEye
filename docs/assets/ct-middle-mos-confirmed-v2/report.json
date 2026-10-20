@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 1.4999999999999998,
+  "minimum_POLY_clearance_px": 1.4999999999999998,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 1825,
+  "physical_PDK_DRC": false,
+  "protected_contact_count": 1777,
+  "human_confirmed_additions": 48,
+  "remaining_unknown_slots": 0,
+  "unknown_slot_scope": "previously displayed orange inspection slots only",
+  "gate_terminal_CT_status": "not resolved by this confirmation",
+  "material_model_unchanged": true,
+  "evidence_type": "human_confirmation_not_algorithm_detection",
+  "implementation_sha256": "2467c5371fe5d8eedc3192d48844862532101d20517f7075af963eb219db7dc2",
+  "shared_geometry_implementation_sha256": "8bfd4ee9a04260c10f5e0441b895aaeb99e06a653b644e0e5ce55080def2e6d5"
+}

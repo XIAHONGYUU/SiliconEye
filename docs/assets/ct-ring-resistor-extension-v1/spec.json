@@ -1,0 +1,1787 @@
+{
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "protected_contacts": {
+      "path": "benchmarks/ct-transfer-revision-v2/model-v1.json",
+      "sha256": "5773d146c5ceb6c75e1454e514235edc1f9347b1a6f4a916e538b09f094a91c4"
+    },
+    "acceptance": {
+      "path": "benchmarks/ct-transfer-revision-v2/acceptance-v1.json",
+      "sha256": "ff46b7ca96edd6fdcc91a1c2d6d4f62b22eec1da30046015acbb45aa59509136"
+    },
+    "observations": {
+      "path": "benchmarks/ct-reconstruction-v1/model-v1.json",
+      "sha256": "ab9edcbc090d65a8b3b7b9cf98e40934cb87ce6340ded4c183e9a72011a442e6"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "families": [],
+  "rows": [],
+  "profile_rows": [
+    {
+      "id": "RING-TOP-EXT",
+      "axis": 0,
+      "source_path": [
+        [
+          3649,
+          1831.9
+        ],
+        [
+          4200,
+          1827.5
+        ],
+        [
+          4800,
+          1824.8
+        ],
+        [
+          5255,
+          1821
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3642.0,
+        1814.0,
+        5262.0,
+        1838.9
+      ],
+      "source_origin": 3655,
+      "source_pitch": 13.95,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3715.4,
+        2001.5
+      ],
+      "layout_pitch": 13.75,
+      "material": "AA",
+      "target": "AA-W07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        114
+      ]
+    },
+    {
+      "id": "RING-LEFT-EXT",
+      "axis": 1,
+      "source_path": [
+        [
+          3187,
+          2058
+        ],
+        [
+          3190,
+          2600
+        ],
+        [
+          3193,
+          3290
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3180.0,
+        2053.0,
+        3200.0,
+        3297.0
+      ],
+      "source_origin": 2065,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3247.5,
+        2232
+      ],
+      "layout_pitch": 14,
+      "material": "AA",
+      "target": "AA-W07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        87
+      ]
+    },
+    {
+      "id": "RING-RIGHT",
+      "axis": 1,
+      "source_path": [
+        [
+          5265,
+          1828
+        ],
+        [
+          5259,
+          2000
+        ],
+        [
+          5253,
+          2200
+        ],
+        [
+          5247,
+          2400
+        ],
+        [
+          5242,
+          2600
+        ],
+        [
+          5236,
+          2800
+        ],
+        [
+          5230,
+          3000
+        ],
+        [
+          5223,
+          3252
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        5216.0,
+        1821.0,
+        5272.0,
+        3259.0
+      ],
+      "source_origin": 1840,
+      "source_pitch": 13.9,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        5287.5,
+        2017
+      ],
+      "layout_pitch": 14.1,
+      "material": "AA",
+      "target": "AA-W07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        101
+      ]
+    },
+    {
+      "id": "RING-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3195,
+          3300
+        ],
+        [
+          3400,
+          3296
+        ],
+        [
+          3800,
+          3291
+        ],
+        [
+          4000,
+          3286
+        ],
+        [
+          4400,
+          3276
+        ],
+        [
+          4800,
+          3268
+        ],
+        [
+          5219,
+          3260
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3188.0,
+        3253.0,
+        5226.0,
+        3307.0
+      ],
+      "source_origin": 3208,
+      "source_pitch": 13.9,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3262,
+        3450.5
+      ],
+      "layout_pitch": 13.85,
+      "material": "AA",
+      "target": "AA-W07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        146
+      ]
+    },
+    {
+      "id": "RES-02-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          3339,
+          1871.24
+        ],
+        [
+          3439,
+          1870.53
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3332.0,
+        1863.53,
+        3446.0,
+        1878.24
+      ],
+      "source_origin": 3346,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3391.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P02",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-03-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          3452,
+          1870.44
+        ],
+        [
+          3552,
+          1869.74
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3445.0,
+        1862.74,
+        3559.0,
+        1877.44
+      ],
+      "source_origin": 3459,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3501.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P03",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-04-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          3564,
+          1869.66
+        ],
+        [
+          3664,
+          1868.95
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3557.0,
+        1861.95,
+        3671.0,
+        1876.66
+      ],
+      "source_origin": 3571,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3611.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P04",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-05-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          3679,
+          1868.85
+        ],
+        [
+          3779,
+          1868.15
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3672.0,
+        1861.15,
+        3786.0,
+        1875.85
+      ],
+      "source_origin": 3686,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3721.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P05",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-06-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          3797,
+          1868.02
+        ],
+        [
+          3897,
+          1867.03
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3790.0,
+        1860.03,
+        3904.0,
+        1875.02
+      ],
+      "source_origin": 3804,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3831.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P06",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-07-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          3909,
+          1866.91
+        ],
+        [
+          4009,
+          1865.91
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3902.0,
+        1858.91,
+        4016.0,
+        1873.91
+      ],
+      "source_origin": 3916,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3941.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-08-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4022,
+          1865.78
+        ],
+        [
+          4122,
+          1864.78
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4015.0,
+        1857.78,
+        4129.0,
+        1872.78
+      ],
+      "source_origin": 4029,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4051.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P08",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-09-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4136,
+          1864.64
+        ],
+        [
+          4236,
+          1863.64
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4129.0,
+        1856.64,
+        4243.0,
+        1871.64
+      ],
+      "source_origin": 4143,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4161.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P09",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-10-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4248,
+          1863.52
+        ],
+        [
+          4348,
+          1862.52
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4241.0,
+        1855.52,
+        4355.0,
+        1870.52
+      ],
+      "source_origin": 4255,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4271.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P10",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-11-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4362,
+          1862.38
+        ],
+        [
+          4462,
+          1861.59
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4355.0,
+        1854.59,
+        4469.0,
+        1869.38
+      ],
+      "source_origin": 4369,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4381.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P11",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-12-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4471,
+          1861.53
+        ],
+        [
+          4571,
+          1860.86
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4464.0,
+        1853.86,
+        4578.0,
+        1868.53
+      ],
+      "source_origin": 4478,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4491.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P12",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-13-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4585,
+          1860.77
+        ],
+        [
+          4685,
+          1860.1
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4578.0,
+        1853.1,
+        4692.0,
+        1867.77
+      ],
+      "source_origin": 4592,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4601.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P13",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-14-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4692,
+          1860.05
+        ],
+        [
+          4792,
+          1859.39
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4685.0,
+        1852.39,
+        4799.0,
+        1867.05
+      ],
+      "source_origin": 4699,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4711.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P14",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-15-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4802,
+          1859.32
+        ],
+        [
+          4902,
+          1858.65
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4795.0,
+        1851.65,
+        4909.0,
+        1866.32
+      ],
+      "source_origin": 4809,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4821.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P15",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-16-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          4911,
+          1858.59
+        ],
+        [
+          5011,
+          1858.0
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4904.0,
+        1851.0,
+        5018.0,
+        1865.59
+      ],
+      "source_origin": 4918,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4931.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P16",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-17-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          5021,
+          1858.0
+        ],
+        [
+          5121,
+          1858.0
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        5014.0,
+        1851.0,
+        5128.0,
+        1865.0
+      ],
+      "source_origin": 5028,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        5041.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P17",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-18-TOP",
+      "axis": 0,
+      "source_path": [
+        [
+          5121,
+          1858.0
+        ],
+        [
+          5221,
+          1858.0
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        5114.0,
+        1851.0,
+        5228.0,
+        1865.0
+      ],
+      "source_origin": 5128,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        5151.75,
+        2027.5
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P18",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-01-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3229,
+          3272.81
+        ],
+        [
+          3329,
+          3270.71
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3222.0,
+        3263.71,
+        3336.0,
+        3279.81
+      ],
+      "source_origin": 3236,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3281.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P01",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-02-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3341,
+          3270.45
+        ],
+        [
+          3441,
+          3268.35
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3334.0,
+        3261.35,
+        3448.0,
+        3277.45
+      ],
+      "source_origin": 3348,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3391.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P02",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-03-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3453,
+          3268.09
+        ],
+        [
+          3553,
+          3265.99
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3446.0,
+        3258.99,
+        3560.0,
+        3275.09
+      ],
+      "source_origin": 3460,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3501.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P03",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-04-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3563,
+          3265.78
+        ],
+        [
+          3663,
+          3263.74
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3556.0,
+        3256.74,
+        3670.0,
+        3272.78
+      ],
+      "source_origin": 3570,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3611.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P04",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-05-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3675,
+          3263.5
+        ],
+        [
+          3775,
+          3261.5
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3668.0,
+        3254.5,
+        3782.0,
+        3270.5
+      ],
+      "source_origin": 3682,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3721.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P05",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-06-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3790,
+          3261.2
+        ],
+        [
+          3890,
+          3259.2
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3783.0,
+        3252.2,
+        3897.0,
+        3268.2
+      ],
+      "source_origin": 3797,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3831.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P06",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-07-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          3899,
+          3259.02
+        ],
+        [
+          3999,
+          3257.02
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        3892.0,
+        3250.02,
+        4006.0,
+        3266.02
+      ],
+      "source_origin": 3906,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        3941.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P07",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-08-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4008,
+          3256.8
+        ],
+        [
+          4108,
+          3254.3
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4001.0,
+        3247.3,
+        4115.0,
+        3263.8
+      ],
+      "source_origin": 4015,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4051.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P08",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-09-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4117,
+          3254.07
+        ],
+        [
+          4217,
+          3251.57
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4110.0,
+        3244.57,
+        4224.0,
+        3261.07
+      ],
+      "source_origin": 4124,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4161.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P09",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-10-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4226,
+          3251.35
+        ],
+        [
+          4326,
+          3248.85
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4219.0,
+        3241.85,
+        4333.0,
+        3258.35
+      ],
+      "source_origin": 4233,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4271.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P10",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-11-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4335,
+          3248.62
+        ],
+        [
+          4435,
+          3246.3
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4328.0,
+        3239.3,
+        4442.0,
+        3255.62
+      ],
+      "source_origin": 4342,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4381.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P11",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-12-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4443,
+          3246.14
+        ],
+        [
+          4543,
+          3244.14
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4436.0,
+        3237.14,
+        4550.0,
+        3253.14
+      ],
+      "source_origin": 4450,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4491.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P12",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-13-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4555,
+          3243.9
+        ],
+        [
+          4655,
+          3241.9
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4548.0,
+        3234.9,
+        4662.0,
+        3250.9
+      ],
+      "source_origin": 4562,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4601.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P13",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-14-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4663,
+          3241.74
+        ],
+        [
+          4763,
+          3239.74
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4656.0,
+        3232.74,
+        4770.0,
+        3248.74
+      ],
+      "source_origin": 4670,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4711.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P14",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-15-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4770,
+          3239.6
+        ],
+        [
+          4870,
+          3237.67
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4763.0,
+        3230.67,
+        4877.0,
+        3246.6
+      ],
+      "source_origin": 4777,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4821.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P15",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-16-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4878,
+          3237.51
+        ],
+        [
+          4978,
+          3235.61
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4871.0,
+        3228.61,
+        4985.0,
+        3244.51
+      ],
+      "source_origin": 4885,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        4931.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P16",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-17-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          4988,
+          3235.42
+        ],
+        [
+          5088,
+          3233.51
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        4981.0,
+        3226.51,
+        5095.0,
+        3242.42
+      ],
+      "source_origin": 4995,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        5041.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P17",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "RES-18-BOTTOM",
+      "axis": 0,
+      "source_path": [
+        [
+          5095,
+          3233.38
+        ],
+        [
+          5195,
+          3231.48
+        ]
+      ],
+      "band_half_width": 5,
+      "source_roi": [
+        5088.0,
+        3224.48,
+        5202.0,
+        3240.38
+      ],
+      "source_origin": 5102,
+      "source_pitch": 14,
+      "source_fit_tolerance": 5.5,
+      "layout_origin": [
+        5151.75,
+        3415
+      ],
+      "layout_pitch": 12.25,
+      "material": "POLY",
+      "target": "G48-P18",
+      "min_gray": 185,
+      "min_residual": 6,
+      "sigma": 2,
+      "track_local_spacing": true,
+      "inspection_slot_range": [
+        0,
+        6
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "OV",
+      "title": "环与18条电阻总览",
+      "source_bbox": [
+        3120,
+        1780,
+        5320,
+        3350
+      ],
+      "layout_bbox": [
+        3200,
+        1950,
+        5330,
+        3500
+      ],
+      "scope": "总览定位；请结合下方分段图核对。灰蓝为130个锁定CT，AA/POLY不改。"
+    },
+    {
+      "id": "RT",
+      "title": "环上边其余段",
+      "source_bbox": [
+        3580,
+        1770,
+        5300,
+        1900
+      ],
+      "layout_bbox": [
+        3660,
+        1965,
+        5320,
+        2040
+      ],
+      "scope": "只补查原32孔之后的上横向环；下方电阻上端孔单独对应POLY。"
+    },
+    {
+      "id": "RL",
+      "title": "环左边其余段",
+      "source_bbox": [
+        3120,
+        2020,
+        3260,
+        3340
+      ],
+      "layout_bbox": [
+        3205,
+        2180,
+        3290,
+        3490
+      ],
+      "scope": "15个已审左侧孔之后继续向下；边界处不重复生成孔。"
+    },
+    {
+      "id": "RR",
+      "title": "环右边",
+      "source_bbox": [
+        5150,
+        1770,
+        5320,
+        3320
+      ],
+      "layout_bbox": [
+        5240,
+        1965,
+        5320,
+        3490
+      ],
+      "scope": "只重建围绕本电阻阵列的内侧环，不混入右边相邻环。"
+    },
+    {
+      "id": "B1",
+      "title": "下边环及电阻下端 1/3",
+      "source_bbox": [
+        3190,
+        3180,
+        3930,
+        3350
+      ],
+      "layout_bbox": [
+        3230,
+        3380,
+        3960,
+        3490
+      ],
+      "scope": "区分最下方AA环孔列与上方POLY电阻端部孔列；不能互相替代。"
+    },
+    {
+      "id": "B2",
+      "title": "下边环及电阻下端 2/3",
+      "source_bbox": [
+        3865,
+        3180,
+        4605,
+        3350
+      ],
+      "layout_bbox": [
+        3910,
+        3380,
+        4640,
+        3490
+      ],
+      "scope": "区分最下方AA环孔列与上方POLY电阻端部孔列；不能互相替代。"
+    },
+    {
+      "id": "B3",
+      "title": "下边环及电阻下端 3/3",
+      "source_bbox": [
+        4540,
+        3180,
+        5280,
+        3350
+      ],
+      "layout_bbox": [
+        4590,
+        3380,
+        5320,
+        3490
+      ],
+      "scope": "区分最下方AA环孔列与上方POLY电阻端部孔列；不能互相替代。"
+    },
+    {
+      "id": "T1",
+      "title": "电阻上端 1/3",
+      "source_bbox": [
+        3200,
+        1800,
+        3940,
+        1930
+      ],
+      "layout_bbox": [
+        3250,
+        1970,
+        3970,
+        2080
+      ],
+      "scope": "首条电阻上端7孔已审，其余候选逐条有原图峰；缺观察处保留未知。"
+    },
+    {
+      "id": "T2",
+      "title": "电阻上端 2/3",
+      "source_bbox": [
+        3875,
+        1800,
+        4615,
+        1930
+      ],
+      "layout_bbox": [
+        3910,
+        1970,
+        4630,
+        2080
+      ],
+      "scope": "首条电阻上端7孔已审，其余候选逐条有原图峰；缺观察处保留未知。"
+    },
+    {
+      "id": "T3",
+      "title": "电阻上端 3/3",
+      "source_bbox": [
+        4550,
+        1800,
+        5290,
+        1930
+      ],
+      "layout_bbox": [
+        4570,
+        1970,
+        5290,
+        2080
+      ],
+      "scope": "首条电阻上端7孔已审，其余候选逐条有原图峰；缺观察处保留未知。"
+    }
+  ],
+  "scope": "AA-W07 visible perimeter and G48 resistor endpoints only",
+  "source_correspondence": "AI local path landmarks in poly source, not historical AA source outlines or a blind global projection",
+  "source_uncertainty": "inspection slots are prompts for review, not evidence of a physically missing contact; no generated filler",
+  "review_notes": "本次只复核6类新增范围：环上边RT、左边RL、右边RR、下边B1–B3，以及电阻上端T1–T3和下端B1–B3。电阻按从左到右01–18编号（目标G48-P01–P18），首条上端7孔为已审背景。空槽仅表示本次未获得足够观察，不能当成实际无孔。"
+}

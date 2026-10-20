@@ -1,0 +1,38 @@
+{
+  "scope": "Complete current UPPER-INNER-B enclosing frame, 40 gates: tiny10 + Q1 long30",
+  "not_scope": "Not all MOS across the upper half of the whole photograph",
+  "material_guard_id": "AA2-UPPER-INNER-B-AA-0",
+  "counts": {
+    "gates": 40,
+    "tiny_gates": 10,
+    "long_gates": 30,
+    "SD_candidates": 280,
+    "gate_CT_candidates": 80,
+    "ring_CT_candidates": 413,
+    "new_total": 773,
+    "parent_CT_retained": 1885,
+    "snapshot_total": 2658
+  },
+  "terminal_sides": {
+    "tiny10": "top_AI_candidate",
+    "long30": "bottom_AI_candidate"
+  },
+  "per_gate_count": "two optical-supported candidates each; not yet human approved",
+  "inspection_slots_unknown": 51,
+  "unknown_by_ring": {
+    "UP-RING-TOP": 34,
+    "UP-RING-BOTTOM": 9,
+    "UP-RING-LEFT": 6,
+    "UP-RING-RIGHT": 2
+  },
+  "unknown_interpretation": "Only unobserved or phase-ambiguous inspection sites, not confirmed contacts nor evidence of actual missing holes; prior Q2 orange approval does not apply",
+  "material_models": "unchanged",
+  "M1_context": "native photo crops with bbox provenance, no exact CT projection or net assignment",
+  "limitations": [
+    "top ring reflective band has screen-grid ambiguity",
+    "edge/corner coverage remains candidate",
+    "tiny last device retains earlier AA/POLY relative placement",
+    "actual physical dimensions and process DRC unknown",
+    "specific M1 or common gate connectivity unknown"
+  ]
+}

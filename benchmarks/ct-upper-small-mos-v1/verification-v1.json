@@ -1,0 +1,21 @@
+{
+  "pytest": "435 passed in 23.04s",
+  "ruff": "PASS",
+  "old1885_records_identical": true,
+  "all_AA_POLY_material_hashes_unchanged": true,
+  "all_family_observations_supported": true,
+  "source_gate_contrast_checks": "PASS, threshold12",
+  "source_and_acceptance_hashes": "PASS",
+  "whole_CT_geometry": "PASS",
+  "contact_count": 2658,
+  "new_count": 773,
+  "unknown_sites_not_contacts": 51,
+  "new_gate_terminal_observations": 80,
+  "source_side_not_copied_from_Q2": true,
+  "source_measurement_implementation_sha256": "3cc66cd43161413727a45971297fa782a84f13ec413b3d829dfa066e6f1565ea",
+  "CT_transfer_implementation_sha256": "668a1330d0d42b5616285818fb84112e255d05c0fe98d19f0d4102cce3f81a76",
+  "shared_geometry_implementation_sha256": "0eea032f50e1e98b8893744923d620b19c857776a67622cd2b3a069a0bd155e5",
+  "HTML_SVG_PNG_resources": "PASS",
+  "simulated_layer_switches": "PASS",
+  "browser_rendering": "not automatically tested"
+}

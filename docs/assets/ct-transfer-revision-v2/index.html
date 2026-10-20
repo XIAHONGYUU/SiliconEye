@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<title>CT 局部修订 v2</title><style>body{max-width:1400px;margin:24px auto;background:#111c28;
+color:#eee;font:17px sans-serif}section{border:1px solid #567;padding:16px;margin:20px 0}
+img{width:100%}select{padding:10px}a{color:#65baff}</style><h1>CT 局部修订 v2：两项均已通过</h1><p>用户已批准六管共栅端部相对位置，以及环顶部32／左侧15孔的本次复核范围。<a href="human-review-v2.json">人审记录</a> · <a href="acceptance.json">锁定基准</a>。本页保留验收时图稿。</p>
+<p>W1宽MOS、E1电阻上端已获认可，灰蓝表示未改动CT。紫色为六管共栅孔的局部位置修订，蓝色为环补查候选。
+栅指数量、共栅关系和原图观察不变；没有用设计规则生成无证据孔。</p>
+<p>源图与规则图是独立坐标视图，可切换对照，不是像素级投影。环仅检查左上可见子段，
+未声明全环覆盖。几何检查使用相对像素预算，不等于真实PDK DRC；M1及网络仍未知。</p>
+<p><a href="ledger.json">修订前后台账</a> · <a href="report.json">质量门</a> ·
+<a href="fits.json">原图峰值与拟合</a></p><section><h2>W1 相邻宽MOS</h2><p>宽MOS保持已审结果。只核对六管共栅端部是否与宽MOS相对位置合理；六栅指与共栅关系不变。</p><select onchange="document.getElementById('W1').src=this.value"><option value="W1-layout.svg">规则AA/POLY/CT联合图</option><option value="W1-source.png">原图＋观察支持</option><option value="W1-raw.png">纯原图</option></select><img id="W1" src="W1-layout.svg"></section><section><h2>R1 电阻阵列外围环：左上角</h2><p>只核对环左上子段新补查孔列；内部电阻7孔保持已审结果。横向32、竖向数量按实测峰输出，不宣称全环。</p><select onchange="document.getElementById('R1').src=this.value"><option value="R1-layout.svg">规则AA/POLY/CT联合图</option><option value="R1-source.png">原图＋观察支持</option><option value="R1-raw.png">纯原图</option></select><img id="R1" src="R1-layout.svg"></section></html>

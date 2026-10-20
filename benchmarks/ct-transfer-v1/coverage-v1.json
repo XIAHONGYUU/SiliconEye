@@ -1,0 +1,28 @@
+{
+  "new_candidates": {
+    "WIDE-DIFF": 12,
+    "WIDE-GATE": 11,
+    "RING-TOP": 30,
+    "RING-LEFT": 4,
+    "RESISTOR-TOP": 7
+  },
+  "protected_count": 53,
+  "scope": "W1 wide MOS; R1 ring upper-left observed subset; E1 first long-resistor top endpoint only",
+  "not_claimed": [
+    "full ring CT coverage",
+    "all resistor endpoints",
+    "whole-frame CT",
+    "M1 connections"
+  ],
+  "unobserved_row_slots": {
+    "WIDE-DIFF": [],
+    "WIDE-GATE": [],
+    "RING-TOP": [
+      29,
+      30
+    ],
+    "RING-LEFT": [],
+    "RESISTOR-TOP": []
+  },
+  "exclusions": "All original 473 observations remain intact; unselected duplicate-slot/outlier records are retained in fits"
+}

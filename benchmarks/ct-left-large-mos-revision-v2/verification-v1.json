@@ -1,0 +1,22 @@
+{
+  "full_tests": "442 passed in18.60s",
+  "ruff": "PASS ct_transfer.py test_ct_transfer.py",
+  "whole_geometry_gate": "PASS4940 CT,zero overlap and minimum-gap violations; same5px square/3px gap/1px enclosure budget",
+  "parent_preservation": "4631 exact-equal previous CT records;24 scoped revisions retain source_evidence; original2709 accepted snapshot exact-equal",
+  "materials": "692 unrelated POLY and332 unrelated AA records unchanged;2 AA retired into1 aliased shared region;3 POLY record updates and2 other AA corrections",
+  "partial_acceptance": "B connection-level accepted with count caveat; D displayed accepted; E exact approved AA+6 and29 contact proposal applied; A/C/F new geometry pending",
+  "source_checks": "all input hashes checked before/after; native outlines/corners/observation extents and existing CT source evidence preserved",
+  "visual": "A/C/F PNG previews inspected; orthogonal shared-AA isolated from rings, C opposite terminal rows, F paired geometry",
+  "assets": "SVG XML/PNG decode/local links/simulated selects PASS",
+  "browser_render": "not performed; file URL blocked by browser policy in this session, no workaround attempted",
+  "physical_PDK_DRC": false,
+  "locked_files": {
+    "spec-v1.json": "a52773fd9da7da21bb03fe286da0816e957f992d11d4a31c63b811ac1edb1f6d",
+    "model-v1.json": "393cb3e8b5da94d326b2bc1bf037afd1f6fc3b61653e14aab29b1a776cb5e212",
+    "material-model-v1.json": "31aa6058261857d2b220c053e90f1f46b7006a78dc09bbf32e879beac9a89136",
+    "report-v1.json": "02f4bb30a662dfb025d51d8def2473cdf4e49d0fe9f6bb08543a62db1f5321d7",
+    "ledger-v1.json": "f178d7ecfe47e14df468dcf9f545ebb483f6925cd388a019b60bb106092c8ae0",
+    "human-review-v1.json": "91495491df7251da0bea8eaea7f4d2444cc7b79371d407292a5d206f6c93fdcb",
+    "scoped-acceptance-v1.json": "54713b5e4dec99d39d574d85e8292a7b116d3da6ab7497961c541a90fbec84b8"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "prior_feedback_ref": {
+    "path": "benchmarks/terminal-highlights/roi2-q1-gate-ct-m1-review-feedback-v1.json",
+    "sha256": "ec282b2288f22b7cdb2552687d45f45e5fb5fccf275f62dad02c7693dc95f85e"
+  },
+  "prior_candidate_ref": {
+    "path": "benchmarks/terminal-highlights/roi2-q1-gate-ct-m1-candidate-v2.json",
+    "sha256": "02f9c848d692e1053f66000910cc348d91f22721341bce9ef7584902ce1596b2"
+  },
+  "statement": "CT归属与M1选段确认无误",
+  "scope": "Existing R2_Q1 gate contact cluster ownership and local M1 segment; not exact cut centers or counts",
+  "prior_poly_native_CT_window_xywh": [
+    1743,
+    2820,
+    28,
+    22
+  ],
+  "current_measured_centers": [
+    [
+      1754,
+      2831
+    ],
+    [
+      1764,
+      2831
+    ]
+  ],
+  "inside_prior_cluster_window": [
+    true,
+    true
+  ],
+  "precise_contact_landing_coordinates": "unknown_in_prior_human_review",
+  "current_pixel_centers_and_count": "new_candidates_pending_review",
+  "historical_network_unchanged": true
+}

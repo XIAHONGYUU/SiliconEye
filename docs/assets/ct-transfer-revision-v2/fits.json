@@ -1,0 +1,639 @@
+[
+  {
+    "id": "RING-TOP",
+    "occupied_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "unobserved_slots": [],
+    "exclusions_not_deleted_evidence": [],
+    "correspondence": "AI_local_row_and_material_hypothesis",
+    "completeness": "observed_row_subset_not_full_material_coverage",
+    "measured_observations": {
+      "objects": [
+        {
+          "id": "PROFILE-RING-TOP-14",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3202,
+              1838
+            ],
+            "peak_gray": 219.81060791015625,
+            "local_residual": 22.259429931640625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3216,
+              1832
+            ],
+            "peak_gray": 214.2467498779297,
+            "local_residual": 26.14703369140625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-42",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3230,
+              1839
+            ],
+            "peak_gray": 222.53103637695312,
+            "local_residual": 22.981536865234375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-58",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3246,
+              1833
+            ],
+            "peak_gray": 206.50584411621094,
+            "local_residual": 24.152145385742188
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-72",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3260,
+              1832
+            ],
+            "peak_gray": 214.3172149658203,
+            "local_residual": 30.42547607421875
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-83",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3271,
+              1837
+            ],
+            "peak_gray": 195.83120727539062,
+            "local_residual": 11.939468383789062
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-98",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3286,
+              1831
+            ],
+            "peak_gray": 223.4244842529297,
+            "local_residual": 31.743499755859375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-113",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3301,
+              1835
+            ],
+            "peak_gray": 215.53651428222656,
+            "local_residual": 27.26641845703125
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-127",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3315,
+              1831
+            ],
+            "peak_gray": 222.33901977539062,
+            "local_residual": 23.06640625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-143",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3331,
+              1834
+            ],
+            "peak_gray": 222.5129852294922,
+            "local_residual": 30.196182250976562
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-157",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3345,
+              1831
+            ],
+            "peak_gray": 216.973876953125,
+            "local_residual": 25.393096923828125
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-172",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3360,
+              1833
+            ],
+            "peak_gray": 221.4105987548828,
+            "local_residual": 16.297988891601562
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-184",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3372,
+              1836
+            ],
+            "peak_gray": 227.40492248535156,
+            "local_residual": 25.466552734375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-201",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3389,
+              1837
+            ],
+            "peak_gray": 224.41966247558594,
+            "local_residual": 19.7869873046875
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-212",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3400,
+              1831
+            ],
+            "peak_gray": 218.95689392089844,
+            "local_residual": 19.0706787109375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-227",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3415,
+              1830
+            ],
+            "peak_gray": 223.52586364746094,
+            "local_residual": 23.583587646484375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-241",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3429,
+              1834
+            ],
+            "peak_gray": 224.52880859375,
+            "local_residual": 34.336090087890625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-257",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3445,
+              1831
+            ],
+            "peak_gray": 226.14703369140625,
+            "local_residual": 19.582305908203125
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-268",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3456,
+              1836
+            ],
+            "peak_gray": 227.63758850097656,
+            "local_residual": 16.342300415039062
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-282",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3470,
+              1829
+            ],
+            "peak_gray": 224.64781188964844,
+            "local_residual": 17.83209228515625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-296",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3484,
+              1831
+            ],
+            "peak_gray": 221.50714111328125,
+            "local_residual": 21.687973022460938
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-312",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3500,
+              1830
+            ],
+            "peak_gray": 225.3254852294922,
+            "local_residual": 30.327728271484375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-323",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3511,
+              1834
+            ],
+            "peak_gray": 219.8222198486328,
+            "local_residual": 11.855911254882812
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-342",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3530,
+              1829
+            ],
+            "peak_gray": 221.2049102783203,
+            "local_residual": 17.163925170898438
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-352",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3540,
+              1830
+            ],
+            "peak_gray": 228.37294006347656,
+            "local_residual": 23.363449096679688
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-368",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3556,
+              1829
+            ],
+            "peak_gray": 223.819091796875,
+            "local_residual": 20.631515502929688
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-382",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3570,
+              1829
+            ],
+            "peak_gray": 221.30734252929688,
+            "local_residual": 22.620193481445312
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-397",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3585,
+              1830
+            ],
+            "peak_gray": 220.4547576904297,
+            "local_residual": 20.684295654296875
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-412",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3600,
+              1832
+            ],
+            "peak_gray": 208.8397979736328,
+            "local_residual": 29.4384765625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-426",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3614,
+              1833
+            ],
+            "peak_gray": 216.98338317871094,
+            "local_residual": 24.55865478515625
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-436",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3624,
+              1832
+            ],
+            "peak_gray": 204.20724487304688,
+            "local_residual": 11.93011474609375
+          }
+        },
+        {
+          "id": "PROFILE-RING-TOP-453",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3641,
+              1832
+            ],
+            "peak_gray": 222.77688598632812,
+            "local_residual": 21.799636840820312
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "RING-LEFT",
+    "occupied_slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "unobserved_slots": [],
+    "exclusions_not_deleted_evidence": [],
+    "correspondence": "AI_local_row_and_material_hypothesis",
+    "completeness": "observed_row_subset_not_full_material_coverage",
+    "measured_observations": {
+      "objects": [
+        {
+          "id": "PROFILE-RING-LEFT-7",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              1852
+            ],
+            "peak_gray": 203.78858947753906,
+            "local_residual": 23.532760620117188
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-19",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3186,
+              1864
+            ],
+            "peak_gray": 215.3000030517578,
+            "local_residual": 33.64909362792969
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-33",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3185,
+              1878
+            ],
+            "peak_gray": 204.81141662597656,
+            "local_residual": 24.197830200195312
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-48",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3186,
+              1893
+            ],
+            "peak_gray": 218.8280792236328,
+            "local_residual": 38.501495361328125
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-63",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              1908
+            ],
+            "peak_gray": 208.98683166503906,
+            "local_residual": 25.169342041015625
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-77",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3186,
+              1922
+            ],
+            "peak_gray": 218.95945739746094,
+            "local_residual": 29.11865234375
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-92",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              1937
+            ],
+            "peak_gray": 217.9073486328125,
+            "local_residual": 27.108627319335938
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-107",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              1952
+            ],
+            "peak_gray": 218.1719512939453,
+            "local_residual": 18.856613159179688
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-122",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              1967
+            ],
+            "peak_gray": 214.4316864013672,
+            "local_residual": 14.499343872070312
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-132",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3185,
+              1977
+            ],
+            "peak_gray": 220.9315948486328,
+            "local_residual": 20.999252319335938
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-150",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3186,
+              1995
+            ],
+            "peak_gray": 218.93295288085938,
+            "local_residual": 17.7896728515625
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-162",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              2007
+            ],
+            "peak_gray": 217.51974487304688,
+            "local_residual": 18.380447387695312
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-177",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              2022
+            ],
+            "peak_gray": 220.95091247558594,
+            "local_residual": 19.410507202148438
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-191",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              2036
+            ],
+            "peak_gray": 219.68069458007812,
+            "local_residual": 24.192047119140625
+          }
+        },
+        {
+          "id": "PROFILE-RING-LEFT-207",
+          "evidence_tier": "raw_band_profile_peak",
+          "source_observation": {
+            "source_native_center_xy": [
+              3187,
+              2052
+            ],
+            "peak_gray": 217.6338653564453,
+            "local_residual": 16.298629760742188
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "parent7044_records_unchanged": true,
+  "AA335_POLY695_records_unchanged": true,
+  "new_CT": 2960,
+  "total_CT": 10004,
+  "all_input_hashes_valid": true,
+  "parent_acceptance_and_verification_hashes_valid": true,
+  "stage_status": "HOLD",
+  "safe_subset_geometry": "PASS",
+  "source_decision_cases": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ],
+  "static": "SVG_XML_PNG_decode_JSON_links_anchors_PASS",
+  "browser_render": "not_automatically_tested_known_file_URL_security_restriction",
+  "snapshot_sha256": {
+    "model-v1.json": "f5dcd6acfebe34da030885e29fa21f78e73db19ce1103f9fae5d0b5bd19c562f",
+    "material-model-v1.json": "14a4f9659f14cf822c4222f98208fe10bb8ce4cb2dd12a27fb2a7db10e9c0498",
+    "spec-v1.json": "50a2130328ea5bfc2c0742669b6e4d71d4695a3bd1868a9e1d5ded9925c5d40c",
+    "report-v1.json": "509d07add57593f1c8c8f50e83a9846dd72289099d114d358835a1c73d1076b2",
+    "selected-contacts-v1.json": "01ad1bfa903da68c79a1ff8eb44a74fc5ea8524073846a0c0ed7baa09eaf230f",
+    "quarantined-observations-v1.json": "763855c0d9d46fec3ab07face80bdc505db79ef2e61c3e8d3b3a636fc156c64a",
+    "stage-gate-v1.json": "35ce570c04b2149991da014932d080ac4e9239b6eee318bfd26d9e57aba65229"
+  }
+}

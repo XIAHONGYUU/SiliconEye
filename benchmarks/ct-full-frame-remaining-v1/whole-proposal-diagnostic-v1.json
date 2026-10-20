@@ -1,0 +1,51 @@
+{
+  "status": "FAIL",
+  "errors": [
+    {
+      "id": "CTR-G-CL2-Q3-AA-F01614-02-bottom-000",
+      "reason": "source_peak_reused"
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA-F01803-SD06-S005",
+      "reason": "no_observed_source_support"
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA-F01804-SD05-S001",
+      "reason": "no_observed_source_support"
+    }
+  ],
+  "positive_area_overlap_pairs": [
+    [
+      "CTX-CTT-BAND-AA-G004-00-S000",
+      "CTX-CTT-BAND-AA-G004-02-S000"
+    ],
+    [
+      "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0-SD00-S000",
+      "CTSD2-G65-P08-left-0"
+    ]
+  ],
+  "min_gap_violations": [
+    [
+      "CTX-CTT-BAND-AA-G001-00-S003",
+      "CTX-CTT-BAND-AA-G001-03-S000"
+    ],
+    [
+      "CTX-CTT-BAND-AA-G004-00-S000",
+      "CTX-CTT-BAND-AA-G004-02-S000"
+    ],
+    [
+      "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0-SD00-S000",
+      "CTSD2-G65-P04-left-0"
+    ],
+    [
+      "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0-SD00-S000",
+      "CTSD2-G65-P08-left-0"
+    ]
+  ],
+  "minimum_edge_gap_px": 0.0,
+  "minimum_AA_enclosure_px": 0.9999999999999999,
+  "minimum_POLY_clearance_px": 1.4999999999995453,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 10407,
+  "physical_PDK_DRC": false
+}

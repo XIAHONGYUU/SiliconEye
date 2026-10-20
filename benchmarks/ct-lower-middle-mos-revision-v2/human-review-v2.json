@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-20",
+  "user_feedback_verbatim": "C，D,F三项均批准，现在来看CT还有需要我批准的地方吗",
+  "review_state": "human_accepted_displayed_C_D_F_local_revisions",
+  "approved_cases": [
+    "C",
+    "D",
+    "F"
+  ],
+  "parent_human_review_ref": "human-review-v1.json",
+  "scope": "C/D three-row SD and stepped edge placement;C rejected X remains absent;F two gateCT at displayed local positions",
+  "preserved_limits": [
+    "143 prior orange slots remain accepted",
+    "No whole7044 snapshot human acceptance inferred",
+    "Original observations remain algorithm measurements or estimated human/context positions as recorded",
+    "Other four single gateCT counts remain unknown but at least one CT is recorded per gate; not a required repeat approval",
+    "No new M1/net inference or physical PDK DRC",
+    "Legacy661 ring geometry detail caveat unchanged"
+  ]
+}

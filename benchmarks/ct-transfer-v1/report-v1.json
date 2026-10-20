@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 7.25,
+  "minimum_AA_enclosure_px": 1.5,
+  "minimum_POLY_clearance_px": 1.5,
+  "minimum_POLY_enclosure_px": 1.0,
+  "contact_count": 117,
+  "physical_PDK_DRC": false,
+  "protected_contact_count": 53,
+  "new_contact_count": 64,
+  "protected_materials_unchanged": true,
+  "scope": "three_local_transfer_cases_not_fullframe",
+  "human_review": "pending_new_cases_only",
+  "photo_correspondence": "AI_local_candidates",
+  "implementation_sha256": "91da2d4cca340921e7edf7564a570225595cf8b6914f784577c74f43f53ef905",
+  "shared_geometry_implementation_sha256": "5b42a5d2f58649a2c11980b08074d6f6ffa270175ec99c21dcb9ff6afe1a1396"
+}

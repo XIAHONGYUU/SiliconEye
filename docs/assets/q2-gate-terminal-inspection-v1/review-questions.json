@@ -1,0 +1,24 @@
+{
+  "status": "human_decision_required",
+  "questions": [
+    {
+      "id": "GT-A",
+      "region": "A",
+      "gate_aliases": "QG01–QG08",
+      "question": "下端短亮条是否包含真实栅CT，还是仅材料边缘？M1的A-L1/A-L2为引出候选区，不预先判共栅。"
+    },
+    {
+      "id": "GT-B",
+      "region": "B",
+      "gate_aliases": "QG09–QG16",
+      "question": "下端短亮条是否为栅CT所在区域？是否有上端/侧向引出？B-L1只表示M1候选范围。"
+    },
+    {
+      "id": "GT-C",
+      "region": "C",
+      "gate_aliases": "QG17–QG30",
+      "question": "实际栅引出位于下端、上端还是分组不同？M1的C-L1/C-L2上下均有走线，不能假定全组同一端或共栅。"
+    }
+  ],
+  "do_not_infer": "Optical maxima, a repeated bright cap, proximity or an unqualified M1 projection do not establish CT identity or a common gate."
+}

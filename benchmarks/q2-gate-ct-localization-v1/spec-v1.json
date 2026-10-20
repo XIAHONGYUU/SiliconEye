@@ -1,0 +1,1008 @@
+{
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "protected_contacts": {
+      "path": "benchmarks/ct-transfer-revision-v2/model-v1.json",
+      "sha256": "5773d146c5ceb6c75e1454e514235edc1f9347b1a6f4a916e538b09f094a91c4"
+    },
+    "acceptance": {
+      "path": "benchmarks/ct-transfer-revision-v2/acceptance-v1.json",
+      "sha256": "ff46b7ca96edd6fdcc91a1c2d6d4f62b22eec1da30046015acbb45aa59509136"
+    },
+    "observations": {
+      "path": "benchmarks/q2-gate-ct-localization-v1/source-observations-v1.json",
+      "sha256": "aff4c20aa95daacc7c53ce9c0b0a0da8d0d51434dd5d9152808f0b159d7979c7"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "retained_contacts": {
+      "path": "benchmarks/ct-middle-mos-confirmed-v2/model-v1.json",
+      "sha256": "551cece7be91ba21774911b48f869dcf948883aecdb69fc6d3d6ec3dba20f798"
+    },
+    "terminal_human_review": {
+      "path": "benchmarks/q2-gate-terminal-inspection-v1/human-review-v1.json",
+      "sha256": "0895a9d4f6ec50b9ca0a0695bc1546d8bac79ce0508c7dd22f6b7f803d2fcf28"
+    },
+    "cap_measurements": {
+      "path": "benchmarks/q2-gate-ct-localization-v1/measurements-v1.json",
+      "sha256": "ba457571ece5fde618c9264da095f5c013d890f73e7152245f213cf6c82c7e67"
+    },
+    "review_A": {
+      "path": "docs/assets/q2-gate-terminal-inspection-v1/A-m1-leads.png",
+      "sha256": "e7ce7f74c309c1d57223cf6801bcd3e030b344e4603dc08cbb9f52ef02d4c86e"
+    },
+    "review_B": {
+      "path": "docs/assets/q2-gate-terminal-inspection-v1/B-m1-leads.png",
+      "sha256": "edbd61cd05019a28b7c604d98385387ac5597d805826c2590ab74a670be539f9"
+    },
+    "review_C": {
+      "path": "docs/assets/q2-gate-terminal-inspection-v1/C-m1-leads.png",
+      "sha256": "2f92f8b4e344c64ff81d6cbd861922eb1797238978557fdccb9d7305a0374169"
+    },
+    "measurement_report": {
+      "path": "benchmarks/q2-gate-ct-localization-v1/measurement-report-v1.json",
+      "sha256": "97e9dcb59e52d1a0c238026f54599497e115936502f21d2b9a4d4afc965426af"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "families": [],
+  "rows": [
+    {
+      "id": "Q2-QG01-GATE",
+      "axis": 0,
+      "source_roi": [
+        2096,
+        2029,
+        2136,
+        2042
+      ],
+      "source_origin": 2108,
+      "source_pitch": 16.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2223.3777,
+        2179.5698
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A1-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG02-GATE",
+      "axis": 0,
+      "source_roi": [
+        2152,
+        2029,
+        2192,
+        2042
+      ],
+      "source_origin": 2170,
+      "source_pitch": 11.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2290.3163,
+        2179.5698
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A1-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG03-GATE",
+      "axis": 0,
+      "source_roi": [
+        2234,
+        2028,
+        2278,
+        2041
+      ],
+      "source_origin": 2247,
+      "source_pitch": 14.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2349.6312,
+        2179.5698
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A2-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG04-GATE",
+      "axis": 0,
+      "source_roi": [
+        2294,
+        2028,
+        2334,
+        2041
+      ],
+      "source_origin": 2303,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2407.176033333333,
+        2179.5698
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A2-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG05-GATE",
+      "axis": 0,
+      "source_roi": [
+        2346,
+        2082,
+        2391,
+        2095
+      ],
+      "source_origin": 2360,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2464.7208666666666,
+        2224.9528
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A2-03",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG06-GATE",
+      "axis": 0,
+      "source_roi": [
+        2407,
+        2082,
+        2442,
+        2095
+      ],
+      "source_origin": 2414,
+      "source_pitch": 16.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2522.2657,
+        2224.9528
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A2-04",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG07-GATE",
+      "axis": 0,
+      "source_roi": [
+        2483,
+        2081,
+        2526,
+        2094
+      ],
+      "source_origin": 2500,
+      "source_pitch": 10.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2583.601,
+        2224.9528
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A3-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG08-GATE",
+      "axis": 0,
+      "source_roi": [
+        2542,
+        2081,
+        2582,
+        2094
+      ],
+      "source_origin": 2555,
+      "source_pitch": 10.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2648.0533,
+        2224.9528
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-A3-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG09-GATE",
+      "axis": 0,
+      "source_roi": [
+        2692,
+        2025,
+        2717,
+        2038
+      ],
+      "source_origin": 2694,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2765.3411,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B1-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG10-GATE",
+      "axis": 0,
+      "source_roi": [
+        2733,
+        2025,
+        2766,
+        2038
+      ],
+      "source_origin": 2745,
+      "source_pitch": 9.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2815.1597,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B1-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG11-GATE",
+      "axis": 0,
+      "source_roi": [
+        2782,
+        2025,
+        2816,
+        2038
+      ],
+      "source_origin": 2794,
+      "source_pitch": 11.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2864.9782999999998,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B1-03",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG12-GATE",
+      "axis": 0,
+      "source_roi": [
+        2832,
+        2024,
+        2862,
+        2037
+      ],
+      "source_origin": 2844,
+      "source_pitch": 14.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2914.7969,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B1-04",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG13-GATE",
+      "axis": 0,
+      "source_roi": [
+        2906,
+        2023,
+        2940,
+        2036
+      ],
+      "source_origin": 2918,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2975.3613,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B2-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG14-GATE",
+      "axis": 0,
+      "source_roi": [
+        2956,
+        2023,
+        2995,
+        2036
+      ],
+      "source_origin": 2968,
+      "source_pitch": 10.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        3025.6338333333333,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B2-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG15-GATE",
+      "axis": 0,
+      "source_roi": [
+        3011,
+        2022,
+        3039,
+        2035
+      ],
+      "source_origin": 3017,
+      "source_pitch": 11.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        3075.9063666666666,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B2-03",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG16-GATE",
+      "axis": 0,
+      "source_roi": [
+        3055,
+        2022,
+        3088,
+        2035
+      ],
+      "source_origin": 3067,
+      "source_pitch": 10.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        3126.1789,
+        2178.5836
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-B2-04",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG17-GATE",
+      "axis": 0,
+      "source_roi": [
+        2138,
+        2470,
+        2179,
+        2483
+      ],
+      "source_origin": 2152,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2255.6025,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C0-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG18-GATE",
+      "axis": 0,
+      "source_roi": [
+        2195,
+        2469,
+        2234,
+        2482
+      ],
+      "source_origin": 2207,
+      "source_pitch": 16.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2312.2138,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C0-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG19-GATE",
+      "axis": 0,
+      "source_roi": [
+        2250,
+        2468,
+        2290,
+        2481
+      ],
+      "source_origin": 2269,
+      "source_pitch": 9.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2368.8251,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C0-03",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG20-GATE",
+      "axis": 0,
+      "source_roi": [
+        2306,
+        2467,
+        2346,
+        2480
+      ],
+      "source_origin": 2319,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2425.4364,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C0-04",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG21-GATE",
+      "axis": 0,
+      "source_roi": [
+        2362,
+        2467,
+        2400,
+        2480
+      ],
+      "source_origin": 2374,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2482.0477,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C0-05",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG22-GATE",
+      "axis": 0,
+      "source_roi": [
+        2442,
+        2465,
+        2477,
+        2478
+      ],
+      "source_origin": 2454,
+      "source_pitch": 15.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2538.5758,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C1-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG23-GATE",
+      "axis": 0,
+      "source_roi": [
+        2493,
+        2464,
+        2536,
+        2477
+      ],
+      "source_origin": 2510,
+      "source_pitch": 19.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2606.7064,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C1-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG24-GATE",
+      "axis": 0,
+      "source_roi": [
+        2577,
+        2463,
+        2615,
+        2476
+      ],
+      "source_origin": 2594,
+      "source_pitch": 10.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2664.2394,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C2-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG25-GATE",
+      "axis": 0,
+      "source_roi": [
+        2631,
+        2462,
+        2675,
+        2475
+      ],
+      "source_origin": 2649,
+      "source_pitch": 10.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2732.847,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C2-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG26-GATE",
+      "axis": 0,
+      "source_roi": [
+        2711,
+        2461,
+        2754,
+        2474
+      ],
+      "source_origin": 2728,
+      "source_pitch": 11.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2789.4629,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C3-01",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG27-GATE",
+      "axis": 0,
+      "source_roi": [
+        2770,
+        2461,
+        2799,
+        2474
+      ],
+      "source_origin": 2778,
+      "source_pitch": 16.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2844.129725,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C3-02",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG28-GATE",
+      "axis": 0,
+      "source_roi": [
+        2815,
+        2459,
+        2854,
+        2472
+      ],
+      "source_origin": 2836,
+      "source_pitch": 11.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2898.79655,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C3-03",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG29-GATE",
+      "axis": 0,
+      "source_roi": [
+        2870,
+        2459,
+        2908,
+        2472
+      ],
+      "source_origin": 2892,
+      "source_pitch": 9.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        2953.4633750000003,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C3-04",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "Q2-QG30-GATE",
+      "axis": 0,
+      "source_roi": [
+        2924,
+        2458,
+        2967,
+        2471
+      ],
+      "source_origin": 2946,
+      "source_pitch": 9.0,
+      "source_fit_tolerance": 1,
+      "layout_origin": [
+        3008.1302,
+        2600.3213
+      ],
+      "layout_pitch": 12,
+      "material": "POLY",
+      "target": "CL2-Q2-C3-05",
+      "min_gray": 225,
+      "min_residual": 18,
+      "inspection_slot_range": [
+        0,
+        1
+      ]
+    }
+  ],
+  "profile_rows": [],
+  "cases": [
+    {
+      "id": "O",
+      "title": "位置总览",
+      "source_bbox": [
+        2010,
+        1750,
+        3160,
+        2550
+      ],
+      "layout_bbox": [
+        2140,
+        1900,
+        3220,
+        2690
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "A",
+      "title": "上左A：阶梯AA及外围环",
+      "source_bbox": [
+        2010,
+        1750,
+        2645,
+        2140
+      ],
+      "layout_bbox": [
+        2140,
+        1900,
+        2730,
+        2290
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1引出区域对照（独立坐标，非孔位投影）"
+        ]
+      ]
+    },
+    {
+      "id": "B",
+      "title": "上右B：两组四指及外围环",
+      "source_bbox": [
+        2620,
+        1750,
+        3160,
+        2120
+      ],
+      "layout_bbox": [
+        2700,
+        1900,
+        3220,
+        2270
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1引出区域对照（独立坐标，非孔位投影）"
+        ]
+      ]
+    },
+    {
+      "id": "C",
+      "title": "下方C：多组栅指及外围环",
+      "source_bbox": [
+        2050,
+        2110,
+        3050,
+        2550
+      ],
+      "layout_bbox": [
+        2170,
+        2250,
+        3110,
+        2690
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1引出区域对照（独立坐标，非孔位投影）"
+        ]
+      ]
+    },
+    {
+      "id": "GA",
+      "title": "上左A栅端原图细看",
+      "source_bbox": [
+        2040,
+        1980,
+        2640,
+        2140
+      ],
+      "layout_bbox": [
+        2190,
+        2140,
+        2690,
+        2265
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1引出区域对照（独立坐标，非孔位投影）"
+        ]
+      ]
+    },
+    {
+      "id": "GC",
+      "title": "下方C栅端原图细看",
+      "source_bbox": [
+        2100,
+        2400,
+        3020,
+        2540
+      ],
+      "layout_bbox": [
+        2220,
+        2560,
+        3055,
+        2655
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。",
+      "additional_modes": [
+        [
+          "m1-context",
+          "png",
+          "M1引出区域对照（独立坐标，非孔位投影）"
+        ]
+      ]
+    }
+  ],
+  "scope": "Q2 bottom POLY contact location candidates only, no net or M1 assignment",
+  "source_correspondence": "AI local path landmarks in poly source, not historical AA source outlines or a blind global projection",
+  "source_uncertainty": "inspection slots are prompts for review, not evidence of a physically missing contact; no generated filler",
+  "review_notes": "已确认栅CT位于下端。紫色为新POLY接触候选，灰蓝为原1825 CT。每条栅的两处强亮点来自原照片，孔数与精确位置仍为AI候选；两处较弱峰保留在测量台账，未因阵列期望补孔。M1仅交叉核对引出区域，不直接投影CT或确认共栅。",
+  "review_title": "Q2：30条栅下端CT位置候选",
+  "review_images": [
+    {
+      "input_key": "review_A",
+      "output_name": "A-m1-context.png"
+    },
+    {
+      "input_key": "review_B",
+      "output_name": "B-m1-context.png"
+    },
+    {
+      "input_key": "review_C",
+      "output_name": "C-m1-context.png"
+    },
+    {
+      "input_key": "review_A",
+      "output_name": "GA-m1-context.png"
+    },
+    {
+      "input_key": "review_C",
+      "output_name": "GC-m1-context.png"
+    }
+  ]
+}

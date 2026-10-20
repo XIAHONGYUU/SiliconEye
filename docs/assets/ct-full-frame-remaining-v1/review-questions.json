@@ -1,0 +1,53 @@
+{
+  "status": "HOLD_not_full_frame_acceptance",
+  "questions": [
+    {
+      "id": "Q1",
+      "title": "左侧四管：真实栅端来源",
+      "question": "四管/2×2结论保留，不重审数量。旧四个源框的端部取点与既有环及G18源记录重合，当前不能证明四管的真实栅端位置。请在本组原图指出任意一个真实栅端CT，或说明引出在上/下/侧；红叉只表示本组归属被拒绝，亮点本身仍可能是环或G18上的CT。",
+      "material_ids": [
+        "CL2-Q3-AA-F01613-01",
+        "CL2-Q3-AA-F01613-02",
+        "CL2-Q3-AA-F01614-01",
+        "CL2-Q3-AA-F01614-02"
+      ],
+      "blocks": "four gate-terminal ownerships",
+      "status": "needs_human_source_landmark"
+    },
+    {
+      "id": "Q2",
+      "title": "U10：两条细长POLY下端",
+      "question": "旧紫色源框的端部与亮点没有可靠对应。两条细长POLY在下端分别引出，还是共用端部？请指出实际CT所在亮点；目前不补孔、不补POLY桥。",
+      "material_ids": [
+        "G68-P01",
+        "G68-P02"
+      ],
+      "blocks": "two gate-terminal ownerships",
+      "status": "needs_human_terminal_landmark"
+    },
+    {
+      "id": "Q3",
+      "title": "环与栅端的原图对应",
+      "question": "A/B/C橙圈是AI从器件上下文辨认的栅端CT，蓝线标出相邻环参考。请核对它们与联合图中G/A的对应。源定位发生反例的7条AA路径已整段暂缓，确认材料对应后再补，不能只删冲突点宣称整段正确。",
+      "material_ids": [
+        "G07-P02",
+        "G62-P04",
+        "SG-U04-080"
+      ],
+      "deferred_source_paths": [
+        "BAND-AA-F01648-00",
+        "BAND-AA-F01951-00",
+        "BAND-AA-F01952-00",
+        "BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-4-00",
+        "BAND-AA2-TOP-H1-AA-0-00",
+        "BAND-AA2-TOP-H2-AA-0-00",
+        "BAND-AA2-TOP-STEP-2-AA-0-02",
+        "BAND-AA2-UPPER-COMPLEX-GUARD-AA-0-split01-00"
+      ],
+      "blocks": "seven AA source-path correspondences",
+      "status": "needs_human_crosscheck_correspondence"
+    }
+  ],
+  "no_reapproval_of_parent7044": true,
+  "exact_CT_count_not_primary_human_task": true
+}

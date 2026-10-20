@@ -1,0 +1,382 @@
+{
+  "operation": "apply_local_review_revision",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/material-model-v1.json",
+      "sha256": "ad6442559087ed435dca2f5ec56f55be8bed9bdc3979022235f30ff75beb868a"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/model-v1.json",
+      "sha256": "fa6f8eae45baaa196a829c1c2f0b88b5d0016d52be11f94583a7c5fe70672d38"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/spec-v1.json",
+      "sha256": "8e284a90b88f62e0c4ccc30e49f67f617cf8c0a254b68a8b7902043cfab4e4bc"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "parent_acceptance": {
+      "path": "benchmarks/ct-lower-middle-mos-revision-v2/acceptance-v1.json",
+      "sha256": "7eddd605014c45803c36edcf4eca8282b78dbfa997e208873b5b911d2895714c"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/authorization-v1.json",
+      "sha256": "62116d9a441a5f5b8309aee5b05f78b028466134ff995c7967e076c9ff4c148f"
+    },
+    "new_contacts": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/selected-contacts-v1.json",
+      "sha256": "01ad1bfa903da68c79a1ff8eb44a74fc5ea8524073846a0c0ed7baa09eaf230f"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/unknown-sites-v1.json",
+      "sha256": "61a6f5f84735a33290ddb8aa6f318aa610c98685d65361e40db6e692d4a8b0e7"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "Q1_inspection": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q1-inspection.png",
+      "sha256": "8486dad87d98acec589642a6b6644921b22f84de550375a056dbde9b2243f6d4"
+    },
+    "Q1_m1-context": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q1-m1.png",
+      "sha256": "9d0621f4ff6a8028c601b619e27335d8bd59ef88979f36f017c6ddd6c8dc3ddf"
+    },
+    "Q2_inspection": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q2-inspection.png",
+      "sha256": "d41c54da666f07985e4b8b14f210f6092599c04d331f5dd2a765490b5df36bf0"
+    },
+    "Q2_m1-context": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q2-m1.png",
+      "sha256": "4e70aece92900713fb21ae6f7652c8199ed7543ac0a744450141bc7ff855b14a"
+    },
+    "Q3A_inspection": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q3A-inspection.png",
+      "sha256": "2eff342019abed4400b884c3ccf461d088368049a0c2a78edecf6330ca326cc2"
+    },
+    "Q3B_inspection": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q3B-inspection.png",
+      "sha256": "780f6203fe0d176a8c63e88d33441823ec30c2113ac3cff3c6b23790205bf19b"
+    },
+    "Q3C_inspection": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-context/Q3C-inspection.png",
+      "sha256": "31d90a28ab41f29eb5f0da51e54af7290bc5b638b4a695f6758dde52a00e1af7"
+    },
+    "questions": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/review-questions-v1.json",
+      "sha256": "c75867adab839988723b50d34987a3be46d7909b619d18f48a79f0d3b8f676be"
+    },
+    "quarantine": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/quarantined-observations-v1.json",
+      "sha256": "763855c0d9d46fec3ab07face80bdc505db79ef2e61c3e8d3b3a636fc156c64a"
+    },
+    "material_coverage": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/final-material-coverage-v1.json",
+      "sha256": "fdf336ff0491b1a19989b75b568bbf276afeb87193a24320c39174edab29c789"
+    },
+    "AA_band_audit": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/AA-band-audit-v1.json",
+      "sha256": "b650f20b0d0f7f99c81669db9faa2bdf47c303fb68151375eb811dd51d4a2b51"
+    },
+    "source_repair": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/source-correspondence-repair-v2.json",
+      "sha256": "733b8d18b3a7e64efeab77d8e1a5e6a8f76332926e2ac4ec338ffe525f70f1a8"
+    },
+    "deferred_paths": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/deferred-source-paths-v1.json",
+      "sha256": "59d5de9d3f31433a84b5ef304511025fc089e6542273305be7199fabded8de87"
+    },
+    "SD_recovery": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/SD-recovery-v1.json",
+      "sha256": "0ef2e83521381dd719d8b371d25db8f115fe8cdcacf18aef2910db6ea4034f52"
+    },
+    "last_SD": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/last-SD-body-inspection-v1.json",
+      "sha256": "e87ac57fa6f96ecf47f858ed6c92bfca10fae723971476bbce51b5b274bb6a20"
+    },
+    "terminal_direction_review": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/AI-terminal-direction-review-v1.json",
+      "sha256": "87b9ece5607ee4ad6528c8436a95421bc94d5326bffe2ed64cbb43d27e1cee04"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "material_changes": {
+    "objects": [],
+    "AA_objects": []
+  },
+  "contact_changes": [],
+  "review_images": [
+    {
+      "input_key": "Q1_inspection",
+      "output_name": "Q1-inspection.png"
+    },
+    {
+      "input_key": "Q1_m1-context",
+      "output_name": "Q1-m1-context.png"
+    },
+    {
+      "input_key": "Q2_inspection",
+      "output_name": "Q2-inspection.png"
+    },
+    {
+      "input_key": "Q2_m1-context",
+      "output_name": "Q2-m1-context.png"
+    },
+    {
+      "input_key": "Q3A_inspection",
+      "output_name": "Q3A-inspection.png"
+    },
+    {
+      "input_key": "Q3B_inspection",
+      "output_name": "Q3B-inspection.png"
+    },
+    {
+      "input_key": "Q3C_inspection",
+      "output_name": "Q3C-inspection.png"
+    }
+  ],
+  "cases": [
+    {
+      "id": "Q1",
+      "title": "Q1：旧四框对应冲突，需真实栅CT锚点",
+      "source_bbox": [
+        620,
+        1100,
+        1700,
+        1510
+      ],
+      "layout_bbox": [
+        960,
+        1350,
+        1620,
+        1810
+      ],
+      "scope": "只裁决端部来源，不重审数量或已批孔；紫框是旧源定位，不是新的已审物理边界。",
+      "additional_modes": [
+        [
+          "inspection",
+          "png",
+          "宽视野原图＋旧源框／被拒绝取点"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1独立坐标宽视野（未在此页精确配准）"
+        ]
+      ]
+    },
+    {
+      "id": "Q2",
+      "title": "Q2：U10两条细POLY端部待定位",
+      "source_bbox": [
+        2070,
+        1300,
+        2430,
+        1770
+      ],
+      "layout_bbox": [
+        2260,
+        1320,
+        2525,
+        1900
+      ],
+      "scope": "只裁决端部来源，不重审数量或已批孔；紫框是旧源定位，不是新的已审物理边界。",
+      "additional_modes": [
+        [
+          "inspection",
+          "png",
+          "宽视野原图＋旧源框／被拒绝取点"
+        ],
+        [
+          "m1-context",
+          "png",
+          "M1独立坐标宽视野（未在此页精确配准）"
+        ]
+      ]
+    },
+    {
+      "id": "Q3A",
+      "title": "Q3A：G07-P02 栅端G与上方环A的对应",
+      "source_bbox": [
+        4846,
+        111,
+        5126,
+        336
+      ],
+      "layout_bbox": [
+        4815.5,
+        323.0,
+        5109.5,
+        670.0
+      ],
+      "scope": "橙G为AI观察的栅端；蓝A是相邻环原图参考。两种图各自保留坐标，禁止盲投影。对应失败的整条新AA路径不进入CT输出。",
+      "additional_modes": [
+        [
+          "inspection",
+          "png",
+          "原图G／A参考（保留完整相邻器件）"
+        ]
+      ]
+    },
+    {
+      "id": "Q3B",
+      "title": "Q3B：G62-P04 栅端G与上方环A的对应",
+      "source_bbox": [
+        952,
+        3136,
+        1232,
+        3361
+      ],
+      "layout_bbox": [
+        1154.7730428571429,
+        3174.8774,
+        1439.7730428571429,
+        3451.4025
+      ],
+      "scope": "橙G为AI观察的栅端；蓝A是相邻环原图参考。两种图各自保留坐标，禁止盲投影。对应失败的整条新AA路径不进入CT输出。",
+      "additional_modes": [
+        [
+          "inspection",
+          "png",
+          "原图G／A参考（保留完整相邻器件）"
+        ]
+      ]
+    },
+    {
+      "id": "Q3C",
+      "title": "Q3C：SG-U04-080 栅端G与上方环A的对应",
+      "source_bbox": [
+        4964,
+        328,
+        5244,
+        553
+      ],
+      "layout_bbox": [
+        4940.5,
+        567.0,
+        5228.5,
+        850.0
+      ],
+      "scope": "橙G为AI观察的栅端；蓝A是相邻环原图参考。两种图各自保留坐标，禁止盲投影。对应失败的整条新AA路径不进入CT输出。",
+      "additional_modes": [
+        [
+          "inspection",
+          "png",
+          "原图G／A参考（保留完整相邻器件）"
+        ]
+      ]
+    },
+    {
+      "id": "O",
+      "title": "全幅：已审CT保持，新增候选与待决范围分开",
+      "source_bbox": [
+        0,
+        0,
+        5712,
+        4284
+      ],
+      "layout_bbox": [
+        200,
+        120,
+        5650,
+        4550
+      ],
+      "scope": "灰蓝为原7044工作快照；蓝／紫为新增AA／POLY CT候选。新图不代表全幅验收；未决路径与未确定孔不补入。"
+    },
+    {
+      "id": "T1",
+      "title": "上方左／中密集MOS：源漏与栅端候选",
+      "source_bbox": [
+        0,
+        70,
+        2700,
+        850
+      ],
+      "layout_bbox": [
+        230,
+        300,
+        2910,
+        1150
+      ],
+      "scope": "灰蓝为原7044工作快照；蓝／紫为新增AA／POLY CT候选。新图不代表全幅验收；未决路径与未确定孔不补入。"
+    },
+    {
+      "id": "T2",
+      "title": "上方右侧密集MOS及电阻W01端部",
+      "source_bbox": [
+        2400,
+        50,
+        5200,
+        900
+      ],
+      "layout_bbox": [
+        2550,
+        260,
+        5310,
+        1190
+      ],
+      "scope": "灰蓝为原7044工作快照；蓝／紫为新增AA／POLY CT候选。新图不代表全幅验收；未决路径与未确定孔不补入。"
+    },
+    {
+      "id": "T3",
+      "title": "上部下方两长排小MOS与可见环",
+      "source_bbox": [
+        0,
+        790,
+        5250,
+        1190
+      ],
+      "layout_bbox": [
+        230,
+        1000,
+        5320,
+        1490
+      ],
+      "scope": "灰蓝为原7044工作快照；蓝／紫为新增AA／POLY CT候选。新图不代表全幅验收；未决路径与未确定孔不补入。"
+    },
+    {
+      "id": "L",
+      "title": "左下小MOS与环的剩余可见部分",
+      "source_bbox": [
+        780,
+        2970,
+        1630,
+        3840
+      ],
+      "layout_bbox": [
+        1020,
+        3070,
+        1770,
+        3870
+      ],
+      "scope": "灰蓝为原7044工作快照；蓝／紫为新增AA／POLY CT候选。新图不代表全幅验收；未决路径与未确定孔不补入。"
+    },
+    {
+      "id": "R",
+      "title": "右下12宽MOS：只在独立观察端生成栅CT",
+      "source_bbox": [
+        3160,
+        3240,
+        4790,
+        3720
+      ],
+      "layout_bbox": [
+        3240,
+        3430,
+        4820,
+        3850
+      ],
+      "scope": "灰蓝为原7044工作快照；蓝／紫为新增AA／POLY CT候选。新图不代表全幅验收；未决路径与未确定孔不补入。"
+    }
+  ],
+  "review_title": "CT剩余范围：候选已补查，3项关键裁决待完成",
+  "review_notes": "原7044条记录和全部AA/POLY对象不动。新增来源候选仅导出整组几何合格子集；源归属反例会整条暂缓对应的新AA路径，全部原观察保留。全幅状态HOLD，不把安全子集PASS当作整层完成。请优先看Q1/Q2/Q3；其余范围供抽查，不要求逐孔审批。"
+}

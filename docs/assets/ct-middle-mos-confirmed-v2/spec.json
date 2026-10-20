@@ -1,0 +1,139 @@
+{
+  "operation": "confirm_review_slots",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-transfer-revision-v2/material-model-v1.json",
+      "sha256": "a64f5adc8a2330436a030848a8f5bf896433d4364f2941428e54ef3022e4d5ac"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-middle-mos-v1/model-v1.json",
+      "sha256": "3d405da0c1f5c851768496f7b0f23afc05ffa30f57e26c42c79bc6710c727be2"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-middle-mos-v1/unknown-sites-v1.json",
+      "sha256": "25249bc72988206ed6d09430f005e6170e8f31ae75c64b3493c57af656cdabeb"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-middle-mos-v1/spec-v1.json",
+      "sha256": "7c865157a90dbf43f00a96b99d9c75b523f11290a7a7b066e2dbbaed00665045"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-middle-mos-confirmed-v2/human-review-v1.json",
+      "sha256": "416511202364ace844a3ccb85d7e049589b2800a2668ebd2377d2b6caf30f04a"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "cases": [
+    {
+      "id": "O",
+      "title": "位置总览",
+      "source_bbox": [
+        2010,
+        1750,
+        3160,
+        2550
+      ],
+      "layout_bbox": [
+        2140,
+        1900,
+        3220,
+        2690
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "A",
+      "title": "上左A：阶梯AA及外围环",
+      "source_bbox": [
+        2010,
+        1750,
+        2645,
+        2140
+      ],
+      "layout_bbox": [
+        2140,
+        1900,
+        2730,
+        2290
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "B",
+      "title": "上右B：两组四指及外围环",
+      "source_bbox": [
+        2620,
+        1750,
+        3160,
+        2120
+      ],
+      "layout_bbox": [
+        2700,
+        1900,
+        3220,
+        2270
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "C",
+      "title": "下方C：多组栅指及外围环",
+      "source_bbox": [
+        2050,
+        2110,
+        3050,
+        2550
+      ],
+      "layout_bbox": [
+        2170,
+        2250,
+        3110,
+        2690
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "GA",
+      "title": "上左A栅端原图细看",
+      "source_bbox": [
+        2040,
+        1980,
+        2640,
+        2140
+      ],
+      "layout_bbox": [
+        2190,
+        2140,
+        2690,
+        2265
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    },
+    {
+      "id": "GC",
+      "title": "下方C栅端原图细看",
+      "source_bbox": [
+        2100,
+        2400,
+        3020,
+        2540
+      ],
+      "layout_bbox": [
+        2220,
+        2560,
+        3055,
+        2655
+      ],
+      "scope": "蓝色为新AA接触候选；黄色POLY与AA保持既有结果。GA/GC仅供辨别端部边缘和真实孔，不自动声明栅CT。"
+    }
+  ]
+}

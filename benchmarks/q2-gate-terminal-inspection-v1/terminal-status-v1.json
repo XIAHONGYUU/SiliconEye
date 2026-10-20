@@ -1,0 +1,339 @@
+{
+  "review_ref": {
+    "path": "benchmarks/q2-gate-terminal-inspection-v1/human-review-v1.json",
+    "sha256": "0895a9d4f6ec50b9ca0a0695bc1546d8bac79ce0508c7dd22f6b7f803d2fcf28"
+  },
+  "gates": [
+    {
+      "gate_id": "CL2-Q2-A1-01",
+      "review_alias": "QG01",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A1-02",
+      "review_alias": "QG02",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A2-01",
+      "review_alias": "QG03",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A2-02",
+      "review_alias": "QG04",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A2-03",
+      "review_alias": "QG05",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A2-04",
+      "review_alias": "QG06",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A3-01",
+      "review_alias": "QG07",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-A3-02",
+      "review_alias": "QG08",
+      "region": "A",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B1-01",
+      "review_alias": "QG09",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B1-02",
+      "review_alias": "QG10",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B1-03",
+      "review_alias": "QG11",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B1-04",
+      "review_alias": "QG12",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B2-01",
+      "review_alias": "QG13",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B2-02",
+      "review_alias": "QG14",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B2-03",
+      "review_alias": "QG15",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-B2-04",
+      "review_alias": "QG16",
+      "region": "B",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "human_confirmed_bottom_bar",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C0-01",
+      "review_alias": "QG17",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C0-02",
+      "review_alias": "QG18",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C0-03",
+      "review_alias": "QG19",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C0-04",
+      "review_alias": "QG20",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C0-05",
+      "review_alias": "QG21",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C1-01",
+      "review_alias": "QG22",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C1-02",
+      "review_alias": "QG23",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C2-01",
+      "review_alias": "QG24",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C2-02",
+      "review_alias": "QG25",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C3-01",
+      "review_alias": "QG26",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C3-02",
+      "review_alias": "QG27",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C3-03",
+      "review_alias": "QG28",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C3-04",
+      "review_alias": "QG29",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    },
+    {
+      "gate_id": "CL2-Q2-C3-05",
+      "review_alias": "QG30",
+      "region": "C",
+      "lead_side": "bottom",
+      "lead_side_status": "human_confirmed",
+      "gate_CT_region_status": "bottom_exit_confirmed_exact_contact_unknown",
+      "cut_count": null,
+      "cut_geometry": null,
+      "net_id": null
+    }
+  ],
+  "exported_CT_added": 0
+}

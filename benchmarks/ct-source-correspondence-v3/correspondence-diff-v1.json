@@ -1,0 +1,26 @@
+{
+  "old_native_column_seeds": [
+    1143,
+    1164,
+    1195,
+    1227,
+    1258,
+    1289,
+    1320
+  ],
+  "new_native_column_seeds": [
+    1164,
+    1195,
+    1227,
+    1258,
+    1289,
+    1320,
+    1351
+  ],
+  "mistake": "Whole family indexed one source column to the left; neighboring wide MOS column included; target right boundary missed",
+  "layout_change": false,
+  "AA_POLY_change": false,
+  "old_max_relative_column_pitch_deviation": 0.3225806451612903,
+  "new_max_relative_column_pitch_deviation": 0.03225806451612903,
+  "lesson": "Gate count and contrast do not verify material correspondence. Check boundary objects and source pitch pattern separately. Pitch statistic is a diagnostic, not a proven registration error."
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-20",
+  "user_feedback": {
+    "W1": "后面扩展出来的栅极需要和旁边的栅极相对位置对应。W1宽MOS的CT比六管MOS更合理且符合实际，不应该随意扩展栅极，要按照片比例；宽MOS基本无问题。",
+    "R1": "电阻提取没有问题，环无论上横向还是竖向都少了几个。",
+    "E1": "首条电阻上端没有问题。"
+  },
+  "approved_scope": [
+    "WIDE-DIFF",
+    "WIDE-GATE",
+    "RESISTOR-TOP"
+  ],
+  "pending": [
+    "RIGHT6 gate-end relative geometry revision",
+    "ring upper-left missing contacts"
+  ],
+  "prior_shared_gate_and_six_fingers": "preserved"
+}

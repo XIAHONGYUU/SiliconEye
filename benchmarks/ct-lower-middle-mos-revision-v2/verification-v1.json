@@ -1,0 +1,28 @@
+{
+  "status": "technical_and_semantic_checks_PASS_local_geometry_review_pending",
+  "focused_tests": "49 passed in5.55s: test_ct_transfer, test_ct_joint_reconstruction, test_gate_terminal_localization",
+  "geometry_gate": "7044 CT PASS; overlap0,min-gap violations0,min-edge-gap4.4px; budget5px square/3px gap/1px enclosure and channel clearance unchanged",
+  "semantic_gate": "44 full-body columns have3 shared-phase rows;4 stepped edge counts2/1/2/1;red X absent;F2 gateCT; four unrelated single gateCT unchanged",
+  "before_after": "44 prior count requirements fail; revised counts pass. Does not establish universal true CT count.",
+  "preservation": "all parent6874 source_evidence exact;6840 records unchanged,34 scoped records revised of which23 center changes;old4940 exact prefix;695POLY/335AA records unchanged;raw photos/input hashes checked",
+  "human_confirmation": "143 orange slots approved;27 further count/presence/context placements remain exact-geometry candidates; no invented peaks",
+  "static_and_visual": "SVG XML,PNG decode,local href/src/options and simulated select callbacks PASS;C/D/F canonical PNG inspected",
+  "browser_render": "not performed: known file URL browser security restriction; no workaround attempted",
+  "physical_PDK_DRC": false,
+  "whole_layer_complete": false,
+  "locked_files": {
+    "spec-v1.json": "8e284a90b88f62e0c4ccc30e49f67f617cf8c0a254b68a8b7902043cfab4e4bc",
+    "model-v1.json": "fa6f8eae45baaa196a829c1c2f0b88b5d0016d52be11f94583a7c5fe70672d38",
+    "material-model-v1.json": "ad6442559087ed435dca2f5ec56f55be8bed9bdc3979022235f30ff75beb868a",
+    "human-review-v1.json": "c528b06d2382559ab5136785c3596698ec892a9eab45acd01b857af91cbe1042",
+    "new-contacts-v1.json": "14e9f9d4069877f13432b4c4e202e8dba7711df63987cbf64c0533e67e66461b",
+    "report-v1.json": "0e210f8d06966d39d2c43935e9d25c23114f53901e81082e9bb7cd766af28b06",
+    "stage-quality-v1.json": "b3a5883e4bcdc5125a5eac42a6c71421ee2a023019cf322844d2f3ab7a1b54f7",
+    "scoped-acceptance-v1.json": "9bcb7fa039dceeaed11d0f2bbfe0a6a4e2e3da629090e6f0e3be8b2f838502c4",
+    "coverage-v1.json": "0617762168143f303697ba45126a3400268cb2941a4aaf3934256346f45c1a4c",
+    "excluded-sites-v1.json": "66435e4b5c55dcc31ee318a9367b2572f7d36dbb3c8d955a6165e49b2b6b051d",
+    "ledger-v1.json": "52560f0c463193f43cc03aa3f0cd376eac85eafa9624373beded7c41c8f90242"
+  },
+  "ruff": "PASS ct_transfer,ct_joint_reconstruction and three relevant test files",
+  "git_diff_check": "PASS"
+}

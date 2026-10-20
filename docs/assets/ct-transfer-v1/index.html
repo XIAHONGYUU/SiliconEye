@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>CT迁移验证 v1</title>
+<style>body{max-width:1400px;margin:24px auto;background:#111c28;color:#eee;font:16px sans-serif}
+section{border:1px solid #567;padding:16px;margin:20px 0}img{width:100%}select{padding:8px}
+a{color:#65baff}</style>
+<h1>CT迁移：宽MOS、环与电阻端部</h1><p>蓝色：新增AA接触；紫色：新增POLY接触；灰蓝：已审RIGHT6，保持不变、不重复验收。
+新孔均有照片观察支持，采用局部材料对应，未使用全幅盲投影。AA/POLY材料未修改。</p>
+<p>仅重建下列局部观察支持的孔列；未补齐缺少证据的位置，未画不代表没有孔。
+新区域的材料对应仍为AI候选，孔数不是人工确认值。几何检查不是真实工艺DRC，M1归属未知。
+<a href="report.json">整体质量门与防退化检查</a> ·
+<a href="fits.json">匹配与未选择观察记录</a></p><section><h2>W1 相邻宽MOS</h2><p>核对宽栅两侧源漏孔与下端栅CT；右侧灰蓝RIGHT6为已审背景，不重复验收。</p><select onchange="document.getElementById('W1').src=this.value"><option value="W1-layout.svg">规则AA/POLY/CT联合图</option><option value="W1-source.png">原图＋观察支持</option><option value="W1-raw.png">纯原图</option></select><img id="W1" src="W1-layout.svg"></section><section><h2>R1 电阻阵列外围环：左上角</h2><p>核对环的顶部及左侧观测支持部分；不将环内电阻端部孔归入环，也不宣称整圈孔已完整。</p><select onchange="document.getElementById('R1').src=this.value"><option value="R1-layout.svg">规则AA/POLY/CT联合图</option><option value="R1-source.png">原图＋观察支持</option><option value="R1-raw.png">纯原图</option></select><img id="R1" src="R1-layout.svg"></section><section><h2>E1 第一条长电阻上端</h2><p>核对第一条电阻上端POLY接触，旁边环孔分开显示；未处理电阻底端或其余17条电阻。</p><select onchange="document.getElementById('E1').src=this.value"><option value="E1-layout.svg">规则AA/POLY/CT联合图</option><option value="E1-source.png">原图＋观察支持</option><option value="E1-raw.png">纯原图</option></select><img id="E1" src="E1-layout.svg"></section></html>

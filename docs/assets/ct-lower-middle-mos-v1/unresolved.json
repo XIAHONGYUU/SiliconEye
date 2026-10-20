@@ -1,0 +1,297 @@
+{
+  "issues": [
+    {
+      "id": "MM-G41-SD01",
+      "status": "native_phase_conflict_with_array",
+      "source_path": [
+        [
+          2538.3333333333326,
+          3000.0
+        ],
+        [
+          2540.3333333333326,
+          3020.0
+        ],
+        [
+          2542.333333333332,
+          3040.0
+        ]
+      ],
+      "observations": {
+        "objects": [
+          {
+            "id": "PROFILE-MM-G41-SD01-7",
+            "evidence_tier": "raw_band_profile_peak",
+            "source_observation": {
+              "source_native_center_xy": [
+                2538.033203125,
+                3007.0
+              ],
+              "peak_gray": 223.70883178710938,
+              "local_residual": 71.84333801269531
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "MM-G42-SD12",
+      "status": "no_reliable_profile_peaks",
+      "source_path": [
+        [
+          2330.3374491708723,
+          3145.244
+        ],
+        [
+          2327.3224888248014,
+          3166.744
+        ],
+        [
+          2324.307528478731,
+          3188.244
+        ]
+      ],
+      "target": "AA2-LOWER-MOS-GRID-STRIP-LL-0"
+    },
+    {
+      "id": "MM-G43-SD01",
+      "status": "no_reliable_profile_peaks",
+      "source_path": [
+        [
+          2534.1666666666665,
+          3138.0
+        ],
+        [
+          2536.6666666666665,
+          3160.0
+        ],
+        [
+          2539.166666666667,
+          3182.0
+        ]
+      ],
+      "target": "AA2-LOWER-MOS-GRID-STRIP-LR-0"
+    }
+  ],
+  "scope": "this140-gate batch; no proof of absence",
+  "resolved_source_and_landing_repairs": [
+    {
+      "id": "MM-G40-SD11",
+      "delta_x": -4.334589999999935,
+      "source_path_unchanged": true,
+      "reason": "AA step enclosure; no material change"
+    },
+    {
+      "id": "MM-G41-SD02",
+      "delta_x": 0.09999999999990905,
+      "source_path_unchanged": true,
+      "reason": "AA step enclosure; no material change"
+    },
+    {
+      "id": "MM-G43-SD02",
+      "delta_x": 0.09999999999990905,
+      "source_path_unchanged": true,
+      "reason": "AA step enclosure; no material change"
+    },
+    {
+      "id": "MM-RING-U-R1",
+      "retired_prior_locator": [
+        [
+          3154.193357891391,
+          2686.7
+        ],
+        [
+          3153.849703266747,
+          2738.2999999999997
+        ],
+        [
+          3153.5060486421025,
+          2789.8999999999996
+        ],
+        [
+          3153.162394017458,
+          2841.5
+        ],
+        [
+          3152.818739392814,
+          2893.1
+        ],
+        [
+          3152.47508476817,
+          2944.7
+        ]
+      ],
+      "replacement": [
+        [
+          3133.7163580235897,
+          2686.7
+        ],
+        [
+          3133.0305236868535,
+          2738.2999999999997
+        ],
+        [
+          3132.3446893501177,
+          2789.8999999999996
+        ],
+        [
+          3131.6588550133815,
+          2841.5
+        ],
+        [
+          3130.9730206766453,
+          2893.1
+        ],
+        [
+          3130.2871863399096,
+          2944.7
+        ]
+      ],
+      "reason": "AI source column corrected from outside guard to visible right guard; never use adjacent diffusion as guard"
+    },
+    {
+      "id": "MM-RING-U-R2",
+      "retired_prior_locator": [
+        [
+          3150.0,
+          2978.7
+        ],
+        [
+          3149.9999999999995,
+          3013.2
+        ],
+        [
+          3149.999999999999,
+          3047.7
+        ]
+      ],
+      "replacement": [
+        [
+          3131.000000000001,
+          2978.7
+        ],
+        [
+          3131.0000000000005,
+          3013.2
+        ],
+        [
+          3131.0,
+          3047.7
+        ]
+      ],
+      "reason": "AI source column corrected from outside guard to visible right guard; never use adjacent diffusion as guard"
+    },
+    {
+      "id": "MM-RING-L-R1",
+      "retired_prior_locator": [
+        [
+          3155.9999999999977,
+          3121.602
+        ],
+        [
+          3155.999999999998,
+          3159.602
+        ],
+        [
+          3155.9999999999986,
+          3197.602
+        ]
+      ],
+      "replacement": [
+        [
+          3130.828096491227,
+          3121.602
+        ],
+        [
+          3131.328096491227,
+          3159.602
+        ],
+        [
+          3131.828096491227,
+          3197.602
+        ]
+      ],
+      "reason": "AI source column corrected from outside guard to visible right guard; never use adjacent diffusion as guard"
+    },
+    {
+      "id": "MM-RING-L-R2",
+      "retired_prior_locator": [
+        [
+          3159.581167338842,
+          3231.602
+        ],
+        [
+          3159.6303179176625,
+          3286.727
+        ],
+        [
+          3159.679468496483,
+          3341.852
+        ],
+        [
+          3159.7286190753034,
+          3396.977
+        ],
+        [
+          3159.777769654124,
+          3452.102
+        ],
+        [
+          3159.8269202329443,
+          3507.227
+        ],
+        [
+          3159.8760708117647,
+          3562.352
+        ],
+        [
+          3159.925221390585,
+          3617.477
+        ],
+        [
+          3159.9743719694056,
+          3672.602
+        ]
+      ],
+      "replacement": [
+        [
+          3136.245333561328,
+          3231.602
+        ],
+        [
+          3136.1284494451193,
+          3286.727
+        ],
+        [
+          3136.011565328911,
+          3341.852
+        ],
+        [
+          3135.894681212702,
+          3396.977
+        ],
+        [
+          3135.777797096493,
+          3452.102
+        ],
+        [
+          3135.660912980284,
+          3507.227
+        ],
+        [
+          3135.5440288640757,
+          3562.352
+        ],
+        [
+          3135.427144747867,
+          3617.477
+        ],
+        [
+          3135.310260631658,
+          3672.602
+        ]
+      ],
+      "reason": "AI source column corrected from outside guard to visible right guard; never use adjacent diffusion as guard"
+    }
+  ]
+}

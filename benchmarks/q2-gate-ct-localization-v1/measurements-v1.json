@@ -1,0 +1,2057 @@
+{
+  "gates": [
+    {
+      "alias": "QG01",
+      "gate_id": "CL2-Q2-A1-01",
+      "region": "A",
+      "left_column": "Q2-A1-SD-1",
+      "right_column": "Q2-A1-SD-2",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2096,
+        2023,
+        2136,
+        2063
+      ],
+      "source_row_bbox": [
+        2096,
+        2029,
+        2136,
+        2042
+      ],
+      "prior_derived_endpoint_y": 2044.0361655631377,
+      "observations": [
+        {
+          "native_center": [
+            2108,
+            2035
+          ],
+          "peak_gray": 239.0,
+          "local_residual": 60.700491955404516,
+          "profile_gray": 219.25767517089844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2124,
+            2035
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 58.04724761643806,
+          "profile_gray": 214.7145538330078,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2108,
+            2035
+          ],
+          "peak_gray": 239.0,
+          "local_residual": 60.700491955404516,
+          "profile_gray": 219.25767517089844,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2124,
+            2035
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 58.04724761643806,
+          "profile_gray": 214.7145538330078,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG02",
+      "gate_id": "CL2-Q2-A1-02",
+      "region": "A",
+      "left_column": "Q2-A1-SD-2",
+      "right_column": "Q2-A1-SD-3",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2152,
+        2022,
+        2192,
+        2062
+      ],
+      "source_row_bbox": [
+        2152,
+        2029,
+        2192,
+        2042
+      ],
+      "prior_derived_endpoint_y": 2043.0670646003973,
+      "observations": [
+        {
+          "native_center": [
+            2170,
+            2035
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 56.14151671328645,
+          "profile_gray": 226.8995819091797,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2181,
+            2035
+          ],
+          "peak_gray": 240.0,
+          "local_residual": 58.75892543872047,
+          "profile_gray": 214.9666748046875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2170,
+            2035
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 56.14151671328645,
+          "profile_gray": 226.8995819091797,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2181,
+            2035
+          ],
+          "peak_gray": 240.0,
+          "local_residual": 58.75892543872047,
+          "profile_gray": 214.9666748046875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG03",
+      "gate_id": "CL2-Q2-A2-01",
+      "region": "A",
+      "left_column": "Q2-A2-SD-1",
+      "right_column": "Q2-A2-SD-2",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2234,
+        2021,
+        2278,
+        2061
+      ],
+      "source_row_bbox": [
+        2234,
+        2028,
+        2278,
+        2041
+      ],
+      "prior_derived_endpoint_y": 2042.2105364418787,
+      "observations": [
+        {
+          "native_center": [
+            2247,
+            2034
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 54.294287885556685,
+          "profile_gray": 226.33999633789062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2261,
+            2034
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 61.454652290453964,
+          "profile_gray": 208.05075073242188,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2247,
+            2034
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 54.294287885556685,
+          "profile_gray": 226.33999633789062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2261,
+            2034
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 61.454652290453964,
+          "profile_gray": 208.05075073242188,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG04",
+      "gate_id": "CL2-Q2-A2-02",
+      "region": "A",
+      "left_column": "Q2-A2-SD-2",
+      "right_column": "Q2-A2-SD-3",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2294,
+        2020,
+        2334,
+        2060
+      ],
+      "source_row_bbox": [
+        2294,
+        2028,
+        2334,
+        2041
+      ],
+      "prior_derived_endpoint_y": 2041.3815377357853,
+      "observations": [
+        {
+          "native_center": [
+            2303,
+            2034
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 60.64902294911806,
+          "profile_gray": 228.5818634033203,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2318,
+            2034
+          ],
+          "peak_gray": 236.0,
+          "local_residual": 66.76071972075619,
+          "profile_gray": 208.63400268554688,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2303,
+            2034
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 60.64902294911806,
+          "profile_gray": 228.5818634033203,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2318,
+            2034
+          ],
+          "peak_gray": 236.0,
+          "local_residual": 66.76071972075619,
+          "profile_gray": 208.63400268554688,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG05",
+      "gate_id": "CL2-Q2-A2-03",
+      "region": "A",
+      "left_column": "Q2-A2-SD-3",
+      "right_column": "Q2-A2-SD-4",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2346,
+        2067,
+        2391,
+        2098
+      ],
+      "source_row_bbox": [
+        2346,
+        2082,
+        2391,
+        2095
+      ],
+      "prior_derived_endpoint_y": 2088.3224727936076,
+      "observations": [
+        {
+          "native_center": [
+            2360,
+            2088
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 50.6350449854514,
+          "profile_gray": 245.10560607910156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2375,
+            2088
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 55.232458989014276,
+          "profile_gray": 238.30029296875,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2360,
+            2088
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 50.6350449854514,
+          "profile_gray": 245.10560607910156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2375,
+            2088
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 55.232458989014276,
+          "profile_gray": 238.30029296875,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG06",
+      "gate_id": "CL2-Q2-A2-04",
+      "region": "A",
+      "left_column": "Q2-A2-SD-4",
+      "right_column": "Q2-A2-SD-5",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2407,
+        2066,
+        2442,
+        2097
+      ],
+      "source_row_bbox": [
+        2407,
+        2082,
+        2442,
+        2095
+      ],
+      "prior_derived_endpoint_y": 2087.4422205317924,
+      "observations": [
+        {
+          "native_center": [
+            2414,
+            2088
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 65.75308928232371,
+          "profile_gray": 238.64320373535156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2430,
+            2088
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 50.88752681068701,
+          "profile_gray": 245.71707153320312,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2414,
+            2088
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 65.75308928232371,
+          "profile_gray": 238.64320373535156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2430,
+            2088
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 50.88752681068701,
+          "profile_gray": 245.71707153320312,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG07",
+      "gate_id": "CL2-Q2-A3-01",
+      "region": "A",
+      "left_column": "Q2-A3-SD-1",
+      "right_column": "Q2-A3-SD-2",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2483,
+        2065,
+        2526,
+        2096
+      ],
+      "source_row_bbox": [
+        2483,
+        2081,
+        2526,
+        2094
+      ],
+      "prior_derived_endpoint_y": 2086.5062385771475,
+      "observations": [
+        {
+          "native_center": [
+            2500,
+            2087
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.03509977746464,
+          "profile_gray": 244.77877807617188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2510,
+            2087
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 53.818349676270344,
+          "profile_gray": 240.734619140625,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2500,
+            2087
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 51.03509977746464,
+          "profile_gray": 244.77877807617188,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2510,
+            2087
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 53.818349676270344,
+          "profile_gray": 240.734619140625,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG08",
+      "gate_id": "CL2-Q2-A3-02",
+      "region": "A",
+      "left_column": "Q2-A3-SD-2",
+      "right_column": "Q2-A3-SD-3",
+      "lower_ring": "Q2-A-RING-BOTTOM",
+      "source_roi": [
+        2542,
+        2064,
+        2582,
+        2095
+      ],
+      "source_row_bbox": [
+        2542,
+        2081,
+        2582,
+        2094
+      ],
+      "prior_derived_endpoint_y": 2085.525186006977,
+      "observations": [
+        {
+          "native_center": [
+            2555,
+            2087
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 60.292212227247745,
+          "profile_gray": 237.1079559326172,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2565,
+            2087
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.698421127971415,
+          "profile_gray": 244.22134399414062,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2555,
+            2087
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 60.292212227247745,
+          "profile_gray": 237.1079559326172,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2565,
+            2087
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 57.698421127971415,
+          "profile_gray": 244.22134399414062,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG09",
+      "gate_id": "CL2-Q2-B1-01",
+      "region": "B",
+      "left_column": "Q2-B1-SD-1",
+      "right_column": "Q2-B1-SD-2",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        2692,
+        2014,
+        2717,
+        2054
+      ],
+      "source_row_bbox": [
+        2692,
+        2025,
+        2717,
+        2038
+      ],
+      "prior_derived_endpoint_y": 2035.2325499124447,
+      "observations": [
+        {
+          "native_center": [
+            2694,
+            2031
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 70.4409475920088,
+          "profile_gray": 220.57781982421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2709,
+            2031
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 84.96303260078665,
+          "profile_gray": 220.03590393066406,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2694,
+            2031
+          ],
+          "peak_gray": 244.0,
+          "local_residual": 70.4409475920088,
+          "profile_gray": 220.57781982421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2709,
+            2031
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 84.96303260078665,
+          "profile_gray": 220.03590393066406,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG10",
+      "gate_id": "CL2-Q2-B1-02",
+      "region": "B",
+      "left_column": "Q2-B1-SD-2",
+      "right_column": "Q2-B1-SD-3",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        2733,
+        2013,
+        2766,
+        2053
+      ],
+      "source_row_bbox": [
+        2733,
+        2025,
+        2766,
+        2038
+      ],
+      "prior_derived_endpoint_y": 2034.5277276487873,
+      "observations": [
+        {
+          "native_center": [
+            2745,
+            2031
+          ],
+          "peak_gray": 230.0,
+          "local_residual": 69.6064249998735,
+          "profile_gray": 197.5148162841797,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2754,
+            2031
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 71.08157747731906,
+          "profile_gray": 221.7777862548828,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2745,
+            2031
+          ],
+          "peak_gray": 230.0,
+          "local_residual": 69.6064249998735,
+          "profile_gray": 197.5148162841797,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2754,
+            2031
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 71.08157747731906,
+          "profile_gray": 221.7777862548828,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG11",
+      "gate_id": "CL2-Q2-B1-03",
+      "region": "B",
+      "left_column": "Q2-B1-SD-3",
+      "right_column": "Q2-B1-SD-4",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        2782,
+        2012,
+        2816,
+        2052
+      ],
+      "source_row_bbox": [
+        2782,
+        2025,
+        2816,
+        2038
+      ],
+      "prior_derived_endpoint_y": 2033.8243163103707,
+      "observations": [
+        {
+          "native_center": [
+            2794,
+            2031
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 66.91053646344992,
+          "profile_gray": 223.61544799804688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2805,
+            2031
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 67.78355408321102,
+          "profile_gray": 211.16049194335938,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2794,
+            2031
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 66.91053646344992,
+          "profile_gray": 223.61544799804688,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2805,
+            2031
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 67.78355408321102,
+          "profile_gray": 211.16049194335938,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG12",
+      "gate_id": "CL2-Q2-B1-04",
+      "region": "B",
+      "left_column": "Q2-B1-SD-4",
+      "right_column": "Q2-B1-SD-5",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        2832,
+        2012,
+        2862,
+        2052
+      ],
+      "source_row_bbox": [
+        2832,
+        2024,
+        2862,
+        2037
+      ],
+      "prior_derived_endpoint_y": 2033.1223116648102,
+      "observations": [
+        {
+          "native_center": [
+            2844,
+            2030
+          ],
+          "peak_gray": 232.0,
+          "local_residual": 63.94882389826577,
+          "profile_gray": 203.28627014160156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2858,
+            2030
+          ],
+          "peak_gray": 228.0,
+          "local_residual": 61.27566102431294,
+          "profile_gray": 205.98426818847656,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2844,
+            2030
+          ],
+          "peak_gray": 232.0,
+          "local_residual": 63.94882389826577,
+          "profile_gray": 203.28627014160156,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2858,
+            2030
+          ],
+          "peak_gray": 228.0,
+          "local_residual": 61.27566102431294,
+          "profile_gray": 205.98426818847656,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG13",
+      "gate_id": "CL2-Q2-B2-01",
+      "region": "B",
+      "left_column": "Q2-B2-SD-1",
+      "right_column": "Q2-B2-SD-2",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        2906,
+        2011,
+        2940,
+        2051
+      ],
+      "source_row_bbox": [
+        2906,
+        2023,
+        2940,
+        2036
+      ],
+      "prior_derived_endpoint_y": 2032.2707740967926,
+      "observations": [
+        {
+          "native_center": [
+            2918,
+            2029
+          ],
+          "peak_gray": 226.0,
+          "local_residual": 67.33081692072483,
+          "profile_gray": 191.798828125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2933,
+            2029
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 65.68018609542054,
+          "profile_gray": 211.47755432128906,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2918,
+            2029
+          ],
+          "peak_gray": 226.0,
+          "local_residual": 67.33081692072483,
+          "profile_gray": 191.798828125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2933,
+            2029
+          ],
+          "peak_gray": 234.0,
+          "local_residual": 65.68018609542054,
+          "profile_gray": 211.47755432128906,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG14",
+      "gate_id": "CL2-Q2-B2-02",
+      "region": "B",
+      "left_column": "Q2-B2-SD-2",
+      "right_column": "Q2-B2-SD-3",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        2956,
+        2010,
+        2995,
+        2050
+      ],
+      "source_row_bbox": [
+        2956,
+        2023,
+        2995,
+        2036
+      ],
+      "prior_derived_endpoint_y": 2031.5655094668532,
+      "observations": [
+        {
+          "native_center": [
+            2968,
+            2029
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 67.10344335903113,
+          "profile_gray": 210.59817504882812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2978,
+            2029
+          ],
+          "peak_gray": 239.0,
+          "local_residual": 67.89153555470628,
+          "profile_gray": 210.67076110839844,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2968,
+            2029
+          ],
+          "peak_gray": 237.0,
+          "local_residual": 67.10344335903113,
+          "profile_gray": 210.59817504882812,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2978,
+            2029
+          ],
+          "peak_gray": 239.0,
+          "local_residual": 67.89153555470628,
+          "profile_gray": 210.67076110839844,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG15",
+      "gate_id": "CL2-Q2-B2-03",
+      "region": "B",
+      "left_column": "Q2-B2-SD-3",
+      "right_column": "Q2-B2-SD-4",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        3011,
+        2009,
+        3039,
+        2049
+      ],
+      "source_row_bbox": [
+        3011,
+        2022,
+        3039,
+        2035
+      ],
+      "prior_derived_endpoint_y": 2030.8616634997563,
+      "observations": [
+        {
+          "native_center": [
+            3017,
+            2028
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 55.87063514878449,
+          "profile_gray": 210.8734893798828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3028,
+            2028
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 56.489569574286264,
+          "profile_gray": 213.821533203125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3017,
+            2028
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 55.87063514878449,
+          "profile_gray": 210.8734893798828,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3028,
+            2028
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 56.489569574286264,
+          "profile_gray": 213.821533203125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG16",
+      "gate_id": "CL2-Q2-B2-04",
+      "region": "B",
+      "left_column": "Q2-B2-SD-4",
+      "right_column": "Q2-B2-SD-5",
+      "lower_ring": "Q2-B-RING-BOTTOM",
+      "source_roi": [
+        3055,
+        2009,
+        3088,
+        2049
+      ],
+      "source_row_bbox": [
+        3055,
+        2022,
+        3088,
+        2035
+      ],
+      "prior_derived_endpoint_y": 2030.159231919274,
+      "observations": [
+        {
+          "native_center": [
+            3067,
+            2028
+          ],
+          "peak_gray": 231.0,
+          "local_residual": 68.42657541482362,
+          "profile_gray": 197.91802978515625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3077,
+            2028
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 60.588954413216754,
+          "profile_gray": 210.38079833984375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            3067,
+            2028
+          ],
+          "peak_gray": 231.0,
+          "local_residual": 68.42657541482362,
+          "profile_gray": 197.91802978515625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            3077,
+            2028
+          ],
+          "peak_gray": 235.0,
+          "local_residual": 60.588954413216754,
+          "profile_gray": 210.38079833984375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG17",
+      "gate_id": "CL2-Q2-C0-01",
+      "region": "C",
+      "left_column": "Q2-C0-SD-1",
+      "right_column": "Q2-C0-SD-2",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2138,
+        2465,
+        2179,
+        2500
+      ],
+      "source_row_bbox": [
+        2138,
+        2470,
+        2179,
+        2483
+      ],
+      "prior_derived_endpoint_y": 2486.2221191168096,
+      "observations": [
+        {
+          "native_center": [
+            2152,
+            2476
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 42.9402228522639,
+          "profile_gray": 242.7578125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2167,
+            2476
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 40.80445306113512,
+          "profile_gray": 241.64552307128906,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2152,
+            2476
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 42.9402228522639,
+          "profile_gray": 242.7578125,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2167,
+            2476
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 40.80445306113512,
+          "profile_gray": 241.64552307128906,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG18",
+      "gate_id": "CL2-Q2-C0-02",
+      "region": "C",
+      "left_column": "Q2-C0-SD-2",
+      "right_column": "Q2-C0-SD-3",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2195,
+        2463,
+        2234,
+        2500
+      ],
+      "source_row_bbox": [
+        2195,
+        2469,
+        2234,
+        2482
+      ],
+      "prior_derived_endpoint_y": 2484.901263308917,
+      "observations": [
+        {
+          "native_center": [
+            2207,
+            2475
+          ],
+          "peak_gray": 240.0,
+          "local_residual": 60.876296716255695,
+          "profile_gray": 220.360107421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2223,
+            2475
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 40.28744625247489,
+          "profile_gray": 246.90841674804688,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2207,
+            2475
+          ],
+          "peak_gray": 240.0,
+          "local_residual": 60.876296716255695,
+          "profile_gray": 220.360107421875,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2223,
+            2475
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 40.28744625247489,
+          "profile_gray": 246.90841674804688,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG19",
+      "gate_id": "CL2-Q2-C0-03",
+      "region": "C",
+      "left_column": "Q2-C0-SD-3",
+      "right_column": "Q2-C0-SD-4",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2250,
+        2462,
+        2290,
+        2499
+      ],
+      "source_row_bbox": [
+        2250,
+        2468,
+        2290,
+        2481
+      ],
+      "prior_derived_endpoint_y": 2483.5834264974637,
+      "observations": [
+        {
+          "native_center": [
+            2269,
+            2474
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 34.25186734254848,
+          "profile_gray": 244.9259796142578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2278,
+            2474
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 41.04482235795314,
+          "profile_gray": 244.30804443359375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2269,
+            2474
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 34.25186734254848,
+          "profile_gray": 244.9259796142578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2278,
+            2474
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 41.04482235795314,
+          "profile_gray": 244.30804443359375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG20",
+      "gate_id": "CL2-Q2-C0-04",
+      "region": "C",
+      "left_column": "Q2-C0-SD-4",
+      "right_column": "Q2-C0-SD-5",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2306,
+        2461,
+        2346,
+        2499
+      ],
+      "source_row_bbox": [
+        2306,
+        2467,
+        2346,
+        2480
+      ],
+      "prior_derived_endpoint_y": 2482.2685983437714,
+      "observations": [
+        {
+          "native_center": [
+            2319,
+            2473
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 41.422472846882926,
+          "profile_gray": 243.27679443359375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2334,
+            2473
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 50.23146499541397,
+          "profile_gray": 237.41123962402344,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2319,
+            2473
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 41.422472846882926,
+          "profile_gray": 243.27679443359375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2334,
+            2473
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 50.23146499541397,
+          "profile_gray": 237.41123962402344,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG21",
+      "gate_id": "CL2-Q2-C0-05",
+      "region": "C",
+      "left_column": "Q2-C0-SD-5",
+      "right_column": "Q2-C0-SD-6",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2362,
+        2459,
+        2400,
+        2498
+      ],
+      "source_row_bbox": [
+        2362,
+        2467,
+        2400,
+        2480
+      ],
+      "prior_derived_endpoint_y": 2480.956768556315,
+      "observations": [
+        {
+          "native_center": [
+            2374,
+            2473
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 43.06724506959091,
+          "profile_gray": 237.25082397460938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2389,
+            2473
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.27971769359715,
+          "profile_gray": 245.8581085205078,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2374,
+            2473
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 43.06724506959091,
+          "profile_gray": 237.25082397460938,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2389,
+            2473
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 45.27971769359715,
+          "profile_gray": 245.8581085205078,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG22",
+      "gate_id": "CL2-Q2-C1-01",
+      "region": "C",
+      "left_column": "Q2-C1-SD-1",
+      "right_column": "Q2-C1-SD-2",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2442,
+        2458,
+        2477,
+        2498
+      ],
+      "source_row_bbox": [
+        2442,
+        2465,
+        2477,
+        2478
+      ],
+      "prior_derived_endpoint_y": 2479.649848269861,
+      "observations": [
+        {
+          "native_center": [
+            2454,
+            2471
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.62168463595356,
+          "profile_gray": 240.82525634765625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2469,
+            2471
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 36.48020639816286,
+          "profile_gray": 242.18130493164062,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2454,
+            2471
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 42.62168463595356,
+          "profile_gray": 240.82525634765625,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2469,
+            2471
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 36.48020639816286,
+          "profile_gray": 242.18130493164062,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG23",
+      "gate_id": "CL2-Q2-C1-02",
+      "region": "C",
+      "left_column": "Q2-C1-SD-2",
+      "right_column": "Q2-C1-SD-3",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2493,
+        2457,
+        2536,
+        2497
+      ],
+      "source_row_bbox": [
+        2493,
+        2464,
+        2536,
+        2477
+      ],
+      "prior_derived_endpoint_y": 2478.0786250737306,
+      "observations": [
+        {
+          "native_center": [
+            2510,
+            2470
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 48.63368173071956,
+          "profile_gray": 241.55751037597656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2529,
+            2470
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 48.01957085297761,
+          "profile_gray": 236.87493896484375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2510,
+            2470
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 48.63368173071956,
+          "profile_gray": 241.55751037597656,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2529,
+            2470
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 48.01957085297761,
+          "profile_gray": 236.87493896484375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG24",
+      "gate_id": "CL2-Q2-C2-01",
+      "region": "C",
+      "left_column": "Q2-C2-SD-1",
+      "right_column": "Q2-C2-SD-2",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2577,
+        2455,
+        2615,
+        2495
+      ],
+      "source_row_bbox": [
+        2577,
+        2463,
+        2615,
+        2476
+      ],
+      "prior_derived_endpoint_y": 2476.755148905624,
+      "observations": [
+        {
+          "native_center": [
+            2584,
+            2469
+          ],
+          "peak_gray": 222.0,
+          "local_residual": 64.2100030305127,
+          "profile_gray": 193.11705017089844,
+          "supported": false
+        },
+        {
+          "native_center": [
+            2594,
+            2469
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 37.70080308818831,
+          "profile_gray": 241.4032440185547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2604,
+            2469
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.47109430270643,
+          "profile_gray": 240.11549377441406,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2594,
+            2469
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 37.70080308818831,
+          "profile_gray": 241.4032440185547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2604,
+            2469
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.47109430270643,
+          "profile_gray": 240.11549377441406,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [
+        {
+          "native_center": [
+            2584,
+            2469
+          ],
+          "peak_gray": 222.0,
+          "local_residual": 64.2100030305127,
+          "profile_gray": 193.11705017089844,
+          "supported": false
+        }
+      ],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG25",
+      "gate_id": "CL2-Q2-C2-02",
+      "region": "C",
+      "left_column": "Q2-C2-SD-2",
+      "right_column": "Q2-C2-SD-3",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2631,
+        2454,
+        2675,
+        2494
+      ],
+      "source_row_bbox": [
+        2631,
+        2462,
+        2675,
+        2475
+      ],
+      "prior_derived_endpoint_y": 2475.180904653451,
+      "observations": [
+        {
+          "native_center": [
+            2649,
+            2468
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 43.89984099809823,
+          "profile_gray": 237.6984405517578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2659,
+            2468
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 43.9562290079198,
+          "profile_gray": 246.3685760498047,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2649,
+            2468
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 43.89984099809823,
+          "profile_gray": 237.6984405517578,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2659,
+            2468
+          ],
+          "peak_gray": 253.0,
+          "local_residual": 43.9562290079198,
+          "profile_gray": 246.3685760498047,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG26",
+      "gate_id": "CL2-Q2-C3-01",
+      "region": "C",
+      "left_column": "Q2-C3-SD-1",
+      "right_column": "Q2-C3-SD-2",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2711,
+        2452,
+        2754,
+        2492
+      ],
+      "source_row_bbox": [
+        2711,
+        2461,
+        2754,
+        2474
+      ],
+      "prior_derived_endpoint_y": 2473.885073762729,
+      "observations": [
+        {
+          "native_center": [
+            2728,
+            2467
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 49.206851308614745,
+          "profile_gray": 238.4091033935547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2739,
+            2467
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 42.75115179313718,
+          "profile_gray": 240.50344848632812,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2728,
+            2467
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 49.206851308614745,
+          "profile_gray": 238.4091033935547,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2739,
+            2467
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 42.75115179313718,
+          "profile_gray": 240.50344848632812,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG27",
+      "gate_id": "CL2-Q2-C3-02",
+      "region": "C",
+      "left_column": "Q2-C3-SD-2",
+      "right_column": "Q2-C3-SD-3",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2770,
+        2451,
+        2799,
+        2491
+      ],
+      "source_row_bbox": [
+        2770,
+        2461,
+        2799,
+        2474
+      ],
+      "prior_derived_endpoint_y": 2472.636637635835,
+      "observations": [
+        {
+          "native_center": [
+            2778,
+            2467
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 50.13747379066018,
+          "profile_gray": 246.18032836914062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2794,
+            2467
+          ],
+          "peak_gray": 242.0,
+          "local_residual": 29.52945676564147,
+          "profile_gray": 242.15602111816406,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2778,
+            2467
+          ],
+          "peak_gray": 251.0,
+          "local_residual": 50.13747379066018,
+          "profile_gray": 246.18032836914062,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2794,
+            2467
+          ],
+          "peak_gray": 242.0,
+          "local_residual": 29.52945676564147,
+          "profile_gray": 242.15602111816406,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG28",
+      "gate_id": "CL2-Q2-C3-03",
+      "region": "C",
+      "left_column": "Q2-C3-SD-3",
+      "right_column": "Q2-C3-SD-4",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2815,
+        2450,
+        2854,
+        2490
+      ],
+      "source_row_bbox": [
+        2815,
+        2459,
+        2854,
+        2472
+      ],
+      "prior_derived_endpoint_y": 2471.390927802275,
+      "observations": [
+        {
+          "native_center": [
+            2836,
+            2465
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 52.959764793079245,
+          "profile_gray": 226.9381866455078,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2847,
+            2465
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.54298771191492,
+          "profile_gray": 239.6760711669922,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2836,
+            2465
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 52.959764793079245,
+          "profile_gray": 226.9381866455078,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2847,
+            2465
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 44.54298771191492,
+          "profile_gray": 239.6760711669922,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG29",
+      "gate_id": "CL2-Q2-C3-04",
+      "region": "C",
+      "left_column": "Q2-C3-SD-4",
+      "right_column": "Q2-C3-SD-5",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2870,
+        2449,
+        2908,
+        2489
+      ],
+      "source_row_bbox": [
+        2870,
+        2459,
+        2908,
+        2472
+      ],
+      "prior_derived_endpoint_y": 2470.1479353414065,
+      "observations": [
+        {
+          "native_center": [
+            2892,
+            2465
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 39.976113228081346,
+          "profile_gray": 241.234375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2901,
+            2465
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 43.06268215632599,
+          "profile_gray": 235.05126953125,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2892,
+            2465
+          ],
+          "peak_gray": 250.0,
+          "local_residual": 39.976113228081346,
+          "profile_gray": 241.234375,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2901,
+            2465
+          ],
+          "peak_gray": 247.0,
+          "local_residual": 43.06268215632599,
+          "profile_gray": 235.05126953125,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    },
+    {
+      "alias": "QG30",
+      "gate_id": "CL2-Q2-C3-05",
+      "region": "C",
+      "left_column": "Q2-C3-SD-5",
+      "right_column": "Q2-C3-SD-6",
+      "lower_ring": "Q2-C-RING-BOTTOM",
+      "source_roi": [
+        2924,
+        2447,
+        2967,
+        2487
+      ],
+      "source_row_bbox": [
+        2924,
+        2458,
+        2967,
+        2471
+      ],
+      "prior_derived_endpoint_y": 2468.907651371463,
+      "observations": [
+        {
+          "native_center": [
+            2936,
+            2464
+          ],
+          "peak_gray": 206.0,
+          "local_residual": 47.38536266820651,
+          "profile_gray": 182.31161499023438,
+          "supported": false
+        },
+        {
+          "native_center": [
+            2946,
+            2464
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 41.10753956945524,
+          "profile_gray": 241.65310668945312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2955,
+            2464
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 40.32075039402318,
+          "profile_gray": 240.44671630859375,
+          "supported": true
+        }
+      ],
+      "retained_peaks": [
+        {
+          "native_center": [
+            2946,
+            2464
+          ],
+          "peak_gray": 252.0,
+          "local_residual": 41.10753956945524,
+          "profile_gray": 241.65310668945312,
+          "supported": true
+        },
+        {
+          "native_center": [
+            2955,
+            2464
+          ],
+          "peak_gray": 249.0,
+          "local_residual": 40.32075039402318,
+          "profile_gray": 240.44671630859375,
+          "supported": true
+        }
+      ],
+      "weaker_peaks_not_deleted": [
+        {
+          "native_center": [
+            2936,
+            2464
+          ],
+          "peak_gray": 206.0,
+          "local_residual": 47.38536266820651,
+          "profile_gray": 182.31161499023438,
+          "supported": false
+        }
+      ],
+      "interpretation": "AI_CT_location_candidates_after_human_bottom_region_confirmation"
+    }
+  ],
+  "interpretation": "measured candidate locations, not exact human point annotations"
+}

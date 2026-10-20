@@ -1,0 +1,80 @@
+{
+  "objects": [
+    {
+      "id": "G68-P01",
+      "status": "unresolved_terminal_peak",
+      "source_roi": [
+        2245,
+        1678,
+        2273,
+        1699
+      ],
+      "contact_ids": []
+    },
+    {
+      "id": "G68-P02",
+      "status": "unresolved_terminal_peak",
+      "source_roi": [
+        2276,
+        1678,
+        2304,
+        1699
+      ],
+      "contact_ids": []
+    },
+    {
+      "id": "V3_G1",
+      "status": "known_gate_CT_and_M1_ownership_retained_in_historical_network_terminal_outside_current_POLY_body_fragment",
+      "action": "do_not_shrink_cut_or_bridge_fragments_to_manufacture_full_material_enclosure",
+      "historical_refs": [
+        "benchmarks/local-terminal-review-v1.json",
+        "benchmarks/block-case-v1-v3.json",
+        "benchmarks/device-m1-m2-network-v3.json"
+      ],
+      "new_CT": 0,
+      "needs_human": "only_if_complete_fragment_to_terminal_geometry_is_required"
+    },
+    {
+      "id": "V3_G2",
+      "status": "known_gate_CT_and_M1_ownership_retained_in_historical_network_terminal_outside_current_POLY_body_fragment",
+      "action": "do_not_shrink_cut_or_bridge_fragments_to_manufacture_full_material_enclosure",
+      "historical_refs": [
+        "benchmarks/local-terminal-review-v1.json",
+        "benchmarks/block-case-v1-v3.json",
+        "benchmarks/device-m1-m2-network-v3.json"
+      ],
+      "new_CT": 0,
+      "needs_human": "only_if_complete_fragment_to_terminal_geometry_is_required"
+    },
+    {
+      "id": "SG-U04-W01",
+      "side": "left",
+      "status": "source_supported_resistor_end_candidate",
+      "source_roi": [
+        4680,
+        404,
+        4709,
+        451
+      ],
+      "contact_ids": [
+        "CTX-RES-W01-left-000",
+        "CTX-RES-W01-left-001",
+        "CTX-RES-W01-left-002"
+      ]
+    },
+    {
+      "id": "SG-U04-W01",
+      "side": "right",
+      "status": "source_supported_resistor_end_candidate",
+      "source_roi": [
+        4792,
+        404,
+        4821,
+        451
+      ],
+      "contact_ids": [
+        "CTX-RES-W01-right-000"
+      ]
+    }
+  ]
+}

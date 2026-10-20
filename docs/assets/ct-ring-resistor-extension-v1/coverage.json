@@ -1,0 +1,100 @@
+{
+  "scope": "AA-W07 visible perimeter and G48-P01..P18 top/bottom endpoints",
+  "prior_accepted_contacts": 130,
+  "new_CT_candidates": 661,
+  "total": 791,
+  "ring_new_candidates": {
+    "RING-TOP-EXT": 114,
+    "RING-LEFT-EXT": 87,
+    "RING-RIGHT": 96,
+    "RING-BOTTOM": 135
+  },
+  "resistor_new_candidates": {
+    "top": 115,
+    "bottom": 114
+  },
+  "pending_inspection_slots": {
+    "RING-TOP-EXT": [
+      102
+    ],
+    "RING-LEFT-EXT": [
+      0
+    ],
+    "RING-RIGHT": [
+      14,
+      41,
+      64,
+      66,
+      91,
+      93
+    ],
+    "RING-BOTTOM": [
+      5,
+      30,
+      49,
+      51,
+      55,
+      57,
+      74,
+      76,
+      99,
+      101,
+      103,
+      145
+    ],
+    "RES-09-TOP": [
+      6
+    ],
+    "RES-17-TOP": [
+      6
+    ],
+    "RES-18-TOP": [
+      0,
+      1
+    ],
+    "RES-01-BOTTOM": [
+      3
+    ],
+    "RES-03-BOTTOM": [
+      6
+    ],
+    "RES-05-BOTTOM": [
+      0
+    ],
+    "RES-08-BOTTOM": [
+      3
+    ],
+    "RES-09-BOTTOM": [
+      5
+    ],
+    "RES-11-BOTTOM": [
+      0
+    ],
+    "RES-12-BOTTOM": [
+      0
+    ],
+    "RES-14-BOTTOM": [
+      3,
+      5
+    ],
+    "RES-16-BOTTOM": [
+      6
+    ],
+    "RES-17-BOTTOM": [
+      6
+    ],
+    "RES-18-BOTTOM": [
+      0
+    ]
+  },
+  "missing_slot_interpretation": "No exported CT at these inspection sites; not evidence of a physically absent contact. First/last slots included. A row with no internal gaps is not proof of completeness.",
+  "source_method": "AI selected visible material paths; script measures raw-photo band maxima, follows local spacing, emits only supported contacts; canonical geometry is Manhattan, source locators remain separate.",
+  "not_claimed": [
+    "all CT detected",
+    "full-frame CT",
+    "exact physical dimensions",
+    "M1 enclosure",
+    "electrical connectivity",
+    "actual PDK DRC"
+  ]
+}

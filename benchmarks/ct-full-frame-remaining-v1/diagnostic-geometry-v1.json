@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "errors": [
+    {
+      "id": "CTR-G-CL2-Q3-AA-F01614-02-bottom-000",
+      "reason": "source_peak_reused"
+    }
+  ],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 0.9999999999999999,
+  "minimum_POLY_clearance_px": 1.4999999999997726,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 8613,
+  "physical_PDK_DRC": false
+}

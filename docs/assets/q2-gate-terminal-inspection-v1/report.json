@@ -1,0 +1,414 @@
+{
+  "gates": 30,
+  "top_bottom_zones": 60,
+  "lateral_zones": 60,
+  "exported_new_CT": 0,
+  "parent_CT_count": 1825,
+  "source_and_material_hashes_unchanged": true,
+  "regions": {
+    "A": {
+      "m1_to_poly": [
+        [
+          0.7682469362428154,
+          -0.21627982964003378,
+          565.3664506878027
+        ],
+        [
+          -0.014438399888644668,
+          0.6815463511442981,
+          182.93396456487093
+        ],
+        [
+          -1.4454238752403756e-05,
+          -7.756379554895269e-05,
+          1.0
+        ]
+      ],
+      "poly_quad": [
+        [
+          2053,
+          1798
+        ],
+        [
+          2613,
+          1796
+        ],
+        [
+          2617,
+          2109
+        ],
+        [
+          2062,
+          2116
+        ]
+      ],
+      "m1_quad": [
+        [
+          2003,
+          1939
+        ],
+        [
+          2573,
+          1929
+        ],
+        [
+          2582,
+          2230
+        ],
+        [
+          2034,
+          2247
+        ]
+      ],
+      "independent_column_checks": [
+        {
+          "source_column": "Q2-A1-SD-1",
+          "delta_x": 6
+        },
+        {
+          "source_column": "Q2-A1-SD-2",
+          "delta_x": 8
+        },
+        {
+          "source_column": "Q2-A1-SD-3",
+          "delta_x": 7
+        },
+        {
+          "source_column": "Q2-A2-SD-1",
+          "delta_x": 3
+        },
+        {
+          "source_column": "Q2-A2-SD-2",
+          "delta_x": 6
+        },
+        {
+          "source_column": "Q2-A2-SD-3",
+          "delta_x": 3
+        },
+        {
+          "source_column": "Q2-A2-SD-4",
+          "delta_x": 3
+        },
+        {
+          "source_column": "Q2-A2-SD-5",
+          "delta_x": 2
+        },
+        {
+          "source_column": "Q2-A3-SD-1",
+          "delta_x": 2
+        },
+        {
+          "source_column": "Q2-A3-SD-2",
+          "delta_x": -2
+        },
+        {
+          "source_column": "Q2-A3-SD-3",
+          "delta_x": 1
+        }
+      ],
+      "max_abs_x_error_px": 8,
+      "median_abs_x_error_px": 3.0,
+      "x_alignment_gate": "FAIL",
+      "precise_terminal_projection": "BLOCKED",
+      "control_points": "AI photo correspondences, not human accepted",
+      "y_alignment": "not independently qualified for contact assignment",
+      "M1_lead_region_candidates": [
+        {
+          "id": "A-L1",
+          "native_bbox": [
+            2070,
+            2150,
+            2300,
+            2200
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        },
+        {
+          "id": "A-L2",
+          "native_bbox": [
+            2310,
+            2190,
+            2570,
+            2235
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        }
+      ]
+    },
+    "B": {
+      "m1_to_poly": [
+        [
+          1.1191921918382803,
+          0.03387187135995126,
+          -137.09419207321105
+        ],
+        [
+          0.04584752705695586,
+          1.0946607087603517,
+          -300.12952075024015
+        ],
+        [
+          1.679317530235998e-05,
+          1.5645174396719756e-05,
+          1.0
+        ]
+      ],
+      "poly_quad": [
+        [
+          2648,
+          1796
+        ],
+        [
+          3119,
+          1794
+        ],
+        [
+          3122,
+          2071
+        ],
+        [
+          2653,
+          2075
+        ]
+      ],
+      "m1_quad": [
+        [
+          2605,
+          1927
+        ],
+        [
+          3079,
+          1918
+        ],
+        [
+          3086,
+          2200
+        ],
+        [
+          2612,
+          2209
+        ]
+      ],
+      "independent_column_checks": [
+        {
+          "source_column": "Q2-B1-SD-1",
+          "delta_x": 9
+        },
+        {
+          "source_column": "Q2-B1-SD-2",
+          "delta_x": 5
+        },
+        {
+          "source_column": "Q2-B1-SD-3",
+          "delta_x": 4
+        },
+        {
+          "source_column": "Q2-B1-SD-4",
+          "delta_x": 2
+        },
+        {
+          "source_column": "Q2-B1-SD-5",
+          "delta_x": 1
+        },
+        {
+          "source_column": "Q2-B2-SD-1",
+          "delta_x": 1
+        },
+        {
+          "source_column": "Q2-B2-SD-2",
+          "delta_x": 0
+        },
+        {
+          "source_column": "Q2-B2-SD-3",
+          "delta_x": -1
+        },
+        {
+          "source_column": "Q2-B2-SD-4",
+          "delta_x": -3
+        },
+        {
+          "source_column": "Q2-B2-SD-5",
+          "delta_x": -5
+        }
+      ],
+      "max_abs_x_error_px": 9,
+      "median_abs_x_error_px": 2.5,
+      "x_alignment_gate": "FAIL",
+      "precise_terminal_projection": "BLOCKED",
+      "control_points": "AI photo correspondences, not human accepted",
+      "y_alignment": "not independently qualified for contact assignment",
+      "M1_lead_region_candidates": [
+        {
+          "id": "B-L1",
+          "native_bbox": [
+            2630,
+            2135,
+            3070,
+            2195
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        }
+      ]
+    },
+    "C": {
+      "m1_to_poly": [
+        [
+          1.1439558983975395,
+          0.06491660594458012,
+          -216.49910857114685
+        ],
+        [
+          0.035361529784220413,
+          1.1839678025834708,
+          -425.3208444405794
+        ],
+        [
+          8.230648130957731e-06,
+          3.4154469718322674e-05,
+          1.0
+        ]
+      ],
+      "poly_quad": [
+        [
+          2097,
+          2158
+        ],
+        [
+          3003,
+          2152
+        ],
+        [
+          3005,
+          2508
+        ],
+        [
+          2104,
+          2515
+        ]
+      ],
+      "m1_quad": [
+        [
+          2067,
+          2294
+        ],
+        [
+          2953,
+          2274
+        ],
+        [
+          2967,
+          2631
+        ],
+        [
+          2076,
+          2650
+        ]
+      ],
+      "independent_column_checks": [
+        {
+          "source_column": "Q2-C0-SD-1",
+          "delta_x": 1
+        },
+        {
+          "source_column": "Q2-C0-SD-2",
+          "delta_x": 3
+        },
+        {
+          "source_column": "Q2-C0-SD-3",
+          "delta_x": 4
+        },
+        {
+          "source_column": "Q2-C0-SD-4",
+          "delta_x": 4
+        },
+        {
+          "source_column": "Q2-C0-SD-5",
+          "delta_x": 3
+        },
+        {
+          "source_column": "Q2-C0-SD-6",
+          "delta_x": 4
+        },
+        {
+          "source_column": "Q2-C1-SD-1",
+          "delta_x": 3
+        },
+        {
+          "source_column": "Q2-C1-SD-2",
+          "delta_x": 5
+        },
+        {
+          "source_column": "Q2-C1-SD-3",
+          "delta_x": 5
+        },
+        {
+          "source_column": "Q2-C2-SD-1",
+          "delta_x": 6
+        },
+        {
+          "source_column": "Q2-C2-SD-2",
+          "delta_x": 6
+        },
+        {
+          "source_column": "Q2-C2-SD-3",
+          "delta_x": 7
+        },
+        {
+          "source_column": "Q2-C3-SD-1",
+          "delta_x": 8
+        },
+        {
+          "source_column": "Q2-C3-SD-2",
+          "delta_x": 7
+        },
+        {
+          "source_column": "Q2-C3-SD-3",
+          "delta_x": 12
+        },
+        {
+          "source_column": "Q2-C3-SD-4",
+          "delta_x": 8
+        },
+        {
+          "source_column": "Q2-C3-SD-5",
+          "delta_x": 8
+        },
+        {
+          "source_column": "Q2-C3-SD-6",
+          "delta_x": 7
+        }
+      ],
+      "max_abs_x_error_px": 12,
+      "median_abs_x_error_px": 5.5,
+      "x_alignment_gate": "FAIL",
+      "precise_terminal_projection": "BLOCKED",
+      "control_points": "AI photo correspondences, not human accepted",
+      "y_alignment": "not independently qualified for contact assignment",
+      "M1_lead_region_candidates": [
+        {
+          "id": "C-L1",
+          "native_bbox": [
+            2135,
+            2295,
+            2400,
+            2330
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        },
+        {
+          "id": "C-L2",
+          "native_bbox": [
+            2115,
+            2580,
+            2920,
+            2635
+          ],
+          "status": "AI_visible_M1_lead_region_candidate_not_gate_assignment"
+        }
+      ]
+    }
+  },
+  "result": "terminal_and_lead_candidates_need_human_judgment",
+  "peak_counts_are_not_contact_counts": true,
+  "implementation_sha256": "96b4a55ccf5dbe5326d3c40e17f79da281c82e3df02db8a525978ba73ede413e"
+}

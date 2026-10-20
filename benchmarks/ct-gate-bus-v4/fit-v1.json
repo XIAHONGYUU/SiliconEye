@@ -1,0 +1,573 @@
+[
+  {
+    "id": "RIGHT6-DIFF",
+    "native_row_fit": [
+      1221.0748299319716,
+      14.379591836734786
+    ],
+    "native_y_fit_RMS_px": 1.53781826026995,
+    "photo_residual_core_width_median_px": 5.0,
+    "photo_residual_core_width_range_px": [
+      3,
+      8
+    ],
+    "gate_body_contrasts": [
+      36.77042253521128,
+      50.22112676056338,
+      59.57605633802817,
+      45.0816901408451,
+      47.312676056338034,
+      27.9323943661972
+    ],
+    "correspondence": "AI_local_family_match_not_human_accepted",
+    "physical_cut_size": "unknown_optical_core_is_not_lithographic_boundary",
+    "source_observations": [
+      {
+        "column": 0,
+        "row": 0,
+        "native_center": [
+          1164,
+          1221
+        ],
+        "supported": true,
+        "peak_gray": 246.0,
+        "residual": 96.72085591603457,
+        "residual_core_width_px": 6,
+        "seed_distance_px": 1.0
+      },
+      {
+        "column": 0,
+        "row": 1,
+        "native_center": [
+          1164,
+          1236
+        ],
+        "supported": true,
+        "peak_gray": 248.0,
+        "residual": 87.86328363468323,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 1.5297058540778266
+      },
+      {
+        "column": 0,
+        "row": 2,
+        "native_center": [
+          1164,
+          1252
+        ],
+        "supported": true,
+        "peak_gray": 231.0,
+        "residual": 90.29699351126268,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 3.059411708155653
+      },
+      {
+        "column": 0,
+        "row": 3,
+        "native_center": [
+          1165,
+          1267
+        ],
+        "supported": true,
+        "peak_gray": 237.0,
+        "residual": 88.39507297302251,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 3.5014282800023167
+      },
+      {
+        "column": 0,
+        "row": 4,
+        "native_center": [
+          1165,
+          1278
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 95.03242598622896,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.20000000000004547
+      },
+      {
+        "column": 0,
+        "row": 5,
+        "native_center": [
+          1166,
+          1294
+        ],
+        "supported": true,
+        "peak_gray": 245.0,
+        "residual": 91.54103985864046,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 1.5811388300841898
+      },
+      {
+        "column": 1,
+        "row": 0,
+        "native_center": [
+          1195,
+          1220
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 84.91881968674068,
+        "residual_core_width_px": 6,
+        "seed_distance_px": 0.0
+      },
+      {
+        "column": 1,
+        "row": 1,
+        "native_center": [
+          1196,
+          1236
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 87.78964549362351,
+        "residual_core_width_px": 7,
+        "seed_distance_px": 1.6552945357247042
+      },
+      {
+        "column": 1,
+        "row": 2,
+        "native_center": [
+          1196,
+          1252
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 89.69943943094012,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 3.026549190084323
+      },
+      {
+        "column": 1,
+        "row": 3,
+        "native_center": [
+          1197,
+          1267
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 87.00508903012386,
+        "residual_core_width_px": 6,
+        "seed_distance_px": 3.668787265568801
+      },
+      {
+        "column": 1,
+        "row": 4,
+        "native_center": [
+          1197,
+          1278
+        ],
+        "supported": true,
+        "peak_gray": 253.0,
+        "residual": 85.95188746269363,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 0.7999999999999545
+      },
+      {
+        "column": 1,
+        "row": 5,
+        "native_center": [
+          1197,
+          1293
+        ],
+        "supported": true,
+        "peak_gray": 248.0,
+        "residual": 93.45778782145538,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.7071067811865476
+      },
+      {
+        "column": 2,
+        "row": 0,
+        "native_center": [
+          1227,
+          1221
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 80.12909356917203,
+        "residual_core_width_px": 6,
+        "seed_distance_px": 1.0
+      },
+      {
+        "column": 2,
+        "row": 1,
+        "native_center": [
+          1227,
+          1236
+        ],
+        "supported": true,
+        "peak_gray": 250.0,
+        "residual": 85.77470554325521,
+        "residual_core_width_px": 7,
+        "seed_distance_px": 1.5297058540778266
+      },
+      {
+        "column": 2,
+        "row": 2,
+        "native_center": [
+          1227,
+          1252
+        ],
+        "supported": true,
+        "peak_gray": 245.0,
+        "residual": 89.57344055303003,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 3.059411708155653
+      },
+      {
+        "column": 2,
+        "row": 3,
+        "native_center": [
+          1228,
+          1262
+        ],
+        "supported": true,
+        "peak_gray": 245.0,
+        "residual": 85.79131419644293,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 1.503329637837285
+      },
+      {
+        "column": 2,
+        "row": 4,
+        "native_center": [
+          1228,
+          1278
+        ],
+        "supported": true,
+        "peak_gray": 251.0,
+        "residual": 85.38831798605202,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 0.20000000000004547
+      },
+      {
+        "column": 2,
+        "row": 5,
+        "native_center": [
+          1228,
+          1293
+        ],
+        "supported": true,
+        "peak_gray": 249.0,
+        "residual": 88.20845381350944,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.7071067811865476
+      },
+      {
+        "column": 3,
+        "row": 0,
+        "native_center": [
+          1258,
+          1221
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 83.37523539094147,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 1.0
+      },
+      {
+        "column": 3,
+        "row": 1,
+        "native_center": [
+          1258,
+          1235
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 82.87940331376626,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 0.5830951894845067
+      },
+      {
+        "column": 3,
+        "row": 2,
+        "native_center": [
+          1259,
+          1252
+        ],
+        "supported": true,
+        "peak_gray": 244.0,
+        "residual": 89.36413607516437,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 3.026549190084323
+      },
+      {
+        "column": 3,
+        "row": 3,
+        "native_center": [
+          1259,
+          1262
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 88.58760544665543,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 1.503329637837285
+      },
+      {
+        "column": 3,
+        "row": 4,
+        "native_center": [
+          1260,
+          1278
+        ],
+        "supported": true,
+        "peak_gray": 249.0,
+        "residual": 85.8608807603189,
+        "residual_core_width_px": 6,
+        "seed_distance_px": 0.7999999999999545
+      },
+      {
+        "column": 3,
+        "row": 5,
+        "native_center": [
+          1260,
+          1293
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 85.28840964882406,
+        "residual_core_width_px": 7,
+        "seed_distance_px": 0.7071067811865476
+      },
+      {
+        "column": 4,
+        "row": 0,
+        "native_center": [
+          1289,
+          1220
+        ],
+        "supported": true,
+        "peak_gray": 245.0,
+        "residual": 89.5463643419846,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 0.0
+      },
+      {
+        "column": 4,
+        "row": 1,
+        "native_center": [
+          1289,
+          1235
+        ],
+        "supported": true,
+        "peak_gray": 246.0,
+        "residual": 84.93371817485212,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.5830951894845067
+      },
+      {
+        "column": 4,
+        "row": 2,
+        "native_center": [
+          1290,
+          1251
+        ],
+        "supported": true,
+        "peak_gray": 243.0,
+        "residual": 90.17654424671761,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 2.039607805437132
+      },
+      {
+        "column": 4,
+        "row": 3,
+        "native_center": [
+          1290,
+          1262
+        ],
+        "supported": true,
+        "peak_gray": 238.0,
+        "residual": 88.89976857128113,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 1.503329637837285
+      },
+      {
+        "column": 4,
+        "row": 4,
+        "native_center": [
+          1290,
+          1277
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 84.77480332812485,
+        "residual_core_width_px": 6,
+        "seed_distance_px": 1.019803902718566
+      },
+      {
+        "column": 4,
+        "row": 5,
+        "native_center": [
+          1291,
+          1293
+        ],
+        "supported": true,
+        "peak_gray": 246.0,
+        "residual": 90.61827302044483,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 0.7071067811865476
+      },
+      {
+        "column": 5,
+        "row": 0,
+        "native_center": [
+          1320,
+          1220
+        ],
+        "supported": true,
+        "peak_gray": 244.0,
+        "residual": 88.61247113516876,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.0
+      },
+      {
+        "column": 5,
+        "row": 1,
+        "native_center": [
+          1321,
+          1235
+        ],
+        "supported": true,
+        "peak_gray": 243.0,
+        "residual": 84.38192802733553,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 0.8602325267042997
+      },
+      {
+        "column": 5,
+        "row": 2,
+        "native_center": [
+          1321,
+          1251
+        ],
+        "supported": true,
+        "peak_gray": 232.0,
+        "residual": 88.41796083830982,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 2.039607805437132
+      },
+      {
+        "column": 5,
+        "row": 3,
+        "native_center": [
+          1322,
+          1267
+        ],
+        "supported": true,
+        "peak_gray": 237.0,
+        "residual": 87.08555812394397,
+        "residual_core_width_px": 5,
+        "seed_distance_px": 3.668787265568801
+      },
+      {
+        "column": 5,
+        "row": 4,
+        "native_center": [
+          1322,
+          1277
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 93.14130238755351,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 1.2806248474865414
+      },
+      {
+        "column": 5,
+        "row": 5,
+        "native_center": [
+          1322,
+          1292
+        ],
+        "supported": true,
+        "peak_gray": 240.0,
+        "residual": 91.7425944269753,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 0.7071067811865476
+      },
+      {
+        "column": 6,
+        "row": 0,
+        "native_center": [
+          1351,
+          1220
+        ],
+        "supported": true,
+        "peak_gray": 243.0,
+        "residual": 77.84896613542915,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 0.0
+      },
+      {
+        "column": 6,
+        "row": 1,
+        "native_center": [
+          1352,
+          1235
+        ],
+        "supported": true,
+        "peak_gray": 237.0,
+        "residual": 81.92429678392381,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 0.8602325267042997
+      },
+      {
+        "column": 6,
+        "row": 2,
+        "native_center": [
+          1352,
+          1246
+        ],
+        "supported": true,
+        "peak_gray": 239.0,
+        "residual": 77.53263327300508,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 3.026549190084323
+      },
+      {
+        "column": 6,
+        "row": 3,
+        "native_center": [
+          1353,
+          1267
+        ],
+        "supported": true,
+        "peak_gray": 239.0,
+        "residual": 76.21583729864955,
+        "residual_core_width_px": 4,
+        "seed_distance_px": 3.668787265568801
+      },
+      {
+        "column": 6,
+        "row": 4,
+        "native_center": [
+          1353,
+          1277
+        ],
+        "supported": true,
+        "peak_gray": 247.0,
+        "residual": 77.70120244680948,
+        "residual_core_width_px": 8,
+        "seed_distance_px": 1.2806248474865414
+      },
+      {
+        "column": 6,
+        "row": 5,
+        "native_center": [
+          1353,
+          1293
+        ],
+        "supported": true,
+        "peak_gray": 243.0,
+        "residual": 75.34903008594648,
+        "residual_core_width_px": 3,
+        "seed_distance_px": 0.7071067811865476
+      }
+    ]
+  }
+]

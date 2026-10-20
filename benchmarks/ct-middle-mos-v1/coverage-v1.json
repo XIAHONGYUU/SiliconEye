@@ -1,0 +1,45 @@
+{
+  "scope": "First batch only: Q2 middle MOS A top-left, B top-right, C lower",
+  "regions": {
+    "A": {
+      "diffusion": 161,
+      "ring": 106
+    },
+    "B": {
+      "diffusion": 138,
+      "ring": 88
+    },
+    "C": {
+      "diffusion": 331,
+      "ring": 162
+    }
+  },
+  "new_contacts": 986,
+  "source_drain": 630,
+  "guard_ring": 356,
+  "retained_contacts": 791,
+  "total": 1777,
+  "fully_accepted_prior_contacts": 130,
+  "previous_661_status": "local relationships basically accepted; geometry detail not final",
+  "unknown_inspection_sites": 48,
+  "unknown_sites_are_not_contacts": true,
+  "source_coordinates_vs_design": "separate; path locators are source evidence, canonical CT lattice uses relative design geometry",
+  "gate_terminal_CT": {
+    "status": "unknown_not_absent",
+    "new_gate_CT_exported": 0,
+    "reason": "No sufficiently reliable separation of bright POLY end edges from real cuts in these source views; no automatic endpoint hole assignment",
+    "human_focus": "Review A/B/C S-D and ring correspondence; distinguish any genuine gate-terminal CT in full source and GA/GC context views"
+  },
+  "remaining_batches": [
+    "upper small MOS",
+    "left and lower-left large MOS",
+    "other vertical/bent guards",
+    "wide MOS below resistors"
+  ],
+  "limits": [
+    "not a full-frame CT result",
+    "not complete per-contact recall",
+    "no M1 net inference",
+    "no actual physical PDK DRC"
+  ]
+}

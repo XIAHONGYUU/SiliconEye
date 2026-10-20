@@ -1,0 +1,43 @@
+{
+  "status": "new_batch_candidates_pending_human_review",
+  "gate_count": 140,
+  "groups": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "counts": {
+    "SD": 979,
+    "gate": 275,
+    "ring": 680
+  },
+  "new_contacts": 1934,
+  "total_contacts": 6874,
+  "preserved_snapshot_contacts": 4940,
+  "all140_gate_terminals_have_at_least_one_supported_candidate": true,
+  "single_peak_gate_ids": [
+    "G40-P08",
+    "G41r2-P03",
+    "G43r2-P03",
+    "G43r2-P10",
+    "G47-P01"
+  ],
+  "unresolved_source_columns": [
+    "MM-G41-SD01",
+    "MM-G42-SD12",
+    "MM-G43-SD01"
+  ],
+  "inspection_slot_count": 144,
+  "prior_acceptance": "benchmarks/ct-left-large-mos-revision-v2/acceptance-v1.json",
+  "prior_scope_not_upgraded": true,
+  "whole_layer_complete": false
+}
