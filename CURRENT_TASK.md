@@ -2,7 +2,7 @@
 
 ## 当前目标与完成状态
 
-2026-10-21用户批准分别封装“POLY重建”和“CT重建”，并完成统一输入输出、接续规则、独立Agent试用三项收尾。现已完成仓库内人机协作v1；未重新提取全幅，未采纳新的材料几何，未新增人工裁决。本轮用户已授权提交并推送GitHub；执行前远端核对仍为6e5bb17，正在发布已有成果并评估金属／层间孔的skill边界。全局安装不在范围内。
+2026-10-21用户批准分别封装“POLY重建”和“CT重建”，并完成统一输入输出、接续规则、独立Agent试用三项收尾。现已完成仓库内人机协作v1；未重新提取全幅，未采纳新的材料几何，未新增人工裁决。本轮用户授权更新GitHub并评估金属／层间孔skill粒度。代码、两个skill和复核证据已推送基础提交6c1c658；金属／层间孔评估随本次文档提交同步。全局安装及新金属／孔skill实现不在本轮范围内。
 
 本文件为唯一实时入口。[POLY skill](skills/silicon-eye-poly-reconstruction/SKILL.md)、[CT skill](skills/silicon-eye-ct-reconstruction/SKILL.md)、[共用契约](docs/architecture/layer-reconstruction-skill-contract-v1.md)、[封装验证报告](docs/reviews/2026-10-21-poly-ct-skills.md)、[POLY样稿](docs/assets/poly-skill-package-v1/index.html)、[CT样稿](docs/assets/ct-skill-package-v1/index.html)。skill可按明确仓库路径读取，未安装全局。
 
@@ -31,9 +31,13 @@
 - 统一交付：`.venv/bin/python -m silicon_eye.layer_review --request configs/poly-skill-review-v1.json --output runs/新的复核目录`；CT替换为`configs/ct-skill-review-v1.json`。inspect不生成新模型；revise用明确before／after、证据和操作ID范围，允许跨层事务，硬FAIL仅保留拒绝诊断，不导出候选快照。输出目录须新建。
 - 当前联合检查：`.venv/bin/python -m silicon_eye.joint_layers --snapshot configs/joint-work-layer-v3.json --output runs/新的联合检查目录`。原生定位不等于精确投影；多观察合并AA不得套单一旧投影。AI观察格式沿用既有agent_observations，不能自行人审确认。
 
-## 唯一下一步
+## 金属／层间孔评估与唯一下一步
 
-当前先完成GitHub同步，再基于现有架构评估金属重建与层间孔重建的skill粒度；不在本轮实现新skill、提取M1或追全网。不重审S1／S2，不重做全幅AA／POLY／CT。
+[架构评估](docs/architecture/metal-via-skill-boundary-assessment-v1.md)建议按任务封装金属重建、层间过孔重建两个通用skill，以层ID／层对、证据帧、相对预算和特殊结构配置区分M1/M2等实例；每层独立验收，CT与网络追踪保留自身任务边界。共用skill不等于共用一组数值规则、取消逐层质量门或已经验证所有金属。官方PDK已回查，当前芯片工艺/尺度仍未知。此为架构建议，本轮没有创建占位skill或实现M1／V1抽取。
+
+发布前复跑25项相关测试通过（96.18s），相关Ruff、锁定输入与release哈希、git diff --check通过。发布使用现有XIAHONGYUU登录身份及已配置的noreply作者，不改变全局Git配置；提交和远端以本轮Git核验为准。
+
+唯一下一大节点：以已审CT为锚点建立M1规则几何最小试点，再用M1／V1／M2联合样本及另一层对验证迁移，之后决定通用skill封装。当前尚未启动新M1提取或追全网。不重审S1／S2，不重做全幅AA／POLY／CT。
 
 [本阶段前入口完整原文](docs/history/current-task-before-2026-10-21-poly-ct-skills.md)保留此前状态、恢复命令和历史链接；[此前身份阶段原文](docs/history/current-task-before-2026-10-21-source-identity-adjudication.md)继续可查。`runs/`仅本地，当前技能验证产物已复制到Git可追踪的benchmarks路径。
 

@@ -49,6 +49,10 @@
 
 [三处来源修订v1](docs/reviews/2026-10-21-source-ownership.md)保留原争用诊断。用户随后批准S1／S2，并纠正S3蓝色为共用POLY栅端CT；已退休错误源漏身份、补上共用上端POLY，并加人审身份硬门。[当前共同清单v3](configs/joint-work-layer-v3.json)、[新版复核页](docs/assets/ct-source-ownership-reviewed-v2/index.html)及[裁决实施报告](docs/reviews/2026-10-21-source-ownership-adjudication.md)记录最新状态。
 
+## 金属／层间孔的后续架构
+
+[skill边界评估](docs/architecture/metal-via-skill-boundary-assessment-v1.md)建议“金属重建＋层间过孔重建”两个通用skill，用各层／层对配置与独立质量门表达差异。CT与网络点亮保留独立任务边界。先以M1及M1／V1／M2小样验证，再验证另一层对；当前只是架构建议，尚未实现这些新skill或全幅金属重建。
+
 ## 本地运行
 
 ```bash
