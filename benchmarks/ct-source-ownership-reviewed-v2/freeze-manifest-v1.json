@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "scoped_human_material_identity_reviewed_geometry_candidate",
+  "counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "new_geometry_human_pixel_approved": false,
+  "automatic_network_export_allowed": false,
+  "files": {
+    "benchmarks/ct-source-ownership-reviewed-v2/exceptions-v1.json": "f495158831a5d36596469c952ed6f19ea06784bc7cbf6d22cb604b71c7c167dd",
+    "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f",
+    "benchmarks/ct-source-ownership-reviewed-v2/joint-report-v1.json": "f09c55a22a49d10d4882526054e9c9547531a517691668d086d317b198e713aa",
+    "benchmarks/ct-source-ownership-reviewed-v2/ledger-v1.json": "a055e1c5d55c3addb8dec99495f3bc90eba55a543af5acdc31e06a17f8bb4940",
+    "benchmarks/ct-source-ownership-reviewed-v2/material-model-v1.json": "6e6230f769d79e9ae76f81810e30cc5311944e71b9c79933c04e4d9dbd95644e",
+    "benchmarks/ct-source-ownership-reviewed-v2/model-v1.json": "8c977221bd661f381a74f5f2b0a04df4c6b91b77491a234124dcf98b298ae927",
+    "benchmarks/ct-source-ownership-reviewed-v2/new-contacts-v1.json": "fd06e4f4f07f1df45bd85aa76e7ed701e44c9487cc8168a67947a4fdfe4dad64",
+    "benchmarks/ct-source-ownership-reviewed-v2/retired-records-v1.json": "bb0f763f0163bb4274493c12998e3c3e4da8baa34973b615d481c6e2c09f4850",
+    "benchmarks/ct-source-ownership-reviewed-v2/source-reinspection-v1.json": "8f049646f37aa5814433a40bd5c48004eb4dc8a7392c32112e4d154fa5d826c7",
+    "benchmarks/ct-source-ownership-reviewed-v2/spec-v1.json": "e2964830f48b246edf07b1b49eeee3172ae4a2a44a124ae025067335ab142eef",
+    "benchmarks/ct-source-ownership-reviewed-v2/stage-gate-v1.json": "303b8f927fffb00f9ec812b112f3d4f08334b2b9864f4ae685c2f4cf193cc6bb",
+    "benchmarks/ct-source-ownership-reviewed-v2/terminal-access-v1.json": "45a38f7acf6fe3791394f030a7a50573f1c3696ae8b7c44fe41baeb845f152ab",
+    "benchmarks/ct-source-ownership-reviewed-v2/unknown-sites-v1.json": "f90aa482278c62a560238ec1e88b167db16e110fa95aea2cdb215f3ef20412b7",
+    "benchmarks/ct-source-ownership-reviewed-v2/use-contract-v1.json": "09f9e9f3718c4b12ffbdfb9daf7946f183f25bc05ab03e051c8d6c6a36784175",
+    "benchmarks/ct-source-ownership-reviewed-v2/verification-v1.json": "382823304a4ef63b0119bc2d1046ae61626bca304bf30d48ea9b19d747c4c274",
+    "configs/joint-work-layer-v3.json": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377",
+    "docs/assets/ct-source-ownership-reviewed-v2/S3-joint-layout.png": "eb8195f524ad8899cce56e496cdb5c34997c5e75dd219b9b0651d5fce43d60ad",
+    "docs/assets/ct-source-ownership-reviewed-v2/index.html": "1e56f7b8d04d491a71aa176ffd3f4bd6e588029aa4d6cd1af435a5c06957f76a",
+    "docs/reviews/2026-10-21-source-ownership-adjudication.md": "d64c94a4642914d1b6744b05a85e403b9345932f59477488043bc4bc7ca5e4db"
+  },
+  "implementation_sha256": {
+    "silicon_eye/joint_layers.py": "4aaadd9491de057e55c094de9137e3e187089da9900dbd58d42ca30ca080b81b"
+  }
+}

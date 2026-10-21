@@ -1,0 +1,28 @@
+{
+  "parent_snapshot": "ct-source-ownership-v1-joint",
+  "current_snapshot": "ct-source-ownership-reviewed-v2-joint",
+  "counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "AA_records_exact": true,
+  "parent_POLY_records_exact": 695,
+  "unchanged_CT_records": 10286,
+  "retired_false_AA_CT": 1,
+  "replacement_POLY_CT": 1,
+  "new_shared_POLY_bridge": 1,
+  "S1_S2_human_approved_scope_preserved": true,
+  "S3_purple_CT_record_exact": true,
+  "old_five_limits_exact": true,
+  "new_unknown_left_diffusion_access": true,
+  "no_new_M1_or_netlist_claim": true,
+  "tests": {
+    "passed": 58,
+    "seconds": 102.38
+  },
+  "reviewed_identity_gate": "PASS",
+  "old_wrong_CT_geometry_passes_but_identity_gate_rejects": true,
+  "raw_photos_unchanged": 8,
+  "publication": "local_not_committed_or_pushed"
+}

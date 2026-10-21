@@ -20,6 +20,7 @@ from shapely.ops import unary_union
 from .aa_completion import part_polygon, pieces, polygon_record, source_polygon, validate
 from .aa_semantic_revision import reconstruct
 from .geometry_reconstruction import digest, object_polygon, object_rings, orthogonal_fit, project
+from .joint_layers import aa_view, load_snapshot, replace_layer, write_snapshot
 from .scene_geometry import load_locked, paint_objects
 
 
@@ -146,6 +147,8 @@ def edge_warp(locator, details):
 
 def revise_object(root, obj, base, operation, photo, settings):
     old_source = source_polygon(obj, base)
+    if obj['id'] in base.get('source_footprints', {}):
+        raise ValueError('Merged AA needs explicit local correspondence before image refinement')
     kind = operation["kind"]
     details = {}
     layout_parts, native_parts = [], []
@@ -252,8 +255,9 @@ def overlay(photo, model, color):
     result = photo.copy()
     for item in model["objects"]:
         p = source_polygon(item, model)
-        for ring in [p.exterior, *p.interiors]:
-            cv2.polylines(result, [np.rint(ring.coords).astype(np.int32)], True, color, 2)
+        for part in pieces(p):
+            for ring in [part.exterior, *part.interiors]:
+                cv2.polylines(result, [np.rint(ring.coords).astype(np.int32)], True, color, 2)
     return result
 
 
@@ -269,8 +273,9 @@ def geometry_svg(model, native=False, only_ids=None, color="#72d4ec"):
             continue
         p = source_polygon(item, model) if native else object_polygon(item)
         path = ""
-        for ring in [p.exterior, *p.interiors]:
-            path += "M" + " L".join(f"{x:.3f},{y:.3f}" for x, y in ring.coords) + " Z "
+        for part in pieces(p):
+            for ring in [part.exterior, *part.interiors]:
+                path += "M" + " L".join(f"{x:.3f},{y:.3f}" for x, y in ring.coords) + " Z "
         chunks.append(
             f'<path d="{path}" fill="{color}" fill-opacity=".4" '
             f'stroke="{color}" stroke-width="1" fill-rule="evenodd"/>'
@@ -284,6 +289,14 @@ def run(root, spec_path, output):
         raise ValueError("Use a new output directory")
     spec = json.loads(Path(spec_path).read_text())
     base = load_locked(root, spec["base"])
+    snapshot = None
+    if spec.get('joint_snapshot'):
+        ref = spec['joint_snapshot']
+        load_locked(root, ref)
+        snapshot = load_snapshot(root, root / ref['path'])
+        if spec['base'] != snapshot['manifest']['inputs']['materials']:
+            raise ValueError('AA revision must start from current joint materials')
+        base = aa_view(snapshot)
     protected = load_locked(root, spec["protected"])
     for name in [
         "previous_human_review",
@@ -329,6 +342,11 @@ def run(root, spec_path, output):
             item["id"], item.get("structure_group", "global")
         )
     conflicts = validate(result)
+    if snapshot is not None:
+        continued = replace_layer(snapshot, 'AA', result, operations.keys())
+        # A split introduces new identities and needs explicit companion-reference edits;
+        # this entry is for bounded same-ID refinement of the common snapshot.
+        model['joint_layers'] = continued['joint_report']
     current = {v["id"]: v for v in result}
     untouched = set(old) - operations.keys()
     assert all(current[k] == old[k] for k in untouched)
@@ -367,6 +385,9 @@ def run(root, spec_path, output):
         spec_sha256=digest(spec_path),
     )
     output.mkdir(parents=True)
+    if snapshot is not None:
+        write_snapshot(root, continued, output)
+        report['joint_layers'] = continued['joint_report']
     for name, value in [
         ("model.json", model),
         ("report.json", report),

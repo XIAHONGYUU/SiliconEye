@@ -1,0 +1,4 @@
+interface:
+  display_name: "CT重建"
+  short_description: "结合AA与POLY承载身份重建规则CT，保留源图对应、已审范围和未知"
+  default_prompt: "使用 $silicon-eye-ct-reconstruction 接续当前共同快照，先确定AA或POLY承载身份，再局部重建CT，交付源图与旧新对照、联合质量门和未知限制。"

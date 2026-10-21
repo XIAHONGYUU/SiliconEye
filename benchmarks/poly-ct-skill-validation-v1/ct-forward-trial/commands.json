@@ -1,0 +1,34 @@
+[
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "silicon_eye.layer_review",
+      "--request",
+      "benchmarks/poly-ct-skill-validation-v1/ct-pending.json",
+      "--output",
+      "runs/skill-forward-ct-v1/pending-delivery"
+    ],
+    "cwd": "/home/zuoky/project_siliconeyes/silicon-eye",
+    "exit_code": 2,
+    "elapsed_seconds": 16.62505340576172,
+    "stdout": "pending.stdout.txt",
+    "stderr": "pending.stderr.txt"
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "silicon_eye.layer_review",
+      "--request",
+      "configs/ct-skill-review-v1.json",
+      "--output",
+      "runs/skill-forward-ct-v1/current-inspect"
+    ],
+    "cwd": "/home/zuoky/project_siliconeyes/silicon-eye",
+    "exit_code": 0,
+    "elapsed_seconds": 15.726859331130981,
+    "stdout": "inspect.stdout.txt",
+    "stderr": "inspect.stderr.txt"
+  }
+]

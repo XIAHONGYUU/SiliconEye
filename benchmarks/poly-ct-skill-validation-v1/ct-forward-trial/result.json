@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "trial": "skill-forward-ct-v1",
+  "task_kind": "known_chip_continuation_with_current_human_review_not_blind_test",
+  "skill": "skills/silicon-eye-ct-reconstruction/SKILL.md",
+  "evaluated_request": "benchmarks/poly-ct-skill-validation-v1/ct-pending.json",
+  "current_snapshot": "configs/joint-work-layer-v3.json",
+  "decision": "REJECT_DO_NOT_ADOPT",
+  "reason": "Proposed CT reassigns human-confirmed shared POLY terminal to AA, removes POLY_target and adds AA_target while keeping the same geometry. This violates current scoped S3 adjudication; actual joint audit independently rejects reviewed identity, AA enclosure and channel clearance.",
+  "commands": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "silicon_eye.layer_review",
+        "--request",
+        "benchmarks/poly-ct-skill-validation-v1/ct-pending.json",
+        "--output",
+        "runs/skill-forward-ct-v1/pending-delivery"
+      ],
+      "cwd": "/home/zuoky/project_siliconeyes/silicon-eye",
+      "exit_code": 2,
+      "elapsed_seconds": 16.62505340576172,
+      "stdout": "pending.stdout.txt",
+      "stderr": "pending.stderr.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "silicon_eye.layer_review",
+        "--request",
+        "configs/ct-skill-review-v1.json",
+        "--output",
+        "runs/skill-forward-ct-v1/current-inspect"
+      ],
+      "cwd": "/home/zuoky/project_siliconeyes/silicon-eye",
+      "exit_code": 0,
+      "elapsed_seconds": 15.726859331130981,
+      "stdout": "inspect.stdout.txt",
+      "stderr": "inspect.stderr.txt"
+    }
+  ],
+  "pending_delivery": {
+    "path": "runs/skill-forward-ct-v1/pending-delivery",
+    "status": "FAIL",
+    "geometry_status": "FAIL",
+    "reviewed_identity_status": "FAIL",
+    "source_gate_status": "PASS",
+    "candidate_snapshot": null,
+    "next_snapshot": null
+  },
+  "current_inspect": {
+    "path": "runs/skill-forward-ct-v1/current-inspect",
+    "status": "PASS",
+    "next_snapshot": {
+      "path": "configs/joint-work-layer-v3.json",
+      "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+    }
+  },
+  "preservation": {
+    "all_8_inherited_documents_exact": true,
+    "unknown_scopes": [
+      "U-AA-F01951",
+      "U-AA-F01952",
+      "U-H1",
+      "U-H2",
+      "L-CLIPPED-AA-F01744",
+      "S3-AA4-LEFT-SD-ACCESS"
+    ],
+    "unknown_count": 6,
+    "human_scope": "S1 column identity and relative position; S2 displayed correction; S3 purple AA source/drain and blue common POLY gate identity. G66 member mapping remains AI indexing; exact bus and cut geometries remain AI candidates. No whole-layer or pixel approval.",
+    "cross_layer_relation": "G66-P03 and G66-P04 remain connected by G66-P03-P04-TOP-BUS; shared CT targets this POLY bus. Purple AA3 target preserved, AA4 rejected ID remains retired.",
+    "production_inputs_unchanged": true
+  },
+  "new_human_questions": [],
+  "new_human_questions_count": 0,
+  "human_correction_count": null,
+  "human_correction_count_reason": "No measured correction record supplied for this trial; historical supplied adjudication is not counted as observed trial correction.",
+  "safe_next_step": "Retain current v3 as the continuation parent. Archive this rejected local transaction and use current-inspect/index.html for review. Do not repeat S1/S2 or S3 identity questions, restore the retired AA identity, fill AA4 unknown access, or enable M1/net inference. A later local geometry transaction must preserve the current material identity and all inherited constraints; changing the adjudicated identity requires new conflicting source evidence and a new explicit scoped human decision.",
+  "unverified": [
+    "100% physical CT recovery and all exact hole/material boundaries",
+    "G66-P03/P04 image indexing independently from supplied current review",
+    "Existence or absence of a separate AA4 left source/drain CT",
+    "M1 electrical connectivity, netlist and device polarity",
+    "Physical scale, process PDK DRC/LVS, true W/L and resistance",
+    "Skill performance on unseen chips/new photos or statistical independent-agent effectiveness"
+  ],
+  "verification_file": "runs/skill-forward-ct-v1/verification.json",
+  "scope_compliance": {
+    "production_model_updated": false,
+    "full_frame_extraction_rerun": false,
+    "git_push": false,
+    "external_messages_sent": false,
+    "writes_limited_to": "runs/skill-forward-ct-v1"
+  },
+  "evidence_files": [
+    "pending-delivery/joint-report.json",
+    "pending-delivery/manifest.json",
+    "pending-delivery/delta.json",
+    "pending-delivery/continuation-context.json",
+    "current-inspect/joint-report.json",
+    "current-inspect/manifest.json",
+    "verification.json",
+    "commands.json"
+  ]
+}

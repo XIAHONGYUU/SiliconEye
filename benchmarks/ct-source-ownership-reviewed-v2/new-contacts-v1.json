@@ -1,0 +1,74 @@
+{
+  "objects": [
+    {
+      "id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "family": "G66-P03-P04-SHARED-TOP",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "layout_center": [
+        1355.1766249999998,
+        3754.5
+      ],
+      "layout_outline": [
+        [
+          1352.6766249999998,
+          3752.0
+        ],
+        [
+          1357.6766249999998,
+          3752.0
+        ],
+        [
+          1357.6766249999998,
+          3757.0
+        ],
+        [
+          1352.6766249999998,
+          3757.0
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "human_confirmed_terminal_identity_AI_geometry_candidate",
+      "source_evidence": {
+        "native_center": [
+          1175,
+          3727
+        ],
+        "source_native_center_xy": [
+          1175,
+          3727
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "peak_gray": 255.0,
+        "local_residual": 135.4230769230769,
+        "source_roi": [
+          1155,
+          3718,
+          1181,
+          3735
+        ],
+        "source_observation_id": "ROW4-AA4-LEFT-RECHECK",
+        "evidence_type": "bounded_peak_in_upper_left_diffusion_landing"
+      },
+      "terminal_role": "shared_gate_POLY_terminal",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "POLY_target": "G66-P03-P04-TOP-BUS",
+      "supersedes": {
+        "record_id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+        "reason": "wrong_AA_source_drain_assignment_rejected_by_human",
+        "retired_record_ref": {
+          "path": "benchmarks/ct-source-ownership-v1/model-v1.json",
+          "sha256": "222a3bfc0937152ba092017498f1d0a43c1e1aa070157277d7ec57280badca94"
+        }
+      },
+      "human_review_ref": {
+        "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+        "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+      }
+    }
+  ]
+}

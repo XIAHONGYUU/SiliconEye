@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "document_kind": "layer_reconstruction_review",
+  "id": "poly-skill-review-v1",
+  "target_layer": "POLY",
+  "mode": "inspect",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "windows": [
+    {
+      "id": "S3",
+      "layout_bounds": [
+        1180,
+        3650,
+        1480,
+        3900
+      ],
+      "source_windows": {
+        "poly": [
+          850,
+          3450,
+          1550,
+          3950
+        ],
+        "aa": [
+          850,
+          3550,
+          1650,
+          4030
+        ],
+        "m1": [
+          800,
+          3400,
+          1600,
+          4050
+        ]
+      }
+    }
+  ]
+}

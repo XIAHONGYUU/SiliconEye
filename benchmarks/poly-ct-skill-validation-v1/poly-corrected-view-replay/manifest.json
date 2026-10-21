@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "poly-pending-local-v2-corrected-view",
+  "status": "FAIL",
+  "mode": "revise",
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "candidate_snapshot": null,
+  "next_snapshot": null,
+  "verified_inputs": {
+    "configs/joint-work-layer-v3.json": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377",
+    "benchmarks/ct-source-ownership-reviewed-v2/material-model-v1.json": "6e6230f769d79e9ae76f81810e30cc5311944e71b9c79933c04e4d9dbd95644e",
+    "benchmarks/ct-source-ownership-reviewed-v2/model-v1.json": "8c977221bd661f381a74f5f2b0a04df4c6b91b77491a234124dcf98b298ae927",
+    "benchmarks/ct-work-layer-final-v5/spec-v1.json": "372388f445b8b8392d706b5434a48036d46309bb02d77a171ce8cb137dd351ad",
+    "benchmarks/aa-full-frame-workflow-v1/model-v1.json": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db",
+    "benchmarks/ct-source-ownership-reviewed-v2/unknown-sites-v1.json": "f90aa482278c62a560238ec1e88b167db16e110fa95aea2cdb215f3ef20412b7",
+    "benchmarks/ct-source-ownership-reviewed-v2/stage-gate-v1.json": "303b8f927fffb00f9ec812b112f3d4f08334b2b9864f4ae685c2f4cf193cc6bb",
+    "benchmarks/ct-source-ownership-reviewed-v2/use-contract-v1.json": "09f9e9f3718c4b12ffbdfb9daf7946f183f25bc05ab03e051c8d6c6a36784175",
+    "benchmarks/ct-source-ownership-reviewed-v2/exceptions-v1.json": "f495158831a5d36596469c952ed6f19ea06784bc7cbf6d22cb604b71c7c167dd",
+    "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f",
+    "benchmarks/ct-source-ownership-reviewed-v2/source-reinspection-v1.json": "8f049646f37aa5814433a40bd5c48004eb4dc8a7392c32112e4d154fa5d826c7",
+    "benchmarks/ct-work-layer-final-v5/human-review-v1.json": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04",
+    "data/test_chip/tile_full/aa.jpg": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "data/test_chip/tile_full/implant.jpg": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+    "data/test_chip/tile_full/m1.jpg": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "data/test_chip/tile_full/m2.jpg": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "data/test_chip/tile_full/m3.jpg": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "data/test_chip/tile_full/m4.jpg": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0",
+    "data/test_chip/tile_full/poly.jpg": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "data/test_chip/tile_full/sub.jpg": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+  },
+  "code": {
+    "silicon_eye/layer_review.py": "d12114993320c251b1b8a02d5844b9e77fac7af0b36c775e5eef573cca2ad8cd",
+    "silicon_eye/joint_layers.py": "23586fc22c7e95ed858d454b88a7402e462d1c055701ef5dd000b06bb99c7a53",
+    "silicon_eye/ct_transfer.py": "cc0078fa2a5474d4f0ab411fc1953c93a2c5389c4edf230a9b38e464d205229b",
+    "silicon_eye/poly_closeout.py": "1b582bcad093af7dddb5a3ab82e580bf487a51c1a9f78141218f3475e98ede93",
+    "silicon_eye/ct_joint_reconstruction.py": "a9713a2ae1195ee4a18ca4683774ebffb0a107271ce2c6c4dde3cb6e75d58aed",
+    "silicon_eye/aa_completion.py": "bec781844666f5df91de894e9d1102952a4f705872e1a61646373205f1a9104c"
+  },
+  "artifacts": {
+    "delta.json": "8f308ab6a42e7694c0cb481417a7f8fe0aa3608d732a388770e81c7c865aedc6",
+    "G26-poly.png": "ba9006d1655987edbd701106f275c0e6d00045c7fa81cde7af4fd89afda07d5f",
+    "G26-before.svg": "c141e7d77b2d95219254d28aeaf8ccd8612b27ab719d17e685dbe2b9c8ea77de",
+    "index.html": "97dd87576d54bb62e335adc443ed4679ae8d5e88728d3a5c64c60986deb130dd",
+    "G26-proposed.svg": "3daa005cac2b4611ec76a27f0b18ed4db98a3ad5e26de3202a4fe55700c8a0c5",
+    "request.json": "ae63e91aa697e3411850485e3ec8cea4cf643fcadf501378840310d4ec032010",
+    "joint-report.json": "99858e27c7c6e0e8d1255a2062eb942afe58fb7729719fd01d83f242cc5399b5",
+    "continuation-context.json": "3c84efd0c2342c4b306b7cb58d31c01d41774fd178a6ee43cf1b8f23df11b4a9"
+  },
+  "model_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "automatic_network_export_allowed": false
+}

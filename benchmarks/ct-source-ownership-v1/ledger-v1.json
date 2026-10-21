@@ -1,0 +1,27 @@
+{
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v1.json",
+    "sha256": "ea29a8e39e70e1e0a3722f2be72d10fc76e0adcd761ae10548af001f7949ff0a"
+  },
+  "patches_ref": {
+    "path": "benchmarks/ct-source-ownership-v1/source-corrections-v1.json",
+    "sha256": "abb8678255eaae08b8020330363f90ee01ce6e981c227f4df76c5393570ed149"
+  },
+  "review_ref": {
+    "path": "benchmarks/ct-source-ownership-v1/AI-source-review-v1.json",
+    "sha256": "8457fc85e70e62763b58cb9ec0a81faae5145186d262d175fb24ef56667948ee"
+  },
+  "counts": {
+    "source_revised": 73,
+    "ring": 22,
+    "adjacent_SD": 44,
+    "G34_gate": 6,
+    "ROW4_SD": 1
+  },
+  "geometry_changes": 0,
+  "retired_contacts": 0,
+  "added_contacts": 0,
+  "former_hotspot_pairs": 16,
+  "remaining_cross_target_source_pairs": 0,
+  "method": "AI material-column correspondence, existing raw profile helper and bounded peak observations; no synthetic cuts"
+}

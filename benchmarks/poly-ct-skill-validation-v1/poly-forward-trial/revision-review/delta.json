@@ -1,0 +1,393 @@
+[
+  {
+    "layer": "POLY",
+    "id": "G26-P01",
+    "before": {
+      "id": "G26-P01",
+      "material": "POLY",
+      "native_outline": [
+        [
+          604.5,
+          1340.0
+        ],
+        [
+          641.5,
+          1340.0
+        ],
+        [
+          645.5,
+          1463.0
+        ],
+        [
+          608.5,
+          1463.0
+        ]
+      ],
+      "source_record": {
+        "id": "G26-P01",
+        "group_id": "G26",
+        "group_index": 0,
+        "kind": "MOS_gate_body",
+        "material": "poly",
+        "status": "AI_candidate_not_human_confirmed",
+        "native_outline": [
+          [
+            604.5,
+            1340.0
+          ],
+          [
+            641.5,
+            1340.0
+          ],
+          [
+            645.5,
+            1463.0
+          ],
+          [
+            608.5,
+            1463.0
+          ]
+        ],
+        "layout_outline": [
+          [
+            606.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1463.0
+          ],
+          [
+            606.5,
+            1463.0
+          ]
+        ],
+        "native_to_layout": [
+          [
+            0.9999999999999649,
+            -0.03252032520326703,
+            45.57723577237826
+          ],
+          [
+            -1.346813192308537e-15,
+            0.9999999999999288,
+            5.022929683528043e-11
+          ],
+          [
+            -7.806446228970496e-19,
+            -2.5247982849259128e-17,
+            1.0
+          ]
+        ],
+        "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+        "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+        "terminal_routing": "unknown_not_completed_by_repetition"
+      },
+      "source_scope": null,
+      "group_id": "G26",
+      "kind": "MOS_gate_body",
+      "acceptance": {
+        "material": "AI_candidate_not_human_confirmed",
+        "joint_geometry": "candidate",
+        "electrical": "unknown"
+      },
+      "AA_target": "AA-LEFT-STAIR-SHARED-56",
+      "terminal_status": "not_individually_verified",
+      "geometry_method": "explicit_new_AA_relation_AI_candidate",
+      "legacy_record": {
+        "id": "G26-P01",
+        "group_id": "G26",
+        "group_index": 0,
+        "kind": "MOS_gate_body",
+        "material": "poly",
+        "status": "AI_candidate_not_human_confirmed",
+        "native_outline": [
+          [
+            604.5,
+            1340.0
+          ],
+          [
+            641.5,
+            1340.0
+          ],
+          [
+            645.5,
+            1463.0
+          ],
+          [
+            608.5,
+            1463.0
+          ]
+        ],
+        "layout_outline": [
+          [
+            606.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1463.0
+          ],
+          [
+            606.5,
+            1463.0
+          ]
+        ],
+        "native_to_layout": [
+          [
+            0.9999999999999649,
+            -0.03252032520326703,
+            45.57723577237826
+          ],
+          [
+            -1.346813192308537e-15,
+            0.9999999999999288,
+            5.022929683528043e-11
+          ],
+          [
+            -7.806446228970496e-19,
+            -2.5247982849259128e-17,
+            1.0
+          ]
+        ],
+        "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+        "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+        "terminal_routing": "unknown_not_completed_by_repetition"
+      },
+      "layout_outline": [
+        [
+          904.46715,
+          1542.8547
+        ],
+        [
+          934.46715,
+          1542.8547
+        ],
+        [
+          934.46715,
+          1654.981
+        ],
+        [
+          904.46715,
+          1654.981
+        ]
+      ],
+      "relation_record": {
+        "id": "G26",
+        "object_ids": [
+          "G26-P01"
+        ],
+        "AA_id": "AA2-LEFT-STAIR-AA6-0",
+        "width_px": 40,
+        "margin_px": 8,
+        "extension_px": 8,
+        "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+      }
+    },
+    "after": {
+      "id": "G26-P01",
+      "material": "POLY",
+      "native_outline": [
+        [
+          604.5,
+          1340.0
+        ],
+        [
+          641.5,
+          1340.0
+        ],
+        [
+          645.5,
+          1463.0
+        ],
+        [
+          608.5,
+          1463.0
+        ]
+      ],
+      "source_record": {
+        "id": "G26-P01",
+        "group_id": "G26",
+        "group_index": 0,
+        "kind": "MOS_gate_body",
+        "material": "poly",
+        "status": "AI_candidate_not_human_confirmed",
+        "native_outline": [
+          [
+            604.5,
+            1340.0
+          ],
+          [
+            641.5,
+            1340.0
+          ],
+          [
+            645.5,
+            1463.0
+          ],
+          [
+            608.5,
+            1463.0
+          ]
+        ],
+        "layout_outline": [
+          [
+            606.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1463.0
+          ],
+          [
+            606.5,
+            1463.0
+          ]
+        ],
+        "native_to_layout": [
+          [
+            0.9999999999999649,
+            -0.03252032520326703,
+            45.57723577237826
+          ],
+          [
+            -1.346813192308537e-15,
+            0.9999999999999288,
+            5.022929683528043e-11
+          ],
+          [
+            -7.806446228970496e-19,
+            -2.5247982849259128e-17,
+            1.0
+          ]
+        ],
+        "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+        "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+        "terminal_routing": "unknown_not_completed_by_repetition"
+      },
+      "source_scope": null,
+      "group_id": "G26",
+      "kind": "MOS_gate_body",
+      "acceptance": {
+        "material": "AI_candidate_not_human_confirmed",
+        "joint_geometry": "candidate",
+        "electrical": "unknown"
+      },
+      "AA_target": "AA-LEFT-STAIR-SHARED-56",
+      "terminal_status": "not_individually_verified",
+      "geometry_method": "explicit_new_AA_relation_AI_candidate",
+      "legacy_record": {
+        "id": "G26-P01",
+        "group_id": "G26",
+        "group_index": 0,
+        "kind": "MOS_gate_body",
+        "material": "poly",
+        "status": "AI_candidate_not_human_confirmed",
+        "native_outline": [
+          [
+            604.5,
+            1340.0
+          ],
+          [
+            641.5,
+            1340.0
+          ],
+          [
+            645.5,
+            1463.0
+          ],
+          [
+            608.5,
+            1463.0
+          ]
+        ],
+        "layout_outline": [
+          [
+            606.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1340.0
+          ],
+          [
+            643.5,
+            1463.0
+          ],
+          [
+            606.5,
+            1463.0
+          ]
+        ],
+        "native_to_layout": [
+          [
+            0.9999999999999649,
+            -0.03252032520326703,
+            45.57723577237826
+          ],
+          [
+            -1.346813192308537e-15,
+            0.9999999999999288,
+            5.022929683528043e-11
+          ],
+          [
+            -7.806446228970496e-19,
+            -2.5247982849259128e-17,
+            1.0
+          ]
+        ],
+        "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+        "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+        "terminal_routing": "unknown_not_completed_by_repetition"
+      },
+      "layout_outline": [
+        [
+          904,
+          1542
+        ],
+        [
+          934,
+          1542
+        ],
+        [
+          934,
+          1600
+        ],
+        [
+          904,
+          1600
+        ]
+      ],
+      "relation_record": {
+        "id": "G26",
+        "object_ids": [
+          "G26-P01"
+        ],
+        "AA_id": "AA2-LEFT-STAIR-AA6-0",
+        "width_px": 40,
+        "margin_px": 8,
+        "extension_px": 8,
+        "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+      }
+    },
+    "reason": "Proposed local gate geometry adjustment for review",
+    "evidence": [
+      {
+        "path": "data/test_chip/tile_full/poly.jpg",
+        "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+      }
+    ]
+  }
+]

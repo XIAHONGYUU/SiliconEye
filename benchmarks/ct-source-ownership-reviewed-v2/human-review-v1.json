@@ -1,0 +1,29 @@
+{
+  "user_feedback_verbatim": [
+    "S1：三身份以及相对位置合理",
+    "S2：S2修改合理",
+    "S3：紫色为源漏端，蓝色为该mos与右侧mos poly合并并向上打的CT"
+  ],
+  "S1": "human_approved_three_material_column_identities_and_relative_positions",
+  "S2": "human_approved_displayed_source_correction",
+  "S3": {
+    "purple": "human_confirmed_source_drain_CT",
+    "blue": "human_confirmed_common_POLY_upward_gate_CT",
+    "member_id_mapping": "AI_local_photo_indexing_to_G66-P03_and_G66-P04",
+    "exact_new_bus_geometry": "AI_candidate_not_human_pixel_approved"
+  },
+  "authorized_material_ids": [
+    "G66-P03-P04-TOP-BUS"
+  ],
+  "authorized_contact_ids": [
+    "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+  ],
+  "authorized_new_contact_ids": [
+    "CT-G66-P03-P04-SHARED-TOP-01"
+  ],
+  "no_new_M1_or_netlist_approval": true,
+  "prior_human_review_ref": {
+    "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+    "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "operation": "apply_local_review_revision",
+  "joint_snapshot": {
+    "path": "configs/joint-work-layer-v1.json",
+    "sha256": "ea29a8e39e70e1e0a3722f2be72d10fc76e0adcd761ae10548af001f7949ff0a"
+  },
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-work-layer-final-v5/material-model-v1.json",
+      "sha256": "2bd122d3243291e75f25f427b4c070235336bbeebc8e54c78d35242e91240fd9"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-work-layer-final-v5/model-v1.json",
+      "sha256": "0dc6ec0d014503f5fef2ba3bc0d6957d4f8dd691f9fb9b3c5896e2855042bb6a"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-work-layer-final-v5/spec-v1.json",
+      "sha256": "372388f445b8b8392d706b5434a48036d46309bb02d77a171ce8cb137dd351ad"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-work-layer-final-v5/unknown-sites-v1.json",
+      "sha256": "aae3cdd0825ad9f66fb8144f13435e4aa17a49d611a9e2a2de0b3ef04a8a66c7"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "human_review": {
+      "path": "docs/reviews/2026-10-21-joint-continuation/noop-authorization.json",
+      "sha256": "35b16f960f5cccd25440f7fc90ae7fd3b3757d1e58ac18f5dc177993d42e843d"
+    },
+    "new_contacts": {
+      "path": "docs/reviews/2026-10-21-joint-continuation/noop-new-contacts.json",
+      "sha256": "f2e437774e89066bf843c145b1487cb3968b2f08393aa76d05754ef1cf392543"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "material_changes": {},
+  "contact_changes": [],
+  "cases": [],
+  "review_title": "三层共同快照接续验证",
+  "review_notes": "只读接续验证，不重新提取或转移人工批准。"
+}

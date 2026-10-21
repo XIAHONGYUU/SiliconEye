@@ -26,6 +26,7 @@ from .ct_joint_reconstruction import (
     require_exportable,
 )
 from .geometry_reconstruction import digest, object_polygon
+from .joint_layers import load_snapshot, reject_retired_ids, require_joint, write_snapshot
 from .poly_closeout import svg
 from .scene_geometry import load_locked
 
@@ -745,6 +746,17 @@ def run_local_review_revision(root, spec, output):
             "parent_spec",
         )
     }
+    snapshot = None
+    if spec.get('joint_snapshot'):
+        snapshot_ref = spec['joint_snapshot']
+        load_locked(root, snapshot_ref)
+        snapshot = load_snapshot(root, root / snapshot_ref['path'])
+        if (
+            loaded['materials'] != snapshot['materials']
+            or loaded['contacts']['objects'] != snapshot['contacts']
+            or loaded['unknown_sites'] != snapshot['values']['unknown']
+        ):
+            raise ValueError('Revision inputs do not match the current joint snapshot')
     if spec["budget"] != loaded["parent_spec"]["budget"]:
         raise ValueError("Local revision cannot relax the parent geometry budget")
     review = loaded["human_review"]
@@ -795,7 +807,14 @@ def run_local_review_revision(root, spec, output):
     }:
         raise ValueError("Duplicate contact addition")
     objects.extend(copy.deepcopy(additions))
-    report = require_exportable(objects, material, spec["budget"])
+    if snapshot is not None:
+        reject_retired_ids(snapshot['manifest'], material)
+    joint_report = require_joint(objects, material, spec['budget'], loaded['contacts']['objects'])
+    report = copy.deepcopy(joint_report['CT'])
+    report['joint_layers'] = joint_report
+    report['CT_geometry_status'] = report['status']
+    report['status'] = joint_report['status']
+    report['automatic_network_export_allowed'] = False
     access = audit_terminal_access(objects, material) if spec.get("audit_terminal_access") else None
     parent_by_id = {o["id"]: o for o in loaded["contacts"]["objects"]}
     report.update(
@@ -857,6 +876,21 @@ def run_local_review_revision(root, spec, output):
     if access is not None:
         (output / "terminal-access.json").write_text(
             json.dumps(access, ensure_ascii=False, indent=2) + "\n"
+        )
+    if snapshot is not None:
+        continued = copy.deepcopy(snapshot)
+        continued.update(materials=material, contacts=objects)
+        write_snapshot(root, continued, output)
+        # Approval/limitations remain locked context, not a new blanket release.
+        (output / 'continuation-context.json').write_text(
+            json.dumps(dict(
+                parent_snapshot=spec['joint_snapshot'],
+                stage=snapshot['values']['stage'],
+                use_contract=snapshot['values']['use_contract'],
+                source_reinspection=snapshot['values']['source_reinspection'],
+                joint_report=joint_report,
+                changed_geometry_requires_scoped_review=True,
+            ), ensure_ascii=False, indent=2) + '\n'
         )
     return report
 

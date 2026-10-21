@@ -1,0 +1,20 @@
+{
+  "command": ".venv/bin/pytest -q tests/test_layer_review.py tests/test_joint_layers.py tests/test_ct_source_ownership.py",
+  "exit_code": 0,
+  "passed": 25,
+  "elapsed_seconds": 103.66,
+  "ruff": "PASS",
+  "git_diff_check": "PASS",
+  "skill_quick_validate": {
+    "POLY": "PASS",
+    "CT": "PASS"
+  },
+  "static_delivery_validation": "Input/artifact hashes, SVG XML, JS syntax, 6 unknowns, scoped human review",
+  "interactive_browser_click_validation": false,
+  "corrected_view_replay": {
+    "exit_code": 2,
+    "status": "FAIL",
+    "reason": "explicit_target_extension_missing",
+    "candidate_exported": false
+  }
+}

@@ -84,6 +84,10 @@ def polygon_record(identifier, polygon):
 
 
 def source_polygon(obj, base):
+    if obj['id'] in base.get('source_footprints', {}):
+        return unary_union([
+            Polygon(p['outer_xy'], p['holes_xy']) for p in base['source_footprints'][obj['id']]
+        ])
     if "source_geometry" in obj:
         value = obj["source_geometry"]
         return Polygon(value["outer_xy"], value["holes_xy"])

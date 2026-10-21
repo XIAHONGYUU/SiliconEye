@@ -1,0 +1,367 @@
+{
+  "operation": "reviewed_record_transaction_with_identity_constraints",
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v2.json",
+    "sha256": "ce5495ec54f3976400987f86aa4aeffdf5385328981856bcca024698e1abd27d"
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "material_changes": {
+    "objects": [
+      {
+        "id": "G66-P03-P04-TOP-BUS",
+        "before": null,
+        "after": {
+          "id": "G66-P03-P04-TOP-BUS",
+          "material": "POLY",
+          "kind": "shared_gate_terminal_bus",
+          "group_id": "G66",
+          "member_POLY_ids": [
+            "G66-P03",
+            "G66-P04"
+          ],
+          "AA_target": null,
+          "layout_outline": [
+            [
+              1290.78645,
+              3748
+            ],
+            [
+              1392.03645,
+              3748
+            ],
+            [
+              1392.03645,
+              3763
+            ],
+            [
+              1290.78645,
+              3763
+            ]
+          ],
+          "native_outline": [
+            [
+              1103,
+              3714
+            ],
+            [
+              1228,
+              3714
+            ],
+            [
+              1228,
+              3738
+            ],
+            [
+              1103,
+              3738
+            ]
+          ],
+          "native_outline_status": "context_locator_not_measured_material_boundary",
+          "source_frame": "poly",
+          "source_photo_ref": {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          "geometry_method": "human_shared_top_POLY_identity_with_AI_orthogonal_bridge_candidate",
+          "acceptance": {
+            "connectivity": "human_confirmed_shared_upper_POLY",
+            "joint_geometry": "AI_candidate_not_pixel_truth"
+          },
+          "human_review_ref": {
+            "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+            "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+          },
+          "net_id": null
+        }
+      }
+    ]
+  },
+  "contact_changes": [
+    {
+      "id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+      "before": {
+        "id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+        "family": "REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1355.1766249999998,
+          3769.616906391866
+        ],
+        "layout_outline": [
+          [
+            1352.6766249999998,
+            3767.116906391866
+          ],
+          [
+            1357.6766249999998,
+            3767.116906391866
+          ],
+          [
+            1357.6766249999998,
+            3772.116906391866
+          ],
+          [
+            1352.6766249999998,
+            3772.116906391866
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            1175,
+            3727
+          ],
+          "source_native_center_xy": [
+            1175,
+            3727
+          ],
+          "supported": true,
+          "algorithm_detected": true,
+          "peak_gray": 255.0,
+          "local_residual": 135.4230769230769,
+          "source_roi": [
+            1155,
+            3718,
+            1181,
+            3735
+          ],
+          "source_observation_id": "ROW4-AA4-LEFT-RECHECK",
+          "evidence_type": "bounded_peak_in_upper_left_diffusion_landing"
+        },
+        "terminal_role": "source_drain_diffusion_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+        "source_correspondence_history": [
+          {
+            "before": {
+              "source_native_center_xy": [
+                1174.9710693359375,
+                3728.0
+              ],
+              "peak_gray": 226.60552978515625,
+              "local_residual": 66.50100708007812,
+              "native_center": [
+                1174.9710693359375,
+                3728.0
+              ],
+              "source_observation_id": "PROFILE-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-12",
+              "evidence_tier": "raw_band_profile_peak",
+              "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+              "supported": true,
+              "algorithm_detected": true
+            },
+            "after": {
+              "native_center": [
+                1162,
+                3747
+              ],
+              "source_native_center_xy": [
+                1162,
+                3747
+              ],
+              "peak_gray": 221.0,
+              "local_residual": 64.57142365219048,
+              "source_roi": [
+                1162,
+                3738,
+                1182,
+                3755
+              ],
+              "supported": true,
+              "algorithm_detected": true,
+              "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+              "source_observation_id": "V3-RELOCALIZE-CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+            },
+            "reason": "independent source-row/column reinspection after the access audit; prior measurement retained in history; design and approved topology unchanged",
+            "review_ref": {
+              "path": "benchmarks/ct-work-layer-closeout-v3/authorization-v1.json",
+              "sha256": "eea2372e9e2bb2ca827fa9039434c59e3a739d1cba52a7b5bf4bf60a81ffcab1"
+            }
+          },
+          {
+            "before": {
+              "native_center": [
+                1162,
+                3747
+              ],
+              "source_native_center_xy": [
+                1162,
+                3747
+              ],
+              "peak_gray": 221.0,
+              "local_residual": 64.57142365219048,
+              "source_roi": [
+                1162,
+                3738,
+                1182,
+                3755
+              ],
+              "supported": true,
+              "algorithm_detected": true,
+              "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+              "source_observation_id": "V3-RELOCALIZE-CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+            },
+            "after": {
+              "native_center": [
+                1175,
+                3727
+              ],
+              "source_native_center_xy": [
+                1175,
+                3727
+              ],
+              "supported": true,
+              "algorithm_detected": true,
+              "peak_gray": 255.0,
+              "local_residual": 135.4230769230769,
+              "source_roi": [
+                1155,
+                3718,
+                1181,
+                3735
+              ],
+              "source_observation_id": "ROW4-AA4-LEFT-RECHECK",
+              "evidence_type": "bounded_peak_in_upper_left_diffusion_landing"
+            },
+            "reason": "AI reinspection: AA4 left landing is the upper bright pair; old downward relocalization reused AA3 lower right contact; geometry and topology retained",
+            "review_ref": {
+              "path": "benchmarks/ct-source-ownership-v1/AI-source-review-v1.json",
+              "sha256": "8457fc85e70e62763b58cb9ec0a81faae5145186d262d175fb24ef56667948ee"
+            }
+          }
+        ]
+      },
+      "after": null
+    },
+    {
+      "id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "before": null,
+      "after": {
+        "id": "CT-G66-P03-P04-SHARED-TOP-01",
+        "family": "G66-P03-P04-SHARED-TOP",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          1355.1766249999998,
+          3754.5
+        ],
+        "layout_outline": [
+          [
+            1352.6766249999998,
+            3752.0
+          ],
+          [
+            1357.6766249999998,
+            3752.0
+          ],
+          [
+            1357.6766249999998,
+            3757.0
+          ],
+          [
+            1352.6766249999998,
+            3757.0
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "human_confirmed_terminal_identity_AI_geometry_candidate",
+        "source_evidence": {
+          "native_center": [
+            1175,
+            3727
+          ],
+          "source_native_center_xy": [
+            1175,
+            3727
+          ],
+          "supported": true,
+          "algorithm_detected": true,
+          "peak_gray": 255.0,
+          "local_residual": 135.4230769230769,
+          "source_roi": [
+            1155,
+            3718,
+            1181,
+            3735
+          ],
+          "source_observation_id": "ROW4-AA4-LEFT-RECHECK",
+          "evidence_type": "bounded_peak_in_upper_left_diffusion_landing"
+        },
+        "terminal_role": "shared_gate_POLY_terminal",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G66-P03-P04-TOP-BUS",
+        "supersedes": {
+          "record_id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+          "reason": "wrong_AA_source_drain_assignment_rejected_by_human",
+          "retired_record_ref": {
+            "path": "benchmarks/ct-source-ownership-v1/model-v1.json",
+            "sha256": "222a3bfc0937152ba092017498f1d0a43c1e1aa070157277d7ec57280badca94"
+          }
+        },
+        "human_review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      }
+    }
+  ],
+  "human_review_ref": {
+    "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+    "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+  },
+  "source_observations_changed": false,
+  "replay_entry": "tests/test_ct_source_ownership.py::test_human_s3_adjudication_retires_false_diffusion_and_preserves_s1_s2",
+  "material_metadata_after": {
+    "scoped_human_identity_revision": {
+      "parent_ref": {
+        "path": "benchmarks/ct-work-layer-final-v5/material-model-v1.json",
+        "sha256": "2bd122d3243291e75f25f427b4c070235336bbeebc8e54c78d35242e91240fd9"
+      },
+      "human_review_ref": {
+        "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+        "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+      },
+      "shared_POLY_bus_id": "G66-P03-P04-TOP-BUS"
+    },
+    "reviewed_contact_constraints": [
+      {
+        "contact_id": "CT-G66-P03-P04-SHARED-TOP-01",
+        "landing_material": "POLY",
+        "POLY_target": "G66-P03-P04-TOP-BUS",
+        "shared_POLY_member_ids": [
+          "G66-P03",
+          "G66-P04"
+        ],
+        "forbidden_active_contact_ids": [
+          "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+        ],
+        "human_review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      },
+      {
+        "contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000",
+        "landing_material": "AA",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+        "human_review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      }
+    ]
+  }
+}

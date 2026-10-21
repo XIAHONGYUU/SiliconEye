@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "document_kind": "layer_reconstruction_review",
+  "id": "poly-forward-inspect-current-G26-v1",
+  "target_layer": "POLY",
+  "mode": "inspect",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "windows": [
+    {
+      "id": "G26",
+      "layout_bounds": [
+        850,
+        1450,
+        1150,
+        1780
+      ],
+      "source_windows": {
+        "poly": [
+          500,
+          1200,
+          800,
+          1580
+        ]
+      }
+    }
+  ]
+}

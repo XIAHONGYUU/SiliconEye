@@ -1,0 +1,95 @@
+{
+  "production_input_hashes_unchanged": true,
+  "changed_input_paths": [],
+  "locked_input_count": 23,
+  "delivery_checks": {
+    "pending-delivery": {
+      "all_manifest_artifact_hashes_match": true,
+      "all_inherited_documents_exact": true,
+      "budget_exact": true,
+      "coordinate_frames_exact": true,
+      "unknown_scope_ids": [
+        "U-AA-F01951",
+        "U-AA-F01952",
+        "U-H1",
+        "U-H2",
+        "L-CLIPPED-AA-F01744",
+        "S3-AA4-LEFT-SD-ACCESS"
+      ],
+      "not_adopted": true,
+      "network_export_disabled": true,
+      "candidate_snapshot_exists": false,
+      "source_crops_exact": {
+        "S3-poly": true,
+        "S3-aa": true,
+        "S3-m1": true
+      }
+    },
+    "current-inspect": {
+      "all_manifest_artifact_hashes_match": true,
+      "all_inherited_documents_exact": true,
+      "budget_exact": true,
+      "coordinate_frames_exact": true,
+      "unknown_scope_ids": [
+        "U-AA-F01951",
+        "U-AA-F01952",
+        "U-H1",
+        "U-H2",
+        "L-CLIPPED-AA-F01744",
+        "S3-AA4-LEFT-SD-ACCESS"
+      ],
+      "not_adopted": true,
+      "network_export_disabled": true,
+      "candidate_snapshot_exists": false,
+      "source_crops_exact": {
+        "S3-poly": true,
+        "S3-aa": true,
+        "S3-m1": true
+      }
+    }
+  },
+  "pending_changed_fields": [
+    "AA_target",
+    "POLY_target",
+    "landing_material"
+  ],
+  "pending_geometry_unchanged": true,
+  "current_joint_status": "PASS",
+  "current_cross_layer_bridge_pairs": [
+    [
+      "G66-P03",
+      "G66-P03-P04-TOP-BUS"
+    ],
+    [
+      "G66-P04",
+      "G66-P03-P04-TOP-BUS"
+    ]
+  ],
+  "current_reviewed_identity_status": "PASS",
+  "current_source_gate": {
+    "status": "PASS",
+    "radius_native_px": 3,
+    "inherited_unresolved": [],
+    "new_conflicts": []
+  },
+  "pending_identity_errors": [
+    {
+      "id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "reason": "reviewed_contact_identity_changed"
+    }
+  ],
+  "pending_geometry_errors": [
+    {
+      "id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "reason": "AA_enclosure_failed"
+    },
+    {
+      "id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "reason": "channel_overlap_or_clearance_failed"
+    }
+  ],
+  "visual_inspection": {
+    "viewed": "pending-delivery/S3-poly.png",
+    "finding": "Broad local context is retained; optical texture and brightness do not independently supersede the supplied scoped human material judgment. No fresh full-frame recognition or pixel-boundary verification was performed."
+  }
+}

@@ -1,0 +1,1435 @@
+{
+  "snapshot_id": "ct-work-layer-final-v5-joint-continuation-v1",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-work-layer-final-v5/material-model-v1.json",
+      "sha256": "2bd122d3243291e75f25f427b4c070235336bbeebc8e54c78d35242e91240fd9"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-work-layer-final-v5/model-v1.json",
+      "sha256": "0dc6ec0d014503f5fef2ba3bc0d6957d4f8dd691f9fb9b3c5896e2855042bb6a"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-work-layer-final-v5/spec-v1.json",
+      "sha256": "372388f445b8b8392d706b5434a48036d46309bb02d77a171ce8cb137dd351ad"
+    },
+    "AA_context": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+    },
+    "unknown": {
+      "path": "benchmarks/ct-work-layer-final-v5/unknown-sites-v1.json",
+      "sha256": "aae3cdd0825ad9f66fb8144f13435e4aa17a49d611a9e2a2de0b3ef04a8a66c7"
+    },
+    "stage": {
+      "path": "benchmarks/ct-work-layer-final-v5/stage-gate-v1.json",
+      "sha256": "40fb84133ffe1d7a4b9e97552f5c1731bea6f02c84c836f30c2ce2a28bfd0446"
+    },
+    "use_contract": {
+      "path": "benchmarks/ct-work-layer-final-v5/use-contract-v1.json",
+      "sha256": "9b997d85afcf2034c18a9b0738aea720760ccd52598581847e0549b6f956d142"
+    },
+    "exceptions": {
+      "path": "benchmarks/ct-work-layer-final-v5/exceptions-v1.json",
+      "sha256": "67800070b5d0f8fa7af930e3795dd4bea91be483c22fb06120781bf3c5dbd41a"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+      "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+    },
+    "source_reinspection": {
+      "path": "docs/reviews/2026-10-21-joint-continuation/source-reinspection.json",
+      "sha256": "fc2d80d7b450288f5f5dd5ad44ced30de4f1ec8b4c3874dd6fdd88ba521150b8"
+    }
+  },
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "canvas_wh": [
+    5860,
+    4587
+  ],
+  "source_wh": [
+    5712,
+    4284
+  ],
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "stage": {
+    "status": "WORK_LAYER_V1_CLOSED_WITH_LIMITATIONS",
+    "engineering_closeout_complete": true,
+    "geometry_status": "PASS",
+    "source_supported_work_layer_ready": true,
+    "closed_cases": [
+      "R1A",
+      "R1B",
+      "R2",
+      "R1B-COUNT"
+    ],
+    "count_review_basis": "AI_raw_photo_recheck_plus_user_authorized_implementation",
+    "blocking_human_cases": [],
+    "requires_user_action_now": false,
+    "source_limitations_open": [
+      "U-AA-F01951",
+      "U-AA-F01952",
+      "U-H1",
+      "U-H2",
+      "L-CLIPPED-AA-F01744"
+    ],
+    "whole_frame_complete": false,
+    "physical_all_CT_recovered": false,
+    "overall_human_acceptance": false,
+    "human_acceptance_scope": "prior scoped decisions inherited; user authorized engineering closeout, not a new per-pixel full-layer approval",
+    "CT_count": 10287,
+    "AA_count": 334,
+    "POLY_count": 695,
+    "physical_PDK_DRC": false,
+    "physical_limitations_not_relabelled_as_pass": true
+  },
+  "restrictions": {
+    "schema_version": 1,
+    "purpose": "CT material-landing geometry work layer for evidence-guided continuation",
+    "units": "relative_pixels",
+    "authoritative_model": {
+      "path": "benchmarks/ct-work-layer-final-v5/model-v1.json",
+      "sha256": "0dc6ec0d014503f5fef2ba3bc0d6957d4f8dd691f9fb9b3c5896e2855042bb6a"
+    },
+    "use_reviewed_source_supported_records": true,
+    "confirmed_M1_connectivity": false,
+    "confirmed_netlist": false,
+    "new_geometry_human_pixel_approved": false,
+    "physical_all_CT_recovered": false,
+    "restrictions": [
+      {
+        "scope_id": "U-AA-F01951",
+        "bounds": [
+          2017.0,
+          341.0,
+          2055.0,
+          349.0
+        ],
+        "AA_target": "AA-F01951",
+        "policy": "do_not_infer_CT_or_M1_connection_here"
+      },
+      {
+        "scope_id": "U-AA-F01952",
+        "bounds": [
+          1934.0,
+          341.0,
+          1972.0,
+          350.0
+        ],
+        "AA_target": "AA-F01952",
+        "policy": "do_not_infer_CT_or_M1_connection_here"
+      },
+      {
+        "scope_id": "U-H1",
+        "bounds": [
+          270.0039,
+          269.4849,
+          5226.7198,
+          284.7099
+        ],
+        "AA_target": "AA2-TOP-H1-AA-0",
+        "policy": "do_not_infer_CT_or_M1_connection_here"
+      },
+      {
+        "scope_id": "U-H2",
+        "bounds": [
+          268.0,
+          370.0,
+          5271.0,
+          384.0
+        ],
+        "AA_target": "AA2-TOP-H2-AA-0",
+        "policy": "do_not_infer_CT_or_M1_connection_here"
+      },
+      {
+        "scope_id": "L-CLIPPED-AA-F01744",
+        "bounds": [
+          354,
+          522,
+          456,
+          574
+        ],
+        "AA_target": "AA-F01744",
+        "policy": "keep_terminal_access_unknown_here"
+      }
+    ],
+    "limitation_reopen_triggers": [
+      "new photograph",
+      "validated local correspondence",
+      "requested trace depends on limited material"
+    ],
+    "blanket_automatic_network_export_allowed": false,
+    "notes": "Contract is metadata for the next workflow; current work does not implement a new network exporter."
+  },
+  "unknown": {
+    "sites": [],
+    "unknown_scopes": [
+      {
+        "id": "U-AA-F01951",
+        "kind": "unlocated_isolated_AA_CT_unknown",
+        "AA_target": "AA-F01951",
+        "layout_bounds": [
+          2017.0,
+          341.0,
+          2055.0,
+          349.0
+        ],
+        "criticality": "no_known_device_port_inferred",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "AA_legacy_locator_native_bounds": [
+          1948.061891893287,
+          274.3223129992924,
+          1989.1744848545168,
+          283.76579389755176
+        ],
+        "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+            "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1730,
+            180,
+            2120,
+            410
+          ],
+          "poly": [
+            1450,
+            0,
+            2250,
+            330
+          ]
+        }
+      },
+      {
+        "id": "U-AA-F01952",
+        "kind": "unlocated_isolated_AA_CT_unknown",
+        "AA_target": "AA-F01952",
+        "layout_bounds": [
+          1934.0,
+          341.0,
+          1972.0,
+          350.0
+        ],
+        "criticality": "no_known_device_port_inferred",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "AA_legacy_locator_native_bounds": [
+          1858.1303719137622,
+          272.2163884790137,
+          1899.3694753010689,
+          282.7362753810213
+        ],
+        "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+            "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1730,
+            180,
+            2120,
+            410
+          ],
+          "poly": [
+            1450,
+            0,
+            2250,
+            330
+          ]
+        }
+      },
+      {
+        "id": "U-H1",
+        "kind": "guard_CT_observability_unknown",
+        "AA_target": "AA2-TOP-H1-AA-0",
+        "layout_bounds": [
+          270.0039,
+          269.4849,
+          5226.7198,
+          284.7099
+        ],
+        "criticality": "guard_body_metal_access_not_proven",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric. The POLY photo partly clips the upper band.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "data/test_chip/tile_full/m1.jpg",
+            "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1300,
+            160,
+            2250,
+            410
+          ],
+          "poly": [
+            1300,
+            0,
+            2250,
+            150
+          ],
+          "m1": [
+            1300,
+            160,
+            2250,
+            360
+          ]
+        }
+      },
+      {
+        "id": "U-H2",
+        "kind": "guard_CT_observability_unknown",
+        "AA_target": "AA2-TOP-H2-AA-0",
+        "layout_bounds": [
+          268.0,
+          370.0,
+          5271.0,
+          384.0
+        ],
+        "criticality": "guard_body_metal_access_not_proven",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "data/test_chip/tile_full/m1.jpg",
+            "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1300,
+            160,
+            2250,
+            410
+          ],
+          "poly": [
+            1300,
+            0,
+            2250,
+            150
+          ],
+          "m1": [
+            1300,
+            160,
+            2250,
+            360
+          ]
+        }
+      },
+      {
+        "id": "L-CLIPPED-AA-F01744",
+        "kind": "device_body_CT_source_outside_current_photo",
+        "AA_target": "AA-F01744",
+        "layout_bounds": [
+          354,
+          522,
+          456,
+          574
+        ],
+        "no_CT_is_not_proven_absence": true,
+        "status": "excluded_from_source_complete_claim",
+        "tracing_policy": "keep_terminal_access_unknown_here",
+        "mandatory_human_action_now": false,
+        "evidence_ref": {
+          "path": "benchmarks/ct-work-layer-closeout-v3/port-source-checks-v1.json",
+          "sha256": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae"
+        }
+      }
+    ],
+    "not_hypothetical_hole_slots": true
+  },
+  "source_reinspection": {
+    "status": "AI_reinspected_source_ownership_unresolved",
+    "geometry_modified": false,
+    "human_decisions_modified": false,
+    "interpretation": "Multiple old records reuse the same observed bright features; geometry/electrical ownership is not settled by proximity.",
+    "hotspots": [
+      {
+        "id": "SOURCE-1",
+        "targets": [
+          "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+          "AA2-MIDDLE-MOS-GUARD-A-0"
+        ],
+        "count": 9,
+        "pairs": [
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S006",
+              "CTT-LL-RING-WIDE-R-S007"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2059.7900390625,
+                1900.0
+              ],
+              [
+                2058.470703125,
+                1899.0
+              ]
+            ],
+            "distance_px": 1.6554900531199226,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2042.18785
+              ],
+              [
+                2145.5,
+                2154.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S008",
+              "CTT-LL-RING-WIDE-R-S009"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2058.68994140625,
+                1930.0
+              ],
+              [
+                2059.408203125,
+                1930.0
+              ]
+            ],
+            "distance_px": 0.71826171875,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2068.1878500000003
+              ],
+              [
+                2145.5,
+                2222.8
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S009",
+              "CTT-LL-RING-WIDE-R-S010"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2060.139892578125,
+                1945.0
+              ],
+              [
+                2059.8564453125,
+                1945.0
+              ]
+            ],
+            "distance_px": 0.283447265625,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2081.1878500000003
+              ],
+              [
+                2145.5,
+                2257.0
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S010",
+              "CTT-LL-RING-WIDE-R-S011"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2056.56005859375,
+                1959.0
+              ],
+              [
+                2059.294677734375,
+                1960.0
+              ]
+            ],
+            "distance_px": 2.9117248915844733,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2094.1878500000003
+              ],
+              [
+                2145.5,
+                2291.2
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S011",
+              "CTT-LL-RING-WIDE-R-S012"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2058.0400390625,
+                1975.0
+              ],
+              [
+                2060.732666015625,
+                1975.0
+              ]
+            ],
+            "distance_px": 2.692626953125,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2107.1878500000003
+              ],
+              [
+                2145.5,
+                2325.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S012",
+              "CTT-LL-RING-WIDE-R-S013"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2061.3701171875,
+                1986.0
+              ],
+              [
+                2060.02490234375,
+                1985.0
+              ]
+            ],
+            "distance_px": 1.676187034863752,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2120.1878500000003
+              ],
+              [
+                2145.5,
+                2359.6
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S014",
+              "CTT-LL-RING-WIDE-R-S015"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2060.239990234375,
+                2015.0
+              ],
+              [
+                2060.885498046875,
+                2015.0
+              ]
+            ],
+            "distance_px": 0.6455078125,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2146.1878500000003
+              ],
+              [
+                2145.5,
+                2428.0
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S016",
+              "CTT-LL-RING-WIDE-R-S017"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2062.139892578125,
+                2045.0
+              ],
+              [
+                2062.759033203125,
+                2046.0
+              ]
+            ],
+            "distance_px": 1.1761526744115283,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2172.1878500000003
+              ],
+              [
+                2145.5,
+                2496.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S017",
+              "CTT-LL-RING-WIDE-R-S018"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2062.6201171875,
+                2061.0
+              ],
+              [
+                2062.1806640625,
+                2061.0
+              ]
+            ],
+            "distance_px": 0.439453125,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2185.1878500000003
+              ],
+              [
+                2145.5,
+                2530.6
+              ]
+            ]
+          }
+        ],
+        "native_bbox": [
+          1876,
+          1739,
+          2243,
+          2221
+        ],
+        "observation": "Concentric markers land on the same bright contact features in the source image. Do not invent independent support for both targets.",
+        "decision": "unresolved_source_ownership_keep_design_and_prior_human_decisions",
+        "next_evidence": "Compare wide AA/POLY/M1 context with locally validated correspondence before changing any source target.",
+        "raw_ref": "docs/reviews/2026-10-21-aa-poly-ct/source-hotspot-1-raw.png"
+      },
+      {
+        "id": "SOURCE-2",
+        "targets": [
+          "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+          "G34-P05"
+        ],
+        "count": 6,
+        "pairs": [
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S000",
+              "CTT-LL-RING-LOWIN-B-S009"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                506,
+                3773
+              ],
+              [
+                506.0,
+                3772.874755859375
+              ]
+            ],
+            "distance_px": 0.125244140625,
+            "canonical_centers": [
+              [
+                694.3333333333333,
+                3752.0
+              ],
+              [
+                472.20000000000005,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S001",
+              "CTT-LL-RING-LOWIN-B-S010"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                521,
+                3773
+              ],
+              [
+                522.0,
+                3771.4697265625
+              ]
+            ],
+            "distance_px": 1.8280417920600356,
+            "canonical_centers": [
+              [
+                705.5333333333333,
+                3752.0
+              ],
+              [
+                499.0,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S002",
+              "CTT-LL-RING-LOWIN-B-S011"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                532,
+                3773
+              ],
+              [
+                532.0,
+                3772.21728515625
+              ]
+            ],
+            "distance_px": 0.78271484375,
+            "canonical_centers": [
+              [
+                716.7333333333332,
+                3752.0
+              ],
+              [
+                525.8,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S003",
+              "CTT-LL-RING-LOWIN-B-S012"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                551,
+                3773
+              ],
+              [
+                552.0,
+                3772.71240234375
+              ]
+            ],
+            "distance_px": 1.040534675962552,
+            "canonical_centers": [
+              [
+                727.9333333333333,
+                3752.0
+              ],
+              [
+                552.6,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S004",
+              "CTT-LL-RING-LOWIN-B-S013"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                562,
+                3773
+              ],
+              [
+                562.0,
+                3772.4599609375
+              ]
+            ],
+            "distance_px": 0.5400390625,
+            "canonical_centers": [
+              [
+                739.1333333333332,
+                3752.0
+              ],
+              [
+                579.4000000000001,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S005",
+              "CTT-LL-RING-LOWIN-B-S014"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                577,
+                3773
+              ],
+              [
+                577.0,
+                3772.146240234375
+              ]
+            ],
+            "distance_px": 0.853759765625,
+            "canonical_centers": [
+              [
+                750.3333333333333,
+                3752.0
+              ],
+              [
+                606.2,
+                3819.4
+              ]
+            ]
+          }
+        ],
+        "native_bbox": [
+          326,
+          3611,
+          757,
+          3933
+        ],
+        "observation": "Concentric markers land on the same bright contact features in the source image. Do not invent independent support for both targets.",
+        "decision": "unresolved_source_ownership_keep_design_and_prior_human_decisions",
+        "next_evidence": "Compare wide AA/POLY/M1 context with locally validated correspondence before changing any source target.",
+        "raw_ref": "docs/reviews/2026-10-21-aa-poly-ct/source-hotspot-2-raw.png"
+      },
+      {
+        "id": "SOURCE-3",
+        "targets": [
+          "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+          "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0"
+        ],
+        "count": 1,
+        "pairs": [
+          {
+            "contact_ids": [
+              "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+              "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000"
+            ],
+            "targets": [
+              "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+              "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0"
+            ],
+            "source_centers": [
+              [
+                1162,
+                3747
+              ],
+              [
+                1160.4908447265625,
+                3748.0
+              ]
+            ],
+            "distance_px": 1.8104004085682857,
+            "canonical_centers": [
+              [
+                1355.1766249999998,
+                3769.616906391866
+              ],
+              [
+                1327.6116749999999,
+                3771.038210290349
+              ]
+            ]
+          }
+        ],
+        "native_bbox": [
+          980,
+          3587,
+          1342,
+          3908
+        ],
+        "observation": "Concentric markers land on the same bright contact features in the source image. Do not invent independent support for both targets.",
+        "decision": "unresolved_source_ownership_keep_design_and_prior_human_decisions",
+        "next_evidence": "Compare wide AA/POLY/M1 context with locally validated correspondence before changing any source target.",
+        "raw_ref": "docs/reviews/2026-10-21-aa-poly-ct/source-hotspot-3-raw.png"
+      }
+    ]
+  },
+  "report": {
+    "status": "REVIEW_REQUIRED",
+    "geometry_status": "PASS",
+    "reference_errors": [],
+    "AA_overlap_conflicts": [],
+    "POLY": {
+      "objects": 695,
+      "superseded_records": 348,
+      "retired_IDs": 340,
+      "resistor_bodies": 19,
+      "explicit_AA_targets": 671,
+      "errors": [],
+      "positive_area_overlap_pairs": [],
+      "declared_connected_overlap_pairs": [
+        [
+          "G68-P01",
+          "G68-BOTTOM-BUS-01"
+        ],
+        [
+          "G68-P02",
+          "G68-BOTTOM-BUS-01"
+        ]
+      ],
+      "warnings": [
+        {
+          "id": "V3_G1",
+          "group": "LOCAL",
+          "reason": "AA_relation_not_explicitly_verified"
+        },
+        {
+          "id": "V3_G2",
+          "group": "LOCAL",
+          "reason": "AA_relation_not_explicitly_verified"
+        },
+        {
+          "id": "G68-P01",
+          "group": "G68",
+          "reason": "AA_relation_not_explicitly_verified"
+        },
+        {
+          "id": "G68-P02",
+          "group": "G68",
+          "reason": "AA_relation_not_explicitly_verified"
+        },
+        {
+          "id": "G68-BOTTOM-BUS-01",
+          "group": "G68",
+          "reason": "AA_relation_not_explicitly_verified"
+        }
+      ],
+      "geometry_status": "PASS",
+      "polygon_geometry_status": "PASS",
+      "release_status": "READY_FOR_CT_working_baseline",
+      "fullframe_material_truth": false,
+      "CT_or_net_assignment": false,
+      "not_foundry_DRC": true,
+      "human_review_issues": []
+    },
+    "CT": {
+      "status": "PASS",
+      "errors": [],
+      "positive_area_overlap_pairs": [],
+      "min_gap_violations": [],
+      "minimum_edge_gap_px": 4.400000000000091,
+      "minimum_AA_enclosure_px": 0.9999999999999999,
+      "minimum_POLY_clearance_px": 1.4999999999995453,
+      "minimum_POLY_enclosure_px": 0.9999999999999999,
+      "contact_count": 10287,
+      "physical_PDK_DRC": false
+    },
+    "source_gate": {
+      "status": "REVIEW_REQUIRED",
+      "radius_native_px": 3,
+      "inherited_unresolved": [
+        {
+          "ids": [
+            "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+            "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+            "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              1162,
+              3747
+            ],
+            [
+              1160.4908447265625,
+              3748.0
+            ]
+          ],
+          "distance_px": 1.8104004085682857
+        },
+        {
+          "ids": [
+            "CTT-LL-G34-G05-S000",
+            "CTT-LL-RING-LOWIN-B-S009"
+          ],
+          "targets": [
+            "G34-P05",
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              506,
+              3773
+            ],
+            [
+              506.0,
+              3772.874755859375
+            ]
+          ],
+          "distance_px": 0.125244140625
+        },
+        {
+          "ids": [
+            "CTT-LL-G34-G05-S001",
+            "CTT-LL-RING-LOWIN-B-S010"
+          ],
+          "targets": [
+            "G34-P05",
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              521,
+              3773
+            ],
+            [
+              522.0,
+              3771.4697265625
+            ]
+          ],
+          "distance_px": 1.8280417920600356
+        },
+        {
+          "ids": [
+            "CTT-LL-G34-G05-S002",
+            "CTT-LL-RING-LOWIN-B-S011"
+          ],
+          "targets": [
+            "G34-P05",
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              532,
+              3773
+            ],
+            [
+              532.0,
+              3772.21728515625
+            ]
+          ],
+          "distance_px": 0.78271484375
+        },
+        {
+          "ids": [
+            "CTT-LL-G34-G05-S003",
+            "CTT-LL-RING-LOWIN-B-S012"
+          ],
+          "targets": [
+            "G34-P05",
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              551,
+              3773
+            ],
+            [
+              552.0,
+              3772.71240234375
+            ]
+          ],
+          "distance_px": 1.040534675962552
+        },
+        {
+          "ids": [
+            "CTT-LL-G34-G05-S004",
+            "CTT-LL-RING-LOWIN-B-S013"
+          ],
+          "targets": [
+            "G34-P05",
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              562,
+              3773
+            ],
+            [
+              562.0,
+              3772.4599609375
+            ]
+          ],
+          "distance_px": 0.5400390625
+        },
+        {
+          "ids": [
+            "CTT-LL-G34-G05-S005",
+            "CTT-LL-RING-LOWIN-B-S014"
+          ],
+          "targets": [
+            "G34-P05",
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              577,
+              3773
+            ],
+            [
+              577.0,
+              3772.146240234375
+            ]
+          ],
+          "distance_px": 0.853759765625
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S007",
+            "CTT-Q2-A-RING-LEFT-S006"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2058.470703125,
+              1899.0
+            ],
+            [
+              2059.7900390625,
+              1900.0
+            ]
+          ],
+          "distance_px": 1.6554900531199226
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S009",
+            "CTT-Q2-A-RING-LEFT-S008"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2059.408203125,
+              1930.0
+            ],
+            [
+              2058.68994140625,
+              1930.0
+            ]
+          ],
+          "distance_px": 0.71826171875
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S010",
+            "CTT-Q2-A-RING-LEFT-S009"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2059.8564453125,
+              1945.0
+            ],
+            [
+              2060.139892578125,
+              1945.0
+            ]
+          ],
+          "distance_px": 0.283447265625
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S011",
+            "CTT-Q2-A-RING-LEFT-S010"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2059.294677734375,
+              1960.0
+            ],
+            [
+              2056.56005859375,
+              1959.0
+            ]
+          ],
+          "distance_px": 2.9117248915844733
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S012",
+            "CTT-Q2-A-RING-LEFT-S011"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2060.732666015625,
+              1975.0
+            ],
+            [
+              2058.0400390625,
+              1975.0
+            ]
+          ],
+          "distance_px": 2.692626953125
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S013",
+            "CTT-Q2-A-RING-LEFT-S012"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2060.02490234375,
+              1985.0
+            ],
+            [
+              2061.3701171875,
+              1986.0
+            ]
+          ],
+          "distance_px": 1.676187034863752
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S015",
+            "CTT-Q2-A-RING-LEFT-S014"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2060.885498046875,
+              2015.0
+            ],
+            [
+              2060.239990234375,
+              2015.0
+            ]
+          ],
+          "distance_px": 0.6455078125
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S017",
+            "CTT-Q2-A-RING-LEFT-S016"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2062.759033203125,
+              2046.0
+            ],
+            [
+              2062.139892578125,
+              2045.0
+            ]
+          ],
+          "distance_px": 1.1761526744115283
+        },
+        {
+          "ids": [
+            "CTT-LL-RING-WIDE-R-S018",
+            "CTT-Q2-A-RING-LEFT-S017"
+          ],
+          "targets": [
+            "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "AA2-MIDDLE-MOS-GUARD-A-0"
+          ],
+          "source_frame": "poly",
+          "native_centers": [
+            [
+              2062.1806640625,
+              2061.0
+            ],
+            [
+              2062.6201171875,
+              2061.0
+            ]
+          ],
+          "distance_px": 0.439453125
+        }
+      ],
+      "new_conflicts": []
+    },
+    "automatic_network_export_allowed": false,
+    "physical_PDK_DRC": false
+  }
+}

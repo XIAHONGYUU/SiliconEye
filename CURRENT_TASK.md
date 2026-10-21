@@ -1,38 +1,40 @@
 # 当前任务
 
-## 目标与授权／当前结果
+## 当前目标与完成状态
 
-2026-10-21：用户要求“完成这三项后收口”。四栅局部修订及CT补全、剩余证据限制复查、整层技术验收均完成；**CT工作层v1已工程收口，受限范围仍为未知，不声称100%物理孔恢复或新增整层人工像素批准**。用户新增授权：先将当前CT收口版本提交并推送GitHub，再全面复查AA／POLY／CT的流程与协作状态。当前准备同步上一远端b9a1683之后的实现、v2～v5和文档；推送后进入流程审计，不自动实施新层、新网表或大范围重构。
+2026-10-21用户批准分别封装“POLY重建”和“CT重建”，并完成统一输入输出、接续规则、独立Agent试用三项收尾。现已完成仓库内人机协作v1；未重新提取全幅，未采纳新的材料几何，未新增人工裁决。本轮用户已授权提交并推送GitHub；执行前远端核对仍为6e5bb17，正在发布已有成果并评估金属／层间孔的skill边界。全局安装不在范围内。
 
-本文件是唯一实时入口。[收口页](docs/assets/ct-work-layer-final-v5/index.html)、[检查点](docs/checkpoints/2026-10-21-ct-working-layer-v1-closeout.md)、[阶段门](benchmarks/ct-work-layer-final-v5/stage-gate-v1.json)、[验收清单](benchmarks/ct-work-layer-final-v5/acceptance-checklist-v1.json)。已不需要重复四栅数量裁决或从头逐孔审批。[本轮审计前入口完整原文](docs/history/current-task-before-2026-10-21-workflow-audit.md)保留原状态。[上一入口完整原文](docs/history/current-task-before-2026-10-21-ct-final-v5.md)仅供历史查询。
+本文件为唯一实时入口。[POLY skill](skills/silicon-eye-poly-reconstruction/SKILL.md)、[CT skill](skills/silicon-eye-ct-reconstruction/SKILL.md)、[共用契约](docs/architecture/layer-reconstruction-skill-contract-v1.md)、[封装验证报告](docs/reviews/2026-10-21-poly-ct-skills.md)、[POLY样稿](docs/assets/poly-skill-package-v1/index.html)、[CT样稿](docs/assets/ct-skill-package-v1/index.html)。skill可按明确仓库路径读取，未安装全局。
 
-## 本轮实质修改与保护
+## 当前唯一共同工作层
 
-- 右上AA-F01804：原五条AI模板G06-P06～P10退休，完整记录保留；按原图四组栅端和五列源漏列，建立G06R-P01～P04四条规则POLY。五到四不存在可靠的一对一身份映射，未伪造旧ID别名。数量依据为AI原图复核，用户授权实施，不改写为新的人工点位标注。
-- 新增33条CT＝8栅CT＋25源漏CT；上端引出继承R1B裁决，完整原图支持、固定5px方孔／3px孔距／1px包围和避让预算。当前[CT模型](benchmarks/ct-work-layer-final-v5/model-v1.json)10287条，AA334／POLY695；原10254条CT、原7044条已审记录在v4中的完整内容、全部334 AA和无关691 POLY完整不变。[保护检查](benchmarks/ct-work-layer-final-v5/preservation-check-v1.json)。
-- 修复通用ct_transfer接续缺陷：材料别名由当前全部材料生成，后续无关局部修订不再丢失R2等既有合并映射。新增集成回归用例修复前失败、修复后通过；没有新案例生产脚本或调度器。
-- 端口盘点：845个几何扩散区域，844个具候选CT；仅余AA-F01744边界片段无直接CT。POLY无当前CT仅V3_G1／G2两历史主体片段，保留旧端子关系；右上四栅及五列源漏区域已都有候选CT。数量不是器件数、准确率或M1连接确认。
+[当前快照v3](configs/joint-work-layer-v3.json)仍为AA334／POLY696／CT10287。696包含G66-P03/P04上端桥，不代表新增MOS。设计画布5860×4587；8张原图5712×4284及哈希、相对预算、历史裁决完整保留。源图与冻结父包不改；历史AA337／POLY700及单层旧清单不能覆盖当前层。
 
-## 明确保留的使用限制
+- S1三列身份／相对位置与S2显示修订已批准。72条来源修订保留，旧16对争用及新争用均0；批准不扩大为全层逐孔／像素边界。
+- S3人工纠正生效：紫色为ROW4-AA3源漏CT；蓝色为G66-P03／P04共用POLY向上栅CT。蓝色当前ID为CT-G66-P03-P04-SHARED-TOP-01，目标G66-P03-P04-TOP-BUS；旧ROW4-AA4-SD00错误CT退休。新桥／孔精确几何仍AI候选，编号映射仍局部AI索引，不伪装人审像素真值。
+- 已审身份硬门拒绝蓝色改AA、紫色目标改变、旧身份复活、共用成员丢失；几何与来源无争用不能代替身份核验。[实施与裁决](docs/reviews/2026-10-21-source-ownership-adjudication.md)、[人工复核页](docs/assets/ct-source-ownership-reviewed-v2/index.html)。
+- 退休别名、G68合法桥、G26阶梯AA局部截面、AA最新层适配、变化域保护继续有效。仅重算有明确证据的影响范围，跨层修订一次联合检查，候选不自动晋级。
 
-[受限清单](benchmarks/ct-work-layer-final-v5/exceptions-v1.json)完整保存5个空间范围：两块小AA的来源对应不足、H1／H2长条的孔位无法可靠区别于亮带／拍屏纹理、一个照片边界器件片段。未补造孔、不认定物理无孔、不删未知；不能据此推断CT或M1接入。V3历史主体截段另列为表达例外，不算新漏孔。
+## 保留未知、批准与使用边界
 
-[后续使用约束](benchmarks/ct-work-layer-final-v5/use-contract-v1.json)要求：源支持范围可接续分析；若走线触及受限范围，先回查来源或保留连接unknown；有新照片、可靠局部对应或相应追网需求时重新打开该范围。该约束是交接数据，本轮未新增强制执行的网络导出器。
+六处来源／接入限制：AA-F01951、AA-F01952、H1、H2、边界AA-F01744、S3-AA4-LEFT-SD-ACCESS。最后一处不独立证明另有源漏孔，也不证明无孔；不能借用蓝色栅CT或补孔。V3两主体截段历史端子例外另列。均无当前新增人工问题，未知仅阻塞相应依赖。
 
-阶段状态WORK_LAYER_V1_CLOSED_WITH_LIMITATIONS；engineering_closeout_complete=true、whole_frame_complete=false、overall_human_acceptance=false。原数量冲突关闭，不等于证据限制也通过。工作层已冻结，未宣称所有照片中的所有物理孔完整恢复；工艺、尺度、极性、真实W/L、阻值及真实PDK DRC/LVS仍未知。
+工程收口、几何PASS与已审显示范围不升级为100%物理恢复、整层像素批准、M1连接或网表。`automatic_network_export_allowed=false`；物理尺度、工艺、极性、真实W/L及阻值未知，无真实PDK DRC/LVS。
 
-## 继续保留的既有结论
+四栅G06R-P01～P04及33孔、R1A／R1B上端与均匀源漏、R2本处连续AA单排孔、旧Q1／Q2／Q3继续有效；邻环隔离不变。C/D/F、143橙框、RIGHT6、宽MOS／环／电阻、Q2栅60孔、上方40栅、左侧局部、661环孔及B孔数精度意见保留原范围。R2_Q1、V3端子、网络v33、S03-03/04、18电阻、W01身份及195保留对象不改。原父包与本轮前入口完整保留，不把旧S3源漏解释带回当前任务。
 
-旧Q1四管下端、Q2 U10下端共用POLY、Q3A上端与内环H3、Q3B/C对应，以及R1A/R1B上端／均匀源漏孔、R2本处连续AA单排孔全部继承。R2统一承载ID和旧材料别名保持；其他位置的近邻环隔离／非AA间隙不受影响。
+## 本轮验证与接续命令
 
-C/D/F、143橙框、RIGHT6、宽MOS／环／电阻、Q2栅60孔、上方40栅、左侧局部、原661环孔及B孔数精度意见按原范围保留。R2_Q1、V3历史端子、网络v33、S03-03/04、18条电阻、W01电阻身份和195保留对象不改。AA-F00872退休，界面／邻片／照片外G67不补完整。原始8图和父冻结包不改。
+- 25项相关测试通过（103.66s），相关Ruff及git diff --check通过；两个skill包装校验通过。两个样稿空delta，输入／产物哈希、源裁片、SVG和JS语法核对通过；未声称浏览器点击验收。
+- 两个无本轮聊天历史的Agent分别拒绝POLY截短与CT错误归属，当前inspect均PASS；主Agent核对四包输入／产物／代码哈希、全部继承文档及六处未知。原始试用与主Agent核验在[固定验证包](benchmarks/poly-ct-skill-validation-v1/primary-agent-verification-v1.json)。未实测的人工纠正次数保持null。
+- POLY首轮待评请求源窗口没覆盖对象，试用已发现并修复导航；原始请求/指令/试用保留，修正窗口重放仍拒绝同一错误几何。已补入skill提醒；不把重放计为新盲测。这是已知芯片开卷接续验证，不能证明陌生照片识别准确率或泛化。
+- 统一交付：`.venv/bin/python -m silicon_eye.layer_review --request configs/poly-skill-review-v1.json --output runs/新的复核目录`；CT替换为`configs/ct-skill-review-v1.json`。inspect不生成新模型；revise用明确before／after、证据和操作ID范围，允许跨层事务，硬FAIL仅保留拒绝诊断，不导出候选快照。输出目录须新建。
+- 当前联合检查：`.venv/bin/python -m silicon_eye.joint_layers --snapshot configs/joint-work-layer-v3.json --output runs/新的联合检查目录`。原生定位不等于精确投影；多观察合并AA不得套单一旧投影。AI观察格式沿用既有agent_observations，不能自行人审确认。
 
-## 验证与恢复／下一阶段
+## 唯一下一步
 
-整层10287条几何PASS，重叠0、孔距违规0，最小边距4.4px；33新增来源对全部父记录检查3px争用无冲突。458项全量测试通过（19.57s）、65项相关测试通过（5.19s）、相关Ruff通过；父哈希、8原图、材料保护、别名、端口例外、页面资源／层开关检查通过。原图与规则图独立坐标，不做未经验证的投影。浏览器真实渲染未自动实测，几何／测试PASS不代替物理判断。
+当前先完成GitHub同步，再基于现有架构评估金属重建与层间孔重建的skill粒度；不在本轮实现新skill、提取M1或追全网。不重审S1／S2，不重做全幅AA／POLY／CT。
 
-全幅按5860×4587设计画布展示，不沿用5712×4284照片尺寸；全部AA／POLY／CT覆盖检查通过，避免右侧／下沿预览裁切，几何不变。
+[本阶段前入口完整原文](docs/history/current-task-before-2026-10-21-poly-ct-skills.md)保留此前状态、恢复命令和历史链接；[此前身份阶段原文](docs/history/current-task-before-2026-10-21-source-identity-adjudication.md)继续可查。`runs/`仅本地，当前技能验证产物已复制到Git可追踪的benchmarks路径。
 
-- `.venv/bin/python -m silicon_eye.ct_transfer --spec benchmarks/ct-work-layer-final-v5/spec-v1.json --output runs/新的CT收口目录`：输出须不存在。CLI生成几何，阶段状态、限制与冻结结果见本版本收口包装；provenance仅审计，不原地重跑已冻结包。
-- 相关测试：`.venv/bin/python -m pytest -q tests/test_ct_transfer.py tests/test_ct_joint_reconstruction.py tests/test_gate_terminal_localization.py`。`git diff --check`；data/不改，runs/和.venv/不入Git。
-- 唯一下一步：先验证GitHub推送与本地HEAD一致，再复查AA／POLY／CT的方法、接口、质量门、接续保护、算法／AI／人工分工及三层联合状态；输出有证据和优先级的审计报告，不擅自修复审计发现或开始M1。
+[本轮发布与金属架构评估前入口原文](docs/history/current-task-before-2026-10-21-github-metal-assessment.md)保留上阶段完整状态。

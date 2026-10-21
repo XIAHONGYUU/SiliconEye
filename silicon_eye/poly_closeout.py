@@ -20,6 +20,7 @@ from shapely.strtree import STRtree
 
 from .aa_completion import source_polygon
 from .geometry_reconstruction import digest, object_polygon, orthogonal_fit, project
+from .joint_layers import resolved_material
 from .poly_full_frame import save
 from .scene_geometry import load_locked
 
@@ -285,11 +286,33 @@ def consolidate(parent, inventory, aa, small, lower, review, settings, wide_matc
 
 
 def audit(model):
+    model = resolved_material(model)
     objects = model["objects"]
     polygons = [Polygon(o["layout_outline"]) for o in objects]
     aa = {o["id"]: object_polygon(o) for o in model["AA_objects"]}
     guards = {k: aa[k] for k in model["guard_AA_ids"]}
     errors, warnings = [], []
+    legal_pairs = set()
+    by_id = {o['id']: i for i, o in enumerate(objects)}
+    for obj in objects:
+        members = obj.get('member_POLY_ids', [])
+        if not members:
+            continue
+        if (
+            obj.get('kind') != 'shared_gate_terminal_bus'
+            or len(set(members)) != len(members)
+            or obj['id'] in members
+        ):
+            errors.append(dict(id=obj['id'], reason='invalid_shared_POLY_declaration'))
+            continue
+        for key in members:
+            pair = tuple(sorted((by_id[obj['id']], by_id[key])))
+            if polygons[pair[0]].intersection(polygons[pair[1]]).area <= 1e-6:
+                errors.append(dict(
+                    id=obj['id'], reason='shared_POLY_member_disconnected', member=key
+                ))
+            else:
+                legal_pairs.add(pair)
     tree = STRtree(polygons)
     pairs = []
     for i, (obj, p) in enumerate(zip(objects, polygons, strict=True)):
@@ -302,14 +325,14 @@ def audit(model):
         ):
             errors.append(dict(id=obj["id"], reason="invalid_or_nonorthogonal"))
         for j in tree.query(p):
-            if j > i and p.intersection(polygons[j]).area > 1e-6:
+            if j > i and (i, j) not in legal_pairs and p.intersection(polygons[j]).area > 1e-6:
                 pairs.append([obj["id"], objects[j]["id"]])
-        if obj["AA_target"]:
+        if obj.get("AA_target"):
             target = aa[obj["AA_target"]]
-            if obj.get("relation_cross_section"):
+            if obj.get("relation_cross_section") or not target.equals(box(*target.bounds)):
                 local = target.intersection(box(p.bounds[0], 0, p.bounds[2], model["canvas_wh"][1]))
                 target = local
-            if p.intersection(target).area <= 1e-6:
+            if target.is_empty or p.intersection(target).area <= 1e-6:
                 errors.append(dict(id=obj["id"], reason="explicit_target_AA_missed"))
             extension = model["relative_budget"]["gate_extension_px"] - 1e-6
             if (
@@ -324,11 +347,11 @@ def audit(model):
             ]
             if others:
                 errors.append(dict(id=obj["id"], reason="non_target_AA_overlap", AA_ids=others))
-        elif "resistor" not in obj["kind"]:
+        elif "resistor" not in obj.get("kind", ""):
             warnings.append(
                 dict(
                     id=obj["id"],
-                    group=obj["group_id"],
+                    group=obj.get("group_id"),
                     reason="AA_relation_not_explicitly_verified",
                 )
             )
@@ -337,21 +360,24 @@ def audit(model):
             warnings.append(
                 dict(
                     id=obj["id"],
-                    group=obj["group_id"],
+                    group=obj.get("group_id"),
                     reason="AA_guard_overlap_review_coordinates_and_material",
                     AA_ids=hits,
                 )
             )
     return dict(
         objects=len(objects),
-        superseded_records=len(model["supersession_ledger"]),
+        superseded_records=len(model.get("supersession_ledger", [])),
         retired_IDs=sum(
-            x["action"] == "retired_scope_template" for x in model["supersession_ledger"]
+            x["action"] == "retired_scope_template" for x in model.get("supersession_ledger", [])
         ),
-        resistor_bodies=sum("resistor" in o["kind"] for o in objects),
-        explicit_AA_targets=sum(o["AA_target"] is not None for o in objects),
+        resistor_bodies=sum("resistor" in o.get("kind", "") for o in objects),
+        explicit_AA_targets=sum(o.get("AA_target") is not None for o in objects),
         errors=errors,
         positive_area_overlap_pairs=pairs,
+        declared_connected_overlap_pairs=[
+            [objects[i]['id'], objects[j]['id']] for i, j in sorted(legal_pairs)
+        ],
         warnings=warnings,
         geometry_status="PASS" if not errors and not pairs else "FAIL",
         polygon_geometry_status="FAIL"
@@ -359,13 +385,13 @@ def audit(model):
         else "PASS",
         release_status=(
             "READY_FOR_CT_working_baseline"
-            if not errors and not pairs and not model["review_issues"]
+            if not errors and not pairs and not model.get("review_issues", [])
             else "BLOCKED_until_new_issues_reviewed"
         ),
         fullframe_material_truth=False,
         CT_or_net_assignment=False,
         not_foundry_DRC=True,
-        human_review_issues=copy.deepcopy(model["review_issues"]),
+        human_review_issues=copy.deepcopy(model.get("review_issues", [])),
     )
 
 

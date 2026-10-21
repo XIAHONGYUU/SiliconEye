@@ -1,0 +1,1073 @@
+{
+  "audited_commit": "6e5bb17fc024f1410f49a580e2e5100eda35e2a6",
+  "scope": "workflow, interfaces, data consistency and quality gates; no re-extraction or new physical adjudication",
+  "baseline_inputs": {
+    "benchmarks/ct-work-layer-final-v5/model-v1.json": "0dc6ec0d014503f5fef2ba3bc0d6957d4f8dd691f9fb9b3c5896e2855042bb6a",
+    "benchmarks/ct-work-layer-final-v5/material-model-v1.json": "2bd122d3243291e75f25f427b4c070235336bbeebc8e54c78d35242e91240fd9",
+    "benchmarks/ct-work-layer-final-v5/freeze-manifest-v1.json": "9dee75318b61b1341226196b8c04996f490153e40ebec73f173a96a8fe0d3dac"
+  },
+  "counts": {
+    "AA": 334,
+    "POLY": 695,
+    "CT": 10287
+  },
+  "skill_inventory": [
+    "skills/silicon-eye-aa-reconstruction/SKILL.md",
+    "skills/silicon-eye-region-planning/SKILL.md"
+  ],
+  "current_geometry": {
+    "AA_overlap_conflicts": [],
+    "CT": {
+      "status": "PASS",
+      "errors": [],
+      "positive_area_overlap_pairs": [],
+      "min_gap_violations": [],
+      "minimum_edge_gap_px": 4.400000000000091,
+      "minimum_AA_enclosure_px": 0.9999999999999999,
+      "minimum_POLY_clearance_px": 1.4999999999995453,
+      "minimum_POLY_enclosure_px": 0.9999999999999999,
+      "contact_count": 10287,
+      "physical_PDK_DRC": false
+    }
+  },
+  "retired_references": {
+    "guard_AA_ids_missing": [
+      "AA2-UPPER-COMPLEX-GUARD-AA-0-split01"
+    ],
+    "active_POLY_AA_targets_missing": [],
+    "current_aliases": {
+      "AA2-UPPER-COMPLEX-GUARD-AA-0-split01": "AA2-UPPER-INNER-B-AA-0",
+      "AA2-LEFT-STAIR-AA5-0": "AA-LEFT-STAIR-SHARED-56",
+      "AA2-LEFT-STAIR-AA6-0": "AA-LEFT-STAIR-SHARED-56"
+    }
+  },
+  "original_POLY_audit": {
+    "error_type": "KeyError",
+    "error": "'AA2-UPPER-COMPLEX-GUARD-AA-0-split01'"
+  },
+  "alias_adapted_copy_POLY_audit": {
+    "objects": 695,
+    "superseded_records": 348,
+    "retired_IDs": 340,
+    "resistor_bodies": 19,
+    "explicit_AA_targets": 671,
+    "errors": [
+      {
+        "id": "G26-P01",
+        "reason": "explicit_target_extension_missing"
+      }
+    ],
+    "positive_area_overlap_pairs": [
+      [
+        "G68-P01",
+        "G68-BOTTOM-BUS-01"
+      ],
+      [
+        "G68-P02",
+        "G68-BOTTOM-BUS-01"
+      ]
+    ],
+    "warnings": [
+      {
+        "id": "V3_G1",
+        "group": "LOCAL",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "V3_G2",
+        "group": "LOCAL",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G68-P01",
+        "group": "G68",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G68-P02",
+        "group": "G68",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G68-BOTTOM-BUS-01",
+        "group": "G68",
+        "reason": "AA_relation_not_explicitly_verified"
+      }
+    ],
+    "geometry_status": "FAIL",
+    "polygon_geometry_status": "FAIL",
+    "release_status": "BLOCKED_until_new_issues_reviewed",
+    "fullframe_material_truth": false,
+    "CT_or_net_assignment": false,
+    "not_foundry_DRC": true,
+    "human_review_issues": []
+  },
+  "G26_local_section_diagnostic": {
+    "POLY_bounds": [
+      904.46715,
+      1542.8547,
+      934.46715,
+      1654.981
+    ],
+    "target_AA_bounds": [
+      831.3826,
+      1550.8547,
+      955.0,
+      1735.7199
+    ],
+    "local_AA_section_bounds": [
+      904.46715,
+      1550.8547,
+      934.46715,
+      1646.981
+    ],
+    "relation_cross_section": null,
+    "upper_extension_px": 8.0,
+    "lower_extension_px": 8.0,
+    "required_relative_px": 8,
+    "interpretation": "full-target bbox fails but local section satisfies endcap budget; validator scope mismatch, not new physical adjudication"
+  },
+  "layer_evolution": [
+    {
+      "parent": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "parent_AA_count": 337,
+      "retired_AA_ids": [
+        "AA-F00872",
+        "AA2-LEFT-STAIR-AA5-0",
+        "AA2-LEFT-STAIR-AA6-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0-split01"
+      ],
+      "new_AA_ids": [
+        "AA-LEFT-STAIR-SHARED-56"
+      ],
+      "changed_common_AA_ids": [
+        "AA-F01669",
+        "AA-F01697",
+        "AA-F01698",
+        "AA-F01699",
+        "AA-F01700",
+        "AA-F01701",
+        "AA-F01702",
+        "AA-F01703",
+        "AA-F01704",
+        "AA-F01705",
+        "AA-F01706",
+        "AA-W04",
+        "AA2-LEFT-STAIR-AA0-0",
+        "AA2-UPPER-INNER-B-AA-0"
+      ],
+      "parent_POLY_count": null
+    },
+    {
+      "parent": "benchmarks/poly-closeout-v3/model-v1.json",
+      "parent_AA_count": 336,
+      "retired_AA_ids": [
+        "AA2-LEFT-STAIR-AA5-0",
+        "AA2-LEFT-STAIR-AA6-0",
+        "AA2-UPPER-COMPLEX-GUARD-AA-0-split01"
+      ],
+      "new_AA_ids": [
+        "AA-LEFT-STAIR-SHARED-56"
+      ],
+      "changed_common_AA_ids": [
+        "AA-F01669",
+        "AA-W04",
+        "AA2-LEFT-STAIR-AA0-0",
+        "AA2-UPPER-INNER-B-AA-0"
+      ],
+      "parent_POLY_count": 700
+    }
+  ],
+  "AA_schema_compatibility": {
+    "AA_tool_reads": "objects as AA plus sources, projection_matrices and object_projection_groups",
+    "joint_model_objects_are": "POLY; AA is in AA_objects",
+    "joint_model_missing_AA_tool_fields": [
+      "groups",
+      "object_projection_groups",
+      "projection_matrices",
+      "sources"
+    ],
+    "direct_consume_supported": false
+  },
+  "global_source_nearby_assignments": {
+    "radius_px": 3,
+    "total_pairs": 16,
+    "hotspots": [
+      {
+        "id": "SOURCE-1",
+        "targets": [
+          "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+          "AA2-MIDDLE-MOS-GUARD-A-0"
+        ],
+        "pairs": [
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S006",
+              "CTT-LL-RING-WIDE-R-S007"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2059.7900390625,
+                1900.0
+              ],
+              [
+                2058.470703125,
+                1899.0
+              ]
+            ],
+            "distance_px": 1.6554900531199226,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2042.18785
+              ],
+              [
+                2145.5,
+                2154.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S008",
+              "CTT-LL-RING-WIDE-R-S009"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2058.68994140625,
+                1930.0
+              ],
+              [
+                2059.408203125,
+                1930.0
+              ]
+            ],
+            "distance_px": 0.71826171875,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2068.1878500000003
+              ],
+              [
+                2145.5,
+                2222.8
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S009",
+              "CTT-LL-RING-WIDE-R-S010"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2060.139892578125,
+                1945.0
+              ],
+              [
+                2059.8564453125,
+                1945.0
+              ]
+            ],
+            "distance_px": 0.283447265625,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2081.1878500000003
+              ],
+              [
+                2145.5,
+                2257.0
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S010",
+              "CTT-LL-RING-WIDE-R-S011"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2056.56005859375,
+                1959.0
+              ],
+              [
+                2059.294677734375,
+                1960.0
+              ]
+            ],
+            "distance_px": 2.9117248915844733,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2094.1878500000003
+              ],
+              [
+                2145.5,
+                2291.2
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S011",
+              "CTT-LL-RING-WIDE-R-S012"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2058.0400390625,
+                1975.0
+              ],
+              [
+                2060.732666015625,
+                1975.0
+              ]
+            ],
+            "distance_px": 2.692626953125,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2107.1878500000003
+              ],
+              [
+                2145.5,
+                2325.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S012",
+              "CTT-LL-RING-WIDE-R-S013"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2061.3701171875,
+                1986.0
+              ],
+              [
+                2060.02490234375,
+                1985.0
+              ]
+            ],
+            "distance_px": 1.676187034863752,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2120.1878500000003
+              ],
+              [
+                2145.5,
+                2359.6
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S014",
+              "CTT-LL-RING-WIDE-R-S015"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2060.239990234375,
+                2015.0
+              ],
+              [
+                2060.885498046875,
+                2015.0
+              ]
+            ],
+            "distance_px": 0.6455078125,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2146.1878500000003
+              ],
+              [
+                2145.5,
+                2428.0
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S016",
+              "CTT-LL-RING-WIDE-R-S017"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2062.139892578125,
+                2045.0
+              ],
+              [
+                2062.759033203125,
+                2046.0
+              ]
+            ],
+            "distance_px": 1.1761526744115283,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2172.1878500000003
+              ],
+              [
+                2145.5,
+                2496.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-Q2-A-RING-LEFT-S017",
+              "CTT-LL-RING-WIDE-R-S018"
+            ],
+            "targets": [
+              "AA2-MIDDLE-MOS-GUARD-A-0",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_centers": [
+              [
+                2062.6201171875,
+                2061.0
+              ],
+              [
+                2062.1806640625,
+                2061.0
+              ]
+            ],
+            "distance_px": 0.439453125,
+            "canonical_centers": [
+              [
+                2181.7592,
+                2185.1878500000003
+              ],
+              [
+                2145.5,
+                2530.6
+              ]
+            ]
+          }
+        ],
+        "count": 9,
+        "native_bbox": [
+          1876,
+          1739,
+          2243,
+          2221
+        ]
+      },
+      {
+        "id": "SOURCE-2",
+        "targets": [
+          "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+          "G34-P05"
+        ],
+        "pairs": [
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S000",
+              "CTT-LL-RING-LOWIN-B-S009"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                506,
+                3773
+              ],
+              [
+                506.0,
+                3772.874755859375
+              ]
+            ],
+            "distance_px": 0.125244140625,
+            "canonical_centers": [
+              [
+                694.3333333333333,
+                3752.0
+              ],
+              [
+                472.20000000000005,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S001",
+              "CTT-LL-RING-LOWIN-B-S010"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                521,
+                3773
+              ],
+              [
+                522.0,
+                3771.4697265625
+              ]
+            ],
+            "distance_px": 1.8280417920600356,
+            "canonical_centers": [
+              [
+                705.5333333333333,
+                3752.0
+              ],
+              [
+                499.0,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S002",
+              "CTT-LL-RING-LOWIN-B-S011"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                532,
+                3773
+              ],
+              [
+                532.0,
+                3772.21728515625
+              ]
+            ],
+            "distance_px": 0.78271484375,
+            "canonical_centers": [
+              [
+                716.7333333333332,
+                3752.0
+              ],
+              [
+                525.8,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S003",
+              "CTT-LL-RING-LOWIN-B-S012"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                551,
+                3773
+              ],
+              [
+                552.0,
+                3772.71240234375
+              ]
+            ],
+            "distance_px": 1.040534675962552,
+            "canonical_centers": [
+              [
+                727.9333333333333,
+                3752.0
+              ],
+              [
+                552.6,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S004",
+              "CTT-LL-RING-LOWIN-B-S013"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                562,
+                3773
+              ],
+              [
+                562.0,
+                3772.4599609375
+              ]
+            ],
+            "distance_px": 0.5400390625,
+            "canonical_centers": [
+              [
+                739.1333333333332,
+                3752.0
+              ],
+              [
+                579.4000000000001,
+                3819.4
+              ]
+            ]
+          },
+          {
+            "contact_ids": [
+              "CTT-LL-G34-G05-S005",
+              "CTT-LL-RING-LOWIN-B-S014"
+            ],
+            "targets": [
+              "G34-P05",
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_centers": [
+              [
+                577,
+                3773
+              ],
+              [
+                577.0,
+                3772.146240234375
+              ]
+            ],
+            "distance_px": 0.853759765625,
+            "canonical_centers": [
+              [
+                750.3333333333333,
+                3752.0
+              ],
+              [
+                606.2,
+                3819.4
+              ]
+            ]
+          }
+        ],
+        "count": 6,
+        "native_bbox": [
+          326,
+          3611,
+          757,
+          3933
+        ]
+      },
+      {
+        "id": "SOURCE-3",
+        "targets": [
+          "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+          "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0"
+        ],
+        "pairs": [
+          {
+            "contact_ids": [
+              "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+              "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000"
+            ],
+            "targets": [
+              "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+              "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0"
+            ],
+            "source_centers": [
+              [
+                1162,
+                3747
+              ],
+              [
+                1160.4908447265625,
+                3748.0
+              ]
+            ],
+            "distance_px": 1.8104004085682857,
+            "canonical_centers": [
+              [
+                1355.1766249999998,
+                3769.616906391866
+              ],
+              [
+                1327.6116749999999,
+                3771.038210290349
+              ]
+            ]
+          }
+        ],
+        "count": 1,
+        "native_bbox": [
+          980,
+          3587,
+          1342,
+          3908
+        ]
+      }
+    ],
+    "interpretation": "source consistency candidates, not 16 missing holes or automatic authority to rewrite human decisions"
+  },
+  "synthetic_joint_gate_counterexamples": {
+    "truncated_gate": {
+      "before_CT": "PASS",
+      "before_POLY": "PASS",
+      "after_CT": "PASS",
+      "after_POLY": "FAIL",
+      "rejected_by_POLY": [
+        {
+          "id": "G",
+          "reason": "explicit_target_extension_missing"
+        }
+      ]
+    },
+    "merged_neighbour_AA": {
+      "before_CT": "PASS",
+      "before_AA_conflicts": [],
+      "after_CT": "PASS",
+      "after_AA_conflicts": [
+        {
+          "a": "B",
+          "b": "A",
+          "intersection_area": 400.0,
+          "state": "requires_localization_not_automatic_union"
+        }
+      ]
+    }
+  },
+  "historical_replays": {
+    "aa": {
+      "output_path": "runs/workflow-audit-6e5bb17-aa-replay",
+      "report": {
+        "status": "full_frame_candidate_requires_material_review",
+        "before_objects": 336,
+        "after_objects": 337,
+        "unchanged_objects": 330,
+        "protected_AA_unchanged": 72,
+        "revisions": [
+          {
+            "id": "FIX-05",
+            "object_id": "AA-W05",
+            "kind": "source_correspondence",
+            "new_ids": [
+              "AA-W05"
+            ],
+            "source_changed_area_px2": 36595.655519708635,
+            "changed_outside_allowed_domain_px2": 0.0,
+            "details": {
+              "layout_geometry_unchanged": true,
+              "source_observation": "existing native_corners, not global back-projection"
+            }
+          },
+          {
+            "id": "FIX-06",
+            "object_id": "AA-W07",
+            "kind": "source_correspondence",
+            "new_ids": [
+              "AA-W07"
+            ],
+            "source_changed_area_px2": 77412.08478011846,
+            "changed_outside_allowed_domain_px2": 0.0,
+            "details": {
+              "layout_geometry_unchanged": true,
+              "source_observation": "existing native_corners, not global back-projection"
+            }
+          },
+          {
+            "id": "FIX-04",
+            "object_id": "AA2-LOWER-MOS-GRID-STRIP-UL-0",
+            "kind": "approved_polygon",
+            "new_ids": [
+              "AA2-LOWER-MOS-GRID-STRIP-UL-0"
+            ],
+            "source_changed_area_px2": 4004.78312053256,
+            "changed_outside_allowed_domain_px2": 0.0,
+            "details": {
+              "source_correspondence_fit_residual_px": 0.19239821135797286,
+              "approved_native_outline_unchanged": true
+            }
+          },
+          {
+            "id": "FIX-02",
+            "object_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0",
+            "kind": "canonical_cut",
+            "new_ids": [
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-0"
+            ],
+            "source_changed_area_px2": 33344.00000000001,
+            "changed_outside_allowed_domain_px2": 9.531504474580288e-10,
+            "details": {}
+          },
+          {
+            "id": "FIX-03",
+            "object_id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3",
+            "kind": "canonical_cut",
+            "new_ids": [
+              "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-3"
+            ],
+            "source_changed_area_px2": 12460.000000000004,
+            "changed_outside_allowed_domain_px2": 4.0748190159615253e-10,
+            "details": {}
+          },
+          {
+            "id": "FIX-01",
+            "object_id": "AA2-UPPER-COMPLEX-GUARD-AA-0",
+            "kind": "canonical_rebuild",
+            "new_ids": [
+              "AA2-UPPER-COMPLEX-GUARD-AA-0",
+              "AA2-UPPER-COMPLEX-GUARD-AA-0-split01"
+            ],
+            "source_changed_area_px2": 156414.13250411724,
+            "changed_outside_allowed_domain_px2": 2.0478783424910585e-11,
+            "details": {
+              "evidence": {
+                "first_top": {
+                  "min": 1.293548583984375,
+                  "median": 19.36935806274414
+                },
+                "first_bottom": {
+                  "min": 6.7354888916015625,
+                  "median": 16.21451187133789
+                },
+                "second_top": {
+                  "min": 9.6741943359375,
+                  "median": 18.861289978027344
+                },
+                "second_bottom": {
+                  "min": 4.683872222900391,
+                  "median": 18.969356536865234
+                }
+              },
+              "eligible_columns": 5190,
+              "conflicting_pixels": 0,
+              "locally_repaired_columns": 575,
+              "local_repair_scope": "image-supported retry near robust neighboring traces; not truth",
+              "warped_evidence_columns": 5190,
+              "unsupported_columns": 30,
+              "boundary_evidence_file": "boundary-evidence.json"
+            }
+          }
+        ],
+        "gates": {
+          "source": "PASS",
+          "unchanged_objects": "PASS",
+          "protected_AA": "PASS",
+          "orthogonal_geometry": "PASS",
+          "area_overlaps": "PASS",
+          "complete_material_coverage": "NOT_ACCEPTED",
+          "skill_fullframe_release": "NOT_READY"
+        },
+        "layout_intersection_conflicts": [],
+        "remaining_decisions": [
+          {
+            "id": "Q-F09-RING",
+            "state": "needs_precise_object_localization",
+            "bbox": [
+              850,
+              2680,
+              1720,
+              3200
+            ],
+            "prior_feedback": "右侧中间环的结构错了",
+            "question": "原F09右侧中间环的结构问题具体指外环R1、内环R2，还是两环之间的连接？仅定位旧问题，不重问AA身份。",
+            "landmarks": [
+              {
+                "label": "R1",
+                "native_xy": [
+                  1260,
+                  2704
+                ]
+              },
+              {
+                "label": "R2",
+                "native_xy": [
+                  1260,
+                  2757
+                ]
+              }
+            ]
+          }
+        ],
+        "ML_training": false,
+        "ML_inference": false,
+        "CT_updated": false,
+        "raw_photo_unchanged": true,
+        "code_sha256": "64887488a3562678fcca66cde232645241cb723238da88ebff65867ee2095f60",
+        "spec_sha256": "beacc7f9d5f8d833952959de757a9deb3ebf8c444fd80e7271405578a4966bd1"
+      }
+    },
+    "poly": {
+      "output_path": "runs/workflow-audit-6e5bb17-poly-replay",
+      "report": {
+        "objects": 700,
+        "superseded_records": 348,
+        "retired_IDs": 340,
+        "resistor_bodies": 19,
+        "explicit_AA_targets": 676,
+        "errors": [],
+        "positive_area_overlap_pairs": [],
+        "warnings": [
+          {
+            "id": "V3_G1",
+            "group": "LOCAL",
+            "reason": "AA_relation_not_explicitly_verified"
+          },
+          {
+            "id": "V3_G2",
+            "group": "LOCAL",
+            "reason": "AA_relation_not_explicitly_verified"
+          },
+          {
+            "id": "G67-P01",
+            "group": "G67",
+            "reason": "AA_relation_not_explicitly_verified"
+          },
+          {
+            "id": "G68-P01",
+            "group": "G68",
+            "reason": "AA_relation_not_explicitly_verified"
+          },
+          {
+            "id": "G68-P02",
+            "group": "G68",
+            "reason": "AA_relation_not_explicitly_verified"
+          }
+        ],
+        "geometry_status": "PASS",
+        "polygon_geometry_status": "PASS",
+        "release_status": "READY_FOR_CT_working_baseline",
+        "fullframe_material_truth": false,
+        "CT_or_net_assignment": false,
+        "not_foundry_DRC": true,
+        "human_review_issues": []
+      }
+    },
+    "ct": {
+      "output_path": "runs/workflow-audit-6e5bb17-ct-replay",
+      "report": {
+        "status": "PASS",
+        "errors": [],
+        "positive_area_overlap_pairs": [],
+        "min_gap_violations": [],
+        "minimum_edge_gap_px": 4.400000000000091,
+        "minimum_AA_enclosure_px": 0.9999999999999999,
+        "minimum_POLY_clearance_px": 1.4999999999995453,
+        "minimum_POLY_enclosure_px": 0.9999999999999999,
+        "contact_count": 10287,
+        "physical_PDK_DRC": false,
+        "unchanged_parent_contacts": 10254,
+        "revised_contact_count": 0,
+        "new_contact_count": 33,
+        "source_correspondence_revision_ids": [],
+        "material_revision_ids": [
+          "G06-P06",
+          "G06-P07",
+          "G06-P08",
+          "G06-P09",
+          "G06-P10",
+          "G06R-P01",
+          "G06R-P02",
+          "G06R-P03",
+          "G06R-P04"
+        ],
+        "human_review": "scoped decisions retained; revised geometry and new CT pending review",
+        "implementation_sha256": "e8920cc830dcdee9328c2db7dd0d0542f860bc87a08a5cc46fc558cb2bbf68d5"
+      },
+      "CT_objects_exact": true,
+      "AA_exact": true,
+      "POLY_exact": true,
+      "raw_model_stage_status": null,
+      "raw_model_limitations_ref": null,
+      "unknown_scopes_retained": 5
+    }
+  },
+  "agent_evaluation": {
+    "AA_known_case_acceptance": {
+      "T1": "PASS_scoped_reuse",
+      "T2": "PASS_human_confirmed_local_quality_improvement",
+      "T3": "PASS_local_regression_rejection"
+    },
+    "AA_independent_agent_evaluation": false,
+    "seed_groups": [
+      {
+        "id": "v3-seed-v1",
+        "input": {
+          "path": "benchmarks/agent-eval/v3-seed-v1/input.json",
+          "sha256": "cd969c8cdfacd6f6451c9304aa7ce0d412fff31bdb8813bcefc6c7dfa3ad61bf"
+        },
+        "reference": {
+          "path": "benchmarks/agent-eval/v3-seed-v1/reference.json",
+          "sha256": "46184d54c71685b71f592faaf01a652e8d38953b329fcb0a31bb0267be660039"
+        },
+        "task_count": 1,
+        "reference_assertions": 10,
+        "split": "historical_development",
+        "agent_runs_recorded": 0,
+        "human_effort_measured": false
+      },
+      {
+        "id": "roi2-seed-v1",
+        "input": {
+          "path": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+          "sha256": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc"
+        },
+        "reference": {
+          "path": "benchmarks/agent-eval/roi2-seed-v1/reference.json",
+          "sha256": "d4d6a739577dfe5b3279e5b6eca2c9308330de253ac88585aa026f2be2ddf23b"
+        },
+        "task_count": 1,
+        "reference_assertions": 10,
+        "split": "historical_development",
+        "agent_runs_recorded": 0,
+        "human_effort_measured": false
+      }
+    ],
+    "POLY_count_failure_preserved": {
+      "case": "Q3-RIGHT",
+      "previous_AI_count": 5,
+      "human_confirmed_count": 6,
+      "count_error": -1,
+      "result": "AI_count_failure_human_corrected",
+      "source_spec_sha256": "9b4c95d764ae3774bf89453096805d8ec832e8b7cafee4fe9fcdb31ae5ca4f31",
+      "profile_evidence_preserved": true,
+      "cause": "not established; do not retune measurements to force human count"
+    }
+  },
+  "inputs_unchanged": {
+    "benchmarks/ct-work-layer-final-v5/model-v1.json": true,
+    "benchmarks/ct-work-layer-final-v5/material-model-v1.json": true,
+    "benchmarks/ct-work-layer-final-v5/freeze-manifest-v1.json": true
+  }
+}

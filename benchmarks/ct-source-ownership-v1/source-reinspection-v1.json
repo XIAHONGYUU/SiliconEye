@@ -1,0 +1,30 @@
+{
+  "status": "AI_source_repaired_not_new_human_pixel_approval",
+  "hotspots": [
+    {
+      "id": "SOURCE-1",
+      "resolution": "Restore wide MOS last SD column to inner source column and guard to outer source column. Middle MOS guard unchanged.",
+      "changed": 66
+    },
+    {
+      "id": "SOURCE-2",
+      "resolution": "G34-P05 source search was below its end on the guard; relocalize within the actual upper terminal band.",
+      "changed": 6
+    },
+    {
+      "id": "SOURCE-3",
+      "resolution": "AA4 left SD is upper staggered landing; revert old downward drift onto AA3 lower right landing.",
+      "changed": 1
+    }
+  ],
+  "former_source_reinspection_ref": {
+    "path": "docs/reviews/2026-10-21-joint-continuation/source-reinspection.json",
+    "sha256": "fc2d80d7b450288f5f5dd5ad44ced30de4f1ec8b4c3874dd6fdd88ba521150b8"
+  },
+  "ledger_ref": {
+    "path": "benchmarks/ct-source-ownership-v1/ledger-v1.json",
+    "sha256": "04d4aeb3be1d97fb505fb279e2b13b6400bf76e849034024a8297ed73bcdd4b7"
+  },
+  "original_five_source_limitations_retained": true,
+  "precise_source_peak_centroids_human_approved": false
+}

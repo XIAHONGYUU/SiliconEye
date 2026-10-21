@@ -1,0 +1,16 @@
+{
+  "status": "S1_S2_human_approved_S3_identity_corrected",
+  "human_review_ref": {
+    "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+    "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+  },
+  "supersedes_source_reinspection_ref": {
+    "path": "benchmarks/ct-source-ownership-v1/source-reinspection-v1.json",
+    "sha256": "44eef4125ead8ed2f3663e25ede91e9f8a792f01d5d974550e4c47373db3844b"
+  },
+  "source3_old_AI_AA4_SD_interpretation_rejected": true,
+  "blue_contact_id": "CT-G66-P03-P04-SHARED-TOP-01",
+  "purple_contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000",
+  "shared_gate_POLY_id": "G66-P03-P04-TOP-BUS",
+  "exact_new_boundary_human_approved": false
+}

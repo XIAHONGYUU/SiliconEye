@@ -1,0 +1,37 @@
+{
+  "evaluated_as": "known_chip_open_book_continuation_not_blind_vision_accuracy",
+  "packages": {
+    "poly/revision-review": {
+      "status": "FAIL",
+      "all_artifacts_and_inputs_hash_verified": true,
+      "inherited_scope_documents_exact": true,
+      "unknown_count": 6,
+      "candidate_snapshot": null
+    },
+    "poly/current-inspect": {
+      "status": "PASS",
+      "all_artifacts_and_inputs_hash_verified": true,
+      "inherited_scope_documents_exact": true,
+      "unknown_count": 6,
+      "candidate_snapshot": null
+    },
+    "ct/pending-delivery": {
+      "status": "FAIL",
+      "all_artifacts_and_inputs_hash_verified": true,
+      "inherited_scope_documents_exact": true,
+      "unknown_count": 6,
+      "candidate_snapshot": null
+    },
+    "ct/current-inspect": {
+      "status": "PASS",
+      "all_artifacts_and_inputs_hash_verified": true,
+      "inherited_scope_documents_exact": true,
+      "unknown_count": 6,
+      "candidate_snapshot": null
+    }
+  },
+  "no_production_model_adopted": true,
+  "source_window_issue_preserved": true,
+  "human_correction_count": null,
+  "new_human_questions": 0
+}

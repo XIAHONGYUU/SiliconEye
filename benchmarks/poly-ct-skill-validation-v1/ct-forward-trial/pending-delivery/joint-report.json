@@ -1,0 +1,108 @@
+{
+  "status": "FAIL",
+  "geometry_status": "FAIL",
+  "reference_errors": [],
+  "reviewed_identity_status": "FAIL",
+  "reviewed_contact_constraint_errors": [
+    {
+      "id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "reason": "reviewed_contact_identity_changed"
+    }
+  ],
+  "AA_overlap_conflicts": [],
+  "POLY": {
+    "objects": 696,
+    "superseded_records": 348,
+    "retired_IDs": 340,
+    "resistor_bodies": 19,
+    "explicit_AA_targets": 671,
+    "errors": [],
+    "positive_area_overlap_pairs": [],
+    "declared_connected_overlap_pairs": [
+      [
+        "G66-P03",
+        "G66-P03-P04-TOP-BUS"
+      ],
+      [
+        "G66-P04",
+        "G66-P03-P04-TOP-BUS"
+      ],
+      [
+        "G68-P01",
+        "G68-BOTTOM-BUS-01"
+      ],
+      [
+        "G68-P02",
+        "G68-BOTTOM-BUS-01"
+      ]
+    ],
+    "warnings": [
+      {
+        "id": "V3_G1",
+        "group": "LOCAL",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "V3_G2",
+        "group": "LOCAL",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G68-P01",
+        "group": "G68",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G68-P02",
+        "group": "G68",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G68-BOTTOM-BUS-01",
+        "group": "G68",
+        "reason": "AA_relation_not_explicitly_verified"
+      },
+      {
+        "id": "G66-P03-P04-TOP-BUS",
+        "group": "G66",
+        "reason": "AA_relation_not_explicitly_verified"
+      }
+    ],
+    "geometry_status": "PASS",
+    "polygon_geometry_status": "PASS",
+    "release_status": "READY_FOR_CT_working_baseline",
+    "fullframe_material_truth": false,
+    "CT_or_net_assignment": false,
+    "not_foundry_DRC": true,
+    "human_review_issues": []
+  },
+  "CT": {
+    "status": "FAIL",
+    "errors": [
+      {
+        "id": "CT-G66-P03-P04-SHARED-TOP-01",
+        "reason": "AA_enclosure_failed"
+      },
+      {
+        "id": "CT-G66-P03-P04-SHARED-TOP-01",
+        "reason": "channel_overlap_or_clearance_failed"
+      }
+    ],
+    "positive_area_overlap_pairs": [],
+    "min_gap_violations": [],
+    "minimum_edge_gap_px": 4.400000000000091,
+    "minimum_AA_enclosure_px": 0.9999999999999999,
+    "minimum_POLY_clearance_px": 0.0,
+    "minimum_POLY_enclosure_px": 0.9999999999999999,
+    "contact_count": 10287,
+    "physical_PDK_DRC": false
+  },
+  "source_gate": {
+    "status": "PASS",
+    "radius_native_px": 3,
+    "inherited_unresolved": [],
+    "new_conflicts": []
+  },
+  "automatic_network_export_allowed": false,
+  "physical_PDK_DRC": false
+}

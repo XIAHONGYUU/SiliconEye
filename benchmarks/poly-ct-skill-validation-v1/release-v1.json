@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "release": "repository_human_in_loop_v1",
+  "current_model_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "unknown_scope_count": 6,
+  "closeout": {
+    "shared_io": true,
+    "scoped_continuation": true,
+    "independent_known_case_forward_trials": 2
+  },
+  "evidence_scope": "Known chip open-book continuation, software regression and static delivery validation; not blind vision/generalization accuracy",
+  "global_install": false,
+  "github_push": false,
+  "automatic_network_export_allowed": false,
+  "locked_files": {
+    "skills/silicon-eye-poly-reconstruction/SKILL.md": "d6fb71932953d36cee8baa359bc8a2fce864438c3f8f7054120e70eab222a22c",
+    "skills/silicon-eye-poly-reconstruction/agents/openai.yaml": "fe8ae81a2fc985dea83284c7b98fea0af2247666613df5627054b341f9d9dacc",
+    "skills/silicon-eye-ct-reconstruction/SKILL.md": "d4bd46c8c57d0b675a1b4bf680014e441cf04c7afe84ffdbcec92f9ad2292f55",
+    "skills/silicon-eye-ct-reconstruction/agents/openai.yaml": "53fed080b2b621db55d1760795e18d931e8f544bab6abfef14cf2c00b9b5151d",
+    "configs/joint-work-layer-v3.json": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377",
+    "configs/poly-skill-review-v1.json": "ac660a77ab82e36bbb264aa380368e3861a22a808ef8dc439d261b3fd0e58868",
+    "configs/ct-skill-review-v1.json": "0983d6c7df0879ccdb8b8ac22da573a3209c1ad034dbc8550dd3514b63183ab7",
+    "silicon_eye/layer_review.py": "d12114993320c251b1b8a02d5844b9e77fac7af0b36c775e5eef573cca2ad8cd",
+    "silicon_eye/joint_layers.py": "23586fc22c7e95ed858d454b88a7402e462d1c055701ef5dd000b06bb99c7a53",
+    "docs/reviews/2026-10-21-poly-ct-skills.md": "f240d59c408050e11268d8a50b28c22a314cd19943b59165489f7080703f7205",
+    "benchmarks/poly-ct-skill-validation-v1/primary-agent-verification-v1.json": "de4a66bbd552217a5f84edb0d38a2c12570ed5a139096a3dfdaef5f48a847b27",
+    "benchmarks/poly-ct-skill-validation-v1/software-verification-v1.json": "128845dcbd9344a9060e00bd407e93871f8c4df437ad6e2e68d949f32a340474"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    ".venv/bin/python",
+    "-m",
+    "silicon_eye.layer_review",
+    "--request",
+    "runs/skill-forward-poly-v1/inspect-request.json",
+    "--output",
+    "runs/skill-forward-poly-v1/current-inspect"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"status\": \"PASS\", \"automatic_network_export_allowed\": false}\n",
+  "stderr": ""
+}

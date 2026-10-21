@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "ct-source-ownership-v1-joint",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-work-layer-final-v5/material-model-v1.json",
+      "sha256": "2bd122d3243291e75f25f427b4c070235336bbeebc8e54c78d35242e91240fd9"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-source-ownership-v1/model-v1.json",
+      "sha256": "222a3bfc0937152ba092017498f1d0a43c1e1aa070157277d7ec57280badca94"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-work-layer-final-v5/spec-v1.json",
+      "sha256": "372388f445b8b8392d706b5434a48036d46309bb02d77a171ce8cb137dd351ad"
+    },
+    "AA_context": {
+      "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+      "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+    },
+    "unknown": {
+      "path": "benchmarks/ct-work-layer-final-v5/unknown-sites-v1.json",
+      "sha256": "aae3cdd0825ad9f66fb8144f13435e4aa17a49d611a9e2a2de0b3ef04a8a66c7"
+    },
+    "stage": {
+      "path": "benchmarks/ct-work-layer-final-v5/stage-gate-v1.json",
+      "sha256": "40fb84133ffe1d7a4b9e97552f5c1731bea6f02c84c836f30c2ce2a28bfd0446"
+    },
+    "use_contract": {
+      "path": "benchmarks/ct-work-layer-final-v5/use-contract-v1.json",
+      "sha256": "9b997d85afcf2034c18a9b0738aea720760ccd52598581847e0549b6f956d142"
+    },
+    "exceptions": {
+      "path": "benchmarks/ct-work-layer-final-v5/exceptions-v1.json",
+      "sha256": "67800070b5d0f8fa7af930e3795dd4bea91be483c22fb06120781bf3c5dbd41a"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+      "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+    },
+    "source_reinspection": {
+      "path": "benchmarks/ct-source-ownership-v1/source-reinspection-v1.json",
+      "sha256": "44eef4125ead8ed2f3663e25ede91e9f8a792f01d5d974550e4c47373db3844b"
+    }
+  },
+  "canvas_wh": [
+    5860,
+    4587
+  ],
+  "source_wh": [
+    5712,
+    4284
+  ],
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "policy": "Current joint records only. Historical AA context supplies locators, never replacement geometry. No blanket network export or new human approval.",
+  "retired_material_ids": [
+    "AA-F00872",
+    "AA2-LEFT-STAIR-AA5-0",
+    "AA2-LEFT-STAIR-AA6-0",
+    "AA2-UPPER-COMPLEX-GUARD-AA-0-split01",
+    "CL3-Q3-RIGHT-01",
+    "CL3-Q3-RIGHT-02",
+    "CL3-Q3-RIGHT-03",
+    "CL3-Q3-RIGHT-04",
+    "CL3-Q3-RIGHT-05",
+    "CL3-Q3-RIGHT-06",
+    "G06-P06",
+    "G06-P07",
+    "G06-P08",
+    "G06-P09",
+    "G06-P10"
+  ],
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v1.json",
+    "sha256": "ea29a8e39e70e1e0a3722f2be72d10fc76e0adcd761ae10548af001f7949ff0a"
+  },
+  "adoption_status": "AI_source_repaired_working_candidate_prior_human_scopes_inherited",
+  "inherited_stage_is_not_candidate_approval": true
+}

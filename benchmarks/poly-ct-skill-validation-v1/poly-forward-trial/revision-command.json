@@ -1,0 +1,6 @@
+{
+  "command": ".venv/bin/python -m silicon_eye.layer_review --request benchmarks/poly-ct-skill-validation-v1/poly-pending.json --output runs/skill-forward-poly-v1/revision-review",
+  "exit_code": 2,
+  "stdout": "{\"status\": \"FAIL\", \"automatic_network_export_allowed\": false}\n",
+  "stderr": ""
+}

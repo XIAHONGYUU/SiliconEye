@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "task": "Known-chip scoped POLY continuation, supplied human review; not a blind test",
+  "conclusion": "REJECT_PENDING_REVISION_KEEP_CURRENT_V3",
+  "can_adopt_pending_revision": false,
+  "reason": "G26-P01 ends inside its explicit AA cross-section; the lower extension is -46.981 px, violating the locked 8 px relative gate-extension budget.",
+  "current_snapshot": "configs/joint-work-layer-v3.json",
+  "actual_commands": [
+    {
+      "command": ".venv/bin/python -m silicon_eye.layer_review --request benchmarks/poly-ct-skill-validation-v1/poly-pending.json --output runs/skill-forward-poly-v1/revision-review",
+      "exit_code": 2,
+      "stdout": "{\"status\": \"FAIL\", \"automatic_network_export_allowed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-m",
+        "silicon_eye.layer_review",
+        "--request",
+        "runs/skill-forward-poly-v1/inspect-request.json",
+        "--output",
+        "runs/skill-forward-poly-v1/current-inspect"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"automatic_network_export_allowed\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "verification_command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python runs/skill-forward-poly-v1/audit_trial.py",
+  "verification_exit_code": 0,
+  "pending_report_status": "FAIL",
+  "baseline_inspect_status": "PASS",
+  "failure_errors": [
+    {
+      "id": "G26-P01",
+      "reason": "explicit_target_extension_missing"
+    }
+  ],
+  "separate_gates": {
+    "CT": "PASS",
+    "source": "PASS",
+    "reviewed_identity": "PASS"
+  },
+  "relative_gate_extension_budget": {
+    "gate_extension_px": 8,
+    "units": "relative_layout_pixels_not_foundry_rules"
+  },
+  "independent_geometry": {
+    "before": {
+      "poly_bounds": [
+        904.46715,
+        1542.8547,
+        934.46715,
+        1654.981
+      ],
+      "target_local_bounds": [
+        904.46715,
+        1550.8547,
+        934.46715,
+        1646.981
+      ],
+      "upper_extension_px": 8.0,
+      "lower_extension_px": 8.0,
+      "overlap_area_px2": 2883.788999999997
+    },
+    "after": {
+      "poly_bounds": [
+        904.0,
+        1542.0,
+        934.0,
+        1600.0
+      ],
+      "target_local_bounds": [
+        904.0,
+        1550.8547,
+        934.0,
+        1646.981
+      ],
+      "upper_extension_px": 8.854700000000093,
+      "lower_extension_px": -46.980999999999995,
+      "overlap_area_px2": 1474.3589999999972
+    }
+  },
+  "package_statuses": {
+    "revision-review": {
+      "status": "FAIL",
+      "candidate_snapshot": null,
+      "next_snapshot": null
+    },
+    "current-inspect": {
+      "status": "PASS",
+      "candidate_snapshot": null,
+      "next_snapshot": {
+        "path": "configs/joint-work-layer-v3.json",
+        "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+      }
+    }
+  },
+  "continuity_checks": {
+    "revision-review": {
+      "artifact_hashes_match": true,
+      "locked_inputs_still_match": true,
+      "code_hashes_match": true,
+      "all_inherited_documents_exact": true,
+      "budget_exact": true,
+      "coordinate_frames_exact": true,
+      "no_adoption": true,
+      "export_disabled": true,
+      "counts_exact": true
+    },
+    "current-inspect": {
+      "artifact_hashes_match": true,
+      "locked_inputs_still_match": true,
+      "code_hashes_match": true,
+      "all_inherited_documents_exact": true,
+      "budget_exact": true,
+      "coordinate_frames_exact": true,
+      "no_adoption": true,
+      "export_disabled": true,
+      "counts_exact": true
+    }
+  },
+  "cross_layer": {
+    "current_G26_AA_target": "AA-LEFT-STAIR-SHARED-56",
+    "changed_fields": [
+      "layout_outline"
+    ],
+    "changed_ids": [
+      "G26-P01"
+    ],
+    "no_CT_or_AA_change": true,
+    "current_G26_CT_ids": [
+      "CTT-LR-A6-GATE-S000",
+      "CTT-LR-A6-GATE-S001"
+    ],
+    "blue_contact_material": "POLY",
+    "blue_contact_target": "G66-P03-P04-TOP-BUS",
+    "shared_bus_members": [
+      "G66-P03",
+      "G66-P04"
+    ],
+    "retired_error_absent": true,
+    "reviewed_contact_constraints": [
+      {
+        "contact_id": "CT-G66-P03-P04-SHARED-TOP-01",
+        "landing_material": "POLY",
+        "POLY_target": "G66-P03-P04-TOP-BUS",
+        "shared_POLY_member_ids": [
+          "G66-P03",
+          "G66-P04"
+        ],
+        "forbidden_active_contact_ids": [
+          "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+        ],
+        "human_review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      },
+      {
+        "contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000",
+        "landing_material": "AA",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+        "human_review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      }
+    ]
+  },
+  "preserved_unknown_ids": [
+    "U-AA-F01951",
+    "U-AA-F01952",
+    "U-H1",
+    "U-H2",
+    "L-CLIPPED-AA-F01744",
+    "S3-AA4-LEFT-SD-ACCESS"
+  ],
+  "human_review_preserved": "All inherited human_review and prior_human_review documents compare equal; S1/S2 approval remains scoped; S3 exact bus geometry remains AI candidate.",
+  "source_window_defect": {
+    "original_window": [
+      650,
+      1150,
+      1250,
+      1800
+    ],
+    "native_outline_bounds": [
+      604.5,
+      1340.0,
+      645.5,
+      1463.0
+    ],
+    "excludes_native_object": true,
+    "corrected_inspect_window": [
+      500,
+      1200,
+      800,
+      1580
+    ]
+  },
+  "new_human_questions": [],
+  "new_human_question_required": false,
+  "human_corrections_count": null,
+  "safe_next_step": "Continue from current v3. Reject this shortening; inspect correctly located source evidence and local AA correspondence before proposing any new per-ID transaction. Keep AA/CT and reviewed identities unchanged unless evidence separately justifies a jointly scoped change; rerun the shared delivery gate for any future proposal.",
+  "artifacts": {
+    "rejected_package": "runs/skill-forward-poly-v1/revision-review",
+    "rejected_review_page": "runs/skill-forward-poly-v1/revision-review/index.html",
+    "current_inspect": "runs/skill-forward-poly-v1/current-inspect/index.html",
+    "verification_script": "runs/skill-forward-poly-v1/audit_trial.py"
+  },
+  "unverified": [
+    "Complete physical POLY/CT recovery and precise contours",
+    "G26 local source-to-design correspondence beyond existing candidate records",
+    "M1 connectivity, netlist, process, polarity, physical scale, real W/L, PDK DRC/LVS",
+    "New-input or held-out-chip skill performance; this is a known-chip continuation"
+  ],
+  "production_changes": false,
+  "git_push": false,
+  "visual_source_check": {
+    "path": "runs/skill-forward-poly-v1/current-inspect/G26-poly.png",
+    "method": "view_image",
+    "observed": "Corrected native crop was visually inspected; source shows bright contours and strong scan/moire texture. No new exact material boundary or source-to-design registration was inferred."
+  }
+}

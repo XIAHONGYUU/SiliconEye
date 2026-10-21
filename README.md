@@ -15,7 +15,7 @@
 
 ## 当前能力
 
-已实现配准和证据复核工具、区域观察skill、多种AA分割/样本对照和同坐标分歧图；交互Agent结合上下文作材料判断，人工裁决关键语义。已形成有效的局部AA工作方法，已生成局部修订和不同窗口候选；[AA skill v1](skills/silicon-eye-aa-reconstruction/SKILL.md)已在仓库封装为人机协作v1，局部与全幅接续有验证证据，尚未全局安装；当前按[接续与质量控制修订](docs/checkpoints/2026-10-19-aa-control-repair.md)复用成果、限定变更并作前后比较。
+已实现配准和证据复核工具、区域观察及AA重建skill、多种AA分割/样本对照和同坐标分歧图；交互Agent结合上下文作材料判断，人工裁决关键语义。已形成有效的局部AA工作方法，已生成局部修订和不同窗口候选；[AA skill v1](skills/silicon-eye-aa-reconstruction/SKILL.md)已在仓库封装为人机协作v1，局部与全幅接续有验证证据，尚未全局安装；当前按[接续与质量控制修订](docs/checkpoints/2026-10-19-aa-control-repair.md)复用成果、限定变更并作前后比较。
 
 全幅材料精确恢复、自动上下文修订、完整器件/网络提取、仿真就绪网表仍未完成。具体实现、软件测试、物理结论和人审范围分别记录，不以候选或程序成功代表验收。
 
@@ -33,11 +33,21 @@
 
 ## CT当前检查点
 
-[CT工作层v1已工程收口](docs/assets/ct-work-layer-final-v5/index.html)：右上四栅及33条CT已补齐，原10254条CT与全部AA保持；当前10287 CT、334 AA／695 POLY。整层几何检查、458项测试通过，接续时保留既有材料别名。**两小AA、H1/H2及照片边界片段共5个来源受限范围仍为未知，不宣称100%物理孔恢复或新增整层人工像素批准。** [收口检查点](docs/checkpoints/2026-10-21-ct-working-layer-v1-closeout.md)、[使用约束](benchmarks/ct-work-layer-final-v5/use-contract-v1.json)和[验收清单](benchmarks/ct-work-layer-final-v5/acceptance-checklist-v1.json)给出可接续范围；[当前任务](CURRENT_TASK.md)为唯一实时入口。[前版修订记录](docs/checkpoints/2026-10-21-ct-R1-R2-reviewed.md)完整保留。
+当前共同快照由[CURRENT_TASK](CURRENT_TASK.md)定位；最新为AA334／POLY696／CT10287，六处来源／接入限制保留。S3人工纠正已落实为共用POLY栅CT与源漏CT的不同身份，几何、来源及人审身份分门检查。新精确轮廓仍为AI候选，不宣称100%物理恢复、整层像素批准或M1／网表确认。
+
+[POLY重建skill](skills/silicon-eye-poly-reconstruction/SKILL.md)与[CT重建skill](skills/silicon-eye-ct-reconstruction/SKILL.md)已在仓库封装v1；共用[输入输出与局部接续契约](docs/architecture/layer-reconstruction-skill-contract-v1.md)、[交付／验证报告](docs/reviews/2026-10-21-poly-ct-skills.md)。[POLY样稿](docs/assets/poly-skill-package-v1/index.html)和[CT样稿](docs/assets/ct-skill-package-v1/index.html)提供旧新模型与可切换层；skill可以按仓库路径读取，未作全局安装。
+
+[CT工作层早期工程收口](docs/assets/ct-work-layer-final-v5/index.html)及[收口检查点](docs/checkpoints/2026-10-21-ct-working-layer-v1-closeout.md)保留当时的695 POLY／五处限制等历史数值；已由后续共同快照接续，不可作为当前模型入口。
 
 [CT重建工作流](docs/architecture/ct-reconstruction-workflow-v1.md)记录源图定位、AA/POLY联合约束、规则孔阵列、来源反例隔离和整层质量门。几何PASS、程序测试通过与物理批准分别记录，不能互相替代；工艺及尺度未知，尚未执行真实PDK DRC/LVS。
 
 已审范围按原批准保留：[RIGHT6](docs/checkpoints/2026-10-20-right6-ct-reviewed.md)、[局部迁移修订](docs/checkpoints/2026-10-20-ct-transfer-revision.md)、[Q2栅CT](docs/checkpoints/2026-10-20-q2-gate-ct-localization.md)、[上方小MOS](docs/checkpoints/2026-10-20-ct-upper-small-mos-reviewed.md)、[左侧大MOS修订](docs/checkpoints/2026-10-20-ct-left-large-mos-revision.md)、[中下部C/D/F修订](docs/checkpoints/2026-10-20-ct-lower-middle-mos-revision.md)。[此前README完整原文](docs/history/2026-10-20-before-ct-github-README.md)保留各阶段过程，不能将历史待审文字当作当前状态。
+
+[2026-10-21实施前审计](docs/reviews/2026-10-21-aa-poly-ct/report.md)保留当时的接口／质量门缺陷与来源疑点；其中接续、联合检查及三处来源疑点已按下述实施记录分别处理。收口版本已推送6e5bb17，后续本机修改状态查CURRENT_TASK。
+
+[三层接续与联合质量门实施记录](docs/reviews/2026-10-21-joint-continuation/report.md)保留引用、共享结构及跨层退化检查的实现验证；当时保留的来源疑点已在本轮继续修订。
+
+[三处来源修订v1](docs/reviews/2026-10-21-source-ownership.md)保留原争用诊断。用户随后批准S1／S2，并纠正S3蓝色为共用POLY栅端CT；已退休错误源漏身份、补上共用上端POLY，并加人审身份硬门。[当前共同清单v3](configs/joint-work-layer-v3.json)、[新版复核页](docs/assets/ct-source-ownership-reviewed-v2/index.html)及[裁决实施报告](docs/reviews/2026-10-21-source-ownership-adjudication.md)记录最新状态。
 
 ## 本地运行
 

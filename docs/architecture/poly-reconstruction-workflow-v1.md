@@ -74,3 +74,8 @@ AA/POLY工作几何可在上下层证据下联合提出新版本，原图与人�
 - 目标AA交叠/端部满足后仍需查非目标AA；保留真实冲突并阻止定稿，不隐去AA或降低预算。来源轮廓分离也不等于物理必然分离，须回看原照片与人工裁决。
 
 [本轮收口证据](../checkpoints/2026-10-20-poly-closeout.md)。
+
+
+## 仓库skill封装入口（2026-10-21）
+
+接续使用[对应skill](../../skills/silicon-eye-poly-reconstruction/SKILL.md)和[共用交付契约](layer-reconstruction-skill-contract-v1.md)。当前快照由CURRENT_TASK定位，本文历史参数与条数不能覆盖当前共同模型；只修订受影响对象，保留已有裁决与未知。完整验证范围见[封装报告](../reviews/2026-10-21-poly-ct-skills.md)。

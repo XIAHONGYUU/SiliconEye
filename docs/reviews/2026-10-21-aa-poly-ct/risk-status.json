@@ -1,0 +1,57 @@
+{
+  "audited_commit": "6e5bb17fc024f1410f49a580e2e5100eda35e2a6",
+  "published_snapshot": "6e5bb17fc024f1410f49a580e2e5100eda35e2a6",
+  "audit_complete": true,
+  "baseline_geometry_changed": false,
+  "production_code_changed_by_audit": false,
+  "engineering_closeout_retained": true,
+  "automatic_joint_layer_release_recommended": false,
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "P1",
+      "status": "open_not_implemented"
+    },
+    {
+      "id": "F02",
+      "priority": "P1",
+      "status": "open_not_implemented"
+    },
+    {
+      "id": "F03",
+      "priority": "P1",
+      "status": "open_not_implemented"
+    },
+    {
+      "id": "F04",
+      "priority": "P2",
+      "status": "open_not_implemented"
+    },
+    {
+      "id": "F05",
+      "priority": "P2",
+      "status": "open_not_implemented"
+    },
+    {
+      "id": "F06",
+      "priority": "P2",
+      "status": "open_not_implemented"
+    },
+    {
+      "id": "F07",
+      "priority": "P3",
+      "status": "open_not_implemented"
+    }
+  ],
+  "source_conflict_candidates": {
+    "pairs": 16,
+    "hotspots": 3,
+    "not_physical_missing_hole_count": true
+  },
+  "next_bounded_action": "current_joint_snapshot_adapter_and_semantic_joint_gate_then_source_hotspot_reinspection",
+  "evidence": {
+    "path": "docs/reviews/2026-10-21-aa-poly-ct/evidence.json",
+    "sha256": "950c5f1a18c6e0a15e79ce253df4aa14602301f754871b998f8d4e8e6ee5f304"
+  },
+  "new_human_physical_adjudications": false
+}

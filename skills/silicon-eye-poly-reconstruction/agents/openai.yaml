@@ -1,0 +1,4 @@
+interface:
+  display_name: "POLY重建"
+  short_description: "接续已审POLY并局部重建，结合AA与CT验证规则几何、栅端及未知"
+  default_prompt: "使用 $silicon-eye-poly-reconstruction 接续当前共同快照，结合AA与上下层证据重建或局部修订POLY，交付前后对照和联合质量门，保留未知与人审范围。"

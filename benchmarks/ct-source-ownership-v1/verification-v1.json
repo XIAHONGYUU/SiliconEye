@@ -1,0 +1,25 @@
+{
+  "parent_snapshot": "ct-work-layer-final-v5-joint-continuation-v1",
+  "current_snapshot": "ct-source-ownership-v1-joint",
+  "source_revised": 73,
+  "unchanged_CT_records": 10214,
+  "all_CT_geometry_and_identity_exact": true,
+  "all_material_records_exact": true,
+  "original_limitations_and_human_reviews_retained": true,
+  "whole_frame_geometric_PASS_not_physical_truth": true,
+  "former_source_pairs": 16,
+  "current_cross_target_source_pairs": 0,
+  "revised_any_target_near3_pairs": 0,
+  "raw_photos_unchanged": 8,
+  "tests": {
+    "passed": 33,
+    "seconds": 28.29
+  },
+  "page_checks": {
+    "images_visually_inspected": true,
+    "static_links": true,
+    "JS_syntax": true,
+    "browser_interaction": "not_run_file_protocol_blocked"
+  },
+  "git_publication": "not_committed_or_pushed"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "data/test_chip/tile_full/aa.jpg",
+    "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+  },
+  "base": {
+    "path": "benchmarks/ct-work-layer-final-v5/material-model-v1.json",
+    "sha256": "2bd122d3243291e75f25f427b4c070235336bbeebc8e54c78d35242e91240fd9"
+  },
+  "protected": {
+    "path": "docs/reviews/2026-10-21-joint-continuation/noop-protected-aa.json",
+    "sha256": "daa3e34f0a9b5a1490b32b155a5223b0e1d7d42b4c3334222fbc20587931c45c"
+  },
+  "previous_human_review": {
+    "path": "benchmarks/aa-completion-v1/human-review-v2.json",
+    "sha256": "89fea9c80c72d999c70a6872458142ae6a776ab416f7fae4cf5b1c75cbda67c2"
+  },
+  "local_adoption": {
+    "path": "benchmarks/aa-skill-three-task-v1/acceptance-v1.json",
+    "sha256": "cecdce76e92571fae5216875279e5ae25566004efdefa82c5f67bcfe9e6eab88"
+  },
+  "unresolved_observations": {
+    "path": "benchmarks/full-scene-regular-v1/unresolved-AA-v1.json",
+    "sha256": "6c71eb627a282a1d9dc5c25b358a6211363e327678049725ce73468015972148"
+  },
+  "bound_conflicts": {
+    "path": "benchmarks/full-scene-regular-v1/boundary-AA-conflicts-v1.json",
+    "sha256": "471584622802e210156ae959251bdf8ecaf65f6a0308de708069745358e1b039"
+  },
+  "skill": {
+    "path": "benchmarks/aa-full-frame-workflow-v1/skill-under-test.md",
+    "sha256": "b7987921ac1d73effc3a25ffedee792458d51dab0948d6a6bd0d0b5523280d80"
+  },
+  "method": "Reuse full-frame vector geometry; AI-defined scoped corrections, optional existing edge locator; no full-frame model training/inference.",
+  "settings": {
+    "correspondence_residual_limit_px": 0.5,
+    "domain_leak_area_px2": 0.05,
+    "curve_settings": {
+      "blur_x": 31,
+      "blur_y": 5,
+      "curve_sigma": 3,
+      "uncertainty_px": 3,
+      "min_evidence": 1
+    }
+  },
+  "revisions": [],
+  "review_windows": [],
+  "remaining_decisions": [],
+  "release_criteria": {
+    "source_and_coordinates": "locked and per-object correspondence, no blind global overlay",
+    "scope_nonregression": "all non-target objects byte-equivalent; approved blue native contour identical",
+    "geometry": "all positive valid orthogonal, no new overlaps; retained AA objects unchanged",
+    "semantics": "known false bars removed, neighboring tracks separated; AI checks all full-frame views",
+    "human": "new ambiguous boundaries localized, old approved facts reused; full-frame completeness requires evidence",
+    "reproducibility": "one spec entry, no case coordinates in code, outputs/negative tests restored",
+    "status": "experimental until these gates are actually satisfied"
+  },
+  "restrictions": [
+    "No CT or net changes",
+    "No new ML training or remote models",
+    "Original models/reviews and photo bytes immutable",
+    "Do not claim pixel accuracy, runtime improvement or whole-frame acceptance from geometry PASS"
+  ],
+  "revision_note": "Same scoped geometry plan; robust neighbor anchors improve unsupported photo-edge localization. Review UI has wide-context landmark labels; no ML training or changed material roles.",
+  "inspection_windows": [],
+  "joint_snapshot": {
+    "path": "configs/joint-work-layer-v1.json",
+    "sha256": "ea29a8e39e70e1e0a3722f2be72d10fc76e0adcd761ae10548af001f7949ff0a"
+  }
+}
