@@ -1,0 +1,188 @@
+{
+  "reconstructed_diffusion_regions": 846,
+  "candidate_direct_CT_access_regions": 839,
+  "regions_without_direct_CT_evidence": [
+    {
+      "id": "AA-F01744:D0",
+      "AA_target": "AA-F01744",
+      "gate_ids": [
+        "SG-U01-001",
+        "SG-U01-002",
+        "SG-U01-003"
+      ],
+      "layout_bounds": [
+        354.0,
+        522.0,
+        456.0,
+        574.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    },
+    {
+      "id": "AA-F01755:D6",
+      "AA_target": "AA-F01755",
+      "gate_ids": [
+        "G01-P01",
+        "G01-P02",
+        "G01-P03",
+        "G01-P04",
+        "G01-P05",
+        "G01-P06",
+        "G01-P07",
+        "G01-P08",
+        "G01-P09",
+        "G01-P10",
+        "G01-P11",
+        "G01-P12",
+        "G01-P13",
+        "G01-P14",
+        "G01-P15",
+        "G01-P16"
+      ],
+      "layout_bounds": [
+        1208.6666666666667,
+        470.0,
+        1227.8,
+        564.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    },
+    {
+      "id": "AA-F01757:D0",
+      "AA_target": "AA-F01757",
+      "gate_ids": [
+        "G02-P01",
+        "G02-P02",
+        "G02-P03",
+        "G02-P04"
+      ],
+      "layout_bounds": [
+        1749.0,
+        465.0,
+        1757.0,
+        560.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    },
+    {
+      "id": "AA-F01803:D6",
+      "AA_target": "AA-F01803",
+      "gate_ids": [
+        "G05-P01",
+        "G05-P02",
+        "G05-P03",
+        "G05-P04",
+        "G05-P05",
+        "G05-P06",
+        "G05-P07",
+        "G06-P01",
+        "G06-P02",
+        "G06-P03",
+        "G06-P04",
+        "G06-P05"
+      ],
+      "layout_bounds": [
+        3380.727272727273,
+        444.0,
+        3399.272727272727,
+        540.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    },
+    {
+      "id": "AA-F01803:D12",
+      "AA_target": "AA-F01803",
+      "gate_ids": [
+        "G05-P01",
+        "G05-P02",
+        "G05-P03",
+        "G05-P04",
+        "G05-P05",
+        "G05-P06",
+        "G05-P07",
+        "G06-P01",
+        "G06-P02",
+        "G06-P03",
+        "G06-P04",
+        "G06-P05"
+      ],
+      "layout_bounds": [
+        3684.0,
+        444.0,
+        3692.0,
+        540.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    },
+    {
+      "id": "AA-F01804:D0",
+      "AA_target": "AA-F01804",
+      "gate_ids": [
+        "G06-P06",
+        "G06-P07",
+        "G06-P08",
+        "G06-P09",
+        "G06-P10"
+      ],
+      "layout_bounds": [
+        3743.0,
+        439.0,
+        3751.0,
+        538.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    },
+    {
+      "id": "AA-F01804:D5",
+      "AA_target": "AA-F01804",
+      "gate_ids": [
+        "G06-P06",
+        "G06-P07",
+        "G06-P08",
+        "G06-P09",
+        "G06-P10"
+      ],
+      "layout_bounds": [
+        3950.0,
+        439.0,
+        3958.0,
+        538.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    }
+  ],
+  "no_direct_CT_does_not_imply_missing_cut": true,
+  "POLY_without_direct_CT": [
+    {
+      "material_id": "V3_G1",
+      "AA_target": null,
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence_or_body_fragment"
+    },
+    {
+      "material_id": "V3_G2",
+      "AA_target": null,
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence_or_body_fragment"
+    }
+  ],
+  "historical_fragment_exceptions": [
+    "V3_G1",
+    "V3_G2"
+  ],
+  "not_device_counts_or_accuracy": true
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "prior_7044_geometry_and_targets_retained": true,
+  "prior_7044_exact_records_retained": 7039,
+  "prior_7044_source_correction_records": 5,
+  "all335_AA_and695_POLY_records_exact_equal": true,
+  "added_POLY_ids": [
+    "G68-BOTTOM-BUS-01"
+  ],
+  "exact_parent10004_records_retained": 9994,
+  "retired_unaccepted_gate_CT_ids": [
+    "CTR-G-G07-P01-bottom-000",
+    "CTR-G-G07-P01-bottom-001",
+    "CTR-G-G07-P02-bottom-000",
+    "CTR-G-G07-P02-bottom-001",
+    "CTR-G-G07-P03-bottom-000"
+  ],
+  "source_corrected_CT_ids": [
+    "CTT-LL-G18-G03-S000",
+    "CTT-LL-G18-G03-S001",
+    "CTT-LL-G18-G07-S000",
+    "CTT-LL-G18-G07-S001",
+    "CTT-LL-G18-G07-S002"
+  ],
+  "new_CT_count": 26,
+  "new_or_relocalized_source_conflicts_with_other_targets_within3px": [],
+  "all_v1_locked_JSON_unchanged": true,
+  "all_input_hashes_valid": true,
+  "whole_frame_human_accepted": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_static_resources",
+  "references": 60,
+  "selectors": 12,
+  "layer_counts": {
+    "AA": 334,
+    "POLY": 695,
+    "CT": 10287,
+    "UNKNOWN": 5
+  },
+  "browser_render_not_automatically_tested": true,
+  "handler_simulation": {
+    "status": "PASS_handler_simulation",
+    "selectors": 12,
+    "options": 40,
+    "layer_transitions": 8,
+    "browser_render_not_automatically_tested": true
+  }
+}

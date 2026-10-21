@@ -1,0 +1,753 @@
+{
+  "operation": "apply_local_review_revision",
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/material-model-v1.json",
+      "sha256": "14a4f9659f14cf822c4222f98208fe10bb8ce4cb2dd12a27fb2a7db10e9c0498"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/model-v1.json",
+      "sha256": "f5dcd6acfebe34da030885e29fa21f78e73db19ce1103f9fae5d0b5bd19c562f"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/spec-v1.json",
+      "sha256": "50a2130328ea5bfc2c0742669b6e4d71d4695a3bd1868a9e1d5ded9925c5d40c"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/human-review-v1.json",
+      "sha256": "f7ad576da2427e869a741a0575273fe1f4833989287a506e89c5c8f3d5f0c345"
+    },
+    "new_contacts": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/new-contacts-v1.json",
+      "sha256": "d72dbf3a277aee5e25bcaedeebb0ca9873dc062111d8d257c93cdfd6ade8bf36"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/unknown-sites-v1.json",
+      "sha256": "28840dfb2d2dfe11cee7cb8f5c3bccb8f0db06ed63a302c5e0fd7d04df39028b"
+    },
+    "optical_reinspection": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/optical-reinspection-v1.json",
+      "sha256": "0c4bba5d44a4a30138b588abd1c0d5636b4a53850ca35ccb0936e82f30de594b"
+    },
+    "parent_stage_gate": {
+      "path": "benchmarks/ct-full-frame-remaining-v1/stage-gate-v1.json",
+      "sha256": "35ce570c04b2149991da014932d080ac4e9239b6eee318bfd26d9e57aba65229"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "material_changes": {
+    "objects": [
+      {
+        "id": "G68-BOTTOM-BUS-01",
+        "before": null,
+        "after": {
+          "id": "G68-BOTTOM-BUS-01",
+          "material": "POLY",
+          "kind": "shared_gate_terminal_bus",
+          "group_id": "G68",
+          "member_POLY_ids": [
+            "G68-P01",
+            "G68-P02"
+          ],
+          "AA_target": null,
+          "native_outline": [
+            [
+              2248,
+              1681
+            ],
+            [
+              2301,
+              1681
+            ],
+            [
+              2301,
+              1693
+            ],
+            [
+              2248,
+              1693
+            ]
+          ],
+          "layout_outline": [
+            [
+              2359,
+              1844
+            ],
+            [
+              2407,
+              1844
+            ],
+            [
+              2407,
+              1855
+            ],
+            [
+              2359,
+              1855
+            ]
+          ],
+          "source_frame": "poly",
+          "source_photo_ref": {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          "geometry_method": "human_confirmed_shared_bottom_connection_with_AI_candidate_regular_outline",
+          "acceptance": {
+            "joint_geometry": "candidate_AI_outline_not_pixel_truth",
+            "connectivity": "human_confirmed_shared_bottom_POLY"
+          },
+          "net_id": null
+        }
+      }
+    ],
+    "AA_objects": []
+  },
+  "contact_changes": [
+    {
+      "id": "CTR-G-G07-P01-bottom-000",
+      "before": {
+        "id": "CTR-G-G07-P01-bottom-000",
+        "family": "G-G07-P01-bottom",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          4898.0,
+          526.0
+        ],
+        "layout_outline": [
+          [
+            4895.5,
+            523.5
+          ],
+          [
+            4900.5,
+            523.5
+          ],
+          [
+            4900.5,
+            528.5
+          ],
+          [
+            4895.5,
+            528.5
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            4929.0,
+            350.0
+          ],
+          "peak_gray": 215.0,
+          "local_residual": 26.944745488827152,
+          "source_roi": [
+            4927,
+            298,
+            4955,
+            351
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G07-P01"
+      },
+      "after": null,
+      "reason": "Q3A explicit no-bottom-gate-CT for P02; same source guard bar independently inspected for sibling P01/P03",
+      "human_scope": "P02 semantic decision; P01/P03 AI consistency repair"
+    },
+    {
+      "id": "CTR-G-G07-P01-bottom-001",
+      "before": {
+        "id": "CTR-G-G07-P01-bottom-001",
+        "family": "G-G07-P01-bottom",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          4910.0,
+          526.0
+        ],
+        "layout_outline": [
+          [
+            4907.5,
+            523.5
+          ],
+          [
+            4912.5,
+            523.5
+          ],
+          [
+            4912.5,
+            528.5
+          ],
+          [
+            4907.5,
+            528.5
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            4943.0,
+            350.0
+          ],
+          "peak_gray": 231.0,
+          "local_residual": 42.53625728208087,
+          "source_roi": [
+            4927,
+            298,
+            4955,
+            351
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G07-P01"
+      },
+      "after": null,
+      "reason": "Q3A explicit no-bottom-gate-CT for P02; same source guard bar independently inspected for sibling P01/P03",
+      "human_scope": "P02 semantic decision; P01/P03 AI consistency repair"
+    },
+    {
+      "id": "CTR-G-G07-P02-bottom-000",
+      "before": {
+        "id": "CTR-G-G07-P02-bottom-000",
+        "family": "G-G07-P02-bottom",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          4956.5,
+          526.0
+        ],
+        "layout_outline": [
+          [
+            4954.0,
+            523.5
+          ],
+          [
+            4959.0,
+            523.5
+          ],
+          [
+            4959.0,
+            528.5
+          ],
+          [
+            4954.0,
+            528.5
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            4978.0,
+            350.0
+          ],
+          "peak_gray": 227.0,
+          "local_residual": 38.24824643626803,
+          "source_roi": [
+            4972,
+            299,
+            4999,
+            352
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G07-P02"
+      },
+      "after": null,
+      "reason": "Q3A explicit no-bottom-gate-CT for P02; same source guard bar independently inspected for sibling P01/P03",
+      "human_scope": "P02 semantic decision; P01/P03 AI consistency repair"
+    },
+    {
+      "id": "CTR-G-G07-P02-bottom-001",
+      "before": {
+        "id": "CTR-G-G07-P02-bottom-001",
+        "family": "G-G07-P02-bottom",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          4968.5,
+          526.0
+        ],
+        "layout_outline": [
+          [
+            4966.0,
+            523.5
+          ],
+          [
+            4971.0,
+            523.5
+          ],
+          [
+            4971.0,
+            528.5
+          ],
+          [
+            4966.0,
+            528.5
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            4993.0,
+            350.0
+          ],
+          "peak_gray": 224.0,
+          "local_residual": 34.36737263832478,
+          "source_roi": [
+            4972,
+            299,
+            4999,
+            352
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G07-P02"
+      },
+      "after": null,
+      "reason": "Q3A explicit no-bottom-gate-CT for P02; same source guard bar independently inspected for sibling P01/P03",
+      "human_scope": "P02 semantic decision; P01/P03 AI consistency repair"
+    },
+    {
+      "id": "CTR-G-G07-P03-bottom-000",
+      "before": {
+        "id": "CTR-G-G07-P03-bottom-000",
+        "family": "G-G07-P03-bottom",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "POLY",
+        "layout_center": [
+          5021.0,
+          526.0
+        ],
+        "layout_outline": [
+          [
+            5018.5,
+            523.5
+          ],
+          [
+            5023.5,
+            523.5
+          ],
+          [
+            5023.5,
+            528.5
+          ],
+          [
+            5018.5,
+            528.5
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "native_center": [
+            5032.0,
+            351.0
+          ],
+          "peak_gray": 229.0,
+          "local_residual": 42.639254349145745,
+          "source_roi": [
+            5016,
+            300,
+            5044,
+            353
+          ],
+          "supported": true,
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "algorithm_detected": true
+        },
+        "terminal_role": "gate_or_POLY_terminal_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "POLY_target": "G07-P03"
+      },
+      "after": null,
+      "reason": "Q3A explicit no-bottom-gate-CT for P02; same source guard bar independently inspected for sibling P01/P03",
+      "human_scope": "P02 semantic decision; P01/P03 AI consistency repair"
+    }
+  ],
+  "source_correspondence_corrections": [
+    {
+      "id": "CTT-LL-G18-G03-S000",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          915,
+          1325
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 69.53943861148664,
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "source_roi": [
+          894,
+          1321,
+          948,
+          1381
+        ],
+        "native_center": [
+          915,
+          1325
+        ],
+        "source_observation_id": "LL-G18-G03-OBS00",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true
+      },
+      "after_source_evidence": {
+        "source_native_center_xy": [
+          905,
+          1362
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 51.445379922724214,
+        "evidence_type": "AI_independent_reinspection_after_human_Q1_bottom_terminal_decision",
+        "source_roi": [
+          885,
+          1352,
+          940,
+          1372
+        ],
+        "native_center": [
+          905,
+          1362
+        ],
+        "source_observation_id": "ADJ-RELOCALIZE-CTT-LL-G18-G03-S000",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true,
+        "native_locator_status": "relocalized_top_terminal_bar_preserving_prior_evidence_in_history",
+        "algorithm_detected": true
+      },
+      "reason": "Q1 ownership counterexample prompted full G18 top-row consistency inspection; old pick lay on the preceding device row. Human approved topology retained; new exact source is an AI observation."
+    },
+    {
+      "id": "CTT-LL-G18-G03-S001",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          930,
+          1325
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 57.69219163275258,
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "source_roi": [
+          894,
+          1321,
+          948,
+          1381
+        ],
+        "native_center": [
+          930,
+          1325
+        ],
+        "source_observation_id": "LL-G18-G03-OBS01",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true
+      },
+      "after_source_evidence": {
+        "source_native_center_xy": [
+          921,
+          1362
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 54.812501130344515,
+        "evidence_type": "AI_independent_reinspection_after_human_Q1_bottom_terminal_decision",
+        "source_roi": [
+          885,
+          1352,
+          940,
+          1372
+        ],
+        "native_center": [
+          921,
+          1362
+        ],
+        "source_observation_id": "ADJ-RELOCALIZE-CTT-LL-G18-G03-S001",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true,
+        "native_locator_status": "relocalized_top_terminal_bar_preserving_prior_evidence_in_history",
+        "algorithm_detected": true
+      },
+      "reason": "Q1 ownership counterexample prompted full G18 top-row consistency inspection; old pick lay on the preceding device row. Human approved topology retained; new exact source is an AI observation."
+    },
+    {
+      "id": "CTT-LL-G18-G07-S000",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          1203,
+          1320
+        ],
+        "peak_gray": 226.0,
+        "local_residual": 48.940845869157954,
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "source_roi": [
+          1188,
+          1320,
+          1241,
+          1380
+        ],
+        "native_center": [
+          1203,
+          1320
+        ],
+        "source_observation_id": "LL-G18-G07-OBS00",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true
+      },
+      "after_source_evidence": {
+        "source_native_center_xy": [
+          1199,
+          1361
+        ],
+        "peak_gray": 243.0,
+        "local_residual": 59.23660837572541,
+        "evidence_type": "AI_independent_reinspection_after_human_Q1_bottom_terminal_decision",
+        "source_roi": [
+          1190,
+          1351,
+          1245,
+          1370
+        ],
+        "native_center": [
+          1199,
+          1361
+        ],
+        "source_observation_id": "ADJ-RELOCALIZE-CTT-LL-G18-G07-S000",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true,
+        "native_locator_status": "relocalized_top_terminal_bar_preserving_prior_evidence_in_history",
+        "algorithm_detected": true
+      },
+      "reason": "Q1 ownership counterexample prompted full G18 top-row consistency inspection; old pick lay on the preceding device row. Human approved topology retained; new exact source is an AI observation."
+    },
+    {
+      "id": "CTT-LL-G18-G07-S001",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          1213,
+          1320
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 44.93787279458931,
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "source_roi": [
+          1188,
+          1320,
+          1241,
+          1380
+        ],
+        "native_center": [
+          1213,
+          1320
+        ],
+        "source_observation_id": "LL-G18-G07-OBS01",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true
+      },
+      "after_source_evidence": {
+        "source_native_center_xy": [
+          1215,
+          1361
+        ],
+        "peak_gray": 248.0,
+        "local_residual": 50.38393268394947,
+        "evidence_type": "AI_independent_reinspection_after_human_Q1_bottom_terminal_decision",
+        "source_roi": [
+          1190,
+          1351,
+          1245,
+          1370
+        ],
+        "native_center": [
+          1215,
+          1361
+        ],
+        "source_observation_id": "ADJ-RELOCALIZE-CTT-LL-G18-G07-S001",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true,
+        "native_locator_status": "relocalized_top_terminal_bar_preserving_prior_evidence_in_history",
+        "algorithm_detected": true
+      },
+      "reason": "Q1 ownership counterexample prompted full G18 top-row consistency inspection; old pick lay on the preceding device row. Human approved topology retained; new exact source is an AI observation."
+    },
+    {
+      "id": "CTT-LL-G18-G07-S002",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          1229,
+          1320
+        ],
+        "peak_gray": 243.0,
+        "local_residual": 63.28037199130827,
+        "evidence_type": "algorithm_peak_with_AI_local_material_correspondence",
+        "source_roi": [
+          1188,
+          1320,
+          1241,
+          1380
+        ],
+        "native_center": [
+          1229,
+          1320
+        ],
+        "source_observation_id": "LL-G18-G07-OBS02",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true
+      },
+      "after_source_evidence": {
+        "source_native_center_xy": [
+          1230,
+          1361
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 61.799000791360726,
+        "evidence_type": "AI_independent_reinspection_after_human_Q1_bottom_terminal_decision",
+        "source_roi": [
+          1190,
+          1351,
+          1245,
+          1370
+        ],
+        "native_center": [
+          1230,
+          1361
+        ],
+        "source_observation_id": "ADJ-RELOCALIZE-CTT-LL-G18-G07-S002",
+        "evidence_tier": "terminal_2d_measured_local_peak",
+        "supported": true,
+        "native_locator_status": "relocalized_top_terminal_bar_preserving_prior_evidence_in_history",
+        "algorithm_detected": true
+      },
+      "reason": "Q1 ownership counterexample prompted full G18 top-row consistency inspection; old pick lay on the preceding device row. Human approved topology retained; new exact source is an AI observation."
+    }
+  ],
+  "review_images": [],
+  "cases": [
+    {
+      "id": "Q1",
+      "title": "四管下端栅CT；上侧亮条为环CT",
+      "source_bbox": [
+        620,
+        1100,
+        1700,
+        1510
+      ],
+      "layout_bbox": [
+        960,
+        1350,
+        1620,
+        1810
+      ],
+      "scope": "人审身份／方向与AI精确几何分开；原图与规则图各自保留坐标，不是盲投影。"
+    },
+    {
+      "id": "Q2",
+      "title": "下端共用POLY引出及连接处CT",
+      "source_bbox": [
+        2070,
+        1300,
+        2430,
+        1770
+      ],
+      "layout_bbox": [
+        2260,
+        1320,
+        2525,
+        1900
+      ],
+      "scope": "人审身份／方向与AI精确几何分开；原图与规则图各自保留坐标，不是盲投影。"
+    },
+    {
+      "id": "Q3A",
+      "title": "仅上端栅CT；A改对应靠近栅极的内环",
+      "source_bbox": [
+        4846,
+        111,
+        5126,
+        336
+      ],
+      "layout_bbox": [
+        4815.5,
+        323.0,
+        5109.5,
+        670.0
+      ],
+      "scope": "人审身份／方向与AI精确几何分开；原图与规则图各自保留坐标，不是盲投影。"
+    },
+    {
+      "id": "Q3B",
+      "title": "G栅端／A环对应已确认",
+      "source_bbox": [
+        952,
+        3136,
+        1232,
+        3361
+      ],
+      "layout_bbox": [
+        1154.7730428571429,
+        3174.8774,
+        1439.7730428571429,
+        3451.4025
+      ],
+      "scope": "人审身份／方向与AI精确几何分开；原图与规则图各自保留坐标，不是盲投影。"
+    },
+    {
+      "id": "Q3C",
+      "title": "G栅端／A环对应已确认",
+      "source_bbox": [
+        4964,
+        328,
+        5244,
+        553
+      ],
+      "layout_bbox": [
+        4940.5,
+        567.0,
+        5228.5,
+        850.0
+      ],
+      "scope": "人审身份／方向与AI精确几何分开；原图与规则图各自保留坐标，不是盲投影。"
+    }
+  ],
+  "review_title": "CT裁决执行：Q1下端、Q2共用POLY、Q3内环对应",
+  "review_notes": "五项语义裁决已记录。旧快照不覆盖；新精确几何仍是候选，整层完整性独立检查。"
+}

@@ -1,0 +1,46 @@
+{
+  "state": "FROZEN_REVIEW_CANDIDATE_NOT_ACCEPTED",
+  "whole_frame_complete": false,
+  "human_accepted": false,
+  "parent_ref": {
+    "path": "benchmarks/ct-full-frame-adjudication-v2/model-v1.json",
+    "sha256": "bd3e4a5b5aec7539a32059de2c8c4046d853da7a875a1857eefb21c6063d9196"
+  },
+  "assets_index": {
+    "path": "docs/assets/ct-work-layer-closeout-v3/index.html",
+    "sha256": "72eeadec499313ee5e41f8ed619fe9a36b921d145438767da6cef3659e646799"
+  },
+  "locked_files": {
+    "preflight-geometry-v1.json": "763a1b330734c51fa7e40ac801dc0791a79c1586d09e7209fb962faa1972cfa2",
+    "material-model-v1.json": "cfc4ae93b458da91c42e3fa58cdfd49b95730ff64cc527f565de9fd3a276daa6",
+    "spec-v1.json": "1b87daa233ebac2bf02dcebb3f7a933c094aacde26d724e9188d261b019c76fd",
+    "ledger-v1.json": "77fc7e972a0e1cd3fa38dcc25e26f2f13b4356d533f75903228f9e1f9b0d2884",
+    "verification-v1.json": "e9a0912bb8fb997a72581b761d410c4ad1b9adb011bd93832916bf5f2f16cfff",
+    "source-ownership-check-v1.json": "9c8d8ee60b8d73fc4ea37afe4ea043b6b0654fdecfd45c50e588613cc078bfcb",
+    "review-questions-v1.json": "9e1c3b98ac36c845c87eef387007aaf28897d67a9cae1d79ecced3320942853a",
+    "report-v1.json": "c6d03cb6b689bcdf169ba0dd36b6fe4d624c5db782497945b04167aa0864fb98",
+    "port-source-checks-v1.json": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae",
+    "review-windows-v1.json": "34f734907fcd7eee6d9d525385039dccdbd26e72a4200c03ab099ef5010dc707",
+    "candidate-decisions-v1.json": "64a5fa743afc874a2d2726c597fc0ae1f034730d95376bd9377bbc691d20c526",
+    "preservation-check-v1.json": "ae10b9de872fc17f2fa06fdd265a689d1ae214578a27d658e994c68889c7d8f7",
+    "new-contacts-v1.json": "260c5f8ead7917a0ad7ee5f5d753b78f2647e93790d34d1392a935ed42cf5353",
+    "residual20-disposition-v1.json": "cd16d439045e3b528a0d845521786371906b47a661e467d2b597ca00135fdf4d",
+    "authorization-v1.json": "eea2372e9e2bb2ca827fa9039434c59e3a739d1cba52a7b5bf4bf60a81ffcab1",
+    "unknown-sites-v1.json": "029c4f0bf8512f74a6ddf2494b962bdafe61b1bad9e1ade56d37c23018ee6b0a",
+    "source-reinspection-v1.json": "e019ec10fab865557a17976dc0adb098f911236cb7dfb5d3f2effd218be4c9de",
+    "stage-gate-v1.json": "22a3fd3702cf8ed328677210a99ba954799932bc40b46c7a696a5d9c7a14649b",
+    "terminal-access-v1.json": "7bae14d786c2bce5d70f2616a9991e5cda49dd6e9b95e1fe9276aea597f390ef",
+    "model-v1.json": "714a8aa3e734d48977baa6206cfe2de556bf2944789c2b5358a8908fcb73f6d5",
+    "access-summary-v1.json": "c7ff4846b97510df172e1da02191a0b5af271cd7fe9af9fb3a20647aea873485"
+  },
+  "rebuild_command": ".venv/bin/python -m silicon_eye.ct_transfer --spec benchmarks/ct-work-layer-closeout-v3/spec-v1.json --output runs/NEW_DIR",
+  "not_physical_PDK_DRC": true,
+  "code_sha256": {
+    "silicon_eye/ct_transfer.py": "4f3554b0dc3e8af2e7547d20d1b17db3a325409d15ca22619b7b25a740b69734",
+    "tests/test_ct_transfer.py": "6435ba0d6dcaa349fa1b66c0747448741b3dde44abbb43e65572a62f54f3677e"
+  },
+  "recipes": {
+    "package_ct_work_layer_v3.py": "73086367825fa742a879951123390e2ccf0657f1cab871aca90173ab8b885135",
+    "prepare_ct_work_layer_v3.py": "872b7dcdc87d1b6f883c7acbfa64fed09e1c003e36ec7fda0259eebcb771624f"
+  }
+}

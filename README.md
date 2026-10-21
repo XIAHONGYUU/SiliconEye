@@ -33,7 +33,7 @@
 
 ## CT当前检查点
 
-[CT全幅剩余范围复核包](docs/assets/ct-full-frame-remaining-v1/index.html)保存10004条工作记录（原7044＋新增2960候选）和未改动的695 POLY／335 AA材料对象。安全候选子集的几何检查通过；**整层仍HOLD，未全幅定稿，未封装CT skill**。Q1左侧四管栅端、Q2 U10端部和Q3环／栅端来源对应等待人工裁决；只做相关局部修订，不要求重审全部孔。[当前任务](CURRENT_TASK.md)是唯一实时入口，[全幅检查点](docs/checkpoints/2026-10-20-ct-full-frame-remaining.md)保存证据与限制，[日终交接](docs/checkpoints/2026-10-20-ct-github-handoff.md)保存本次Git提交范围与验证。
+[CT工作层v1已工程收口](docs/assets/ct-work-layer-final-v5/index.html)：右上四栅及33条CT已补齐，原10254条CT与全部AA保持；当前10287 CT、334 AA／695 POLY。整层几何检查、458项测试通过，接续时保留既有材料别名。**两小AA、H1/H2及照片边界片段共5个来源受限范围仍为未知，不宣称100%物理孔恢复或新增整层人工像素批准。** [收口检查点](docs/checkpoints/2026-10-21-ct-working-layer-v1-closeout.md)、[使用约束](benchmarks/ct-work-layer-final-v5/use-contract-v1.json)和[验收清单](benchmarks/ct-work-layer-final-v5/acceptance-checklist-v1.json)给出可接续范围；[当前任务](CURRENT_TASK.md)为唯一实时入口。[前版修订记录](docs/checkpoints/2026-10-21-ct-R1-R2-reviewed.md)完整保留。
 
 [CT重建工作流](docs/architecture/ct-reconstruction-workflow-v1.md)记录源图定位、AA/POLY联合约束、规则孔阵列、来源反例隔离和整层质量门。几何PASS、程序测试通过与物理批准分别记录，不能互相替代；工艺及尺度未知，尚未执行真实PDK DRC/LVS。
 

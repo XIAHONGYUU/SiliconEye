@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 0.9999999999999999,
+  "minimum_POLY_clearance_px": 1.4999999999995453,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 10287,
+  "physical_PDK_DRC": false,
+  "unchanged_parent_contacts": 10254,
+  "revised_contact_count": 0,
+  "new_contact_count": 33,
+  "source_correspondence_revision_ids": [],
+  "material_revision_ids": [
+    "G06-P06",
+    "G06-P07",
+    "G06-P08",
+    "G06-P09",
+    "G06-P10",
+    "G06R-P01",
+    "G06R-P02",
+    "G06R-P03",
+    "G06R-P04"
+  ],
+  "human_review": "scoped decisions retained; revised geometry and new CT pending review",
+  "implementation_sha256": "e8920cc830dcdee9328c2db7dd0d0542f860bc87a08a5cc46fc558cb2bbf68d5",
+  "stage_status": "WORK_LAYER_V1_CLOSED_WITH_LIMITATIONS",
+  "engineering_closeout_complete": true,
+  "whole_frame_complete": false,
+  "human_acceptance": false,
+  "source_correspondence_status": "four_gate_conflict_resolved_by_source_recheck",
+  "source_limits_remain_open": [
+    "U-AA-F01951",
+    "U-AA-F01952",
+    "U-H1",
+    "U-H2",
+    "L-CLIPPED-AA-F01744"
+  ]
+}

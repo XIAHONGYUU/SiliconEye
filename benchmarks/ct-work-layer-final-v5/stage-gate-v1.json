@@ -1,0 +1,31 @@
+{
+  "status": "WORK_LAYER_V1_CLOSED_WITH_LIMITATIONS",
+  "engineering_closeout_complete": true,
+  "geometry_status": "PASS",
+  "source_supported_work_layer_ready": true,
+  "closed_cases": [
+    "R1A",
+    "R1B",
+    "R2",
+    "R1B-COUNT"
+  ],
+  "count_review_basis": "AI_raw_photo_recheck_plus_user_authorized_implementation",
+  "blocking_human_cases": [],
+  "requires_user_action_now": false,
+  "source_limitations_open": [
+    "U-AA-F01951",
+    "U-AA-F01952",
+    "U-H1",
+    "U-H2",
+    "L-CLIPPED-AA-F01744"
+  ],
+  "whole_frame_complete": false,
+  "physical_all_CT_recovered": false,
+  "overall_human_acceptance": false,
+  "human_acceptance_scope": "prior scoped decisions inherited; user authorized engineering closeout, not a new per-pixel full-layer approval",
+  "CT_count": 10287,
+  "AA_count": 334,
+  "POLY_count": 695,
+  "physical_PDK_DRC": false,
+  "physical_limitations_not_relabelled_as_pass": true
+}

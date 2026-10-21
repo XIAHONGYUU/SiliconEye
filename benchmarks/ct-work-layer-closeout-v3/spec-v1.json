@@ -1,0 +1,3499 @@
+{
+  "operation": "apply_local_review_revision",
+  "audit_terminal_access": true,
+  "inputs": {
+    "materials": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/material-model-v1.json",
+      "sha256": "cde42f572e7852e40ceaa3db53ee0b98920160b9868c9a13b73fc431e3125d62"
+    },
+    "contacts": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/model-v1.json",
+      "sha256": "bd3e4a5b5aec7539a32059de2c8c4046d853da7a875a1857eefb21c6063d9196"
+    },
+    "parent_spec": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/spec-v1.json",
+      "sha256": "b087ff4004878a57bfd82e19cd06cae468fe702a8a8af79df81b1c03fb4cf875"
+    },
+    "photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "human_review": {
+      "path": "benchmarks/ct-work-layer-closeout-v3/authorization-v1.json",
+      "sha256": "eea2372e9e2bb2ca827fa9039434c59e3a739d1cba52a7b5bf4bf60a81ffcab1"
+    },
+    "new_contacts": {
+      "path": "benchmarks/ct-work-layer-closeout-v3/new-contacts-v1.json",
+      "sha256": "260c5f8ead7917a0ad7ee5f5d753b78f2647e93790d34d1392a935ed42cf5353"
+    },
+    "unknown_sites": {
+      "path": "benchmarks/ct-work-layer-closeout-v3/unknown-sites-v1.json",
+      "sha256": "029c4f0bf8512f74a6ddf2494b962bdafe61b1bad9e1ade56d37c23018ee6b0a"
+    },
+    "source_reinspection": {
+      "path": "benchmarks/ct-work-layer-closeout-v3/source-reinspection-v1.json",
+      "sha256": "e019ec10fab865557a17976dc0adb098f911236cb7dfb5d3f2effd218be4c9de"
+    },
+    "residual20": {
+      "path": "benchmarks/ct-work-layer-closeout-v3/residual20-disposition-v1.json",
+      "sha256": "cd16d439045e3b528a0d845521786371906b47a661e467d2b597ca00135fdf4d"
+    },
+    "port_checks": {
+      "path": "benchmarks/ct-work-layer-closeout-v3/port-source-checks-v1.json",
+      "sha256": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae"
+    },
+    "prior_decisions": {
+      "path": "benchmarks/ct-full-frame-adjudication-v2/human-review-v1.json",
+      "sha256": "f7ad576da2427e869a741a0575273fe1f4833989287a506e89c5c8f3d5f0c345"
+    }
+  },
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "material_changes": {
+    "objects": [],
+    "AA_objects": []
+  },
+  "contact_changes": [
+    {
+      "id": "CTX-CTT-BAND-AA-G001-00-S000",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-00-S000",
+        "family": "BAND-AA-G001-00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2411.9142857142856,
+          1331.5
+        ],
+        "layout_outline": [
+          [
+            2409.4142857142856,
+            1329.0
+          ],
+          [
+            2414.4142857142856,
+            1329.0
+          ],
+          [
+            2414.4142857142856,
+            1334.0
+          ],
+          [
+            2409.4142857142856,
+            1334.0
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2181.0,
+            1124.6807861328125
+          ],
+          "peak_gray": 242.99942016601562,
+          "local_residual": 133.52560424804688,
+          "native_center": [
+            2181.0,
+            1124.6807861328125
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-00-116",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2065.0,
+              1127.3523880012185
+            ],
+            [
+              2153.0,
+              1125.3256563193868
+            ],
+            [
+              2240.0,
+              1123.3219556793938
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-01-S000",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-01-S000",
+        "family": "BAND-AA-G001-01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2348.9180327868853,
+          1870.0
+        ],
+        "layout_outline": [
+          [
+            2346.4180327868853,
+            1867.5
+          ],
+          [
+            2351.4180327868853,
+            1867.5
+          ],
+          [
+            2351.4180327868853,
+            1872.5
+          ],
+          [
+            2346.4180327868853,
+            1872.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2240.0,
+            1706.613525390625
+          ],
+          "peak_gray": 250.83505249023438,
+          "local_residual": 62.55354309082031,
+          "native_center": [
+            2240.0,
+            1706.613525390625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-01-11",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2229.0,
+              1705.1678606608762
+            ],
+            [
+              2292.0,
+              1707.7206949046297
+            ],
+            [
+              2351.0,
+              1710.1114444344942
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-01-S001",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-01-S001",
+        "family": "BAND-AA-G001-01",
+        "column": 1,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2361.9918032786886,
+          1870.0
+        ],
+        "layout_outline": [
+          [
+            2359.4918032786886,
+            1867.5
+          ],
+          [
+            2364.4918032786886,
+            1867.5
+          ],
+          [
+            2364.4918032786886,
+            1872.5
+          ],
+          [
+            2359.4918032786886,
+            1872.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2255.0,
+            1705.221435546875
+          ],
+          "peak_gray": 246.6637420654297,
+          "local_residual": 70.02578735351562,
+          "native_center": [
+            2255.0,
+            1705.221435546875
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-01-26",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2229.0,
+              1705.1678606608762
+            ],
+            [
+              2292.0,
+              1707.7206949046297
+            ],
+            [
+              2351.0,
+              1710.1114444344942
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-01-S002",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-01-S002",
+        "family": "BAND-AA-G001-01",
+        "column": 2,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2375.065573770492,
+          1870.0
+        ],
+        "layout_outline": [
+          [
+            2372.565573770492,
+            1867.5
+          ],
+          [
+            2377.565573770492,
+            1867.5
+          ],
+          [
+            2377.565573770492,
+            1872.5
+          ],
+          [
+            2372.565573770492,
+            1872.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2271.0,
+            1707.8697509765625
+          ],
+          "peak_gray": 252.0006561279297,
+          "local_residual": 74.60313415527344,
+          "native_center": [
+            2271.0,
+            1707.8697509765625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-01-42",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2229.0,
+              1705.1678606608762
+            ],
+            [
+              2292.0,
+              1707.7206949046297
+            ],
+            [
+              2351.0,
+              1710.1114444344942
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-01-S003",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-01-S003",
+        "family": "BAND-AA-G001-01",
+        "column": 3,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2388.1393442622953,
+          1870.0
+        ],
+        "layout_outline": [
+          [
+            2385.6393442622953,
+            1867.5
+          ],
+          [
+            2390.6393442622953,
+            1867.5
+          ],
+          [
+            2390.6393442622953,
+            1872.5
+          ],
+          [
+            2385.6393442622953,
+            1872.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2286.0,
+            1707.4775390625
+          ],
+          "peak_gray": 249.83978271484375,
+          "local_residual": 81.81857299804688,
+          "native_center": [
+            2286.0,
+            1707.4775390625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-01-57",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2229.0,
+              1705.1678606608762
+            ],
+            [
+              2292.0,
+              1707.7206949046297
+            ],
+            [
+              2351.0,
+              1710.1114444344942
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-01-S004",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-01-S004",
+        "family": "BAND-AA-G001-01",
+        "column": 4,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2401.2131147540986,
+          1870.0
+        ],
+        "layout_outline": [
+          [
+            2398.7131147540986,
+            1867.5
+          ],
+          [
+            2403.7131147540986,
+            1867.5
+          ],
+          [
+            2403.7131147540986,
+            1872.5
+          ],
+          [
+            2398.7131147540986,
+            1872.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2301.0,
+            1706.08544921875
+          ],
+          "peak_gray": 247.1849822998047,
+          "local_residual": 63.58952331542969,
+          "native_center": [
+            2301.0,
+            1706.08544921875
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-01-72",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2229.0,
+              1705.1678606608762
+            ],
+            [
+              2292.0,
+              1707.7206949046297
+            ],
+            [
+              2351.0,
+              1710.1114444344942
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-01-S005",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-01-S005",
+        "family": "BAND-AA-G001-01",
+        "column": 5,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2414.286885245902,
+          1870.0
+        ],
+        "layout_outline": [
+          [
+            2411.786885245902,
+            1867.5
+          ],
+          [
+            2416.786885245902,
+            1867.5
+          ],
+          [
+            2416.786885245902,
+            1872.5
+          ],
+          [
+            2411.786885245902,
+            1872.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2317.0,
+            1708.7337646484375
+          ],
+          "peak_gray": 251.9937744140625,
+          "local_residual": 104.24101257324219,
+          "native_center": [
+            2317.0,
+            1708.7337646484375
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-01-88",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2229.0,
+              1705.1678606608762
+            ],
+            [
+              2292.0,
+              1707.7206949046297
+            ],
+            [
+              2351.0,
+              1710.1114444344942
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-02-S000",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-02-S000",
+        "family": "BAND-AA-G001-02",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2340.5,
+          1355.857142857143
+        ],
+        "layout_outline": [
+          [
+            2338.0,
+            1353.357142857143
+          ],
+          [
+            2343.0,
+            1353.357142857143
+          ],
+          [
+            2343.0,
+            1358.357142857143
+          ],
+          [
+            2338.0,
+            1358.357142857143
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2145.302978515625,
+            1151.0
+          ],
+          "peak_gray": 239.97366333007812,
+          "local_residual": 135.78355407714844,
+          "native_center": [
+            2145.302978515625,
+            1151.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-02-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2140.313429146141,
+              1121.0
+            ],
+            [
+              2169.263159769065,
+              1266.0
+            ],
+            [
+              2179.8447854450305,
+              1319.0
+            ],
+            [
+              2188.429877974587,
+              1362.0
+            ],
+            [
+              2198.212890391989,
+              1411.0
+            ],
+            [
+              2207.995902809391,
+              1460.0
+            ],
+            [
+              2215.982035395025,
+              1500.0
+            ],
+            [
+              2224.1678212953,
+              1541.0
+            ],
+            [
+              2234.150487027343,
+              1591.0
+            ],
+            [
+              2245.930032591153,
+              1650.0
+            ],
+            [
+              2257.7095781549638,
+              1709.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-02-S013",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-02-S013",
+        "family": "BAND-AA-G001-02",
+        "column": 0,
+        "row": 13,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2340.5,
+          1530.892857142857
+        ],
+        "layout_outline": [
+          [
+            2338.0,
+            1528.392857142857
+          ],
+          [
+            2343.0,
+            1528.392857142857
+          ],
+          [
+            2343.0,
+            1533.392857142857
+          ],
+          [
+            2338.0,
+            1533.392857142857
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2184.837890625,
+            1339.0
+          ],
+          "peak_gray": 211.5401611328125,
+          "local_residual": 57.828643798828125,
+          "native_center": [
+            2184.837890625,
+            1339.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-02-218",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2140.313429146141,
+              1121.0
+            ],
+            [
+              2169.263159769065,
+              1266.0
+            ],
+            [
+              2179.8447854450305,
+              1319.0
+            ],
+            [
+              2188.429877974587,
+              1362.0
+            ],
+            [
+              2198.212890391989,
+              1411.0
+            ],
+            [
+              2207.995902809391,
+              1460.0
+            ],
+            [
+              2215.982035395025,
+              1500.0
+            ],
+            [
+              2224.1678212953,
+              1541.0
+            ],
+            [
+              2234.150487027343,
+              1591.0
+            ],
+            [
+              2245.930032591153,
+              1650.0
+            ],
+            [
+              2257.7095781549638,
+              1709.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-02-S014",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-02-S014",
+        "family": "BAND-AA-G001-02",
+        "column": 0,
+        "row": 14,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2340.5,
+          1544.357142857143
+        ],
+        "layout_outline": [
+          [
+            2338.0,
+            1541.857142857143
+          ],
+          [
+            2343.0,
+            1541.857142857143
+          ],
+          [
+            2343.0,
+            1546.857142857143
+          ],
+          [
+            2338.0,
+            1546.857142857143
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2186.0341796875,
+            1350.0
+          ],
+          "peak_gray": 231.17669677734375,
+          "local_residual": 61.7606201171875,
+          "native_center": [
+            2186.0341796875,
+            1350.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-02-229",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2140.313429146141,
+              1121.0
+            ],
+            [
+              2169.263159769065,
+              1266.0
+            ],
+            [
+              2179.8447854450305,
+              1319.0
+            ],
+            [
+              2188.429877974587,
+              1362.0
+            ],
+            [
+              2198.212890391989,
+              1411.0
+            ],
+            [
+              2207.995902809391,
+              1460.0
+            ],
+            [
+              2215.982035395025,
+              1500.0
+            ],
+            [
+              2224.1678212953,
+              1541.0
+            ],
+            [
+              2234.150487027343,
+              1591.0
+            ],
+            [
+              2245.930032591153,
+              1650.0
+            ],
+            [
+              2257.7095781549638,
+              1709.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-02-S036",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-02-S036",
+        "family": "BAND-AA-G001-02",
+        "column": 0,
+        "row": 36,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2340.5,
+          1840.5714285714287
+        ],
+        "layout_outline": [
+          [
+            2338.0,
+            1838.0714285714287
+          ],
+          [
+            2343.0,
+            1838.0714285714287
+          ],
+          [
+            2343.0,
+            1843.0714285714287
+          ],
+          [
+            2338.0,
+            1843.0714285714287
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2248.923095703125,
+            1670.0
+          ],
+          "peak_gray": 223.30581665039062,
+          "local_residual": 136.8872528076172,
+          "native_center": [
+            2248.923095703125,
+            1670.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-02-549",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2140.313429146141,
+              1121.0
+            ],
+            [
+              2169.263159769065,
+              1266.0
+            ],
+            [
+              2179.8447854450305,
+              1319.0
+            ],
+            [
+              2188.429877974587,
+              1362.0
+            ],
+            [
+              2198.212890391989,
+              1411.0
+            ],
+            [
+              2207.995902809391,
+              1460.0
+            ],
+            [
+              2215.982035395025,
+              1500.0
+            ],
+            [
+              2224.1678212953,
+              1541.0
+            ],
+            [
+              2234.150487027343,
+              1591.0
+            ],
+            [
+              2245.930032591153,
+              1650.0
+            ],
+            [
+              2257.7095781549638,
+              1709.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S003",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S003",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 3,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1373.5767284991568
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1371.0767284991568
+          ],
+          [
+            2449.0,
+            1371.0767284991568
+          ],
+          [
+            2449.0,
+            1376.0767284991568
+          ],
+          [
+            2444.0,
+            1376.0767284991568
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2305.97509765625,
+            1179.0
+          ],
+          "peak_gray": 216.6768798828125,
+          "local_residual": 65.48800659179688,
+          "native_center": [
+            2305.97509765625,
+            1179.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-58",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S004",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S004",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 4,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1386.9274873524453
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1384.4274873524453
+          ],
+          [
+            2449.0,
+            1384.4274873524453
+          ],
+          [
+            2449.0,
+            1389.4274873524453
+          ],
+          [
+            2444.0,
+            1389.4274873524453
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2305.571044921875,
+            1195.0
+          ],
+          "peak_gray": 226.4574737548828,
+          "local_residual": 81.50877380371094,
+          "native_center": [
+            2305.571044921875,
+            1195.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-74",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S023",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S023",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 23,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1640.5919055649242
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1638.0919055649242
+          ],
+          [
+            2449.0,
+            1638.0919055649242
+          ],
+          [
+            2449.0,
+            1643.0919055649242
+          ],
+          [
+            2444.0,
+            1643.0919055649242
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2337.498046875,
+            1475.0
+          ],
+          "peak_gray": 205.99041748046875,
+          "local_residual": 61.0203857421875,
+          "native_center": [
+            2337.498046875,
+            1475.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-354",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S024",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S024",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 24,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1653.9426644182126
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1651.4426644182126
+          ],
+          [
+            2449.0,
+            1651.4426644182126
+          ],
+          [
+            2449.0,
+            1656.4426644182126
+          ],
+          [
+            2444.0,
+            1656.4426644182126
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2338.994140625,
+            1490.0
+          ],
+          "peak_gray": 236.12843322753906,
+          "local_residual": 53.89202880859375,
+          "native_center": [
+            2338.994140625,
+            1490.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-369",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S025",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S025",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 25,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1667.2934232715008
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1664.7934232715008
+          ],
+          [
+            2449.0,
+            1664.7934232715008
+          ],
+          [
+            2449.0,
+            1669.7934232715008
+          ],
+          [
+            2444.0,
+            1669.7934232715008
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2338.09130859375,
+            1501.0
+          ],
+          "peak_gray": 239.72970581054688,
+          "local_residual": 56.33233642578125,
+          "native_center": [
+            2338.09130859375,
+            1501.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-380",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S027",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S027",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 27,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1693.9949409780775
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1691.4949409780775
+          ],
+          [
+            2449.0,
+            1691.4949409780775
+          ],
+          [
+            2449.0,
+            1696.4949409780775
+          ],
+          [
+            2444.0,
+            1696.4949409780775
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2342.08349609375,
+            1531.0
+          ],
+          "peak_gray": 251.31857299804688,
+          "local_residual": 54.2216796875,
+          "native_center": [
+            2342.08349609375,
+            1531.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-410",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S028",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S028",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 28,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1707.345699831366
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1704.845699831366
+          ],
+          [
+            2449.0,
+            1704.845699831366
+          ],
+          [
+            2449.0,
+            1709.845699831366
+          ],
+          [
+            2444.0,
+            1709.845699831366
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2344.679443359375,
+            1547.0
+          ],
+          "peak_gray": 250.1505126953125,
+          "local_residual": 79.50735473632812,
+          "native_center": [
+            2344.679443359375,
+            1547.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-426",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S029",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S029",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 29,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1720.6964586846543
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1718.1964586846543
+          ],
+          [
+            2449.0,
+            1718.1964586846543
+          ],
+          [
+            2449.0,
+            1723.1964586846543
+          ],
+          [
+            2444.0,
+            1723.1964586846543
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2343.175537109375,
+            1562.0
+          ],
+          "peak_gray": 245.23402404785156,
+          "local_residual": 114.95683288574219,
+          "native_center": [
+            2343.175537109375,
+            1562.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-441",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S030",
+      "before": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S030",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 30,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1734.0472175379427
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1731.5472175379427
+          ],
+          [
+            2449.0,
+            1731.5472175379427
+          ],
+          [
+            2449.0,
+            1736.5472175379427
+          ],
+          [
+            2444.0,
+            1736.5472175379427
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2344.671630859375,
+            1577.0
+          ],
+          "peak_gray": 230.28067016601562,
+          "local_residual": 59.97248840332031,
+          "native_center": [
+            2344.671630859375,
+            1577.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-456",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S000",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S000",
+        "family": "BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1146.7256819484242,
+          3126.9346
+        ],
+        "layout_outline": [
+          [
+            1144.2256819484242,
+            3124.4346
+          ],
+          [
+            1149.2256819484242,
+            3124.4346
+          ],
+          [
+            1149.2256819484242,
+            3129.4346
+          ],
+          [
+            1144.2256819484242,
+            3129.4346
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            912.0,
+            3190.302734375
+          ],
+          "peak_gray": 229.57913208007812,
+          "local_residual": 84.38853454589844,
+          "native_center": [
+            912.0,
+            3190.302734375
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-37",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              875.0,
+              3214.230317273796
+            ],
+            [
+              923.0,
+              3185.783783783784
+            ],
+            [
+              970.0,
+              3157.9298864081475
+            ],
+            [
+              1018.0,
+              3129.483352918136
+            ],
+            [
+              1065.0,
+              3101.6294555424993
+            ],
+            [
+              1114.0,
+              3072.590285938112
+            ],
+            [
+              1157.0,
+              3047.1069330199766
+            ],
+            [
+              1203.0,
+              3019.845671758715
+            ],
+            [
+              1224.0,
+              3007.400313356835
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S004",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S004",
+        "family": "BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00",
+        "column": 4,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1218.842383381089,
+          3126.9346
+        ],
+        "layout_outline": [
+          [
+            1216.342383381089,
+            3124.4346
+          ],
+          [
+            1221.342383381089,
+            3124.4346
+          ],
+          [
+            1221.342383381089,
+            3129.4346
+          ],
+          [
+            1216.342383381089,
+            3129.4346
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            968.0,
+            3160.115234375
+          ],
+          "peak_gray": 228.48336791992188,
+          "local_residual": 112.32034301757812,
+          "native_center": [
+            968.0,
+            3160.115234375
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-93",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              875.0,
+              3214.230317273796
+            ],
+            [
+              923.0,
+              3185.783783783784
+            ],
+            [
+              970.0,
+              3157.9298864081475
+            ],
+            [
+              1018.0,
+              3129.483352918136
+            ],
+            [
+              1065.0,
+              3101.6294555424993
+            ],
+            [
+              1114.0,
+              3072.590285938112
+            ],
+            [
+              1157.0,
+              3047.1069330199766
+            ],
+            [
+              1203.0,
+              3019.845671758715
+            ],
+            [
+              1224.0,
+              3007.400313356835
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S008",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S008",
+        "family": "BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00",
+        "column": 8,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1290.9590848137536,
+          3126.9346
+        ],
+        "layout_outline": [
+          [
+            1288.4590848137536,
+            3124.4346
+          ],
+          [
+            1293.4590848137536,
+            3124.4346
+          ],
+          [
+            1293.4590848137536,
+            3129.4346
+          ],
+          [
+            1288.4590848137536,
+            3129.4346
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1028.0,
+            3124.55712890625
+          ],
+          "peak_gray": 228.80149841308594,
+          "local_residual": 90.93037414550781,
+          "native_center": [
+            1028.0,
+            3124.55712890625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-153",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              875.0,
+              3214.230317273796
+            ],
+            [
+              923.0,
+              3185.783783783784
+            ],
+            [
+              970.0,
+              3157.9298864081475
+            ],
+            [
+              1018.0,
+              3129.483352918136
+            ],
+            [
+              1065.0,
+              3101.6294555424993
+            ],
+            [
+              1114.0,
+              3072.590285938112
+            ],
+            [
+              1157.0,
+              3047.1069330199766
+            ],
+            [
+              1203.0,
+              3019.845671758715
+            ],
+            [
+              1224.0,
+              3007.400313356835
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S009",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-S009",
+        "family": "BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00",
+        "column": 9,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1308.9882601719198,
+          3126.9346
+        ],
+        "layout_outline": [
+          [
+            1306.4882601719198,
+            3124.4346
+          ],
+          [
+            1311.4882601719198,
+            3124.4346
+          ],
+          [
+            1311.4882601719198,
+            3129.4346
+          ],
+          [
+            1306.4882601719198,
+            3129.4346
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1043.0,
+            3113.66748046875
+          ],
+          "peak_gray": 209.33242797851562,
+          "local_residual": 98.00312805175781,
+          "native_center": [
+            1043.0,
+            3113.66748046875
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2-00-168",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              875.0,
+              3214.230317273796
+            ],
+            [
+              923.0,
+              3185.783783783784
+            ],
+            [
+              970.0,
+              3157.9298864081475
+            ],
+            [
+              1018.0,
+              3129.483352918136
+            ],
+            [
+              1065.0,
+              3101.6294555424993
+            ],
+            [
+              1114.0,
+              3072.590285938112
+            ],
+            [
+              1157.0,
+              3047.1069330199766
+            ],
+            [
+              1203.0,
+              3019.845671758715
+            ],
+            [
+              1224.0,
+              3007.400313356835
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-2"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S000",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S000",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          4833.5418133829,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            4831.0418133829,
+            604.5
+          ],
+          [
+            4836.0418133829,
+            604.5
+          ],
+          [
+            4836.0418133829,
+            609.5
+          ],
+          [
+            4831.0418133829,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            4859.0,
+            371.13592529296875
+          ],
+          "peak_gray": 251.9253387451172,
+          "local_residual": 73.11724853515625,
+          "native_center": [
+            4859.0,
+            371.13592529296875
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-11",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S003",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S003",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 3,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          4877.962089033457,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            4875.462089033457,
+            604.5
+          ],
+          [
+            4880.462089033457,
+            604.5
+          ],
+          [
+            4880.462089033457,
+            609.5
+          ],
+          [
+            4875.462089033457,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            4913.0,
+            374.947265625
+          ],
+          "peak_gray": 223.15823364257812,
+          "local_residual": 45.91291809082031,
+          "native_center": [
+            4913.0,
+            374.947265625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-65",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S004",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S004",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 4,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          4892.768847583643,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            4890.268847583643,
+            604.5
+          ],
+          [
+            4895.268847583643,
+            604.5
+          ],
+          [
+            4895.268847583643,
+            609.5
+          ],
+          [
+            4890.268847583643,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            4924.0,
+            375.31622314453125
+          ],
+          "peak_gray": 224.3706512451172,
+          "local_residual": 43.301025390625,
+          "native_center": [
+            4924.0,
+            375.31622314453125
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-76",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S005",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S005",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 5,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          4907.575606133829,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            4905.075606133829,
+            604.5
+          ],
+          [
+            4910.075606133829,
+            604.5
+          ],
+          [
+            4910.075606133829,
+            609.5
+          ],
+          [
+            4905.075606133829,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            4938.0,
+            375.78582763671875
+          ],
+          "peak_gray": 228.63490295410156,
+          "local_residual": 43.54426574707031,
+          "native_center": [
+            4938.0,
+            375.78582763671875
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-90",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S007",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S007",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 7,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          4937.1891232342,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            4934.6891232342,
+            604.5
+          ],
+          [
+            4939.6891232342,
+            604.5
+          ],
+          [
+            4939.6891232342,
+            609.5
+          ],
+          [
+            4934.6891232342,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            4963.0,
+            376.6243896484375
+          ],
+          "peak_gray": 227.4285430908203,
+          "local_residual": 51.83857727050781,
+          "native_center": [
+            4963.0,
+            376.6243896484375
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-115",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S013",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S013",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 13,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          5026.029674535316,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            5023.529674535316,
+            604.5
+          ],
+          [
+            5028.529674535316,
+            604.5
+          ],
+          [
+            5028.529674535316,
+            609.5
+          ],
+          [
+            5023.529674535316,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            5046.0,
+            376.408447265625
+          ],
+          "peak_gray": 226.20681762695312,
+          "local_residual": 55.016571044921875,
+          "native_center": [
+            5046.0,
+            376.408447265625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-198",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S014",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S014",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 14,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          5040.836433085502,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            5038.336433085502,
+            604.5
+          ],
+          [
+            5043.336433085502,
+            604.5
+          ],
+          [
+            5043.336433085502,
+            609.5
+          ],
+          [
+            5038.336433085502,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            5060.0,
+            377.8780517578125
+          ],
+          "peak_gray": 218.32373046875,
+          "local_residual": 51.10505676269531,
+          "native_center": [
+            5060.0,
+            377.8780517578125
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-212",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S016",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S016",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 16,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          5070.449950185874,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            5067.949950185874,
+            604.5
+          ],
+          [
+            5072.949950185874,
+            604.5
+          ],
+          [
+            5072.949950185874,
+            609.5
+          ],
+          [
+            5067.949950185874,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            5085.0,
+            377.71661376953125
+          ],
+          "peak_gray": 216.93911743164062,
+          "local_residual": 54.2427978515625,
+          "native_center": [
+            5085.0,
+            377.71661376953125
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-237",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    },
+    {
+      "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S017",
+      "before": {
+        "id": "CTX-CTT-BAND-AA2-TOP-STEP-1-AA-0-02-S017",
+        "family": "BAND-AA2-TOP-STEP-1-AA-0-02",
+        "column": 17,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          5085.256708736059,
+          607.0
+        ],
+        "layout_outline": [
+          [
+            5082.756708736059,
+            604.5
+          ],
+          [
+            5087.756708736059,
+            604.5
+          ],
+          [
+            5087.756708736059,
+            609.5
+          ],
+          [
+            5082.756708736059,
+            609.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            5100.0,
+            378.2197570800781
+          ],
+          "peak_gray": 207.1292724609375,
+          "local_residual": 46.0767822265625,
+          "native_center": [
+            5100.0,
+            378.2197570800781
+          ],
+          "source_observation_id": "PROFILE-BAND-AA2-TOP-STEP-1-AA-0-02-252",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              4848.0,
+              371.76696250641294
+            ],
+            [
+              4907.0,
+              373.74599080721316
+            ],
+            [
+              4953.0,
+              375.2889620247863
+            ],
+            [
+              4998.0,
+              376.79839038980344
+            ],
+            [
+              5052.0,
+              378.609704427824
+            ],
+            [
+              5117.0,
+              380.7899898439599
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-TOP-STEP-1-AA-0"
+      },
+      "after": null,
+      "reason": "unaccepted source recipe failed independent frame/row ownership checks; retire the entire affected recipe, not just conflicting points; named reinspection supplies new evidence"
+    }
+  ],
+  "source_correspondence_corrections": [
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-S001",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          1097.7230224609375,
+          3373.0
+        ],
+        "peak_gray": 238.97181701660156,
+        "local_residual": 72.34211730957031,
+        "native_center": [
+          1097.7230224609375,
+          3373.0
+        ],
+        "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-39",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+        "supported": true,
+        "algorithm_detected": true,
+        "source_path": [
+          [
+            1095.932019864793,
+            3334.7912156401394
+          ],
+          [
+            1099.3489986537247,
+            3407.6867631373475
+          ]
+        ],
+        "native_ridge_shift_x": -13
+      },
+      "after_source_evidence": {
+        "native_center": [
+          1118,
+          3373
+        ],
+        "source_native_center_xy": [
+          1118,
+          3373
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 73.88533787709295,
+        "source_roi": [
+          1105,
+          3368,
+          1125,
+          3382
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+        "source_observation_id": "V3-RELOCALIZE-CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-S001"
+      },
+      "reason": "independent source-row/column reinspection after the access audit; prior measurement retained in history; design and approved topology unchanged"
+    },
+    {
+      "id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          1174.9710693359375,
+          3728.0
+        ],
+        "peak_gray": 226.60552978515625,
+        "local_residual": 66.50100708007812,
+        "native_center": [
+          1174.9710693359375,
+          3728.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-12",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "after_source_evidence": {
+        "native_center": [
+          1162,
+          3747
+        ],
+        "source_native_center_xy": [
+          1162,
+          3747
+        ],
+        "peak_gray": 221.0,
+        "local_residual": 64.57142365219048,
+        "source_roi": [
+          1162,
+          3738,
+          1182,
+          3755
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+        "source_observation_id": "V3-RELOCALIZE-CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+      },
+      "reason": "independent source-row/column reinspection after the access audit; prior measurement retained in history; design and approved topology unchanged"
+    },
+    {
+      "id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0-SD00-000",
+      "before_source_evidence": {
+        "source_native_center_xy": [
+          1504.213134765625,
+          3719.0
+        ],
+        "peak_gray": 240.9076385498047,
+        "local_residual": 80.68446350097656,
+        "native_center": [
+          1504.213134765625,
+          3719.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0-SD00-10",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "after_source_evidence": {
+        "native_center": [
+          1489,
+          3738
+        ],
+        "source_native_center_xy": [
+          1489,
+          3738
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 79.37528028002785,
+        "source_roi": [
+          1480,
+          3732,
+          1504,
+          3752
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+        "source_observation_id": "V3-RELOCALIZE-CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0-SD00-000"
+      },
+      "reason": "independent source-row/column reinspection after the access audit; prior measurement retained in history; design and approved topology unchanged"
+    },
+    {
+      "id": "CTW-G66-P08-0",
+      "before_source_evidence": {
+        "native_center": [
+          1519.0,
+          3733.0
+        ],
+        "peak_gray": 196.0,
+        "local_residual": 38.14914100880304,
+        "supported": true,
+        "evidence_type": "AI_inspected_end_bar_bounded_peak_with_plateau_support",
+        "algorithm_detected": true,
+        "source_roi": [
+          1518,
+          3700,
+          1551,
+          3735
+        ],
+        "side_hint": "top",
+        "photographic_native_extent_is_prior_not_exact": true
+      },
+      "after_source_evidence": {
+        "native_center": [
+          1509,
+          3716
+        ],
+        "source_native_center_xy": [
+          1509,
+          3716
+        ],
+        "peak_gray": 246.0,
+        "local_residual": 49.677251811411,
+        "source_roi": [
+          1506,
+          3716,
+          1513,
+          3721
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+        "source_observation_id": "V3-RELOCALIZE-CTW-G66-P08-0"
+      },
+      "reason": "independent source-row/column reinspection after the access audit; prior measurement retained in history; design and approved topology unchanged"
+    },
+    {
+      "id": "CTW-G66-P08-1",
+      "before_source_evidence": {
+        "native_center": [
+          1539.0,
+          3733.0
+        ],
+        "peak_gray": 241.0,
+        "local_residual": 53.66824048005773,
+        "supported": true,
+        "evidence_type": "AI_inspected_end_bar_bounded_peak_with_plateau_support",
+        "algorithm_detected": true,
+        "source_roi": [
+          1518,
+          3700,
+          1551,
+          3735
+        ],
+        "side_hint": "top",
+        "photographic_native_extent_is_prior_not_exact": true
+      },
+      "after_source_evidence": {
+        "native_center": [
+          1519,
+          3718
+        ],
+        "source_native_center_xy": [
+          1519,
+          3718
+        ],
+        "peak_gray": 247.0,
+        "local_residual": 54.289676128914266,
+        "source_roi": [
+          1516,
+          3716,
+          1523,
+          3721
+        ],
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "bounded_raw_peak_with_AI_material_and_terminal_context",
+        "source_observation_id": "V3-RELOCALIZE-CTW-G66-P08-1"
+      },
+      "reason": "independent source-row/column reinspection after the access audit; prior measurement retained in history; design and approved topology unchanged"
+    }
+  ],
+  "review_images": [],
+  "cases": [
+    {
+      "id": "O",
+      "title": "全幅：已审CT保持，新增候选与待决范围分开",
+      "source_bbox": [
+        0,
+        0,
+        5712,
+        4284
+      ],
+      "layout_bbox": [
+        200,
+        120,
+        5650,
+        4550
+      ],
+      "scope": "统一全幅模型的复核窗口；灰色为保留记录，蓝／紫为本轮候选；来源未知用范围标记，不补虚拟孔。"
+    },
+    {
+      "id": "T1",
+      "title": "上方左／中密集MOS：源漏与栅端候选",
+      "source_bbox": [
+        0,
+        70,
+        2700,
+        850
+      ],
+      "layout_bbox": [
+        230,
+        300,
+        2910,
+        1150
+      ],
+      "scope": "统一全幅模型的复核窗口；灰色为保留记录，蓝／紫为本轮候选；来源未知用范围标记，不补虚拟孔。"
+    },
+    {
+      "id": "T2",
+      "title": "上方右侧密集MOS及电阻W01端部",
+      "source_bbox": [
+        2400,
+        50,
+        5200,
+        900
+      ],
+      "layout_bbox": [
+        2550,
+        260,
+        5310,
+        1190
+      ],
+      "scope": "统一全幅模型的复核窗口；灰色为保留记录，蓝／紫为本轮候选；来源未知用范围标记，不补虚拟孔。"
+    },
+    {
+      "id": "T3",
+      "title": "上部下方两长排小MOS与可见环",
+      "source_bbox": [
+        0,
+        790,
+        5250,
+        1190
+      ],
+      "layout_bbox": [
+        230,
+        1000,
+        5320,
+        1490
+      ],
+      "scope": "统一全幅模型的复核窗口；灰色为保留记录，蓝／紫为本轮候选；来源未知用范围标记，不补虚拟孔。"
+    },
+    {
+      "id": "L",
+      "title": "左下小MOS与环的剩余可见部分",
+      "source_bbox": [
+        780,
+        2970,
+        1630,
+        3840
+      ],
+      "layout_bbox": [
+        1020,
+        3070,
+        1770,
+        3870
+      ],
+      "scope": "统一全幅模型的复核窗口；灰色为保留记录，蓝／紫为本轮候选；来源未知用范围标记，不补虚拟孔。"
+    },
+    {
+      "id": "R",
+      "title": "右下12宽MOS：只在独立观察端生成栅CT",
+      "source_bbox": [
+        3160,
+        3240,
+        4790,
+        3720
+      ],
+      "layout_bbox": [
+        3240,
+        3430,
+        4820,
+        3850
+      ],
+      "scope": "统一全幅模型的复核窗口；灰色为保留记录，蓝／紫为本轮候选；来源未知用范围标记，不补虚拟孔。"
+    },
+    {
+      "id": "Q1",
+      "title": "四管下端栅CT；上侧亮条为环CT",
+      "source_bbox": [
+        620,
+        1100,
+        1700,
+        1510
+      ],
+      "layout_bbox": [
+        960,
+        1350,
+        1620,
+        1810
+      ],
+      "scope": "已完成的Q1/Q2/Q3裁决原样继承，此处只供前后抽查，不要求重审。"
+    },
+    {
+      "id": "Q2",
+      "title": "下端共用POLY引出及连接处CT",
+      "source_bbox": [
+        2070,
+        1300,
+        2430,
+        1770
+      ],
+      "layout_bbox": [
+        2260,
+        1320,
+        2525,
+        1900
+      ],
+      "scope": "已完成的Q1/Q2/Q3裁决原样继承，此处只供前后抽查，不要求重审。"
+    },
+    {
+      "id": "Q3A",
+      "title": "仅上端栅CT；A改对应靠近栅极的内环",
+      "source_bbox": [
+        4846,
+        111,
+        5126,
+        336
+      ],
+      "layout_bbox": [
+        4815.5,
+        323.0,
+        5109.5,
+        670.0
+      ],
+      "scope": "已完成的Q1/Q2/Q3裁决原样继承，此处只供前后抽查，不要求重审。"
+    },
+    {
+      "id": "Q3B",
+      "title": "G栅端／A环对应已确认",
+      "source_bbox": [
+        952,
+        3136,
+        1232,
+        3361
+      ],
+      "layout_bbox": [
+        1154.7730428571429,
+        3174.8774,
+        1439.7730428571429,
+        3451.4025
+      ],
+      "scope": "已完成的Q1/Q2/Q3裁决原样继承，此处只供前后抽查，不要求重审。"
+    },
+    {
+      "id": "Q3C",
+      "title": "G栅端／A环对应已确认",
+      "source_bbox": [
+        4964,
+        328,
+        5244,
+        553
+      ],
+      "layout_bbox": [
+        4940.5,
+        567.0,
+        5228.5,
+        850.0
+      ],
+      "scope": "已完成的Q1/Q2/Q3裁决原样继承，此处只供前后抽查，不要求重审。"
+    },
+    {
+      "id": "U",
+      "title": "上方近邻环来源未知范围（保留完整器件上下文）",
+      "source_bbox": [
+        800,
+        690,
+        4250,
+        1030
+      ],
+      "layout_bbox": [
+        1060,
+        820,
+        4210,
+        1245
+      ],
+      "scope": "两条近邻环不能借同一亮点导出两个CT或推断相连；保留未知，供整体验收决定是否需要进一步定位。"
+    }
+  ],
+  "review_title": "CT工作层全幅收口：来源清理、端口证据与整体验收",
+  "review_notes": "保留已审结构；新CT须有原图支持。未知扩散区域不按规则补孔，所有未知单列；本页是整体工作层候选，尚未获得本轮整体批准。"
+}

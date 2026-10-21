@@ -1,0 +1,62 @@
+{
+  "status": "PASS_engineering_closeout_with_explicit_limits",
+  "checks": [
+    {
+      "id": "four_gate_joint_match",
+      "status": "PASS",
+      "four_POLY": 4,
+      "diffusion_columns": 5,
+      "gate_CT": 8,
+      "SD_CT": 25
+    },
+    {
+      "id": "whole_layer_CT_geometry",
+      "status": "PASS",
+      "contacts": 10287,
+      "overlaps": 0,
+      "gap_violations": 0,
+      "minimum_edge_gap_px": 4.400000000000091
+    },
+    {
+      "id": "parent_and_prior_human_scope_preservation",
+      "status": "PASS",
+      "evidence": {
+        "path": "benchmarks/ct-work-layer-final-v5/preservation-check-v1.json",
+        "sha256": "6357a78c65f398a2df5258320f3a5e3fa6f1e507913cdc1c3f04024566ac3e21"
+      }
+    },
+    {
+      "id": "raw_source_support_and_ownership",
+      "status": "PASS",
+      "new_points": 33,
+      "source_conflicts_within3px": 0
+    },
+    {
+      "id": "material_alias_continuation",
+      "status": "PASS",
+      "alias_count": 3
+    },
+    {
+      "id": "terminal_access_inventory",
+      "status": "PASS_with_named_exceptions",
+      "diffusion_regions": 845,
+      "with_candidate_CT": 844,
+      "without_direct_CT": 1,
+      "remaining_source": "AA-F01744 photo-clipped locator",
+      "historical_POLY_fragments": 2
+    },
+    {
+      "id": "source_limited_scopes",
+      "status": "OPEN_evidence_limits_recorded",
+      "count": 5,
+      "CT_reconstruction_not_claimed_here": true
+    },
+    {
+      "id": "physical_PDK_DRC_and_100_percent_recovery",
+      "status": "NOT_ESTABLISHED",
+      "not_required_for_bounded_work_layer_closeout": true
+    }
+  ],
+  "mandatory_human_questions_now": [],
+  "repeated_global_CT_review_required": false
+}

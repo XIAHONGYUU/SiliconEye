@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "all10254_parent_CT_records_exact_equal": true,
+  "original7044_records_exact_equal_to_v4": true,
+  "all334_AA_records_exact_equal": true,
+  "unrelated691_POLY_records_exact_equal": true,
+  "five_old_unaccepted_POLY_retired": [
+    "G06-P06",
+    "G06-P07",
+    "G06-P08",
+    "G06-P09",
+    "G06-P10"
+  ],
+  "four_new_POLY": [
+    "G06R-P01",
+    "G06R-P02",
+    "G06R-P03",
+    "G06R-P04"
+  ],
+  "new_CT_count": 33,
+  "parent_aliases_retained": {
+    "AA2-UPPER-COMPLEX-GUARD-AA-0-split01": "AA2-UPPER-INNER-B-AA-0",
+    "AA2-LEFT-STAIR-AA5-0": "AA-LEFT-STAIR-SHARED-56",
+    "AA2-LEFT-STAIR-AA6-0": "AA-LEFT-STAIR-SHARED-56"
+  },
+  "raw8photos_unchanged": true,
+  "parent_frozen_files_verified": true
+}

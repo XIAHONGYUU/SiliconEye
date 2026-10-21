@@ -1,0 +1,16 @@
+{
+  "test": "tests/test_ct_transfer.py::test_later_local_revision_preserves_existing_material_aliases",
+  "before_fix": {
+    "status": "FAILED",
+    "actual_alias_map": {},
+    "expected_alias_map": {
+      "OLD-A": "A"
+    },
+    "failure": "AssertionError"
+  },
+  "after_fix": {
+    "status": "PASSED_in_focused65_and_full458"
+  },
+  "change": "build local_material_revision.alias_map from all current material objects, not only the patch list",
+  "production_command": ".venv/bin/python -m pytest -q"
+}

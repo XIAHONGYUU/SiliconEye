@@ -1,0 +1,33 @@
+{
+  "questions": [
+    {
+      "id": "R1A",
+      "scope": "G01/G02 upper long-MOS source correspondence, not previously adjudicated Q1",
+      "question": "上方左侧长排MOS：栅CT实际从上端、下端还是双端引出？紫色旧G候选是否落在源漏列／环上？请在宽视野原图指出一处真实栅端（或确认蓝T候选带）。",
+      "reason": "old source locators can select a bright diffusion column or guard; absent diffusion access near the same phase exposes this ambiguity",
+      "gate_groups": [
+        "G01",
+        "G02"
+      ],
+      "status": "needs_human_terminal_source_anchor"
+    },
+    {
+      "id": "R1B",
+      "scope": "G05/G06 upper right long-MOS source correspondence",
+      "question": "上方右侧长排MOS请同样确认栅CT引出侧与一处真实栅端；不能直接套用左侧或已审Q3方向。",
+      "gate_groups": [
+        "G05",
+        "G06"
+      ],
+      "status": "needs_human_terminal_source_anchor"
+    },
+    {
+      "id": "R2",
+      "scope": "upper adjacent guards, independent of already confirmed Q3A inner top guard",
+      "question": "AA图A为上方内环下边，B为紧邻外环上边。POLY图U处的亮带CT属于A、B，还是两环各有一排？看不清可保留未知；不把同一亮点归两环。",
+      "status": "needs_human_guard_source_ownership"
+    }
+  ],
+  "previous_Q1_Q2_Q3_closed": true,
+  "not_individual_hole_count_review": true
+}

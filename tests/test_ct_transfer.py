@@ -432,3 +432,185 @@ def test_scoped_record_revision_rejects_stale_parent_or_other_target():
     stale[0]["outer_xyxy"][2] = 21
     with pytest.raises(ValueError, match="Stale"):
         apply_reviewed_record_changes(stale, changes, ["A"])
+
+
+def test_later_local_revision_preserves_existing_material_aliases(tmp_path):
+    """An unrelated POLY patch must not lose a previously merged AA identity."""
+    import hashlib
+
+    from PIL import Image
+
+    from silicon_eye.ct_transfer import run_local_review_revision
+
+    budget = dict(square_side=5, min_gap_px=3, enclosure_px=1, channel_clearance_px=1)
+    active = dict(id="A", outer_xyxy=[0, 0, 100, 100], material_aliases=["OLD-A"])
+    poly = dict(id="P", layout_outline=[[60, 60], [70, 60], [70, 70], [60, 70]])
+    added_poly = dict(id="P2", layout_outline=[[80, 80], [90, 80], [90, 90], [80, 90]])
+    contact = dict(
+        id="C", family="F", column=0, row=0, AA_target="A",
+        layout_outline=[[10, 10], [15, 10], [15, 15], [10, 15]],
+        source_evidence=dict(native_center=[12, 12], supported=True),
+    )
+    inputs = {}
+    values = dict(
+        materials=dict(objects=[poly], AA_objects=[active]),
+        contacts=dict(objects=[contact]),
+        human_review=dict(authorized_material_ids=["P2"], authorized_contact_ids=[],
+                          authorized_new_contact_ids=[]),
+        new_contacts=dict(objects=[]), unknown_sites=dict(sites=[]),
+        parent_spec=dict(budget=budget),
+    )
+    for key, value in values.items():
+        path = tmp_path / (key + ".json")
+        path.write_text(json.dumps(value))
+        inputs[key] = dict(path=path.name, sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+    photo = tmp_path / "photo.png"
+    Image.new("RGB", (100, 100)).save(photo)
+    inputs["photo"] = dict(path=photo.name, sha256=hashlib.sha256(photo.read_bytes()).hexdigest())
+    spec = dict(
+        inputs=inputs, budget=budget,
+        material_changes=dict(objects=[dict(id="P2", before=None, after=added_poly)]),
+        contact_changes=[], cases=[], review_title="Local revision", review_notes="Scoped patch",
+    )
+    output = tmp_path / "output"
+    run_local_review_revision(tmp_path, spec, output)
+    result = json.loads((output / "material-model.json").read_text())
+    assert result["AA_objects"] == [active]
+    assert result["local_material_revision"]["alias_map"] == {"OLD-A": "A"}
+    assert json.loads((output / "model.json").read_text())["objects"] == [contact]
+
+
+def test_source_correction_preserves_design_and_appends_original_observation():
+    from silicon_eye.ct_transfer import apply_source_correspondence_corrections
+
+    parent = [
+        dict(
+            id="C",
+            POLY_target="P",
+            layout_center=[10, 20],
+            source_frame="poly",
+            source_evidence=dict(native_center=[30, 40], supported=True),
+        ),
+        dict(id="KEEP", source_evidence=dict(native_center=[50, 60], supported=True)),
+    ]
+    original = copy.deepcopy(parent)
+    change = dict(
+        id="C",
+        before_source_evidence=copy.deepcopy(parent[0]["source_evidence"]),
+        after_source_evidence=dict(
+            native_center=[30, 70], supported=True, source_roi=[25, 65, 35, 75]
+        ),
+        reason="human terminal-side decision followed by independent optical reinspection",
+    )
+    ref = dict(path="review.json", sha256="review-hash")
+    result = apply_source_correspondence_corrections(parent, [change], ["C"], ref)
+    assert parent == original and result[1] == parent[1]
+    assert result[0]["layout_center"] == [10, 20] and result[0]["POLY_target"] == "P"
+    assert result[0]["source_frame"] == "poly"
+    assert result[0]["source_evidence"]["native_center"] == [30, 70]
+    assert result[0]["source_correspondence_history"] == [
+        dict(
+            before=parent[0]["source_evidence"],
+            after=change["after_source_evidence"],
+            reason=change["reason"],
+            review_ref=ref,
+        )
+    ]
+    second = dict(
+        change,
+        before_source_evidence=copy.deepcopy(result[0]["source_evidence"]),
+        after_source_evidence=dict(native_center=[31, 70], supported=True),
+    )
+    final = apply_source_correspondence_corrections(result, [second], ["C"], ref)
+    assert len(final[0]["source_correspondence_history"]) == 2
+    assert (
+        final[0]["source_correspondence_history"][0]
+        == result[0]["source_correspondence_history"][0]
+    )
+
+
+@pytest.mark.parametrize(
+    "failure", ["scope", "stale", "duplicate", "unsupported", "nonfinite", "source_alias"]
+)
+def test_source_correction_rejects_unscoped_stale_or_unsupported_evidence(failure):
+    from silicon_eye.ct_transfer import apply_source_correspondence_corrections
+
+    parent = [dict(id="C", source_evidence=dict(native_center=[10, 20], supported=True))]
+    change = dict(
+        id="C",
+        before_source_evidence=copy.deepcopy(parent[0]["source_evidence"]),
+        after_source_evidence=dict(native_center=[10, 30], supported=True),
+        reason="observed",
+    )
+    allowed, changes = ["C"], [change]
+    if failure == "scope":
+        allowed = []
+    elif failure == "stale":
+        change["before_source_evidence"]["native_center"] = [0, 0]
+    elif failure == "duplicate":
+        changes.append(change)
+    elif failure == "unsupported":
+        change["after_source_evidence"]["supported"] = False
+    elif failure == "source_alias":
+        change["after_source_evidence"]["source_native_center_xy"] = [10, 20]
+    else:
+        change["after_source_evidence"]["native_center"] = [float("nan"), 30]
+    with pytest.raises(ValueError):
+        apply_source_correspondence_corrections(parent, changes, allowed, {})
+
+
+def test_access_inventory_keeps_internal_diffusion_without_inventing_contacts():
+    from silicon_eye.ct_transfer import audit_terminal_access
+
+    material = dict(
+        AA_objects=[dict(id="A", primitive="rectangle", outer_xyxy=[0, 0, 60, 40])],
+        objects=[
+            dict(id="P1", AA_target="A", layout_outline=[[15, -8], [20, -8], [20, 45], [15, 45]]),
+            dict(id="P2", AA_target="A", layout_outline=[[40, -8], [45, -8], [45, 45], [40, 45]]),
+        ],
+    )
+    contacts = [dict(id="C", AA_target="A", layout_outline=[[3, 10], [8, 10], [8, 15], [3, 15]])]
+    original = copy.deepcopy((material, contacts))
+    report = audit_terminal_access(contacts, material)
+    assert report["diffusion_region_count"] == 3
+    assert report["diffusion_regions_without_direct_CT"] == 2
+    assert report["diffusion_regions"][1]["status"] == "no_direct_CT_evidence"
+    assert report["status"] == "access_inventory_not_physical_completion_gate"
+    assert (material, contacts) == original
+
+
+def test_shared_poly_access_requires_the_declared_bridge_to_reach_the_finger():
+    from silicon_eye.ct_transfer import audit_terminal_access
+
+    material = dict(
+        AA_objects=[],
+        objects=[
+            dict(id="P1", layout_outline=[[10, -8], [15, -8], [15, 40], [10, 40]]),
+            dict(id="P2", layout_outline=[[30, -8], [35, -8], [35, 40], [30, 40]]),
+            dict(id="P3", layout_outline=[[80, -8], [85, -8], [85, 40], [80, 40]]),
+            dict(
+                id="BUS",
+                member_POLY_ids=["P1", "P2", "P3"],
+                layout_outline=[[10, -12], [35, -12], [35, -6], [10, -6]],
+            ),
+        ],
+    )
+    report = audit_terminal_access([dict(id="C", POLY_target="BUS")], material)
+    by_id = {o["material_id"]: o for o in report["POLY_materials"]}
+    assert by_id["P1"]["contact_ids"] == ["C"]
+    assert by_id["P2"]["contact_ids"] == ["C"]
+    assert not by_id["P3"]["contact_ids"]
+
+
+def test_access_inventory_does_not_borrow_a_contact_from_another_active_id():
+    from silicon_eye.ct_transfer import audit_terminal_access
+
+    material = dict(
+        AA_objects=[dict(id="A", primitive="rectangle", outer_xyxy=[0, 0, 40, 40])],
+        objects=[
+            dict(id="P", AA_target="A", layout_outline=[[15, -8], [20, -8], [20, 45], [15, 45]])
+        ],
+    )
+    contact = dict(id="OTHER", AA_target="B", layout_outline=[[3, 10], [8, 10], [8, 15], [3, 15]])
+    report = audit_terminal_access([contact], material)
+    assert report["diffusion_regions_without_direct_CT"] == 2

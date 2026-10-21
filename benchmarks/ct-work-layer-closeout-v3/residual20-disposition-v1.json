@@ -1,0 +1,1464 @@
+{
+  "objects": [
+    {
+      "id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0-SD02-002",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0-SD02-002",
+        "family": "REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0-SD02",
+        "column": 0,
+        "row": 2,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1301.7726,
+          3411.3290405263156
+        ],
+        "layout_outline": [
+          [
+            1299.2726,
+            3408.8290405263156
+          ],
+          [
+            1304.2726,
+            3408.8290405263156
+          ],
+          [
+            1304.2726,
+            3413.8290405263156
+          ],
+          [
+            1299.2726,
+            3413.8290405263156
+          ]
+        ],
+        "source_frame": "poly",
+        "status": "AI_full_frame_local_correspondence_candidate",
+        "source_evidence": {
+          "source_native_center_xy": [
+            1094.1168212890625,
+            3359.0
+          ],
+          "peak_gray": 241.70089721679688,
+          "local_residual": 109.95234680175781,
+          "native_center": [
+            1094.1168212890625,
+            3359.0
+          ],
+          "source_observation_id": "PROFILE-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0-SD02-45",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+          "supported": true,
+          "algorithm_detected": true
+        },
+        "terminal_role": "source_drain_diffusion_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA1-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1323.6389999999997,
+          3387.949070057116
+        ],
+        "layout_outline": [
+          [
+            1321.1389999999997,
+            3385.449070057116
+          ],
+          [
+            1326.1389999999997,
+            3385.449070057116
+          ],
+          [
+            1326.1389999999997,
+            3390.449070057116
+          ],
+          [
+            1321.1389999999997,
+            3390.449070057116
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1095.0667724609375,
+            3359.0
+          ],
+          "peak_gray": 232.20132446289062,
+          "local_residual": 132.03851318359375,
+          "native_center": [
+            1095.0667724609375,
+            3359.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-25",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1095.932019864793,
+              3334.7912156401394
+            ],
+            [
+              1099.3489986537247,
+              3407.6867631373475
+            ]
+          ],
+          "native_ridge_shift_x": -13
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA-F01649-SD00-S001",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA-F01649-SD00-S001",
+        "family": "RECOVER-AA-F01649-SD00",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          452.33333333333314,
+          1176.0
+        ],
+        "layout_outline": [
+          [
+            449.83333333333314,
+            1173.5
+          ],
+          [
+            454.83333333333314,
+            1173.5
+          ],
+          [
+            454.83333333333314,
+            1178.5
+          ],
+          [
+            449.83333333333314,
+            1178.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            60.85714340209961,
+            957.0
+          ],
+          "peak_gray": 247.15719604492188,
+          "local_residual": 111.65625,
+          "native_center": [
+            60.85714340209961,
+            957.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA-F01649-SD00-22",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              58.85714285714286,
+              935.4545454545455
+            ],
+            [
+              58.85714285714286,
+              982.5454545454545
+            ]
+          ],
+          "native_ridge_shift_x": -11
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-F01649"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0-SD01-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0-SD01-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0-SD01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1327.6116749999997,
+          3645.2170505046934
+        ],
+        "layout_outline": [
+          [
+            1325.1116749999997,
+            3642.7170505046934
+          ],
+          [
+            1330.1116749999997,
+            3642.7170505046934
+          ],
+          [
+            1330.1116749999997,
+            3647.7170505046934
+          ],
+          [
+            1325.1116749999997,
+            3647.7170505046934
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1157.8515625,
+            3616.0
+          ],
+          "peak_gray": 240.7411651611328,
+          "local_residual": 99.29896545410156,
+          "native_center": [
+            1157.8515625,
+            3616.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0-SD01-13",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1155.868757995092,
+              3603.8787427802504
+            ],
+            [
+              1159.7903608394931,
+              3652.245177861198
+            ]
+          ],
+          "native_ridge_shift_x": 14
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0-SD00-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "duplicate_source_and_same_material_local_cut",
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0-SD00-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0-SD00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1355.176625,
+          3658.9017299585144
+        ],
+        "layout_outline": [
+          [
+            1352.676625,
+            3656.4017299585144
+          ],
+          [
+            1357.676625,
+            3656.4017299585144
+          ],
+          [
+            1357.676625,
+            3661.4017299585144
+          ],
+          [
+            1352.676625,
+            3661.4017299585144
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1156.3543701171875,
+            3616.0
+          ],
+          "peak_gray": 238.11012268066406,
+          "local_residual": 96.48356628417969,
+          "native_center": [
+            1156.3543701171875,
+            3616.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0-SD00-31",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1153.8789448747916,
+              3585.468933466928
+            ],
+            [
+              1157.8005477191925,
+              3633.8353685478746
+            ]
+          ],
+          "native_ridge_shift_x": -12
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0"
+      }
+    },
+    {
+      "id": "CTSD2-G65-P04-left-0",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTSD2-G65-P04-left-0",
+        "family": "SD2-G65-P04-left",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+        "layout_center": [
+          1352.3168,
+          3653.60805
+        ],
+        "layout_outline": [
+          [
+            1349.8168,
+            3651.10805
+          ],
+          [
+            1354.8168,
+            3651.10805
+          ],
+          [
+            1354.8168,
+            3656.10805
+          ],
+          [
+            1349.8168,
+            3656.10805
+          ]
+        ],
+        "source_frame": "poly",
+        "source_evidence": {
+          "native_center": [
+            1157,
+            3616
+          ],
+          "peak_gray": 245.0,
+          "local_residual": 86.20221893333283,
+          "source_roi": [
+            1147,
+            3587,
+            1176,
+            3626
+          ],
+          "supported": true,
+          "algorithm_detected": true,
+          "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+          "native_gate_bar_anchor": [
+            1188.0,
+            3635.0
+          ]
+        },
+        "status": "AI_context_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0-SD01-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0-SD01-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0-SD01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1621.4893249999998,
+          3643.072564428243
+        ],
+        "layout_outline": [
+          [
+            1618.9893249999998,
+            3640.572564428243
+          ],
+          [
+            1623.9893249999998,
+            3640.572564428243
+          ],
+          [
+            1623.9893249999998,
+            3645.572564428243
+          ],
+          [
+            1618.9893249999998,
+            3645.572564428243
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1485.25927734375,
+            3608.0
+          ],
+          "peak_gray": 239.41317749023438,
+          "local_residual": 102.89974975585938,
+          "native_center": [
+            1485.25927734375,
+            3608.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0-SD01-12",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1484.3227315665208,
+              3596.4502759833754
+            ],
+            [
+              1488.244334410922,
+              3644.8167110643226
+            ]
+          ],
+          "native_ridge_shift_x": 14
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0-SD00-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "duplicate_source_and_same_material_local_cut",
+        "positive_area_overlap_pairs",
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0-SD00-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0-SD00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1647.8434,
+          3658.4251096314497
+        ],
+        "layout_outline": [
+          [
+            1645.3434,
+            3655.9251096314497
+          ],
+          [
+            1650.3434,
+            3655.9251096314497
+          ],
+          [
+            1650.3434,
+            3660.9251096314497
+          ],
+          [
+            1645.3434,
+            3660.9251096314497
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1485.085693359375,
+            3608.0
+          ],
+          "peak_gray": 241.16908264160156,
+          "local_residual": 104.21267700195312,
+          "native_center": [
+            1485.085693359375,
+            3608.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0-SD00-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1482.6564959462207,
+              3578.0404666700524
+            ],
+            [
+              1486.5780987906214,
+              3626.4069017509996
+            ]
+          ],
+          "native_ridge_shift_x": -11
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0"
+      }
+    },
+    {
+      "id": "CTSD2-G65-P08-left-0",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "positive_area_overlap_pairs",
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTSD2-G65-P08-left-0",
+        "family": "SD2-G65-P08-left",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+        "layout_center": [
+          1644.3729,
+          3653.60805
+        ],
+        "layout_outline": [
+          [
+            1641.8729,
+            3651.10805
+          ],
+          [
+            1646.8729,
+            3651.10805
+          ],
+          [
+            1646.8729,
+            3656.10805
+          ],
+          [
+            1641.8729,
+            3656.10805
+          ]
+        ],
+        "source_frame": "poly",
+        "source_evidence": {
+          "native_center": [
+            1485,
+            3608
+          ],
+          "peak_gray": 248.0,
+          "local_residual": 78.16577842589973,
+          "source_roi": [
+            1475,
+            3579,
+            1504,
+            3618
+          ],
+          "supported": true,
+          "algorithm_detected": true,
+          "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+          "native_gate_bar_anchor": [
+            1516.0,
+            3627.0
+          ]
+        },
+        "status": "AI_context_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0-SD01-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0-SD01-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0-SD01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1262.033975,
+          3784.919437412357
+        ],
+        "layout_outline": [
+          [
+            1259.533975,
+            3782.419437412357
+          ],
+          [
+            1264.533975,
+            3782.419437412357
+          ],
+          [
+            1264.533975,
+            3787.419437412357
+          ],
+          [
+            1259.533975,
+            3787.419437412357
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1084.176513671875,
+            3750.0
+          ],
+          "peak_gray": 239.45758056640625,
+          "local_residual": 81.23519897460938,
+          "native_center": [
+            1084.176513671875,
+            3750.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0-SD01-30",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1081.7648905460453,
+              3720.2578943218305
+            ],
+            [
+              1085.6832039201524,
+              3768.5832676405807
+            ]
+          ],
+          "native_ridge_shift_x": 15
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD00-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD00-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1283.961225,
+          3772.711929625068
+        ],
+        "layout_outline": [
+          [
+            1281.461225,
+            3770.211929625068
+          ],
+          [
+            1286.461225,
+            3770.211929625068
+          ],
+          [
+            1286.461225,
+            3775.211929625068
+          ],
+          [
+            1281.461225,
+            3775.211929625068
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1084.3624267578125,
+            3750.0
+          ],
+          "peak_gray": 239.58656311035156,
+          "local_residual": 79.526611328125,
+          "native_center": [
+            1084.3624267578125,
+            3750.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD00-16",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1083.1336744749046,
+              3734.84519234079
+            ],
+            [
+              1087.0519460012856,
+              3783.170541166156
+            ]
+          ],
+          "native_ridge_shift_x": -12
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0-SD01-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0-SD01-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0-SD01",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1554.3258249999997,
+          3782.7674123707725
+        ],
+        "layout_outline": [
+          [
+            1551.8258249999997,
+            3780.2674123707725
+          ],
+          [
+            1556.8258249999997,
+            3780.2674123707725
+          ],
+          [
+            1556.8258249999997,
+            3785.2674123707725
+          ],
+          [
+            1551.8258249999997,
+            3785.2674123707725
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1412.995849609375,
+            3740.0
+          ],
+          "peak_gray": 234.5222930908203,
+          "local_residual": 53.664154052734375,
+          "native_center": [
+            1412.995849609375,
+            3740.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0-SD01-28",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1411.792823998714,
+              3712.8294588338454
+            ],
+            [
+              1415.7110955250948,
+              3761.1548076592107
+            ]
+          ],
+          "native_ridge_shift_x": 16
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0-SD00-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0-SD00-S000",
+        "family": "RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0-SD00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          1578.0195749999998,
+          3770.559917204097
+        ],
+        "layout_outline": [
+          [
+            1575.5195749999998,
+            3768.059917204097
+          ],
+          [
+            1580.5195749999998,
+            3768.059917204097
+          ],
+          [
+            1580.5195749999998,
+            3773.059917204097
+          ],
+          [
+            1575.5195749999998,
+            3773.059917204097
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            1413.4112548828125,
+            3740.0
+          ],
+          "peak_gray": 236.65211486816406,
+          "local_residual": 49.35029602050781,
+          "native_center": [
+            1413.4112548828125,
+            3740.0
+          ],
+          "source_observation_id": "PROFILE-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0-SD00-13",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": true,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              1412.3909749510951,
+              3727.4167255439147
+            ],
+            [
+              1416.309246477476,
+              3775.74207436928
+            ]
+          ],
+          "native_ridge_shift_x": -12
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0"
+      }
+    },
+    {
+      "id": "CTSD2-G66-P07-left-0",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings",
+        "source_ownership_conflict_do_not_use_one_peak_for_distinct_landings"
+      ],
+      "candidate": {
+        "id": "CTSD2-G66-P07-left-0",
+        "family": "SD2-G66-P07-left",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+        "layout_center": [
+          1575.2847,
+          3780.25025
+        ],
+        "layout_outline": [
+          [
+            1572.7847,
+            3777.75025
+          ],
+          [
+            1577.7847,
+            3777.75025
+          ],
+          [
+            1577.7847,
+            3782.75025
+          ],
+          [
+            1572.7847,
+            3782.75025
+          ]
+        ],
+        "source_frame": "poly",
+        "source_evidence": {
+          "native_center": [
+            1413,
+            3740
+          ],
+          "peak_gray": 246.0,
+          "local_residual": 60.43597400917963,
+          "source_roi": [
+            1402,
+            3730,
+            1431,
+            3769
+          ],
+          "supported": true,
+          "algorithm_detected": true,
+          "evidence_type": "AI_inspected_SD_peak_relative_to_observed_gate_bar",
+          "native_gate_bar_anchor": [
+            1443.0,
+            3720.0
+          ]
+        },
+        "status": "AI_context_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null
+      }
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G004-00-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "positive_area_overlap_pairs",
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTX-CTT-BAND-AA-G004-00-S000",
+        "family": "BAND-AA-G004-00",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2687.6200417536534,
+          1535.0
+        ],
+        "layout_outline": [
+          [
+            2685.1200417536534,
+            1532.5
+          ],
+          [
+            2690.1200417536534,
+            1532.5
+          ],
+          [
+            2690.1200417536534,
+            1537.5
+          ],
+          [
+            2685.1200417536534,
+            1537.5
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2606.0,
+            1346.9073486328125
+          ],
+          "peak_gray": 226.068359375,
+          "local_residual": 82.9215087890625,
+          "native_center": [
+            2606.0,
+            1346.9073486328125
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G004-00-7",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2599.0,
+              1346.9105449174397
+            ],
+            [
+              2653.0,
+              1346.8855995537049
+            ],
+            [
+              2706.0,
+              1346.8611161411502
+            ],
+            [
+              2760.0,
+              1346.8361707774152
+            ],
+            [
+              2810.0,
+              1346.8130732184013
+            ],
+            [
+              2865.0,
+              1346.7876659034862
+            ],
+            [
+              2917.0,
+              1346.7636444421119
+            ],
+            [
+              2971.0,
+              1346.7386990783768
+            ],
+            [
+              3024.0,
+              1346.7142156658222
+            ],
+            [
+              3078.0,
+              1346.6892703020874
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G004"
+      }
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G004-02-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "positive_area_overlap_pairs",
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTX-CTT-BAND-AA-G004-02-S000",
+        "family": "BAND-AA-G004-02",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2685.5,
+          1538.2556390977443
+        ],
+        "layout_outline": [
+          [
+            2683.0,
+            1535.7556390977443
+          ],
+          [
+            2688.0,
+            1535.7556390977443
+          ],
+          [
+            2688.0,
+            1540.7556390977443
+          ],
+          [
+            2683.0,
+            1540.7556390977443
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2599.972900390625,
+            1352.0
+          ],
+          "peak_gray": 211.47727966308594,
+          "local_residual": 21.261276245117188,
+          "native_center": [
+            2599.972900390625,
+            1352.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G004-02-9",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2600.1766789779144,
+              1343.0
+            ],
+            [
+              2598.65911660511,
+              1410.0
+            ],
+            [
+              2597.164204416974,
+              1476.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G004"
+      }
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-00-S003",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTX-CTT-BAND-AA-G001-00-S003",
+        "family": "BAND-AA-G001-00",
+        "column": 3,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2439.2571428571428,
+          1331.5
+        ],
+        "layout_outline": [
+          [
+            2436.7571428571428,
+            1329.0
+          ],
+          [
+            2441.7571428571428,
+            1329.0
+          ],
+          [
+            2441.7571428571428,
+            1334.0
+          ],
+          [
+            2436.7571428571428,
+            1334.0
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2227.0,
+            1124.621337890625
+          ],
+          "peak_gray": 245.9428253173828,
+          "local_residual": 75.77679443359375,
+          "native_center": [
+            2227.0,
+            1124.621337890625
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-00-162",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2065.0,
+              1127.3523880012185
+            ],
+            [
+              2153.0,
+              1125.3256563193868
+            ],
+            [
+              2240.0,
+              1123.3219556793938
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      }
+    },
+    {
+      "id": "CTX-CTT-BAND-AA-G001-03-S000",
+      "disposition": "superseded_by_independent_port_or_guard_reinspection_no_automatic_old_slot_release",
+      "prior_reasons": [
+        "min_gap_violations"
+      ],
+      "candidate": {
+        "id": "CTX-CTT-BAND-AA-G001-03-S000",
+        "family": "BAND-AA-G001-03",
+        "column": 0,
+        "row": 0,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          2446.5,
+          1333.5244519392918
+        ],
+        "layout_outline": [
+          [
+            2444.0,
+            1331.0244519392918
+          ],
+          [
+            2449.0,
+            1331.0244519392918
+          ],
+          [
+            2449.0,
+            1336.0244519392918
+          ],
+          [
+            2444.0,
+            1336.0244519392918
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            2300.78857421875,
+            1127.0
+          ],
+          "peak_gray": 239.11952209472656,
+          "local_residual": 90.6641845703125,
+          "native_center": [
+            2300.78857421875,
+            1127.0
+          ],
+          "source_observation_id": "PROFILE-BAND-AA-G001-03-6",
+          "evidence_tier": "raw_band_profile_peak",
+          "evidence_type": "raw_profile_peak_with_piecewise_locator_and_bounded_ridge",
+          "supported": true,
+          "algorithm_detected": true,
+          "locator_status": "AI_photo_correspondence_candidate_not_validated_global_registration",
+          "source_path": [
+            [
+              2300.1902719492414,
+              1121.0
+            ],
+            [
+              2311.859793536559,
+              1238.0
+            ],
+            [
+              2316.1485920686505,
+              1281.0
+            ],
+            [
+              2321.0358276052198,
+              1330.0
+            ],
+            [
+              2325.9230631417886,
+              1379.0
+            ],
+            [
+              2330.810298678358,
+              1428.0
+            ],
+            [
+              2335.8970132164195,
+              1479.0
+            ],
+            [
+              2341.781643760452,
+              1538.0
+            ],
+            [
+              2347.566534803738,
+              1596.0
+            ],
+            [
+              2353.45116534777,
+              1655.0
+            ],
+            [
+              2359.3357958918023,
+              1714.0
+            ]
+          ]
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-G001"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA-F01803-SD06-S005",
+      "disposition": "retired_unsupported_optical_observation",
+      "prior_reasons": [
+        "no_observed_source_support"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA-F01803-SD06-S005",
+        "family": "RECOVER-AA-F01803-SD06",
+        "column": 0,
+        "row": 5,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3389.9999999999995,
+          523.2787615204272
+        ],
+        "layout_outline": [
+          [
+            3387.4999999999995,
+            520.7787615204272
+          ],
+          [
+            3392.4999999999995,
+            520.7787615204272
+          ],
+          [
+            3392.4999999999995,
+            525.7787615204272
+          ],
+          [
+            3387.4999999999995,
+            525.7787615204272
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3339.743896484375,
+            285.0
+          ],
+          "peak_gray": 212.67141367339025,
+          "local_residual": 12.06904543304222,
+          "native_center": [
+            3339.743896484375,
+            285.0
+          ],
+          "source_observation_id": "PLATEAU-AA-F01803-6-82",
+          "evidence_tier": "bounded_ridge_plateau_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": false,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3339.357462560996,
+              203.25595238095238
+            ],
+            [
+              3341.3092041056702,
+              318.32738095238096
+            ]
+          ],
+          "native_ridge_shift_x": -3
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-F01803"
+      }
+    },
+    {
+      "id": "CTSD-CTT-RECOVER-AA-F01804-SD05-S001",
+      "disposition": "retired_unsupported_optical_observation",
+      "prior_reasons": [
+        "no_observed_source_support"
+      ],
+      "candidate": {
+        "id": "CTSD-CTT-RECOVER-AA-F01804-SD05-S001",
+        "family": "RECOVER-AA-F01804-SD05",
+        "column": 0,
+        "row": 1,
+        "layer": "CT",
+        "landing_material": "AA",
+        "layout_center": [
+          3954.0,
+          456.14406779661016
+        ],
+        "layout_outline": [
+          [
+            3951.5,
+            453.64406779661016
+          ],
+          [
+            3956.5,
+            453.64406779661016
+          ],
+          [
+            3956.5,
+            458.64406779661016
+          ],
+          [
+            3951.5,
+            458.64406779661016
+          ]
+        ],
+        "source_evidence": {
+          "source_native_center_xy": [
+            3969.618408203125,
+            229.0
+          ],
+          "peak_gray": 188.32156344396677,
+          "local_residual": 12.72407934980967,
+          "native_center": [
+            3969.618408203125,
+            229.0
+          ],
+          "source_observation_id": "PLATEAU-AA-F01804-5-21",
+          "evidence_tier": "bounded_ridge_plateau_profile_peak",
+          "evidence_type": "bounded_diffusion_ridge_with_AI_material_context",
+          "supported": false,
+          "algorithm_detected": true,
+          "source_path": [
+            [
+              3968.270486366986,
+              208.47483005004483
+            ],
+            [
+              3970.229513633014,
+              324.057438745697
+            ]
+          ],
+          "native_ridge_shift_x": 12
+        },
+        "source_frame": "poly",
+        "status": "AI_transfer_candidate",
+        "M1_enclosure": "unknown",
+        "net_id": null,
+        "AA_target": "AA-F01804"
+      }
+    }
+  ]
+}

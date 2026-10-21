@@ -1,0 +1,42 @@
+{
+  "status": "scoped_decisions_and_safe_geometry_PASS_whole_layer_technical_HOLD",
+  "full_pytest": "454 passed in 19.20s",
+  "ruff": "PASS ct_transfer and test_ct_transfer",
+  "actual_CLI": "ct_transfer scoped revision succeeded",
+  "geometry": "PASS 10025 cuts; overlap0; gap_violations0; minimum_edge_gap4.4px",
+  "parent_v1_locked_JSON": "all hashes match",
+  "source_aliases": "new relocation native_center and source_native_center_xy agree; old coordinates retained in history",
+  "static": "43 local page resources, SVG XML and PNG decode PASS",
+  "visual": "Q1 Q2 Q3A canonical PNG and Q1 Q2 annotated source inspected; final regeneration preserves those pixels",
+  "browser_render": "not automatically tested",
+  "human_questions_pending": [],
+  "whole_frame_human_accepted": false,
+  "whole_frame_complete": false,
+  "code_sha256": {
+    "silicon_eye/ct_transfer.py": "3334e619f808283526ef42d400dd35128a1e1c2f62604a301e16a481143dbbbf",
+    "tests/test_ct_transfer.py": "d186be00be4182d3b4f458b1117456430b2e032080da42ff70125c91c9043426"
+  },
+  "locked_files": {
+    "preflight-geometry-v1.json": "dde02bc9f42d9f5e21f6cadff37ee6075594fd05ee9cf07c53e6792e02988864",
+    "material-model-v1.json": "cde42f572e7852e40ceaa3db53ee0b98920160b9868c9a13b73fc431e3125d62",
+    "spec-v1.json": "b087ff4004878a57bfd82e19cd06cae468fe702a8a8af79df81b1c03fb4cf875",
+    "ledger-v1.json": "243b73f48f046d38316f3008c2337ad4f787bd8f934868361496024abce98b87",
+    "correspondence-references-v1.json": "2a39bbd5d7b6286f813d088bfa1601f313707d0ee4ffadf55cdddb53f5f55c9e",
+    "prior-observation-disposition-v1.json": "1f0e9c246b9bb5b6afbc4600add2f057972fa63dc2a7a831affeaf884a369e42",
+    "report-v1.json": "c5ba8e22480d295f2c46f2bc6dc881fcf48d0ec87a8426d97517f3f8fdaaedd1",
+    "human-decision-status-v1.json": "70f006d5ec325dc1fdb138529c9ad00b518dbdacedb68f2bf5471194001baba8",
+    "human-review-v1.json": "f7ad576da2427e869a741a0575273fe1f4833989287a506e89c5c8f3d5f0c345",
+    "connection-check-v1.json": "bea3e08b5927d24cb1ddb57250746896bd51f1ee249d89f85372d0966b6d12f7",
+    "preservation-and-source-check-v1.json": "b09ae8b5fdc52e1dce8b5a4652ad271877806965d8aede9ccfefdb464fc34bc2",
+    "new-contacts-v1.json": "d72dbf3a277aee5e25bcaedeebb0ca9873dc062111d8d257c93cdfd6ade8bf36",
+    "unknown-sites-v1.json": "28840dfb2d2dfe11cee7cb8f5c3bccb8f0db06ed63a302c5e0fd7d04df39028b",
+    "optical-reinspection-v1.json": "0c4bba5d44a4a30138b588abd1c0d5636b4a53850ca35ccb0936e82f30de594b",
+    "stage-gate-v1.json": "ce4fc92579b31b47e267fc8b138cd9d2faaecdcb3a51c07f3ac7a5e258db8270",
+    "model-v1.json": "bd3e4a5b5aec7539a32059de2c8c4046d853da7a875a1857eefb21c6063d9196"
+  },
+  "recipes": {
+    "prepare_ct_adjudication_v2.py": "2e98cd0433eab81a8475f457fe95392ed6d5f7ce6e5e4ab3fa6ab5cdc22abaef",
+    "package_ct_adjudication_v2.py": "3a9eaf77f3cbe27ecac4fd102ac4e3571dda020ca82fd6403a02ac90f142d76c"
+  },
+  "review_index_sha256": "33c319c42e6f8dba0d6dd32d1f295af6ff3ef91898c42f0c9cfd5d6aa36f5641"
+}

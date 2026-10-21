@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "purpose": "CT material-landing geometry work layer for evidence-guided continuation",
+  "units": "relative_pixels",
+  "authoritative_model": {
+    "path": "benchmarks/ct-work-layer-final-v5/model-v1.json",
+    "sha256": "0dc6ec0d014503f5fef2ba3bc0d6957d4f8dd691f9fb9b3c5896e2855042bb6a"
+  },
+  "use_reviewed_source_supported_records": true,
+  "confirmed_M1_connectivity": false,
+  "confirmed_netlist": false,
+  "new_geometry_human_pixel_approved": false,
+  "physical_all_CT_recovered": false,
+  "restrictions": [
+    {
+      "scope_id": "U-AA-F01951",
+      "bounds": [
+        2017.0,
+        341.0,
+        2055.0,
+        349.0
+      ],
+      "AA_target": "AA-F01951",
+      "policy": "do_not_infer_CT_or_M1_connection_here"
+    },
+    {
+      "scope_id": "U-AA-F01952",
+      "bounds": [
+        1934.0,
+        341.0,
+        1972.0,
+        350.0
+      ],
+      "AA_target": "AA-F01952",
+      "policy": "do_not_infer_CT_or_M1_connection_here"
+    },
+    {
+      "scope_id": "U-H1",
+      "bounds": [
+        270.0039,
+        269.4849,
+        5226.7198,
+        284.7099
+      ],
+      "AA_target": "AA2-TOP-H1-AA-0",
+      "policy": "do_not_infer_CT_or_M1_connection_here"
+    },
+    {
+      "scope_id": "U-H2",
+      "bounds": [
+        268.0,
+        370.0,
+        5271.0,
+        384.0
+      ],
+      "AA_target": "AA2-TOP-H2-AA-0",
+      "policy": "do_not_infer_CT_or_M1_connection_here"
+    },
+    {
+      "scope_id": "L-CLIPPED-AA-F01744",
+      "bounds": [
+        354,
+        522,
+        456,
+        574
+      ],
+      "AA_target": "AA-F01744",
+      "policy": "keep_terminal_access_unknown_here"
+    }
+  ],
+  "limitation_reopen_triggers": [
+    "new photograph",
+    "validated local correspondence",
+    "requested trace depends on limited material"
+  ],
+  "blanket_automatic_network_export_allowed": false,
+  "notes": "Contract is metadata for the next workflow; current work does not implement a new network exporter."
+}

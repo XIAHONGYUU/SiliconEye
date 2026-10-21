@@ -1,0 +1,30 @@
+{
+  "human_questions_resolved": [
+    "Q1",
+    "Q2",
+    "Q3A",
+    "Q3B",
+    "Q3C"
+  ],
+  "pending_human_questions": [],
+  "whole_frame_human_accepted": false,
+  "parent_ref": {
+    "path": "benchmarks/ct-full-frame-remaining-v1/model-v1.json",
+    "sha256": "f5dcd6acfebe34da030885e29fa21f78e73db19ce1103f9fae5d0b5bd19c562f"
+  },
+  "new_CT_count": 26,
+  "retired_unaccepted_gate_CT": 5,
+  "old_source_coordinates_corrected_without_design_change": 5,
+  "technical_source_paths_pending": [
+    "BAND-AA-F01648-00",
+    "BAND-AA-F01951-00",
+    "BAND-AA-F01952-00",
+    "BAND-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-4-00",
+    "BAND-AA2-TOP-H1-AA-0-00",
+    "BAND-AA2-TOP-H2-AA-0-00",
+    "BAND-AA2-TOP-STEP-2-AA-0-02",
+    "BAND-AA2-UPPER-COMPLEX-GUARD-AA-0-split01-00"
+  ],
+  "path_count_correction": "v1 text said seven; actual locked family list has eight. No historical record rewritten.",
+  "exact_new_geometry_human_accepted": false
+}

@@ -1,0 +1,40 @@
+{
+  "diffusion_region_count": 845,
+  "with_candidate_CT": 844,
+  "without_direct_CT": [
+    {
+      "id": "AA-F01744:D0",
+      "AA_target": "AA-F01744",
+      "gate_ids": [
+        "SG-U01-001",
+        "SG-U01-002",
+        "SG-U01-003"
+      ],
+      "layout_bounds": [
+        354.0,
+        522.0,
+        456.0,
+        574.0
+      ],
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence",
+      "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+    }
+  ],
+  "POLY_without_direct_CT": [
+    {
+      "material_id": "V3_G1",
+      "AA_target": null,
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence_or_body_fragment"
+    },
+    {
+      "material_id": "V3_G2",
+      "AA_target": null,
+      "contact_ids": [],
+      "status": "no_direct_CT_evidence_or_body_fragment"
+    }
+  ],
+  "counts_not_device_totals_or_recall": true,
+  "CT_to_M1_still_unknown": true
+}

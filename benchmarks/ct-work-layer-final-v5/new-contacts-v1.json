@@ -1,0 +1,1885 @@
+{
+  "objects": [
+    {
+      "id": "CTV5-GATE-G06R-P01-0",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P01",
+      "column": 0,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P01",
+      "layout_center": [
+        3764.0,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3761.5,
+          432.5
+        ],
+        [
+          3766.5,
+          432.5
+        ],
+        [
+          3766.5,
+          437.5
+        ],
+        [
+          3761.5,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3762,
+          185
+        ],
+        "source_native_center_xy": [
+          3762,
+          185
+        ],
+        "source_roi": [
+          3753,
+          174,
+          3771,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P01-0",
+        "supported": true,
+        "peak_gray": 247.0,
+        "local_residual": 40.32349210165066,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P01-1",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P01",
+      "column": 1,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P01",
+      "layout_center": [
+        3776.0,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3773.5,
+          432.5
+        ],
+        [
+          3778.5,
+          432.5
+        ],
+        [
+          3778.5,
+          437.5
+        ],
+        [
+          3773.5,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3773,
+          178
+        ],
+        "source_native_center_xy": [
+          3773,
+          178
+        ],
+        "source_roi": [
+          3772,
+          174,
+          3790,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P01-1",
+        "supported": true,
+        "peak_gray": 249.0,
+        "local_residual": 40.9912222139514,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P02-0",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P02",
+      "column": 0,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P02",
+      "layout_center": [
+        3817.666666666667,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3815.166666666667,
+          432.5
+        ],
+        [
+          3820.166666666667,
+          432.5
+        ],
+        [
+          3820.166666666667,
+          437.5
+        ],
+        [
+          3815.166666666667,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3813,
+          178
+        ],
+        "source_native_center_xy": [
+          3813,
+          178
+        ],
+        "source_roi": [
+          3798,
+          174,
+          3816,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P02-0",
+        "supported": true,
+        "peak_gray": 248.0,
+        "local_residual": 44.86206451548742,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P02-1",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P02",
+      "column": 1,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P02",
+      "layout_center": [
+        3829.666666666667,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3827.166666666667,
+          432.5
+        ],
+        [
+          3832.166666666667,
+          432.5
+        ],
+        [
+          3832.166666666667,
+          437.5
+        ],
+        [
+          3827.166666666667,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3823,
+          178
+        ],
+        "source_native_center_xy": [
+          3823,
+          178
+        ],
+        "source_roi": [
+          3817,
+          174,
+          3835,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P02-1",
+        "supported": true,
+        "peak_gray": 245.0,
+        "local_residual": 45.629008579171,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P03-0",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P03",
+      "column": 0,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P03",
+      "layout_center": [
+        3871.333333333333,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3868.833333333333,
+          432.5
+        ],
+        [
+          3873.833333333333,
+          432.5
+        ],
+        [
+          3873.833333333333,
+          437.5
+        ],
+        [
+          3868.833333333333,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3858,
+          180
+        ],
+        "source_native_center_xy": [
+          3858,
+          180
+        ],
+        "source_roi": [
+          3853,
+          174,
+          3871,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P03-0",
+        "supported": true,
+        "peak_gray": 244.0,
+        "local_residual": 43.055917628189036,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P03-1",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P03",
+      "column": 1,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P03",
+      "layout_center": [
+        3883.333333333333,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3880.833333333333,
+          432.5
+        ],
+        [
+          3885.833333333333,
+          432.5
+        ],
+        [
+          3885.833333333333,
+          437.5
+        ],
+        [
+          3880.833333333333,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3879,
+          180
+        ],
+        "source_native_center_xy": [
+          3879,
+          180
+        ],
+        "source_roi": [
+          3872,
+          174,
+          3890,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P03-1",
+        "supported": true,
+        "peak_gray": 242.0,
+        "local_residual": 41.312050805072886,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P04-0",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P04",
+      "column": 0,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P04",
+      "layout_center": [
+        3925.0,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3922.5,
+          432.5
+        ],
+        [
+          3927.5,
+          432.5
+        ],
+        [
+          3927.5,
+          437.5
+        ],
+        [
+          3922.5,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3909,
+          186
+        ],
+        "source_native_center_xy": [
+          3909,
+          186
+        ],
+        "source_roi": [
+          3904,
+          174,
+          3922,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P04-0",
+        "supported": true,
+        "peak_gray": 239.0,
+        "local_residual": 47.34636365894812,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-GATE-G06R-P04-1",
+      "layer": "CT",
+      "family": "V5-GATE-G06R-P04",
+      "column": 1,
+      "row": 0,
+      "landing_material": "POLY",
+      "POLY_target": "G06R-P04",
+      "layout_center": [
+        3937.0,
+        435.0
+      ],
+      "layout_outline": [
+        [
+          3934.5,
+          432.5
+        ],
+        [
+          3939.5,
+          432.5
+        ],
+        [
+          3939.5,
+          437.5
+        ],
+        [
+          3934.5,
+          437.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3924,
+          179
+        ],
+        "source_native_center_xy": [
+          3924,
+          179
+        ],
+        "source_roi": [
+          3923,
+          174,
+          3941,
+          212
+        ],
+        "source_observation_id": "CTV5-GATE-G06R-P04-1",
+        "supported": true,
+        "peak_gray": 246.0,
+        "local_residual": 44.906448778952864,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-0-0",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE0",
+      "column": 0,
+      "row": 0,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3748.5,
+        451.0
+      ],
+      "layout_outline": [
+        [
+          3746.0,
+          448.5
+        ],
+        [
+          3751.0,
+          448.5
+        ],
+        [
+          3751.0,
+          453.5
+        ],
+        [
+          3746.0,
+          453.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3742,
+          214
+        ],
+        "source_native_center_xy": [
+          3742,
+          214
+        ],
+        "source_roi": [
+          3735,
+          211,
+          3748,
+          224
+        ],
+        "source_observation_id": "CTV5-SD-G06R-0-0",
+        "supported": true,
+        "peak_gray": 249.0,
+        "local_residual": 36.63190621142951,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-0-1",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE0",
+      "column": 0,
+      "row": 1,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3748.5,
+        469.75
+      ],
+      "layout_outline": [
+        [
+          3746.0,
+          467.25
+        ],
+        [
+          3751.0,
+          467.25
+        ],
+        [
+          3751.0,
+          472.25
+        ],
+        [
+          3746.0,
+          472.25
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3736,
+          232
+        ],
+        "source_native_center_xy": [
+          3736,
+          232
+        ],
+        "source_roi": [
+          3735,
+          226,
+          3748,
+          239
+        ],
+        "source_observation_id": "CTV5-SD-G06R-0-1",
+        "supported": true,
+        "peak_gray": 237.0,
+        "local_residual": 39.80339951093421,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-0-2",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE0",
+      "column": 0,
+      "row": 2,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3748.5,
+        488.5
+      ],
+      "layout_outline": [
+        [
+          3746.0,
+          486.0
+        ],
+        [
+          3751.0,
+          486.0
+        ],
+        [
+          3751.0,
+          491.0
+        ],
+        [
+          3746.0,
+          491.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3741,
+          245
+        ],
+        "source_native_center_xy": [
+          3741,
+          245
+        ],
+        "source_roi": [
+          3735,
+          242,
+          3748,
+          255
+        ],
+        "source_observation_id": "CTV5-SD-G06R-0-2",
+        "supported": true,
+        "peak_gray": 249.0,
+        "local_residual": 37.64004686846957,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-0-3",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE0",
+      "column": 0,
+      "row": 3,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3748.5,
+        507.25
+      ],
+      "layout_outline": [
+        [
+          3746.0,
+          504.75
+        ],
+        [
+          3751.0,
+          504.75
+        ],
+        [
+          3751.0,
+          509.75
+        ],
+        [
+          3746.0,
+          509.75
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3736,
+          263
+        ],
+        "source_native_center_xy": [
+          3736,
+          263
+        ],
+        "source_roi": [
+          3735,
+          257,
+          3748,
+          270
+        ],
+        "source_observation_id": "CTV5-SD-G06R-0-3",
+        "supported": true,
+        "peak_gray": 239.0,
+        "local_residual": 43.13617327484178,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-0-4",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE0",
+      "column": 0,
+      "row": 4,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3748.5,
+        526.0
+      ],
+      "layout_outline": [
+        [
+          3746.0,
+          523.5
+        ],
+        [
+          3751.0,
+          523.5
+        ],
+        [
+          3751.0,
+          528.5
+        ],
+        [
+          3746.0,
+          528.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3736,
+          279
+        ],
+        "source_native_center_xy": [
+          3736,
+          279
+        ],
+        "source_roi": [
+          3735,
+          273,
+          3748,
+          286
+        ],
+        "source_observation_id": "CTV5-SD-G06R-0-4",
+        "supported": true,
+        "peak_gray": 241.0,
+        "local_residual": 40.464687725300706,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-1-0",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 1,
+      "row": 0,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3796.8333333333335,
+        451.0
+      ],
+      "layout_outline": [
+        [
+          3794.3333333333335,
+          448.5
+        ],
+        [
+          3799.3333333333335,
+          448.5
+        ],
+        [
+          3799.3333333333335,
+          453.5
+        ],
+        [
+          3794.3333333333335,
+          453.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3793,
+          215
+        ],
+        "source_native_center_xy": [
+          3793,
+          215
+        ],
+        "source_roi": [
+          3786,
+          211,
+          3799,
+          224
+        ],
+        "source_observation_id": "CTV5-SD-G06R-1-0",
+        "supported": true,
+        "peak_gray": 248.0,
+        "local_residual": 53.64176307938058,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-1-1",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 1,
+      "row": 1,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3796.8333333333335,
+        469.75
+      ],
+      "layout_outline": [
+        [
+          3794.3333333333335,
+          467.25
+        ],
+        [
+          3799.3333333333335,
+          467.25
+        ],
+        [
+          3799.3333333333335,
+          472.25
+        ],
+        [
+          3794.3333333333335,
+          472.25
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3792,
+          233
+        ],
+        "source_native_center_xy": [
+          3792,
+          233
+        ],
+        "source_roi": [
+          3786,
+          226,
+          3799,
+          239
+        ],
+        "source_observation_id": "CTV5-SD-G06R-1-1",
+        "supported": true,
+        "peak_gray": 252.0,
+        "local_residual": 60.07262855628633,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-1-2",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 1,
+      "row": 2,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3796.8333333333335,
+        488.5
+      ],
+      "layout_outline": [
+        [
+          3794.3333333333335,
+          486.0
+        ],
+        [
+          3799.3333333333335,
+          486.0
+        ],
+        [
+          3799.3333333333335,
+          491.0
+        ],
+        [
+          3794.3333333333335,
+          491.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3792,
+          249
+        ],
+        "source_native_center_xy": [
+          3792,
+          249
+        ],
+        "source_roi": [
+          3786,
+          242,
+          3799,
+          255
+        ],
+        "source_observation_id": "CTV5-SD-G06R-1-2",
+        "supported": true,
+        "peak_gray": 253.0,
+        "local_residual": 60.04517546007469,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-1-3",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 1,
+      "row": 3,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3796.8333333333335,
+        507.25
+      ],
+      "layout_outline": [
+        [
+          3794.3333333333335,
+          504.75
+        ],
+        [
+          3799.3333333333335,
+          504.75
+        ],
+        [
+          3799.3333333333335,
+          509.75
+        ],
+        [
+          3794.3333333333335,
+          509.75
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3792,
+          264
+        ],
+        "source_native_center_xy": [
+          3792,
+          264
+        ],
+        "source_roi": [
+          3786,
+          257,
+          3799,
+          270
+        ],
+        "source_observation_id": "CTV5-SD-G06R-1-3",
+        "supported": true,
+        "peak_gray": 253.0,
+        "local_residual": 66.91634801404294,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-1-4",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 1,
+      "row": 4,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3796.8333333333335,
+        526.0
+      ],
+      "layout_outline": [
+        [
+          3794.3333333333335,
+          523.5
+        ],
+        [
+          3799.3333333333335,
+          523.5
+        ],
+        [
+          3799.3333333333335,
+          528.5
+        ],
+        [
+          3794.3333333333335,
+          528.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3792,
+          280
+        ],
+        "source_native_center_xy": [
+          3792,
+          280
+        ],
+        "source_roi": [
+          3786,
+          273,
+          3799,
+          286
+        ],
+        "source_observation_id": "CTV5-SD-G06R-1-4",
+        "supported": true,
+        "peak_gray": 252.0,
+        "local_residual": 56.6253989143525,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-2-0",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 2,
+      "row": 0,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3850.5000000000005,
+        451.0
+      ],
+      "layout_outline": [
+        [
+          3848.0000000000005,
+          448.5
+        ],
+        [
+          3853.0000000000005,
+          448.5
+        ],
+        [
+          3853.0000000000005,
+          453.5
+        ],
+        [
+          3848.0000000000005,
+          453.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3843,
+          216
+        ],
+        "source_native_center_xy": [
+          3843,
+          216
+        ],
+        "source_roi": [
+          3838,
+          211,
+          3851,
+          224
+        ],
+        "source_observation_id": "CTV5-SD-G06R-2-0",
+        "supported": true,
+        "peak_gray": 251.0,
+        "local_residual": 41.827196951393915,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-2-1",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 2,
+      "row": 1,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3850.5000000000005,
+        469.75
+      ],
+      "layout_outline": [
+        [
+          3848.0000000000005,
+          467.25
+        ],
+        [
+          3853.0000000000005,
+          467.25
+        ],
+        [
+          3853.0000000000005,
+          472.25
+        ],
+        [
+          3848.0000000000005,
+          472.25
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3842,
+          234
+        ],
+        "source_native_center_xy": [
+          3842,
+          234
+        ],
+        "source_roi": [
+          3838,
+          227,
+          3851,
+          240
+        ],
+        "source_observation_id": "CTV5-SD-G06R-2-1",
+        "supported": true,
+        "peak_gray": 251.0,
+        "local_residual": 48.04336181228706,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-2-2",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 2,
+      "row": 2,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3850.5000000000005,
+        488.5
+      ],
+      "layout_outline": [
+        [
+          3848.0000000000005,
+          486.0
+        ],
+        [
+          3853.0000000000005,
+          486.0
+        ],
+        [
+          3853.0000000000005,
+          491.0
+        ],
+        [
+          3848.0000000000005,
+          491.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3842,
+          254
+        ],
+        "source_native_center_xy": [
+          3842,
+          254
+        ],
+        "source_roi": [
+          3838,
+          242,
+          3851,
+          255
+        ],
+        "source_observation_id": "CTV5-SD-G06R-2-2",
+        "supported": true,
+        "peak_gray": 247.0,
+        "local_residual": 44.547253400410824,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-2-3",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 2,
+      "row": 3,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3850.5000000000005,
+        507.25
+      ],
+      "layout_outline": [
+        [
+          3848.0000000000005,
+          504.75
+        ],
+        [
+          3853.0000000000005,
+          504.75
+        ],
+        [
+          3853.0000000000005,
+          509.75
+        ],
+        [
+          3848.0000000000005,
+          509.75
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3842,
+          265
+        ],
+        "source_native_center_xy": [
+          3842,
+          265
+        ],
+        "source_roi": [
+          3838,
+          258,
+          3851,
+          271
+        ],
+        "source_observation_id": "CTV5-SD-G06R-2-3",
+        "supported": true,
+        "peak_gray": 251.0,
+        "local_residual": 53.40192213674027,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-2-4",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 2,
+      "row": 4,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3850.5000000000005,
+        526.0
+      ],
+      "layout_outline": [
+        [
+          3848.0000000000005,
+          523.5
+        ],
+        [
+          3853.0000000000005,
+          523.5
+        ],
+        [
+          3853.0000000000005,
+          528.5
+        ],
+        [
+          3848.0000000000005,
+          528.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3842,
+          275
+        ],
+        "source_native_center_xy": [
+          3842,
+          275
+        ],
+        "source_roi": [
+          3838,
+          273,
+          3851,
+          286
+        ],
+        "source_observation_id": "CTV5-SD-G06R-2-4",
+        "supported": true,
+        "peak_gray": 247.0,
+        "local_residual": 41.68234666733969,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-3-0",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 3,
+      "row": 0,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3904.1666666666674,
+        451.0
+      ],
+      "layout_outline": [
+        [
+          3901.6666666666674,
+          448.5
+        ],
+        [
+          3906.6666666666674,
+          448.5
+        ],
+        [
+          3906.6666666666674,
+          453.5
+        ],
+        [
+          3901.6666666666674,
+          453.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3894,
+          216
+        ],
+        "source_native_center_xy": [
+          3894,
+          216
+        ],
+        "source_roi": [
+          3886,
+          211,
+          3899,
+          224
+        ],
+        "source_observation_id": "CTV5-SD-G06R-3-0",
+        "supported": true,
+        "peak_gray": 249.0,
+        "local_residual": 43.2537737538247,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-3-1",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 3,
+      "row": 1,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3904.1666666666674,
+        469.75
+      ],
+      "layout_outline": [
+        [
+          3901.6666666666674,
+          467.25
+        ],
+        [
+          3906.6666666666674,
+          467.25
+        ],
+        [
+          3906.6666666666674,
+          472.25
+        ],
+        [
+          3901.6666666666674,
+          472.25
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3888,
+          233
+        ],
+        "source_native_center_xy": [
+          3888,
+          233
+        ],
+        "source_roi": [
+          3886,
+          227,
+          3899,
+          240
+        ],
+        "source_observation_id": "CTV5-SD-G06R-3-1",
+        "supported": true,
+        "peak_gray": 246.0,
+        "local_residual": 46.21207356462969,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-3-2",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 3,
+      "row": 2,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3904.1666666666674,
+        488.5
+      ],
+      "layout_outline": [
+        [
+          3901.6666666666674,
+          486.0
+        ],
+        [
+          3906.6666666666674,
+          486.0
+        ],
+        [
+          3906.6666666666674,
+          491.0
+        ],
+        [
+          3901.6666666666674,
+          491.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3893,
+          254
+        ],
+        "source_native_center_xy": [
+          3893,
+          254
+        ],
+        "source_roi": [
+          3886,
+          242,
+          3899,
+          255
+        ],
+        "source_observation_id": "CTV5-SD-G06R-3-2",
+        "supported": true,
+        "peak_gray": 247.0,
+        "local_residual": 43.814111987366516,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-3-3",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 3,
+      "row": 3,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3904.1666666666674,
+        507.25
+      ],
+      "layout_outline": [
+        [
+          3901.6666666666674,
+          504.75
+        ],
+        [
+          3906.6666666666674,
+          504.75
+        ],
+        [
+          3906.6666666666674,
+          509.75
+        ],
+        [
+          3901.6666666666674,
+          509.75
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3893,
+          264
+        ],
+        "source_native_center_xy": [
+          3893,
+          264
+        ],
+        "source_roi": [
+          3886,
+          258,
+          3899,
+          271
+        ],
+        "source_observation_id": "CTV5-SD-G06R-3-3",
+        "supported": true,
+        "peak_gray": 252.0,
+        "local_residual": 53.36311598726391,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-3-4",
+      "layer": "CT",
+      "family": "V5-SD-G06R-INTERIOR",
+      "column": 3,
+      "row": 4,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3904.1666666666674,
+        526.0
+      ],
+      "layout_outline": [
+        [
+          3901.6666666666674,
+          523.5
+        ],
+        [
+          3906.6666666666674,
+          523.5
+        ],
+        [
+          3906.6666666666674,
+          528.5
+        ],
+        [
+          3901.6666666666674,
+          528.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3887,
+          280
+        ],
+        "source_native_center_xy": [
+          3887,
+          280
+        ],
+        "source_roi": [
+          3886,
+          273,
+          3899,
+          286
+        ],
+        "source_observation_id": "CTV5-SD-G06R-3-4",
+        "supported": true,
+        "peak_gray": 244.0,
+        "local_residual": 44.82084428688114,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-4-0",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE4",
+      "column": 4,
+      "row": 0,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3952.5,
+        451.0
+      ],
+      "layout_outline": [
+        [
+          3950.0,
+          448.5
+        ],
+        [
+          3955.0,
+          448.5
+        ],
+        [
+          3955.0,
+          453.5
+        ],
+        [
+          3950.0,
+          453.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3944,
+          224
+        ],
+        "source_native_center_xy": [
+          3944,
+          224
+        ],
+        "source_roi": [
+          3938,
+          212,
+          3951,
+          225
+        ],
+        "source_observation_id": "CTV5-SD-G06R-4-0",
+        "supported": true,
+        "peak_gray": 248.0,
+        "local_residual": 48.02461719659604,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-4-1",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE4",
+      "column": 4,
+      "row": 1,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3952.5,
+        469.75
+      ],
+      "layout_outline": [
+        [
+          3950.0,
+          467.25
+        ],
+        [
+          3955.0,
+          467.25
+        ],
+        [
+          3955.0,
+          472.25
+        ],
+        [
+          3950.0,
+          472.25
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3944,
+          233
+        ],
+        "source_native_center_xy": [
+          3944,
+          233
+        ],
+        "source_roi": [
+          3938,
+          227,
+          3951,
+          240
+        ],
+        "source_observation_id": "CTV5-SD-G06R-4-1",
+        "supported": true,
+        "peak_gray": 250.0,
+        "local_residual": 52.11872563009331,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-4-2",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE4",
+      "column": 4,
+      "row": 2,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3952.5,
+        488.5
+      ],
+      "layout_outline": [
+        [
+          3950.0,
+          486.0
+        ],
+        [
+          3955.0,
+          486.0
+        ],
+        [
+          3955.0,
+          491.0
+        ],
+        [
+          3950.0,
+          491.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3944,
+          249
+        ],
+        "source_native_center_xy": [
+          3944,
+          249
+        ],
+        "source_roi": [
+          3938,
+          243,
+          3951,
+          256
+        ],
+        "source_observation_id": "CTV5-SD-G06R-4-2",
+        "supported": true,
+        "peak_gray": 248.0,
+        "local_residual": 50.66126278275041,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-4-3",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE4",
+      "column": 4,
+      "row": 3,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3952.5,
+        507.25
+      ],
+      "layout_outline": [
+        [
+          3950.0,
+          504.75
+        ],
+        [
+          3955.0,
+          504.75
+        ],
+        [
+          3955.0,
+          509.75
+        ],
+        [
+          3950.0,
+          509.75
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3943,
+          265
+        ],
+        "source_native_center_xy": [
+          3943,
+          265
+        ],
+        "source_roi": [
+          3938,
+          258,
+          3951,
+          271
+        ],
+        "source_observation_id": "CTV5-SD-G06R-4-3",
+        "supported": true,
+        "peak_gray": 247.0,
+        "local_residual": 51.50831561746514,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTV5-SD-G06R-4-4",
+      "layer": "CT",
+      "family": "V5-SD-G06R-EDGE4",
+      "column": 4,
+      "row": 4,
+      "landing_material": "AA",
+      "AA_target": "AA-F01804",
+      "layout_center": [
+        3952.5,
+        526.0
+      ],
+      "layout_outline": [
+        [
+          3950.0,
+          523.5
+        ],
+        [
+          3955.0,
+          523.5
+        ],
+        [
+          3955.0,
+          528.5
+        ],
+        [
+          3950.0,
+          528.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          3943,
+          281
+        ],
+        "source_native_center_xy": [
+          3943,
+          281
+        ],
+        "source_roi": [
+          3938,
+          274,
+          3951,
+          287
+        ],
+        "source_observation_id": "CTV5-SD-G06R-4-4",
+        "supported": true,
+        "peak_gray": 249.0,
+        "local_residual": 47.31216743516674,
+        "evidence_type": "bounded_optical_peak_with_AI_four_gate_correspondence_and_human_upper_terminal_side",
+        "algorithm_detected": true
+      },
+      "status": "AI_final_work_layer_geometry_with_scoped_human_side_confirmation",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    }
+  ]
+}

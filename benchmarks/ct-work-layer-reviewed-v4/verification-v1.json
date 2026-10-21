@@ -1,0 +1,82 @@
+{
+  "status": "PASS_technical_checks_human_count_gate_remains_HOLD",
+  "date": "2026-10-21",
+  "focused_tests": {
+    "command": ".venv/bin/python -m pytest -q tests/test_ct_transfer.py tests/test_ct_joint_reconstruction.py tests/test_gate_terminal_localization.py",
+    "passed": 64,
+    "seconds": 4.83
+  },
+  "ruff": {
+    "command": ".venv/bin/ruff check silicon_eye/ct_transfer.py tests/test_ct_transfer.py",
+    "status": "PASS"
+  },
+  "git_diff_check": "PASS",
+  "geometry": "PASS",
+  "source_observations_checked": {
+    "new": 239,
+    "source_only_corrected": 82,
+    "distinct_target_conflicts_within3px": 0
+  },
+  "visual_QA": [
+    "R1A-terminals.png",
+    "R1B-terminals.png",
+    "COUNT-caps.png",
+    "R2-preview.png",
+    "R1A-preview.png",
+    "O-preview.png"
+  ],
+  "UI": {
+    "status": "PASS_static_assets_and_structure",
+    "local_resource_references": 32,
+    "selector_count": 4,
+    "layer_count": 4,
+    "browser_render_not_automatically_tested": true,
+    "handler_simulation": {
+      "status": "PASS_handler_simulation",
+      "selector_options": 22,
+      "toggle_transitions": 8,
+      "layer_counts": {
+        "AA": 334,
+        "POLY": 696,
+        "CT": 10254,
+        "UNKNOWN": 5
+      },
+      "browser_render_not_automatically_tested": true
+    }
+  },
+  "browser_render_not_automatically_tested": true,
+  "production_code_changed_this_turn": false,
+  "production_code_sha256": {
+    "silicon_eye/ct_transfer.py": "4f3554b0dc3e8af2e7547d20d1b17db3a325409d15ca22619b7b25a740b69734",
+    "silicon_eye/ct_joint_reconstruction.py": "a9713a2ae1195ee4a18ca4683774ebffb0a107271ce2c6c4dde3cb6e75d58aed",
+    "silicon_eye/geometry_reconstruction.py": "3fbd8e0f075055065daac40b1371b5d7096d166d196d0e4427b88abbfa4e7554",
+    "silicon_eye/poly_closeout.py": "f51109d3d77853a8357eac2db930c66c3283e358e5b9022a127ad349241d23e9"
+  },
+  "parent_spec_input_hashes_valid": true,
+  "whole_frame_complete": false,
+  "whole_frame_human_accepted": false,
+  "exact_new_geometry": "AI_candidate_scoped_by_R1_R2_human_semantics",
+  "locked_files": {
+    "authorization-v1.json": "82779caeb797b859137093350f34f792d1b44813d86c30e2eca0486c5bcee771",
+    "human-review-v1.json": "8692843952045b465f27ef77e0aee64b6a6be1584d9aaa03df05486ef71a6b6f",
+    "ledger-v1.json": "9f3582c8719c5bc7beb7a97e59b67951824203596c168977187dc53c2226e746",
+    "material-merge-v1.json": "e0ed85dd4184e6a2705d01dbed83bd4c3a8b0e803d23ec449dd7dd9f2185cff4",
+    "material-model-v1.json": "57692cdb100495d10de3271ff24aa4a9a152e053d946051d459d5fe715e012cc",
+    "model-v1.json": "f3e2bf0626d18b5d267fbc64f86dda0cbeb039b14d07694820fd0b2e09c827ac",
+    "new-contacts-v1.json": "196339abfabfcfdf18812a35590a7588fd79e53f0c1be09e97fcf0b9cd814fe0",
+    "optical-observations-v1.json": "fd51f4ac83f40f0e0b31f0c716edbc67a1a76d543639ddb8b23af40c0c9eeaef",
+    "preflight-geometry-v1.json": "fe25a790ceb7be18ddb4481bf6097bf181975ea66e75f11bc7595e8682c80754",
+    "preservation-check-v1.json": "817cedd55f780e04b59cbbd1624fdfaa0e600b3576e74ed25e729bf454442abf",
+    "provenance/README.md": "63d15fce8bb1b655dd80413065c11069ef478e1cd69102017bac19ba03ee7bdd",
+    "provenance/package_ct_reviewed_v4.py": "670b452c9ffee9f479a11ad2bf218008979003321767fc02284e94cb7930fb76",
+    "provenance/prepare_ct_reviewed_v4.py": "5143f0c376e5d0479c35ae76cc30b3d3456d3cafcdcd08434e42e832ee8c2c71",
+    "report-v1.json": "4217f308efd40a5cd37a6b70db163fd636659e00e28541443f82ecb3dcac4a48",
+    "review-questions-v1.json": "017646753179d5d459b7d093657028d042622547e27639acb01de8a860ae23fd",
+    "source-ownership-check-v1.json": "a81133724b7485116fabd46ab5c36e78ab2df3f6a48b7ca76482f0fa6b9c3a05",
+    "spec-v1.json": "cce412f55861d874d649385b972b84facd4c14f454157853681ac606e8752b35",
+    "stage-gate-v1.json": "fa416fd8b21182b7fcef74c96abb3a7eb997e63fb930b593beb8dfbce3aa3d86",
+    "terminal-access-v1.json": "3c0ad721421de2f6372f9f48cfcd891165b74eeb7d7a784219d063b4bac2c685",
+    "ui-check-v1.json": "b4930abae683ce94dba64615261ce74abd034ba54edc3ce90dc5883ddebd2877",
+    "unknown-sites-v1.json": "2163465c05e91c9e701ad26fbb41e5c12d8467a1d2148f1ff524cbc13ce506cc"
+  }
+}

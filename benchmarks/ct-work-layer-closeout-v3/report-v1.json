@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "positive_area_overlap_pairs": [],
+  "min_gap_violations": [],
+  "minimum_edge_gap_px": 4.400000000000091,
+  "minimum_AA_enclosure_px": 0.9999999999999999,
+  "minimum_POLY_clearance_px": 1.4999999999995453,
+  "minimum_POLY_enclosure_px": 0.9999999999999999,
+  "contact_count": 10226,
+  "physical_PDK_DRC": false,
+  "unchanged_parent_contacts": 9987,
+  "revised_contact_count": 33,
+  "new_contact_count": 234,
+  "source_correspondence_revision_ids": [
+    "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA2-0-SD00-S001",
+    "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000",
+    "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0-SD00-000",
+    "CTW-G66-P08-0",
+    "CTW-G66-P08-1"
+  ],
+  "material_revision_ids": [],
+  "human_review": "scoped decisions retained; revised geometry and new CT pending review",
+  "implementation_sha256": "4f3554b0dc3e8af2e7547d20d1b17db3a325409d15ca22619b7b25a740b69734",
+  "geometry_status": "PASS",
+  "stage_status": "HOLD_new_source_correspondence_and_overall_acceptance",
+  "whole_frame_complete": false,
+  "source_correspondence_status": "HOLD_R1A_R1B_R2",
+  "human_acceptance": false
+}

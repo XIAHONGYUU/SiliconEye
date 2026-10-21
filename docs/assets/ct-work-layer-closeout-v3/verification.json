@@ -1,0 +1,32 @@
+{
+  "status": "software_and_geometry_PASS_source_and_overall_HOLD",
+  "full_pytest": "457 passed in 18.72s",
+  "focused_pytest": "64 passed in 4.97s",
+  "ruff": "PASS changed production/test files",
+  "actual_CLI": "PASS frozen v3 spec executed",
+  "geometry": "PASS 10226 CT; overlaps0; min_gap_violations0; min_edge_gap4.4px",
+  "source_ownership": "new/relocated assignments different targets within3px: none; old source truth not globally asserted",
+  "parent_v2_locked_JSON": "PASS unchanged",
+  "all7044_records_equal_to_v2": true,
+  "all_material_records_equal_to_v2": true,
+  "static": "86 local resources, SVG XML, PNG decode, unique IDs and anchors PASS",
+  "simulated_UI": "15 image selectors and four inline-SVG layer toggles PASS",
+  "visual": "full-frame O, R1A, R1B, R2 canonical and source/AA wide context, Q2 inspected",
+  "browser_render": "not automatically tested",
+  "human_acceptance": false,
+  "blocking_human_cases": [
+    "R1A",
+    "R1B",
+    "R2"
+  ],
+  "not_accuracy_or_recall": true,
+  "code_sha256": {
+    "silicon_eye/ct_transfer.py": "4f3554b0dc3e8af2e7547d20d1b17db3a325409d15ca22619b7b25a740b69734",
+    "tests/test_ct_transfer.py": "6435ba0d6dcaa349fa1b66c0747448741b3dde44abbb43e65572a62f54f3677e"
+  },
+  "recipes": {
+    "package_ct_work_layer_v3.py": "73086367825fa742a879951123390e2ccf0657f1cab871aca90173ab8b885135",
+    "prepare_ct_work_layer_v3.py": "872b7dcdc87d1b6f883c7acbfa64fed09e1c003e36ec7fda0259eebcb771624f"
+  },
+  "review_index_sha256": "72eeadec499313ee5e41f8ed619fe9a36b921d145438767da6cef3659e646799"
+}

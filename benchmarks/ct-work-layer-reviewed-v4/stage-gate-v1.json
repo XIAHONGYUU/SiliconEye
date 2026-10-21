@@ -1,0 +1,29 @@
+{
+  "status": "HOLD_R1B_material_count_and_overall_acceptance",
+  "geometry_status": "PASS",
+  "closed_human_cases": [
+    "R1A",
+    "R1B",
+    "R2"
+  ],
+  "closed_scope": "terminal side, SD regularity and R2 AA continuity / one CT row",
+  "blocking_human_cases": [
+    "R1B-COUNT"
+  ],
+  "unresolved_material_ids": [
+    "G06-P06",
+    "G06-P07",
+    "G06-P08",
+    "G06-P09",
+    "G06-P10"
+  ],
+  "CT_count": 10254,
+  "AA_count": 334,
+  "POLY_count": 696,
+  "whole_frame_complete": false,
+  "overall_human_acceptance": false,
+  "physical_PDK_DRC": false,
+  "frozen_kind": "review_candidate_not_accepted_work_layer",
+  "no_synthetic_CT_on_unmatched_POLY": true,
+  "raw_photos_unchanged": true
+}

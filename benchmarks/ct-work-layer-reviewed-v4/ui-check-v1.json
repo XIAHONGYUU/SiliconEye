@@ -1,0 +1,19 @@
+{
+  "status": "PASS_static_assets_and_structure",
+  "local_resource_references": 32,
+  "selector_count": 4,
+  "layer_count": 4,
+  "browser_render_not_automatically_tested": true,
+  "handler_simulation": {
+    "status": "PASS_handler_simulation",
+    "selector_options": 22,
+    "toggle_transitions": 8,
+    "layer_counts": {
+      "AA": 334,
+      "POLY": 696,
+      "CT": 10254,
+      "UNKNOWN": 5
+    },
+    "browser_render_not_automatically_tested": true
+  }
+}

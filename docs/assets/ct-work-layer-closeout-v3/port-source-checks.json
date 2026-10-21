@@ -1,0 +1,968 @@
+{
+  "regions": [
+    {
+      "region": {
+        "id": "AA-F01613:D0",
+        "AA_target": "AA-F01613",
+        "gate_ids": [
+          "CL2-Q3-AA-F01613-01",
+          "CL2-Q3-AA-F01613-02"
+        ],
+        "layout_bounds": [
+          1020.0,
+          1420.0,
+          1028.0,
+          1500.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-0",
+      "source_roi": [
+        720,
+        1236,
+        738,
+        1250
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01614:D2",
+        "AA_target": "AA-F01614",
+        "gate_ids": [
+          "CL2-Q3-AA-F01614-01",
+          "CL2-Q3-AA-F01614-02"
+        ],
+        "layout_bounds": [
+          1203.0,
+          1419.0,
+          1211.0,
+          1500.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-1",
+      "source_roi": [
+        932,
+        1250,
+        941,
+        1265
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01629:D8",
+        "AA_target": "AA-F01629",
+        "gate_ids": [
+          "SG-U08-017",
+          "SG-U08-018",
+          "SG-U08-019",
+          "SG-U08-020",
+          "SG-U08-021",
+          "SG-U08-022",
+          "SG-U08-023",
+          "SG-U08-024"
+        ],
+        "layout_bounds": [
+          1793.2499999999995,
+          1292.0,
+          1801.2499999999995,
+          1318.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-2",
+      "source_roi": [
+        1598,
+        1088,
+        1607,
+        1103
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01649:D0",
+        "AA_target": "AA-F01649",
+        "gate_ids": [
+          "SG-U07-001",
+          "SG-U07-002",
+          "SG-U07-003",
+          "SG-U07-004",
+          "SG-U07-005",
+          "SG-U07-006",
+          "SG-U07-007",
+          "SG-U07-008"
+        ],
+        "layout_bounds": [
+          448.33333333333314,
+          1162.0,
+          456.33333333333314,
+          1190.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-3",
+      "source_roi": [
+        55,
+        948,
+        64,
+        963
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01649:D8",
+        "AA_target": "AA-F01649",
+        "gate_ids": [
+          "SG-U07-001",
+          "SG-U07-002",
+          "SG-U07-003",
+          "SG-U07-004",
+          "SG-U07-005",
+          "SG-U07-006",
+          "SG-U07-007",
+          "SG-U07-008"
+        ],
+        "layout_bounds": [
+          886.3333333333331,
+          1162.0,
+          894.3333333333331,
+          1190.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-4",
+      "source_roi": [
+        550,
+        943,
+        571,
+        966
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01698:D0",
+        "AA_target": "AA-F01698",
+        "gate_ids": [
+          "S03-01",
+          "S03-02"
+        ],
+        "layout_bounds": [
+          2076.0,
+          784.25,
+          2084.0,
+          814.25
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-5",
+      "source_roi": [
+        1925,
+        536,
+        1934,
+        551
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01700:D0",
+        "AA_target": "AA-F01700",
+        "gate_ids": [
+          "S03-06",
+          "S03-07"
+        ],
+        "layout_bounds": [
+          2358.0,
+          784.25,
+          2366.0,
+          814.25
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-6",
+      "source_roi": [
+        2239,
+        536,
+        2248,
+        551
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01700:D2",
+        "AA_target": "AA-F01700",
+        "gate_ids": [
+          "S03-06",
+          "S03-07"
+        ],
+        "layout_bounds": [
+          2455.0,
+          784.25,
+          2463.0,
+          814.25
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-7",
+      "source_roi": [
+        2323,
+        536,
+        2332,
+        551
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01714:D16",
+        "AA_target": "AA-F01714",
+        "gate_ids": [
+          "SG-U04-007",
+          "SG-U04-008",
+          "SG-U04-009",
+          "SG-U04-010",
+          "SG-U04-011",
+          "SG-U04-012",
+          "SG-U04-013",
+          "SG-U04-014",
+          "SG-U04-015",
+          "SG-U04-016",
+          "SG-U04-017",
+          "SG-U04-018",
+          "SG-U04-019",
+          "SG-U04-020",
+          "SG-U04-021",
+          "SG-U04-022",
+          "SG-U04-023"
+        ],
+        "layout_bounds": [
+          1683.5625,
+          670.0,
+          1703.0,
+          702.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-8",
+      "source_roi": [
+        1471,
+        395,
+        1485,
+        410
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01730:D1",
+        "AA_target": "AA-F01730",
+        "gate_ids": [
+          "SG-U04-076",
+          "SG-U04-077",
+          "SG-U04-078",
+          "SG-U04-079"
+        ],
+        "layout_bounds": [
+          4867.0,
+          670.0,
+          4895.0,
+          702.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-9",
+      "source_roi": [
+        4895,
+        425,
+        4915,
+        440
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01744:D0",
+        "AA_target": "AA-F01744",
+        "gate_ids": [
+          "SG-U01-001",
+          "SG-U01-002",
+          "SG-U01-003"
+        ],
+        "layout_bounds": [
+          354.0,
+          522.0,
+          456.0,
+          574.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "source_locator_outside_photo"
+    },
+    {
+      "region": {
+        "id": "AA-F01755:D6",
+        "AA_target": "AA-F01755",
+        "gate_ids": [
+          "G01-P01",
+          "G01-P02",
+          "G01-P03",
+          "G01-P04",
+          "G01-P05",
+          "G01-P06",
+          "G01-P07",
+          "G01-P08",
+          "G01-P09",
+          "G01-P10",
+          "G01-P11",
+          "G01-P12",
+          "G01-P13",
+          "G01-P14",
+          "G01-P15",
+          "G01-P16"
+        ],
+        "layout_bounds": [
+          1208.6666666666667,
+          470.0,
+          1227.8,
+          564.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "no_observed_source_support",
+      "candidate_id": "CTV3-PORT-11",
+      "source_roi": [
+        939,
+        229,
+        953,
+        244
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01757:D0",
+        "AA_target": "AA-F01757",
+        "gate_ids": [
+          "G02-P01",
+          "G02-P02",
+          "G02-P03",
+          "G02-P04"
+        ],
+        "layout_bounds": [
+          1749.0,
+          465.0,
+          1757.0,
+          560.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "no_observed_source_support",
+      "candidate_id": "CTV3-PORT-12",
+      "source_roi": [
+        1528,
+        221,
+        1537,
+        236
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01803:D6",
+        "AA_target": "AA-F01803",
+        "gate_ids": [
+          "G05-P01",
+          "G05-P02",
+          "G05-P03",
+          "G05-P04",
+          "G05-P05",
+          "G05-P06",
+          "G05-P07",
+          "G06-P01",
+          "G06-P02",
+          "G06-P03",
+          "G06-P04",
+          "G06-P05"
+        ],
+        "layout_bounds": [
+          3380.727272727273,
+          444.0,
+          3399.272727272727,
+          540.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "no_observed_source_support",
+      "candidate_id": "CTV3-PORT-13",
+      "source_roi": [
+        3335,
+        240,
+        3349,
+        255
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01803:D12",
+        "AA_target": "AA-F01803",
+        "gate_ids": [
+          "G05-P01",
+          "G05-P02",
+          "G05-P03",
+          "G05-P04",
+          "G05-P05",
+          "G05-P06",
+          "G05-P07",
+          "G06-P01",
+          "G06-P02",
+          "G06-P03",
+          "G06-P04",
+          "G06-P05"
+        ],
+        "layout_bounds": [
+          3684.0,
+          444.0,
+          3692.0,
+          540.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "no_observed_source_support",
+      "candidate_id": "CTV3-PORT-14",
+      "source_roi": [
+        3700,
+        240,
+        3709,
+        255
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01804:D0",
+        "AA_target": "AA-F01804",
+        "gate_ids": [
+          "G06-P06",
+          "G06-P07",
+          "G06-P08",
+          "G06-P09",
+          "G06-P10"
+        ],
+        "layout_bounds": [
+          3743.0,
+          439.0,
+          3751.0,
+          538.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "no_observed_source_support",
+      "candidate_id": "CTV3-PORT-15",
+      "source_roi": [
+        3712,
+        249,
+        3721,
+        264
+      ]
+    },
+    {
+      "region": {
+        "id": "AA-F01804:D5",
+        "AA_target": "AA-F01804",
+        "gate_ids": [
+          "G06-P06",
+          "G06-P07",
+          "G06-P08",
+          "G06-P09",
+          "G06-P10"
+        ],
+        "layout_bounds": [
+          3950.0,
+          439.0,
+          3958.0,
+          538.0
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "no_observed_source_support",
+      "candidate_id": "CTV3-PORT-16",
+      "source_roi": [
+        3948,
+        249,
+        3957,
+        264
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1",
+        "gate_ids": [
+          "G61-P01",
+          "G61-P02",
+          "G61-P03",
+          "G61-P04",
+          "G61-P05",
+          "G61-P06",
+          "G61-P07",
+          "G61-P08"
+        ],
+        "layout_bounds": [
+          1131.6126,
+          3152.389,
+          1139.6126,
+          3180.7947
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-17",
+      "source_roi": [
+        912,
+        3101,
+        921,
+        3116
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-6:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-6",
+        "gate_ids": [
+          "G62-P01",
+          "G62-P02",
+          "G62-P03",
+          "G62-P04",
+          "G62-P05",
+          "G62-P06",
+          "G62-P07",
+          "G62-P08"
+        ],
+        "layout_bounds": [
+          1133.4501,
+          3277.8774,
+          1141.4501,
+          3303.4025
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-18",
+      "source_roi": [
+        924,
+        3230,
+        933,
+        3245
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA3-0:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA3-0",
+        "gate_ids": [
+          "G64-P01",
+          "G64-P02"
+        ],
+        "layout_bounds": [
+          1207.9688,
+          3531.6925,
+          1215.9688,
+          3564.2421
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-19",
+      "source_roi": [
+        993,
+        3500,
+        1002,
+        3515
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA3-0:D2",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA3-0",
+        "gate_ids": [
+          "G64-P01",
+          "G64-P02"
+        ],
+        "layout_bounds": [
+          1297.7726,
+          3531.6925,
+          1305.7726,
+          3564.2421
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-20",
+      "source_roi": [
+        1091,
+        3494,
+        1108,
+        3517
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA4-0:D2",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-BRANCH-AA4-0",
+        "gate_ids": [
+          "G64-P03",
+          "G64-P04",
+          "G64-P05"
+        ],
+        "layout_bounds": [
+          1429.1506,
+          3531.6925,
+          1476.6622,
+          3564.2421
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-21",
+      "source_roi": [
+        1253,
+        3493,
+        1276,
+        3508
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA3-0",
+        "gate_ids": [
+          "G65-P03"
+        ],
+        "layout_bounds": [
+          1320.78645,
+          3639.2784,
+          1334.4369,
+          3667.9377
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-22",
+      "source_roi": [
+        1125,
+        3610,
+        1150,
+        3625
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA4-0",
+        "gate_ids": [
+          "G65-P04"
+        ],
+        "layout_bounds": [
+          1348.3168,
+          3639.2784,
+          1362.03645,
+          3667.9377
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-23",
+      "source_roi": [
+        1157,
+        3609,
+        1182,
+        3624
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA5-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA5-0",
+        "gate_ids": [
+          "G65-P05"
+        ],
+        "layout_bounds": [
+          1478.7853,
+          3639.2784,
+          1492.1247,
+          3667.9377
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-24",
+      "source_roi": [
+        1298,
+        3605,
+        1323,
+        3620
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA7-0",
+        "gate_ids": [
+          "G65-P07"
+        ],
+        "layout_bounds": [
+          1614.75445,
+          3639.2784,
+          1628.2242,
+          3667.9377
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-25",
+      "source_roi": [
+        1450,
+        3600,
+        1475,
+        3619
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW3-AA8-0",
+        "gate_ids": [
+          "G65-P08"
+        ],
+        "layout_bounds": [
+          1640.3729,
+          3639.2784,
+          1655.3139,
+          3667.9377
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-26",
+      "source_roi": [
+        1478,
+        3600,
+        1493,
+        3617
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA2-0",
+        "gate_ids": [
+          "G66-P02"
+        ],
+        "layout_bounds": [
+          1255.24055,
+          3765.8875,
+          1268.8274,
+          3794.613
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-27",
+      "source_roi": [
+        1054,
+        3743,
+        1079,
+        3758
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0",
+        "gate_ids": [
+          "G66-P03"
+        ],
+        "layout_bounds": [
+          1277.136,
+          3765.8875,
+          1290.78645,
+          3794.613
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-28",
+      "source_roi": [
+        1073,
+        3742,
+        1098,
+        3757
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+        "gate_ids": [
+          "G66-P04"
+        ],
+        "layout_bounds": [
+          1392.03645,
+          3765.8875,
+          1405.7561,
+          3794.613
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-29",
+      "source_roi": [
+        1206,
+        3739,
+        1231,
+        3754
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA6-0",
+        "gate_ids": [
+          "G66-P06"
+        ],
+        "layout_bounds": [
+          1547.62315,
+          3765.8875,
+          1561.0285,
+          3794.613
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-30",
+      "source_roi": [
+        1364,
+        3734,
+        1389,
+        3749
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0:D0",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA7-0",
+        "gate_ids": [
+          "G66-P07"
+        ],
+        "layout_bounds": [
+          1571.2847,
+          3765.8875,
+          1584.75445,
+          3794.613
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-31",
+      "source_roi": [
+        1415,
+        3733,
+        1440,
+        3748
+      ]
+    },
+    {
+      "region": {
+        "id": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0:D1",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA8-0",
+        "gate_ids": [
+          "G66-P08"
+        ],
+        "layout_bounds": [
+          1685.3139,
+          3765.8875,
+          1700.2549,
+          3794.613
+        ],
+        "contact_ids": [],
+        "status": "no_direct_CT_evidence",
+        "no_CT_is_not_a_missing_cut_or_failed_internal_node": true
+      },
+      "status": "observed_candidate_added",
+      "candidate_id": "CTV3-PORT-32",
+      "source_roi": [
+        1527,
+        3730,
+        1552,
+        3745
+      ]
+    }
+  ]
+}

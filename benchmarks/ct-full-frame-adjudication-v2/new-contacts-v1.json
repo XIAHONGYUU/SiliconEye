@@ -1,0 +1,1322 @@
+{
+  "objects": [
+    {
+      "id": "CTA-Q1-G1-0",
+      "family": "ADJ-Q1-G1",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01613-01",
+      "layout_center": [
+        1034.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1031.5,
+          1501.5
+        ],
+        [
+          1036.5,
+          1501.5
+        ],
+        [
+          1036.5,
+          1506.5
+        ],
+        [
+          1031.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          755,
+          1325
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 48.64838082799284,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G1-1",
+      "family": "ADJ-Q1-G1",
+      "column": 1,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01613-01",
+      "layout_center": [
+        1044.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1041.5,
+          1501.5
+        ],
+        [
+          1046.5,
+          1501.5
+        ],
+        [
+          1046.5,
+          1506.5
+        ],
+        [
+          1041.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          765,
+          1325
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 57.00264657468176,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G2-0",
+      "family": "ADJ-Q1-G2",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01613-02",
+      "layout_center": [
+        1088.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1085.5,
+          1501.5
+        ],
+        [
+          1090.5,
+          1501.5
+        ],
+        [
+          1090.5,
+          1506.5
+        ],
+        [
+          1085.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          798,
+          1325
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 46.26833807940861,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G2-1",
+      "family": "ADJ-Q1-G2",
+      "column": 1,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01613-02",
+      "layout_center": [
+        1098.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1095.5,
+          1501.5
+        ],
+        [
+          1100.5,
+          1501.5
+        ],
+        [
+          1100.5,
+          1506.5
+        ],
+        [
+          1095.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          813,
+          1325
+        ],
+        "peak_gray": 254.0,
+        "local_residual": 51.437875130383276,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G3-0",
+      "family": "ADJ-Q1-G3",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01614-01",
+      "layout_center": [
+        1135.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1132.5,
+          1501.5
+        ],
+        [
+          1137.5,
+          1501.5
+        ],
+        [
+          1137.5,
+          1506.5
+        ],
+        [
+          1132.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          867,
+          1325
+        ],
+        "peak_gray": 253.0,
+        "local_residual": 52.720299730907385,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G3-1",
+      "family": "ADJ-Q1-G3",
+      "column": 1,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01614-01",
+      "layout_center": [
+        1145.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1142.5,
+          1501.5
+        ],
+        [
+          1147.5,
+          1501.5
+        ],
+        [
+          1147.5,
+          1506.5
+        ],
+        [
+          1142.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          882,
+          1325
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 67.58220013194514,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G4-0",
+      "family": "ADJ-Q1-G4",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01614-02",
+      "layout_center": [
+        1187.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1184.5,
+          1501.5
+        ],
+        [
+          1189.5,
+          1501.5
+        ],
+        [
+          1189.5,
+          1506.5
+        ],
+        [
+          1184.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          915,
+          1325
+        ],
+        "peak_gray": 249.0,
+        "local_residual": 69.53943861148664,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q1-G4-1",
+      "family": "ADJ-Q1-G4",
+      "column": 1,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "CL2-Q3-AA-F01614-02",
+      "layout_center": [
+        1197.0,
+        1504.0
+      ],
+      "layout_outline": [
+        [
+          1194.5,
+          1501.5
+        ],
+        [
+          1199.5,
+          1501.5
+        ],
+        [
+          1199.5,
+          1506.5
+        ],
+        [
+          1194.5,
+          1506.5
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          930,
+          1325
+        ],
+        "peak_gray": 252.0,
+        "local_residual": 57.69219163275258,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q2-BUS-0",
+      "family": "ADJ-Q2-BUS",
+      "column": 0,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "G68-BOTTOM-BUS-01",
+      "layout_center": [
+        2377.0,
+        1849.5
+      ],
+      "layout_outline": [
+        [
+          2374.5,
+          1847.0
+        ],
+        [
+          2379.5,
+          1847.0
+        ],
+        [
+          2379.5,
+          1852.0
+        ],
+        [
+          2374.5,
+          1852.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          2270,
+          1685
+        ],
+        "peak_gray": 250.0,
+        "local_residual": 50.037449879300254,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "shared_gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTA-Q2-BUS-1",
+      "family": "ADJ-Q2-BUS",
+      "column": 1,
+      "row": 0,
+      "layer": "CT",
+      "landing_material": "POLY",
+      "POLY_target": "G68-BOTTOM-BUS-01",
+      "layout_center": [
+        2389.0,
+        1849.5
+      ],
+      "layout_outline": [
+        [
+          2386.5,
+          1847.0
+        ],
+        [
+          2391.5,
+          1847.0
+        ],
+        [
+          2391.5,
+          1852.0
+        ],
+        [
+          2386.5,
+          1852.0
+        ]
+      ],
+      "source_frame": "poly",
+      "source_evidence": {
+        "native_center": [
+          2286,
+          1685
+        ],
+        "peak_gray": 244.0,
+        "local_residual": 69.77198149010434,
+        "supported": true,
+        "algorithm_detected": true,
+        "evidence_type": "human_role_decision_plus_bounded_optical_candidate"
+      },
+      "status": "AI_geometry_candidate_under_human_semantic_decision",
+      "terminal_role": "shared_gate_bottom",
+      "M1_enclosure": "unknown",
+      "net_id": null
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD01-001",
+      "family": "REM-AA-F01613-SD01",
+      "column": 0,
+      "row": 1,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1066.0,
+        1440.6454545454544
+      ],
+      "layout_outline": [
+        [
+          1063.5,
+          1438.1454545454544
+        ],
+        [
+          1068.5,
+          1438.1454545454544
+        ],
+        [
+          1068.5,
+          1443.1454545454544
+        ],
+        [
+          1063.5,
+          1443.1454545454544
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          782.5,
+          1241.0
+        ],
+        "peak_gray": 251.79544067382812,
+        "local_residual": 149.721923828125,
+        "native_center": [
+          782.5,
+          1241.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD01-34",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD01-002",
+      "family": "REM-AA-F01613-SD01",
+      "column": 0,
+      "row": 2,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1066.0,
+        1454.6090909090908
+      ],
+      "layout_outline": [
+        [
+          1063.5,
+          1452.1090909090908
+        ],
+        [
+          1068.5,
+          1452.1090909090908
+        ],
+        [
+          1068.5,
+          1457.1090909090908
+        ],
+        [
+          1063.5,
+          1457.1090909090908
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          781.5,
+          1252.0
+        ],
+        "peak_gray": 239.11488342285156,
+        "local_residual": 137.04136657714844,
+        "native_center": [
+          781.5,
+          1252.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD01-45",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD01-003",
+      "family": "REM-AA-F01613-SD01",
+      "column": 0,
+      "row": 3,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1066.0,
+        1468.5727272727272
+      ],
+      "layout_outline": [
+        [
+          1063.5,
+          1466.0727272727272
+        ],
+        [
+          1068.5,
+          1466.0727272727272
+        ],
+        [
+          1068.5,
+          1471.0727272727272
+        ],
+        [
+          1063.5,
+          1471.0727272727272
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          781.5,
+          1273.0
+        ],
+        "peak_gray": 252.45816040039062,
+        "local_residual": 120.85214233398438,
+        "native_center": [
+          781.5,
+          1273.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD01-66",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD01-004",
+      "family": "REM-AA-F01613-SD01",
+      "column": 0,
+      "row": 4,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1066.0,
+        1482.5363636363636
+      ],
+      "layout_outline": [
+        [
+          1063.5,
+          1480.0363636363636
+        ],
+        [
+          1068.5,
+          1480.0363636363636
+        ],
+        [
+          1068.5,
+          1485.0363636363636
+        ],
+        [
+          1063.5,
+          1485.0363636363636
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          782.5,
+          1284.0
+        ],
+        "peak_gray": 250.14952087402344,
+        "local_residual": 118.54350280761719,
+        "native_center": [
+          782.5,
+          1284.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD01-77",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD01-005",
+      "family": "REM-AA-F01613-SD01",
+      "column": 0,
+      "row": 5,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1066.0,
+        1496.5
+      ],
+      "layout_outline": [
+        [
+          1063.5,
+          1494.0
+        ],
+        [
+          1068.5,
+          1494.0
+        ],
+        [
+          1068.5,
+          1499.0
+        ],
+        [
+          1063.5,
+          1499.0
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          783.5,
+          1304.0
+        ],
+        "peak_gray": 253.9683380126953,
+        "local_residual": 165.48955535888672,
+        "native_center": [
+          783.5,
+          1304.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD01-97",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD02-001",
+      "family": "REM-AA-F01613-SD02",
+      "column": 0,
+      "row": 1,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1108.0,
+        1440.6454545454544
+      ],
+      "layout_outline": [
+        [
+          1105.5,
+          1438.1454545454544
+        ],
+        [
+          1110.5,
+          1438.1454545454544
+        ],
+        [
+          1110.5,
+          1443.1454545454544
+        ],
+        [
+          1105.5,
+          1443.1454545454544
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          824.3636474609375,
+          1241.0
+        ],
+        "peak_gray": 251.16966247558594,
+        "local_residual": 100.88731384277344,
+        "native_center": [
+          824.3636474609375,
+          1241.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD02-34",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD02-002",
+      "family": "REM-AA-F01613-SD02",
+      "column": 0,
+      "row": 2,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1108.0,
+        1454.6090909090908
+      ],
+      "layout_outline": [
+        [
+          1105.5,
+          1452.1090909090908
+        ],
+        [
+          1110.5,
+          1452.1090909090908
+        ],
+        [
+          1110.5,
+          1457.1090909090908
+        ],
+        [
+          1105.5,
+          1457.1090909090908
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          825.3636474609375,
+          1252.0
+        ],
+        "peak_gray": 248.70359802246094,
+        "local_residual": 98.42124938964844,
+        "native_center": [
+          825.3636474609375,
+          1252.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD02-45",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD02-003",
+      "family": "REM-AA-F01613-SD02",
+      "column": 0,
+      "row": 3,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1108.0,
+        1468.5727272727272
+      ],
+      "layout_outline": [
+        [
+          1105.5,
+          1466.0727272727272
+        ],
+        [
+          1110.5,
+          1466.0727272727272
+        ],
+        [
+          1110.5,
+          1471.0727272727272
+        ],
+        [
+          1105.5,
+          1471.0727272727272
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          825.3636474609375,
+          1273.0
+        ],
+        "peak_gray": 253.7963409423828,
+        "local_residual": 98.58515930175781,
+        "native_center": [
+          825.3636474609375,
+          1273.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD02-66",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01613-SD02-005",
+      "family": "REM-AA-F01613-SD02",
+      "column": 0,
+      "row": 5,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1108.0,
+        1496.5
+      ],
+      "layout_outline": [
+        [
+          1105.5,
+          1494.0
+        ],
+        [
+          1110.5,
+          1494.0
+        ],
+        [
+          1110.5,
+          1499.0
+        ],
+        [
+          1105.5,
+          1499.0
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          827.3636474609375,
+          1299.0
+        ],
+        "peak_gray": 241.51666259765625,
+        "local_residual": 108.56777954101562,
+        "native_center": [
+          827.3636474609375,
+          1299.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01613-SD02-92",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01613"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD00-001",
+      "family": "REM-AA-F01614-SD00",
+      "column": 0,
+      "row": 1,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1125.0,
+        1440.0636363636365
+      ],
+      "layout_outline": [
+        [
+          1122.5,
+          1437.5636363636365
+        ],
+        [
+          1127.5,
+          1437.5636363636365
+        ],
+        [
+          1127.5,
+          1442.5636363636365
+        ],
+        [
+          1122.5,
+          1442.5636363636365
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          849.6363525390625,
+          1241.0
+        ],
+        "peak_gray": 250.95558166503906,
+        "local_residual": 121.4300537109375,
+        "native_center": [
+          849.6363525390625,
+          1241.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD00-34",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD00-002",
+      "family": "REM-AA-F01614-SD00",
+      "column": 0,
+      "row": 2,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1125.0,
+        1454.1727272727276
+      ],
+      "layout_outline": [
+        [
+          1122.5,
+          1451.6727272727276
+        ],
+        [
+          1127.5,
+          1451.6727272727276
+        ],
+        [
+          1127.5,
+          1456.6727272727276
+        ],
+        [
+          1122.5,
+          1456.6727272727276
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          848.6363525390625,
+          1252.0
+        ],
+        "peak_gray": 236.5501251220703,
+        "local_residual": 107.02459716796875,
+        "native_center": [
+          848.6363525390625,
+          1252.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD00-45",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD00-003",
+      "family": "REM-AA-F01614-SD00",
+      "column": 0,
+      "row": 3,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1125.0,
+        1468.2818181818184
+      ],
+      "layout_outline": [
+        [
+          1122.5,
+          1465.7818181818184
+        ],
+        [
+          1127.5,
+          1465.7818181818184
+        ],
+        [
+          1127.5,
+          1470.7818181818184
+        ],
+        [
+          1122.5,
+          1470.7818181818184
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          848.6363525390625,
+          1273.0
+        ],
+        "peak_gray": 237.7365264892578,
+        "local_residual": 91.35856628417969,
+        "native_center": [
+          848.6363525390625,
+          1273.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD00-66",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD01-001",
+      "family": "REM-AA-F01614-SD01",
+      "column": 0,
+      "row": 1,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1166.0,
+        1440.0636363636365
+      ],
+      "layout_outline": [
+        [
+          1163.5,
+          1437.5636363636365
+        ],
+        [
+          1168.5,
+          1437.5636363636365
+        ],
+        [
+          1168.5,
+          1442.5636363636365
+        ],
+        [
+          1163.5,
+          1442.5636363636365
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          891.5,
+          1241.0
+        ],
+        "peak_gray": 236.75796508789062,
+        "local_residual": 139.34596252441406,
+        "native_center": [
+          891.5,
+          1241.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD01-34",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD01-002",
+      "family": "REM-AA-F01614-SD01",
+      "column": 0,
+      "row": 2,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1166.0,
+        1454.1727272727276
+      ],
+      "layout_outline": [
+        [
+          1163.5,
+          1451.6727272727276
+        ],
+        [
+          1168.5,
+          1451.6727272727276
+        ],
+        [
+          1168.5,
+          1456.6727272727276
+        ],
+        [
+          1163.5,
+          1456.6727272727276
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          892.5,
+          1257.0
+        ],
+        "peak_gray": 226.8086700439453,
+        "local_residual": 133.46483612060547,
+        "native_center": [
+          892.5,
+          1257.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD01-50",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD01-003",
+      "family": "REM-AA-F01614-SD01",
+      "column": 0,
+      "row": 3,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1166.0,
+        1468.2818181818184
+      ],
+      "layout_outline": [
+        [
+          1163.5,
+          1465.7818181818184
+        ],
+        [
+          1168.5,
+          1465.7818181818184
+        ],
+        [
+          1168.5,
+          1470.7818181818184
+        ],
+        [
+          1163.5,
+          1470.7818181818184
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          892.5,
+          1273.0
+        ],
+        "peak_gray": 209.2191925048828,
+        "local_residual": 110.48351287841797,
+        "native_center": [
+          892.5,
+          1273.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD01-66",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    },
+    {
+      "id": "CTR-REM-AA-F01614-SD01-005",
+      "family": "REM-AA-F01614-SD01",
+      "column": 0,
+      "row": 5,
+      "layer": "CT",
+      "landing_material": "AA",
+      "layout_center": [
+        1166.0,
+        1496.5
+      ],
+      "layout_outline": [
+        [
+          1163.5,
+          1494.0
+        ],
+        [
+          1168.5,
+          1494.0
+        ],
+        [
+          1168.5,
+          1499.0
+        ],
+        [
+          1163.5,
+          1499.0
+        ]
+      ],
+      "source_frame": "poly",
+      "status": "AI_full_frame_local_correspondence_candidate",
+      "source_evidence": {
+        "source_native_center_xy": [
+          892.5,
+          1304.0
+        ],
+        "peak_gray": 195.9889373779297,
+        "local_residual": 102.41948699951172,
+        "native_center": [
+          892.5,
+          1304.0
+        ],
+        "source_observation_id": "PROFILE-REM-AA-F01614-SD01-97",
+        "evidence_tier": "raw_band_profile_peak",
+        "evidence_type": "raw_peak_with_AI_local_material_correspondence",
+        "supported": true,
+        "algorithm_detected": true
+      },
+      "terminal_role": "source_drain_diffusion_candidate",
+      "M1_enclosure": "unknown",
+      "net_id": null,
+      "AA_target": "AA-F01614"
+    }
+  ]
+}

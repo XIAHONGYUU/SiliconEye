@@ -16,6 +16,8 @@ from pathlib import Path
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw
+from shapely.geometry import Polygon
+from shapely.ops import unary_union
 
 from .ct_joint_reconstruction import (
     check_source_boundaries,
@@ -23,7 +25,7 @@ from .ct_joint_reconstruction import (
     promote_confirmed_slots,
     require_exportable,
 )
-from .geometry_reconstruction import digest
+from .geometry_reconstruction import digest, object_polygon
 from .poly_closeout import svg
 from .scene_geometry import load_locked
 
@@ -613,6 +615,116 @@ def apply_reviewed_record_changes(records, changes, authorized_ids, preserve_fie
     return result
 
 
+def apply_source_correspondence_corrections(records, corrections, authorized_ids, review_ref):
+    """Correct named photo observations while retaining prior evidence and all design fields."""
+    result = copy.deepcopy(records)
+    by_id = {o["id"]: o for o in result}
+    if len(by_id) != len(result):
+        raise ValueError("Duplicate source correction parent ID")
+    seen = set()
+    for change in corrections:
+        key = change["id"]
+        if key not in authorized_ids or key in seen or key not in by_id:
+            raise ValueError("Source correction outside review scope or duplicate target")
+        seen.add(key)
+        obj = by_id[key]
+        if obj["source_evidence"] != change["before_source_evidence"]:
+            raise ValueError("Stale source correspondence parent")
+        after = change["after_source_evidence"]
+        center = np.asarray(after.get("native_center", []), dtype=float)
+        if (
+            center.shape != (2,)
+            or not np.isfinite(center).all()
+            or (
+                "source_native_center_xy" in after
+                and after["source_native_center_xy"] != after.get("native_center")
+            )
+            or after.get("supported") is not True
+            or not change.get("reason")
+        ):
+            raise ValueError("Source correction needs finite observed support and a reason")
+        obj.setdefault("source_correspondence_history", []).append(
+            dict(
+                before=copy.deepcopy(obj["source_evidence"]),
+                after=copy.deepcopy(after),
+                reason=change["reason"],
+                review_ref=copy.deepcopy(review_ref),
+            )
+        )
+        obj["source_evidence"] = copy.deepcopy(after)
+    return result
+
+
+def audit_terminal_access(objects, materials, minimum_region_area=25):
+    """Inventory observed access, without requiring cuts on internal diffusion nodes."""
+    polys = {g["id"]: Polygon(g["layout_outline"]) for g in materials["objects"]}
+    by_poly, by_active, associated = {}, {}, {}
+    for obj in objects:
+        target = obj.get("POLY_target")
+        if target:
+            by_poly.setdefault(target, []).append(obj["id"])
+        target = obj.get("AA_target")
+        if target:
+            by_active.setdefault(target, []).append(obj)
+    inherited_access = {key: set(values) for key, values in by_poly.items()}
+    # Explicit common terminals are usable only where the reconstructed bridge connects.
+    for g in materials["objects"]:
+        for member in g.get("member_POLY_ids", []):
+            if member in polys and polys[g["id"]].intersection(polys[member]).area > 1e-8:
+                inherited_access.setdefault(member, set()).update(by_poly.get(g["id"], []))
+        if g.get("AA_target"):
+            associated.setdefault(g["AA_target"], []).append(g["id"])
+    regions = []
+    for aa in materials["AA_objects"]:
+        gates = associated.get(aa["id"], [])
+        if not gates:
+            continue
+        remaining = object_polygon(aa).difference(unary_union([polys[g] for g in gates]))
+        parts = list(remaining.geoms) if hasattr(remaining, "geoms") else [remaining]
+        parts = sorted(
+            (p for p in parts if p.geom_type == "Polygon" and p.area >= minimum_region_area),
+            key=lambda p: (p.centroid.x, p.centroid.y),
+        )
+        for index, part in enumerate(parts):
+            contacts = [
+                o["id"]
+                for o in by_active.get(aa["id"], [])
+                if part.covers(Polygon(o["layout_outline"]))
+            ]
+            regions.append(
+                dict(
+                    id=f"{aa['id']}:D{index}",
+                    AA_target=aa["id"],
+                    gate_ids=gates,
+                    layout_bounds=list(part.bounds),
+                    contact_ids=contacts,
+                    status="candidate_direct_CT_access" if contacts else "no_direct_CT_evidence",
+                    no_CT_is_not_a_missing_cut_or_failed_internal_node=not contacts,
+                )
+            )
+    gates = [
+        dict(
+            material_id=g["id"],
+            AA_target=g.get("AA_target"),
+            contact_ids=sorted(inherited_access.get(g["id"], [])),
+            status="candidate_direct_or_shared_CT_access"
+            if inherited_access.get(g["id"])
+            else "no_direct_CT_evidence_or_body_fragment",
+        )
+        for g in materials["objects"]
+    ]
+    return dict(
+        status="access_inventory_not_physical_completion_gate",
+        diffusion_regions=regions,
+        POLY_materials=gates,
+        diffusion_region_count=len(regions),
+        diffusion_regions_without_direct_CT=sum(not x["contact_ids"] for x in regions),
+        POLY_materials_without_direct_CT=sum(not x["contact_ids"] for x in gates),
+        all_access_is_candidate_not_confirmed_M1_connectivity=True,
+        no_synthetic_CT_for_internal_diffusion=True,
+    )
+
+
 def run_local_review_revision(root, spec, output):
     """Execute a bounded human-directed revision without rerunning approved extraction."""
     root, output = Path(root).resolve(), Path(output)
@@ -651,11 +763,10 @@ def run_local_review_revision(root, spec, output):
         parent_ref=refs["materials"],
         human_review_ref=refs["human_review"],
         alias_map={
-            alias: c["after"]["id"]
-            for cs in spec["material_changes"].values()
-            for c in cs
-            if c["after"] is not None
-            for alias in c["after"].get("material_aliases", [])
+            alias: obj["id"]
+            for collection in ("objects", "AA_objects")
+            for obj in material[collection]
+            for alias in obj.get("material_aliases", [])
         },
         exact_new_geometry_status="candidate_except_explicitly_approved_patch",
     )
@@ -665,6 +776,15 @@ def run_local_review_revision(root, spec, output):
         changes,
         review["authorized_contact_ids"],
         ("source_evidence", "source_frame"),
+    )
+    source_corrections = spec.get("source_correspondence_corrections", [])
+    if {c["id"] for c in source_corrections} & {c["id"] for c in changes}:
+        raise ValueError("Source correction must not also revise or retire the design record")
+    objects = apply_source_correspondence_corrections(
+        objects,
+        source_corrections,
+        review.get("authorized_source_correspondence_ids", []),
+        refs["human_review"],
     )
     additions = loaded["new_contacts"]["objects"]
     if {o["id"] for o in additions} != set(review["authorized_new_contact_ids"]):
@@ -676,11 +796,13 @@ def run_local_review_revision(root, spec, output):
         raise ValueError("Duplicate contact addition")
     objects.extend(copy.deepcopy(additions))
     report = require_exportable(objects, material, spec["budget"])
+    access = audit_terminal_access(objects, material) if spec.get("audit_terminal_access") else None
     parent_by_id = {o["id"]: o for o in loaded["contacts"]["objects"]}
     report.update(
         unchanged_parent_contacts=sum(o == parent_by_id.get(o["id"]) for o in objects),
         revised_contact_count=len(changes),
         new_contact_count=len(additions),
+        source_correspondence_revision_ids=[c["id"] for c in source_corrections],
         material_revision_ids=[c["id"] for cs in spec["material_changes"].values() for c in cs],
         human_review="scoped decisions retained; revised geometry and new CT pending review",
         implementation_sha256=digest(Path(__file__)),
@@ -723,6 +845,7 @@ def run_local_review_revision(root, spec, output):
         ledger=dict(
             material_changes=ledger,
             contact_changes=changes,
+            source_correspondence_corrections=source_corrections,
             added_contact_ids=[o["id"] for o in additions],
         ),
         human_review=review,
@@ -730,6 +853,10 @@ def run_local_review_revision(root, spec, output):
     ).items():
         (output / f"{name.replace('_', '-')}.json").write_text(
             json.dumps(value, ensure_ascii=False, indent=2) + "\n"
+        )
+    if access is not None:
+        (output / "terminal-access.json").write_text(
+            json.dumps(access, ensure_ascii=False, indent=2) + "\n"
         )
     return report
 

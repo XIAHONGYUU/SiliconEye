@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-21",
+  "reviewed_candidate": "benchmarks/ct-work-layer-closeout-v3/freeze-manifest-v1.json",
+  "user_verbatim": "R1A：栅极CT实际从上端引出，蓝色T候选正确，且原漏孔均匀\nR1B：栅极CT实际从上端引出，蓝色T候选正确，且原漏孔均匀\nR2：实际这里只有一排孔，且这里的AA是连在一起的\n裁决完毕。",
+  "decisions": {
+    "R1A": {
+      "gate_terminal_side": "upper_only",
+      "blue_T_source_band": "confirmed",
+      "SD_pattern": "uniform"
+    },
+    "R1B": {
+      "gate_terminal_side": "upper_only",
+      "blue_T_source_band": "confirmed",
+      "SD_pattern": "uniform"
+    },
+    "R2": {
+      "AA_continuity": "confirmed",
+      "CT_row_count": 1,
+      "supersedes": "AI separated-ring hypothesis only at named R2 rail"
+    }
+  },
+  "whole_frame_human_accepted": false
+}

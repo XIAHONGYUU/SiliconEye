@@ -1,0 +1,74 @@
+{
+  "sites": [],
+  "unknown_scopes": [
+    {
+      "id": "U-AA-F01951",
+      "kind": "unlocated_isolated_AA_CT_unknown",
+      "AA_target": "AA-F01951",
+      "layout_bounds": [
+        2017.0,
+        341.0,
+        2055.0,
+        349.0
+      ],
+      "criticality": "no_known_device_port_inferred",
+      "question_for_human": null
+    },
+    {
+      "id": "U-AA-F01952",
+      "kind": "unlocated_isolated_AA_CT_unknown",
+      "AA_target": "AA-F01952",
+      "layout_bounds": [
+        1934.0,
+        341.0,
+        1972.0,
+        350.0
+      ],
+      "criticality": "no_known_device_port_inferred",
+      "question_for_human": null
+    },
+    {
+      "id": "U-H1",
+      "kind": "guard_CT_observability_unknown",
+      "AA_target": "AA2-TOP-H1-AA-0",
+      "layout_bounds": [
+        270.0039,
+        269.4849,
+        5226.7198,
+        284.7099
+      ],
+      "criticality": "guard_body_metal_access_not_proven",
+      "question_for_human": null
+    },
+    {
+      "id": "U-H2",
+      "kind": "guard_CT_observability_unknown",
+      "AA_target": "AA2-TOP-H2-AA-0",
+      "layout_bounds": [
+        268.0,
+        370.0,
+        5271.0,
+        384.0
+      ],
+      "criticality": "guard_body_metal_access_not_proven",
+      "question_for_human": null
+    },
+    {
+      "id": "U-COMPLEX-CENTRE",
+      "kind": "adjacent_guard_source_ownership_not_resolved",
+      "AA_targets": [
+        "AA2-UPPER-COMPLEX-GUARD-AA-0-split01",
+        "AA2-UPPER-INNER-B-AA-0"
+      ],
+      "layout_bounds": [
+        1186,
+        1028,
+        4071,
+        1061
+      ],
+      "criticality": "do_not_merge_adjacent_guard_nets",
+      "question_for_human": "Adjacent upper guards have a very close photographed bright band. Preserve ambiguity rather than using one cut for both guards."
+    }
+  ],
+  "not_hypothetical_hole_slots": true
+}

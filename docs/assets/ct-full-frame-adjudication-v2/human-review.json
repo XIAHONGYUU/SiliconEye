@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-21",
+  "user_instruction_verbatim": "Q1：左侧四管栅极CT从下端饮醋，上方红X为环上的CT\nQ2：共用下端poly引出，实际在poly上的CT在下方两poly连接处\nQ3A：G是栅端gate,且没有从poly下方引出。蓝色A为上方inside的环，靠近栅极A,联合图对应A应该是下面那条环\nQ3B：G与A身份关系对应正确\nQ3C：G与A身份关系对应正确。\n裁决完成",
+  "source": "human_message_in_current_chat",
+  "decisions": [
+    {
+      "id": "Q1",
+      "status": "human_decided",
+      "gate_CT_side": "bottom",
+      "upper_red_X_role": "guard_AA_CT",
+      "material_ids": [
+        "CL2-Q3-AA-F01613-01",
+        "CL2-Q3-AA-F01613-02",
+        "CL2-Q3-AA-F01614-01",
+        "CL2-Q3-AA-F01614-02"
+      ],
+      "exact_peak_count_and_coordinates": "AI_reinspection_candidates_not_human_pixel_truth"
+    },
+    {
+      "id": "Q2",
+      "status": "human_decided",
+      "members": [
+        "G68-P01",
+        "G68-P02"
+      ],
+      "connection": "shared_bottom_POLY",
+      "CT_role": "on_shared_bottom_connection",
+      "exact_outline_and_count": "candidate"
+    },
+    {
+      "id": "Q3A",
+      "status": "human_decided",
+      "G": "top_gate_terminal",
+      "bottom_gate_CT": false,
+      "A": "inner_guard_closer_to_gate",
+      "layout_A_target": "AA2-TOP-H3-AA-0"
+    },
+    {
+      "id": "Q3B",
+      "status": "human_correspondence_confirmed",
+      "G": "gate_terminal",
+      "A": "guard_reference"
+    },
+    {
+      "id": "Q3C",
+      "status": "human_correspondence_confirmed",
+      "G": "gate_terminal",
+      "A": "guard_reference"
+    }
+  ],
+  "scope": "Semantic/source-correspondence decisions only; not blanket acceptance of v1 candidates or new geometry",
+  "authorized_material_ids": [
+    "G68-BOTTOM-BUS-01"
+  ],
+  "authorized_contact_ids": [
+    "CTR-G-G07-P01-bottom-000",
+    "CTR-G-G07-P01-bottom-001",
+    "CTR-G-G07-P02-bottom-000",
+    "CTR-G-G07-P02-bottom-001",
+    "CTR-G-G07-P03-bottom-000"
+  ],
+  "authorized_source_correspondence_ids": [
+    "CTT-LL-G18-G03-S000",
+    "CTT-LL-G18-G03-S001",
+    "CTT-LL-G18-G07-S000",
+    "CTT-LL-G18-G07-S001",
+    "CTT-LL-G18-G07-S002"
+  ],
+  "authorized_new_contact_ids": [
+    "CTA-Q1-G1-0",
+    "CTA-Q1-G1-1",
+    "CTA-Q1-G2-0",
+    "CTA-Q1-G2-1",
+    "CTA-Q1-G3-0",
+    "CTA-Q1-G3-1",
+    "CTA-Q1-G4-0",
+    "CTA-Q1-G4-1",
+    "CTA-Q2-BUS-0",
+    "CTA-Q2-BUS-1",
+    "CTR-REM-AA-F01613-SD01-001",
+    "CTR-REM-AA-F01613-SD01-002",
+    "CTR-REM-AA-F01613-SD01-003",
+    "CTR-REM-AA-F01613-SD01-004",
+    "CTR-REM-AA-F01613-SD01-005",
+    "CTR-REM-AA-F01613-SD02-001",
+    "CTR-REM-AA-F01613-SD02-002",
+    "CTR-REM-AA-F01613-SD02-003",
+    "CTR-REM-AA-F01613-SD02-005",
+    "CTR-REM-AA-F01614-SD00-001",
+    "CTR-REM-AA-F01614-SD00-002",
+    "CTR-REM-AA-F01614-SD00-003",
+    "CTR-REM-AA-F01614-SD01-001",
+    "CTR-REM-AA-F01614-SD01-002",
+    "CTR-REM-AA-F01614-SD01-003",
+    "CTR-REM-AA-F01614-SD01-005"
+  ],
+  "whole_frame_human_accepted": false
+}

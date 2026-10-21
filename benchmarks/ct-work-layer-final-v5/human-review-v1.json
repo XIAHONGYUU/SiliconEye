@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "user_instruction_verbatim": "完成这三项后收口",
+  "authorized_scope": [
+    "four-gate local POLY revision and CT completion",
+    "remaining source limitations review",
+    "whole-work-layer quality review and engineering closeout"
+  ],
+  "four_gate_count": {
+    "status": "AI_visual_recheck_supported_by_four_caps_and_five_diffusion_columns",
+    "user_request": "确认蓝框1～4是否就是全部四条栅",
+    "not_relabelled_as_new_human_pixel_or_count_annotation": true
+  },
+  "prior_R1_R2_review_ref": {
+    "path": "benchmarks/ct-work-layer-reviewed-v4/human-review-v1.json",
+    "sha256": "8692843952045b465f27ef77e0aee64b6a6be1584d9aaa03df05486ef71a6b6f"
+  },
+  "full_physical_CT_recovery_not_claimed": true,
+  "whole_frame_human_visual_approval": false
+}

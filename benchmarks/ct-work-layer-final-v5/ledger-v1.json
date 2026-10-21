@@ -1,0 +1,1346 @@
+{
+  "material_changes": {
+    "objects": [
+      {
+        "id": "G06-P06",
+        "before": {
+          "id": "G06-P06",
+          "material": "POLY",
+          "native_outline": [
+            [
+              3715.7777777777783,
+              204.77777777777777
+            ],
+            [
+              3749.777777777778,
+              204.77777777777777
+            ],
+            [
+              3751.7777777777783,
+              322.7777777777778
+            ],
+            [
+              3717.777777777778,
+              322.7777777777778
+            ]
+          ],
+          "source_record": {
+            "id": "G06-P06",
+            "group_id": "G06",
+            "group_index": 5,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3715.7777777777783,
+                204.77777777777777
+              ],
+              [
+                3749.777777777778,
+                204.77777777777777
+              ],
+              [
+                3751.7777777777783,
+                322.7777777777778
+              ],
+              [
+                3717.777777777778,
+                322.7777777777778
+              ]
+            ],
+            "layout_outline": [
+              [
+                3716.7777777777783,
+                204.0
+              ],
+              [
+                3750.7777777777783,
+                204.0
+              ],
+              [
+                3750.7777777777783,
+                322.0
+              ],
+              [
+                3716.7777777777783,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.0000000000001217,
+                -0.016949152542798867,
+                4.470809677710194
+              ],
+              [
+                5.97369968049466e-15,
+                1.0000000000000109,
+                -0.7777709961085443
+              ],
+              [
+                1.9017316869928282e-17,
+                -1.1384376380275717e-16,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "source_scope": null,
+          "group_id": "G06",
+          "kind": "MOS_gate_body",
+          "acceptance": {
+            "material": "AI_candidate_not_human_confirmed",
+            "joint_geometry": "candidate",
+            "electrical": "unknown"
+          },
+          "AA_target": "AA-F01804",
+          "terminal_status": "not_individually_verified",
+          "geometry_method": "explicit_new_AA_relation_AI_candidate",
+          "legacy_record": {
+            "id": "G06-P06",
+            "group_id": "G06",
+            "group_index": 5,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3715.7777777777783,
+                204.77777777777777
+              ],
+              [
+                3749.777777777778,
+                204.77777777777777
+              ],
+              [
+                3751.7777777777783,
+                322.7777777777778
+              ],
+              [
+                3717.777777777778,
+                322.7777777777778
+              ]
+            ],
+            "layout_outline": [
+              [
+                3716.7777777777783,
+                204.0
+              ],
+              [
+                3750.7777777777783,
+                204.0
+              ],
+              [
+                3750.7777777777783,
+                322.0
+              ],
+              [
+                3716.7777777777783,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.0000000000001217,
+                -0.016949152542798867,
+                4.470809677710194
+              ],
+              [
+                5.97369968049466e-15,
+                1.0000000000000109,
+                -0.7777709961085443
+              ],
+              [
+                1.9017316869928282e-17,
+                -1.1384376380275717e-16,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "layout_outline": [
+            [
+              3751.0,
+              431.0
+            ],
+            [
+              3783.0,
+              431.0
+            ],
+            [
+              3783.0,
+              546.0
+            ],
+            [
+              3751.0,
+              546.0
+            ]
+          ],
+          "relation_record": {
+            "id": "G06-right",
+            "object_ids": [
+              "G06-P06",
+              "G06-P07",
+              "G06-P08",
+              "G06-P09",
+              "G06-P10"
+            ],
+            "AA_id": "AA-F01804",
+            "width_px": 32,
+            "margin_px": 8,
+            "extension_px": 8,
+            "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+          }
+        },
+        "after": null
+      },
+      {
+        "id": "G06-P07",
+        "before": {
+          "id": "G06-P07",
+          "material": "POLY",
+          "native_outline": [
+            [
+              3766.3333333333335,
+              205.33333333333334
+            ],
+            [
+              3800.333333333333,
+              205.33333333333334
+            ],
+            [
+              3802.3333333333335,
+              323.33333333333337
+            ],
+            [
+              3768.333333333333,
+              323.33333333333337
+            ]
+          ],
+          "source_record": {
+            "id": "G06-P07",
+            "group_id": "G06",
+            "group_index": 6,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3766.3333333333335,
+                205.33333333333334
+              ],
+              [
+                3800.333333333333,
+                205.33333333333334
+              ],
+              [
+                3802.3333333333335,
+                323.33333333333337
+              ],
+              [
+                3768.333333333333,
+                323.33333333333337
+              ]
+            ],
+            "layout_outline": [
+              [
+                3767.3333333333335,
+                204.0
+              ],
+              [
+                3801.3333333333335,
+                204.0
+              ],
+              [
+                3801.3333333333335,
+                322.0
+              ],
+              [
+                3767.3333333333335,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.000000000000013,
+                -0.016949150350646022,
+                4.480225452430608
+              ],
+              [
+                1.0473106924151175e-15,
+                0.9999998706882507,
+                -1.3333016950611962
+              ],
+              [
+                1.5496632447410206e-18,
+                -5.221012848132385e-20,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "source_scope": null,
+          "group_id": "G06",
+          "kind": "MOS_gate_body",
+          "acceptance": {
+            "material": "AI_candidate_not_human_confirmed",
+            "joint_geometry": "candidate",
+            "electrical": "unknown"
+          },
+          "AA_target": "AA-F01804",
+          "terminal_status": "not_individually_verified",
+          "geometry_method": "explicit_new_AA_relation_AI_candidate",
+          "legacy_record": {
+            "id": "G06-P07",
+            "group_id": "G06",
+            "group_index": 6,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3766.3333333333335,
+                205.33333333333334
+              ],
+              [
+                3800.333333333333,
+                205.33333333333334
+              ],
+              [
+                3802.3333333333335,
+                323.33333333333337
+              ],
+              [
+                3768.333333333333,
+                323.33333333333337
+              ]
+            ],
+            "layout_outline": [
+              [
+                3767.3333333333335,
+                204.0
+              ],
+              [
+                3801.3333333333335,
+                204.0
+              ],
+              [
+                3801.3333333333335,
+                322.0
+              ],
+              [
+                3767.3333333333335,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.000000000000013,
+                -0.016949150350646022,
+                4.480225452430608
+              ],
+              [
+                1.0473106924151175e-15,
+                0.9999998706882507,
+                -1.3333016950611962
+              ],
+              [
+                1.5496632447410206e-18,
+                -5.221012848132385e-20,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "layout_outline": [
+            [
+              3792.75,
+              431.0
+            ],
+            [
+              3824.75,
+              431.0
+            ],
+            [
+              3824.75,
+              546.0
+            ],
+            [
+              3792.75,
+              546.0
+            ]
+          ],
+          "relation_record": {
+            "id": "G06-right",
+            "object_ids": [
+              "G06-P06",
+              "G06-P07",
+              "G06-P08",
+              "G06-P09",
+              "G06-P10"
+            ],
+            "AA_id": "AA-F01804",
+            "width_px": 32,
+            "margin_px": 8,
+            "extension_px": 8,
+            "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+          }
+        },
+        "after": null
+      },
+      {
+        "id": "G06-P08",
+        "before": {
+          "id": "G06-P08",
+          "material": "POLY",
+          "native_outline": [
+            [
+              3816.888888888889,
+              205.88888888888889
+            ],
+            [
+              3850.8888888888887,
+              205.88888888888889
+            ],
+            [
+              3852.888888888889,
+              323.8888888888889
+            ],
+            [
+              3818.888888888889,
+              323.8888888888889
+            ]
+          ],
+          "source_record": {
+            "id": "G06-P08",
+            "group_id": "G06",
+            "group_index": 7,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3816.888888888889,
+                205.88888888888889
+              ],
+              [
+                3850.8888888888887,
+                205.88888888888889
+              ],
+              [
+                3852.888888888889,
+                323.8888888888889
+              ],
+              [
+                3818.888888888889,
+                323.8888888888889
+              ]
+            ],
+            "layout_outline": [
+              [
+                3817.888888888889,
+                204.0
+              ],
+              [
+                3851.888888888889,
+                204.0
+              ],
+              [
+                3851.888888888889,
+                322.0
+              ],
+              [
+                3817.888888888889,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.0000000000001432,
+                -0.016949152541940772,
+                4.489642126763488
+              ],
+              [
+                4.909043109167128e-15,
+                1.000000000000119,
+                -1.888885498073396
+              ],
+              [
+                1.5437828261785668e-17,
+                1.1295369457329514e-16,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "source_scope": null,
+          "group_id": "G06",
+          "kind": "MOS_gate_body",
+          "acceptance": {
+            "material": "AI_candidate_not_human_confirmed",
+            "joint_geometry": "candidate",
+            "electrical": "unknown"
+          },
+          "AA_target": "AA-F01804",
+          "terminal_status": "not_individually_verified",
+          "geometry_method": "explicit_new_AA_relation_AI_candidate",
+          "legacy_record": {
+            "id": "G06-P08",
+            "group_id": "G06",
+            "group_index": 7,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3816.888888888889,
+                205.88888888888889
+              ],
+              [
+                3850.8888888888887,
+                205.88888888888889
+              ],
+              [
+                3852.888888888889,
+                323.8888888888889
+              ],
+              [
+                3818.888888888889,
+                323.8888888888889
+              ]
+            ],
+            "layout_outline": [
+              [
+                3817.888888888889,
+                204.0
+              ],
+              [
+                3851.888888888889,
+                204.0
+              ],
+              [
+                3851.888888888889,
+                322.0
+              ],
+              [
+                3817.888888888889,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.0000000000001432,
+                -0.016949152541940772,
+                4.489642126763488
+              ],
+              [
+                4.909043109167128e-15,
+                1.000000000000119,
+                -1.888885498073396
+              ],
+              [
+                1.5437828261785668e-17,
+                1.1295369457329514e-16,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "layout_outline": [
+            [
+              3834.5,
+              431.0
+            ],
+            [
+              3866.5,
+              431.0
+            ],
+            [
+              3866.5,
+              546.0
+            ],
+            [
+              3834.5,
+              546.0
+            ]
+          ],
+          "relation_record": {
+            "id": "G06-right",
+            "object_ids": [
+              "G06-P06",
+              "G06-P07",
+              "G06-P08",
+              "G06-P09",
+              "G06-P10"
+            ],
+            "AA_id": "AA-F01804",
+            "width_px": 32,
+            "margin_px": 8,
+            "extension_px": 8,
+            "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+          }
+        },
+        "after": null
+      },
+      {
+        "id": "G06-P09",
+        "before": {
+          "id": "G06-P09",
+          "material": "POLY",
+          "native_outline": [
+            [
+              3867.4444444444443,
+              206.44444444444446
+            ],
+            [
+              3901.4444444444443,
+              206.44444444444446
+            ],
+            [
+              3903.4444444444443,
+              324.44444444444446
+            ],
+            [
+              3869.4444444444443,
+              324.44444444444446
+            ]
+          ],
+          "source_record": {
+            "id": "G06-P09",
+            "group_id": "G06",
+            "group_index": 8,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3867.4444444444443,
+                206.44444444444446
+              ],
+              [
+                3901.4444444444443,
+                206.44444444444446
+              ],
+              [
+                3903.4444444444443,
+                324.44444444444446
+              ],
+              [
+                3869.4444444444443,
+                324.44444444444446
+              ]
+            ],
+            "layout_outline": [
+              [
+                3868.4444444444443,
+                204.0
+              ],
+              [
+                3902.4444444444443,
+                204.0
+              ],
+              [
+                3902.4444444444443,
+                322.0
+              ],
+              [
+                3868.4444444444443,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.0000000000000113,
+                -0.01694915035020418,
+                4.499057899138431
+              ],
+              [
+                -5.038926544433515e-16,
+                0.9999998706882981,
+                -2.4444160533357913
+              ],
+              [
+                -1.7035918482927861e-18,
+                1.1356772944512984e-16,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "source_scope": null,
+          "group_id": "G06",
+          "kind": "MOS_gate_body",
+          "acceptance": {
+            "material": "AI_candidate_not_human_confirmed",
+            "joint_geometry": "candidate",
+            "electrical": "unknown"
+          },
+          "AA_target": "AA-F01804",
+          "terminal_status": "not_individually_verified",
+          "geometry_method": "explicit_new_AA_relation_AI_candidate",
+          "legacy_record": {
+            "id": "G06-P09",
+            "group_id": "G06",
+            "group_index": 8,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3867.4444444444443,
+                206.44444444444446
+              ],
+              [
+                3901.4444444444443,
+                206.44444444444446
+              ],
+              [
+                3903.4444444444443,
+                324.44444444444446
+              ],
+              [
+                3869.4444444444443,
+                324.44444444444446
+              ]
+            ],
+            "layout_outline": [
+              [
+                3868.4444444444443,
+                204.0
+              ],
+              [
+                3902.4444444444443,
+                204.0
+              ],
+              [
+                3902.4444444444443,
+                322.0
+              ],
+              [
+                3868.4444444444443,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                1.0000000000000113,
+                -0.01694915035020418,
+                4.499057899138431
+              ],
+              [
+                -5.038926544433515e-16,
+                0.9999998706882981,
+                -2.4444160533357913
+              ],
+              [
+                -1.7035918482927861e-18,
+                1.1356772944512984e-16,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "layout_outline": [
+            [
+              3876.25,
+              431.0
+            ],
+            [
+              3908.25,
+              431.0
+            ],
+            [
+              3908.25,
+              546.0
+            ],
+            [
+              3876.25,
+              546.0
+            ]
+          ],
+          "relation_record": {
+            "id": "G06-right",
+            "object_ids": [
+              "G06-P06",
+              "G06-P07",
+              "G06-P08",
+              "G06-P09",
+              "G06-P10"
+            ],
+            "AA_id": "AA-F01804",
+            "width_px": 32,
+            "margin_px": 8,
+            "extension_px": 8,
+            "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+          }
+        },
+        "after": null
+      },
+      {
+        "id": "G06-P10",
+        "before": {
+          "id": "G06-P10",
+          "material": "POLY",
+          "native_outline": [
+            [
+              3918.0,
+              207.0
+            ],
+            [
+              3952.0,
+              207.0
+            ],
+            [
+              3954.0,
+              325.0
+            ],
+            [
+              3920.0,
+              325.0
+            ]
+          ],
+          "source_record": {
+            "id": "G06-P10",
+            "group_id": "G06",
+            "group_index": 9,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3918.0,
+                207.0
+              ],
+              [
+                3952.0,
+                207.0
+              ],
+              [
+                3954.0,
+                325.0
+              ],
+              [
+                3920.0,
+                325.0
+              ]
+            ],
+            "layout_outline": [
+              [
+                3919.0,
+                204.0
+              ],
+              [
+                3953.0,
+                204.0
+              ],
+              [
+                3953.0,
+                322.0
+              ],
+              [
+                3919.0,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                0.9999999999999963,
+                -0.016949152542371608,
+                4.50847457627523
+              ],
+              [
+                5.842302580624912e-16,
+                0.9999999999999974,
+                -3.0000000000022773
+              ],
+              [
+                -6.364688326615045e-19,
+                -9.125495007658963e-20,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "source_scope": null,
+          "group_id": "G06",
+          "kind": "MOS_gate_body",
+          "acceptance": {
+            "material": "AI_candidate_not_human_confirmed",
+            "joint_geometry": "candidate",
+            "electrical": "unknown"
+          },
+          "AA_target": "AA-F01804",
+          "terminal_status": "not_individually_verified",
+          "geometry_method": "explicit_new_AA_relation_AI_candidate",
+          "legacy_record": {
+            "id": "G06-P10",
+            "group_id": "G06",
+            "group_index": 9,
+            "kind": "MOS_gate_body",
+            "material": "poly",
+            "status": "AI_candidate_not_human_confirmed",
+            "native_outline": [
+              [
+                3918.0,
+                207.0
+              ],
+              [
+                3952.0,
+                207.0
+              ],
+              [
+                3954.0,
+                325.0
+              ],
+              [
+                3920.0,
+                325.0
+              ]
+            ],
+            "layout_outline": [
+              [
+                3919.0,
+                204.0
+              ],
+              [
+                3953.0,
+                204.0
+              ],
+              [
+                3953.0,
+                322.0
+              ],
+              [
+                3919.0,
+                322.0
+              ]
+            ],
+            "native_to_layout": [
+              [
+                0.9999999999999963,
+                -0.016949152542371608,
+                4.50847457627523
+              ],
+              [
+                5.842302580624912e-16,
+                0.9999999999999974,
+                -3.0000000000022773
+              ],
+              [
+                -6.364688326615045e-19,
+                -9.125495007658963e-20,
+                1.0
+              ]
+            ],
+            "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+            "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+            "terminal_routing": "unknown_not_completed_by_repetition"
+          },
+          "layout_outline": [
+            [
+              3918.0,
+              431.0
+            ],
+            [
+              3950.0,
+              431.0
+            ],
+            [
+              3950.0,
+              546.0
+            ],
+            [
+              3918.0,
+              546.0
+            ]
+          ],
+          "relation_record": {
+            "id": "G06-right",
+            "object_ids": [
+              "G06-P06",
+              "G06-P07",
+              "G06-P08",
+              "G06-P09",
+              "G06-P10"
+            ],
+            "AA_id": "AA-F01804",
+            "width_px": 32,
+            "margin_px": 8,
+            "extension_px": 8,
+            "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+          }
+        },
+        "after": null
+      },
+      {
+        "id": "G06R-P01",
+        "before": null,
+        "after": {
+          "id": "G06R-P01",
+          "material": "POLY",
+          "kind": "MOS_gate_body",
+          "group_id": "G06R",
+          "AA_target": "AA-F01804",
+          "layout_outline": [
+            [
+              3754.0,
+              431
+            ],
+            [
+              3786.0,
+              431
+            ],
+            [
+              3786.0,
+              546
+            ],
+            [
+              3754.0,
+              546
+            ]
+          ],
+          "native_outline": [
+            [
+              3753,
+              177
+            ],
+            [
+              3789,
+              177
+            ],
+            [
+              3789,
+              322
+            ],
+            [
+              3753,
+              322
+            ]
+          ],
+          "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+          "observed_upper_terminal": {
+            "native_center_locator": [
+              3771,
+              190
+            ],
+            "band_bbox": [
+              3749,
+              174,
+              3794,
+              212
+            ]
+          },
+          "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+          "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+          "supersedes_group_material_ids": [
+            "G06-P06",
+            "G06-P07",
+            "G06-P08",
+            "G06-P09",
+            "G06-P10"
+          ],
+          "acceptance": {
+            "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+            "joint_geometry": "AI_checked_candidate",
+            "electrical": "unknown"
+          },
+          "review_ref": {
+            "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+            "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+          }
+        }
+      },
+      {
+        "id": "G06R-P02",
+        "before": null,
+        "after": {
+          "id": "G06R-P02",
+          "material": "POLY",
+          "kind": "MOS_gate_body",
+          "group_id": "G06R",
+          "AA_target": "AA-F01804",
+          "layout_outline": [
+            [
+              3807.6666666666665,
+              431
+            ],
+            [
+              3839.6666666666665,
+              431
+            ],
+            [
+              3839.6666666666665,
+              546
+            ],
+            [
+              3807.6666666666665,
+              546
+            ]
+          ],
+          "native_outline": [
+            [
+              3798,
+              177
+            ],
+            [
+              3834,
+              177
+            ],
+            [
+              3834,
+              322
+            ],
+            [
+              3798,
+              322
+            ]
+          ],
+          "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+          "observed_upper_terminal": {
+            "native_center_locator": [
+              3816,
+              190
+            ],
+            "band_bbox": [
+              3794,
+              174,
+              3839,
+              212
+            ]
+          },
+          "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+          "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+          "supersedes_group_material_ids": [
+            "G06-P06",
+            "G06-P07",
+            "G06-P08",
+            "G06-P09",
+            "G06-P10"
+          ],
+          "acceptance": {
+            "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+            "joint_geometry": "AI_checked_candidate",
+            "electrical": "unknown"
+          },
+          "review_ref": {
+            "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+            "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+          }
+        }
+      },
+      {
+        "id": "G06R-P03",
+        "before": null,
+        "after": {
+          "id": "G06R-P03",
+          "material": "POLY",
+          "kind": "MOS_gate_body",
+          "group_id": "G06R",
+          "AA_target": "AA-F01804",
+          "layout_outline": [
+            [
+              3861.3333333333335,
+              431
+            ],
+            [
+              3893.3333333333335,
+              431
+            ],
+            [
+              3893.3333333333335,
+              546
+            ],
+            [
+              3861.3333333333335,
+              546
+            ]
+          ],
+          "native_outline": [
+            [
+              3853,
+              177
+            ],
+            [
+              3889,
+              177
+            ],
+            [
+              3889,
+              322
+            ],
+            [
+              3853,
+              322
+            ]
+          ],
+          "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+          "observed_upper_terminal": {
+            "native_center_locator": [
+              3871,
+              190
+            ],
+            "band_bbox": [
+              3849,
+              174,
+              3894,
+              212
+            ]
+          },
+          "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+          "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+          "supersedes_group_material_ids": [
+            "G06-P06",
+            "G06-P07",
+            "G06-P08",
+            "G06-P09",
+            "G06-P10"
+          ],
+          "acceptance": {
+            "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+            "joint_geometry": "AI_checked_candidate",
+            "electrical": "unknown"
+          },
+          "review_ref": {
+            "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+            "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+          }
+        }
+      },
+      {
+        "id": "G06R-P04",
+        "before": null,
+        "after": {
+          "id": "G06R-P04",
+          "material": "POLY",
+          "kind": "MOS_gate_body",
+          "group_id": "G06R",
+          "AA_target": "AA-F01804",
+          "layout_outline": [
+            [
+              3915.0,
+              431
+            ],
+            [
+              3947.0,
+              431
+            ],
+            [
+              3947.0,
+              546
+            ],
+            [
+              3915.0,
+              546
+            ]
+          ],
+          "native_outline": [
+            [
+              3904,
+              177
+            ],
+            [
+              3940,
+              177
+            ],
+            [
+              3940,
+              322
+            ],
+            [
+              3904,
+              322
+            ]
+          ],
+          "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+          "observed_upper_terminal": {
+            "native_center_locator": [
+              3922,
+              190
+            ],
+            "band_bbox": [
+              3900,
+              174,
+              3945,
+              212
+            ]
+          },
+          "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+          "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+          "supersedes_group_material_ids": [
+            "G06-P06",
+            "G06-P07",
+            "G06-P08",
+            "G06-P09",
+            "G06-P10"
+          ],
+          "acceptance": {
+            "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+            "joint_geometry": "AI_checked_candidate",
+            "electrical": "unknown"
+          },
+          "review_ref": {
+            "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+            "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+          }
+        }
+      }
+    ],
+    "AA_objects": []
+  },
+  "contact_changes": [],
+  "source_correspondence_corrections": [],
+  "added_contact_ids": [
+    "CTV5-GATE-G06R-P01-0",
+    "CTV5-GATE-G06R-P01-1",
+    "CTV5-GATE-G06R-P02-0",
+    "CTV5-GATE-G06R-P02-1",
+    "CTV5-GATE-G06R-P03-0",
+    "CTV5-GATE-G06R-P03-1",
+    "CTV5-GATE-G06R-P04-0",
+    "CTV5-GATE-G06R-P04-1",
+    "CTV5-SD-G06R-0-0",
+    "CTV5-SD-G06R-0-1",
+    "CTV5-SD-G06R-0-2",
+    "CTV5-SD-G06R-0-3",
+    "CTV5-SD-G06R-0-4",
+    "CTV5-SD-G06R-1-0",
+    "CTV5-SD-G06R-1-1",
+    "CTV5-SD-G06R-1-2",
+    "CTV5-SD-G06R-1-3",
+    "CTV5-SD-G06R-1-4",
+    "CTV5-SD-G06R-2-0",
+    "CTV5-SD-G06R-2-1",
+    "CTV5-SD-G06R-2-2",
+    "CTV5-SD-G06R-2-3",
+    "CTV5-SD-G06R-2-4",
+    "CTV5-SD-G06R-3-0",
+    "CTV5-SD-G06R-3-1",
+    "CTV5-SD-G06R-3-2",
+    "CTV5-SD-G06R-3-3",
+    "CTV5-SD-G06R-3-4",
+    "CTV5-SD-G06R-4-0",
+    "CTV5-SD-G06R-4-1",
+    "CTV5-SD-G06R-4-2",
+    "CTV5-SD-G06R-4-3",
+    "CTV5-SD-G06R-4-4"
+  ]
+}
