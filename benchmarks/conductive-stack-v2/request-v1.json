@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_stack_assembly",
+  "id": "first-continuous-five-layer-stack",
+  "base_snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "packages": {
+    "lower": {
+      "spec": {
+        "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/spec.json",
+        "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+      },
+      "model": {
+        "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/model.json",
+        "sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a"
+      },
+      "report": {
+        "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/report.json",
+        "sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870"
+      },
+      "manifest": {
+        "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/manifest.json",
+        "sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5"
+      }
+    },
+    "upper": {
+      "spec": {
+        "path": "docs/assets/m2-v2-m3-joint-reviewed-v2/spec.json",
+        "sha256": "25871b3324d37df812ff38a35d20bc9b077f4605c66d641edc400e1b354f1ec3"
+      },
+      "model": {
+        "path": "docs/assets/m2-v2-m3-joint-reviewed-v2/model.json",
+        "sha256": "d15b1e072ea6692f796055e8b746f30a049cbe528d8687f6ba34746da9ba5a6a"
+      },
+      "report": {
+        "path": "docs/assets/m2-v2-m3-joint-reviewed-v2/report.json",
+        "sha256": "871aa0cf1380bfb86dfc5b3063b5f6c4ee4428a61fcd4859c01a96e9e2a73211"
+      },
+      "manifest": {
+        "path": "docs/assets/m2-v2-m3-joint-reviewed-v2/manifest.json",
+        "sha256": "822cac20ef104215ab35ee7a85b86915c19a558fd51569c42191a09ec87b76cd"
+      }
+    }
+  },
+  "design_bounds": [
+    1900,
+    1840,
+    2520,
+    2320
+  ],
+  "source_windows": {
+    "m1": {
+      "wide": [
+        1350,
+        1750,
+        2900,
+        2850
+      ],
+      "detail": [
+        1880,
+        1870,
+        2430,
+        2300
+      ]
+    },
+    "m2": {
+      "wide": [
+        1350,
+        1750,
+        2900,
+        2850
+      ],
+      "detail": [
+        1840,
+        1820,
+        2140,
+        2080
+      ]
+    },
+    "m3": {
+      "wide": [
+        1350,
+        1750,
+        2900,
+        2850
+      ],
+      "detail": [
+        1840,
+        1820,
+        2140,
+        2080
+      ]
+    }
+  },
+  "observations": [],
+  "native_traces": {
+    "m1": [
+      {
+        "points": [
+          [
+            2335,
+            1933
+          ],
+          [
+            2006,
+            1939
+          ],
+          [
+            2029,
+            2243
+          ],
+          [
+            2335,
+            2234
+          ]
+        ],
+        "color": "#80e6b0",
+        "label": "M1-P08"
+      }
+    ],
+    "m2": [
+      {
+        "points": [
+          [
+            1970,
+            1970
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "M2-J01"
+      }
+    ],
+    "m3": [
+      {
+        "points": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "B1 reviewed M3 carrier"
+      },
+      {
+        "points": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "color": "#ffe36b",
+        "label": "B0 adjacent M3"
+      }
+    ]
+  },
+  "source_regions": {
+    "m1": [
+      {
+        "bounds": [
+          1937,
+          1930,
+          1953,
+          1985
+        ],
+        "color": "#ff7086",
+        "label": "NO V1",
+        "label_xy": [
+          1890,
+          1920
+        ]
+      },
+      {
+        "bounds": [
+          1964,
+          1934,
+          2011,
+          1982
+        ],
+        "color": "#ffb04f",
+        "label": "V1"
+      }
+    ],
+    "m2": [
+      {
+        "bounds": [
+          1935,
+          1905,
+          2003,
+          1953
+        ],
+        "color": "#fff4bd",
+        "label": "V2 3x4 = 12",
+        "feature_layer": "V2"
+      }
+    ]
+  },
+  "limits": [
+    "M2 displayed group contains only V2, human-confirmed 3 rows x 4 columns = 12",
+    "M1 V1 evidence and previously reviewed local metal destinations retained",
+    "Nine old M1/V1 to M2/V2 point pairs and their fit/holdout rejected, not merely unqualified",
+    "Native point centers and design cut edges remain AI candidates",
+    "All metal geometry, AA/POLY/CT and existing unknowns unchanged",
+    "Local V2 count is known; total physical hole count across the photograph and all layers is unknown",
+    "No full-net or qualified precise photo projection claim"
+  ],
+  "reviewed_source_correction": {
+    "parent_request": {
+      "path": "benchmarks/conductive-stack-v1/request-v1.json",
+      "sha256": "7dd2c352d9d76f7d3e69ce63ec55b93c9fa47f9e72bec1b7818a2838426d8210"
+    },
+    "parent_registry": {
+      "path": "docs/assets/conductive-stack-v1/model.json",
+      "sha256": "aa0481024f43b76814f209b568e9f7de29be18c0b2027810c9eb9f4df0c890a0"
+    },
+    "human_review": {
+      "path": "benchmarks/conductive-stack-v2/human-review-v1.json",
+      "sha256": "6c0fb5c525e4b1aa621cb7b21b77d27980a2157beff67b23c8f4bd877fb543e4"
+    },
+    "revision": {
+      "path": "benchmarks/conductive-stack-v2/source-revision-v1.json",
+      "sha256": "bc3f3d0585b1f96f8dc1b176d87453ad9f910e043083ca6c6c4db5afdb664378"
+    }
+  }
+}

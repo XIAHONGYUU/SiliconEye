@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "kind": "metal_via_layer_pair_pilot",
+  "layer_stack": [
+    "M2",
+    "V2",
+    "M3"
+  ],
+  "baseline": {
+    "spec": {
+      "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/spec-v1.json",
+      "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+    },
+    "model": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/model.json",
+      "sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a"
+    },
+    "report": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/report.json",
+      "sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870"
+    },
+    "manifest": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/manifest.json",
+      "sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5"
+    }
+  },
+  "initial_observation": {
+    "path": "benchmarks/m2-v2-m3-joint-pilot-v1/initial-ai-observation-v1.json",
+    "sha256": "11dd41ba3802fe33909ba5a451554c887b7bd417a3631929dcce2df1cd92a95e"
+  },
+  "inherited_via_id": "J-M2-EDGE-V2",
+  "design_bounds": [
+    1900,
+    1840,
+    2520,
+    2320
+  ],
+  "source_windows": {
+    "m2": {
+      "wide": [
+        1350,
+        1750,
+        2900,
+        2850
+      ],
+      "detail": [
+        1840,
+        1820,
+        2140,
+        2080
+      ]
+    },
+    "m3": {
+      "wide": [
+        1350,
+        1750,
+        2900,
+        2850
+      ],
+      "detail": [
+        1840,
+        1820,
+        2140,
+        2080
+      ]
+    }
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          1935,
+          1905,
+          1953,
+          1953
+        ],
+        "color": "#ffb04f",
+        "label": "V2 (reviewed)"
+      }
+    ]
+  },
+  "native_traces": {
+    "m2": [
+      {
+        "points": [
+          [
+            1970,
+            1970
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "M2-J01"
+      }
+    ],
+    "m3": [
+      {
+        "points": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "B1 M3 candidate"
+      },
+      {
+        "points": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "color": "#ffe36b",
+        "label": "B0 adjacent M3"
+      }
+    ]
+  },
+  "observations": [],
+  "features_by_layer": {
+    "M2": [
+      {
+        "id": "M2-J01",
+        "layer": "M2",
+        "design_path": [
+          [
+            2151,
+            1940
+          ],
+          [
+            2151,
+            2270
+          ]
+        ],
+        "design_width": 84,
+        "source_path": [
+          [
+            1970,
+            1912
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "source_frame": "m2",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "status": "AI_candidate",
+        "net_id": null
+      }
+    ],
+    "M3": [
+      {
+        "id": "M3-J-B1",
+        "layer": "M3",
+        "design_path": [
+          [
+            1940,
+            1969
+          ],
+          [
+            2480,
+            1969
+          ]
+        ],
+        "design_width": 56,
+        "source_frame": "m3",
+        "source_path": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "net_id": null
+      },
+      {
+        "id": "M3-J-B0",
+        "layer": "M3",
+        "design_path": [
+          [
+            1940,
+            1915
+          ],
+          [
+            2480,
+            1915
+          ]
+        ],
+        "design_width": 6,
+        "source_frame": "m3",
+        "source_path": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "status": "AI_context_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "net_id": null
+      }
+    ]
+  },
+  "hypothesis": {
+    "id": "J-M2-V2-M3-B1",
+    "lower_metal_id": "M2-J01",
+    "via_group_id": "J-M2-EDGE-V2",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "status": "AI_candidate_not_human_confirmed",
+    "basis": "M2 reviewed V2 column lies at the upper end of the broad vertical rail; the M3 broad horizontal band occupies the corresponding row. Narrow parallel M3 lines lie above it. Relative macro correspondence only, no qualified exact projection."
+  },
+  "interface_support_regions": [
+    {
+      "id": "V2-J-EDGE-SUPPORT",
+      "via_group_id": "J-M2-EDGE-V2",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "observation_id": "J-M2-EDGE-V2",
+      "lower_metal_id": "M2-J01",
+      "upper_metal_id": "M3-J-B1",
+      "bounds": [
+        2117,
+        1966,
+        2123,
+        1972
+      ],
+      "role": "group_support_proxy_not_measured_cut",
+      "status": "AI_candidate",
+      "electrical_connection_confirmed": false
+    }
+  ],
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 6,
+    "enclosure_px": 2,
+    "unit": "relative_design_px",
+    "basis": "Relative pilot budget reused for software and regularity checks, not a measured V2 cut size or process rule.",
+    "cut_size_px": 6,
+    "pitch_xy": [
+      17,
+      18
+    ]
+  },
+  "overlap_controls": [
+    {
+      "id": "M2-over-B0-without-V2-evidence",
+      "lower_metal_id": "M2-J01",
+      "upper_metal_id": "M3-J-B0",
+      "basis": "Geometric overlap with adjacent M3 alone cannot create a connection; physical via absence not claimed."
+    }
+  ],
+  "human_questions": [
+    {
+      "id": "K1",
+      "question": "已确认的M2左缘V2，是否接入M3图中标为B1的紫色粗横向母线（而非上方黄色B0细横线）？只需确认承载横线，不必重审V2身份或逐孔计数。"
+    }
+  ],
+  "limits": [
+    "M2 geometry and previous human decisions preserved exactly",
+    "M3 carrier is an AI hypothesis awaiting scoped human review",
+    "No independent exact source correspondence; no projected source overlay",
+    "One proxy is not a measured cut, counted via, or complete array",
+    "No M3 patch automatically typed as V3",
+    "AA/POLY/CT unchanged; no new net edges or full-frame claim"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "purpose": "Apply human source-layer/count correction without moving any metals",
+  "source_identity_policy": {
+    "m1": "V1",
+    "m2": "V2"
+  },
+  "M2_source_regions": [
+    {
+      "bounds": [
+        1935,
+        1905,
+        2003,
+        1953
+      ],
+      "color": "#fff4bd",
+      "label": "V2 3x4 = 12",
+      "feature_layer": "V2"
+    }
+  ],
+  "V2_array": {
+    "id": "J-M2-EDGE-V2",
+    "rows": 3,
+    "columns": 4,
+    "count": 12,
+    "source_bounds": [
+      1935,
+      1905,
+      2003,
+      1953
+    ],
+    "native_x": [
+      1943,
+      1961,
+      1981,
+      1997
+    ],
+    "native_y": [
+      1912,
+      1929,
+      1946
+    ],
+    "design_x": [
+      2120,
+      2140,
+      2160,
+      2180
+    ],
+    "design_y": [
+      1951,
+      1969,
+      1987
+    ],
+    "native_center_status": "AI_brightness_centers_not_measured_edges",
+    "design_status": "regular_geometry_candidate_within_existing_M2_M3_not_exact_photo_projection"
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 6,
+    "enclosure_px": 2,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      20,
+      18
+    ],
+    "unit": "relative_design_px_not_PDK",
+    "basis": "Fit twelve regular candidates within unchanged reviewed carriers; size and pitch are AI relative design candidates, not process measurements."
+  },
+  "active_limits": [
+    "M2 displayed group contains only V2, human-confirmed 3 rows x 4 columns = 12",
+    "M1 V1 evidence and previously reviewed local metal destinations retained",
+    "Nine old M1/V1 to M2/V2 point pairs and their fit/holdout rejected, not merely unqualified",
+    "Native point centers and design cut edges remain AI candidates",
+    "All metal geometry, AA/POLY/CT and existing unknowns unchanged",
+    "Local V2 count is known; total physical hole count across the photograph and all layers is unknown",
+    "No full-net or qualified precise photo projection claim"
+  ]
+}

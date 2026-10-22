@@ -1,0 +1,75 @@
+{
+  "status": "KNOWN_REVIEWED_FANOUT_REPLAY_PASS",
+  "geometry_audits": {
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "R2_M2_gate_segment_01",
+            "R2_M2_C_segment_01"
+          ],
+          "gap_px": 1050.0
+        },
+        {
+          "ids": [
+            "R2_M2_gate_segment_01",
+            "B-local-context"
+          ],
+          "gap_px": 72.0
+        },
+        {
+          "ids": [
+            "R2_M2_C_segment_01",
+            "B-local-context"
+          ],
+          "gap_px": 962.0
+        }
+      ],
+      "minimum_gap_px": 72.0
+    },
+    "M3": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [],
+      "minimum_gap_px": null
+    }
+  },
+  "reviewed_attachment_count": 2,
+  "distinct_lower_metal_count": 2,
+  "via_support_group_count": 2,
+  "physical_cut_count": null,
+  "middle_span": "human_reviewed_no_additional_lower_attachment",
+  "excluded_attachments": [
+    {
+      "lower_metal_id": "B-local-context",
+      "upper_metal_id": "R2_M3_segment_01",
+      "projected_overlap": true,
+      "direct_attachment": "human_excluded_in_reviewed_span",
+      "global_same_net_status": "unknown"
+    }
+  ],
+  "complete_network": false,
+  "new_physical_connections": 0,
+  "human_statements": {
+    "endpoints": "A、C 分别连接图中这根 M3 的左右两端",
+    "interior": "中间无M2接入"
+  },
+  "fresh_blind_recognition": false,
+  "source_correspondence_status": "NOT_QUALIFIED",
+  "automatic_network_export_allowed": false,
+  "physical_PDK_DRC": false,
+  "parent_conductive_objects_preserved": 33,
+  "parent_snapshot_unchanged": true,
+  "human_questions": [],
+  "requires_user_action_now": false,
+  "unresolved": [
+    "本轮为历史已知A/C案例回放，不是新图盲测；不新增物理连接判断。",
+    "局部正交几何只验证承载、去重和隔离；不等于精确源图投影或共同AA/POLY坐标。",
+    "A/C各V2组的实测孔数、孔边界和精确尺寸未知；支持区不是单孔。",
+    "M3鼠标遮挡处连续性沿用人工裁决，不声称遮挡像素已观察。",
+    "中段无其他M2、邻线B不直接接入的结论只限已审M3段；B全局同网状态未知。",
+    "A/C出窗延伸、其他高层和完整网络不在本轮范围；D历史出窗裁决不改。"
+  ]
+}

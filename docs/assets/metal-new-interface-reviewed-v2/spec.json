@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "kind": "metal_via_candidate_pilot",
+  "baseline": {
+    "spec": {
+      "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/spec-v1.json",
+      "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+    },
+    "model": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/model.json",
+      "sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a"
+    },
+    "report": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/report.json",
+      "sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870"
+    },
+    "manifest": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/manifest.json",
+      "sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5"
+    }
+  },
+  "evidence": {
+    "initial_candidate": {
+      "path": "benchmarks/metal-new-interface-candidate-v1/initial-ai-observation-v1.json",
+      "sha256": "86ecc5740eba321cfcb134abc7de7bbfa9e1be63bf3179831e895365c98e07c6"
+    }
+  },
+  "placement_locator": {
+    "contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1-SD07-S000",
+    "frozen_layout_center": [
+      1461.7596928571431,
+      3161.0735252657996
+    ],
+    "role": "Current-canvas locator only; no new CT identity or containment approval",
+    "basis": "Released W1 design at x1462 is a coarse shared-canvas locator. N1 is a neighboring M1 short finger ~99 native px to its left; proposed design center x1362 retains row organization, not a precise image transform or new CT assignment.",
+    "source_to_design_matrix": null
+  },
+  "source_windows": {
+    "m1": {
+      "wide": [
+        790,
+        3010,
+        1490,
+        3430
+      ],
+      "detail": [
+        1050,
+        3130,
+        1310,
+        3300
+      ]
+    },
+    "m2": {
+      "wide": [
+        790,
+        3010,
+        1490,
+        3430
+      ],
+      "detail": [
+        1050,
+        3130,
+        1310,
+        3300
+      ]
+    }
+  },
+  "observations": [
+    {
+      "id": "N1-reference",
+      "m1_xy": [
+        1145,
+        3219
+      ],
+      "m2_xy": [
+        1109,
+        3255
+      ],
+      "status": "AI_initial_candidate_not_human_approved"
+    }
+  ],
+  "native_traces": {
+    "m1": [
+      {
+        "label": "N1",
+        "points": [
+          [
+            1145,
+            3212
+          ],
+          [
+            1145,
+            3248
+          ]
+        ],
+        "color": "#6ad8ff"
+      },
+      {
+        "label": "REF-W1",
+        "points": [
+          [
+            1244,
+            3213
+          ],
+          [
+            1244,
+            3249
+          ]
+        ],
+        "color": "#aab6bf"
+      },
+      {
+        "label": "upper",
+        "points": [
+          [
+            1080,
+            3193
+          ],
+          [
+            1280,
+            3185
+          ]
+        ],
+        "color": "#74ddb4"
+      },
+      {
+        "label": "lower",
+        "points": [
+          [
+            1080,
+            3268
+          ],
+          [
+            1280,
+            3260
+          ]
+        ],
+        "color": "#f4bb69"
+      }
+    ],
+    "m2": [
+      {
+        "label": "N1?",
+        "points": [
+          [
+            1138,
+            3214
+          ],
+          [
+            1107,
+            3214
+          ],
+          [
+            1109,
+            3255
+          ]
+        ],
+        "color": "#d28cff"
+      },
+      {
+        "label": "REF-W1",
+        "points": [
+          [
+            1212,
+            3205
+          ],
+          [
+            1217,
+            3253
+          ]
+        ],
+        "color": "#aab6bf"
+      }
+    ]
+  },
+  "design_bounds": [
+    1280,
+    3035,
+    1550,
+    3220
+  ],
+  "features_by_layer": {
+    "M1": [
+      {
+        "id": "M1-N1-STUB",
+        "layer": "M1",
+        "design_path": [
+          [
+            1362,
+            3128
+          ],
+          [
+            1362,
+            3164
+          ]
+        ],
+        "design_width": 10,
+        "status": "AI_unreviewed_candidate",
+        "end_states": [
+          "visible_end_candidate",
+          "visible_end_candidate"
+        ]
+      },
+      {
+        "id": "M1-N1-UPPER-CONTEXT",
+        "layer": "M1",
+        "design_path": [
+          [
+            1290,
+            3107
+          ],
+          [
+            1415,
+            3107
+          ]
+        ],
+        "design_width": 12,
+        "status": "AI_context_candidate",
+        "reference_object_id": "M1-W1-NEIGHBOR-TOP",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "M1-N1-LOWER-CONTEXT",
+        "layer": "M1",
+        "design_path": [
+          [
+            1290,
+            3183
+          ],
+          [
+            1415,
+            3183
+          ]
+        ],
+        "design_width": 10,
+        "status": "AI_context_candidate",
+        "reference_object_id": "M1-W1-NEIGHBOR-BOTTOM",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ]
+      }
+    ],
+    "M2": [
+      {
+        "id": "M2-N1-BENT-STUB",
+        "layer": "M2",
+        "design_path": [
+          [
+            1362,
+            3093
+          ],
+          [
+            1362,
+            3135
+          ]
+        ],
+        "design_width": 10,
+        "local_parts": [
+          {
+            "id": "N1-bent-cap",
+            "bounds": [
+              1354,
+              3086,
+              1396,
+              3102
+            ],
+            "basis": "AI observed cap extending to the right of a downward M2 stem; bright cap pattern remains untyped"
+          }
+        ],
+        "status": "AI_unreviewed_candidate",
+        "end_states": [
+          "visible_bent_cap_candidate",
+          "candidate_lower_interface"
+        ]
+      }
+    ]
+  },
+  "lower_metal_id": "M1-N1-STUB",
+  "upper_metal_id": "M2-N1-BENT-STUB",
+  "via_group_id": "V1-N1-GROUP",
+  "interface_support_regions": [
+    {
+      "id": "N1-V1-support-proxy",
+      "via_group_id": "V1-N1-GROUP",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "N1-reference",
+      "bounds": [
+        1359,
+        3132,
+        1365,
+        3138
+      ],
+      "lower_metal_id": "M1-N1-STUB",
+      "upper_metal_id": "M2-N1-BENT-STUB",
+      "representation": "AI_minimum_enclosed_support_region_not_a_measured_single_cut",
+      "physical_cut_count": null
+    }
+  ],
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 6,
+    "enclosure_px": 2,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      17,
+      18
+    ],
+    "unit": "relative_design_px_not_PDK"
+  },
+  "overlap_controls": [
+    {
+      "id": "N1-upper-model-overlap",
+      "lower_metal_id": "M1-N1-UPPER-CONTEXT",
+      "upper_metal_id": "M2-N1-BENT-STUB",
+      "status": "model_overlap_without_supported_via_not_a_confirmed_physical_absence"
+    }
+  ],
+  "human_questions": [],
+  "limits": [
+    "Unreviewed AI hypothesis; preceding design approval does not approve this candidate",
+    "Initial AI observation frozen before human adjudication; no accuracy or correction score yet",
+    "No qualified precise native or design projection; gray reference only guides context",
+    "No physical cut count or exact pixel boundaries claimed",
+    "New context segments are observations referencing released neighboring rails, not adopted network objects",
+    "No automatic network, CT identity or M3/V2 classification from cap brightness"
+  ],
+  "native_trace_bindings": [
+    {
+      "frame": "m1",
+      "trace_index": 0,
+      "evidence_key": "initial_candidate",
+      "pointer": "/native_observations/m1/points"
+    },
+    {
+      "frame": "m2",
+      "trace_index": 0,
+      "evidence_key": "initial_candidate",
+      "pointer": "/native_observations/m2/points"
+    }
+  ],
+  "released_design": {
+    "approval": {
+      "path": "benchmarks/metal-short-branch-transfer-v1/design-approval-v1.json",
+      "sha256": "562366105713930426fa6e1fe9f37f8073ff09a70737ecaf402de51682914a17"
+    },
+    "spec": {
+      "path": "benchmarks/metal-short-branch-transfer-v1/spec-v1.json",
+      "sha256": "215a5c2011582f6c787c28a7c5954975ff20f88f40ae9badb38914ea8459cc03"
+    },
+    "model": {
+      "path": "docs/assets/metal-short-branch-transfer-v1/model.json",
+      "sha256": "d179b9b34d93e67c107085d592612a58bb9b048338e60ce956394f47eb17260f"
+    },
+    "report": {
+      "path": "docs/assets/metal-short-branch-transfer-v1/report.json",
+      "sha256": "1d6b86f0d73cff9a057ea7d9d854c93d91ad12f96eb5bcdd2946dcce1f234380"
+    },
+    "manifest": {
+      "path": "docs/assets/metal-short-branch-transfer-v1/manifest.json",
+      "sha256": "4fd796b2fb6a55e3b208ffec16f7066cde0658215309d62ac05f55d54907a72b"
+    }
+  },
+  "candidate_reference": {
+    "evidence_key": "initial_candidate",
+    "observation_id": "N1-reference",
+    "reference_fields": {
+      "m1": "/native_observations/m1/brightpoint_reference",
+      "m2": "/native_observations/m2/terminal_reference"
+    }
+  },
+  "candidate_summary": "AI初判：W1左侧的短竖M1（N1）上端亮点为V1候选，接到M2折线短支路的下端。M2上部亮带不直接当V1；右侧灰色REF-W1为已审参照。",
+  "adjudication": {
+    "parent_spec": {
+      "path": "benchmarks/metal-new-interface-candidate-v1/spec-v1.json",
+      "sha256": "181e84cbc4367ed48a1ea8f9f129d5fbe567c0939f6284a04037ac56b5b983d6"
+    },
+    "human_review": {
+      "path": "benchmarks/metal-new-interface-reviewed-v2/human-review-v1.json",
+      "sha256": "2697c36ec8eff8cadcd5813f7e2e54b433154ca2da59976d687cab5dbe1d83e9"
+    }
+  }
+}

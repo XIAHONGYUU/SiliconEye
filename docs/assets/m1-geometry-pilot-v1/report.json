@@ -1,0 +1,363 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "geometry": {
+    "status": "PASS",
+    "errors": [],
+    "pair_gaps": [
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P02"
+        ],
+        "gap_px": 42.46929999999975
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P03"
+        ],
+        "gap_px": 94.93859999999995
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P04"
+        ],
+        "gap_px": 116.2534999999998
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P05"
+        ],
+        "gap_px": 164.0259166666665
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P06"
+        ],
+        "gap_px": 10.504477963706712
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P07"
+        ],
+        "gap_px": 65.6223
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P08"
+        ],
+        "gap_px": 16.377700000000004
+      },
+      {
+        "ids": [
+          "M1-P01",
+          "M1-P09"
+        ],
+        "gap_px": 221.5223000000001
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P03"
+        ],
+        "gap_px": 42.4693000000002
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P04"
+        ],
+        "gap_px": 63.784200000000055
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P05"
+        ],
+        "gap_px": 111.55661666666673
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P06"
+        ],
+        "gap_px": 24.59022995012426
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P07"
+        ],
+        "gap_px": 13.153000000000247
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P08"
+        ],
+        "gap_px": 18.0
+      },
+      {
+        "ids": [
+          "M1-P02",
+          "M1-P09"
+        ],
+        "gap_px": 169.05300000000034
+      },
+      {
+        "ids": [
+          "M1-P03",
+          "M1-P04"
+        ],
+        "gap_px": 11.314899999999852
+      },
+      {
+        "ids": [
+          "M1-P03",
+          "M1-P05"
+        ],
+        "gap_px": 59.08731666666654
+      },
+      {
+        "ids": [
+          "M1-P03",
+          "M1-P06"
+        ],
+        "gap_px": 28.0
+      },
+      {
+        "ids": [
+          "M1-P03",
+          "M1-P07"
+        ],
+        "gap_px": 8.0
+      },
+      {
+        "ids": [
+          "M1-P03",
+          "M1-P08"
+        ],
+        "gap_px": 18.0
+      },
+      {
+        "ids": [
+          "M1-P03",
+          "M1-P09"
+        ],
+        "gap_px": 116.58370000000014
+      },
+      {
+        "ids": [
+          "M1-P04",
+          "M1-P05"
+        ],
+        "gap_px": 37.772416666666686
+      },
+      {
+        "ids": [
+          "M1-P04",
+          "M1-P06"
+        ],
+        "gap_px": 28.0
+      },
+      {
+        "ids": [
+          "M1-P04",
+          "M1-P07"
+        ],
+        "gap_px": 8.0
+      },
+      {
+        "ids": [
+          "M1-P04",
+          "M1-P08"
+        ],
+        "gap_px": 18.0
+      },
+      {
+        "ids": [
+          "M1-P04",
+          "M1-P09"
+        ],
+        "gap_px": 95.26880000000027
+      },
+      {
+        "ids": [
+          "M1-P05",
+          "M1-P06"
+        ],
+        "gap_px": 19.540354988594352
+      },
+      {
+        "ids": [
+          "M1-P05",
+          "M1-P07"
+        ],
+        "gap_px": 8.403616666666494
+      },
+      {
+        "ids": [
+          "M1-P05",
+          "M1-P08"
+        ],
+        "gap_px": 18.0
+      },
+      {
+        "ids": [
+          "M1-P05",
+          "M1-P09"
+        ],
+        "gap_px": 47.4963833333336
+      },
+      {
+        "ids": [
+          "M1-P06",
+          "M1-P07"
+        ],
+        "gap_px": 14.0
+      },
+      {
+        "ids": [
+          "M1-P06",
+          "M1-P08"
+        ],
+        "gap_px": 35.0
+      },
+      {
+        "ids": [
+          "M1-P06",
+          "M1-P09"
+        ],
+        "gap_px": 18.90000000000009
+      },
+      {
+        "ids": [
+          "M1-P07",
+          "M1-P08"
+        ],
+        "gap_px": 66.0
+      },
+      {
+        "ids": [
+          "M1-P07",
+          "M1-P09"
+        ],
+        "gap_px": 65.90000000000009
+      },
+      {
+        "ids": [
+          "M1-P08",
+          "M1-P09"
+        ],
+        "gap_px": 18.0
+      }
+    ],
+    "minimum_gap_px": 8.0
+  },
+  "column_correspondence": {
+    "x_status": "PASS",
+    "affine_x": [
+      1.0357142857143018,
+      -42.35714285717555
+    ],
+    "holdout": [
+      {
+        "id": "SD3-mid",
+        "m1_x": 2166,
+        "poly_x": 2198,
+        "predicted_poly_x": 2201.0000000000023,
+        "error_px": 3.0000000000022737
+      }
+    ],
+    "scope": "Q2-A1 three source/drain columns only; not an all-layer transform",
+    "source": "AI_column_observations_not_human_mapping",
+    "y_status": "NOT_QUALIFIED",
+    "precise_CT_projection_allowed": false
+  },
+  "CT_support_candidates": [
+    {
+      "metal_id": "M1-P01",
+      "CT_count": 14,
+      "geometry_status": "PASS",
+      "failed_ids": [],
+      "identity_status": "AI_candidate_not_M1_human_approved",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "metal_id": "M1-P02",
+      "CT_count": 14,
+      "geometry_status": "PASS",
+      "failed_ids": [],
+      "identity_status": "AI_candidate_not_M1_human_approved",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "metal_id": "M1-P03",
+      "CT_count": 14,
+      "geometry_status": "PASS",
+      "failed_ids": [],
+      "identity_status": "AI_candidate_not_M1_human_approved",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "metal_id": "M1-P04",
+      "CT_count": 14,
+      "geometry_status": "PASS",
+      "failed_ids": [],
+      "identity_status": "AI_candidate_not_M1_human_approved",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "metal_id": "M1-P05",
+      "CT_count": 14,
+      "geometry_status": "PASS",
+      "failed_ids": [],
+      "identity_status": "AI_candidate_not_M1_human_approved",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "metal_id": "M1-P09",
+      "CT_count": 17,
+      "geometry_status": "PASS",
+      "failed_ids": [],
+      "identity_status": "AI_candidate_not_M1_human_approved",
+      "electrical_connection_confirmed": false
+    }
+  ],
+  "pending_gate_CT_ids": [
+    "CTT-Q2-QG01-GATE-S000",
+    "CTT-Q2-QG01-GATE-S001",
+    "CTT-Q2-QG02-GATE-S000",
+    "CTT-Q2-QG02-GATE-S001",
+    "CTT-Q2-QG03-GATE-S000",
+    "CTT-Q2-QG03-GATE-S001",
+    "CTT-Q2-QG04-GATE-S000",
+    "CTT-Q2-QG04-GATE-S001"
+  ],
+  "human_questions": [
+    {
+      "id": "Q1",
+      "question": "P01–P05五条竖向M1及右邻P09的对应、长度和相互隔离是否合理？不需重新确认原CT。"
+    },
+    {
+      "id": "Q2",
+      "question": "P06外U与P07内U的主体、转角和相互隔离是否合理？栅CT精确落点仍待核准，不预先确认它们各接哪些gate。"
+    },
+    {
+      "id": "Q3",
+      "question": "P08外围环段的走向与隔离是否合理？右侧上下两端均表示超出本小样继续，不是断点。"
+    }
+  ],
+  "precise_CT_projection_allowed": false,
+  "source_to_design_transform": null,
+  "topology_status": "AI_photo_observation_candidates_not_electrical_confirmation",
+  "automatic_network_export_allowed": false,
+  "whole_frame_complete": false,
+  "physical_PDK_DRC": false,
+  "parent_snapshot_unchanged": true
+}

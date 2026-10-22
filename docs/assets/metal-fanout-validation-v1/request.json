@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_metal_fanout_validation",
+  "id": "AC-known-fanout-transfer",
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "layer_stack": [
+    "M2",
+    "V2",
+    "M3"
+  ],
+  "evidence": {
+    "inventory": {
+      "path": "benchmarks/metal-extension/roi2-M3-M2-fanout-reviewed-v2.json",
+      "sha256": "079dc6e19ee94ae860990d8782ce542e432c5cf7474615a410bf071f39763ee1"
+    }
+  },
+  "human_reviews": {
+    "endpoints": {
+      "path": "benchmarks/metal-extension/roi2-M3-A-C-review-feedback-v1.json",
+      "sha256": "35b29235a1d736980f59b312338d029469e12aed852089d55da0a2b49f4f2dfd"
+    },
+    "interior": {
+      "path": "benchmarks/metal-extension/roi2-AC-no-middle-M2-review-feedback-v1.json",
+      "sha256": "34d8d6cb6059fc76d77eb0ed11a5e7b746c30801d82452383c21e6b623bb9c5b"
+    }
+  },
+  "upper_metal_id": "R2_M3_segment_01",
+  "canvas_wh": [
+    1400,
+    600
+  ],
+  "design_bounds": [
+    60,
+    220,
+    1330,
+    570
+  ],
+  "metal_budget": {
+    "minimum_width_px": 8,
+    "minimum_gap_px": 8
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 4,
+    "minimum_cut_gap_px": 4,
+    "enclosure_px": 2,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      12,
+      12
+    ]
+  },
+  "features_by_layer": {
+    "M2": [
+      {
+        "id": "R2_M2_gate_segment_01",
+        "design_path": [
+          [
+            150,
+            330
+          ],
+          [
+            150,
+            530
+          ]
+        ],
+        "design_width": 20,
+        "source_frame": "m2",
+        "role": "reviewed_chain",
+        "end_states": [
+          "local_scope_limit",
+          "local_scope_limit"
+        ]
+      },
+      {
+        "id": "R2_M2_C_segment_01",
+        "design_path": [
+          [
+            1220,
+            330
+          ],
+          [
+            1220,
+            460
+          ]
+        ],
+        "design_width": 20,
+        "source_frame": "m2",
+        "role": "reviewed_chain",
+        "end_states": [
+          "local_scope_limit",
+          "local_scope_limit"
+        ]
+      },
+      {
+        "id": "B-local-context",
+        "design_path": [
+          [
+            240,
+            280
+          ],
+          [
+            240,
+            530
+          ]
+        ],
+        "design_width": 16,
+        "source_frame": "m2",
+        "role": "context_only",
+        "end_states": [
+          "local_scope_limit",
+          "local_scope_limit"
+        ]
+      }
+    ],
+    "M3": [
+      {
+        "id": "R2_M3_segment_01",
+        "design_path": [
+          [
+            150,
+            330
+          ],
+          [
+            1220,
+            330
+          ]
+        ],
+        "design_width": 16,
+        "source_frame": "m3",
+        "role": "reviewed_chain",
+        "end_states": [
+          "local_scope_limit",
+          "local_scope_limit"
+        ]
+      }
+    ]
+  },
+  "branches": [
+    {
+      "review_binding": {
+        "review": "endpoints",
+        "pointer": "/connections/0"
+      },
+      "evidence_binding": {
+        "source": "inventory",
+        "pointer": "/entries/0"
+      },
+      "source_frame": "m2",
+      "source_xy": [
+        2231,
+        3332
+      ],
+      "source_bounds": [
+        2218,
+        3324,
+        2241,
+        3340
+      ],
+      "design_support_bounds": [
+        147,
+        327,
+        153,
+        333
+      ]
+    },
+    {
+      "review_binding": {
+        "review": "endpoints",
+        "pointer": "/connections/1"
+      },
+      "evidence_binding": {
+        "source": "inventory",
+        "pointer": "/entries/1"
+      },
+      "source_frame": "m2",
+      "source_xy": [
+        3275,
+        3308
+      ],
+      "source_bounds": [
+        3263,
+        3295,
+        3288,
+        3320
+      ],
+      "design_support_bounds": [
+        1217,
+        327,
+        1223,
+        333
+      ]
+    }
+  ],
+  "excluded_attachments": [
+    {
+      "lower_metal_id": "B-local-context",
+      "upper_metal_id": "R2_M3_segment_01",
+      "review_binding": {
+        "review": "interior",
+        "pointer": "/decisions/neighbor_B_direct_attachment_to_selected_A_C_M3"
+      }
+    }
+  ],
+  "interior_sweep": {
+    "upper_metal_id": "R2_M3_segment_01",
+    "review_binding": {
+      "review": "interior",
+      "pointer": "/decisions/M3_A_C_middle_additional_M2_attachment"
+    }
+  },
+  "observations": [],
+  "source_windows": {
+    "m2": {
+      "wide": [
+        1950,
+        2850,
+        3550,
+        3650
+      ],
+      "detail": [
+        2100,
+        3150,
+        3430,
+        3500
+      ]
+    },
+    "m3": {
+      "wide": [
+        1950,
+        2850,
+        3550,
+        3650
+      ],
+      "detail": [
+        2100,
+        3150,
+        3430,
+        3500
+      ]
+    }
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          2218,
+          3324,
+          2241,
+          3340
+        ],
+        "color": "#fff4bd",
+        "label": "A / V2 group"
+      },
+      {
+        "bounds": [
+          3263,
+          3295,
+          3288,
+          3320
+        ],
+        "color": "#fff4bd",
+        "label": "C / V2 group"
+      },
+      {
+        "bounds": [
+          2315,
+          3288,
+          2345,
+          3318
+        ],
+        "color": "#ff7086",
+        "label": "B / no direct join"
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          3230,
+          3325,
+          3320,
+          3435
+        ],
+        "color": "#ff7086",
+        "label": "cursor / UI, not via"
+      }
+    ]
+  },
+  "native_traces": {
+    "m3": [
+      {
+        "points": [
+          [
+            2252,
+            3369
+          ],
+          [
+            2550,
+            3356
+          ],
+          [
+            3000,
+            3342
+          ],
+          [
+            3210,
+            3335
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "same reviewed M3"
+      },
+      {
+        "points": [
+          [
+            3290,
+            3331
+          ],
+          [
+            3320,
+            3330
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "C end"
+      }
+    ]
+  },
+  "limits": [
+    "本轮为历史已知A/C案例回放，不是新图盲测；不新增物理连接判断。",
+    "局部正交几何只验证承载、去重和隔离；不等于精确源图投影或共同AA/POLY坐标。",
+    "A/C各V2组的实测孔数、孔边界和精确尺寸未知；支持区不是单孔。",
+    "M3鼠标遮挡处连续性沿用人工裁决，不声称遮挡像素已观察。",
+    "中段无其他M2、邻线B不直接接入的结论只限已审M3段；B全局同网状态未知。",
+    "A/C出窗延伸、其他高层和完整网络不在本轮范围；D历史出窗裁决不改。"
+  ]
+}

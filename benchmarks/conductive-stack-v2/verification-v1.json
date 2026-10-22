@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "primary_agent_software_delivery_verification_human_identity_taken_from_bound_correction",
+  "status": "SCOPED_REVIEWED_CHAIN_SOURCE_CORRECTED",
+  "human_statement": "你在M2上识别处V1是不对的，从逻辑上来说，M2上之有V2，而且是3x4各V2",
+  "object_counts": {
+    "M1": 9,
+    "V1": 9,
+    "M2": 1,
+    "V2": 12,
+    "M3": 2
+  },
+  "human_confirmed_local_V2_shape": [
+    3,
+    4
+  ],
+  "human_confirmed_local_V2_count": 12,
+  "source_identity_gate": "PASS",
+  "wrong_M2_V1_source_coordinates_removed": 9,
+  "prior_M1_V1_to_M2_V2_array_fit": "REJECTED_DIFFERENT_VIA_LAYER",
+  "old_numeric_4_52px_residual_valid_registration_evidence": false,
+  "retired_current_support_proxy": "V2-J-EDGE-SUPPORT",
+  "metals_unchanged": true,
+  "M1_V1_geometry_preserved": true,
+  "material_snapshot_inputs_and_limits_unchanged": true,
+  "source_and_artifact_hashes": "PASS",
+  "code_and_template_hashes": "PASS",
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "local_links": "PASS",
+  "raw_source_crops_exact_pixel_match": 6,
+  "common_audit_and_inspect": "PASS",
+  "common_review_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287,
+    "M1": 9,
+    "V1": 9,
+    "M2": 1,
+    "V2": 12,
+    "M3": 2
+  },
+  "new_physical_connections": 0,
+  "complete_network": false,
+  "precise_projection_allowed": false,
+  "automatic_network_export_allowed": false,
+  "global_physical_cut_count": null,
+  "archive_payload_sha256": "0d895b71e6ae90de25be424b99c02febf66c29991e6ae684ff88e61dd992dfc4",
+  "archive_payload_matches": true,
+  "historical_reproduction_is_not_current_identity_acceptance": true,
+  "history_record": "benchmarks/conductive-stack-v2/history-preservation-v1.json",
+  "visual_inspection": {
+    "browser_interaction": "not_performed",
+    "basis": "Inspected corrected M2 native crop: one whole V2 3x4 group, no V1 label; inspected twelve regular V2 candidates in shared geometry. Separate V1/V2 view controls implemented; native crops retain source pixels."
+  },
+  "pending_questions": [],
+  "software_verification": {
+    "passed": 87,
+    "command": ".venv/bin/pytest -q tests/test_conductive_source_correction.py tests/test_conductive_layers.py tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_joint_layers.py tests/test_layer_review.py",
+    "ruff": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

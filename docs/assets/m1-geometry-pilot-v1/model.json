@@ -1,0 +1,732 @@
+{
+  "kind": "metal_geometry_companion_candidate",
+  "layer": "M1",
+  "canvas_wh": [
+    5860,
+    4587
+  ],
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "coordinate_space": "shared_design_px",
+  "processed_scope": [
+    2150,
+    1920,
+    2490,
+    2280
+  ],
+  "object_count": 9,
+  "objects": [
+    {
+      "id": "M1-P01",
+      "label": "P01",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2210.3777,
+          1981
+        ],
+        [
+          2210.3777,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2051,
+          1963
+        ],
+        [
+          2055,
+          2157
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#4bd4ff",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2205.3777,
+          2163.0
+        ],
+        [
+          2205.3777,
+          2168.0
+        ],
+        [
+          2215.3777,
+          2168.0
+        ],
+        [
+          2215.3777,
+          1981.0
+        ],
+        [
+          2215.3777,
+          1976.0
+        ],
+        [
+          2205.3777,
+          1976.0
+        ],
+        [
+          2205.3777,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P02",
+      "label": "P02",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2262.8469999999998,
+          1981
+        ],
+        [
+          2262.8469999999998,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2107,
+          1963
+        ],
+        [
+          2113,
+          2154
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#76e07a",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2257.8469999999998,
+          2163.0
+        ],
+        [
+          2257.8469999999998,
+          2168.0
+        ],
+        [
+          2267.8469999999998,
+          2168.0
+        ],
+        [
+          2267.8469999999998,
+          1981.0
+        ],
+        [
+          2267.8469999999998,
+          1976.0
+        ],
+        [
+          2257.8469999999998,
+          1976.0
+        ],
+        [
+          2257.8469999999998,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P03",
+      "label": "P03",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2315.3163,
+          1981
+        ],
+        [
+          2315.3163,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2164,
+          1962
+        ],
+        [
+          2169,
+          2152
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#ffb357",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2310.3163,
+          2163.0
+        ],
+        [
+          2310.3163,
+          2168.0
+        ],
+        [
+          2320.3163,
+          2168.0
+        ],
+        [
+          2320.3163,
+          1981.0
+        ],
+        [
+          2320.3163,
+          1976.0
+        ],
+        [
+          2310.3163,
+          1976.0
+        ],
+        [
+          2310.3163,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P04",
+      "label": "P04",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2336.6312,
+          1981
+        ],
+        [
+          2336.6312,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2189,
+          1962
+        ],
+        [
+          2194,
+          2152
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#da8bff",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2331.6312,
+          2163.0
+        ],
+        [
+          2331.6312,
+          2168.0
+        ],
+        [
+          2341.6312,
+          2168.0
+        ],
+        [
+          2341.6312,
+          1981.0
+        ],
+        [
+          2341.6312,
+          1976.0
+        ],
+        [
+          2331.6312,
+          1976.0
+        ],
+        [
+          2331.6312,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P05",
+      "label": "P05",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2384.4036166666665,
+          1981
+        ],
+        [
+          2384.4036166666665,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2245,
+          1961
+        ],
+        [
+          2250,
+          2151
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#f5dc64",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2379.4036166666665,
+          2163.0
+        ],
+        [
+          2379.4036166666665,
+          2168.0
+        ],
+        [
+          2389.4036166666665,
+          2168.0
+        ],
+        [
+          2389.4036166666665,
+          1981.0
+        ],
+        [
+          2389.4036166666665,
+          1976.0
+        ],
+        [
+          2379.4036166666665,
+          1976.0
+        ],
+        [
+          2379.4036166666665,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P06",
+      "label": "P06",
+      "kind": "outer_U",
+      "design_path": [
+        [
+          2229,
+          2179
+        ],
+        [
+          2229,
+          2201
+        ],
+        [
+          2413,
+          2201
+        ],
+        [
+          2413,
+          2179
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2090,
+          2167
+        ],
+        [
+          2093,
+          2189
+        ],
+        [
+          2267,
+          2185
+        ],
+        [
+          2268,
+          2162
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#ff799f",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2224.0,
+          2206.0
+        ],
+        [
+          2418.0,
+          2206.0
+        ],
+        [
+          2418.0,
+          2179.0
+        ],
+        [
+          2418.0,
+          2174.0
+        ],
+        [
+          2408.0,
+          2174.0
+        ],
+        [
+          2408.0,
+          2196.0
+        ],
+        [
+          2234.0,
+          2196.0
+        ],
+        [
+          2234.0,
+          2179.0
+        ],
+        [
+          2234.0,
+          2174.0
+        ],
+        [
+          2224.0,
+          2174.0
+        ],
+        [
+          2224.0,
+          2206.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P07",
+      "label": "P07",
+      "kind": "inner_U",
+      "design_path": [
+        [
+          2284,
+          2170
+        ],
+        [
+          2284,
+          2179
+        ],
+        [
+          2368,
+          2179
+        ],
+        [
+          2368,
+          2170
+        ]
+      ],
+      "design_width": 6,
+      "source_path": [
+        [
+          2121,
+          2166
+        ],
+        [
+          2122,
+          2175
+        ],
+        [
+          2236,
+          2171
+        ],
+        [
+          2237,
+          2159
+        ]
+      ],
+      "source_width_proxy": 6,
+      "color": "#a8bfff",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2281.0,
+          2182.0
+        ],
+        [
+          2371.0,
+          2182.0
+        ],
+        [
+          2371.0,
+          2170.0
+        ],
+        [
+          2371.0,
+          2167.0
+        ],
+        [
+          2365.0,
+          2167.0
+        ],
+        [
+          2365.0,
+          2176.0
+        ],
+        [
+          2287.0,
+          2176.0
+        ],
+        [
+          2287.0,
+          2170.0
+        ],
+        [
+          2287.0,
+          2167.0
+        ],
+        [
+          2281.0,
+          2167.0
+        ],
+        [
+          2281.0,
+          2182.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P08",
+      "label": "P08",
+      "kind": "partial_guard_conductor",
+      "design_path": [
+        [
+          2465,
+          1951
+        ],
+        [
+          2182,
+          1951
+        ],
+        [
+          2182,
+          2255
+        ],
+        [
+          2465,
+          2255
+        ]
+      ],
+      "design_width": 14,
+      "source_path": [
+        [
+          2335,
+          1933
+        ],
+        [
+          2006,
+          1939
+        ],
+        [
+          2029,
+          2243
+        ],
+        [
+          2335,
+          2234
+        ]
+      ],
+      "source_width_proxy": 14,
+      "color": "#80e6c2",
+      "end_states": [
+        "continues_beyond_review_window_unknown",
+        "continues_beyond_review_window_unknown"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2175.0,
+          1944.0
+        ],
+        [
+          2175.0,
+          2262.0
+        ],
+        [
+          2465.0,
+          2262.0
+        ],
+        [
+          2472.0,
+          2262.0
+        ],
+        [
+          2472.0,
+          2248.0
+        ],
+        [
+          2189.0,
+          2248.0
+        ],
+        [
+          2189.0,
+          1958.0
+        ],
+        [
+          2465.0,
+          1958.0
+        ],
+        [
+          2472.0,
+          1958.0
+        ],
+        [
+          2472.0,
+          1944.0
+        ],
+        [
+          2175.0,
+          1944.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    },
+    {
+      "id": "M1-P09",
+      "label": "P09",
+      "kind": "neighbor_long_strip",
+      "design_path": [
+        [
+          2441.9,
+          1981
+        ],
+        [
+          2441.9,
+          2204
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2300,
+          1960
+        ],
+        [
+          2306,
+          2218
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#d6d9dd",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2436.9,
+          2204.0
+        ],
+        [
+          2436.9,
+          2209.0
+        ],
+        [
+          2446.9,
+          2209.0
+        ],
+        [
+          2446.9,
+          1981.0
+        ],
+        [
+          2446.9,
+          1976.0
+        ],
+        [
+          2436.9,
+          1976.0
+        ],
+        [
+          2436.9,
+          2204.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "AI_candidate_not_human_approved",
+      "net_id": null
+    }
+  ],
+  "unprocessed_is_unknown": true,
+  "adopted_into_joint_snapshot": false
+}

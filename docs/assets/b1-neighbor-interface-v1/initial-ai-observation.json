@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_new_interface_human_review",
+  "id": "N2-B1-neighbor-initial",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "source_identity_review": {
+      "path": "benchmarks/conductive-stack-v2/human-review-v1.json",
+      "sha256": "6c0fb5c525e4b1aa621cb7b21b77d27980a2157beff67b23c8f4bd877fb543e4"
+    },
+    "reference_destination_review": {
+      "path": "benchmarks/m2-v2-m3-joint-reviewed-v2/human-review-v1.json",
+      "sha256": "743bc97c80beba6931863d556865148bb88ea09f1f15690c25daf0f4cd40cbce"
+    }
+  },
+  "native_observations": {
+    "m2": {
+      "source_frame": "m2",
+      "feature_layer": "V2",
+      "group_id": "V2-N2-GROUP",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "source_bounds": [
+        1480,
+        1903,
+        1518,
+        1959
+      ],
+      "reference_xy": [
+        1498,
+        1930
+      ],
+      "identity_status": "AI_candidate",
+      "physical_cut_count": null,
+      "interpretation": "Regular compact bright array at top of narrow M2 rail, in the human-adjudicated M2/V2 evidence frame. Not V1; no M3 bright spot borrowed as V2."
+    },
+    "m3": {
+      "source_frame": "m3",
+      "feature_layer": "M3",
+      "selected_carrier_id": "M3-J-B1",
+      "alternative_carrier_id": "M3-J-B0",
+      "candidate_bearing_window": [
+        1460,
+        1945,
+        1540,
+        1995
+      ],
+      "window_role": "AI_macro_locator_not_via_center_or_qualified_projection",
+      "selected_carrier_trace": [
+        [
+          1400,
+          1969
+        ],
+        [
+          2800,
+          1948
+        ]
+      ],
+      "alternative_carrier_trace": [
+        [
+          1400,
+          1923
+        ],
+        [
+          2800,
+          1901
+        ]
+      ]
+    }
+  },
+  "comparison": {
+    "reference_m2_id": "M2-J01",
+    "reference_via_group_id": "J-M2-EDGE-V2",
+    "reference_via_bounds": [
+      1935,
+      1905,
+      2003,
+      1953
+    ],
+    "reference_via_count": 12,
+    "reference_via_layout": "human_confirmed_3x4",
+    "observations": [
+      "N2 and J01 arrays terminate at approximately the same M2 native row, with photo skew retained.",
+      "M3 B1 is a broad continuous horizontal band through both candidate locations; B0 is a narrow parallel conductor above.",
+      "Known J01-to-B1 destination anchors carrier identity, but does not approve N2 or provide a precise local transform."
+    ],
+    "risks": [
+      "Macro row relation plus broad carrier continuity is not qualified precise overlay.",
+      "Screen moire and underlying-layer visibility are not via-layer evidence on the M3 image."
+    ]
+  },
+  "hypothesis": {
+    "id": "N2-M2-V2-M3-B1",
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_group_id": "V2-N2-GROUP",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "alternative_upper_metal_id": "M3-J-B0",
+    "status": "AI_candidate_not_human_confirmed",
+    "basis": "M2-only via evidence first; relative array-row comparison to J01 and continuous broad B1 vs narrow B0 in M3 second."
+  },
+  "evaluation": {
+    "via_identity_correct": null,
+    "destination_correct": null,
+    "human_correction_count": null,
+    "geometry_accuracy": null,
+    "strict_blind_test": false
+  },
+  "source_to_design_transform": null,
+  "precise_projection_allowed": false,
+  "adopted_into_joint_snapshot": false,
+  "net_edges": [],
+  "reviewed_local_connections": []
+}

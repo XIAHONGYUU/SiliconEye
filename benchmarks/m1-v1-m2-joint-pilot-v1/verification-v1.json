@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "actor": "script_verification_not_human_approval",
+  "date": "2026-10-22",
+  "input_and_artifact_hashes": "PASS",
+  "reused_implementation_hashes": "PASS",
+  "source_photos_checked": 8,
+  "parent_M1_records_exact": true,
+  "parent_snapshot_unchanged": true,
+  "inherited_unknown_count": 6,
+  "geometry": [
+    "PASS",
+    "PASS",
+    "PASS"
+  ],
+  "via_candidates": 9,
+  "via_count_complete": false,
+  "inherited_CT_enclosures": 95,
+  "same_array_maximum_holdout_error_px": 4.521837158135875,
+  "independent_structure_status": "NOT_QUALIFIED",
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "local_links": "PASS",
+  "archive_payload_sha256": "b65c4dcf8d60b0cdf900199be817750f91ccf80c37a17bc7174a19d79c15d325",
+  "archive_payload_matches": true,
+  "browser_interaction": "not_performed",
+  "visual_inspection": "Original native crops and exact-polygon raster preview inspected; no native layer overlay claimed",
+  "electrical_connection_confirmed": false,
+  "automatic_network_export_allowed": false,
+  "human_questions_open": [
+    "J1",
+    "J2"
+  ],
+  "software_verification": {
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "passed": 29,
+    "elapsed_seconds": 17.14,
+    "ruff": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

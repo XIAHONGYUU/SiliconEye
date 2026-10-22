@@ -1,0 +1,48 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "script_checks": "PASS_INPUTS_AND_SCOPE_ONLY",
+  "source_identity_candidate": "V2 from M2 photograph, not V1 or a bright patch on M3",
+  "upper_carrier_candidate": "M3-J-B1",
+  "alternative_upper_carrier": "M3-J-B0",
+  "reference_destination": "J01 to B1 remains human_confirmed",
+  "new_interface_human_approved": false,
+  "physical_cut_count": null,
+  "precise_projection_allowed": false,
+  "shared_canvas_placement": null,
+  "new_reviewed_connections": 0,
+  "automatic_network_export_allowed": false,
+  "net_edges": [],
+  "baseline": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "conductive_object_count": 33,
+    "unchanged": true
+  },
+  "human_questions": [
+    {
+      "id": "N2",
+      "question": "左侧橙框N2孔组是否为V2，并将这根窄M2接到紫色B1粗横向母线，而非上方黄色B0？只确认新增接口，不需要逐孔计数或重审右侧J01。"
+    }
+  ],
+  "requires_user_action_now": true,
+  "evaluation": {
+    "via_identity_correct": null,
+    "destination_correct": null,
+    "human_correction_count": null,
+    "geometry_accuracy": null,
+    "strict_blind_test": false
+  },
+  "limits": [
+    "No qualified source overlay or shared-canvas placement; native windows shown separately.",
+    "M3 orange region is a carrier inspection window, not an observed V2 position.",
+    "N2 group count, exact boundaries and downward continuation unknown.",
+    "J01 original 12 V2, existing B1 carrier review and all 33 baseline objects preserved.",
+    "No new reviewed edge or automatic net export before N2 adjudication."
+  ]
+}

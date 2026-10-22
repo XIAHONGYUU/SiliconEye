@@ -1,0 +1,165 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "checked_visible_M2_extent": [
+    1470,
+    1900,
+    1560,
+    2820
+  ],
+  "retained_approved_connection": {
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_group_id": "V2-N2-GROUP",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1"
+  },
+  "route_continuity_status": "AI_candidate_continuous_with_visible_lower_terminal",
+  "newly_observed_interfaces": [
+    {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_layer": "V2",
+      "via_group_id": "V2-N2-LOWER-GROUP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        1508,
+        2705,
+        1543,
+        2802
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "upper_source_frame": "m3",
+      "upper_source_window": [
+        1470,
+        2740,
+        1590,
+        2835
+      ],
+      "window_role": "carrier_inspection_window_not_via_pixel_match",
+      "carrier_trace": [
+        [
+          1150,
+          2800
+        ],
+        [
+          2100,
+          2776
+        ]
+      ],
+      "alternative_upper_display_label": "H1",
+      "alternative_upper_trace": [
+        [
+          1150,
+          2708
+        ],
+        [
+          2100,
+          2685
+        ]
+      ],
+      "status": "AI_candidate_not_human_confirmed",
+      "basis": [
+        "V2 evidence comes from the M2 terminal array, never from a bright patch on M3.",
+        "The new group occupies the lower end of the traced M2; broad L1 is the macro-row carrier candidate below fine H1.",
+        "A broad multi-row via group needs an upper metal area capable of enclosing the group; a narrow H1 line is a weaker structural explanation. This is qualitative, not calibrated PDK DRC."
+      ],
+      "source_to_design_transform": null
+    }
+  ],
+  "middle_scan": [
+    {
+      "id": "S1",
+      "source_frame": "m2",
+      "bounds": [
+        1470,
+        1960,
+        1560,
+        2705
+      ],
+      "result": "No additional sufficiently clear V2 group identified on the visible middle segment; not proof of physical absence",
+      "status": "AI_visual_scan_not_exhaustive"
+    }
+  ],
+  "m1_connection_checks": [
+    {
+      "id": "U1",
+      "source_frame": "m1",
+      "source_bounds": [
+        1505,
+        1875,
+        1545,
+        1945
+      ],
+      "identity": "unknown",
+      "note": "Upper M1 horizontal junction is a locator only; no reliable V1-to-N2 assignment established"
+    },
+    {
+      "id": "U2",
+      "source_frame": "m1",
+      "source_bounds": [
+        1525,
+        2270,
+        1575,
+        2335
+      ],
+      "identity": "unknown",
+      "note": "Middle horizontal/vertical context: crossing or proximity cannot establish V1 or connection to N2"
+    },
+    {
+      "id": "U3",
+      "source_frame": "m1",
+      "source_bounds": [
+        1524,
+        2675,
+        1570,
+        2740
+      ],
+      "identity": "unknown",
+      "note": "Lower broad M1 junction and downward edge observed; V1 identity and N2 landing are not established"
+    }
+  ],
+  "new_confirmed_interfaces": 0,
+  "via_physical_cut_count": null,
+  "automatic_network_export_allowed": false,
+  "net_edges": [],
+  "complete_network": false,
+  "shared_canvas_placement": null,
+  "precise_projection_allowed": false,
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "parent_conductive_registry": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "parent_conductive_object_count": 33,
+  "parent_unchanged": true,
+  "human_questions": [
+    {
+      "id": "R1",
+      "question": "上端已审N2至下端D1是否为同一根连续M2，并在图中下端收口？"
+    },
+    {
+      "id": "D1",
+      "question": "下端蓝框D1孔组是否为V2，并接入紫色L1宽横向M3（而非上方黄色H1细线）？"
+    }
+  ],
+  "requires_user_action_now": true,
+  "evaluation": {
+    "route_continuity_correct": null,
+    "lower_via_identity_correct": null,
+    "lower_destination_correct": null,
+    "human_correction_count": null,
+    "strict_blind_test": false
+  },
+  "limits": [
+    "M1 U1/U2/U3 remain unknown and are not adopted as V1 connections; proximity to an M2 trace is not evidence.",
+    "No qualified cross-layer projection, same-hole fit or common-canvas placement.",
+    "D1 via count, exact cut/metal boundaries and all L1 other attachments unknown.",
+    "Middle-segment scan without a clear extra V2 is not proof of absence or complete interface coverage.",
+    "Known N2 to B1 review and all 33 common conductive objects/material layers stay unchanged.",
+    "L1 is a new local carrier label, not a completed M3 net or an assertion of identity with B1."
+  ]
+}

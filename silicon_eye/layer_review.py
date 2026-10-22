@@ -46,7 +46,7 @@ class ReviewRequest(Record):
     schema_version: Literal[1]
     document_kind: Literal["layer_reconstruction_review"]
     id: str
-    target_layer: Literal["POLY", "CT"]
+    target_layer: Literal["POLY", "CT", "M1", "V1", "M2", "V2", "M3"]
     mode: Literal["inspect", "revise"]
     snapshot: Source
     authorized_ids: dict[Literal["AA", "POLY", "CT"], list[str]] = Field(default_factory=dict)
@@ -56,6 +56,8 @@ class ReviewRequest(Record):
 
     @model_validator(mode="after")
     def scope(self):
+        if self.target_layer in {"M1", "V1", "M2", "V2", "M3"} and self.mode != "inspect":
+            raise ValueError("Conductive layer review currently supports inspect mode only")
         if self.mode == "inspect" and (self.changes or self.authorized_ids):
             raise ValueError("Inspect mode cannot change records")
         if self.mode == "revise" and not self.changes:
@@ -69,6 +71,8 @@ class ReviewRequest(Record):
 
 
 def records(snapshot, layer):
+    if layer in snapshot.get("conductors", {}).get("objects_by_layer", {}):
+        return snapshot["conductors"]["objects_by_layer"][layer]
     if layer == "CT":
         return snapshot["contacts"]
     return snapshot["materials"]["AA_objects" if layer == "AA" else "objects"]
@@ -79,10 +83,14 @@ def prepare(root, request):
     inputs = Inputs(root)
     inputs.read(request.snapshot)
     parent = load_snapshot(root, Path(root) / request.snapshot.path)
+    if request.target_layer in {"M1", "V1", "M2", "V2", "M3"} and "conductors" not in parent:
+        raise ValueError("Conductive review requires an attached registry")
     for ref in list(parent["manifest"]["inputs"].values()) + list(
         parent["manifest"]["source_photos"].values()
     ):
         inputs.read(ref)
+    if parent["manifest"].get("conductive_layers"):
+        inputs.read(parent["manifest"]["conductive_layers"])
     for change in request.changes:
         for ref in change.evidence:
             inputs.read(ref)
@@ -133,6 +141,10 @@ def prepare(root, request):
         parent["manifest"]["budget"],
         parent["contacts"],
     )
+    if "conductors" in parent:
+        from .conductive_layers import audit_summary
+
+        report["conductive_layers"] = audit_summary(parent["conductors"])
     if violations:
         report.update(status="FAIL", retired_contact_ids_resurrected=violations)
     return parent, proposed, report, inputs
@@ -171,7 +183,12 @@ def model_svg(snapshot, bounds):
                 f'<rect x="{x1}" y="{y1}" width="{x2 - x1}" height="{y2 - y1}">'
                 f"<title>{html.escape(unknown['id'])}</title></rect>"
             )
-    return "".join(parts) + "</g></svg>"
+    result = "".join(parts) + "</g>"
+    if "conductors" in snapshot:
+        from .conductive_layers import svg_layers
+
+        result += svg_layers(snapshot["conductors"], bounds)
+    return result + "</svg>"
 
 
 def write_json(path, value):
@@ -248,7 +265,9 @@ section{margin-top:28px}button,label{margin:8px}</style><h1>层重建复核包</
         page += f"<p>模式 {request.mode} · 联合门 {report['status']} · 尚未采用或新增批准</p>"
         page += "<p>源图窗口与设计视图分别显示，不作未验证的叠图投影。"
         page += "紫色虚线为未知范围。FAIL时proposed仅为拒绝诊断，没有可接续快照。</p>"
-        for layer in ("AA", "POLY", "CT", "unknown"):
+        for layer in ("AA", "POLY", "CT", "unknown", *parent.get(
+            "conductors", {}
+        ).get("layer_stack", [])):
             page += f'<label><input type="checkbox" checked data-toggle="{layer}">{layer}</label>'
         for frame in parent["manifest"]["source_photos"]:
             page += (
@@ -279,6 +298,10 @@ document.querySelectorAll('[data-photo]').forEach(e=>e.onchange=()=>{
                 "aa_completion.py",
             )
         }
+        if "conductors" in parent:
+            code["silicon_eye/conductive_layers.py"] = digest(
+                Path(__file__).with_name("conductive_layers.py")
+            )
         write_json(
             stage / "manifest.json",
             dict(
@@ -298,7 +321,10 @@ document.querySelectorAll('[data-photo]').forEach(e=>e.onchange=()=>{
                 code=code,
                 artifacts=artifacts,
                 model_counts={
-                    layer: len(records(proposed, layer)) for layer in ("AA", "POLY", "CT")
+                    layer: len(records(proposed, layer))
+                    for layer in ("AA", "POLY", "CT", *proposed.get(
+                        "conductors", {}
+                    ).get("layer_stack", []))
                 },
                 automatic_network_export_allowed=False,
             ),

@@ -1,0 +1,36 @@
+{
+  "status": "PASS_ARTIFACT_AND_DEDUP_CHECKS_PHYSICAL_REVIEW_PENDING",
+  "native_raw_crop_equality_count": 18,
+  "artifact_hashes_checked": 48,
+  "input_hashes_checked": 12,
+  "code_hashes_checked": 6,
+  "html_links_checked": 53,
+  "js_syntax_scripts": 2,
+  "browser_interaction_tested": false,
+  "four_overlapping_zones_cover_all_native_x_pixels": 5712,
+  "principal_local_lower_segments_after_dedup": 13,
+  "confirmed_D1_retained": 1,
+  "new_candidates": 12,
+  "pad_regions_unknown": 6,
+  "F04_reuses_existing_M2_J01": true,
+  "X2_M3_array_not_counted_as_V2": true,
+  "initial_truth_fields_preserved_null": true,
+  "baseline_common_snapshot_unchanged": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "common_objects_preserved": 33,
+  "new_reviewed_connections": 0,
+  "automatic_network_export_allowed": false,
+  "visual_inspection": [
+    "Z1-Z4/m2-wide-marked.png",
+    "Z2/m3-wide-marked.png",
+    "Z4/m3-wide-marked.png"
+  ],
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-22-L1-fanout-inspection.md",
+    "payload_sha256": "a4fcce494967920cb69615624ebdf5c144b66d4e310b028916e61a06d76ccbed",
+    "bytes": 15887,
+    "exact": true
+  }
+}

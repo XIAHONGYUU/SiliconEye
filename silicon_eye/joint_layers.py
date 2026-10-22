@@ -226,7 +226,12 @@ def load_snapshot(root, manifest):
     for ref in spec.get("source_photos", {}).values():
         if digest(root / ref["path"]) != ref["sha256"]:
             raise ValueError("Snapshot source photo changed")
-    return dict(manifest=spec, values=values, materials=material, contacts=contacts)
+    snapshot = dict(manifest=spec, values=values, materials=material, contacts=contacts)
+    if spec.get("conductive_layers"):
+        from .conductive_layers import load_registry
+
+        snapshot["conductors"] = load_registry(root, spec["conductive_layers"], spec)
+    return snapshot
 
 
 def write_snapshot(root, snapshot, output):
@@ -240,6 +245,13 @@ def write_snapshot(root, snapshot, output):
     ):
         raise ValueError("Snapshot output already exists")
     reject_retired_ids(snapshot["manifest"], snapshot["materials"])
+    if snapshot["manifest"].get("conductive_layers"):
+        from .conductive_layers import load_registry
+
+        if snapshot.get("conductors") != load_registry(
+            root, snapshot["manifest"]["conductive_layers"], snapshot["manifest"]
+        ):
+            raise ValueError("Conductive layer records changed outside a scoped transaction")
     require_joint(
         snapshot["contacts"],
         snapshot["materials"],
@@ -364,6 +376,11 @@ def run(root, manifest, output):
         source_reinspection=snapshot["values"]["source_reinspection"],
         report=report,
     )
+    if "conductors" in snapshot:
+        from .conductive_layers import audit_summary
+
+        report["conductive_layers"] = audit_summary(snapshot["conductors"])
+        context["conductive_layers"] = snapshot["manifest"]["conductive_layers"]
     (output / "joint-report.json").write_text(
         json.dumps(context, ensure_ascii=False, indent=2) + "\n"
     )

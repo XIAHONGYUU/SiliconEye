@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_downstream_interface_human_review",
+  "id": "N2-downstream-initial",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "N2_review": {
+      "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+      "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+    },
+    "N2_record": {
+      "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+      "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "retained_approved_connection": {
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_group_id": "V2-N2-GROUP",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1"
+  },
+  "path_observation": {
+    "id": "R1",
+    "conductor_id": "M2-N2-LEFT-RAIL",
+    "source_frame": "m2",
+    "native_path_xy": [
+      [
+        1498,
+        1930
+      ],
+      [
+        1504,
+        2190
+      ],
+      [
+        1514,
+        2480
+      ],
+      [
+        1526,
+        2782
+      ]
+    ],
+    "scope_bounds": [
+      1470,
+      1900,
+      1560,
+      2820
+    ],
+    "status": "AI_candidate",
+    "interpretation": "The same narrow M2 appears continuous from the reviewed upper array to a rounded lower terminal with another bright array. Neighboring right-hand wide rail remains separate.",
+    "endpoint_status": "visible_terminal_candidate_not_out_of_image",
+    "lower_endpoint_xy": [
+      1526,
+      2795
+    ],
+    "precise_boundary_status": "unknown",
+    "design_path": null
+  },
+  "new_interface": {
+    "id": "D1",
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_layer": "V2",
+    "via_group_id": "V2-N2-LOWER-GROUP",
+    "via_source_frame": "m2",
+    "via_source_bounds": [
+      1508,
+      2705,
+      1543,
+      2802
+    ],
+    "physical_cut_count": null,
+    "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+    "upper_display_label": "L1",
+    "upper_source_frame": "m3",
+    "upper_source_window": [
+      1470,
+      2740,
+      1590,
+      2835
+    ],
+    "window_role": "carrier_inspection_window_not_via_pixel_match",
+    "carrier_trace": [
+      [
+        1150,
+        2800
+      ],
+      [
+        2100,
+        2776
+      ]
+    ],
+    "alternative_upper_display_label": "H1",
+    "alternative_upper_trace": [
+      [
+        1150,
+        2708
+      ],
+      [
+        2100,
+        2685
+      ]
+    ],
+    "status": "AI_candidate_not_human_confirmed",
+    "basis": [
+      "V2 evidence comes from the M2 terminal array, never from a bright patch on M3.",
+      "The new group occupies the lower end of the traced M2; broad L1 is the macro-row carrier candidate below fine H1.",
+      "A broad multi-row via group needs an upper metal area capable of enclosing the group; a narrow H1 line is a weaker structural explanation. This is qualitative, not calibrated PDK DRC."
+    ],
+    "source_to_design_transform": null
+  },
+  "scan_segments": [
+    {
+      "id": "S1",
+      "source_frame": "m2",
+      "bounds": [
+        1470,
+        1960,
+        1560,
+        2705
+      ],
+      "result": "No additional sufficiently clear V2 group identified on the visible middle segment; not proof of physical absence",
+      "status": "AI_visual_scan_not_exhaustive"
+    }
+  ],
+  "m1_checks": [
+    {
+      "id": "U1",
+      "source_frame": "m1",
+      "source_bounds": [
+        1505,
+        1875,
+        1545,
+        1945
+      ],
+      "identity": "unknown",
+      "note": "Upper M1 horizontal junction is a locator only; no reliable V1-to-N2 assignment established"
+    },
+    {
+      "id": "U2",
+      "source_frame": "m1",
+      "source_bounds": [
+        1525,
+        2270,
+        1575,
+        2335
+      ],
+      "identity": "unknown",
+      "note": "Middle horizontal/vertical context: crossing or proximity cannot establish V1 or connection to N2"
+    },
+    {
+      "id": "U3",
+      "source_frame": "m1",
+      "source_bounds": [
+        1524,
+        2675,
+        1570,
+        2740
+      ],
+      "identity": "unknown",
+      "note": "Lower broad M1 junction and downward edge observed; V1 identity and N2 landing are not established"
+    }
+  ],
+  "evaluation": {
+    "route_continuity_correct": null,
+    "lower_via_identity_correct": null,
+    "lower_destination_correct": null,
+    "human_correction_count": null,
+    "strict_blind_test": false
+  },
+  "reviewed_local_connections": [],
+  "net_edges": [],
+  "adopted_into_joint_snapshot": false,
+  "complete_network": false
+}

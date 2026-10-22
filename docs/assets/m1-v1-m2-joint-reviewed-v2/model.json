@@ -1,0 +1,1365 @@
+{
+  "kind": "M1_V1_M2_companion_candidate",
+  "coordinate_space": "shared_design_px",
+  "canvas_wh": [
+    5860,
+    4587
+  ],
+  "parent_M1": {
+    "path": "docs/assets/m1-geometry-pilot-reviewed-v2/model.json",
+    "sha256": "c0df67b6a12dae6506dc08d4e9360e62a9c2916edf5afa107abc23c5a0b12b63"
+  },
+  "inherited_M1_objects": [
+    {
+      "id": "M1-P01",
+      "label": "P01",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2210.3777,
+          1981
+        ],
+        [
+          2210.3777,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2051,
+          1963
+        ],
+        [
+          2055,
+          2157
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#4bd4ff",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2205.3777,
+          2163.0
+        ],
+        [
+          2205.3777,
+          2168.0
+        ],
+        [
+          2215.3777,
+          2168.0
+        ],
+        [
+          2215.3777,
+          1981.0
+        ],
+        [
+          2215.3777,
+          1976.0
+        ],
+        [
+          2205.3777,
+          1976.0
+        ],
+        [
+          2205.3777,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "displayed_identity_position_length_isolation": "human_reviewed",
+        "pixel_boundary": "not_independently_approved"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P02",
+      "label": "P02",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2262.8469999999998,
+          1981
+        ],
+        [
+          2262.8469999999998,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2107,
+          1963
+        ],
+        [
+          2113,
+          2154
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#76e07a",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2257.8469999999998,
+          2163.0
+        ],
+        [
+          2257.8469999999998,
+          2168.0
+        ],
+        [
+          2267.8469999999998,
+          2168.0
+        ],
+        [
+          2267.8469999999998,
+          1981.0
+        ],
+        [
+          2267.8469999999998,
+          1976.0
+        ],
+        [
+          2257.8469999999998,
+          1976.0
+        ],
+        [
+          2257.8469999999998,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "displayed_identity_position_length_isolation": "human_reviewed",
+        "pixel_boundary": "not_independently_approved"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P03",
+      "label": "P03",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2315.3163,
+          1981
+        ],
+        [
+          2315.3163,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2164,
+          1962
+        ],
+        [
+          2169,
+          2152
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#ffb357",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2310.3163,
+          2163.0
+        ],
+        [
+          2310.3163,
+          2168.0
+        ],
+        [
+          2320.3163,
+          2168.0
+        ],
+        [
+          2320.3163,
+          1981.0
+        ],
+        [
+          2320.3163,
+          1976.0
+        ],
+        [
+          2310.3163,
+          1976.0
+        ],
+        [
+          2310.3163,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "displayed_identity_position_length_isolation": "human_reviewed",
+        "pixel_boundary": "not_independently_approved"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P04",
+      "label": "P04",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2336.6312,
+          1981
+        ],
+        [
+          2336.6312,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2189,
+          1962
+        ],
+        [
+          2194,
+          2152
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#da8bff",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2331.6312,
+          2163.0
+        ],
+        [
+          2331.6312,
+          2168.0
+        ],
+        [
+          2341.6312,
+          2168.0
+        ],
+        [
+          2341.6312,
+          1981.0
+        ],
+        [
+          2341.6312,
+          1976.0
+        ],
+        [
+          2331.6312,
+          1976.0
+        ],
+        [
+          2331.6312,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "displayed_identity_position_length_isolation": "human_reviewed",
+        "pixel_boundary": "not_independently_approved"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P05",
+      "label": "P05",
+      "kind": "isolated_vertical_strip",
+      "design_path": [
+        [
+          2384.4036166666665,
+          1981
+        ],
+        [
+          2384.4036166666665,
+          2163
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2245,
+          1961
+        ],
+        [
+          2250,
+          2151
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#f5dc64",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2379.4036166666665,
+          2163.0
+        ],
+        [
+          2379.4036166666665,
+          2168.0
+        ],
+        [
+          2389.4036166666665,
+          2168.0
+        ],
+        [
+          2389.4036166666665,
+          1981.0
+        ],
+        [
+          2389.4036166666665,
+          1976.0
+        ],
+        [
+          2379.4036166666665,
+          1976.0
+        ],
+        [
+          2379.4036166666665,
+          2163.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "displayed_identity_position_length_isolation": "human_reviewed",
+        "pixel_boundary": "not_independently_approved"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P06",
+      "label": "P06",
+      "kind": "outer_U",
+      "design_path": [
+        [
+          2229,
+          2179
+        ],
+        [
+          2229,
+          2201
+        ],
+        [
+          2413,
+          2201
+        ],
+        [
+          2413,
+          2179
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2090,
+          2167
+        ],
+        [
+          2093,
+          2189
+        ],
+        [
+          2267,
+          2185
+        ],
+        [
+          2268,
+          2162
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#ff799f",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "local_parts": [
+        {
+          "id": "P06-T1",
+          "role": "short_horizontal_terminal_bar",
+          "bounds": [
+            2219.3777,
+            2175.5698,
+            2239.3777,
+            2183.5698
+          ],
+          "basis": "Human Q2 correction; existing CT design positions, no new native observation",
+          "evidence_ref": {
+            "path": "benchmarks/m1-geometry-pilot-reviewed-v2/human-review-v1.json",
+            "sha256": "9aa30ad9409475319d9b1e8b5d9c3681fbacbcb3a328cf999a568f951de902a4"
+          }
+        },
+        {
+          "id": "P06-T2",
+          "role": "short_horizontal_terminal_bar",
+          "bounds": [
+            2403.176033333333,
+            2175.5698,
+            2423.176033333333,
+            2183.5698
+          ],
+          "basis": "Human Q2 correction; existing CT design positions, no new native observation",
+          "evidence_ref": {
+            "path": "benchmarks/m1-geometry-pilot-reviewed-v2/human-review-v1.json",
+            "sha256": "9aa30ad9409475319d9b1e8b5d9c3681fbacbcb3a328cf999a568f951de902a4"
+          }
+        }
+      ],
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2418.0,
+          2183.5698
+        ],
+        [
+          2423.176033333333,
+          2183.5698
+        ],
+        [
+          2423.176033333333,
+          2175.5698
+        ],
+        [
+          2418.0,
+          2175.5698
+        ],
+        [
+          2418.0,
+          2174.0
+        ],
+        [
+          2408.0,
+          2174.0
+        ],
+        [
+          2408.0,
+          2175.5698
+        ],
+        [
+          2403.176033333333,
+          2175.5698
+        ],
+        [
+          2403.176033333333,
+          2183.5698
+        ],
+        [
+          2408.0,
+          2183.5698
+        ],
+        [
+          2408.0,
+          2196.0
+        ],
+        [
+          2234.0,
+          2196.0
+        ],
+        [
+          2234.0,
+          2183.5698
+        ],
+        [
+          2239.3777,
+          2183.5698
+        ],
+        [
+          2239.3777,
+          2175.5698
+        ],
+        [
+          2234.0,
+          2175.5698
+        ],
+        [
+          2234.0,
+          2174.0
+        ],
+        [
+          2224.0,
+          2174.0
+        ],
+        [
+          2224.0,
+          2175.5698
+        ],
+        [
+          2219.3777,
+          2175.5698
+        ],
+        [
+          2219.3777,
+          2183.5698
+        ],
+        [
+          2224.0,
+          2183.5698
+        ],
+        [
+          2224.0,
+          2206.0
+        ],
+        [
+          2418.0,
+          2206.0
+        ],
+        [
+          2418.0,
+          2183.5698
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "basic_U_and_isolation": "human_reviewed",
+        "two_terminal_bars": "human_requested",
+        "new_dimensions": "AI_candidate"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P07",
+      "label": "P07",
+      "kind": "inner_U",
+      "design_path": [
+        [
+          2284,
+          2170
+        ],
+        [
+          2284,
+          2179
+        ],
+        [
+          2368,
+          2179
+        ],
+        [
+          2368,
+          2170
+        ]
+      ],
+      "design_width": 6,
+      "source_path": [
+        [
+          2121,
+          2166
+        ],
+        [
+          2122,
+          2175
+        ],
+        [
+          2236,
+          2171
+        ],
+        [
+          2237,
+          2159
+        ]
+      ],
+      "source_width_proxy": 6,
+      "color": "#a8bfff",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "local_parts": [
+        {
+          "id": "P07-H-enclosure",
+          "role": "refine_existing_horizontal_strip",
+          "bounds": [
+            2281,
+            2175.5698,
+            2371,
+            2183.5698
+          ],
+          "basis": "User Q2 M1 must cover CT; joint geometry enclosure correction only",
+          "evidence_ref": {
+            "path": "benchmarks/m1-geometry-pilot-reviewed-v2/human-review-v1.json",
+            "sha256": "9aa30ad9409475319d9b1e8b5d9c3681fbacbcb3a328cf999a568f951de902a4"
+          }
+        }
+      ],
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2371.0,
+          2175.5698
+        ],
+        [
+          2371.0,
+          2170.0
+        ],
+        [
+          2371.0,
+          2167.0
+        ],
+        [
+          2365.0,
+          2167.0
+        ],
+        [
+          2365.0,
+          2175.5698
+        ],
+        [
+          2287.0,
+          2175.5698
+        ],
+        [
+          2287.0,
+          2170.0
+        ],
+        [
+          2287.0,
+          2167.0
+        ],
+        [
+          2281.0,
+          2167.0
+        ],
+        [
+          2281.0,
+          2175.5698
+        ],
+        [
+          2281.0,
+          2182.0
+        ],
+        [
+          2281.0,
+          2183.5698
+        ],
+        [
+          2371.0,
+          2183.5698
+        ],
+        [
+          2371.0,
+          2182.0
+        ],
+        [
+          2371.0,
+          2175.5698
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "basic_U_and_isolation": "human_reviewed",
+        "existing_bar_enclosure_refinement": "AI_scoped_micro_revision",
+        "new_dimensions": "AI_candidate"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P08",
+      "label": "P08",
+      "kind": "partial_guard_conductor",
+      "design_path": [
+        [
+          2465,
+          1951
+        ],
+        [
+          2182,
+          1951
+        ],
+        [
+          2182,
+          2255
+        ],
+        [
+          2465,
+          2255
+        ]
+      ],
+      "design_width": 14,
+      "source_path": [
+        [
+          2335,
+          1933
+        ],
+        [
+          2006,
+          1939
+        ],
+        [
+          2029,
+          2243
+        ],
+        [
+          2335,
+          2234
+        ]
+      ],
+      "source_width_proxy": 14,
+      "color": "#80e6c2",
+      "end_states": [
+        "continues_beyond_review_window_unknown",
+        "continues_beyond_review_window_unknown"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "local_parts": [
+        {
+          "id": "P08-L-widen",
+          "role": "left_vertical_band_widening",
+          "bounds": [
+            2171,
+            1944,
+            2193,
+            2262
+          ],
+          "basis": "Human Q3 left M1 should be thicker; 22px is an AI implementation candidate",
+          "evidence_ref": {
+            "path": "benchmarks/m1-geometry-pilot-reviewed-v2/human-review-v1.json",
+            "sha256": "9aa30ad9409475319d9b1e8b5d9c3681fbacbcb3a328cf999a568f951de902a4"
+          }
+        }
+      ],
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2193.0,
+          2262.0
+        ],
+        [
+          2465.0,
+          2262.0
+        ],
+        [
+          2472.0,
+          2262.0
+        ],
+        [
+          2472.0,
+          2248.0
+        ],
+        [
+          2193.0,
+          2248.0
+        ],
+        [
+          2193.0,
+          1958.0
+        ],
+        [
+          2465.0,
+          1958.0
+        ],
+        [
+          2472.0,
+          1958.0
+        ],
+        [
+          2472.0,
+          1944.0
+        ],
+        [
+          2193.0,
+          1944.0
+        ],
+        [
+          2175.0,
+          1944.0
+        ],
+        [
+          2171.0,
+          1944.0
+        ],
+        [
+          2171.0,
+          2262.0
+        ],
+        [
+          2175.0,
+          2262.0
+        ],
+        [
+          2193.0,
+          2262.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "horizontal_arms": "human_reviewed_preserved",
+        "left_widening": "human_requested",
+        "left_width_px": "AI_candidate_22_not_measured"
+      },
+      "net_id": null
+    },
+    {
+      "id": "M1-P09",
+      "label": "P09",
+      "kind": "neighbor_long_strip",
+      "design_path": [
+        [
+          2441.9,
+          1981
+        ],
+        [
+          2441.9,
+          2204
+        ]
+      ],
+      "design_width": 10,
+      "source_path": [
+        [
+          2300,
+          1960
+        ],
+        [
+          2306,
+          2218
+        ]
+      ],
+      "source_width_proxy": 10,
+      "color": "#d6d9dd",
+      "end_states": [
+        "visible_end_candidate",
+        "visible_end_candidate"
+      ],
+      "source_method": "AI_visual_centerline_observation_not_segmentation",
+      "evidence_status": "AI_candidate",
+      "layer": "M1",
+      "outer_xy": [
+        [
+          2436.9,
+          2204.0
+        ],
+        [
+          2436.9,
+          2209.0
+        ],
+        [
+          2446.9,
+          2209.0
+        ],
+        [
+          2446.9,
+          1981.0
+        ],
+        [
+          2446.9,
+          1976.0
+        ],
+        [
+          2436.9,
+          1976.0
+        ],
+        [
+          2436.9,
+          2204.0
+        ]
+      ],
+      "holes_xy": [],
+      "status": "scoped_structure_human_reviewed_geometry_candidate",
+      "reviewed_structure_scope": {
+        "displayed_identity_position_length_isolation": "human_reviewed",
+        "pixel_boundary": "not_independently_approved"
+      },
+      "net_id": null
+    }
+  ],
+  "proposed_M1_addition": {
+    "metal_id": "M1-P08",
+    "status": "AI_continuation_candidate_not_approved",
+    "part": {
+      "id": "P08-array-continuation",
+      "bounds": [
+        2110,
+        1942,
+        2193,
+        1996
+      ],
+      "basis": "Visible contact-array region left of reviewed P08 upper-left corner. Extent and connection remain candidates; not filling the original ring gap."
+    }
+  },
+  "M2_objects": [
+    {
+      "id": "M2-J01",
+      "layer": "M2",
+      "design_path": [
+        [
+          2151,
+          1940
+        ],
+        [
+          2151,
+          2270
+        ]
+      ],
+      "design_width": 84,
+      "source_path": [
+        [
+          1970,
+          1912
+        ],
+        [
+          1982,
+          2260
+        ]
+      ],
+      "source_frame": "m2",
+      "end_states": [
+        "continues_beyond_review_window_unknown",
+        "continues_beyond_review_window_unknown"
+      ],
+      "status": "AI_candidate",
+      "net_id": null
+    }
+  ],
+  "V1_cuts": [
+    {
+      "id": "V1-J-A11",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A11",
+      "bounds": [
+        2145,
+        1948,
+        2151,
+        1954
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A12",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A12",
+      "bounds": [
+        2162,
+        1948,
+        2168,
+        1954
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A13",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A13",
+      "bounds": [
+        2179,
+        1948,
+        2185,
+        1954
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A21",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A21",
+      "bounds": [
+        2145,
+        1966,
+        2151,
+        1972
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A22",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A22",
+      "bounds": [
+        2162,
+        1966,
+        2168,
+        1972
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A23",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A23",
+      "bounds": [
+        2179,
+        1966,
+        2185,
+        1972
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A31",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A31",
+      "bounds": [
+        2145,
+        1984,
+        2151,
+        1990
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A32",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A32",
+      "bounds": [
+        2162,
+        1984,
+        2168,
+        1990
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A33",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A33",
+      "bounds": [
+        2179,
+        1984,
+        2185,
+        1990
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "A11",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1969,
+        1939
+      ],
+      "m2_xy": [
+        1961,
+        1912
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A12",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1985,
+        1939
+      ],
+      "m2_xy": [
+        1981,
+        1912
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A13",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        2006,
+        1939
+      ],
+      "m2_xy": [
+        1997,
+        1912
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A21",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1969,
+        1959
+      ],
+      "m2_xy": [
+        1961,
+        1929
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A22",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1985,
+        1959
+      ],
+      "m2_xy": [
+        1981,
+        1929
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A23",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        2006,
+        1959
+      ],
+      "m2_xy": [
+        1997,
+        1929
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A31",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1969,
+        1977
+      ],
+      "m2_xy": [
+        1961,
+        1946
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A32",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1985,
+        1977
+      ],
+      "m2_xy": [
+        1981,
+        1946
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A33",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        2006,
+        1977
+      ],
+      "m2_xy": [
+        1997,
+        1946
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    }
+  ],
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "source_to_design_transform": null,
+  "new_geometry_status": "AI_candidate_not_human_approved",
+  "net_edges": [],
+  "reviewed_local_connections": [
+    {
+      "id": "J-M1-P08-V1-M2-J01",
+      "lower_metal_id": "M1-P08",
+      "via_layer": "V1",
+      "via_group_ids": [
+        "V1-J-A11",
+        "V1-J-A12",
+        "V1-J-A13",
+        "V1-J-A21",
+        "V1-J-A22",
+        "V1-J-A23",
+        "V1-J-A31",
+        "V1-J-A32",
+        "V1-J-A33"
+      ],
+      "upper_metal_id": "M2-J01",
+      "status": "human_confirmed_local_interface",
+      "id_association": "AI local IDs of the displayed group; human confirms group identity and connection, not nine individually measured cut outlines",
+      "geometry_boundary_status": "AI_candidate"
+    }
+  ],
+  "native_only_V2_observations": [
+    {
+      "id": "J-M2-EDGE-V2",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "source_bounds": [
+        1935,
+        1905,
+        1953,
+        1953
+      ],
+      "identity_status": "human_confirmed",
+      "design_bounds": null,
+      "cut_count": null,
+      "upper_metal_id": null,
+      "M3_connection_confirmed": false
+    }
+  ],
+  "width_and_edge_constraints": {
+    "M1_right_edge_V1_present": false,
+    "right_edge_native_bounds": null,
+    "width_span_verbatim": "都是四排孔的距离",
+    "pixel_width": null,
+    "exact_hole_count": null,
+    "new_cut_creation_authorized": false,
+    "normalization": "Qualitative width/edge correspondence only; do not equate V1/V2 brightness columns or infer an extra V1 row. Existing geometry retained pending any independently justified local adjustment."
+  },
+  "adopted_into_joint_snapshot": false,
+  "unprocessed_is_unknown": true
+}

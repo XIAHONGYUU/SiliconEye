@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_metal_route_record",
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "parent_conductive_registry": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "initial_observation": {
+    "path": "benchmarks/n2-downstream-interfaces-v1/initial-ai-observation-v1.json",
+    "sha256": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5"
+  },
+  "human_review": {
+    "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+    "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+  },
+  "reviewed_route": {
+    "conductor_id": "M2-N2-LEFT-RAIL",
+    "continuity_confirmed": true,
+    "visible_lower_terminal_confirmed": true,
+    "human_review": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+      "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+    },
+    "native_observation": {
+      "id": "R1",
+      "conductor_id": "M2-N2-LEFT-RAIL",
+      "source_frame": "m2",
+      "native_path_xy": [
+        [
+          1498,
+          1930
+        ],
+        [
+          1504,
+          2190
+        ],
+        [
+          1514,
+          2480
+        ],
+        [
+          1526,
+          2782
+        ]
+      ],
+      "scope_bounds": [
+        1470,
+        1900,
+        1560,
+        2820
+      ],
+      "status": "AI_candidate",
+      "interpretation": "The same narrow M2 appears continuous from the reviewed upper array to a rounded lower terminal with another bright array. Neighboring right-hand wide rail remains separate.",
+      "endpoint_status": "visible_terminal_candidate_not_out_of_image",
+      "lower_endpoint_xy": [
+        1526,
+        2795
+      ],
+      "precise_boundary_status": "unknown",
+      "design_path": null
+    },
+    "precise_native_or_design_boundary_approved": false
+  },
+  "reviewed_local_connections": [
+    {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_layer": "V2",
+      "via_group_id": "V2-N2-LOWER-GROUP",
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "identity_confirmed": true,
+      "connection_confirmed": true,
+      "status": "human_confirmed_local_interface_not_complete_net",
+      "human_review": {
+        "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+        "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+      }
+    }
+  ],
+  "inherited_upper_interface_record": {
+    "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+    "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+  },
+  "derived_reviewed_path": {
+    "conductor_ids": [
+      "M3-J-B1",
+      "M2-N2-LEFT-RAIL",
+      "M3-N2-LOWER-BUS-CANDIDATE"
+    ],
+    "via_group_ids": [
+      "V2-N2-GROUP",
+      "V2-N2-LOWER-GROUP"
+    ],
+    "via_layers": [
+      "V2",
+      "V2"
+    ],
+    "basis": "Inherited N2 upper approval plus R1 continuity and D1 lower approval",
+    "complete_network": false
+  },
+  "retained_unknown_m1_checks": [
+    {
+      "id": "U1",
+      "source_frame": "m1",
+      "source_bounds": [
+        1505,
+        1875,
+        1545,
+        1945
+      ],
+      "identity": "unknown",
+      "note": "Upper M1 horizontal junction is a locator only; no reliable V1-to-N2 assignment established"
+    },
+    {
+      "id": "U2",
+      "source_frame": "m1",
+      "source_bounds": [
+        1525,
+        2270,
+        1575,
+        2335
+      ],
+      "identity": "unknown",
+      "note": "Middle horizontal/vertical context: crossing or proximity cannot establish V1 or connection to N2"
+    },
+    {
+      "id": "U3",
+      "source_frame": "m1",
+      "source_bounds": [
+        1524,
+        2675,
+        1570,
+        2740
+      ],
+      "identity": "unknown",
+      "note": "Lower broad M1 junction and downward edge observed; V1 identity and N2 landing are not established"
+    }
+  ],
+  "middle_scan": [
+    {
+      "id": "S1",
+      "source_frame": "m2",
+      "bounds": [
+        1470,
+        1960,
+        1560,
+        2705
+      ],
+      "result": "No additional sufficiently clear V2 group identified on the visible middle segment; not proof of physical absence",
+      "status": "AI_visual_scan_not_exhaustive"
+    }
+  ],
+  "physical_cut_count": null,
+  "source_to_design_transform": null,
+  "common_canvas_placement": null,
+  "adopted_into_joint_snapshot": false,
+  "geometric_objects_added_to_common_snapshot": 0,
+  "automatic_network_export_allowed": false,
+  "net_edges": [],
+  "complete_network": false,
+  "evaluation": {
+    "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/evaluation-result-v1.json",
+    "sha256": "462a6f4e203494fe88113d8da0cf638df0cf39fdf16598dd07deddb4986895ad"
+  }
+}

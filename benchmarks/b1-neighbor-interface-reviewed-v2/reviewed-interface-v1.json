@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_metal_interface_record",
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "parent_conductive_registry": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "source_observations": {
+    "path": "benchmarks/b1-neighbor-interface-v1/initial-ai-observation-v1.json",
+    "sha256": "fbffb91f8d59ccd78e9f739f2ce4b50d0bf51acb366a7e05c530f3636346a421"
+  },
+  "human_review": {
+    "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+    "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+  },
+  "reviewed_local_connections": [
+    {
+      "id": "N2-M2-V2-M3-B1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_layer": "V2",
+      "via_group_id": "V2-N2-GROUP",
+      "upper_metal_id": "M3-J-B1",
+      "identity_confirmed": true,
+      "connection_confirmed": true,
+      "status": "human_confirmed_local_interface_not_complete_net",
+      "human_review": {
+        "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+        "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+      }
+    }
+  ],
+  "common_canvas_placement": null,
+  "source_to_design_transform": null,
+  "geometric_objects_added_to_common_snapshot": 0,
+  "adopted_into_joint_snapshot": false,
+  "geometry_status": "native_inspection_windows_not_confirmed_material_boundaries",
+  "physical_cut_count": null,
+  "complete_network": false,
+  "automatic_network_export_allowed": false,
+  "net_edges": [],
+  "retained_unknowns": [
+    "N2 cut count",
+    "N2 exact cut/metal boundaries",
+    "N2 M2 continuation",
+    "independent precise projection"
+  ],
+  "evaluation": {
+    "path": "benchmarks/b1-neighbor-interface-reviewed-v2/evaluation-result-v1.json",
+    "sha256": "fdddd73b8727f63174b2831a9e51fd18d5307d326e565e5401b06ce896ddb18b"
+  }
+}

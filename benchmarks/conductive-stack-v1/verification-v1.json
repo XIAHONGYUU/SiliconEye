@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "primary_agent_software_and_delivery_verification_no_new_physical_adjudication",
+  "status": "SCOPED_REVIEWED_CHAIN_ASSEMBLED",
+  "object_counts": {
+    "M1": 9,
+    "V1": 9,
+    "M2": 1,
+    "V2": 1,
+    "M3": 2
+  },
+  "reviewed_interface_count": 2,
+  "new_physical_connections": 0,
+  "complete_network": false,
+  "automatic_network_export_allowed": false,
+  "precise_projection_allowed": false,
+  "physical_cut_count": null,
+  "material_snapshot_inputs_and_limits_unchanged": true,
+  "source_and_artifact_hashes": "PASS",
+  "code_and_template_hashes": "PASS",
+  "common_snapshot_load_audit": "PASS",
+  "common_review_inspect": "PASS",
+  "common_review_delta": [],
+  "common_review_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287,
+    "M1": 9,
+    "V1": 9,
+    "M2": 1,
+    "V2": 1,
+    "M3": 2
+  },
+  "common_save_and_unscoped_mutation_guard": "PASS_in_test_conductive_layers",
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "HTML_local_links": "PASS",
+  "raw_source_crops_exact_pixel_match": 6,
+  "PNG_decode": "PASS",
+  "visual_inspection": {
+    "browser_interaction": "not_performed",
+    "basis": "Inspected chain raster, marked M1/M2 detail and M3 broad context; vias rendered above metals, labels separated; layer and object selectors statically checked.",
+    "not_claimed": "No exact source registration, complete bus extent, full-frame material recovery or whole-net extraction."
+  },
+  "archive_payload_sha256": "44ae53caf9c74b68485c8a27a7ea1124c07c20e773c03483c61c554c3366e582",
+  "archive_payload_matches": true,
+  "baseline_replay_record": "benchmarks/conductive-stack-v1/baseline-replay-verification-v2.json",
+  "old_artifacts_unchanged": {
+    "m1-v1-m2-joint-reviewed-v2": 16,
+    "metal-short-branch-transfer-v1": 16,
+    "metal-new-interface-candidate-v1": 16,
+    "metal-new-interface-reviewed-v2": 16,
+    "m2-v2-m3-joint-pilot-v1": 16,
+    "m2-v2-m3-joint-reviewed-v2": 16
+  },
+  "pending_questions": [],
+  "software_verification": {
+    "passed": 80,
+    "elapsed_seconds": 172.6,
+    "command": ".venv/bin/pytest -q tests/test_conductive_layers.py tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_joint_layers.py tests/test_layer_review.py",
+    "ruff": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

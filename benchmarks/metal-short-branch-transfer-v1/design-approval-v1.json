@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-22",
+  "statement": "设计批准放行，继续推进",
+  "scope": "Displayed W1 short-branch reconstructed design and isolation in metal-short-branch-transfer-v1; continue to a new candidate",
+  "decisions": {
+    "displayed_design_released": true,
+    "relative_structure_and_isolation_accepted": true,
+    "measured_pixel_boundaries_approved": false,
+    "physical_cut_count_approved": false,
+    "precise_native_registration_approved": false,
+    "automatic_network_export_allowed": false
+  },
+  "sources": {
+    "spec": {
+      "path": "benchmarks/metal-short-branch-transfer-v1/spec-v1.json",
+      "sha256": "215a5c2011582f6c787c28a7c5954975ff20f88f40ae9badb38914ea8459cc03"
+    },
+    "model": {
+      "path": "docs/assets/metal-short-branch-transfer-v1/model.json",
+      "sha256": "d179b9b34d93e67c107085d592612a58bb9b048338e60ce956394f47eb17260f"
+    },
+    "report": {
+      "path": "docs/assets/metal-short-branch-transfer-v1/report.json",
+      "sha256": "1d6b86f0d73cff9a057ea7d9d854c93d91ad12f96eb5bcdd2946dcce1f234380"
+    },
+    "page": {
+      "path": "docs/assets/metal-short-branch-transfer-v1/index.html",
+      "sha256": "973069ffa23f087116770bfebb2658c06b4dbd09dee5180d2d971de1c093321b"
+    }
+  }
+}

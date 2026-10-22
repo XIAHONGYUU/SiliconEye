@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "observation_stage": "before_new_candidate_human_review",
+  "observation_id": "N1-initial",
+  "source_photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "native_observations": {
+    "m1": {
+      "points": [
+        [
+          1145,
+          3212
+        ],
+        [
+          1145,
+          3248
+        ]
+      ],
+      "brightpoint_reference": [
+        1145,
+        3219
+      ],
+      "interpretation": "Short isolated M1 with compact upper bright spot; V1 candidate"
+    },
+    "m2": {
+      "points": [
+        [
+          1138,
+          3214
+        ],
+        [
+          1107,
+          3214
+        ],
+        [
+          1109,
+          3255
+        ]
+      ],
+      "terminal_reference": [
+        1109,
+        3255
+      ],
+      "interpretation": "Short bent cap and downward stem; lower stem endpoint is proposed bearer, cap bright spots left untyped"
+    }
+  },
+  "hypothesis": {
+    "lower_metal_id": "M1-N1-STUB",
+    "via_layer": "V1",
+    "upper_metal_id": "M2-N1-BENT-STUB",
+    "via_group_id": "V1-N1-GROUP",
+    "status": "AI_candidate_unreviewed",
+    "basis": "Neighboring same-family short branch relative to released W1; visible M1 brightpoint and M2 stem support candidate but no precise transform is qualified",
+    "alternative": "Upper cap may contain upper-level via evidence; reject treating cap brightness alone as V1"
+  },
+  "evaluation": {
+    "type": "pre_review_candidate_not_strict_blind_test",
+    "human_ground_truth": null,
+    "identity_correct": null,
+    "destination_correct": null,
+    "correction_count": null
+  },
+  "not_claimed": [
+    "No precise photo projection",
+    "No measured via count or cut edge",
+    "No novel human approval",
+    "No new network export"
+  ]
+}

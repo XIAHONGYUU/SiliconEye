@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "kind": "baseline_replay_after_transfer_code_change",
+  "baseline_manifest_sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5",
+  "replay_manifest_sha256": "e8dc52f1c7737b1361e0c1bd7e51fa16acae530648f7be3dfc2e8b7295a000ac",
+  "code_sha256": "acf77c67cbfc1437d91c7711081e58fadf9f78eb1e866de83ba8255679b6b8bb",
+  "artifact_comparison": {
+    "m2-wide-marked.png": {
+      "before_sha256": "3fdf32bf4d3adf24a3e7331ed5187d88870517402b3a995fe260124cff2ec6ff",
+      "after_sha256": "3fdf32bf4d3adf24a3e7331ed5187d88870517402b3a995fe260124cff2ec6ff",
+      "identical": true
+    },
+    "m1-detail-marked.png": {
+      "before_sha256": "9e523fab861c376a80e2526f5573a91c6a16b0054caa9a9e21dc58836841d19d",
+      "after_sha256": "9e523fab861c376a80e2526f5573a91c6a16b0054caa9a9e21dc58836841d19d",
+      "identical": true
+    },
+    "m1-wide-marked.png": {
+      "before_sha256": "66247b0cd516b84975b9a3f2d806687edcd9077e47bd940124b8223198b9fc5f",
+      "after_sha256": "66247b0cd516b84975b9a3f2d806687edcd9077e47bd940124b8223198b9fc5f",
+      "identical": true
+    },
+    "m2-detail-raw.png": {
+      "before_sha256": "273257992cc5943c69bcdc6981478aaeb8308c98eb90b4aa17965fcb73e323de",
+      "after_sha256": "273257992cc5943c69bcdc6981478aaeb8308c98eb90b4aa17965fcb73e323de",
+      "identical": true
+    },
+    "m1-wide-raw.png": {
+      "before_sha256": "f5b4dc8f5c3cd85b05c68a5355fec911020eb471bff83482b58de3abc29a5057",
+      "after_sha256": "f5b4dc8f5c3cd85b05c68a5355fec911020eb471bff83482b58de3abc29a5057",
+      "identical": true
+    },
+    "m2-location.png": {
+      "before_sha256": "dbd242cd47399a8b4e1be68cacaf578bf22d78c21d0aeea37d9bc74b3150fd8e",
+      "after_sha256": "dbd242cd47399a8b4e1be68cacaf578bf22d78c21d0aeea37d9bc74b3150fd8e",
+      "identical": true
+    },
+    "m1-location.png": {
+      "before_sha256": "72a5699fc23c0e18fe922a5253b394be64c3b6267acdc7691bf97b2951bad8db",
+      "after_sha256": "72a5699fc23c0e18fe922a5253b394be64c3b6267acdc7691bf97b2951bad8db",
+      "identical": true
+    },
+    "joint-design.svg": {
+      "before_sha256": "65dacee2d02d01a3946c2f0cc54f04d3764839f3d508a11d132a549401bf0c5b",
+      "after_sha256": "65dacee2d02d01a3946c2f0cc54f04d3764839f3d508a11d132a549401bf0c5b",
+      "identical": true
+    },
+    "spec.json": {
+      "before_sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d",
+      "after_sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d",
+      "identical": true
+    },
+    "m2-detail-marked.png": {
+      "before_sha256": "6e80a92031e423b84760854e44e9f50c13a897f7086d34b6f553599d9e15052c",
+      "after_sha256": "6e80a92031e423b84760854e44e9f50c13a897f7086d34b6f553599d9e15052c",
+      "identical": true
+    },
+    "m1-detail-raw.png": {
+      "before_sha256": "faf8073f6fc5979ae663dfee93c45111f4713cc297329eeea8de65dba84cb151",
+      "after_sha256": "faf8073f6fc5979ae663dfee93c45111f4713cc297329eeea8de65dba84cb151",
+      "identical": true
+    },
+    "model.json": {
+      "before_sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a",
+      "after_sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a",
+      "identical": true
+    },
+    "index.html": {
+      "before_sha256": "600214a384bf01123b0a11a6ef9a524868963d2f585c52f3938cb78d475a40d7",
+      "after_sha256": "600214a384bf01123b0a11a6ef9a524868963d2f585c52f3938cb78d475a40d7",
+      "identical": true
+    },
+    "m2-wide-raw.png": {
+      "before_sha256": "f76c544d24bcc12ea618a0bcdc1a194b8d3462e29a3a4e81170907c3aee0bebc",
+      "after_sha256": "f76c544d24bcc12ea618a0bcdc1a194b8d3462e29a3a4e81170907c3aee0bebc",
+      "identical": true
+    },
+    "report.json": {
+      "before_sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870",
+      "after_sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870",
+      "identical": true
+    },
+    "joint-design.png": {
+      "before_sha256": "51d7f1cbeb1df3b9280f42b7dc04681320988265a2ad52829f155cff06aecaec",
+      "after_sha256": "51d7f1cbeb1df3b9280f42b7dc04681320988265a2ad52829f155cff06aecaec",
+      "identical": true
+    }
+  },
+  "manifest_difference_expected": "Execution manifest records new implementation hash; physical/model/report/page content unchanged"
+}

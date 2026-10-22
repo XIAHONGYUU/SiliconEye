@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+  "geometry_status": "PASS",
+  "M1_object_count": 9,
+  "changed_feature_ids": [
+    "M1-P06",
+    "M1-P07",
+    "M1-P08"
+  ],
+  "unchanged_feature_ids": [
+    "M1-P01",
+    "M1-P02",
+    "M1-P03",
+    "M1-P04",
+    "M1-P05",
+    "M1-P09"
+  ],
+  "all_skeleton_paths_widths_and_native_observations_preserved": true,
+  "existing_CT_support_claims_preserved": true,
+  "P06_new_terminal_bar_count": 2,
+  "P07_existing_bar_enclosure_micro_refined": true,
+  "P08_left_band_width_px": 22,
+  "P08_horizontal_arms_outside_left_band_exact": true,
+  "new_dimension_status": "AI_implementation_not_independent_human_pixel_approval",
+  "source_drain_CT_count": 87,
+  "gate_CT_enclosure_count": 8,
+  "total_CT_enclosure_count": 95,
+  "minimum_gap_px": 7.569800000000214,
+  "relative_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3,
+    "CT_enclosure_px": 1,
+    "unit": "relative_design_px",
+    "status": "pilot_relative_budgets_not_PDK",
+    "basis": "Observed strip widths and inspected gaps; CT enclosure follows parent relative budget; no process calibration"
+  },
+  "prior_human_decisions_and_six_unknowns_preserved": true,
+  "precise_native_gate_projection_pending_count": 8,
+  "precise_CT_projection_allowed": false,
+  "automatic_network_export_allowed": false,
+  "requires_user_action_now": false,
+  "new_human_questions": [],
+  "static_package_checks": "input/artifact hashes, SVG XML, JavaScript syntax PASS",
+  "interactive_browser_click_validation": false,
+  "test_command": ".venv/bin/pytest -q tests/test_metal_reconstruction.py tests/test_layer_review.py",
+  "test_passed": 20,
+  "sources": {
+    "benchmarks/m1-geometry-pilot-reviewed-v2/spec-v1.json": "45161cd03ef1a586dfc52812e7153fe77573b7254ef17ccd1d7c239df19a233e",
+    "benchmarks/m1-geometry-pilot-reviewed-v2/human-review-v1.json": "9aa30ad9409475319d9b1e8b5d9c3681fbacbcb3a328cf999a568f951de902a4",
+    "silicon_eye/metal_reconstruction.py": "99989393efc743d51c2677662e2ffa8adb4585400d539272a1c4151741642ce9",
+    "tests/test_metal_reconstruction.py": "ba5558069c04e9e069dbe422b966aa7e015b0e2d98c8c370b263fb8b0c119891",
+    "docs/assets/m1-geometry-pilot-reviewed-v2/manifest.json": "630ea67b362591fe9e529521353a03b14bb7b6bd707bbdabab097cbba172ed48"
+  }
+}

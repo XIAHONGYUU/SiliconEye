@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "case_id": "N2",
+  "record_type": "derived_evaluation_after_scoped_human_review",
+  "sample_count": 1,
+  "sources": {
+    "initial_AI": {
+      "path": "benchmarks/b1-neighbor-interface-v1/initial-ai-observation-v1.json",
+      "sha256": "fbffb91f8d59ccd78e9f739f2ce4b50d0bf51acb366a7e05c530f3636346a421"
+    },
+    "submitted_candidate": {
+      "path": "benchmarks/b1-neighbor-interface-v1/request-v1.json",
+      "sha256": "eb2335be4b5914927d7a7504070cc767ffd0f5fa5ab69625cde240f0f8f5959d"
+    },
+    "human_adjudication": {
+      "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+      "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+    }
+  },
+  "human_truth": {
+    "id": "N2-M2-V2-M3-B1",
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_layer": "V2",
+    "via_group_id": "V2-N2-GROUP",
+    "upper_metal_id": "M3-J-B1",
+    "identity_confirmed": true,
+    "connection_confirmed": true
+  },
+  "metrics": {
+    "identity_correct": true,
+    "destination_correct": true,
+    "observed_identity_or_destination_corrections": 0,
+    "correction_scope": "Submitted N2 identity/destination hypothesis directly approved at first review; not whole-project rework count",
+    "evaluation_type": "one_pre_review_candidate_in_known_chip_not_strict_blind_test",
+    "geometry_accuracy": null,
+    "physical_cut_count": null
+  },
+  "limits": [
+    "One local case and two attributes, not two independent samples",
+    "Not a population accuracy estimate",
+    "Native reference pixels and precise geometry remain candidate",
+    "No exact via count or full-net acceptance"
+  ]
+}

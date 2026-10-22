@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-22",
+  "statement": "1.R1批准无误\n2.D1批准无误",
+  "scope": "R1: the same N2 M2 is continuous to its visible lower terminal. D1: the lower group is V2 and connects to purple broad M3 L1, not fine H1. No M1/U1-U3, exact pixels, hole count or full network approval.",
+  "decisions": {
+    "R1": {
+      "conductor_id": "M2-N2-LEFT-RAIL",
+      "continuity_confirmed": true,
+      "visible_lower_terminal_confirmed": true
+    },
+    "D1": {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_layer": "V2",
+      "via_group_id": "V2-N2-LOWER-GROUP",
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "identity_confirmed": true,
+      "connection_confirmed": true
+    }
+  },
+  "sources": {
+    "parent_request": {
+      "path": "benchmarks/n2-downstream-interfaces-v1/request-v1.json",
+      "sha256": "44f14c010a348affce77706c21440f1de7d32a504588a5df5fc961871d4fcac8"
+    },
+    "initial_AI": {
+      "path": "benchmarks/n2-downstream-interfaces-v1/initial-ai-observation-v1.json",
+      "sha256": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5"
+    },
+    "submitted_page": {
+      "path": "docs/assets/n2-downstream-interfaces-v1/index.html",
+      "sha256": "3d206fa329e6fbb126742d8105dd62df0a123d5ad3e2ac65a1084e9f91eb8560"
+    },
+    "submitted_report": {
+      "path": "docs/assets/n2-downstream-interfaces-v1/report.json",
+      "sha256": "41bbea5e9ae73b9e8cd4cc814bef93374887106a742da1f170c4869d99c7608e"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/n2-downstream-interfaces-v1/manifest.json",
+      "sha256": "407144b0e7154301db03975b5d620c8fc6550005bba1e7f3efc67d6414db2d5c"
+    }
+  }
+}

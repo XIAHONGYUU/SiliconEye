@@ -1,0 +1,52 @@
+{
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "verified_inputs": {
+    "configs/joint-work-layer-v3.json": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377",
+    "benchmarks/ct-source-ownership-reviewed-v2/material-model-v1.json": "6e6230f769d79e9ae76f81810e30cc5311944e71b9c79933c04e4d9dbd95644e",
+    "benchmarks/ct-source-ownership-reviewed-v2/model-v1.json": "8c977221bd661f381a74f5f2b0a04df4c6b91b77491a234124dcf98b298ae927",
+    "benchmarks/ct-work-layer-final-v5/spec-v1.json": "372388f445b8b8392d706b5434a48036d46309bb02d77a171ce8cb137dd351ad",
+    "benchmarks/aa-full-frame-workflow-v1/model-v1.json": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db",
+    "benchmarks/ct-source-ownership-reviewed-v2/unknown-sites-v1.json": "f90aa482278c62a560238ec1e88b167db16e110fa95aea2cdb215f3ef20412b7",
+    "benchmarks/ct-source-ownership-reviewed-v2/stage-gate-v1.json": "303b8f927fffb00f9ec812b112f3d4f08334b2b9864f4ae685c2f4cf193cc6bb",
+    "benchmarks/ct-source-ownership-reviewed-v2/use-contract-v1.json": "09f9e9f3718c4b12ffbdfb9daf7946f183f25bc05ab03e051c8d6c6a36784175",
+    "benchmarks/ct-source-ownership-reviewed-v2/exceptions-v1.json": "f495158831a5d36596469c952ed6f19ea06784bc7cbf6d22cb604b71c7c167dd",
+    "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f",
+    "benchmarks/ct-source-ownership-reviewed-v2/source-reinspection-v1.json": "8f049646f37aa5814433a40bd5c48004eb4dc8a7392c32112e4d154fa5d826c7",
+    "benchmarks/ct-work-layer-final-v5/human-review-v1.json": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04",
+    "data/test_chip/tile_full/aa.jpg": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804",
+    "data/test_chip/tile_full/implant.jpg": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044",
+    "data/test_chip/tile_full/m1.jpg": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "data/test_chip/tile_full/m2.jpg": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "data/test_chip/tile_full/m3.jpg": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "data/test_chip/tile_full/m4.jpg": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0",
+    "data/test_chip/tile_full/poly.jpg": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1",
+    "data/test_chip/tile_full/sub.jpg": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6",
+    "benchmarks/q2-gate-terminal-inspection-v1/report-v1.json": "08024de88a66a84f11495015c5cae6ac14c508a35f56423a88cdc65d0d878ec2",
+    "benchmarks/q2-gate-ct-localization-v1/human-review-v1.json": "abb65f20f71631cd4b6454aaaae45f930c6b0f8d47a020e4c1630747162584ac",
+    "benchmarks/m1-geometry-pilot-reviewed-v2/human-review-v1.json": "9aa30ad9409475319d9b1e8b5d9c3681fbacbcb3a328cf999a568f951de902a4",
+    "benchmarks/m1-geometry-pilot-v1/spec-v1.json": "473502ee1add37450d9270a72f114c665c579b2c438a51d90156a9cf8e7e3709",
+    "docs/assets/m1-geometry-pilot-v1/joint-design.png": "84404a40cd819f57e2019274e39b1fc3aa44c16a55fd6eafedc44af4d4925859"
+  },
+  "spec_sha256": "45161cd03ef1a586dfc52812e7153fe77573b7254ef17ccd1d7c239df19a233e",
+  "code_sha256": "99989393efc743d51c2677662e2ffa8adb4585400d539272a1c4151741642ce9",
+  "artifacts": {
+    "poly-raw.png": "dee257a62a763f35b5e797b42ca315692b22ac8c286e6ab7acdc6828ee0a6288",
+    "m1-location.png": "703a0a220632500f209f591dad685fd0b2742b48182b7fbe5c8e554f10ea9179",
+    "joint-design.svg": "dafb0a6e667a48c0880aa78d0b384f207ffb5acab18eab79d68f890fa83154e0",
+    "before-design.png": "84404a40cd819f57e2019274e39b1fc3aa44c16a55fd6eafedc44af4d4925859",
+    "spec.json": "45161cd03ef1a586dfc52812e7153fe77573b7254ef17ccd1d7c239df19a233e",
+    "aa-raw.png": "391a16a9e5ccfe9814151a65f5c43685f287022052630e53e25cce3b03496f9f",
+    "model.json": "c0df67b6a12dae6506dc08d4e9360e62a9c2916edf5afa107abc23c5a0b12b63",
+    "index.html": "8f376ce3d8fc302c3a83e01ef7466ef05d1b64fd4e3ae3f6bd1f6750020ffa6f",
+    "report.json": "b4622f41224f2f8dfa6f5009d501ec6e9c1658cb48d4c890d2b152a8231b9c5b",
+    "m1-raw.png": "7d945ab9ec6e6a17e13a27a20b88cf408f1df40cc37281a457babfa4b68f1f09",
+    "m1-observations.png": "d76bd1f26aedc1f42fe84423ae3736834b3786872258676d62286685f0231ec9",
+    "continuation-context.json": "baec9e0fc4ebac5a7bde932b9409e6a1e7fdeb9b2fc4f58cff3a4043485336a7",
+    "joint-design.png": "eb62b1fccb002f999ee2fe1c8d7563bf032f4157c2a53fec42a3409e2c9ce544"
+  },
+  "no_parent_model_change": true,
+  "status": "SCOPED_REVIEWED_WITH_LIMITATIONS"
+}

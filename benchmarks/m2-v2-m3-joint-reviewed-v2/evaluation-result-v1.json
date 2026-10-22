@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "human_review": {
+    "path": "benchmarks/m2-v2-m3-joint-reviewed-v2/human-review-v1.json",
+    "sha256": "743bc97c80beba6931863d556865148bb88ea09f1f15690c25daf0f4cd40cbce"
+  },
+  "initial_AI": {
+    "path": "benchmarks/m2-v2-m3-joint-pilot-v1/initial-ai-observation-v1.json",
+    "sha256": "11dd41ba3802fe33909ba5a451554c887b7bd417a3631929dcce2df1cd92a95e"
+  },
+  "case_count": 1,
+  "newly_adjudicated_attribute": "M3_destination",
+  "destination_correct": true,
+  "identity_re_evaluated": false,
+  "identity_basis": "V2 identity inherited from J2; not a new identity test",
+  "observed_destination_corrections": 0,
+  "correction_scope": "One submitted B1 destination hypothesis directly accepted without intervening revision; not whole-project correction count",
+  "evaluation_type": "one_pre_review_candidate_not_strict_blind_test",
+  "geometry_accuracy": null,
+  "physical_cut_count": null
+}

@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-22",
+  "code": {
+    "metal_via_pilot.py": "0f143d56986ea73075ff071b81cc603e3589307e1fd3d7013508fecca36413c3",
+    "joint_layers.py": "4182227dba6cdf6784b893a283f8fca31e17325a9f6d71d0182877ea2690d89b",
+    "layer_review.py": "5f39113a7bbb81d05a0a5722248b58aea183994171c5c48fac60c3d378f62ee4",
+    "conductive_layers.py": "3e3884e3bea87b1e7eb73429e2ebcb84f82b28e20b01568804f2ed013ee42715"
+  },
+  "records": [
+    {
+      "baseline": "m1-v1-m2-joint-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Execution code hashes changed; original package and manifest remain unchanged."
+    },
+    {
+      "baseline": "metal-short-branch-transfer-v1",
+      "status": "KNOWN_EXAMPLE_TRANSFER_VERIFIED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Execution code hashes changed; original package and manifest remain unchanged."
+    },
+    {
+      "baseline": "metal-new-interface-candidate-v1",
+      "status": "REVIEW_REQUIRED",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Execution code hashes changed; original package and manifest remain unchanged."
+    },
+    {
+      "baseline": "metal-new-interface-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Execution code hashes changed; original package and manifest remain unchanged."
+    },
+    {
+      "baseline": "m2-v2-m3-joint-pilot-v1",
+      "status": "REVIEW_REQUIRED",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m3-detail-raw.png": true,
+        "m2-detail-raw.png": true,
+        "m3-wide-raw.png": true,
+        "m2-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m3-location.png": true,
+        "m2-detail-marked.png": true,
+        "m3-wide-marked.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m3-detail-marked.png": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Execution code hashes changed; original package and manifest remain unchanged."
+    },
+    {
+      "baseline": "m2-v2-m3-joint-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m3-detail-raw.png": true,
+        "m2-detail-raw.png": true,
+        "m3-wide-raw.png": true,
+        "m2-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m3-location.png": true,
+        "m2-detail-marked.png": true,
+        "m3-wide-marked.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m3-detail-marked.png": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Execution code hashes changed; original package and manifest remain unchanged."
+    }
+  ]
+}

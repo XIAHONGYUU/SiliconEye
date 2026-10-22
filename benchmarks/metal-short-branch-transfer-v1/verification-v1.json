@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "primary_agent_verification_not_new_human_approval",
+  "status": "KNOWN_EXAMPLE_TRANSFER_VERIFIED_WITH_LIMITATIONS",
+  "evaluation_type": "known_historical_example_not_blind_recognition",
+  "input_and_artifact_hashes": "PASS",
+  "reused_code_hashes": "PASS",
+  "baseline_replay": {
+    "status": "PASS",
+    "unchanged_artifact_count": 16,
+    "record": "benchmarks/metal-short-branch-transfer-v1/baseline-replay-verification-v1.json"
+  },
+  "baseline_v1_v2_identity_preserved": {
+    "via_layer": "V1",
+    "local_connection_confirmed": true,
+    "M1_box_V1_present": false,
+    "M2_box_via_layer": "V2",
+    "M1_right_edge_V1_present": false
+  },
+  "shared_source_unknown_count": 6,
+  "model_minimum_M1_gap_px": 9.0,
+  "interface_support_region_count": 1,
+  "physical_cut_count": null,
+  "overlap_controls": [
+    {
+      "id": "W1-upper-model-overlap",
+      "lower_metal_id": "M1-W1-NEIGHBOR-TOP",
+      "upper_metal_id": "R2_corrected_gate_W_M2_01",
+      "status": "model_overlap_without_supported_via_not_a_confirmed_physical_absence",
+      "overlap_area_px2": 480.0,
+      "inferred_connection": false,
+      "physical_absence_confirmed": false
+    }
+  ],
+  "new_physical_connections": 0,
+  "source_correspondence": {
+    "status": "NOT_QUALIFIED",
+    "matrix": null,
+    "reason": "Historical destination identity is not a precise transform"
+  },
+  "placement_status": "AI_locator_in_shared_canvas_not_exact_joint_alignment",
+  "automatic_network_export_allowed": false,
+  "software_verification": {
+    "passed": 37,
+    "elapsed_seconds": 30.95,
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "ruff": "PASS"
+  },
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "local_links": "PASS",
+  "archive_payload_matches": true,
+  "archive_payload_sha256": "3d26e0591fe774201e3db131d9f959c1a26432b71e6d0c87ad1c1fd62e7e9803",
+  "browser_interaction": "not_performed",
+  "visual_inspection": "Viewed exact design polygon PNG and native M1/M2 wide and detailed observations; no photo overlay claimed",
+  "human_questions": [],
+  "global_skills_installed": false
+}

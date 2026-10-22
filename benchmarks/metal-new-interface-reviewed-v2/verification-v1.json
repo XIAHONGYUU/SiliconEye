@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "primary_agent_verification_not_original_human_adjudication",
+  "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+  "human_statement": "确认无误",
+  "scoped_connection": {
+    "from_metal": "M2-N1-BENT-STUB",
+    "to_metal": "M1-N1-STUB",
+    "via_id": "V1-N1-GROUP",
+    "via_kind": "V1",
+    "status": "human_confirmed_local_interface"
+  },
+  "evaluation_result": {
+    "identity_correct": true,
+    "destination_correct": true,
+    "observed_identity_or_destination_corrections": 0,
+    "correction_scope": "Submitted N1 identity/destination hypothesis received direct approval at its first review, without any identity/destination revision; not a count of whole-project rework",
+    "evaluation_type": "single_pre_review_candidate_not_strict_blind_test",
+    "geometry_accuracy": null,
+    "physical_cut_count": null
+  },
+  "initial_AI_unchanged": true,
+  "initial_AI_human_truth_stays_null": true,
+  "model_geometry_unchanged": true,
+  "baseline_replay": {
+    "first": 16,
+    "second": 16,
+    "initial_N1": 16
+  },
+  "baseline_replay_record": "benchmarks/metal-new-interface-reviewed-v2/baseline-replay-verification-v1.json",
+  "input_and_artifact_hashes": "PASS",
+  "reused_code_hashes": "PASS",
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "local_links": "PASS",
+  "archive_payload_matches": true,
+  "archive_payload_sha256": "274687c27df4bc203bd0db790caef419209f6dce49a5fef9af0d187c431b4f16",
+  "automatic_network_export_allowed": false,
+  "precise_projection_allowed": false,
+  "pending_questions": [],
+  "software_verification": {
+    "passed": 45,
+    "elapsed_seconds": 45.87,
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "ruff": "PASS"
+  },
+  "browser_interaction": "not_performed",
+  "visual_basis": "Previously inspected exact geometry and raw crops remain unchanged; reviewed page only changes the decision summary"
+}

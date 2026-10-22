@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "record_type": "derived_evaluation_after_scoped_human_review",
+  "case_id": "N2-downstream",
+  "sample_count": 1,
+  "reviewed_question_ids": [
+    "R1",
+    "D1"
+  ],
+  "sources": {
+    "initial_AI": {
+      "path": "benchmarks/n2-downstream-interfaces-v1/initial-ai-observation-v1.json",
+      "sha256": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5"
+    },
+    "submitted_request": {
+      "path": "benchmarks/n2-downstream-interfaces-v1/request-v1.json",
+      "sha256": "44f14c010a348affce77706c21440f1de7d32a504588a5df5fc961871d4fcac8"
+    },
+    "human_review": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+      "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+    }
+  },
+  "metrics": {
+    "route_continuity_correct": true,
+    "lower_via_identity_correct": true,
+    "lower_destination_correct": true,
+    "observed_corrections_after_submission": 0,
+    "evaluation_type": "one_known_chip_task_two_review_items_not_strict_blind_test",
+    "correction_scope": "Only continuity, terminal interpretation, via identity and destination between this submission and approval; not whole-project rework",
+    "physical_cut_count": null,
+    "geometry_accuracy": null
+  },
+  "human_truth": {
+    "R1": {
+      "conductor_id": "M2-N2-LEFT-RAIL",
+      "continuity_confirmed": true,
+      "visible_lower_terminal_confirmed": true
+    },
+    "D1": {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_layer": "V2",
+      "via_group_id": "V2-N2-LOWER-GROUP",
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "identity_confirmed": true,
+      "connection_confirmed": true
+    }
+  },
+  "limits": [
+    "One route task, not three independent recognition samples",
+    "M1 U1/U2/U3 remain unknown",
+    "No whole-net completeness or exact registration measurement"
+  ]
+}

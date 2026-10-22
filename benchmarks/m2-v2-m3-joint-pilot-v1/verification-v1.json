@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "primary_agent_software_and_delivery_verification_not_human_physical_review",
+  "status": "REVIEW_REQUIRED",
+  "geometry_status": "PASS",
+  "pending_questions": [
+    "K1"
+  ],
+  "confirmed_new_M3_connections": 0,
+  "source_and_artifact_hashes": "PASS",
+  "verified_input_count": 44,
+  "artifact_count": 16,
+  "code_template_reused_code_hashes": "PASS",
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "HTML_local_links": "PASS",
+  "HTML_local_link_count": 14,
+  "PNG_decode": "PASS",
+  "visual_inspection": {
+    "basis": "Native M2/M3 overview and broad row context; reviewed marked wide crops, 4x native details and exact joint-design raster. Final PNG/SVG/HTML are byte-identical to inspected draft.",
+    "browser_interaction": "not_performed",
+    "not_verified": "Physical M3 carrier identity and precise independent registration remain pending."
+  },
+  "M2_unchanged": true,
+  "initial_AI_human_truth_stays_null": true,
+  "physical_cut_count": null,
+  "support_proxy_count": 1,
+  "automatic_network_export_allowed": false,
+  "precise_projection_allowed": false,
+  "baseline_replay": {
+    "m1-v1-m2-joint-reviewed-v2": 16,
+    "metal-short-branch-transfer-v1": 16,
+    "metal-new-interface-candidate-v1": 16,
+    "metal-new-interface-reviewed-v2": 16
+  },
+  "baseline_replay_record": "benchmarks/m2-v2-m3-joint-pilot-v1/baseline-replay-verification-v1.json",
+  "archive_payload_matches": true,
+  "archive_payload_sha256": "e72b76d30cc0567181e5afe696876567c6f8b6f13b0eb06a665a1a4460c2faee",
+  "software_verification": {
+    "passed": 54,
+    "elapsed_seconds": 63.48,
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "ruff": "PASS",
+    "git_diff_check": "PASS"
+  }
+}

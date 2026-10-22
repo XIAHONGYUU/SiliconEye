@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "record_type": "human_correction_of_prior_source_identity",
+  "sources": {
+    "prior_candidate": {
+      "path": "benchmarks/conductive-stack-v1/request-v1.json",
+      "sha256": "7dd2c352d9d76f7d3e69ce63ec55b93c9fa47f9e72bec1b7818a2838426d8210"
+    },
+    "human_review": {
+      "path": "benchmarks/conductive-stack-v2/human-review-v1.json",
+      "sha256": "6c0fb5c525e4b1aa621cb7b21b77d27980a2157beff67b23c8f4bd877fb543e4"
+    }
+  },
+  "prior_M2_V1_label_correct": false,
+  "prior_9_pair_same_via_registration_valid": false,
+  "prior_single_V2_support_was_complete_reconstruction": false,
+  "current_local_V2_count": 12,
+  "current_local_V2_shape": [
+    3,
+    4
+  ],
+  "correction_scope": "One human correction round for this M2 evidence identity and count; not whole-project rework count. Earlier K1 B1 destination approval remains scoped and valid.",
+  "current_geometry_accuracy": null,
+  "global_accuracy_estimate": null
+}

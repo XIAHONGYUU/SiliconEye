@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "kind": "M1_V1_M2_joint_pilot",
+  "parent_M1_spec": {
+    "path": "benchmarks/m1-geometry-pilot-reviewed-v2/spec-v1.json",
+    "sha256": "45161cd03ef1a586dfc52812e7153fe77573b7254ef17ccd1d7c239df19a233e"
+  },
+  "parent_M1_model": {
+    "path": "docs/assets/m1-geometry-pilot-reviewed-v2/model.json",
+    "sha256": "c0df67b6a12dae6506dc08d4e9360e62a9c2916edf5afa107abc23c5a0b12b63"
+  },
+  "parent_M1_report": {
+    "path": "docs/assets/m1-geometry-pilot-reviewed-v2/report.json",
+    "sha256": "b4622f41224f2f8dfa6f5009d501ec6e9c1658cb48d4c890d2b152a8231b9c5b"
+  },
+  "design_bounds": [
+    2080,
+    1910,
+    2490,
+    2290
+  ],
+  "source_windows": {
+    "m1": {
+      "wide": [
+        1880,
+        1870,
+        2430,
+        2300
+      ],
+      "detail": [
+        1910,
+        1890,
+        2050,
+        2010
+      ]
+    },
+    "m2": {
+      "wide": [
+        1880,
+        1840,
+        2430,
+        2300
+      ],
+      "detail": [
+        1910,
+        1860,
+        2050,
+        1980
+      ]
+    }
+  },
+  "observations": [
+    {
+      "id": "A11",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1969,
+        1939
+      ],
+      "m2_xy": [
+        1961,
+        1912
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A12",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1985,
+        1939
+      ],
+      "m2_xy": [
+        1981,
+        1912
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A13",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        2006,
+        1939
+      ],
+      "m2_xy": [
+        1997,
+        1912
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A21",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1969,
+        1959
+      ],
+      "m2_xy": [
+        1961,
+        1929
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A22",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1985,
+        1959
+      ],
+      "m2_xy": [
+        1981,
+        1929
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A23",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        2006,
+        1959
+      ],
+      "m2_xy": [
+        1997,
+        1929
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A31",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1969,
+        1977
+      ],
+      "m2_xy": [
+        1961,
+        1946
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A32",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        1985,
+        1977
+      ],
+      "m2_xy": [
+        1981,
+        1946
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    },
+    {
+      "id": "A33",
+      "structure_id": "upper_left_guard_array",
+      "m1_xy": [
+        2006,
+        1977
+      ],
+      "m2_xy": [
+        1997,
+        1946
+      ],
+      "actor": "AI",
+      "status": "candidate",
+      "basis": "Separate visual brightness-center observations on the native photographs; center not a measured cut edge"
+    }
+  ],
+  "fit_ids": [
+    "A11",
+    "A13",
+    "A31"
+  ],
+  "same_array_tolerance_native_px": 5,
+  "candidate_M1_addition": {
+    "metal_id": "M1-P08",
+    "status": "AI_continuation_candidate_not_approved",
+    "part": {
+      "id": "P08-array-continuation",
+      "bounds": [
+        2110,
+        1942,
+        2193,
+        1996
+      ],
+      "basis": "Visible contact-array region left of reviewed P08 upper-left corner. Extent and connection remain candidates; not filling the original ring gap."
+    }
+  },
+  "M2_features": [
+    {
+      "id": "M2-J01",
+      "layer": "M2",
+      "design_path": [
+        [
+          2151,
+          1940
+        ],
+        [
+          2151,
+          2270
+        ]
+      ],
+      "design_width": 84,
+      "source_path": [
+        [
+          1970,
+          1912
+        ],
+        [
+          1982,
+          2260
+        ]
+      ],
+      "source_frame": "m2",
+      "end_states": [
+        "continues_beyond_review_window_unknown",
+        "continues_beyond_review_window_unknown"
+      ],
+      "status": "AI_candidate",
+      "net_id": null
+    }
+  ],
+  "cuts": [
+    {
+      "id": "V1-J-A11",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A11",
+      "bounds": [
+        2145,
+        1948,
+        2151,
+        1954
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A12",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A12",
+      "bounds": [
+        2162,
+        1948,
+        2168,
+        1954
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A13",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A13",
+      "bounds": [
+        2179,
+        1948,
+        2185,
+        1954
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A21",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A21",
+      "bounds": [
+        2145,
+        1966,
+        2151,
+        1972
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A22",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A22",
+      "bounds": [
+        2162,
+        1966,
+        2168,
+        1972
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A23",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A23",
+      "bounds": [
+        2179,
+        1966,
+        2185,
+        1972
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A31",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A31",
+      "bounds": [
+        2145,
+        1984,
+        2151,
+        1990
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A32",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A32",
+      "bounds": [
+        2162,
+        1984,
+        2168,
+        1990
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    },
+    {
+      "id": "V1-J-A33",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "A33",
+      "bounds": [
+        2179,
+        1984,
+        2185,
+        1990
+      ],
+      "status": "AI_candidate",
+      "lower_metal_id": "M1-P08",
+      "upper_metal_id": "M2-J01",
+      "electrical_connection_confirmed": false
+    }
+  ],
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 6,
+    "enclosure_px": 2,
+    "unit": "relative_design_px",
+    "basis": "Pilot geometry budget only; visual blob size is not a calibrated cut dimension",
+    "cut_size_px": 6,
+    "pitch_xy": [
+      17,
+      18
+    ]
+  },
+  "unknown_edge_column": {
+    "id": "J-left-edge-column",
+    "m1_bounds": [
+      1937,
+      1930,
+      1953,
+      1985
+    ],
+    "m2_bounds": [
+      1935,
+      1905,
+      1953,
+      1953
+    ],
+    "status": "unknown",
+    "cut_count": null,
+    "basis": "Possible extra via column along the M1 vertical trunk, not inferred absent and not fabricated"
+  },
+  "human_questions": [
+    {
+      "id": "J1",
+      "question": "橙圈这组亮点是否为 M1↔M2 的 V1，且把环侧 M1 接到 M2 这根宽竖线？"
+    },
+    {
+      "id": "J2",
+      "question": "黄色窄框内、紧贴 M1 竖向主干的位置是否还有一列 V1？看不清可保留未知。"
+    }
+  ],
+  "limits": [
+    "Same-array correspondence is not an independent-structure acceptance",
+    "No exact source-to-design transform; corner/spacing express reconstructed layout candidates",
+    "New M1 continuation is not part of earlier Q1–Q3 approval",
+    "M2 is a visible segment, not a complete conductor or net",
+    "Unknown regions and existing CT source restrictions remain inherited",
+    "No extra via inferred from M1/M2 overlap; possible left column left unknown"
+  ]
+}

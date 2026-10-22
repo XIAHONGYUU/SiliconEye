@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Known historical A/C fanout replay; not fresh recognition or full-net acceptance",
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_metal_fanout.py tests/test_conductive_source_correction.py",
+    "passed": 19,
+    "seconds": 37.57
+  },
+  "ruff": "PASS for metal_fanout.py and test_metal_fanout.py",
+  "git_diff_check": "PASS",
+  "manifest": {
+    "path": "docs/assets/metal-fanout-validation-v1/manifest.json",
+    "sha256": "668cbe22010491e8cb3f8d952918e1f52892c0cf275e0629409a68a5c7ae8d0c"
+  },
+  "output_artifact_hashes_checked": 16,
+  "verified_input_hashes_checked": 15,
+  "code_hashes_checked": 5,
+  "html_links_checked": 12,
+  "js_syntax_scripts": 2,
+  "svg_xml": "PASS",
+  "native_crop_equality": "4 raw wide/detail crops checked pixel-for-pixel by test",
+  "manual_visual_inspection": [
+    "local-design.png",
+    "m2-wide-marked.png",
+    "m3-AC-context.png"
+  ],
+  "browser_interaction_tested": false,
+  "parent_common_snapshot_unchanged": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "parent_conductive_objects_preserved": 33,
+  "physical_PDK_DRC": false,
+  "common_canvas_placement_qualified": false,
+  "replay_requires_existing_local_history_sources": true,
+  "prior_entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-22-fanout-validation.md",
+    "payload_sha256": "c0d19a63f9745eb6ffe43c554f299613b409b2944a2d2f18dae29d635793af8b",
+    "bytes": 14569,
+    "exact_payload_preserved": true
+  },
+  "new_human_questions": [],
+  "new_physical_connections": 0,
+  "git_push_performed": false
+}

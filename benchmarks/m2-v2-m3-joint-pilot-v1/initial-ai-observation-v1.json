@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_new_pair_human_review",
+  "date": "2026-10-22",
+  "sources": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "prior_human": {
+      "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/human-review-v1.json",
+      "sha256": "d7329254e454b193c49b52fd2ac187a8517a6cf769a96308e1be6af2eed65ad7"
+    }
+  },
+  "inherited_via": {
+    "id": "J-M2-EDGE-V2",
+    "layer": "V2",
+    "layer_pair": [
+      "M2",
+      "M3"
+    ],
+    "source_frame": "m2",
+    "source_bounds": [
+      1935,
+      1905,
+      1953,
+      1953
+    ],
+    "identity_status": "human_confirmed",
+    "design_bounds": null,
+    "cut_count": null,
+    "upper_metal_id": null,
+    "M3_connection_confirmed": false
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          1935,
+          1905,
+          1953,
+          1953
+        ],
+        "color": "#ffb04f",
+        "label": "V2 (reviewed)"
+      }
+    ]
+  },
+  "native_traces": {
+    "m2": [
+      {
+        "points": [
+          [
+            1970,
+            1970
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "M2-J01"
+      }
+    ],
+    "m3": [
+      {
+        "points": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "B1 M3 candidate"
+      },
+      {
+        "points": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "color": "#ffe36b",
+        "label": "B0 adjacent M3"
+      }
+    ]
+  },
+  "frozen_lower_features": [
+    {
+      "id": "M2-J01",
+      "layer": "M2",
+      "design_path": [
+        [
+          2151,
+          1940
+        ],
+        [
+          2151,
+          2270
+        ]
+      ],
+      "design_width": 84,
+      "source_path": [
+        [
+          1970,
+          1912
+        ],
+        [
+          1982,
+          2260
+        ]
+      ],
+      "source_frame": "m2",
+      "end_states": [
+        "continues_beyond_review_window_unknown",
+        "continues_beyond_review_window_unknown"
+      ],
+      "status": "AI_candidate",
+      "net_id": null
+    }
+  ],
+  "features_by_layer": {
+    "M2": [
+      {
+        "id": "M2-J01",
+        "layer": "M2",
+        "design_path": [
+          [
+            2151,
+            1940
+          ],
+          [
+            2151,
+            2270
+          ]
+        ],
+        "design_width": 84,
+        "source_path": [
+          [
+            1970,
+            1912
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "source_frame": "m2",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "status": "AI_candidate",
+        "net_id": null
+      }
+    ],
+    "M3": [
+      {
+        "id": "M3-J-B1",
+        "layer": "M3",
+        "design_path": [
+          [
+            1940,
+            1969
+          ],
+          [
+            2480,
+            1969
+          ]
+        ],
+        "design_width": 56,
+        "source_frame": "m3",
+        "source_path": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "net_id": null
+      },
+      {
+        "id": "M3-J-B0",
+        "layer": "M3",
+        "design_path": [
+          [
+            1940,
+            1915
+          ],
+          [
+            2480,
+            1915
+          ]
+        ],
+        "design_width": 6,
+        "source_frame": "m3",
+        "source_path": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "status": "AI_context_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "net_id": null
+      }
+    ]
+  },
+  "hypothesis": {
+    "id": "J-M2-V2-M3-B1",
+    "lower_metal_id": "M2-J01",
+    "via_group_id": "J-M2-EDGE-V2",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "status": "AI_candidate_not_human_confirmed",
+    "basis": "M2 reviewed V2 column lies at the upper end of the broad vertical rail; the M3 broad horizontal band occupies the corresponding row. Narrow parallel M3 lines lie above it. Relative macro correspondence only, no qualified exact projection."
+  },
+  "human_questions": [
+    {
+      "id": "K1",
+      "question": "已确认的M2左缘V2，是否接入M3图中标为B1的紫色粗横向母线（而非上方黄色B0细横线）？只需确认承载横线，不必重审V2身份或逐孔计数。"
+    }
+  ],
+  "alternative": "B0 and other adjacent thin M3 lines must not be selected by nearest-pixel overlap. M3 bright patches elsewhere are not automatically evidence of this V2 or a typed V3.",
+  "correspondence_limit": "Wide M2/M3 row context supports a coarse broad-bus hypothesis. No verified noncollinear shared landmarks and independent held-out structure are available here; horizontal location within the broad bus and exact vertical offset remain unqualified. No matrix adopted from M1/M2 or distant historical M2/M3 fits.",
+  "evaluation": {
+    "human_destination": null,
+    "destination_correct": null,
+    "corrections_required": null,
+    "physical_cut_count": null
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-22",
+  "statement": "确认接到紫色B1粗横向母线",
+  "scope": "K1 only: M2-J01 via the already confirmed J-M2-EDGE-V2 connects to M3-J-B1 broad horizontal bus. No precise boundary, cut count, full-bus extent, independent registration or whole-net approval.",
+  "decisions": {
+    "id": "J-M2-V2-M3-B1",
+    "lower_metal_id": "M2-J01",
+    "via_group_id": "J-M2-EDGE-V2",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "connection_confirmed": true
+  },
+  "evaluation_result": {
+    "destination_correct": true,
+    "identity_re_evaluated": false,
+    "identity_basis": "V2 identity inherited from J2; not a new identity test",
+    "observed_destination_corrections": 0,
+    "correction_scope": "One submitted B1 destination hypothesis directly accepted without intervening revision; not whole-project correction count",
+    "evaluation_type": "one_pre_review_candidate_not_strict_blind_test",
+    "geometry_accuracy": null,
+    "physical_cut_count": null
+  },
+  "sources": {
+    "parent_spec": {
+      "path": "benchmarks/m2-v2-m3-joint-pilot-v1/spec-v1.json",
+      "sha256": "629bff676ac5718783d91828a4c2fddef6b66d4b00ebe67bf1a023a51ca2bdee"
+    },
+    "initial_AI": {
+      "path": "benchmarks/m2-v2-m3-joint-pilot-v1/initial-ai-observation-v1.json",
+      "sha256": "11dd41ba3802fe33909ba5a451554c887b7bd417a3631929dcce2df1cd92a95e"
+    },
+    "model": {
+      "path": "docs/assets/m2-v2-m3-joint-pilot-v1/model.json",
+      "sha256": "70d7d81cd0e5adf943c6d7ffc1e813a909c0c0c80724a292997a403adca763b0"
+    },
+    "report": {
+      "path": "docs/assets/m2-v2-m3-joint-pilot-v1/report.json",
+      "sha256": "aa9cdf6b77e13c7772db8cf5751946ea689eb21c88c7c0254e86bce018983698"
+    },
+    "manifest": {
+      "path": "docs/assets/m2-v2-m3-joint-pilot-v1/manifest.json",
+      "sha256": "b9286c5406ed6337add7df68c40e00a0f65352c57d3477baf0aff1ab79d1c408"
+    },
+    "index": {
+      "path": "docs/assets/m2-v2-m3-joint-pilot-v1/index.html",
+      "sha256": "a2903f887591f029f0ad55ac22f909d7bfaca66d8c22c97ded947add86722d98"
+    }
+  }
+}

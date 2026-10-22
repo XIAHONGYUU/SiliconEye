@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-22",
+  "statement": "你在M2上识别处V1是不对的，从逻辑上来说，M2上之有V2，而且是3x4各V2",
+  "scope": "This photograph stack and displayed M2 array. M2 visible cuts are V2, three rows by four columns, total twelve. Does not withdraw the M1-side V1 identity or the previously reviewed local metal destinations; no exact pixel edges approved.",
+  "decisions": {
+    "evidence_frame": "m2",
+    "visible_via_layer": "V2",
+    "V1_visible_here": false,
+    "array_rows": 3,
+    "array_columns": 4,
+    "local_group_cut_count": 12
+  },
+  "sources": {
+    "parent_registry": {
+      "path": "docs/assets/conductive-stack-v1/model.json",
+      "sha256": "aa0481024f43b76814f209b568e9f7de29be18c0b2027810c9eb9f4df0c890a0"
+    },
+    "parent_request": {
+      "path": "benchmarks/conductive-stack-v1/request-v1.json",
+      "sha256": "7dd2c352d9d76f7d3e69ce63ec55b93c9fa47f9e72bec1b7818a2838426d8210"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "prior_B1_review": {
+      "path": "benchmarks/m2-v2-m3-joint-reviewed-v2/human-review-v1.json",
+      "sha256": "743bc97c80beba6931863d556865148bb88ea09f1f15690c25daf0f4cd40cbce"
+    }
+  }
+}

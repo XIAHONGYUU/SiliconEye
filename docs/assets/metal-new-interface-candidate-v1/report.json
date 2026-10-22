@@ -1,0 +1,363 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "evaluation_type": "AI_pre_review_candidate_not_strict_blind_test",
+  "geometry": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "M1-N1-STUB",
+            "M1-N1-UPPER-CONTEXT"
+          ],
+          "gap_px": 10.0
+        },
+        {
+          "ids": [
+            "M1-N1-STUB",
+            "M1-N1-LOWER-CONTEXT"
+          ],
+          "gap_px": 9.0
+        },
+        {
+          "ids": [
+            "M1-N1-UPPER-CONTEXT",
+            "M1-N1-LOWER-CONTEXT"
+          ],
+          "gap_px": 65.0
+        }
+      ],
+      "minimum_gap_px": 9.0
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [],
+      "minimum_gap_px": null
+    }
+  },
+  "via_geometry": {
+    "status": "PASS",
+    "errors": [],
+    "candidate_cut_count": 1,
+    "count_complete": false,
+    "electrical_connection_confirmed": false,
+    "unit": "relative_design_px_not_PDK"
+  },
+  "overlap_controls": [
+    {
+      "id": "N1-upper-model-overlap",
+      "lower_metal_id": "M1-N1-UPPER-CONTEXT",
+      "upper_metal_id": "M2-N1-BENT-STUB",
+      "status": "model_overlap_without_supported_via_not_a_confirmed_physical_absence",
+      "overlap_area_px2": 152.0,
+      "inferred_connection": false,
+      "physical_absence_confirmed": false
+    }
+  ],
+  "exact_pixel_or_cut_count_human_approved": false,
+  "baseline_artifacts_preserved": true,
+  "baseline_human_decisions": {
+    "via_layer": "V1",
+    "local_connection_confirmed": true,
+    "M1_box_V1_present": false,
+    "M2_box_via_layer": "V2",
+    "M1_right_edge_V1_present": false
+  },
+  "baseline_unknown_scopes": {
+    "sites": [],
+    "unknown_scopes": [
+      {
+        "id": "U-AA-F01951",
+        "kind": "unlocated_isolated_AA_CT_unknown",
+        "AA_target": "AA-F01951",
+        "layout_bounds": [
+          2017.0,
+          341.0,
+          2055.0,
+          349.0
+        ],
+        "criticality": "no_known_device_port_inferred",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "AA_legacy_locator_native_bounds": [
+          1948.061891893287,
+          274.3223129992924,
+          1989.1744848545168,
+          283.76579389755176
+        ],
+        "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+            "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1730,
+            180,
+            2120,
+            410
+          ],
+          "poly": [
+            1450,
+            0,
+            2250,
+            330
+          ]
+        }
+      },
+      {
+        "id": "U-AA-F01952",
+        "kind": "unlocated_isolated_AA_CT_unknown",
+        "AA_target": "AA-F01952",
+        "layout_bounds": [
+          1934.0,
+          341.0,
+          1972.0,
+          350.0
+        ],
+        "criticality": "no_known_device_port_inferred",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "AA_legacy_locator_native_bounds": [
+          1858.1303719137622,
+          272.2163884790137,
+          1899.3694753010689,
+          282.7362753810213
+        ],
+        "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+            "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1730,
+            180,
+            2120,
+            410
+          ],
+          "poly": [
+            1450,
+            0,
+            2250,
+            330
+          ]
+        }
+      },
+      {
+        "id": "U-H1",
+        "kind": "guard_CT_observability_unknown",
+        "AA_target": "AA2-TOP-H1-AA-0",
+        "layout_bounds": [
+          270.0039,
+          269.4849,
+          5226.7198,
+          284.7099
+        ],
+        "criticality": "guard_body_metal_access_not_proven",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric. The POLY photo partly clips the upper band.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "data/test_chip/tile_full/m1.jpg",
+            "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1300,
+            160,
+            2250,
+            410
+          ],
+          "poly": [
+            1300,
+            0,
+            2250,
+            150
+          ],
+          "m1": [
+            1300,
+            160,
+            2250,
+            360
+          ]
+        }
+      },
+      {
+        "id": "U-H2",
+        "kind": "guard_CT_observability_unknown",
+        "AA_target": "AA2-TOP-H2-AA-0",
+        "layout_bounds": [
+          268.0,
+          370.0,
+          5271.0,
+          384.0
+        ],
+        "criticality": "guard_body_metal_access_not_proven",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "data/test_chip/tile_full/m1.jpg",
+            "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1300,
+            160,
+            2250,
+            410
+          ],
+          "poly": [
+            1300,
+            0,
+            2250,
+            150
+          ],
+          "m1": [
+            1300,
+            160,
+            2250,
+            360
+          ]
+        }
+      },
+      {
+        "id": "L-CLIPPED-AA-F01744",
+        "kind": "device_body_CT_source_outside_current_photo",
+        "AA_target": "AA-F01744",
+        "layout_bounds": [
+          354,
+          522,
+          456,
+          574
+        ],
+        "no_CT_is_not_proven_absence": true,
+        "status": "excluded_from_source_complete_claim",
+        "tracing_policy": "keep_terminal_access_unknown_here",
+        "mandatory_human_action_now": false,
+        "evidence_ref": {
+          "path": "benchmarks/ct-work-layer-closeout-v3/port-source-checks-v1.json",
+          "sha256": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae"
+        }
+      },
+      {
+        "id": "S3-AA4-LEFT-SD-ACCESS",
+        "kind": "invalid_CT_assignment_retired_actual_diffusion_access_unknown",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+        "layout_bounds": [
+          1348.3168,
+          3765.8875,
+          1362.03645,
+          3794.613
+        ],
+        "status": "no_independent_source_drain_CT_evidence_here",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "question_for_human": null,
+        "tracing_policy": "do_not_infer_left_diffusion_CT_or_M1_access_from_the_shared_gate_contact",
+        "review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      }
+    ],
+    "not_hypothetical_hole_slots": true
+  },
+  "source_correspondence": {
+    "status": "NOT_QUALIFIED",
+    "matrix": null,
+    "reason": "Candidate correspondence not independently qualified"
+  },
+  "placement_status": "AI_locator_in_shared_canvas_not_exact_joint_alignment",
+  "precise_projection_allowed": false,
+  "automatic_network_export_allowed": false,
+  "new_physical_connections": 0,
+  "physical_cut_count": null,
+  "physical_PDK_DRC": false,
+  "human_questions": [
+    {
+      "id": "N1",
+      "question": "橙圈处是否为V1，并把左侧短竖M1（N1）接到左侧折线M2（N1?）的下端？右侧灰色REF-W1为已审参照；若不对应，请指出正确端部。"
+    }
+  ],
+  "requires_user_action_now": true,
+  "skill_generalization_validated": false,
+  "hypothesized_local_connection": {
+    "from_metal": "M2-N1-BENT-STUB",
+    "to_metal": "M1-N1-STUB",
+    "via_id": "V1-N1-GROUP",
+    "via_kind": "V1",
+    "status": "AI_candidate_not_human_reviewed"
+  },
+  "AI_review_note": "新候选，尚无人工接入裁决",
+  "initial_AI_evaluation": {
+    "type": "pre_review_candidate_not_strict_blind_test",
+    "human_ground_truth": null,
+    "identity_correct": null,
+    "destination_correct": null,
+    "correction_count": null
+  },
+  "preceding_design_approval": {
+    "path": "benchmarks/metal-short-branch-transfer-v1/design-approval-v1.json",
+    "sha256": "562366105713930426fa6e1fe9f37f8073ff09a70737ecaf402de51682914a17"
+  }
+}

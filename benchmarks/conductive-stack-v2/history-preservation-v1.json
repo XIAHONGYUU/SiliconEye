@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-22",
+  "note": "Old wrong M2/V1 labels and 4.52px fit remain archived, not valid current evidence. Replayed snapshot path necessarily targets the new output directory.",
+  "records": [
+    {
+      "historical_package": "conductive-stack-v1",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m3-detail-raw.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m3-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "chain-design.png": true,
+        "joint-design.svg": true,
+        "m3-location.png": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "m3-wide-marked.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m3-detail-marked.png": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "request.json": true
+      },
+      "snapshot_payload_equal_after_output_path_normalization": true,
+      "acceptance_status": "HISTORICAL_REPRODUCTION_ONLY_NOT_CURRENT_IDENTITY_BASELINE"
+    },
+    {
+      "historical_package": "m1-v1-m2-joint-reviewed-v2",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "snapshot_payload_equal_after_output_path_normalization": false,
+      "acceptance_status": "HISTORICAL_REPRODUCTION_ONLY_NOT_CURRENT_IDENTITY_BASELINE"
+    }
+  ]
+}

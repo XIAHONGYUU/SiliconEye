@@ -1,0 +1,190 @@
+{
+  "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+  "checked_visible_M2_extent": [
+    1470,
+    1900,
+    1560,
+    2820
+  ],
+  "retained_approved_connection": {
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_group_id": "V2-N2-GROUP",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1"
+  },
+  "route_continuity_status": "human_confirmed_continuous_to_visible_lower_terminal",
+  "newly_observed_interfaces": [],
+  "middle_scan": [
+    {
+      "id": "S1",
+      "source_frame": "m2",
+      "bounds": [
+        1470,
+        1960,
+        1560,
+        2705
+      ],
+      "result": "No additional sufficiently clear V2 group identified on the visible middle segment; not proof of physical absence",
+      "status": "AI_visual_scan_not_exhaustive"
+    }
+  ],
+  "m1_connection_checks": [
+    {
+      "id": "U1",
+      "source_frame": "m1",
+      "source_bounds": [
+        1505,
+        1875,
+        1545,
+        1945
+      ],
+      "identity": "unknown",
+      "note": "Upper M1 horizontal junction is a locator only; no reliable V1-to-N2 assignment established"
+    },
+    {
+      "id": "U2",
+      "source_frame": "m1",
+      "source_bounds": [
+        1525,
+        2270,
+        1575,
+        2335
+      ],
+      "identity": "unknown",
+      "note": "Middle horizontal/vertical context: crossing or proximity cannot establish V1 or connection to N2"
+    },
+    {
+      "id": "U3",
+      "source_frame": "m1",
+      "source_bounds": [
+        1524,
+        2675,
+        1570,
+        2740
+      ],
+      "identity": "unknown",
+      "note": "Lower broad M1 junction and downward edge observed; V1 identity and N2 landing are not established"
+    }
+  ],
+  "new_confirmed_interfaces": 1,
+  "via_physical_cut_count": null,
+  "automatic_network_export_allowed": false,
+  "net_edges": [],
+  "complete_network": false,
+  "shared_canvas_placement": null,
+  "precise_projection_allowed": false,
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "parent_conductive_registry": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "parent_conductive_object_count": 33,
+  "parent_unchanged": true,
+  "human_questions": [],
+  "requires_user_action_now": false,
+  "limits": [
+    "M1 U1/U2/U3 remain unknown and are not adopted as V1 connections; proximity to an M2 trace is not evidence.",
+    "No qualified cross-layer projection, same-hole fit or common-canvas placement.",
+    "D1 via count, exact cut/metal boundaries and all L1 other attachments unknown.",
+    "Middle-segment scan without a clear extra V2 is not proof of absence or complete interface coverage.",
+    "Known N2 to B1 review and all 33 common conductive objects/material layers stay unchanged.",
+    "L1 is a new local carrier label, not a completed M3 net or an assertion of identity with B1."
+  ],
+  "reviewed_local_connections": [
+    {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_layer": "V2",
+      "via_group_id": "V2-N2-LOWER-GROUP",
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "identity_confirmed": true,
+      "connection_confirmed": true,
+      "status": "human_confirmed_local_interface_not_complete_net",
+      "human_review": {
+        "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+        "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+      }
+    }
+  ],
+  "scoped_human_review": {
+    "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+    "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+  },
+  "derived_reviewed_path": {
+    "conductor_ids": [
+      "M3-J-B1",
+      "M2-N2-LEFT-RAIL",
+      "M3-N2-LOWER-BUS-CANDIDATE"
+    ],
+    "via_group_ids": [
+      "V2-N2-GROUP",
+      "V2-N2-LOWER-GROUP"
+    ],
+    "via_layers": [
+      "V2",
+      "V2"
+    ],
+    "basis": "Inherited N2 upper approval plus R1 continuity and D1 lower approval",
+    "complete_network": false
+  },
+  "evaluation_result": {
+    "schema_version": 1,
+    "record_type": "derived_evaluation_after_scoped_human_review",
+    "case_id": "N2-downstream",
+    "sample_count": 1,
+    "reviewed_question_ids": [
+      "R1",
+      "D1"
+    ],
+    "sources": {
+      "initial_AI": {
+        "path": "benchmarks/n2-downstream-interfaces-v1/initial-ai-observation-v1.json",
+        "sha256": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5"
+      },
+      "submitted_request": {
+        "path": "benchmarks/n2-downstream-interfaces-v1/request-v1.json",
+        "sha256": "44f14c010a348affce77706c21440f1de7d32a504588a5df5fc961871d4fcac8"
+      },
+      "human_review": {
+        "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+        "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+      }
+    },
+    "metrics": {
+      "route_continuity_correct": true,
+      "lower_via_identity_correct": true,
+      "lower_destination_correct": true,
+      "observed_corrections_after_submission": 0,
+      "evaluation_type": "one_known_chip_task_two_review_items_not_strict_blind_test",
+      "correction_scope": "Only continuity, terminal interpretation, via identity and destination between this submission and approval; not whole-project rework",
+      "physical_cut_count": null,
+      "geometry_accuracy": null
+    },
+    "human_truth": {
+      "R1": {
+        "conductor_id": "M2-N2-LEFT-RAIL",
+        "continuity_confirmed": true,
+        "visible_lower_terminal_confirmed": true
+      },
+      "D1": {
+        "id": "D1",
+        "lower_metal_id": "M2-N2-LEFT-RAIL",
+        "via_layer": "V2",
+        "via_group_id": "V2-N2-LOWER-GROUP",
+        "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+        "upper_display_label": "L1",
+        "identity_confirmed": true,
+        "connection_confirmed": true
+      }
+    },
+    "limits": [
+      "One route task, not three independent recognition samples",
+      "M1 U1/U2/U3 remain unknown",
+      "No whole-net completeness or exact registration measurement"
+    ]
+  }
+}

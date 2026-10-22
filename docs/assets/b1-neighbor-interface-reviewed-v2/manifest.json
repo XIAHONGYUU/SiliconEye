@@ -1,0 +1,51 @@
+{
+  "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+  "parent_package": {
+    "path": "docs/assets/b1-neighbor-interface-v1/manifest.json",
+    "sha256": "91a6e46da970dfdb3ec6ffb367d6490dbbcceddbb62f842da72e57efba908133"
+  },
+  "human_review": {
+    "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+    "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+  },
+  "reviewed_record": {
+    "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+    "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+  },
+  "evaluation": {
+    "path": "benchmarks/b1-neighbor-interface-reviewed-v2/evaluation-result-v1.json",
+    "sha256": "fdddd73b8727f63174b2831a9e51fd18d5307d326e565e5401b06ce896ddb18b"
+  },
+  "verified_inputs": {
+    "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168",
+    "benchmarks/b1-neighbor-interface-v1/request-v1.json": "eb2335be4b5914927d7a7504070cc767ffd0f5fa5ab69625cde240f0f8f5959d",
+    "benchmarks/b1-neighbor-interface-v1/initial-ai-observation-v1.json": "fbffb91f8d59ccd78e9f739f2ce4b50d0bf51acb366a7e05c530f3636346a421",
+    "docs/assets/b1-neighbor-interface-v1/index.html": "99a6438bac33e25ab5485adda71a17f1b500dd3278bd3405aae6ce1d4de2f3e7",
+    "docs/assets/b1-neighbor-interface-v1/report.json": "4e96e48e35f06870a96e008d2eec5958c6514f581eb1340e5d1f33df3c2ea166",
+    "docs/assets/b1-neighbor-interface-v1/manifest.json": "91a6e46da970dfdb3ec6ffb367d6490dbbcceddbb62f842da72e57efba908133",
+    "configs/joint-work-layer-v5.json": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088",
+    "docs/assets/conductive-stack-v2/model.json": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6",
+    "data/test_chip/tile_full/m2.jpg": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "data/test_chip/tile_full/m3.jpg": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "benchmarks/conductive-stack-v2/human-review-v1.json": "6c0fb5c525e4b1aa621cb7b21b77d27980a2157beff67b23c8f4bd877fb543e4",
+    "benchmarks/m2-v2-m3-joint-reviewed-v2/human-review-v1.json": "743bc97c80beba6931863d556865148bb88ea09f1f15690c25daf0f4cd40cbce"
+  },
+  "source_images": "exact byte copies of submitted package; no geometry or evidence-label rewriting",
+  "artifacts": {
+    "m2-wide-marked.png": "8d0e66f48d8f92541bc1492d5ed19bafd94c4f86df54b05e9ddd903dc7aa3f38",
+    "m3-detail-raw.png": "2a6159d2f625d9725cfbc2a8e3f2c30e8dddba4aceffb61e0712408b63d9d5ad",
+    "m2-detail-raw.png": "f609a8157cbb65f835d5a795da4cbe4a253d8919b3cbc239f676db35e0a032fa",
+    "m3-wide-raw.png": "69ba3ec2d1c8cb2fe9907461822a703ee43882715aa2b3dba38381ef3d1238d5",
+    "m2-location.png": "07113278a0fcf6cabd9d2ddb7af828cb86cc00d97b822f7f28d7e800e6173d82",
+    "evaluation-result.json": "fdddd73b8727f63174b2831a9e51fd18d5307d326e565e5401b06ce896ddb18b",
+    "m3-location.png": "c982c19bd76c40233d4ba0a336a149f1ec9d9ee24e519087a2da4271622fda0c",
+    "m2-detail-marked.png": "b4120a34763a6453a98c2014911b3f00a441961725fa0a1843d56fa6dacdf068",
+    "m3-wide-marked.png": "cc2578007563b474d67a4fcd173356cf268ac4d832e8c9a2c851c781b9f270ef",
+    "index.html": "5ef0539e4c477dd692e80520f7fdcef437242450cdeb94d7ecd359100934f04a",
+    "m3-detail-marked.png": "90aaaae6aae6a4fb18031b98b15c61a11266e66ca17771069d4d7940395e0b7b",
+    "human-review.json": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168",
+    "m2-wide-raw.png": "34a01eb45c805dfd75d0233715393cd4956acc940444e049adb787c67d44d126",
+    "reviewed-interface.json": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8",
+    "report.json": "e0e9f736c74394b1251398404f754425446c7e6d1d9adb3a020f3e85b9e4fb6a"
+  }
+}

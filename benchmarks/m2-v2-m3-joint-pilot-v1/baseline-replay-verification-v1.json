@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-22",
+  "code_sha256": "722d1fed582ae7700616800b682bc619caa1f7d3baba6efbd678be6464413254",
+  "records": [
+    {
+      "baseline": "m1-v1-m2-joint-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Implementation hash changes by design; original approved manifest is unchanged."
+    },
+    {
+      "baseline": "metal-short-branch-transfer-v1",
+      "status": "KNOWN_EXAMPLE_TRANSFER_VERIFIED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Implementation hash changes by design; original approved manifest is unchanged."
+    },
+    {
+      "baseline": "metal-new-interface-candidate-v1",
+      "status": "REVIEW_REQUIRED",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Implementation hash changes by design; original approved manifest is unchanged."
+    },
+    {
+      "baseline": "metal-new-interface-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "Implementation hash changes by design; original approved manifest is unchanged."
+    }
+  ]
+}

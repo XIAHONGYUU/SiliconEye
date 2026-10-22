@@ -1,0 +1,183 @@
+{
+  "kind": "metal_via_transfer_companion",
+  "coordinate_space": "shared_design_px",
+  "placement_status": "AI_locator_in_shared_canvas_not_exact_joint_alignment",
+  "placement_locator": {
+    "contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1-SD07-S000",
+    "frozen_layout_center": [
+      1461.7596928571431,
+      3161.0735252657996
+    ],
+    "role": "Current-canvas locator only; no new CT identity or containment approval",
+    "basis": "Historical M1-to-poly local search places W1 around poly (1267,3080); frozen nearby CT locator poly (1260.89,3105), layout (1461.76,3161.07), used for coarse drawing placement, not exact projection",
+    "source_to_design_matrix": null
+  },
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "baseline": {
+    "spec": {
+      "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/spec-v1.json",
+      "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+    },
+    "model": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/model.json",
+      "sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a"
+    },
+    "report": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/report.json",
+      "sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870"
+    },
+    "manifest": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/manifest.json",
+      "sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5"
+    }
+  },
+  "objects_by_layer": {
+    "M1": [
+      {
+        "id": "R2_corrected_gate_W1_M1_01",
+        "layer": "M1",
+        "design_path": [
+          [
+            1462,
+            3128
+          ],
+          [
+            1462,
+            3164
+          ]
+        ],
+        "design_width": 10,
+        "status": "historical_identity_geometry_candidate",
+        "end_states": [
+          "visible_end_candidate",
+          "visible_end_candidate"
+        ]
+      },
+      {
+        "id": "M1-W1-NEIGHBOR-TOP",
+        "layer": "M1",
+        "design_path": [
+          [
+            1360,
+            3107
+          ],
+          [
+            1540,
+            3107
+          ]
+        ],
+        "design_width": 12,
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "M1-W1-NEIGHBOR-BOTTOM",
+        "layer": "M1",
+        "design_path": [
+          [
+            1360,
+            3183
+          ],
+          [
+            1540,
+            3183
+          ]
+        ],
+        "design_width": 10,
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ]
+      }
+    ],
+    "M2": [
+      {
+        "id": "R2_corrected_gate_W_M2_01",
+        "layer": "M2",
+        "design_path": [
+          [
+            1462,
+            3087
+          ],
+          [
+            1462,
+            3135
+          ]
+        ],
+        "design_width": 10,
+        "local_parts": [
+          {
+            "id": "W-M2-visible-pad",
+            "bounds": [
+              1425,
+              3062,
+              1495,
+              3107
+            ],
+            "basis": "Visible wide head of the M2 short stem; pad bright spots not automatically typed as V1"
+          }
+        ],
+        "status": "historical_identity_geometry_candidate",
+        "end_states": [
+          "visible_pad_candidate",
+          "historically_reviewed_V1_endpoint"
+        ]
+      }
+    ]
+  },
+  "V1_support_regions": [
+    {
+      "id": "W1-V1-support-proxy",
+      "via_group_id": "R2_corrected_gate_W1_V1",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "W1-reference",
+      "bounds": [
+        1459,
+        3132,
+        1465,
+        3138
+      ],
+      "lower_metal_id": "R2_corrected_gate_W1_M1_01",
+      "upper_metal_id": "R2_corrected_gate_W_M2_01",
+      "representation": "minimum_enclosed_support_region_not_a_measured_single_cut",
+      "physical_cut_count": null
+    }
+  ],
+  "physical_cut_count": null,
+  "reviewed_local_connections": [
+    {
+      "from_metal": "R2_corrected_gate_W_M2_01",
+      "to_metal": "R2_corrected_gate_W1_M1_01",
+      "via_id": "R2_corrected_gate_W1_V1",
+      "interface_label": "W1",
+      "from_layer": "m2",
+      "to_layer": "m1",
+      "via_kind": "V1",
+      "status": "human_confirmed_connection_and_destination_identity",
+      "M1_reference_xy": [
+        1244,
+        3220
+      ],
+      "M2_reference_xy": [
+        1217,
+        3253
+      ],
+      "coordinates_status": "reference_locations_not_exact_masks"
+    }
+  ],
+  "net_edges": [],
+  "adopted_into_joint_snapshot": false,
+  "source_to_design_transform": null,
+  "unprocessed_is_unknown": true
+}

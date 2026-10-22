@@ -53,6 +53,28 @@
 
 [skill边界评估](docs/architecture/metal-via-skill-boundary-assessment-v1.md)建议“金属重建＋层间过孔重建”两个通用skill，用各层／层对配置与独立质量门表达差异。CT与网络点亮保留独立任务边界。先以M1及M1／V1／M2小样验证，再验证另一层对；当前只是架构建议，尚未实现这些新skill或全幅金属重建。
 
+[M1小样Q1–Q3裁决已落实](docs/checkpoints/2026-10-21-m1-reviewed-local-revision.md)：[已审修订页](docs/assets/m1-geometry-pilot-reviewed-v2/index.html)保留9项M1，补齐外U两端短横条、微调内U横段包围、加宽左环竖段；六条已审竖向记录不动，95个CT模型包围通过，无新增审批问题。原生精确投影仍待定，新尺寸保留候选，不代表全幅M1、过孔或网络确认。
+
+[M1／V1／M2初版联合小样](docs/assets/m1-v1-m2-joint-pilot-v1/index.html)保留最初候选和待审清单，供前后比较；当前采用下述已审版。同阵列留出不冒充独立结构验证，精确投影与自动并网关闭。[初版检查点](docs/checkpoints/2026-10-22-m1-v1-m2-joint-pilot.md)。
+
+[联合小样J1／J2已裁决](docs/assets/m1-v1-m2-joint-reviewed-v2/index.html)：局部M1→V1→M2接入确认；M1框无V1、M2框为V2，原图标记已分开。宽度／右缘约束保留，既有几何不重算；V2尚不指定M3，精确投影与自动并网仍关闭。[裁决与防退化检查](docs/checkpoints/2026-10-22-m1-v1-m2-interface-reviewed.md)。
+
+[第二组短支路迁移复核页](docs/assets/metal-short-branch-transfer-v1/index.html)复用历史W1已审接口，验证短M1与上下横线隔离、M2短竖下端承载及模型重叠不自动并网。第一组作为冻结基准，孔组支持区不冒充精确孔数；这是已知样本回放，精确配准与陌生照片识别效果尚未核准。[验证范围](docs/checkpoints/2026-10-22-metal-short-branch-transfer.md)。
+
+第二组相对设计已获[人工放行](benchmarks/metal-short-branch-transfer-v1/design-approval-v1.json)。[第三组N1初始候选](docs/assets/metal-new-interface-candidate-v1/index.html)与首次AI观察保留；[N1已审版](docs/assets/metal-new-interface-reviewed-v2/index.html)已记录V1身份及M2下端接入确认，两组基准保持。该单例的先判后审结果与人工真值分开保存，不推断整体准确率。[确认与评价](docs/checkpoints/2026-10-22-N1-reviewed.md)。
+
+[M2／V2／M3联合小样](docs/assets/m2-v2-m3-joint-pilot-v1/index.html)从第一组已确认V2接续：保留原M2，新增粗横M3承载候选与相邻细线交叠对照。相对几何门通过，M3接入待K1裁决，独立精确配准尚未核准；提供宽原图、放大图和层切换。[验证与范围](docs/checkpoints/2026-10-22-m2-v2-m3-joint-pilot.md)。
+
+随后用户确认接入紫色B1粗横向母线，[K1已审包](docs/assets/m2-v2-m3-joint-reviewed-v2/index.html)关闭本组问题，记录M2-J01→V2→M3-J-B1局部接口。初版及全部几何保持，精确投影、完整孔数和全网仍未核准；[裁决及验证范围](docs/checkpoints/2026-10-22-m2-v2-m3-reviewed.md)。
+
+[第一份连续五层联合中样](docs/assets/conductive-stack-v1/index.html)将两处已审接口组装为M1／V1／M2／V2／M3链，接入[共同快照v4](configs/joint-work-layer-v4.json)及统一读取／复核接口。支持分层切换、编号突出、原图与宽局部对照，原材料及已审几何保持；这是局部链，不是完整网络。[接口契约](docs/architecture/conductive-layer-interface-v1.md)与[检查点](docs/checkpoints/2026-10-22-conductive-stack.md)。
+
+上述首版的M2孔层标记经人工纠正：本批M2图本处整组为**3×4、共12个V2**，不是V1。当前使用[纠错联合页v2](docs/assets/conductive-stack-v2/index.html)与[共同快照v5](configs/joint-work-layer-v5.json)；M1的V1和原金属几何保留，原9对跨Via层配对及4.52像素残差已撤销为配准依据。旧版仅保存错误历史，不作为当前身份基准。[修订及评价](docs/checkpoints/2026-10-22-m2-via-source-correction.md)。
+
+[高层分支验证页](docs/assets/metal-fanout-validation-v1/index.html)回放已审A/C两根M2经V2接同一M3，并接续中段无其他M2及邻B排除裁决。按导体ID去重、交叠不自动并网；局部规则几何独立于共同画布，v5及33条导体不变。这是已知案例的工具验证，不是新图识别成绩或完整网表。
+
+[N2及R1／D1已审路径](docs/assets/n2-downstream-interfaces-reviewed-v2/index.html)确认B1经上端V2、N2连续M2及下端V2接入L1；M1未知保持。[L1整段M2复核包](docs/assets/l1-m2-fanout-v1/index.html)保存D1和F01–F12主清单、P组未知及两层原图分区，新增候选尚待人审。[2026-10-22存档范围](docs/checkpoints/2026-10-22-github-state-archive.md)与恢复入口供接续，唯一当前任务仍以CURRENT_TASK为准。
+
 ## 本地运行
 
 ```bash

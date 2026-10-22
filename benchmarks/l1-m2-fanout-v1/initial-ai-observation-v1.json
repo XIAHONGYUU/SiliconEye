@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_L1_fanout_human_review",
+  "id": "L1-full-visible-fanout",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "approved_D1_route": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "approved_D1_review": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+      "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+    },
+    "M2_J01_package": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "selected_upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+  "native_M3_visible_path": [
+    [
+      0,
+      2829
+    ],
+    [
+      1500,
+      2790
+    ],
+    [
+      3000,
+      2751
+    ],
+    [
+      4500,
+      2712
+    ],
+    [
+      5150,
+      2695
+    ]
+  ],
+  "scope": {
+    "frame": "m3",
+    "bounds": [
+      0,
+      2600,
+      5240,
+      2940
+    ],
+    "left_boundary": "clipped_at_photo_edge_off_image_unknown",
+    "right_boundary": "visible_terminal_candidate_near_x5150",
+    "precise_boundaries": "unknown",
+    "visible_span_visual_scan_completed": true,
+    "all_physical_interfaces_confirmed": false
+  },
+  "entries": [
+    {
+      "id": "F01",
+      "lower_metal_id": "M2-L1-F01",
+      "via_group_id": "V2-L1-F01",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        378,
+        2710,
+        426,
+        2832
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "lower_terminal",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F02",
+      "lower_metal_id": "M2-L1-F02",
+      "via_group_id": "V2-L1-F02",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        736,
+        2700,
+        784,
+        2830
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "lower_terminal",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F03",
+      "lower_metal_id": "M2-L1-F03",
+      "via_group_id": "V2-L1-F03",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        1098,
+        2695,
+        1145,
+        2820
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "lower_terminal",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_group_id": "V2-N2-LOWER-GROUP",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        1508,
+        2705,
+        1543,
+        2802
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "human_confirmed",
+      "human_review": {
+        "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+        "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+      },
+      "lower_segment_form": "lower_terminal",
+      "lower_identity_status": "inherited_reviewed_N2",
+      "lower_continuation": [
+        "up"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F04",
+      "lower_metal_id": "M2-J01",
+      "via_group_id": "V2-L1-F04",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        1938,
+        2675,
+        2022,
+        2805
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "lower_terminal",
+      "lower_identity_status": "AI_continuation_of_existing_J01",
+      "lower_continuation": [
+        "up"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F05",
+      "lower_metal_id": "M2-L1-F05",
+      "via_group_id": "V2-L1-F05",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3085,
+        2650,
+        3138,
+        2770
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F06",
+      "lower_metal_id": "M2-L1-F06",
+      "via_group_id": "V2-L1-F06",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3350,
+        2645,
+        3402,
+        2770
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F07",
+      "lower_metal_id": "M2-L1-F07",
+      "via_group_id": "V2-L1-F07",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3693,
+        2640,
+        3745,
+        2765
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F08",
+      "lower_metal_id": "M2-L1-F08",
+      "via_group_id": "V2-L1-F08",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3916,
+        2635,
+        3965,
+        2760
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F09",
+      "lower_metal_id": "M2-L1-F09",
+      "via_group_id": "V2-L1-F09",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        4300,
+        2630,
+        4356,
+        2760
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F10",
+      "lower_metal_id": "M2-L1-F10",
+      "via_group_id": "V2-L1-F10",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        4528,
+        2625,
+        4580,
+        2755
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F11",
+      "lower_metal_id": "M2-L1-F11",
+      "via_group_id": "V2-L1-F11",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        4795,
+        2620,
+        4848,
+        2755
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    },
+    {
+      "id": "F12",
+      "lower_metal_id": "M2-L1-F12",
+      "via_group_id": "V2-L1-F12",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        5052,
+        2615,
+        5110,
+        2750
+      ],
+      "physical_cut_count": null,
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "upper_display_label": "L1",
+      "status": "AI_candidate_not_human_confirmed",
+      "human_review": null,
+      "lower_segment_form": "continues_up_and_down_one_conductor",
+      "lower_identity_status": "new_local_segment_candidate",
+      "lower_continuation": [
+        "up",
+        "down"
+      ],
+      "coordinate_status": "native_inspection_window_not_precise_design_geometry"
+    }
+  ],
+  "unresolved_pad_regions": [
+    {
+      "id": "P0",
+      "source_frame": "m2",
+      "source_bounds": [
+        0,
+        2820,
+        40,
+        2910
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P1",
+      "source_frame": "m2",
+      "source_bounds": [
+        95,
+        2820,
+        150,
+        2905
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P2",
+      "source_frame": "m2",
+      "source_bounds": [
+        200,
+        2820,
+        255,
+        2920
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P3",
+      "source_frame": "m2",
+      "source_bounds": [
+        313,
+        2820,
+        370,
+        2915
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P4",
+      "source_frame": "m2",
+      "source_bounds": [
+        420,
+        2810,
+        500,
+        2950
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P5",
+      "source_frame": "m2",
+      "source_bounds": [
+        530,
+        2810,
+        595,
+        2930
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    }
+  ],
+  "other_controls": [
+    {
+      "id": "X1",
+      "source_frame": "m2",
+      "bounds": [
+        5445,
+        2825,
+        5545,
+        2945
+      ],
+      "status": "not_included_in_L1_inventory",
+      "reason": "Far-right array beyond the macro L1 right cap; target unknown, not a physical absence or different-net proof"
+    },
+    {
+      "id": "X2",
+      "source_frame": "m3",
+      "bounds": [
+        2555,
+        2695,
+        2695,
+        2810
+      ],
+      "status": "upper_layer_interface_frontier_unknown",
+      "reason": "Array observed on M3, not a V2 observation from M2; do not count as M2 attachment or reuse as V2 correspondence"
+    }
+  ],
+  "deduplication": {
+    "unit": "local_continuous_lower_metal_segment_not_hole_or_direction",
+    "example": "F05-F12 each one M2 despite continuing above and below; F04 reuses M2-J01, D1 reuses N2"
+  },
+  "interpretation": "Thirteen principal visible M2 attachment locations along the L1 macro row; D1 reviewed, twelve new candidates. P0-P5 may affect completeness and remain separate.",
+  "evaluation": {
+    "F01": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F02": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F03": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F04": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F05": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F06": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F07": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F08": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F09": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F10": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F11": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F12": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    }
+  },
+  "reviewed_new_connections": [],
+  "net_edges": [],
+  "complete_network": false,
+  "precise_projection_allowed": false,
+  "source_to_design_transform": null
+}

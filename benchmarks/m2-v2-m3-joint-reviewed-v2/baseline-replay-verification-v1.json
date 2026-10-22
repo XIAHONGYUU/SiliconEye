@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-22",
+  "code_sha256": "2dbffc811bad63f0f473c7efeeb9a6ca63bfa680468b4bff26b8ec79ab2121a7",
+  "records": [
+    {
+      "baseline": "m1-v1-m2-joint-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "New execution code hash differs; original package manifest remains immutable."
+    },
+    {
+      "baseline": "metal-short-branch-transfer-v1",
+      "status": "KNOWN_EXAMPLE_TRANSFER_VERIFIED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "New execution code hash differs; original package manifest remains immutable."
+    },
+    {
+      "baseline": "metal-new-interface-candidate-v1",
+      "status": "REVIEW_REQUIRED",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "New execution code hash differs; original package manifest remains immutable."
+    },
+    {
+      "baseline": "metal-new-interface-reviewed-v2",
+      "status": "SCOPED_REVIEWED_WITH_LIMITATIONS",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m1-detail-marked.png": true,
+        "m1-wide-marked.png": true,
+        "m2-detail-raw.png": true,
+        "m1-wide-raw.png": true,
+        "m2-location.png": true,
+        "m1-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m2-detail-marked.png": true,
+        "m1-detail-raw.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "New execution code hash differs; original package manifest remains immutable."
+    },
+    {
+      "baseline": "m2-v2-m3-joint-pilot-v1",
+      "status": "REVIEW_REQUIRED",
+      "unchanged_artifacts": {
+        "m2-wide-marked.png": true,
+        "m3-detail-raw.png": true,
+        "m2-detail-raw.png": true,
+        "m3-wide-raw.png": true,
+        "m2-location.png": true,
+        "joint-design.svg": true,
+        "spec.json": true,
+        "m3-location.png": true,
+        "m2-detail-marked.png": true,
+        "m3-wide-marked.png": true,
+        "model.json": true,
+        "index.html": true,
+        "m3-detail-marked.png": true,
+        "m2-wide-raw.png": true,
+        "report.json": true,
+        "joint-design.png": true
+      },
+      "artifact_count": 16,
+      "execution_manifest_note": "New execution code hash differs; original package manifest remains immutable."
+    }
+  ]
+}

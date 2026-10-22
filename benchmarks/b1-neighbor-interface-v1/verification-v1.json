@@ -1,0 +1,37 @@
+{
+  "status": "PASS_ARTIFACT_CHECKS_PHYSICAL_REVIEW_PENDING",
+  "native_raw_crop_equality_count": 4,
+  "artifact_hashes_checked": 14,
+  "verified_input_hashes_checked": 16,
+  "code_hashes_checked": 5,
+  "html_links_checked": 14,
+  "js_syntax_scripts": 2,
+  "browser_interaction_tested": false,
+  "visual_inspection": [
+    "m2-wide-marked.png",
+    "m3-wide-marked.png",
+    "native terminal detail crops"
+  ],
+  "baseline_unchanged": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "baseline_registry_unchanged": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "baseline_conductive_object_count": 33,
+  "source_identity_candidate": "V2 in M2 frame only",
+  "carrier_candidate": "M3-J-B1",
+  "human_review_received": false,
+  "evaluation_truth_fields_remain_null": true,
+  "automatic_network_export_allowed": false,
+  "no_algorithm_changes": true,
+  "no_new_case_script": true,
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-22-N2-interface-inspection.md",
+    "payload_sha256": "3551e18f407e5746be8ad3002a50cf88cb03a22b326a8afc3df98268983bc1cb",
+    "bytes": 15122,
+    "exact": true
+  }
+}

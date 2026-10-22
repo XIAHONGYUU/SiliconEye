@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "script_verification_not_human_decision",
+  "human_review_bound": {
+    "parent_spec": {
+      "path": "benchmarks/m1-v1-m2-joint-pilot-v1/spec-v1.json",
+      "sha256": "6222a03ffae8b5ee2aba5596866ac89de6674dff361f3e4be618e26ffba09542"
+    },
+    "reviewed_page": {
+      "path": "docs/assets/m1-v1-m2-joint-pilot-v1/index.html",
+      "sha256": "2b3203a12f70d2e046448c09a32b88120935dd9adb663e57c78e570b7d6cd39a"
+    },
+    "reviewed_model": {
+      "path": "docs/assets/m1-v1-m2-joint-pilot-v1/model.json",
+      "sha256": "0f3186c60f5a228caf40cac945e38c0145de5257dec6d17b986b8b1d5385b89b"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "input_and_artifact_hashes": "PASS",
+  "reused_code_hashes": "PASS",
+  "parent_geometry_and_observations_exact": [
+    "inherited_M1_objects",
+    "proposed_M1_addition",
+    "M2_objects",
+    "V1_cuts",
+    "source_observations"
+  ],
+  "local_interface": "human_confirmed_M1_P08_V1_M2_J01",
+  "M1_frame_box": "no_V1",
+  "M2_frame_box": "V2",
+  "M3_target": null,
+  "native_only_V2_count": 1,
+  "V1_candidate_rectangles": 9,
+  "V1_physical_count_complete": false,
+  "width_constraint": "four-row distance retained as qualitative constraint; no extra V1 authorized",
+  "precise_projection_allowed": false,
+  "automatic_network_export_allowed": false,
+  "original_source_photo_count": 8,
+  "inherited_source_unknown_scopes": 6,
+  "pending_questions": [],
+  "software_verification": {
+    "passed": 32,
+    "elapsed_seconds": 21.03,
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "ruff": "PASS"
+  },
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "local_links": "PASS",
+  "archive_payload_matches": true,
+  "archive_payload_sha256": "8216d184571a5e65ce970f41a59eb3cdb21084d6c7f34a566999df3f039b81ed",
+  "browser_interaction": "not_performed",
+  "visual_inspection": "Inspected native M1 NO V1 red box and native M2 V2 green box; original geometry unchanged"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "document_kind": "layer_reconstruction_review",
+  "id": "conductive-stack-common-inspect-v1",
+  "target_layer": "M1",
+  "mode": "inspect",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v4.json",
+    "sha256": "7df7fb9dece1d0d325e6a215324b46cd0234dcf1963eed3728e59915a608ddf0"
+  },
+  "windows": [
+    {
+      "id": "chain",
+      "layout_bounds": [
+        1900,
+        1840,
+        2520,
+        2320
+      ],
+      "source_windows": {
+        "m1": [
+          1350,
+          1750,
+          2900,
+          2850
+        ],
+        "m2": [
+          1350,
+          1750,
+          2900,
+          2850
+        ],
+        "m3": [
+          1350,
+          1750,
+          2900,
+          2850
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "kind": "metal_via_transfer_pilot",
+  "baseline": {
+    "spec": {
+      "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/spec-v1.json",
+      "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+    },
+    "model": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/model.json",
+      "sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a"
+    },
+    "report": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/report.json",
+      "sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870"
+    },
+    "manifest": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/manifest.json",
+      "sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5"
+    }
+  },
+  "historical_interface": {
+    "record": {
+      "path": "benchmarks/metal-extension/roi2-W1-V1-M1-review-feedback-v1.json",
+      "sha256": "89e148c86505d17d684de5d2aa28c0b90f9edbd4f2b928413cc6dd777ea5f87d"
+    },
+    "statement_pointer": "/user_statement",
+    "decision_pointer": "/decision",
+    "required_status": "human_confirmed_connection_and_destination_identity",
+    "reference_observation_id": "W1-reference",
+    "reference_fields": {
+      "m1": "M1_reference_xy",
+      "m2": "M2_reference_xy"
+    }
+  },
+  "evidence": {
+    "M1_observation": {
+      "path": "benchmarks/metal-extension/roi2-W1-M1-native-observation-v26.json",
+      "sha256": "b36a9e7eaf20953510e4807d11b7e515b1e9ad93cacbfa01d0655f32feebd5ce"
+    },
+    "M2_observation": {
+      "path": "benchmarks/metal-extension/roi2-W-M2-M1-interface-candidate-v25.json",
+      "sha256": "b7515ec4f7e10837d09996ae96297f72d5c43138e1240e11a9660ba4e56505db"
+    },
+    "placement_search": {
+      "path": "benchmarks/metal-extension/roi2-W1-material-candidate-v32.json",
+      "sha256": "164d70f93e49f272f14f505ed91c09f438dba1b460da24d4abdea66e9f40cd46"
+    }
+  },
+  "placement_locator": {
+    "contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-SHARED-GUARDS-1-SD07-S000",
+    "frozen_layout_center": [
+      1461.7596928571431,
+      3161.0735252657996
+    ],
+    "role": "Current-canvas locator only; no new CT identity or containment approval",
+    "basis": "Historical M1-to-poly local search places W1 around poly (1267,3080); frozen nearby CT locator poly (1260.89,3105), layout (1461.76,3161.07), used for coarse drawing placement, not exact projection",
+    "source_to_design_matrix": null
+  },
+  "source_windows": {
+    "m1": {
+      "wide": [
+        790,
+        3010,
+        1490,
+        3430
+      ],
+      "detail": [
+        1120,
+        3120,
+        1350,
+        3340
+      ]
+    },
+    "m2": {
+      "wide": [
+        790,
+        3010,
+        1490,
+        3430
+      ],
+      "detail": [
+        1120,
+        3120,
+        1350,
+        3340
+      ]
+    }
+  },
+  "observations": [
+    {
+      "id": "W1-reference",
+      "m1_xy": [
+        1244,
+        3220
+      ],
+      "m2_xy": [
+        1217,
+        3253
+      ],
+      "status": "historical_reference_centers_not_measured_edges"
+    }
+  ],
+  "native_traces": {
+    "m1": [
+      {
+        "label": "W1",
+        "points": [
+          [
+            1244,
+            3213
+          ],
+          [
+            1244,
+            3249
+          ]
+        ],
+        "color": "#6ad8ff"
+      },
+      {
+        "label": "upper rail",
+        "points": [
+          [
+            1120,
+            3191
+          ],
+          [
+            1330,
+            3183
+          ]
+        ],
+        "color": "#74ddb4"
+      },
+      {
+        "label": "lower rail",
+        "points": [
+          [
+            1120,
+            3266
+          ],
+          [
+            1330,
+            3259
+          ]
+        ],
+        "color": "#f4bb69"
+      }
+    ],
+    "m2": [
+      {
+        "label": "W",
+        "points": [
+          [
+            1212,
+            3205
+          ],
+          [
+            1217,
+            3253
+          ]
+        ],
+        "color": "#d28cff"
+      }
+    ]
+  },
+  "design_bounds": [
+    1350,
+    3035,
+    1550,
+    3220
+  ],
+  "features_by_layer": {
+    "M1": [
+      {
+        "id": "R2_corrected_gate_W1_M1_01",
+        "layer": "M1",
+        "design_path": [
+          [
+            1462,
+            3128
+          ],
+          [
+            1462,
+            3164
+          ]
+        ],
+        "design_width": 10,
+        "status": "historical_identity_geometry_candidate",
+        "end_states": [
+          "visible_end_candidate",
+          "visible_end_candidate"
+        ]
+      },
+      {
+        "id": "M1-W1-NEIGHBOR-TOP",
+        "layer": "M1",
+        "design_path": [
+          [
+            1360,
+            3107
+          ],
+          [
+            1540,
+            3107
+          ]
+        ],
+        "design_width": 12,
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "M1-W1-NEIGHBOR-BOTTOM",
+        "layer": "M1",
+        "design_path": [
+          [
+            1360,
+            3183
+          ],
+          [
+            1540,
+            3183
+          ]
+        ],
+        "design_width": 10,
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ]
+      }
+    ],
+    "M2": [
+      {
+        "id": "R2_corrected_gate_W_M2_01",
+        "layer": "M2",
+        "design_path": [
+          [
+            1462,
+            3087
+          ],
+          [
+            1462,
+            3135
+          ]
+        ],
+        "design_width": 10,
+        "local_parts": [
+          {
+            "id": "W-M2-visible-pad",
+            "bounds": [
+              1425,
+              3062,
+              1495,
+              3107
+            ],
+            "basis": "Visible wide head of the M2 short stem; pad bright spots not automatically typed as V1"
+          }
+        ],
+        "status": "historical_identity_geometry_candidate",
+        "end_states": [
+          "visible_pad_candidate",
+          "historically_reviewed_V1_endpoint"
+        ]
+      }
+    ]
+  },
+  "lower_metal_id": "R2_corrected_gate_W1_M1_01",
+  "upper_metal_id": "R2_corrected_gate_W_M2_01",
+  "via_group_id": "R2_corrected_gate_W1_V1",
+  "interface_support_regions": [
+    {
+      "id": "W1-V1-support-proxy",
+      "via_group_id": "R2_corrected_gate_W1_V1",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "observation_id": "W1-reference",
+      "bounds": [
+        1459,
+        3132,
+        1465,
+        3138
+      ],
+      "lower_metal_id": "R2_corrected_gate_W1_M1_01",
+      "upper_metal_id": "R2_corrected_gate_W_M2_01",
+      "representation": "minimum_enclosed_support_region_not_a_measured_single_cut",
+      "physical_cut_count": null
+    }
+  ],
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 6,
+    "enclosure_px": 2,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      17,
+      18
+    ],
+    "unit": "relative_design_px_not_PDK"
+  },
+  "overlap_controls": [
+    {
+      "id": "W1-upper-model-overlap",
+      "lower_metal_id": "M1-W1-NEIGHBOR-TOP",
+      "upper_metal_id": "R2_corrected_gate_W_M2_01",
+      "status": "model_overlap_without_supported_via_not_a_confirmed_physical_absence"
+    }
+  ],
+  "human_questions": [],
+  "limits": [
+    "Known historical example, not a blind new detection",
+    "No precise native M1/M2 registration accepted at W1; no layer photo projection allowed",
+    "Current-canvas geometry placement is an AI candidate, not a new source-to-design transform",
+    "V1 support proxy does not claim physical cut count, dimensions or centers",
+    "Do not infer V1 from bright spots on the upper M2 pad",
+    "No new CT/AA identity, no net extension, no automatic export; preserve prior source restrictions"
+  ],
+  "native_trace_bindings": [
+    {
+      "frame": "m1",
+      "trace_index": 0,
+      "evidence_key": "M1_observation",
+      "pointer": "/reference_centerline_xy"
+    },
+    {
+      "frame": "m2",
+      "trace_index": 0,
+      "evidence_key": "M2_observation",
+      "pointer": "/M2/short_stem_centerline_xy"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "kind": "metal_route_native_evidence_review",
+  "id": "N2-downstream-interfaces",
+  "initial_observation": {
+    "path": "benchmarks/n2-downstream-interfaces-v1/initial-ai-observation-v1.json",
+    "sha256": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5"
+  },
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "observations": [],
+  "source_windows": {
+    "m1": {
+      "wide": [
+        1100,
+        1750,
+        2200,
+        2950
+      ],
+      "detail": [
+        1200,
+        2520,
+        1940,
+        2880
+      ]
+    },
+    "m2": {
+      "wide": [
+        1100,
+        1750,
+        2200,
+        2950
+      ],
+      "detail": [
+        1200,
+        2520,
+        1940,
+        2880
+      ]
+    },
+    "m3": {
+      "wide": [
+        1100,
+        1750,
+        2200,
+        2950
+      ],
+      "detail": [
+        1200,
+        2520,
+        1940,
+        2880
+      ]
+    }
+  },
+  "source_regions": {
+    "m1": [
+      {
+        "bounds": [
+          1505,
+          1875,
+          1545,
+          1945
+        ],
+        "color": "#ff9bdf",
+        "label": "U1: V1 / landing unknown"
+      },
+      {
+        "bounds": [
+          1525,
+          2270,
+          1575,
+          2335
+        ],
+        "color": "#ff9bdf",
+        "label": "U2: V1 / landing unknown"
+      },
+      {
+        "bounds": [
+          1524,
+          2675,
+          1570,
+          2740
+        ],
+        "color": "#ff9bdf",
+        "label": "U3: V1 / landing unknown"
+      }
+    ],
+    "m2": [
+      {
+        "bounds": [
+          1480,
+          1903,
+          1518,
+          1959
+        ],
+        "color": "#58edab",
+        "label": "N2 upper V2 (reviewed)"
+      },
+      {
+        "bounds": [
+          1508,
+          2705,
+          1543,
+          2802
+        ],
+        "color": "#6ad8ff",
+        "label": "D1: lower V2 candidate",
+        "label_xy": [
+          1570,
+          2770
+        ]
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          1470,
+          2740,
+          1590,
+          2835
+        ],
+        "color": "#6ad8ff",
+        "label": "D1: L1 bearing candidate",
+        "label_xy": [
+          1595,
+          2810
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m1": [],
+    "m2": [
+      {
+        "points": [
+          [
+            1498,
+            1930
+          ],
+          [
+            1504,
+            2190
+          ],
+          [
+            1514,
+            2480
+          ],
+          [
+            1526,
+            2782
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "R1: same N2 M2?"
+      }
+    ],
+    "m3": [
+      {
+        "points": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "B1 reviewed carrier"
+      },
+      {
+        "points": [
+          [
+            1150,
+            2800
+          ],
+          [
+            2100,
+            2776
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "L1 broad M3 candidate"
+      },
+      {
+        "points": [
+          [
+            1150,
+            2708
+          ],
+          [
+            2100,
+            2685
+          ]
+        ],
+        "color": "#ffe36b",
+        "label": "H1 fine M3 neighbor"
+      }
+    ]
+  },
+  "human_questions": [
+    {
+      "id": "R1",
+      "question": "上端已审N2至下端D1是否为同一根连续M2，并在图中下端收口？"
+    },
+    {
+      "id": "D1",
+      "question": "下端蓝框D1孔组是否为V2，并接入紫色L1宽横向M3（而非上方黄色H1细线）？"
+    }
+  ],
+  "limits": [
+    "M1 U1/U2/U3 remain unknown and are not adopted as V1 connections; proximity to an M2 trace is not evidence.",
+    "No qualified cross-layer projection, same-hole fit or common-canvas placement.",
+    "D1 via count, exact cut/metal boundaries and all L1 other attachments unknown.",
+    "Middle-segment scan without a clear extra V2 is not proof of absence or complete interface coverage.",
+    "Known N2 to B1 review and all 33 common conductive objects/material layers stay unchanged.",
+    "L1 is a new local carrier label, not a completed M3 net or an assertion of identity with B1."
+  ]
+}

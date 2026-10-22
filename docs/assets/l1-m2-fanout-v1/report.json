@@ -1,0 +1,237 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "visible_span_visual_scan_completed": true,
+  "known_reviewed_interface_count": 1,
+  "new_candidate_interface_count": 12,
+  "principal_local_lower_segment_count": 13,
+  "inventory": [
+    {
+      "lower_metal_id": "M2-J01",
+      "via_group_ids": [
+        "V2-L1-F04"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F01",
+      "via_group_ids": [
+        "V2-L1-F01"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F02",
+      "via_group_ids": [
+        "V2-L1-F02"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F03",
+      "via_group_ids": [
+        "V2-L1-F03"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F05",
+      "via_group_ids": [
+        "V2-L1-F05"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F06",
+      "via_group_ids": [
+        "V2-L1-F06"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F07",
+      "via_group_ids": [
+        "V2-L1-F07"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F08",
+      "via_group_ids": [
+        "V2-L1-F08"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F09",
+      "via_group_ids": [
+        "V2-L1-F09"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F10",
+      "via_group_ids": [
+        "V2-L1-F10"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F11",
+      "via_group_ids": [
+        "V2-L1-F11"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-L1-F12",
+      "via_group_ids": [
+        "V2-L1-F12"
+      ]
+    },
+    {
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "via_group_ids": [
+        "V2-N2-LOWER-GROUP"
+      ]
+    }
+  ],
+  "individual_physical_cut_count": null,
+  "unresolved_pad_region_count": 6,
+  "unresolved_pad_regions": [
+    {
+      "id": "P0",
+      "source_frame": "m2",
+      "source_bounds": [
+        0,
+        2820,
+        40,
+        2910
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P1",
+      "source_frame": "m2",
+      "source_bounds": [
+        95,
+        2820,
+        150,
+        2905
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P2",
+      "source_frame": "m2",
+      "source_bounds": [
+        200,
+        2820,
+        255,
+        2920
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P3",
+      "source_frame": "m2",
+      "source_bounds": [
+        313,
+        2820,
+        370,
+        2915
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P4",
+      "source_frame": "m2",
+      "source_bounds": [
+        420,
+        2810,
+        500,
+        2950
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P5",
+      "source_frame": "m2",
+      "source_bounds": [
+        530,
+        2810,
+        595,
+        2930
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    }
+  ],
+  "source_controls": [
+    {
+      "id": "X1",
+      "source_frame": "m2",
+      "bounds": [
+        5445,
+        2825,
+        5545,
+        2945
+      ],
+      "status": "not_included_in_L1_inventory",
+      "reason": "Far-right array beyond the macro L1 right cap; target unknown, not a physical absence or different-net proof"
+    },
+    {
+      "id": "X2",
+      "source_frame": "m3",
+      "bounds": [
+        2555,
+        2695,
+        2695,
+        2810
+      ],
+      "status": "upper_layer_interface_frontier_unknown",
+      "reason": "Array observed on M3, not a V2 observation from M2; do not count as M2 attachment or reuse as V2 correspondence"
+    }
+  ],
+  "scope": {
+    "frame": "m3",
+    "bounds": [
+      0,
+      2600,
+      5240,
+      2940
+    ],
+    "left_boundary": "clipped_at_photo_edge_off_image_unknown",
+    "right_boundary": "visible_terminal_candidate_near_x5150",
+    "precise_boundaries": "unknown",
+    "visible_span_visual_scan_completed": true,
+    "all_physical_interfaces_confirmed": false
+  },
+  "all_physical_interfaces_confirmed": false,
+  "new_reviewed_connections": 0,
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "complete_network": false,
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "parent_conductive_registry": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "parent_conductive_object_count": 33,
+  "parent_unchanged": true,
+  "human_questions": [
+    {
+      "id": "F01-F12",
+      "question": "请批量核对橙框F01至F12：这些V2组及对应M2是否均接入同一根紫色L1？有例外请按编号指出；D1已审不重问。F04沿用M2-J01。"
+    },
+    {
+      "id": "P",
+      "question": "左侧粉框P0-P5暂不计入L1：这些小短端是否有接入L1的？如属于下方细M3或仍不清楚，也请指出。"
+    }
+  ],
+  "requires_user_action_now": true,
+  "limits": [
+    "Left end clipped; no inference of off-image M2 branches.",
+    "Thirteen main positions = one reviewed plus twelve AI candidates; P-group unknowns prevent completeness acceptance.",
+    "F04 existing M2-J01 correspondence and new lower interface remain AI candidates until this review; its old upper review is not reasked.",
+    "No counted individual holes, exact projection, common-canvas placement or automatic network export.",
+    "M3 X2 bright array is not V2 evidence and is deferred for higher-layer work.",
+    "M1 U1/U2/U3 and all prior material unknowns unchanged."
+  ]
+}

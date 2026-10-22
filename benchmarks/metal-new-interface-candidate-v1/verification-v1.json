@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "actor": "primary_agent_verification_not_human_adjudication",
+  "status": "REVIEW_REQUIRED",
+  "design_approval": {
+    "path": "benchmarks/metal-short-branch-transfer-v1/design-approval-v1.json",
+    "sha256": "562366105713930426fa6e1fe9f37f8073ff09a70737ecaf402de51682914a17"
+  },
+  "initial_AI_observation": {
+    "path": "benchmarks/metal-new-interface-candidate-v1/initial-ai-observation-v1.json",
+    "sha256": "86ecc5740eba321cfcb134abc7de7bbfa9e1be63bf3179831e895365c98e07c6"
+  },
+  "human_ground_truth": null,
+  "correction_count": null,
+  "identity_correct": null,
+  "destination_correct": null,
+  "pending_questions": [
+    {
+      "id": "N1",
+      "question": "橙圈处是否为V1，并把左侧短竖M1（N1）接到左侧折线M2（N1?）的下端？右侧灰色REF-W1为已审参照；若不对应，请指出正确端部。"
+    }
+  ],
+  "input_and_artifact_hashes": "PASS",
+  "reused_code_hashes": "PASS",
+  "baseline_replay": {
+    "array_artifacts_identical": 16,
+    "short_branch_artifacts_identical": 16,
+    "record": "benchmarks/metal-new-interface-candidate-v1/baseline-replay-verification-v1.json"
+  },
+  "geometry": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "M1-N1-STUB",
+            "M1-N1-UPPER-CONTEXT"
+          ],
+          "gap_px": 10.0
+        },
+        {
+          "ids": [
+            "M1-N1-STUB",
+            "M1-N1-LOWER-CONTEXT"
+          ],
+          "gap_px": 9.0
+        },
+        {
+          "ids": [
+            "M1-N1-UPPER-CONTEXT",
+            "M1-N1-LOWER-CONTEXT"
+          ],
+          "gap_px": 65.0
+        }
+      ],
+      "minimum_gap_px": 9.0
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [],
+      "minimum_gap_px": null
+    }
+  },
+  "via_support_geometry": {
+    "status": "PASS",
+    "errors": [],
+    "candidate_cut_count": 1,
+    "count_complete": false,
+    "electrical_connection_confirmed": false,
+    "unit": "relative_design_px_not_PDK"
+  },
+  "physical_cut_count": null,
+  "source_correspondence": {
+    "status": "NOT_QUALIFIED",
+    "matrix": null,
+    "reason": "Candidate correspondence not independently qualified"
+  },
+  "inherited_unknown_scope_count": 6,
+  "automatic_network_export_allowed": false,
+  "software_verification": {
+    "passed": 42,
+    "elapsed_seconds": 40.64,
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "ruff": "PASS"
+  },
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "local_links": "PASS",
+  "archive_payload_matches": true,
+  "archive_payload_sha256": "9e9ff1caa05287faf0d3eb1db4a617dcf6ec37e2314b984e1a42bbd876538c56",
+  "browser_interaction": "not_performed",
+  "visual_inspection": "Original M1/M2 crops and active design polygon PNG viewed; gray source/reference label distinguishes approved W1; no native overlay claimed",
+  "new_physical_connections": 0
+}

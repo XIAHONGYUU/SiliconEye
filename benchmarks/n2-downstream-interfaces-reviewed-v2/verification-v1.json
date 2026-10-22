@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SCOPED_HUMAN_ADJUDICATION_BINDING",
+  "original_candidate_artifacts_verified": 20,
+  "reviewed_package_artifacts_verified": 21,
+  "unchanged_png_count": 15,
+  "initial_evaluation_truth_fields_preserved_null": true,
+  "R1_and_D1_bind_original_hypothesis": true,
+  "M1_U1_U2_U3_preserved_unknown": true,
+  "current_common_snapshot_unchanged": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "common_conductive_object_count": 33,
+  "new_reviewed_interfaces": 1,
+  "route_continuity_human_confirmed": true,
+  "automatic_network_export_allowed": false,
+  "native_or_design_geometry_recalculated": false,
+  "algorithm_changed": false,
+  "html_links_checked": 19,
+  "js_syntax_scripts": 2,
+  "relation_svg_xml": "PASS",
+  "browser_interaction_tested": false,
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-22-R1-D1-adjudication.md",
+    "payload_sha256": "b47f80c5f4bc4c11e9a771886c12e91cb3ade1aa9a98073a85d5f24d0ee28db9",
+    "bytes": 15897,
+    "exact": true
+  }
+}

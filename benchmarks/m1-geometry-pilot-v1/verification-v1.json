@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "M1 geometry pilot known chip, AI observations, not blind image evaluation",
+  "current_joint_snapshot_unchanged": true,
+  "counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287,
+    "M1_candidate": 9
+  },
+  "geometry_status": "PASS",
+  "minimum_metal_gap_px": 8.0,
+  "relative_budget_only": true,
+  "CT_support_geometry_count": 87,
+  "CT_support_identity": "AI_candidate_not_M1_human_approval",
+  "pending_gate_CT_count": 8,
+  "unknown_parent_scope_count": 6,
+  "x_column_holdout_error_native_px": 3.0000000000022737,
+  "y_correspondence_status": "NOT_QUALIFIED",
+  "precise_CT_projection_allowed": false,
+  "software_tests": {
+    "command": ".venv/bin/pytest -q tests/test_metal_reconstruction.py tests/test_layer_review.py",
+    "passed": 16,
+    "elapsed_seconds": 8.68
+  },
+  "ruff": "PASS",
+  "artifact_hashes": "PASS",
+  "SVG_XML": "PASS",
+  "JS_syntax": "PASS",
+  "interactive_browser_validation": false,
+  "human_decisions": "pending_Q1_Q2_Q3",
+  "automatic_network_export_allowed": false,
+  "inherited_documents_exact": true,
+  "files": {
+    "benchmarks/m1-geometry-pilot-v1/spec-v1.json": "473502ee1add37450d9270a72f114c665c579b2c438a51d90156a9cf8e7e3709",
+    "silicon_eye/metal_reconstruction.py": "4897398033688d36f7e4a7cd6e43d2fcd24fd3ac4055ab5595f7d636c31b5d5f",
+    "tests/test_metal_reconstruction.py": "aac652e9d7fb250c14231cf1525fc0ae6e29415d0dc5297c533c529923d8c19e",
+    "docs/assets/m1-geometry-pilot-v1/manifest.json": "68bac93d6e84b70dba4bbe9992a3ea810650439791fd5665cddca1fe6c6efa72"
+  }
+}

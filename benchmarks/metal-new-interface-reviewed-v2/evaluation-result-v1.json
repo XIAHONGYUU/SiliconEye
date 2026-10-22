@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "N1",
+  "record_type": "derived_evaluation_after_scoped_human_review",
+  "sample_count": 1,
+  "question": "Whether the M1 brightpoint is V1 and connects the short M1 to the lower endpoint of the bent M2",
+  "sources": {
+    "initial_AI": {
+      "path": "benchmarks/metal-new-interface-candidate-v1/initial-ai-observation-v1.json",
+      "sha256": "86ecc5740eba321cfcb134abc7de7bbfa9e1be63bf3179831e895365c98e07c6"
+    },
+    "submitted_candidate": {
+      "path": "benchmarks/metal-new-interface-candidate-v1/spec-v1.json",
+      "sha256": "181e84cbc4367ed48a1ea8f9f129d5fbe567c0939f6284a04037ac56b5b983d6"
+    },
+    "human_adjudication": {
+      "path": "benchmarks/metal-new-interface-reviewed-v2/human-review-v1.json",
+      "sha256": "2697c36ec8eff8cadcd5813f7e2e54b433154ca2da59976d687cab5dbe1d83e9"
+    }
+  },
+  "metrics": {
+    "identity_correct": true,
+    "destination_correct": true,
+    "observed_identity_or_destination_corrections": 0,
+    "correction_scope": "Submitted N1 identity/destination hypothesis received direct approval at its first review, without any identity/destination revision; not a count of whole-project rework",
+    "evaluation_type": "single_pre_review_candidate_not_strict_blind_test",
+    "geometry_accuracy": null,
+    "physical_cut_count": null
+  },
+  "human_truth": {
+    "lower_metal_id": "M1-N1-STUB",
+    "via_layer": "V1",
+    "via_group_id": "V1-N1-GROUP",
+    "upper_metal_id": "M2-N1-BENT-STUB",
+    "identity_confirmed": true,
+    "connection_confirmed": true
+  },
+  "limits": [
+    "One case with two checked attributes, not two independent cases",
+    "Known-chip context available; not a strict blind test",
+    "No population accuracy estimate",
+    "No whole-project correction count",
+    "No new geometric or registration measurement"
+  ]
+}

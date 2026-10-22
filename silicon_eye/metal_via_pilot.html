@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M1／V1／M2 联合小样</title>
+<style>
+body{background:#12202d;color:#edf4fa;font:17px system-ui;margin:24px;line-height:1.65}
+a{color:#8dd6ff}.card{padding:16px;border:1px solid #627789;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:18px}
+img,svg{width:100%;height:auto;background:#0b1724}button,label{margin:6px;padding:6px}
+.notice{color:#ffd890}.legend{display:flex;flex-wrap:wrap;position:sticky;top:0;background:#12202df5}
+summary{cursor:pointer}h1{font-size:28px}h2{font-size:21px}
+</style>
+<h1>M1／V1／M2 联合小样：已审小样左上角的孔阵列</h1>
+<p>蓝色为原有已审 M1；橙色为向左接续的 M1 新候选；紫色为 M2 宽竖线；米白色为 9 个可见亮点对应的 V1 候选。
+这是相对像素的设计重建图。下方照片保留各自原生坐标，观察标记不代表精确边界。</p>
+<div class="card"><h2>本轮一次核对清单</h2><ol>{{QUESTIONS}}</ol>
+<p>先判断接口身份及连到哪两层。黄色窄框的一列保留未知；本轮不要求逐孔测量、不追整网。</p></div>
+<div class="card"><h2>质量门：几何通过，物理接口待审</h2>
+<p>逐层检查正交、连续、隔离；9 个候选孔无重叠，有最小间距，均被 M1、M2 包围。
+预算为相对像素，尚无真实工艺及物理标尺，不能声称通过 PDK DRC。</p>
+<p class="notice">3 个拟合点和 6 个留出点都属于同一孔阵列；留出最大误差 {{ERROR}} 原生像素。
+独立结构检查未完成，因此精确投影门未放行。页面不把 M2 整幅强行投影到 M1，也不自动认定电气连接。
+孔数未宣称完整；M2 的上下出窗端均是继续延伸未知。</p>
+<p>原 M1 的 Q1–Q3 裁决和 95 孔模型包围接续保留；新接续片与新孔仍是候选。AA／POLY／CT 共同层未修改。</p></div>
+<h2>共同设计坐标：可分别隐藏各层</h2>
+<div class="legend">
+<label><input type="checkbox" checked data-toggle="M1">已审 M1</label>
+<label><input type="checkbox" checked data-toggle="M1-addition">M1 新接续片</label>
+<label><input type="checkbox" checked data-toggle="V1">V1 候选</label>
+<label><input type="checkbox" checked data-toggle="M2">M2 候选</label>
+<label><input type="checkbox" data-toggle="AA">AA</label>
+<label><input type="checkbox" data-toggle="POLY">POLY</label>
+<label><input type="checkbox" data-toggle="CT">CT</label>
+<label><input type="checkbox" data-toggle="unknown">旧未知</label>
+</div>
+{{SVG}}
+<h2>原图与宽上下文（点击图片打开大图）</h2>
+<button id="raw">显示原图</button><button id="marked">显示候选标记</button>
+<p>两个面板独立裁自原图，没有跨层投影。亮点位置分别观察记录；黄色框是待判的左缘窄列。</p>
+<div class="grid">
+<div><h2>M1 侧：看孔是否在环／接续处</h2><a data-image="m1-wide" href="m1-wide-marked.png"><img data-source="m1-wide" src="m1-wide-marked.png"></a></div>
+<div><h2>M2 侧：看宽竖线的上端</h2><a data-image="m2-wide" href="m2-wide-marked.png"><img data-source="m2-wide" src="m2-wide-marked.png"></a></div>
+<div><h2>M1 侧局部放大（4 倍）</h2><a data-image="m1-detail" href="m1-detail-marked.png"><img data-source="m1-detail" src="m1-detail-marked.png"></a></div>
+<div><h2>M2 侧局部放大（4 倍）</h2><a data-image="m2-detail" href="m2-detail-marked.png"><img data-source="m2-detail" src="m2-detail-marked.png"></a></div>
+</div>
+<details><summary>展开全图定位</summary><div class="grid"><img src="m1-location.png"><img src="m2-location.png"></div></details>
+<p><a href="model.json">分层候选数据</a> · <a href="report.json">质量门与未知</a> ·
+<a href="spec.json">原生坐标／相对几何／拟合与留出</a> · <a href="manifest.json">输入与产物哈希</a></p>
+<script>
+document.querySelectorAll('[data-toggle]').forEach(e=>{
+const update=()=>document.querySelectorAll('[data-layer="'+e.dataset.toggle+'"]').forEach(g=>g.style.display=e.checked?'':'none');
+e.onchange=update;update();});
+function sourceMode(mode){document.querySelectorAll('[data-source]').forEach(e=>e.src=e.dataset.source+'-'+mode+'.png');
+document.querySelectorAll('[data-image]').forEach(e=>e.href=e.dataset.image+'-'+mode+'.png');}
+document.getElementById('raw').onclick=()=>sourceMode('raw');
+document.getElementById('marked').onclick=()=>sourceMode('marked');
+</script></html>

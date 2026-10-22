@@ -1,0 +1,48 @@
+{
+  "request": {
+    "path": "benchmarks/metal-fanout-validation-v1/request-v1.json",
+    "sha256": "a4d563c793070f2d0ed0bd2ffcdd09973707517962c99fa3543cc186dd9b95cb"
+  },
+  "verified_inputs": {
+    "benchmarks/metal-fanout-validation-v1/request-v1.json": "a4d563c793070f2d0ed0bd2ffcdd09973707517962c99fa3543cc186dd9b95cb",
+    "configs/joint-work-layer-v5.json": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088",
+    "docs/assets/conductive-stack-v2/model.json": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6",
+    "data/test_chip/tile_full/m2.jpg": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "data/test_chip/tile_full/m3.jpg": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "benchmarks/metal-extension/roi2-M3-M2-fanout-reviewed-v2.json": "079dc6e19ee94ae860990d8782ce542e432c5cf7474615a410bf071f39763ee1",
+    "benchmarks/metal-extension/roi2-M3-conditional-extension-v2.json": "b118944dec5c5a2f4df7001624a3654a0d461971aece213ce1283cd08c6a1d1a",
+    "benchmarks/metal-extension/roi2-V2-review-feedback-v1.json": "47a404c1b0259c501a8f003e403c5abe477c77cbbbe5c493581cceb2c9897f11",
+    "benchmarks/block-case-v1-roi2-M3-A-C-reviewed-v9.json": "fad4afb41418a4b7531057bf6052005a9a752a94d0ccd2df35d9cbfb31a621b6",
+    "benchmarks/metal-extension/roi2-M3-A-C-review-feedback-v1.json": "35b29235a1d736980f59b312338d029469e12aed852089d55da0a2b49f4f2dfd",
+    "benchmarks/metal-extension/roi2-M3-M2-fanout-candidate-v1.json": "6772c5f4066ee6a77162296be8c11ed88c1ed0188a11dd7b9a602b208b9c7a76",
+    "runs/roi2-M3-M2-fanout-review-v1/M3-all-M2-review.png": "deb2b652bca44db5ed4bd237770b2f46c98ead380e2d6c63e375d32a19de2536",
+    "benchmarks/metal-extension/roi2-AC-no-middle-M2-review-feedback-v1.json": "34d8d6cb6059fc76d77eb0ed11a5e7b746c30801d82452383c21e6b623bb9c5b",
+    "runs/roi2-P1-diffusion-reviewed-v11/AC-extra-M2-interface-review.png": "58022d05f2ae88b1867c4f4689c551155355106aab56e9a3da05266a7e72f16b",
+    "benchmarks/metal-extension/roi2-P1-frontiers-after-diffusion-v11.json": "c8aadf269ff7217fce0badd520850c44243992ad1146f6178e05633432a1b4c1"
+  },
+  "code": {
+    "metal_fanout.py": "ad547c66052b4db648f2882921d0242c032b9f770b692c318be532c35ad884c6",
+    "conductive_layers.py": "7f744eebf133beadc59de780e1c0e46ef70aced209e784377d9cf0618b61e8ca",
+    "metal_via_pilot.py": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566",
+    "metal_reconstruction.py": "99989393efc743d51c2677662e2ffa8adb4585400d539272a1c4151741642ce9",
+    "review_package.py": "5257f08ffc35d2098a635be5c65d01c28e07bbfcb19ac5b0c38313c00d5eb711"
+  },
+  "artifacts": {
+    "m2-wide-marked.png": "ad8822699e50544439c8daf500c99a7812f8b2fa665abdba3860afe23f9c48f0",
+    "m3-detail-raw.png": "26e17551bce69288475a6423901357743b9c00b51d576716eb47ad076ef6ea2a",
+    "m2-detail-raw.png": "9be1053be4e7e7844f53fc8cc228b562665c181958d5001a688300944021492d",
+    "local-design.png": "fa8e58a59408a6254abdb2a2616ba0c9708b1ad305c8cb1f0405542fbef6159d",
+    "m3-wide-raw.png": "f78941a6bcca9429f9d138c736823aff18293763fb42fa43d295230556611bbf",
+    "m2-location.png": "4d98236325940135d76eefab26c4264ebcfc6872ca05bfd1f349ce3d62ef058b",
+    "m3-location.png": "34b9873dbe9d2d149e8f8f933fccbc1c41423ceac59613d8a4b335361365413b",
+    "m2-detail-marked.png": "96b7997b1b1f1b04e711abca5f8871cce36955a80341de3baa1747891d9f7249",
+    "m3-wide-marked.png": "58544cf80efb85cbe89df5ca40c88163f533e70da975a01b7b20d1607c03763c",
+    "local-design.svg": "946894f521ca1d7f674a32e956d9847d1139eee13790db749a2d9b3317a7c6eb",
+    "model.json": "834379348b832dd0f8b1bf10c0ebd8464adb672243b7fc261a5cd3ef049f83d5",
+    "index.html": "c65389af8c0dc0dfb391f76d003a45af671655283913ed66fe30b8c4c43f5ef7",
+    "m3-detail-marked.png": "aced1aaf8b8b1a048e8a476c8ba403f6f6114311641c62851fd425f9d536bdce",
+    "m2-wide-raw.png": "4f817e92a00ff9b7d9d769e7fb27e47e5d12d4b11f92583889699804d311e9ee",
+    "report.json": "d4f484fe71ac326fa8c6e465ca51e43e6fb350cf49fb50ccf1037096ac25fbe6",
+    "request.json": "a4d563c793070f2d0ed0bd2ffcdd09973707517962c99fa3543cc186dd9b95cb"
+  }
+}

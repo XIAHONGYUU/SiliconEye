@@ -1,0 +1,191 @@
+{
+  "kind": "metal_via_layer_pair_companion",
+  "coordinate_space": "shared_design_px",
+  "objects_by_layer": {
+    "M2": [
+      {
+        "id": "M2-J01",
+        "layer": "M2",
+        "design_path": [
+          [
+            2151,
+            1940
+          ],
+          [
+            2151,
+            2270
+          ]
+        ],
+        "design_width": 84,
+        "source_path": [
+          [
+            1970,
+            1912
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "source_frame": "m2",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "status": "AI_candidate",
+        "net_id": null
+      }
+    ],
+    "M3": [
+      {
+        "id": "M3-J-B1",
+        "layer": "M3",
+        "design_path": [
+          [
+            1940,
+            1969
+          ],
+          [
+            2480,
+            1969
+          ]
+        ],
+        "design_width": 56,
+        "source_frame": "m3",
+        "source_path": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "status": "AI_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "net_id": null
+      },
+      {
+        "id": "M3-J-B0",
+        "layer": "M3",
+        "design_path": [
+          [
+            1940,
+            1915
+          ],
+          [
+            2480,
+            1915
+          ]
+        ],
+        "design_width": 6,
+        "source_frame": "m3",
+        "source_path": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "status": "AI_context_candidate",
+        "end_states": [
+          "continues_beyond_review_window_unknown",
+          "continues_beyond_review_window_unknown"
+        ],
+        "net_id": null
+      }
+    ]
+  },
+  "V2_support_regions": [
+    {
+      "id": "V2-J-EDGE-SUPPORT",
+      "via_group_id": "J-M2-EDGE-V2",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "observation_id": "J-M2-EDGE-V2",
+      "lower_metal_id": "M2-J01",
+      "upper_metal_id": "M3-J-B1",
+      "bounds": [
+        2117,
+        1966,
+        2123,
+        1972
+      ],
+      "role": "group_support_proxy_not_measured_cut",
+      "status": "AI_candidate",
+      "electrical_connection_confirmed": false
+    }
+  ],
+  "inherited_native_V2": {
+    "id": "J-M2-EDGE-V2",
+    "layer": "V2",
+    "layer_pair": [
+      "M2",
+      "M3"
+    ],
+    "source_frame": "m2",
+    "source_bounds": [
+      1935,
+      1905,
+      1953,
+      1953
+    ],
+    "identity_status": "human_confirmed",
+    "design_bounds": null,
+    "cut_count": null,
+    "upper_metal_id": null,
+    "M3_connection_confirmed": false
+  },
+  "physical_cut_count": null,
+  "hypothesized_local_connections": [
+    {
+      "id": "J-M2-V2-M3-B1",
+      "lower_metal_id": "M2-J01",
+      "via_group_id": "J-M2-EDGE-V2",
+      "via_layer": "V2",
+      "upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate_not_human_confirmed",
+      "basis": "M2 reviewed V2 column lies at the upper end of the broad vertical rail; the M3 broad horizontal band occupies the corresponding row. Narrow parallel M3 lines lie above it. Relative macro correspondence only, no qualified exact projection."
+    }
+  ],
+  "reviewed_local_connections": [],
+  "net_edges": [],
+  "adopted_into_joint_snapshot": false,
+  "source_to_design_transform": null,
+  "initial_observation": {
+    "path": "benchmarks/m2-v2-m3-joint-pilot-v1/initial-ai-observation-v1.json",
+    "sha256": "11dd41ba3802fe33909ba5a451554c887b7bd417a3631929dcce2df1cd92a95e"
+  },
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v3.json",
+    "sha256": "20c349bfb5c04c1a4d531a8414645a8ae359b190f6cdab3e9c9793a5abe27377"
+  },
+  "baseline": {
+    "spec": {
+      "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/spec-v1.json",
+      "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+    },
+    "model": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/model.json",
+      "sha256": "122cf8e8909e66223080e101d6b407c4fe51c03ebb969e3582e533c3c767ea4a"
+    },
+    "report": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/report.json",
+      "sha256": "cde2fbf1511cbdbfb66b20715ba03a0df9c9e4b1640e0de177f44acfe9490870"
+    },
+    "manifest": {
+      "path": "docs/assets/m1-v1-m2-joint-reviewed-v2/manifest.json",
+      "sha256": "d15051b4123a0ec8ecb236aa18278418b032437d667755a85c0b4726c14e6de5"
+    }
+  }
+}

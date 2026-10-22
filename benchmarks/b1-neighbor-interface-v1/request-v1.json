@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "kind": "metal_interface_native_evidence_review",
+  "id": "N2-B1-neighbor",
+  "initial_observation": {
+    "path": "benchmarks/b1-neighbor-interface-v1/initial-ai-observation-v1.json",
+    "sha256": "fbffb91f8d59ccd78e9f739f2ce4b50d0bf51acb366a7e05c530f3636346a421"
+  },
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "observations": [],
+  "source_windows": {
+    "m2": {
+      "wide": [
+        1250,
+        1650,
+        2500,
+        2450
+      ],
+      "detail": [
+        1370,
+        1820,
+        2120,
+        2060
+      ]
+    },
+    "m3": {
+      "wide": [
+        1250,
+        1650,
+        2500,
+        2450
+      ],
+      "detail": [
+        1370,
+        1820,
+        2120,
+        2060
+      ]
+    }
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          1480,
+          1903,
+          1518,
+          1959
+        ],
+        "color": "#ffb04f",
+        "label": "N2: V2 candidate"
+      },
+      {
+        "bounds": [
+          1935,
+          1905,
+          2003,
+          1953
+        ],
+        "color": "#58edab",
+        "label": "REF J01: V2 3x4 (reviewed)"
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          1460,
+          1945,
+          1540,
+          1995
+        ],
+        "color": "#ffb04f",
+        "label": "N2: B1 bearing candidate",
+        "label_xy": [
+          1425,
+          2010
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m2": [
+      {
+        "points": [
+          [
+            1498,
+            1968
+          ],
+          [
+            1510,
+            2270
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "N2 M2"
+      },
+      {
+        "points": [
+          [
+            1970,
+            1970
+          ],
+          [
+            1982,
+            2260
+          ]
+        ],
+        "color": "#58edab",
+        "label": "REF J01 M2"
+      }
+    ],
+    "m3": [
+      {
+        "points": [
+          [
+            1400,
+            1969
+          ],
+          [
+            2800,
+            1948
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "B1 reviewed carrier"
+      },
+      {
+        "points": [
+          [
+            1400,
+            1923
+          ],
+          [
+            2800,
+            1901
+          ]
+        ],
+        "color": "#ffe36b",
+        "label": "B0 narrow neighbor"
+      }
+    ]
+  },
+  "hypothesis": {
+    "id": "N2-M2-V2-M3-B1",
+    "lower_metal_id": "M2-N2-LEFT-RAIL",
+    "via_group_id": "V2-N2-GROUP",
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "alternative_upper_metal_id": "M3-J-B0",
+    "status": "AI_candidate_not_human_confirmed",
+    "basis": "M2-only via evidence first; relative array-row comparison to J01 and continuous broad B1 vs narrow B0 in M3 second."
+  },
+  "human_questions": [
+    {
+      "id": "N2",
+      "question": "左侧橙框N2孔组是否为V2，并将这根窄M2接到紫色B1粗横向母线，而非上方黄色B0？只确认新增接口，不需要逐孔计数或重审右侧J01。"
+    }
+  ],
+  "limits": [
+    "No qualified source overlay or shared-canvas placement; native windows shown separately.",
+    "M3 orange region is a carrier inspection window, not an observed V2 position.",
+    "N2 group count, exact boundaries and downward continuation unknown.",
+    "J01 original 12 V2, existing B1 carrier review and all 33 baseline objects preserved.",
+    "No new reviewed edge or automatic net export before N2 adjudication."
+  ]
+}

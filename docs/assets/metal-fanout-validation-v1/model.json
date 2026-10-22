@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_local_fanout_validation",
+  "parent_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "coordinate_space": "local_relative_design_px",
+  "canvas_wh": [
+    1400,
+    600
+  ],
+  "objects_by_layer": {
+    "M1": [],
+    "V1": [],
+    "M2": [
+      {
+        "id": "R2_M2_gate_segment_01",
+        "layer": "M2",
+        "kind": "metal",
+        "geometry": {
+          "outer_xy": [
+            [
+              140.0,
+              530.0
+            ],
+            [
+              140.0,
+              540.0
+            ],
+            [
+              160.0,
+              540.0
+            ],
+            [
+              160.0,
+              330.0
+            ],
+            [
+              160.0,
+              320.0
+            ],
+            [
+              140.0,
+              320.0
+            ],
+            [
+              140.0,
+              530.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "local_candidate_not_registered"
+        },
+        "role": "reviewed_chain",
+        "input_package": {
+          "path": "configs/joint-work-layer-v5.json",
+          "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+        },
+        "geometry_status": "local_candidate_not_common_canvas_registration"
+      },
+      {
+        "id": "R2_M2_C_segment_01",
+        "layer": "M2",
+        "kind": "metal",
+        "geometry": {
+          "outer_xy": [
+            [
+              1210.0,
+              460.0
+            ],
+            [
+              1210.0,
+              470.0
+            ],
+            [
+              1230.0,
+              470.0
+            ],
+            [
+              1230.0,
+              330.0
+            ],
+            [
+              1230.0,
+              320.0
+            ],
+            [
+              1210.0,
+              320.0
+            ],
+            [
+              1210.0,
+              460.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "local_candidate_not_registered"
+        },
+        "role": "reviewed_chain",
+        "input_package": {
+          "path": "configs/joint-work-layer-v5.json",
+          "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+        },
+        "geometry_status": "local_candidate_not_common_canvas_registration"
+      },
+      {
+        "id": "B-local-context",
+        "layer": "M2",
+        "kind": "metal",
+        "geometry": {
+          "outer_xy": [
+            [
+              232.0,
+              530.0
+            ],
+            [
+              232.0,
+              538.0
+            ],
+            [
+              248.0,
+              538.0
+            ],
+            [
+              248.0,
+              280.0
+            ],
+            [
+              248.0,
+              272.0
+            ],
+            [
+              232.0,
+              272.0
+            ],
+            [
+              232.0,
+              530.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "local_candidate_not_registered"
+        },
+        "role": "context_only",
+        "input_package": {
+          "path": "configs/joint-work-layer-v5.json",
+          "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+        },
+        "geometry_status": "local_candidate_not_common_canvas_registration"
+      }
+    ],
+    "V2": [
+      {
+        "id": "R2_gate_V2_01",
+        "layer": "V2",
+        "kind": "via_group_support_proxy",
+        "geometry": {
+          "outer_xy": [
+            [
+              153.0,
+              327.0
+            ],
+            [
+              153.0,
+              333.0
+            ],
+            [
+              147.0,
+              333.0
+            ],
+            [
+              147.0,
+              327.0
+            ],
+            [
+              153.0,
+              327.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "local_support_not_measured_cut"
+        },
+        "role": "reviewed_chain",
+        "input_package": {
+          "path": "benchmarks/metal-extension/roi2-M3-M2-fanout-reviewed-v2.json",
+          "sha256": "079dc6e19ee94ae860990d8782ce542e432c5cf7474615a410bf071f39763ee1"
+        },
+        "source_frame": "m2",
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "source_xy": [
+          2231,
+          3332
+        ],
+        "physical_cut_count": null
+      },
+      {
+        "id": "R2_gate_V2_C_01",
+        "layer": "V2",
+        "kind": "via_group_support_proxy",
+        "geometry": {
+          "outer_xy": [
+            [
+              1223.0,
+              327.0
+            ],
+            [
+              1223.0,
+              333.0
+            ],
+            [
+              1217.0,
+              333.0
+            ],
+            [
+              1217.0,
+              327.0
+            ],
+            [
+              1223.0,
+              327.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "local_support_not_measured_cut"
+        },
+        "role": "reviewed_chain",
+        "input_package": {
+          "path": "benchmarks/metal-extension/roi2-M3-M2-fanout-reviewed-v2.json",
+          "sha256": "079dc6e19ee94ae860990d8782ce542e432c5cf7474615a410bf071f39763ee1"
+        },
+        "source_frame": "m2",
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "source_xy": [
+          3275,
+          3308
+        ],
+        "physical_cut_count": null
+      }
+    ],
+    "M3": [
+      {
+        "id": "R2_M3_segment_01",
+        "layer": "M3",
+        "kind": "metal",
+        "geometry": {
+          "outer_xy": [
+            [
+              1220.0,
+              338.0
+            ],
+            [
+              1228.0,
+              338.0
+            ],
+            [
+              1228.0,
+              322.0
+            ],
+            [
+              150.0,
+              322.0
+            ],
+            [
+              142.0,
+              322.0
+            ],
+            [
+              142.0,
+              338.0
+            ],
+            [
+              1220.0,
+              338.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "local_candidate_not_registered"
+        },
+        "role": "reviewed_chain",
+        "input_package": {
+          "path": "configs/joint-work-layer-v5.json",
+          "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+        },
+        "geometry_status": "local_candidate_not_common_canvas_registration"
+      }
+    ]
+  },
+  "reviewed_branches": [
+    {
+      "id": "A",
+      "lower_metal_id": "R2_M2_gate_segment_01",
+      "upper_metal_id": "R2_M3_segment_01",
+      "via_group_id": "R2_gate_V2_01",
+      "human_review": {
+        "review": "endpoints",
+        "pointer": "/connections/0"
+      },
+      "status": "inherited_human_confirmed_local_interface"
+    },
+    {
+      "id": "C",
+      "lower_metal_id": "R2_M2_C_segment_01",
+      "upper_metal_id": "R2_M3_segment_01",
+      "via_group_id": "R2_gate_V2_C_01",
+      "human_review": {
+        "review": "endpoints",
+        "pointer": "/connections/1"
+      },
+      "status": "inherited_human_confirmed_local_interface"
+    }
+  ],
+  "excluded_attachments": [
+    {
+      "lower_metal_id": "B-local-context",
+      "upper_metal_id": "R2_M3_segment_01",
+      "projected_overlap": true,
+      "direct_attachment": "human_excluded_in_reviewed_span",
+      "global_same_net_status": "unknown"
+    }
+  ],
+  "source_to_design_transform": null,
+  "common_canvas_placement": null,
+  "automatic_network_export_allowed": false,
+  "net_edges": [],
+  "physical_cut_count": null,
+  "fanout_inventory": [
+    {
+      "lower_metal_id": "R2_M2_C_segment_01",
+      "via_group_ids": [
+        "R2_gate_V2_C_01"
+      ]
+    },
+    {
+      "lower_metal_id": "R2_M2_gate_segment_01",
+      "via_group_ids": [
+        "R2_gate_V2_01"
+      ]
+    }
+  ]
+}

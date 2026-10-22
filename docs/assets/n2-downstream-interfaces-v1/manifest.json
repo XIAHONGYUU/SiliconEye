@@ -1,0 +1,51 @@
+{
+  "request": {
+    "path": "benchmarks/n2-downstream-interfaces-v1/request-v1.json",
+    "sha256": "44f14c010a348affce77706c21440f1de7d32a504588a5df5fc961871d4fcac8"
+  },
+  "verified_inputs": {
+    "benchmarks/n2-downstream-interfaces-v1/initial-ai-observation-v1.json": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5",
+    "configs/joint-work-layer-v5.json": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088",
+    "docs/assets/conductive-stack-v2/model.json": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6",
+    "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168",
+    "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8",
+    "data/test_chip/tile_full/m1.jpg": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13",
+    "data/test_chip/tile_full/m2.jpg": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6",
+    "data/test_chip/tile_full/m3.jpg": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+    "benchmarks/b1-neighbor-interface-v1/request-v1.json": "eb2335be4b5914927d7a7504070cc767ffd0f5fa5ab69625cde240f0f8f5959d",
+    "benchmarks/b1-neighbor-interface-v1/initial-ai-observation-v1.json": "fbffb91f8d59ccd78e9f739f2ce4b50d0bf51acb366a7e05c530f3636346a421",
+    "docs/assets/b1-neighbor-interface-v1/index.html": "99a6438bac33e25ab5485adda71a17f1b500dd3278bd3405aae6ce1d4de2f3e7",
+    "docs/assets/b1-neighbor-interface-v1/report.json": "4e96e48e35f06870a96e008d2eec5958c6514f581eb1340e5d1f33df3c2ea166",
+    "docs/assets/b1-neighbor-interface-v1/manifest.json": "91a6e46da970dfdb3ec6ffb367d6490dbbcceddbb62f842da72e57efba908133"
+  },
+  "reused_code": {
+    "metal_via_pilot.py": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566",
+    "metal_via_pilot.html": "dcc9da1739f1ac4520a2b0474e27149bfd65a19d314e1bb4f9ecf0547ecdd0f3",
+    "conductive_layers.py": "7f744eebf133beadc59de780e1c0e46ef70aced209e784377d9cf0618b61e8ca",
+    "joint_layers.py": "4182227dba6cdf6784b893a283f8fca31e17325a9f6d71d0182877ea2690d89b",
+    "review_package.py": "5257f08ffc35d2098a635be5c65d01c28e07bbfcb19ac5b0c38313c00d5eb711"
+  },
+  "generated_by": "Existing source_panels plus native-evidence static review, no new case script or extraction algorithm",
+  "artifacts": {
+    "m2-wide-marked.png": "69937496cac1bb133227ff8d0e7ac1860778df767599ef996774e0a5d841fd31",
+    "m3-detail-raw.png": "d3bf07a2d1214e35f88453d1a05e8d71867e8a51d0832a85ded8a1467923d4c9",
+    "m1-detail-marked.png": "1d2235df62b8eb3dc62404afbc397cbd8cb4ae3ca3ea8648988c3326f95e6785",
+    "m1-wide-marked.png": "62a194612884aa408078969956b4ad9097915afbca7f757cf5524f8d4c3cd944",
+    "m2-detail-raw.png": "4ba495c0648595eca4aac61806076bcf7836b498a8f05af390c8bb1f8410ac91",
+    "m1-wide-raw.png": "79432e014e66e98f2b3acf253ccbe6a31d8a5915b42611dbbdb0fef848255bc1",
+    "m3-wide-raw.png": "2b8925c4348fc2fda0a171a2c744a004a976094cf6be75fc388aa7935829d067",
+    "m2-location.png": "6c66f66eb6fddaad7206fab77ec38c6259b6acdf27022aa8e3d60aa54749eb6b",
+    "relation-diagram.svg": "f6c802f2b028e159a5c9bec3000c584c7c0f043ecf4d3b176c9ab35b6c09b70a",
+    "m1-location.png": "98045af37595ee2851fc045d5af7e9b86a600d5852e729027326b638dc48c7b3",
+    "initial-ai-observation.json": "b2af9045a17eb72db5ad21b199be3fa58d803694bab89f9a17b339f99c3d90f5",
+    "m3-location.png": "9599eaf3779aa3498a30776ff0afcf8bce04b1da90f78fcf1a3454c5f0a32048",
+    "m2-detail-marked.png": "cb53513efbd0212aff438b4260070588ab15bbb3a2f32a80cfade20fbb77e500",
+    "m1-detail-raw.png": "d561ae80223f07b6553a476583256446b6e3d3f77af4acd3692b3a186060a405",
+    "m3-wide-marked.png": "bd6fe6996226f600d9f314921ac8ca6fc2a19df288e8fac482b8f4196dd0bef6",
+    "index.html": "3d206fa329e6fbb126742d8105dd62df0a123d5ad3e2ac65a1084e9f91eb8560",
+    "m3-detail-marked.png": "f868cd25df57e6a92cf8558152c2c6af2c5bee55f653fb8d14ad872bb16ffc9a",
+    "m2-wide-raw.png": "aca3c7f45f70d38abdf67527160689d64d35699ad865db476c264253cab1ff16",
+    "report.json": "41bbea5e9ae73b9e8cd4cc814bef93374887106a742da1f170c4869d99c7608e",
+    "request.json": "44f14c010a348affce77706c21440f1de7d32a504588a5df5fc961871d4fcac8"
+  }
+}

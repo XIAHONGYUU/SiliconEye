@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-22",
+  "statement": "1。确认为V1，且确认连接正确\n2.M1处有的黄色框内没有有V1,M2处的黄色框内有V2,从宽度上说，粗M1最右侧是没有V1的，因此都是四排孔的距离，这个点是对的上的。",
+  "verbatim_feedback": [
+    "1。确认为V1，且确认连接正确",
+    "2.M1处有的黄色框内没有有V1,M2处的黄色框内有V2,从宽度上说，粗M1最右侧是没有V1的，因此都是四排孔的距离，这个点是对的上的。"
+  ],
+  "scope": "J1/J2 displayed local interface and two source-native edge windows; not whole-frame layer or pixel-boundary approval",
+  "decisions": {
+    "via_layer": "V1",
+    "local_connection_confirmed": true,
+    "M1_box_V1_present": false,
+    "M2_box_via_layer": "V2",
+    "M1_right_edge_V1_present": false
+  },
+  "local_connection": {
+    "id": "J-M1-P08-V1-M2-J01",
+    "lower_metal_id": "M1-P08",
+    "via_layer": "V1",
+    "via_group_ids": [
+      "V1-J-A11",
+      "V1-J-A12",
+      "V1-J-A13",
+      "V1-J-A21",
+      "V1-J-A22",
+      "V1-J-A23",
+      "V1-J-A31",
+      "V1-J-A32",
+      "V1-J-A33"
+    ],
+    "upper_metal_id": "M2-J01",
+    "status": "human_confirmed_local_interface",
+    "id_association": "AI local IDs of the displayed group; human confirms group identity and connection, not nine individually measured cut outlines",
+    "geometry_boundary_status": "AI_candidate"
+  },
+  "resolved_edge_column": {
+    "id": "J-left-edge-column",
+    "m1_bounds": [
+      1937,
+      1930,
+      1953,
+      1985
+    ],
+    "m2_bounds": [
+      1935,
+      1905,
+      1953,
+      1953
+    ],
+    "status": "human_adjudicated",
+    "cut_count": null,
+    "basis": "User J2: M1 yellow box contains no V1; M2 yellow box contains V2. No extra V1 column inferred.",
+    "M1_box_V1_present": false,
+    "M2_box_via_layer": "V2"
+  },
+  "width_and_edge_constraints": {
+    "M1_right_edge_V1_present": false,
+    "right_edge_native_bounds": null,
+    "width_span_verbatim": "都是四排孔的距离",
+    "pixel_width": null,
+    "exact_hole_count": null,
+    "new_cut_creation_authorized": false,
+    "normalization": "Qualitative width/edge correspondence only; do not equate V1/V2 brightness columns or infer an extra V1 row. Existing geometry retained pending any independently justified local adjustment."
+  },
+  "active_limits": [
+    "Same-array correspondence is not an independent-structure acceptance",
+    "No exact source-to-design transform; corner/spacing express reconstructed layout candidates",
+    "New M1 continuation is not part of earlier Q1–Q3 approval",
+    "M2 is a visible segment, not a complete conductor or net",
+    "Unknown regions and existing CT source restrictions remain inherited",
+    "Local M1-V1-M2 relation confirmed by J1; exact cut coordinates and individual cut count not measured by user",
+    "M1 left box has no V1; M2 left box is V2, not a V1 correspondence anchor",
+    "M1 right edge has no V1; four-row hole-distance description constrains width, not a command to add cuts or measured pixel width",
+    "V2 design geometry and M3 target remain unassigned; native observation only"
+  ],
+  "sources": {
+    "parent_spec": {
+      "path": "benchmarks/m1-v1-m2-joint-pilot-v1/spec-v1.json",
+      "sha256": "6222a03ffae8b5ee2aba5596866ac89de6674dff361f3e4be618e26ffba09542"
+    },
+    "reviewed_page": {
+      "path": "docs/assets/m1-v1-m2-joint-pilot-v1/index.html",
+      "sha256": "2b3203a12f70d2e046448c09a32b88120935dd9adb663e57c78e570b7d6cd39a"
+    },
+    "reviewed_model": {
+      "path": "docs/assets/m1-v1-m2-joint-pilot-v1/model.json",
+      "sha256": "0f3186c60f5a228caf40cac945e38c0145de5257dec6d17b986b8b1d5385b89b"
+    },
+    "M1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "M2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  }
+}

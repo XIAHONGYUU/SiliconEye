@@ -1,0 +1,2156 @@
+{
+  "snapshot_id": "ct-source-ownership-reviewed-v2-joint",
+  "budget": {
+    "square_side": 5,
+    "min_gap_px": 3,
+    "enclosure_px": 1,
+    "channel_clearance_px": 1
+  },
+  "inherited_documents": {
+    "parent_spec": {
+      "operation": "apply_local_review_revision",
+      "audit_terminal_access": true,
+      "inputs": {
+        "materials": {
+          "path": "benchmarks/ct-work-layer-reviewed-v4/material-model-v1.json",
+          "sha256": "57692cdb100495d10de3271ff24aa4a9a152e053d946051d459d5fe715e012cc"
+        },
+        "contacts": {
+          "path": "benchmarks/ct-work-layer-reviewed-v4/model-v1.json",
+          "sha256": "f3e2bf0626d18b5d267fbc64f86dda0cbeb039b14d07694820fd0b2e09c827ac"
+        },
+        "parent_spec": {
+          "path": "benchmarks/ct-work-layer-reviewed-v4/spec-v1.json",
+          "sha256": "cce412f55861d874d649385b972b84facd4c14f454157853681ac606e8752b35"
+        },
+        "photo": {
+          "path": "data/test_chip/tile_full/poly.jpg",
+          "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+        },
+        "AA_photo": {
+          "path": "data/test_chip/tile_full/aa.jpg",
+          "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+        },
+        "M1_photo": {
+          "path": "data/test_chip/tile_full/m1.jpg",
+          "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+        },
+        "human_review": {
+          "path": "benchmarks/ct-work-layer-final-v5/authorization-v1.json",
+          "sha256": "dd8e24582a6376bed73f1f9a66968cc7f3c2c787d064622ff8cab8e0a6844af3"
+        },
+        "user_scope": {
+          "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+          "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+        },
+        "new_contacts": {
+          "path": "benchmarks/ct-work-layer-final-v5/new-contacts-v1.json",
+          "sha256": "73b3de0cc77df7843863cec97c4bec8cb7ad0b63b642adc1f9ef016393d99b3b"
+        },
+        "unknown_sites": {
+          "path": "benchmarks/ct-work-layer-final-v5/unknown-sites-v1.json",
+          "sha256": "aae3cdd0825ad9f66fb8144f13435e4aa17a49d611a9e2a2de0b3ef04a8a66c7"
+        },
+        "optical_observations": {
+          "path": "benchmarks/ct-work-layer-final-v5/optical-observations-v1.json",
+          "sha256": "2f8fa499631e02f9c35ab51f23b0b47041b351d2684f63c5e788629df4d0522e"
+        },
+        "raw_inventory": {
+          "path": "benchmarks/ct-work-layer-final-v5/input-inventory-v1.json",
+          "sha256": "6f0e36cdace2533da79ae36831933f54c4ad099362fb87e0f30367879813d0ae"
+        }
+      },
+      "budget": {
+        "square_side": 5,
+        "min_gap_px": 3,
+        "enclosure_px": 1,
+        "channel_clearance_px": 1
+      },
+      "material_changes": {
+        "objects": [
+          {
+            "id": "G06-P06",
+            "before": {
+              "id": "G06-P06",
+              "material": "POLY",
+              "native_outline": [
+                [
+                  3715.7777777777783,
+                  204.77777777777777
+                ],
+                [
+                  3749.777777777778,
+                  204.77777777777777
+                ],
+                [
+                  3751.7777777777783,
+                  322.7777777777778
+                ],
+                [
+                  3717.777777777778,
+                  322.7777777777778
+                ]
+              ],
+              "source_record": {
+                "id": "G06-P06",
+                "group_id": "G06",
+                "group_index": 5,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3715.7777777777783,
+                    204.77777777777777
+                  ],
+                  [
+                    3749.777777777778,
+                    204.77777777777777
+                  ],
+                  [
+                    3751.7777777777783,
+                    322.7777777777778
+                  ],
+                  [
+                    3717.777777777778,
+                    322.7777777777778
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3716.7777777777783,
+                    204.0
+                  ],
+                  [
+                    3750.7777777777783,
+                    204.0
+                  ],
+                  [
+                    3750.7777777777783,
+                    322.0
+                  ],
+                  [
+                    3716.7777777777783,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.0000000000001217,
+                    -0.016949152542798867,
+                    4.470809677710194
+                  ],
+                  [
+                    5.97369968049466e-15,
+                    1.0000000000000109,
+                    -0.7777709961085443
+                  ],
+                  [
+                    1.9017316869928282e-17,
+                    -1.1384376380275717e-16,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "source_scope": null,
+              "group_id": "G06",
+              "kind": "MOS_gate_body",
+              "acceptance": {
+                "material": "AI_candidate_not_human_confirmed",
+                "joint_geometry": "candidate",
+                "electrical": "unknown"
+              },
+              "AA_target": "AA-F01804",
+              "terminal_status": "not_individually_verified",
+              "geometry_method": "explicit_new_AA_relation_AI_candidate",
+              "legacy_record": {
+                "id": "G06-P06",
+                "group_id": "G06",
+                "group_index": 5,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3715.7777777777783,
+                    204.77777777777777
+                  ],
+                  [
+                    3749.777777777778,
+                    204.77777777777777
+                  ],
+                  [
+                    3751.7777777777783,
+                    322.7777777777778
+                  ],
+                  [
+                    3717.777777777778,
+                    322.7777777777778
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3716.7777777777783,
+                    204.0
+                  ],
+                  [
+                    3750.7777777777783,
+                    204.0
+                  ],
+                  [
+                    3750.7777777777783,
+                    322.0
+                  ],
+                  [
+                    3716.7777777777783,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.0000000000001217,
+                    -0.016949152542798867,
+                    4.470809677710194
+                  ],
+                  [
+                    5.97369968049466e-15,
+                    1.0000000000000109,
+                    -0.7777709961085443
+                  ],
+                  [
+                    1.9017316869928282e-17,
+                    -1.1384376380275717e-16,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "layout_outline": [
+                [
+                  3751.0,
+                  431.0
+                ],
+                [
+                  3783.0,
+                  431.0
+                ],
+                [
+                  3783.0,
+                  546.0
+                ],
+                [
+                  3751.0,
+                  546.0
+                ]
+              ],
+              "relation_record": {
+                "id": "G06-right",
+                "object_ids": [
+                  "G06-P06",
+                  "G06-P07",
+                  "G06-P08",
+                  "G06-P09",
+                  "G06-P10"
+                ],
+                "AA_id": "AA-F01804",
+                "width_px": 32,
+                "margin_px": 8,
+                "extension_px": 8,
+                "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+              }
+            },
+            "after": null
+          },
+          {
+            "id": "G06-P07",
+            "before": {
+              "id": "G06-P07",
+              "material": "POLY",
+              "native_outline": [
+                [
+                  3766.3333333333335,
+                  205.33333333333334
+                ],
+                [
+                  3800.333333333333,
+                  205.33333333333334
+                ],
+                [
+                  3802.3333333333335,
+                  323.33333333333337
+                ],
+                [
+                  3768.333333333333,
+                  323.33333333333337
+                ]
+              ],
+              "source_record": {
+                "id": "G06-P07",
+                "group_id": "G06",
+                "group_index": 6,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3766.3333333333335,
+                    205.33333333333334
+                  ],
+                  [
+                    3800.333333333333,
+                    205.33333333333334
+                  ],
+                  [
+                    3802.3333333333335,
+                    323.33333333333337
+                  ],
+                  [
+                    3768.333333333333,
+                    323.33333333333337
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3767.3333333333335,
+                    204.0
+                  ],
+                  [
+                    3801.3333333333335,
+                    204.0
+                  ],
+                  [
+                    3801.3333333333335,
+                    322.0
+                  ],
+                  [
+                    3767.3333333333335,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.000000000000013,
+                    -0.016949150350646022,
+                    4.480225452430608
+                  ],
+                  [
+                    1.0473106924151175e-15,
+                    0.9999998706882507,
+                    -1.3333016950611962
+                  ],
+                  [
+                    1.5496632447410206e-18,
+                    -5.221012848132385e-20,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "source_scope": null,
+              "group_id": "G06",
+              "kind": "MOS_gate_body",
+              "acceptance": {
+                "material": "AI_candidate_not_human_confirmed",
+                "joint_geometry": "candidate",
+                "electrical": "unknown"
+              },
+              "AA_target": "AA-F01804",
+              "terminal_status": "not_individually_verified",
+              "geometry_method": "explicit_new_AA_relation_AI_candidate",
+              "legacy_record": {
+                "id": "G06-P07",
+                "group_id": "G06",
+                "group_index": 6,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3766.3333333333335,
+                    205.33333333333334
+                  ],
+                  [
+                    3800.333333333333,
+                    205.33333333333334
+                  ],
+                  [
+                    3802.3333333333335,
+                    323.33333333333337
+                  ],
+                  [
+                    3768.333333333333,
+                    323.33333333333337
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3767.3333333333335,
+                    204.0
+                  ],
+                  [
+                    3801.3333333333335,
+                    204.0
+                  ],
+                  [
+                    3801.3333333333335,
+                    322.0
+                  ],
+                  [
+                    3767.3333333333335,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.000000000000013,
+                    -0.016949150350646022,
+                    4.480225452430608
+                  ],
+                  [
+                    1.0473106924151175e-15,
+                    0.9999998706882507,
+                    -1.3333016950611962
+                  ],
+                  [
+                    1.5496632447410206e-18,
+                    -5.221012848132385e-20,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "layout_outline": [
+                [
+                  3792.75,
+                  431.0
+                ],
+                [
+                  3824.75,
+                  431.0
+                ],
+                [
+                  3824.75,
+                  546.0
+                ],
+                [
+                  3792.75,
+                  546.0
+                ]
+              ],
+              "relation_record": {
+                "id": "G06-right",
+                "object_ids": [
+                  "G06-P06",
+                  "G06-P07",
+                  "G06-P08",
+                  "G06-P09",
+                  "G06-P10"
+                ],
+                "AA_id": "AA-F01804",
+                "width_px": 32,
+                "margin_px": 8,
+                "extension_px": 8,
+                "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+              }
+            },
+            "after": null
+          },
+          {
+            "id": "G06-P08",
+            "before": {
+              "id": "G06-P08",
+              "material": "POLY",
+              "native_outline": [
+                [
+                  3816.888888888889,
+                  205.88888888888889
+                ],
+                [
+                  3850.8888888888887,
+                  205.88888888888889
+                ],
+                [
+                  3852.888888888889,
+                  323.8888888888889
+                ],
+                [
+                  3818.888888888889,
+                  323.8888888888889
+                ]
+              ],
+              "source_record": {
+                "id": "G06-P08",
+                "group_id": "G06",
+                "group_index": 7,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3816.888888888889,
+                    205.88888888888889
+                  ],
+                  [
+                    3850.8888888888887,
+                    205.88888888888889
+                  ],
+                  [
+                    3852.888888888889,
+                    323.8888888888889
+                  ],
+                  [
+                    3818.888888888889,
+                    323.8888888888889
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3817.888888888889,
+                    204.0
+                  ],
+                  [
+                    3851.888888888889,
+                    204.0
+                  ],
+                  [
+                    3851.888888888889,
+                    322.0
+                  ],
+                  [
+                    3817.888888888889,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.0000000000001432,
+                    -0.016949152541940772,
+                    4.489642126763488
+                  ],
+                  [
+                    4.909043109167128e-15,
+                    1.000000000000119,
+                    -1.888885498073396
+                  ],
+                  [
+                    1.5437828261785668e-17,
+                    1.1295369457329514e-16,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "source_scope": null,
+              "group_id": "G06",
+              "kind": "MOS_gate_body",
+              "acceptance": {
+                "material": "AI_candidate_not_human_confirmed",
+                "joint_geometry": "candidate",
+                "electrical": "unknown"
+              },
+              "AA_target": "AA-F01804",
+              "terminal_status": "not_individually_verified",
+              "geometry_method": "explicit_new_AA_relation_AI_candidate",
+              "legacy_record": {
+                "id": "G06-P08",
+                "group_id": "G06",
+                "group_index": 7,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3816.888888888889,
+                    205.88888888888889
+                  ],
+                  [
+                    3850.8888888888887,
+                    205.88888888888889
+                  ],
+                  [
+                    3852.888888888889,
+                    323.8888888888889
+                  ],
+                  [
+                    3818.888888888889,
+                    323.8888888888889
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3817.888888888889,
+                    204.0
+                  ],
+                  [
+                    3851.888888888889,
+                    204.0
+                  ],
+                  [
+                    3851.888888888889,
+                    322.0
+                  ],
+                  [
+                    3817.888888888889,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.0000000000001432,
+                    -0.016949152541940772,
+                    4.489642126763488
+                  ],
+                  [
+                    4.909043109167128e-15,
+                    1.000000000000119,
+                    -1.888885498073396
+                  ],
+                  [
+                    1.5437828261785668e-17,
+                    1.1295369457329514e-16,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "layout_outline": [
+                [
+                  3834.5,
+                  431.0
+                ],
+                [
+                  3866.5,
+                  431.0
+                ],
+                [
+                  3866.5,
+                  546.0
+                ],
+                [
+                  3834.5,
+                  546.0
+                ]
+              ],
+              "relation_record": {
+                "id": "G06-right",
+                "object_ids": [
+                  "G06-P06",
+                  "G06-P07",
+                  "G06-P08",
+                  "G06-P09",
+                  "G06-P10"
+                ],
+                "AA_id": "AA-F01804",
+                "width_px": 32,
+                "margin_px": 8,
+                "extension_px": 8,
+                "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+              }
+            },
+            "after": null
+          },
+          {
+            "id": "G06-P09",
+            "before": {
+              "id": "G06-P09",
+              "material": "POLY",
+              "native_outline": [
+                [
+                  3867.4444444444443,
+                  206.44444444444446
+                ],
+                [
+                  3901.4444444444443,
+                  206.44444444444446
+                ],
+                [
+                  3903.4444444444443,
+                  324.44444444444446
+                ],
+                [
+                  3869.4444444444443,
+                  324.44444444444446
+                ]
+              ],
+              "source_record": {
+                "id": "G06-P09",
+                "group_id": "G06",
+                "group_index": 8,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3867.4444444444443,
+                    206.44444444444446
+                  ],
+                  [
+                    3901.4444444444443,
+                    206.44444444444446
+                  ],
+                  [
+                    3903.4444444444443,
+                    324.44444444444446
+                  ],
+                  [
+                    3869.4444444444443,
+                    324.44444444444446
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3868.4444444444443,
+                    204.0
+                  ],
+                  [
+                    3902.4444444444443,
+                    204.0
+                  ],
+                  [
+                    3902.4444444444443,
+                    322.0
+                  ],
+                  [
+                    3868.4444444444443,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.0000000000000113,
+                    -0.01694915035020418,
+                    4.499057899138431
+                  ],
+                  [
+                    -5.038926544433515e-16,
+                    0.9999998706882981,
+                    -2.4444160533357913
+                  ],
+                  [
+                    -1.7035918482927861e-18,
+                    1.1356772944512984e-16,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "source_scope": null,
+              "group_id": "G06",
+              "kind": "MOS_gate_body",
+              "acceptance": {
+                "material": "AI_candidate_not_human_confirmed",
+                "joint_geometry": "candidate",
+                "electrical": "unknown"
+              },
+              "AA_target": "AA-F01804",
+              "terminal_status": "not_individually_verified",
+              "geometry_method": "explicit_new_AA_relation_AI_candidate",
+              "legacy_record": {
+                "id": "G06-P09",
+                "group_id": "G06",
+                "group_index": 8,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3867.4444444444443,
+                    206.44444444444446
+                  ],
+                  [
+                    3901.4444444444443,
+                    206.44444444444446
+                  ],
+                  [
+                    3903.4444444444443,
+                    324.44444444444446
+                  ],
+                  [
+                    3869.4444444444443,
+                    324.44444444444446
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3868.4444444444443,
+                    204.0
+                  ],
+                  [
+                    3902.4444444444443,
+                    204.0
+                  ],
+                  [
+                    3902.4444444444443,
+                    322.0
+                  ],
+                  [
+                    3868.4444444444443,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    1.0000000000000113,
+                    -0.01694915035020418,
+                    4.499057899138431
+                  ],
+                  [
+                    -5.038926544433515e-16,
+                    0.9999998706882981,
+                    -2.4444160533357913
+                  ],
+                  [
+                    -1.7035918482927861e-18,
+                    1.1356772944512984e-16,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "layout_outline": [
+                [
+                  3876.25,
+                  431.0
+                ],
+                [
+                  3908.25,
+                  431.0
+                ],
+                [
+                  3908.25,
+                  546.0
+                ],
+                [
+                  3876.25,
+                  546.0
+                ]
+              ],
+              "relation_record": {
+                "id": "G06-right",
+                "object_ids": [
+                  "G06-P06",
+                  "G06-P07",
+                  "G06-P08",
+                  "G06-P09",
+                  "G06-P10"
+                ],
+                "AA_id": "AA-F01804",
+                "width_px": 32,
+                "margin_px": 8,
+                "extension_px": 8,
+                "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+              }
+            },
+            "after": null
+          },
+          {
+            "id": "G06-P10",
+            "before": {
+              "id": "G06-P10",
+              "material": "POLY",
+              "native_outline": [
+                [
+                  3918.0,
+                  207.0
+                ],
+                [
+                  3952.0,
+                  207.0
+                ],
+                [
+                  3954.0,
+                  325.0
+                ],
+                [
+                  3920.0,
+                  325.0
+                ]
+              ],
+              "source_record": {
+                "id": "G06-P10",
+                "group_id": "G06",
+                "group_index": 9,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3918.0,
+                    207.0
+                  ],
+                  [
+                    3952.0,
+                    207.0
+                  ],
+                  [
+                    3954.0,
+                    325.0
+                  ],
+                  [
+                    3920.0,
+                    325.0
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3919.0,
+                    204.0
+                  ],
+                  [
+                    3953.0,
+                    204.0
+                  ],
+                  [
+                    3953.0,
+                    322.0
+                  ],
+                  [
+                    3919.0,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    0.9999999999999963,
+                    -0.016949152542371608,
+                    4.50847457627523
+                  ],
+                  [
+                    5.842302580624912e-16,
+                    0.9999999999999974,
+                    -3.0000000000022773
+                  ],
+                  [
+                    -6.364688326615045e-19,
+                    -9.125495007658963e-20,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "source_scope": null,
+              "group_id": "G06",
+              "kind": "MOS_gate_body",
+              "acceptance": {
+                "material": "AI_candidate_not_human_confirmed",
+                "joint_geometry": "candidate",
+                "electrical": "unknown"
+              },
+              "AA_target": "AA-F01804",
+              "terminal_status": "not_individually_verified",
+              "geometry_method": "explicit_new_AA_relation_AI_candidate",
+              "legacy_record": {
+                "id": "G06-P10",
+                "group_id": "G06",
+                "group_index": 9,
+                "kind": "MOS_gate_body",
+                "material": "poly",
+                "status": "AI_candidate_not_human_confirmed",
+                "native_outline": [
+                  [
+                    3918.0,
+                    207.0
+                  ],
+                  [
+                    3952.0,
+                    207.0
+                  ],
+                  [
+                    3954.0,
+                    325.0
+                  ],
+                  [
+                    3920.0,
+                    325.0
+                  ]
+                ],
+                "layout_outline": [
+                  [
+                    3919.0,
+                    204.0
+                  ],
+                  [
+                    3953.0,
+                    204.0
+                  ],
+                  [
+                    3953.0,
+                    322.0
+                  ],
+                  [
+                    3919.0,
+                    322.0
+                  ]
+                ],
+                "native_to_layout": [
+                  [
+                    0.9999999999999963,
+                    -0.016949152542371608,
+                    4.50847457627523
+                  ],
+                  [
+                    5.842302580624912e-16,
+                    0.9999999999999974,
+                    -3.0000000000022773
+                  ],
+                  [
+                    -6.364688326615045e-19,
+                    -9.125495007658963e-20,
+                    1.0
+                  ]
+                ],
+                "source_method": "AI_visual_array_observation_linear_interpolation_not_autonomous_segmentation",
+                "extent": "AI_full_visible_body_candidate_terminal_shapes_not_inferred",
+                "terminal_routing": "unknown_not_completed_by_repetition"
+              },
+              "layout_outline": [
+                [
+                  3918.0,
+                  431.0
+                ],
+                [
+                  3950.0,
+                  431.0
+                ],
+                [
+                  3950.0,
+                  546.0
+                ],
+                [
+                  3918.0,
+                  546.0
+                ]
+              ],
+              "relation_record": {
+                "id": "G06-right",
+                "object_ids": [
+                  "G06-P06",
+                  "G06-P07",
+                  "G06-P08",
+                  "G06-P09",
+                  "G06-P10"
+                ],
+                "AA_id": "AA-F01804",
+                "width_px": 32,
+                "margin_px": 8,
+                "extension_px": 8,
+                "evidence": "AI observed ordering of source POLY bodies and matching AA family; preserve source counts and IDs; new joint geometry not human approved"
+              }
+            },
+            "after": null
+          },
+          {
+            "id": "G06R-P01",
+            "before": null,
+            "after": {
+              "id": "G06R-P01",
+              "material": "POLY",
+              "kind": "MOS_gate_body",
+              "group_id": "G06R",
+              "AA_target": "AA-F01804",
+              "layout_outline": [
+                [
+                  3754.0,
+                  431
+                ],
+                [
+                  3786.0,
+                  431
+                ],
+                [
+                  3786.0,
+                  546
+                ],
+                [
+                  3754.0,
+                  546
+                ]
+              ],
+              "native_outline": [
+                [
+                  3753,
+                  177
+                ],
+                [
+                  3789,
+                  177
+                ],
+                [
+                  3789,
+                  322
+                ],
+                [
+                  3753,
+                  322
+                ]
+              ],
+              "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+              "observed_upper_terminal": {
+                "native_center_locator": [
+                  3771,
+                  190
+                ],
+                "band_bbox": [
+                  3749,
+                  174,
+                  3794,
+                  212
+                ]
+              },
+              "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+              "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+              "supersedes_group_material_ids": [
+                "G06-P06",
+                "G06-P07",
+                "G06-P08",
+                "G06-P09",
+                "G06-P10"
+              ],
+              "acceptance": {
+                "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+                "joint_geometry": "AI_checked_candidate",
+                "electrical": "unknown"
+              },
+              "review_ref": {
+                "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+                "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+              }
+            }
+          },
+          {
+            "id": "G06R-P02",
+            "before": null,
+            "after": {
+              "id": "G06R-P02",
+              "material": "POLY",
+              "kind": "MOS_gate_body",
+              "group_id": "G06R",
+              "AA_target": "AA-F01804",
+              "layout_outline": [
+                [
+                  3807.6666666666665,
+                  431
+                ],
+                [
+                  3839.6666666666665,
+                  431
+                ],
+                [
+                  3839.6666666666665,
+                  546
+                ],
+                [
+                  3807.6666666666665,
+                  546
+                ]
+              ],
+              "native_outline": [
+                [
+                  3798,
+                  177
+                ],
+                [
+                  3834,
+                  177
+                ],
+                [
+                  3834,
+                  322
+                ],
+                [
+                  3798,
+                  322
+                ]
+              ],
+              "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+              "observed_upper_terminal": {
+                "native_center_locator": [
+                  3816,
+                  190
+                ],
+                "band_bbox": [
+                  3794,
+                  174,
+                  3839,
+                  212
+                ]
+              },
+              "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+              "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+              "supersedes_group_material_ids": [
+                "G06-P06",
+                "G06-P07",
+                "G06-P08",
+                "G06-P09",
+                "G06-P10"
+              ],
+              "acceptance": {
+                "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+                "joint_geometry": "AI_checked_candidate",
+                "electrical": "unknown"
+              },
+              "review_ref": {
+                "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+                "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+              }
+            }
+          },
+          {
+            "id": "G06R-P03",
+            "before": null,
+            "after": {
+              "id": "G06R-P03",
+              "material": "POLY",
+              "kind": "MOS_gate_body",
+              "group_id": "G06R",
+              "AA_target": "AA-F01804",
+              "layout_outline": [
+                [
+                  3861.3333333333335,
+                  431
+                ],
+                [
+                  3893.3333333333335,
+                  431
+                ],
+                [
+                  3893.3333333333335,
+                  546
+                ],
+                [
+                  3861.3333333333335,
+                  546
+                ]
+              ],
+              "native_outline": [
+                [
+                  3853,
+                  177
+                ],
+                [
+                  3889,
+                  177
+                ],
+                [
+                  3889,
+                  322
+                ],
+                [
+                  3853,
+                  322
+                ]
+              ],
+              "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+              "observed_upper_terminal": {
+                "native_center_locator": [
+                  3871,
+                  190
+                ],
+                "band_bbox": [
+                  3849,
+                  174,
+                  3894,
+                  212
+                ]
+              },
+              "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+              "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+              "supersedes_group_material_ids": [
+                "G06-P06",
+                "G06-P07",
+                "G06-P08",
+                "G06-P09",
+                "G06-P10"
+              ],
+              "acceptance": {
+                "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+                "joint_geometry": "AI_checked_candidate",
+                "electrical": "unknown"
+              },
+              "review_ref": {
+                "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+                "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+              }
+            }
+          },
+          {
+            "id": "G06R-P04",
+            "before": null,
+            "after": {
+              "id": "G06R-P04",
+              "material": "POLY",
+              "kind": "MOS_gate_body",
+              "group_id": "G06R",
+              "AA_target": "AA-F01804",
+              "layout_outline": [
+                [
+                  3915.0,
+                  431
+                ],
+                [
+                  3947.0,
+                  431
+                ],
+                [
+                  3947.0,
+                  546
+                ],
+                [
+                  3915.0,
+                  546
+                ]
+              ],
+              "native_outline": [
+                [
+                  3904,
+                  177
+                ],
+                [
+                  3940,
+                  177
+                ],
+                [
+                  3940,
+                  322
+                ],
+                [
+                  3904,
+                  322
+                ]
+              ],
+              "source_scope": "poly source rectangle is an AI locator, not exact material pixel boundary",
+              "observed_upper_terminal": {
+                "native_center_locator": [
+                  3922,
+                  190
+                ],
+                "band_bbox": [
+                  3900,
+                  174,
+                  3945,
+                  212
+                ]
+              },
+              "terminal_status": "upper_side_inherited_human_R1B_confirmation",
+              "geometry_method": "four_observed_caps_and_five_SD_columns_joint_regular_reconstruction",
+              "supersedes_group_material_ids": [
+                "G06-P06",
+                "G06-P07",
+                "G06-P08",
+                "G06-P09",
+                "G06-P10"
+              ],
+              "acceptance": {
+                "material": "AI_visual_rechecked_supported_by_source_and_prior_R1B_side",
+                "joint_geometry": "AI_checked_candidate",
+                "electrical": "unknown"
+              },
+              "review_ref": {
+                "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+                "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+              }
+            }
+          }
+        ],
+        "AA_objects": []
+      },
+      "contact_changes": [],
+      "source_correspondence_corrections": [],
+      "review_images": [],
+      "cases": [
+        {
+          "id": "RIGHT4",
+          "title": "右上末段：四栅及五列源漏CT",
+          "source_bbox": [
+            3500,
+            110,
+            4120,
+            375
+          ],
+          "layout_bbox": [
+            3700,
+            410,
+            4000,
+            565
+          ],
+          "scope": "四组原图上端栅亮条对应四条规则POLY；每栅两候选CT，五列源漏各五个候选。原图和规则图为独立坐标，不做未经验证回投影。"
+        },
+        {
+          "id": "LIMITS",
+          "title": "照片上沿受限范围：不补造孔",
+          "source_bbox": [
+            1300,
+            0,
+            2250,
+            330
+          ],
+          "layout_bbox": [
+            1550,
+            255,
+            2300,
+            410
+          ],
+          "scope": "两小AA和H1/H2长条保留来源限制；无CT不代表物理无孔，限制区域禁止自动推断连接。"
+        }
+      ],
+      "review_title": "CT工作层v1：四栅补齐与工程收口（保留受限范围）",
+      "review_notes": "只修订已核清的右上四栅，保留全部父CT及无关材料。受限范围完整保留，不声称100%物理孔恢复。工程验收与整层人工像素批准分别记录。"
+    },
+    "unknown": {
+      "sites": [],
+      "unknown_scopes": [
+        {
+          "id": "U-AA-F01951",
+          "kind": "unlocated_isolated_AA_CT_unknown",
+          "AA_target": "AA-F01951",
+          "layout_bounds": [
+            2017.0,
+            341.0,
+            2055.0,
+            349.0
+          ],
+          "criticality": "no_known_device_port_inferred",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "AA_legacy_locator_native_bounds": [
+            1948.061891893287,
+            274.3223129992924,
+            1989.1744848545168,
+            283.76579389755176
+          ],
+          "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+              "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1730,
+              180,
+              2120,
+              410
+            ],
+            "poly": [
+              1450,
+              0,
+              2250,
+              330
+            ]
+          }
+        },
+        {
+          "id": "U-AA-F01952",
+          "kind": "unlocated_isolated_AA_CT_unknown",
+          "AA_target": "AA-F01952",
+          "layout_bounds": [
+            1934.0,
+            341.0,
+            1972.0,
+            350.0
+          ],
+          "criticality": "no_known_device_port_inferred",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "AA_legacy_locator_native_bounds": [
+            1858.1303719137622,
+            272.2163884790137,
+            1899.3694753010689,
+            282.7362753810213
+          ],
+          "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+              "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1730,
+              180,
+              2120,
+              410
+            ],
+            "poly": [
+              1450,
+              0,
+              2250,
+              330
+            ]
+          }
+        },
+        {
+          "id": "U-H1",
+          "kind": "guard_CT_observability_unknown",
+          "AA_target": "AA2-TOP-H1-AA-0",
+          "layout_bounds": [
+            270.0039,
+            269.4849,
+            5226.7198,
+            284.7099
+          ],
+          "criticality": "guard_body_metal_access_not_proven",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric. The POLY photo partly clips the upper band.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "data/test_chip/tile_full/m1.jpg",
+              "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1300,
+              160,
+              2250,
+              410
+            ],
+            "poly": [
+              1300,
+              0,
+              2250,
+              150
+            ],
+            "m1": [
+              1300,
+              160,
+              2250,
+              360
+            ]
+          }
+        },
+        {
+          "id": "U-H2",
+          "kind": "guard_CT_observability_unknown",
+          "AA_target": "AA2-TOP-H2-AA-0",
+          "layout_bounds": [
+            268.0,
+            370.0,
+            5271.0,
+            384.0
+          ],
+          "criticality": "guard_body_metal_access_not_proven",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "data/test_chip/tile_full/m1.jpg",
+              "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1300,
+              160,
+              2250,
+              410
+            ],
+            "poly": [
+              1300,
+              0,
+              2250,
+              150
+            ],
+            "m1": [
+              1300,
+              160,
+              2250,
+              360
+            ]
+          }
+        },
+        {
+          "id": "L-CLIPPED-AA-F01744",
+          "kind": "device_body_CT_source_outside_current_photo",
+          "AA_target": "AA-F01744",
+          "layout_bounds": [
+            354,
+            522,
+            456,
+            574
+          ],
+          "no_CT_is_not_proven_absence": true,
+          "status": "excluded_from_source_complete_claim",
+          "tracing_policy": "keep_terminal_access_unknown_here",
+          "mandatory_human_action_now": false,
+          "evidence_ref": {
+            "path": "benchmarks/ct-work-layer-closeout-v3/port-source-checks-v1.json",
+            "sha256": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae"
+          }
+        },
+        {
+          "id": "S3-AA4-LEFT-SD-ACCESS",
+          "kind": "invalid_CT_assignment_retired_actual_diffusion_access_unknown",
+          "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+          "layout_bounds": [
+            1348.3168,
+            3765.8875,
+            1362.03645,
+            3794.613
+          ],
+          "status": "no_independent_source_drain_CT_evidence_here",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "question_for_human": null,
+          "tracing_policy": "do_not_infer_left_diffusion_CT_or_M1_access_from_the_shared_gate_contact",
+          "review_ref": {
+            "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+            "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+          }
+        }
+      ],
+      "not_hypothetical_hole_slots": true
+    },
+    "stage": {
+      "status": "SCOPED_HUMAN_IDENTITIES_REVIEWED_WITH_LIMITATIONS",
+      "engineering_closeout_complete": true,
+      "geometry_status": "PASS",
+      "source_supported_work_layer_ready": true,
+      "closed_cases": [
+        "R1A",
+        "R1B",
+        "R2",
+        "R1B-COUNT"
+      ],
+      "count_review_basis": "AI_raw_photo_recheck_plus_user_authorized_implementation",
+      "blocking_human_cases": [],
+      "requires_user_action_now": false,
+      "source_limitations_open": [
+        "U-AA-F01951",
+        "U-AA-F01952",
+        "U-H1",
+        "U-H2",
+        "L-CLIPPED-AA-F01744",
+        "S3-AA4-LEFT-SD-ACCESS"
+      ],
+      "whole_frame_complete": false,
+      "physical_all_CT_recovered": false,
+      "overall_human_acceptance": false,
+      "human_acceptance_scope": "S1 identities/relative placement; S2 displayed correction; S3 purple SD and blue common POLY gate identity only. New bus outline/CT geometry remains AI candidate.",
+      "CT_count": 10287,
+      "AA_count": 334,
+      "POLY_count": 696,
+      "physical_PDK_DRC": false,
+      "physical_limitations_not_relabelled_as_pass": true,
+      "human_review_ref": {
+        "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+        "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+      }
+    },
+    "use_contract": {
+      "schema_version": 1,
+      "purpose": "CT material-landing geometry work layer for evidence-guided continuation",
+      "units": "relative_pixels",
+      "authoritative_model": {
+        "path": "benchmarks/ct-source-ownership-reviewed-v2/model-v1.json",
+        "sha256": "8c977221bd661f381a74f5f2b0a04df4c6b91b77491a234124dcf98b298ae927"
+      },
+      "use_reviewed_source_supported_records": true,
+      "confirmed_M1_connectivity": false,
+      "confirmed_netlist": false,
+      "new_geometry_human_pixel_approved": false,
+      "physical_all_CT_recovered": false,
+      "restrictions": [
+        {
+          "scope_id": "U-AA-F01951",
+          "bounds": [
+            2017.0,
+            341.0,
+            2055.0,
+            349.0
+          ],
+          "AA_target": "AA-F01951",
+          "policy": "do_not_infer_CT_or_M1_connection_here"
+        },
+        {
+          "scope_id": "U-AA-F01952",
+          "bounds": [
+            1934.0,
+            341.0,
+            1972.0,
+            350.0
+          ],
+          "AA_target": "AA-F01952",
+          "policy": "do_not_infer_CT_or_M1_connection_here"
+        },
+        {
+          "scope_id": "U-H1",
+          "bounds": [
+            270.0039,
+            269.4849,
+            5226.7198,
+            284.7099
+          ],
+          "AA_target": "AA2-TOP-H1-AA-0",
+          "policy": "do_not_infer_CT_or_M1_connection_here"
+        },
+        {
+          "scope_id": "U-H2",
+          "bounds": [
+            268.0,
+            370.0,
+            5271.0,
+            384.0
+          ],
+          "AA_target": "AA2-TOP-H2-AA-0",
+          "policy": "do_not_infer_CT_or_M1_connection_here"
+        },
+        {
+          "scope_id": "L-CLIPPED-AA-F01744",
+          "bounds": [
+            354,
+            522,
+            456,
+            574
+          ],
+          "AA_target": "AA-F01744",
+          "policy": "keep_terminal_access_unknown_here"
+        },
+        {
+          "scope_id": "S3-AA4-LEFT-SD-ACCESS",
+          "bounds": [
+            1348.3168,
+            3765.8875,
+            1362.03645,
+            3794.613
+          ],
+          "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+          "policy": "do_not_infer_left_diffusion_CT_or_M1_access_from_the_shared_gate_contact"
+        }
+      ],
+      "limitation_reopen_triggers": [
+        "new photograph",
+        "validated local correspondence",
+        "requested trace depends on limited material"
+      ],
+      "blanket_automatic_network_export_allowed": false,
+      "notes": "Original restrictions and scoped approvals retained. S3 blue is common POLY gate CT, not AA diffusion access."
+    },
+    "exceptions": {
+      "source_limitations": [
+        {
+          "id": "U-AA-F01951",
+          "kind": "unlocated_isolated_AA_CT_unknown",
+          "AA_target": "AA-F01951",
+          "layout_bounds": [
+            2017.0,
+            341.0,
+            2055.0,
+            349.0
+          ],
+          "criticality": "no_known_device_port_inferred",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "AA_legacy_locator_native_bounds": [
+            1948.061891893287,
+            274.3223129992924,
+            1989.1744848545168,
+            283.76579389755176
+          ],
+          "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+              "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1730,
+              180,
+              2120,
+              410
+            ],
+            "poly": [
+              1450,
+              0,
+              2250,
+              330
+            ]
+          }
+        },
+        {
+          "id": "U-AA-F01952",
+          "kind": "unlocated_isolated_AA_CT_unknown",
+          "AA_target": "AA-F01952",
+          "layout_bounds": [
+            1934.0,
+            341.0,
+            1972.0,
+            350.0
+          ],
+          "criticality": "no_known_device_port_inferred",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "AA_legacy_locator_native_bounds": [
+            1858.1303719137622,
+            272.2163884790137,
+            1899.3694753010689,
+            282.7362753810213
+          ],
+          "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+              "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1730,
+              180,
+              2120,
+              410
+            ],
+            "poly": [
+              1450,
+              0,
+              2250,
+              330
+            ]
+          }
+        },
+        {
+          "id": "U-H1",
+          "kind": "guard_CT_observability_unknown",
+          "AA_target": "AA2-TOP-H1-AA-0",
+          "layout_bounds": [
+            270.0039,
+            269.4849,
+            5226.7198,
+            284.7099
+          ],
+          "criticality": "guard_body_metal_access_not_proven",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric. The POLY photo partly clips the upper band.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "data/test_chip/tile_full/m1.jpg",
+              "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1300,
+              160,
+              2250,
+              410
+            ],
+            "poly": [
+              1300,
+              0,
+              2250,
+              150
+            ],
+            "m1": [
+              1300,
+              160,
+              2250,
+              360
+            ]
+          }
+        },
+        {
+          "id": "U-H2",
+          "kind": "guard_CT_observability_unknown",
+          "AA_target": "AA2-TOP-H2-AA-0",
+          "layout_bounds": [
+            268.0,
+            370.0,
+            5271.0,
+            384.0
+          ],
+          "criticality": "guard_body_metal_access_not_proven",
+          "question_for_human": null,
+          "status": "CT_not_reconstructed_source_limit_retained",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+          "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+          "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric.",
+          "evidence_inputs": [
+            {
+              "path": "data/test_chip/tile_full/aa.jpg",
+              "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+            },
+            {
+              "path": "data/test_chip/tile_full/poly.jpg",
+              "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+            },
+            {
+              "path": "data/test_chip/tile_full/m1.jpg",
+              "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+            }
+          ],
+          "native_review_windows": {
+            "aa": [
+              1300,
+              160,
+              2250,
+              410
+            ],
+            "poly": [
+              1300,
+              0,
+              2250,
+              150
+            ],
+            "m1": [
+              1300,
+              160,
+              2250,
+              360
+            ]
+          }
+        },
+        {
+          "id": "L-CLIPPED-AA-F01744",
+          "kind": "device_body_CT_source_outside_current_photo",
+          "AA_target": "AA-F01744",
+          "layout_bounds": [
+            354,
+            522,
+            456,
+            574
+          ],
+          "no_CT_is_not_proven_absence": true,
+          "status": "excluded_from_source_complete_claim",
+          "tracing_policy": "keep_terminal_access_unknown_here",
+          "mandatory_human_action_now": false,
+          "evidence_ref": {
+            "path": "benchmarks/ct-work-layer-closeout-v3/port-source-checks-v1.json",
+            "sha256": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae"
+          }
+        },
+        {
+          "id": "S3-AA4-LEFT-SD-ACCESS",
+          "kind": "invalid_CT_assignment_retired_actual_diffusion_access_unknown",
+          "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+          "layout_bounds": [
+            1348.3168,
+            3765.8875,
+            1362.03645,
+            3794.613
+          ],
+          "status": "no_independent_source_drain_CT_evidence_here",
+          "no_CT_is_not_proven_absence": true,
+          "mandatory_human_action_now": false,
+          "question_for_human": null,
+          "tracing_policy": "do_not_infer_left_diffusion_CT_or_M1_access_from_the_shared_gate_contact",
+          "review_ref": {
+            "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+            "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+          }
+        }
+      ],
+      "historical_fragment_exceptions": [
+        {
+          "material_id": "V3_G1",
+          "status": "historical_reviewed_terminal_representation_preserved_not_new_missing_CT",
+          "evidence_refs": [
+            {
+              "path": "benchmarks/local-terminal-review-v1.json",
+              "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+            },
+            {
+              "path": "benchmarks/block-case-v1-v3.json",
+              "sha256": "210569f0f2359f53d6183a7f9fbf8f8dc44404f8f68b970545d002a7bcad215e"
+            }
+          ]
+        },
+        {
+          "material_id": "V3_G2",
+          "status": "historical_reviewed_terminal_representation_preserved_not_new_missing_CT",
+          "evidence_refs": [
+            {
+              "path": "benchmarks/local-terminal-review-v1.json",
+              "sha256": "b410e2f2a58d6a029bc784ec6908929015679941d12a8412f60291181e081994"
+            },
+            {
+              "path": "benchmarks/block-case-v1-v3.json",
+              "sha256": "210569f0f2359f53d6183a7f9fbf8f8dc44404f8f68b970545d002a7bcad215e"
+            }
+          ]
+        }
+      ],
+      "no_auto_holes_from_pattern": true,
+      "no_claim_of_zero_physical_holes_in_unknown_regions": true,
+      "unresolved_source_limits_remain_open_not_silently_passed": true
+    },
+    "human_review": {
+      "user_feedback_verbatim": [
+        "S1：三身份以及相对位置合理",
+        "S2：S2修改合理",
+        "S3：紫色为源漏端，蓝色为该mos与右侧mos poly合并并向上打的CT"
+      ],
+      "S1": "human_approved_three_material_column_identities_and_relative_positions",
+      "S2": "human_approved_displayed_source_correction",
+      "S3": {
+        "purple": "human_confirmed_source_drain_CT",
+        "blue": "human_confirmed_common_POLY_upward_gate_CT",
+        "member_id_mapping": "AI_local_photo_indexing_to_G66-P03_and_G66-P04",
+        "exact_new_bus_geometry": "AI_candidate_not_human_pixel_approved"
+      },
+      "authorized_material_ids": [
+        "G66-P03-P04-TOP-BUS"
+      ],
+      "authorized_contact_ids": [
+        "CTR-REM-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0-SD00-000"
+      ],
+      "authorized_new_contact_ids": [
+        "CT-G66-P03-P04-SHARED-TOP-01"
+      ],
+      "no_new_M1_or_netlist_approval": true,
+      "prior_human_review_ref": {
+        "path": "benchmarks/ct-work-layer-final-v5/human-review-v1.json",
+        "sha256": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+      }
+    },
+    "source_reinspection": {
+      "status": "S1_S2_human_approved_S3_identity_corrected",
+      "human_review_ref": {
+        "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+        "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+      },
+      "supersedes_source_reinspection_ref": {
+        "path": "benchmarks/ct-source-ownership-v1/source-reinspection-v1.json",
+        "sha256": "44eef4125ead8ed2f3663e25ede91e9f8a792f01d5d974550e4c47373db3844b"
+      },
+      "source3_old_AI_AA4_SD_interpretation_rejected": true,
+      "blue_contact_id": "CT-G66-P03-P04-SHARED-TOP-01",
+      "purple_contact_id": "CTSD-CTT-RECOVER-AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA3-0-SD01-S000",
+      "shared_gate_POLY_id": "G66-P03-P04-TOP-BUS",
+      "exact_new_boundary_human_approved": false
+    },
+    "prior_human_review": {
+      "date": "2026-10-21",
+      "user_instruction_verbatim": "完成这三项后收口",
+      "authorized_scope": [
+        "four-gate local POLY revision and CT completion",
+        "remaining source limitations review",
+        "whole-work-layer quality review and engineering closeout"
+      ],
+      "four_gate_count": {
+        "status": "AI_visual_recheck_supported_by_four_caps_and_five_diffusion_columns",
+        "user_request": "确认蓝框1～4是否就是全部四条栅",
+        "not_relabelled_as_new_human_pixel_or_count_annotation": true
+      },
+      "prior_R1_R2_review_ref": {
+        "path": "benchmarks/ct-work-layer-reviewed-v4/human-review-v1.json",
+        "sha256": "8692843952045b465f27ef77e0aee64b6a6be1584d9aaa03df05486ef71a6b6f"
+      },
+      "full_physical_CT_recovery_not_claimed": true,
+      "whole_frame_human_visual_approval": false
+    }
+  },
+  "adoption_status": "not_adopted",
+  "automatic_network_export_allowed": false
+}

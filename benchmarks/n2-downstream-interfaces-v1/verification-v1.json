@@ -1,0 +1,32 @@
+{
+  "status": "PASS_ARTIFACT_CHECKS_NEW_PHYSICAL_RELATIONS_PENDING",
+  "native_raw_crop_equality_count": 6,
+  "artifact_hashes_checked": 20,
+  "input_hashes_checked": 13,
+  "code_hashes_checked": 5,
+  "html_links_checked": 16,
+  "js_syntax_scripts": 2,
+  "relation_svg_xml": "PASS",
+  "visual_inspection": [
+    "m2-wide-marked.png",
+    "m3-detail-marked.png",
+    "m1-detail-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "source_policy": "M1/V1 and M2/V2 only; M3 carrier regions are not via coordinates",
+  "approved_N2_upper_connection_preserved": true,
+  "route_endpoints_inside_declared_source_regions": true,
+  "current_common_snapshot_unchanged": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "common_conductive_objects_preserved": 33,
+  "new_reviewed_connections": 0,
+  "automatic_network_export_allowed": false,
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-22-N2-downstream-inspection.md",
+    "payload_sha256": "0a2a9f82694b75ac713c0f992ec97c454dc843740309718c89ee1b1437d05cf2",
+    "bytes": 15463,
+    "exact": true
+  }
+}

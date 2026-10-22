@@ -1,0 +1,84 @@
+{
+  "actor": "human",
+  "statement": "Q1：准确，长度与隔离均合理\nQ2：基本合理，只有一点，M1应该覆盖CT,所以在CT位置应该还有两根段横线\nQ3：P08上下横线合理，左侧的M1应该会粗一些。\n评审确认",
+  "verbatim_feedback": [
+    "Q1：准确，长度与隔离均合理",
+    "Q2：基本合理，只有一点，M1应该覆盖CT,所以在CT位置应该还有两根段横线",
+    "Q3：P08上下横线合理，左侧的M1应该会粗一些。",
+    "评审确认"
+  ],
+  "source": "Current user response to M1 Q1/Q2/Q3 review page",
+  "sources": {
+    "parent_spec": {
+      "path": "benchmarks/m1-geometry-pilot-v1/spec-v1.json",
+      "sha256": "473502ee1add37450d9270a72f114c665c579b2c438a51d90156a9cf8e7e3709"
+    }
+  },
+  "decisions": {
+    "Q1": "approved_displayed_positions_lengths_isolation",
+    "Q2": "basic_U_shapes_approved_add_two_short_terminal_bars_to_cover_CT",
+    "Q3": "horizontal_arms_approved_left_vertical_wider"
+  },
+  "authorized_feature_ids": [
+    "M1-P06",
+    "M1-P07",
+    "M1-P08"
+  ],
+  "preserve_exact_feature_ids": [
+    "M1-P01",
+    "M1-P02",
+    "M1-P03",
+    "M1-P04",
+    "M1-P05",
+    "M1-P09"
+  ],
+  "implementation_interpretations": {
+    "P06": "Two new horizontal end bars covering existing gate contact pairs",
+    "P07": "Micro-refine existing horizontal strip enclosure under user M1-must-cover-CT instruction; no added conductor or branch",
+    "P08": "Widen left vertical only; preserve original top/bottom arms outside this band"
+  },
+  "exact_new_dimensions": "AI_relative_pixel_implementation_not_new_human_boundary_approval",
+  "no_precise_native_photo_projection_approval": true,
+  "no_full_network_or_V1_approval": true,
+  "feature_scopes": {
+    "M1-P01": {
+      "displayed_identity_position_length_isolation": "human_reviewed",
+      "pixel_boundary": "not_independently_approved"
+    },
+    "M1-P02": {
+      "displayed_identity_position_length_isolation": "human_reviewed",
+      "pixel_boundary": "not_independently_approved"
+    },
+    "M1-P03": {
+      "displayed_identity_position_length_isolation": "human_reviewed",
+      "pixel_boundary": "not_independently_approved"
+    },
+    "M1-P04": {
+      "displayed_identity_position_length_isolation": "human_reviewed",
+      "pixel_boundary": "not_independently_approved"
+    },
+    "M1-P05": {
+      "displayed_identity_position_length_isolation": "human_reviewed",
+      "pixel_boundary": "not_independently_approved"
+    },
+    "M1-P09": {
+      "displayed_identity_position_length_isolation": "human_reviewed",
+      "pixel_boundary": "not_independently_approved"
+    },
+    "M1-P06": {
+      "basic_U_and_isolation": "human_reviewed",
+      "two_terminal_bars": "human_requested",
+      "new_dimensions": "AI_candidate"
+    },
+    "M1-P07": {
+      "basic_U_and_isolation": "human_reviewed",
+      "existing_bar_enclosure_refinement": "AI_scoped_micro_revision",
+      "new_dimensions": "AI_candidate"
+    },
+    "M1-P08": {
+      "horizontal_arms": "human_reviewed_preserved",
+      "left_widening": "human_requested",
+      "left_width_px": "AI_candidate_22_not_measured"
+    }
+  }
+}
