@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "kind": "independent_conductive_transfer_evaluation",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "canvas_wh": [
+    1100,
+    570
+  ],
+  "features_by_layer": {
+    "M1": [
+      {
+        "id": "IT1-M1-RING",
+        "layer": "M1",
+        "label": "M1 ring fragment",
+        "source_frame": "m1",
+        "native_path": [
+          [
+            2400,
+            635
+          ],
+          [
+            2650,
+            630
+          ]
+        ],
+        "design_path": [
+          [
+            90,
+            280
+          ],
+          [
+            500,
+            280
+          ]
+        ],
+        "design_width": 28,
+        "label_xy": [
+          80,
+          240
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "unreviewed_visible_extent",
+          "unreviewed_visible_extent"
+        ]
+      }
+    ],
+    "M2": [
+      {
+        "id": "IT1-M2-A",
+        "layer": "M2",
+        "label": "A narrow M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            2516,
+            325
+          ],
+          [
+            2514,
+            665
+          ],
+          [
+            2506,
+            690
+          ]
+        ],
+        "design_path": [
+          [
+            300,
+            90
+          ],
+          [
+            300,
+            305
+          ]
+        ],
+        "design_width": 12,
+        "label_xy": [
+          80,
+          100
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "unreviewed_visible_extent",
+          "unreviewed_visible_extent"
+        ]
+      },
+      {
+        "id": "IT1-M2-B",
+        "layer": "M2",
+        "label": "B wide separate M2 pad",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            2553,
+            680
+          ],
+          [
+            2553,
+            728
+          ]
+        ],
+        "design_path": [
+          [
+            370,
+            268
+          ],
+          [
+            370,
+            345
+          ]
+        ],
+        "design_width": 38,
+        "label_xy": [
+          450,
+          380
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "unreviewed_visible_extent",
+          "unreviewed_visible_extent"
+        ]
+      }
+    ],
+    "M3": [
+      {
+        "id": "IT1-M3-BUS",
+        "layer": "M3",
+        "label": "M3 broad bus?",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2350,
+            730
+          ],
+          [
+            3350,
+            727
+          ]
+        ],
+        "design_path": [
+          [
+            60,
+            320
+          ],
+          [
+            1040,
+            320
+          ]
+        ],
+        "design_width": 90,
+        "label_xy": [
+          660,
+          360
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "unreviewed_visible_extent",
+          "unreviewed_visible_extent"
+        ]
+      },
+      {
+        "id": "IT1-M3-UP",
+        "layer": "M3",
+        "label": "M3 upper neighbor",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2350,
+            685
+          ],
+          [
+            3350,
+            682
+          ]
+        ],
+        "design_path": [
+          [
+            60,
+            245
+          ],
+          [
+            1040,
+            245
+          ]
+        ],
+        "design_width": 10,
+        "label_xy": [
+          660,
+          225
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "unreviewed_visible_extent",
+          "unreviewed_visible_extent"
+        ]
+      },
+      {
+        "id": "IT1-M3-LOW",
+        "layer": "M3",
+        "label": "M3 lower neighbor",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2350,
+            792
+          ],
+          [
+            3350,
+            790
+          ]
+        ],
+        "design_path": [
+          [
+            60,
+            420
+          ],
+          [
+            1040,
+            420
+          ]
+        ],
+        "design_width": 10,
+        "label_xy": [
+          660,
+          460
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "unreviewed_visible_extent",
+          "unreviewed_visible_extent"
+        ]
+      }
+    ]
+  },
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3,
+    "unit": "local_relative_design_px_not_PDK"
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 3,
+    "enclosure_px": 1,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      9,
+      9
+    ]
+  },
+  "interfaces": [
+    {
+      "id": "IT1-V1-A",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "native_bounds": [
+        2540,
+        630,
+        2585,
+        685
+      ],
+      "lower_metal_id": "IT1-M1-RING",
+      "upper_metal_id": "IT1-M2-B",
+      "bounds": [
+        362.5,
+        268,
+        377.5,
+        292
+      ],
+      "observation_id": "IT1-M1-V1-source",
+      "status": "candidate",
+      "connection_confirmed": null,
+      "cut_array_candidate": {
+        "rows": 3,
+        "columns": 2,
+        "origin_xy": [
+          362.5,
+          268
+        ],
+        "basis": "AI 2-column/3-row relative layout candidate for the six-hole source group; not measured photo coordinates"
+      },
+      "count_evidence": {
+        "path": "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-scoped-v3.json",
+        "sha256": "fc9e5cbc553687f590d49a14745c7bd8d6318e27f19add35d90caeba5a0c67f7"
+      }
+    },
+    {
+      "id": "IT1-V2-B",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        2532,
+        670,
+        2580,
+        740
+      ],
+      "lower_metal_id": "IT1-M2-B",
+      "upper_metal_id": "IT1-M3-BUS",
+      "bounds": [
+        367,
+        317,
+        373,
+        323
+      ],
+      "observation_id": "IT1-M2-V2-source",
+      "status": "candidate",
+      "connection_confirmed": null
+    }
+  ],
+  "baseline_window": [
+    800,
+    1700,
+    2350,
+    3300
+  ],
+  "source_window": [
+    2250,
+    100,
+    3350,
+    1150
+  ],
+  "independence": "Spatially disjoint from the previous medium window on the same known chip; not an unseen-chip or context-blind test.",
+  "reviewed_local_connections": [],
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "complete_network": false,
+  "source_to_design_transform": null,
+  "source_order_checks": [
+    {
+      "id": "A-before-B",
+      "axis": "x",
+      "first": {
+        "id": "IT1-M2-A",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "IT1-M2-B",
+        "extreme": "min"
+      }
+    }
+  ],
+  "source_panels": {
+    "source_windows": {
+      "m1": {
+        "wide": [
+          2250,
+          100,
+          3350,
+          1150
+        ],
+        "detail": [
+          2350,
+          400,
+          2950,
+          1000
+        ]
+      },
+      "m2": {
+        "wide": [
+          2250,
+          100,
+          3350,
+          1150
+        ],
+        "detail": [
+          2350,
+          400,
+          2950,
+          1000
+        ]
+      },
+      "m3": {
+        "wide": [
+          2250,
+          100,
+          3350,
+          1150
+        ],
+        "detail": [
+          2350,
+          400,
+          2950,
+          1000
+        ]
+      }
+    },
+    "source_label_style": {
+      "font_size_px": 36,
+      "padding_px": 7,
+      "hide_off_window_labels": true
+    },
+    "observations": [],
+    "native_traces": {
+      "m1": [
+        {
+          "points": [
+            [
+              2400,
+              635
+            ],
+            [
+              2650,
+              630
+            ]
+          ],
+          "color": "#80e6b0",
+          "label": "M1 ring fragment",
+          "label_xy": [
+            2420,
+            850
+          ]
+        }
+      ],
+      "m2": [
+        {
+          "points": [
+            [
+              2516,
+              325
+            ],
+            [
+              2514,
+              665
+            ],
+            [
+              2506,
+              690
+            ]
+          ],
+          "color": "#6ad8ff",
+          "label": "A narrow M2",
+          "label_xy": [
+            2280,
+            380
+          ]
+        },
+        {
+          "points": [
+            [
+              2553,
+              680
+            ],
+            [
+              2553,
+              728
+            ]
+          ],
+          "color": "#6ad8ff",
+          "label": "B separate M2 pad",
+          "label_xy": [
+            2720,
+            840
+          ]
+        }
+      ],
+      "m3": [
+        {
+          "points": [
+            [
+              2350,
+              730
+            ],
+            [
+              3350,
+              727
+            ]
+          ],
+          "color": "#d28cff",
+          "label": "M3 broad bus?",
+          "label_xy": [
+            2780,
+            940
+          ]
+        },
+        {
+          "points": [
+            [
+              2350,
+              685
+            ],
+            [
+              3350,
+              682
+            ]
+          ],
+          "color": "#d28cff",
+          "label": "M3 upper neighbor",
+          "label_xy": [
+            2850,
+            590
+          ]
+        },
+        {
+          "points": [
+            [
+              2350,
+              792
+            ],
+            [
+              3350,
+              790
+            ]
+          ],
+          "color": "#d28cff",
+          "label": "M3 lower neighbor",
+          "label_xy": [
+            2850,
+            1000
+          ]
+        }
+      ]
+    },
+    "source_regions": {
+      "m1": [
+        {
+          "bounds": [
+            2540,
+            630,
+            2585,
+            685
+          ],
+          "color": "#ffb04f",
+          "label": "Q1 V1 -> B: 6 holes",
+          "label_xy": [
+            2700,
+            550
+          ]
+        }
+      ],
+      "m2": [
+        {
+          "bounds": [
+            2532,
+            670,
+            2580,
+            740
+          ],
+          "color": "#ffb04f",
+          "label": "IT1-V2-B?",
+          "label_xy": [
+            2700,
+            650
+          ]
+        }
+      ]
+    }
+  }
+}

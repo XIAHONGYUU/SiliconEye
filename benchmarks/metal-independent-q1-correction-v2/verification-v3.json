@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "source_and_artifact_hashes_checked": 39,
+  "html_links_checked": 21,
+  "svg_and_javascript_syntax": "PASS",
+  "model_and_report_replay_equal": true,
+  "historical_three_fixed_models_and_reports_equal": true,
+  "unchanged_Q2_interface_and_approval": true,
+  "unchanged_all_native_metal_anchors": true,
+  "changed_object_ids": [
+    "IT1-M2-B",
+    "IT1-V1-A"
+  ],
+  "reviewed_interface_ids": [
+    "IT1-V2-B",
+    "IT1-V1-A"
+  ],
+  "pending_interface_ids": [],
+  "q1_observed_human_cut_count": 6,
+  "q1_array_geometry": "AI 2-column x 3-row relative candidate; not measured dimensions or photo projection",
+  "canonical_data_and_configs_unchanged_vs_HEAD": true,
+  "browser_interaction_tested": false,
+  "final_workflow_tests": {
+    "passed": 39,
+    "seconds": 18.09
+  },
+  "ruff": "PASS",
+  "code_sha256": {
+    "silicon_eye/conductive_workflow.py": "8b7a6361b4b9f13741724536cf746153fe3599a1dbb62b81d740974caecd96c1",
+    "tests/test_conductive_workflow.py": "e9636963c2723a29e1c072b059779d7df1b34736ac1ca000a3d493b10b196c74"
+  }
+}

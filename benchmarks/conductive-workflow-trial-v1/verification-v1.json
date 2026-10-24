@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "manifest_inputs_checked": 432,
+  "manifest_artifacts_checked": 58,
+  "html_local_links_checked": 156,
+  "embedded_svgs_parsed": 7,
+  "inline_javascript_syntax_checked": 7,
+  "fixed_cases_checked": 4,
+  "q1_unknown_preserved": true,
+  "q2_approval_inherited": true,
+  "u3_terminal_approval_preserved": true,
+  "canonical_data_configs_unchanged_vs_HEAD": true,
+  "browser_interaction_tested": false,
+  "errors": [],
+  "final_document_and_html_links_checked": 208,
+  "current_task_archive_bytes_equal": true,
+  "current_task_original_sha256": "530e01baa268e10c51b8ee2c44e787af87922d01f37cd1cccecaaecb118c7b00",
+  "current_task_lines": 61,
+  "final_workflow_tests": {
+    "passed": 29,
+    "seconds": 16.12
+  },
+  "skill_format_checks": "2 PASS",
+  "ruff": "PASS"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "金属重建（试用）"
+  short_description: "按图层重建规则金属几何，接续已审成果并执行局部修订与联合质量检查"
+  default_prompt: "使用 $silicon-eye-metal-reconstruction 接续当前快照，重建指定金属层的局部规则几何并输出复核包。"

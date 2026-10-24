@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "case": "main",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true
+    },
+    {
+      "case": "independent",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true
+    },
+    {
+      "case": "resumed",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true
+    },
+    {
+      "case": "rejected",
+      "cli_exit": 2,
+      "diagnostic_only": true
+    }
+  ]
+}

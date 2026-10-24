@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "medium",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true,
+      "quality_status": "REVIEWABLE_WITH_QUALITY_GAPS",
+      "proxy_groups": 11,
+      "explicit_arrays": 0,
+      "reviewed_interfaces": 11,
+      "source_qualified_array_count": 0
+    },
+    {
+      "id": "independent",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true,
+      "quality_status": "REVIEWABLE_WITH_QUALITY_GAPS",
+      "proxy_groups": 1,
+      "explicit_arrays": 1,
+      "reviewed_interfaces": 2,
+      "source_qualified_array_count": 0
+    },
+    {
+      "id": "reject_reversed_return",
+      "cli_exit": 2,
+      "diagnostic_only": true,
+      "reason": "Source turn handedness mismatch: R-M2-3"
+    },
+    {
+      "id": "reject_source_order",
+      "cli_exit": 2,
+      "diagnostic_only": true,
+      "reason": "Source relative order gate failed"
+    },
+    {
+      "id": "reject_count_collapse",
+      "cli_exit": 2,
+      "diagnostic_only": true,
+      "reason": "Reviewed multi-cut count/footprint evidence was lost or changed"
+    }
+  ],
+  "manifest_input_hashes_checked": 161,
+  "artifact_hashes_checked": 8,
+  "local_links_checked": 99,
+  "embedded_svgs_parsed": 2,
+  "javascript_syntax_checks": 2,
+  "medium_changed_geometry_ids": [
+    "R-M2-3"
+  ],
+  "all_other_32_model_objects_exact": true,
+  "medium_human_connections_groups_and_U3_branch_exact": true,
+  "independent_Q1_Q2_model_exact": true,
+  "known_twelve_hole_fact_restored_without_claiming_geometry": true,
+  "canonical_data_and_configs_unchanged": true,
+  "current_task_archive_bytes_verified": true,
+  "current_task_lines": 58,
+  "browser_interaction_tested": false,
+  "new_chip_perception_tested": false,
+  "related_regression_tests": {
+    "passed": 113,
+    "seconds": 88.93
+  },
+  "after_group_fact_change_targeted_tests": {
+    "passed": 53,
+    "seconds": 25.21
+  },
+  "test_counts_overlap_do_not_sum": true,
+  "ruff": "PASS",
+  "skill_format_checks": "2 PASS",
+  "producer_worktree_sha256": {
+    "silicon_eye/conductive_quality.py": "2a59e484d2b5e2bfa0895f94e8919141ba557a33e4a3264c9930b9635cd1f5fb",
+    "silicon_eye/conductive_workflow.py": "fb3a316db51cd95fe08df9bfaf7ed017a41ff9373b8cd96f772b1f551c5b611d",
+    "silicon_eye/conductive_workflow.html": "302562c20ac2e15e207e25f4f32a102eae18089547c340be6f6fa37fe8f9c79a",
+    "tests/test_conductive_quality.py": "2dede6cdfd8c6d5f2cd2f951e9ebebb197ca69627ee4e92b555d224139508f29",
+    "tests/test_conductive_workflow.py": "f1db2b30ece903bd652647c7514bd8719c545d6c7926c6d3c701f6d87c91fb96"
+  }
+}

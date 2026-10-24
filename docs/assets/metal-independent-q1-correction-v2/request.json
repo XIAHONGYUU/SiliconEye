@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/metal-independent-q1-correction-v2/observations-v2.json",
+    "sha256": "e64f9d64afd2f465aaebdf4b66d503e334096080d40bed5a0048ca0b9f28931e"
+  },
+  "frames": [
+    "m1",
+    "m2",
+    "m3"
+  ],
+  "reviews": [
+    {
+      "path": "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-v2.json",
+      "sha256": "a53457137efaaaddd482a90677e1828077ec62ed34592f790da567e8cebf9223"
+    }
+  ],
+  "deferred_unknown_ids": [],
+  "questions": {},
+  "limits": [
+    "A/B是否同层连续仍未知。",
+    "孔数及精确几何未确认。",
+    "同一已知芯片上的空间迁移，不是陌生芯片盲测。",
+    "Q1已更正为六孔组经V1接宽M2-B；历史稳定ID仍为IT1-V1-A，后缀A不表示当前承载。",
+    "六孔数量来自人工；2列×3行排列、尺寸、间距与B上缘位置仍为AI规则几何候选。",
+    "原图标记沿用原送审样式；当前承载以顶部已审关系和规则图为准。"
+  ],
+  "source_assets": {
+    "m1": {
+      "wide_raw": {
+        "path": "docs/assets/metal-independent-transfer-v1/m1-wide-raw.png",
+        "sha256": "2f31e643c811ce50d2daf15656abad74566ca3b23c4a78a9cefe73ca0ad958d3"
+      },
+      "wide_marked": {
+        "path": "docs/assets/metal-independent-transfer-v1/m1-wide-marked.png",
+        "sha256": "c1237ad84d5cbf3ad8ba2778f502e635c7dc2c0eb4af862599eb0ac783084e0b"
+      },
+      "detail_raw": {
+        "path": "docs/assets/metal-independent-transfer-v1/m1-detail-raw.png",
+        "sha256": "b694a2ab966a1cb4959f18677d23cfe49f2ca5f39a6abd6eac52fb0540ad37d3"
+      },
+      "detail_marked": {
+        "path": "docs/assets/metal-independent-transfer-v1/m1-detail-marked.png",
+        "sha256": "c968b44fb9a6fe351455703ea8e9067120ddb64e9db917805715344b62285df3"
+      }
+    },
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/metal-independent-transfer-v1/m2-wide-raw.png",
+        "sha256": "b07e12a8174665bfaa9c70c073e09cc744b98a1d76ae6c89ebd7532058915122"
+      },
+      "wide_marked": {
+        "path": "docs/assets/metal-independent-transfer-v1/m2-wide-marked.png",
+        "sha256": "8dc9058d342f3e806eaf5d3451f7838735fa49e3571c73414fc086f9b1ee243c"
+      },
+      "detail_raw": {
+        "path": "docs/assets/metal-independent-transfer-v1/m2-detail-raw.png",
+        "sha256": "973e23da083305416b1822dc63c3d19177e54c3c23881fa5b991e3dd41d3f243"
+      },
+      "detail_marked": {
+        "path": "docs/assets/metal-independent-transfer-v1/m2-detail-marked.png",
+        "sha256": "036d2cf6f98393579226422e06f7df5f0538930d27a4b4d7643339fa211cd71a"
+      }
+    },
+    "m3": {
+      "wide_raw": {
+        "path": "docs/assets/metal-independent-transfer-v1/m3-wide-raw.png",
+        "sha256": "7248e84badebcfd11dd9b41683c97badd75c88d7700503508cd79a5a00311d62"
+      },
+      "wide_marked": {
+        "path": "docs/assets/metal-independent-transfer-v1/m3-wide-marked.png",
+        "sha256": "6205d755e379adb868504e37b7f28b9dac8ae08786098adb0a4a4462c74fc60d"
+      },
+      "detail_raw": {
+        "path": "docs/assets/metal-independent-transfer-v1/m3-detail-raw.png",
+        "sha256": "0810405990dd00859170c5cbc9aa09beb164c038453a4b3fbe0571300bf9ed1a"
+      },
+      "detail_marked": {
+        "path": "docs/assets/metal-independent-transfer-v1/m3-detail-marked.png",
+        "sha256": "cba9b99106b51664bf39f36ae23fbe2633c533cb3d6d5e88a7510d40a5fc5fed"
+      }
+    }
+  },
+  "parent": {
+    "path": "docs/assets/conductive-workflow-trial-v1/final-independent/manifest.json",
+    "sha256": "19c238a90a8df9c2e37aa24b4e5701125554b5fa63826c9060426538829d180e"
+  },
+  "allowed_changed_ids": [
+    "IT1-M2-B",
+    "IT1-V1-A"
+  ],
+  "revision_evidence": {
+    "path": "benchmarks/metal-independent-q1-correction-v2/local-geometry-proposal-v2.json",
+    "sha256": "1fa5703bdcd2909800c1e8db9aff3c6bb7fa337549a754c02349ff9f27fbb554"
+  },
+  "resolved_limits": {
+    "Q1的V1承载仍待人工裁决，未知不等于断开。": {
+      "path": "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-v2.json",
+      "sha256": "a53457137efaaaddd482a90677e1828077ec62ed34592f790da567e8cebf9223"
+    }
+  }
+}

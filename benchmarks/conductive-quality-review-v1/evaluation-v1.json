@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-24",
+  "scope": "Known-chip medium and derived workflow quality audit, not new-chip perception evaluation",
+  "fixed_cases": "benchmarks/conductive-quality-review-v1/fixed-cases-v1.json",
+  "findings": [
+    "R-M2-3 source/design handedness mismatch",
+    "Inherited human six-hole count could be bypassed by removing two candidate fields",
+    "Legacy proxy lost visible structured twelve-hole group fact",
+    "Technical delivery PASS did not express source geometry/coverage qualification"
+  ],
+  "tests": {
+    "related_four_modules": {
+      "passed": 113,
+      "seconds": 88.93
+    },
+    "after_group_fact_change_targeted": {
+      "passed": 53,
+      "seconds": 25.21
+    },
+    "counts_overlap_do_not_sum": true
+  },
+  "new_human_approvals": 0,
+  "reviewed_Q1_Q2_U3_preserved": true,
+  "full_geometry_accepted": false,
+  "full_network_complete": false,
+  "unrestricted_skill_release": false,
+  "unseen_chip_accuracy": null,
+  "manual_rework_improvement": null,
+  "browser_interaction_tested": false
+}

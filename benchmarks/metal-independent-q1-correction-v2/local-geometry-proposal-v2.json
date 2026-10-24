@@ -1,0 +1,19 @@
+{
+  "actor": "AI",
+  "reason": "Human rejects narrow-A bearing and confirms six-hole group to broad-B. Keep native observations and Q2 unchanged; move V1 support to B and extend B candidate upper end to enclose all six candidate cuts. 2x3/pitch and design coordinates remain unmeasured geometry candidates.",
+  "sources": {
+    "human_correction": {
+      "path": "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-v2.json",
+      "sha256": "a53457137efaaaddd482a90677e1828077ec62ed34592f790da567e8cebf9223"
+    },
+    "parent": {
+      "path": "docs/assets/conductive-workflow-trial-v1/final-independent/manifest.json",
+      "sha256": "19c238a90a8df9c2e37aa24b4e5701125554b5fa63826c9060426538829d180e"
+    }
+  },
+  "authorized_changed_ids": [
+    "IT1-M2-B",
+    "IT1-V1-A"
+  ],
+  "unchanged": "All native anchors and other object records including Q2 remain exact. No cross-layer photo transform inferred."
+}

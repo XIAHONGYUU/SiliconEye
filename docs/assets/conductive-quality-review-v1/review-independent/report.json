@@ -1,0 +1,275 @@
+{
+  "status": "TECHNICAL_PASS_WITH_SCOPED_REVIEWS_AND_UNKNOWNS",
+  "audits": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [],
+      "minimum_gap_px": null
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "IT1-M2-A",
+            "IT1-M2-B"
+          ],
+          "gap_px": 45.0
+        }
+      ],
+      "minimum_gap_px": 45.0
+    },
+    "M3": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "IT1-M3-BUS",
+            "IT1-M3-UP"
+          ],
+          "gap_px": 25.0
+        },
+        {
+          "ids": [
+            "IT1-M3-BUS",
+            "IT1-M3-LOW"
+          ],
+          "gap_px": 50.0
+        },
+        {
+          "ids": [
+            "IT1-M3-UP",
+            "IT1-M3-LOW"
+          ],
+          "gap_px": 165.0
+        }
+      ],
+      "minimum_gap_px": 25.0
+    },
+    "IT1-V1-A": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 6,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "IT1-V2-B": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 1,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK"
+    },
+    "source_identity": {
+      "status": "PASS",
+      "errors": [],
+      "scope": "human_adjudicated_photograph_stack_not_universal_imaging_rule"
+    },
+    "source_order": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "A-before-B",
+          "values": {
+            "native_path": [
+              2516,
+              2553
+            ],
+            "design_path": [
+              300,
+              370
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "scope": "declared_same_frame_order_not_registration"
+    }
+  },
+  "object_counts": {
+    "M1": 1,
+    "V1": 1,
+    "M2": 2,
+    "V2": 1,
+    "M3": 3
+  },
+  "pending_interface_ids": [],
+  "deferred_unknown_ids": [],
+  "reviewed_interface_ids": [
+    "IT1-V2-B",
+    "IT1-V1-A"
+  ],
+  "changed_object_ids": [],
+  "previously_approved_preserved": true,
+  "physical_accuracy": null,
+  "autonomous_image_recognition": false,
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "quality": {
+    "status": "REVIEWABLE_WITH_QUALITY_GAPS",
+    "execution_checks": "PASS",
+    "source_path_shape": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "IT1-M1-RING",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "IT1-M2-A",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "IT1-M2-B",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "IT1-M3-BUS",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "IT1-M3-UP",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "IT1-M3-LOW",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        }
+      ],
+      "scope": "declared_path_handedness_not_photo_geometry_acceptance"
+    },
+    "represented_interface_count": 2,
+    "reviewed_represented_interface_count": 2,
+    "interface_geometry": [
+      {
+        "id": "IT1-V1-A",
+        "layer": "V1",
+        "lower_metal_id": "IT1-M1-RING",
+        "upper_metal_id": "IT1-M2-B",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": 6,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 6,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "IT1-V2-B",
+        "layer": "V2",
+        "lower_metal_id": "IT1-M2-B",
+        "upper_metal_id": "IT1-M3-BUS",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "GROUP_SUPPORT_PROXY",
+        "design_cut_count": null,
+        "full_group_design_enclosure": "NOT_EVALUATED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      }
+    ],
+    "proxy_interface_ids": [
+      "IT1-V2-B"
+    ],
+    "explicit_design_array_count": 1,
+    "source_qualified_array_count": 0,
+    "metal_geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED",
+    "coverage": {
+      "status": "PARTIAL",
+      "represented_metal_count": 6,
+      "known_review_inventory_count": null,
+      "represented_review_inventory_count": null,
+      "visible_photo_inventory_complete": false,
+      "photo_coverage_fraction": null,
+      "endpoints": [
+        {
+          "id": "IT1-M1-RING",
+          "end_states": [
+            "unreviewed_visible_extent",
+            "unreviewed_visible_extent"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "IT1-M2-A",
+          "end_states": [
+            "unreviewed_visible_extent",
+            "unreviewed_visible_extent"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "IT1-M2-B",
+          "end_states": [
+            "unreviewed_visible_extent",
+            "unreviewed_visible_extent"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "IT1-M3-BUS",
+          "end_states": [
+            "unreviewed_visible_extent",
+            "unreviewed_visible_extent"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "IT1-M3-UP",
+          "end_states": [
+            "unreviewed_visible_extent",
+            "unreviewed_visible_extent"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "IT1-M3-LOW",
+          "end_states": [
+            "unreviewed_visible_extent",
+            "unreviewed_visible_extent"
+          ],
+          "status": "NOT_QUALIFIED"
+        }
+      ]
+    },
+    "error_budget": {
+      "unit": "relative_design_px_not_PDK",
+      "photo_to_design_metric_budget": "NOT_ESTABLISHED"
+    },
+    "readiness": {
+      "review_package": true,
+      "canonical_geometry_adoption": false,
+      "complete_network_export": false,
+      "unrestricted_skill_release": false
+    },
+    "blocking_adoption_reasons": [
+      "仍有孔组代理框；单框包围检查不证明整组孔能被承载。",
+      "原生导体宽度、端部完整性及规则几何与照片的尺寸对应未验收。",
+      "孔组阵列的真实尺寸/间距/排列尚未通过来源几何验收。",
+      "未建立全部可见导体/接口清单，不能给出照片覆盖率或整网完成率。",
+      "当前预算是相对设计像素，未建立真实工艺尺寸和PDK DRC资格。"
+    ]
+  }
+}

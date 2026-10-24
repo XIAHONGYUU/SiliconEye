@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-24",
+  "kind": "conductive_workflow_trial_evaluation",
+  "fixed_tasks": {
+    "path": "benchmarks/conductive-workflow-trial-v1/fixed-tasks-v1.json",
+    "sha256": "6b292a078ba75be1bb894c726d2026f8c4a86d1df6cf7e7b9fd547d7a8a9fbac"
+  },
+  "engineering_cases": [
+    {
+      "case": "main",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true
+    },
+    {
+      "case": "independent",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true
+    },
+    {
+      "case": "resumed",
+      "cli_exit": 0,
+      "model_and_report_replay_equal": true
+    },
+    {
+      "case": "rejected",
+      "cli_exit": 2,
+      "diagnostic_only": true
+    }
+  ],
+  "human_evidence": {
+    "q2": "previous scoped human confirmation retained",
+    "q1_truth": null,
+    "new_human_approvals": 0,
+    "u3": "previous terminal path approval retained"
+  },
+  "validation": {
+    "related_integration_tests": {
+      "passed": 123,
+      "seconds": 179.27
+    },
+    "final_workflow_tests": {
+      "passed": 29,
+      "seconds": 16.12
+    },
+    "test_counts_overlap_do_not_sum": true,
+    "ruff": "PASS",
+    "skill_format_checks": 2
+  },
+  "trial_engineering_ready": true,
+  "unseen_chip_perception_accuracy": null,
+  "independent_agent_forward_tested": false,
+  "manual_rework_improvement": null,
+  "whole_GDS_complete": false,
+  "full_network_complete": false,
+  "browser_interaction_tested": false,
+  "code_sha256": {
+    "silicon_eye/conductive_workflow.py": "bff47e952f680f25a7f304963e42db86785954a3613cd50086833845d39ae052",
+    "silicon_eye/conductive_workflow.html": "c19ff84054ca20e420f5bfa81daf8c06bd5391a5dba2993934cca7bd66ef753e",
+    "tests/test_conductive_workflow.py": "767aed4e9a9a33f4168137169776bc31de5b843542c778f270612b379c2138de"
+  }
+}

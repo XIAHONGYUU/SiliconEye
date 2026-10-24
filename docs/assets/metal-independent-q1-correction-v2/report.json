@@ -1,0 +1,117 @@
+{
+  "status": "TECHNICAL_PASS_WITH_SCOPED_REVIEWS_AND_UNKNOWNS",
+  "audits": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [],
+      "minimum_gap_px": null
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "IT1-M2-A",
+            "IT1-M2-B"
+          ],
+          "gap_px": 45.0
+        }
+      ],
+      "minimum_gap_px": 45.0
+    },
+    "M3": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "IT1-M3-BUS",
+            "IT1-M3-UP"
+          ],
+          "gap_px": 25.0
+        },
+        {
+          "ids": [
+            "IT1-M3-BUS",
+            "IT1-M3-LOW"
+          ],
+          "gap_px": 50.0
+        },
+        {
+          "ids": [
+            "IT1-M3-UP",
+            "IT1-M3-LOW"
+          ],
+          "gap_px": 165.0
+        }
+      ],
+      "minimum_gap_px": 25.0
+    },
+    "IT1-V1-A": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 6,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "IT1-V2-B": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 1,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK"
+    },
+    "source_identity": {
+      "status": "PASS",
+      "errors": [],
+      "scope": "human_adjudicated_photograph_stack_not_universal_imaging_rule"
+    },
+    "source_order": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "A-before-B",
+          "values": {
+            "native_path": [
+              2516,
+              2553
+            ],
+            "design_path": [
+              300,
+              370
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "scope": "declared_same_frame_order_not_registration"
+    }
+  },
+  "object_counts": {
+    "M1": 1,
+    "V1": 1,
+    "M2": 2,
+    "V2": 1,
+    "M3": 3
+  },
+  "pending_interface_ids": [],
+  "deferred_unknown_ids": [],
+  "reviewed_interface_ids": [
+    "IT1-V2-B",
+    "IT1-V1-A"
+  ],
+  "changed_object_ids": [
+    "IT1-M2-B",
+    "IT1-V1-A"
+  ],
+  "previously_approved_preserved": true,
+  "physical_accuracy": null,
+  "autonomous_image_recognition": false,
+  "complete_network": false,
+  "canonical_geometry_adopted": false
+}

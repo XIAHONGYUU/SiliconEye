@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金属／孔统一复核入口</title>
+<style>
+body{font:20px/1.6 system-ui;background:#101a27;color:#edf3fa;
+max-width:1700px;margin:auto;padding:24px}a{color:#8bd4ff}img,svg{width:100%}
+label,button{font-size:22px;margin:10px}.note{padding:18px;background:#233246}
+.controls{position:sticky;top:0;background:#101a27;z-index:2}[hidden]{display:none}
+.scroll{overflow:auto}table{border-collapse:collapse;font-size:18px}
+th,td{border:1px solid #62768c;padding:12px;text-align:left;min-width:140px}
+</style><h1>金属／孔统一复核入口（试用）</h1>
+<div class="note">AI负责来源观察与几何候选，脚本执行确定性检查。
+规则图不是照片精确投影；孔组方框不是实测单孔。
+质量门通过不自动批准连接或采用共同几何。
+原图标记保留送审样式，当前连接状态以本页顶部记录为准。</div>
+<h2>当前状态</h2><ul>$statuses</ul>$branch
+$quality
+<h2>保留范围与未知</h2><ul>$limits</ul>
+<h2>待裁决</h2><ul>$questions</ul>
+<p><a href="model.json">当前候选/已审/未知状态</a> ·
+<a href="report.json">质量门与变化范围</a> · <a href="request.json">复跑输入</a></p>
+<div class="controls">$controls</div>$drawing
+<h2>原生照片</h2><div class="controls">$buttons</div>$photos
+<script>
+document.querySelectorAll('[data-layer-toggle]').forEach(e=>e.onchange=()=>{
+ document.querySelectorAll('[data-layer="'+e.dataset.layerToggle+'"]').forEach(g=>
+ g.style.display=e.checked?'':'none')});
+document.querySelectorAll('[data-frame]').forEach(e=>e.onclick=()=>{
+ document.querySelectorAll('[data-photo]').forEach(p=>p.hidden=p.dataset.photo!==e.dataset.frame)});
+</script></html>

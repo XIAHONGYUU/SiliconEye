@@ -1,0 +1,60 @@
+{
+  "purpose": "Known-chip quality regression, not new-image autonomous extraction evaluation",
+  "cases": [
+    {
+      "id": "medium",
+      "request": {
+        "path": "benchmarks/conductive-quality-review-v1/medium-request-v1.json",
+        "sha256": "392293b1de13fa1d8137e8c64c367795be6d3b324587a707ba04bf5e1f7c4e60"
+      },
+      "output": "docs/assets/conductive-quality-review-v1/review-medium",
+      "expect": "REVIEWABLE_WITH_QUALITY_GAPS",
+      "expected_proxy_groups": 11,
+      "expected_known_inventory": [
+        11,
+        38
+      ]
+    },
+    {
+      "id": "independent",
+      "request": {
+        "path": "benchmarks/conductive-quality-review-v1/independent-request-v1.json",
+        "sha256": "1f944e92b706a5aebf6c17c5ee7fc2305ee718930ed13eb758c5c0e59ac093b4"
+      },
+      "output": "docs/assets/conductive-quality-review-v1/review-independent",
+      "expect": "REVIEWABLE_WITH_QUALITY_GAPS",
+      "expected_proxy_groups": 1,
+      "expected_explicit_arrays": 1
+    },
+    {
+      "id": "reject_reversed_return",
+      "request": {
+        "path": "benchmarks/conductive-workflow-trial-v1/main-request-v1.json",
+        "sha256": "706938a8ce99ae6408afbf5e70375f7b3090e447e8b3e5f6fc5851504dd550b4"
+      },
+      "output": "docs/assets/conductive-quality-review-v1/reject-reversed-return",
+      "expect": "REJECTED",
+      "reason_contains": "turn handedness mismatch: R-M2-3"
+    },
+    {
+      "id": "reject_source_order",
+      "request": {
+        "path": "benchmarks/conductive-quality-review-v1/negative-source-order-request.json",
+        "sha256": "c34886483561d579468db062c8cdb266f113de008f54b79930e7c32503a017ae"
+      },
+      "output": "docs/assets/conductive-quality-review-v1/reject-source-order",
+      "expect": "REJECTED",
+      "reason_contains": "Source relative order"
+    },
+    {
+      "id": "reject_count_collapse",
+      "request": {
+        "path": "benchmarks/conductive-quality-review-v1/negative-count-collapse-request.json",
+        "sha256": "711b7bc706e6fae619b321c59690bff234731a6940aa6e7bed082bc9389eee5c"
+      },
+      "output": "docs/assets/conductive-quality-review-v1/reject-count-collapse",
+      "expect": "REJECTED",
+      "reason_contains": "count/footprint evidence was lost"
+    }
+  ]
+}

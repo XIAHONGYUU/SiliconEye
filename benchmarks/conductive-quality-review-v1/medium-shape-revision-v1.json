@@ -1,0 +1,21 @@
+{
+  "actor": "AI",
+  "reason": "Source R-M2-3 turns down then left, while previous design turned down then right. Correct only the terminal x from 570 to 526, preserving native observation, approvals, structural groups and other objects. This is a source-consistency correction, not new physical connectivity or geometry approval.",
+  "sources": {
+    "old_sample": {
+      "path": "benchmarks/conductive-medium-source-review-v2/request-v1.json",
+      "sha256": "6747ad7e8fc4c0a3c68cdd03c774c67c63e8a67e7e586ac143b074668aff7934"
+    },
+    "parent": {
+      "path": "docs/assets/conductive-workflow-trial-v1/final-main/manifest.json",
+      "sha256": "d5881256c514f8a08b627b9ea1f8c9832dedae020a4239d1f0db5fb89467de95"
+    },
+    "finding": {
+      "path": "benchmarks/conductive-quality-review-v1/before-fixes-v1.json",
+      "sha256": "a7390a17addb8b2ddb279ddac6cfc73b9feb64db74c4087f0a4ffc2e185aa3b2"
+    }
+  },
+  "changed_ids": [
+    "R-M2-3"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "层间孔重建（试用）"
+  short_description: "基于相邻金属及来源证据生成V1/V2孔组候选，保留连接审批与未知"
+  default_prompt: "使用 $silicon-eye-via-reconstruction 核实指定层对的孔组及上下承载，保留未知并输出统一复核包。"

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-24",
+  "actor": "AI",
+  "findings": [
+    {
+      "issue": "Q1-count-evidence-removal-bypass",
+      "old_gate_status": "TECHNICAL_PASS_WITH_SCOPED_REVIEWS_AND_UNKNOWNS",
+      "observed_human_count": 6,
+      "rendered_group_bounds": [
+        367,
+        277,
+        373,
+        283
+      ],
+      "candidate_cuts": null,
+      "reproduced": true,
+      "mutation": "Remove both array and count_evidence from the candidate; retain the actual human review. This is a negative test, not an adopted reconstruction."
+    },
+    {
+      "issue": "R-M2-3-turn-reversal",
+      "native_path": [
+        [
+          1210,
+          2917
+        ],
+        [
+          1210,
+          2950
+        ],
+        [
+          1187,
+          2950
+        ]
+      ],
+      "old_design_path": [
+        [
+          548,
+          1230
+        ],
+        [
+          548,
+          1260
+        ],
+        [
+          570,
+          1260
+        ]
+      ],
+      "native_turn": "down then left",
+      "old_design_turn": "down then right",
+      "existing_geometry_gate": "PASS",
+      "reproduced_from": "benchmarks/conductive-medium-source-review-v2/request-v1.json"
+    }
+  ]
+}

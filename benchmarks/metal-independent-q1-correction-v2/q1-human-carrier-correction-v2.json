@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-24",
+  "statement": "连接错误而，应该通过这些孔连接到宽金属B separate M2 Pad,你圈出来了6个孔是不可能连到窄金属的。",
+  "sources": {
+    "submitted_request": {
+      "path": "docs/assets/conductive-workflow-trial-v1/final-independent/request.json",
+      "sha256": "72c02996566b8ae8739e2e0fcd3e411a1d48e12b6b28a25f89c1385913737e4c"
+    },
+    "submitted_page": {
+      "path": "docs/assets/conductive-workflow-trial-v1/final-independent/index.html",
+      "sha256": "9d502d553c72fe78b20f21af3a2b961252bdb9f9fd08dac6ac278478ea6a4bbd"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/conductive-workflow-trial-v1/final-independent/manifest.json",
+      "sha256": "19c238a90a8df9c2e37aa24b4e5701125554b5fa63826c9060426538829d180e"
+    }
+  },
+  "decisions": {
+    "interface_id": "IT1-V1-A",
+    "via_layer": "V1",
+    "lower_metal_id": "IT1-M1-RING",
+    "upper_metal_id": "IT1-M2-B",
+    "connection_confirmed": true
+  },
+  "carrier_correction": {
+    "before": {
+      "id": "IT1-V1-A",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "native_bounds": [
+        2540,
+        630,
+        2585,
+        685
+      ],
+      "lower_metal_id": "IT1-M1-RING",
+      "upper_metal_id": "IT1-M2-A"
+    },
+    "after": {
+      "id": "IT1-V1-A",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "native_bounds": [
+        2540,
+        630,
+        2585,
+        685
+      ],
+      "lower_metal_id": "IT1-M1-RING",
+      "upper_metal_id": "IT1-M2-B"
+    }
+  },
+  "observed_cut_count": 6,
+  "scope": "Reject the old narrow-A carrier for this observed group; confirm V1 group to wide M2-B. Six holes stated by user; exact cut sizes/pitch and 2-column x 3-row design geometry remain AI candidates. A/B continuity and whole-net coverage not adjudicated."
+}

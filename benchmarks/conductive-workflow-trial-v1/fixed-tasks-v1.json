@@ -1,0 +1,52 @@
+{
+  "purpose": "Known-chip fixed workflow regression, not unseen-photo perception evaluation",
+  "cases": [
+    {
+      "id": "main",
+      "request": {
+        "path": "benchmarks/conductive-workflow-trial-v1/main-request-v1.json",
+        "sha256": "706938a8ce99ae6408afbf5e70375f7b3090e447e8b3e5f6fc5851504dd550b4"
+      },
+      "output": "docs/assets/conductive-workflow-trial-v1/final-main",
+      "expected_pending": [],
+      "expected_U3_terminal_closed": true
+    },
+    {
+      "id": "independent",
+      "request": {
+        "path": "benchmarks/conductive-workflow-trial-v1/independent-request-v1.json",
+        "sha256": "72c02996566b8ae8739e2e0fcd3e411a1d48e12b6b28a25f89c1385913737e4c"
+      },
+      "output": "docs/assets/conductive-workflow-trial-v1/final-independent",
+      "expected_pending": [
+        "IT1-V1-A"
+      ],
+      "expected_reviewed": [
+        "IT1-V2-B"
+      ]
+    },
+    {
+      "id": "resumed",
+      "request": {
+        "path": "benchmarks/conductive-workflow-trial-v1/resume-request-v1.json",
+        "sha256": "a7013a81d0572e2e3df4e43710a927727702080b4136929187adcc5010584ef9"
+      },
+      "output": "docs/assets/conductive-workflow-trial-v1/final-resumed",
+      "expected_pending": [
+        "IT1-V1-A"
+      ],
+      "expected_reviewed": [
+        "IT1-V2-B"
+      ]
+    },
+    {
+      "id": "reject_old_source_order",
+      "request": {
+        "path": "benchmarks/conductive-workflow-trial-v1/rejected-source-order-request.json",
+        "sha256": "3ca4c9c18e3c01ba147289f3834c654a70b8baf7a317d146725b1f5cb3943072"
+      },
+      "output": "docs/assets/conductive-workflow-trial-v1/rejected-final",
+      "expected": "diagnostic_only"
+    }
+  ]
+}

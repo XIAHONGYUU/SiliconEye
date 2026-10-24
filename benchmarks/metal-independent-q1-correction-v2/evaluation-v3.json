@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-24",
+  "kind": "human_adjudicated_carrier_correction",
+  "initial_q1_carrier": "IT1-M2-A",
+  "initial_q1_judgment": "WRONG_CARRIER",
+  "corrected_q1_carrier": "IT1-M2-B",
+  "actual_human_carrier_corrections": 1,
+  "human_observed_cut_count": 6,
+  "candidate_array_rows_columns": [
+    3,
+    2
+  ],
+  "array_geometry_human_approved": false,
+  "q2_scoped_approval_preserved": true,
+  "pending_Q1": false,
+  "AB_same_layer_continuity": null,
+  "root_cause": "Single proxy enclosure passed despite missing multi-cut group footprint; wrong AI photo correspondence.",
+  "quality_gate_extension": "Explicit observed group count, full array footprint and cut-by-cut bearing; no automatic visual count inference.",
+  "unseen_chip_accuracy": null,
+  "full_network_complete": false,
+  "final_workflow_tests": {
+    "passed": 39,
+    "seconds": 18.09
+  },
+  "earlier_workflow_and_via_tests": {
+    "passed": 75,
+    "seconds": 70.12
+  },
+  "counts_overlap_do_not_sum": true
+}
