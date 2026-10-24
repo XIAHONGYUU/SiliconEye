@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "status": "Q2_REVIEWED_Q1_PENDING",
+  "parent_candidate_model": {
+    "path": "docs/assets/metal-independent-transfer-v1/model.json",
+    "sha256": "488a1ba070fff2c1f990a75afe69e69ec0412376def2cc2a731060a52cc5e426"
+  },
+  "reviewed_local_connections": [
+    {
+      "id": "IT1-V2-B",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        2532,
+        670,
+        2580,
+        740
+      ],
+      "lower_metal_id": "IT1-M2-B",
+      "upper_metal_id": "IT1-M3-BUS",
+      "bounds": [
+        367,
+        317,
+        373,
+        323
+      ],
+      "observation_id": "IT1-M2-V2-source",
+      "status": "human_confirmed_scoped_interface",
+      "connection_confirmed": true,
+      "human_review": {
+        "path": "benchmarks/metal-independent-transfer-v1/q2-human-review-v1.json",
+        "sha256": "66d3bda15c79224e7a2e847dcc8dadee40cc13551d0eebdd24a6e2737722d024"
+      },
+      "physical_cut_count": null
+    }
+  ],
+  "pending_interface_ids": [
+    "IT1-V1-A"
+  ],
+  "M2_A_B_continuity": null,
+  "geometry_adopted": false,
+  "precise_projection_allowed": false,
+  "complete_network": false,
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "source_to_design_transform": null,
+  "transfer_technical_gate_pass": true,
+  "full_transfer_human_acceptance": null
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_P_group_adjudication",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_observation": {
+      "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+      "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+    },
+    "parent_request": {
+      "path": "benchmarks/l1-m2-fanout-v1/request-v1.json",
+      "sha256": "d650c4bac97fb6bb7e6ce216d97397a1b909b9c03e89c3b50ce68c0a604d39ff"
+    },
+    "reviewed_D1": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "renderer": {
+      "path": "silicon_eye/metal_via_pilot.py",
+      "sha256": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566"
+    }
+  },
+  "status": "REVIEW_REQUIRED",
+  "new_findings": [
+    {
+      "id": "P4",
+      "status": "AI_candidate",
+      "observation": "M2原图在上侧短横焊盘与下侧竖段之间可见暗间隙；旧P4窗口含两段，不能把整个窗口当成一根连续M2。两个子窗口仅用于定位，不建立新金属ID或确认隔离网络。",
+      "human_truth": null
+    },
+    {
+      "id": "P0-P5",
+      "status": "unknown",
+      "observation": "P组亮点／短端位于F01等大孔阵列下方；M3在L1下方另有两条细横线。优先候选是下方细线承载，但两照片尚无合格的本处精确对应，不能把相同原生y当作对齐，也不能确认接L1或不接L1。",
+      "human_truth": null
+    }
+  ],
+  "alternatives": [
+    "全部或部分P短端经V2接L1",
+    "全部或部分接下方细M3",
+    "亮点或对应仍不清楚，保留未知"
+  ],
+  "P_group_states": [
+    {
+      "id": "P0",
+      "source_frame": "m2",
+      "source_bounds": [
+        0,
+        2820,
+        40,
+        2910
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P1",
+      "source_frame": "m2",
+      "source_bounds": [
+        95,
+        2820,
+        150,
+        2905
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P2",
+      "source_frame": "m2",
+      "source_bounds": [
+        200,
+        2820,
+        255,
+        2920
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P3",
+      "source_frame": "m2",
+      "source_bounds": [
+        313,
+        2820,
+        370,
+        2915
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P4",
+      "source_frame": "m2",
+      "source_bounds": [
+        420,
+        2810,
+        500,
+        2950
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    },
+    {
+      "id": "P5",
+      "source_frame": "m2",
+      "source_bounds": [
+        530,
+        2810,
+        595,
+        2930
+      ],
+      "status": "unknown",
+      "interpretation": "Small pad/short end near the lower adjacent M3 channels; possible via/landing not reliably assigned to L1; not counted as confirmed absence or an L1 branch"
+    }
+  ],
+  "F01_F12_evaluation": {
+    "F01": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F02": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F03": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F04": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F05": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F06": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F07": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F08": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F09": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F10": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F11": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F12": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    }
+  },
+  "reviewed_new_connections": [],
+  "net_edges": [],
+  "complete_network": false,
+  "unchanged_baselines": [
+    "D1/R1/N2 reviewed relations",
+    "common registry 33 entries",
+    "AA/POLY/CT snapshot v5",
+    "original L1 observation and evaluation"
+  ],
+  "limits": [
+    "Native traces locate photographed metal only, not exact edges or net assignments.",
+    "P0 is clipped at photo edge.",
+    "P4 subwindows do not establish separate global nets.",
+    "No inferred cut count, precise projection, or off-image completeness."
+  ]
+}

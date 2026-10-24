@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "PASS_TECHNICAL_ONLY",
+  "path_sha_refs_verified": 45,
+  "presence_ground_truth": {
+    "U1": true,
+    "U2": false,
+    "U3": true
+  },
+  "U1_U2_same_M1_retained": true,
+  "U2_via_not_fabricated_and_M1_not_broken": true,
+  "U3_not_merged_without_review": true,
+  "new_cross_layer_reviewed_edges": 0,
+  "carrier_candidates_pending": 2,
+  "no_same_hole_pair_or_new_matrix": true,
+  "inherited_B1_L1_paths": 13,
+  "raw_crops_pixel_equal": [
+    "U1/m1-wide",
+    "U1/m1-detail",
+    "U1/m2-wide",
+    "U1/m2-detail",
+    "U2/m1-wide",
+    "U2/m1-detail",
+    "U2/m2-wide",
+    "U2/m2-detail",
+    "U3/m1-wide",
+    "U3/m1-detail",
+    "U3/m2-wide",
+    "U3/m2-detail"
+  ],
+  "html_links_checked": 22,
+  "javascript_syntax_checks": 1,
+  "dynamic_image_paths_checked": 24,
+  "browser_interaction_tested": false,
+  "source_code_changed_this_review": false,
+  "pytest_rerun": false,
+  "visual_checks": [
+    "U1/m1-wide-marked.png",
+    "U1/m2-wide-marked.png"
+  ],
+  "net_edges": [],
+  "complete_network": false,
+  "prior_display_test_result": "38 passed in earlier display-code revision; not rerun here."
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "sources": {
+    "six_line": {
+      "path": "benchmarks/metal-extension/roi2-A-six-lines-registration-candidate-v2.json",
+      "sha256": "1a073eed096adb03fa5a16466492bb89129fbf2fa88da21704bb627f42a0d595"
+    },
+    "456": {
+      "path": "benchmarks/metal-extension/roi2-A-456-local-registration-v3.json",
+      "sha256": "270549738b82756ae44ae4f440e03ec209f8c79ae15ab6ebe609a050e829e1fa"
+    }
+  },
+  "findings": [
+    "Six-line source pairing is structural, not the rejected V1/V2 same-hole pairing, but the old model is local and nearly collinear.",
+    "Its M1 display domain [1550,2700,2600,3320] does not support N2 U1/U2 and puts U3 near/outside the left boundary; no whole-N2 fine-landing precision.",
+    "456 marker model explicitly limits M2 domain to [2035,3500,2320,3575] and rejects upstream extrapolation."
+  ],
+  "action": "Do not project either old matrix over N2; first adjudicate M1 V1 presence, then establish locally supported correspondence.",
+  "old_reviewed_connections_revoked": false,
+  "new_transform": null
+}

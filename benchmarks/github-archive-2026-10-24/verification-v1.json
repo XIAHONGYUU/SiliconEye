@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "scope": "Archive existing approved/candidate metal work through the source-order correction and independent-transfer Q2 review; Q1 remains pending.",
+  "parent_commit": "389c682fb1fa4245843b7e54671b564741f33ce1",
+  "remote": "https://github.com/XIAHONGYUU/silicon-eye.git",
+  "branch": "main",
+  "author": {
+    "login": "XIAHONGYUU",
+    "github_id": 280077814,
+    "email": "280077814+XIAHONGYUU@users.noreply.github.com",
+    "verified_with": "gh api user"
+  },
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_conductive_medium.py tests/test_metal_reconstruction.py tests/test_metal_via_pilot.py tests/test_conductive_layers.py tests/test_conductive_source_correction.py tests/test_metal_fanout.py",
+    "passed": 99,
+    "seconds": 162.82
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check silicon_eye/conductive_medium.py silicon_eye/metal_via_pilot.py tests/test_conductive_medium.py",
+    "status": "PASS"
+  },
+  "source_reference_audit": {
+    "status": "PASS",
+    "new_file_count": 446,
+    "hash_references_checked": 1526,
+    "unique_hashed_file_count": 419,
+    "all_evidence_inputs_stored": true,
+    "historical_code_references": [
+      {
+        "record": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py"
+      },
+      {
+        "record": "benchmarks/l1-fanout-reviewed-v4/upper-followup-request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py"
+      },
+      {
+        "record": "benchmarks/l1-left-pad-review-v2/ai-observation-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566.py"
+      },
+      {
+        "record": "benchmarks/l1-left-pad-review-v2/request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566.py"
+      },
+      {
+        "record": "benchmarks/l1-partial-reviewed-v3/request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py"
+      },
+      {
+        "record": "benchmarks/l1-partial-reviewed-v3/request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py"
+      },
+      {
+        "record": "benchmarks/l1-upper-reviewed-v5/right-upper-request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py"
+      },
+      {
+        "record": "benchmarks/n2-v1-identity-reviewed-v7/request-v1.json",
+        "original_path": "silicon_eye/metal_via_pilot.py",
+        "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+        "archive": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py"
+      }
+    ],
+    "live_source_path_matches_historical_hash": false,
+    "max_new_file_bytes": 5556016,
+    "new_file_bytes": 594612604,
+    "pending_human_question": "Independent transfer Q1: marked M1 V1 group to narrow M2-A",
+    "complete_network": false,
+    "metal_via_skill_formally_packaged": false
+  },
+  "credential_pattern_scan": {
+    "text_files": 186,
+    "high_confidence_matches": 0
+  },
+  "historical_code_binding": {
+    "path": "benchmarks/evidence/renderer-history/bindings-v1.json",
+    "sha256": "cef7b3e3dd54c642dd9672d2f53a2354e96ec14c18f94b28375530e6fc38a30f"
+  },
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-24-github-state-archive.md",
+    "payload_bytes": 10243,
+    "payload_sha256": "b1bdb138888f1e7be7bf22c87d1972f3ff439c28b70b8e99837849f0a539686c",
+    "byte_exact": true
+  },
+  "current_pending": "Independent transfer Q1: M1 V1 group to narrow M2-A",
+  "complete_network": false,
+  "metal_via_skill_formally_packaged": false,
+  "synchronization": "Verify resulting commit and remote ref after push; this record does not predeclare remote success."
+}

@@ -1,0 +1,26 @@
+{
+  "human_review": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/search-span-human-review-v2.json",
+    "sha256": "752a6485343c99e4d7c6e7f12904fe2dc0a4f98e192e987f8238e6b9f8512b2a"
+  },
+  "facts": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v2.json",
+    "sha256": "4ce08adf4826ee8887adb11139cf35ff898b0bed86236248b7cfbd22282d895d"
+  },
+  "observation": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v2.json",
+    "sha256": "ccc587256c4f114571689f2b9f4c4101742c0ace36be5988879370195d3b79f9"
+  },
+  "parent_artifact_manifest": {
+    "path": "docs/assets/mid-h1-h2-isolation-v9/manifest.json",
+    "sha256": "82f03909a36fabd0aeebc9f7a31efab25067384d08a5984015aa85636d0f574a"
+  },
+  "verification": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/verification-v2.json",
+    "sha256": "1ca5a8ca4402e94e88bb7b2d77a79d984229ccc520a1cb32114389a263b1c37c"
+  },
+  "page": {
+    "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed.html",
+    "sha256": "b6b58db581b8518a6c0a6a1e33ae2e4133e9a5aa760cc0644e81c0e4ffab2fff"
+  }
+}

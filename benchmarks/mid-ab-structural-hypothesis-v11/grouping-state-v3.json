@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "status": "HUMAN_ACCEPTED_LOCAL_STRUCTURAL_GROUPS",
+  "human_review": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-correction-v3.json",
+    "sha256": "16d72611d1473b339e9ce852d29ad5f33fa45bb38061ee9ff6b49f18a6a6178f"
+  },
+  "prior_observation": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/structural-observation-v1.json",
+    "sha256": "3d260b1c3fb063f7217eb241a41941898f5fce3ef8709bec8eb0d58f160a8b4e"
+  },
+  "grouping_decisions": [
+    {
+      "group_id": "MID-AB-GROUP-B",
+      "M1_members": [
+        "M1-T1-LOCAL",
+        "M1-L4-LOCAL"
+      ],
+      "M2_anchor": "M2-MID-CAND-B",
+      "routing_layers_reported": [
+        "M2",
+        "M3"
+      ],
+      "grouping_accepted": true,
+      "human_review": {
+        "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-review-v2.json",
+        "sha256": "c4e512f7f7935bc00e9d6657000c35659ef8bf1f16eebc9042580282e767abbc"
+      }
+    },
+    {
+      "group_id": "MID-AB-GROUP-A",
+      "M1_members": [
+        "M1-T3-LOCAL",
+        "M1-L2-LOCAL"
+      ],
+      "M2_anchor": "M2-MID-CAND-A",
+      "routing_layers_reported": [
+        "M2",
+        "M3"
+      ],
+      "grouping_accepted": true,
+      "human_review": {
+        "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-correction-v3.json",
+        "sha256": "16d72611d1473b339e9ce852d29ad5f33fa45bb38061ee9ff6b49f18a6a6178f"
+      }
+    }
+  ],
+  "source_locators": {
+    "L4": {
+      "source_frame": "m1",
+      "x_near_y_2915": 1000,
+      "bounds": [
+        987,
+        2800,
+        1015,
+        3070
+      ],
+      "binding_scope": "AI native-strip index; exact geometry not separately human-reviewed"
+    },
+    "T1": {
+      "source_frame": "m1",
+      "x_near_y_2915": 1244,
+      "bounds": [
+        1231,
+        2800,
+        1259,
+        3070
+      ],
+      "binding_scope": "AI native-strip index; exact geometry not separately human-reviewed"
+    },
+    "T3": {
+      "source_frame": "m1",
+      "x_near_y_2915": 1365,
+      "bounds": [
+        1352,
+        2800,
+        1380,
+        3070
+      ],
+      "binding_scope": "AI native-strip index; exact geometry not separately human-reviewed"
+    },
+    "L2": {
+      "source_frame": "m1",
+      "x_near_y_2915": 1123,
+      "bounds": [
+        1110,
+        2800,
+        1138,
+        3070
+      ],
+      "binding_scope": "Unchanged AI native-strip index; member ID corrected by human, exact geometry not separately approved"
+    }
+  },
+  "clarifications_closed": [
+    "B group remains T1 plus L4, not all four left neighbors.",
+    "User corrects A group from T3/L3 to T3/L2.",
+    "Both routes retain M2/M3 context; no detailed via sites approved."
+  ],
+  "superseded_proposals": [
+    {
+      "source": {
+        "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v2.json",
+        "sha256": "38d0f13befed5d6c3a4c7d947796f3cdd5aa0061b18d3a7b085a332e30dcd0f3"
+      },
+      "field": "grouping_decisions.MID-AB-GROUP-A",
+      "old_members": [
+        "M1-T3-LOCAL",
+        "M1-L3-LOCAL"
+      ],
+      "reason": "Explicit user correction from L3 to L2."
+    }
+  ],
+  "structural_support_reassessment": {
+    "prior_E1_applies_to_current_group_members": true,
+    "prior_E1_scope": "Same original-source locators L4,L2,T1,T3; regular gaps are compatible with repeated arrangement, not proof of a via or electrical connection.",
+    "current_sorted_M1_labels": [
+      "L4",
+      "L2",
+      "T1",
+      "T3"
+    ],
+    "current_x_native": [
+      1000,
+      1123,
+      1244,
+      1365
+    ],
+    "current_adjacent_gaps_px": [
+      123,
+      121,
+      121
+    ],
+    "status": "COMPATIBLE_REPEAT_PATTERN_NOT_CONNECTION_PROOF",
+    "consequence": "Restore the applicable single-photo spacing observation following explicit member correction; do not change geometry, infer dummy identity, add via cuts or claim new independent evaluation success."
+  },
+  "detailed_path_state": {
+    "A": {
+      "M3_carrier_id": null,
+      "return_M2_ids": null,
+      "V1_sites": null,
+      "V2_sites": null
+    },
+    "B": {
+      "M3_carrier_id": null,
+      "return_M2_ids": null,
+      "V1_sites": null,
+      "V2_sites": null
+    }
+  },
+  "inherited_reviewed_interfaces": {
+    "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+    "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+  },
+  "atomic_interface_count": 35,
+  "new_atomic_interfaces": [],
+  "group_decision_count": 2,
+  "group_decisions_are_atomic_interface_count": false,
+  "between_groups_global_isolation_confirmed": null,
+  "selected_B1_L1_component_membership": null,
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "complete_network": false,
+  "supersedes_state": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v2.json",
+    "sha256": "38d0f13befed5d6c3a4c7d947796f3cdd5aa0061b18d3a7b085a332e30dcd0f3"
+  },
+  "L3_current_membership": "not_in_current_A_group_not_a_global_disconnection_claim",
+  "L2_reinstated_by": "explicit_user_correction"
+}

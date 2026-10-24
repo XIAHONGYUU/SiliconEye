@@ -1,0 +1,60 @@
+{
+  "request": {
+    "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-request-v1.json",
+    "sha256": "292b5a026d2593e564cc956eadee6f1f34820e9729749e55934e3590b79c19f3"
+  },
+  "reviewed_relations": {
+    "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-relations-v1.json",
+    "sha256": "f298ffc65ce108d25b1b49f045b7ee6f6d2512bc1fff77bf69b40ce33eaa7ea9"
+  },
+  "verification": {
+    "path": "benchmarks/l1-fanout-reviewed-v4/verification-v1.json",
+    "sha256": "c7d925827a0ace234b31f557192276b1212ddac5adb2e91a9ac753b21afa776a"
+  },
+  "artifacts": [
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/index.html",
+      "sha256": "c9e8007a39234f51357f78481c5fdab810ce4bccd830f2408e1539c684978f55"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m2-detail-marked.png",
+      "sha256": "ca7ebdb5d88feb98b00a20f54aba897881e4a05df580378aaf4c78c43e916195"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m2-detail-raw.png",
+      "sha256": "594e38954098e1c763859ce2e007774c622ea84e0beb5d81f243877a9ee094cb"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m2-location.png",
+      "sha256": "86a0e7be072c42e1a5e90b7b4bcec74b08be8e5e783bf12268961687d8c73a0a"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m2-wide-marked.png",
+      "sha256": "d10d2e4cbfe3363b554a620e65c455bc3d9cb48578b15c2b8afe5f7ac727d57f"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m2-wide-raw.png",
+      "sha256": "a5657d08b399d42825ae129989aa8ff5a515e2e2a635848480bca5d022bae725"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m3-detail-marked.png",
+      "sha256": "34f4f45356a86c04af32cb4eb1486d01218fc385ab8ad5fcfc4d859357c873f5"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m3-detail-raw.png",
+      "sha256": "85dba1a2dcd922195bfd3c7d7bd0c8ef44ad3bdc3e237ebeb72bdfc8421146f7"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m3-location.png",
+      "sha256": "2fa7cd01256090fc96b63946c17672f2f9fbf3a9a031d3218036c044954b2f95"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m3-wide-marked.png",
+      "sha256": "97d08ac908550d2c52c7389c37b6c121cafc3e45a471c39846e9f2ca601bbc3b"
+    },
+    {
+      "path": "docs/assets/l1-fanout-reviewed-v4/upper-followup/m3-wide-raw.png",
+      "sha256": "d5de8f38df0ae2fa6ee2a43366bb2fd95195de6d8eaddc3e289b5df61840264a"
+    }
+  ]
+}

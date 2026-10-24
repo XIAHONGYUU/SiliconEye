@@ -1,0 +1,26 @@
+{
+  "kind": "historical_execution_code_bindings",
+  "original_references_preserved": true,
+  "current_source_unchanged": true,
+  "automatic_loader_redirection": false,
+  "versions": [
+    {
+      "original_path": "silicon_eye/metal_via_pilot.py",
+      "expected_sha256": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566",
+      "archive": {
+        "path": "benchmarks/evidence/renderer-history/metal_via_pilot-82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566.py",
+        "sha256": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566"
+      },
+      "provenance": "Exact bytes from parent commit 389c682; original renderer before source-label styling."
+    },
+    {
+      "original_path": "silicon_eye/metal_via_pilot.py",
+      "expected_sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af",
+      "archive": {
+        "path": "benchmarks/evidence/renderer-history/metal_via_pilot-f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af.py",
+        "sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af"
+      },
+      "provenance": "Exact historical bytes recovered by reversing only the later hide_off_window_labels guard; SHA256 matches all six original references."
+    }
+  ]
+}

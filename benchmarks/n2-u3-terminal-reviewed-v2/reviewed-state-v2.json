@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "status": "SCOPED_TERMINAL_PATH_REVIEWED",
+  "parent_candidate_model": {
+    "path": "docs/assets/conductive-medium-closeout-v1/model.json",
+    "sha256": "4b8d470e6ee22552fdb7565fb6791e0a4a3b9ad3431178273f341745bcbecfdb"
+  },
+  "human_review": {
+    "path": "benchmarks/n2-u3-terminal-reviewed-v2/human-review-v1.json",
+    "sha256": "e46d7756ac7fcc44033e193179aa061a591b5809be0b55faf65b76056cb7ecdb"
+  },
+  "branch": {
+    "metal_route": [
+      "M3-J-B1",
+      "N2-M2-V2-M3-B1",
+      "M2-N2-LEFT-RAIL",
+      "N2-U3-V1-CARRIER",
+      "M1-N2-U3"
+    ],
+    "reviewed_metal_route_continuous": true,
+    "terminal_candidate": {
+      "id": "N2-U3-CT-AA-TERMINAL-CANDIDATE",
+      "actor": "AI",
+      "status": "candidate",
+      "from_metal_id": "M1-N2-U3",
+      "connection_confirmed": null,
+      "proposed_path": [
+        "M1-N2-U3",
+        "CT-group-unassigned",
+        "AA-guard-terminal-unassigned"
+      ],
+      "proposed_terminal_role": "guard_or_body_tap_unknown",
+      "scope": "Connection-level question only; no exact CT count, no source/drain assignment or specific device polarity.",
+      "source_regions": {
+        "m1": [
+          1350,
+          2675,
+          1710,
+          2730
+        ],
+        "poly": [
+          1230,
+          2528,
+          1600,
+          2585
+        ],
+        "aa": [
+          1340,
+          2640,
+          1740,
+          2700
+        ]
+      },
+      "alternatives": [
+        "The broad M1 band is a CT-connected AA ring / body-tap conductor.",
+        "It belongs to another terminal or adjacent conductor.",
+        "Existing photographs do not resolve the terminal connection."
+      ]
+    },
+    "terminal_closed": true,
+    "terminal_closure_scope": "reviewed_path_reaches_one_AA_ring_terminal",
+    "reviewed_terminal_connection": {
+      "id": "N2-U3-CT-AA-TERMINAL",
+      "status": "human_confirmed_scoped_terminal_connection",
+      "from_metal_id": "M1-N2-U3",
+      "via_layer": "CT",
+      "target_material": "AA",
+      "target_structure": "ring",
+      "connection_confirmed": true,
+      "human_review": {
+        "path": "benchmarks/n2-u3-terminal-reviewed-v2/human-review-v1.json",
+        "sha256": "e46d7756ac7fcc44033e193179aa061a591b5809be0b55faf65b76056cb7ecdb"
+      },
+      "source_regions": {
+        "m1": [
+          1350,
+          2675,
+          1710,
+          2730
+        ],
+        "poly": [
+          1230,
+          2528,
+          1600,
+          2585
+        ],
+        "aa": [
+          1340,
+          2640,
+          1740,
+          2700
+        ]
+      },
+      "canonical_CT_object_ids": null,
+      "canonical_AA_object_ids": null,
+      "physical_cut_count": null,
+      "body_terminal_assignment": null,
+      "geometry_adopted": false,
+      "precise_projection_allowed": false
+    },
+    "all_along_route_interfaces_checked": false
+  },
+  "approved_terminal_connections": [
+    {
+      "id": "N2-U3-CT-AA-TERMINAL",
+      "status": "human_confirmed_scoped_terminal_connection",
+      "from_metal_id": "M1-N2-U3",
+      "via_layer": "CT",
+      "target_material": "AA",
+      "target_structure": "ring",
+      "connection_confirmed": true,
+      "human_review": {
+        "path": "benchmarks/n2-u3-terminal-reviewed-v2/human-review-v1.json",
+        "sha256": "e46d7756ac7fcc44033e193179aa061a591b5809be0b55faf65b76056cb7ecdb"
+      },
+      "source_regions": {
+        "m1": [
+          1350,
+          2675,
+          1710,
+          2730
+        ],
+        "poly": [
+          1230,
+          2528,
+          1600,
+          2585
+        ],
+        "aa": [
+          1340,
+          2640,
+          1740,
+          2700
+        ]
+      },
+      "canonical_CT_object_ids": null,
+      "canonical_AA_object_ids": null,
+      "physical_cut_count": null,
+      "body_terminal_assignment": null,
+      "geometry_adopted": false,
+      "precise_projection_allowed": false
+    }
+  ],
+  "retained_groups": {
+    "MID-AB-GROUP-B": [
+      "M1-T1-LOCAL",
+      "M1-L4-LOCAL"
+    ],
+    "MID-AB-GROUP-A": [
+      "M1-T3-LOCAL",
+      "M1-L2-LOCAL"
+    ]
+  },
+  "unchanged_geometry_model": {
+    "path": "docs/assets/conductive-medium-closeout-v1/model.json",
+    "sha256": "4b8d470e6ee22552fdb7565fb6791e0a4a3b9ad3431178273f341745bcbecfdb"
+  },
+  "new_geometry_objects": 0,
+  "inherited_reviewed_metal_interface_count": 38,
+  "represented_metal_interfaces": 11,
+  "newly_approved_terminal_connection_count": 1,
+  "other_main_branches_pending_lower_coverage": 12,
+  "complete_network": false,
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "scope_note": "The inherited terminal_candidate remains the original pre-review observation. The current adopted connection is approved_terminal_connections; terminal_closed covers this path only."
+}

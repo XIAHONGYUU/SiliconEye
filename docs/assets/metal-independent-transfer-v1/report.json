@@ -1,0 +1,110 @@
+{
+  "status": "TECHNICAL_CANDIDATE_PASS_HUMAN_INTERFACES_UNREVIEWED",
+  "geometry_audits": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [],
+      "minimum_gap_px": null
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "IT1-M2-A",
+            "IT1-M2-B"
+          ],
+          "gap_px": 45.0
+        }
+      ],
+      "minimum_gap_px": 45.0
+    },
+    "M3": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "IT1-M3-BUS",
+            "IT1-M3-UP"
+          ],
+          "gap_px": 25.0
+        },
+        {
+          "ids": [
+            "IT1-M3-BUS",
+            "IT1-M3-LOW"
+          ],
+          "gap_px": 50.0
+        },
+        {
+          "ids": [
+            "IT1-M3-UP",
+            "IT1-M3-LOW"
+          ],
+          "gap_px": 165.0
+        }
+      ],
+      "minimum_gap_px": 25.0
+    }
+  },
+  "via_support_audits": {
+    "IT1-V1-A": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 1,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK"
+    },
+    "IT1-V2-B": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 1,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK"
+    }
+  },
+  "source_identity_gate": {
+    "status": "PASS",
+    "errors": [],
+    "scope": "human_adjudicated_photograph_stack_not_universal_imaging_rule"
+  },
+  "source_order_gate": {
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "A-before-B",
+        "values": {
+          "native_path": [
+            2516,
+            2553
+          ],
+          "design_path": [
+            300,
+            370
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "scope": "declared_same_frame_order_not_registration"
+  },
+  "source_window_intersection_area": 0,
+  "independence": "Spatially disjoint from the previous medium window on the same known chip; not an unseen-chip or context-blind test.",
+  "candidate_interface_count": 2,
+  "new_confirmed_connections": 0,
+  "negative_controls": {
+    "M2_A_B_merge_rejected": true,
+    "V1_using_M2_rejected": true,
+    "missing_enclosure_rejected": true,
+    "wrong_via_pair_rejected": true
+  },
+  "complete_network": false,
+  "exact_via_counts_unknown": true,
+  "precise_projection_allowed": false,
+  "scope": "Tool-function transfer using existing geometry/source/enclosure functions; the production conductive_medium CLI still accepts reviewed interfaces only. This is not a blind or end-to-end autonomous extraction test."
+}

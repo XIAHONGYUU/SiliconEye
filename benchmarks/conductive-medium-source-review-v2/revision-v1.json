@@ -1,0 +1,33 @@
+{
+  "actor": "AI",
+  "parent": {
+    "path": "docs/assets/conductive-medium-closeout-v1/model.json",
+    "sha256": "4b8d470e6ee22552fdb7565fb6791e0a4a3b9ad3431178273f341745bcbecfdb"
+  },
+  "changed_object_ids": [
+    "M1-N2-U1-U2"
+  ],
+  "changed_fields": {
+    "design_path[1][0]": [
+      1700,
+      1310
+    ]
+  },
+  "evidence": {
+    "native_U1_right": 1945,
+    "native_P08_left": 2006,
+    "old_design_U1_right": 1700,
+    "design_P08_left": 1380
+  },
+  "geometry_adopted": false,
+  "reviewed_terminal_state": {
+    "path": "benchmarks/n2-u3-terminal-reviewed-v2/reviewed-state-v2.json",
+    "sha256": "a791773f6a5894d7cf840467ea55ccdadc70535c6f3a8991a35925bf7f7a7d31"
+  },
+  "remaining_limits": [
+    "U1/U3 right corner not reconstructed",
+    "Other conductors not covered",
+    "A/B detailed interfaces unknown",
+    "Via supports not measured cut arrays"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_V1_site_identity_and_same_layer_continuity",
+  "human_review": {
+    "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+    "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+  },
+  "inherited_cross_layer_relations": {
+    "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+    "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+  },
+  "reviewed_sites": [
+    {
+      "id": "U1",
+      "V1_present": true,
+      "evidence_frame": "m1",
+      "source_bounds": [
+        1505,
+        1875,
+        1545,
+        1945
+      ],
+      "status": "human_confirmed_scoped_presence",
+      "via_group_id": "V1-N2-U1",
+      "lower_M1_id": "M1-N2-U1-U2",
+      "upper_M2_id": null,
+      "physical_cut_count": null,
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      }
+    },
+    {
+      "id": "U2",
+      "V1_present": false,
+      "evidence_frame": "m1",
+      "source_bounds": [
+        1525,
+        2270,
+        1575,
+        2335
+      ],
+      "status": "human_confirmed_scoped_absence",
+      "via_group_id": null,
+      "lower_M1_id": "M1-N2-U1-U2",
+      "upper_M2_id": null,
+      "physical_cut_count": null,
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      }
+    },
+    {
+      "id": "U3",
+      "V1_present": true,
+      "evidence_frame": "m1",
+      "source_bounds": [
+        1524,
+        2675,
+        1570,
+        2740
+      ],
+      "status": "human_confirmed_scoped_presence",
+      "via_group_id": "V1-N2-U3",
+      "lower_M1_id": null,
+      "upper_M2_id": null,
+      "physical_cut_count": null,
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      }
+    }
+  ],
+  "reviewed_same_layer_relations": [
+    {
+      "kind": "same_M1_conductor",
+      "site_ids": [
+        "U1",
+        "U2"
+      ],
+      "lower_metal_id": "M1-N2-U1-U2",
+      "status": "human_confirmed_site_membership",
+      "exact_boundary_approved": false,
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      }
+    }
+  ],
+  "confirmed_V1_site_groups": [
+    "V1-N2-U1",
+    "V1-N2-U3"
+  ],
+  "excluded_V1_sites": [
+    "U2"
+  ],
+  "M1_to_M2_reviewed_connections_added": [],
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false,
+  "net_edges": [],
+  "complete_network": false
+}

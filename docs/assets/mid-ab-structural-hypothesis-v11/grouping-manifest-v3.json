@@ -1,0 +1,36 @@
+{
+  "human_correction": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-correction-v3.json",
+    "sha256": "16d72611d1473b339e9ce852d29ad5f33fa45bb38061ee9ff6b49f18a6a6178f"
+  },
+  "state": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v3.json",
+    "sha256": "a343f2155740d2d94c88ccee7b9a4d7be5f3840f27888ef15453ac42e971668c"
+  },
+  "request": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-render-request-v3.json",
+    "sha256": "9e7dc3afb6f4e9052b2f8a0149b86f3e57bcab1e76b8524b769ef1d0a25915a7"
+  },
+  "verification": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-verification-v3.json",
+    "sha256": "886b099d5b8e3f7e42a3150c92708a43fd7a2db751f7793f2042cf8e1754de8a"
+  },
+  "parent_manifest": {
+    "path": "docs/assets/mid-ab-structural-hypothesis-v11/grouping-manifest-v2.json",
+    "sha256": "bd6e27a76923730f4a1a655508265585d8c9cfa962851150fdc0cf7da93f8848"
+  },
+  "artifacts": [
+    {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/grouping-corrected-v3.html",
+      "sha256": "3dc7857b86cfa49e1486674530ffc3dc5fd73a235d341720b815336eae027082"
+    },
+    {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/m1-wide-grouped-v3.png",
+      "sha256": "d84138788b215d2b36feddabc2626e38c6c2a82d39ce15ba6c4c1e01dfe2ffdb"
+    },
+    {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/m1-detail-grouped-v3.png",
+      "sha256": "e825055ebae6661e29fbf941fe9b3c569fe326723de2b4bccecb5a7a4e407fd0"
+    }
+  ]
+}

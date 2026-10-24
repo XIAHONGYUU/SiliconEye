@@ -1,0 +1,23 @@
+{
+  "status": "PARTIAL_HUMAN_TRUTH",
+  "initial_ai": {
+    "path": "benchmarks/metal-independent-transfer-v1/initial-ai-observation-v1.json",
+    "sha256": "895432b6f2485015044975d9db42123a3b448bee685e8950a10172d085ddb106"
+  },
+  "human_review": {
+    "path": "benchmarks/metal-independent-transfer-v1/q2-human-review-v1.json",
+    "sha256": "66d3bda15c79224e7a2e847dcc8dadee40cc13551d0eebdd24a6e2737722d024"
+  },
+  "Q1": {
+    "proposal_id": "IT1-V1-A",
+    "human_truth": null,
+    "correct": null
+  },
+  "Q2": {
+    "proposal_id": "IT1-V2-B",
+    "human_truth": "V2 connects M2-B to indicated broad M3",
+    "correct": true,
+    "corrections_after_submission": 0
+  },
+  "scope": "One spatially disjoint known-chip area, not a context-blind or unseen-chip accuracy test."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "PASS_TECHNICAL_ONLY",
+  "date": "2026-10-23",
+  "refs_verified": 38,
+  "raw_crops_pixel_equal": [
+    "P/m2-wide",
+    "P/m2-detail",
+    "P/m3-wide",
+    "P/m3-detail",
+    "Z2/m2-wide",
+    "Z2/m2-detail",
+    "Z2/m3-wide",
+    "Z2/m3-detail",
+    "Z3/m2-wide",
+    "Z3/m2-detail",
+    "Z3/m3-wide",
+    "Z3/m3-detail",
+    "Z4/m2-wide",
+    "Z4/m2-detail",
+    "Z4/m3-wide",
+    "Z4/m3-detail"
+  ],
+  "default_rendering_byte_identical_files": [
+    "m2-wide-marked.png",
+    "m3-detail-raw.png",
+    "m2-detail-raw.png",
+    "m3-wide-raw.png",
+    "m2-location.png",
+    "m3-location.png",
+    "m2-detail-marked.png",
+    "m3-wide-marked.png",
+    "m3-detail-marked.png",
+    "m2-wide-raw.png"
+  ],
+  "html_links_verified": 37,
+  "script_syntax_checks": 1,
+  "new_F_confirmed": 3,
+  "P_subregions_assigned": 7,
+  "remaining_F_candidates": 9,
+  "registry_unchanged": true,
+  "net_edges": [],
+  "browser_interaction_tested": false,
+  "visual_checks": [
+    "P/m2-wide-marked.png",
+    "P/m3-wide-marked.png",
+    "Z3/m2-wide-marked.png"
+  ],
+  "limits": [
+    "Human-approved local relations only, no physical counts or precision projection.",
+    "Source labels are optional to preserve frozen default renders; new reviews use 30px labels, dark boxes, leader lines and 1400px minimum displayed wide image."
+  ],
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py",
+    "passed": 38,
+    "seconds": 58.1
+  },
+  "ruff": "PASS"
+}

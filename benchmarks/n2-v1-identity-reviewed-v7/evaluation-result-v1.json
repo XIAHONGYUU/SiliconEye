@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "initial_AI": {
+    "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-observation-v1.json",
+    "sha256": "c6ae0a645204723a8cb4af5be3aea67bc8428c64fb240def5ee873358a3896b1"
+  },
+  "human_review": {
+    "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+    "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+  },
+  "V1_presence_ground_truth": {
+    "U1": true,
+    "U2": false,
+    "U3": true
+  },
+  "initial_definite_binary_predictions": 0,
+  "initial_AI_policy": "U1/U3 candidate bright support; U2 unclear; all truth fields null in the pre-review artifact.",
+  "binary_prediction_accuracy": null,
+  "N2_landing_correct": {
+    "U1": null,
+    "U2": null,
+    "U3": null
+  },
+  "continuity_ground_truth": [
+    [
+      "U1",
+      "U2"
+    ]
+  ],
+  "note": "New human identity and continuity facts; not a claimed 3/3 automated recognition result."
+}

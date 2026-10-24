@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "u1,u3上在m1处有v1,u2没有。可以看到U1和U2本身就是一条线，所以有孔是非常正常的。",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+      "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+    },
+    "bus_paths": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+      "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+    },
+    "initial_AI": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-observation-v1.json",
+      "sha256": "c6ae0a645204723a8cb4af5be3aea67bc8428c64fb240def5ee873358a3896b1"
+    },
+    "submitted_request": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-request-v1.json",
+      "sha256": "01199ac027d9b9d9d839ffc2b73c5faa41bfa02fb52bdb73a2fac0fa00422d8f"
+    },
+    "submitted_page": {
+      "path": "docs/assets/b1-l1-stack-reviewed-v6/index.html",
+      "sha256": "d0432f296973c30cf8910abc0d2c72de26cae4908ab6142e2718b3d7367aa90e"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/b1-l1-stack-reviewed-v6/manifest.json",
+      "sha256": "f2b46f660259e097d9e73f412122da19ef6ee647752deff2f57c07a1804e043e"
+    },
+    "registration_audit": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/registration-reuse-audit-v1.json",
+      "sha256": "04ff7ca8d18823a9993cdfda842b33b15b996fbaee7d404f871e74e5f091c373"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "decisions": {
+    "V1_present": {
+      "U1": true,
+      "U2": false,
+      "U3": true
+    },
+    "same_M1_conductor_sites": [
+      [
+        "U1",
+        "U2"
+      ]
+    ]
+  },
+  "scope": "确认M1照片上三处V1存在／不存在及U1-U2同一条M1；不把同线事实传播为U2也有孔，不把U3加入同一导体。",
+  "not_approved": [
+    "N2 or any other M2 landing",
+    "same_conductor U1/U3",
+    "precise source boundaries or hole counts",
+    "whole-net completion"
+  ]
+}

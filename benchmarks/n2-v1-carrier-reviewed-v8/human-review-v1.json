@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "均接到N2",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+      "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+    },
+    "bus_paths": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+      "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+    },
+    "V1_identity": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/reviewed-site-identities-v1.json",
+      "sha256": "1aff67089d00c0bcb5e9513adb6c201b1c11c9189b76045b039cb8151c6e8091"
+    },
+    "V1_identity_human": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+      "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+    },
+    "initial_AI": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/continuation-observation-v1.json",
+      "sha256": "b64afa946453b13f391e7b43f832e36ac9612adbfcc9afacbd94051269e1ca10"
+    },
+    "submitted_page": {
+      "path": "docs/assets/n2-v1-identity-reviewed-v7/index.html",
+      "sha256": "2b7bdaa686e210279a72ca51cb92625f839fb9205adb76ac7fafdb13a854d30f"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/n2-v1-identity-reviewed-v7/manifest.json",
+      "sha256": "5000fb046e5bacb1b86de9a0219c7524ca20331c657a81fc01f09b0e7436c70e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "decisions": {
+    "sites": [
+      "U1",
+      "U3"
+    ],
+    "via_group_ids": [
+      "V1-N2-U1",
+      "V1-N2-U3"
+    ],
+    "via_layer": "V1",
+    "upper_M2_id": "M2-N2-LEFT-RAIL",
+    "connection_confirmed": true
+  },
+  "scope": "两处已审V1到N2的导体级接入；U1/U2同M1与U2无V1继续继承。",
+  "not_approved": [
+    "precise source-to-source projection or cut enclosure",
+    "whole M1 boundary or all branches",
+    "U1 and U3 one continuous physical M1",
+    "M1 middle horizontal feature identity",
+    "full-network completion"
+  ]
+}

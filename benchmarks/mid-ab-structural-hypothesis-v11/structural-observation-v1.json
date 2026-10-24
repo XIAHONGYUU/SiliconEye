@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "M3_and_ABAB_forward_layout_hypothesis_check",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "reviewed_interfaces": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+      "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+    },
+    "prior_AI": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/downstream-observation-v1.json",
+      "sha256": "9c09a94e234497f33248deb6f762a95229607b7903365ac801b69c354dfbef25"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-ab-carrier-reviewed-v10/index.html",
+      "sha256": "53ca6e08fdab15ebe9e8e969e5ef21b997b7bbcf4750024c662fac9a71d7f264"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-ab-carrier-reviewed-v10/manifest.json",
+      "sha256": "f8974b97fe88813781182e81b3fef371662401b0d7aa96c7007a70046493e570"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "human_structural_inference": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/human-structural-inference-v1.json",
+    "sha256": "87711bfff9ac1fab11a882f143225d6c9990c8e34cc995da59064668abf2d43c"
+  },
+  "previous_question_correction": "The prior page over-focused on direct downward V1 access at the two feet. Restore the upward M2/V2/M3 and return-M2/V1/M1 alternatives before deciding.",
+  "source_index_M1": [
+    {
+      "id": "L6",
+      "x_near_y_2915": 877,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "L5",
+      "x_near_y_2915": 939,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "L4",
+      "x_near_y_2915": 1000,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "L3",
+      "x_near_y_2915": 1062,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "L2",
+      "x_near_y_2915": 1123,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "L1",
+      "x_near_y_2915": 1184,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "T1",
+      "x_near_y_2915": 1244,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "T2",
+      "x_near_y_2915": 1305,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "T3",
+      "x_near_y_2915": 1365,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "T4",
+      "x_near_y_2915": 1427,
+      "scope": "single-photo locator, not device identity or via detection"
+    },
+    {
+      "id": "R1",
+      "x_near_y_2915": 1487,
+      "scope": "single-photo locator, not device identity or via detection"
+    }
+  ],
+  "left_count_convention": "L1 is the first visible M1 strip to the left of T1, L4 the fourth. T3 leftward count T2,T1,L1,L2 makes L2 its fourth. This counts drawn strips only; dummy status is not independently assigned.",
+  "M2_return_pad_candidates": [
+    {
+      "id": "R-M2-1",
+      "bounds": [
+        956,
+        2912,
+        1007,
+        2968
+      ],
+      "description": "左侧上排M2短端"
+    },
+    {
+      "id": "R-M2-2",
+      "bounds": [
+        1070,
+        2933,
+        1127,
+        2991
+      ],
+      "description": "中间下排M2短端"
+    },
+    {
+      "id": "R-M2-3",
+      "bounds": [
+        1180,
+        2907,
+        1234,
+        2965
+      ],
+      "description": "靠近A/B左侧的上排M2短端"
+    }
+  ],
+  "M3_source_segments": [
+    {
+      "id": "M3-X",
+      "native_path": [
+        [
+          1010,
+          2997
+        ],
+        [
+          1350,
+          2988
+        ]
+      ],
+      "description": "上方短横段"
+    },
+    {
+      "id": "M3-Y",
+      "native_path": [
+        [
+          1135,
+          3014
+        ],
+        [
+          1400,
+          3006
+        ]
+      ],
+      "description": "中间短横段"
+    },
+    {
+      "id": "M3-Z",
+      "native_path": [
+        [
+          995,
+          3035
+        ],
+        [
+          1760,
+          3014
+        ]
+      ],
+      "description": "下方延伸横段，仅参照"
+    }
+  ],
+  "structural_support": [
+    {
+      "id": "E1",
+      "description": "Four M1 candidates L4,L2,T1,T3 are spaced nearly equally.",
+      "x_native": [
+        1000,
+        1123,
+        1244,
+        1365
+      ],
+      "adjacent_gaps_px": [
+        123,
+        121,
+        121
+      ],
+      "electrical_connectivity_proven": false
+    },
+    {
+      "id": "E2",
+      "description": "M2 visible endpoints form staggered rows: R-M2-1/R-M2-3/B foot above, R-M2-2/A foot below. These are metal-pad patterns, not V1 or V2 detections.",
+      "electrical_connectivity_proven": false
+    },
+    {
+      "id": "E3",
+      "description": "M3 has two staggered short horizontal segments X/Y plus a lower extended segment Z. X/Y are compatible with two separate grouping routes, but no exact M2/M3 registration or via landing is established.",
+      "electrical_connectivity_proven": false
+    }
+  ],
+  "candidate_route_B": {
+    "status": "structural_hypothesis",
+    "path": [
+      "M2-MID-CAND-B",
+      "V2 unresolved",
+      "M3-X proposed",
+      "V2 unresolved",
+      "R-M2-3 proposed",
+      "V1 unresolved",
+      "M1-T1-LOCAL"
+    ],
+    "human_confirmed": null
+  },
+  "candidate_route_A": {
+    "status": "structural_hypothesis",
+    "endpoint": "M1-T3-LOCAL",
+    "M3_bus_candidate": "M3-Y",
+    "direct_V1_at_A_foot": null,
+    "detailed_path": null,
+    "reason": "User distinguishes A direct-to-T3 from B via neighboring M2, while also mentioning M3 globally. Keep detailed A route unresolved rather than forcing both descriptions into one path.",
+    "human_confirmed": null
+  },
+  "conditional_group_hypothesis": {
+    "condition": "Only if T1 means the fourth strip to its left, not all four left neighbors. Dummy exclusion and exact identity remain as user-reported context.",
+    "group_B": [
+      "M1-L4-LOCAL",
+      "M1-T1-LOCAL"
+    ],
+    "group_A": [
+      "M1-L2-LOCAL",
+      "M1-T3-LOCAL"
+    ],
+    "sequence_left_to_right": [
+      "B",
+      "A",
+      "B",
+      "A"
+    ],
+    "status": "conditional_not_adopted",
+    "human_confirmed": null
+  },
+  "unresolved": [
+    "T1 left-member wording: fourth strip versus all four strips",
+    "V2 identities and landings on A/B and return M2",
+    "V1 identity and landings on target M1",
+    "Detailed A direct/upper-layer route",
+    "Exact M2/M3 source alignment and X/Y carrier allocation"
+  ],
+  "continuation_policy": "Use the conditional topology for source inspection and contradiction checks. Do not fabricate via cuts or merge it into reviewed interfaces. No need to demand every hole count.",
+  "localization_method": "Smoothed single-photo profiles locate source strip/line centers only; regular gaps and endpoint ordering are structural support, not independent electrical proof.",
+  "reviewed_interfaces_inherited": {
+    "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+    "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+  },
+  "reviewed_interface_count": 35,
+  "new_reviewed_connections": [],
+  "net_edges": [],
+  "complete_network": false,
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false
+}

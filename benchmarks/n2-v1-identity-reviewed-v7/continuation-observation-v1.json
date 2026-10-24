@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "after_V1_identity_before_M2_landing",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+      "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+    },
+    "bus_paths": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+      "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+    },
+    "initial_AI": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-observation-v1.json",
+      "sha256": "c6ae0a645204723a8cb4af5be3aea67bc8428c64fb240def5ee873358a3896b1"
+    },
+    "submitted_request": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-request-v1.json",
+      "sha256": "01199ac027d9b9d9d839ffc2b73c5faa41bfa02fb52bdb73a2fac0fa00422d8f"
+    },
+    "submitted_page": {
+      "path": "docs/assets/b1-l1-stack-reviewed-v6/index.html",
+      "sha256": "d0432f296973c30cf8910abc0d2c72de26cae4908ab6142e2718b3d7367aa90e"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/b1-l1-stack-reviewed-v6/manifest.json",
+      "sha256": "f2b46f660259e097d9e73f412122da19ef6ee647752deff2f57c07a1804e043e"
+    },
+    "registration_audit": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/registration-reuse-audit-v1.json",
+      "sha256": "04ff7ca8d18823a9993cdfda842b33b15b996fbaee7d404f871e74e5f091c373"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "human_review": {
+    "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+    "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+  },
+  "same_layer_route": {
+    "id": "M1-N2-U1-U2",
+    "native_reference_path": [
+      [
+        1525,
+        1910
+      ],
+      [
+        1553,
+        1930
+      ],
+      [
+        1565,
+        2300
+      ]
+    ],
+    "site_membership": "human_confirmed_U1_U2",
+    "path_pixels": "AI_reference_only",
+    "all_branches_traced": false
+  },
+  "candidate_continuation": {
+    "from": "U2",
+    "native_path": [
+      [
+        1565,
+        2300
+      ],
+      [
+        1578,
+        2670
+      ]
+    ],
+    "status": "AI_visible_extension_to_end_candidate",
+    "exact_terminal": false
+  },
+  "U3_relation": {
+    "site": "U3",
+    "status": "unknown_relative_to_M1_N2_U1_U2",
+    "observation": "Above U3, the thin vertical M1 appears to end with a visible dark gap before the broad U3 bar; do not merge by proximity. This does not establish globally different nets.",
+    "native_inspection_bounds": [
+      1450,
+      2500,
+      1650,
+      2780
+    ]
+  },
+  "M2_landing": {
+    "U1": null,
+    "U3": null
+  },
+  "same_hole_pairs": [],
+  "new_transform": null,
+  "known_positive_gate": "V1 exists at U1/U3",
+  "known_negative_gate": "Do not fabricate V1 at U2 or break the M1 route because U2 has no via",
+  "new_cross_layer_edges": [],
+  "candidate_connections": [
+    {
+      "id": "N2-U1-V1-CARRIER",
+      "site": "U1",
+      "via_group_id": "V1-N2-U1",
+      "via_layer": "V1",
+      "evidence_frame": "m1",
+      "proposed_upper_M2_id": "M2-N2-LEFT-RAIL",
+      "status": "AI_coarse_conductor_correspondence_candidate",
+      "human_truth": {
+        "N2_carrier_identity_correct": null
+      },
+      "M2_pixel_landing": null
+    },
+    {
+      "id": "N2-U3-V1-CARRIER",
+      "site": "U3",
+      "via_group_id": "V1-N2-U3",
+      "via_layer": "V1",
+      "evidence_frame": "m1",
+      "proposed_upper_M2_id": "M2-N2-LEFT-RAIL",
+      "status": "AI_coarse_conductor_correspondence_candidate",
+      "human_truth": {
+        "N2_carrier_identity_correct": null
+      },
+      "M2_pixel_landing": null
+    }
+  ],
+  "coarse_correspondence_basis": "U1/U3在M1上的相对位置及N2/J01相邻长金属结构比较；候选为左侧N2而非右侧J01。尚非独立标点拟合或像素落点。",
+  "adoption_boundaries": {
+    "explicit_human_conductor_identity_review": "may record scoped physical connection without claiming coordinate precision",
+    "automatic_projection_or_geometric_landing": "blocked until supported local registration and coverage check",
+    "no_human_review_yet": true
+  },
+  "question": "U1、U3两处已审V1是否都由蓝色N2这根窄M2承载？请确认导体级对应，或指出另一个承载；不重审V1身份，不要求逐孔／精确落点批准。",
+  "required_before_automatic_projection_or_geometry_adoption": [
+    "supported local M1/M2 correspondence",
+    "V1 enclosure by candidate M2",
+    "independent structural check within the valid domain"
+  ]
+}

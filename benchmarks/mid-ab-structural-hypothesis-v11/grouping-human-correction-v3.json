@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "上个说错了，更正一下，是T3,L2经过M2与M3与A连接在一起",
+  "sources": {
+    "previous_decision": {
+      "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-review-v2.json",
+      "sha256": "c4e512f7f7935bc00e9d6657000c35659ef8bf1f16eebc9042580282e767abbc"
+    },
+    "previous_state": {
+      "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v2.json",
+      "sha256": "38d0f13befed5d6c3a4c7d947796f3cdd5aa0061b18d3a7b085a332e30dcd0f3"
+    },
+    "previous_page": {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/grouping-reviewed.html",
+      "sha256": "d9b65352819f337521447c3155fa265aff553ddf70b05ab34ca54cf4f388f79d"
+    },
+    "previous_manifest": {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/grouping-manifest-v2.json",
+      "sha256": "bd6e27a76923730f4a1a655508265585d8c9cfa962851150fdc0cf7da93f8848"
+    },
+    "visible_context_page": {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/index.html",
+      "sha256": "493225bf7fd0fd562bfb8d8a0fd3e3cb96d2fd403d86c563995fd56e1dc93468"
+    }
+  },
+  "correction": {
+    "group_id": "MID-AB-GROUP-A",
+    "old_M1_members": [
+      "M1-T3-LOCAL",
+      "M1-L3-LOCAL"
+    ],
+    "current_M1_members": [
+      "M1-T3-LOCAL",
+      "M1-L2-LOCAL"
+    ],
+    "M2_anchor": "M2-MID-CAND-A",
+    "routing_layers_reported": [
+      "M2",
+      "M3"
+    ],
+    "grouping_accepted": true
+  },
+  "unchanged_group": "MID-AB-GROUP-B",
+  "scope": "只更正A组的L3为L2；B组T1/L4及原有孔位未清晰、逐接口未定位边界保留。"
+}

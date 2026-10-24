@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "均接入紫色 B1，确认无误",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-relations-v1.json",
+      "sha256": "f298ffc65ce108d25b1b49f045b7ee6f6d2512bc1fff77bf69b40ce33eaa7ea9"
+    },
+    "initial_upper_AI": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-observation-v1.json",
+      "sha256": "e78574d92bad8277cb32472a8ed36e6b8d00edd27bd2107d1a9f0f46870ce70c"
+    },
+    "submitted_request": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-request-v1.json",
+      "sha256": "292b5a026d2593e564cc956eadee6f1f34820e9729749e55934e3590b79c19f3"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-fanout-reviewed-v4/index.html",
+      "sha256": "c9e8007a39234f51357f78481c5fdab810ce4bccd830f2408e1539c684978f55"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/l1-fanout-reviewed-v4/manifest.json",
+      "sha256": "ddc73da2726643f12b1c86f21fd610260e6f53b680247f929615b21e6a33a2ed"
+    },
+    "path_summary": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-path-summary-v1.json",
+      "sha256": "44a743ffe0844110591e728ff0129fb9899578ce833238cdfe56ce3db04654b9"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "scope": "仅F01-UP、F02-UP、F03-UP三组上端沿各自M2经V2接入紫色B1；保留原下端L1与已审材料。",
+  "decisions": {
+    "ids": [
+      "F01-UP",
+      "F02-UP",
+      "F03-UP"
+    ],
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "connection_confirmed": true,
+    "same_M2_continuity_confirmed": true
+  },
+  "limits": [
+    "No new cut counts, precise boundaries, qualified projection, M1/V1 or complete-network approval.",
+    "F05-F12 upper interfaces not included in this approval."
+  ]
+}

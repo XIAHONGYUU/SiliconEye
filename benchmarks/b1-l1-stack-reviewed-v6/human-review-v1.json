@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "全部接入。",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/l1-upper-reviewed-v5/reviewed-relations-v1.json",
+      "sha256": "39973c2aba879ef343e84428e31591aa8181e9efe66da95c2084f6cf36b33217"
+    },
+    "initial_AI": {
+      "path": "benchmarks/l1-upper-reviewed-v5/right-upper-observation-v1.json",
+      "sha256": "f97c43c00e085240217f33934c2f3831a2a100daca8533cf017854d991a5eacb"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-upper-reviewed-v5/index.html",
+      "sha256": "069f8ed03f1d1bea50110da9fa71677479e32cca0f253af7f89537a6e01d0a50"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/l1-upper-reviewed-v5/manifest.json",
+      "sha256": "4900e744517cec6d4c13565b0a99070c4e1e947686d26349f6a6a9242b995d9c"
+    },
+    "N2_upper": {
+      "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+      "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+    },
+    "N2_route": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "decisions": {
+    "ids": [
+      "F05-UP",
+      "F06-UP",
+      "F07-UP",
+      "F08-UP",
+      "F09-UP",
+      "F10-UP",
+      "F11-UP",
+      "F12-UP"
+    ],
+    "via_layer": "V2",
+    "upper_metal_id": "M3-J-B1",
+    "same_M2_continuity_confirmed": true,
+    "connection_confirmed": true
+  },
+  "scope": "F05-UP至F12-UP八组上端经V2接B1；不扩为M1/V1、孔数、精确变换或整网批准。"
+}

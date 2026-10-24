@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "after_human_source_span_review_before_M2_carrier_review",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "prior_observation": {
+      "path": "benchmarks/n2-v1-carrier-reviewed-v8/M1-branch-observation-v1.json",
+      "sha256": "3a087c35e7dc7f4390723b784b4127bfbebc4523ac2295865d331f88f10bea75"
+    },
+    "prior_relations": {
+      "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+      "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+    },
+    "reviewed_sites": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/reviewed-site-identities-v1.json",
+      "sha256": "1aff67089d00c0bcb5e9513adb6c201b1c11c9189b76045b039cb8151c6e8091"
+    },
+    "submitted_page": {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/index.html",
+      "sha256": "0d1f395d587a842dcffb3f894fbf17d79436814bc56568e2f1464d4f17be38e7"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/manifest.json",
+      "sha256": "582e5d17703f4a0acad2acc2d4d01e890e65f0d08a8a6ae7b4541191a8fa7a2f"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "reviewed_facts": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v2.json",
+    "sha256": "4ce08adf4826ee8887adb11139cf35ff898b0bed86236248b7cfbd22282d895d"
+  },
+  "source_search": {
+    "frame": "m1",
+    "bounds": [
+      1250,
+      2265,
+      1430,
+      2345
+    ],
+    "role": "search_span_not_via_polygon",
+    "reason": "Two staggered narrow M2 bends are visible to the left of the former H labels; inspect the corresponding M1 line stretch without claiming a registered projection.",
+    "native_via_centers": null,
+    "independently_localized": false,
+    "count": null,
+    "coverage_human_confirmed": true,
+    "human_review": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/search-span-human-review-v2.json",
+      "sha256": "752a6485343c99e4d7c6e7f12904fe2dc0a4f98e192e987f8238e6b9f8512b2a"
+    }
+  },
+  "M2_candidates": [
+    {
+      "id": "M2-MID-CAND-A",
+      "source_frame": "m2",
+      "bounds": [
+        1280,
+        2304,
+        1328,
+        2334
+      ],
+      "description": "上方、靠右的窄M2拐弯端",
+      "via_centers": null,
+      "material_extent_reviewed": false
+    },
+    {
+      "id": "M2-MID-CAND-B",
+      "source_frame": "m2",
+      "bounds": [
+        1260,
+        2328,
+        1305,
+        2356
+      ],
+      "description": "下方、靠左的窄M2拐弯端",
+      "via_centers": null,
+      "material_extent_reviewed": false
+    }
+  ],
+  "candidate_connections": [
+    {
+      "lower_metal_id": "MID-H1",
+      "via_layer": "V1",
+      "proposed_upper_M2_id": "M2-MID-CAND-A",
+      "human_truth": null
+    },
+    {
+      "lower_metal_id": "MID-H2",
+      "via_layer": "V1",
+      "proposed_upper_M2_id": "M2-MID-CAND-B",
+      "human_truth": null
+    }
+  ],
+  "basis": "Only a coarse ordering hypothesis from two staggered M2 bends and the human left-of-label V1 hint. M1 via centers remain unresolved against the screen texture. No verified local M1/M2 mapping supports adoption.",
+  "alternatives": [
+    "A/B allocation reversed",
+    "One or both vias land on another M2 feature"
+  ],
+  "quality_gates": {
+    "via_presence": "HUMAN_REPORTED_GROUP_LEVEL",
+    "exact_M1_site": "UNRESOLVED",
+    "M2_carrier": "CANDIDATE_ONLY",
+    "registration": "NOT_QUALIFIED",
+    "automatic_connection_adoption": "BLOCKED",
+    "source_span": "HUMAN_CONFIRMED"
+  },
+  "retained_facts": [
+    "U1/U2 same M1",
+    "U2 no V1",
+    "U1 and U3 via N2",
+    "H1/H2 no local U1/U2 junction"
+  ],
+  "question": "剩余只核M2承载：H1经V1接A（上方靠右窄拐弯端）、H2经V1接B（下方靠左窄拐弯端）是否正确？若不是，请指出相应导体。橙框覆盖范围不再重审。",
+  "new_reviewed_connections": [],
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false,
+  "net_edges": [],
+  "complete_network": false,
+  "parent_observation": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v1.json",
+    "sha256": "762a3f76a23329b6f5ac13d276d0d78b6f0a09fd992478316c101abe60efe48d"
+  },
+  "post_review_inspection": "Reinspected original M1/M2 wide-detail crops. The two staggered M2 bends remain plausible, but source-span approval and vertical order alone do not uniquely establish the two landing assignments."
+}

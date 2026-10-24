@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "kind": "source_separated_N2_M1_V1_review",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/l1-upper-reviewed-v5/reviewed-relations-v1.json",
+      "sha256": "39973c2aba879ef343e84428e31591aa8181e9efe66da95c2084f6cf36b33217"
+    },
+    "initial_AI": {
+      "path": "benchmarks/l1-upper-reviewed-v5/right-upper-observation-v1.json",
+      "sha256": "f97c43c00e085240217f33934c2f3831a2a100daca8533cf017854d991a5eacb"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-upper-reviewed-v5/index.html",
+      "sha256": "069f8ed03f1d1bea50110da9fa71677479e32cca0f253af7f89537a6e01d0a50"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/l1-upper-reviewed-v5/manifest.json",
+      "sha256": "4900e744517cec6d4c13565b0a99070c4e1e947686d26349f6a6a9242b995d9c"
+    },
+    "N2_upper": {
+      "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+      "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+    },
+    "N2_route": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "observation": {
+    "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-observation-v1.json",
+    "sha256": "c6ae0a645204723a8cb4af5be3aea67bc8428c64fb240def5ee873358a3896b1"
+  },
+  "renderer": {
+    "path": "silicon_eye/metal_via_pilot.py",
+    "sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af"
+  },
+  "panels": {
+    "U1": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m1": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            1800,
+            2120,
+            2070
+          ]
+        },
+        "m2": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            1800,
+            2120,
+            2070
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m1": [
+          {
+            "bounds": [
+              1505,
+              1875,
+              1545,
+              1945
+            ],
+            "color": "#ffb04f",
+            "label": "U1 V1 ?",
+            "label_xy": [
+              1585,
+              1810
+            ]
+          },
+          {
+            "bounds": [
+              1525,
+              2270,
+              1575,
+              2335
+            ],
+            "color": "#ffb04f",
+            "label": "U2 V1 ?",
+            "label_xy": [
+              1605,
+              2205
+            ]
+          },
+          {
+            "bounds": [
+              1524,
+              2675,
+              1570,
+              2740
+            ],
+            "color": "#ffb04f",
+            "label": "U3 V1 ?",
+            "label_xy": [
+              1604,
+              2610
+            ]
+          },
+          {
+            "bounds": [
+              1964,
+              1934,
+              2011,
+              1982
+            ],
+            "color": "#58edab",
+            "label": "J01 V1 ref",
+            "label_xy": [
+              2000,
+              1850
+            ]
+          }
+        ],
+        "m2": []
+      },
+      "native_traces": {
+        "m1": [],
+        "m2": [
+          {
+            "points": [
+              [
+                1498,
+                1930
+              ],
+              [
+                1504,
+                2190
+              ],
+              [
+                1514,
+                2480
+              ],
+              [
+                1526,
+                2782
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "N2 M2 reviewed",
+            "label_xy": [
+              1660,
+              2200
+            ]
+          }
+        ]
+      }
+    },
+    "U2": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m1": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2160,
+            2120,
+            2450
+          ]
+        },
+        "m2": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2160,
+            2120,
+            2450
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m1": [
+          {
+            "bounds": [
+              1505,
+              1875,
+              1545,
+              1945
+            ],
+            "color": "#ffb04f",
+            "label": "U1 V1 ?",
+            "label_xy": [
+              1585,
+              1810
+            ]
+          },
+          {
+            "bounds": [
+              1525,
+              2270,
+              1575,
+              2335
+            ],
+            "color": "#ffb04f",
+            "label": "U2 V1 ?",
+            "label_xy": [
+              1605,
+              2205
+            ]
+          },
+          {
+            "bounds": [
+              1524,
+              2675,
+              1570,
+              2740
+            ],
+            "color": "#ffb04f",
+            "label": "U3 V1 ?",
+            "label_xy": [
+              1604,
+              2610
+            ]
+          },
+          {
+            "bounds": [
+              1964,
+              1934,
+              2011,
+              1982
+            ],
+            "color": "#58edab",
+            "label": "J01 V1 ref",
+            "label_xy": [
+              2000,
+              1850
+            ]
+          }
+        ],
+        "m2": []
+      },
+      "native_traces": {
+        "m1": [],
+        "m2": [
+          {
+            "points": [
+              [
+                1498,
+                1930
+              ],
+              [
+                1504,
+                2190
+              ],
+              [
+                1514,
+                2480
+              ],
+              [
+                1526,
+                2782
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "N2 M2 reviewed",
+            "label_xy": [
+              1660,
+              2200
+            ]
+          }
+        ]
+      }
+    },
+    "U3": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m1": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2580,
+            2120,
+            2860
+          ]
+        },
+        "m2": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2580,
+            2120,
+            2860
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m1": [
+          {
+            "bounds": [
+              1505,
+              1875,
+              1545,
+              1945
+            ],
+            "color": "#ffb04f",
+            "label": "U1 V1 ?",
+            "label_xy": [
+              1585,
+              1810
+            ]
+          },
+          {
+            "bounds": [
+              1525,
+              2270,
+              1575,
+              2335
+            ],
+            "color": "#ffb04f",
+            "label": "U2 V1 ?",
+            "label_xy": [
+              1605,
+              2205
+            ]
+          },
+          {
+            "bounds": [
+              1524,
+              2675,
+              1570,
+              2740
+            ],
+            "color": "#ffb04f",
+            "label": "U3 V1 ?",
+            "label_xy": [
+              1604,
+              2610
+            ]
+          },
+          {
+            "bounds": [
+              1964,
+              1934,
+              2011,
+              1982
+            ],
+            "color": "#58edab",
+            "label": "J01 V1 ref",
+            "label_xy": [
+              2000,
+              1850
+            ]
+          }
+        ],
+        "m2": []
+      },
+      "native_traces": {
+        "m1": [],
+        "m2": [
+          {
+            "points": [
+              [
+                1498,
+                1930
+              ],
+              [
+                1504,
+                2190
+              ],
+              [
+                1514,
+                2480
+              ],
+              [
+                1526,
+                2782
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "N2 M2 reviewed",
+            "label_xy": [
+              1660,
+              2200
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "sample": "N2-U3-CT-AA-TERMINAL",
+  "initial_candidate": {
+    "path": "benchmarks/conductive-medium-closeout-v1/n2-terminal-candidate-v1.json",
+    "sha256": "edef942f2bc1fd11664c5deb69ce86b1f46f70a0db6b41400617fd5e01192ad3"
+  },
+  "human_review": {
+    "path": "benchmarks/n2-u3-terminal-reviewed-v2/human-review-v1.json",
+    "sha256": "e46d7756ac7fcc44033e193179aa061a591b5809be0b55faf65b76056cb7ecdb"
+  },
+  "result": {
+    "proposed_scoped_connection_accepted": true,
+    "corrections_after_this_submission": 0
+  },
+  "boundary": "One known-chip, context-exposed connection sample. No whole-layer accuracy, timing or blind-transfer claim."
+}

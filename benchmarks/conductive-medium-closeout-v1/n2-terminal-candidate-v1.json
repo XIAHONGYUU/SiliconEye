@@ -1,0 +1,39 @@
+{
+  "id": "N2-U3-CT-AA-TERMINAL-CANDIDATE",
+  "actor": "AI",
+  "status": "candidate",
+  "from_metal_id": "M1-N2-U3",
+  "connection_confirmed": null,
+  "proposed_path": [
+    "M1-N2-U3",
+    "CT-group-unassigned",
+    "AA-guard-terminal-unassigned"
+  ],
+  "proposed_terminal_role": "guard_or_body_tap_unknown",
+  "scope": "Connection-level question only; no exact CT count, no source/drain assignment or specific device polarity.",
+  "source_regions": {
+    "m1": [
+      1350,
+      2675,
+      1710,
+      2730
+    ],
+    "poly": [
+      1230,
+      2528,
+      1600,
+      2585
+    ],
+    "aa": [
+      1340,
+      2640,
+      1740,
+      2700
+    ]
+  },
+  "alternatives": [
+    "The broad M1 band is a CT-connected AA ring / body-tap conductor.",
+    "It belongs to another terminal or adjacent conductor.",
+    "Existing photographs do not resolve the terminal connection."
+  ]
+}

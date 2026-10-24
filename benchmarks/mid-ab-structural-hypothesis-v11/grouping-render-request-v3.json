@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "kind": "M1_membership_display_revision_only",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "reviewed_interfaces": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+      "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+    },
+    "prior_AI": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/downstream-observation-v1.json",
+      "sha256": "9c09a94e234497f33248deb6f762a95229607b7903365ac801b69c354dfbef25"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-ab-carrier-reviewed-v10/index.html",
+      "sha256": "53ca6e08fdab15ebe9e8e969e5ef21b997b7bbcf4750024c662fac9a71d7f264"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-ab-carrier-reviewed-v10/manifest.json",
+      "sha256": "f8974b97fe88813781182e81b3fef371662401b0d7aa96c7007a70046493e570"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "observation": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/structural-observation-v1.json",
+    "sha256": "3d260b1c3fb063f7217eb241a41941898f5fce3ef8709bec8eb0d58f160a8b4e"
+  },
+  "renderer": {
+    "path": "silicon_eye/metal_via_pilot.py",
+    "sha256": "f606dd1bab4b4eb23e0756436829d3e9622323e3ed8dabbd2b874a4a991af45f"
+  },
+  "source_label_style": {
+    "font_size_px": 32,
+    "padding_px": 7,
+    "hide_off_window_labels": true
+  },
+  "source_windows": {
+    "m1": {
+      "wide": [
+        500,
+        2600,
+        1950,
+        3340
+      ],
+      "detail": [
+        760,
+        2780,
+        1560,
+        3160
+      ]
+    },
+    "m2": {
+      "wide": [
+        500,
+        2600,
+        1950,
+        3340
+      ],
+      "detail": [
+        760,
+        2780,
+        1560,
+        3160
+      ]
+    },
+    "m3": {
+      "wide": [
+        500,
+        2600,
+        1950,
+        3340
+      ],
+      "detail": [
+        760,
+        2780,
+        1560,
+        3160
+      ]
+    }
+  },
+  "observations": [],
+  "source_regions": {
+    "m1": [
+      {
+        "bounds": [
+          987,
+          2800,
+          1015,
+          3070
+        ],
+        "label": "L4 / B",
+        "label_xy": [
+          790,
+          2810
+        ],
+        "color": "#e59aff"
+      },
+      {
+        "bounds": [
+          1231,
+          2800,
+          1259,
+          3070
+        ],
+        "label": "T1 / B",
+        "label_xy": [
+          1420,
+          2810
+        ],
+        "color": "#e59aff"
+      },
+      {
+        "bounds": [
+          1110,
+          2800,
+          1138,
+          3070
+        ],
+        "label": "L2 / A",
+        "label_xy": [
+          790,
+          2890
+        ],
+        "color": "#6ad8ff"
+      },
+      {
+        "bounds": [
+          1352,
+          2800,
+          1380,
+          3070
+        ],
+        "label": "T3 / A",
+        "label_xy": [
+          1420,
+          2890
+        ],
+        "color": "#6ad8ff"
+      },
+      {
+        "bounds": [
+          1049,
+          2800,
+          1077,
+          3070
+        ],
+        "label": "L3 ref only",
+        "label_xy": [
+          790,
+          3070
+        ],
+        "color": "#aab6bf"
+      }
+    ],
+    "m2": [
+      {
+        "bounds": [
+          956,
+          2912,
+          1007,
+          2968
+        ],
+        "label": "R-M2-1 ?",
+        "label_xy": [
+          790,
+          2810
+        ],
+        "color": "#ffb04f"
+      },
+      {
+        "bounds": [
+          1070,
+          2933,
+          1127,
+          2991
+        ],
+        "label": "R-M2-2 ?",
+        "label_xy": [
+          790,
+          3070
+        ],
+        "color": "#ffb04f"
+      },
+      {
+        "bounds": [
+          1180,
+          2907,
+          1234,
+          2965
+        ],
+        "label": "R-M2-3 ?",
+        "label_xy": [
+          1280,
+          2810
+        ],
+        "color": "#ffb04f"
+      },
+      {
+        "bounds": [
+          1282,
+          2938,
+          1325,
+          2968
+        ],
+        "label": "B foot",
+        "label_xy": [
+          1390,
+          2880
+        ],
+        "color": "#e59aff"
+      },
+      {
+        "bounds": [
+          1330,
+          2958,
+          1377,
+          2990
+        ],
+        "label": "A foot",
+        "label_xy": [
+          1390,
+          3040
+        ],
+        "color": "#6ad8ff"
+      }
+    ],
+    "m3": []
+  },
+  "native_traces": {
+    "m3": [
+      {
+        "points": [
+          [
+            1010,
+            2997
+          ],
+          [
+            1350,
+            2988
+          ]
+        ],
+        "label": "M3-X ?",
+        "label_xy": [
+          790,
+          2810
+        ],
+        "color": "#e59aff"
+      },
+      {
+        "points": [
+          [
+            1135,
+            3014
+          ],
+          [
+            1400,
+            3006
+          ]
+        ],
+        "label": "M3-Y ?",
+        "label_xy": [
+          1170,
+          2850
+        ],
+        "color": "#6ad8ff"
+      },
+      {
+        "points": [
+          [
+            995,
+            3035
+          ],
+          [
+            1760,
+            3014
+          ]
+        ],
+        "label": "M3-Z ?",
+        "label_xy": [
+          1280,
+          3080
+        ],
+        "color": "#aab6bf"
+      }
+    ]
+  },
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false,
+  "grouping_state": {
+    "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v3.json",
+    "sha256": "a343f2155740d2d94c88ccee7b9a4d7be5f3840f27888ef15453ac42e971668c"
+  }
+}

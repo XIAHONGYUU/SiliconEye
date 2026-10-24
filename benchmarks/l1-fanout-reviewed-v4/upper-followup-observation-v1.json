@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_F01_F03_upper_interface_review",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "initial_AI": {
+      "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+      "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+    },
+    "parent_relations": {
+      "path": "benchmarks/l1-partial-reviewed-v3/reviewed-relations-v1.json",
+      "sha256": "520c5fca8196233680f0609aff5a909836d4b510912f96cb1c01b895c6bb6cfc"
+    },
+    "parent_human_review": {
+      "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+      "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-partial-reviewed-v3/index.html",
+      "sha256": "20a7e9040e9fe015d781ac37e4b0908b62c5f4fbf20fb656bf242ec899f09fbe"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/l1-partial-reviewed-v3/manifest.json",
+      "sha256": "fbfb43b44414bc1aeb894f800f035d585df1c99e29d97e21f65b24f457fa1fd1"
+    },
+    "N2_B1_reviewed": {
+      "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+      "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+    },
+    "D1_route_reviewed": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "five_layer_request": {
+      "path": "benchmarks/conductive-stack-v2/request-v1.json",
+      "sha256": "939bc4e62f22eba9c124337bb7ae19f1d2e4b4cabce725555568838ab1f92520"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "lower_L1_reviewed": {
+    "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-relations-v1.json",
+    "sha256": "f298ffc65ce108d25b1b49f045b7ee6f6d2512bc1fff77bf69b40ce33eaa7ea9"
+  },
+  "status": "REVIEW_REQUIRED",
+  "entries": [
+    {
+      "id": "F01-UP",
+      "lower_metal_id": "M2-L1-F01",
+      "via_group_id": "V2-L1-F01-UP",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        347,
+        1905,
+        384,
+        1973
+      ],
+      "native_M2_route_locator": [
+        [
+          365,
+          1935
+        ],
+        [
+          382,
+          2340
+        ],
+        [
+          402,
+          2770
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "id": "F02-UP",
+      "lower_metal_id": "M2-L1-F02",
+      "via_group_id": "V2-L1-F02-UP",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        708,
+        1898,
+        745,
+        1968
+      ],
+      "native_M2_route_locator": [
+        [
+          727,
+          1930
+        ],
+        [
+          744,
+          2340
+        ],
+        [
+          760,
+          2760
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "id": "F03-UP",
+      "lower_metal_id": "M2-L1-F03",
+      "via_group_id": "V2-L1-F03-UP",
+      "via_layer": "V2",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        1077,
+        1895,
+        1114,
+        1965
+      ],
+      "native_M2_route_locator": [
+        [
+          1095,
+          1924
+        ],
+        [
+          1110,
+          2340
+        ],
+        [
+          1125,
+          2750
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "physical_cut_count": null
+    }
+  ],
+  "alternatives": [
+    "upper arrays connect the broad B1",
+    "one or more upper arrays land on the adjacent fine M3 instead",
+    "continuity or landing remains unknown"
+  ],
+  "net_edges": [],
+  "complete_network": false,
+  "precise_projection_allowed": false,
+  "question": "F01-UP、F02-UP、F03-UP三组上端V2是否分别沿同一M2接入紫色B1？有例外按编号指出。下端L1不重审。"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "PASS_TECHNICAL_ONLY",
+  "path_sha_refs_verified": 109,
+  "reviewed_relation_human_sources_bound": 31,
+  "reviewed_B1_L1_M2_paths": 13,
+  "reviewed_upper_lower_interface_pairs": 26,
+  "new_M1_sites_not_adopted": 3,
+  "M1_identity_gate_precedes_landing": true,
+  "old_local_transforms_not_extrapolated": true,
+  "V1_source_only_m1": true,
+  "M2_V2_not_labelled_V1": true,
+  "raw_crops_pixel_equal": [
+    "U1/m1-wide",
+    "U1/m1-detail",
+    "U1/m2-wide",
+    "U1/m2-detail",
+    "U2/m1-wide",
+    "U2/m1-detail",
+    "U2/m2-wide",
+    "U2/m2-detail",
+    "U3/m1-wide",
+    "U3/m1-detail",
+    "U3/m2-wide",
+    "U3/m2-detail"
+  ],
+  "html_links_checked": 22,
+  "script_syntax_checks": 1,
+  "dynamic_image_paths_checked": 24,
+  "baseline_v5_registry_and_initial_AI_unchanged": true,
+  "browser_interaction_tested": false,
+  "visual_checks": [
+    "U1/m1-wide-marked.png",
+    "U1/m2-wide-marked.png"
+  ],
+  "source_changed_this_review": false,
+  "pytest_rerun": false,
+  "prior_display_test_result": "38 passed; no new source edit in this review",
+  "net_edges": [],
+  "complete_network": false
+}

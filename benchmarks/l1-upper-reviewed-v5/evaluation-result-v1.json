@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "initial_AI": {
+    "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-observation-v1.json",
+    "sha256": "e78574d92bad8277cb32472a8ed36e6b8d00edd27bd2107d1a9f0f46870ce70c"
+  },
+  "human_review": {
+    "path": "benchmarks/l1-upper-reviewed-v5/human-review-v1.json",
+    "sha256": "4170dced0eec6cb4ff0df1a9597f10cb95e0ce8eaf5240acb5bee58b5f154d83"
+  },
+  "results": {
+    "F01-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F02-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F03-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    }
+  },
+  "scope": "Three interfaces in one known-chip follow-up task, not three independent blind tasks.",
+  "exact_geometry_accuracy": null,
+  "full_network_accuracy": null
+}

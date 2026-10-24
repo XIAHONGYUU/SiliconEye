@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "PASS_TECHNICAL_ONLY",
+  "path_sha_refs_verified": 106,
+  "human_sources_bound": 35,
+  "new_M1_V1_M2_reviewed_interfaces": 2,
+  "inherited_33_interfaces_unchanged": true,
+  "principal_B1_L1_paths_still_13": true,
+  "new_branch_membership_in_B1_L1_unknown": true,
+  "local_U1_U2_non_junctions_retained": true,
+  "two_lower_interface_truths_still_null": true,
+  "no_M2_pixels_used_as_V1_observations": true,
+  "raw_crops_pixel_equal": [
+    "m1-wide",
+    "m1-detail",
+    "m2-wide",
+    "m2-detail",
+    "m3-wide",
+    "m3-detail"
+  ],
+  "HTML_links_checked": 17,
+  "JS_syntax_checks": 1,
+  "visual_checks": [
+    "m2-wide-marked.png",
+    "m2-detail-marked.png",
+    "m1-detail-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "production_code_changed_this_stage": false,
+  "tests_rerun": false,
+  "scope": "Evidence, source-image rendering and scoped connection adoption only; technical PASS does not approve downstream interfaces.",
+  "net_edges": [],
+  "complete_network": false
+}

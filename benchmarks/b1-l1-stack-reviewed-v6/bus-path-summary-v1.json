@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "paths": [
+    {
+      "id": "F01",
+      "M2_id": "M2-L1-F01",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F01-UP",
+        "M2-L1-F01",
+        "V2-L1-F01",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/l1-upper-reviewed-v5/human-review-v1.json",
+        "sha256": "4170dced0eec6cb4ff0df1a9597f10cb95e0ce8eaf5240acb5bee58b5f154d83"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+        "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F02",
+      "M2_id": "M2-L1-F02",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F02-UP",
+        "M2-L1-F02",
+        "V2-L1-F02",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/l1-upper-reviewed-v5/human-review-v1.json",
+        "sha256": "4170dced0eec6cb4ff0df1a9597f10cb95e0ce8eaf5240acb5bee58b5f154d83"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+        "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F03",
+      "M2_id": "M2-L1-F03",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F03-UP",
+        "M2-L1-F03",
+        "V2-L1-F03",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/l1-upper-reviewed-v5/human-review-v1.json",
+        "sha256": "4170dced0eec6cb4ff0df1a9597f10cb95e0ce8eaf5240acb5bee58b5f154d83"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+        "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "D1",
+      "M2_id": "M2-N2-LEFT-RAIL",
+      "path": [
+        "M3-J-B1",
+        "V2-N2-GROUP",
+        "M2-N2-LEFT-RAIL",
+        "V2-N2-LOWER-GROUP",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+        "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+        "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F04",
+      "M2_id": "M2-J01",
+      "path": [
+        "M3-J-B1",
+        "J-M2-EDGE-V2",
+        "M2-J01",
+        "V2-L1-F04",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/m2-v2-m3-joint-reviewed-v2/human-review-v1.json",
+        "sha256": "743bc97c80beba6931863d556865148bb88ea09f1f15690c25daf0f4cd40cbce"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F05",
+      "M2_id": "M2-L1-F05",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F05-UP",
+        "M2-L1-F05",
+        "V2-L1-F05",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F06",
+      "M2_id": "M2-L1-F06",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F06-UP",
+        "M2-L1-F06",
+        "V2-L1-F06",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F07",
+      "M2_id": "M2-L1-F07",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F07-UP",
+        "M2-L1-F07",
+        "V2-L1-F07",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F08",
+      "M2_id": "M2-L1-F08",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F08-UP",
+        "M2-L1-F08",
+        "V2-L1-F08",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F09",
+      "M2_id": "M2-L1-F09",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F09-UP",
+        "M2-L1-F09",
+        "V2-L1-F09",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F10",
+      "M2_id": "M2-L1-F10",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F10-UP",
+        "M2-L1-F10",
+        "V2-L1-F10",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F11",
+      "M2_id": "M2-L1-F11",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F11-UP",
+        "M2-L1-F11",
+        "V2-L1-F11",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    },
+    {
+      "id": "F12",
+      "M2_id": "M2-L1-F12",
+      "path": [
+        "M3-J-B1",
+        "V2-L1-F12-UP",
+        "M2-L1-F12",
+        "V2-L1-F12",
+        "M3-N2-LOWER-BUS-CANDIDATE"
+      ],
+      "status": "reviewed_local_path_not_complete_branch",
+      "upper_human_review": {
+        "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+        "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+      },
+      "lower_human_review": {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      },
+      "M1_V1_status": "unknown_or_partial",
+      "complete_branch": false
+    }
+  ],
+  "count": 13,
+  "interface_pair_count": 26,
+  "path_counts_are_not_hole_counts": true,
+  "local_B1_L1_connectivity_reviewed": true,
+  "all_photo_interfaces_found": false,
+  "complete_network": false,
+  "automatic_network_export_allowed": false,
+  "notes": [
+    "B1 and L1 remain distinct physical M3 geometries.",
+    "P subregions retain their two other M3 carriers.",
+    "N2/J01 upper approvals inherited; not new tests."
+  ]
+}

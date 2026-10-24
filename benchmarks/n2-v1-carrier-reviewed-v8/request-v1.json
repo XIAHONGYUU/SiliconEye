@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "kind": "M1_branch_native_context_review",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+      "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+    },
+    "bus_paths": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+      "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+    },
+    "V1_identity": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/reviewed-site-identities-v1.json",
+      "sha256": "1aff67089d00c0bcb5e9513adb6c201b1c11c9189b76045b039cb8151c6e8091"
+    },
+    "V1_identity_human": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+      "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+    },
+    "initial_AI": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/continuation-observation-v1.json",
+      "sha256": "b64afa946453b13f391e7b43f832e36ac9612adbfcc9afacbd94051269e1ca10"
+    },
+    "submitted_page": {
+      "path": "docs/assets/n2-v1-identity-reviewed-v7/index.html",
+      "sha256": "2b7bdaa686e210279a72ca51cb92625f839fb9205adb76ac7fafdb13a854d30f"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/n2-v1-identity-reviewed-v7/manifest.json",
+      "sha256": "5000fb046e5bacb1b86de9a0219c7524ca20331c657a81fc01f09b0e7436c70e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "observation": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/M1-branch-observation-v1.json",
+    "sha256": "3a087c35e7dc7f4390723b784b4127bfbebc4523ac2295865d331f88f10bea75"
+  },
+  "renderer": {
+    "path": "silicon_eye/metal_via_pilot.py",
+    "sha256": "f606dd1bab4b4eb23e0756436829d3e9622323e3ed8dabbd2b874a4a991af45f"
+  },
+  "source_label_style": {
+    "font_size_px": 40,
+    "padding_px": 7,
+    "hide_off_window_labels": true
+  },
+  "source_windows": {
+    "m1": {
+      "wide": [
+        0,
+        1750,
+        2360,
+        2860
+      ],
+      "detail": [
+        1250,
+        2140,
+        2170,
+        2430
+      ]
+    }
+  },
+  "observations": [],
+  "source_regions": {
+    "m1": [
+      {
+        "bounds": [
+          1505,
+          1875,
+          1545,
+          1945
+        ],
+        "color": "#58edab",
+        "label": "U1 V1 / N2 OK",
+        "label_xy": [
+          1530,
+          1775
+        ]
+      },
+      {
+        "bounds": [
+          1524,
+          2675,
+          1570,
+          2740
+        ],
+        "color": "#58edab",
+        "label": "U3 V1 / N2 OK",
+        "label_xy": [
+          1515,
+          2770
+        ]
+      },
+      {
+        "bounds": [
+          1510,
+          2278,
+          1590,
+          2302
+        ],
+        "color": "#ffb04f",
+        "label": "MID-H1 ?",
+        "label_xy": [
+          1720,
+          2180
+        ]
+      },
+      {
+        "bounds": [
+          1510,
+          2305,
+          1590,
+          2330
+        ],
+        "color": "#ffb04f",
+        "label": "MID-H2 ?",
+        "label_xy": [
+          1720,
+          2365
+        ]
+      },
+      {
+        "bounds": [
+          1964,
+          1934,
+          2011,
+          1982
+        ],
+        "color": "#aab6bf",
+        "label": "J01 V1 ref",
+        "label_xy": [
+          1990,
+          1850
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m1": [
+      {
+        "points": [
+          [
+            0,
+            1922
+          ],
+          [
+            500,
+            1917
+          ],
+          [
+            1000,
+            1908
+          ],
+          [
+            1500,
+            1894
+          ],
+          [
+            1945,
+            1887
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "upper M1 extent ?",
+        "label_xy": [
+          400,
+          1765
+        ]
+      },
+      {
+        "points": [
+          [
+            0,
+            2740
+          ],
+          [
+            500,
+            2725
+          ],
+          [
+            1000,
+            2711
+          ],
+          [
+            1545,
+            2700
+          ],
+          [
+            1945,
+            2686
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "lower M1 extent ?",
+        "label_xy": [
+          400,
+          2770
+        ]
+      },
+      {
+        "points": [
+          [
+            1525,
+            1910
+          ],
+          [
+            1553,
+            1930
+          ],
+          [
+            1565,
+            2300
+          ]
+        ],
+        "color": "#58edab",
+        "label": "U1-U2 same M1",
+        "label_xy": [
+          1690,
+          2040
+        ]
+      }
+    ]
+  },
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false
+}

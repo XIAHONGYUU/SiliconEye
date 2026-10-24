@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "initial_AI": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v2.json",
+    "sha256": "ccc587256c4f114571689f2b9f4c4101742c0ace36be5988879370195d3b79f9"
+  },
+  "human_review": {
+    "path": "benchmarks/mid-ab-carrier-reviewed-v10/human-review-v1.json",
+    "sha256": "f0b93114a2d21c64938c8a1a8787977a097c4657ff0c4c0d7d08c78b1b3f91cb"
+  },
+  "results": {
+    "MID-H1_to_A": true,
+    "MID-H2_to_B": true
+  },
+  "scope": "Two coarse carrier assignments in a known-chip context. Not independent blind tests, pixel accuracy or whole-network validation.",
+  "exact_via_geometry_accuracy": null,
+  "whole_network_accuracy": null
+}

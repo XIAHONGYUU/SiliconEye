@@ -1,0 +1,1062 @@
+{
+  "schema_version": 1,
+  "kind": "large_label_native_review",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "initial_AI": {
+      "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+      "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+    },
+    "pad_AI": {
+      "path": "benchmarks/l1-left-pad-review-v2/ai-observation-v1.json",
+      "sha256": "ab8558bea45277aab46bf2066e2bf710a59c222728d16da1951f961c1aecf47e"
+    },
+    "submitted_request": {
+      "path": "benchmarks/l1-left-pad-review-v2/request-v1.json",
+      "sha256": "e6a08965c1795d550f7a7de266d08870abfc86ce0c6ef1cd82e5941f97a348f2"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-left-pad-review-v2/index.html",
+      "sha256": "ff3c28958ca5456f71d277e48a06842ab71d4fc40f3952f0f7f085656d2ab1db"
+    },
+    "submitted_M2_image": {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-wide-marked.png",
+      "sha256": "8ae02f944eb65784ca176b2f74ff0f8bd3b4f6657873dadfae409c7ff601afdb"
+    },
+    "submitted_M3_image": {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-wide-marked.png",
+      "sha256": "ee090060344fb9a7d7744559c48b59dec6d5ba194faae0ed3a13356bb598fe2c"
+    },
+    "reviewed_D1": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "renderer": {
+      "path": "silicon_eye/metal_via_pilot.py",
+      "sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "human_review": {
+    "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+    "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+  },
+  "source_label_style": {
+    "font_size_px": 30,
+    "padding_px": 6
+  },
+  "panels": {
+    "P": {
+      "schema_version": 1,
+      "kind": "native_source_evidence_addendum",
+      "id": "L1-P-group-context",
+      "inputs": {
+        "snapshot": {
+          "path": "configs/joint-work-layer-v5.json",
+          "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+        },
+        "registry": {
+          "path": "docs/assets/conductive-stack-v2/model.json",
+          "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+        },
+        "parent_observation": {
+          "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+          "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+        },
+        "parent_request": {
+          "path": "benchmarks/l1-m2-fanout-v1/request-v1.json",
+          "sha256": "d650c4bac97fb6bb7e6ce216d97397a1b909b9c03e89c3b50ce68c0a604d39ff"
+        },
+        "reviewed_D1": {
+          "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+          "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+        },
+        "m2": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "m3": {
+          "path": "data/test_chip/tile_full/m3.jpg",
+          "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+        },
+        "renderer": {
+          "path": "silicon_eye/metal_via_pilot.py",
+          "sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af"
+        }
+      },
+      "source_windows": {
+        "m2": {
+          "wide": [
+            0,
+            2440,
+            1700,
+            3160
+          ],
+          "detail": [
+            0,
+            2670,
+            740,
+            3130
+          ]
+        },
+        "m3": {
+          "wide": [
+            0,
+            2440,
+            1700,
+            3160
+          ],
+          "detail": [
+            0,
+            2670,
+            740,
+            3130
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m2": [
+          {
+            "bounds": [
+              378,
+              2710,
+              426,
+              2832
+            ],
+            "color": "#58edab",
+            "label": "F01 OK",
+            "label_xy": [
+              360,
+              2640
+            ]
+          },
+          {
+            "bounds": [
+              736,
+              2700,
+              784,
+              2830
+            ],
+            "color": "#58edab",
+            "label": "F02 OK",
+            "label_xy": [
+              720,
+              2630
+            ]
+          },
+          {
+            "bounds": [
+              1098,
+              2695,
+              1145,
+              2820
+            ],
+            "color": "#58edab",
+            "label": "F03 OK",
+            "label_xy": [
+              1080,
+              2620
+            ]
+          },
+          {
+            "bounds": [
+              1508,
+              2705,
+              1543,
+              2802
+            ],
+            "color": "#58edab",
+            "label": "D1 OK",
+            "label_xy": [
+              1480,
+              2600
+            ]
+          },
+          {
+            "bounds": [
+              0,
+              2820,
+              40,
+              2910
+            ],
+            "color": "#6ad8ff",
+            "label": "P0",
+            "label_xy": [
+              8,
+              3030
+            ]
+          },
+          {
+            "bounds": [
+              95,
+              2820,
+              150,
+              2905
+            ],
+            "color": "#6ad8ff",
+            "label": "P1",
+            "label_xy": [
+              85,
+              2960
+            ]
+          },
+          {
+            "bounds": [
+              200,
+              2820,
+              255,
+              2920
+            ],
+            "color": "#ffe36b",
+            "label": "P2",
+            "label_xy": [
+              195,
+              3055
+            ]
+          },
+          {
+            "bounds": [
+              313,
+              2820,
+              370,
+              2915
+            ],
+            "color": "#ffe36b",
+            "label": "P3",
+            "label_xy": [
+              305,
+              2960
+            ]
+          },
+          {
+            "bounds": [
+              530,
+              2810,
+              595,
+              2930
+            ],
+            "color": "#6ad8ff",
+            "label": "P5",
+            "label_xy": [
+              555,
+              2940
+            ]
+          },
+          {
+            "bounds": [
+              426,
+              2832,
+              496,
+              2867
+            ],
+            "color": "#6ad8ff",
+            "label": "P4-UP",
+            "label_xy": [
+              415,
+              2770
+            ]
+          },
+          {
+            "bounds": [
+              424,
+              2873,
+              486,
+              3050
+            ],
+            "color": "#ffe36b",
+            "label": "P4-LOW",
+            "label_xy": [
+              405,
+              3090
+            ]
+          }
+        ],
+        "m3": []
+      },
+      "native_traces": {
+        "m2": [],
+        "m3": [
+          {
+            "points": [
+              [
+                0,
+                2829
+              ],
+              [
+                850,
+                2807
+              ],
+              [
+                1650,
+                2786
+              ]
+            ],
+            "color": "#d28cff",
+            "label": "L1",
+            "label_xy": [
+              530,
+              2760
+            ]
+          },
+          {
+            "points": [
+              [
+                0,
+                2921
+              ],
+              [
+                320,
+                2910
+              ],
+              [
+                610,
+                2898
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "MID M3",
+            "label_xy": [
+              130,
+              2990
+            ]
+          },
+          {
+            "points": [
+              [
+                0,
+                2936
+              ],
+              [
+                260,
+                2929
+              ],
+              [
+                500,
+                2917
+              ]
+            ],
+            "color": "#ffe36b",
+            "label": "LOW M3",
+            "label_xy": [
+              400,
+              3070
+            ]
+          }
+        ]
+      },
+      "precise_projection_allowed": false,
+      "source_to_design_transform": null,
+      "human_questions": [
+        {
+          "id": "F01-F12",
+          "question": "请批量核对橙框F01至F12：这些V2组及对应M2是否均接入同一根紫色L1？有例外请按编号指出；D1已审不重问。F04沿用M2-J01。"
+        },
+        {
+          "id": "P",
+          "question": "左侧粉框P0-P5暂不计入L1：这些小短端是否有接入L1的？如属于下方细M3或仍不清楚，也请指出。"
+        }
+      ],
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      }
+    },
+    "Z2": {
+      "schema_version": 1,
+      "kind": "metal_fanout_native_evidence_review",
+      "id": "L1-M2-fanout",
+      "initial_observation": {
+        "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+        "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+      },
+      "snapshot": {
+        "path": "configs/joint-work-layer-v5.json",
+        "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+      },
+      "zones": [
+        {
+          "id": "Z1",
+          "wide": [
+            0,
+            2350,
+            1450,
+            3010
+          ],
+          "detail": [
+            0,
+            2600,
+            1190,
+            2980
+          ]
+        },
+        {
+          "id": "Z2",
+          "wide": [
+            1300,
+            2350,
+            2850,
+            3010
+          ],
+          "detail": [
+            1420,
+            2630,
+            2100,
+            2870
+          ]
+        },
+        {
+          "id": "Z3",
+          "wide": [
+            2700,
+            2350,
+            4250,
+            3010
+          ],
+          "detail": [
+            3000,
+            2580,
+            4020,
+            2820
+          ]
+        },
+        {
+          "id": "Z4",
+          "wide": [
+            4100,
+            2350,
+            5712,
+            3010
+          ],
+          "detail": [
+            4200,
+            2550,
+            5610,
+            2980
+          ]
+        }
+      ],
+      "overview_bounds": [
+        0,
+        2500,
+        5712,
+        3000
+      ],
+      "observations": [],
+      "source_regions": {
+        "m2": [
+          {
+            "bounds": [
+              1508,
+              2705,
+              1543,
+              2802
+            ],
+            "color": "#58edab",
+            "label": "D1 OK",
+            "label_xy": [
+              1496,
+              2645
+            ]
+          },
+          {
+            "bounds": [
+              1938,
+              2675,
+              2022,
+              2805
+            ],
+            "color": "#ffb04f",
+            "label": "F04 ?",
+            "label_xy": [
+              1926,
+              2565
+            ]
+          }
+        ],
+        "m3": [
+          {
+            "bounds": [
+              2555,
+              2695,
+              2695,
+              2810
+            ],
+            "color": "#aab6bf",
+            "label": "X2: upper-layer frontier, not V2",
+            "label_xy": [
+              2543,
+              2635
+            ]
+          }
+        ]
+      },
+      "native_traces": {
+        "m2": [],
+        "m3": [
+          {
+            "points": [
+              [
+                1300.0,
+                2795.2
+              ],
+              [
+                1500.0,
+                2790.0
+              ],
+              [
+                2850.0,
+                2754.9
+              ]
+            ],
+            "color": "#d28cff",
+            "label": "L1",
+            "label_xy": [
+              1340,
+              2935
+            ]
+          }
+        ]
+      },
+      "human_questions": [
+        {
+          "id": "F01-F12",
+          "question": "请批量核对橙框F01至F12：这些V2组及对应M2是否均接入同一根紫色L1？有例外请按编号指出；D1已审不重问。F04沿用M2-J01。"
+        },
+        {
+          "id": "P",
+          "question": "左侧粉框P0-P5暂不计入L1：这些小短端是否有接入L1的？如属于下方细M3或仍不清楚，也请指出。"
+        }
+      ],
+      "limits": [
+        "Left end clipped; no inference of off-image M2 branches.",
+        "Thirteen main positions = one reviewed plus twelve AI candidates; P-group unknowns prevent completeness acceptance.",
+        "F04 existing M2-J01 correspondence and new lower interface remain AI candidates until this review; its old upper review is not reasked.",
+        "No counted individual holes, exact projection, common-canvas placement or automatic network export.",
+        "M3 X2 bright array is not V2 evidence and is deferred for higher-layer work.",
+        "M1 U1/U2/U3 and all prior material unknowns unchanged."
+      ],
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m2": {
+          "wide": [
+            1300,
+            2350,
+            2850,
+            3010
+          ],
+          "detail": [
+            1420,
+            2630,
+            2100,
+            2870
+          ]
+        },
+        "m3": {
+          "wide": [
+            1300,
+            2350,
+            2850,
+            3010
+          ],
+          "detail": [
+            1420,
+            2630,
+            2100,
+            2870
+          ]
+        }
+      }
+    },
+    "Z3": {
+      "schema_version": 1,
+      "kind": "metal_fanout_native_evidence_review",
+      "id": "L1-M2-fanout",
+      "initial_observation": {
+        "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+        "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+      },
+      "snapshot": {
+        "path": "configs/joint-work-layer-v5.json",
+        "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+      },
+      "zones": [
+        {
+          "id": "Z1",
+          "wide": [
+            0,
+            2350,
+            1450,
+            3010
+          ],
+          "detail": [
+            0,
+            2600,
+            1190,
+            2980
+          ]
+        },
+        {
+          "id": "Z2",
+          "wide": [
+            1300,
+            2350,
+            2850,
+            3010
+          ],
+          "detail": [
+            1420,
+            2630,
+            2100,
+            2870
+          ]
+        },
+        {
+          "id": "Z3",
+          "wide": [
+            2700,
+            2350,
+            4250,
+            3010
+          ],
+          "detail": [
+            3000,
+            2580,
+            4020,
+            2820
+          ]
+        },
+        {
+          "id": "Z4",
+          "wide": [
+            4100,
+            2350,
+            5712,
+            3010
+          ],
+          "detail": [
+            4200,
+            2550,
+            5610,
+            2980
+          ]
+        }
+      ],
+      "overview_bounds": [
+        0,
+        2500,
+        5712,
+        3000
+      ],
+      "observations": [],
+      "source_regions": {
+        "m2": [
+          {
+            "bounds": [
+              3085,
+              2650,
+              3138,
+              2770
+            ],
+            "color": "#ffb04f",
+            "label": "F05 ?",
+            "label_xy": [
+              3073,
+              2590
+            ]
+          },
+          {
+            "bounds": [
+              3350,
+              2645,
+              3402,
+              2770
+            ],
+            "color": "#ffb04f",
+            "label": "F06 ?",
+            "label_xy": [
+              3338,
+              2535
+            ]
+          },
+          {
+            "bounds": [
+              3693,
+              2640,
+              3745,
+              2765
+            ],
+            "color": "#ffb04f",
+            "label": "F07 ?",
+            "label_xy": [
+              3681,
+              2580
+            ]
+          },
+          {
+            "bounds": [
+              3916,
+              2635,
+              3965,
+              2760
+            ],
+            "color": "#ffb04f",
+            "label": "F08 ?",
+            "label_xy": [
+              3904,
+              2525
+            ]
+          }
+        ],
+        "m3": []
+      },
+      "native_traces": {
+        "m2": [],
+        "m3": [
+          {
+            "points": [
+              [
+                2700.0,
+                2758.8
+              ],
+              [
+                3000.0,
+                2751.0
+              ],
+              [
+                4250.0,
+                2718.5
+              ]
+            ],
+            "color": "#d28cff",
+            "label": "L1",
+            "label_xy": [
+              2740,
+              2935
+            ]
+          }
+        ]
+      },
+      "human_questions": [
+        {
+          "id": "F01-F12",
+          "question": "请批量核对橙框F01至F12：这些V2组及对应M2是否均接入同一根紫色L1？有例外请按编号指出；D1已审不重问。F04沿用M2-J01。"
+        },
+        {
+          "id": "P",
+          "question": "左侧粉框P0-P5暂不计入L1：这些小短端是否有接入L1的？如属于下方细M3或仍不清楚，也请指出。"
+        }
+      ],
+      "limits": [
+        "Left end clipped; no inference of off-image M2 branches.",
+        "Thirteen main positions = one reviewed plus twelve AI candidates; P-group unknowns prevent completeness acceptance.",
+        "F04 existing M2-J01 correspondence and new lower interface remain AI candidates until this review; its old upper review is not reasked.",
+        "No counted individual holes, exact projection, common-canvas placement or automatic network export.",
+        "M3 X2 bright array is not V2 evidence and is deferred for higher-layer work.",
+        "M1 U1/U2/U3 and all prior material unknowns unchanged."
+      ],
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m2": {
+          "wide": [
+            2700,
+            2350,
+            4250,
+            3010
+          ],
+          "detail": [
+            3000,
+            2580,
+            4020,
+            2820
+          ]
+        },
+        "m3": {
+          "wide": [
+            2700,
+            2350,
+            4250,
+            3010
+          ],
+          "detail": [
+            3000,
+            2580,
+            4020,
+            2820
+          ]
+        }
+      }
+    },
+    "Z4": {
+      "schema_version": 1,
+      "kind": "metal_fanout_native_evidence_review",
+      "id": "L1-M2-fanout",
+      "initial_observation": {
+        "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+        "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+      },
+      "snapshot": {
+        "path": "configs/joint-work-layer-v5.json",
+        "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+      },
+      "zones": [
+        {
+          "id": "Z1",
+          "wide": [
+            0,
+            2350,
+            1450,
+            3010
+          ],
+          "detail": [
+            0,
+            2600,
+            1190,
+            2980
+          ]
+        },
+        {
+          "id": "Z2",
+          "wide": [
+            1300,
+            2350,
+            2850,
+            3010
+          ],
+          "detail": [
+            1420,
+            2630,
+            2100,
+            2870
+          ]
+        },
+        {
+          "id": "Z3",
+          "wide": [
+            2700,
+            2350,
+            4250,
+            3010
+          ],
+          "detail": [
+            3000,
+            2580,
+            4020,
+            2820
+          ]
+        },
+        {
+          "id": "Z4",
+          "wide": [
+            4100,
+            2350,
+            5712,
+            3010
+          ],
+          "detail": [
+            4200,
+            2550,
+            5610,
+            2980
+          ]
+        }
+      ],
+      "overview_bounds": [
+        0,
+        2500,
+        5712,
+        3000
+      ],
+      "observations": [],
+      "source_regions": {
+        "m2": [
+          {
+            "bounds": [
+              4300,
+              2630,
+              4356,
+              2760
+            ],
+            "color": "#ffb04f",
+            "label": "F09 ?",
+            "label_xy": [
+              4288,
+              2570
+            ]
+          },
+          {
+            "bounds": [
+              4528,
+              2625,
+              4580,
+              2755
+            ],
+            "color": "#ffb04f",
+            "label": "F10 ?",
+            "label_xy": [
+              4516,
+              2515
+            ]
+          },
+          {
+            "bounds": [
+              4795,
+              2620,
+              4848,
+              2755
+            ],
+            "color": "#ffb04f",
+            "label": "F11 ?",
+            "label_xy": [
+              4783,
+              2560
+            ]
+          },
+          {
+            "bounds": [
+              5052,
+              2615,
+              5110,
+              2750
+            ],
+            "color": "#ffb04f",
+            "label": "F12 ?",
+            "label_xy": [
+              5040,
+              2505
+            ]
+          },
+          {
+            "bounds": [
+              5445,
+              2825,
+              5545,
+              2945
+            ],
+            "color": "#aab6bf",
+            "label": "X1: other carrier?",
+            "label_xy": [
+              5433,
+              2765
+            ]
+          }
+        ],
+        "m3": [
+          {
+            "bounds": [
+              5115,
+              2620,
+              5180,
+              2770
+            ],
+            "color": "#6ad8ff",
+            "label": "L1 right cap",
+            "label_xy": [
+              5103,
+              2560
+            ]
+          }
+        ]
+      },
+      "native_traces": {
+        "m2": [],
+        "m3": [
+          {
+            "points": [
+              [
+                4100.0,
+                2722.4
+              ],
+              [
+                4500.0,
+                2712.0
+              ],
+              [
+                5150.0,
+                2695.0
+              ]
+            ],
+            "color": "#d28cff",
+            "label": "L1",
+            "label_xy": [
+              4140,
+              2935
+            ]
+          }
+        ]
+      },
+      "human_questions": [
+        {
+          "id": "F01-F12",
+          "question": "请批量核对橙框F01至F12：这些V2组及对应M2是否均接入同一根紫色L1？有例外请按编号指出；D1已审不重问。F04沿用M2-J01。"
+        },
+        {
+          "id": "P",
+          "question": "左侧粉框P0-P5暂不计入L1：这些小短端是否有接入L1的？如属于下方细M3或仍不清楚，也请指出。"
+        }
+      ],
+      "limits": [
+        "Left end clipped; no inference of off-image M2 branches.",
+        "Thirteen main positions = one reviewed plus twelve AI candidates; P-group unknowns prevent completeness acceptance.",
+        "F04 existing M2-J01 correspondence and new lower interface remain AI candidates until this review; its old upper review is not reasked.",
+        "No counted individual holes, exact projection, common-canvas placement or automatic network export.",
+        "M3 X2 bright array is not V2 evidence and is deferred for higher-layer work.",
+        "M1 U1/U2/U3 and all prior material unknowns unchanged."
+      ],
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m2": {
+          "wide": [
+            4100,
+            2350,
+            5712,
+            3010
+          ],
+          "detail": [
+            4200,
+            2550,
+            5610,
+            2980
+          ]
+        },
+        "m3": {
+          "wide": [
+            4100,
+            2350,
+            5712,
+            3010
+          ],
+          "detail": [
+            4200,
+            2550,
+            5610,
+            2980
+          ]
+        }
+      }
+    }
+  }
+}

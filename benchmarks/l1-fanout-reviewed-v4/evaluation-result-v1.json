@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "initial_AI": {
+    "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+    "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+  },
+  "human_reviews": [
+    {
+      "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+      "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+    },
+    {
+      "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+      "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+    }
+  ],
+  "F_results": {
+    "F01": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F02": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F03": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F04": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F05": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F06": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F07": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F08": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F09": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F10": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F11": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F12": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    }
+  },
+  "reviewed_F_interfaces": 12,
+  "F_count_is_interfaces_not_independent_tasks": true,
+  "P_prediction_accuracy": null,
+  "blind_evaluation": false,
+  "unseen_interface_recall": null,
+  "full_network_accuracy": null
+}

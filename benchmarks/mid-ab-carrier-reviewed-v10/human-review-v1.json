@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "：**H1→A（上方靠右的窄 M2），H2→B（下方靠左的窄 M2）正确**",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+      "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+    },
+    "prior_facts": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v2.json",
+      "sha256": "4ce08adf4826ee8887adb11139cf35ff898b0bed86236248b7cfbd22282d895d"
+    },
+    "prior_AI": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v2.json",
+      "sha256": "ccc587256c4f114571689f2b9f4c4101742c0ace36be5988879370195d3b79f9"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed.html",
+      "sha256": "b6b58db581b8518a6c0a6a1e33ae2e4133e9a5aa760cc0644e81c0e4ffab2fff"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed-manifest-v2.json",
+      "sha256": "e5fdbbfb0a2e838422a60ab348c451cfc5312d073b639f52a02060817ab25af5"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "decisions": [
+    {
+      "lower_metal_id": "MID-H1",
+      "via_layer": "V1",
+      "upper_metal_id": "M2-MID-CAND-A",
+      "connection_confirmed": true
+    },
+    {
+      "lower_metal_id": "MID-H2",
+      "via_layer": "V1",
+      "upper_metal_id": "M2-MID-CAND-B",
+      "connection_confirmed": true
+    }
+  ],
+  "scope": "两条M1在已审左侧区域经V1接指定窄M2的导体级对应；沿用原候选ID，不把CAND字符串当当前审批状态。",
+  "not_approved": [
+    "exact cut centers/counts or geometry",
+    "whole A/B conductor extent and other interfaces",
+    "connection to N2/B1/L1 component",
+    "global mutual net membership",
+    "precise registration"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "PASS_TECHNICAL_ONLY",
+  "path_sha_refs_verified": 52,
+  "inherited_reviewed_interfaces": 35,
+  "new_reviewed_interfaces": 0,
+  "human_inference_not_promoted_to_confirmation": true,
+  "T1_fourth_vs_all_four_ambiguity_retained": true,
+  "conditional_ABAB_members_not_adopted": true,
+  "detailed_A_route_not_forced": true,
+  "no_via_cuts_fabricated": true,
+  "parent_artifact_hashes_unchanged": true,
+  "raw_crops_pixel_equal": [
+    "m1-wide",
+    "m1-detail",
+    "m2-wide",
+    "m2-detail",
+    "m3-wide",
+    "m3-detail"
+  ],
+  "HTML_links_checked": 16,
+  "JS_syntax_checks": 1,
+  "visual_checks": [
+    "m1-detail-marked.png",
+    "m2-detail-marked.png",
+    "m3-detail-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "production_code_changed": false,
+  "tests_rerun": false,
+  "confirmed_network_accuracy": null,
+  "net_edges": [],
+  "complete_network": false
+}

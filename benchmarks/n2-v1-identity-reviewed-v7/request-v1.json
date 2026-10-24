@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_V1_presence_display",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+      "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+    },
+    "bus_paths": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+      "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+    },
+    "initial_AI": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-observation-v1.json",
+      "sha256": "c6ae0a645204723a8cb4af5be3aea67bc8428c64fb240def5ee873358a3896b1"
+    },
+    "submitted_request": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/n2-m1-v1-request-v1.json",
+      "sha256": "01199ac027d9b9d9d839ffc2b73c5faa41bfa02fb52bdb73a2fac0fa00422d8f"
+    },
+    "submitted_page": {
+      "path": "docs/assets/b1-l1-stack-reviewed-v6/index.html",
+      "sha256": "d0432f296973c30cf8910abc0d2c72de26cae4908ab6142e2718b3d7367aa90e"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/b1-l1-stack-reviewed-v6/manifest.json",
+      "sha256": "f2b46f660259e097d9e73f412122da19ef6ee647752deff2f57c07a1804e043e"
+    },
+    "registration_audit": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/registration-reuse-audit-v1.json",
+      "sha256": "04ff7ca8d18823a9993cdfda842b33b15b996fbaee7d404f871e74e5f091c373"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "identity_facts": {
+    "path": "benchmarks/n2-v1-identity-reviewed-v7/reviewed-site-identities-v1.json",
+    "sha256": "1aff67089d00c0bcb5e9513adb6c201b1c11c9189b76045b039cb8151c6e8091"
+  },
+  "AI_continuation": {
+    "path": "benchmarks/n2-v1-identity-reviewed-v7/continuation-observation-v1.json",
+    "sha256": "b64afa946453b13f391e7b43f832e36ac9612adbfcc9afacbd94051269e1ca10"
+  },
+  "renderer": {
+    "path": "silicon_eye/metal_via_pilot.py",
+    "sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af"
+  },
+  "panels": {
+    "U1": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m1": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            1800,
+            2120,
+            2070
+          ]
+        },
+        "m2": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            1800,
+            2120,
+            2070
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m1": [
+          {
+            "bounds": [
+              1505,
+              1875,
+              1545,
+              1945
+            ],
+            "color": "#58edab",
+            "label": "U1 V1 OK",
+            "label_xy": [
+              1585,
+              1810
+            ]
+          },
+          {
+            "bounds": [
+              1525,
+              2270,
+              1575,
+              2335
+            ],
+            "color": "#ff7086",
+            "label": "U2 NO V1",
+            "label_xy": [
+              1605,
+              2205
+            ]
+          },
+          {
+            "bounds": [
+              1524,
+              2675,
+              1570,
+              2740
+            ],
+            "color": "#58edab",
+            "label": "U3 V1 OK",
+            "label_xy": [
+              1604,
+              2610
+            ]
+          },
+          {
+            "bounds": [
+              1964,
+              1934,
+              2011,
+              1982
+            ],
+            "color": "#58edab",
+            "label": "J01 V1 ref",
+            "label_xy": [
+              2000,
+              1850
+            ]
+          }
+        ],
+        "m2": []
+      },
+      "native_traces": {
+        "m1": [
+          {
+            "points": [
+              [
+                1525,
+                1910
+              ],
+              [
+                1553,
+                1930
+              ],
+              [
+                1565,
+                2300
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "M1 U1-U2",
+            "label_xy": [
+              1630,
+              2050
+            ]
+          },
+          {
+            "points": [
+              [
+                1565,
+                2300
+              ],
+              [
+                1578,
+                2670
+              ]
+            ],
+            "color": "#aab6bf",
+            "label": "extension ?",
+            "label_xy": [
+              1630,
+              2500
+            ]
+          }
+        ],
+        "m2": [
+          {
+            "points": [
+              [
+                1498,
+                1930
+              ],
+              [
+                1504,
+                2190
+              ],
+              [
+                1514,
+                2480
+              ],
+              [
+                1526,
+                2782
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "N2 M2 reviewed",
+            "label_xy": [
+              1660,
+              2200
+            ]
+          },
+          {
+            "points": [
+              [
+                1970,
+                1930
+              ],
+              [
+                1982,
+                2260
+              ],
+              [
+                1980,
+                2740
+              ]
+            ],
+            "color": "#aab6bf",
+            "label": "J01 M2 ref",
+            "label_xy": [
+              2020,
+              2110
+            ]
+          }
+        ]
+      }
+    },
+    "U2": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m1": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2160,
+            2120,
+            2450
+          ]
+        },
+        "m2": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2160,
+            2120,
+            2450
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m1": [
+          {
+            "bounds": [
+              1505,
+              1875,
+              1545,
+              1945
+            ],
+            "color": "#58edab",
+            "label": "U1 V1 OK",
+            "label_xy": [
+              1585,
+              1810
+            ]
+          },
+          {
+            "bounds": [
+              1525,
+              2270,
+              1575,
+              2335
+            ],
+            "color": "#ff7086",
+            "label": "U2 NO V1",
+            "label_xy": [
+              1605,
+              2205
+            ]
+          },
+          {
+            "bounds": [
+              1524,
+              2675,
+              1570,
+              2740
+            ],
+            "color": "#58edab",
+            "label": "U3 V1 OK",
+            "label_xy": [
+              1604,
+              2610
+            ]
+          },
+          {
+            "bounds": [
+              1964,
+              1934,
+              2011,
+              1982
+            ],
+            "color": "#58edab",
+            "label": "J01 V1 ref",
+            "label_xy": [
+              2000,
+              1850
+            ]
+          }
+        ],
+        "m2": []
+      },
+      "native_traces": {
+        "m1": [
+          {
+            "points": [
+              [
+                1525,
+                1910
+              ],
+              [
+                1553,
+                1930
+              ],
+              [
+                1565,
+                2300
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "M1 U1-U2",
+            "label_xy": [
+              1630,
+              2050
+            ]
+          },
+          {
+            "points": [
+              [
+                1565,
+                2300
+              ],
+              [
+                1578,
+                2670
+              ]
+            ],
+            "color": "#aab6bf",
+            "label": "extension ?",
+            "label_xy": [
+              1630,
+              2500
+            ]
+          }
+        ],
+        "m2": [
+          {
+            "points": [
+              [
+                1498,
+                1930
+              ],
+              [
+                1504,
+                2190
+              ],
+              [
+                1514,
+                2480
+              ],
+              [
+                1526,
+                2782
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "N2 M2 reviewed",
+            "label_xy": [
+              1660,
+              2200
+            ]
+          },
+          {
+            "points": [
+              [
+                1970,
+                1930
+              ],
+              [
+                1982,
+                2260
+              ],
+              [
+                1980,
+                2740
+              ]
+            ],
+            "color": "#aab6bf",
+            "label": "J01 M2 ref",
+            "label_xy": [
+              2020,
+              2110
+            ]
+          }
+        ]
+      }
+    },
+    "U3": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m1": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2580,
+            2120,
+            2860
+          ]
+        },
+        "m2": {
+          "wide": [
+            1200,
+            1750,
+            2360,
+            2930
+          ],
+          "detail": [
+            1360,
+            2580,
+            2120,
+            2860
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m1": [
+          {
+            "bounds": [
+              1505,
+              1875,
+              1545,
+              1945
+            ],
+            "color": "#58edab",
+            "label": "U1 V1 OK",
+            "label_xy": [
+              1585,
+              1810
+            ]
+          },
+          {
+            "bounds": [
+              1525,
+              2270,
+              1575,
+              2335
+            ],
+            "color": "#ff7086",
+            "label": "U2 NO V1",
+            "label_xy": [
+              1605,
+              2205
+            ]
+          },
+          {
+            "bounds": [
+              1524,
+              2675,
+              1570,
+              2740
+            ],
+            "color": "#58edab",
+            "label": "U3 V1 OK",
+            "label_xy": [
+              1604,
+              2610
+            ]
+          },
+          {
+            "bounds": [
+              1964,
+              1934,
+              2011,
+              1982
+            ],
+            "color": "#58edab",
+            "label": "J01 V1 ref",
+            "label_xy": [
+              2000,
+              1850
+            ]
+          }
+        ],
+        "m2": []
+      },
+      "native_traces": {
+        "m1": [
+          {
+            "points": [
+              [
+                1525,
+                1910
+              ],
+              [
+                1553,
+                1930
+              ],
+              [
+                1565,
+                2300
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "M1 U1-U2",
+            "label_xy": [
+              1630,
+              2050
+            ]
+          },
+          {
+            "points": [
+              [
+                1565,
+                2300
+              ],
+              [
+                1578,
+                2670
+              ]
+            ],
+            "color": "#aab6bf",
+            "label": "extension ?",
+            "label_xy": [
+              1630,
+              2500
+            ]
+          }
+        ],
+        "m2": [
+          {
+            "points": [
+              [
+                1498,
+                1930
+              ],
+              [
+                1504,
+                2190
+              ],
+              [
+                1514,
+                2480
+              ],
+              [
+                1526,
+                2782
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "N2 M2 reviewed",
+            "label_xy": [
+              1660,
+              2200
+            ]
+          },
+          {
+            "points": [
+              [
+                1970,
+                1930
+              ],
+              [
+                1982,
+                2260
+              ],
+              [
+                1980,
+                2740
+              ]
+            ],
+            "color": "#aab6bf",
+            "label": "J01 M2 ref",
+            "label_xy": [
+              2020,
+              2110
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

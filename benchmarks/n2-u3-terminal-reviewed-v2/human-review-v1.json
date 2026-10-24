@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-24",
+  "statement": "确认无误，批准通过",
+  "reviewed_question": "U3所在宽M1横带，是否经POLY照片上圈示的CT行接入对应AA环／体端？可答“是”“接其他端子”或“仍不清楚”。只核导体到端子的连接，不计孔、不重新审核N2／U3／A/B分组。",
+  "sources": {
+    "parent_request": {
+      "path": "benchmarks/conductive-medium-closeout-v1/request-v1.json",
+      "sha256": "bf66ef1d94df0fb159e6f09b48266b83efe9eccaa59053a2becde82c9cf08e15"
+    },
+    "parent_model": {
+      "path": "docs/assets/conductive-medium-closeout-v1/model.json",
+      "sha256": "4b8d470e6ee22552fdb7565fb6791e0a4a3b9ad3431178273f341745bcbecfdb"
+    },
+    "submitted_page": {
+      "path": "docs/assets/conductive-medium-closeout-v1/terminal/index.html",
+      "sha256": "7a2061ad964f2755b40d1fffe4cea3dda988a57d53d9342353a0063d1ea4c1f0"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/conductive-medium-closeout-v1/manifest.json",
+      "sha256": "b2633da438b05440309c0279fdba53fd18df7c717b2878f910e424dde87a1f31"
+    },
+    "initial_candidate": {
+      "path": "benchmarks/conductive-medium-closeout-v1/n2-terminal-candidate-v1.json",
+      "sha256": "edef942f2bc1fd11664c5deb69ce86b1f46f70a0db6b41400617fd5e01192ad3"
+    },
+    "m1_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m1_submitted_wide": {
+      "path": "docs/assets/conductive-medium-closeout-v1/terminal/m1-wide-marked.png",
+      "sha256": "325293a91b8b171fc8efcee882354c8c34e90e0200b1cbb4ff293f7955564c1e"
+    },
+    "poly_photo": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "poly_submitted_wide": {
+      "path": "docs/assets/conductive-medium-closeout-v1/terminal/poly-wide-marked.png",
+      "sha256": "f619f815971ea7f42f211feff2872714457b34d347567cdc211ecfc5111c6252"
+    },
+    "aa_photo": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "aa_submitted_wide": {
+      "path": "docs/assets/conductive-medium-closeout-v1/terminal/aa-wide-marked.png",
+      "sha256": "8093edd1f47c3be3d085a04b37b0823da33deb656a1d19d39fe6a8ef8fd95be4"
+    }
+  },
+  "decisions": {
+    "id": "N2-U3-CT-AA-TERMINAL",
+    "from_metal_id": "M1-N2-U3",
+    "connection_confirmed": true,
+    "via_layer": "CT",
+    "target_material": "AA",
+    "target_structure": "ring",
+    "source_regions": {
+      "m1": [
+        1350,
+        2675,
+        1710,
+        2730
+      ],
+      "poly": [
+        1230,
+        2528,
+        1600,
+        2585
+      ],
+      "aa": [
+        1340,
+        2640,
+        1740,
+        2700
+      ]
+    }
+  },
+  "scope": "Submitted U3 M1 → indicated CT row → indicated AA ring connection only.",
+  "not_approved": [
+    "Body-terminal or device polarity assignment",
+    "Exact cut count or contour",
+    "Canonical CT/AA geometry object mapping",
+    "Whole continuous candidate geometry adoption",
+    "All along-route interfaces or other branches checked",
+    "Full-net completion",
+    "Precise photo registration or physical process DRC",
+    "Formal metal/via skill packaging"
+  ]
+}

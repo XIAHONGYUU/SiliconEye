@@ -1,0 +1,60 @@
+{
+  "request": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/request-v1.json",
+    "sha256": "dbf1588ff461d57697fc8abe86cfb6c6ec47f7c9f870cdcf72d1d4145171aba8"
+  },
+  "facts": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v1.json",
+    "sha256": "b9a750cdac2803197568b4f67b4913efac1a3512b3dd26ed135d3faf3e37f01c"
+  },
+  "verification": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/verification-v1.json",
+    "sha256": "1d15033e418c2b8ee53fb7a30be66fa969775dcca47b1c3678407a3451b77738"
+  },
+  "artifacts": [
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/index.html",
+      "sha256": "ba37fcf8c306bc3ee927ac467b7cebe9e0f1084af1f1ef80712df4ae1b4512fd"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m1-detail-marked.png",
+      "sha256": "cb14b7b333b82681cc3f6960a6ceb76e2758ef805555a7fd81286b69758e54d3"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m1-detail-raw.png",
+      "sha256": "292d8400fc1050616cb24bccef41c9f3b7d7f6040448ef7c23d89fa3ee462d42"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m1-location.png",
+      "sha256": "279df624bb3d5388b5a1959265a77ab1edcc134b356ec47dfff21d7a97ba7f6f"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m1-wide-marked.png",
+      "sha256": "16dca6ba9acabf320647a29e7f1ef4e8ea44e44157c9887a57762efff4ff7ca3"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m1-wide-raw.png",
+      "sha256": "ec6dfe3884d9df1db0ab4771f5887e5ab3ccb4868013d8860ee0a8fcddc2612b"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m2-detail-marked.png",
+      "sha256": "4b113dea3531a8c2888713e46676591953c3355890b15093b0e6cd17cf8693b5"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m2-detail-raw.png",
+      "sha256": "85caf9aab8afc3f3cc2f2f878a2d8527673510b8be8ff11b05a0daa75e8f2b9c"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m2-location.png",
+      "sha256": "34db0f2f856cc45890beba75ff3f7b6afad11990b8c7160212f0e290583662de"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m2-wide-marked.png",
+      "sha256": "534083a17264d22629606cb88d49fc24e271a49836505239aa817244baabe42b"
+    },
+    {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/m2-wide-raw.png",
+      "sha256": "07961e2b9b4c8f91125cb2d34aee239da7041ee50028ce2fa75b0c8df5e5bf5e"
+    }
+  ]
+}

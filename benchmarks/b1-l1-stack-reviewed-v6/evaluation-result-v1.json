@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "initial_AI": {
+    "path": "benchmarks/l1-upper-reviewed-v5/right-upper-observation-v1.json",
+    "sha256": "f97c43c00e085240217f33934c2f3831a2a100daca8533cf017854d991a5eacb"
+  },
+  "human_review": {
+    "path": "benchmarks/b1-l1-stack-reviewed-v6/human-review-v1.json",
+    "sha256": "894670a1eb9be929a315d1eb9dab1ae1fb2f1f404c0a3fd1de59637830d16d9b"
+  },
+  "results": {
+    "F05-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F06-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F07-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F08-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F09-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F10-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F11-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    },
+    "F12-UP": {
+      "same_M2_continuity_correct": true,
+      "via_identity_correct": true,
+      "destination_correct": true
+    }
+  },
+  "reviewed_interfaces": 8,
+  "independent_blind_tasks": false,
+  "note": "One known-chip batch containing eight interfaces; whole-photo recall and exact geometry accuracy remain unknown.",
+  "full_network_accuracy": null,
+  "physical_hole_count_accuracy": null
+}

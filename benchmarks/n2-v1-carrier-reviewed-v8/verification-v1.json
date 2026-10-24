@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "PASS_TECHNICAL_ONLY",
+  "path_sha_refs_verified": 91,
+  "reviewed_local_interface_sources_bound": 33,
+  "new_M1_V1_N2_interfaces": 2,
+  "U2_no_V1_retained": true,
+  "two_M1_source_IDs_not_merged": true,
+  "two_MID_features_not_adopted": true,
+  "exact_M2_landing_not_claimed": true,
+  "raw_crops_pixel_equal": [
+    "wide",
+    "detail"
+  ],
+  "legacy_default_rendering_byte_identical": [
+    "m2-wide-marked.png",
+    "m3-detail-raw.png",
+    "m2-detail-raw.png",
+    "m3-wide-raw.png",
+    "m2-location.png",
+    "m3-location.png",
+    "m2-detail-marked.png",
+    "m3-wide-marked.png",
+    "m3-detail-marked.png",
+    "m2-wide-raw.png"
+  ],
+  "HTML_links_checked": 10,
+  "javascript_syntax_checks": 1,
+  "visual_checks": [
+    "m1-wide-marked.png",
+    "m1-detail-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "display_fix": "Optional hide_off_window_labels avoids unrelated labels being clamped into a detail crop. Existing default rendering unchanged.",
+  "ruff": "PASS",
+  "pytest": {
+    "command": ".venv/bin/pytest -q tests/test_metal_via_pilot.py",
+    "passed": 38,
+    "seconds": 49.57
+  },
+  "complete_network": false,
+  "net_edges": []
+}

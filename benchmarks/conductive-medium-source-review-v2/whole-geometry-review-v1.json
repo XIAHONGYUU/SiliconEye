@@ -1,0 +1,183 @@
+{
+  "actor": "AI",
+  "status": "SCOPED_RELATIVE_GEOMETRY_PASS_WITH_UNMODELED_EXTENTS",
+  "parent_model": {
+    "path": "docs/assets/conductive-medium-closeout-v1/model.json",
+    "sha256": "4b8d470e6ee22552fdb7565fb6791e0a4a3b9ad3431178273f341745bcbecfdb"
+  },
+  "previous_geometry_gate_missed_source_order_error": true,
+  "previous_source_order": {
+    "status": "FAIL",
+    "checks": [
+      {
+        "id": "U1-right-before-P08-left",
+        "values": {
+          "native_path": [
+            1945,
+            2006
+          ],
+          "design_path": [
+            1700,
+            1380
+          ]
+        },
+        "passed": false
+      },
+      {
+        "id": "U3-right-before-P08-left",
+        "values": {
+          "native_path": [
+            1945,
+            2006
+          ],
+          "design_path": [
+            1310,
+            1380
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "scope": "declared_same_frame_order_not_registration"
+  },
+  "current_source_order": {
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "U1-right-before-P08-left",
+        "values": {
+          "native_path": [
+            1945,
+            2006
+          ],
+          "design_path": [
+            1310,
+            1380
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "U3-right-before-P08-left",
+        "values": {
+          "native_path": [
+            1945,
+            2006
+          ],
+          "design_path": [
+            1310,
+            1380
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "scope": "declared_same_frame_order_not_registration"
+  },
+  "changed_object_ids": [
+    "M1-N2-U1-U2"
+  ],
+  "same_frame_sequence_reviews": [
+    {
+      "layer": "M1",
+      "axis": 0,
+      "ids": [
+        "M1-L4-LOCAL",
+        "M1-L2-LOCAL",
+        "M1-T1-LOCAL",
+        "M1-T3-LOCAL"
+      ],
+      "representative_centers": {
+        "native_path": [
+          1001.0,
+          1124.0,
+          1245.0,
+          1366.0
+        ],
+        "design_path": [
+          300.0,
+          430.0,
+          560.0,
+          690.0
+        ]
+      },
+      "passed": true,
+      "scope": "same-frame representative order only, not metric alignment"
+    },
+    {
+      "layer": "M2",
+      "axis": 0,
+      "ids": [
+        "M2-L1-F03",
+        "M2-MID-CAND-B",
+        "M2-MID-CAND-A",
+        "M2-N2-LEFT-RAIL",
+        "M2-J01"
+      ],
+      "representative_centers": {
+        "native_path": [
+          1105.0,
+          1292.5,
+          1328.5,
+          1509.0,
+          1980.0
+        ],
+        "design_path": [
+          460.0,
+          640.0,
+          680.0,
+          900.0,
+          1380.0
+        ]
+      },
+      "passed": true,
+      "scope": "same-frame representative order only, not metric alignment"
+    },
+    {
+      "layer": "M3",
+      "axis": 1,
+      "ids": [
+        "M3-J-B1",
+        "M3-N2-LOWER-BUS-CANDIDATE",
+        "M3-MID-X-CAND",
+        "M3-MID-Y-CAND",
+        "M3-MID-Z-CONTEXT"
+      ],
+      "representative_centers": {
+        "native_path": [
+          1960.0,
+          2785.0,
+          2992.5,
+          3010.0,
+          3024.5
+        ],
+        "design_path": [
+          170.0,
+          1060.0,
+          1260.0,
+          1290.0,
+          1330.0
+        ]
+      },
+      "passed": true,
+      "scope": "same-frame representative order only, not metric alignment"
+    }
+  ],
+  "inherited_reviewed_metal_interfaces_unchanged": true,
+  "latest_groups_unchanged": true,
+  "U3_terminal_review_retained": true,
+  "layer_rule_status": {
+    "M1": "PASS",
+    "M2": "PASS",
+    "M3": "PASS"
+  },
+  "geometry_adopted": false,
+  "precise_projection_allowed": false,
+  "complete_network": false,
+  "limits": [
+    "Only specified conductor fragments covered; U1/U3 right turn remains unmodeled.",
+    "A/B detailed via allocation remains unknown.",
+    "11 group support boxes are not reconstructed physical via arrays.",
+    "A scoped AI geometry review is not whole-layer human acceptance or process DRC."
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_mid_V1_carriers_and_lower_end_inspection",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+      "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+    },
+    "prior_facts": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v2.json",
+      "sha256": "4ce08adf4826ee8887adb11139cf35ff898b0bed86236248b7cfbd22282d895d"
+    },
+    "prior_AI": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v2.json",
+      "sha256": "ccc587256c4f114571689f2b9f4c4101742c0ace36be5988879370195d3b79f9"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed.html",
+      "sha256": "b6b58db581b8518a6c0a6a1e33ae2e4133e9a5aa760cc0644e81c0e4ffab2fff"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed-manifest-v2.json",
+      "sha256": "e5fdbbfb0a2e838422a60ab348c451cfc5312d073b639f52a02060817ab25af5"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "observation": {
+    "path": "benchmarks/mid-ab-carrier-reviewed-v10/downstream-observation-v1.json",
+    "sha256": "9c09a94e234497f33248deb6f762a95229607b7903365ac801b69c354dfbef25"
+  },
+  "renderer": {
+    "path": "silicon_eye/metal_via_pilot.py",
+    "sha256": "f606dd1bab4b4eb23e0756436829d3e9622323e3ed8dabbd2b874a4a991af45f"
+  },
+  "source_label_style": {
+    "font_size_px": 32,
+    "padding_px": 7,
+    "hide_off_window_labels": true
+  },
+  "source_windows": {
+    "m1": {
+      "wide": [
+        750,
+        2100,
+        2000,
+        3500
+      ],
+      "detail": [
+        1020,
+        2770,
+        1620,
+        3240
+      ]
+    },
+    "m2": {
+      "wide": [
+        750,
+        2100,
+        2000,
+        3500
+      ],
+      "detail": [
+        1020,
+        2770,
+        1620,
+        3240
+      ]
+    },
+    "m3": {
+      "wide": [
+        750,
+        2100,
+        2000,
+        3500
+      ],
+      "detail": [
+        1020,
+        2770,
+        1620,
+        3240
+      ]
+    }
+  },
+  "observations": [],
+  "native_traces": {
+    "m2": [
+      {
+        "points": [
+          [
+            1295,
+            2318
+          ],
+          [
+            1317,
+            2318
+          ],
+          [
+            1320,
+            2400
+          ],
+          [
+            1327,
+            2600
+          ],
+          [
+            1333,
+            2800
+          ],
+          [
+            1336,
+            2920
+          ],
+          [
+            1340,
+            2974
+          ],
+          [
+            1363,
+            2974
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "A extent ?",
+        "label_xy": [
+          1630,
+          2460
+        ]
+      },
+      {
+        "points": [
+          [
+            1276,
+            2342
+          ],
+          [
+            1295,
+            2342
+          ],
+          [
+            1297,
+            2400
+          ],
+          [
+            1303,
+            2600
+          ],
+          [
+            1310,
+            2800
+          ],
+          [
+            1314,
+            2920
+          ],
+          [
+            1315,
+            2953
+          ],
+          [
+            1290,
+            2953
+          ]
+        ],
+        "color": "#e59aff",
+        "label": "B extent ?",
+        "label_xy": [
+          830,
+          2480
+        ]
+      }
+    ]
+  },
+  "source_regions": {
+    "m1": [
+      {
+        "bounds": [
+          1233,
+          2800,
+          1260,
+          3070
+        ],
+        "color": "#ffb04f",
+        "label": "T1 M1",
+        "label_xy": [
+          1040,
+          2810
+        ]
+      },
+      {
+        "bounds": [
+          1292,
+          2800,
+          1320,
+          3070
+        ],
+        "color": "#ffb04f",
+        "label": "T2 M1",
+        "label_xy": [
+          1040,
+          2880
+        ]
+      },
+      {
+        "bounds": [
+          1353,
+          2800,
+          1383,
+          3070
+        ],
+        "color": "#ffb04f",
+        "label": "T3 M1",
+        "label_xy": [
+          1470,
+          2810
+        ]
+      },
+      {
+        "bounds": [
+          1413,
+          2800,
+          1443,
+          3070
+        ],
+        "color": "#ffb04f",
+        "label": "T4 M1",
+        "label_xy": [
+          1470,
+          2880
+        ]
+      }
+    ],
+    "m2": [
+      {
+        "bounds": [
+          1330,
+          2958,
+          1377,
+          2990
+        ],
+        "color": "#6ad8ff",
+        "label": "A LOWER ?",
+        "label_xy": [
+          1450,
+          2995
+        ]
+      },
+      {
+        "bounds": [
+          1282,
+          2938,
+          1325,
+          2968
+        ],
+        "color": "#e59aff",
+        "label": "B LOWER ?",
+        "label_xy": [
+          1040,
+          3100
+        ]
+      },
+      {
+        "bounds": [
+          1280,
+          2304,
+          1328,
+          2334
+        ],
+        "color": "#6ad8ff",
+        "label": "A / H1 OK",
+        "label_xy": [
+          1420,
+          2150
+        ]
+      },
+      {
+        "bounds": [
+          1260,
+          2328,
+          1305,
+          2356
+        ],
+        "color": "#e59aff",
+        "label": "B / H2 OK",
+        "label_xy": [
+          830,
+          2350
+        ]
+      },
+      {
+        "bounds": [
+          1320,
+          3008,
+          1368,
+          3142
+        ],
+        "color": "#acb8c4",
+        "label": "nearby V2 ref",
+        "label_xy": [
+          1430,
+          3190
+        ]
+      }
+    ],
+    "m3": []
+  },
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false
+}

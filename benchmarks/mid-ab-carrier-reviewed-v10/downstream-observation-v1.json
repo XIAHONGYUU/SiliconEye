@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "after_two_mid_V1_carriers_review_before_lower_end_interfaces",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+      "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+    },
+    "prior_facts": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v2.json",
+      "sha256": "4ce08adf4826ee8887adb11139cf35ff898b0bed86236248b7cfbd22282d895d"
+    },
+    "prior_AI": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v2.json",
+      "sha256": "ccc587256c4f114571689f2b9f4c4101742c0ace36be5988879370195d3b79f9"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed.html",
+      "sha256": "b6b58db581b8518a6c0a6a1e33ae2e4133e9a5aa760cc0644e81c0e4ffab2fff"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/search-reviewed-manifest-v2.json",
+      "sha256": "e5fdbbfb0a2e838422a60ab348c451cfc5312d073b639f52a02060817ab25af5"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "reviewed_relations": {
+    "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+    "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+  },
+  "native_M2_paths": {
+    "A": [
+      [
+        1295,
+        2318
+      ],
+      [
+        1317,
+        2318
+      ],
+      [
+        1320,
+        2400
+      ],
+      [
+        1327,
+        2600
+      ],
+      [
+        1333,
+        2800
+      ],
+      [
+        1336,
+        2920
+      ],
+      [
+        1340,
+        2974
+      ],
+      [
+        1363,
+        2974
+      ]
+    ],
+    "B": [
+      [
+        1276,
+        2342
+      ],
+      [
+        1295,
+        2342
+      ],
+      [
+        1297,
+        2400
+      ],
+      [
+        1303,
+        2600
+      ],
+      [
+        1310,
+        2800
+      ],
+      [
+        1314,
+        2920
+      ],
+      [
+        1315,
+        2953
+      ],
+      [
+        1290,
+        2953
+      ]
+    ]
+  },
+  "path_scope": "AI centerline reference along the photographed stems, not exact metal edges or approval of every point.",
+  "lower_end_regions": {
+    "A": [
+      1330,
+      2958,
+      1377,
+      2990
+    ],
+    "B": [
+      1282,
+      2938,
+      1325,
+      2968
+    ]
+  },
+  "M1_context_targets": [
+    {
+      "id": "T1",
+      "bounds": [
+        1233,
+        2800,
+        1260,
+        3070
+      ]
+    },
+    {
+      "id": "T2",
+      "bounds": [
+        1292,
+        2800,
+        1320,
+        3070
+      ]
+    },
+    {
+      "id": "T3",
+      "bounds": [
+        1353,
+        2800,
+        1383,
+        3070
+      ]
+    },
+    {
+      "id": "T4",
+      "bounds": [
+        1413,
+        2800,
+        1443,
+        3070
+      ]
+    }
+  ],
+  "M1_target_scope": "Four neighboring strips, indexed only within M1. T labels are not V1 detections, not cross-layer matches, and not gate identities.",
+  "findings": [
+    "A continues down the right member of the narrow pair and ends in a right-facing foot; B continues down the left member and ends in a left-facing foot. These extents remain source-trace candidates.",
+    "No distinct V2 array is resolved on the two thin stems or feet in this inspection. That is not a confirmed absence of V2 or proof of no M3 connection.",
+    "The large M2/V2 array below A is separated by a visible dark interval in the photograph and is retained only as context, not merged into A.",
+    "M1 below this area has multiple narrow vertical strips. Without qualified local registration or a reliable V1 localization, the lower interface cannot yet be uniquely assigned."
+  ],
+  "localization_method": "A few single-photo smoothed intensity profiles used solely to locate visible M2/M1 strip centers for indexing; not material recognition, cut detection, or cross-layer fitting.",
+  "new_interfaces": [
+    {
+      "id": "A-LOWER",
+      "metal_id": "M2-MID-CAND-A",
+      "V1_present": null,
+      "M1_carrier_id": null,
+      "V2_present": null,
+      "M3_carrier_id": null,
+      "human_truth": null
+    },
+    {
+      "id": "B-LOWER",
+      "metal_id": "M2-MID-CAND-B",
+      "V1_present": null,
+      "M1_carrier_id": null,
+      "V2_present": null,
+      "M3_carrier_id": null,
+      "human_truth": null
+    }
+  ],
+  "alternatives": [
+    "One or both lower feet return to M1 through V1 seen on M1.",
+    "A local M3 access may exist, but no clear V2 evidence has been identified.",
+    "No additional interface can yet be resolved."
+  ],
+  "question": "A下端（向右短脚）、B下端（向左短脚）是否经V1向下接M1？若是，各接T1～T4哪条，或指出图中其他M1。只需确认连接，不要求逐孔计数。",
+  "selected_B1_L1_component_membership": null,
+  "new_reviewed_connections": [],
+  "source_to_source_transform": null,
+  "precise_projection_allowed": false,
+  "automatic_connection_adoption": "BLOCKED",
+  "net_edges": [],
+  "complete_network": false
+}

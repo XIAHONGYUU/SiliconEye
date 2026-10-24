@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "PASS_TECHNICAL_ONLY",
+  "A_members": [
+    "T3",
+    "L2"
+  ],
+  "B_members": [
+    "T1",
+    "L4"
+  ],
+  "explicit_human_correction_bound": true,
+  "old_L3_membership_retired_in_current_state": true,
+  "prior_L3_history_and_artifacts_unchanged": true,
+  "unresolved_via_scope_retained": true,
+  "group_count": 2,
+  "atomic_interface_count": 35,
+  "new_atomic_interfaces": 0,
+  "path_sha_refs_verified": 52,
+  "HTML_links_checked": 17,
+  "dynamic_image_targets_checked": 12,
+  "JS_syntax_checks": 1,
+  "production_code_changed": false,
+  "tests_rerun": false,
+  "browser_interaction_tested": false,
+  "net_edges": [],
+  "complete_network": false
+}

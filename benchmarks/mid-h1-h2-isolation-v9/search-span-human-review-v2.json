@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "橙色搜索框确认无误",
+  "sources": {
+    "submitted_page": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/index.html",
+      "sha256": "ba37fcf8c306bc3ee927ac467b7cebe9e0f1084af1f1ef80712df4ae1b4512fd"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-h1-h2-isolation-v9/manifest.json",
+      "sha256": "82f03909a36fabd0aeebc9f7a31efab25067384d08a5984015aa85636d0f574a"
+    },
+    "prior_observation": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/continuation-observation-v1.json",
+      "sha256": "762a3f76a23329b6f5ac13d276d0d78b6f0a09fd992478316c101abe60efe48d"
+    },
+    "prior_facts": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/reviewed-facts-v1.json",
+      "sha256": "b9a750cdac2803197568b4f67b4913efac1a3512b3dd26ed135d3faf3e37f01c"
+    }
+  },
+  "decision": {
+    "frame": "m1",
+    "bounds": [
+      1250,
+      2265,
+      1430,
+      2345
+    ],
+    "covers_reported_upward_vias": true
+  },
+  "scope": "橙框覆盖用户所指向上V1的区域；不是精确孔矩形或单孔中心。",
+  "not_approved": [
+    "M2 A/B carrier identity or H1/H2 allocation",
+    "via count and exact centers",
+    "H1/H2 global net relation",
+    "precise source registration"
+  ]
+}

@@ -16,7 +16,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 from shapely.geometry import MultiPoint, Polygon, box
 
 from .geometry_reconstruction import digest
@@ -183,6 +183,29 @@ def source_panels(root, manifest, spec, output, frames=("m1", "m2")):
                 raw = photo.crop(b).convert("RGB")
                 marked = raw.copy()
                 d = ImageDraw.Draw(marked)
+                style = spec.get("source_label_style")
+
+                def label(xy, text, color, target=None, *, style=style, d=d, marked=marked):
+                    if not style:
+                        d.text(xy, text, fill=color)
+                        return
+                    if style.get("hide_off_window_labels") and not (
+                        0 <= xy[0] < marked.width and 0 <= xy[1] < marked.height
+                    ):
+                        return
+                    font = ImageFont.load_default(size=style.get("font_size_px", 28))
+                    padding = style.get("padding_px", 5)
+                    bounds = font.getbbox(text)
+                    w = bounds[2] - bounds[0] + padding * 2
+                    h = bounds[3] - bounds[1] + padding * 2
+                    x = max(0, min(xy[0], marked.width - w))
+                    y = max(0, min(xy[1], marked.height - h))
+                    if target is not None:
+                        d.line((x + w / 2, y + h / 2, *target), fill=color, width=2)
+                    d.rectangle((x, y, x + w, y + h), fill="#101a27", outline=color, width=2)
+                    d.text((x + padding - bounds[0], y + padding - bounds[1]), text,
+                           fill=color, font=font)
+
                 for region in spec.get("source_regions", {}).get(frame, []):
                     a, t, r, z = region["bounds"]
                     if not (0 <= a < r <= photo.width and 0 <= t < z <= photo.height):
@@ -190,11 +213,17 @@ def source_panels(root, manifest, spec, output, frames=("m1", "m2")):
                     d.rectangle((a-b[0], t-b[1], r-b[0], z-b[1]),
                                 outline=region["color"], width=2)
                     lx, ly = region.get("label_xy", (a, t-14))
-                    d.text((lx-b[0], ly-b[1]), region["label"], fill=region["color"])
+                    if not style or (r >= b[0] and a <= b[2] and z >= b[1] and t <= b[3]):
+                        label((lx-b[0], ly-b[1]), region["label"], region["color"],
+                              ((a+r)/2-b[0], (t+z)/2-b[1]) if style else None)
                 for trace in spec.get("native_traces", {}).get(frame, []):
                     xy = [(x - b[0], y - b[1]) for x, y in trace["points"]]
                     d.line(xy, fill=trace["color"], width=2)
-                    d.text(xy[0], trace["label"], fill=trace["color"])
+                    if style:
+                        lx, ly = trace.get("label_xy", trace["points"][0])
+                        label((lx-b[0], ly-b[1]), trace["label"], trace["color"], xy[0])
+                    else:
+                        d.text(xy[0], trace["label"], fill=trace["color"])
                 for o in spec["observations"]:
                     x, y = o[frame + "_xy"]
                     if not box(*b).covers(MultiPoint([(x, y)])):

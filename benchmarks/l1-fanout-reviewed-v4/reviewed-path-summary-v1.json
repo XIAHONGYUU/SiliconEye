@@ -1,0 +1,47 @@
+{
+  "B1_N2_L1": {
+    "status": "inherited_reviewed_path",
+    "path": [
+      "M3-J-B1",
+      "V2-N2-GROUP",
+      "M2-N2-LEFT-RAIL",
+      "V2-N2-LOWER-GROUP",
+      "M3-N2-LOWER-BUS-CANDIDATE"
+    ],
+    "sources": [
+      {
+        "path": "benchmarks/b1-neighbor-interface-reviewed-v2/reviewed-interface-v1.json",
+        "sha256": "87ab976bf6401d748024d9ec43eea1f3c98e8f6ce52457595daafa295152c2a8"
+      },
+      {
+        "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+        "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+      }
+    ]
+  },
+  "B1_J01_L1": {
+    "status": "composed_from_reviewed_local_interfaces",
+    "path": [
+      "M3-J-B1",
+      "J-M2-EDGE-V2",
+      "M2-J01",
+      "V2-L1-F04",
+      "M3-N2-LOWER-BUS-CANDIDATE"
+    ],
+    "sources": [
+      {
+        "path": "docs/assets/conductive-stack-v2/model.json",
+        "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+      },
+      {
+        "path": "benchmarks/conductive-stack-v2/request-v1.json",
+        "sha256": "939bc4e62f22eba9c124337bb7ae19f1d2e4b4cabce725555568838ab1f92520"
+      },
+      {
+        "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+        "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+      }
+    ]
+  },
+  "limits": "Local topological composition only; does not merge B1 and L1 into one physical M3 polygon, or export a complete net."
+}

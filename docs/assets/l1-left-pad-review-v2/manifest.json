@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "request": {
+    "path": "benchmarks/l1-left-pad-review-v2/request-v1.json",
+    "sha256": "e6a08965c1795d550f7a7de266d08870abfc86ce0c6ef1cd82e5941f97a348f2"
+  },
+  "observation": {
+    "path": "benchmarks/l1-left-pad-review-v2/ai-observation-v1.json",
+    "sha256": "ab8558bea45277aab46bf2066e2bf710a59c222728d16da1951f961c1aecf47e"
+  },
+  "verification": {
+    "path": "benchmarks/l1-left-pad-review-v2/verification-v1.json",
+    "sha256": "cabc0c8d851fbb2793367634186a9e4399d6ea61d554559ac8abd66b80257a06"
+  },
+  "artifacts": [
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/index.html",
+      "sha256": "ff3c28958ca5456f71d277e48a06842ab71d4fc40f3952f0f7f085656d2ab1db"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-detail-marked.png",
+      "sha256": "521e9fff2e98417cc21dc993fd704b8de4aeb45a5ebb27c5a98f62d93b352d47"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-detail-raw.png",
+      "sha256": "823f323a6e78ed97ca35939204472827daa0f04f3931a006142b396a57b88cdd"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-location.png",
+      "sha256": "0da467aa934e72fe81a933a8f79eb4de41b21fa7d4a24637093c20f4cf923d50"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-wide-marked.png",
+      "sha256": "8ae02f944eb65784ca176b2f74ff0f8bd3b4f6657873dadfae409c7ff601afdb"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-wide-raw.png",
+      "sha256": "bfbfc491affebc23ebee25d4c56f0dbaba909c34d9599d8632eb18087ee848bf"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-detail-marked.png",
+      "sha256": "0dbe00c72ec131bef9da385b273b8db64038ca189f26a92db7f1a9273cb7b53f"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-detail-raw.png",
+      "sha256": "32b276299fbaf6958ea1cf16ee97cc002b940a8a99748db682556bd541c01a38"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-location.png",
+      "sha256": "fef5f756ae6fab2fb30b1fc93dc5d88d72f23ec35ce669e6a7d17ff6fa407897"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-wide-marked.png",
+      "sha256": "ee090060344fb9a7d7744559c48b59dec6d5ba194faae0ed3a13356bb598fe2c"
+    },
+    {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-wide-raw.png",
+      "sha256": "3f9472de3e6e75b8ac0bbc2e28f692e01c499d28b96a12a2337c40ba03f9d599"
+    }
+  ]
+}

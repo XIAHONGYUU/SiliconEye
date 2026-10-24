@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "human_review": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/human-review-v1.json",
+    "sha256": "fd21bba5779852907db5f011a93e5c47fcdde3ad953b0b99880de1447c6a7e13"
+  },
+  "paths": [
+    {
+      "site": "U1",
+      "path": [
+        "M1-N2-U1-U2",
+        "V1-N2-U1",
+        "M2-N2-LEFT-RAIL"
+      ],
+      "source": {
+        "path": "benchmarks/n2-v1-carrier-reviewed-v8/human-review-v1.json",
+        "sha256": "fd21bba5779852907db5f011a93e5c47fcdde3ad953b0b99880de1447c6a7e13"
+      }
+    },
+    {
+      "site": "U3",
+      "path": [
+        "M1-N2-U3",
+        "V1-N2-U3",
+        "M2-N2-LEFT-RAIL"
+      ],
+      "source": {
+        "path": "benchmarks/n2-v1-carrier-reviewed-v8/human-review-v1.json",
+        "sha256": "fd21bba5779852907db5f011a93e5c47fcdde3ad953b0b99880de1447c6a7e13"
+      }
+    }
+  ],
+  "inherited_bus_paths": {
+    "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+    "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+  },
+  "derived_scope": "Both local M1 access sites enter the reviewed B1/L1 component via N2; this does not assert a continuous same-layer M1 path between U1 and U3.",
+  "physical_M1_aliases_merged": false,
+  "net_edges": [],
+  "complete_network": false
+}

@@ -1,0 +1,75 @@
+{
+  "status": "TECHNICAL_PASS_HUMAN_TERMINAL_REVIEW_REQUIRED",
+  "input_sha_count": 89,
+  "artifact_sha_count": 31,
+  "html_local_links_checked": 34,
+  "inline_js_syntax_checked": 1,
+  "svg_xml_valid": true,
+  "raw_source_pixel_checks": [
+    "docs/assets/conductive-medium-closeout-v1/m1-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/m2-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/m3-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/poly-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/aa-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/terminal/m1-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/terminal/m1-detail-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/terminal/poly-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/terminal/poly-detail-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/terminal/aa-wide-raw.png",
+    "docs/assets/conductive-medium-closeout-v1/terminal/aa-detail-raw.png"
+  ],
+  "unchanged_committed_baselines": [
+    "configs/joint-work-layer-v5.json",
+    "docs/assets/conductive-stack-v2/model.json"
+  ],
+  "replay_byte_identical_artifact_count": 31,
+  "candidate_geometry_kept_separate": true,
+  "latest_a_l2_b_l4_group_retained": true,
+  "terminal_still_unknown": true,
+  "source_to_design_transform": null,
+  "browser_interaction_tested": false,
+  "new_human_decisions": 0,
+  "object_counts": {
+    "M1": 9,
+    "V1": 5,
+    "M2": 8,
+    "V2": 6,
+    "M3": 5
+  },
+  "code_sha256": {
+    "silicon_eye/conductive_medium.py": "98463740ba617bf4f7d18f1aaa7c12074c2f9de64e93e6a626a9e302aee639a9",
+    "silicon_eye/metal_via_pilot.py": "f606dd1bab4b4eb23e0756436829d3e9622323e3ed8dabbd2b874a4a991af45f",
+    "tests/test_conductive_medium.py": "f29de30d44c221ac46f4b029899764ddf41733d4c902878322464cd819a49518"
+  },
+  "tests": [
+    {
+      "command": ".venv/bin/pytest -q tests/test_conductive_medium.py tests/test_metal_reconstruction.py tests/test_metal_via_pilot.py tests/test_conductive_layers.py tests/test_conductive_source_correction.py tests/test_metal_fanout.py",
+      "passed": 95,
+      "seconds": 165.09,
+      "scope": "Relevant suite before final geometry-status annotation and unused overview-image pruning; algorithm contracts unchanged."
+    },
+    {
+      "command": ".venv/bin/pytest -q tests/test_conductive_medium.py",
+      "passed": 19,
+      "seconds": 11.91,
+      "scope": "Final module; these tests are included in the 95, not additional unique cases."
+    }
+  ],
+  "lint": {
+    "command": ".venv/bin/ruff check silicon_eye/conductive_medium.py silicon_eye/metal_via_pilot.py tests/test_conductive_medium.py",
+    "status": "PASS"
+  },
+  "limitations": [
+    "Pixel crop equality and replay are software checks, not physical connectivity truth.",
+    "No exact photograph registration, process DRC, terminal approval, full net or skill transfer accuracy claim."
+  ],
+  "updated_markdown_local_links_checked": 46,
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-24-four-point-closeout.md",
+    "payload_bytes": 16001,
+    "payload_sha256": "c73407087f55d13ec320a717ae1017998ed85ceb078ce7218b77321edce51c65",
+    "byte_exact": true,
+    "current_lines": 61
+  },
+  "git_diff_check": "PASS"
+}

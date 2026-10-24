@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "kind": "native_source_evidence_addendum",
+  "id": "L1-P-group-context",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_observation": {
+      "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+      "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+    },
+    "parent_request": {
+      "path": "benchmarks/l1-m2-fanout-v1/request-v1.json",
+      "sha256": "d650c4bac97fb6bb7e6ce216d97397a1b909b9c03e89c3b50ce68c0a604d39ff"
+    },
+    "reviewed_D1": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "renderer": {
+      "path": "silicon_eye/metal_via_pilot.py",
+      "sha256": "82949d1fe0dbae2dbae3d25c81a2f19856da2297de37062f25728d1038004566"
+    }
+  },
+  "source_windows": {
+    "m2": {
+      "wide": [
+        0,
+        2440,
+        1700,
+        3120
+      ],
+      "detail": [
+        0,
+        2670,
+        720,
+        3080
+      ]
+    },
+    "m3": {
+      "wide": [
+        0,
+        2440,
+        1700,
+        3120
+      ],
+      "detail": [
+        0,
+        2670,
+        720,
+        3080
+      ]
+    }
+  },
+  "observations": [],
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          378,
+          2710,
+          426,
+          2832
+        ],
+        "color": "#ffb04f",
+        "label": "F01 V2?"
+      },
+      {
+        "bounds": [
+          736,
+          2700,
+          784,
+          2830
+        ],
+        "color": "#ffb04f",
+        "label": "F02 V2?"
+      },
+      {
+        "bounds": [
+          1098,
+          2695,
+          1145,
+          2820
+        ],
+        "color": "#ffb04f",
+        "label": "F03 V2?"
+      },
+      {
+        "bounds": [
+          1508,
+          2705,
+          1543,
+          2802
+        ],
+        "color": "#58edab",
+        "label": "D1 reviewed"
+      },
+      {
+        "bounds": [
+          0,
+          2820,
+          40,
+          2910
+        ],
+        "color": "#ff9bdf",
+        "label": "P0 unknown"
+      },
+      {
+        "bounds": [
+          95,
+          2820,
+          150,
+          2905
+        ],
+        "color": "#ff9bdf",
+        "label": "P1 unknown"
+      },
+      {
+        "bounds": [
+          200,
+          2820,
+          255,
+          2920
+        ],
+        "color": "#ff9bdf",
+        "label": "P2 unknown"
+      },
+      {
+        "bounds": [
+          313,
+          2820,
+          370,
+          2915
+        ],
+        "color": "#ff9bdf",
+        "label": "P3 unknown"
+      },
+      {
+        "bounds": [
+          530,
+          2810,
+          595,
+          2930
+        ],
+        "color": "#ff9bdf",
+        "label": "P5 unknown"
+      },
+      {
+        "bounds": [
+          426,
+          2832,
+          496,
+          2867
+        ],
+        "color": "#ff9bdf",
+        "label": "P4 upper pad",
+        "label_xy": [
+          426,
+          2807
+        ]
+      },
+      {
+        "bounds": [
+          424,
+          2873,
+          486,
+          3050
+        ],
+        "color": "#ff9bdf",
+        "label": "P4 lower stem",
+        "label_xy": [
+          490,
+          2980
+        ]
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          0,
+          2760,
+          24,
+          2900
+        ],
+        "color": "#ff9bdf",
+        "label": "photo edge",
+        "label_xy": [
+          6,
+          2735
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m2": [],
+    "m3": [
+      {
+        "points": [
+          [
+            0,
+            2829
+          ],
+          [
+            850,
+            2807
+          ],
+          [
+            1650,
+            2786
+          ]
+        ],
+        "color": "#d28cff",
+        "label": "L1 locator"
+      },
+      {
+        "points": [
+          [
+            0,
+            2921
+          ],
+          [
+            320,
+            2910
+          ],
+          [
+            610,
+            2898
+          ]
+        ],
+        "color": "#6ad8ff",
+        "label": "lower thin A locator"
+      },
+      {
+        "points": [
+          [
+            0,
+            2936
+          ],
+          [
+            260,
+            2929
+          ],
+          [
+            500,
+            2917
+          ]
+        ],
+        "color": "#ffe36b",
+        "label": "lower thin B locator"
+      }
+    ]
+  },
+  "precise_projection_allowed": false,
+  "source_to_design_transform": null,
+  "human_questions": [
+    {
+      "id": "F01-F12",
+      "question": "请批量核对橙框F01至F12：这些V2组及对应M2是否均接入同一根紫色L1？有例外请按编号指出；D1已审不重问。F04沿用M2-J01。"
+    },
+    {
+      "id": "P",
+      "question": "左侧粉框P0-P5暂不计入L1：这些小短端是否有接入L1的？如属于下方细M3或仍不清楚，也请指出。"
+    }
+  ]
+}

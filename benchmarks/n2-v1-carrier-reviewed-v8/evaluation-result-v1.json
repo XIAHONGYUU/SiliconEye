@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "initial_AI": {
+    "path": "benchmarks/n2-v1-identity-reviewed-v7/continuation-observation-v1.json",
+    "sha256": "b64afa946453b13f391e7b43f832e36ac9612adbfcc9afacbd94051269e1ca10"
+  },
+  "human_review": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/human-review-v1.json",
+    "sha256": "fd21bba5779852907db5f011a93e5c47fcdde3ad953b0b99880de1447c6a7e13"
+  },
+  "results": {
+    "N2-U1-V1-CARRIER": {
+      "N2_carrier_identity_correct": true
+    },
+    "N2-U3-V1-CARRIER": {
+      "N2_carrier_identity_correct": true
+    }
+  },
+  "exact_M2_landing_accuracy": null,
+  "full_network_accuracy": null,
+  "independent_blind_tasks": false,
+  "scope": "One known-chip task, two coarse V1-carrier decisions. Existing V1 identity is inherited, not retested."
+}

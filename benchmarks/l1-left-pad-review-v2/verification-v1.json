@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "PASS_TECHNICAL_ONLY",
+  "date": "2026-10-23",
+  "input_refs_verified": [
+    "snapshot",
+    "registry",
+    "parent_observation",
+    "parent_request",
+    "reviewed_D1",
+    "m2",
+    "m3",
+    "renderer"
+  ],
+  "raw_crops": [
+    {
+      "frame": "m2",
+      "mode": "wide",
+      "bounds": [
+        0,
+        2440,
+        1700,
+        3120
+      ],
+      "pixel_equal": true
+    },
+    {
+      "frame": "m2",
+      "mode": "detail",
+      "bounds": [
+        0,
+        2670,
+        720,
+        3080
+      ],
+      "pixel_equal": true
+    },
+    {
+      "frame": "m3",
+      "mode": "wide",
+      "bounds": [
+        0,
+        2440,
+        1700,
+        3120
+      ],
+      "pixel_equal": true
+    },
+    {
+      "frame": "m3",
+      "mode": "detail",
+      "bounds": [
+        0,
+        2670,
+        720,
+        3080
+      ],
+      "pixel_equal": true
+    }
+  ],
+  "html_local_links_checked": 25,
+  "javascript_syntax_checks": 1,
+  "dynamic_image_combinations_checked": 8,
+  "baseline_objects_byte_identical_to_HEAD": [
+    "snapshot",
+    "registry",
+    "parent_observation",
+    "parent_request",
+    "reviewed_D1"
+  ],
+  "pending_F_evaluation_unchanged": true,
+  "P_status_unchanged": true,
+  "new_human_decisions": 0,
+  "new_reviewed_edges": 0,
+  "visual_inspection": [
+    "m2-wide-marked.png",
+    "m3-wide-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "physical_correspondence_confirmed": false,
+  "limits": [
+    "Technical checks do not establish any P-group destination or F approval.",
+    "No full code tests required: reused renderer unchanged; only evidence and review artifacts added."
+  ]
+}

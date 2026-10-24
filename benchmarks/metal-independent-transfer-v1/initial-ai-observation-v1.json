@@ -1,0 +1,81 @@
+{
+  "actor": "AI",
+  "stage": "before_any_new_human_review",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "spatial_independence": "Spatially disjoint from the previous medium window on the same known chip; not an unseen-chip or context-blind test.",
+  "human_truth": null,
+  "first_proposed_interfaces": [
+    {
+      "id": "IT1-V1-A",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "native_bounds": [
+        2540,
+        630,
+        2585,
+        685
+      ],
+      "lower_metal_id": "IT1-M1-RING",
+      "upper_metal_id": "IT1-M2-A",
+      "bounds": [
+        297,
+        277,
+        303,
+        283
+      ],
+      "observation_id": "IT1-M1-V1-source",
+      "status": "candidate",
+      "connection_confirmed": null
+    },
+    {
+      "id": "IT1-V2-B",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        2532,
+        670,
+        2580,
+        740
+      ],
+      "lower_metal_id": "IT1-M2-B",
+      "upper_metal_id": "IT1-M3-BUS",
+      "bounds": [
+        367,
+        317,
+        373,
+        323
+      ],
+      "observation_id": "IT1-M2-V2-source",
+      "status": "candidate",
+      "connection_confirmed": null
+    }
+  ],
+  "observations": [
+    "M1 has a bright group on the horizontal ring fragment.",
+    "M2 A is a narrow vertical segment; B is a separate nearby pad candidate.",
+    "M2 pad bright features are V2 candidates, never V1 anchors.",
+    "M3 broad-bus carrier is a hypothesis; M3-side bright pad is not used as V2 evidence."
+  ],
+  "alternatives": [
+    "V1 may land on a neighboring M2 instead of A.",
+    "B may land on a neighboring M3 instead of the broad bus.",
+    "A/B continuity may be unresolved at this photo resolution."
+  ],
+  "questions": [
+    "Q1: Does the marked M1 V1 group connect to narrow M2 A?",
+    "Q2: Does the marked M2 B V2 group connect to the broad purple M3 bus?"
+  ],
+  "exact_cut_counts": null,
+  "physical_connections_confirmed": false
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "after_N2_V1_carrier_review_before_M1_branch_identity",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/reviewed-relations-v1.json",
+      "sha256": "9aef4cbf738d9b4558a8bbcdeab65763ef19a07d3b1775471f89e1b3e3d753bc"
+    },
+    "bus_paths": {
+      "path": "benchmarks/b1-l1-stack-reviewed-v6/bus-path-summary-v1.json",
+      "sha256": "448410c9603f8fd0e1622be63d023dc2fe65f57609b40e971b505ab51ec8e4f6"
+    },
+    "V1_identity": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/reviewed-site-identities-v1.json",
+      "sha256": "1aff67089d00c0bcb5e9513adb6c201b1c11c9189b76045b039cb8151c6e8091"
+    },
+    "V1_identity_human": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+      "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+    },
+    "initial_AI": {
+      "path": "benchmarks/n2-v1-identity-reviewed-v7/continuation-observation-v1.json",
+      "sha256": "b64afa946453b13f391e7b43f832e36ac9612adbfcc9afacbd94051269e1ca10"
+    },
+    "submitted_page": {
+      "path": "docs/assets/n2-v1-identity-reviewed-v7/index.html",
+      "sha256": "2b7bdaa686e210279a72ca51cb92625f839fb9205adb76ac7fafdb13a854d30f"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/n2-v1-identity-reviewed-v7/manifest.json",
+      "sha256": "5000fb046e5bacb1b86de9a0219c7524ca20331c657a81fc01f09b0e7436c70e"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "current_relations": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+    "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+  },
+  "approved_seed_sites": [
+    "U1",
+    "U3"
+  ],
+  "candidate_extents": {
+    "upper_M1": {
+      "seed": "U1",
+      "native_path": [
+        [
+          0,
+          1922
+        ],
+        [
+          500,
+          1917
+        ],
+        [
+          1000,
+          1908
+        ],
+        [
+          1500,
+          1894
+        ],
+        [
+          1945,
+          1887
+        ]
+      ],
+      "scope": "AI source trace, not exact material boundary; left photo edge clipped"
+    },
+    "lower_M1": {
+      "seed": "U3",
+      "native_path": [
+        [
+          0,
+          2740
+        ],
+        [
+          500,
+          2725
+        ],
+        [
+          1000,
+          2711
+        ],
+        [
+          1545,
+          2700
+        ],
+        [
+          1945,
+          2686
+        ]
+      ],
+      "scope": "AI source trace, not exact material boundary; left photo edge clipped"
+    }
+  },
+  "unknown_middle_features": [
+    {
+      "id": "MID-H1",
+      "native_path": [
+        [
+          100,
+          2320
+        ],
+        [
+          500,
+          2311
+        ],
+        [
+          1000,
+          2300
+        ],
+        [
+          1540,
+          2292
+        ],
+        [
+          1850,
+          2280
+        ]
+      ],
+      "inspection_bounds": [
+        1510,
+        2278,
+        1590,
+        2302
+      ],
+      "status": "material_and_junction_unknown",
+      "human_truth": {
+        "is_M1": null,
+        "connected_to_M1_N2_U1_U2": null
+      }
+    },
+    {
+      "id": "MID-H2",
+      "native_path": [
+        [
+          100,
+          2345
+        ],
+        [
+          500,
+          2336
+        ],
+        [
+          1000,
+          2325
+        ],
+        [
+          1540,
+          2313
+        ],
+        [
+          1850,
+          2305
+        ]
+      ],
+      "inspection_bounds": [
+        1510,
+        2305,
+        1590,
+        2330
+      ],
+      "status": "material_and_junction_unknown",
+      "human_truth": {
+        "is_M1": null,
+        "connected_to_M1_N2_U1_U2": null
+      }
+    }
+  ],
+  "native_feature_localization": "One-off Gaussian smoothing and y-profile peak localization at five x strips, only to locate photographed horizontal features; not material recognition or cross-layer correspondence.",
+  "question": "U2附近H1/H2两条细横向结构是否均为M1并与U1-U2这条M1接通？若是其他层残影或保持隔离，请分别指出。U2无V1、U1/U3接N2不重审。",
+  "alternatives": [
+    "Both are same-layer M1 and join the U1/U2 conductor.",
+    "Only one is M1/connected.",
+    "They are different-layer structures, residual image or isolated conductors.",
+    "Unknown."
+  ],
+  "new_reviewed_connections": [],
+  "net_edges": [],
+  "complete_network": false
+}

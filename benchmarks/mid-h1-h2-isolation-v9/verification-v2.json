@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "PASS_TECHNICAL_ONLY",
+  "date": "2026-10-23",
+  "path_sha_refs_verified": 40,
+  "source_span_human_review_bound": true,
+  "prior_M1_and_isolation_facts_unchanged": true,
+  "inherited_local_interfaces": 33,
+  "new_reviewed_interfaces": 0,
+  "M2_carriers_and_allocation_still_null": true,
+  "parent_artifacts_hash_unchanged": true,
+  "source_images_reused_without_rerender": true,
+  "HTML_links_checked": 13,
+  "JS_syntax_checks": 1,
+  "browser_interaction_tested": false,
+  "production_code_changed": false,
+  "tests_rerun": false,
+  "net_edges": [],
+  "complete_network": false
+}

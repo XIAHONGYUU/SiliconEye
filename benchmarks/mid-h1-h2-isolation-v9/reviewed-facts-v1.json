@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "M1_IDENTITY_AND_LOCAL_ISOLATION_REVIEWED",
+  "human_review": {
+    "path": "benchmarks/mid-h1-h2-isolation-v9/human-review-v1.json",
+    "sha256": "f94c09afa3a3a2a6d69192480412d7424aa2136b2dcdf142c44545e62ca8adf2"
+  },
+  "inherited_relations": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+    "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+  },
+  "inherited_local_interface_count": 33,
+  "reviewed_features": [
+    {
+      "id": "MID-H1",
+      "layer": "M1",
+      "status": "human_confirmed_material",
+      "human_review": {
+        "path": "benchmarks/mid-h1-h2-isolation-v9/human-review-v1.json",
+        "sha256": "f94c09afa3a3a2a6d69192480412d7424aa2136b2dcdf142c44545e62ca8adf2"
+      }
+    },
+    {
+      "id": "MID-H2",
+      "layer": "M1",
+      "status": "human_confirmed_material",
+      "human_review": {
+        "path": "benchmarks/mid-h1-h2-isolation-v9/human-review-v1.json",
+        "sha256": "f94c09afa3a3a2a6d69192480412d7424aa2136b2dcdf142c44545e62ca8adf2"
+      }
+    }
+  ],
+  "reviewed_non_junctions": [
+    {
+      "id": "MID-H1-NO-U1-U2-JUNCTION",
+      "feature_id": "MID-H1",
+      "other_metal_id": "M1-N2-U1-U2",
+      "relation": "not_locally_connected",
+      "scope": "reviewed U2 neighborhood only",
+      "human_review": {
+        "path": "benchmarks/mid-h1-h2-isolation-v9/human-review-v1.json",
+        "sha256": "f94c09afa3a3a2a6d69192480412d7424aa2136b2dcdf142c44545e62ca8adf2"
+      }
+    },
+    {
+      "id": "MID-H2-NO-U1-U2-JUNCTION",
+      "feature_id": "MID-H2",
+      "other_metal_id": "M1-N2-U1-U2",
+      "relation": "not_locally_connected",
+      "scope": "reviewed U2 neighborhood only",
+      "human_review": {
+        "path": "benchmarks/mid-h1-h2-isolation-v9/human-review-v1.json",
+        "sha256": "f94c09afa3a3a2a6d69192480412d7424aa2136b2dcdf142c44545e62ca8adf2"
+      }
+    }
+  ],
+  "upward_via_report": {
+    "source_photo_layer": "M1",
+    "via_layer": "V1",
+    "layer_pair": [
+      "M1",
+      "M2"
+    ],
+    "presence_human_reported": true,
+    "site_localization": "pending",
+    "per_feature_allocation": null,
+    "count": null,
+    "M2_carrier": null,
+    "human_review": {
+      "path": "benchmarks/mid-h1-h2-isolation-v9/human-review-v1.json",
+      "sha256": "f94c09afa3a3a2a6d69192480412d7424aa2136b2dcdf142c44545e62ca8adf2"
+    }
+  },
+  "H1_H2_same_physical_conductor": null,
+  "H1_H2_global_net_membership": null,
+  "reviewed_local_connections_added": [],
+  "net_edges": [],
+  "complete_network": false
+}

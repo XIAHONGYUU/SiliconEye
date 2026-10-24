@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-24",
+  "statement": "Q2 正确",
+  "reviewed_question": "M2 橙框 B 孔组是否为 V2，并接到 M3 图标出的紫色粗横向母线？",
+  "sources": {
+    "initial_ai": {
+      "path": "benchmarks/metal-independent-transfer-v1/initial-ai-observation-v1.json",
+      "sha256": "895432b6f2485015044975d9db42123a3b448bee685e8950a10172d085ddb106"
+    },
+    "submitted_request": {
+      "path": "benchmarks/metal-independent-transfer-v1/request-v1.json",
+      "sha256": "f5ad0dc62ffab5e4c5d3a560d125aee121b17c61b5600b8a23603501b6dc94b7"
+    },
+    "submitted_page": {
+      "path": "docs/assets/metal-independent-transfer-v1/index.html",
+      "sha256": "e54ccf6c9eec265c7795ff05fec2f45c86c37d94086b65a5747b7301ff9c65fc"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/metal-independent-transfer-v1/manifest.json",
+      "sha256": "5f574b36ec896bff1145bc387d0916aeb67c5fda4f54f14d1d4c8535d2d611f3"
+    }
+  },
+  "decisions": {
+    "interface_id": "IT1-V2-B",
+    "via_layer": "V2",
+    "lower_metal_id": "IT1-M2-B",
+    "upper_metal_id": "IT1-M3-BUS",
+    "connection_confirmed": true
+  },
+  "scope": "Q2 V2 identity and indicated M2-B to broad-M3 carrier only; Q1 still pending; no physical cut count, exact geometry, A/B continuity, full-net or skill approval."
+}

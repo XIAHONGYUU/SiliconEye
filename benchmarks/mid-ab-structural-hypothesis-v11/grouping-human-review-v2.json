@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "T1,L4,经过M2与M3与B连接在一起。\nT3,L3,经过M2与M3与A连接在一起。",
+  "sources": {
+    "prior_observation": {
+      "path": "benchmarks/mid-ab-structural-hypothesis-v11/structural-observation-v1.json",
+      "sha256": "3d260b1c3fb063f7217eb241a41941898f5fce3ef8709bec8eb0d58f160a8b4e"
+    },
+    "prior_human_inference": {
+      "path": "benchmarks/mid-ab-structural-hypothesis-v11/human-structural-inference-v1.json",
+      "sha256": "87711bfff9ac1fab11a882f143225d6c9990c8e34cc995da59064668abf2d43c"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/index.html",
+      "sha256": "493225bf7fd0fd562bfb8d8a0fd3e3cb96d2fd403d86c563995fd56e1dc93468"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-ab-structural-hypothesis-v11/manifest.json",
+      "sha256": "6d8bd08fbe1ac82d9d91f506455315a7919e38864bff7832027dec6575de7c1a"
+    },
+    "reviewed_interfaces": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+      "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    }
+  },
+  "decisions": [
+    {
+      "group_id": "MID-AB-GROUP-B",
+      "M1_members": [
+        "M1-T1-LOCAL",
+        "M1-L4-LOCAL"
+      ],
+      "M2_anchor": "M2-MID-CAND-B",
+      "routing_layers_reported": [
+        "M2",
+        "M3"
+      ],
+      "grouping_accepted": true
+    },
+    {
+      "group_id": "MID-AB-GROUP-A",
+      "M1_members": [
+        "M1-T3-LOCAL",
+        "M1-L3-LOCAL"
+      ],
+      "M2_anchor": "M2-MID-CAND-A",
+      "routing_layers_reported": [
+        "M2",
+        "M3"
+      ],
+      "grouping_accepted": true
+    }
+  ],
+  "scope": "明确本处连接分组及经过M2/M3的路径层级，取代上轮条件计数和AI的L2候选。沿用前轮未看清孔的证据限制；不是逐接口孔位批准。",
+  "evidence_basis": "human_accepted_structural_grouping_with_unresolved_vias",
+  "not_approved": [
+    "exact V1/V2 centers, cut counts or enclosure",
+    "per-interface complete path and M3-X/Y assignment",
+    "automatic geometric adoption",
+    "full-network completion"
+  ],
+  "prior_hole_visibility_limit_retained": true
+}

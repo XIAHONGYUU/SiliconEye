@@ -1,0 +1,48 @@
+{
+  "status": "SOURCE_REVISION_VERIFIED_Q2_REVIEWED_Q1_PENDING",
+  "unique_input_sha_count": 106,
+  "artifact_sha_count": 90,
+  "source_pixel_equality_checks": 20,
+  "html_local_links_checked": 86,
+  "inline_js_syntax_checked": 3,
+  "svg_xml_checked": 3,
+  "legacy_candidate_model_report_html_replay_unchanged": true,
+  "latest_model_report_replay_equal": true,
+  "changed_geometry_object_ids": [
+    "M1-N2-U1-U2"
+  ],
+  "source_relative_order_old": "FAIL",
+  "source_relative_order_new": "PASS",
+  "U3_approval_retained": true,
+  "Q2_approved": true,
+  "Q1_truth": null,
+  "independent_spatial_intersection_area": 0,
+  "independent_negative_controls_passed": 4,
+  "skill_formally_packaged": false,
+  "independent_unreviewed_interface_CLI_supported": false,
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_conductive_medium.py",
+    "passed": 23,
+    "seconds": 13.54
+  },
+  "lint": {
+    "command": ".venv/bin/ruff check silicon_eye/conductive_medium.py tests/test_conductive_medium.py",
+    "status": "PASS"
+  },
+  "source_code_sha256": {
+    "silicon_eye/conductive_medium.py": "1d6daa7c3ecf1f84de97acdeb83af60a4cc6797287eb7d8796d41497aec18f3c",
+    "tests/test_conductive_medium.py": "298d2c8f7f7d183f0402226384f9772748a0d7dd9346026d1b20a564df2e22c2"
+  },
+  "browser_interaction_tested": false,
+  "physical_process_DRC": false,
+  "complete_network": false,
+  "entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-24-metal-source-transfer-review.md",
+    "payload_bytes": 7773,
+    "payload_sha256": "f5529678e2b5a1493f9d8694b4bede24683ec7a47e8d9e133e5c176b45e81374",
+    "byte_exact": true,
+    "current_lines": 70
+  },
+  "markdown_local_links_checked": 50,
+  "git_diff_check": "PASS"
+}

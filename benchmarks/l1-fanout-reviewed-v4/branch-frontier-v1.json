@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "selected_carrier": "M3-N2-LOWER-BUS-CANDIDATE",
+  "branches": [
+    {
+      "id": "F01",
+      "lower_metal_id": "M2-L1-F01",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_F01_F03_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F02",
+      "lower_metal_id": "M2-L1-F02",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_F01_F03_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F03",
+      "lower_metal_id": "M2-L1-F03",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_F01_F03_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_inherited_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F04",
+      "lower_metal_id": "M2-J01",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_inherited_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F05",
+      "lower_metal_id": "M2-L1-F05",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F06",
+      "lower_metal_id": "M2-L1-F06",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F07",
+      "lower_metal_id": "M2-L1-F07",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F08",
+      "lower_metal_id": "M2-L1-F08",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F09",
+      "lower_metal_id": "M2-L1-F09",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F10",
+      "lower_metal_id": "M2-L1-F10",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F11",
+      "lower_metal_id": "M2-L1-F11",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F12",
+      "lower_metal_id": "M2-L1-F12",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "up_and_down_not_yet_surveyed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    }
+  ],
+  "not_silently_completed": [
+    "F05-F12 up/down interfaces",
+    "all unqualified M1/V1 correspondences",
+    "X1/X2/off-image frontiers"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "selected_carrier": "M3-N2-LOWER-BUS-CANDIDATE",
+  "branches": [
+    {
+      "id": "F01",
+      "lower_metal_id": "M2-L1-F01",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F02",
+      "lower_metal_id": "M2-L1-F02",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F03",
+      "lower_metal_id": "M2-L1-F03",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "D1",
+      "lower_metal_id": "M2-N2-LEFT-RAIL",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F04",
+      "lower_metal_id": "M2-J01",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_B1_reviewed",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false
+    },
+    {
+      "id": "F05",
+      "lower_metal_id": "M2-L1-F05",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          3110,
+          3450
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F06",
+      "lower_metal_id": "M2-L1-F06",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          3370,
+          3440
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F07",
+      "lower_metal_id": "M2-L1-F07",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          3715,
+          3425
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F08",
+      "lower_metal_id": "M2-L1-F08",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          3932,
+          3420
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F09",
+      "lower_metal_id": "M2-L1-F09",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          4313,
+          3410
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F10",
+      "lower_metal_id": "M2-L1-F10",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          4545,
+          3400
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F11",
+      "lower_metal_id": "M2-L1-F11",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          4812,
+          3400
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    },
+    {
+      "id": "F12",
+      "lower_metal_id": "M2-L1-F12",
+      "L1_interface": "reviewed",
+      "other_V2_frontier": "upper_group_B1_candidate_review_required",
+      "M1_V1_frontier": "not_complete",
+      "entire_branch_complete": false,
+      "lower_end_observation": {
+        "native_reference_xy": [
+          5072,
+          3388
+        ],
+        "status": "AI_visible_terminal_candidate_not_complete_M1_V1_scan"
+      }
+    }
+  ],
+  "not_silently_completed": [
+    "Eight new upper candidates await review",
+    "M1/V1 on every incompletely traced branch",
+    "lower metal/pad gaps and V1 membership",
+    "X1/X2/off-image frontiers"
+  ]
+}

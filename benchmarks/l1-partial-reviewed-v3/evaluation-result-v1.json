@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "human_review": {
+    "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+    "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+  },
+  "initial_AI": {
+    "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+    "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+  },
+  "F_results": {
+    "F01": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F02": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F03": {
+      "via_identity_correct": true,
+      "destination_correct": true,
+      "lower_segment_correspondence_correct": true
+    },
+    "F04": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F05": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F06": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F07": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F08": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F09": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F10": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F11": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    },
+    "F12": {
+      "via_identity_correct": null,
+      "destination_correct": null,
+      "lower_segment_correspondence_correct": null
+    }
+  },
+  "new_F_interfaces_reviewed": 3,
+  "remaining_F_interfaces": 9,
+  "P_source_subregions_assigned": 7,
+  "P_prediction_accuracy": null,
+  "P_note": "事前P组未判到具体细线，不能把裁决后记录算作事前准确预测；需要澄清一次。",
+  "label_readability_defect_reported": true,
+  "blind_evaluation": false,
+  "full_network_accuracy": null
+}

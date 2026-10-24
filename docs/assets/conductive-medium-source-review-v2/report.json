@@ -1,0 +1,595 @@
+{
+  "status": "CANDIDATE_GEOMETRY_PASS_SCOPED_TERMINAL_REVIEWED",
+  "geometry_audits": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "M1-N2-U3"
+          ],
+          "gap_px": 853.0
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "MID-H1"
+          ],
+          "gap_px": 409.0
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "MID-H2"
+          ],
+          "gap_px": 439.0
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "M1-L4-LOCAL"
+          ],
+          "gap_px": 1007.0000000000001
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "M1-L2-LOCAL"
+          ],
+          "gap_px": 1007.0000000000001
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "M1-T1-LOCAL"
+          ],
+          "gap_px": 1007.0000000000001
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 1007.0000000000001
+        },
+        {
+          "ids": [
+            "M1-N2-U1-U2",
+            "M1-P08"
+          ],
+          "gap_px": 66.84309986827361
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "MID-H1"
+          ],
+          "gap_px": 436.0
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "MID-H2"
+          ],
+          "gap_px": 405.99999999999994
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "M1-L4-LOCAL"
+          ],
+          "gap_px": 134.0
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "M1-L2-LOCAL"
+          ],
+          "gap_px": 134.0
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "M1-T1-LOCAL"
+          ],
+          "gap_px": 134.0
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 134.0
+        },
+        {
+          "ids": [
+            "M1-N2-U3",
+            "M1-P08"
+          ],
+          "gap_px": 481.49974039453025
+        },
+        {
+          "ids": [
+            "MID-H1",
+            "MID-H2"
+          ],
+          "gap_px": 22.0
+        },
+        {
+          "ids": [
+            "MID-H1",
+            "M1-L4-LOCAL"
+          ],
+          "gap_px": 590.0
+        },
+        {
+          "ids": [
+            "MID-H1",
+            "M1-L2-LOCAL"
+          ],
+          "gap_px": 590.0
+        },
+        {
+          "ids": [
+            "MID-H1",
+            "M1-T1-LOCAL"
+          ],
+          "gap_px": 590.0
+        },
+        {
+          "ids": [
+            "MID-H1",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 590.0
+        },
+        {
+          "ids": [
+            "MID-H1",
+            "M1-P08"
+          ],
+          "gap_px": 168.67127793433
+        },
+        {
+          "ids": [
+            "MID-H2",
+            "M1-L4-LOCAL"
+          ],
+          "gap_px": 560.0
+        },
+        {
+          "ids": [
+            "MID-H2",
+            "M1-L2-LOCAL"
+          ],
+          "gap_px": 560.0
+        },
+        {
+          "ids": [
+            "MID-H2",
+            "M1-T1-LOCAL"
+          ],
+          "gap_px": 560.0
+        },
+        {
+          "ids": [
+            "MID-H2",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 560.0
+        },
+        {
+          "ids": [
+            "MID-H2",
+            "M1-P08"
+          ],
+          "gap_px": 177.341478509682
+        },
+        {
+          "ids": [
+            "M1-L4-LOCAL",
+            "M1-L2-LOCAL"
+          ],
+          "gap_px": 118.0
+        },
+        {
+          "ids": [
+            "M1-L4-LOCAL",
+            "M1-T1-LOCAL"
+          ],
+          "gap_px": 248.0
+        },
+        {
+          "ids": [
+            "M1-L4-LOCAL",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 378.0
+        },
+        {
+          "ids": [
+            "M1-L4-LOCAL",
+            "M1-P08"
+          ],
+          "gap_px": 1237.1976398296272
+        },
+        {
+          "ids": [
+            "M1-L2-LOCAL",
+            "M1-T1-LOCAL"
+          ],
+          "gap_px": 118.0
+        },
+        {
+          "ids": [
+            "M1-L2-LOCAL",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 248.0
+        },
+        {
+          "ids": [
+            "M1-L2-LOCAL",
+            "M1-P08"
+          ],
+          "gap_px": 1127.4652988008102
+        },
+        {
+          "ids": [
+            "M1-T1-LOCAL",
+            "M1-T3-LOCAL"
+          ],
+          "gap_px": 118.0
+        },
+        {
+          "ids": [
+            "M1-T1-LOCAL",
+            "M1-P08"
+          ],
+          "gap_px": 1022.4959657622127
+        },
+        {
+          "ids": [
+            "M1-T3-LOCAL",
+            "M1-P08"
+          ],
+          "gap_px": 923.9144982085734
+        }
+      ],
+      "minimum_gap_px": 22.0
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "M2-J01"
+          ],
+          "gap_px": 452.0
+        },
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "M2-L1-F03"
+          ],
+          "gap_px": 418.0
+        },
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "M2-MID-CAND-A"
+          ],
+          "gap_px": 205.0
+        },
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "M2-MID-CAND-B"
+          ],
+          "gap_px": 235.0
+        },
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "R-M2-1"
+          ],
+          "gap_px": 604.0281450396166
+        },
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "R-M2-2"
+          ],
+          "gap_px": 494.2165517260627
+        },
+        {
+          "ids": [
+            "M2-N2-LEFT-RAIL",
+            "R-M2-3"
+          ],
+          "gap_px": 365.3080891521566
+        },
+        {
+          "ids": [
+            "M2-J01",
+            "M2-L1-F03"
+          ],
+          "gap_px": 890.0
+        },
+        {
+          "ids": [
+            "M2-J01",
+            "M2-MID-CAND-A"
+          ],
+          "gap_px": 677.0
+        },
+        {
+          "ids": [
+            "M2-J01",
+            "M2-MID-CAND-B"
+          ],
+          "gap_px": 707.0
+        },
+        {
+          "ids": [
+            "M2-J01",
+            "R-M2-1"
+          ],
+          "gap_px": 1061.855922430157
+        },
+        {
+          "ids": [
+            "M2-J01",
+            "R-M2-2"
+          ],
+          "gap_px": 940.0734013894872
+        },
+        {
+          "ids": [
+            "M2-J01",
+            "R-M2-3"
+          ],
+          "gap_px": 806.658539903967
+        },
+        {
+          "ids": [
+            "M2-L1-F03",
+            "M2-MID-CAND-A"
+          ],
+          "gap_px": 183.0
+        },
+        {
+          "ids": [
+            "M2-L1-F03",
+            "M2-MID-CAND-B"
+          ],
+          "gap_px": 153.0
+        },
+        {
+          "ids": [
+            "M2-L1-F03",
+            "R-M2-1"
+          ],
+          "gap_px": 217.79348015953096
+        },
+        {
+          "ids": [
+            "M2-L1-F03",
+            "R-M2-2"
+          ],
+          "gap_px": 184.69975636150687
+        },
+        {
+          "ids": [
+            "M2-L1-F03",
+            "R-M2-3"
+          ],
+          "gap_px": 168.67127793433
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-A",
+            "M2-MID-CAND-B"
+          ],
+          "gap_px": 20.0
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-A",
+            "R-M2-1"
+          ],
+          "gap_px": 360.0
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-A",
+            "R-M2-2"
+          ],
+          "gap_px": 230.0
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-A",
+            "R-M2-3"
+          ],
+          "gap_px": 100.0
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-B",
+            "R-M2-1"
+          ],
+          "gap_px": 308.0
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-B",
+            "R-M2-2"
+          ],
+          "gap_px": 179.12007146045917
+        },
+        {
+          "ids": [
+            "M2-MID-CAND-B",
+            "R-M2-3"
+          ],
+          "gap_px": 48.0
+        },
+        {
+          "ids": [
+            "R-M2-1",
+            "R-M2-2"
+          ],
+          "gap_px": 98.0
+        },
+        {
+          "ids": [
+            "R-M2-1",
+            "R-M2-3"
+          ],
+          "gap_px": 228.0
+        },
+        {
+          "ids": [
+            "R-M2-2",
+            "R-M2-3"
+          ],
+          "gap_px": 100.0199980003999
+        }
+      ],
+      "minimum_gap_px": 20.0
+    },
+    "M3": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "M3-J-B1",
+            "M3-N2-LOWER-BUS-CANDIDATE"
+          ],
+          "gap_px": 820.0
+        },
+        {
+          "ids": [
+            "M3-J-B1",
+            "M3-MID-X-CAND"
+          ],
+          "gap_px": 1055.0
+        },
+        {
+          "ids": [
+            "M3-J-B1",
+            "M3-MID-Y-CAND"
+          ],
+          "gap_px": 1085.0
+        },
+        {
+          "ids": [
+            "M3-J-B1",
+            "M3-MID-Z-CONTEXT"
+          ],
+          "gap_px": 1125.0
+        },
+        {
+          "ids": [
+            "M3-N2-LOWER-BUS-CANDIDATE",
+            "M3-MID-X-CAND"
+          ],
+          "gap_px": 155.0
+        },
+        {
+          "ids": [
+            "M3-N2-LOWER-BUS-CANDIDATE",
+            "M3-MID-Y-CAND"
+          ],
+          "gap_px": 185.0
+        },
+        {
+          "ids": [
+            "M3-N2-LOWER-BUS-CANDIDATE",
+            "M3-MID-Z-CONTEXT"
+          ],
+          "gap_px": 225.0
+        },
+        {
+          "ids": [
+            "M3-MID-X-CAND",
+            "M3-MID-Y-CAND"
+          ],
+          "gap_px": 20.0
+        },
+        {
+          "ids": [
+            "M3-MID-X-CAND",
+            "M3-MID-Z-CONTEXT"
+          ],
+          "gap_px": 60.0
+        },
+        {
+          "ids": [
+            "M3-MID-Y-CAND",
+            "M3-MID-Z-CONTEXT"
+          ],
+          "gap_px": 30.0
+        }
+      ],
+      "minimum_gap_px": 20.0
+    }
+  },
+  "object_counts": {
+    "M1": 9,
+    "V1": 5,
+    "M2": 8,
+    "V2": 6,
+    "M3": 5
+  },
+  "input_interface_union_count": 38,
+  "interfaces_represented": 11,
+  "interface_inventory_coverage": "selected_region_not_whole_net",
+  "baseline_geometry_adoption": false,
+  "new_physical_connections": 0,
+  "structural_group_count": 2,
+  "support_boxes_are_cut_counts": false,
+  "terminal_closed": true,
+  "complete_network": false,
+  "verified_input_count": 99,
+  "source_order_audit": {
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "U1-right-before-P08-left",
+        "values": {
+          "native_path": [
+            1945,
+            2006
+          ],
+          "design_path": [
+            1310,
+            1380
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "U3-right-before-P08-left",
+        "values": {
+          "native_path": [
+            1945,
+            2006
+          ],
+          "design_path": [
+            1310,
+            1380
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "scope": "declared_same_frame_order_not_registration"
+  }
+}

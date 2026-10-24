@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "这两根线经由M3有经过旁边的m2接入到M1，B端经过靠近这两条线的M2接到T1 M1,A端经过直接接到T3M1（这个是我根据版图结构推测的，实际上我也没有看清孔在那里）。这里不算dummy是一个ABAB结构，所以T1和其左边相隔的四根线连在了一起，T3和其左边第四根线连接在了一起，M3的走线也支持我的判断。",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "reviewed_interfaces": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/reviewed-relations-v1.json",
+      "sha256": "c83fc3175557e66a98e527a849b8bca410f840fc3e1b49df6a5c8477a676b3ed"
+    },
+    "prior_AI": {
+      "path": "benchmarks/mid-ab-carrier-reviewed-v10/downstream-observation-v1.json",
+      "sha256": "9c09a94e234497f33248deb6f762a95229607b7903365ac801b69c354dfbef25"
+    },
+    "submitted_page": {
+      "path": "docs/assets/mid-ab-carrier-reviewed-v10/index.html",
+      "sha256": "53ca6e08fdab15ebe9e8e969e5ef21b997b7bbcf4750024c662fac9a71d7f264"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/mid-ab-carrier-reviewed-v10/manifest.json",
+      "sha256": "f8974b97fe88813781182e81b3fef371662401b0d7aa96c7007a70046493e570"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "evidence_class": "human_structural_inference_vias_not_resolved",
+  "topology_hypotheses": [
+    {
+      "from": "M2-MID-CAND-B",
+      "to": "M1-T1-LOCAL",
+      "description": "经M3及邻近M2回到T1",
+      "connection_confirmed": null
+    },
+    {
+      "from": "M2-MID-CAND-A",
+      "to": "M1-T3-LOCAL",
+      "description": "A端直接接T3；与前句M3路径的详细关系待核",
+      "connection_confirmed": null
+    }
+  ],
+  "pattern_report": "ABAB excluding dummy",
+  "member_statements": {
+    "T1": "T1和其左边相隔的四根线连在一起",
+    "T3": "T3和其左边第四根线连接在一起"
+  },
+  "T1_member_interpretation": "clarification_pending_fourth_vs_all_four",
+  "exact_hole_visibility_reported": false,
+  "scope": "用户提供结构与正向布局推断，并明确未看清孔。用于继续核对拓扑，不升级成逐接口实证批准。",
+  "reviewed_new_interfaces": []
+}

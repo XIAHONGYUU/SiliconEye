@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "kind": "native_right_upper_interface_batch",
+  "inputs": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-relations-v1.json",
+      "sha256": "f298ffc65ce108d25b1b49f045b7ee6f6d2512bc1fff77bf69b40ce33eaa7ea9"
+    },
+    "initial_upper_AI": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-observation-v1.json",
+      "sha256": "e78574d92bad8277cb32472a8ed36e6b8d00edd27bd2107d1a9f0f46870ce70c"
+    },
+    "submitted_request": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-request-v1.json",
+      "sha256": "292b5a026d2593e564cc956eadee6f1f34820e9729749e55934e3590b79c19f3"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-fanout-reviewed-v4/index.html",
+      "sha256": "c9e8007a39234f51357f78481c5fdab810ce4bccd830f2408e1539c684978f55"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/l1-fanout-reviewed-v4/manifest.json",
+      "sha256": "ddc73da2726643f12b1c86f21fd610260e6f53b680247f929615b21e6a33a2ed"
+    },
+    "path_summary": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-path-summary-v1.json",
+      "sha256": "44a743ffe0844110591e728ff0129fb9899578ce833238cdfe56ce3db04654b9"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "renderer": {
+    "path": "silicon_eye/metal_via_pilot.py",
+    "sha256": "f49d0ecd6998b5e7e90e3b96e4ff90fe1743a2be971f1f4d021ae01c3f1c07af"
+  },
+  "observation": {
+    "path": "benchmarks/l1-upper-reviewed-v5/right-upper-observation-v1.json",
+    "sha256": "f97c43c00e085240217f33934c2f3831a2a100daca8533cf017854d991a5eacb"
+  },
+  "panels": {
+    "R-A": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m2": {
+          "wide": [
+            2850,
+            1770,
+            4160,
+            3760
+          ],
+          "detail": [
+            2990,
+            1840,
+            4040,
+            2050
+          ]
+        },
+        "m3": {
+          "wide": [
+            2850,
+            1770,
+            4160,
+            3760
+          ],
+          "detail": [
+            2990,
+            1840,
+            4040,
+            2050
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m2": [
+          {
+            "bounds": [
+              3082,
+              1895,
+              3127,
+              1958
+            ],
+            "color": "#ffb04f",
+            "label": "F05-UP ?",
+            "label_xy": [
+              3052,
+              1790
+            ]
+          },
+          {
+            "bounds": [
+              3085,
+              2650,
+              3138,
+              2770
+            ],
+            "color": "#58edab",
+            "label": "F05 L1 OK",
+            "label_xy": [
+              3055,
+              2780
+            ]
+          },
+          {
+            "bounds": [
+              3351,
+              1890,
+              3396,
+              1957
+            ],
+            "color": "#ffb04f",
+            "label": "F06-UP ?",
+            "label_xy": [
+              3321,
+              1830
+            ]
+          },
+          {
+            "bounds": [
+              3350,
+              2645,
+              3402,
+              2770
+            ],
+            "color": "#58edab",
+            "label": "F06 L1 OK",
+            "label_xy": [
+              3320,
+              2820
+            ]
+          },
+          {
+            "bounds": [
+              3694,
+              1885,
+              3740,
+              1950
+            ],
+            "color": "#ffb04f",
+            "label": "F07-UP ?",
+            "label_xy": [
+              3664,
+              1790
+            ]
+          },
+          {
+            "bounds": [
+              3693,
+              2640,
+              3745,
+              2765
+            ],
+            "color": "#58edab",
+            "label": "F07 L1 OK",
+            "label_xy": [
+              3663,
+              2780
+            ]
+          },
+          {
+            "bounds": [
+              3918,
+              1884,
+              3962,
+              1947
+            ],
+            "color": "#ffb04f",
+            "label": "F08-UP ?",
+            "label_xy": [
+              3888,
+              1830
+            ]
+          },
+          {
+            "bounds": [
+              3916,
+              2635,
+              3965,
+              2760
+            ],
+            "color": "#58edab",
+            "label": "F08 L1 OK",
+            "label_xy": [
+              3886,
+              2820
+            ]
+          }
+        ],
+        "m3": []
+      },
+      "native_traces": {
+        "m2": [
+          {
+            "points": [
+              [
+                3104.5,
+                1926.5
+              ],
+              [
+                3111.5,
+                2710.0
+              ],
+              [
+                3110,
+                3450
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F05 M2",
+            "label_xy": [
+              3117,
+              2200
+            ]
+          },
+          {
+            "points": [
+              [
+                3373.5,
+                1923.5
+              ],
+              [
+                3376.0,
+                2707.5
+              ],
+              [
+                3370,
+                3440
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F06 M2",
+            "label_xy": [
+              3386,
+              2300
+            ]
+          },
+          {
+            "points": [
+              [
+                3717.0,
+                1917.5
+              ],
+              [
+                3719.0,
+                2702.5
+              ],
+              [
+                3715,
+                3425
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F07 M2",
+            "label_xy": [
+              3729,
+              2400
+            ]
+          },
+          {
+            "points": [
+              [
+                3940.0,
+                1915.5
+              ],
+              [
+                3940.5,
+                2697.5
+              ],
+              [
+                3932,
+                3420
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F08 M2",
+            "label_xy": [
+              3953,
+              2500
+            ]
+          }
+        ],
+        "m3": [
+          {
+            "points": [
+              [
+                2850,
+                1947.2978723404256
+              ],
+              [
+                4160,
+                1928.9021276595745
+              ]
+            ],
+            "color": "#d28cff",
+            "label": "B1",
+            "label_xy": [
+              3030,
+              2080
+            ]
+          },
+          {
+            "points": [
+              [
+                2850,
+                2754.8446601941746
+              ],
+              [
+                4160,
+                2720.759223300971
+              ]
+            ],
+            "color": "#58edab",
+            "label": "L1 reviewed",
+            "label_xy": [
+              3010,
+              2890
+            ]
+          }
+        ]
+      }
+    },
+    "R-B": {
+      "source_label_style": {
+        "font_size_px": 30,
+        "padding_px": 6
+      },
+      "source_windows": {
+        "m2": {
+          "wide": [
+            4140,
+            1750,
+            5380,
+            3730
+          ],
+          "detail": [
+            4200,
+            1820,
+            5220,
+            2030
+          ]
+        },
+        "m3": {
+          "wide": [
+            4140,
+            1750,
+            5380,
+            3730
+          ],
+          "detail": [
+            4200,
+            1820,
+            5220,
+            2030
+          ]
+        }
+      },
+      "observations": [],
+      "source_regions": {
+        "m2": [
+          {
+            "bounds": [
+              4306,
+              1880,
+              4352,
+              1946
+            ],
+            "color": "#ffb04f",
+            "label": "F09-UP ?",
+            "label_xy": [
+              4276,
+              1790
+            ]
+          },
+          {
+            "bounds": [
+              4300,
+              2630,
+              4356,
+              2760
+            ],
+            "color": "#58edab",
+            "label": "F09 L1 OK",
+            "label_xy": [
+              4270,
+              2780
+            ]
+          },
+          {
+            "bounds": [
+              4542,
+              1877,
+              4588,
+              1941
+            ],
+            "color": "#ffb04f",
+            "label": "F10-UP ?",
+            "label_xy": [
+              4512,
+              1830
+            ]
+          },
+          {
+            "bounds": [
+              4528,
+              2625,
+              4580,
+              2755
+            ],
+            "color": "#58edab",
+            "label": "F10 L1 OK",
+            "label_xy": [
+              4498,
+              2820
+            ]
+          },
+          {
+            "bounds": [
+              4814,
+              1875,
+              4861,
+              1939
+            ],
+            "color": "#ffb04f",
+            "label": "F11-UP ?",
+            "label_xy": [
+              4784,
+              1790
+            ]
+          },
+          {
+            "bounds": [
+              4795,
+              2620,
+              4848,
+              2755
+            ],
+            "color": "#58edab",
+            "label": "F11 L1 OK",
+            "label_xy": [
+              4765,
+              2780
+            ]
+          },
+          {
+            "bounds": [
+              5080,
+              1871,
+              5125,
+              1936
+            ],
+            "color": "#ffb04f",
+            "label": "F12-UP ?",
+            "label_xy": [
+              5050,
+              1830
+            ]
+          },
+          {
+            "bounds": [
+              5052,
+              2615,
+              5110,
+              2750
+            ],
+            "color": "#58edab",
+            "label": "F12 L1 OK",
+            "label_xy": [
+              5022,
+              2820
+            ]
+          }
+        ],
+        "m3": []
+      },
+      "native_traces": {
+        "m2": [
+          {
+            "points": [
+              [
+                4329.0,
+                1913.0
+              ],
+              [
+                4328.0,
+                2695.0
+              ],
+              [
+                4313,
+                3410
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F09 M2",
+            "label_xy": [
+              4341,
+              2200
+            ]
+          },
+          {
+            "points": [
+              [
+                4565.0,
+                1909.0
+              ],
+              [
+                4554.0,
+                2690.0
+              ],
+              [
+                4545,
+                3400
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F10 M2",
+            "label_xy": [
+              4577,
+              2300
+            ]
+          },
+          {
+            "points": [
+              [
+                4837.5,
+                1907.0
+              ],
+              [
+                4821.5,
+                2687.5
+              ],
+              [
+                4812,
+                3400
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F11 M2",
+            "label_xy": [
+              4849,
+              2400
+            ]
+          },
+          {
+            "points": [
+              [
+                5102.5,
+                1903.5
+              ],
+              [
+                5081.0,
+                2682.5
+              ],
+              [
+                5072,
+                3388
+              ]
+            ],
+            "color": "#6ad8ff",
+            "label": "F12 M2",
+            "label_xy": [
+              5115,
+              2500
+            ]
+          }
+        ],
+        "m3": [
+          {
+            "points": [
+              [
+                4140,
+                1929.1829787234042
+              ],
+              [
+                5150,
+                1915.0
+              ]
+            ],
+            "color": "#d28cff",
+            "label": "B1",
+            "label_xy": [
+              4320,
+              2080
+            ]
+          },
+          {
+            "points": [
+              [
+                4140,
+                2721.2796116504855
+              ],
+              [
+                5150,
+                2695.0
+              ]
+            ],
+            "color": "#58edab",
+            "label": "L1 reviewed",
+            "label_xy": [
+              4300,
+              2890
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

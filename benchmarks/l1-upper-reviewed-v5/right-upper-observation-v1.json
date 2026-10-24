@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "stage": "before_right_eight_upper_interface_review",
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "parent_relations": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-relations-v1.json",
+      "sha256": "f298ffc65ce108d25b1b49f045b7ee6f6d2512bc1fff77bf69b40ce33eaa7ea9"
+    },
+    "initial_upper_AI": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-observation-v1.json",
+      "sha256": "e78574d92bad8277cb32472a8ed36e6b8d00edd27bd2107d1a9f0f46870ce70c"
+    },
+    "submitted_request": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/upper-followup-request-v1.json",
+      "sha256": "292b5a026d2593e564cc956eadee6f1f34820e9729749e55934e3590b79c19f3"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-fanout-reviewed-v4/index.html",
+      "sha256": "c9e8007a39234f51357f78481c5fdab810ce4bccd830f2408e1539c684978f55"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/l1-fanout-reviewed-v4/manifest.json",
+      "sha256": "ddc73da2726643f12b1c86f21fd610260e6f53b680247f929615b21e6a33a2ed"
+    },
+    "path_summary": {
+      "path": "benchmarks/l1-fanout-reviewed-v4/reviewed-path-summary-v1.json",
+      "sha256": "44a743ffe0844110591e728ff0129fb9899578ce833238cdfe56ce3db04654b9"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "current_reviewed_relations": {
+    "path": "benchmarks/l1-upper-reviewed-v5/reviewed-relations-v1.json",
+    "sha256": "39973c2aba879ef343e84428e31591aa8181e9efe66da95c2084f6cf36b33217"
+  },
+  "status": "REVIEW_REQUIRED",
+  "entries": [
+    {
+      "id": "F05-UP",
+      "lower_metal_id": "M2-L1-F05",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F05-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3082,
+        1895,
+        3127,
+        1958
+      ],
+      "native_M2_route_locator": [
+        [
+          3104.5,
+          1926.5
+        ],
+        [
+          3111.5,
+          2710.0
+        ],
+        [
+          3110,
+          3450
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          3110,
+          3450
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F06-UP",
+      "lower_metal_id": "M2-L1-F06",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F06-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3351,
+        1890,
+        3396,
+        1957
+      ],
+      "native_M2_route_locator": [
+        [
+          3373.5,
+          1923.5
+        ],
+        [
+          3376.0,
+          2707.5
+        ],
+        [
+          3370,
+          3440
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          3370,
+          3440
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F07-UP",
+      "lower_metal_id": "M2-L1-F07",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F07-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3694,
+        1885,
+        3740,
+        1950
+      ],
+      "native_M2_route_locator": [
+        [
+          3717.0,
+          1917.5
+        ],
+        [
+          3719.0,
+          2702.5
+        ],
+        [
+          3715,
+          3425
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          3715,
+          3425
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F08-UP",
+      "lower_metal_id": "M2-L1-F08",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F08-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        3918,
+        1884,
+        3962,
+        1947
+      ],
+      "native_M2_route_locator": [
+        [
+          3940.0,
+          1915.5
+        ],
+        [
+          3940.5,
+          2697.5
+        ],
+        [
+          3932,
+          3420
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          3932,
+          3420
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F09-UP",
+      "lower_metal_id": "M2-L1-F09",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F09-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        4306,
+        1880,
+        4352,
+        1946
+      ],
+      "native_M2_route_locator": [
+        [
+          4329.0,
+          1913.0
+        ],
+        [
+          4328.0,
+          2695.0
+        ],
+        [
+          4313,
+          3410
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          4313,
+          3410
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F10-UP",
+      "lower_metal_id": "M2-L1-F10",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F10-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        4542,
+        1877,
+        4588,
+        1941
+      ],
+      "native_M2_route_locator": [
+        [
+          4565.0,
+          1909.0
+        ],
+        [
+          4554.0,
+          2690.0
+        ],
+        [
+          4545,
+          3400
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          4545,
+          3400
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F11-UP",
+      "lower_metal_id": "M2-L1-F11",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F11-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        4814,
+        1875,
+        4861,
+        1939
+      ],
+      "native_M2_route_locator": [
+        [
+          4837.5,
+          1907.0
+        ],
+        [
+          4821.5,
+          2687.5
+        ],
+        [
+          4812,
+          3400
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          4812,
+          3400
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    },
+    {
+      "id": "F12-UP",
+      "lower_metal_id": "M2-L1-F12",
+      "via_layer": "V2",
+      "via_group_id": "V2-L1-F12-UP",
+      "via_source_frame": "m2",
+      "via_source_bounds": [
+        5080,
+        1871,
+        5125,
+        1936
+      ],
+      "native_M2_route_locator": [
+        [
+          5102.5,
+          1903.5
+        ],
+        [
+          5081.0,
+          2682.5
+        ],
+        [
+          5072,
+          3388
+        ]
+      ],
+      "proposed_upper_metal_id": "M3-J-B1",
+      "status": "AI_candidate",
+      "physical_cut_count": null,
+      "human_truth": {
+        "same_M2_continuity_correct": null,
+        "via_identity_correct": null,
+        "destination_correct": null
+      },
+      "lower_terminal_observation": {
+        "native_reference_xy": [
+          5072,
+          3388
+        ],
+        "status": "visible_end_candidate",
+        "V1_M1_interface": "unknown",
+        "additional_V2_scan": "No further clear V2 identified between reviewed L1 group and this visible end; visual scan is not proof of absence.",
+        "nearby_lower_pads": "Not merged by proximity."
+      }
+    }
+  ],
+  "question": "F05-UP至F12-UP这八组上端是否均沿对应M2经V2接到紫色B1？有例外按编号指出；已审L1中段不重问。",
+  "alternatives": [
+    "One or more groups land on adjacent fine M3 instead of B1.",
+    "Some source continuity or landing is unclear."
+  ],
+  "net_edges": [],
+  "complete_network": false,
+  "precise_projection_allowed": false,
+  "limits": [
+    "Only V2 evidence on M2; M1/V1 not inferred from these bright groups.",
+    "Lower terminal observations are not complete-branch or absence approvals.",
+    "No counts or source-to-design matrix."
+  ]
+}

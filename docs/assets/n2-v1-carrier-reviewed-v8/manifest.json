@@ -1,0 +1,40 @@
+{
+  "relations": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/reviewed-relations-v1.json",
+    "sha256": "709543bf04f8f1d0cfc1bc573fc3d7ca52e9281537ce606e5e85e220973e35d8"
+  },
+  "request": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/request-v1.json",
+    "sha256": "bc076ce57472fb064715bf8833a56cc3ebe6d97c20bbd9ac6040af156a91011d"
+  },
+  "verification": {
+    "path": "benchmarks/n2-v1-carrier-reviewed-v8/verification-v1.json",
+    "sha256": "ea175e7d2c7b798c72ef65f1ff4dba7e65ca40a1326866dad4b29294cceb5a50"
+  },
+  "artifacts": [
+    {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/index.html",
+      "sha256": "0d1f395d587a842dcffb3f894fbf17d79436814bc56568e2f1464d4f17be38e7"
+    },
+    {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/m1-detail-marked.png",
+      "sha256": "23c0e749ab9bc2919f36f06b52bc6848923ef2f7dfaeeb8d8547050cc17ec88d"
+    },
+    {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/m1-detail-raw.png",
+      "sha256": "5dc47ce0518d25c48c89a27059ff2e3333e58911d1047252b6af7f7d687d1753"
+    },
+    {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/m1-location.png",
+      "sha256": "279df624bb3d5388b5a1959265a77ab1edcc134b356ec47dfff21d7a97ba7f6f"
+    },
+    {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/m1-wide-marked.png",
+      "sha256": "254ceb5e8b0c018436593d206ce124ff2e62f70e32b9a2fcdc1727376c3d6136"
+    },
+    {
+      "path": "docs/assets/n2-v1-carrier-reviewed-v8/m1-wide-raw.png",
+      "sha256": "ec6dfe3884d9df1db0ab4771f5887e5ab3ccb4868013d8860ee0a8fcddc2612b"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "actor": "AI",
+  "date": "2026-10-24",
+  "status": "SCOPED_CLOSED_WITH_INTERFACE_LOCATIONS_UNKNOWN",
+  "sources": {
+    "groups": {
+      "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v3.json",
+      "sha256": "a343f2155740d2d94c88ccee7b9a4d7be5f3840f27888ef15453ac42e971668c"
+    },
+    "structure": {
+      "path": "benchmarks/mid-ab-structural-hypothesis-v11/structural-observation-v1.json",
+      "sha256": "3d260b1c3fb063f7217eb241a41941898f5fce3ef8709bec8eb0d58f160a8b4e"
+    }
+  },
+  "retained_members": {
+    "A": [
+      "T3",
+      "L2"
+    ],
+    "B": [
+      "T1",
+      "L4"
+    ]
+  },
+  "finding": "M2 staggered upper pads R1/R3/B and lower pads R2/A are compatible with M3-X/B and M3-Y/A. Source order is support only; no unique reliable V2/V1 localization or qualified fine registration establishes each interface.",
+  "action": "Freeze accepted group identities and retain X/Y and return-pad allocation as candidates. Stop further per-hole adjudication in this sample.",
+  "new_human_questions": [],
+  "new_confirmed_interfaces": [],
+  "retired_members_not_reintroduced": [
+    "L3"
+  ],
+  "automatic_network_export_allowed": false
+}

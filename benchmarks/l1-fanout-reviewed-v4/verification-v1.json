@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "PASS_TECHNICAL_ONLY",
+  "path_sha_refs_checked": 82,
+  "human_sources_bound_to_all_20_local_relations": true,
+  "L1_principal_interfaces_deduplicated": 13,
+  "F04_reuses_J01": true,
+  "P_carriers_not_merged_with_L1": true,
+  "new_upper_candidates_not_adopted": 3,
+  "new_upper_truth_fields_all_null": true,
+  "raw_crops_pixel_equal": [
+    "m2-wide",
+    "m2-detail",
+    "m3-wide",
+    "m3-detail"
+  ],
+  "local_html_links_checked": 15,
+  "javascript_syntax_checks": 1,
+  "baseline_files_unchanged": true,
+  "visual_inspection": [
+    "upper-followup/m2-wide-marked.png",
+    "upper-followup/m3-wide-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "code_changed_this_review": false,
+  "prior_code_validation": "38 metal_via_pilot tests and Ruff passed in preceding display-only change; no new source edit or test rerun in this review.",
+  "net_edges": [],
+  "complete_network": false
+}

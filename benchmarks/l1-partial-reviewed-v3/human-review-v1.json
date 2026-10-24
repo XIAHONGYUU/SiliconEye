@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-23",
+  "statement": "1.只能看到F1,2,3这一组接到了条先，上面孔比较多的三组都由V2接到了L1的M3\n2.p0和p5分别接2跟线，中间0,1,4up,6,接到了中间一根，最下面的2,3,4iover接到下面一根，你可以看到紫色显下面还有2根线。\n下次再让我判断麻烦把标注搞大一些，我不好看现在。",
+  "clarification": {
+    "question": "P组编号6及P0/P5是否各接两根的歧义；请核清。",
+    "answer": "其实应该是5,是0,1,4up,5"
+  },
+  "sources": {
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "registry": {
+      "path": "docs/assets/conductive-stack-v2/model.json",
+      "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+    },
+    "initial_AI": {
+      "path": "benchmarks/l1-m2-fanout-v1/initial-ai-observation-v1.json",
+      "sha256": "b85a1ec1579385a52cf508875a5b43286c26cc0ec600bc2b19bc6cfd0b260b58"
+    },
+    "pad_AI": {
+      "path": "benchmarks/l1-left-pad-review-v2/ai-observation-v1.json",
+      "sha256": "ab8558bea45277aab46bf2066e2bf710a59c222728d16da1951f961c1aecf47e"
+    },
+    "submitted_request": {
+      "path": "benchmarks/l1-left-pad-review-v2/request-v1.json",
+      "sha256": "e6a08965c1795d550f7a7de266d08870abfc86ce0c6ef1cd82e5941f97a348f2"
+    },
+    "submitted_page": {
+      "path": "docs/assets/l1-left-pad-review-v2/index.html",
+      "sha256": "ff3c28958ca5456f71d277e48a06842ab71d4fc40f3952f0f7f085656d2ab1db"
+    },
+    "submitted_M2_image": {
+      "path": "docs/assets/l1-left-pad-review-v2/m2-wide-marked.png",
+      "sha256": "8ae02f944eb65784ca176b2f74ff0f8bd3b4f6657873dadfae409c7ff601afdb"
+    },
+    "submitted_M3_image": {
+      "path": "docs/assets/l1-left-pad-review-v2/m3-wide-marked.png",
+      "sha256": "ee090060344fb9a7d7744559c48b59dec6d5ba194faae0ed3a13356bb598fe2c"
+    },
+    "reviewed_D1": {
+      "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/reviewed-route-v1.json",
+      "sha256": "5b57d4c517150f611d259552ee636ad42abd98209260b1d117524a8aa1c2d11e"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "decisions": {
+    "F01-F03": {
+      "ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "via_layer": "V2",
+      "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "connection_confirmed": true
+    },
+    "P_assignments": {
+      "P0": "M3-L1-LOWER-THIN-A",
+      "P1": "M3-L1-LOWER-THIN-A",
+      "P4-UP": "M3-L1-LOWER-THIN-A",
+      "P5": "M3-L1-LOWER-THIN-A",
+      "P2": "M3-L1-LOWER-THIN-B",
+      "P3": "M3-L1-LOWER-THIN-B",
+      "P4-LOW": "M3-L1-LOWER-THIN-B"
+    },
+    "display_requirement": "Large labels and numbered boxes; keep surrounding context."
+  },
+  "interpretation": "更正后按明确枚举落实：0/1/4up/5接中间细M3；2/3/4lower接最下方细M3。此前“6”更正为5；不把P0/P5解释为各自短接两根M3。",
+  "limits": [
+    "F04-F12 not visible in the judged P-group view; remain unreviewed.",
+    "No exact hole counts, projection, common-canvas placement, or full-network approval.",
+    "P0 source geometry clipped; off-image extent still unknown."
+  ]
+}
