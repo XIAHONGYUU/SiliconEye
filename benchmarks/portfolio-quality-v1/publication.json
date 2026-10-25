@@ -1,5 +1,59 @@
 {
-  "status": "local_verified_pending_publication",
+  "status": "published_and_verified",
   "date": "2026-10-25",
-  "baseline": "53a1dcf"
+  "url": "https://xiahongyuu.github.io/silicon-eye/",
+  "repo": "https://github.com/XIAHONGYUU/silicon-eye",
+  "main_content_commit": "535e159ec805d0f9585449f3f0bf0548c1747c63",
+  "site_commit": "6417cc93abd213ccbbee8334e4ded80cf9add891",
+  "pages_build_commit": "6417cc93abd213ccbbee8334e4ded80cf9add891",
+  "pages_source": {
+    "branch": "gh-pages",
+    "path": "/"
+  },
+  "pages_build_status": "built",
+  "metadata": {
+    "description": "AI-assisted analog IC reconstruction from multilayer die photos: rule-constrained geometry, device indexing and cross-layer review.",
+    "homepage": "https://xiahongyuu.github.io/silicon-eye/",
+    "topics": [
+      "ai-assisted-development",
+      "analog-ic",
+      "computer-vision",
+      "eda",
+      "human-in-the-loop",
+      "python",
+      "reverse-engineering"
+    ]
+  },
+  "github_readme_bytes_match": true,
+  "public_root_matches": true,
+  "public_files_sha256": {
+    "style.css": "e3f9edaf7f019f6b72a392c768d0e2e8d91132ccbedf9fd32ad668fcb2717e3d",
+    "app.js": "23a07257ce148607b99e21dd00c44cbdfc7a070b94562ea7066918dfcbdfe783",
+    "provenance.json": "dfda341a947f9d106395a58322467b90043016ed45db9ea1b04715dcff2ff71a",
+    "quality-report.json": "cd9bb362e0d622407114edd5c8adf6138e84a3f4f24b724a46f7f13b5824a677",
+    "favicon.svg": "fff2495b4260eb52fe681098547520bbe92d1f0a0570a584bda7c609974de945",
+    "index.html": "0c9c29dfa94128815c6841b167fb260b4d4c2d4f0a51414d0de319bb53600434",
+    "assets/metals.webp": "af8482715d4f125cc1ba983e46e2e71a777874f6bff7490528fcdb76a0eb5200",
+    "assets/schematic.svg": "6c47bb0a12188b562b8e42150b3c576eede06b47befb28525b77ffbcd65cc152",
+    "assets/materials.webp": "3fa91d1fe43c50212a4258d12947471cc7c2a1d1320c22283067f9a9a63c9f1a",
+    "assets/carrier-before.svg": "eeed239daf6753433c19410da6c6011e5199a2e0402b1a529a551c0d63385e41",
+    "assets/device-m1.webp": "c50d5f6837e89c61b1595b498efc8e6e19dcd3d99550c166c895e463ccead27c",
+    "assets/carrier-m2.webp": "3c9566f9e6d6b8aa1f228e441f9f4233b0314626f2fadfb617d8e8ccd8415376",
+    "assets/carrier-after.svg": "d20b915e3ceb90b0c74da8e391f5c3d5e733ee454fceaf542a9d72583054b2f4",
+    "assets/device-poly.webp": "6a2654f07831ab5caba6696222ff0d19af60c225bafa43e0ea92406defe3a2f2",
+    "assets/quality.js": "031abef542133840f5730e1b8530e4f7f5d1e26c70ee4bd96035caffb24fbd8c",
+    "assets/carrier-m1.webp": "130a98e8a17b61c856a136a3df0308abd6ffd1a97fbb92f042263c4c461be14c",
+    "assets/views.js": "cb7b5cecb220d60f059c3eaa62f399e2ae7f61f6f1ac38e7a26df2a30d58c539",
+    "assets/device-aa.webp": "d6d81f2575e0af12e322677612210804de0467e57903597531cbdf0213367e98",
+    "assets/source.webp": "9670ab36b7f4831193d24f825954f289fdd47a866ce1efb9335cf11d4fee63af",
+    "assets/materials.svg": "8f3f0fd99b0651e9e5ff53a949b5634cc0dc0056e33374f0c5b39c3881bce897",
+    "assets/overview.webp": "51ec876c0c474e13c8533c1b9d376fab353bf12d133e3668242948c23fbc9cb9",
+    "assets/data.js": "c1646aa9062eea7515899682d788f58c93059301a5b44b7d3dfc0167e393f439",
+    "assets/metals.svg": "58028f4e8117a704912e7383ab44766e8849bd64e82c84f2e68ef980a2d31575"
+  },
+  "http_files_checked": 23,
+  "ci_status": "configuration_reviewable_in_docs; online_workflow_not_enabled",
+  "ci_blocker": "GitHub OAuth credential lacks workflow scope; server rejected workflow creation",
+  "ci_local_sparse_tests_passed": 13,
+  "scope": "Historical evidence presentation; no new Agent inference; gh-pages contains only site/"
 }

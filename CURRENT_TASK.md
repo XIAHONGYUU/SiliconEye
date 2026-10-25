@@ -2,7 +2,7 @@
 
 ## 当前目标与授权
 
-当前执行用户批准的展示优化：先整理六孔承载纠错案例，再统一8个历史任务与结果卡，接入首页，补充照片来源说明和轻量CI。基线为53a1dcf，允许修改site、精选文档、评测整理脚本/清单及CI，并更新现有GitHub展示。原始照片、物理模型和人工裁决保持原样；历史案例不标为盲测，新模型成绩未测。完成标准：证据哈希、统计口径、网页交互与CI检查通过，发布后核对线上内容。
+用户批准的质量展示优化主体已完成并上线：六孔承载纠错案例、8任务历史目录与结果卡、来源说明均发布。内容提交535e159，Pages提交6417cc9；实际构建成功，23个公开文件及README与本机一致。原图、模型和人工裁决未改；历史任务不作为新盲测成绩。仅线上CI启用受阻：GitHub当前OAuth凭证缺workflow权限，配置已放在docs/portfolio/ci-workflow.yml供审阅，本机13项对应检查通过。
 
 [展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/silicon-eye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [首轮整理报告](docs/reviews/2026-10-25-portfolio.md) · [质量优化报告](docs/reviews/2026-10-25-quality-portfolio.md)。
 
@@ -51,7 +51,9 @@
 
 ## 唯一下一步
 
-本轮质量展示、8任务目录、来源说明与轻量CI已完成本地验证（37项相关测试、13项稀疏环境检查、桌面/手机交互）；GitHub因当前OAuth凭证缺workflow权限拒绝创建CI；配置保留在docs/portfolio/ci-workflow.yml，线上CI未启用。下一步发布其余展示并核对公网内容。完成后返回**V1/V2重叠关系与Q2整组占用比例的局部复核**；不重问已审连接，不因展示或测试通过批准具体几何，不扩全图或重做材料层。
+待用户补齐GitHub凭证的workflow范围后，将已备好的CI配置放回.github/workflows/portfolio.yml，推送并核对真实运行。用户可在本机执行`gh auth refresh -h github.com -s workflow`完成授权；不使用本机通过代替在线结果。展示主体已完成，不重复发布。
+
+原开发待接续项仍为**V1/V2重叠关系与Q2整组占用比例的局部复核**；不重问已审连接，不因展示或测试通过批准具体几何，不扩全图或重做材料层。
 
 重放入口：
 ```bash

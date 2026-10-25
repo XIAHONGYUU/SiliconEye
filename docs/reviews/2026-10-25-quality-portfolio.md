@@ -20,6 +20,10 @@
 
 [本轮检查记录](../../benchmarks/portfolio-quality-v1/verification.json) · [浏览器记录](../../benchmarks/portfolio-quality-v1/browser-verification.json) · [展示QA](../../benchmarks/portfolio-quality-v1/visual-review-v2.md) · [发布/CI回执](../../benchmarks/portfolio-quality-v1/publication.json)。
 
+## 实际发布
+
+展示内容已推送至main的535e159，Pages为6417cc9并构建成功。根页面及23个公开文件HTTP读取成功、SHA与本机一致；远端README字节一致。发布回执保存实际提交和CI待启用原因；后续回执提交不改变展示内容。
+
 ## 在线CI权限阻塞
 
 GitHub拒绝推送工作流，明确要求当前OAuth凭证具备`workflow`权限。CI配置移到docs/portfolio/ci-workflow.yml供审阅，本机对应13项检查通过；线上CI尚未启用，不用本机通过代替在线结果。展示和评测数据继续正常发布。
