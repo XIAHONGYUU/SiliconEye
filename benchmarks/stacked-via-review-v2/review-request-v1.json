@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/stacked-via-review-v2/observations-v1.json",
+    "sha256": "c53ad61e56c88e473eed137c2043439d9063fead97eec46dd8c56d33a4c2167e"
+  },
+  "frames": [
+    "m1",
+    "m2",
+    "m3"
+  ],
+  "reviews": [],
+  "limits": [
+    "只覆盖指定导体片段，U1/U3右侧转角未建模。",
+    "A/B详细接口仍未知，沿用已审分组。",
+    "孔组支持区不是实测切孔阵列，未采用共同几何。",
+    "完整网络尚未完成。"
+  ],
+  "source_panel_spec": {
+    "path": "benchmarks/five-layer-geometry-v1/source-panels-v1.json",
+    "sha256": "865446f165a29217e6492e4534ab277601aac311d1c1cc496befee7274cf0cd0"
+  },
+  "parent": {
+    "path": "docs/assets/five-layer-geometry-v1/review/manifest.json",
+    "sha256": "024bd456918d791980ac082688d55db89b72bb1e4eeb53a420e4f17fde885ad4"
+  },
+  "allowed_changed_ids": [
+    "SUPPORT-J-M2-V2-M3-B1"
+  ],
+  "revision_evidence": {
+    "path": "benchmarks/stacked-via-review-v2/proposal-v1.json",
+    "sha256": "b23916d3a19363785b220fba45a729ad14ac1f032f63f88ba4c99e52f7c21f5a"
+  },
+  "source_assets": {
+    "m1": {
+      "wide_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m1-wide-raw.png",
+        "sha256": "1c93d625c38deffb761305d91ee4bf62642278105c9262a48dccb4d6f5ad7f60"
+      },
+      "wide_marked": {
+        "path": "docs/assets/five-layer-geometry-v1/source-views/review-m1-wide-marked.png",
+        "sha256": "de81b4218524fb10e11195679f9ac6d212b767b2cc25116da69037625df92065"
+      },
+      "detail_raw": {
+        "path": "docs/assets/five-layer-geometry-v1/source-views/review-m1-detail-raw.png",
+        "sha256": "dc3125d88411e559c3051f9fbc87628eb6a14caf8e10c13b988c3fda2ee2cf28"
+      },
+      "detail_marked": {
+        "path": "docs/assets/five-layer-geometry-v1/source-views/review-m1-detail-marked.png",
+        "sha256": "f7f51e966f6b299f0fe42d21a3494918b0a43c19f862aa0c637fa25857e54eb9"
+      }
+    },
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m2-wide-raw.png",
+        "sha256": "721ebd5f585f42d71d95f35ec146d8df6f0c1fcba8a690b76de85f3c4d6940ad"
+      },
+      "wide_marked": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m2-wide-marked.png",
+        "sha256": "7bd035fea845d1163d8797c55784cacdee1e2298df792293d323c5d514d371b4"
+      },
+      "detail_raw": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m2-detail-raw.png",
+        "sha256": "4b77665b7306e19a3dd07e48e7c2366672a359627456a0aa2b4b92fc0195af33"
+      },
+      "detail_marked": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m2-detail-marked.png",
+        "sha256": "57d77ccbafaa46159f9518107ceeed24473df97c107bcdbc01fa85be79843c06"
+      }
+    },
+    "m3": {
+      "wide_raw": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m3-wide-raw.png",
+        "sha256": "f315b797811da0540b20bfef07c2735c6972abc729ce8828b8324d99d92324ce"
+      },
+      "wide_marked": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m3-wide-marked.png",
+        "sha256": "696b1d1a95fb46a4c2a8c606ca85f691d4996243ba23a73d50f74a1d71c62f9a"
+      },
+      "detail_raw": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m3-detail-raw.png",
+        "sha256": "f36fdc74cfaeb5d4652dc81e2bf14e1cfe1a38ae4050962526563d1b3a0b9ae0"
+      },
+      "detail_marked": {
+        "path": "docs/assets/medium-v2-array-v1/source-views/m3-detail-marked.png",
+        "sha256": "ad466bb137a4f6ed5e89e615c502d714176ad38a1a8d585099000c3e2b0e6a89"
+      }
+    }
+  }
+}

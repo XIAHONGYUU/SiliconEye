@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "same_layer_gap_checks_preserved": true,
+  "cross_layer_overlap_permitted": true,
+  "source_identity_policy_unchanged": true,
+  "original_photos_and_joint_v5_unchanged": true,
+  "geometry_coordinates_remain_candidates": true,
+  "automatic_net_export": false,
+  "github_pushed_this_turn": false,
+  "browser_interaction_tested": false,
+  "tests": {
+    "unique_passed": 149,
+    "batch_1": 101,
+    "batch_2": 47,
+    "additional_new_test": 1,
+    "repeated_stacked_tests": 8
+  },
+  "pdk_reference": {
+    "url": "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_07_15.html",
+    "checked": "2026-10-25",
+    "rules": [
+      "Vn.5",
+      "stack definition note 2"
+    ],
+    "scope": "stacked-via concept reference; not chip process identification or numerical DRC"
+  },
+  "review": {
+    "actual_cut_projection_intersection_area": 72.0,
+    "units": "relative_design_px_squared",
+    "minimum_enclosures": {
+      "SUPPORT-J-M1-P08-V1-M2-J01": {
+        "M1-P08": 4.5,
+        "M2-J01": 1.5
+      },
+      "SUPPORT-J-M2-V2-M3-B1": {
+        "M2-J01": 1.5,
+        "M3-J-B1": 3.9999999999999996
+      }
+    },
+    "approved_connections_exact": true,
+    "V1_model_exact": true,
+    "changed_object_ids": [
+      "SUPPORT-J-M2-V2-M3-B1"
+    ],
+    "input_hashes": 126,
+    "artifact_hashes": 4,
+    "source_crop_pixels_revalidated": true
+  },
+  "independent": {
+    "actual_cut_projection_intersection_area": 90.0,
+    "units": "relative_design_px_squared",
+    "minimum_enclosures": {
+      "IT1-V1-A": {
+        "IT1-M1-RING": 2.0,
+        "IT1-M2-B": 2.0
+      },
+      "IT1-V2-B": {
+        "IT1-M2-B": 2.0,
+        "IT1-M3-BUS": 1.0
+      }
+    },
+    "approved_connections_exact": true,
+    "V1_model_exact": true,
+    "changed_object_ids": [
+      "IT1-M2-B",
+      "IT1-V2-B"
+    ],
+    "input_hashes": 42,
+    "artifact_hashes": 4,
+    "source_crop_pixels_revalidated": true,
+    "V2_group_M2_width_ratio": 0.8947368421052632,
+    "V2_group_M2_height_ratio": 0.8108108108108109,
+    "human_V2_count": 6,
+    "exact_new_geometry_human_approved": false
+  },
+  "local_links_checked": 71,
+  "javascript_syntax_checks": 3,
+  "svg_documents_checked": 10,
+  "ruff": "PASS",
+  "skill_format_validation": "PASS",
+  "code_hashes": {
+    "silicon_eye/metal_via_pilot.py": "799c3398cd648c72560e6960ec75bbbb86b9c01a974ad7621c2f2b404d130413",
+    "silicon_eye/conductive_medium.py": "778329dbdb35469c556300bf6a8923df595c1400736596978694ff45ba0179fe",
+    "silicon_eye/conductive_workflow.py": "878cf51c4f0c1072033ae7f90fdbb0f80c4f07b43944f131f02e1e3d06461b5b",
+    "silicon_eye/conductive_quality.py": "f1fa96d298b7db177fcf8fefca73ba6e2e21dfda73c3e48420ca3074c350b31f"
+  },
+  "current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-25-stacked-via-review.md",
+    "original_sha256": "00bdc9d9d0563b37a39fac580140e223439852292ea48a37e33aaac0b07250db",
+    "original_bytes": 8418,
+    "exact": true
+  }
+}

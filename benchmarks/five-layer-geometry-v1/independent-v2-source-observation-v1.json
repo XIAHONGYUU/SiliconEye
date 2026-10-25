@@ -1,0 +1,74 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "IT1-V2-B",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    2532,
+    670,
+    2580,
+    740
+  ],
+  "rows": 3,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        2544,
+        679
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        2566,
+        679
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        2544,
+        703
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        2566,
+        703
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        2544,
+        727
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        2566,
+        727
+      ]
+    }
+  ],
+  "basis": "Native M2 broad B pad has two brightness columns and three rows; observed here independently of the P08 array. M3 is carrier context only.",
+  "alternatives": [
+    "Screen texture/blur may affect exact count and edges; preserve count as AI candidate."
+  ]
+}

@@ -25,7 +25,8 @@ from .conductive_medium import source_order_audit
 from .conductive_quality import inherited_group_facts, quality_summary, source_shape_audit
 from .geometry_reconstruction import digest
 from .metal_reconstruction import geometry_audit
-from .metal_via_pilot import interface_audit, source_panels
+from .metal_via_pilot import group_via_budget, interface_audit, observed_array_audit, source_panels
+from .metal_via_pilot import regular_group_cuts as via_cuts
 from .review_package import Inputs
 
 
@@ -48,34 +49,6 @@ def carrier_correction(review, before, after):
     if all(before[k] == after[k] for k in ('lower_metal_id', 'upper_metal_id')):
         raise ValueError('Carrier correction must actually change a carrier')
     return True
-
-
-def via_cuts(cut, budget):
-    """Build an explicit relative array; its footprint must not shrink to one proxy."""
-    array = cut.get('cut_array_candidate')
-    if not array:
-        if cut.get('count_evidence'):
-            raise ValueError('Observed multi-cut group requires an explicit group footprint')
-        return [cut]
-    rows, columns = array['rows'], array['columns']
-    if (type(rows) is not int or type(columns) is not int or min(rows, columns) < 1
-            or rows * columns > 1000):
-        raise ValueError('Invalid via array dimensions')
-    origin = np.asarray(array['origin_xy'], dtype=float)
-    if origin.shape != (2,) or not np.isfinite(origin).all():
-        raise ValueError('Invalid via array origin')
-    size, pitch = budget['cut_size_px'], budget['pitch_xy']
-    cuts = []
-    for row in range(rows):
-        for column in range(columns):
-            x, y = origin + np.asarray(pitch) * [column, row]
-            cuts.append(dict(cut, id=f'{cut["id"]}/C{len(cuts)+1:02}',
-                             bounds=[float(x), float(y), float(x+size), float(y+size)]))
-    envelope = [min(c['bounds'][0] for c in cuts), min(c['bounds'][1] for c in cuts),
-                max(c['bounds'][2] for c in cuts), max(c['bounds'][3] for c in cuts)]
-    if not np.allclose(envelope, cut['bounds'], atol=1e-6, rtol=0):
-        raise ValueError('Via group footprint does not enclose the entire array')
-    return cuts
 
 
 def candidate_model(sample, snapshot):
@@ -120,8 +93,9 @@ def candidate_model(sample, snapshot):
                 or (native[2:] <= native[:2]).any()
                 or (native[2:] > snapshot['source_wh']).any()):
             raise ValueError('Invalid native via support')
-        cuts = via_cuts(cut, sample['via_budget'])
-        audit = interface_audit(cuts, shapes[lo], shapes[hi], sample['via_budget'],
+        group_budget = group_via_budget(cut, sample['via_budget'])
+        cuts = via_cuts(cut, group_budget)
+        audit = interface_audit(cuts, shapes[lo], shapes[hi], group_budget,
                                 layer_stack=(lower_layer, layer, upper_layer))
         if audit['status'] != 'PASS':
             raise ValueError('Via enclosure/spacing gate failed')
@@ -241,7 +215,14 @@ def prepare(root, request):
     baseline = inputs.document(snapshot['conductive_layers'])
     for ref in snapshot['source_photos'].values():
         inputs.read(ref)
+    observed_arrays, count_evidence_docs = {}, {}
     for cut in sample['interfaces']:
+        if cut.get('array_source_evidence') and sample['kind'] != 'continuous_conductive_medium':
+            observation = inputs.document(cut['array_source_evidence'])
+            inputs.evidence(observation)
+            observed_arrays[cut['id']] = observed_array_audit(
+                observation, cut, snapshot['source_photos'][cut['source_frame']],
+                cut['id'], cut['layer'])
         if cut.get('count_evidence'):
             evidence = inputs.human(cut['count_evidence'])
             array = cut.get('cut_array_candidate', {})
@@ -250,6 +231,16 @@ def prepare(root, request):
                     or evidence['observed_cut_count'] != array.get('rows', 0)
                     * array.get('columns', 0)):
                 raise ValueError('Via array count differs from bound human evidence')
+            if evidence.get('kind') == 'via_group_geometry_feedback':
+                submitted = inputs.document(evidence['sources']['submitted_request'])
+                previous = inputs.document(submitted['sample'])
+                old = next((c for c in previous['interfaces'] if c['id'] == cut['id']), None)
+                if (old is None or signature(old) != signature(cut)
+                        or evidence.get('scope_signature') != signature(cut)
+                        or evidence['sources'].get(cut['source_frame'])
+                        != snapshot['source_photos'][cut['source_frame']]):
+                    raise ValueError('Geometry feedback count belongs to another interface/source')
+            count_evidence_docs[cut['id']] = evidence
     legacy = sample['kind'] == 'continuous_conductive_medium'
     shape = source_shape_audit(sample['features_by_layer'])
     if shape['status'] == 'FAIL':
@@ -268,6 +259,8 @@ def prepare(root, request):
         if identity['status'] != 'PASS' or order['status'] != 'PASS':
             raise ValueError('Source identity/order gate failed')
         audits.update(source_identity=identity, source_order=order)
+        if observed_arrays:
+            audits['array_source_observations'] = observed_arrays
     parent = parent_request = None
     if request.get('parent'):
         parent, parent_request = load_parent(inputs, request['parent'])
@@ -394,6 +387,15 @@ def prepare(root, request):
     inherited = inherited_group_facts(inputs, baseline, model)
     if inherited:
         model['inherited_group_facts'] = inherited
+    additional_counts = []
+    for cut in sample['interfaces']:
+        evidence = count_evidence_docs.get(cut['id'])
+        if evidence and evidence.get('kind') == 'via_group_geometry_feedback':
+            additional_counts.append(dict(support_id=cut['id'],
+                                          cut_count=evidence['observed_cut_count'],
+                                          human_review=cut['count_evidence']))
+    if additional_counts:
+        model['observed_group_count_facts'] = additional_counts
     report = dict(status='TECHNICAL_PASS_WITH_SCOPED_REVIEWS_AND_UNKNOWNS', audits=audits,
                   object_counts={k: len(v) for k, v in model['objects_by_layer'].items()},
                   pending_interface_ids=pending, deferred_unknown_ids=deferred,
@@ -408,19 +410,7 @@ def prepare(root, request):
 def page(model, report, sample, request, output, root):
     w, h = model['canvas_wh']
     drawing = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+f'{w} {h}">'
-    view = copy.deepcopy(model)
-    for layer in ('V1', 'V2'):
-        rendered = []
-        for obj in model['objects_by_layer'][layer]:
-            if obj.get('candidate_cut_bounds'):
-                for i, bounds in enumerate(obj['candidate_cut_bounds'], 1):
-                    rendered.append(dict(obj, id=f'{obj["id"]}/C{i:02}',
-                                         kind='via_cut_geometry_candidate',
-                                         geometry=geometry(box(*bounds))))
-            else:
-                rendered.append(obj)
-        view['objects_by_layer'][layer] = rendered
-    drawing += svg_layers(view, [0, 0, w, h])
+    drawing += svg_layers(model, [0, 0, w, h])
     for layer, features in sample['features_by_layer'].items():
         drawing += f'<g data-layer="{layer}" fill="white" font-size="24">'
         for f in features:
@@ -482,7 +472,9 @@ def page(model, report, sample, request, output, root):
         count = '未知' if row['human_cut_count'] is None else str(row['human_cut_count'])
         if row['inherited_group_fact']:
             fact = row['inherited_group_fact']
-            count += f'（已审{fact["rows"]}×{fact["columns"]}，尚未迁移完整几何）'
+            status = ('已迁移设计阵列，来源尺寸待验收' if fact['geometry_ported']
+                      else '尚未迁移完整几何')
+            count += f'（已审{fact["rows"]}×{fact["columns"]}，{status}）'
         representation = ('显式设计阵列（仍是候选）' if row['design_cut_count'] else '孔组代理框')
         bearing = '逐孔设计检查通过' if row['design_cut_count'] else '未评估，单框不能代表整组'
         carrier = '已审局部连接' if row['carrier_status'] == 'HUMAN_CONFIRMED_SCOPED' else '未确认'

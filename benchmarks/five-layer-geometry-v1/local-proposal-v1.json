@@ -1,0 +1,19 @@
+{
+  "actor": "AI",
+  "reason": "Replace P08 V1 proxy by a source-observed array and add only the connected corner pad visible on M1. Do not alter carrier identity, existing skeleton/widths, V2 array, budgets or approvals.",
+  "changed_object_ids": [
+    "M1-P08",
+    "SUPPORT-J-M1-P08-V1-M2-J01"
+  ],
+  "sources": {
+    "source_observation": {
+      "path": "benchmarks/five-layer-geometry-v1/p08-v1-source-observation-v1.json",
+      "sha256": "1815b301010a5b64cc07c232e27f3a76476eb622a5ae58d2b1ea396cd387a4ba"
+    },
+    "parent": {
+      "path": "docs/assets/medium-v2-array-v1/review/manifest.json",
+      "sha256": "8710d654f67efc90ea272dbaead0aefec63ead691f957f2a77e30acc7a71d9a8"
+    }
+  },
+  "geometry_status": "candidate_pending_scoped_geometry_review"
+}

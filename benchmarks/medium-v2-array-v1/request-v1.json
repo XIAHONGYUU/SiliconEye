@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/medium-v2-array-v1/observations-v1.json",
+    "sha256": "db7701107001609a0e0a9f1bb9a36a7b970e7f8df963ea1a9390d442aee6f3c0"
+  },
+  "frames": [
+    "m1",
+    "m2",
+    "m3"
+  ],
+  "reviews": [],
+  "limits": [
+    "只覆盖指定导体片段，U1/U3右侧转角未建模。",
+    "A/B详细接口仍未知，沿用已审分组。",
+    "孔组支持区不是实测切孔阵列，未采用共同几何。",
+    "完整网络尚未完成。"
+  ],
+  "source_panel_spec": {
+    "path": "docs/assets/conductive-medium-source-review-v2/source-inspection/request.json",
+    "sha256": "cbd8c2411dfa8722e60c149c4d07893eb95c3137664dbfc9e310154108095842"
+  },
+  "source_assets": {
+    "m1": {
+      "wide_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m1-wide-raw.png",
+        "sha256": "1c93d625c38deffb761305d91ee4bf62642278105c9262a48dccb4d6f5ad7f60"
+      },
+      "wide_marked": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m1-wide-marked.png",
+        "sha256": "e890adf898d7e4fa27a76eeaeaf189977e01ce976a4dd6bc38c15fed8276c14e"
+      },
+      "detail_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m1-detail-raw.png",
+        "sha256": "9304cb3dd93d9338f46a3a7febb3d511a5b56bd1a079a18972dd92f785552efc"
+      },
+      "detail_marked": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m1-detail-marked.png",
+        "sha256": "d091f56983b7c55e754b402710f77241c9539e25f378b2bc53593fcea574629b"
+      }
+    },
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m2-wide-raw.png",
+        "sha256": "721ebd5f585f42d71d95f35ec146d8df6f0c1fcba8a690b76de85f3c4d6940ad"
+      },
+      "wide_marked": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m2-wide-marked.png",
+        "sha256": "2bc299a920ea9a7dc6fff4e7d5de2c8c10d7f5768f6db3db86ee9b603ceabbb8"
+      },
+      "detail_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m2-detail-raw.png",
+        "sha256": "e27a0a6091a03e8607853761965b4c70b42149b3b51e170d7bf6696dad1ea1d7"
+      },
+      "detail_marked": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m2-detail-marked.png",
+        "sha256": "39a8e6044df510098d84ee35f9852f619449d05fb18519c4fab1a85901f3e705"
+      }
+    },
+    "m3": {
+      "wide_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m3-wide-raw.png",
+        "sha256": "f315b797811da0540b20bfef07c2735c6972abc729ce8828b8324d99d92324ce"
+      },
+      "wide_marked": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m3-wide-marked.png",
+        "sha256": "13f2dae74eb3171ad78699edc5806d76717c1b248e0170b0616493624b2b1370"
+      },
+      "detail_raw": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m3-detail-raw.png",
+        "sha256": "653318fa5ec3abce3de0590327645b0568c3d466ad41878f93005111825fddff"
+      },
+      "detail_marked": {
+        "path": "docs/assets/conductive-workflow-trial-v1/main-source/m3-detail-marked.png",
+        "sha256": "6b26d1b7b7f81e04bb81c6a5ae3151730d4dbb4733543749ade92db699d87f82"
+      }
+    }
+  },
+  "parent": {
+    "path": "docs/assets/conductive-quality-review-v1/review-medium/manifest.json",
+    "sha256": "99a1fff8a251d67411200e78a27610b2f24889ac5bae8e34e7b3172384c94b3b"
+  },
+  "allowed_changed_ids": [
+    "SUPPORT-J-M2-V2-M3-B1"
+  ],
+  "revision_evidence": {
+    "path": "benchmarks/medium-v2-array-v1/array-migration-proposal-v1.json",
+    "sha256": "d4df36e0d2b2a81ace0babe32ecd6938e83ddbfbef247460069a0ecacbc9f703"
+  }
+}

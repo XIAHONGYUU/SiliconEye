@@ -3,7 +3,7 @@ name: silicon-eye-metal-reconstruction
 description: Reconstruct or locally revise regular M1/M2/M3 metal candidates from Silicon Eye photographs, preserving reviewed interfaces and unknowns through the unified review workflow. Trial skill for evidence-guided geometry reconstruction; not autonomous segmentation, full-net tracing or canonical GDS adoption.
 ---
 
-# 金属重建（仓库内试用 v1）
+# 金属重建（仓库内限定试用 v2）
 
 定位含CURRENT_TASK.md的项目根，读取当前快照、批准、未知及目标范围。复用已审结果；评审窗口不是切断导体的边界。现已验证M1/M2/M3及相邻V1/V2的小范围配置，不将它扩为所有工艺、全画幅或陌生芯片准确率保证。
 
@@ -23,10 +23,16 @@ description: Reconstruct or locally revise regular M1/M2/M3 metal candidates fro
 .venv/bin/python -m silicon_eye.conductive_workflow --request REQUEST.json --output runs/NEW_DIR
 ```
 
-当前样例：`benchmarks/conductive-quality-review-v1/medium-request-v1.json`、`benchmarks/conductive-quality-review-v1/independent-request-v1.json`。旧trial/main含已查出的R-M2-3反向折线，只作负例历史；旧独立候选窄A承载已被实际人工更正，不作为当前起点。先读请求及当前状态，输出必须用新目录，原图/冻结包不改。固定执行规则检查来源、正交、间距、孔组包围与变化范围；硬失败只交diagnostic.json，不能采用失败几何。
+已验证接续样例：`benchmarks/five-layer-geometry-v1/review-request-v1.json`及同目录`independent-request-v1.json`。实际工作基线仍由CURRENT_TASK指定。旧trial/main含已查出的R-M2-3反向折线，只作负例历史；旧独立候选窄A承载已被实际人工更正，不作为当前起点。先读请求及当前状态，输出必须用新目录，原图/冻结包不改。固定执行规则检查来源、正交、间距、孔组包围与变化范围；硬失败只交diagnostic.json，不能采用失败几何。
+
+完整孔组放不进既有金属时，先回查照片是否有局部扩宽、拐角承载或错误对应。照片支持的局部扩宽可用现有`local_parts`矩形并入同一导体，附来源范围和依据，保留其他骨架/宽度；不为凑包围整体拉宽金属。局部修订仍经过同层间距与完整孔组包围门，几何候选单独送审，不倒改旧连接批准。P08样例验证了这一入口；未验证任意复杂多边形或全图自动重建。
+
+同一M2块可同时承载下方V1和上方V2，两组投影可以重叠。不要把“不同物理孔、不能当配准同孔”误解为“设计位置必须分离”。检查整组孔与金属的相对宽高占用；若固定模板把孔画得很小或把短承载块拉长，回查原图后仅修该组/该金属，并保留原生锚点及已审连接。跨层重叠用透明/轮廓和单层开关显示，不能为避免遮挡移动几何。
 
 父包按manifest绑定；接续自动继承接口审批，检查U3等已审端子不丢失。人工裁决只问影响身份/连接的新歧义，不重复问已审接口，也不逐孔计数代替连接判断。未知不等于断开，可标`deferred_unknown_ids`继续其他工程工作。
 
 交付统一复核页、候选模型、质量门报告和来源manifest，说明变化ID、保留批准和未覆盖范围。现有试用入口不修改共同v5/AA/POLY/CT，不自动导网表、推送或安装全局skill。质量门PASS不是物理真值/真实PDK DRC；验证范围见[试用报告](../../docs/reviews/2026-10-24-conductive-workflow-trial.md)。
 
 质量交付要分别列出：程序检查、声明来源形状、已审承载、孔组表示/尺寸资格、可见范围与未知端部。11/38已审清单记录不是照片覆盖率；规则图包围PASS、零待裁决或端子闭合均不能表述成完整几何验收。更改金属以容纳孔组只是一份AI提案，不能反过来证明照片支持该边界。按[本轮复查](../../docs/reviews/2026-10-24-conductive-quality-review.md)使用当前入口，不重审已批准连接。
+
+限定试用验收以已有批准不丢失、来源可回查、局部几何和隔离成立、跨区域复用同一命令为依据；数量/照片逐像素匹配不清楚但不影响承载时可保留未知。下一批按直线阵列、拐角承载、短支路、宽母线等结构选代表样本，避免每处新增脚本或重审整批。当前仅同一芯片的空间迁移与回归；几何尚待审，不能据此正式采用共同GDS或声称陌生芯片效果。

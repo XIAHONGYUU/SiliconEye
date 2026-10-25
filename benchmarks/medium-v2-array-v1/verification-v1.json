@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "github_snapshot": "86bd6a27c0ee2b57148ef18d83331e18567ec664",
+  "github_remote_verified_before_geometry": true,
+  "array_shape_rows_columns": [
+    3,
+    4
+  ],
+  "explicit_design_cut_count": 12,
+  "proxy_groups_remaining": 10,
+  "changed_model_object_ids": [
+    "SUPPORT-J-M2-V2-M3-B1"
+  ],
+  "all_human_connections_groups_and_U3_exact": true,
+  "all_native_anchors_unchanged": true,
+  "minimum_design_enclosure_px": {
+    "M2-J01": 1.5,
+    "M3-J-B1": 18.0
+  },
+  "minimum_budget_enclosure_px": 1,
+  "native_group_centers_within_declared_source_window": true,
+  "old_supported_medium_and_independent_model_report_equal": true,
+  "model_and_report_reload_equal": true,
+  "manifest_input_hashes_checked": 124,
+  "artifact_hashes_checked": 4,
+  "source_crop_pixels_verified_by_prepare": true,
+  "local_links_checked": 76,
+  "svgs_parsed": 3,
+  "javascript_syntax_checks": 2,
+  "current_task_archive_bytes_equal": true,
+  "current_task_lines": 62,
+  "canonical_photos_and_material_snapshot_unchanged": true,
+  "tests_batches": [
+    {
+      "files": [
+        "test_medium_v2_array",
+        "test_conductive_quality",
+        "test_conductive_workflow",
+        "test_conductive_medium"
+      ],
+      "passed": 85,
+      "seconds": 48.02
+    },
+    {
+      "files": [
+        "test_metal_via_pilot",
+        "test_conductive_layers"
+      ],
+      "passed": 47,
+      "seconds": 112.09
+    }
+  ],
+  "total_distinct_tests_passed": 132,
+  "earlier_combined_run": {
+    "exit_code": 143,
+    "complete": false,
+    "counted_as_pass": false
+  },
+  "browser_interaction_tested": false,
+  "source_edges_and_real_PDK_DRC_accepted": false,
+  "geometry_changes_after_snapshot_pushed": false,
+  "producer_worktree_sha256": {
+    "silicon_eye/metal_via_pilot.py": "c9432fdd3f16f9e1b41debbb5b976c05cf94c42e33315619a3f1e2e973f7ad21",
+    "silicon_eye/conductive_medium.py": "d1b012496fbf4036408bbccf2b341288f51eaa75bef6469f8dd2417738f84ee6",
+    "silicon_eye/conductive_layers.py": "9094bb85edf502bfdbf484f4ea1a747c15d6a1eaad89ff051d16a607f88ef330",
+    "silicon_eye/conductive_quality.py": "116abe11278f6e7a491ab2777e64f782608934ec8ece8f4d8e6002f74299b05c",
+    "silicon_eye/conductive_workflow.py": "a99e68507c118553582ba313ce500f1b2a097f56a100bb0e8e79da056abd34fc",
+    "tests/test_medium_v2_array.py": "78b5f52a1a29ddbf488a3c4f5a6749105e2de54235015e98fde9d008946ee843"
+  },
+  "all_22_metal_geometries_exact": true,
+  "all_other_32_model_records_exact": true,
+  "actual_CLI_model_and_report_replay_equal": true
+}

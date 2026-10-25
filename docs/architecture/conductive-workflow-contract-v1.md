@@ -59,6 +59,14 @@ AI负责来源判断、结构解释、替代假设与几何候选；脚本检查
 
 有多孔数量证据时，接口可提供`cut_array_candidate={rows,columns,origin_xy}`及`count_evidence`人工记录引用；尺寸和pitch从既有via_budget读取，`bounds`必须等于全阵列包络。脚本逐孔检查方形、间距、阵列pitch和两侧包围，不能把六孔缩成一个6×6支持框。人工孔数与AI候选排列/尺寸分开保存；没有明确阵列时旧组级代理仍是未验证孔组占用的候选，不能用其单框包围声称多孔占用已通过。
 
+人工只审连接、未审逐孔数量时，可附`array_source_evidence`引用AI观察：`actor=AI,kind=via_array_observation,interface_id,layer,source_frame,source_photo,native_bounds,rows,columns,count_status=candidate_not_human_count,sites=[{row,column,native_xy}]`。接口ID在中样适配器中绑定reviewed_id，在原生统一观察中绑定id。照片和范围须与当前接口一致，站点需完整、唯一、位于原生组内并保持行列次序。检查只验证AI记录自洽，不证明照片检测正确；人审孔数仍未知，来源尺寸资格不提升。已有明确人工行列/数量时继续走更严格的继承校验，不能由AI记录替换。
+
+局部承载变化复用金属`local_parts`，不增加导体ID。P08例子只增加与原骨架正面积相接的照片支持矩形，原生路径、设计骨架、其他宽度和已审连接保持。全孔组必须受上下金属包围，同层间距也须通过；不能把扩宽后的几何检查当作照片边界已被批准。
+
+V1与V2可在XY投影重叠，间距门只比较同一孔层。分别检查各自相邻金属的包围；它们不是同一个物理孔，不能用跨层孔中心建立同孔配准。整组尺寸不能照搬6px示例：有`array_source_evidence`时，允许`cut_array_candidate.geometry_parameters={cut_size_px,pitch_xy,basis}`选择局部设计尺寸和节距；只可改这两个几何量，不可降低全局minimum_cut_width/gap/enclosure。选择仍是来源支持的候选，不是实际PDK尺寸。
+
+用户只补充孔数/定性重叠时，几何反馈与原连接审批分开：`kind=via_group_geometry_feedback,actor=human,statement,decisions.interface_id,observed_cut_count,scope_signature,sources`，sources绑定旧submitted_request/page/manifest及来源照片。`scope_signature`须匹配旧送审接口与当前候选的来源/承载身份。可作为`count_evidence`载入已知数量，另记`observed_group_count_facts`，不替换既有连接审批或把新坐标自动批准。数量、排列、相对位置和精确尺寸分别表述。
+
 人工明确指出承载错误时，新review仍绑定实际旧送审包，增加`carrier_correction={before,after}`完整接口signature，并在decisions写正确承载。只可修改上下金属ID，不能改层对、源帧或原生支持窗口；父包修订须显式列出变化对象和提案依据。已审其他接口必须保持；当前没有允许撤销或替换已确认接口的机制。稳定ID的历史后缀不是承载语义，保留ID并明确更正后的关系。
 
 解决旧pending后，若需撤下它独有的待审限制，request的`resolved_limits`用“原限制全文→人工review引用”显式列出；该review须声明完全匹配的`resolves_limit_texts`，且本次确实解决父包该pending接口。不能用Q1裁决消除A/B连续性等无关未知；已解决限制与依据继续留在模型历史中。软件能检查记录绑定与声明范围，文字判断仍由AI/人工负责。

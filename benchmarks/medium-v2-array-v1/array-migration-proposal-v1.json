@@ -1,0 +1,21 @@
+{
+  "actor": "AI",
+  "reason": "Replace only the J V2 group proxy with the already human-confirmed three-row/four-column design array. Use existing 6px cuts, 9px pitch and 1px enclosure; no carrier/metal/photo anchor/budget/approval changes.",
+  "sources": {
+    "human_group_count": {
+      "path": "benchmarks/conductive-stack-v2/human-review-v1.json",
+      "sha256": "6c0fb5c525e4b1aa621cb7b21b77d27980a2157beff67b23c8f4bd877fb543e4"
+    },
+    "source_observations": {
+      "path": "benchmarks/conductive-stack-v2/source-revision-v1.json",
+      "sha256": "bc3f3d0585b1f96f8dc1b176d87453ad9f910e043083ca6c6c4db5afdb664378"
+    },
+    "parent": {
+      "path": "docs/assets/conductive-quality-review-v1/review-medium/manifest.json",
+      "sha256": "99a1fff8a251d67411200e78a27610b2f24889ac5bae8e34e7b3172384c94b3b"
+    }
+  },
+  "changed_object_ids": [
+    "SUPPORT-J-M2-V2-M3-B1"
+  ]
+}

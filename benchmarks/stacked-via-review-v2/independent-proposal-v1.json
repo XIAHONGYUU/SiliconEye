@@ -1,0 +1,19 @@
+{
+  "actor": "AI",
+  "reason": "Correct unsupported separation of different via layers. Same-layer spacing and adjacent-metal enclosure remain fixed. Preserve accepted V1 extents, source anchors, counts and all connection approvals.",
+  "changed_object_ids": [
+    "IT1-M2-B",
+    "IT1-V2-B"
+  ],
+  "sources": {
+    "human_feedback": {
+      "path": "benchmarks/stacked-via-review-v2/q2-human-feedback-v1.json",
+      "sha256": "d830a09609751dc55bff7be0948728b99ae5b6af41f2a77501da5a0a9e0ef80b"
+    },
+    "parent": {
+      "path": "docs/assets/five-layer-geometry-v1/independent/manifest.json",
+      "sha256": "c4445d9cb2f89f67a5d8f2c5e5ff9f8da22ae1aee9d0a8ee76d3e2f2570f8fbd"
+    }
+  },
+  "scope": "New design coordinates remain candidates, not user-approved metric registration"
+}

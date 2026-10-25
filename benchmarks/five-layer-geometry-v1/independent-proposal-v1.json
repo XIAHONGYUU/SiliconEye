@@ -1,0 +1,17 @@
+{
+  "actor": "AI",
+  "reason": "Expand only IT1-V2-B from support proxy to native-source observed regular array. Keep all six metal shapes and Q1 six-hole V1 unchanged; wide B carrier remains inherited, no narrow-A fallback.",
+  "changed_object_ids": [
+    "IT1-V2-B"
+  ],
+  "sources": {
+    "source_observation": {
+      "path": "benchmarks/five-layer-geometry-v1/independent-v2-source-observation-v1.json",
+      "sha256": "de79337199713155f157ea99de3ea0dc6aa3e1b2c49723f26ffdb0a746cedaa1"
+    },
+    "parent": {
+      "path": "docs/assets/conductive-quality-review-v1/review-independent/manifest.json",
+      "sha256": "6d51aafc694a12c5d17c3a95fd84a0875f35ff470fc8b38da766c040d9ef446d"
+    }
+  }
+}

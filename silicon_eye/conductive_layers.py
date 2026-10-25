@@ -362,7 +362,16 @@ def svg_layers(model, bounds):
     parts = []
     for layer in ("M1", "M2", "M3", "V1", "V2"):
         parts.append(f'<g data-layer="{layer}" fill="{COLORS[layer]}" stroke="{COLORS[layer]}">')
-        for o in model["objects_by_layer"][layer]:
+        objects = []
+        for obj in model['objects_by_layer'][layer]:
+            if obj.get('candidate_cut_bounds'):
+                for index, cut_bounds in enumerate(obj['candidate_cut_bounds'], 1):
+                    objects.append(dict(obj, id=f'{obj["id"]}/C{index:02}',
+                                        kind='via_cut_geometry_candidate',
+                                        geometry=geometry(box(*cut_bounds))))
+            else:
+                objects.append(obj)
+        for o in objects:
             p = Polygon(o["geometry"]["outer_xy"], o["geometry"]["holes_xy"])
             if not viewport.intersects(p):
                 continue

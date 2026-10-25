@@ -1,0 +1,27 @@
+{
+  "actor": "human",
+  "date": "2026-10-25",
+  "scope": "Qualitative source-relative geometry feedback only; no exact new coordinates or fabrication process approval.",
+  "exact_candidate_geometry_accepted": false,
+  "statement": "Q1：Q1从V1靠右是没有问题的。V1的整体范围也基本合适，但是V1和V2的相对位置，我个人观感是重叠的",
+  "sources": {
+    "submitted_request": {
+      "path": "docs/assets/five-layer-geometry-v1/review/request.json",
+      "sha256": "53b9ad22d59c304ec11e97733baa0dac83efa52103723f098321253bedd9780e"
+    },
+    "submitted_page": {
+      "path": "docs/assets/five-layer-geometry-v1/index.html",
+      "sha256": "30fda9f662e0133b70111bd3150f7eebd5621cc138a89c0ec5e73abc15bc71d5"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/five-layer-geometry-v1/review/manifest.json",
+      "sha256": "024bd456918d791980ac082688d55db89b72bb1e4eeb53a420e4f17fde885ad4"
+    }
+  },
+  "kind": "qualitative_stack_geometry_feedback",
+  "decisions": {
+    "V1_extent": "approximately_accepted",
+    "V1_V2_projected_overlap": "human_visual_judgment_not_exact_registration",
+    "V1_cut_count": null
+  }
+}

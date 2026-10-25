@@ -1,0 +1,51 @@
+{
+  "actor": "human",
+  "date": "2026-10-25",
+  "scope": "Qualitative source-relative geometry feedback only; no exact new coordinates or fabrication process approval.",
+  "exact_candidate_geometry_accepted": false,
+  "statement": "Q2：Q2同理，可以看到，6个V2基本已经占满了所有的M2,因此我认为这个地方是和V1重叠的，我不清楚是否是规则不允许重叠，其实是可以并允许重叠的。",
+  "sources": {
+    "submitted_request": {
+      "path": "docs/assets/five-layer-geometry-v1/independent/request.json",
+      "sha256": "0a4601b650e1eacc82b3fe7948118c407df62a1593ef9b098ced691b2f99ad77"
+    },
+    "submitted_page": {
+      "path": "docs/assets/five-layer-geometry-v1/index.html",
+      "sha256": "30fda9f662e0133b70111bd3150f7eebd5621cc138a89c0ec5e73abc15bc71d5"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/five-layer-geometry-v1/independent/manifest.json",
+      "sha256": "c4445d9cb2f89f67a5d8f2c5e5ff9f8da22ae1aee9d0a8ee76d3e2f2570f8fbd"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "kind": "via_group_geometry_feedback",
+  "decisions": {
+    "interface_id": "IT1-V2-B"
+  },
+  "observed_cut_count": 6,
+  "scope_signature": {
+    "id": "IT1-V2-B",
+    "layer": "V2",
+    "layer_pair": [
+      "M2",
+      "M3"
+    ],
+    "source_frame": "m2",
+    "native_bounds": [
+      2532,
+      670,
+      2580,
+      740
+    ],
+    "lower_metal_id": "IT1-M2-B",
+    "upper_metal_id": "IT1-M3-BUS"
+  },
+  "observations": {
+    "V2_fills_M2": "approximately_full_group_footprint",
+    "V1_V2_projected_overlap": "human_visual_judgment_not_exact_registration"
+  }
+}

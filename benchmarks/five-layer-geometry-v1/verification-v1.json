@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "tests": {
+    "unique_passed": 141,
+    "first_batch": 94,
+    "second_batch": 47
+  },
+  "browser_interaction_tested": false,
+  "new_chip_blind_evaluation": false,
+  "true_process_DRC": false,
+  "canonical_adoption": false,
+  "github_pushed_this_round": false,
+  "geometry_review_pending": [
+    "Q1 P08 corner pad and V1 footprint",
+    "Q2 independent B V2 footprint"
+  ],
+  "review": {
+    "changed_object_ids": [
+      "M1-P08",
+      "SUPPORT-J-M1-P08-V1-M2-J01"
+    ],
+    "explicit_arrays": 2,
+    "proxy_count": 9,
+    "approved_connections_preserved": true,
+    "human_array_count_unchanged": true,
+    "source_array_geometry_qualified": false,
+    "model_report_replay_equal": true,
+    "minimum_design_enclosures": {
+      "SUPPORT-J-M1-P08-V1-M2-J01": {
+        "M1-P08": 4.5,
+        "M2-J01": 1.5
+      },
+      "SUPPORT-J-M2-V2-M3-B1": {
+        "M2-J01": 1.5,
+        "M3-J-B1": 18.0
+      }
+    },
+    "input_hashes": 125,
+    "artifact_hashes": 4,
+    "source_assets_pixels_checked_by_prepare": true
+  },
+  "independent": {
+    "changed_object_ids": [
+      "IT1-V2-B"
+    ],
+    "explicit_arrays": 2,
+    "proxy_count": 0,
+    "approved_connections_preserved": true,
+    "human_array_count_unchanged": true,
+    "source_array_geometry_qualified": false,
+    "model_report_replay_equal": true,
+    "minimum_design_enclosures": {
+      "IT1-V1-A": {
+        "IT1-M1-RING": 2.0,
+        "IT1-M2-B": 11.5
+      },
+      "IT1-V2-B": {
+        "IT1-M2-B": 11.5,
+        "IT1-M3-BUS": 33.0
+      }
+    },
+    "input_hashes": 40,
+    "artifact_hashes": 4,
+    "source_assets_pixels_checked_by_prepare": true
+  },
+  "local_links_checked": 71,
+  "javascript_syntax_checks": 3,
+  "svg_documents_checked": 8,
+  "current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-24-five-layer-geometry.md",
+    "original_sha256": "8213e3c7f49d9181fa646d91f985e2dd8fa34bcee1dd4e7a1404cdd64fd816a4",
+    "original_bytes": 7752,
+    "exact": true
+  },
+  "code_hashes": {
+    "silicon_eye/conductive_medium.py": "0f21d41db839e2d581815a080d00343779a87b4fe55c3ed02eb1cd91e0e68144",
+    "silicon_eye/conductive_workflow.py": "cd165e2abdb02b787c1eb2e0fd8172f21af370c712f8a7df0c52d833219a45fa",
+    "silicon_eye/metal_via_pilot.py": "86d6d8e4c3f42f568ed85cd38756e52051def35b2a9927be9ee888e6a6427fae"
+  },
+  "ruff": "PASS",
+  "skill_format_validation": "PASS",
+  "git_diff_check": "PASS",
+  "source_views": {
+    "total": 24,
+    "reused": 17,
+    "new": 7
+  },
+  "test_commands": [
+    ".venv/bin/pytest -q tests/test_five_layer_geometry.py tests/test_medium_v2_array.py tests/test_conductive_quality.py tests/test_conductive_workflow.py tests/test_conductive_medium.py",
+    ".venv/bin/pytest -q tests/test_metal_via_pilot.py tests/test_conductive_layers.py"
+  ],
+  "final_source_asset_recheck": "9 passed; already included in 141 unique tests"
+}

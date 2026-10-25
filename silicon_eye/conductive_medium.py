@@ -19,7 +19,13 @@ from shapely.geometry import box
 from .conductive_layers import LAYERS, geometry, source_identity_audit, svg_layers
 from .geometry_reconstruction import digest
 from .metal_reconstruction import geometry_audit
-from .metal_via_pilot import interface_audit, source_panels
+from .metal_via_pilot import (
+    group_via_budget,
+    interface_audit,
+    observed_array_audit,
+    regular_group_cuts,
+    source_panels,
+)
 from .review_package import Inputs
 
 
@@ -106,7 +112,9 @@ def prepare(root, request):
             ))
 
     interfaces, seen, used_reviews = [], set(records), set()
+    array_audits = {}
     for claim in request["interfaces"]:
+        source_array_audit = None
         edge = inventory[claim["reviewed_id"]]
         a, b, via = (edge[k] for k in ("lower_metal_id", "upper_metal_id", "via_layer"))
         pair = (records[a]["layer"], via, records[b]["layer"])
@@ -116,13 +124,44 @@ def prepare(root, request):
             raise ValueError("Via source frame mismatch")
         cut = dict(id=claim["id"], layer=via, layer_pair=[pair[0], pair[2]],
                    observation_id=edge["id"], bounds=claim["support_bounds"])
+        if claim.get('cut_array_candidate'):
+            source_observation = inputs.document(claim['array_source_evidence'])
+            inputs.evidence(source_observation)
+            native = np.asarray(claim['native_bounds'], dtype=float)
+            if (native.shape != (4,) or not np.isfinite(native).all() or (native < 0).any()
+                    or (native[2:] <= native[:2]).any()
+                    or (native[2:] > snapshot['source_wh']).any()):
+                raise ValueError('Invalid native array support')
+            cut['cut_array_candidate'] = claim['cut_array_candidate']
+            matches = [group for group in baseline.get('confirmed_local_via_groups', [])
+                       if group['layer'] == via and set(group['member_ids'])
+                       == set(edge.get('via_object_ids', []))]
+            array = claim['cut_array_candidate']
+            if len(matches) == 1:
+                group = matches[0]
+                review = inputs.human(group['human_review'])
+                decision = review['decisions']
+                if (array['rows'] != group['rows'] or array['columns'] != group['columns']
+                        or decision['array_rows'] != group['rows']
+                        or decision['array_columns'] != group['columns']
+                        or decision['local_group_cut_count'] != group['cut_count']):
+                    raise ValueError('Array migration contradicts reviewed rows/columns/count')
+            elif source_observation.get('kind') == 'via_array_observation' and not matches:
+                source_array_audit = observed_array_audit(
+                    source_observation, claim, snapshot['source_photos'][claim['source_frame']],
+                    edge['id'], via)
+            else:
+                raise ValueError('Array migration requires one exactly matched reviewed group')
         if cut["id"] in seen or edge["id"] in used_reviews:
             raise ValueError("Duplicate support or reviewed interface")
         seen.add(cut["id"])
         used_reviews.add(edge["id"])
-        audit = interface_audit(
-            [cut], polygons[a], polygons[b], request["via_budget"], layer_stack=pair
-        )
+        if claim.get('array_source_evidence'):
+            cut['array_source_evidence'] = claim['array_source_evidence']
+        group_budget = group_via_budget(cut, request['via_budget'])
+        cuts = regular_group_cuts(cut, group_budget)
+        audit = interface_audit(cuts, polygons[a], polygons[b], group_budget,
+                                layer_stack=pair)
         if audit["status"] != "PASS":
             raise ValueError("Via support enclosure gate failed")
         objects[via].append(dict(
@@ -135,6 +174,21 @@ def prepare(root, request):
             source_photo=snapshot["source_photos"][claim["source_frame"]],
             human_review=edge["human_review"], net_id=None,
         ))
+        if claim.get('cut_array_candidate'):
+            objects[via][-1].update(
+                kind='via_array_candidate_support',
+                geometry=dict(geometry(box(*cut['bounds'])),
+                              status='complete_design_array_candidate_not_measured_edges'),
+                geometry_status='complete_design_array_candidate_not_measured_edges',
+                candidate_cut_bounds=[c['bounds'] for c in cuts],
+                candidate_array_shape=dict(rows=array['rows'], columns=array['columns']),
+                design_support_bounds=claim['support_bounds'],
+                source_observation=dict(layer=via, source_frame=claim['source_frame'],
+                                        native_bounds=claim['native_bounds']))
+            array_audits[cut['id']] = audit
+            if source_array_audit:
+                audit['source_observation'] = source_array_audit
+                objects[via][-1]['array_count_basis'] = 'AI_SOURCE_OBSERVATION_NOT_HUMAN_COUNT'
         interfaces.append(dict(
             id=edge["id"], lower_metal_id=a, upper_metal_id=b, via_layer=via,
             support_id=cut["id"], human_review=edge["human_review"],
@@ -224,6 +278,8 @@ def prepare(root, request):
     )
     if order_audit is not None:
         report["source_order_audit"] = order_audit
+    if array_audits:
+        report['explicit_array_audits'] = array_audits
     if request.get("reviewed_terminal_state"):
         state = inputs.document(request["reviewed_terminal_state"])
         review = inputs.human(state["human_review"])

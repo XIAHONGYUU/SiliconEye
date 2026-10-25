@@ -117,6 +117,87 @@ def local_correspondence(observations, fit_ids, tolerance):
     )
 
 
+def observed_array_audit(observation, claim, photo, interface_id, layer):
+    """Bind AI site observations without turning their count into a human fact."""
+    array = claim['cut_array_candidate']
+    expected = dict(actor='AI', kind='via_array_observation', interface_id=interface_id,
+                    layer=layer, source_frame=claim['source_frame'], source_photo=photo,
+                    native_bounds=claim['native_bounds'],
+                    count_status='candidate_not_human_count')
+    if any(observation.get(k) != v for k, v in expected.items()):
+        raise ValueError('AI array observation has wrong source, identity or authority')
+    rows, columns = array['rows'], array['columns']
+    if (type(rows) is not int or type(columns) is not int or min(rows, columns) < 1
+            or observation.get('rows') != rows or observation.get('columns') != columns):
+        raise ValueError('AI array observation shape mismatch')
+    sites = observation.get('sites', [])
+    if len(sites) != rows * columns:
+        raise ValueError('AI array observation omits sites')
+    indexed = {}
+    for site in sites:
+        key = (site['row'], site['column'])
+        xy = np.asarray(site['native_xy'], dtype=float)
+        if (any(type(v) is not int for v in key) or key in indexed
+                or not (0 <= key[0] < rows and 0 <= key[1] < columns)
+                or xy.shape != (2,) or not np.isfinite(xy).all()
+                or not box(*claim['native_bounds']).covers(MultiPoint([xy]))):
+            raise ValueError('AI array sites duplicate or leave the source group')
+        indexed[key] = xy
+    if (len({tuple(xy) for xy in indexed.values()}) != len(sites)
+            or any(indexed[r, c][0] >= indexed[r, c+1][0]
+                   for r in range(rows) for c in range(columns-1))
+            or any(indexed[r, c][1] >= indexed[r+1, c][1]
+                   for r in range(rows-1) for c in range(columns))):
+        raise ValueError('AI array sites have inconsistent row/column order')
+    return dict(status='BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT',
+                observed_candidate_count=len(sites), source_pixel_recognition_verified=False)
+
+
+def group_via_budget(cut, budget):
+    """Allow source-backed array size/pitch choices without weakening hard minima."""
+    params = cut.get('cut_array_candidate', {}).get('geometry_parameters')
+    if params is None:
+        return budget
+    if (set(params) != {'cut_size_px', 'pitch_xy', 'basis'} or not params['basis']
+            or not cut.get('array_source_evidence')):
+        raise ValueError('Array geometry parameters require scoped source evidence')
+    size = params['cut_size_px']
+    pitch = np.asarray(params['pitch_xy'], dtype=float)
+    if (not np.isfinite(size) or size < budget['minimum_cut_width_px']
+            or pitch.shape != (2,) or not np.isfinite(pitch).all()
+            or (pitch < size + budget['minimum_cut_gap_px']).any()):
+        raise ValueError('Array geometry parameters violate fixed size/spacing minima')
+    return dict(budget, cut_size_px=size, pitch_xy=pitch.tolist())
+
+
+def regular_group_cuts(cut, budget):
+    """Build an explicit relative array; its footprint must not shrink to one proxy."""
+    array = cut.get('cut_array_candidate')
+    if not array:
+        if cut.get('count_evidence'):
+            raise ValueError('Observed multi-cut group requires an explicit group footprint')
+        return [cut]
+    rows, columns = array['rows'], array['columns']
+    if (type(rows) is not int or type(columns) is not int or min(rows, columns) < 1
+            or rows * columns > 1000):
+        raise ValueError('Invalid via array dimensions')
+    origin = np.asarray(array['origin_xy'], dtype=float)
+    if origin.shape != (2,) or not np.isfinite(origin).all():
+        raise ValueError('Invalid via array origin')
+    size, pitch = budget['cut_size_px'], budget['pitch_xy']
+    cuts = []
+    for row in range(rows):
+        for column in range(columns):
+            x, y = origin + np.asarray(pitch) * [column, row]
+            cuts.append(dict(cut, id=f'{cut["id"]}/C{len(cuts)+1:02}',
+                             bounds=[float(x), float(y), float(x+size), float(y+size)]))
+    envelope = [min(c['bounds'][0] for c in cuts), min(c['bounds'][1] for c in cuts),
+                max(c['bounds'][2] for c in cuts), max(c['bounds'][3] for c in cuts)]
+    if not np.allclose(envelope, cut['bounds'], atol=1e-6, rtol=0):
+        raise ValueError('Via group footprint does not enclose the entire array')
+    return cuts
+
+
 def interface_audit(cuts, lower, upper, budget, layer_stack=("M1", "V1", "M2")):
     """Enclosure is necessary, never sufficient to prove a physical via."""
     if tuple(layer_stack) not in {("M1", "V1", "M2"), ("M2", "V2", "M3")}:

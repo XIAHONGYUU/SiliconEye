@@ -51,6 +51,7 @@ not registration, pixel segmentation, width verification or physical truth.
 def inherited_group_facts(inputs, baseline, model):
     """Keep known group counts through proxy adapters using exact member identities."""
     current = {c['id']: c for c in model['reviewed_local_connections']}
+    objects = {o['id']: o for os in model['objects_by_layer'].values() for o in os}
     facts = []
     for edge in baseline.get('reviewed_local_connections', []):
         if edge['id'] not in current:
@@ -72,11 +73,17 @@ def inherited_group_facts(inputs, baseline, model):
             for frame, photo in model['source_photos'].items():
                 if frame == group['source_frame'] and review['sources'][frame.upper()] != photo:
                     raise ValueError('Inherited group fact belongs to a different source photo')
-            facts.append(dict(interface_id=edge['id'],
-                              support_id=current[edge['id']].get('support_id', edge['id']),
+            support_id = current[edge['id']].get('support_id', edge['id'])
+            obj = objects[support_id]
+            ported = bool(obj.get('candidate_cut_bounds'))
+            if ported and (len(obj['candidate_cut_bounds']) != group['cut_count']
+                           or obj.get('candidate_array_shape') != dict(
+                               rows=group['rows'], columns=group['columns'])):
+                raise ValueError('Ported array lost reviewed count or row/column shape')
+            facts.append(dict(interface_id=edge['id'], support_id=support_id,
                               group_id=group['id'], rows=group['rows'], columns=group['columns'],
                               cut_count=group['cut_count'], human_review=group['human_review'],
-                              geometry_ported=False))
+                              geometry_ported=ported))
     return facts
 
 
@@ -88,6 +95,7 @@ def quality_summary(model, sample, shape_audit, legacy_report=None):
     represented = {c.get('support_id', c['id']): c
                    for c in model['reviewed_local_connections']}
     facts = {f['support_id']: f for f in model.get('inherited_group_facts', [])}
+    counts = {f['support_id']: f for f in model.get('observed_group_count_facts', [])}
     claims = {c['id']: c for c in sample['interfaces']}
     for layer in ('V1', 'V2'):
         for obj in model['objects_by_layer'][layer]:
@@ -105,6 +113,7 @@ def quality_summary(model, sample, shape_audit, legacy_report=None):
                 'REJECTED_CANDIDATE' if model.get('review_decisions', {}).get(
                     obj['id'], {}).get('connection_confirmed') is False else 'PENDING',
                 human_cut_count=fact['cut_count'] if fact else
+                counts[obj['id']]['cut_count'] if obj['id'] in counts else
                 approved.get('physical_cut_count') if approved else None,
                 inherited_group_fact=fact,
                 representation='EXPLICIT_DESIGN_ARRAY' if cuts else 'GROUP_SUPPORT_PROXY',

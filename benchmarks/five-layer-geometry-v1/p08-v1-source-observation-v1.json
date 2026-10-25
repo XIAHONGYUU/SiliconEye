@@ -1,0 +1,102 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "J-M1-P08-V1-M2-J01",
+  "layer": "V1",
+  "source_frame": "m1",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "native_bounds": [
+    1958,
+    1929,
+    2018,
+    1988
+  ],
+  "rows": 3,
+  "columns": 3,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        1969,
+        1939
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        1985,
+        1939
+      ]
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "native_xy": [
+        2006,
+        1939
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        1969,
+        1959
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        1985,
+        1959
+      ]
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "native_xy": [
+        2006,
+        1959
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        1969,
+        1977
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        1985,
+        1977
+      ]
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "native_xy": [
+        2006,
+        1977
+      ]
+    }
+  ],
+  "basis": "Reinspected native M1 photo: nine brightness sites in a corner pad. Existing M1 centers only; old M1/V1 to M2/V2 same-hole pairing is withdrawn.",
+  "alternatives": [
+    "Blur may affect exact cut edges/count; no new human count approval."
+  ],
+  "source_spec": {
+    "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/spec-v1.json",
+    "sha256": "dbb2c2337a22e644b511d3d8bef5a1b50eccd760d3e685c545c765e388569e7d"
+  }
+}
