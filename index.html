@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Silicon Eye：以模拟版图知识驱动AI，从逐层芯片照片重建可复核材料结构、器件编号与跨层连接。">
+  <meta name="theme-color" content="#0b1421"><title>Silicon Eye · 从芯片照片到可复核结构</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="#top"><span class="mark">◈</span> SILICON EYE</a><nav aria-label="主导航"><a href="#demo">交互案例</a><a href="#method">工作方法</a><a href="#scope">进展边界</a><a href="https://github.com/XIAHONGYUU/silicon-eye">GitHub ↗</a></nav></header>
+<main id="top">
+  <section class="hero">
+    <div><p class="eyebrow">ANALOG IC × COMPUTER VISION × AI WORKFLOW</p><h1>让照片里的版图，<br>成为<span>可复核的结构。</span></h1><p class="lead">从同一颗芯片的逐层照片出发，将模拟版图知识、图像算法与AI判断结合，逐步重建材料、器件和跨层连接。</p><div class="actions"><a class="button primary" href="#demo">查看交互案例 <span>↓</span></a><a class="button" href="https://github.com/XIAHONGYUU/silicon-eye">阅读项目代码 ↗</a></div><p class="hero-note">研究原型 · 人机协作 · 所有展示来自实际项目样本</p></div>
+    <figure class="hero-figure"><img src="assets/overview.webp" width="1500" height="670" alt="原始逐层照片、AA/POLY/CT规则重建和五层导体复核的实际项目图"><figcaption><span>01 / OBSERVE</span><span>02 / RECONSTRUCT</span><span>03 / REVIEW</span></figcaption></figure>
+  </section>
+  <div class="facts"><div><strong>8</strong><span>同芯片逐层照片</span></div><div><strong>AA · POLY · CT</strong><span>共同材料工作层</span></div><div><strong>M1 → M3</strong><span>含V1/V2的局部联合复核</span></div></div>
+  <section id="demo" class="demo-section"><div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>三个案例，看懂项目在做什么。</h2></div><p>切换图层、选择器件，查看照片与结构之间的对应。</p></div>
+    <div class="tabs" role="tablist" aria-label="选择案例"><button role="tab" id="tab-materials" aria-controls="materials" aria-selected="true" data-case="materials"><small>01</small> 材料规则重建</button><button role="tab" id="tab-devices" aria-controls="devices" aria-selected="false" data-case="devices"><small>02</small> 器件编号与连接</button><button role="tab" id="tab-metals" aria-controls="metals" aria-selected="false" data-case="metals"><small>03</small> 五层联合复核</button></div>
+    <div class="demo-shell">
+      <section id="materials" role="tabpanel" aria-labelledby="tab-materials">
+        <div class="viewer-grid"><div><div class="toolbar" aria-label="材料图层"><label><input type="checkbox" checked data-material="AA"><i class="dot aa"></i>AA</label><label><input type="checkbox" checked data-material="POLY"><i class="dot poly"></i>POLY</label><label><input type="checkbox" checked data-material="CT"><i class="dot ct"></i>CT</label></div><div class="drawing" id="material-drawing" aria-label="可切换的AA POLY CT规则几何"></div><div class="figure-label"><span>规则工作层 · 局部视野</span><a href="assets/materials.svg" target="_blank" rel="noopener">打开矢量图 ↗</a></div></div><aside><span class="pill">结构约束 + 上下层关系</span><h3>从模糊纹理，恢复规则结构。</h3><p>照片会倾斜、拉伸和明暗不均。重建时保留AA之间的真实间隙，将POLY与AA联合判断，再按所属材料恢复CT阵列。</p><div class="mini-source"><img src="assets/source.webp" width="800" height="714" loading="lazy" alt="同组材料观察使用的原生POLY照片邻域"><span>原生照片邻域 · 与设计图各自保留坐标</span></div><p class="scope-note">材料身份与关键关系经过人工复核；规则边界是可继续修订的工作几何。</p></aside></div>
+      </section>
+      <section id="devices" role="tabpanel" aria-labelledby="tab-devices" hidden>
+        <div class="toolbar"><label for="device-select">器件编号</label><select id="device-select"><option value="all">显示全部</option></select><label for="device-frame">来源层</label><select id="device-frame"><option value="poly">POLY</option><option value="m1">M1</option><option value="aa">AA</option></select></div>
+        <div class="viewer-grid"><div><div class="drawing photo-drawing" id="device-drawing"></div><p class="figure-label" id="device-location"></p></div><aside><span class="pill">稳定ID + 已审关系</span><h3>同一编号，连接照片与电路表达。</h3><p>两条相邻MOS栅指沿用同一组编号。选择一个编号，检查对应范围和端子关系；未知端不自动补连。</p><table><thead><tr><th>器件</th><th>端子</th><th>已审节点</th></tr></thead><tbody id="terminal-rows"></tbody></table><p class="scope-note">A/B不预设源漏方向。POLY框为原生检查范围；M1框为已审宏观配准后的查找范围。AA未做逐器件定位。</p></aside></div><details><summary>查看这组已审关系的局部电路表达</summary><img class="schematic" src="assets/schematic.svg" loading="lazy" alt="两条MOS栅指的局部已审连接示意，保留未知端子"></details>
+      </section>
+      <section id="metals" role="tabpanel" aria-labelledby="tab-metals" hidden>
+        <div class="toolbar" aria-label="导体图层"><label><input type="checkbox" checked data-metal="M1"><i class="dot aa"></i>M1</label><label><input type="checkbox" checked data-metal="V1"><i class="dot poly"></i>V1</label><label><input type="checkbox" checked data-metal="M2"><i class="dot ct"></i>M2</label><label><input type="checkbox" checked data-metal="V2"><i class="dot v2"></i>V2</label><label><input type="checkbox" checked data-metal="M3"><i class="dot m3"></i>M3</label><button id="metal-zoom" class="small-button">放大孔组</button></div>
+        <div class="viewer-grid"><div><div class="drawing" id="metal-drawing" aria-label="M1 V1 M2 V2 M3五层导体几何"></div><div class="figure-label"><span>M1 → V1 → M2 → V2 → M3</span><a href="assets/metals.svg" target="_blank" rel="noopener">打开矢量图 ↗</a></div></div><aside><span class="pill">逐接口核对 + 防退化</span><h3>让每一次跨层连接都有依据。</h3><p>先分清孔属于哪一层，再找上下金属承载。完整孔组要能被两侧金属包围；交叠本身不能代替连接证据。</p><ol class="steps"><li>V1依据M1侧照片观察</li><li>V2依据M2侧照片观察</li><li>V1/V2可以投影重叠</li><li>局部修订保留其他已审结果</li></ol><p class="scope-note">本路径的接口关系已审；展示的是局部几何候选，具体新偏移量仍待复核，不表示整网或完整GDS已恢复。</p></aside></div>
+      </section>
+    </div>
+  </section>
+  <section id="method"><div class="section-heading"><div><p class="eyebrow">ENGINEERING APPROACH</p><h2>用领域判断，约束每一步自动化。</h2></div></div><div class="workflow"><div><b>01 / 输入</b><h3>照片与来源</h3><p>原图不变，保留层名、原生坐标与哈希。</p></div><div><b>02 / 判断</b><h3>AI与版图经验</h3><p>识别材料及结构，结合上下层保留替代解释。</p></div><div><b>03 / 执行</b><h3>脚本与规则几何</h3><p>参数化重建，检查间距、包围和修改范围。</p></div><div><b>04 / 复核</b><h3>人工裁决与接续</h3><p>确认关键歧义，已有成果进入防退化基准。</p></div></div></section>
+  <section class="contribution"><p class="eyebrow">PROJECT OWNERSHIP</p><h2>我在这个项目中负责什么</h2><div class="contribution-grid"><div><h3>模拟版图判读</h3><p>区分材料、栅端、共享扩散及跨层承载，将实际设计经验落实为重建约束。</p></div><div><h3>流程与质量设计</h3><p>划分AI、脚本和人工职责，设计局部接续、未知状态与防退化检查。</p></div><div><h3>AI辅助工程迭代</h3><p>主导需求与验收，驱动Python工具和可视化界面的开发，依据真实样本持续纠偏。</p></div></div></section>
+  <section id="scope" class="scope-section"><div><p class="eyebrow">CURRENT STATUS</p><h2>已能展示，也持续接受验证。</h2><p>当前是基于一颗芯片的研究原型。页面使用冻结的项目数据，切换视图不调用在线AI。</p></div><div><dl><dt>已实现</dt><dd>配准复核工具、AA/POLY/CT工作层、局部器件编号与电路表达、M1/V1/M2/V2/M3联合复核、可复用skill及增量质量门。</dd><dt>继续推进</dt><dd>全幅金属覆盖、更多独立区域评测、精确几何校正与可用性。</dd><dt>研究目标</dt><dd>完整器件与网络恢复、真实工艺校准、仿真就绪网表；当前尚未完成。</dd></dl></div></section>
+</main>
+<footer><div><a class="brand" href="#top">◈ SILICON EYE</a><p>Built with domain knowledge, Python and AI-assisted development.</p></div><div><a href="https://github.com/XIAHONGYUU/silicon-eye">项目源码 ↗</a><a href="https://github.com/XIAHONGYUU/silicon-eye/blob/main/docs/portfolio/cases.md">案例与证据 ↗</a><a href="provenance.json">展示来源清单 ↗</a></div></footer>
+<script src="assets/data.js"></script><script src="assets/views.js"></script><script src="app.js"></script>
+</body></html>
