@@ -66,7 +66,9 @@ git diff --check
 
 [八任务目录](benchmarks/portfolio-quality-v1/README.md)区分历史验收、人工rubric与两个现有机器评分任务。`python3 scripts/portfolio_quality.py`核对来源哈希并输出历史事实；不调用模型、不生成新准确率。`scripts/build_portfolio.py`将这些记录构建为公开结果卡。
 
-GitHub Actions仅稀疏检出scripts、site和两个保障测试文件，运行公开资产哈希/链接/指标边界检查、13项保障测试和JavaScript语法检查，不下载多GB历史证据。权限仅contents:read，凭证不持久化，不自动发布页面。这是公开包CI，不是全项目测试或物理验收；完整源证据哈希在本机构建时另查。
+[CI配置](docs/portfolio/ci-workflow.yml)已备好并通过本机稀疏环境检查。当前GitHub OAuth凭证缺少`workflow`权限，服务器拒绝创建工作流，因此尚未在线启用。取得该权限后将配置放到`.github/workflows/portfolio.yml`并推送，再核对实际运行，不能把本机通过说成在线CI通过。
+
+配置中的GitHub Actions仅稀疏检出scripts、site和两个保障测试文件，运行公开资产哈希/链接/指标边界检查、13项保障测试和JavaScript语法检查，不下载多GB历史证据。权限仅contents:read，凭证不持久化，不自动发布页面。这是公开包CI，不是全项目测试或物理验收；完整源证据哈希在本机构建时另查。
 
 工作流使用官方[checkout](https://github.com/actions/checkout)与[setup-python](https://github.com/actions/setup-python)，均固定提交。源文件结构整理先通过导航与轻量发布完成，冻结证据仍留原路径；后续迁移另作依赖/哈希方案，不直接删除或重写Git历史。
 

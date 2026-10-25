@@ -19,7 +19,7 @@ AI曾将六孔V1组接到窄M2-A；旧检查只验证单个代理框，漏掉了
 | 2条失败记录公开呈现 | POLY计数5→6；V1承载窄A→宽B。不是全项目失败总数 |
 | 工作层AA334 / POLY696 / CT10287 | 重建对象数；六处未知是区域，不能除以对象数当未知率 |
 
-新模型准确率、跨芯片泛化、人审总耗时与速度改善尚未测量。[结果与来源数据](site/quality-report.json) · [评测协议](benchmarks/portfolio-quality-v1/README.md) · [公开包CI](https://github.com/XIAHONGYUU/silicon-eye/actions/workflows/portfolio.yml)。
+新模型准确率、跨芯片泛化、人审总耗时与速度改善尚未测量。[结果与来源数据](site/quality-report.json) · [评测协议](benchmarks/portfolio-quality-v1/README.md) · [公开包验证](benchmarks/portfolio-quality-v1/verification.json) · [CI配置（待启用）](docs/portfolio/ci-workflow.yml)。
 
 ## 三个案例，三分钟看懂
 
