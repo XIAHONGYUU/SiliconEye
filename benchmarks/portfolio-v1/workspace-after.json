@@ -1,0 +1,18 @@
+{
+  "allocated_bytes": {
+    ".": 9400659968,
+    "runs": 3555581952,
+    "docs": 2512945152,
+    "benchmarks": 791937024,
+    ".git": 1781571584,
+    ".venv": 651239424
+  },
+  "archive_allocated_bytes": 2710904832,
+  "runs_now": 148,
+  "archived_runs": 328,
+  "archived_logical_bytes": 5578336614,
+  "archive_stored_bytes": 2701324395,
+  "archive_deduplicated_bytes": 2877012219,
+  "measurement_stage": "after archive, restore smoke, browser checks and ordinary git gc; before portfolio commit",
+  "git_history_rewritten": false
+}

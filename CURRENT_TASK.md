@@ -2,66 +2,52 @@
 
 ## 当前目标与授权
 
-用户反馈Q1的V1范围基本合适，但V1/V2应投影重叠；Q2六个V2基本占满M2并与V1重叠。本轮已记录原文，修正相对设计位置/占用比例并保留旧包。现有门本来允许跨层重叠，错误来自AI候选摆放与尺寸模板。金属/孔skill及契约已补充分层检查原则。具体新坐标仍为候选；原连接审批保持。未提交/推送，不扩全图、材料或整网。
+本轮按用户批准的9项成果，把项目整理为求职展示入口，同时保留开发证据与可恢复状态。README、三个精选案例、轻量交互Demo、简历表述、文档导航和首批工作区归档已完成本地验证；接下来只完成GitHub同步、Pages发布与线上核对。当前入口不代替既有人工裁决。
 
-[最新复核入口](docs/assets/stacked-via-review-v2/index.html) · [连续五层](docs/assets/stacked-via-review-v2/review/index.html) · [独立样本](docs/assets/stacked-via-review-v2/independent/index.html) · [本轮报告](docs/reviews/2026-10-25-stacked-via-correction.md) · [验证](benchmarks/stacked-via-review-v2/verification-v1.json)。[上轮五层报告](docs/reviews/2026-10-24-five-layer-geometry.md)与[质量根因复查](docs/reviews/2026-10-24-conductive-quality-review.md)保留历史。
+[展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/silicon-eye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [本轮整理报告](docs/reviews/2026-10-25-portfolio.md)。
 
-## 当前结果与质量资格
+## 展示与整理结果
 
-| 项目 | 结果与边界 |
-| --- | --- |
-| 中样来源形状 | 前轮R-M2-3已修为左返（570→526）；P08继承上轮局部承载；本轮中样金属保持，独立样本仅缩短M2-B设计骨架，全部原生锚点保持；旧反向负例仍拒绝 |
-| 六孔防退化 | 从实际继承人审记录核数量，候选同时删除阵列/数量字段也不能退回单框 |
-| 已知12孔事实 | J-M2-EDGE-V2的3×4=12已按精确成员ID迁移为完整设计阵列；本轮仅设计y下移14，使其与V1投影重叠；M2包围1.5/M3为4，满足预算1，金属不变；具体来源尺寸待验收 |
-| 分项质量 | 程序检查、声明来源转折、局部承载、孔组几何、来源尺寸/边界、端部/覆盖分别报告。可交复核包，完整共同几何/整网/正式通用skill不放行 |
-| 当前范围 | 中样22条金属、9个代理组+V1/V2两组显式阵列，仍表示已审清单38条中的11条；不是照片覆盖率。独立样本6条金属+两组显式阵列；几何均未验收 |
-| 最新反馈/候选 | Q1的V1范围基本认可、模型保持，V1/V2投影相交；Q2六个V2记为人工数量，3×2及精确尺寸仍候选。M2-B由38×115修为38×74，V2整组34×60占宽约89.5%/高81.1%，各自上下包围通过 |
+- 开发基线提交`fa3e1c7`；本地恢复分支`archive/pre-portfolio-20261025`保持该提交。原README完整保存在[历史原文](docs/history/2026-10-25-before-portfolio-README.md)。
+- 展示直接读取已有共同层、器件包和五层候选，不重跑识别、不改原图或人工结论。[来源与哈希](site/provenance.json)绑定源基线；[构建配置](configs/portfolio.json)集中管理选样。
+- 交互包括AA/POLY/CT切层、R2_Q1/R2_Q2编号与端子联动、M1/V1/M2/V2/M3切层及孔组放大。器件框是检查范围，AA未逐器件定位；A/B不强行指定源漏。展示数据冻结，无在线AI调用。
+- 原图、材料身份、已审连接及候选几何分别表达；不宣称完整GDS、全芯片自动提取、真实工艺DRC/LVS或仿真就绪网表。
+- 首批328个未引用/未跟踪运行目录归档到仓库外`../silicon-eye-archives/2026-10-25`。5,578,336,614字节内容去重存为2,701,324,395字节，节省2,877,012,219字节；活动工作区约15.2GB→9.4GB。Git普通打包约再节省0.20GB，无历史重写。
+- 逐文件SHA校验完成，恢复抽检通过；依赖闭包审计无缺失。归档后的导体重放model/report与冻结结果完全一致。已跟踪证据与被引用运行目录不清理。
+- 本轮相关测试24项通过，包含归档工具7项；桌面1440×1000、手机390×844实际浏览器交互检查通过。[检查记录](benchmarks/portfolio-v1/browser-verification.json)及[汇总](benchmarks/portfolio-v1/verification.json)不代表照片识别准确率。
 
-已知相对规则几何不要求与畸变照片逐像素贴合；仍要有相对宽度、开口、隔离和邻层承载依据。通过调整金属包住孔组只是AI几何提案，不能倒用作照片边界证明。真实微米尺度/PDK未知不妨碍相对规则重建，但当前不声明真实工艺DRC通过。
-
-## 必须继承的人工事实
-
-- **A={T3,L2}，B={T1,L4}，分别经M2/M3接A、B。** [当前分组](benchmarks/mid-ab-structural-hypothesis-v11/grouping-state-v3.json)及[最新更正](benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-correction-v3.json)优先；旧L3不复活为A成员、不推导全局断开。具体返回M2、M3-X/Y及逐孔路径仍未知。本次R-M2-3几何方向修正不新增连接。
-- MID-H1/H2为M1，本处与U1/U2的M1隔离，不推导全局异网；H1→V1→M2-A、H2→V1→M2-B已审。U1/U2同一M1，U1/U3有V1、U2无V1；两处均接N2。精确中间走向未恢复，不虚构跨H1/H2的竖线。
-- N2上接M3-B1，下经D1接M3-L1；J01/F04、F01–F12等已审承载保持。13主分支不等于下层覆盖完成。U3宽M1→所圈CT行→对应AA环已审，仅该端子路径terminal_closed=true；体端/极性、孔数、边界和规范材料ID映射仍未知。[U3已审状态](benchmarks/n2-u3-terminal-reviewed-v2/reviewed-state-v2.json)。其他分支/P0/P5等按归档原范围保留，不因未画撤销。
-- 本批孔来源策略M1照片侧V1、M2照片侧V2；J组M2孔组已确认为3×4 V2，不重审。旧九对V1/V2同孔拟合与约4.52px残差已撤回，不能当配准依据或借M3亮点证明V2。
-- U1设计右端早已从1700修至1310，保留原生1945<P08左竖2006的次序；此次不复活旧越界。来源次序/转折门不等于跨层配准或原生路径识别全正确。
-- 独立样本Q1六孔经V1接**宽IT1-M2-B**，原窄A候选错误；历史ID IT1-V1-A的后缀不表示当前承载。Q2仍为M2-B经V2接M3-BUS，两项不重审。[实际Q1更正](benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-scoped-v3.json)。六孔数量已知；2列×3行及孔径/间距/位置、B边界仍是候选。A/B是否同层连续未知；独立样本A/B不同于MID分组。
-
-## 共同层与保留范围
-
-唯一共同快照仍为[configs/joint-work-layer-v5.json](configs/joint-work-layer-v5.json)：AA334/POLY696/CT10287、八张5712×4284照片和哈希不变；导体注册表仍引用[原33记录模型](docs/assets/conductive-stack-v2/model.json)。本轮新中样仍为局部候选，不替换原共同注册表；原图、材料和旧审批不改。
-
-S1/S2/S3身份、G66-P03/P04上端桥与蓝色栅CT、退休ROW4-AA4-SD00、四栅与33孔、R1A/R1B上端、R2连续AA单排孔、R2_Q1、V3端子/v33网络、S03-03/04、18电阻、W01及195保留对象均按原范围继承。
-
-六处材料未知：AA-F01951、AA-F01952、材料H1/H2（不同于MID-H1/H2）、边界AA-F01744、S3-AA4-LEFT-SD-ACCESS；最后一处不借栅CT推源漏有/无孔。V3主体截段历史例外生效。未知只限制依赖，不触发整层重做。
-
-net_edges空、automatic_network_export_allowed=false、complete_network=false、共同几何采用关闭。真实尺度、工艺、极性、W/L、阻值及完整网表未知。
-
-## 使用与验证
-
-[金属试用skill](skills/silicon-eye-metal-reconstruction/SKILL.md)、[层间孔试用skill](skills/silicon-eye-via-reconstruction/SKILL.md)限定试用v2已同步完整孔组、AI观察证据绑定和局部承载修订；未安装全局、未正式通用放行。[统一契约](docs/architecture/conductive-workflow-contract-v1.md)与[追网约定](docs/metal-tracing-workflow-v1.md)继续适用。POLY/CT原skill范围不变。
+## 恢复与接续
 
 ```bash
-.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/stacked-via-review-v2/review-request-v1.json --output runs/新的质量复查目录
+.venv/bin/python scripts/workspace_archive.py verify --archive ../silicon-eye-archives/2026-10-25
+.venv/bin/python scripts/workspace_archive.py restore --archive ../silicon-eye-archives/2026-10-25 --run 需要恢复的目录名
+.venv/bin/python scripts/build_portfolio.py
 ```
 
-独立样本用benchmarks/stacked-via-review-v2/independent-request-v1.json。旧trial/main含已发现的反向折线，仅作历史/负例，不再作当前恢复入口。输入是AI观察，命令不自动识别照片或追网；新事务只能修改声明对象，原生锚点/快照/预算/人审范围不能静默改变。未审接口改承载必须实际人工更正绑定旧送审包；退休/合并ID或更换已审接口仍需另作事务。
+开发入口原文已完整归档到[展示整理前CURRENT_TASK](docs/history/current-task-before-2026-10-25-portfolio.md)，含字节数和SHA；以下仍生效事实必须接续，不能因展示整理撤销。
 
-本轮149个不同测试通过（101+47+额外1，重跑8项不重复计数）；Ruff、两skill格式、交付重放、168项输入/8项交付哈希、原生裁片像素、71条链接、3段JS与10份SVG检查通过。原始照片和共同v5未改。未测浏览器实际交互、新芯片或真实工艺DRC。
+## 原开发任务的事实与未决项
 
-## 唯一下一步、Git与归档
+[最新金属复核入口](docs/assets/stacked-via-review-v2/index.html) · [连续五层](docs/assets/stacked-via-review-v2/review/index.html) · [独立样本](docs/assets/stacked-via-review-v2/independent/index.html) · [金属修订报告](docs/reviews/2026-10-25-stacked-via-correction.md)。
 
-唯一下一步只复核本次V1/V2投影重叠关系与Q2整组占用比例；不重问Q1已认可V1范围或既有连接。具体重叠量/新尺寸尚为候选；若有偏差局部修订，之后再按结构类型迁移剩余代表组。
+- 用户已认可Q1的V1范围基本合适，并指出V1/V2投影应重叠；Q2六个V2占满M2并可与V1重叠。新偏移量、孔径/间距、Q2的3×2排列及金属精确边界仍为候选；原连接批准不重审。共同几何与全网尚未放行。
+- 中样22条金属、9代理组及两组显式阵列仅覆盖已审清单38条中的11条，非照片覆盖率；独立样本6条金属及两组显式阵列。新局部候选不替换原共同注册表。
+- A={T3,L2}、B={T1,L4}，分别经M2/M3接A、B；旧L3不复活。具体返回M2、M3-X/Y及逐孔路径未知。MID-H1/H2本处与U1/U2隔离，不推导全局异网；H1→V1→M2-A、H2→V1→M2-B已审。
+- U1/U2同一M1；U1/U3有V1、U2无V1，两处均接N2。U1设计右端1310，原生1945<P08左竖2006的次序保持，不补跨H1/H2竖线。N2上接B1、下经D1接L1，F01–F12等已审承载保持。
+- U3宽M1→所圈CT行→对应AA环仅该路径terminal_closed=true，体端/极性、孔数、边界及规范材料ID映射未知。13主分支不等于下层覆盖完成，P0/P5等原范围按归档保留。
+- 孔身份策略为M1照片侧V1、M2照片侧V2。J组3×4=12个V2已审；旧九对V1/V2同孔拟合及4.52px残差已撤回，不作配准证据。
+- 独立Q1六孔经V1接宽IT1-M2-B，原窄A错误；Q2为M2-B经V2接M3-BUS。A/B同层是否连续未知，亦不同于MID分组。历史ID后缀不决定承载。
+- 唯一共同快照[configs/joint-work-layer-v5.json](configs/joint-work-layer-v5.json)：AA334/POLY696/CT10287；八张5712×4284照片和哈希保持。导体注册表仍为[原33记录模型](docs/assets/conductive-stack-v2/model.json)。
+- 六处材料未知仍为AA-F01951、AA-F01952、材料H1/H2、边界AA-F01744、S3-AA4-LEFT-SD-ACCESS。V3主体截段历史例外、S1/S2/S3身份、G66上桥、R1/R2、四栅33孔、18电阻、W01与195保留对象按原范围继承，详见完整归档。
+- net_edges空、automatic_network_export_allowed=false、complete_network=false；真实尺度/工艺/极性/WL/阻值和完整网表未知。金属与孔skill仍为限定试用v2，未正式通用放行；材料skill资格不变。
 
-Git基线HEAD=86bd6a27c0ee2b57148ef18d83331e18567ec664，已推送并核对远端。此后新增整组迁移代码、source views、样本/验证/报告、skill例子和当前入口为本机未提交改动，未再次推送。原始照片、材料与旧批准保持。
+## 唯一下一步
 
-[本次整理前入口完整归档](docs/history/current-task-before-2026-10-24-conductive-quality-review.md)保留Q1更正、四项交付和更早归档链，已核原字节与SHA。CURRENT_TASK仍为唯一实时操作入口，历史按需调取。
+完成本轮发布后，返回**V1/V2重叠关系与Q2整组占用比例的局部复核**；不重问已审连接，不因展示或测试通过批准具体几何，不扩全图或重做材料层。
 
-[本次GitHub存档前入口](docs/history/current-task-before-2026-10-24-github-quality-snapshot.md)保存原文、字节数与SHA；[提交范围检查点](docs/checkpoints/2026-10-24-github-quality-snapshot.md)记录范围与验证。
+重放入口：
+```bash
+.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/stacked-via-review-v2/review-request-v1.json --output runs/新的局部复核目录
+```
 
-[整组迁移前入口完整归档](docs/history/current-task-before-2026-10-24-medium-v2-array.md)保存本次先推送授权及质量复查状态，原字节与SHA核对一致。[本轮检查点](docs/checkpoints/2026-10-24-medium-v2-array.md)记录先后顺序和未提交范围。
-
-[本轮推进前入口完整归档](docs/history/current-task-before-2026-10-24-five-layer-geometry.md)保留原文、字节数和SHA，已核对原文完整；所有仍生效的裁决与未知继续保留。
-
-[本轮修订前入口完整归档](docs/history/current-task-before-2026-10-25-stacked-via-review.md)保留2026-10-24未提交状态与全部仍生效事实，原文和SHA已核对。
+命令读取已有AI观察，不自动识别照片。独立样本用同目录independent-request-v1.json；旧trial/main仅历史/负例。人审更正须绑定实际旧送审包，事务不得静默改变原生锚点、快照、预算或审批范围。

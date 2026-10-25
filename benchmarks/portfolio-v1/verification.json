@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "source_baseline": "fa3e1c7",
+  "source_hashes_checked": 25,
+  "asset_hashes_checked": 12,
+  "local_links_checked": 70,
+  "svg_xml_checked": 4,
+  "historical_readme_bytes_unchanged": true,
+  "historical_current_task_bytes_unchanged": true,
+  "frozen_conductive_model_report_replay_identical": true,
+  "originals_and_production_algorithms_changed": false,
+  "relevant_pytest_passed": 24,
+  "archive_tests_included": 7,
+  "test_command": ".venv/bin/pytest -q tests/test_workspace_archive.py tests/test_stacked_via_review.py tests/test_five_layer_geometry.py",
+  "archive_unique_objects_verified": 3532,
+  "archive_restore_smoke": "restore-smoke.json",
+  "transitive_dependencies": "archive-dependency-audit.json",
+  "browser": "browser-verification.json",
+  "visual_qa": "visual-review-v2.md",
+  "site_bytes": 800627,
+  "scope": "Presentation and archival validation; not extraction accuracy or physical DRC"
+}
