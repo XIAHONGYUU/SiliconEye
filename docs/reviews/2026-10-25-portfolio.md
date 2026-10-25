@@ -9,7 +9,7 @@
 | 3 三个精选案例 | 材料重建、器件编号与连接、五层导体联合复核；附输入来源和限制 |
 | 4 个人贡献 | 明确领域判断/架构/验收及AI辅助实现；附简历表述 |
 | 5 轻量Demo | 无框架静态页面，约0.8MB；切层、编号联动、孔组放大；支持手机与本地直接打开 |
-| 6 GitHub展示信息 | 准备description、topics、homepage和独立gh-pages发布；实际结果以publication.json为准 |
+| 6 GitHub展示信息 | description、topics、homepage已更新；独立gh-pages构建成功并核对公网文件 |
 | 7 文档入口 | README面向展示，DEVELOPMENT面向复现，docs/README负责导航，CURRENT_TASK唯一实时入口 |
 | 8 可恢复瘦身 | 328个无引用运行目录做SHA去重归档，保留跟踪证据与依赖闭包；普通Git打包，无历史重写 |
 | 9 验证 | 24项相关测试、导体原样重放、归档全量校验与恢复抽检、来源哈希、链接和实际浏览器交互 |
@@ -31,5 +31,7 @@
 - 展示未调用在线AI；器件框不表示精确边界；五层仍为候选几何；不声称整网、完整GDS、真实工艺DRC/LVS或仿真就绪网表。
 
 [检查记录](../../benchmarks/portfolio-v1/verification.json) · [浏览器记录](../../benchmarks/portfolio-v1/browser-verification.json) · [展示QA](../../benchmarks/portfolio-v1/visual-review-v2.md) · [发布回执](../../benchmarks/portfolio-v1/publication.json)。
+
+展示内容提交`8bf2833`，Pages提交`e4115de`，后者与GitHub实际构建提交一致。[公开Demo](https://xiahongyuu.github.io/silicon-eye/)根页面及17个公开文件HTTP读取成功，SHA与本机一致；远端README字节一致。GitHub简介、7个topics及主页地址已核对。Pages在gh-pages推送后已启用，创建API返回409后以实际GET结果确认来源正确，未重复创建。
 
 旧任务和全部人工事实见[整理前任务原文](../history/current-task-before-2026-10-25-portfolio.md)。发布后继续V1/V2投影重叠与Q2占用比例的局部复核。

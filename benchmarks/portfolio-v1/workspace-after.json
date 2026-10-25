@@ -8,11 +8,12 @@
     ".venv": 651239424
   },
   "archive_allocated_bytes": 2710904832,
-  "runs_now": 148,
+  "runs_now": 149,
   "archived_runs": 328,
   "archived_logical_bytes": 5578336614,
   "archive_stored_bytes": 2701324395,
   "archive_deduplicated_bytes": 2877012219,
   "measurement_stage": "after archive, restore smoke, browser checks and ordinary git gc; before portfolio commit",
-  "git_history_rewritten": false
+  "git_history_rewritten": false,
+  "runs_count_stage": "after browser validation (adds one run directory)"
 }

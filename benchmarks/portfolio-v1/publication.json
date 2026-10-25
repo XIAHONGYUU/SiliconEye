@@ -1,6 +1,50 @@
 {
-  "status": "prepared_locally",
+  "status": "published_and_verified",
   "date": "2026-10-25",
-  "expected_url": "https://xiahongyuu.github.io/silicon-eye/",
-  "source_baseline": "fa3e1c7"
+  "url": "https://xiahongyuu.github.io/silicon-eye/",
+  "repo": "https://github.com/XIAHONGYUU/silicon-eye",
+  "main_content_commit": "8bf2833043e75515530ebc81ce2a7ad7245fc250",
+  "site_commit": "e4115dea2d7d2f6e5420455cbc940035a21e4ffc",
+  "pages_build_commit": "e4115dea2d7d2f6e5420455cbc940035a21e4ffc",
+  "pages_source": {
+    "branch": "gh-pages",
+    "path": "/"
+  },
+  "pages_build_status": "built",
+  "metadata": {
+    "description": "AI-assisted analog IC reconstruction from multilayer die photos: rule-constrained geometry, device indexing and cross-layer review.",
+    "homepage": "https://xiahongyuu.github.io/silicon-eye/",
+    "topics": [
+      "ai-assisted-development",
+      "analog-ic",
+      "computer-vision",
+      "eda",
+      "human-in-the-loop",
+      "python",
+      "reverse-engineering"
+    ]
+  },
+  "github_readme_bytes_match": true,
+  "public_root_matches": true,
+  "public_files_sha256": {
+    "style.css": "3b20f1829980c4a338ea498ce6d7fa26a2fef0c76301bfac4a89d14c3bddb2d9",
+    "app.js": "739a201e39e47ae50700d951e13a2a1ca440c8f1aa916dd021f14bc29779e689",
+    "provenance.json": "1c70fa126ae8113dab1abd5b773ecb083edf17fce79453b57edcd410bc732da1",
+    "favicon.svg": "fff2495b4260eb52fe681098547520bbe92d1f0a0570a584bda7c609974de945",
+    "index.html": "96b4cfdf48ad105d4cd0e11cc241d6771b610bcd559bc40367ddda7dc6b27f45",
+    "assets/metals.webp": "af8482715d4f125cc1ba983e46e2e71a777874f6bff7490528fcdb76a0eb5200",
+    "assets/schematic.svg": "6c47bb0a12188b562b8e42150b3c576eede06b47befb28525b77ffbcd65cc152",
+    "assets/materials.webp": "3fa91d1fe43c50212a4258d12947471cc7c2a1d1320c22283067f9a9a63c9f1a",
+    "assets/device-m1.webp": "c50d5f6837e89c61b1595b498efc8e6e19dcd3d99550c166c895e463ccead27c",
+    "assets/device-poly.webp": "6a2654f07831ab5caba6696222ff0d19af60c225bafa43e0ea92406defe3a2f2",
+    "assets/views.js": "cb7b5cecb220d60f059c3eaa62f399e2ae7f61f6f1ac38e7a26df2a30d58c539",
+    "assets/device-aa.webp": "d6d81f2575e0af12e322677612210804de0467e57903597531cbdf0213367e98",
+    "assets/source.webp": "9670ab36b7f4831193d24f825954f289fdd47a866ce1efb9335cf11d4fee63af",
+    "assets/materials.svg": "8f3f0fd99b0651e9e5ff53a949b5634cc0dc0056e33374f0c5b39c3881bce897",
+    "assets/overview.webp": "51ec876c0c474e13c8533c1b9d376fab353bf12d133e3668242948c23fbc9cb9",
+    "assets/data.js": "c1646aa9062eea7515899682d788f58c93059301a5b44b7d3dfc0167e393f439",
+    "assets/metals.svg": "58028f4e8117a704912e7383ab44766e8849bd64e82c84f2e68ef980a2d31575"
+  },
+  "http_files_checked": 17,
+  "scope": "No publication of local run archive; gh-pages contains only site/"
 }
