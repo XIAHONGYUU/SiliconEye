@@ -1,10 +1,10 @@
-# Silicon Eye
+# SiliconEye
 
 ### 将模拟版图经验转化为AI可执行、可复核的重建约束。
 
 从**同一颗芯片的8张逐层照片**出发，结合图像算法、版图结构约束与人工复核，逐步重建材料层、器件编号和跨层连接。项目由 **XIAHONGYUU** 主导需求、领域判断与验收，采用AI辅助开发。
 
-[**打开交互Demo →**](https://xiahongyuu.github.io/silicon-eye/) · [质量纠错案例](docs/portfolio/quality-case.md) · [评测基准](benchmarks/portfolio-quality-v1/README.md) · [三个交互案例](docs/portfolio/cases.md) · [复现与开发](DEVELOPMENT.md)
+[**打开交互Demo →**](https://xiahongyuu.github.io/SiliconEye/) · [质量纠错案例](docs/portfolio/quality-case.md) · [评测基准](benchmarks/portfolio-quality-v1/README.md) · [三个交互案例](docs/portfolio/cases.md) · [复现与开发](DEVELOPMENT.md)
 
 ![实际项目成果：原始逐层照片、AA/POLY/CT规则几何与五层联合复核](site/assets/overview.webp)
 
@@ -25,9 +25,9 @@ AI曾将六孔V1组接到窄M2-A；旧检查只验证单个代理框，漏掉了
 
 | 案例 | 可以看到什么 | 解决的工程问题 |
 | --- | --- | --- |
-| [材料规则重建](https://xiahongyuu.github.io/silicon-eye/#materials) | 切换AA、POLY、CT，比较来源照片与规则几何 | 拍摄畸变、层间材料混杂；保留真实间隙与规则孔阵列 |
-| [器件编号与连接](https://xiahongyuu.github.io/silicon-eye/#devices) | 选择MOS栅指编号，联动跨层检查范围、端子表和局部电路表达 | 让照片、对象ID和已审关系可以互相追溯，未知端不自动补连 |
-| [五层联合复核](https://xiahongyuu.github.io/silicon-eye/#metals) | 切换M1/V1/M2/V2/M3，放大孔组和上下承载 | 分清过孔身份与承载，允许跨层投影重叠，阻止错误合并 |
+| [材料规则重建](https://xiahongyuu.github.io/SiliconEye/#materials) | 切换AA、POLY、CT，比较来源照片与规则几何 | 拍摄畸变、层间材料混杂；保留真实间隙与规则孔阵列 |
+| [器件编号与连接](https://xiahongyuu.github.io/SiliconEye/#devices) | 选择MOS栅指编号，联动跨层检查范围、端子表和局部电路表达 | 让照片、对象ID和已审关系可以互相追溯，未知端不自动补连 |
+| [五层联合复核](https://xiahongyuu.github.io/SiliconEye/#metals) | 切换M1/V1/M2/V2/M3，放大孔组和上下承载 | 分清过孔身份与承载，允许跨层投影重叠，阻止错误合并 |
 
 ## 这个项目体现的能力
 

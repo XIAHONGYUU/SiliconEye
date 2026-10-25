@@ -1,6 +1,6 @@
 # 开发与复现
 
-README和[在线Demo](https://xiahongyuu.github.io/silicon-eye/)面向项目展示。本文件面向复现与维护；[CURRENT_TASK.md](CURRENT_TASK.md)仍是唯一实时任务入口，原图、人工裁决和未知状态不因展示整理改变。
+README和[在线Demo](https://xiahongyuu.github.io/SiliconEye/)面向项目展示。本文件面向复现与维护；[CURRENT_TASK.md](CURRENT_TASK.md)仍是唯一实时任务入口，原图、人工裁决和未知状态不因展示整理改变。
 
 ## 环境
 

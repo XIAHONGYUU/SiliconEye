@@ -2,9 +2,9 @@
 
 ## 当前目标与授权
 
-用户批准的质量展示优化主体已完成并上线：六孔承载纠错案例、8任务历史目录与结果卡、来源说明均发布。内容提交535e159，Pages提交6417cc9；实际构建成功，23个公开文件及README与本机一致。原图、模型和人工裁决未改；历史任务不作为新盲测成绩。仅线上CI启用受阻：GitHub当前OAuth凭证缺workflow权限，配置已放在docs/portfolio/ci-workflow.yml供审阅，本机13项对应检查通过。
+用户已批准将GitHub仓库及展示品牌统一为SiliconEye。本轮基线c179e64；更新现有仓库名称、主页链接、本机origin、README/简历/展示页，并核对Pages与远端身份。仅名称与入口迁移，保留原始照片、模型、历史审批及CI权限阻塞状态。本机目录、Python包与silicon-eye命令保持兼容。
 
-[展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/silicon-eye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [首轮整理报告](docs/reviews/2026-10-25-portfolio.md) · [质量优化报告](docs/reviews/2026-10-25-quality-portfolio.md)。
+[展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/SiliconEye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [首轮整理报告](docs/reviews/2026-10-25-portfolio.md) · [质量优化报告](docs/reviews/2026-10-25-quality-portfolio.md)。
 
 ## 本轮质量优化
 

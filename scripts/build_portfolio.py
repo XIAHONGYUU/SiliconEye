@@ -1,4 +1,4 @@
-"""Build a small, source-bound portfolio from existing Silicon Eye outputs.
+"""Build a small, source-bound portfolio from existing SiliconEye outputs.
 
 Run: .venv/bin/python scripts/build_portfolio.py
 Requires project dependencies; first replay device_request into device_bundle.

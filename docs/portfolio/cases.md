@@ -1,6 +1,6 @@
 # 精选案例与证据
 
-本页对应[交互Demo](https://xiahongyuu.github.io/silicon-eye/)的三个案例。展示只是精选入口，源数据、原生坐标及批准范围均保留；不是另一次自动识别结果。
+本页对应[交互Demo](https://xiahongyuu.github.io/SiliconEye/)的三个案例。展示只是精选入口，源数据、原生坐标及批准范围均保留；不是另一次自动识别结果。
 
 ## 01 材料规则重建
 
