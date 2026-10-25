@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "kind": "historical_evidence_audit_not_agent_run",
+  "source_baseline": "53a1dcf",
+  "evidence_files_verified": 20,
+  "catalog_tasks": 8,
+  "tasks_with_existing_machine_scorer": 2,
+  "manual_rubric_tasks": 6,
+  "partial_reference_assertions": {
+    "known": 16,
+    "unresolved": 4
+  },
+  "aa_historical_acceptance": {
+    "T1": "PASS_scoped_reuse",
+    "T2": "PASS_human_confirmed_local_quality_improvement",
+    "T3": "PASS_local_regression_rejection"
+  },
+  "aa_historical_accepted_tasks": 3,
+  "poly_count": {
+    "initial": 5,
+    "human": 6,
+    "initial_error": -1
+  },
+  "metal_carrier": {
+    "initial": "IT1-M2-A",
+    "human": "IT1-M2-B",
+    "observed_cuts": 6,
+    "recorded_corrections": 1,
+    "exact_array_geometry_approved": false
+  },
+  "work_layer_objects": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "unresolved_scopes": 6,
+  "held_out_task_count": 0,
+  "new_model_runs": 0,
+  "new_model_accuracy": null,
+  "global_unknown_rate": null,
+  "aggregate_human_effort": null,
+  "cases": [
+    {
+      "id": "H01",
+      "title": "接续已审AA双环",
+      "topic": "接续",
+      "mode": "manual_rubric",
+      "split": "historical_development",
+      "input_refs": [
+        "aa_plan"
+      ],
+      "reference_refs": [
+        "aa_report",
+        "aa_acceptance"
+      ],
+      "rubric": "复用原状态和范围，不重新训练、不重复询问已审间隙。",
+      "limit": "历史同Agent开卷任务，非重新运行的成绩。"
+    },
+    {
+      "id": "H02",
+      "title": "改善阶梯AA局部边界",
+      "topic": "局部质量",
+      "mode": "manual_rubric",
+      "split": "historical_development",
+      "input_refs": [
+        "aa_plan"
+      ],
+      "reference_refs": [
+        "aa_report",
+        "aa_human",
+        "aa_acceptance"
+      ],
+      "rubric": "保持六边拓扑与正交关系；新边界须在人审前保留候选，改善须有人工依据。",
+      "limit": "只有局部贴合改善批准，无稠密像素真值。"
+    },
+    {
+      "id": "H03",
+      "title": "拒绝AA间隙粘连",
+      "topic": "防退化",
+      "mode": "manual_rubric",
+      "split": "historical_development",
+      "input_refs": [
+        "aa_plan"
+      ],
+      "reference_refs": [
+        "aa_report",
+        "aa_acceptance"
+      ],
+      "rubric": "识别跨间隙连片并拒绝替换，保留原双环隔离。",
+      "limit": "局部材料连续性，不推导电气异网。"
+    },
+    {
+      "id": "H04",
+      "title": "右侧宽POLY数量",
+      "topic": "数量",
+      "mode": "manual_rubric",
+      "split": "historical_development",
+      "input_refs": [],
+      "reference_refs": [
+        "poly_eval"
+      ],
+      "rubric": "逐条核对；保留原AI计数与人审数量差异，不用修正后答案充当首次正确。",
+      "limit": "已知失败案例；未来重跑需冻结新的照片任务输入。"
+    },
+    {
+      "id": "H05",
+      "title": "区分源漏CT与共栅CT",
+      "topic": "上下层归属",
+      "mode": "manual_rubric",
+      "split": "historical_development",
+      "input_refs": [],
+      "reference_refs": [
+        "ct_human"
+      ],
+      "rubric": "紫色为源漏CT，蓝色为共用POLY向上引出的栅CT；不借栅CT证明源漏接入。",
+      "limit": "身份批准不等于精确总线几何或M1连接批准。"
+    },
+    {
+      "id": "H06",
+      "title": "六孔组选择宽M2承载",
+      "topic": "跨层承载",
+      "mode": "manual_rubric",
+      "split": "historical_development",
+      "input_refs": [
+        "m1_photo",
+        "m2_photo"
+      ],
+      "reference_refs": [
+        "metal_eval",
+        "metal_human",
+        "metal_before",
+        "metal_after"
+      ],
+      "rubric": "保留六孔事实；排除窄A承载并接宽B，精确孔径/节距与A/B连续性保留未知。",
+      "limit": "空间迁移历史案例，非新芯片盲测。"
+    },
+    {
+      "id": "H07",
+      "title": "ROI2器件、材料与连接",
+      "topic": "多层关系",
+      "mode": "agent_evaluation",
+      "split": "historical_development",
+      "input_refs": [
+        "roi2_input"
+      ],
+      "reference_refs": [
+        "roi2_reference"
+      ],
+      "rubric": "已知断言正确、未知显式保留，无额外未评断言才过参考断言门。",
+      "limit": "10条部分参考；无器件发现率、像素分割或人审耗时成绩。"
+    },
+    {
+      "id": "H08",
+      "title": "V3局部器件与连接",
+      "topic": "多层关系",
+      "mode": "agent_evaluation",
+      "split": "historical_development",
+      "input_refs": [
+        "v3_input"
+      ],
+      "reference_refs": [
+        "v3_reference"
+      ],
+      "rubric": "区分局部POLY不连与电气同网；不得把缺证据判成断开。",
+      "limit": "10条部分参考；与ROI2同芯片且均参与过开发。"
+    }
+  ],
+  "evidence": {
+    "aa_plan": {
+      "path": "benchmarks/aa-skill-three-task-v1/plan-v1.json",
+      "sha256": "8332e7cd2a3a895838ff478c24d7d5beded064ffb9598bdcea6ce44894e4b844"
+    },
+    "aa_report": {
+      "path": "benchmarks/aa-skill-three-task-v1/report-v1.json",
+      "sha256": "a09f52bf430dd2b1cb85d4a113660f730f23df491255a19b717e8a0d0ae603da"
+    },
+    "aa_acceptance": {
+      "path": "benchmarks/aa-skill-three-task-v1/acceptance-v1.json",
+      "sha256": "cecdce76e92571fae5216875279e5ae25566004efdefa82c5f67bcfe9e6eab88"
+    },
+    "aa_human": {
+      "path": "benchmarks/aa-skill-three-task-v1/human-review-v1.json",
+      "sha256": "310e0e310e71650f2d5a80c9e8f55013559bf9faeb3996fb80422b259206759b"
+    },
+    "poly_eval": {
+      "path": "benchmarks/poly-closeout-v3/agent-evaluation-v1.json",
+      "sha256": "404bfc2a0cf581d87e9d5a774efb4343867f97bbe10c88333cae561fc57049b7"
+    },
+    "ct_human": {
+      "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+      "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+    },
+    "metal_eval": {
+      "path": "benchmarks/metal-independent-q1-correction-v2/evaluation-v3.json",
+      "sha256": "562a88d3af9411a7baa7d5f977c6d3deb26c1b6d63271e816b42977529882c5f"
+    },
+    "metal_human": {
+      "path": "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-scoped-v3.json",
+      "sha256": "fc9e5cbc553687f590d49a14745c7bd8d6318e27f19add35d90caeba5a0c67f7"
+    },
+    "metal_before": {
+      "path": "docs/assets/conductive-workflow-trial-v1/final-independent/model.json",
+      "sha256": "d431ee7a0599dcc85b105abfffa1faa63594dba92faa6a684896f38efd83767e"
+    },
+    "metal_after": {
+      "path": "docs/assets/metal-independent-q1-reviewed-v3/model.json",
+      "sha256": "a1e4872e858003472b73e59801f6a283bf17f5ded255b10712864344635afc01"
+    },
+    "m1_photo": {
+      "path": "docs/assets/metal-independent-transfer-v1/m1-detail-marked.png",
+      "sha256": "c968b44fb9a6fe351455703ea8e9067120ddb64e9db917805715344b62285df3"
+    },
+    "m2_photo": {
+      "path": "docs/assets/metal-independent-transfer-v1/m2-detail-marked.png",
+      "sha256": "036d2cf6f98393579226422e06f7df5f0538930d27a4b4d7643339fa211cd71a"
+    },
+    "seed_index": {
+      "path": "benchmarks/agent-eval/index.json",
+      "sha256": "7bed06f31c17c337bc3c3b9f1322b04a2f876213c26be18a5e62e24d5f8c6099"
+    },
+    "roi2_input": {
+      "path": "benchmarks/agent-eval/roi2-seed-v1/input.json",
+      "sha256": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc"
+    },
+    "roi2_reference": {
+      "path": "benchmarks/agent-eval/roi2-seed-v1/reference.json",
+      "sha256": "d4d6a739577dfe5b3279e5b6eca2c9308330de253ac88585aa026f2be2ddf23b"
+    },
+    "v3_input": {
+      "path": "benchmarks/agent-eval/v3-seed-v1/input.json",
+      "sha256": "cd969c8cdfacd6f6451c9304aa7ce0d412fff31bdb8813bcefc6c7dfa3ad61bf"
+    },
+    "v3_reference": {
+      "path": "benchmarks/agent-eval/v3-seed-v1/reference.json",
+      "sha256": "46184d54c71685b71f592faaf01a652e8d38953b329fcb0a31bb0267be660039"
+    },
+    "snapshot": {
+      "path": "configs/joint-work-layer-v5.json",
+      "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+    },
+    "stage": {
+      "path": "benchmarks/ct-source-ownership-reviewed-v2/stage-gate-v1.json",
+      "sha256": "303b8f927fffb00f9ec812b112f3d4f08334b2b9864f4ae685c2f4cf193cc6bb"
+    },
+    "unknown": {
+      "path": "benchmarks/ct-source-ownership-reviewed-v2/unknown-sites-v1.json",
+      "sha256": "f90aa482278c62a560238ec1e88b167db16e110fa95aea2cdb215f3ef20412b7"
+    }
+  },
+  "limits": [
+    "One chip, historical development tasks; not blind or cross-chip accuracy.",
+    "Six unresolved scopes are regions, not six unknown objects.",
+    "Post-correction output is not first-attempt correctness.",
+    "AA method tasks and relation assertions have different units; no pooled accuracy.",
+    "H07/H08 separate input packets and references; H01-H06 use manual rubrics."
+  ]
+}

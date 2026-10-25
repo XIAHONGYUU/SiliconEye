@@ -25,9 +25,30 @@
     "benchmarks/ct-source-ownership-reviewed-v2/exceptions-v1.json": "f495158831a5d36596469c952ed6f19ea06784bc7cbf6d22cb604b71c7c167dd",
     "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f",
     "benchmarks/ct-source-ownership-reviewed-v2/source-reinspection-v1.json": "8f049646f37aa5814433a40bd5c48004eb4dc8a7392c32112e4d154fa5d826c7",
-    "benchmarks/ct-work-layer-final-v5/human-review-v1.json": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04"
+    "benchmarks/ct-work-layer-final-v5/human-review-v1.json": "61ddcef6291ec45d439b9186ef0993c9f67a74200af868fffbcab8f0b5fd9a04",
+    "benchmarks/aa-skill-three-task-v1/plan-v1.json": "8332e7cd2a3a895838ff478c24d7d5beded064ffb9598bdcea6ce44894e4b844",
+    "benchmarks/aa-skill-three-task-v1/report-v1.json": "a09f52bf430dd2b1cb85d4a113660f730f23df491255a19b717e8a0d0ae603da",
+    "benchmarks/aa-skill-three-task-v1/acceptance-v1.json": "cecdce76e92571fae5216875279e5ae25566004efdefa82c5f67bcfe9e6eab88",
+    "benchmarks/aa-skill-three-task-v1/human-review-v1.json": "310e0e310e71650f2d5a80c9e8f55013559bf9faeb3996fb80422b259206759b",
+    "benchmarks/poly-closeout-v3/agent-evaluation-v1.json": "404bfc2a0cf581d87e9d5a774efb4343867f97bbe10c88333cae561fc57049b7",
+    "benchmarks/metal-independent-q1-correction-v2/evaluation-v3.json": "562a88d3af9411a7baa7d5f977c6d3deb26c1b6d63271e816b42977529882c5f",
+    "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-scoped-v3.json": "fc9e5cbc553687f590d49a14745c7bd8d6318e27f19add35d90caeba5a0c67f7",
+    "docs/assets/conductive-workflow-trial-v1/final-independent/model.json": "d431ee7a0599dcc85b105abfffa1faa63594dba92faa6a684896f38efd83767e",
+    "docs/assets/metal-independent-q1-reviewed-v3/model.json": "a1e4872e858003472b73e59801f6a283bf17f5ded255b10712864344635afc01",
+    "docs/assets/metal-independent-transfer-v1/m1-detail-marked.png": "c968b44fb9a6fe351455703ea8e9067120ddb64e9db917805715344b62285df3",
+    "docs/assets/metal-independent-transfer-v1/m2-detail-marked.png": "036d2cf6f98393579226422e06f7df5f0538930d27a4b4d7643339fa211cd71a",
+    "benchmarks/agent-eval/index.json": "7bed06f31c17c337bc3c3b9f1322b04a2f876213c26be18a5e62e24d5f8c6099",
+    "benchmarks/agent-eval/roi2-seed-v1/input.json": "6c3130988af8d71e9354cc1d7dee794a14aac0ae3f0f071450f2b3ae36d0a3bc",
+    "benchmarks/agent-eval/roi2-seed-v1/reference.json": "d4d6a739577dfe5b3279e5b6eca2c9308330de253ac88585aa026f2be2ddf23b",
+    "benchmarks/agent-eval/v3-seed-v1/input.json": "cd969c8cdfacd6f6451c9304aa7ce0d412fff31bdb8813bcefc6c7dfa3ad61bf",
+    "benchmarks/agent-eval/v3-seed-v1/reference.json": "46184d54c71685b71f592faaf01a652e8d38953b329fcb0a31bb0267be660039",
+    "benchmarks/portfolio-quality-v1/suite.json": "c2627bf84b15e476b45b9b40709197204e4d45c8edd75b5c978b0d64a7c5ce72"
   },
   "artifacts": {
+    "assets/carrier-after.svg": "d20b915e3ceb90b0c74da8e391f5c3d5e733ee454fceaf542a9d72583054b2f4",
+    "assets/carrier-before.svg": "eeed239daf6753433c19410da6c6011e5199a2e0402b1a529a551c0d63385e41",
+    "assets/carrier-m1.webp": "130a98e8a17b61c856a136a3df0308abd6ffd1a97fbb92f042263c4c461be14c",
+    "assets/carrier-m2.webp": "3c9566f9e6d6b8aa1f228e441f9f4233b0314626f2fadfb617d8e8ccd8415376",
     "assets/data.js": "c1646aa9062eea7515899682d788f58c93059301a5b44b7d3dfc0167e393f439",
     "assets/device-aa.webp": "d6d81f2575e0af12e322677612210804de0467e57903597531cbdf0213367e98",
     "assets/device-m1.webp": "c50d5f6837e89c61b1595b498efc8e6e19dcd3d99550c166c895e463ccead27c",
@@ -37,9 +58,11 @@
     "assets/metals.svg": "58028f4e8117a704912e7383ab44766e8849bd64e82c84f2e68ef980a2d31575",
     "assets/metals.webp": "af8482715d4f125cc1ba983e46e2e71a777874f6bff7490528fcdb76a0eb5200",
     "assets/overview.webp": "51ec876c0c474e13c8533c1b9d376fab353bf12d133e3668242948c23fbc9cb9",
+    "assets/quality.js": "031abef542133840f5730e1b8530e4f7f5d1e26c70ee4bd96035caffb24fbd8c",
     "assets/schematic.svg": "6c47bb0a12188b562b8e42150b3c576eede06b47befb28525b77ffbcd65cc152",
     "assets/source.webp": "9670ab36b7f4831193d24f825954f289fdd47a866ce1efb9335cf11d4fee63af",
-    "assets/views.js": "cb7b5cecb220d60f059c3eaa62f399e2ae7f61f6f1ac38e7a26df2a30d58c539"
+    "assets/views.js": "cb7b5cecb220d60f059c3eaa62f399e2ae7f61f6f1ac38e7a26df2a30d58c539",
+    "quality-report.json": "cd9bb362e0d622407114edd5c8adf6138e84a3f4f24b724a46f7f13b5824a677"
   },
   "scope": "Curated presentation of one chip; reviewed relations and candidate geometry remain distinct. No online AI inference or complete netlist claim."
 }

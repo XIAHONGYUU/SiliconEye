@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25",
+  "browser": "Playwright Chromium headless shell 151",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checks": [
+    "desktop render",
+    "material layer toggle",
+    "device IDs, terminal table, source frames and schematic",
+    "metal layer toggle and via zoom",
+    "mobile 390px all panels without horizontal overflow",
+    "quality evidence disclosure, eight task rubrics and honest result cards",
+    "all images loaded and no browser errors",
+    "direct case deep link"
+  ],
+  "errors": [],
+  "screenshots_dir": "runs/portfolio-quality-browser-check"
+}

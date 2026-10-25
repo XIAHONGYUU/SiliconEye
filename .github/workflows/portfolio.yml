@@ -1,0 +1,39 @@
+name: Portfolio integrity
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'scripts/**', 'tests/test_portfolio_quality.py', 'tests/test_workspace_archive.py', '.github/workflows/portfolio.yml']
+  pull_request:
+    paths: ['site/**', 'scripts/**', 'tests/test_portfolio_quality.py', 'tests/test_workspace_archive.py', '.github/workflows/portfolio.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-bundle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/
+            /site/
+            /tests/test_portfolio_quality.py
+            /tests/test_workspace_archive.py
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'pytest==8.4.2'
+      - name: Check public hashes, links and honest metric boundaries
+        run: python scripts/portfolio_quality.py --check-site
+      - name: Test stale-data and recoverable-archive guarantees
+        run: python -m pytest -q tests/test_portfolio_quality.py tests/test_workspace_archive.py
+      - name: Check browser script syntax
+        run: |
+          node --check site/app.js
+          node --check site/assets/data.js
+          node --check site/assets/views.js
+          node --check site/assets/quality.js

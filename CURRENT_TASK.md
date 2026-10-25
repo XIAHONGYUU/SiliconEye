@@ -2,11 +2,18 @@
 
 ## 当前目标与授权
 
-本轮按用户批准的9项成果，把项目整理为求职展示入口，同时保留开发证据与可恢复状态。README、三个精选案例、轻量交互Demo、简历表述、文档导航和首批工作区归档均已完成。GitHub主分支与gh-pages已推送，Pages构建成功，17个公开文件和README内容与本机逐字节一致；简介、标签和主页已核对。当前入口不代替既有人工裁决。
+当前执行用户批准的展示优化：先整理六孔承载纠错案例，再统一8个历史任务与结果卡，接入首页，补充照片来源说明和轻量CI。基线为53a1dcf，允许修改site、精选文档、评测整理脚本/清单及CI，并更新现有GitHub展示。原始照片、物理模型和人工裁决保持原样；历史案例不标为盲测，新模型成绩未测。完成标准：证据哈希、统计口径、网页交互与CI检查通过，发布后核对线上内容。
 
-[展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/silicon-eye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [本轮整理报告](docs/reviews/2026-10-25-portfolio.md)。
+[展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/silicon-eye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [首轮整理报告](docs/reviews/2026-10-25-portfolio.md) · [质量优化报告](docs/reviews/2026-10-25-quality-portfolio.md)。
 
-## 展示与整理结果
+## 本轮质量优化
+
+- 已加入六孔承载纠错案例、历史结果卡和8任务目录：2个现有机器评分任务、6个人工rubric。20条部分参考中16条已知、4条未解决；没有新模型预测或独立留出成绩。
+- 历史证据20文件、构建来源42文件与公开资产18项均校验；相关37项不同测试通过，CI对应13项在本机稀疏环境通过。来源/原模型不变。
+- [本轮验证](benchmarks/portfolio-quality-v1/verification.json)、[评测协议](benchmarks/portfolio-quality-v1/README.md)和[发布回执](benchmarks/portfolio-quality-v1/publication.json)保存口径与实际状态；公开页面约1.17MB。原开发裁决不因展示或CI通过改变。
+- [优化前入口完整归档](docs/history/current-task-before-2026-10-25-quality-portfolio.md)保留53a1dcf时原文、字节数与SHA。
+
+## 首轮展示与整理结果
 
 - 开发基线提交`fa3e1c7`；本地恢复分支`archive/pre-portfolio-20261025`保持该提交。原README完整保存在[历史原文](docs/history/2026-10-25-before-portfolio-README.md)。
 - 展示直接读取已有共同层、器件包和五层候选，不重跑识别、不改原图或人工结论。[来源与哈希](site/provenance.json)绑定源基线；[构建配置](configs/portfolio.json)集中管理选样。
@@ -44,7 +51,7 @@
 
 ## 唯一下一步
 
-返回**V1/V2重叠关系与Q2整组占用比例的局部复核**；不重问已审连接，不因展示或测试通过批准具体几何，不扩全图或重做材料层。
+本轮质量展示、8任务目录、来源说明与轻量CI已完成本地验证（37项相关测试、13项稀疏环境检查、桌面/手机交互）；下一步提交并核对线上页面和CI。完成后返回**V1/V2重叠关系与Q2整组占用比例的局部复核**；不重问已审连接，不因展示或测试通过批准具体几何，不扩全图或重做材料层。
 
 重放入口：
 ```bash

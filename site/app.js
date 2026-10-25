@@ -54,3 +54,16 @@ function showDevice(){
   }));
 }
 deviceSelect.addEventListener('change',showDevice);frameSelect.addEventListener('change',showDevice);showDevice();
+
+const quality = window.SE_QUALITY;
+document.getElementById('aa-history-count').textContent = quality.aa_historical_accepted_tasks + ' / 3';
+document.getElementById('catalog-count').textContent = quality.catalog_tasks + ' 个';
+document.getElementById('catalog-methods').textContent = quality.tasks_with_existing_machine_scorer + '个沿用机器评分器，' + quality.manual_rubric_tasks + '个提供人工rubric；本轮新模型运行0次。';
+document.getElementById('failure-summary').textContent = 'POLY计数 ' + quality.poly_count.initial + '→' + quality.poly_count.human + '；V1承载由窄A改为宽B，记录1次承载纠正。';
+document.getElementById('work-layer-counts').textContent = Object.entries(quality.work_layer_objects).map(([k,v])=>k+' '+v).join(' / ');
+document.getElementById('unknown-scope-count').textContent = quality.unresolved_scopes;
+quality.cases.forEach(c=>{
+  const row=document.createElement('tr');
+  [c.id+' · '+c.title,c.mode==='agent_evaluation'?'现有机器评分器':'人工rubric',c.rubric+' '+c.limit].forEach(value=>{const td=document.createElement('td');td.textContent=value;row.append(td);});
+  document.getElementById('quality-task-rows').append(row);
+});

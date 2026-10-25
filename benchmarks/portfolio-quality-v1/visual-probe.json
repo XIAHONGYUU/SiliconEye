@@ -1,0 +1,23 @@
+{
+  "verdict": "NEEDS REVIEW",
+  "artifact": {
+    "path": "/home/zuoky/project_siliconeyes/silicon-eye/site/index.html",
+    "sha256": "b8e16336845a3aaeeaaf7d4f109e65c0c272c820137b346b2426c2b4ef624760",
+    "suffix": ".html",
+    "size_bytes": 14416
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "severity": "INFO",
+      "code": "ARTIFACT_PRESENT",
+      "message": "candidate exists and has a supported suffix"
+    },
+    {
+      "status": "MANUAL",
+      "severity": "P1",
+      "code": "VISUAL_REVIEW_REQUIRED",
+      "message": "deterministic checks do not verify typography, clipping, arrow appearance, or viewing-scale readability"
+    }
+  ]
+}

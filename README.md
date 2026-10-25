@@ -1,12 +1,25 @@
 # Silicon Eye
 
-### 用模拟版图经验驱动AI，从芯片照片重建可复核结构。
+### 将模拟版图经验转化为AI可执行、可复核的重建约束。
 
 从**同一颗芯片的8张逐层照片**出发，结合图像算法、版图结构约束与人工复核，逐步重建材料层、器件编号和跨层连接。项目由 **XIAHONGYUU** 主导需求、领域判断与验收，采用AI辅助开发。
 
-[**打开交互Demo →**](https://xiahongyuu.github.io/silicon-eye/) · [三个案例与证据](docs/portfolio/cases.md) · [复现与开发](DEVELOPMENT.md)
+[**打开交互Demo →**](https://xiahongyuu.github.io/silicon-eye/) · [质量纠错案例](docs/portfolio/quality-case.md) · [评测基准](benchmarks/portfolio-quality-v1/README.md) · [三个交互案例](docs/portfolio/cases.md) · [复现与开发](DEVELOPMENT.md)
 
 ![实际项目成果：原始逐层照片、AA/POLY/CT规则几何与五层联合复核](site/assets/overview.webp)
+
+## 从一次真实错误，看质量门如何改进
+
+AI曾将六孔V1组接到窄M2-A；旧检查只验证单个代理框，漏掉了完整孔组占用。人工纠正为宽M2-B后，流程增加孔数、完整阵列和上下承载检查。[查看原错误、裁决与修订证据](docs/portfolio/quality-case.md)。
+
+| 有范围的结果 | 口径 |
+| --- | --- |
+| AA三项历史任务验收通过 | 接续、局部改善、防退化；同Agent已知案例，非新模型准确率 |
+| 8个历史任务已整理 | 2个沿用现有机器评分器、6个人工rubric；同一颗芯片，留出任务0 |
+| 2条失败记录公开呈现 | POLY计数5→6；V1承载窄A→宽B。不是全项目失败总数 |
+| 工作层AA334 / POLY696 / CT10287 | 重建对象数；六处未知是区域，不能除以对象数当未知率 |
+
+新模型准确率、跨芯片泛化、人审总耗时与速度改善尚未测量。[结果与来源数据](site/quality-report.json) · [评测协议](benchmarks/portfolio-quality-v1/README.md) · [公开包CI](https://github.com/XIAHONGYUU/silicon-eye/actions/workflows/portfolio.yml)。
 
 ## 三个案例，三分钟看懂
 
@@ -40,4 +53,4 @@ flowchart LR
 
 ---
 
-[开发指南](DEVELOPMENT.md) · [文档导航](docs/README.md) · [当前开发任务](CURRENT_TASK.md) · [简历项目表述](docs/portfolio/resume.md) · [README历史原文](docs/history/2026-10-25-before-portfolio-README.md)
+[开发指南](DEVELOPMENT.md) · [文档导航](docs/README.md) · [当前开发任务](CURRENT_TASK.md) · [简历项目表述](docs/portfolio/resume.md) · [样本来源说明](docs/portfolio/data-sources.md) · [README历史原文](docs/history/2026-10-25-before-portfolio-README.md)

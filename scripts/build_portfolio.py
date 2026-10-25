@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
+from portfolio_quality import audit_catalog
 from shapely.geometry import Polygon, box
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +54,7 @@ def plot(groups, bounds, size):
 
 def build():
     config = read("configs/portfolio.json")
+    quality = audit_catalog(ROOT)
     output = ROOT / "site/assets"
     output.mkdir(parents=True, exist_ok=True)
     snapshot = load_snapshot(ROOT, ROOT / config["snapshot"])
@@ -154,6 +156,33 @@ def build():
         + json.dumps(dict(materials=material, metals=metal_svg), ensure_ascii=False)
         + ";\n"
     )
+    # Preserve old and corrected geometry as distinct, source-bound views.
+    correction_bounds = config["quality_case_window"]
+    cx, cy, cr, cb = correction_bounds
+    for name, ref in [("before", "metal_before"), ("after", "metal_after")]:
+        model = read(quality["evidence"][ref]["path"])
+        focused = dict(model)
+        focused["objects_by_layer"] = {
+            layer: objects if layer in {"M1", "V1", "M2"} else []
+            for layer, objects in model["objects_by_layer"].items()
+        }
+        drawing = (
+            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{cx} {cy} {cr - cx} {cb - cy}">'
+            + svg_layers(focused, correction_bounds)
+            + '<g fill="white" font-family="system-ui" font-size="10" text-anchor="middle">'
+            '<text x="300" y="235">A</text><text x="370" y="235">B</text></g></svg>'
+        )
+        (output / f"carrier-{name}.svg").write_text(drawing)
+    for frame in ("m1", "m2"):
+        with Image.open(ROOT / quality["evidence"][frame + "_photo"]["path"]) as photo:
+            photo.thumbnail((1000, 1000))
+            photo.convert("RGB").save(output / f"carrier-{frame}.webp", quality=90)
+    (ROOT / "site/quality-report.json").write_text(
+        json.dumps(quality, ensure_ascii=False, indent=2) + "\n"
+    )
+    (output / "quality.js").write_text(
+        "window.SE_QUALITY = " + json.dumps(quality, ensure_ascii=False) + ";\n"
+    )
     sources = [
         config["snapshot"],
         config["metal_model"],
@@ -164,12 +193,14 @@ def build():
     ]
     sources += [ref["path"] for ref in snapshot["manifest"]["source_photos"].values()]
     sources += [ref["path"] for ref in snapshot["manifest"]["inputs"].values()]
+    sources += [ref["path"] for ref in quality["evidence"].values()]
+    sources += ["benchmarks/portfolio-quality-v1/suite.json"]
     manifest = dict(
         snapshot_commit="fa3e1c7",
         sources={p: digest(ROOT / p) for p in sources},
         artifacts={
             str(p.relative_to(ROOT / "site")): digest(p)
-            for p in sorted(output.iterdir())
+            for p in sorted([*output.iterdir(), ROOT / "site/quality-report.json"])
             if p.is_file()
         },
         scope="Curated presentation of one chip; reviewed relations and candidate geometry "

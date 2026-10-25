@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-25",
+  "baseline": "53a1dcf",
+  "historical_sources_checked": 20,
+  "all_build_sources_checked": 42,
+  "public_asset_hashes_checked": 18,
+  "local_markdown_links_checked": 56,
+  "tests": {
+    "relevant_passed": 32,
+    "additional_six_cut_regressions_passed": 5,
+    "unique_test_total": 37,
+    "sparse_CI_tests_passed": 13,
+    "sparse_count_included_in_total": true
+  },
+  "catalog": {
+    "tasks": 8,
+    "machine_scorer_tasks": 2,
+    "manual_rubric_tasks": 6,
+    "partial_known": 16,
+    "partial_unresolved": 4,
+    "new_model_runs": 0,
+    "held_out": 0
+  },
+  "browser": "browser-verification.json",
+  "visual_audit": "visual-review-v2.md",
+  "originals_algorithms_and_frozen_models_unchanged": true,
+  "entry_archive_bytes_equal": true,
+  "site_bytes": 1166883,
+  "presentation_hashes": {
+    "site/index.html": "b8e16336845a3aaeeaaf7d4f109e65c0c272c820137b346b2426c2b4ef624760",
+    "site/style.css": "e3f9edaf7f019f6b72a392c768d0e2e8d91132ccbedf9fd32ad668fcb2717e3d",
+    "site/app.js": "23a07257ce148607b99e21dd00c44cbdfc7a070b94562ea7066918dfcbdfe783"
+  }
+}

@@ -52,14 +52,23 @@ GitHub Pages使用`gh-pages`分支根目录。推送需要相应授权和本机�
 
 ```bash
 .venv/bin/pytest -q tests/test_stacked_via_review.py tests/test_five_layer_geometry.py
-.venv/bin/pytest -q tests/test_workspace_archive.py
-.venv/bin/ruff check scripts/build_portfolio.py scripts/workspace_archive.py
+.venv/bin/pytest -q tests/test_workspace_archive.py tests/test_portfolio_quality.py
+python3 scripts/portfolio_quality.py --check-site
+.venv/bin/ruff check scripts/build_portfolio.py scripts/workspace_archive.py scripts/portfolio_quality.py
 git diff --check
 ```
 
 完整测试用`.venv/bin/pytest -q`，耗时和验证范围更大；不要把某次子集通过的数量表述为全项目总测试数或照片识别准确率。
 
-可选浏览器检查：安装Playwright及其Chromium后运行`node scripts/check_portfolio.cjs`；若使用集中安装的运行时，通过`NODE_PATH`与`PLAYWRIGHT_BROWSERS_PATH`指定位置。检查包含桌面/手机布局、切层、器件表、孔组放大及案例链接，截图写入`runs/portfolio-browser-check/`。
+可选浏览器检查：安装Playwright及其Chromium后运行`node scripts/check_portfolio.cjs`；若使用集中安装的运行时，通过`NODE_PATH`与`PLAYWRIGHT_BROWSERS_PATH`指定位置。检查包含桌面/手机布局、切层、器件表、孔组放大及案例链接，截图写入`runs/portfolio-quality-browser-check/`。
+
+## 质量案例与轻量CI
+
+[八任务目录](benchmarks/portfolio-quality-v1/README.md)区分历史验收、人工rubric与两个现有机器评分任务。`python3 scripts/portfolio_quality.py`核对来源哈希并输出历史事实；不调用模型、不生成新准确率。`scripts/build_portfolio.py`将这些记录构建为公开结果卡。
+
+GitHub Actions仅稀疏检出scripts、site和两个保障测试文件，运行公开资产哈希/链接/指标边界检查、13项保障测试和JavaScript语法检查，不下载多GB历史证据。权限仅contents:read，凭证不持久化，不自动发布页面。这是公开包CI，不是全项目测试或物理验收；完整源证据哈希在本机构建时另查。
+
+工作流使用官方[checkout](https://github.com/actions/checkout)与[setup-python](https://github.com/actions/setup-python)，均固定提交。源文件结构整理先通过导航与轻量发布完成，冻结证据仍留原路径；后续迁移另作依赖/哈希方案，不直接删除或重写Git历史。
 
 ## 工作区归档
 

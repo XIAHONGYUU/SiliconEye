@@ -5,7 +5,7 @@ const fs=require('fs');
 const assert=require('assert/strict');
 (async()=>{
  const root=require('path').resolve(__dirname,'..');
- const out=root+'/runs/portfolio-browser-check';fs.mkdirSync(out,{recursive:true});
+ const out=root+'/runs/portfolio-quality-browser-check';fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
  const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
@@ -26,8 +26,22 @@ const assert=require('assert/strict');
  for(const name of ['materials','devices','metals']){await page.locator('[data-case="'+name+'"]').click();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);await page.locator('#demo').scrollIntoViewIfNeeded();await page.screenshot({path:out+'/mobile-'+name+'.png',fullPage:name==='materials'});}
  record('mobile 390px all panels without horizontal overflow');
  await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:out+'/mobile-top.png'});
+ await page.setViewportSize({width:1440,height:1000});
+ await page.locator('#quality').scrollIntoViewIfNeeded();
+ await page.screenshot({path:out+'/quality-desktop.png'});
+ assert.equal(await page.locator('#aa-history-count').innerText(),'3 / 3');
+ assert.equal(await page.locator('#catalog-count').innerText(),'8 个');
+ await page.setViewportSize({width:390,height:844});await page.locator('.correction-pair').screenshot({path:out+'/quality-pair-mobile.png'});await page.setViewportSize({width:1440,height:1000});
+ await page.locator('#quality summary').click();
+ await page.locator('.evidence-pair img').last().scrollIntoViewIfNeeded();
+ await page.waitForFunction(()=>[...document.querySelectorAll('.evidence-pair img')].every(e=>e.complete&&e.naturalWidth>0));
+ await page.locator('#results summary').click();
+ assert.equal(await page.locator('#quality-task-rows tr').count(),8);
+ await page.setViewportSize({width:390,height:844});
+ for(const section of ['quality','results']){await page.locator('#'+section).evaluate(e=>e.scrollIntoView({block:'start',behavior:'instant'}));assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await page.screenshot({path:out+'/'+section+'-mobile.png'});}
+ record('quality evidence disclosure, eight task rubrics and honest result cards');
  const images=await page.locator('img').evaluateAll(es=>es.filter(e=>!e.complete||e.naturalWidth===0).map(e=>e.src));assert.deepEqual(images,[]);assert.deepEqual(errors,[]);record('all images loaded and no browser errors');
  await page.goto('file://'+root+'/site/index.html#devices');await page.locator('#devices').waitFor({state:'visible'});assert.equal(await page.locator('#devices').isVisible(),true);record('direct case deep link');
- const result={date:'2026-10-25',browser:'Playwright Chromium headless shell 151',viewports:[[1440,1000],[390,844]],checks,errors,screenshots_dir:'runs/portfolio-browser-check'};
- fs.writeFileSync(root+'/benchmarks/portfolio-v1/browser-verification.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));await browser.close();
+ const result={date:'2026-10-25',browser:'Playwright Chromium headless shell 151',viewports:[[1440,1000],[390,844]],checks,errors,screenshots_dir:'runs/portfolio-quality-browser-check'};
+ fs.writeFileSync(root+'/benchmarks/portfolio-quality-v1/browser-verification.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));await browser.close();
 })().catch(e=>{console.error(e);process.exit(1)});
