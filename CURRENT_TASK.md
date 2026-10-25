@@ -2,9 +2,13 @@
 
 ## 当前目标与授权
 
-用户已批准将GitHub仓库及展示品牌统一为SiliconEye。本轮基线c179e64；更新现有仓库名称、主页链接、本机origin、README/简历/展示页，并核对Pages与远端身份。仅名称与入口迁移，保留原始照片、模型、历史审批及CI权限阻塞状态。本机目录、Python包与silicon-eye命令保持兼容。
+SiliconEye重命名已完成。仓库为XIAHONGYUU/SiliconEye，ID1258358595保持；本机origin和当前README/展示/简历入口已同步。内容提交e574bf5，Pages提交01d621b，实际构建成功；新网址下23个公开文件及README与本机一致。仅名称与入口迁移，原照片、物理模型、审批和历史回执未改写；本机目录与silicon-eye命令保留兼容。CI仍等待workflow权限，不因改名改变状态。
 
 [展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/SiliconEye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [首轮整理报告](docs/reviews/2026-10-25-portfolio.md) · [质量优化报告](docs/reviews/2026-10-25-quality-portfolio.md)。
+
+## 名称迁移结果
+
+[迁移报告](docs/reviews/2026-10-25-SiliconEye-rename.md) · [发布回执](benchmarks/SiliconEye-rename-v1/publication.json) · [本机验证](benchmarks/SiliconEye-rename-v1/verification.json)。42项来源/18项资产哈希、36条相关本地链接与手机/桌面标题布局均核对；原入口已完整归档，原始字节核对一致。
 
 ## 本轮质量优化
 
