@@ -1,0 +1,60 @@
+{
+  "status": "WORK_SNAPSHOT_READY_GEOMETRY_REVIEW_PENDING",
+  "work_snapshot_ready": true,
+  "domain_count": 2,
+  "object_count": 41,
+  "reviewed_interface_count": 13,
+  "reviewed_terminal_count": 1,
+  "material_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "domains": {
+    "medium": {
+      "continuation_exact": true,
+      "connections_preserved": true,
+      "geometry_changes": [
+        "SUPPORT-J-M2-V2-M3-B1"
+      ],
+      "metrics": {
+        "unit": "relative_design_px_not_photo_registration_or_PDK",
+        "V1_design_cuts": 9,
+        "V2_design_cuts": 12,
+        "V1_V2_overlap_area": 72.0,
+        "common_M2": "M2-J01",
+        "V2_M2_width_fraction": 0.9166666666666666,
+        "V2_M2_height_fraction": 0.02564102564102564,
+        "exact_geometry_accepted": false,
+        "V1_human_count": null,
+        "V2_human_count": 12
+      },
+      "package_quality": "REVIEWABLE_WITH_QUALITY_GAPS"
+    },
+    "independent": {
+      "continuation_exact": true,
+      "connections_preserved": true,
+      "geometry_changes": [
+        "IT1-M2-B",
+        "IT1-V2-B"
+      ],
+      "metrics": {
+        "unit": "relative_design_px_not_photo_registration_or_PDK",
+        "V1_design_cuts": 6,
+        "V2_design_cuts": 6,
+        "V1_V2_overlap_area": 90.0,
+        "common_M2": "IT1-M2-B",
+        "V2_M2_width_fraction": 0.8947368421052632,
+        "V2_M2_height_fraction": 0.8108108108108109,
+        "exact_geometry_accepted": false,
+        "V1_human_count": 6,
+        "V2_human_count": 6
+      },
+      "package_quality": "REVIEWABLE_WITH_QUALITY_GAPS"
+    }
+  },
+  "canonical_geometry_adoption": false,
+  "complete_network_export": false,
+  "material_canvas_registration": false,
+  "note": "Readiness means scoped continuation, not physical approval."
+}

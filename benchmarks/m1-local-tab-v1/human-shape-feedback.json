@@ -1,0 +1,19 @@
+{
+  "kind": "metal_shape_feedback",
+  "actor": "human",
+  "statement": "该位置原生照片中的M1向下突出来了一点并有两个孔超出了正常的横向宽度。",
+  "sources": {
+    "reviewed_work": {
+      "path": "docs/assets/via-center-preserving-v1/work/manifest.json",
+      "sha256": "c342b3795d6a029d7cf5f3332f8695db3f489f7318cb6f994beba2801415284c"
+    }
+  },
+  "scope": {
+    "metal_id": "IT1-M1-RING",
+    "source_frame": "m1",
+    "downward_tab_present": true,
+    "holes_beyond_normal_horizontal_band": 2,
+    "precise_geometry_accepted": false,
+    "connections_changed": false
+  }
+}

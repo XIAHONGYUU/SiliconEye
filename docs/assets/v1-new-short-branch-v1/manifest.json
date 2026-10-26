@@ -1,0 +1,29 @@
+{
+  "kind": "new_V1_interface_review_navigator",
+  "candidate_package": {
+    "path": "docs/assets/v1-new-short-branch-v1/candidate/manifest.json",
+    "sha256": "7ddd3605a1525276ed56e8975dcf5308db702d40899e0f609c53585aee9f6687"
+  },
+  "inputs": {
+    "initial_AI": {
+      "path": "benchmarks/v1-new-short-branch-v1/initial-ai-observation.json",
+      "sha256": "26b39384b2a7ae0f45ae00bedd2aa416d4cfe0744193ee91a6232ed9734d52fe"
+    },
+    "fixed_task": {
+      "path": "benchmarks/v1-new-short-branch-v1/fixed-task.json",
+      "sha256": "4788449db17d202c5c7074fc5ea429f0084f80b3f98892cdeb9b4dc2e9c81a8e"
+    },
+    "verification": {
+      "path": "benchmarks/v1-new-short-branch-v1/verification.json",
+      "sha256": "6b339c6d9de651cdb1a5ca7802d58ff5bddcdafc4981d90271d5cf2af4ccc7a3"
+    },
+    "baseline_V2_stage": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/stage-result.json",
+      "sha256": "86da1f34925051b5737c1086afe93e3629da92b14f1ecdc0441b17ce3678d2f7"
+    }
+  },
+  "artifacts": {
+    "index.html": "bc101ca654660a49cefe578485a90ea29935f7f47025810614feac3542eb1b97",
+    "design.png": "6d1bdd96808e6c096692553d8c0b853251dbead1fe709280e44c6f9b0cdb3364"
+  }
+}

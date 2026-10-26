@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Correct oversized V2 drawing without moving design sites, changing metal width, reducing spacing rules or changing approved connectivity. V1/metal scale is still uncalibrated; retain V1 rather than invent a new size.",
+  "changed_object_ids": [
+    "IT1-V2-B"
+  ],
+  "sources": {
+    "human_feedback": {
+      "path": "benchmarks/via-center-preserving-v1/human-size-feedback.json",
+      "sha256": "06d85ffbec13657ce158c2f3f34f82cc0ac728aca7cf14f21600d47f5c6deb9b"
+    },
+    "parent": {
+      "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+      "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+    }
+  },
+  "scope": "V2 cut edge 14->6 only; centers, counts, pitch, native anchors and all metals unchanged. Physical size and source registration remain unknown."
+}

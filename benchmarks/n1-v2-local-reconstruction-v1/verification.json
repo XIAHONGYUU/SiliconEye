@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SCOPED_ENGINEERING_AND_DELIVERY",
+  "input_bindings": 63,
+  "continuation_model_exact": true,
+  "baseline_metals_unchanged_except_N1": true,
+  "all_native_anchors_exact": true,
+  "old_reviewed_interfaces_and_cuts_exact": true,
+  "new_count_is_not_human_truth": true,
+  "whole_declared_group_enclosed": true,
+  "raw_source_crops_exact": 4,
+  "software_tests": {
+    "related": 77,
+    "inventory": 9,
+    "fixed_regression": 31,
+    "unique_total": 117,
+    "is_agent_accuracy_evaluation": false
+  },
+  "ruff": "PASS",
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "browser_interaction_tested": false,
+  "new_pending_connection_approvals": [],
+  "not_qualified": [
+    "physical_cut_count",
+    "exact_source_geometry",
+    "exact_photo_projection",
+    "PDK_DRC",
+    "full_chip_coverage",
+    "canonical_adoption",
+    "complete_network"
+  ],
+  "static_resource_links": true,
+  "shared_SVG_two_explicit_cut_paths": true,
+  "visual_PNG_inspection": true,
+  "previous_task_archive_exact": true,
+  "current_task_and_report_links": true
+}

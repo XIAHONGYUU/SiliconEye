@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-26",
+  "human_tasks_approved": 2,
+  "new_interface_records_approved": 4,
+  "pending_interface_count": 0,
+  "geometric_objects_exactly_unchanged": true,
+  "full_next_model_exact": true,
+  "review_binding_and_source_artifact_hash_checks": 84,
+  "unchanged_design_cut_counts": [
+    6,
+    6,
+    10,
+    10
+  ],
+  "human_counts_still_unknown": true,
+  "svg_xml": "PASS",
+  "javascript_syntax": "PASS",
+  "local_html_links": "PASS",
+  "unchanged_baseline_objects": 41,
+  "unchanged_baseline_interface_records": 13,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "prior_tests": {
+    "passed": 27,
+    "source": "benchmarks/metal-representative-transfer-v1/verification.json",
+    "rerun_this_turn": false
+  },
+  "browser_interaction_tested": false,
+  "code_changed_this_turn": false,
+  "geometry_changed_this_turn": false,
+  "network_export": false,
+  "canonical_geometry_adoption": false,
+  "unrestricted_skill_release": false,
+  "remote_modified": false
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_corridor_working_geometry_review",
+  "actor": "human",
+  "date": "2026-10-26",
+  "statement": "R1到R6均合理",
+  "preceding_incomplete_reply": {
+    "statement": "R1到仍",
+    "used_as_approval": false,
+    "disposition": "Superseded by the subsequent complete reply to the same question."
+  },
+  "question_item_id": "[\"request_user_input_async\",\"call_d7ca78debda14056b2230db34c0acc0c\",0]",
+  "sources": {
+    "submitted_page": {
+      "path": "docs/assets/conductive-corridor-batch-review-v1/index.html",
+      "sha256": "f0748481749419a16699703d682ce031c20abcc8a8c359f9df909457f674a5de"
+    },
+    "submitted_workflow": {
+      "path": "docs/assets/conductive-corridor-batch-review-v1/work/manifest.json",
+      "sha256": "7d21a87692a61e3cc578eccb98766769851f892fbc2c6809f5ded4b1a41bb234"
+    },
+    "groups": {
+      "path": "benchmarks/conductive-corridor-batch-review-v1/groups.json",
+      "sha256": "703b15c6417260785a57a4694f1c1a60c1ade19bff307f6cf375bebe6b28c9cd"
+    },
+    "extent_evidence": {
+      "path": "benchmarks/conductive-corridor-batch-review-v1/source-extent-evidence.json",
+      "sha256": "d8fc0a19c2ea0c1e3dcb340f9bd697ff726c4c4f21d8eefa06350cab9f3aa592"
+    },
+    "review_request": {
+      "path": "benchmarks/conductive-corridor-batch-review-v1/review-request.json",
+      "sha256": "8b2af7c426b53afca82e4e7310f6b3be524c5566f3be3325043e2208b5e722d9"
+    },
+    "submitted_model": {
+      "path": "docs/assets/conductive-corridor-batch-review-v1/work/model.json",
+      "sha256": "0b79a43d1a4c52da32610aa0d49138272ca20282a1ef58a493f0ad944eff750d"
+    }
+  },
+  "decisions": [
+    {
+      "group_id": "CORRIDOR-GEO-R1",
+      "label": "R1",
+      "decision": "accepted",
+      "metal_ids": [
+        "C-M2-03",
+        "C-M2-04",
+        "C-M2-05",
+        "C-M2-06",
+        "C-M2-08"
+      ],
+      "scope": "qualitative_working_geometry_only"
+    },
+    {
+      "group_id": "CORRIDOR-GEO-R2",
+      "label": "R2",
+      "decision": "accepted",
+      "metal_ids": [
+        "C-M3-T01",
+        "C-M3-T02",
+        "C-M3-T03",
+        "C-M3-T04",
+        "C-M3-T05",
+        "C-M3-T06"
+      ],
+      "scope": "qualitative_working_geometry_only"
+    },
+    {
+      "group_id": "CORRIDOR-GEO-R3",
+      "label": "R3",
+      "decision": "accepted",
+      "metal_ids": [
+        "C-M3-M01",
+        "C-M3-M02",
+        "C-M3-M03",
+        "C-M3-M04",
+        "C-M3-M05",
+        "C-M3-M06"
+      ],
+      "scope": "qualitative_working_geometry_only"
+    },
+    {
+      "group_id": "CORRIDOR-GEO-R4",
+      "label": "R4",
+      "decision": "accepted",
+      "metal_ids": [
+        "C-M3-E1",
+        "C-M3-E2",
+        "C-M3-L01",
+        "C-M3-L03",
+        "C-M3-EDGE"
+      ],
+      "scope": "qualitative_working_geometry_only"
+    },
+    {
+      "group_id": "CORRIDOR-GEO-R5",
+      "label": "R5",
+      "decision": "accepted",
+      "metal_ids": [
+        "RT-M2-R01",
+        "RT-M2-R02",
+        "RT-M2-NARROW"
+      ],
+      "scope": "qualitative_working_geometry_only"
+    },
+    {
+      "group_id": "CORRIDOR-GEO-R6",
+      "label": "R6",
+      "decision": "accepted",
+      "metal_ids": [
+        "RT-M3-UP",
+        "RT-M3-MID",
+        "RT-M3-DOWN",
+        "RT-M3-THIN1",
+        "RT-M3-THIN2"
+      ],
+      "scope": "qualitative_working_geometry_only"
+    }
+  ],
+  "recorded_scope": {
+    "new_fragment_geometry_groups": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "retained_source_extent_geometry_groups": [
+      "R5",
+      "R6"
+    ],
+    "mapped_metal_fragments": 30,
+    "new_metal_fragments": 22,
+    "retained_metal_extent_records": 8,
+    "source_boundary_endpoints": 13,
+    "geometry_level": "qualitative_scoped_working_baseline"
+  },
+  "not_approved": {
+    "new_connections": false,
+    "via_counts_or_dimensions": false,
+    "unresolved_ids": [
+      "C-U1",
+      "C-U2",
+      "C-U3",
+      "C-U4",
+      "C-U5"
+    ],
+    "exact_photo_projection": false,
+    "PDK_or_physical_dimensions": false,
+    "complete_physical_inventory": false,
+    "M1_V1_correspondence": false,
+    "complete_network": false,
+    "canonical_geometry_adoption": false,
+    "unrestricted_skill_release": false
+  }
+}

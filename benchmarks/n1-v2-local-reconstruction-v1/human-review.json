@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "native_carrier_confirmation",
+  "actor": "human",
+  "date": "2026-10-26",
+  "statement": "N1接A",
+  "question_id": "N1-M3-CARRIER-Q1",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/n1-m3-carrier-inspection-v1/review-request.json",
+      "sha256": "d6b0cdc8a7e195c6e3a3ff68d348993b47b0d8252354a578509c7c158bbce4f6"
+    },
+    "identity_approval": {
+      "path": "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json",
+      "sha256": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e"
+    },
+    "working_geometry_baseline": {
+      "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+      "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+    }
+  },
+  "reviewed_images": [
+    {
+      "path": "docs/assets/n1-m3-carrier-inspection-v1/carrier-detail-pair.png",
+      "sha256": "f4b16aece95fd89e783d5b60ab90c2b5cb27455026d3b5205c9efff9619281d0"
+    },
+    {
+      "path": "docs/assets/n1-m3-carrier-inspection-v1/carrier-wide-pair.png",
+      "sha256": "3263a007c0cf21156b2a1371a87e2ff6e735e7783c4532b3b2e26bc33053c430"
+    }
+  ],
+  "decisions": {
+    "interface_id": "N1-V2",
+    "via_layer": "V2",
+    "lower_metal_id": "RT-M2-NARROW",
+    "upper_metal_id": "C-M3-L01",
+    "connection_confirmed": true
+  },
+  "observed_cut_count": null,
+  "not_approved": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ]
+}

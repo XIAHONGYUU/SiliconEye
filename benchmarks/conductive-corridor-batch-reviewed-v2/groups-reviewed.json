@@ -1,0 +1,247 @@
+{
+  "kind": "reviewed_scoped_geometry_groups",
+  "date": "2026-10-26",
+  "actor": "AI",
+  "scope": "New22 in R1-R4, retained8 extents in R5-R6; geometry only.",
+  "groups": [
+    {
+      "id": "CORRIDOR-GEO-R1",
+      "label": "R1",
+      "title": "M2新增5段",
+      "metal_ids": [
+        "C-M2-03",
+        "C-M2-04",
+        "C-M2-05",
+        "C-M2-06",
+        "C-M2-08"
+      ],
+      "source_frame": "m2",
+      "native_window": [
+        2940,
+        1730,
+        3670,
+        3000
+      ],
+      "design_window": [
+        0,
+        0,
+        780,
+        1190
+      ],
+      "AI_assessment": "CONSISTENT_AFTER_SOURCE_REVIEW",
+      "AI_notes": [
+        "上沿两处与长线起点保持可见空档。",
+        "按同帧结构站点修正左短段位置与左下竖段长度；05/06是否相连仍未知。"
+      ],
+      "human_status": "ACCEPTED_SCOPED_WORKING_GEOMETRY",
+      "human_decision": "accepted",
+      "question": "上沿两个折角、左侧折角/亮块及左下竖段的数量、相对位置和隔离是否合理？",
+      "human_review": {
+        "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+        "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+      }
+    },
+    {
+      "id": "CORRIDOR-GEO-R2",
+      "label": "R2",
+      "title": "M3上部六条细线",
+      "metal_ids": [
+        "C-M3-T01",
+        "C-M3-T02",
+        "C-M3-T03",
+        "C-M3-T04",
+        "C-M3-T05",
+        "C-M3-T06"
+      ],
+      "source_frame": "m3",
+      "native_window": [
+        2940,
+        1730,
+        3670,
+        2020
+      ],
+      "design_window": [
+        0,
+        0,
+        780,
+        250
+      ],
+      "AI_assessment": "CONSISTENT_AFTER_SOURCE_REVIEW",
+      "AI_notes": [
+        "来源可辨认六条，规则图保持19px节距、等宽和隔离。",
+        "未根据与M2交叉补V2。"
+      ],
+      "human_status": "ACCEPTED_SCOPED_WORKING_GEOMETRY",
+      "human_decision": "accepted",
+      "question": "上部六条独立细横线及其与上方/下方结构的相对位置、间距是否合理？",
+      "human_review": {
+        "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+        "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+      }
+    },
+    {
+      "id": "CORRIDOR-GEO-R3",
+      "label": "R3",
+      "title": "M3中部六条细线",
+      "metal_ids": [
+        "C-M3-M01",
+        "C-M3-M02",
+        "C-M3-M03",
+        "C-M3-M04",
+        "C-M3-M05",
+        "C-M3-M06"
+      ],
+      "source_frame": "m3",
+      "native_window": [
+        2940,
+        2120,
+        3670,
+        2500
+      ],
+      "design_window": [
+        0,
+        300,
+        780,
+        650
+      ],
+      "AI_assessment": "CONSISTENT_AFTER_SOURCE_REVIEW",
+      "AI_notes": [
+        "自查发现原21px节距过大，按同帧UP/MID位置关系修正为15px候选节距。",
+        "位置归一化不是经测量认证的照片投影。"
+      ],
+      "human_status": "ACCEPTED_SCOPED_WORKING_GEOMETRY",
+      "human_decision": "accepted",
+      "question": "中部六条线改为更紧凑的等间距排列，并位于中部宽母线上方，是否合理？",
+      "human_review": {
+        "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+        "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+      }
+    },
+    {
+      "id": "CORRIDOR-GEO-R4",
+      "label": "R4",
+      "title": "M3其他5个边界/下沿片段",
+      "metal_ids": [
+        "C-M3-E1",
+        "C-M3-E2",
+        "C-M3-L01",
+        "C-M3-L03",
+        "C-M3-EDGE"
+      ],
+      "source_frame": "m3",
+      "native_window": [
+        2940,
+        2100,
+        3670,
+        3000
+      ],
+      "design_window": [
+        0,
+        280,
+        780,
+        1170
+      ],
+      "AI_assessment": "CONSISTENT_AFTER_SOURCE_REVIEW",
+      "AI_notes": [
+        "E1/E2已保留上轮长度修订；L01只标可见右端，不强制贯穿。",
+        "最下沿线按来源相对位置修正，仍无新增接口。"
+      ],
+      "human_status": "ACCEPTED_SCOPED_WORKING_GEOMETRY",
+      "human_decision": "accepted",
+      "question": "左侧两条短线、下部两条细线及最下沿横线的长度、相对次序和隔离是否合理？",
+      "human_review": {
+        "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+        "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+      }
+    },
+    {
+      "id": "CORRIDOR-GEO-R5",
+      "label": "R5",
+      "title": "旧M2三条线的可见范围",
+      "metal_ids": [
+        "RT-M2-R01",
+        "RT-M2-R02",
+        "RT-M2-NARROW"
+      ],
+      "source_frame": "m2",
+      "native_window": [
+        2940,
+        1730,
+        3670,
+        3000
+      ],
+      "design_window": [
+        0,
+        100,
+        780,
+        1180
+      ],
+      "AI_assessment": "CONSISTENT_AFTER_SOURCE_REVIEW",
+      "AI_notes": [
+        "三个下沿出界端部补成候选，原native_path未改，用独立延伸记录覆盖。",
+        "N1上端原设计偏上，已下移；U1/U2/D1/D2批准及孔中心不变。"
+      ],
+      "human_status": "ACCEPTED_SCOPED_WORKING_GEOMETRY",
+      "human_decision": "accepted",
+      "question": "三条M2延至走廊下沿、N1上端回到来源所示相对位置是否合理？本题不裁决N1是否有V2。",
+      "human_review": {
+        "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+        "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+      }
+    },
+    {
+      "id": "CORRIDOR-GEO-R6",
+      "label": "R6",
+      "title": "旧M3五条线的左右出界范围",
+      "metal_ids": [
+        "RT-M3-UP",
+        "RT-M3-MID",
+        "RT-M3-DOWN",
+        "RT-M3-THIN1",
+        "RT-M3-THIN2"
+      ],
+      "source_frame": "m3",
+      "native_window": [
+        2940,
+        1730,
+        3670,
+        3000
+      ],
+      "design_window": [
+        0,
+        100,
+        780,
+        990
+      ],
+      "AI_assessment": "CONSISTENT_AFTER_SOURCE_REVIEW",
+      "AI_notes": [
+        "对应十个左右出界端部；只修改设计端部，原生锚点和金属编号保留。",
+        "不把走廊边界当作真实线终点或网络闭合。"
+      ],
+      "human_status": "ACCEPTED_SCOPED_WORKING_GEOMETRY",
+      "human_decision": "accepted",
+      "question": "五条旧横线左右均补至声明走廊的可见范围，继续标为出界，是否合理？",
+      "human_review": {
+        "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+        "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+      }
+    }
+  ],
+  "connection_reviews_in_scope": false,
+  "human_approval_count": 6,
+  "unresolved_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "human_review": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+    "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+  },
+  "supersedes_AI_pending_record": {
+    "path": "benchmarks/conductive-corridor-batch-review-v1/groups.json",
+    "sha256": "703b15c6417260785a57a4694f1c1a60c1ade19bff307f6cf375bebe6b28c9cd"
+  }
+}

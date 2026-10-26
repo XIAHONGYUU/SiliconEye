@@ -1,0 +1,32 @@
+{
+  "kind": "reviewed_V1_transfer_navigator",
+  "reviewed_package": {
+    "path": "docs/assets/v1-new-short-branch-reviewed-v2/reviewed/manifest.json",
+    "sha256": "ce1a66e858d3004989722721b5ec83b9b5afdefc4e4b83dcae3d47d3c41623bc"
+  },
+  "inputs": {
+    "human_review": {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/human-review.json",
+      "sha256": "8dff4ac5cddc7ba57033af80af09af0d1a4c9b7f519921ee95c7d3104ea4eb49"
+    },
+    "evaluation": {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/evaluation-result.json",
+      "sha256": "6bf2ae2c7eefeb910f9ddb4d927f0c7eece7e6acac646646118c94c14bb4ac72"
+    },
+    "migration_summary": {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/migration-summary.json",
+      "sha256": "51527d9ad2433d7e2d71c69b41f7619ceffea9dc759f816ccef38b26a699dff4"
+    },
+    "stage": {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/stage-result.json",
+      "sha256": "1bae30a2801bb7ee29e0ac61d394c1edd9a7ceb49f70d39153870887dac0edd0"
+    },
+    "verification": {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/verification.json",
+      "sha256": "9e3c7c345e1ae31b3daa2b02492021d7e321e35c066921aea7080d112cc4fe27"
+    }
+  },
+  "artifacts": {
+    "index.html": "f83b04f27f71d65c66b2e4023cecc8a143477d922914bc92a6bdaba7b7dfd41d"
+  }
+}

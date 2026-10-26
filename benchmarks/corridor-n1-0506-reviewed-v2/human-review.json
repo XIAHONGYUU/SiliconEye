@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_native_source_fact_review",
+  "actor": "human",
+  "date": "2026-10-26",
+  "statement": "Q1,是，Q2局部不连接",
+  "delivery_context": "User answered after direct inline wide/detail PNG delivery because HTML could not be opened. Earlier access-failure replies are not adjudications.",
+  "sources": {
+    "review_request": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/review-request.json",
+      "sha256": "bc22d4ac1b20a6974df4942886fa2e8b7e26707704d1918cbfd297ba42b7dbfa"
+    },
+    "inline_delivery": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/delivery-retry-v2.json",
+      "sha256": "a9b2d671a177431109446b79facf922a729a9a0263744dd6cfad18e27903c28e"
+    },
+    "source_observations": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/source-observations.json",
+      "sha256": "1dcb31d838a3031ebed69cbc860a5132064b3fb22d8c41dff0aa51bf0e5c4c94"
+    },
+    "working_geometry_baseline": {
+      "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+      "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+    }
+  },
+  "reviewed_images": [
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-wide-marked.png",
+      "sha256": "b00d6b16d475fe083ae828246b4c225b2eca75c7d4a856eae7e9abfb410c8d4d"
+    },
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-detail-marked.png",
+      "sha256": "7f33974575033f876ed2768b3840d0c5b690028da61c1749c721833bd4bf1974"
+    },
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-wide-marked.png",
+      "sha256": "cf84631a2614b1a5fda8816b68f4315542152768492a81afa601219a3ce9f9c1"
+    },
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-detail-marked.png",
+      "sha256": "ce1ab063b9dc45357c28292f4df43efae75a3b4d0ea53da69491472b238d7886"
+    }
+  ],
+  "decisions": [
+    {
+      "question_id": "N1-Q1-V2-IDENTITY",
+      "label": "Q1",
+      "old_unknown_id": "C-U4",
+      "via_layer": "V2",
+      "V2_present": true,
+      "source_frame": "m2",
+      "native_bounds": [
+        3498,
+        2480,
+        3540,
+        2510
+      ],
+      "lower_metal_id": "RT-M2-NARROW",
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "scope": "V2 identity at the marked N1 short-head source region only."
+    },
+    {
+      "question_id": "C0506-Q2-LOCAL-M2-CONTINUITY",
+      "label": "Q2",
+      "old_unknown_id": "C-U5",
+      "metal_ids": [
+        "C-M2-05",
+        "C-M2-06"
+      ],
+      "source_frame": "m2",
+      "local_direct_M2_continuity": false,
+      "wide_native_bounds": [
+        2550,
+        1830,
+        3260,
+        2450
+      ],
+      "detail_native_bounds": [
+        2780,
+        2010,
+        3110,
+        2290
+      ],
+      "global_same_net": null,
+      "scope": "No direct continuous M2 between the pictured pair locally; not a global different-net judgment."
+    }
+  ],
+  "not_approved": [
+    "N1 via count/size or design cut placement",
+    "N1 connection to C-M3-L01 or another M3",
+    "Global different-net relation between05/06",
+    "New network edges or canonical GDS adoption",
+    "C-U1/C-U2/C-U3 source-band identities"
+  ]
+}

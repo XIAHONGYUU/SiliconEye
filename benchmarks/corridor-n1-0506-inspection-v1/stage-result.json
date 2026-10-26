@@ -1,0 +1,25 @@
+{
+  "status": "SOURCE_INSPECTION_DONE_TWO_FACTS_PENDING",
+  "pending_questions": [
+    "N1-Q1-V2-IDENTITY",
+    "C0506-Q2-LOCAL-M2-CONTINUITY"
+  ],
+  "N1_V2_present": null,
+  "pair_local_direct_M2_continuity": {
+    "AI": false,
+    "human": null
+  },
+  "geometry_six_groups_still_accepted": true,
+  "old_interface_count": 4,
+  "new_interface_count": 0,
+  "new_design_via_geometry_created": false,
+  "unresolved_band_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3"
+  ],
+  "M3_L1_carrier_confirmed": false,
+  "geometry_changed": false,
+  "complete_network": false,
+  "remote_modified": false
+}

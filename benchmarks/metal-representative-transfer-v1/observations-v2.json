@@ -1,0 +1,777 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_layer_observations",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "canvas_wh": [
+    780,
+    1240
+  ],
+  "features_by_layer": {
+    "M2": [
+      {
+        "id": "RT-M2-R01",
+        "layer": "M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            3104,
+            1900
+          ],
+          [
+            3102,
+            2960
+          ]
+        ],
+        "design_path": [
+          [
+            185,
+            180
+          ],
+          [
+            185,
+            1100
+          ]
+        ],
+        "design_width": 26,
+        "label": "R01 M2",
+        "label_xy": [
+          130,
+          1180
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M2-R02",
+        "layer": "M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            3376,
+            1900
+          ],
+          [
+            3374,
+            2960
+          ]
+        ],
+        "design_path": [
+          [
+            455,
+            180
+          ],
+          [
+            455,
+            1100
+          ]
+        ],
+        "design_width": 26,
+        "label": "R02 M2",
+        "label_xy": [
+          400,
+          1180
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M2-NARROW",
+        "layer": "M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            3505,
+            2490
+          ],
+          [
+            3532,
+            2490
+          ],
+          [
+            3534,
+            2960
+          ]
+        ],
+        "design_path": [
+          [
+            565,
+            520
+          ],
+          [
+            590,
+            520
+          ],
+          [
+            590,
+            1100
+          ]
+        ],
+        "design_width": 10,
+        "label": "N1 bent narrow",
+        "label_xy": [
+          540,
+          1170
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      }
+    ],
+    "M3": [
+      {
+        "id": "RT-M3-UP",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            1958
+          ],
+          [
+            3650,
+            1938
+          ]
+        ],
+        "design_path": [
+          [
+            70,
+            184
+          ],
+          [
+            680,
+            184
+          ]
+        ],
+        "design_width": 60,
+        "label": "B-U upper bus",
+        "label_xy": [
+          65,
+          139
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M3-MID",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            2450
+          ],
+          [
+            3650,
+            2430
+          ]
+        ],
+        "design_path": [
+          [
+            70,
+            590
+          ],
+          [
+            680,
+            590
+          ]
+        ],
+        "design_width": 80,
+        "label": "B-M middle context",
+        "label_xy": [
+          65,
+          545
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M3-DOWN",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            2750
+          ],
+          [
+            3650,
+            2730
+          ]
+        ],
+        "design_path": [
+          [
+            70,
+            870
+          ],
+          [
+            680,
+            870
+          ]
+        ],
+        "design_width": 80,
+        "label": "B-D lower bus",
+        "label_xy": [
+          65,
+          825
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M3-THIN1",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            2540
+          ],
+          [
+            3650,
+            2520
+          ]
+        ],
+        "design_path": [
+          [
+            70,
+            700
+          ],
+          [
+            680,
+            700
+          ]
+        ],
+        "design_width": 8,
+        "label": "thin 1 context",
+        "label_xy": [
+          65,
+          655
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M3-THIN2",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            2595
+          ],
+          [
+            3650,
+            2575
+          ]
+        ],
+        "design_path": [
+          [
+            70,
+            750
+          ],
+          [
+            680,
+            750
+          ]
+        ],
+        "design_width": 8,
+        "label": "thin 2 context",
+        "label_xy": [
+          65,
+          705
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      }
+    ]
+  },
+  "interfaces": [
+    {
+      "id": "RT-V2-U1",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        3086,
+        1892,
+        3122,
+        1952
+      ],
+      "lower_metal_id": "RT-M2-R01",
+      "upper_metal_id": "RT-M3-UP",
+      "bounds": [
+        177.5,
+        172,
+        192.5,
+        196
+      ],
+      "observation_id": "RT-V2-U1-native",
+      "status": "candidate",
+      "connection_confirmed": null,
+      "cut_array_candidate": {
+        "rows": 3,
+        "columns": 2,
+        "origin_xy": [
+          177.5,
+          172
+        ],
+        "basis": "Regular complete group at observed source station; 6px cuts and 9px pitch are relative design candidates, not process dimensions."
+      },
+      "array_source_evidence": {
+        "path": "benchmarks/metal-representative-transfer-v1/RT-V2-U1-observation.json",
+        "sha256": "b91f83104777dfc4a60a0bd13ce847e8e38f820180a16f6c157c209fdbcaf576"
+      }
+    },
+    {
+      "id": "RT-V2-U2",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        3358,
+        1888,
+        3394,
+        1948
+      ],
+      "lower_metal_id": "RT-M2-R02",
+      "upper_metal_id": "RT-M3-UP",
+      "bounds": [
+        447.5,
+        172,
+        462.5,
+        196
+      ],
+      "observation_id": "RT-V2-U2-native",
+      "status": "candidate",
+      "connection_confirmed": null,
+      "cut_array_candidate": {
+        "rows": 3,
+        "columns": 2,
+        "origin_xy": [
+          447.5,
+          172
+        ],
+        "basis": "Regular complete group at observed source station; 6px cuts and 9px pitch are relative design candidates, not process dimensions."
+      },
+      "array_source_evidence": {
+        "path": "benchmarks/metal-representative-transfer-v1/RT-V2-U2-observation.json",
+        "sha256": "8a7a4e223867a4554d4dbfe815e2baf53945b7d1d308976bb44e37573a016c73"
+      }
+    },
+    {
+      "id": "RT-V2-D1",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        3086,
+        2669,
+        3122,
+        2762
+      ],
+      "lower_metal_id": "RT-M2-R01",
+      "upper_metal_id": "RT-M3-DOWN",
+      "bounds": [
+        177.5,
+        844,
+        192.5,
+        886
+      ],
+      "observation_id": "RT-V2-D1-native",
+      "status": "candidate",
+      "connection_confirmed": null,
+      "cut_array_candidate": {
+        "rows": 5,
+        "columns": 2,
+        "origin_xy": [
+          177.5,
+          844
+        ],
+        "basis": "Regular complete group at observed source station; 6px cuts and 9px pitch are relative design candidates, not process dimensions."
+      },
+      "array_source_evidence": {
+        "path": "benchmarks/metal-representative-transfer-v1/RT-V2-D1-observation-v2.json",
+        "sha256": "6f1170f47ce181ffd52ca2b9703137df1721caf5e4149e6e64b646aec235e08b"
+      }
+    },
+    {
+      "id": "RT-V2-D2",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "native_bounds": [
+        3358,
+        2662,
+        3394,
+        2758
+      ],
+      "lower_metal_id": "RT-M2-R02",
+      "upper_metal_id": "RT-M3-DOWN",
+      "bounds": [
+        447.5,
+        844,
+        462.5,
+        886
+      ],
+      "observation_id": "RT-V2-D2-native",
+      "status": "candidate",
+      "connection_confirmed": null,
+      "cut_array_candidate": {
+        "rows": 5,
+        "columns": 2,
+        "origin_xy": [
+          447.5,
+          844
+        ],
+        "basis": "Regular complete group at observed source station; 6px cuts and 9px pitch are relative design candidates, not process dimensions."
+      },
+      "array_source_evidence": {
+        "path": "benchmarks/metal-representative-transfer-v1/RT-V2-D2-observation-v2.json",
+        "sha256": "54522fc379d98d2c04b4dc108eb73603cdc0ca8943d32db7f9c5b6c0732936cd"
+      }
+    }
+  ],
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3,
+    "unit": "local_relative_design_px_not_PDK"
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 3,
+    "enclosure_px": 1,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      9,
+      9
+    ]
+  },
+  "source_order_checks": [
+    {
+      "id": "R01-left-of-R02",
+      "axis": "x",
+      "first": {
+        "id": "RT-M2-R01",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "RT-M2-R02",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "R02-left-of-N1",
+      "axis": "x",
+      "first": {
+        "id": "RT-M2-R02",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "RT-M2-NARROW",
+        "extreme": "min"
+      }
+    }
+  ],
+  "source_panels": {
+    "source_windows": {
+      "m2": {
+        "wide": [
+          2940,
+          1730,
+          3670,
+          3000
+        ],
+        "detail": [
+          3020,
+          1820,
+          3420,
+          2100
+        ]
+      },
+      "m3": {
+        "wide": [
+          2940,
+          1730,
+          3670,
+          3000
+        ],
+        "detail": [
+          3020,
+          1820,
+          3420,
+          2100
+        ]
+      }
+    },
+    "observations": [],
+    "source_label_style": {
+      "font_size_px": 38,
+      "padding_px": 7,
+      "hide_off_window_labels": true
+    },
+    "source_regions": {
+      "m2": [
+        {
+          "bounds": [
+            3086,
+            1892,
+            3122,
+            1952
+          ],
+          "color": "#ffb04f",
+          "label": "U1 V2?",
+          "label_xy": [
+            2960,
+            1780
+          ]
+        },
+        {
+          "bounds": [
+            3358,
+            1888,
+            3394,
+            1948
+          ],
+          "color": "#ffb04f",
+          "label": "U2 V2?",
+          "label_xy": [
+            3330,
+            1780
+          ]
+        },
+        {
+          "bounds": [
+            3086,
+            2669,
+            3122,
+            2762
+          ],
+          "color": "#ffb04f",
+          "label": "D1 V2?",
+          "label_xy": [
+            2960,
+            2790
+          ]
+        },
+        {
+          "bounds": [
+            3358,
+            2662,
+            3394,
+            2758
+          ],
+          "color": "#ffb04f",
+          "label": "D2 V2?",
+          "label_xy": [
+            3330,
+            2790
+          ]
+        }
+      ],
+      "m3": [
+        {
+          "bounds": [
+            3015,
+            1928,
+            3410,
+            1972
+          ],
+          "color": "#d28cff",
+          "label": "B-U?",
+          "label_xy": [
+            3420,
+            2010
+          ]
+        },
+        {
+          "bounds": [
+            3015,
+            2418,
+            3410,
+            2462
+          ],
+          "color": "#aab6bf",
+          "label": "B-M context",
+          "label_xy": [
+            3420,
+            2500
+          ]
+        },
+        {
+          "bounds": [
+            3015,
+            2718,
+            3410,
+            2762
+          ],
+          "color": "#f2a6dd",
+          "label": "B-D?",
+          "label_xy": [
+            3420,
+            2800
+          ]
+        }
+      ]
+    },
+    "native_traces": {
+      "m2": [
+        {
+          "points": [
+            [
+              3104,
+              1900
+            ],
+            [
+              3102,
+              2960
+            ]
+          ],
+          "label": "R01 M2",
+          "color": "#6ad8ff",
+          "label_xy": [
+            2950,
+            2940
+          ]
+        },
+        {
+          "points": [
+            [
+              3376,
+              1900
+            ],
+            [
+              3374,
+              2960
+            ]
+          ],
+          "label": "R02 M2",
+          "color": "#6ad8ff",
+          "label_xy": [
+            3270,
+            2960
+          ]
+        },
+        {
+          "points": [
+            [
+              3505,
+              2490
+            ],
+            [
+              3532,
+              2490
+            ],
+            [
+              3534,
+              2960
+            ]
+          ],
+          "label": "N1 bent narrow",
+          "color": "#6ad8ff",
+          "label_xy": [
+            3440,
+            2520
+          ]
+        }
+      ],
+      "m3": [
+        {
+          "points": [
+            [
+              2980,
+              1958
+            ],
+            [
+              3650,
+              1938
+            ]
+          ],
+          "label": "B-U upper bus",
+          "color": "#d28cff",
+          "label_xy": [
+            3440,
+            2013
+          ]
+        },
+        {
+          "points": [
+            [
+              2980,
+              2450
+            ],
+            [
+              3650,
+              2430
+            ]
+          ],
+          "label": "B-M middle context",
+          "color": "#d28cff",
+          "label_xy": [
+            3440,
+            2505
+          ]
+        },
+        {
+          "points": [
+            [
+              2980,
+              2750
+            ],
+            [
+              3650,
+              2730
+            ]
+          ],
+          "label": "B-D lower bus",
+          "color": "#d28cff",
+          "label_xy": [
+            3440,
+            2805
+          ]
+        }
+      ]
+    }
+  },
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "complete_network": false,
+  "source_to_design_transform": null
+}

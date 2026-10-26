@@ -1,0 +1,29 @@
+{
+  "kind": "scoped_batch_geometry_review_navigator",
+  "inputs": {
+    "benchmarks/conductive-corridor-batch-review-v1/groups.json": "703b15c6417260785a57a4694f1c1a60c1ade19bff307f6cf375bebe6b28c9cd",
+    "benchmarks/conductive-corridor-batch-review-v1/source-extent-evidence.json": "d8fc0a19c2ea0c1e3dcb340f9bd697ff726c4c4f21d8eefa06350cab9f3aa592",
+    "benchmarks/conductive-corridor-batch-review-v1/observations.json": "53d9a0ff0523f482903c86558aeb82f590d090a2aac7939f54340e564c6d497d",
+    "benchmarks/conductive-corridor-batch-review-v1/revision-evidence.json": "2a8a4df370079e78e7c6a43595571e43f41479fd8cad474e7585416edc41467e",
+    "benchmarks/conductive-corridor-batch-review-v1/request.json": "28711dd161dcb885d96461bc317e39e8b86cf366fcb9ba5957d625903c9cfa0f",
+    "benchmarks/conductive-corridor-batch-review-v1/next-request.json": "bc38c08127a8cfcb629cf01707bbfe7115d90d82ea9e141f6df5d750ea641d6f",
+    "benchmarks/conductive-corridor-batch-review-v1/review-request.json": "8b2af7c426b53afca82e4e7310f6b3be524c5566f3be3325043e2208b5e722d9",
+    "benchmarks/conductive-corridor-batch-review-v1/stage-result.json": "26e1c9fc6959e3f5c559f6b25b0953470d9c25ec03a7a3d301da7cd145e6c746",
+    "benchmarks/conductive-corridor-batch-review-v1/fixed-regression-result.json": "a2052fbacddb3dc5be0be2acf6e056438b2171e69537fbffad5081b114a41bd8",
+    "docs/assets/conductive-corridor-batch-review-v1/work/manifest.json": "7d21a87692a61e3cc578eccb98766769851f892fbc2c6809f5ded4b1a41bb234",
+    "silicon_eye/conductive_workflow.py": "302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00",
+    "tests/test_conductive_source_extents.py": "721f48d27d8b1bde06b6813f18aff8fb469088d4f1943953193f0a6bd444a4c4",
+    "docs/architecture/conductive-workflow-contract-v1.md": "c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df",
+    "skills/silicon-eye-metal-reconstruction/SKILL.md": "a5aea42087a058e7fd9c06454ac0aad6ee5a5724b0c9886a78fe5721d35a859b",
+    "docs/reviews/2026-10-26-corridor-batch-review-and-extents.md": "3be086b339f0ca3d0b11bff9c88c57a3d8448ff46c9275aace1e38f9a5ab0ff5"
+  },
+  "verification": {
+    "path": "benchmarks/conductive-corridor-batch-review-v1/verification.json",
+    "sha256": "fac80c62985c3176933a8cca7a5abb1958ca9e4b2a06610e7b1d309cd6cd1b65"
+  },
+  "artifacts": {
+    "index.html": "f0748481749419a16699703d682ce031c20abcc8a8c359f9df909457f674a5de"
+  },
+  "actual_workflow": "work/manifest.json",
+  "human_approval_count": 0
+}

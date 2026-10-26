@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_native_source_fact_overlay",
+  "date": "2026-10-26",
+  "status": "TWO_SOURCE_FACTS_REVIEWED",
+  "human_review": {
+    "path": "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json",
+    "sha256": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e"
+  },
+  "working_geometry_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "facts": {
+    "N1": {
+      "source_identity": "V2_HUMAN_CONFIRMED_SCOPED",
+      "source_frame": "m2",
+      "native_bounds": [
+        3498,
+        2480,
+        3540,
+        2510
+      ],
+      "lower_metal_id": "RT-M2-NARROW",
+      "physical_cut_count": null,
+      "upper_metal_candidate": "C-M3-L01",
+      "upper_metal_confirmed": null,
+      "connection_confirmed": null,
+      "design_via_geometry_created": false
+    },
+    "pair_05_06": {
+      "local_direct_M2_continuity": false,
+      "authority": "human_scoped_source_review",
+      "global_same_net": null,
+      "merge_authorized": false
+    }
+  },
+  "source_issue_updates": {
+    "C-U4": "IDENTITY_RESOLVED_M3_CARRIER_AND_DESIGN_GEOMETRY_PENDING",
+    "C-U5": "LOCAL_DIRECT_M2_CONTINUITY_RESOLVED_NEGATIVE_GLOBAL_NET_UNKNOWN"
+  },
+  "completed_question_ids": [
+    "N1-Q1-V2-IDENTITY",
+    "C0506-Q2-LOCAL-M2-CONTINUITY"
+  ],
+  "pending_original_question_ids": [],
+  "remaining_source_tasks": [
+    "N1_M3_CARRIER_AND_SOURCE_TO_DESIGN_SUPPORT",
+    "C-U1",
+    "C-U2",
+    "C-U3"
+  ],
+  "geometry_changed": false,
+  "new_completed_via_interfaces": 0,
+  "new_net_edges": [],
+  "complete_network": false,
+  "canonical_geometry_adopted": false
+}

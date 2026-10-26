@@ -1,0 +1,77 @@
+{
+  "kind": "N1_complete_declared_design_array_audit",
+  "lower_metal_id": "RT-M2-NARROW",
+  "upper_metal_id": "C-M3-L01",
+  "native_bounds": [
+    3498,
+    2480,
+    3540,
+    2510
+  ],
+  "declared_candidate_cut_count": 2,
+  "human_physical_cut_count": null,
+  "cut_bounds": [
+    [
+      565.0,
+      679.0,
+      571.0,
+      685.0
+    ],
+    [
+      583.0,
+      679.0,
+      589.0,
+      685.0
+    ]
+  ],
+  "design_centers_xy": [
+    [
+      568.0,
+      682.0
+    ],
+    [
+      586.0,
+      682.0
+    ]
+  ],
+  "whole_group_envelope_bounds": [
+    565,
+    679,
+    589,
+    685
+  ],
+  "envelope_with_enclosure_bounds": [
+    564.0,
+    678.0,
+    590.0,
+    686.0
+  ],
+  "lower_covers_whole_group_plus_enclosure": true,
+  "upper_covers_whole_group_plus_enclosure": true,
+  "per_cut_audit": {
+    "status": "PASS",
+    "errors": [],
+    "candidate_cut_count": 2,
+    "count_complete": false,
+    "electrical_connection_confirmed": false,
+    "unit": "relative_design_px_not_PDK",
+    "group_footprint_checked": true
+  },
+  "source_array_geometry": "NOT_QUALIFIED",
+  "source_to_design_transform": null,
+  "physical_array_exhaustiveness": null,
+  "candidate_pitch_xy": [
+    18,
+    9
+  ],
+  "candidate_cut_width_px": 6,
+  "unit": "relative_design_px_not_PDK",
+  "source_station": "Full left-going short head, not relocated onto the stem",
+  "preserved_source_paths": true,
+  "only_modified_metal": "RT-M2-NARROW",
+  "old_and_new_head_y": [
+    675,
+    682
+  ],
+  "source_photo_unchanged": true
+}

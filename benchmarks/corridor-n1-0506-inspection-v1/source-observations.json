@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "kind": "source_only_unknown_inspection",
+  "actor": "AI",
+  "date": "2026-10-26",
+  "working_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "source_photos": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "source_panels": {
+    "n1": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/n1-panels.json",
+      "sha256": "c98d5ce13667efccf3a7c67af04e1e092f3cbeef1c6debd8b8ce34e08396ed60"
+    },
+    "0506": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/0506-panels.json",
+      "sha256": "3c6563634bc57fba489f761ca5a5c4b95ef78e2c6c0246885ca094ba0f30f33b"
+    }
+  },
+  "observations": [
+    {
+      "id": "C-U4-N1-V2-INSPECT",
+      "old_unknown_id": "C-U4",
+      "source_frame": "m2",
+      "native_bounds": [
+        3498,
+        2480,
+        3540,
+        2510
+      ],
+      "identity": "V2_CANDIDATE_NOT_CONFIRMED",
+      "V2_present": null,
+      "physical_cut_count": null,
+      "evidence": "Short horizontal head has enhanced bright lobes. The screen grid and metal-end brightness prevent reliable separation of actual cuts; an already-reviewed D2 V2 group is shown as same-frame reference only.",
+      "alternatives": [
+        "V2 landing with unresolved physical cuts",
+        "Metal terminal brightness plus screen moire"
+      ],
+      "human_status": "PENDING",
+      "upper_metal_candidate": "C-M3-L01",
+      "upper_metal_confirmed": null,
+      "connection_confirmed": null,
+      "carrier_evidence": "M3 first fine horizontal line below the wide middle bus ends within the native window. Separate-frame structural context only, no qualified projection.",
+      "design_via_geometry_created": false
+    },
+    {
+      "id": "C-U5-0506-GAP-INSPECT",
+      "old_unknown_id": "C-U5",
+      "source_frame": "m2",
+      "wide_native_bounds": [
+        2550,
+        1830,
+        3260,
+        2450
+      ],
+      "detail_native_bounds": [
+        2780,
+        2010,
+        3110,
+        2290
+      ],
+      "metal_ids": [
+        "C-M2-05",
+        "C-M2-06"
+      ],
+      "AI_local_direct_M2_continuity": false,
+      "human_local_direct_M2_continuity": null,
+      "evidence": "Expanded native context shows the two facing boundaries and intervening background. No visible continuous M2 band bridges the pair in this local window.",
+      "global_same_net": null,
+      "geometry_merge_authorized": false,
+      "human_status": "PENDING",
+      "limits": [
+        "Local same-layer gap only; not proof of globally different nets or no other-layer path.",
+        "No pixel detector or threshold is used to certify a missing conductor."
+      ]
+    }
+  ],
+  "geometry_changed": false,
+  "old_connections_changed": false,
+  "old_six_groups_reopened": false,
+  "unresolved_band_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3"
+  ],
+  "automatic_network_export_allowed": false
+}

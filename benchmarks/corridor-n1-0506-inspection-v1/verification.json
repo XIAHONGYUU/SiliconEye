@@ -1,0 +1,59 @@
+{
+  "raw_crop_pixel_checks": 6,
+  "marked_dimensions_checks": 6,
+  "HTML_asset_links": 34,
+  "JavaScript_syntax": "PASS",
+  "reference_D2_native_identity": "PASS",
+  "working_baseline_full_model_exact": true,
+  "prepare_inputs_verified": 48,
+  "source_photo_hashes": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "browser_interaction_tested": false,
+  "production_code_changed": false,
+  "geometry_changed": false,
+  "software_tests_rerun": false,
+  "reason": "Source-inspection-only output; existing renderer reused, crop pixel/links/source bindings and baseline replay checked.",
+  "status": "SOURCE_INSPECTION_DONE_TWO_FACTS_PENDING",
+  "date": "2026-10-26",
+  "source_inspection_images": 12,
+  "human_decisions_recorded": 0,
+  "pending_fact_questions": 2,
+  "M3_L1_connection_approved": false,
+  "via_count_approved": false,
+  "canonical_geometry_adoption": false,
+  "complete_network": false,
+  "remote_modified": false,
+  "artifacts": {
+    "benchmarks/corridor-n1-0506-inspection-v1/n1-panels.json": "c98d5ce13667efccf3a7c67af04e1e092f3cbeef1c6debd8b8ce34e08396ed60",
+    "benchmarks/corridor-n1-0506-inspection-v1/0506-panels.json": "3c6563634bc57fba489f761ca5a5c4b95ef78e2c6c0246885ca094ba0f30f33b",
+    "benchmarks/corridor-n1-0506-inspection-v1/source-observations.json": "1dcb31d838a3031ebed69cbc860a5132064b3fb22d8c41dff0aa51bf0e5c4c94",
+    "benchmarks/corridor-n1-0506-inspection-v1/source-assistance.json": "36ee865da88fb3f1b01a1b21e027195387ace794f38baaa3e1bdaa2ade2b4d51",
+    "benchmarks/corridor-n1-0506-inspection-v1/review-request.json": "bc22d4ac1b20a6974df4942886fa2e8b7e26707704d1918cbfd297ba42b7dbfa",
+    "benchmarks/corridor-n1-0506-inspection-v1/stage-result.json": "ef1847f166b329078441239c03e60f6bdc32543714365000933c9ffed644d131",
+    "benchmarks/corridor-n1-0506-inspection-v1/inspection-checks.json": "73aa34d27ce9c07038943ac907e23425e97510eb6dfc7282b2b46d8807c6f2d1",
+    "docs/reviews/2026-10-26-n1-0506-source-inspection.md": "1b4a3a2957a75a060caf45fe320b4ec626bea28ca3e44f3e1cb1bc10c5d78d79",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-wide-marked.png": "b00d6b16d475fe083ae828246b4c225b2eca75c7d4a856eae7e9abfb410c8d4d",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-detail-raw.png": "ef201def7e72395be77c5e5b6f13530c7c1ca14473b3da3ad5cff4f25c74e617",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-detail-raw.png": "c6c321e36cf966758261f8f1ccd9aebc8052da5a52c427975dd5c55458e8d65c",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-wide-raw.png": "6d23e8cf5f0ffd1aed2be256d8bc6b012af57097a4ca20c16f1678e2e153223e",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-detail-marked.png": "7f33974575033f876ed2768b3840d0c5b690028da61c1749c721833bd4bf1974",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-wide-marked.png": "baa7c059829f6059c75c44bf3e121faaf7b98048af25522fc10d108c1bb41655",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-detail-marked.png": "7654af5a59a5c5ab2f4de3f03e9c90a9babd037dbe2b8ca487f3072aaa58382f",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-wide-raw.png": "40035029361eda2d6a2aefc9937383e6a9690fdea0d5ec6385ead28ff029d01f",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-wide-marked.png": "cf84631a2614b1a5fda8816b68f4315542152768492a81afa601219a3ce9f9c1",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-detail-raw.png": "1153e2b16d45ed0119c81350b7fa15bf48aecac2f345ba2b961f361e5d218dce",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-detail-marked.png": "ce1ab063b9dc45357c28292f4df43efae75a3b4d0ea53da69491472b238d7886",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-wide-raw.png": "ff2da064cb1aab0ea2f0a805ad7d05849baf82cb4620dfcddd2c530da05b8251",
+    "docs/assets/corridor-n1-0506-inspection-v1/index.html": "8a18943b08a73987ab9e5cf1c857c1cc4acdd693463fcf8834459ad0829ac3f8"
+  }
+}

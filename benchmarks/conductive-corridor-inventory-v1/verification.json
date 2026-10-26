@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-26",
+  "status": "LEDGER_CHECKS_PASS_GEOMETRY_COVERAGE_INCOMPLETE",
+  "native_scope_by_frame": {
+    "m2": [
+      2940,
+      1730,
+      3670,
+      3000
+    ],
+    "m3": [
+      2940,
+      1730,
+      3670,
+      3000
+    ]
+  },
+  "bound_input_checks": 42,
+  "source_crop_pixel_equality": "PASS",
+  "scan_tiles_cover_declared_windows": true,
+  "physical_inventory_exhaustiveness": "AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED",
+  "actual_photo_coverage_fraction": null,
+  "five_layer_coverage": "NOT_EVALUATED",
+  "metal_observations": {
+    "M2": 8,
+    "M3": 22
+  },
+  "existing_partial_model_mappings": 8,
+  "unmodeled_observations": 22,
+  "unresolved_observations": 5,
+  "inherited_interfaces_preserved": 4,
+  "boundary_observation_endpoints": 48,
+  "software_tests": {
+    "inventory_tests": {
+      "command": ".venv/bin/pytest -q tests/test_conductive_inventory.py",
+      "passed": 9,
+      "seconds": 8.77,
+      "observation": "Captured from command output in this turn."
+    },
+    "existing_fixed_regression": {
+      "passed": 31,
+      "record": "benchmarks/conductive-corridor-inventory-v1/fixed-regression-result.json"
+    }
+  },
+  "JSON_roundtrip": "PASS",
+  "JavaScript_syntax": "PASS",
+  "HTML_local_links": "PASS",
+  "package_data": "PASS",
+  "ruff": "PASS",
+  "browser_interaction_tested": false,
+  "new_image_copies": 0,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "new_human_approvals": 0,
+  "canonical_geometry_adoption": false,
+  "complete_network": false,
+  "remote_modified": false,
+  "artifacts": {
+    "benchmarks/conductive-corridor-inventory-v1/inventory.json": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176",
+    "benchmarks/conductive-corridor-inventory-v1/source-assistance.json": "5e770b11d1955a56014f1b5de6ae4527057aed4b332bbd77aa3edeb11d757b37",
+    "benchmarks/conductive-corridor-inventory-v1/fixed-regression-result.json": "59d0d489bc91820f5f1dff9320fd8934e5480b2f75b241a5b95c4b824dab15b9",
+    "docs/assets/conductive-corridor-inventory-v1/manifest.json": "27ad1db419d245b99bcf3385d05a64d4d40282dfa858b2b792571a66bb4ec43e",
+    "silicon_eye/conductive_inventory.py": "176d486403357ddf2918193d73b229f476560b05bc6eaad41e361dc788e59c88",
+    "silicon_eye/conductive_inventory.html": "4badd961fd9923f792ddb752a6c6641679fc3b60fc5d6fcea18c8cbaffd1e5ff",
+    "tests/test_conductive_inventory.py": "964ac2f024dfea07c4f6c6b0c3021ef97b8e9a22cabb661d5937fd7f8483bc12"
+  }
+}

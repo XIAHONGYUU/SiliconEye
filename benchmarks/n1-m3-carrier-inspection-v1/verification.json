@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FOR_SOURCE_DELIVERY_AND_BASELINE_PRESERVATION_ONLY",
+  "baseline_model_equal": true,
+  "inherited_input_bindings_verified": 52,
+  "raw_crops": {
+    "m2_wide_raw_exact": true,
+    "m2_detail_raw_exact": true,
+    "m3_wide_raw_exact": true,
+    "m3_detail_raw_exact": true
+  },
+  "minimum_footprint_height_failure_reproduced": true,
+  "physical_full_group_enclosure_pass": false,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "software_code_changed": false,
+  "tests_repeated": false,
+  "browser_interaction_tested": false,
+  "static_HTML_image_links_pass": true,
+  "report_and_current_task_links_pass": true,
+  "previous_task_archive_exact": true,
+  "review_PNGs_visually_inspected": true,
+  "embedded_javascript_syntax_pass": true
+}

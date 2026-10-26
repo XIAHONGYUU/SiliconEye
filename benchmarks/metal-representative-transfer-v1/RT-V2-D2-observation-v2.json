@@ -1,0 +1,113 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "RT-V2-D2",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    3358,
+    2662,
+    3394,
+    2758
+  ],
+  "rows": 5,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2674
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2674
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2693
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2693
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2712
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2712
+      ]
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2731
+      ]
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2731
+      ]
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2746
+      ]
+    },
+    {
+      "row": 4,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2746
+      ]
+    }
+  ],
+  "basis": "Visual interpretation of bright sites on M2. Approximate native site centers; count and individual edges are not human ground truth.",
+  "sources": {
+    "selection": {
+      "path": "benchmarks/metal-representative-transfer-v1/selection.json",
+      "sha256": "05760d327639d03a072e1de324c3da87770ecb6710d65917dedd11230df4df04"
+    },
+    "source_reinspection": {
+      "path": "benchmarks/metal-representative-transfer-v1/source-reinspection-v2.json",
+      "sha256": "b186554e45575588a921523ad6c60bf5cadcc085c1c49f94cdfe70bb4b2b88f0"
+    }
+  }
+}

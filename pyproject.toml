@@ -61,7 +61,7 @@ include = ["silicon_eye*"]
 
 [tool.setuptools.package-data]
 silicon_eye = ["poly_full_frame_review.html", "poly_closeout_review.html", "metal_via_pilot.html",
-               "conductive_workflow.html"]
+               "conductive_workflow.html", "conductive_snapshot.html", "conductive_inventory.html"]
 
 [tool.ruff]
 line-length = 100

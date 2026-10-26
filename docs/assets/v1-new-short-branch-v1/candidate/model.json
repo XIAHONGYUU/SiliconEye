@@ -1,0 +1,498 @@
+{
+  "objects_by_layer": {
+    "M1": [
+      {
+        "id": "S1-M1-STUB",
+        "layer": "M1",
+        "kind": "metal",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              323.0,
+              320.0
+            ],
+            [
+              323.0,
+              327.0
+            ],
+            [
+              337.0,
+              327.0
+            ],
+            [
+              337.0,
+              280.0
+            ],
+            [
+              337.0,
+              273.0
+            ],
+            [
+              323.0,
+              273.0
+            ],
+            [
+              323.0,
+              320.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "native_path": [
+          [
+            1153,
+            3374
+          ],
+          [
+            1153,
+            3412
+          ]
+        ],
+        "source_frame": "m1"
+      },
+      {
+        "id": "S1-M1-UP-CONTEXT",
+        "layer": "M1",
+        "kind": "metal",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              625.0,
+              192.0
+            ],
+            [
+              632.0,
+              192.0
+            ],
+            [
+              632.0,
+              178.0
+            ],
+            [
+              100.0,
+              178.0
+            ],
+            [
+              93.0,
+              178.0
+            ],
+            [
+              93.0,
+              192.0
+            ],
+            [
+              625.0,
+              192.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "native_path": [
+          [
+            1025,
+            3350
+          ],
+          [
+            1300,
+            3340
+          ]
+        ],
+        "source_frame": "m1"
+      },
+      {
+        "id": "S1-M1-DOWN-CONTEXT",
+        "layer": "M1",
+        "kind": "metal",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              625.0,
+              422.0
+            ],
+            [
+              632.0,
+              422.0
+            ],
+            [
+              632.0,
+              408.0
+            ],
+            [
+              100.0,
+              408.0
+            ],
+            [
+              93.0,
+              408.0
+            ],
+            [
+              93.0,
+              422.0
+            ],
+            [
+              625.0,
+              422.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "native_path": [
+          [
+            1025,
+            3430
+          ],
+          [
+            1300,
+            3420
+          ]
+        ],
+        "source_frame": "m1"
+      }
+    ],
+    "V1": [
+      {
+        "id": "V1-S1-GROUP",
+        "layer": "V1",
+        "kind": "via_group_support_proxy",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              333.0,
+              281.0
+            ],
+            [
+              333.0,
+              287.0
+            ],
+            [
+              327.0,
+              287.0
+            ],
+            [
+              327.0,
+              281.0
+            ],
+            [
+              333.0,
+              281.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "design_support_bounds": [
+          327,
+          281,
+          333,
+          287
+        ],
+        "source_frame": "m1",
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m1.jpg",
+          "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+        },
+        "source_observation": {
+          "layer": "V1",
+          "source_frame": "m1",
+          "native_bounds": [
+            1143,
+            3369,
+            1164,
+            3393
+          ]
+        },
+        "physical_cut_count": null
+      }
+    ],
+    "M2": [
+      {
+        "id": "S1-M2-A",
+        "layer": "M2",
+        "kind": "metal",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              324.0,
+              209.0
+            ],
+            [
+              324.0,
+              285.0
+            ],
+            [
+              324.0,
+              291.0
+            ],
+            [
+              336.0,
+              291.0
+            ],
+            [
+              336.0,
+              221.0
+            ],
+            [
+              365.0,
+              221.0
+            ],
+            [
+              371.0,
+              221.0
+            ],
+            [
+              371.0,
+              209.0
+            ],
+            [
+              324.0,
+              209.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "native_path": [
+          [
+            1138,
+            3321
+          ],
+          [
+            1118,
+            3321
+          ],
+          [
+            1120,
+            3417
+          ]
+        ],
+        "source_frame": "m2"
+      },
+      {
+        "id": "S1-M2-B",
+        "layer": "M2",
+        "kind": "metal",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              440.0,
+              265.0
+            ],
+            [
+              440.0,
+              350.0
+            ],
+            [
+              440.0,
+              355.0
+            ],
+            [
+              450.0,
+              355.0
+            ],
+            [
+              450.0,
+              255.0
+            ],
+            [
+              420.0,
+              255.0
+            ],
+            [
+              415.0,
+              255.0
+            ],
+            [
+              415.0,
+              265.0
+            ],
+            [
+              440.0,
+              265.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "native_path": [
+          [
+            1172,
+            3334
+          ],
+          [
+            1195,
+            3334
+          ],
+          [
+            1195,
+            3412
+          ]
+        ],
+        "source_frame": "m2"
+      },
+      {
+        "id": "S1-M2-C",
+        "layer": "M2",
+        "kind": "metal",
+        "role": "structural_hypothesis",
+        "geometry": {
+          "outer_xy": [
+            [
+              525.0,
+              185.0
+            ],
+            [
+              525.0,
+              500.0
+            ],
+            [
+              525.0,
+              505.0
+            ],
+            [
+              535.0,
+              505.0
+            ],
+            [
+              535.0,
+              195.0
+            ],
+            [
+              555.0,
+              195.0
+            ],
+            [
+              560.0,
+              195.0
+            ],
+            [
+              560.0,
+              185.0
+            ],
+            [
+              525.0,
+              185.0
+            ]
+          ],
+          "holes_xy": [],
+          "status": "inherited_relative_design_geometry_not_pixel_measurement"
+        },
+        "native_path": [
+          [
+            1268,
+            3280
+          ],
+          [
+            1246,
+            3280
+          ],
+          [
+            1246,
+            3510
+          ]
+        ],
+        "source_frame": "m2"
+      }
+    ],
+    "V2": [],
+    "M3": []
+  },
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "canvas_wh": [
+    760,
+    600
+  ],
+  "reviewed_local_connections": [],
+  "candidate_interfaces": [
+    {
+      "id": "V1-S1-GROUP",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "native_bounds": [
+        1143,
+        3369,
+        1164,
+        3393
+      ],
+      "lower_metal_id": "S1-M1-STUB",
+      "upper_metal_id": "S1-M2-A",
+      "bounds": [
+        327,
+        281,
+        333,
+        287
+      ],
+      "observation_id": "V1-S1-upper-terminal-source",
+      "status": "candidate",
+      "connection_confirmed": null
+    }
+  ],
+  "kind": "conductive_workflow_candidate",
+  "sample": {
+    "path": "benchmarks/v1-new-short-branch-v1/observations.json",
+    "sha256": "ff5490856778b8996b73eeba21f86bfea9cb02d88507a5d91d2fd9d097f313d9"
+  },
+  "review_sources": [],
+  "limits": [
+    "S1为新接口，旧N1/W1及Q1/Q2、R1/R2批准不转移到这里。",
+    "孔层仅由M1侧亮点提出；M2的A端框仅标承载端，不把M2亮点当V1。",
+    "该亮区尚不能可靠逐孔分离，当前6×6设计支持区是代理，不是一孔或完整阵列测量。数量、孔径和完整孔组占用未知；仅做身份/承载验证。",
+    "B/C为附近局部上下文，未声明接入不等于物理无孔或全局异网。",
+    "同一已知芯片、有历史宽图上下文，不是盲测或陌生芯片迁移；不建立照片精确投影。"
+  ],
+  "pending_interface_ids": [
+    "V1-S1-GROUP"
+  ],
+  "deferred_unknown_ids": [],
+  "review_decisions": {},
+  "net_edges": [],
+  "complete_network": false,
+  "automatic_network_export_allowed": false,
+  "precise_projection_allowed": false,
+  "geometry_adopted": false
+}

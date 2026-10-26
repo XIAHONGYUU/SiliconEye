@@ -1,0 +1,48 @@
+{
+  "kind": "source_review_delivery_retry_not_adjudication",
+  "date": "2026-10-26",
+  "original_review_request": {
+    "path": "benchmarks/corridor-n1-0506-inspection-v1/review-request.json",
+    "sha256": "bc22d4ac1b20a6974df4942886fa2e8b7e26707704d1918cbfd297ba42b7dbfa"
+  },
+  "access_failure_replies": [
+    {
+      "question": "Q1",
+      "statement": "原图核查页面打不开",
+      "used_as_fact_decision": false
+    },
+    {
+      "question": "Q2",
+      "statement": "打不开文件",
+      "used_as_fact_decision": false
+    }
+  ],
+  "local_files_exist": true,
+  "app_image_preview_requests": "queued_not_confirmed_open",
+  "delivery_method": "Direct inline wide and detail PNGs in assistant message",
+  "images": [
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-wide-marked.png",
+      "sha256": "b00d6b16d475fe083ae828246b4c225b2eca75c7d4a856eae7e9abfb410c8d4d"
+    },
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-detail-marked.png",
+      "sha256": "7f33974575033f876ed2768b3840d0c5b690028da61c1749c721833bd4bf1974"
+    },
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-wide-marked.png",
+      "sha256": "cf84631a2614b1a5fda8816b68f4315542152768492a81afa601219a3ce9f9c1"
+    },
+    {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-detail-marked.png",
+      "sha256": "ce1ab063b9dc45357c28292f4df43efae75a3b4d0ea53da69491472b238d7886"
+    }
+  ],
+  "pending_questions": [
+    "N1-Q1-V2-IDENTITY",
+    "C0506-Q2-LOCAL-M2-CONTINUITY"
+  ],
+  "human_decisions_recorded": 0,
+  "geometry_changed": false,
+  "old_reviewed_baseline_changed": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "SCOPED_V1_INTERFACE_TRANSFER_VALIDATED",
+  "date": "2026-10-26",
+  "human_review": {
+    "path": "benchmarks/v1-new-short-branch-reviewed-v2/human-review.json",
+    "sha256": "8dff4ac5cddc7ba57033af80af09af0d1a4c9b7f519921ee95c7d3104ea4eb49"
+  },
+  "reviewed_package": {
+    "path": "docs/assets/v1-new-short-branch-reviewed-v2/reviewed/manifest.json",
+    "sha256": "ce1a66e858d3004989722721b5ec83b9b5afdefc4e4b83dcae3d47d3c41623bc"
+  },
+  "evaluation": {
+    "path": "benchmarks/v1-new-short-branch-reviewed-v2/evaluation-result.json",
+    "sha256": "6bf2ae2c7eefeb910f9ddb4d927f0c7eece7e6acac646646118c94c14bb4ac72"
+  },
+  "migration_summary": {
+    "path": "benchmarks/v1-new-short-branch-reviewed-v2/migration-summary.json",
+    "sha256": "51527d9ad2433d7e2d71c69b41f7619ceffea9dc759f816ccef38b26a699dff4"
+  },
+  "approved_tasks": 1,
+  "approved_local_interface_records": 1,
+  "pending_interface_ids": [],
+  "geometric_objects_changed": false,
+  "physical_count_approved": false,
+  "full_via_group_geometry_qualified": false,
+  "known_chip_only": true,
+  "canonical_geometry_adoption": false,
+  "complete_network": false,
+  "unrestricted_skill_release": false,
+  "next": "固化本轮3项身份/承载评测与几何资格分项，再评估限定能力封装和分批扩大覆盖；不重审既有接口。",
+  "remote_modified": false
+}

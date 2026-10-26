@@ -1,0 +1,29 @@
+{
+  "kind": "scoped_metal_via_transfer_evaluation_index",
+  "date": "2026-10-26",
+  "V1_task_evaluation": {
+    "path": "benchmarks/v1-new-short-branch-reviewed-v2/evaluation-result.json",
+    "sha256": "6bf2ae2c7eefeb910f9ddb4d927f0c7eece7e6acac646646118c94c14bb4ac72"
+  },
+  "V2_task_evaluation": {
+    "path": "benchmarks/metal-representative-transfer-reviewed-v2/evaluation-result.json",
+    "sha256": "73a6fe17e6c4f713d8c5155d1891174cc55768f83d360f143737f158c3adbdf6"
+  },
+  "submitted_task_count": 3,
+  "confirmed_identity_and_carrier_tasks": 3,
+  "bound_local_interface_records": {
+    "V1": 1,
+    "V2": 4
+  },
+  "observed_human_identity_or_carrier_corrections": 0,
+  "prior_internal_AI_array_correction_events": 1,
+  "task_counts_are_not_statistically_independent_trials": true,
+  "known_chip_count": 1,
+  "strict_blind": false,
+  "V1_geometry": "GROUP_SUPPORT_PROXY_FULL_ARRAY_NOT_EVALUATED",
+  "V2_geometry": "EXPLICIT_DESIGN_ARRAYS_SOURCE_GEOMETRY_NOT_QUALIFIED",
+  "physical_cut_counts_human_approved": false,
+  "full_frame_reconstruction_complete": false,
+  "unrestricted_skill_release": false,
+  "canonical_geometry_adoption": false
+}

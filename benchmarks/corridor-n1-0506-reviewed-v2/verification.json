@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_FACT_REVIEW_BINDINGS_VERIFIED",
+  "date": "2026-10-26",
+  "accepted_decisions": 2,
+  "pending_original_questions": 0,
+  "checked_source_review_paths": 57,
+  "accepted_working_geometry_full_model_exact": true,
+  "old_reviewed_interfaces_unchanged": 4,
+  "N1_physical_count_unknown": true,
+  "N1_M3_carrier_unknown": true,
+  "N1_new_design_via_geometry": false,
+  "pair_global_same_net_unknown": true,
+  "geometry_changed": false,
+  "production_code_changed": false,
+  "software_tests_rerun": false,
+  "prior_related_tests_passed": 105,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "complete_network": false,
+  "canonical_geometry_adoption": false,
+  "remote_modified": false,
+  "artifacts": {
+    "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e",
+    "benchmarks/corridor-n1-0506-reviewed-v2/source-fact-state.json": "a24c13852ca2c56a35fa74602f0c2db16e823fa1237b0e00f7c07fee7a5953b1",
+    "benchmarks/corridor-n1-0506-reviewed-v2/stage-result.json": "21fcfa7e99199862586e27c22c3b5c0b0488a30935baf9c8798f3b7df5095a79",
+    "docs/reviews/2026-10-26-n1-0506-source-reviewed.md": "31e53fd9bdfe6d409d26a299f67a69f353f43e168fb30291fbcf925d6dee51bd"
+  }
+}

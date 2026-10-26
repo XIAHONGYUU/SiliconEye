@@ -1,0 +1,28 @@
+{
+  "kind": "reviewed_conductive_transfer_navigator",
+  "reviewed_package": {
+    "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/manifest.json",
+    "sha256": "7a0ac0b1fe13674f4bb3c69ac83701e601085320da2530e8732d56f1b3025720"
+  },
+  "inputs": {
+    "human_group": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/human-group-adjudication.json",
+      "sha256": "804467a80d8892724559594502b84c58c0c804f90a4578402a8d009bfd950c22"
+    },
+    "evaluation": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/evaluation-result.json",
+      "sha256": "73a6fe17e6c4f713d8c5155d1891174cc55768f83d360f143737f158c3adbdf6"
+    },
+    "stage": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/stage-result.json",
+      "sha256": "86da1f34925051b5737c1086afe93e3629da92b14f1ecdc0441b17ce3678d2f7"
+    },
+    "verification": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/verification.json",
+      "sha256": "93df897ac078c7303fe5c84b085f692516e088b69637cfbdbca8f88472063adc"
+    }
+  },
+  "artifacts": {
+    "index.html": "1d1fd2f50995c31b00c5bf9908f5bcac27cfdaa4149105b543e6a43692c05c68"
+  }
+}

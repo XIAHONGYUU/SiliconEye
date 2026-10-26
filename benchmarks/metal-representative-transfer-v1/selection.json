@@ -1,0 +1,40 @@
+{
+  "actor": "AI",
+  "stage": "before_new_human_review",
+  "baseline_closeout": {
+    "path": "benchmarks/conductive-joint-pilot-closeout-v1/closeout.json",
+    "sha256": "68b7565def50968083ebe0e1b039e1f7620055c74d7cd34a28d8a11bb9e35898"
+  },
+  "baseline_work": {
+    "path": "docs/assets/m1-local-tab-v1/work/manifest.json",
+    "sha256": "4b0fd29d2f0ff3cfeac7506614cc6f268c0fedb24d4e6db44497bac3034033f9"
+  },
+  "native_window": [
+    2940,
+    1730,
+    3670,
+    3000
+  ],
+  "selection_basis": "Spatially new right-side rails, outside prior medium x<=2400 and prior upper independent window y<=1150. One chip, context available; not blind or cross-chip evaluation.",
+  "tasks": [
+    {
+      "id": "R1",
+      "structure": "two straight parallel M2 rails with upper 3x2 V2 candidates",
+      "new_evidence": true
+    },
+    {
+      "id": "R2",
+      "structure": "same two rails with lower 4x2 V2 candidates and an M3 bus alternative",
+      "new_evidence": true
+    },
+    {
+      "id": "N1",
+      "structure": "neighbor bent narrow M2 and crossings without declared vias",
+      "new_evidence": true,
+      "does_not_assert_physical_no_via": true
+    }
+  ],
+  "V1_scope": "Only replay already closed V1 cases this round. A newly inspected V1 short branch was not added because source correspondence was insufficient.",
+  "human_truth": null,
+  "evaluation_status": "NEW_CANDIDATE_PENDING_HUMAN_JUDGMENT"
+}

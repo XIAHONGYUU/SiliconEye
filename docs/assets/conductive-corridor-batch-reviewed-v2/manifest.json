@@ -1,0 +1,25 @@
+{
+  "kind": "scoped_geometry_reviewed_baseline_navigator",
+  "inputs": {
+    "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/groups-reviewed.json": "68cdeeb95b4fc28a76ab979d31846a17c3ff037d419cb6e2123e82af08e0ad7a",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/stage-result.json": "1e1fecd5e6f44e21c046180713ecc5e78abed89fa3a7055a2f77b6ca264bc8ba",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/request.json": "bc38c08127a8cfcb629cf01707bbfe7115d90d82ea9e141f6df5d750ea641d6f",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/next-request.json": "42bb6968a652a4472a6e57a89b809f2f496227683363eebb62ee2d12ef314e97",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/replay-check.json": "8e921884f6227e4a8846f33c60e17aaae95d00811b1cd35f81e803e9f3cada7e",
+    "benchmarks/conductive-corridor-batch-reviewed-v2/verification.json": "5587caaf3111dc952a317b33011d4e674ef1498ef31730cf139651db0d3ca0fa",
+    "docs/assets/conductive-corridor-batch-reviewed-v2/work/manifest.json": "75fe441f1fab0cf4f46dd257e73d709c310dea793f8975cd4ebb7476dfd333cf",
+    "docs/reviews/2026-10-26-corridor-six-groups-reviewed.md": "a969746235099fd560399e44e48cf28db28e7e54b8ff7088b55715392e2e0720"
+  },
+  "artifacts": {
+    "index.html": "7b1007f0256a97bd3e4741dad6c7c242c306e4d9aa9aecca14e43a976277fdfe"
+  },
+  "actual_workflow": "work/manifest.json",
+  "working_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "human_accepted_groups": 6,
+  "pending_geometry_groups": []
+}

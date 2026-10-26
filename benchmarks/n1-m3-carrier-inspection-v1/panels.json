@@ -1,0 +1,145 @@
+{
+  "kind": "native_source_review_panels",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        3200,
+        2200,
+        3850,
+        2820
+      ],
+      "detail": [
+        3380,
+        2360,
+        3700,
+        2620
+      ]
+    },
+    "m3": {
+      "wide": [
+        3200,
+        2180,
+        3850,
+        2820
+      ],
+      "detail": [
+        3380,
+        2380,
+        3700,
+        2660
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 17,
+    "padding_px": 6,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          3498,
+          2480,
+          3540,
+          2510
+        ],
+        "color": "#ffb04f",
+        "label": "N1: V2 confirmed",
+        "label_xy": [
+          3555,
+          2385
+        ]
+      },
+      {
+        "bounds": [
+          3358,
+          2662,
+          3394,
+          2758
+        ],
+        "color": "#61edb2",
+        "label": "REF D2 V2",
+        "label_xy": [
+          3230,
+          2770
+        ]
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          3500,
+          2508,
+          3572,
+          2524
+        ],
+        "color": "#d28cff",
+        "label": "A: L01 ?",
+        "label_xy": [
+          3630,
+          2390
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m3": [
+      {
+        "points": [
+          [
+            3530,
+            2532
+          ],
+          [
+            3600,
+            2530
+          ]
+        ],
+        "color": "#66d9ff",
+        "label": "B: THIN1",
+        "label_xy": [
+          3630,
+          2445
+        ]
+      },
+      {
+        "points": [
+          [
+            3530,
+            2551
+          ],
+          [
+            3600,
+            2549
+          ]
+        ],
+        "color": "#86e39d",
+        "label": "C: L03",
+        "label_xy": [
+          3630,
+          2510
+        ]
+      },
+      {
+        "points": [
+          [
+            3530,
+            2588
+          ],
+          [
+            3600,
+            2586
+          ]
+        ],
+        "color": "#ffe080",
+        "label": "D: THIN2",
+        "label_xy": [
+          3630,
+          2580
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "agent_interface_transfer_evaluation",
+  "task_id": "V1-S1",
+  "initial_AI": {
+    "path": "benchmarks/v1-new-short-branch-v1/initial-ai-observation.json",
+    "sha256": "26b39384b2a7ae0f45ae00bedd2aa416d4cfe0744193ee91a6232ed9734d52fe"
+  },
+  "expected_candidate_carrier": "S1-M2-A",
+  "via_layer": "V1",
+  "human_truth": null,
+  "identity_correct": null,
+  "carrier_correct": null,
+  "human_corrections": null,
+  "physical_count_truth": null,
+  "unseen_chip": false,
+  "strict_blind": false
+}

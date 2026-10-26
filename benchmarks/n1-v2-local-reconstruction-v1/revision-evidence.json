@@ -1,0 +1,27 @@
+{
+  "actor": "AI",
+  "kind": "confirmed_carrier_local_geometry_revision",
+  "reason": "Align N1 left-going short head with confirmed A; preserve x positions, width10, stem x590 and all other features/interfaces. This is not calibrated source projection.",
+  "changed_ids": [
+    "RT-M2-NARROW"
+  ],
+  "geometry_human_approved": false,
+  "sources": {
+    "parent": {
+      "path": "docs/assets/conductive-corridor-batch-reviewed-v2/work/manifest.json",
+      "sha256": "75fe441f1fab0cf4f46dd257e73d709c310dea793f8975cd4ebb7476dfd333cf"
+    },
+    "carrier_review": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/human-review.json",
+      "sha256": "b0f69352b486e6cdf0bd5c93764f038b538780e438a57ec7dd2cc24656f18edd"
+    },
+    "source_extent": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/source-extent-evidence.json",
+      "sha256": "694062d5d8250ca44a6259fee1d1a3d1658045501bf3e18b18153a8f9ae1e0b7"
+    },
+    "source_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  }
+}

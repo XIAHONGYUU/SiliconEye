@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "status": "CLOSED_SCOPED_WORKING_BASELINE",
+  "item_1": "NEW_22_SCOPED_WORKING_GEOMETRY_ACCEPTED",
+  "item_2": "RETAINED_8_SOURCE_EXTENT_LAYOUT_ACCEPTED",
+  "human_review": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+    "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+  },
+  "working_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "human_approved_groups": 6,
+  "pending_groups": [],
+  "new_geometry_changes": 0,
+  "new_connections": 0,
+  "unknowns_not_resolved": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "source_extent_geometry_qualified": false,
+  "complete_network": false,
+  "remote_modified": false
+}

@@ -1,0 +1,41 @@
+{
+  "actor": "AI",
+  "kind": "source_inspection_assistance_not_ground_truth",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "method": "Median over native x3150:3260, y1730:3000; Gaussian sigma1.7; peaks prominence18 distance10. Peaks corroborate horizontal band locations, not conductor identity/count.",
+  "candidate_peak_y": [
+    1802,
+    1823,
+    1844,
+    1863,
+    1881,
+    1898,
+    1961,
+    2033,
+    2272,
+    2292,
+    2309,
+    2330,
+    2347,
+    2365,
+    2401,
+    2484,
+    2521,
+    2538,
+    2558,
+    2595,
+    2652,
+    2698,
+    2781,
+    2864,
+    2970
+  ],
+  "limits": [
+    "宽金属内部纹理也会产生多个峰，峰值数量不是导体数量。",
+    "2033/2652/2864弱带保留未知，不能将亮度阈值当金属身份。",
+    "所有线段由AI复核原图后列入来源清单，未获得人工几何批准。"
+  ]
+}

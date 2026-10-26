@@ -1,0 +1,66 @@
+{
+  "kind": "agent_transfer_evaluation",
+  "truth_source": "scoped_human_interface_review",
+  "tasks": [
+    {
+      "id": "R1",
+      "interface_ids": [
+        "RT-V2-U1",
+        "RT-V2-U2"
+      ],
+      "expected_candidate_carrier": "RT-M3-UP",
+      "identity_correct": true,
+      "carrier_correct": true,
+      "human_corrections": 0,
+      "correction_scope": "Submitted identity/carrier decisions only; excludes pre-submission AI count correction and all historical project rework."
+    },
+    {
+      "id": "R2",
+      "interface_ids": [
+        "RT-V2-D1",
+        "RT-V2-D2"
+      ],
+      "expected_candidate_carrier": "RT-M3-DOWN",
+      "identity_correct": true,
+      "carrier_correct": true,
+      "human_corrections": 0,
+      "correction_scope": "Submitted identity/carrier decisions only; excludes pre-submission AI count correction and all historical project rework."
+    }
+  ],
+  "source_self_corrections": [
+    {
+      "task": "R2",
+      "from_array": "4x2",
+      "to_array": "5x2",
+      "reason": "last bright row outside initial box",
+      "software_would_detect_pixel_omission": false,
+      "record": {
+        "path": "benchmarks/metal-representative-transfer-v1/source-reinspection-v2.json",
+        "sha256": "b186554e45575588a921523ad6c60bf5cadcc085c1c49f94cdfe70bb4b2b88f0"
+      }
+    }
+  ],
+  "baseline": {
+    "path": "benchmarks/conductive-joint-pilot-closeout-v1/closeout.json",
+    "sha256": "68b7565def50968083ebe0e1b039e1f7620055c74d7cd34a28d8a11bb9e35898"
+  },
+  "unseen_chip": false,
+  "strict_blind": false,
+  "human_group_adjudication": {
+    "path": "benchmarks/metal-representative-transfer-reviewed-v2/human-group-adjudication.json",
+    "sha256": "804467a80d8892724559594502b84c58c0c804f90a4578402a8d009bfd950c22"
+  },
+  "submitted_fixed_tasks": {
+    "path": "benchmarks/metal-representative-transfer-v1/fixed-tasks.json",
+    "sha256": "ef9a344638717162e5d98a342d0a18d993a6abb1a7d29465120419388c901852"
+  },
+  "summary": {
+    "independent_human_task_count": 2,
+    "approved_task_count": 2,
+    "bound_interface_count": 4,
+    "observed_identity_or_carrier_corrections": 0,
+    "pre_submission_AI_count_correction_events": 1,
+    "geometry_truth_qualified": false,
+    "cross_chip_generalization_established": false
+  }
+}

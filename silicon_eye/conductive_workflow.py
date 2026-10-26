@@ -17,14 +17,14 @@ from string import Template
 
 import numpy as np
 from PIL import Image, ImageChops
-from shapely.geometry import box
+from shapely.geometry import Polygon, box
 
 from .conductive_layers import LAYERS, geometry, source_identity_audit, svg_layers
 from .conductive_medium import prepare as prepare_medium
 from .conductive_medium import source_order_audit
 from .conductive_quality import inherited_group_facts, quality_summary, source_shape_audit
 from .geometry_reconstruction import digest
-from .metal_reconstruction import geometry_audit
+from .metal_reconstruction import feature_polygon, geometry_audit
 from .metal_via_pilot import group_via_budget, interface_audit, observed_array_audit, source_panels
 from .metal_via_pilot import regular_group_cuts as via_cuts
 from .review_package import Inputs
@@ -34,6 +34,27 @@ def signature(cut):
     """Physical correspondence stays separate from editable design geometry."""
     return {k: cut[k] for k in ('id', 'layer', 'layer_pair', 'source_frame', 'native_bounds',
                                'lower_metal_id', 'upper_metal_id')}
+
+
+def preserve_via_centers(parent, model, ids):
+    """Size-only revisions must not translate or reorder individual design sites."""
+    if len(ids) != len(set(ids)):
+        raise ValueError('Duplicate preserved via center ID')
+    indices = [{o['id']: o for layer in ('V1', 'V2')
+                for o in value['objects_by_layer'][layer]} for value in (parent, model)]
+    checked = {}
+    for key in ids:
+        centers = []
+        for index in indices:
+            cuts = index.get(key, {}).get('candidate_cut_bounds')
+            if not cuts:
+                raise ValueError('Preserved via centers require an explicit array: ' + key)
+            centers.append([[(a+c)/2, (b+d)/2] for a, b, c, d in cuts])
+        if centers[0] != centers[1]:
+            raise ValueError('Via center preservation failed: ' + key)
+        checked[key] = dict(status='PASS', design_centers_xy=centers[1],
+                            source_registration_verified=False)
+    return checked
 
 
 def carrier_correction(review, before, after):
@@ -136,6 +157,131 @@ def load_parent(inputs, ref):
     return model, request
 
 
+def inventory_geometry_audit(inputs, sample, snapshot):
+    """Account for declared fragments without certifying source exhaustiveness."""
+    inventory = inputs.document(sample['visible_inventory'])
+    if inventory.get('kind') != 'conductive_visible_inventory':
+        raise ValueError('Expected a bound visible inventory')
+    for frame, source in inventory['scope']['frames'].items():
+        if source['photo'] != snapshot['source_photos'][frame]:
+            raise ValueError('Geometry inventory belongs to another photograph')
+        inputs.read(source['photo'])
+    observations = {o['id']: o for o in inventory['metal_observations']}
+    if len(observations) != len(inventory['metal_observations']):
+        raise ValueError('Duplicate inventory observation')
+    mappings = sample['inventory_geometry_mapping']
+    if (len(mappings) != len(observations)
+            or {r['observation_id'] for r in mappings} != set(observations)
+            or len({r['metal_id'] for r in mappings}) != len(mappings)):
+        raise ValueError('Inventory geometry mapping incomplete or duplicated')
+    features = {f['id']: f for fs in sample['features_by_layer'].values() for f in fs}
+    if {r['metal_id'] for r in mappings} != set(features):
+        raise ValueError('Geometry includes unlisted fragments or omits listed metal')
+    partial = []
+    for row in mappings:
+        observation, feature = observations[row['observation_id']], features[row['metal_id']]
+        if feature['source_frame'] != observation['source_frame']:
+            raise ValueError('Inventory geometry frame mismatch')
+        old = observation['mapped_model_id']
+        if old:
+            if feature['id'] != old:
+                raise ValueError('Existing inventory correspondence reassigned')
+            partial.append(old)
+        elif feature['native_path'] != observation['native_path']:
+            raise ValueError('New fragment moved away from inventory source path')
+    return dict(status='DECLARED_FRAGMENT_GEOMETRY_MAPPING_PASS',
+                inventory=sample['visible_inventory'],
+                listed_metal_observations=len(observations), mapped_geometry_count=len(mappings),
+                unmapped_observation_ids=[],
+                existing_partial_source_extent_ids=partial,
+                unresolved_observation_ids=[r['id'] for r in inventory['unknown_observations']],
+                boundary_source_observation_endpoints=sum(
+                    e['state'] == 'exits_scope' for o in observations.values()
+                    for e in o['endpoints']),
+                complete_source_extent_geometry=False,
+                physical_inventory_exhaustiveness='AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED',
+                actual_photo_coverage_fraction=None)
+
+
+def source_extent_audit(inputs, sample):
+    """Bind new extent observations while keeping original native anchors intact."""
+    evidence = inputs.document(sample['source_extent_evidence'])
+    if (evidence.get('actor') != 'AI' or not evidence.get('reason')
+            or evidence.get('geometry_human_approved') is not False
+            or evidence.get('inventory') != sample.get('visible_inventory')):
+        raise ValueError('Extent evidence must remain an AI candidate bound to the inventory')
+    basis, _ = load_parent(inputs, evidence['basis_parent'])
+    inventory = inputs.document(evidence['inventory'])
+    if any(basis['source_photos'].get(frame) != source['photo']
+           for frame, source in inventory['scope']['frames'].items()):
+        raise ValueError('Extent basis belongs to another source photograph')
+    observations = {o['mapped_model_id']:o for o in inventory['metal_observations']
+                    if o['mapped_model_id']}
+    features = {f['id']:f for fs in sample['features_by_layer'].values() for f in fs}
+    old = {o['id']:o for objects in basis['objects_by_layer'].values() for o in objects}
+    rows = evidence['metals']
+    if len(rows) != len(observations) or {r['metal_id'] for r in rows} != set(observations):
+        raise ValueError('Extent evidence omits or duplicates an existing metal')
+    for row in rows:
+        key = row['metal_id']
+        feature, observation = features[key], observations[key]
+        if (feature['native_path'] != old[key]['native_path']
+                or row['native_anchor_path'] != feature['native_path']
+                or row['visible_native_path'] != observation['native_path']
+                or row['endpoint_states'] != [e['state'] for e in observation['endpoints']]
+                or row['source_frame'] != feature['source_frame']
+                or row['design_path'] != feature['design_path']):
+            raise ValueError('Extent evidence source/path/endpoint binding mismatch')
+        previous = Polygon(old[key]['geometry']['outer_xy'], old[key]['geometry']['holes_xy'])
+        current = feature_polygon(feature)
+        if row['preserve_old_footprint']:
+            if not current.covers(previous):
+                raise ValueError('Outward extent revision removed or failed to extend old metal')
+        elif not row.get('reposition_reason'):
+            raise ValueError('Endpoint reposition requires a separate source reason')
+    return dict(status='SOURCE_EXTENT_CANDIDATES_BOUND', evidence=sample['source_extent_evidence'],
+                metal_count=len(rows),
+                source_boundary_endpoints=sum(s == 'exits_scope' for r in rows
+                                              for s in r['endpoint_states']),
+                original_native_anchors_preserved=True, geometry_human_approved=False,
+                precise_extent_geometry_qualified=False, complete_network=False)
+
+
+def native_carrier_review_source(inputs, sample, review, question, claim):
+    """Adapt a source-only carrier verdict without approving new design coordinates."""
+    scope = question['scope']
+    analysis = inputs.document(question['analysis'])
+    facts = inputs.document(analysis['source_facts'])
+    identity = inputs.human(facts['human_review'])
+    expected = dict(id=scope['interface_id'], layer='V2', layer_pair=['M2', 'M3'],
+                    source_frame=scope['source_frame'], native_bounds=scope['native_bounds'],
+                    lower_metal_id=scope['lower_metal_id'],
+                    upper_metal_id=scope['upper_candidate'])
+    identity_scope = dict(source_frame=expected['source_frame'],
+                          native_bounds=expected['native_bounds'],
+                          lower_metal_id=expected['lower_metal_id'])
+    if (review.get('kind') != 'native_carrier_confirmation'
+            or review.get('question_id') != question['question_id']
+            or signature(claim) != expected
+            or analysis['source_photos'] != inputs.document(sample['snapshot'])['source_photos']
+            or review.get('observed_cut_count') is not None
+            or not any(d.get('via_layer') == 'V2' and d.get('V2_present') is True
+                       and all(d.get(k) == v for k, v in identity_scope.items())
+                       for d in identity['decisions'])):
+        raise ValueError('Native carrier review exceeds the submitted source scope')
+    for ref in question['images'].values():
+        inputs.read(ref)
+    working = inputs.document(analysis['working_geometry_baseline'])
+    if facts['working_geometry_baseline'] != analysis['working_geometry_baseline']:
+        raise ValueError('Native carrier review working baseline mismatch')
+    _, request = load_parent(inputs, working['geometry_package'])
+    source = inputs.document(request['sample'])
+    # This synthesized source signature is only an adapter for the exact native
+    # question. It deliberately contains no approved cut count or design bounds.
+    source['interfaces'] = [expected]
+    return source
+
+
 def apply_reviews(inputs, sample, refs):
     claims = {c['id']: c for c in sample['interfaces']}
     decisions, approved = {}, []
@@ -147,6 +293,8 @@ def apply_reviews(inputs, sample, refs):
                 'lower_metal_id', 'upper_metal_id', 'connection_confirmed'}):
             raise ValueError('Review exceeds interface scope')
         source = inputs.document(review['sources']['submitted_request'])
+        if source.get('kind') == 'scoped_native_carrier_review_request':
+            source = native_carrier_review_source(inputs, sample, review, source, claims[key])
         if source.get('kind') == 'conductive_reconstruction_workflow':
             binding = review['sources']['submitted_manifest']
             manifest = inputs.document(binding)
@@ -261,9 +409,28 @@ def prepare(root, request):
         audits.update(source_identity=identity, source_order=order)
         if observed_arrays:
             audits['array_source_observations'] = observed_arrays
+    if sample.get('additional_source_order_checks'):
+        extra_order = source_order_audit(sample['features_by_layer'],
+                                         sample['additional_source_order_checks'])
+        if extra_order['status'] != 'PASS':
+            raise ValueError('Additional source order gate failed')
+        audits['additional_source_order'] = extra_order
+    inventory_mapping = None
+    if sample.get('visible_inventory'):
+        inventory_mapping = inventory_geometry_audit(inputs, sample, snapshot)
+        audits['visible_inventory_geometry'] = inventory_mapping
+    extent_candidates = None
+    if sample.get('source_extent_evidence'):
+        extent_candidates = source_extent_audit(inputs, sample)
+        audits['source_extent_candidates'] = extent_candidates
+    added = []
+    added_interfaces = []
     parent = parent_request = None
     if request.get('parent'):
         parent, parent_request = load_parent(inputs, request['parent'])
+        if request.get('preserve_via_center_ids'):
+            audits['preserved_via_centers'] = preserve_via_centers(
+                parent, model, request['preserve_via_center_ids'])
         previous = inputs.document(parent_request['sample'])
         if any(sample.get(k) != previous.get(k) for k in ('snapshot', 'canvas_wh', 'metal_budget',
                                                   'via_budget', 'source_order_checks')):
@@ -272,8 +439,75 @@ def prepare(root, request):
         new = {f['id']: f for fs in sample['features_by_layer'].values() for f in fs}
         old.update({c['id']: c for c in previous['interfaces']})
         new.update({c['id']: c for c in sample['interfaces']})
-        if old.keys() != new.keys():
+        added = sorted(set(new) - set(old))
+        if set(old) - set(new):
             raise ValueError('Revision cannot silently add or retire stable IDs')
+        if added:
+            interface_ids = {c['id'] for c in sample['interfaces']}
+            if request.get('added_interface_ids'):
+                declared = request['added_interface_ids']
+                if (legacy or sorted(declared) != added or len(set(declared)) != len(declared)
+                        or not set(added) <= interface_ids
+                        or request.get('added_metal_ids') or request.get('extension_evidence')
+                        or not request.get('interface_extension_evidence')):
+                    raise ValueError('Invalid explicit interface extension')
+                if any(old[k] != new[k] for k in old):
+                    raise ValueError('Interface extension must preserve every existing record')
+                evidence = inputs.document(request['interface_extension_evidence'])
+                observations = evidence.get('interface_observations', {})
+                if (evidence.get('actor') != 'AI' or not evidence.get('reason')
+                        or evidence.get('parent') != request['parent']
+                        or sorted(evidence.get('added_interface_ids', [])) != added
+                        or set(observations) != set(added)):
+                    raise ValueError('Interface extension evidence does not bind parent/IDs')
+                for claim in sample['interfaces']:
+                    if claim['id'] in added and (
+                            not claim.get('array_source_evidence')
+                            or observations[claim['id']] != claim['array_source_evidence']):
+                        raise ValueError('Interface extension requires bound array observations')
+                inputs.evidence(evidence)
+                added_interfaces, added = added, []
+                audits['interface_extension'] = dict(
+                    status='PASS', added_interface_ids=added_interfaces,
+                    existing_records_exact=True, evidence=request['interface_extension_evidence'])
+        if added:
+            declared = request.get('added_metal_ids', [])
+            if (legacy or sorted(declared) != added or len(set(declared)) != len(declared)
+                    or any(k not in {f['id'] for fs in sample['features_by_layer'].values()
+                                     for f in fs} for k in added)
+                    or not request.get('extension_evidence') or inventory_mapping is None):
+                raise ValueError('Revision cannot silently add or retire stable IDs')
+            if any(old[k] != new[k] for k in old):
+                raise ValueError(
+                    'Metal extension must preserve every existing feature and interface')
+            evidence = inputs.document(request['extension_evidence'])
+            if (evidence.get('actor') != 'AI' or not evidence.get('reason')
+                    or evidence.get('parent') != request['parent']
+                    or evidence.get('inventory') != sample['visible_inventory']
+                    or sorted(evidence.get('added_metal_ids', [])) != added):
+                raise ValueError('Metal extension evidence does not bind parent/inventory/IDs')
+            inputs.evidence(evidence)
+            audits['metal_extension'] = dict(status='PASS', added_metal_ids=added,
+                                             existing_records_exact=True,
+                                             evidence=request['extension_evidence'])
+        elif request.get('added_metal_ids') or request.get('extension_evidence'):
+            raise ValueError('Extension declaration without added metal')
+        if not added_interfaces and (request.get('added_interface_ids')
+                                     or request.get('interface_extension_evidence')):
+            raise ValueError('Interface extension declaration without added interfaces')
+        for key in ('visible_inventory', 'inventory_geometry_mapping',
+                    'additional_source_order_checks'):
+            if previous.get(key) is not None and sample.get(key) != previous[key]:
+                raise ValueError('Existing inventory/order binding cannot silently change')
+        old_extent, new_extent = (value.get('source_extent_evidence')
+                                  for value in (previous, sample))
+        if old_extent and not new_extent:
+            raise ValueError('Existing inventory/order binding cannot silently change')
+        if new_extent and new_extent != old_extent:
+            evidence = inputs.document(new_extent)
+            if (not request.get('revision_evidence')
+                    or evidence.get('basis_parent') != request['parent']):
+                raise ValueError('New extent evidence must bind the current revision parent')
         changes = sorted(k for k in old if old[k] != new[k])
         if changes != sorted(request.get('allowed_changed_ids', [])):
             raise ValueError('Revision change scope mismatch')
@@ -301,6 +535,12 @@ def prepare(root, request):
                 raise ValueError('Revision cannot silently move native source anchors')
     else:
         changes = []
+        if request.get('added_metal_ids') or request.get('extension_evidence'):
+            raise ValueError('Metal extension requires a parent package')
+        if request.get('added_interface_ids') or request.get('interface_extension_evidence'):
+            raise ValueError('Interface extension requires a parent package')
+        if request.get('preserve_via_center_ids'):
+            raise ValueError('Preserved via centers require a parent package')
         if request.get('allowed_changed_ids'):
             raise ValueError('Changed IDs require a parent package')
     refs = copy.deepcopy(parent['review_sources']) if parent else []
@@ -387,6 +627,10 @@ def prepare(root, request):
     inherited = inherited_group_facts(inputs, baseline, model)
     if inherited:
         model['inherited_group_facts'] = inherited
+    if inventory_mapping:
+        model['visible_inventory_geometry'] = inventory_mapping
+    if extent_candidates:
+        model['source_extent_candidates'] = extent_candidates
     additional_counts = []
     for cut in sample['interfaces']:
         evidence = count_evidence_docs.get(cut['id'])
@@ -403,7 +647,18 @@ def prepare(root, request):
                   changed_object_ids=changes, previously_approved_preserved=True,
                   physical_accuracy=None, autonomous_image_recognition=False,
                   complete_network=False, canonical_geometry_adopted=False)
+    if added_interfaces:
+        report['added_interface_ids'] = added_interfaces
     report['quality'] = quality_summary(model, sample, shape, legacy_report)
+    if inventory_mapping:
+        report['added_metal_ids'] = added
+        report['quality']['visible_inventory_geometry'] = inventory_mapping
+        report['quality']['blocking_adoption_reasons'] = [
+            ('声明的来源片段已建模；旧对象端部仍部分覆盖，像素穷尽性和来源疑点未验收。'
+             if text == '未建立全部可见导体/接口清单，不能给出照片覆盖率或整网完成率。'
+             else text) for text in report['quality']['blocking_adoption_reasons']]
+    if extent_candidates:
+        report['quality']['source_extent_candidates'] = extent_candidates
     return model, report, sample, snapshot, inputs.files
 
 

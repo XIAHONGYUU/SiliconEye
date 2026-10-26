@@ -1,0 +1,44 @@
+{
+  "actor": "AI",
+  "kind": "source_array_reinspection",
+  "stage": "before_new_human_review",
+  "initial_request": {
+    "path": "benchmarks/metal-representative-transfer-v1/request.json",
+    "sha256": "fbe9337b87e91769f881687fc83873449c91accc0c8ac2352c79d0f95212cb25"
+  },
+  "initial_package": {
+    "path": "docs/assets/metal-representative-transfer-v1/candidate/manifest.json",
+    "sha256": "db1830a9b5e3fc1ffc8b3881a5670dc9979585439bf2a632bdad54329a2d3dc2"
+  },
+  "reason": "Last lower bright row remains outside initial 4x2 boxes. Initial software PASS checks declared sites only and does not establish full photo coverage. Reobserve lower groups as five rows, retaining candidate authority.",
+  "sources": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "initial_observations": {
+      "path": "benchmarks/metal-representative-transfer-v1/observations.json",
+      "sha256": "3c00b02ee9205ca082d7b192e9a51c22fec6bf2b7dd4b129acc6ca90c79e7d85"
+    }
+  },
+  "intensity_profile_assistance": {
+    "method": "local column mean minus adjacent background, gaussian sigma 1, find_peaks distance 9; peaks only support visual review, not detector ground truth",
+    "first_lower_strong_rows_y": [
+      2681,
+      2697,
+      2715,
+      2735,
+      2750
+    ],
+    "second_lower_strong_rows_y": [
+      2674,
+      2693,
+      2712,
+      2731,
+      2746
+    ]
+  },
+  "corrected_rows_candidate": 5,
+  "human_count_confirmed": false,
+  "initial_model_status": "REJECTED_BY_AI_SOURCE_COMPLETENESS_REVIEW"
+}

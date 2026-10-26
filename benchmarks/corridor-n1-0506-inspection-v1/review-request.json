@@ -1,0 +1,63 @@
+{
+  "kind": "native_source_fact_adjudication_pending",
+  "actor": "AI",
+  "date": "2026-10-26",
+  "sources": {
+    "submitted_page": {
+      "path": "docs/assets/corridor-n1-0506-inspection-v1/index.html",
+      "sha256": "8a18943b08a73987ab9e5cf1c857c1cc4acdd693463fcf8834459ad0829ac3f8"
+    },
+    "source_observations": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/source-observations.json",
+      "sha256": "1dcb31d838a3031ebed69cbc860a5132064b3fb22d8c41dff0aa51bf0e5c4c94"
+    },
+    "working_baseline": {
+      "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+      "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+    },
+    "N1_panels": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/n1-panels.json",
+      "sha256": "c98d5ce13667efccf3a7c67af04e1e092f3cbeef1c6debd8b8ce34e08396ed60"
+    },
+    "pair_panels": {
+      "path": "benchmarks/corridor-n1-0506-inspection-v1/0506-panels.json",
+      "sha256": "3c6563634bc57fba489f761ca5a5c4b95ef78e2c6c0246885ca094ba0f30f33b"
+    }
+  },
+  "review_images": {
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-wide-marked.png": "b00d6b16d475fe083ae828246b4c225b2eca75c7d4a856eae7e9abfb410c8d4d",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-detail-raw.png": "ef201def7e72395be77c5e5b6f13530c7c1ca14473b3da3ad5cff4f25c74e617",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-detail-raw.png": "c6c321e36cf966758261f8f1ccd9aebc8052da5a52c427975dd5c55458e8d65c",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-wide-raw.png": "6d23e8cf5f0ffd1aed2be256d8bc6b012af57097a4ca20c16f1678e2e153223e",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-detail-marked.png": "7f33974575033f876ed2768b3840d0c5b690028da61c1749c721833bd4bf1974",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-wide-marked.png": "baa7c059829f6059c75c44bf3e121faaf7b98048af25522fc10d108c1bb41655",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m3-detail-marked.png": "7654af5a59a5c5ab2f4de3f03e9c90a9babd037dbe2b8ca487f3072aaa58382f",
+    "docs/assets/corridor-n1-0506-inspection-v1/n1/m2-wide-raw.png": "40035029361eda2d6a2aefc9937383e6a9690fdea0d5ec6385ead28ff029d01f",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-wide-marked.png": "cf84631a2614b1a5fda8816b68f4315542152768492a81afa601219a3ce9f9c1",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-detail-raw.png": "1153e2b16d45ed0119c81350b7fa15bf48aecac2f345ba2b961f361e5d218dce",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-detail-marked.png": "ce1ab063b9dc45357c28292f4df43efae75a3b4d0ea53da69491472b238d7886",
+    "docs/assets/corridor-n1-0506-inspection-v1/0506/m2-wide-raw.png": "ff2da064cb1aab0ea2f0a805ad7d05849baf82cb4620dfcddd2c530da05b8251"
+  },
+  "questions": [
+    {
+      "id": "N1-Q1-V2-IDENTITY",
+      "old_unknown_id": "C-U4",
+      "label": "Q1",
+      "question": "M2橙框N1短横头是否确有V2？只判身份，不批准孔数或M3承载。",
+      "expected_fact": "V2_present",
+      "human_value": null
+    },
+    {
+      "id": "C0506-Q2-LOCAL-M2-CONTINUITY",
+      "old_unknown_id": "C-U5",
+      "label": "Q2",
+      "question": "05/06之间在图示局部是否没有直接连续的M2？不推导全局异网。",
+      "expected_fact": "local_direct_M2_continuity",
+      "AI_value": false,
+      "human_value": null
+    }
+  ],
+  "M3_L1_carrier_not_in_adjudication": true,
+  "via_physical_count_unknown": true,
+  "human_approval_count": 0
+}

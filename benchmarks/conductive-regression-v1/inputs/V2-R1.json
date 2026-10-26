@@ -1,0 +1,64 @@
+{
+  "kind": "raw_image_interface_task",
+  "task_id": "V2-R1",
+  "coordinate_system": "native_photo_px",
+  "frames": {
+    "m2": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "wide_bounds": [
+        2940,
+        1730,
+        3670,
+        3000
+      ],
+      "detail_bounds": [
+        3020,
+        1820,
+        3420,
+        2100
+      ]
+    },
+    "m3": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "wide_bounds": [
+        2940,
+        1730,
+        3670,
+        3000
+      ],
+      "detail_bounds": [
+        3020,
+        1820,
+        3420,
+        2100
+      ]
+    }
+  },
+  "target_bright_regions": [
+    {
+      "frame": "m2",
+      "bounds": [
+        3086,
+        1892,
+        3122,
+        1952
+      ]
+    },
+    {
+      "frame": "m2",
+      "bounds": [
+        3358,
+        1888,
+        3394,
+        1948
+      ]
+    }
+  ],
+  "instruction": "查看原图及邻层上下文，判断目标亮区的孔层及上下承载。以原生路径/端部描述对应导体；记录替代解释、未知和理由。不要从层间重叠直接推导连接，不强制逐孔计数。"
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_joint_pilot_closeout",
+  "date": "2026-10-26",
+  "status": "CLOSED_SCOPED_WORKING_BASELINE",
+  "human_review": {
+    "path": "benchmarks/conductive-joint-pilot-closeout-v1/human-review.json",
+    "sha256": "5bca3c6ca27eae8719959decf91a21b9122078d44bbafc1b8db39c17b4d7b028"
+  },
+  "source_work_snapshot": {
+    "path": "docs/assets/m1-local-tab-v1/work/manifest.json",
+    "sha256": "4b0fd29d2f0ff3cfeac7506614cc6f268c0fedb24d4e6db44497bac3034033f9"
+  },
+  "source_config": {
+    "path": "configs/m1-local-tab-v1.json",
+    "sha256": "d13a451fb26aa7af0c14cd2c35179ed4ed12a03b0b578c052214e0bf1af114fb"
+  },
+  "focus_scope": [
+    {
+      "domain": "medium",
+      "focus_id": "Q1",
+      "via_ids": [
+        "SUPPORT-J-M1-P08-V1-M2-J01",
+        "SUPPORT-J-M2-V2-M3-B1"
+      ],
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      }
+    },
+    {
+      "domain": "independent",
+      "focus_id": "Q2",
+      "via_ids": [
+        "IT1-V1-A",
+        "IT1-V2-B"
+      ],
+      "package": {
+        "path": "docs/assets/m1-local-tab-v1/independent/manifest.json",
+        "sha256": "6abff9c82915778607e6bafd95dacdc7a9d902431ba913ac58fd9ba133303329"
+      }
+    }
+  ],
+  "stage_blocking_questions": [],
+  "retained": {
+    "local_object_records": 41,
+    "reviewed_interfaces": 13,
+    "accepted_groups": 2,
+    "reviewed_terminal_paths": 1,
+    "material_counts": {
+      "AA": 334,
+      "POLY": 696,
+      "CT": 10287
+    }
+  },
+  "verification": {
+    "exact_continuation": "PASS",
+    "source_reference_checks": 182,
+    "pending_local_interfaces": {
+      "medium": [],
+      "independent": []
+    },
+    "showcase_file_hash_checks": 25,
+    "gh_pages_ref_unchanged": true,
+    "prior_related_tests": {
+      "count": 23,
+      "source": {
+        "path": "benchmarks/m1-local-tab-v1/verification.json",
+        "sha256": "1111d7a3824bdcb52c0793e0abf3cf87d77952857e2cc4184c4e2720ce57bebf"
+      },
+      "rerun_this_turn": false
+    },
+    "browser_interaction_tested": false
+  },
+  "limits": {
+    "exact_source_registration": false,
+    "physical_dimensions_qualified": false,
+    "canonical_geometry_adopted": false,
+    "complete_network": false,
+    "automatic_network_export_allowed": false,
+    "metal_via_skills_status": "LIMITED_TRIAL_V2"
+  },
+  "next_action": "以本包作为防退化基准，按结构类型选择下一批金属/VIA扩展验证；本轮不执行扩展。",
+  "remote_modified": false
+}

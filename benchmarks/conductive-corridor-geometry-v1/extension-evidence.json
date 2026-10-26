@@ -1,0 +1,65 @@
+{
+  "actor": "AI",
+  "kind": "additive_metal_geometry_proposal",
+  "reason": "Build regular orthogonal geometry for the 22 unmodeled metal fragments in the bound corridor inventory; preserve all prior feature/interface records, via sites and human decisions. Existing eight source extents remain partial.",
+  "parent": {
+    "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/manifest.json",
+    "sha256": "7a0ac0b1fe13674f4bb3c69ac83701e601085320da2530e8732d56f1b3025720"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "C-M2-03",
+    "C-M2-04",
+    "C-M2-05",
+    "C-M2-06",
+    "C-M2-08",
+    "C-M3-E1",
+    "C-M3-E2",
+    "C-M3-EDGE",
+    "C-M3-L01",
+    "C-M3-L03",
+    "C-M3-M01",
+    "C-M3-M02",
+    "C-M3-M03",
+    "C-M3-M04",
+    "C-M3-M05",
+    "C-M3-M06",
+    "C-M3-T01",
+    "C-M3-T02",
+    "C-M3-T03",
+    "C-M3-T04",
+    "C-M3-T05",
+    "C-M3-T06"
+  ],
+  "sources": {
+    "inventory": {
+      "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+      "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+    },
+    "baseline_model": {
+      "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/model.json",
+      "sha256": "b11deea353620508def2b8e398b50cfd2e89f1606e1b4007dbb02e961866f290"
+    },
+    "reviewed_parent": {
+      "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/manifest.json",
+      "sha256": "7a0ac0b1fe13674f4bb3c69ac83701e601085320da2530e8732d56f1b3025720"
+    }
+  },
+  "design_choices": {
+    "canvas": "Existing 780x1240 local design coordinates; not native photo transform.",
+    "thin_runs": "Top six: 19px center pitch, middle six:21px pitch. Width8. Ordered relative to retained broad buses. AI geometry candidates, not measured process dimensions.",
+    "short_fragments": "Keep visible bend handedness; retain separate identities and gaps. Do not join C-M2-05/06 or resolve N1 via.",
+    "boundary": "New source endpoints marked exits_scope remain open. Design path end positions are local candidates, not chip terminals. Old partial native extent is not silently extended."
+  },
+  "unresolved_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "geometry_approved": false
+}

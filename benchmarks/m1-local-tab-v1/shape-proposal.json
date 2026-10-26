@@ -1,0 +1,22 @@
+{
+  "actor": "AI",
+  "reason": "Replace the over-wide uniform M1 rectangle with source-supported normal body plus a local downward tab. No via size/site, metal connectivity, native anchor or budget changes.",
+  "changed_object_ids": [
+    "IT1-M1-RING"
+  ],
+  "sources": {
+    "source_assessment": {
+      "path": "benchmarks/m1-local-tab-v1/source-assessment.json",
+      "sha256": "1aca91b49dfb742a71b21c15c9f325d23cb7aef29f15568d783ab19f4644ffc5"
+    },
+    "human_feedback": {
+      "path": "benchmarks/m1-local-tab-v1/human-shape-feedback.json",
+      "sha256": "e1ebea12d11b6ce2fc1d08dae8e33bd083540452134fee7a429bb986b6ff65d1"
+    },
+    "parent": {
+      "path": "docs/assets/via-center-preserving-v1/independent/manifest.json",
+      "sha256": "1bef3ce5b4c760b0f72296ce65495f26933440e7ad0f2125a995c009d664500f"
+    }
+  },
+  "scope": "Only M1 candidate silhouette, not measured physical dimensions or approval."
+}

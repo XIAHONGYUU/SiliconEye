@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_layer_observations",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "canvas_wh": [
+    760,
+    600
+  ],
+  "features_by_layer": {
+    "M1": [
+      {
+        "id": "S1-M1-STUB",
+        "layer": "M1",
+        "source_frame": "m1",
+        "native_path": [
+          [
+            1153,
+            3374
+          ],
+          [
+            1153,
+            3412
+          ]
+        ],
+        "design_path": [
+          [
+            330,
+            280
+          ],
+          [
+            330,
+            320
+          ]
+        ],
+        "design_width": 14,
+        "label": "S1 new M1",
+        "label_xy": [
+          280,
+          370
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "visible_extent_unreviewed"
+        ]
+      },
+      {
+        "id": "S1-M1-UP-CONTEXT",
+        "layer": "M1",
+        "source_frame": "m1",
+        "native_path": [
+          [
+            1025,
+            3350
+          ],
+          [
+            1300,
+            3340
+          ]
+        ],
+        "design_path": [
+          [
+            100,
+            185
+          ],
+          [
+            625,
+            185
+          ]
+        ],
+        "design_width": 14,
+        "label": "upper M1 context",
+        "label_xy": [
+          80,
+          155
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "visible_extent_unreviewed"
+        ]
+      },
+      {
+        "id": "S1-M1-DOWN-CONTEXT",
+        "layer": "M1",
+        "source_frame": "m1",
+        "native_path": [
+          [
+            1025,
+            3430
+          ],
+          [
+            1300,
+            3420
+          ]
+        ],
+        "design_path": [
+          [
+            100,
+            415
+          ],
+          [
+            625,
+            415
+          ]
+        ],
+        "design_width": 14,
+        "label": "lower M1 context",
+        "label_xy": [
+          80,
+          455
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "visible_extent_unreviewed"
+        ]
+      }
+    ],
+    "M2": [
+      {
+        "id": "S1-M2-A",
+        "layer": "M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            1138,
+            3321
+          ],
+          [
+            1118,
+            3321
+          ],
+          [
+            1120,
+            3417
+          ]
+        ],
+        "design_path": [
+          [
+            365,
+            215
+          ],
+          [
+            330,
+            215
+          ],
+          [
+            330,
+            285
+          ]
+        ],
+        "design_width": 12,
+        "label": "A short M2",
+        "label_xy": [
+          230,
+          245
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "visible_extent_unreviewed"
+        ]
+      },
+      {
+        "id": "S1-M2-B",
+        "layer": "M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            1172,
+            3334
+          ],
+          [
+            1195,
+            3334
+          ],
+          [
+            1195,
+            3412
+          ]
+        ],
+        "design_path": [
+          [
+            420,
+            260
+          ],
+          [
+            445,
+            260
+          ],
+          [
+            445,
+            350
+          ]
+        ],
+        "design_width": 10,
+        "label": "B nearby M2",
+        "label_xy": [
+          410,
+          390
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "visible_extent_unreviewed"
+        ]
+      },
+      {
+        "id": "S1-M2-C",
+        "layer": "M2",
+        "source_frame": "m2",
+        "native_path": [
+          [
+            1268,
+            3280
+          ],
+          [
+            1246,
+            3280
+          ],
+          [
+            1246,
+            3510
+          ]
+        ],
+        "design_path": [
+          [
+            555,
+            190
+          ],
+          [
+            530,
+            190
+          ],
+          [
+            530,
+            500
+          ]
+        ],
+        "design_width": 10,
+        "label": "C long M2",
+        "label_xy": [
+          510,
+          545
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "visible_extent_unreviewed"
+        ]
+      }
+    ]
+  },
+  "interfaces": [
+    {
+      "id": "V1-S1-GROUP",
+      "layer": "V1",
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "native_bounds": [
+        1143,
+        3369,
+        1164,
+        3393
+      ],
+      "lower_metal_id": "S1-M1-STUB",
+      "upper_metal_id": "S1-M2-A",
+      "bounds": [
+        327,
+        281,
+        333,
+        287
+      ],
+      "observation_id": "V1-S1-upper-terminal-source",
+      "status": "candidate",
+      "connection_confirmed": null
+    }
+  ],
+  "metal_budget": {
+    "minimum_width_px": 6,
+    "minimum_gap_px": 3,
+    "unit": "local_relative_design_px_not_PDK"
+  },
+  "via_budget": {
+    "minimum_cut_width_px": 6,
+    "minimum_cut_gap_px": 3,
+    "enclosure_px": 1,
+    "cut_size_px": 6,
+    "pitch_xy": [
+      9,
+      9
+    ]
+  },
+  "source_order_checks": [
+    {
+      "id": "A-before-B",
+      "axis": "x",
+      "first": {
+        "id": "S1-M2-A",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "S1-M2-B",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "B-before-C",
+      "axis": "x",
+      "first": {
+        "id": "S1-M2-B",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "S1-M2-C",
+        "extreme": "min"
+      }
+    }
+  ],
+  "source_panels": {
+    "source_windows": {
+      "m1": {
+        "wide": [
+          930,
+          3110,
+          1450,
+          3560
+        ],
+        "detail": [
+          1000,
+          3290,
+          1330,
+          3510
+        ]
+      },
+      "m2": {
+        "wide": [
+          930,
+          3110,
+          1450,
+          3560
+        ],
+        "detail": [
+          1030,
+          3270,
+          1350,
+          3530
+        ]
+      }
+    },
+    "observations": [],
+    "source_label_style": {
+      "font_size_px": 36,
+      "padding_px": 6,
+      "hide_off_window_labels": true
+    },
+    "source_regions": {
+      "m1": [
+        {
+          "bounds": [
+            1143,
+            3369,
+            1164,
+            3393
+          ],
+          "color": "#ffb04f",
+          "label": "S1 V1?",
+          "label_xy": [
+            1210,
+            3360
+          ]
+        },
+        {
+          "bounds": [
+            1138,
+            3210,
+            1153,
+            3232
+          ],
+          "color": "#aab6bf",
+          "label": "REF N1 reviewed",
+          "label_xy": [
+            950,
+            3140
+          ]
+        }
+      ],
+      "m2": [
+        {
+          "bounds": [
+            1106,
+            3405,
+            1133,
+            3427
+          ],
+          "color": "#6ad8ff",
+          "label": "A end?",
+          "label_xy": [
+            950,
+            3445
+          ]
+        }
+      ]
+    },
+    "native_traces": {
+      "m1": [
+        {
+          "points": [
+            [
+              1153,
+              3374
+            ],
+            [
+              1153,
+              3412
+            ]
+          ],
+          "color": "#80e6b0",
+          "label": "S1 new M1",
+          "label_xy": [
+            1210,
+            3410
+          ]
+        }
+      ],
+      "m2": [
+        {
+          "points": [
+            [
+              1138,
+              3321
+            ],
+            [
+              1118,
+              3321
+            ],
+            [
+              1120,
+              3417
+            ]
+          ],
+          "color": "#6ad8ff",
+          "label": "A short M2",
+          "label_xy": [
+            950,
+            3280
+          ]
+        },
+        {
+          "points": [
+            [
+              1172,
+              3334
+            ],
+            [
+              1195,
+              3334
+            ],
+            [
+              1195,
+              3412
+            ]
+          ],
+          "color": "#aab6bf",
+          "label": "B nearby M2",
+          "label_xy": [
+            1175,
+            3470
+          ]
+        },
+        {
+          "points": [
+            [
+              1268,
+              3280
+            ],
+            [
+              1246,
+              3280
+            ],
+            [
+              1246,
+              3510
+            ]
+          ],
+          "color": "#aab6bf",
+          "label": "C long M2",
+          "label_xy": [
+            1240,
+            3150
+          ]
+        }
+      ]
+    }
+  },
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "complete_network": false,
+  "source_to_design_transform": null
+}

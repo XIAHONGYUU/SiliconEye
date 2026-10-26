@@ -1,0 +1,26 @@
+{
+  "raw_crop_pixel_checks": 6,
+  "marked_dimensions_checks": 6,
+  "HTML_asset_links": 34,
+  "JavaScript_syntax": "PASS",
+  "reference_D2_native_identity": "PASS",
+  "working_baseline_full_model_exact": true,
+  "prepare_inputs_verified": 48,
+  "source_photo_hashes": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "browser_interaction_tested": false,
+  "production_code_changed": false,
+  "geometry_changed": false,
+  "software_tests_rerun": false,
+  "reason": "Source-inspection-only output; existing renderer reused, crop pixel/links/source bindings and baseline replay checked."
+}

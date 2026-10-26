@@ -1,0 +1,175 @@
+{
+  "kind": "native_carrier_candidate_and_design_feasibility",
+  "actor": "AI",
+  "status": "AWAITING_N1_UPPER_CARRIER_ADJUDICATION",
+  "source_facts": {
+    "path": "benchmarks/corridor-n1-0506-reviewed-v2/source-fact-state.json",
+    "sha256": "a24c13852ca2c56a35fa74602f0c2db16e823fa1237b0e00f7c07fee7a5953b1"
+  },
+  "working_geometry_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "N1": {
+    "source_frame": "m2",
+    "native_bounds": [
+      3498,
+      2480,
+      3540,
+      2510
+    ],
+    "V2_identity": "human_confirmed_scoped",
+    "lower_metal_id": "RT-M2-NARROW",
+    "physical_cut_count": null,
+    "preferred_upper_candidate": "C-M3-L01",
+    "upper_metal_confirmed": null,
+    "connection_confirmed": null,
+    "design_via_geometry_created": false
+  },
+  "alternatives": [
+    {
+      "label": "A",
+      "id": "C-M3-L01",
+      "native_path": [
+        [
+          2940,
+          2528
+        ],
+        [
+          3565,
+          2511
+        ]
+      ],
+      "observation": "First fine band below MID bus; right end visible inside source frame. Preferred, not a unique cross-frame match."
+    },
+    {
+      "label": "B",
+      "id": "RT-M3-THIN1",
+      "native_path": [
+        [
+          2980,
+          2540
+        ],
+        [
+          3650,
+          2520
+        ]
+      ],
+      "observation": "Next thin band continues right. Not excluded by an established transform; shown as alternative."
+    },
+    {
+      "label": "C",
+      "id": "C-M3-L03",
+      "native_path": [
+        [
+          2940,
+          2565
+        ],
+        [
+          3670,
+          2545
+        ]
+      ],
+      "observation": "Third fine band, lower than A/B; contextual comparison only."
+    },
+    {
+      "label": "D",
+      "id": "RT-M3-THIN2",
+      "native_path": [
+        [
+          2980,
+          2595
+        ],
+        [
+          3650,
+          2575
+        ]
+      ],
+      "observation": "Fourth fine band, contextual comparison only."
+    }
+  ],
+  "independent_source_assistance": {
+    "path": "benchmarks/corridor-n1-0506-inspection-v1/source-assistance.json",
+    "sha256": "36ee865da88fb3f1b01a1b21e027195387ace794f38baaa3e1bdaa2ade2b4d51"
+  },
+  "cross_frame_transform": null,
+  "registered_pixel_projection_qualified": false,
+  "matching_limit": "A native end and ordered bands are observable in M3, but no uniquely corresponding native M2/M3 landmark establishes precise mapping. Broad bus coverage is not a point landmark. Similar raw xy or existing design overlap cannot approve a carrier.",
+  "design_feasibility": {
+    "status": "FAIL_MINIMUM_FOOTPRINT_AT_SOURCE_HEAD_STATION_IF_A",
+    "design_head_station_excluding_stem": [
+      565,
+      660,
+      584,
+      690
+    ],
+    "existing_M2_head_y_interval": [
+      670,
+      680
+    ],
+    "existing_M3_A_y_interval": [
+      678,
+      686
+    ],
+    "common_material_bounds": [
+      565.0,
+      678.0,
+      584.0,
+      680.0
+    ],
+    "common_material_height_px": 2,
+    "minimum_cut_width_px": 6,
+    "enclosure_each_side_px": 1,
+    "minimum_required_height_px": 8,
+    "full_group_enclosure": "NOT_EVALUATED",
+    "source_array_geometry": "NOT_QUALIFIED",
+    "unit": "relative_design_px_not_PDK",
+    "geometry_changed": false,
+    "move_to_stem_to_pass_allowed": false,
+    "after_carrier_approval": "First locate source-supported group extent and relation to M3 end. Then explicitly revise only justified design geometry and test complete group enclosure; unknown count must not become a one-hole full-group PASS."
+  },
+  "preserved": {
+    "metals": 30,
+    "reviewed_interfaces": 4,
+    "design_via_cuts": 32,
+    "pair_05_06_local_direct_continuity": false,
+    "pair_05_06_global_same_net": null,
+    "net_edges": []
+  },
+  "canonical_geometry_adopted": false,
+  "complete_network": false
+}

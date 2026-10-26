@@ -1,0 +1,37 @@
+{
+  "status": "N1_SCOPED_CARRIER_RECORDED_DESIGN_CANDIDATE_CHECKED",
+  "human_statement": "N1接A",
+  "new_reviewed_interfaces": 1,
+  "reviewed_interfaces_total": 5,
+  "metals": 30,
+  "changed_metal_ids": [
+    "RT-M2-NARROW"
+  ],
+  "other_metals_preserved_exactly": 29,
+  "existing_via_groups_preserved_exactly": 4,
+  "old_design_cut_count": 32,
+  "new_declared_candidate_cut_count": 2,
+  "declared_design_cut_count_total": 34,
+  "human_N1_cut_count": null,
+  "old_native_paths_preserved": true,
+  "full_declared_design_array_enclosure": "PASS",
+  "source_geometry_qualified": false,
+  "geometry_human_approved": false,
+  "new_pending_carrier_questions": [],
+  "remaining_source_band_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3"
+  ],
+  "new_net_edges": [],
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "source_fact_state": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/source-fact-state.json",
+    "sha256": "26f6be377cb1369826452ae06c4993983b15229f80420f6a4e70e058ec03b2de"
+  },
+  "resumable_request": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/next-request.json",
+    "sha256": "7374314e6384e3fc282bae089f9e142241b6861dc0bc66d491026d60b4ac44a6"
+  }
+}

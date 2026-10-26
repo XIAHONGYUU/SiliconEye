@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/metal-representative-transfer-v1/observations-v2.json",
+    "sha256": "2bc5114557250b6cccd8fa613504caea54fdde9daa131e507832f78e3daa55f1"
+  },
+  "frames": [
+    "m2",
+    "m3"
+  ],
+  "reviews": [
+    {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U1-human-review.json",
+      "sha256": "907c3cc82fd9afb4730abc125292c5159fa318f3d171568a83a10f3d9eb05aee"
+    },
+    {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U2-human-review.json",
+      "sha256": "dc9b8b2d98502f21c4496a34ab4020db53a2463687fd156c1a0b2efe75272fa1"
+    },
+    {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-D1-human-review.json",
+      "sha256": "6404f4f63ba414bc29808f1b6b432115096778cc7545d48737eb661d848e6681"
+    },
+    {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-D2-human-review.json",
+      "sha256": "17eb492011750dbd98fc24a1d6b7e35a3dec6df2a6c5c4b7dd3c373613622de9"
+    }
+  ],
+  "deferred_unknown_ids": [],
+  "questions": {
+    "RT-V2-U1": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-U2": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-D1": "R2：下部孔组是否为V2并接到B-D？",
+    "RT-V2-D2": "R2：下部孔组是否为V2并接到B-D？"
+  },
+  "limits": [
+    "R1/R2均为本轮新候选，既有Q1/Q2批准不转移给本组。",
+    "新孔数/排列为AI观察，来源精确几何、物理尺度和工艺DRC未知。",
+    "N1与邻线的局部隔离按照片和规则几何保留；没有声明孔的交叉处不自动生成连接，也不证明物理无孔。",
+    "只建模两条M2及邻近上下文，不等于所有可见导体清单或全网。",
+    "本轮未新增V1识别；已收口V1只作防退化回放。",
+    "初稿下部4x2自洽但漏最末排，已在人工送审前按原图退回；本版为5x2 AI候选，软件通过不代表已确认实际孔数。",
+    "R1/R2的V2身份及局部承载已于2026-10-26人工确认；孔数/排列/尺寸仍为候选，前述“新候选”保留为送审历史和几何资格。"
+  ],
+  "parent": {
+    "path": "docs/assets/metal-representative-transfer-v1/corrected/manifest.json",
+    "sha256": "ab9854e643be6fe3cd630f2c4ccbc9a94a9e8e87290e69c947e4fe05effc80b0"
+  },
+  "source_assets": {
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m2-wide-raw.png",
+        "sha256": "8224951814a3f10fd66b819b1f3612707c0508d443c0d4880e860aa7454f28a2"
+      },
+      "wide_marked": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m2-wide-marked.png",
+        "sha256": "42a8c0d67c4f39741b58ebcbf6a6ce3ddf8b17c84caf465830034e91447b8cf9"
+      },
+      "detail_raw": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m2-detail-raw.png",
+        "sha256": "ea6004cd5f8970799f3949c9341ef68c414f5c12a3513a321ecda6ee12b41a9f"
+      },
+      "detail_marked": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m2-detail-marked.png",
+        "sha256": "9129268938cc196b46e24dbe86af51a084923b6a32a6327a0bba7047c8e26bfb"
+      }
+    },
+    "m3": {
+      "wide_raw": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m3-wide-raw.png",
+        "sha256": "895c2648040ac94a948ac572a62b6764442c6d3c6eb40313ac64a48212e51e9f"
+      },
+      "wide_marked": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m3-wide-marked.png",
+        "sha256": "95b1f2197a2228f636cc46900b0c6c1481aa5ea869394c8ed6bba3acb16278e1"
+      },
+      "detail_raw": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m3-detail-raw.png",
+        "sha256": "83983b6a3f63f7a2690ad5e516ec98ee6bf9a3ece305b2c554aae708d8795f1d"
+      },
+      "detail_marked": {
+        "path": "docs/assets/metal-representative-transfer-v1/corrected/m3-detail-marked.png",
+        "sha256": "7a1a7fa7bd0e8ce09dee335a1d24c87ce4b068fad2ae38b5eb4448e50c843b81"
+      }
+    }
+  },
+  "preserve_via_center_ids": [
+    "RT-V2-U1",
+    "RT-V2-U2",
+    "RT-V2-D1",
+    "RT-V2-D2"
+  ]
+}

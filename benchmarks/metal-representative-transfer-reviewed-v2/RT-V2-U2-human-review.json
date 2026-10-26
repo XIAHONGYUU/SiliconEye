@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-26",
+  "statement": "R1：身份与承载正确",
+  "reviewed_question": "M2上端U1/U2是V2并分别接M3 B-U宽母线",
+  "sources": {
+    "submitted_request": {
+      "path": "docs/assets/metal-representative-transfer-v1/corrected/request.json",
+      "sha256": "e14225ad96090376012680aed30e32ceea67d4cf46d84f932acbb02d28278c1a"
+    },
+    "submitted_page": {
+      "path": "docs/assets/metal-representative-transfer-v1/corrected/index.html",
+      "sha256": "c721799f58f45e5a2977c43ee77ff904c8c3fc7c030dc3ed8de10015210c7360"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/metal-representative-transfer-v1/corrected/manifest.json",
+      "sha256": "ab9854e643be6fe3cd630f2c4ccbc9a94a9e8e87290e69c947e4fe05effc80b0"
+    },
+    "submitted_review_navigator": {
+      "path": "docs/assets/metal-representative-transfer-v1/manifest.json",
+      "sha256": "34bfd7441af573c3bc7ba6970d25792045019cf577e0578ab3da585d780d651e"
+    },
+    "submitted_review_navigator_page": {
+      "path": "docs/assets/metal-representative-transfer-v1/index.html",
+      "sha256": "970d313143641838266f0068dbf68f0dbe69d192f7ab9bb548c2b3f4c680e8d7"
+    },
+    "group_adjudication": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/human-group-adjudication.json",
+      "sha256": "804467a80d8892724559594502b84c58c0c804f90a4578402a8d009bfd950c22"
+    }
+  },
+  "decisions": {
+    "interface_id": "RT-V2-U2",
+    "via_layer": "V2",
+    "lower_metal_id": "RT-M2-R02",
+    "upper_metal_id": "RT-M3-UP",
+    "connection_confirmed": true
+  },
+  "scope": "Identity and indicated local carrier only. Human statement applies to the named pair; this record binds one interface. No count, exact geometry, absent-via or full-net approval."
+}

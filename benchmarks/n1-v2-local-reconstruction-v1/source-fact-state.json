@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_native_source_fact_overlay",
+  "date": "2026-10-26",
+  "status": "N1_IDENTITY_AND_CARRIER_REVIEWED_DESIGN_CANDIDATE_CHECKED",
+  "human_review": {
+    "path": "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json",
+    "sha256": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e"
+  },
+  "working_geometry_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "facts": {
+    "N1": {
+      "source_identity": "V2_HUMAN_CONFIRMED_SCOPED",
+      "source_frame": "m2",
+      "native_bounds": [
+        3498,
+        2480,
+        3540,
+        2510
+      ],
+      "lower_metal_id": "RT-M2-NARROW",
+      "physical_cut_count": null,
+      "upper_metal_candidate": "C-M3-L01",
+      "upper_metal_confirmed": "C-M3-L01",
+      "connection_confirmed": true,
+      "design_via_geometry_created": true,
+      "declared_design_cut_count": 2,
+      "full_declared_design_array_enclosure": "CHECKED_NOT_PHYSICAL_COUNT_QUALIFIED",
+      "working_candidate_model": {
+        "path": "docs/assets/n1-v2-local-reconstruction-v1/work/model.json",
+        "sha256": "1acb63d9f1afdebea0377ec5dcfa05e70cc951186f61d17ed0d22ba5c14c9b81"
+      }
+    },
+    "pair_05_06": {
+      "local_direct_M2_continuity": false,
+      "authority": "human_scoped_source_review",
+      "global_same_net": null,
+      "merge_authorized": false
+    }
+  },
+  "source_issue_updates": {
+    "C-U4": "SOURCE_V2_IDENTITY_AND_M3_A_CARRIER_RESOLVED_DESIGN_AND_SOURCE_ARRAY_GEOMETRY_REMAIN_CANDIDATE",
+    "C-U5": "LOCAL_DIRECT_M2_CONTINUITY_RESOLVED_NEGATIVE_GLOBAL_NET_UNKNOWN"
+  },
+  "completed_question_ids": [
+    "N1-Q1-V2-IDENTITY",
+    "C0506-Q2-LOCAL-M2-CONTINUITY",
+    "N1-M3-CARRIER-Q1"
+  ],
+  "pending_original_question_ids": [],
+  "remaining_source_tasks": [
+    "C-U1",
+    "C-U2",
+    "C-U3"
+  ],
+  "geometry_changed": true,
+  "new_completed_via_interfaces": 1,
+  "new_net_edges": [],
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "prior_source_fact_state": {
+    "path": "benchmarks/corridor-n1-0506-reviewed-v2/source-fact-state.json",
+    "sha256": "a24c13852ca2c56a35fa74602f0c2db16e823fa1237b0e00f7c07fee7a5953b1"
+  },
+  "carrier_human_review": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/human-review.json",
+    "sha256": "b0f69352b486e6cdf0bd5c93764f038b538780e438a57ec7dd2cc24656f18edd"
+  }
+}

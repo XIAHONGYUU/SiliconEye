@@ -1,0 +1,53 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "N1-V2",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    3498,
+    2480,
+    3540,
+    2510
+  ],
+  "rows": 1,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        3508,
+        2494
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        3529,
+        2494
+      ]
+    }
+  ],
+  "basis": "Two dominant bright lobes across the native horizontal head. Centers are approximate AI observations affected by screen texture; physical cut count remains unknown. Retain the complete left-to-right head occupancy rather than placing all cuts on the vertical stem.",
+  "sources": {
+    "carrier_review": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/human-review.json",
+      "sha256": "b0f69352b486e6cdf0bd5c93764f038b538780e438a57ec7dd2cc24656f18edd"
+    },
+    "prior_source_analysis": {
+      "path": "benchmarks/n1-m3-carrier-inspection-v1/analysis.json",
+      "sha256": "78db4564a41510f18794328975a30a54f62477955b8922aeffb5f73a95fda3bf"
+    },
+    "source_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  }
+}

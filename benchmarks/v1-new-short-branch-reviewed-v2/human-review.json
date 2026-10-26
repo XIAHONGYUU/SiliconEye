@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "actor": "human",
+  "date": "2026-10-26",
+  "statement": "S1：是V1且接A",
+  "reviewed_question": "下方一排独立M1短指上端橙框亮点是V1，并接到蓝色A短折线M2的下端；孔数未知。",
+  "sources": {
+    "submitted_request": {
+      "path": "docs/assets/v1-new-short-branch-v1/candidate/request.json",
+      "sha256": "912615edd24912337377fef220dd88c4cf0849007664260e50acbc1aed28949e"
+    },
+    "submitted_page": {
+      "path": "docs/assets/v1-new-short-branch-v1/candidate/index.html",
+      "sha256": "6bcf2d31881443cab55101dc9a73ba0f7c61c12d940dd618cffe908584c12df7"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/v1-new-short-branch-v1/candidate/manifest.json",
+      "sha256": "7ddd3605a1525276ed56e8975dcf5308db702d40899e0f609c53585aee9f6687"
+    },
+    "submitted_review_navigator": {
+      "path": "docs/assets/v1-new-short-branch-v1/manifest.json",
+      "sha256": "3c1193fa6f74ae77e6be97187aed7e7a8a2869a4ba8a098165aa6b3a56e6c180"
+    },
+    "submitted_review_navigator_page": {
+      "path": "docs/assets/v1-new-short-branch-v1/index.html",
+      "sha256": "bc101ca654660a49cefe578485a90ea29935f7f47025810614feac3542eb1b97"
+    }
+  },
+  "decisions": {
+    "interface_id": "V1-S1-GROUP",
+    "via_layer": "V1",
+    "lower_metal_id": "S1-M1-STUB",
+    "upper_metal_id": "S1-M2-A",
+    "connection_confirmed": true
+  },
+  "scope": "Only V1 identity and indicated local M1-to-M2-A connection. No physical cut count, exact dimensions, complete group footprint, absent-via or whole-network approval."
+}

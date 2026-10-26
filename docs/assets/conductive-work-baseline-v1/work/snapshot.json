@@ -1,0 +1,2259 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_work_snapshot",
+  "id": "conductive-work-baseline-v1",
+  "material_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "inherited_conductive_registry": {
+    "path": "docs/assets/conductive-stack-v2/model.json",
+    "sha256": "e4c68352ae3d0bf798c2b6503cea39b630c5b0a84d050f6abfae2432c05e97f6"
+  },
+  "native_frames": {
+    "aa": {
+      "photo": {
+        "path": "data/test_chip/tile_full/aa.jpg",
+        "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "implant": {
+      "photo": {
+        "path": "data/test_chip/tile_full/implant.jpg",
+        "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "m1": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "m2": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "m3": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "m4": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m4.jpg",
+        "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "poly": {
+      "photo": {
+        "path": "data/test_chip/tile_full/poly.jpg",
+        "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    },
+    "sub": {
+      "photo": {
+        "path": "data/test_chip/tile_full/sub.jpg",
+        "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+      },
+      "size_wh": [
+        5712,
+        4284
+      ],
+      "unit": "px"
+    }
+  },
+  "coordinate_spaces": {
+    "materials": {
+      "canvas_wh": [
+        5860,
+        4587
+      ],
+      "role": "inherited_material_design_canvas"
+    },
+    "medium": {
+      "canvas_wh": [
+        1800,
+        1550
+      ],
+      "role": "local_regular_design_candidate",
+      "placement_in_material_canvas": null,
+      "source_to_design_transform": null
+    },
+    "independent": {
+      "canvas_wh": [
+        1100,
+        570
+      ],
+      "role": "local_regular_design_candidate",
+      "placement_in_material_canvas": null,
+      "source_to_design_transform": null
+    }
+  },
+  "material_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "material_unknowns": {
+    "sites": [],
+    "unknown_scopes": [
+      {
+        "id": "U-AA-F01951",
+        "kind": "unlocated_isolated_AA_CT_unknown",
+        "AA_target": "AA-F01951",
+        "layout_bounds": [
+          2017.0,
+          341.0,
+          2055.0,
+          349.0
+        ],
+        "criticality": "no_known_device_port_inferred",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "AA_legacy_locator_native_bounds": [
+          1948.061891893287,
+          274.3223129992924,
+          1989.1744848545168,
+          283.76579389755176
+        ],
+        "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+            "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1730,
+            180,
+            2120,
+            410
+          ],
+          "poly": [
+            1450,
+            0,
+            2250,
+            330
+          ]
+        }
+      },
+      {
+        "id": "U-AA-F01952",
+        "kind": "unlocated_isolated_AA_CT_unknown",
+        "AA_target": "AA-F01952",
+        "layout_bounds": [
+          1934.0,
+          341.0,
+          1972.0,
+          350.0
+        ],
+        "criticality": "no_known_device_port_inferred",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "AA_legacy_locator_native_bounds": [
+          1858.1303719137622,
+          272.2163884790137,
+          1899.3694753010689,
+          282.7362753810213
+        ],
+        "reinspection": "Legacy global locator does not independently establish a distinct isolated AA body or its POLY-photo correspondence; no associated gate or known device access. Preserve AA candidate, do not borrow a nearby guard peak.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "benchmarks/aa-full-frame-workflow-v1/model-v1.json",
+            "sha256": "5a9032c088ae6c9048bfcd861fbe73a619f7103697d6fd10d8258a577360b4db"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1730,
+            180,
+            2120,
+            410
+          ],
+          "poly": [
+            1450,
+            0,
+            2250,
+            330
+          ]
+        }
+      },
+      {
+        "id": "U-H1",
+        "kind": "guard_CT_observability_unknown",
+        "AA_target": "AA2-TOP-H1-AA-0",
+        "layout_bounds": [
+          270.0039,
+          269.4849,
+          5226.7198,
+          284.7099
+        ],
+        "criticality": "guard_body_metal_access_not_proven",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric. The POLY photo partly clips the upper band.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "data/test_chip/tile_full/m1.jpg",
+            "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1300,
+            160,
+            2250,
+            410
+          ],
+          "poly": [
+            1300,
+            0,
+            2250,
+            150
+          ],
+          "m1": [
+            1300,
+            160,
+            2250,
+            360
+          ]
+        }
+      },
+      {
+        "id": "U-H2",
+        "kind": "guard_CT_observability_unknown",
+        "AA_target": "AA2-TOP-H2-AA-0",
+        "layout_bounds": [
+          268.0,
+          370.0,
+          5271.0,
+          384.0
+        ],
+        "criticality": "guard_body_metal_access_not_proven",
+        "question_for_human": null,
+        "status": "CT_not_reconstructed_source_limit_retained",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "tracing_policy": "do_not_infer_CT_or_M1_connection_here",
+        "reopen_when": "new_observation_or_validated_local_correspondence_or_requested_trace_intersects_scope",
+        "reinspection": "Visible long optical band contains screen moire / unresolved bright texture; compact CT cannot be separated reliably. M1 continuity cannot prove a cut through the dielectric.",
+        "evidence_inputs": [
+          {
+            "path": "data/test_chip/tile_full/aa.jpg",
+            "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+          },
+          {
+            "path": "data/test_chip/tile_full/poly.jpg",
+            "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+          },
+          {
+            "path": "data/test_chip/tile_full/m1.jpg",
+            "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+          }
+        ],
+        "native_review_windows": {
+          "aa": [
+            1300,
+            160,
+            2250,
+            410
+          ],
+          "poly": [
+            1300,
+            0,
+            2250,
+            150
+          ],
+          "m1": [
+            1300,
+            160,
+            2250,
+            360
+          ]
+        }
+      },
+      {
+        "id": "L-CLIPPED-AA-F01744",
+        "kind": "device_body_CT_source_outside_current_photo",
+        "AA_target": "AA-F01744",
+        "layout_bounds": [
+          354,
+          522,
+          456,
+          574
+        ],
+        "no_CT_is_not_proven_absence": true,
+        "status": "excluded_from_source_complete_claim",
+        "tracing_policy": "keep_terminal_access_unknown_here",
+        "mandatory_human_action_now": false,
+        "evidence_ref": {
+          "path": "benchmarks/ct-work-layer-closeout-v3/port-source-checks-v1.json",
+          "sha256": "ff5cc38f9efe58731ecaf7050ec580dba2f429c8a14b21e20652ed9fbab7daae"
+        }
+      },
+      {
+        "id": "S3-AA4-LEFT-SD-ACCESS",
+        "kind": "invalid_CT_assignment_retired_actual_diffusion_access_unknown",
+        "AA_target": "AA2-LEFT-GUARD-NETWORK-LOWER-LEFT-CELLS-ROW4-AA4-0",
+        "layout_bounds": [
+          1348.3168,
+          3765.8875,
+          1362.03645,
+          3794.613
+        ],
+        "status": "no_independent_source_drain_CT_evidence_here",
+        "no_CT_is_not_proven_absence": true,
+        "mandatory_human_action_now": false,
+        "question_for_human": null,
+        "tracing_policy": "do_not_infer_left_diffusion_CT_or_M1_access_from_the_shared_gate_contact",
+        "review_ref": {
+          "path": "benchmarks/ct-source-ownership-reviewed-v2/human-review-v1.json",
+          "sha256": "4943e505ba5e7e074813c09e11b88fe4ff4430c007ea202017814d7ae985333f"
+        }
+      }
+    ],
+    "not_hypothetical_hole_slots": true
+  },
+  "domains": {
+    "medium": {
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "next_request": {
+        "path": "benchmarks/conductive-work-baseline-v1/medium-next.json",
+        "sha256": "3c04ecf7506339c54953686fc036a32d83e75404f489f376d82af527a23b24da"
+      },
+      "geometry_status": "candidate_not_new_human_approval",
+      "focus_metrics": {
+        "unit": "relative_design_px_not_photo_registration_or_PDK",
+        "V1_design_cuts": 9,
+        "V2_design_cuts": 12,
+        "V1_V2_overlap_area": 72.0,
+        "common_M2": "M2-J01",
+        "V2_M2_width_fraction": 0.9166666666666666,
+        "V2_M2_height_fraction": 0.02564102564102564,
+        "exact_geometry_accepted": false,
+        "V1_human_count": null,
+        "V2_human_count": 12
+      },
+      "changed_since_feedback": [
+        "SUPPORT-J-M2-V2-M3-B1"
+      ],
+      "material_ID_mapping_status": "not_established_no_coordinate_merge",
+      "limits": [
+        "只覆盖指定导体片段，U1/U3右侧转角未建模。",
+        "A/B详细接口仍未知，沿用已审分组。",
+        "孔组支持区不是实测切孔阵列，未采用共同几何。",
+        "完整网络尚未完成。"
+      ],
+      "pending_interfaces": [],
+      "quality_gaps": [
+        "仍有孔组代理框；单框包围检查不证明整组孔能被承载。",
+        "原生导体宽度、端部完整性及规则几何与照片的尺寸对应未验收。",
+        "孔组阵列的真实尺寸/间距/排列尚未通过来源几何验收。",
+        "未建立全部可见导体/接口清单，不能给出照片覆盖率或整网完成率。",
+        "当前预算是相对设计像素，未建立真实工艺尺寸和PDK DRC资格。"
+      ],
+      "coverage": {
+        "status": "PARTIAL",
+        "represented_metal_count": 22,
+        "known_review_inventory_count": 38,
+        "represented_review_inventory_count": 11,
+        "visible_photo_inventory_complete": false,
+        "photo_coverage_fraction": null,
+        "endpoints": [
+          {
+            "id": "M1-N2-U1-U2",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M1-N2-U3",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "MID-H1",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "MID-H2",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M1-L4-LOCAL",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M1-L2-LOCAL",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M1-T1-LOCAL",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M1-T3-LOCAL",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M1-P08",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M2-N2-LEFT-RAIL",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M2-J01",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M2-L1-F03",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M2-MID-CAND-A",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M2-MID-CAND-B",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "R-M2-1",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "R-M2-2",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "R-M2-3",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M3-J-B1",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M3-N2-LOWER-BUS-CANDIDATE",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M3-MID-X-CAND",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M3-MID-Y-CAND",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "M3-MID-Z-CONTEXT",
+            "end_states": [
+              "outside_selected_geometry_or_unreviewed_extent",
+              "outside_selected_geometry_or_unreviewed_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          }
+        ]
+      },
+      "interface_geometry": [
+        {
+          "id": "SUPPORT-N2-U1-V1-CARRIER",
+          "layer": "V1",
+          "lower_metal_id": "M1-N2-U1-U2",
+          "upper_metal_id": "M2-N2-LEFT-RAIL",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-N2-U3-V1-CARRIER",
+          "layer": "V1",
+          "lower_metal_id": "M1-N2-U3",
+          "upper_metal_id": "M2-N2-LEFT-RAIL",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-J-M1-P08-V1-M2-J01",
+          "layer": "V1",
+          "lower_metal_id": "M1-P08",
+          "upper_metal_id": "M2-J01",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "EXPLICIT_DESIGN_ARRAY",
+          "design_cut_count": 9,
+          "full_group_design_enclosure": "CHECKED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": true,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-MID-H1-V1-ACCESS",
+          "layer": "V1",
+          "lower_metal_id": "MID-H1",
+          "upper_metal_id": "M2-MID-CAND-A",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-MID-H2-V1-ACCESS",
+          "layer": "V1",
+          "lower_metal_id": "MID-H2",
+          "upper_metal_id": "M2-MID-CAND-B",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-N2-M2-V2-M3-B1",
+          "layer": "V2",
+          "lower_metal_id": "M2-N2-LEFT-RAIL",
+          "upper_metal_id": "M3-J-B1",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-D1",
+          "layer": "V2",
+          "lower_metal_id": "M2-N2-LEFT-RAIL",
+          "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-F03",
+          "layer": "V2",
+          "lower_metal_id": "M2-L1-F03",
+          "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-F03-UP",
+          "layer": "V2",
+          "lower_metal_id": "M2-L1-F03",
+          "upper_metal_id": "M3-J-B1",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-F04",
+          "layer": "V2",
+          "lower_metal_id": "M2-J01",
+          "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": null,
+          "inherited_group_fact": null,
+          "representation": "GROUP_SUPPORT_PROXY",
+          "design_cut_count": null,
+          "full_group_design_enclosure": "NOT_EVALUATED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": false,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "SUPPORT-J-M2-V2-M3-B1",
+          "layer": "V2",
+          "lower_metal_id": "M2-J01",
+          "upper_metal_id": "M3-J-B1",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": 12,
+          "inherited_group_fact": {
+            "interface_id": "J-M2-V2-M3-B1",
+            "support_id": "SUPPORT-J-M2-V2-M3-B1",
+            "group_id": "J-M2-EDGE-V2",
+            "rows": 3,
+            "columns": 4,
+            "cut_count": 12,
+            "human_review": {
+              "path": "benchmarks/conductive-stack-v2/human-review-v1.json",
+              "sha256": "6c0fb5c525e4b1aa621cb7b21b77d27980a2157beff67b23c8f4bd877fb543e4"
+            },
+            "geometry_ported": true
+          },
+          "representation": "EXPLICIT_DESIGN_ARRAY",
+          "design_cut_count": 12,
+          "full_group_design_enclosure": "CHECKED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": true,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        }
+      ],
+      "candidate_paths": [
+        {
+          "id": "AB-B-return-path",
+          "status": "candidate",
+          "connection_confirmed": null,
+          "metal_ids": [
+            "M2-MID-CAND-B",
+            "M3-MID-X-CAND",
+            "R-M2-1",
+            "R-M2-3",
+            "M1-L4-LOCAL",
+            "M1-T1-LOCAL"
+          ]
+        },
+        {
+          "id": "AB-A-return-path",
+          "status": "candidate",
+          "connection_confirmed": null,
+          "metal_ids": [
+            "M2-MID-CAND-A",
+            "M3-MID-Y-CAND",
+            "R-M2-2",
+            "M1-L2-LOCAL",
+            "M1-T3-LOCAL"
+          ]
+        }
+      ]
+    },
+    "independent": {
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "next_request": {
+        "path": "benchmarks/conductive-work-baseline-v1/independent-next.json",
+        "sha256": "0158f7908c887b12e4eda0b76218e2a689689d25b817bb32f755e08ad826679d"
+      },
+      "geometry_status": "candidate_not_new_human_approval",
+      "focus_metrics": {
+        "unit": "relative_design_px_not_photo_registration_or_PDK",
+        "V1_design_cuts": 6,
+        "V2_design_cuts": 6,
+        "V1_V2_overlap_area": 90.0,
+        "common_M2": "IT1-M2-B",
+        "V2_M2_width_fraction": 0.8947368421052632,
+        "V2_M2_height_fraction": 0.8108108108108109,
+        "exact_geometry_accepted": false,
+        "V1_human_count": 6,
+        "V2_human_count": 6
+      },
+      "changed_since_feedback": [
+        "IT1-M2-B",
+        "IT1-V2-B"
+      ],
+      "material_ID_mapping_status": "not_established_no_coordinate_merge",
+      "limits": [
+        "A/B是否同层连续仍未知。",
+        "孔数及精确几何未确认。",
+        "同一已知芯片上的空间迁移，不是陌生芯片盲测。",
+        "Q1已更正为六孔组经V1接宽M2-B；历史稳定ID仍为IT1-V1-A，后缀A不表示当前承载。",
+        "六孔数量来自人工；2列×3行排列、尺寸、间距与B上缘位置仍为AI规则几何候选。",
+        "原图标记沿用原送审样式；当前承载以顶部已审关系和规则图为准。"
+      ],
+      "pending_interfaces": [],
+      "quality_gaps": [
+        "原生导体宽度、端部完整性及规则几何与照片的尺寸对应未验收。",
+        "孔组阵列的真实尺寸/间距/排列尚未通过来源几何验收。",
+        "未建立全部可见导体/接口清单，不能给出照片覆盖率或整网完成率。",
+        "当前预算是相对设计像素，未建立真实工艺尺寸和PDK DRC资格。"
+      ],
+      "coverage": {
+        "status": "PARTIAL",
+        "represented_metal_count": 6,
+        "known_review_inventory_count": null,
+        "represented_review_inventory_count": null,
+        "visible_photo_inventory_complete": false,
+        "photo_coverage_fraction": null,
+        "endpoints": [
+          {
+            "id": "IT1-M1-RING",
+            "end_states": [
+              "unreviewed_visible_extent",
+              "unreviewed_visible_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "IT1-M2-A",
+            "end_states": [
+              "unreviewed_visible_extent",
+              "unreviewed_visible_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "IT1-M2-B",
+            "end_states": [
+              "unreviewed_visible_extent",
+              "unreviewed_visible_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "IT1-M3-BUS",
+            "end_states": [
+              "unreviewed_visible_extent",
+              "unreviewed_visible_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "IT1-M3-UP",
+            "end_states": [
+              "unreviewed_visible_extent",
+              "unreviewed_visible_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          },
+          {
+            "id": "IT1-M3-LOW",
+            "end_states": [
+              "unreviewed_visible_extent",
+              "unreviewed_visible_extent"
+            ],
+            "status": "NOT_QUALIFIED"
+          }
+        ]
+      },
+      "interface_geometry": [
+        {
+          "id": "IT1-V1-A",
+          "layer": "V1",
+          "lower_metal_id": "IT1-M1-RING",
+          "upper_metal_id": "IT1-M2-B",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": 6,
+          "inherited_group_fact": null,
+          "representation": "EXPLICIT_DESIGN_ARRAY",
+          "design_cut_count": 6,
+          "full_group_design_enclosure": "CHECKED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": true,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        },
+        {
+          "id": "IT1-V2-B",
+          "layer": "V2",
+          "lower_metal_id": "IT1-M2-B",
+          "upper_metal_id": "IT1-M3-BUS",
+          "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+          "human_cut_count": 6,
+          "inherited_group_fact": null,
+          "representation": "EXPLICIT_DESIGN_ARRAY",
+          "design_cut_count": 6,
+          "full_group_design_enclosure": "CHECKED",
+          "source_array_geometry": "NOT_QUALIFIED",
+          "native_group_window_recorded": true,
+          "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+        }
+      ],
+      "candidate_paths": []
+    }
+  },
+  "objects": [
+    {
+      "key": "medium::M1-N2-U1-U2",
+      "id": "M1-N2-U1-U2",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            0,
+            1922
+          ],
+          [
+            1500,
+            1894
+          ],
+          [
+            1945,
+            1887
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M1-N2-U3",
+      "id": "M1-N2-U3",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            0,
+            2740
+          ],
+          [
+            1500,
+            2700
+          ],
+          [
+            1945,
+            2686
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::MID-H1",
+      "id": "MID-H1",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            100,
+            2320
+          ],
+          [
+            1540,
+            2292
+          ],
+          [
+            1850,
+            2280
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::MID-H2",
+      "id": "MID-H2",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            100,
+            2345
+          ],
+          [
+            1540,
+            2313
+          ],
+          [
+            1850,
+            2305
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M1-L4-LOCAL",
+      "id": "M1-L4-LOCAL",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            997,
+            2800
+          ],
+          [
+            1005,
+            3060
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M1-L2-LOCAL",
+      "id": "M1-L2-LOCAL",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            1120,
+            2800
+          ],
+          [
+            1128,
+            3060
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M1-T1-LOCAL",
+      "id": "M1-T1-LOCAL",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            1241,
+            2800
+          ],
+          [
+            1249,
+            3060
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M1-T3-LOCAL",
+      "id": "M1-T3-LOCAL",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            1362,
+            2800
+          ],
+          [
+            1370,
+            3060
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M1-P08",
+      "id": "M1-P08",
+      "layer": "M1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            2335,
+            1933
+          ],
+          [
+            2006,
+            1939
+          ],
+          [
+            2029,
+            2243
+          ],
+          [
+            2335,
+            2234
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-N2-U1-V1-CARRIER",
+      "id": "SUPPORT-N2-U1-V1-CARRIER",
+      "layer": "V1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m1",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-N2-U3-V1-CARRIER",
+      "id": "SUPPORT-N2-U3-V1-CARRIER",
+      "layer": "V1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m1",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-J-M1-P08-V1-M2-J01",
+      "id": "SUPPORT-J-M1-P08-V1-M2-J01",
+      "layer": "V1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_array_candidate_support",
+      "source_frame": "m1",
+      "native_locator": {
+        "layer": "V1",
+        "source_frame": "m1",
+        "native_bounds": [
+          1958,
+          1929,
+          2018,
+          1988
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-MID-H1-V1-ACCESS",
+      "id": "SUPPORT-MID-H1-V1-ACCESS",
+      "layer": "V1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m1",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-MID-H2-V1-ACCESS",
+      "id": "SUPPORT-MID-H2-V1-ACCESS",
+      "layer": "V1",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m1",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M2-N2-LEFT-RAIL",
+      "id": "M2-N2-LEFT-RAIL",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1498,
+            1930
+          ],
+          [
+            1504,
+            2190
+          ],
+          [
+            1514,
+            2480
+          ],
+          [
+            1526,
+            2782
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M2-J01",
+      "id": "M2-J01",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1980,
+            1940
+          ],
+          [
+            1980,
+            2740
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M2-L1-F03",
+      "id": "M2-L1-F03",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1090,
+            1930
+          ],
+          [
+            1120,
+            2770
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M2-MID-CAND-A",
+      "id": "M2-MID-CAND-A",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1295,
+            2318
+          ],
+          [
+            1317,
+            2318
+          ],
+          [
+            1340,
+            2974
+          ],
+          [
+            1363,
+            2974
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M2-MID-CAND-B",
+      "id": "M2-MID-CAND-B",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1276,
+            2342
+          ],
+          [
+            1295,
+            2342
+          ],
+          [
+            1315,
+            2953
+          ],
+          [
+            1290,
+            2953
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::R-M2-1",
+      "id": "R-M2-1",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            972,
+            2920
+          ],
+          [
+            975,
+            2953
+          ],
+          [
+            998,
+            2953
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::R-M2-2",
+      "id": "R-M2-2",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1080,
+            2940
+          ],
+          [
+            1080,
+            2974
+          ],
+          [
+            1113,
+            2974
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::R-M2-3",
+      "id": "R-M2-3",
+      "layer": "M2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            1210,
+            2917
+          ],
+          [
+            1210,
+            2950
+          ],
+          [
+            1187,
+            2950
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-N2-M2-V2-M3-B1",
+      "id": "SUPPORT-N2-M2-V2-M3-B1",
+      "layer": "V2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m2",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-D1",
+      "id": "SUPPORT-D1",
+      "layer": "V2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m2",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-F03",
+      "id": "SUPPORT-F03",
+      "layer": "V2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m2",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-F03-UP",
+      "id": "SUPPORT-F03-UP",
+      "layer": "V2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m2",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-F04",
+      "id": "SUPPORT-F04",
+      "layer": "V2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m2",
+      "native_locator": null,
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::SUPPORT-J-M2-V2-M3-B1",
+      "id": "SUPPORT-J-M2-V2-M3-B1",
+      "layer": "V2",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "via_array_candidate_support",
+      "source_frame": "m2",
+      "native_locator": {
+        "layer": "V2",
+        "source_frame": "m2",
+        "native_bounds": [
+          1935,
+          1905,
+          2003,
+          1953
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M3-J-B1",
+      "id": "M3-J-B1",
+      "layer": "M3",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            700,
+            1980
+          ],
+          [
+            2300,
+            1940
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M3-N2-LOWER-BUS-CANDIDATE",
+      "id": "M3-N2-LOWER-BUS-CANDIDATE",
+      "layer": "M3",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            700,
+            2810
+          ],
+          [
+            2300,
+            2760
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M3-MID-X-CAND",
+      "id": "M3-MID-X-CAND",
+      "layer": "M3",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            1010,
+            2997
+          ],
+          [
+            1350,
+            2988
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M3-MID-Y-CAND",
+      "id": "M3-MID-Y-CAND",
+      "layer": "M3",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            1135,
+            3014
+          ],
+          [
+            1400,
+            3006
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "medium::M3-MID-Z-CONTEXT",
+      "id": "M3-MID-Z-CONTEXT",
+      "layer": "M3",
+      "coordinate_space": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            995,
+            3035
+          ],
+          [
+            1760,
+            3014
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-M1-RING",
+      "id": "IT1-M1-RING",
+      "layer": "M1",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "metal",
+      "source_frame": "m1",
+      "native_locator": {
+        "path": [
+          [
+            2400,
+            635
+          ],
+          [
+            2650,
+            630
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-V1-A",
+      "id": "IT1-V1-A",
+      "layer": "V1",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m1",
+      "native_locator": {
+        "layer": "V1",
+        "source_frame": "m1",
+        "native_bounds": [
+          2540,
+          630,
+          2585,
+          685
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-M2-A",
+      "id": "IT1-M2-A",
+      "layer": "M2",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            2516,
+            325
+          ],
+          [
+            2514,
+            665
+          ],
+          [
+            2506,
+            690
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-M2-B",
+      "id": "IT1-M2-B",
+      "layer": "M2",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "metal",
+      "source_frame": "m2",
+      "native_locator": {
+        "path": [
+          [
+            2553,
+            680
+          ],
+          [
+            2553,
+            728
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-V2-B",
+      "id": "IT1-V2-B",
+      "layer": "V2",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "via_group_support_proxy",
+      "source_frame": "m2",
+      "native_locator": {
+        "layer": "V2",
+        "source_frame": "m2",
+        "native_bounds": [
+          2532,
+          670,
+          2580,
+          740
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-M3-BUS",
+      "id": "IT1-M3-BUS",
+      "layer": "M3",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            2350,
+            730
+          ],
+          [
+            3350,
+            727
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-M3-UP",
+      "id": "IT1-M3-UP",
+      "layer": "M3",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            2350,
+            685
+          ],
+          [
+            3350,
+            682
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    },
+    {
+      "key": "independent::IT1-M3-LOW",
+      "id": "IT1-M3-LOW",
+      "layer": "M3",
+      "coordinate_space": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "kind": "metal",
+      "source_frame": "m3",
+      "native_locator": {
+        "path": [
+          [
+            2350,
+            792
+          ],
+          [
+            3350,
+            790
+          ]
+        ]
+      },
+      "geometry_status": "candidate"
+    }
+  ],
+  "reviewed_interfaces": [
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "N2-M2-V2-M3-B1",
+        "lower_metal_id": "M2-N2-LEFT-RAIL",
+        "upper_metal_id": "M3-J-B1",
+        "via_layer": "V2",
+        "support_id": "SUPPORT-N2-M2-V2-M3-B1",
+        "human_review": {
+          "path": "benchmarks/b1-neighbor-interface-reviewed-v2/human-review-v1.json",
+          "sha256": "1543b233003fa27b0865b105cb83c634c912b0e4450b8193d89d1cb5bf561168"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "D1",
+        "lower_metal_id": "M2-N2-LEFT-RAIL",
+        "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+        "via_layer": "V2",
+        "support_id": "SUPPORT-D1",
+        "human_review": {
+          "path": "benchmarks/n2-downstream-interfaces-reviewed-v2/human-review-v1.json",
+          "sha256": "f33a37b956ef0235a0a806bbed1829404097600282e5396e6494cd4761927593"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "N2-U1-V1-CARRIER",
+        "lower_metal_id": "M1-N2-U1-U2",
+        "upper_metal_id": "M2-N2-LEFT-RAIL",
+        "via_layer": "V1",
+        "support_id": "SUPPORT-N2-U1-V1-CARRIER",
+        "human_review": {
+          "path": "benchmarks/n2-v1-carrier-reviewed-v8/human-review-v1.json",
+          "sha256": "fd21bba5779852907db5f011a93e5c47fcdde3ad953b0b99880de1447c6a7e13"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "N2-U3-V1-CARRIER",
+        "lower_metal_id": "M1-N2-U3",
+        "upper_metal_id": "M2-N2-LEFT-RAIL",
+        "via_layer": "V1",
+        "support_id": "SUPPORT-N2-U3-V1-CARRIER",
+        "human_review": {
+          "path": "benchmarks/n2-v1-carrier-reviewed-v8/human-review-v1.json",
+          "sha256": "fd21bba5779852907db5f011a93e5c47fcdde3ad953b0b99880de1447c6a7e13"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "F03",
+        "lower_metal_id": "M2-L1-F03",
+        "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+        "via_layer": "V2",
+        "support_id": "SUPPORT-F03",
+        "human_review": {
+          "path": "benchmarks/l1-partial-reviewed-v3/human-review-v1.json",
+          "sha256": "569f31f8e9bc4385849546af61b5e002c883c9d17bef44a9728ba3515caa7579"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "F03-UP",
+        "lower_metal_id": "M2-L1-F03",
+        "upper_metal_id": "M3-J-B1",
+        "via_layer": "V2",
+        "support_id": "SUPPORT-F03-UP",
+        "human_review": {
+          "path": "benchmarks/l1-upper-reviewed-v5/human-review-v1.json",
+          "sha256": "4170dced0eec6cb4ff0df1a9597f10cb95e0ce8eaf5240acb5bee58b5f154d83"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "F04",
+        "lower_metal_id": "M2-J01",
+        "upper_metal_id": "M3-N2-LOWER-BUS-CANDIDATE",
+        "via_layer": "V2",
+        "support_id": "SUPPORT-F04",
+        "human_review": {
+          "path": "benchmarks/l1-fanout-reviewed-v4/human-review-v1.json",
+          "sha256": "02aa1c56ee56477bc8e35749495f2cd733e9dbcf77f5d37f055381adcba0daed"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "J-M1-P08-V1-M2-J01",
+        "lower_metal_id": "M1-P08",
+        "upper_metal_id": "M2-J01",
+        "via_layer": "V1",
+        "support_id": "SUPPORT-J-M1-P08-V1-M2-J01",
+        "human_review": {
+          "path": "benchmarks/m1-v1-m2-joint-reviewed-v2/human-review-v1.json",
+          "sha256": "d7329254e454b193c49b52fd2ac187a8517a6cf769a96308e1be6af2eed65ad7"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "J-M2-V2-M3-B1",
+        "lower_metal_id": "M2-J01",
+        "upper_metal_id": "M3-J-B1",
+        "via_layer": "V2",
+        "support_id": "SUPPORT-J-M2-V2-M3-B1",
+        "human_review": {
+          "path": "benchmarks/m2-v2-m3-joint-reviewed-v2/human-review-v1.json",
+          "sha256": "743bc97c80beba6931863d556865148bb88ea09f1f15690c25daf0f4cd40cbce"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "MID-H1-V1-ACCESS",
+        "lower_metal_id": "MID-H1",
+        "upper_metal_id": "M2-MID-CAND-A",
+        "via_layer": "V1",
+        "support_id": "SUPPORT-MID-H1-V1-ACCESS",
+        "human_review": {
+          "path": "benchmarks/mid-ab-carrier-reviewed-v10/human-review-v1.json",
+          "sha256": "f0b93114a2d21c64938c8a1a8787977a097c4657ff0c4c0d7d08c78b1b3f91cb"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "MID-H2-V1-ACCESS",
+        "lower_metal_id": "MID-H2",
+        "upper_metal_id": "M2-MID-CAND-B",
+        "via_layer": "V1",
+        "support_id": "SUPPORT-MID-H2-V1-ACCESS",
+        "human_review": {
+          "path": "benchmarks/mid-ab-carrier-reviewed-v10/human-review-v1.json",
+          "sha256": "f0b93114a2d21c64938c8a1a8787977a097c4657ff0c4c0d7d08c78b1b3f91cb"
+        },
+        "status": "inherited_scoped_connection_geometry_candidate"
+      }
+    },
+    {
+      "coordinate_space": "independent",
+      "record": {
+        "id": "IT1-V2-B",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          2532,
+          670,
+          2580,
+          740
+        ],
+        "lower_metal_id": "IT1-M2-B",
+        "upper_metal_id": "IT1-M3-BUS",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/metal-independent-transfer-v1/q2-human-review-v1.json",
+          "sha256": "66d3bda15c79224e7a2e847dcc8dadee40cc13551d0eebdd24a6e2737722d024"
+        },
+        "physical_cut_count": null
+      }
+    },
+    {
+      "coordinate_space": "independent",
+      "record": {
+        "id": "IT1-V1-A",
+        "layer": "V1",
+        "layer_pair": [
+          "M1",
+          "M2"
+        ],
+        "source_frame": "m1",
+        "native_bounds": [
+          2540,
+          630,
+          2585,
+          685
+        ],
+        "lower_metal_id": "IT1-M1-RING",
+        "upper_metal_id": "IT1-M2-B",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/metal-independent-q1-correction-v2/q1-human-carrier-correction-scoped-v3.json",
+          "sha256": "fc9e5cbc553687f590d49a14745c7bd8d6318e27f19add35d90caeba5a0c67f7"
+        },
+        "physical_cut_count": 6
+      }
+    }
+  ],
+  "accepted_groups": [
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "group_id": "MID-AB-GROUP-B",
+        "M1_members": [
+          "M1-T1-LOCAL",
+          "M1-L4-LOCAL"
+        ],
+        "M2_anchor": "M2-MID-CAND-B",
+        "routing_layers_reported": [
+          "M2",
+          "M3"
+        ],
+        "grouping_accepted": true,
+        "human_review": {
+          "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-review-v2.json",
+          "sha256": "c4e512f7f7935bc00e9d6657000c35659ef8bf1f16eebc9042580282e767abbc"
+        }
+      }
+    },
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "group_id": "MID-AB-GROUP-A",
+        "M1_members": [
+          "M1-T3-LOCAL",
+          "M1-L2-LOCAL"
+        ],
+        "M2_anchor": "M2-MID-CAND-A",
+        "routing_layers_reported": [
+          "M2",
+          "M3"
+        ],
+        "grouping_accepted": true,
+        "human_review": {
+          "path": "benchmarks/mid-ab-structural-hypothesis-v11/grouping-human-correction-v3.json",
+          "sha256": "16d72611d1473b339e9ce852d29ad5f33fa45bb38061ee9ff6b49f18a6a6178f"
+        }
+      }
+    }
+  ],
+  "reviewed_terminal_links": [
+    {
+      "coordinate_space": "medium",
+      "record": {
+        "id": "N2-U3-CT-AA-TERMINAL",
+        "status": "human_confirmed_scoped_terminal_connection",
+        "from_metal_id": "M1-N2-U3",
+        "via_layer": "CT",
+        "target_material": "AA",
+        "target_structure": "ring",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/n2-u3-terminal-reviewed-v2/human-review-v1.json",
+          "sha256": "e46d7756ac7fcc44033e193179aa061a591b5809be0b55faf65b76056cb7ecdb"
+        },
+        "source_regions": {
+          "m1": [
+            1350,
+            2675,
+            1710,
+            2730
+          ],
+          "poly": [
+            1230,
+            2528,
+            1600,
+            2585
+          ],
+          "aa": [
+            1340,
+            2640,
+            1740,
+            2700
+          ]
+        },
+        "canonical_CT_object_ids": null,
+        "canonical_AA_object_ids": null,
+        "physical_cut_count": null,
+        "body_terminal_assignment": null,
+        "geometry_adopted": false,
+        "precise_projection_allowed": false
+      },
+      "material_ID_mapping_status": "unknown_not_filled_from_nearby_geometry"
+    }
+  ],
+  "net_edges": [],
+  "automatic_network_export_allowed": false,
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "cross_canvas_projection": false,
+  "precise_projection_allowed": false
+}

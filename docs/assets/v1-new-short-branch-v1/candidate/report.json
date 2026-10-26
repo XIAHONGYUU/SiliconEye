@@ -1,0 +1,285 @@
+{
+  "status": "TECHNICAL_PASS_WITH_SCOPED_REVIEWS_AND_UNKNOWNS",
+  "audits": {
+    "M1": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "S1-M1-STUB",
+            "S1-M1-UP-CONTEXT"
+          ],
+          "gap_px": 81.0
+        },
+        {
+          "ids": [
+            "S1-M1-STUB",
+            "S1-M1-DOWN-CONTEXT"
+          ],
+          "gap_px": 81.0
+        },
+        {
+          "ids": [
+            "S1-M1-UP-CONTEXT",
+            "S1-M1-DOWN-CONTEXT"
+          ],
+          "gap_px": 216.0
+        }
+      ],
+      "minimum_gap_px": 81.0
+    },
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "S1-M2-A",
+            "S1-M2-B"
+          ],
+          "gap_px": 55.60575509783138
+        },
+        {
+          "ids": [
+            "S1-M2-A",
+            "S1-M2-C"
+          ],
+          "gap_px": 154.0
+        },
+        {
+          "ids": [
+            "S1-M2-B",
+            "S1-M2-C"
+          ],
+          "gap_px": 75.0
+        }
+      ],
+      "minimum_gap_px": 55.60575509783138
+    },
+    "V1-S1-GROUP": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 1,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK"
+    },
+    "source_identity": {
+      "status": "PASS",
+      "errors": [],
+      "scope": "human_adjudicated_photograph_stack_not_universal_imaging_rule"
+    },
+    "source_order": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "A-before-B",
+          "values": {
+            "native_path": [
+              1138,
+              1172
+            ],
+            "design_path": [
+              365,
+              420
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "B-before-C",
+          "values": {
+            "native_path": [
+              1195,
+              1246
+            ],
+            "design_path": [
+              445,
+              530
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "scope": "declared_same_frame_order_not_registration"
+    }
+  },
+  "object_counts": {
+    "M1": 3,
+    "V1": 1,
+    "M2": 3,
+    "V2": 0,
+    "M3": 0
+  },
+  "pending_interface_ids": [
+    "V1-S1-GROUP"
+  ],
+  "deferred_unknown_ids": [],
+  "reviewed_interface_ids": [],
+  "changed_object_ids": [],
+  "previously_approved_preserved": true,
+  "physical_accuracy": null,
+  "autonomous_image_recognition": false,
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "quality": {
+    "status": "REVIEWABLE_WITH_QUALITY_GAPS",
+    "execution_checks": "PASS",
+    "source_path_shape": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "S1-M1-STUB",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "S1-M1-UP-CONTEXT",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "S1-M1-DOWN-CONTEXT",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "S1-M2-A",
+          "native_turns": [
+            -1
+          ],
+          "design_turns": [
+            -1
+          ],
+          "status": "PASS"
+        },
+        {
+          "id": "S1-M2-B",
+          "native_turns": [
+            1
+          ],
+          "design_turns": [
+            1
+          ],
+          "status": "PASS"
+        },
+        {
+          "id": "S1-M2-C",
+          "native_turns": [
+            -1
+          ],
+          "design_turns": [
+            -1
+          ],
+          "status": "PASS"
+        }
+      ],
+      "scope": "declared_path_handedness_not_photo_geometry_acceptance"
+    },
+    "represented_interface_count": 1,
+    "reviewed_represented_interface_count": 0,
+    "interface_geometry": [
+      {
+        "id": "V1-S1-GROUP",
+        "layer": "V1",
+        "lower_metal_id": "S1-M1-STUB",
+        "upper_metal_id": "S1-M2-A",
+        "carrier_status": "PENDING",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "GROUP_SUPPORT_PROXY",
+        "design_cut_count": null,
+        "full_group_design_enclosure": "NOT_EVALUATED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      }
+    ],
+    "proxy_interface_ids": [
+      "V1-S1-GROUP"
+    ],
+    "explicit_design_array_count": 0,
+    "source_qualified_array_count": 0,
+    "metal_geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED",
+    "coverage": {
+      "status": "PARTIAL",
+      "represented_metal_count": 6,
+      "known_review_inventory_count": null,
+      "represented_review_inventory_count": null,
+      "visible_photo_inventory_complete": false,
+      "photo_coverage_fraction": null,
+      "endpoints": [
+        {
+          "id": "S1-M1-STUB",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "visible_extent_unreviewed"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "S1-M1-UP-CONTEXT",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "visible_extent_unreviewed"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "S1-M1-DOWN-CONTEXT",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "visible_extent_unreviewed"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "S1-M2-A",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "visible_extent_unreviewed"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "S1-M2-B",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "visible_extent_unreviewed"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "S1-M2-C",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "visible_extent_unreviewed"
+          ],
+          "status": "NOT_QUALIFIED"
+        }
+      ]
+    },
+    "error_budget": {
+      "unit": "relative_design_px_not_PDK",
+      "photo_to_design_metric_budget": "NOT_ESTABLISHED"
+    },
+    "readiness": {
+      "review_package": true,
+      "canonical_geometry_adoption": false,
+      "complete_network_export": false,
+      "unrestricted_skill_release": false
+    },
+    "blocking_adoption_reasons": [
+      "存在待裁决承载，不能作为已确认连接采用。",
+      "仍有孔组代理框；单框包围检查不证明整组孔能被承载。",
+      "原生导体宽度、端部完整性及规则几何与照片的尺寸对应未验收。",
+      "孔组阵列的真实尺寸/间距/排列尚未通过来源几何验收。",
+      "未建立全部可见导体/接口清单，不能给出照片覆盖率或整网完成率。",
+      "当前预算是相对设计像素，未建立真实工艺尺寸和PDK DRC资格。"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "RT-V2-D2",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    3358,
+    2659,
+    3394,
+    2737
+  ],
+  "rows": 4,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2671
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2671
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2689
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2689
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2707
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2707
+      ]
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "native_xy": [
+        3369,
+        2725
+      ]
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "native_xy": [
+        3383,
+        2725
+      ]
+    }
+  ],
+  "basis": "Visual interpretation of bright sites on M2. Approximate native site centers; count and individual edges are not human ground truth.",
+  "sources": {
+    "selection": {
+      "path": "benchmarks/metal-representative-transfer-v1/selection.json",
+      "sha256": "05760d327639d03a072e1de324c3da87770ecb6710d65917dedd11230df4df04"
+    }
+  }
+}

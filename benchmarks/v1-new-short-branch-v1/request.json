@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/v1-new-short-branch-v1/observations.json",
+    "sha256": "ff5490856778b8996b73eeba21f86bfea9cb02d88507a5d91d2fd9d097f313d9"
+  },
+  "frames": [
+    "m1",
+    "m2"
+  ],
+  "reviews": [],
+  "deferred_unknown_ids": [],
+  "questions": {
+    "V1-S1-GROUP": "S1：M1短指上端橙框亮点是否为V1，并接到蓝色A短折线M2的下端，而非灰色B/C？"
+  },
+  "limits": [
+    "S1为新接口，旧N1/W1及Q1/Q2、R1/R2批准不转移到这里。",
+    "孔层仅由M1侧亮点提出；M2的A端框仅标承载端，不把M2亮点当V1。",
+    "该亮区尚不能可靠逐孔分离，当前6×6设计支持区是代理，不是一孔或完整阵列测量。数量、孔径和完整孔组占用未知；仅做身份/承载验证。",
+    "B/C为附近局部上下文，未声明接入不等于物理无孔或全局异网。",
+    "同一已知芯片、有历史宽图上下文，不是盲测或陌生芯片迁移；不建立照片精确投影。"
+  ]
+}

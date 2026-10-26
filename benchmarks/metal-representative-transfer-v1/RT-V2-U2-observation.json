@@ -1,0 +1,77 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "RT-V2-U2",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    3358,
+    1888,
+    3394,
+    1948
+  ],
+  "rows": 3,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        3369,
+        1900
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        3383,
+        1900
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        3369,
+        1918
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        3383,
+        1918
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        3369,
+        1936
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        3383,
+        1936
+      ]
+    }
+  ],
+  "basis": "Visual interpretation of bright sites on M2. Approximate native site centers; count and individual edges are not human ground truth.",
+  "sources": {
+    "selection": {
+      "path": "benchmarks/metal-representative-transfer-v1/selection.json",
+      "sha256": "05760d327639d03a072e1de324c3da87770ecb6710d65917dedd11230df4df04"
+    }
+  }
+}

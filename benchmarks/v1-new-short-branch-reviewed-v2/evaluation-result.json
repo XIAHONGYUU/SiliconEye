@@ -1,0 +1,25 @@
+{
+  "kind": "agent_interface_transfer_evaluation",
+  "task_id": "V1-S1",
+  "initial_AI": {
+    "path": "benchmarks/v1-new-short-branch-v1/initial-ai-observation.json",
+    "sha256": "26b39384b2a7ae0f45ae00bedd2aa416d4cfe0744193ee91a6232ed9734d52fe"
+  },
+  "expected_candidate_carrier": "S1-M2-A",
+  "via_layer": "V1",
+  "human_truth": {
+    "path": "benchmarks/v1-new-short-branch-reviewed-v2/human-review.json",
+    "sha256": "8dff4ac5cddc7ba57033af80af09af0d1a4c9b7f519921ee95c7d3104ea4eb49"
+  },
+  "identity_correct": true,
+  "carrier_correct": true,
+  "human_corrections": 0,
+  "physical_count_truth": null,
+  "unseen_chip": false,
+  "strict_blind": false,
+  "submitted_fixed_task": {
+    "path": "benchmarks/v1-new-short-branch-v1/fixed-task.json",
+    "sha256": "4788449db17d202c5c7074fc5ea429f0084f80b3f98892cdeb9b4dc2e9c81a8e"
+  },
+  "correction_scope": "This submitted V1 identity/carrier task only, not full-project rework or geometric accuracy."
+}

@@ -1,0 +1,45 @@
+{
+  "actor": "AI",
+  "kind": "batch_source_review_and_extent_revision",
+  "reason": "Review four groups of new geometry and complete eight retained source extents. Correct obvious source-relative positions of M2 short fragments, middle M3 pitch, N1 upper cap and bottom M3 edge. Keep all native anchors, IDs, via arrays and reviewed connections.",
+  "sources": {
+    "inventory": {
+      "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+      "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+    },
+    "source_extents": {
+      "path": "benchmarks/conductive-corridor-batch-review-v1/source-extent-evidence.json",
+      "sha256": "d8fc0a19c2ea0c1e3dcb340f9bd697ff726c4c4f21d8eefa06350cab9f3aa592"
+    },
+    "parent": {
+      "path": "docs/assets/conductive-corridor-geometry-v1/revised/manifest.json",
+      "sha256": "bbb90a66c01bc6de2d511aea802e19ae528c17116313f392818dc980d6868e57"
+    }
+  },
+  "changed_ids": [
+    "C-M2-05",
+    "C-M2-06",
+    "C-M2-08",
+    "C-M3-EDGE",
+    "C-M3-M01",
+    "C-M3-M02",
+    "C-M3-M03",
+    "C-M3-M04",
+    "C-M3-M05",
+    "C-M3-M06",
+    "RT-M2-NARROW",
+    "RT-M2-R01",
+    "RT-M2-R02",
+    "RT-M3-DOWN",
+    "RT-M3-MID",
+    "RT-M3-THIN1",
+    "RT-M3-THIN2",
+    "RT-M3-UP"
+  ],
+  "geometry_human_approved": false,
+  "station_reasoning": {
+    "m2": "Use observed upper/lower via-group stations to estimate only a relative longitudinal design placement; native midpoints near1922/2715 correspond to existing design184/865. No 2D transform or via-center pairing across frames is qualified.",
+    "m3": "Middle six stay above MID and use15px regular pitch, consistent with their source spacing relative to the retained UP/MID stations. Bottom edge sits below DOWN and within the source-visible lengths of M2 rails; exact projection not qualified.",
+    "no_metric_claim": true
+  }
+}

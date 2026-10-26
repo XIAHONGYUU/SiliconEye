@@ -1,0 +1,23 @@
+{
+  "actor": "AI",
+  "kind": "source_relative_length_revision",
+  "reason": "Visual source/geometry self-review found new M3 left-edge E1/E2 too short. Use full visible horizontal span730 to regular thin-run span610 as relative length normalization only:105->88px and58->48px. This is an AI geometry proposal, not calibrated photo projection or human acceptance.",
+  "changed_ids": [
+    "C-M3-E1",
+    "C-M3-E2"
+  ],
+  "reference_native_span_px": 730,
+  "reference_design_span_px": 610,
+  "sources": {
+    "parent": {
+      "path": "docs/assets/conductive-corridor-geometry-v1/work/manifest.json",
+      "sha256": "82d0bb76dff86d54105ae850414e852c229236bed7a80a66ddae3d02ff60962d"
+    },
+    "inventory": {
+      "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+      "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+    }
+  },
+  "source_anchors_changed": false,
+  "connection_changed": false
+}

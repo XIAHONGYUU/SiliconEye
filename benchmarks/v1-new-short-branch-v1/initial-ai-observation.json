@@ -1,0 +1,114 @@
+{
+  "actor": "AI",
+  "stage": "before_new_human_review",
+  "id": "V1-S1",
+  "snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "baseline_V2_stage": {
+    "path": "benchmarks/metal-representative-transfer-reviewed-v2/stage-result.json",
+    "sha256": "86da1f34925051b5737c1086afe93e3629da92b14f1ecdc0441b17ce3678d2f7"
+  },
+  "older_reference": {
+    "path": "benchmarks/metal-new-interface-reviewed-v2/human-review-v1.json",
+    "sha256": "2697c36ec8eff8cadcd5813f7e2e54b433154ca2da59976d687cab5dbe1d83e9"
+  },
+  "novelty": "New interface below previously reviewed N1/W1, visible in historical wide context but not previously adjudicated. Same chip and family, not unseen imagery or a blind test.",
+  "native_observations": {
+    "m1": {
+      "stub_path": [
+        [
+          1153,
+          3374
+        ],
+        [
+          1153,
+          3412
+        ]
+      ],
+      "compact_bright_group": [
+        1143,
+        3369,
+        1164,
+        3393
+      ],
+      "identity": "V1 candidate from M1-side bright upper terminal; exact cut count unknown"
+    },
+    "m2": {
+      "A": {
+        "path": [
+          [
+            1138,
+            3321
+          ],
+          [
+            1118,
+            3321
+          ],
+          [
+            1120,
+            3417
+          ]
+        ],
+        "endpoint": [
+          1120,
+          3417
+        ],
+        "interpretation": "short right-facing cap and downward stem; lower endpoint proposed as carrier"
+      },
+      "B": {
+        "path": [
+          [
+            1172,
+            3334
+          ],
+          [
+            1195,
+            3334
+          ],
+          [
+            1195,
+            3412
+          ]
+        ],
+        "interpretation": "nearby folded segment, separate local candidate"
+      },
+      "C": {
+        "path": [
+          [
+            1268,
+            3280
+          ],
+          [
+            1246,
+            3280
+          ],
+          [
+            1246,
+            3510
+          ]
+        ],
+        "interpretation": "long neighboring return/stem, extent incomplete"
+      }
+    }
+  },
+  "hypothesis": {
+    "interface_id": "V1-S1-GROUP",
+    "lower_metal_id": "S1-M1-STUB",
+    "upper_metal_id": "S1-M2-A",
+    "layer": "V1",
+    "connection_confirmed": null,
+    "basis": "Follow the same-column small-M1/short-M2 family below old N1: M1 compact upper bright group and M2 A lower endpoint; use source ordering and wide context, not coordinate overlap.",
+    "alternatives": [
+      "Could attach to nearby B instead of A",
+      "Compact brightness identity may need human correction",
+      "M2 cap bright features remain untyped; never used as V1 evidence"
+    ]
+  },
+  "source_to_design_transform": null,
+  "physical_cut_count": null,
+  "identity_correct": null,
+  "carrier_correct": null,
+  "human_corrections": null
+}

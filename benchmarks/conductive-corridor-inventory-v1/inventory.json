@@ -1,0 +1,1593 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_visible_inventory",
+  "id": "conductive-corridor-inventory-v1",
+  "date": "2026-10-26",
+  "actor": "AI",
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          2940,
+          1730,
+          3670,
+          3000
+        ],
+        "raw_review_asset": {
+          "path": "docs/assets/metal-representative-transfer-v1/corrected/m2-wide-raw.png",
+          "sha256": "8224951814a3f10fd66b819b1f3612707c0508d443c0d4880e860aa7454f28a2"
+        }
+      },
+      "m3": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m3.jpg",
+          "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+        },
+        "native_bounds": [
+          2940,
+          1730,
+          3670,
+          3000
+        ],
+        "raw_review_asset": {
+          "path": "docs/assets/metal-representative-transfer-v1/corrected/m3-wide-raw.png",
+          "sha256": "895c2648040ac94a948ac572a62b6764442c6d3c6eb40313ac64a48212e51e9f"
+        }
+      }
+    },
+    "layers": [
+      "M2",
+      "V2",
+      "M3"
+    ],
+    "source_to_design_transform": null,
+    "cross_frame_projection_allowed": false,
+    "excluded_layers": [
+      "M1",
+      "V1",
+      "M4_and_above"
+    ],
+    "exclusion_reason": "M1/V1没有已验证的本走廊逐结构对应，未拿相同照片坐标冒充已配准范围。未检查其他更高层。"
+  },
+  "baseline": {
+    "model": {
+      "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/model.json",
+      "sha256": "b11deea353620508def2b8e398b50cfd2e89f1606e1b4007dbb02e961866f290"
+    },
+    "manifest": {
+      "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/manifest.json",
+      "sha256": "7a0ac0b1fe13674f4bb3c69ac83701e601085320da2530e8732d56f1b3025720"
+    },
+    "next_request": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/next-request.json",
+      "sha256": "df1250119547046d06ea3920bdd2261d21d8b07b5f839bcf60a420284dfb4d74"
+    }
+  },
+  "scan_tiles": [
+    {
+      "id": "m2-top",
+      "source_frame": "m2",
+      "native_bounds": [
+        2940,
+        1730,
+        3670,
+        2170
+      ],
+      "actor": "AI",
+      "status": "SOURCE_INSPECTED",
+      "recorded_observation_ids": [
+        "C-M2-01",
+        "C-M2-02",
+        "C-M2-03",
+        "C-M2-04",
+        "C-M2-05",
+        "C-M2-06",
+        "C-U5",
+        "RT-V2-U1",
+        "RT-V2-U2"
+      ]
+    },
+    {
+      "id": "m2-middle",
+      "source_frame": "m2",
+      "native_bounds": [
+        2940,
+        2120,
+        3670,
+        2600
+      ],
+      "actor": "AI",
+      "status": "SOURCE_INSPECTED",
+      "recorded_observation_ids": [
+        "C-M2-05",
+        "C-M2-06",
+        "C-M2-07",
+        "C-M2-01",
+        "C-M2-02",
+        "C-U4",
+        "C-U5"
+      ]
+    },
+    {
+      "id": "m2-bottom",
+      "source_frame": "m2",
+      "native_bounds": [
+        2940,
+        2550,
+        3670,
+        3000
+      ],
+      "actor": "AI",
+      "status": "SOURCE_INSPECTED",
+      "recorded_observation_ids": [
+        "C-M2-01",
+        "C-M2-02",
+        "C-M2-07",
+        "C-M2-08",
+        "RT-V2-D1",
+        "RT-V2-D2"
+      ]
+    },
+    {
+      "id": "m3-top",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        1730,
+        3670,
+        2170
+      ],
+      "actor": "AI",
+      "status": "SOURCE_INSPECTED",
+      "recorded_observation_ids": [
+        "C-M3-T01",
+        "C-M3-T02",
+        "C-M3-T03",
+        "C-M3-T04",
+        "C-M3-T05",
+        "C-M3-T06",
+        "C-M3-BU",
+        "C-M3-E1",
+        "C-U1"
+      ]
+    },
+    {
+      "id": "m3-middle",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2120,
+        3670,
+        2600
+      ],
+      "actor": "AI",
+      "status": "SOURCE_INSPECTED",
+      "recorded_observation_ids": [
+        "C-M3-E1",
+        "C-M3-E2",
+        "C-M3-M01",
+        "C-M3-M02",
+        "C-M3-M03",
+        "C-M3-M04",
+        "C-M3-M05",
+        "C-M3-M06",
+        "C-M3-BM",
+        "C-M3-L01",
+        "C-M3-L02",
+        "C-M3-L03",
+        "C-M3-L04"
+      ]
+    },
+    {
+      "id": "m3-bottom",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2550,
+        3670,
+        3000
+      ],
+      "actor": "AI",
+      "status": "SOURCE_INSPECTED",
+      "recorded_observation_ids": [
+        "C-M3-L03",
+        "C-M3-L04",
+        "C-M3-BD",
+        "C-M3-EDGE",
+        "C-U2",
+        "C-U3"
+      ]
+    }
+  ],
+  "metal_observations": [
+    {
+      "id": "C-M2-01",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          3104,
+          1900
+        ],
+        [
+          3102,
+          3000
+        ]
+      ],
+      "inspection_width_px": 30,
+      "description": "R01长M2；下端在检查边界继续，旧模型原生路径止于2960。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M2-R01",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            3104,
+            1900
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        },
+        {
+          "native_xy": [
+            3102,
+            3000
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-02",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          3376,
+          1900
+        ],
+        [
+          3374,
+          3000
+        ]
+      ],
+      "inspection_width_px": 30,
+      "description": "R02长M2；下端在检查边界继续，旧模型原生路径止于2960。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M2-R02",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            3376,
+            1900
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        },
+        {
+          "native_xy": [
+            3374,
+            3000
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-03",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          3100,
+          1730
+        ],
+        [
+          3101,
+          1800
+        ],
+        [
+          3130,
+          1800
+        ]
+      ],
+      "inspection_width_px": 14,
+      "description": "上沿左侧折角残段；与下方R01之间有可见空档，不补连。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            3100,
+            1730
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3130,
+            1800
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-04",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          3586,
+          1730
+        ],
+        [
+          3588,
+          1815
+        ],
+        [
+          3612,
+          1815
+        ]
+      ],
+      "inspection_width_px": 13,
+      "description": "上沿右侧折角残段，去向在范围外。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            3586,
+            1730
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3612,
+            1815
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-05",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          2990,
+          2115
+        ],
+        [
+          3019,
+          2115
+        ],
+        [
+          3020,
+          2150
+        ]
+      ],
+      "inspection_width_px": 20,
+      "description": "左侧短折角；不因邻近左边缘亮块就合并。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2990,
+            2115
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        },
+        {
+          "native_xy": [
+            3020,
+            2150
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-06",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          2940,
+          2155
+        ],
+        [
+          2960,
+          2155
+        ]
+      ],
+      "inspection_width_px": 25,
+      "description": "左边缘局部亮块/导体残段；与05的同层连续性未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2155
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            2960,
+            2155
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-07",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          3505,
+          2490
+        ],
+        [
+          3532,
+          2490
+        ],
+        [
+          3534,
+          3000
+        ]
+      ],
+      "inspection_width_px": 12,
+      "description": "右侧N1窄折线，顶部亮短端身份待分；下端出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M2-NARROW",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            3505,
+            2490
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        },
+        {
+          "native_xy": [
+            3534,
+            3000
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M2-08",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          2973,
+          2875
+        ],
+        [
+          2973,
+          3000
+        ]
+      ],
+      "inspection_width_px": 12,
+      "description": "左下沿细竖向残段，下端出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2973,
+            2875
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        },
+        {
+          "native_xy": [
+            2973,
+            3000
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-T01",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1809
+        ],
+        [
+          3670,
+          1789
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "上部细横线候选；条纹背景不计作导体，条间是否图外合并未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1809
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1789
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-T02",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1830
+        ],
+        [
+          3670,
+          1810
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "上部细横线候选；条纹背景不计作导体，条间是否图外合并未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1830
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1810
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-T03",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1851
+        ],
+        [
+          3670,
+          1831
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "上部细横线候选；条纹背景不计作导体，条间是否图外合并未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1851
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1831
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-T04",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1870
+        ],
+        [
+          3670,
+          1850
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "上部细横线候选；条纹背景不计作导体，条间是否图外合并未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1870
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1850
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-T05",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1888
+        ],
+        [
+          3670,
+          1868
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "上部细横线候选；条纹背景不计作导体，条间是否图外合并未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1888
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1868
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-T06",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1905
+        ],
+        [
+          3670,
+          1885
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "上部细横线候选；条纹背景不计作导体，条间是否图外合并未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1905
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1885
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-BU",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          1960
+        ],
+        [
+          3670,
+          1940
+        ]
+      ],
+      "inspection_width_px": 60,
+      "description": "上部宽母线B-U；U1/U2承载批准继承，边界/尺寸仍候选。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M3-UP",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            1960
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            1940
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-E1",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2148
+        ],
+        [
+          3045,
+          2148
+        ]
+      ],
+      "inspection_width_px": 11,
+      "description": "左边界短横段，右端可见；图外关系未知。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2148
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3045,
+            2148
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-E2",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2187
+        ],
+        [
+          2998,
+          2187
+        ]
+      ],
+      "inspection_width_px": 10,
+      "description": "左边界另一短横段；不合并进E1。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2187
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            2998,
+            2187
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-M01",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2279
+        ],
+        [
+          3670,
+          2259
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "中部六条可分辨细横线之一；独立原生观察，不宣称已知网络。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2279
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2259
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-M02",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2299
+        ],
+        [
+          3670,
+          2279
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "中部六条可分辨细横线之一；独立原生观察，不宣称已知网络。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2299
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2279
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-M03",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2316
+        ],
+        [
+          3670,
+          2296
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "中部六条可分辨细横线之一；独立原生观察，不宣称已知网络。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2316
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2296
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-M04",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2337
+        ],
+        [
+          3670,
+          2317
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "中部六条可分辨细横线之一；独立原生观察，不宣称已知网络。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2337
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2317
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-M05",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2354
+        ],
+        [
+          3670,
+          2334
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "中部六条可分辨细横线之一；独立原生观察，不宣称已知网络。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2354
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2334
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-M06",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2372
+        ],
+        [
+          3670,
+          2352
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "中部六条可分辨细横线之一；独立原生观察，不宣称已知网络。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2372
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2352
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-BM",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2450
+        ],
+        [
+          3670,
+          2430
+        ]
+      ],
+      "inspection_width_px": 80,
+      "description": "中部宽母线B-M；与两条长M2的接口尚无已审事实。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M3-MID",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2450
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2430
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-L01",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2528
+        ],
+        [
+          3565,
+          2511
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "下部细横线候选；L01右端在范围内可见，其余出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2528
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3565,
+            2511
+          ],
+          "state": "visible_terminal_or_unresolved_continuity"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-L02",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2545
+        ],
+        [
+          3670,
+          2525
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "下部细横线候选；L01右端在范围内可见，其余出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M3-THIN1",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2545
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2525
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-L03",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2565
+        ],
+        [
+          3670,
+          2545
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "下部细横线候选；L01右端在范围内可见，其余出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2565
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2545
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-L04",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2602
+        ],
+        [
+          3670,
+          2582
+        ]
+      ],
+      "inspection_width_px": 8,
+      "description": "下部细横线候选；L01右端在范围内可见，其余出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M3-THIN2",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2602
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2582
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-BD",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2750
+        ],
+        [
+          3670,
+          2730
+        ]
+      ],
+      "inspection_width_px": 80,
+      "description": "下部宽母线B-D；D1/D2承载批准继承，边界/尺寸仍候选。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": "RT-M3-DOWN",
+      "mapping_status": "PARTIAL_SOURCE_EXTENT_NOT_GEOMETRY_APPROVAL",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2750
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2730
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "C-M3-EDGE",
+      "kind": "metal_fragment_observation",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2940,
+          2978
+        ],
+        [
+          3670,
+          2958
+        ]
+      ],
+      "inspection_width_px": 10,
+      "description": "最下沿细横线残段，两侧继续出界。",
+      "authority": "AI_SOURCE_OBSERVATION",
+      "mapped_model_id": null,
+      "mapping_status": "NOT_MODELED",
+      "endpoints": [
+        {
+          "native_xy": [
+            2940,
+            2978
+          ],
+          "state": "exits_scope"
+        },
+        {
+          "native_xy": [
+            3670,
+            2958
+          ],
+          "state": "exits_scope"
+        }
+      ]
+    }
+  ],
+  "inherited_interfaces": [
+    {
+      "id": "RT-V2-U1",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3086,
+        1892,
+        3122,
+        1952
+      ],
+      "lower_metal_id": "RT-M2-R01",
+      "upper_metal_id": "RT-M3-UP",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U1-human-review.json",
+        "sha256": "907c3cc82fd9afb4730abc125292c5159fa318f3d171568a83a10f3d9eb05aee"
+      },
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "status": "INHERITED_SCOPED_HUMAN_REVIEW"
+    },
+    {
+      "id": "RT-V2-U2",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3358,
+        1888,
+        3394,
+        1948
+      ],
+      "lower_metal_id": "RT-M2-R02",
+      "upper_metal_id": "RT-M3-UP",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U2-human-review.json",
+        "sha256": "dc9b8b2d98502f21c4496a34ab4020db53a2463687fd156c1a0b2efe75272fa1"
+      },
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "status": "INHERITED_SCOPED_HUMAN_REVIEW"
+    },
+    {
+      "id": "RT-V2-D1",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3086,
+        2669,
+        3122,
+        2762
+      ],
+      "lower_metal_id": "RT-M2-R01",
+      "upper_metal_id": "RT-M3-DOWN",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-D1-human-review.json",
+        "sha256": "6404f4f63ba414bc29808f1b6b432115096778cc7545d48737eb661d848e6681"
+      },
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "status": "INHERITED_SCOPED_HUMAN_REVIEW"
+    },
+    {
+      "id": "RT-V2-D2",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3358,
+        2662,
+        3394,
+        2758
+      ],
+      "lower_metal_id": "RT-M2-R02",
+      "upper_metal_id": "RT-M3-DOWN",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-D2-human-review.json",
+        "sha256": "17eb492011750dbd98fc24a1d6b7e35a3dec6df2a6c5c4b7dd3c373613622de9"
+      },
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "status": "INHERITED_SCOPED_HUMAN_REVIEW"
+    }
+  ],
+  "interface_surveys": [
+    {
+      "id": "SURVEY-C-M2-01",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-01",
+      "native_bounds": [
+        3082,
+        1880,
+        3124,
+        3000
+      ],
+      "inherited_interface_ids": [
+        "RT-V2-U1",
+        "RT-V2-D1"
+      ],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "整段检查；长M2仅继承上下已审孔组。中段无新增清晰孔组，不等于无孔/断开。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-02",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-02",
+      "native_bounds": [
+        3354,
+        1880,
+        3396,
+        3000
+      ],
+      "inherited_interface_ids": [
+        "RT-V2-U2",
+        "RT-V2-D2"
+      ],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "整段检查；长M2仅继承上下已审孔组。中段无新增清晰孔组，不等于无孔/断开。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-03",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-03",
+      "native_bounds": [
+        3080,
+        1730,
+        3150,
+        1820
+      ],
+      "inherited_interface_ids": [],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "端部和残段有明暗/摩尔纹影响，尚无可可靠分离的新V2孔组。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-04",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-04",
+      "native_bounds": [
+        3566,
+        1730,
+        3632,
+        1835
+      ],
+      "inherited_interface_ids": [],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "端部和残段有明暗/摩尔纹影响，尚无可可靠分离的新V2孔组。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-05",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-05",
+      "native_bounds": [
+        2970,
+        2095,
+        3040,
+        2170
+      ],
+      "inherited_interface_ids": [],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "端部和残段有明暗/摩尔纹影响，尚无可可靠分离的新V2孔组。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-06",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-06",
+      "native_bounds": [
+        2940,
+        2135,
+        2980,
+        2175
+      ],
+      "inherited_interface_ids": [],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "端部和残段有明暗/摩尔纹影响，尚无可可靠分离的新V2孔组。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-07",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-07",
+      "native_bounds": [
+        3485,
+        2470,
+        3554,
+        3000
+      ],
+      "inherited_interface_ids": [],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "端部和残段有明暗/摩尔纹影响，尚无可可靠分离的新V2孔组。",
+      "connection_for_unresolved_sites": null
+    },
+    {
+      "id": "SURVEY-C-M2-08",
+      "source_frame": "m2",
+      "metal_observation_id": "C-M2-08",
+      "native_bounds": [
+        2953,
+        2855,
+        2993,
+        3000
+      ],
+      "inherited_interface_ids": [],
+      "new_resolved_via_groups": [],
+      "unresolved_notes": "端部和残段有明暗/摩尔纹影响，尚无可可靠分离的新V2孔组。",
+      "connection_for_unresolved_sites": null
+    }
+  ],
+  "unknown_observations": [
+    {
+      "id": "C-U1",
+      "kind": "unresolved_source_band",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2015,
+        3670,
+        2051
+      ],
+      "description": "弱横向明暗带；可能为背景/残留层/宽金属内部纹理，不能确认为新增M3，也不删除该疑点。",
+      "physical_conductor_count": null
+    },
+    {
+      "id": "C-U2",
+      "kind": "unresolved_source_band",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2634,
+        3670,
+        2670
+      ],
+      "description": "弱横向明暗带；可能为背景/残留层/宽金属内部纹理，不能确认为新增M3，也不删除该疑点。",
+      "physical_conductor_count": null
+    },
+    {
+      "id": "C-U3",
+      "kind": "unresolved_source_band",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2846,
+        3670,
+        2882
+      ],
+      "description": "弱横向明暗带；可能为背景/残留层/宽金属内部纹理，不能确认为新增M3，也不删除该疑点。",
+      "physical_conductor_count": null
+    },
+    {
+      "id": "C-U4",
+      "kind": "unresolved_interface_site",
+      "source_frame": "m2",
+      "native_bounds": [
+        3488,
+        2470,
+        3550,
+        2520
+      ],
+      "description": "N1上端短亮条：金属端部还是含V2尚不能确定；不指认任何M3承载。",
+      "physical_conductor_count": null
+    },
+    {
+      "id": "C-U5",
+      "kind": "unresolved_same_layer_continuity",
+      "source_frame": "m2",
+      "native_bounds": [
+        2940,
+        2095,
+        3035,
+        2185
+      ],
+      "description": "左边界06亮块与05折角是否在图外/暗部相连未定，保留两段不合并。",
+      "physical_conductor_count": null
+    }
+  ],
+  "complete_physical_inventory": false,
+  "full_geometry_reconstruction_complete": false,
+  "canonical_geometry_adopted": false,
+  "complete_network": false,
+  "automatic_network_export_allowed": false,
+  "limits": [
+    "30条是AI观察到的局部金属段，不是人工批准的物理导体/网络总数。",
+    "原生照片斜线用于来源观察，不是最终GDS规则几何；未改任何已审设计坐标。",
+    "检查分块覆盖只证明声明的照片范围已安排AI检查，台账闭合不证明图像穷尽或像素真值。",
+    "跨帧同名坐标不作为配准或承载证据；本次不生成未经核实的交叉点矩阵。",
+    "已审承载不能提升为孔数批准；新未知不作断开、无孔或全局异网。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "historical_execution_and_contract_bindings",
+  "original_references_preserved": true,
+  "current_source_unchanged": true,
+  "automatic_loader_redirection": false,
+  "versions": [
+    {
+      "original_path": "silicon_eye/conductive_workflow.py",
+      "expected_sha256": "302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive_workflow-302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00.py",
+        "sha256": "302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00"
+      },
+      "provenance": "Exact historical bytes recovered by reversing the later native-carrier adapter and explicit interface-extension change; checked against the frozen batch-review manifest SHA256."
+    },
+    {
+      "original_path": "silicon_eye/conductive_workflow.py",
+      "expected_sha256": "2bc65c36546bfbed6bc687841335cab13f4483aa56eeb3bb97efe17a0ec706cd",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive_workflow-2bc65c36546bfbed6bc687841335cab13f4483aa56eeb3bb97efe17a0ec706cd.py",
+        "sha256": "2bc65c36546bfbed6bc687841335cab13f4483aa56eeb3bb97efe17a0ec706cd"
+      },
+      "provenance": "Exact historical bytes recovered by also reversing the source-extent support change; checked against the frozen corridor-geometry manifest SHA256."
+    },
+    {
+      "original_path": "docs/architecture/conductive-workflow-contract-v1.md",
+      "expected_sha256": "c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive-workflow-contract-v1-c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df.md",
+        "sha256": "c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df"
+      },
+      "provenance": "Exact historical bytes recovered by removing the later explicit-interface section; frozen batch-review manifest SHA256 matched."
+    },
+    {
+      "original_path": "docs/architecture/conductive-workflow-contract-v1.md",
+      "expected_sha256": "3c40a46f8cd8164e7b16df105319bd645b0df2676dd3b79e9d2cd8b43b20bfac",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive-workflow-contract-v1-3c40a46f8cd8164e7b16df105319bd645b0df2676dd3b79e9d2cd8b43b20bfac.md",
+        "sha256": "3c40a46f8cd8164e7b16df105319bd645b0df2676dd3b79e9d2cd8b43b20bfac"
+      },
+      "provenance": "Exact historical bytes recovered by removing the source-extent section; frozen corridor-geometry manifest SHA256 matched."
+    },
+    {
+      "original_path": "skills/silicon-eye-metal-reconstruction/SKILL.md",
+      "expected_sha256": "adcd74b7f6974d9b2d879a8c840f25f64686c01b2f8cdb35aed9f2a647b42a90",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/SKILL-adcd74b7f6974d9b2d879a8c840f25f64686c01b2f8cdb35aed9f2a647b42a90.md",
+        "sha256": "adcd74b7f6974d9b2d879a8c840f25f64686c01b2f8cdb35aed9f2a647b42a90"
+      },
+      "provenance": "Exact historical skill bytes recovered by removing the later source-extent continuation bullet; frozen corridor-geometry manifest SHA256 matched."
+    }
+  ]
+}

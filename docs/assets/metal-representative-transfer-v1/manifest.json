@@ -1,0 +1,41 @@
+{
+  "kind": "conductive_transfer_review_navigator",
+  "candidate_package": {
+    "path": "docs/assets/metal-representative-transfer-v1/corrected/manifest.json",
+    "sha256": "ab9854e643be6fe3cd630f2c4ccbc9a94a9e8e87290e69c947e4fe05effc80b0"
+  },
+  "inputs": {
+    "selection": {
+      "path": "benchmarks/metal-representative-transfer-v1/selection-v2.json",
+      "sha256": "58549cad8f25ba91bb467405f0c982468c4d1551807bf1a980847cccdeb3b3a6"
+    },
+    "reinspection": {
+      "path": "benchmarks/metal-representative-transfer-v1/source-reinspection-v2.json",
+      "sha256": "b186554e45575588a921523ad6c60bf5cadcc085c1c49f94cdfe70bb4b2b88f0"
+    },
+    "lower_source_windows": {
+      "path": "benchmarks/metal-representative-transfer-v1/lower-source-panels-v2.json",
+      "sha256": "52215c9e4a5ad948ad755aae35ce6799a0b6e1d5a4097aa50e78696b88a83724"
+    },
+    "fixed_tasks": {
+      "path": "benchmarks/metal-representative-transfer-v1/fixed-tasks.json",
+      "sha256": "ef9a344638717162e5d98a342d0a18d993a6abb1a7d29465120419388c901852"
+    },
+    "verification": {
+      "path": "benchmarks/metal-representative-transfer-v1/verification.json",
+      "sha256": "5cb47d69c93f814e63bcda8176671f96b9e1207616eefec60b63ae8924fc7a8a"
+    },
+    "baseline_closeout": {
+      "path": "benchmarks/conductive-joint-pilot-closeout-v1/closeout.json",
+      "sha256": "68b7565def50968083ebe0e1b039e1f7620055c74d7cd34a28d8a11bb9e35898"
+    }
+  },
+  "artifacts": {
+    "index.html": "970d313143641838266f0068dbf68f0dbe69d192f7ab9bb548c2b3f4c680e8d7",
+    "design-v2.png": "31765c08bf3a30fbf65e117206293cc4b6bd2718d870017ba3aea29b17b1e5ea",
+    "lower-v2/m3-detail-raw.png": "96f2f649f075afa6b8f17fc63026ecd0722a7c5a24367890ec60af344f969c90",
+    "lower-v2/m2-detail-raw.png": "1a6124930f3d6be16633024c1c06fafe2d9fcc144707c2d7a59c271d26524330",
+    "lower-v2/m2-detail-marked.png": "0215b665c31f1ac8802a3018f29facb9027ce9061f4e313e9e624a7480df153b",
+    "lower-v2/m3-detail-marked.png": "d135e35fea933eb4d4de31466339beb82174dc72ed13283e3e64fd6cf3a0a157"
+  }
+}

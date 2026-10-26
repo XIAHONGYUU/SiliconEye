@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_work_snapshot_request",
+  "id": "m1-local-tab-v1",
+  "material_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "domains": [
+    {
+      "id": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "next_request": {
+        "path": "benchmarks/conductive-work-baseline-v1/medium-next.json",
+        "sha256": "3c04ecf7506339c54953686fc036a32d83e75404f489f376d82af527a23b24da"
+      },
+      "comparison_parent": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "expected_geometry_changes": [],
+      "preserve_layers": [
+        "M2",
+        "M3",
+        "V1",
+        "V2"
+      ],
+      "focus": {
+        "id": "Q1",
+        "v1_id": "SUPPORT-J-M1-P08-V1-M2-J01",
+        "v2_id": "SUPPORT-J-M2-V2-M3-B1",
+        "viewbox": [
+          1320,
+          120,
+          430,
+          440
+        ],
+        "feedback": {
+          "path": "benchmarks/stacked-via-review-v2/q1-human-feedback-v1.json",
+          "sha256": "b9e1ecb48db9e5a8ce97ad7f34b9d0a6a3743e54c61ff5d6d9f01a9f6b6ed4de"
+        },
+        "question": "Q1本轮不修改；保留既有孔径与中心，供对照。",
+        "label": "连续五层中样",
+        "zoom_viewbox": [
+          1345,
+          155,
+          65,
+          65
+        ]
+      }
+    },
+    {
+      "id": "independent",
+      "package": {
+        "path": "docs/assets/m1-local-tab-v1/independent/manifest.json",
+        "sha256": "6abff9c82915778607e6bafd95dacdc7a9d902431ba913ac58fd9ba133303329"
+      },
+      "next_request": {
+        "path": "benchmarks/m1-local-tab-v1/independent-next.json",
+        "sha256": "d3f99222d678a8cdf10060d94b7321f10b1471f8a19d8a922fdb9c998f9a3af8"
+      },
+      "comparison_parent": {
+        "path": "docs/assets/via-center-preserving-v1/independent/manifest.json",
+        "sha256": "1bef3ce5b4c760b0f72296ce65495f26933440e7ad0f2125a995c009d664500f"
+      },
+      "expected_geometry_changes": [
+        "IT1-M1-RING"
+      ],
+      "preserve_layers": [
+        "M2",
+        "M3",
+        "V1",
+        "V2"
+      ],
+      "focus": {
+        "id": "Q2",
+        "v1_id": "IT1-V1-A",
+        "v2_id": "IT1-V2-B",
+        "viewbox": [
+          260,
+          220,
+          170,
+          190
+        ],
+        "feedback": {
+          "path": "benchmarks/stacked-via-review-v2/q2-human-feedback-v1.json",
+          "sha256": "d830a09609751dc55bff7be0948728b99ae5b6af41f2a77501da5a0a9e0ef80b"
+        },
+        "question": "M1横带主体已缩窄，保留孔组处向下凸出，最下两孔由凸出承载。该形状是否符合原图？孔径、中心和连接均未改变。",
+        "label": "M1横带与向下局部凸出",
+        "zoom_viewbox": [
+          330,
+          240,
+          85,
+          140
+        ]
+      }
+    }
+  ],
+  "material_geometry_adoption": false,
+  "cross_canvas_projection": false,
+  "automatic_network_export_allowed": false,
+  "parent_work_snapshot": {
+    "path": "docs/assets/via-center-preserving-v1/work/manifest.json",
+    "sha256": "c342b3795d6a029d7cf5f3332f8695db3f489f7318cb6f994beba2801415284c"
+  }
+}

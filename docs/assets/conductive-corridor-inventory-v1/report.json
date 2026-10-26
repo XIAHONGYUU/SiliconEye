@@ -1,0 +1,29 @@
+{
+  "status": "LEDGER_CHECKS_PASS_GEOMETRY_COVERAGE_INCOMPLETE",
+  "scoped_frames": [
+    "m2",
+    "m3"
+  ],
+  "metal_fragment_observations": {
+    "m2": 8,
+    "m3": 22
+  },
+  "existing_model_correspondences": {
+    "m2": 3,
+    "m3": 5
+  },
+  "unmodeled_fragment_observations": 22,
+  "inherited_interfaces": 4,
+  "interface_surveys": 8,
+  "unresolved_observations": 5,
+  "boundary_exits": 48,
+  "scan_tiles_cover_declared_windows": true,
+  "all_listed_records_accounted": true,
+  "physical_inventory_exhaustiveness": "AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED",
+  "actual_photo_coverage_fraction": null,
+  "five_layer_coverage": "NOT_EVALUATED",
+  "source_to_design_registration": false,
+  "new_connections_confirmed": 0,
+  "baseline_full_model_exact": true,
+  "complete_network": false
+}

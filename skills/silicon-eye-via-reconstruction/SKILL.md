@@ -37,4 +37,12 @@ description: Reconstruct V1/V2 observations and regular via-group support candid
 
 固定示例孔径不能替代照片占用比例。局部设计像素的尺寸/pitch有独立来源依据时，可用`cut_array_candidate.geometry_parameters={cut_size_px,pitch_xy,basis}`调整整组，必须绑定`array_source_evidence`；全局最小孔径、间距和包围不变，组内孔保持方形和等尺寸。局部画布的数值不当成真实工艺孔径。人工只补充孔数或定性重叠时，用绑定旧送审包的几何反馈记录；孔数与具体新坐标批准分别保存。
 
-交付与金属skill共同的复核包：同坐标新旧设计、独立来源照片切换、完整孔组和上下承载；不在未配准的照片上投影。当前限定试用覆盖同芯片V1/V2整组迁移与局部修订；待本轮几何验收后再选择结构类扩展，不承诺全层逐孔恢复或陌生芯片准确率。
+交付与金属skill共同的复核包：同坐标新旧设计、独立来源照片切换、完整孔组和上下承载；不在未配准的照片上投影。
+
+## 固定回归与能力边界
+
+遵循[限定能力与验收标准](../../docs/architecture/conductive-skill-qualification-v1.md)。Q1/Q2的定性工作几何已收口；新增V1-S1接A下端、V2上/下两项各两接口的承载已审，不重复送审。V1-S1仍为支持代理，数量null、完整组包围NOT_EVALUATED；V2的3×2/5×2为AI设计候选，连接批准没有批准这些数量/尺寸。
+
+从CURRENT_TASK指定的当前父包接续；固定回归集为`benchmarks/conductive-regression-v1/suite.json`，执行`.venv/bin/python scripts/check_conductive_regression.py --output runs/NEW_DIR/result.json`。命令只跑工程回归。改变模型或孔识别策略时，按上述标准另跑三项原图观察，先冻结初稿再评分。R2漏末排的内部修订是固定失败经验：站点完整性PASS发现不了未声明的整排，必须回查原图上下文，不把AI补出的排数写成人工真值。
+
+维持限定试用v2：同芯片相邻层接口、支持代理/显式候选阵列及局部修订，不保证全幅逐孔恢复、真实工艺DRC或陌生芯片。下一批对连续区域先列全部可见接口和未知，再检查覆盖；不能将代理框包围PASS当完整孔组或完整skill放行。

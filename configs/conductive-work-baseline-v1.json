@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_work_snapshot_request",
+  "id": "conductive-work-baseline-v1",
+  "material_snapshot": {
+    "path": "configs/joint-work-layer-v5.json",
+    "sha256": "18c7461caa71a3f16a9f3638f08c29f292fad13e24986036d2aa2f514a62c088"
+  },
+  "domains": [
+    {
+      "id": "medium",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/medium/manifest.json",
+        "sha256": "483b55f253095f01a529c73d57f34482c444e08dc35e3e4b9ff78082e2df5ab1"
+      },
+      "next_request": {
+        "path": "benchmarks/conductive-work-baseline-v1/medium-next.json",
+        "sha256": "3c04ecf7506339c54953686fc036a32d83e75404f489f376d82af527a23b24da"
+      },
+      "comparison_parent": {
+        "path": "docs/assets/five-layer-geometry-v1/review/manifest.json",
+        "sha256": "024bd456918d791980ac082688d55db89b72bb1e4eeb53a420e4f17fde885ad4"
+      },
+      "expected_geometry_changes": [
+        "SUPPORT-J-M2-V2-M3-B1"
+      ],
+      "preserve_layers": [
+        "V1"
+      ],
+      "focus": {
+        "id": "Q1",
+        "v1_id": "SUPPORT-J-M1-P08-V1-M2-J01",
+        "v2_id": "SUPPORT-J-M2-V2-M3-B1",
+        "viewbox": [
+          1320,
+          120,
+          430,
+          440
+        ],
+        "feedback": {
+          "path": "benchmarks/stacked-via-review-v2/q1-human-feedback-v1.json",
+          "sha256": "b9e1ecb48db9e5a8ce97ad7f34b9d0a6a3743e54c61ff5d6d9f01a9f6b6ed4de"
+        },
+        "question": "保持原V1范围后，当前V1/V2重叠关系是否合理？",
+        "label": "连续五层中样",
+        "zoom_viewbox": [
+          1345,
+          155,
+          65,
+          65
+        ]
+      }
+    },
+    {
+      "id": "independent",
+      "package": {
+        "path": "docs/assets/conductive-work-baseline-v1/independent/manifest.json",
+        "sha256": "acf32fc040de393f6ce4c11582734dec84e779c253849f539f3c4da688e0c36a"
+      },
+      "next_request": {
+        "path": "benchmarks/conductive-work-baseline-v1/independent-next.json",
+        "sha256": "0158f7908c887b12e4eda0b76218e2a689689d25b817bb32f755e08ad826679d"
+      },
+      "comparison_parent": {
+        "path": "docs/assets/five-layer-geometry-v1/independent/manifest.json",
+        "sha256": "c4445d9cb2f89f67a5d8f2c5e5ff9f8da22ae1aee9d0a8ee76d3e2f2570f8fbd"
+      },
+      "expected_geometry_changes": [
+        "IT1-M2-B",
+        "IT1-V2-B"
+      ],
+      "preserve_layers": [
+        "V1"
+      ],
+      "focus": {
+        "id": "Q2",
+        "v1_id": "IT1-V1-A",
+        "v2_id": "IT1-V2-B",
+        "viewbox": [
+          260,
+          220,
+          170,
+          190
+        ],
+        "feedback": {
+          "path": "benchmarks/stacked-via-review-v2/q2-human-feedback-v1.json",
+          "sha256": "d830a09609751dc55bff7be0948728b99ae5b6af41f2a77501da5a0a9e0ef80b"
+        },
+        "question": "六孔整组相对宽M2-B的占用及与V1重叠是否合理？",
+        "label": "宽M2承载独立样本",
+        "zoom_viewbox": [
+          330,
+          240,
+          85,
+          140
+        ]
+      }
+    }
+  ],
+  "material_geometry_adoption": false,
+  "cross_canvas_projection": false,
+  "automatic_network_export_allowed": false
+}

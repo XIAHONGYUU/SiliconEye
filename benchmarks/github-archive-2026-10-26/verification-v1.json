@@ -1,0 +1,108 @@
+{
+  "kind": "github_archive_pre_push_verification",
+  "date": "2026-10-26",
+  "status": "VERIFIED_READY_FOR_COMMIT_AND_PUSH",
+  "parent_commit": "fcc531aa404791bcd09208482fd2975fd3ae0c8f",
+  "authorized_scope": "Commit and push current research/development state to main; preserve README/site/gh-pages. Stop technical work for the day.",
+  "top_level_documents": {
+    "CURRENT_TASK.md": "5c560f4456fe3eb7e856016355df0b5c9f91615ea0a6b93dbfb714a77df1ccd8",
+    "DEVELOPMENT.md": "ca301d36a83b67f0c8e3685de1af3dc4b334a5af1553886a9d83d6dbd0db3233",
+    "docs/README.md": "25bf2bc2ad20332d2503009f17dad3b797ecccacd517c2950b567f3686139811",
+    "docs/development-plan.md": "a2e528a8c23f6fd7e3b1b42d359b3c3bdaa2153138a8431c59b8cbad7f2ed9d2",
+    "docs/checkpoints/2026-10-26-conductive-corridor-handoff.md": "52f0294a0296343eb8519f14e13e29ef90868cf7f4a22e61f0bd457cbb7993e3"
+  },
+  "exact_archives": {
+    "task": {
+      "path": "docs/history/current-task-before-2026-10-26-github-handoff.md",
+      "sha256": "115d0dbed2ac738a2629eb0f07224be3e710d93ad6d8c3abe942fd19d64b9147"
+    },
+    "development_plan": {
+      "path": "docs/history/development-plan-before-2026-10-26-conductive-handoff.md",
+      "sha256": "35ebb5e47bd60ffd38c7061616b35ad7c473ba3adfebc14297b7ae14ef025c7d"
+    }
+  },
+  "source_reference_occurrences": 1534,
+  "unique_source_references": 221,
+  "source_reference_issues": [],
+  "manifest_hash_bindings_checked": 1604,
+  "historical_context_bindings": [
+    {
+      "manifest": "docs/assets/conductive-corridor-batch-review-v1/manifest.json",
+      "original_path": "silicon_eye/conductive_workflow.py",
+      "expected_sha256": "302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive_workflow-302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00.py",
+        "sha256": "302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00"
+      }
+    },
+    {
+      "manifest": "docs/assets/conductive-corridor-batch-review-v1/manifest.json",
+      "original_path": "docs/architecture/conductive-workflow-contract-v1.md",
+      "expected_sha256": "c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive-workflow-contract-v1-c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df.md",
+        "sha256": "c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df"
+      }
+    },
+    {
+      "manifest": "docs/assets/conductive-corridor-geometry-v1/manifest.json",
+      "original_path": "silicon_eye/conductive_workflow.py",
+      "expected_sha256": "2bc65c36546bfbed6bc687841335cab13f4483aa56eeb3bb97efe17a0ec706cd",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive_workflow-2bc65c36546bfbed6bc687841335cab13f4483aa56eeb3bb97efe17a0ec706cd.py",
+        "sha256": "2bc65c36546bfbed6bc687841335cab13f4483aa56eeb3bb97efe17a0ec706cd"
+      }
+    },
+    {
+      "manifest": "docs/assets/conductive-corridor-geometry-v1/manifest.json",
+      "original_path": "docs/architecture/conductive-workflow-contract-v1.md",
+      "expected_sha256": "3c40a46f8cd8164e7b16df105319bd645b0df2676dd3b79e9d2cd8b43b20bfac",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive-workflow-contract-v1-3c40a46f8cd8164e7b16df105319bd645b0df2676dd3b79e9d2cd8b43b20bfac.md",
+        "sha256": "3c40a46f8cd8164e7b16df105319bd645b0df2676dd3b79e9d2cd8b43b20bfac"
+      }
+    },
+    {
+      "manifest": "docs/assets/conductive-corridor-geometry-v1/manifest.json",
+      "original_path": "skills/silicon-eye-metal-reconstruction/SKILL.md",
+      "expected_sha256": "adcd74b7f6974d9b2d879a8c840f25f64686c01b2f8cdb35aed9f2a647b42a90",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/SKILL-adcd74b7f6974d9b2d879a8c840f25f64686c01b2f8cdb35aed9f2a647b42a90.md",
+        "sha256": "adcd74b7f6974d9b2d879a8c840f25f64686c01b2f8cdb35aed9f2a647b42a90"
+      }
+    }
+  ],
+  "unresolved_manifest_bindings": [],
+  "automatic_historical_loader_redirection": false,
+  "top_level_local_links_checked": 68,
+  "latest_workflow_replay_equal": true,
+  "prior_N1_validation": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/verification.json",
+    "sha256": "adb2c0265ab76e54b9cd2416ce4f71dd2d16882cf0cb9a3f04812c021238e03e"
+  },
+  "prior_test_count": 117,
+  "test_claim": "Previous N1 phase: 117 unique engineering tests; no code changes after that validation. Not new AI scoring, not a full project test count.",
+  "prior_test_execution_sha256": "c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6",
+  "related_ruff": "PASS",
+  "portfolio_asset_check": {
+    "status": "PASS",
+    "asset_hashes": 18,
+    "local_targets": 31
+  },
+  "protected_showcase_files_unchanged": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "publication_status": "Pre-push record; actual commit and remote equality verified through Git refs after push.",
+  "online_CI_verified": false,
+  "browser_interaction_tested": false,
+  "new_technical_adjudications": false,
+  "tomorrow_task_source": "CURRENT_TASK.md",
+  "staged_file_count": 409,
+  "all_staged_source_references_tracked": 224,
+  "staged_protected_paths": [],
+  "git_diff_check": {
+    "status": "PASS_WITH_PRESERVED_HISTORICAL_EOF_WARNING",
+    "preserved_warning": "docs/architecture/conductive-work-snapshot-v1.md:53: new blank line at EOF",
+    "reason": "The document bytes are already bound by frozen evidence. Preserve them rather than rewriting old hashes to remove a final blank line.",
+    "other_whitespace_errors": []
+  }
+}

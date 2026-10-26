@@ -1,0 +1,37 @@
+{
+  "kind": "declared_fragment_geometry_coverage_not_pixel_accuracy",
+  "date": "2026-10-26",
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "workflow_manifest": {
+    "path": "docs/assets/conductive-corridor-geometry-v1/revised/manifest.json",
+    "sha256": "bbb90a66c01bc6de2d511aea802e19ae528c17116313f392818dc980d6868e57"
+  },
+  "prior_mapped_fragments": 8,
+  "new_fragments": 22,
+  "current_mapped_fragments": 30,
+  "source_length_self_correction_ids": [
+    "C-M3-E1",
+    "C-M3-E2"
+  ],
+  "missing_declared_fragments": [],
+  "old_objects_exact": true,
+  "interfaces_exact": true,
+  "via_design_centers_exact": true,
+  "remaining_unknown_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "old_source_extents_still_partial": true,
+  "physical_inventory_exhaustiveness": false,
+  "photo_coverage_fraction": null,
+  "geometry_human_approved": false,
+  "next_full_model_exact": true,
+  "canonical_geometry_adoption": false,
+  "complete_network": false
+}

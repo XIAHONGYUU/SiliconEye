@@ -1,0 +1,87 @@
+{
+  "kind": "native_source_review_panels",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        3200,
+        2200,
+        3850,
+        2820
+      ],
+      "detail": [
+        3380,
+        2360,
+        3700,
+        2620
+      ]
+    },
+    "m3": {
+      "wide": [
+        3200,
+        2180,
+        3850,
+        2820
+      ],
+      "detail": [
+        3380,
+        2380,
+        3700,
+        2660
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 28,
+    "padding_px": 6,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          3498,
+          2480,
+          3540,
+          2510
+        ],
+        "color": "#ffb04f",
+        "label": "N1 V2?",
+        "label_xy": [
+          3570,
+          2400
+        ]
+      },
+      {
+        "bounds": [
+          3358,
+          2662,
+          3394,
+          2758
+        ],
+        "color": "#61edb2",
+        "label": "REF D2 V2",
+        "label_xy": [
+          3230,
+          2770
+        ]
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          3475,
+          2500,
+          3585,
+          2525
+        ],
+        "color": "#d28cff",
+        "label": "L1? (unconfirmed)",
+        "label_xy": [
+          3585,
+          2430
+        ]
+      }
+    ]
+  }
+}

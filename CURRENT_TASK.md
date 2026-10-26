@@ -1,48 +1,23 @@
 # 当前任务
 
-## 当前目标与授权
+## 当前状态与授权
 
-SiliconEye重命名已完成。仓库为XIAHONGYUU/SiliconEye，ID1258358595保持；本机origin和当前README/展示/简历入口已同步。内容提交e574bf5，Pages提交01d621b，实际构建成功；新网址下23个公开文件及README与本机一致。仅名称与入口迁移，原照片、物理模型、审批和历史回执未改写；本机目录与silicon-eye命令保留兼容。CI仍等待workflow权限，不因改名改变状态。
+**用户“N1接A”已记录并接入：N1-V2将RT-M2-NARROW接到C-M3-L01。** V2身份及M3承载均已审，不重问。仅修N1短横头设计y675→682，新增1×2 AI孔组候选；逐孔及整组包络的两侧包围通过。其他29条金属、原生锚点、旧4接口/32孔完全保持。新几何、孔数/尺寸仍为候选，不当作人审真值或共同GDS采用。本轮已授权整理并提交Git/GitHub main；README、site/、gh-pages保持冻结，不重建或推送展示分支；skill仍LIMITED_TRIAL_V2。
 
-[展示主页](site/index.html) · [在线Demo](https://xiahongyuu.github.io/SiliconEye/) · [开发指南](DEVELOPMENT.md) · [案例与证据](docs/portfolio/cases.md) · [首轮整理报告](docs/reviews/2026-10-25-portfolio.md) · [质量优化报告](docs/reviews/2026-10-25-quality-portfolio.md)。
+[人审原文](benchmarks/n1-v2-local-reconstruction-v1/human-review.json) · [当前来源状态](benchmarks/n1-v2-local-reconstruction-v1/source-fact-state.json) · [阶段报告](docs/reviews/2026-10-26-n1-v2-local-reconstruction.md) · [验证](benchmarks/n1-v2-local-reconstruction-v1/verification.json) · [新旧局部图](docs/assets/n1-v2-local-reconstruction-v1/before-after-local.png) · [图层切换页](docs/assets/n1-v2-local-reconstruction-v1/index.html) · [旧六组已审几何](benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json) · [本轮前入口完整归档](docs/history/current-task-before-2026-10-26-n1-carrier-approved.md)。
 
-## 名称迁移结果
+## 本阶段结果及边界
 
-[迁移报告](docs/reviews/2026-10-25-SiliconEye-rename.md) · [发布回执](benchmarks/SiliconEye-rename-v1/publication.json) · [本机验证](benchmarks/SiliconEye-rename-v1/verification.json)。42项来源/18项资产哈希、36条相关本地链接与手机/桌面标题布局均核对；原入口已完整归档，原始字节核对一致。
+- N1源框[3498,2480,3540,2510]、下层RT-M2-NARROW、上层C-M3-L01，连接true；物理孔数null。新孔组设计包络[565,679,589,685]、两候选中心(568,682)/(586,682)。孔径6、每侧包围1；扩大后的整组包络完整落在M2/M3内。完整声明设计阵列包围PASS≠物理孔组穷尽。
+- 原失败只有2px共同材料；新修订保持短横头横向范围、宽度、左向转折及原生锚点，不把孔挪到竖干凑重叠。新坐标仍未获人审；六组原已审几何与其余对象的批准不倒改。
+- 统一入口先局部金属修订，再独立added_interface_ids接口补建，旧记录完全保持；原生承载裁决适配不接受夹带孔数/几何批准。当前工作模型30金属、5已审接口、34设计孔（32旧+2新AI候选）。新接口来源身份/承载已审，设计几何候选。
+- Q2/C-U5：C-M2-05和C-M2-06在图示局部无直接连续M2；不合并ID，global_same_net=null。当前覆盖层保留该裁决，旧冻结清单未知字段仅为历史。
+- 117项不同软件测试通过（77相关+9清单+31固定回归），非AI准确率评测。精确模型接续、来源哈希、4原图裁片、整组包围、静态页面/脚本及展示保护检查通过；浏览器交互未实测。旧文档/裁决/照片不改；本轮存档范围与核验见[GitHub检查点](docs/checkpoints/2026-10-26-conductive-corridor-handoff.md)，实际同步状态以main/origin/main和远端引用为准。
+- 三条弱带C-U1～C-U3继续未知；13个来源出界端部仍是范围边界，不是实际终点。M1/V1、更高层未纳入，物理穷尽/真实PDK/照片精确投影/全网未放行。新增N1候选不能据此宣称全走廊完成。
 
-## 本轮质量优化
+## 必须接续的裁决与未知
 
-- 已加入六孔承载纠错案例、历史结果卡和8任务目录：2个现有机器评分任务、6个人工rubric。20条部分参考中16条已知、4条未解决；没有新模型预测或独立留出成绩。
-- 历史证据20文件、构建来源42文件与公开资产18项均校验；相关37项不同测试通过，CI对应13项在本机稀疏环境通过。来源/原模型不变。
-- [本轮验证](benchmarks/portfolio-quality-v1/verification.json)、[评测协议](benchmarks/portfolio-quality-v1/README.md)和[发布回执](benchmarks/portfolio-quality-v1/publication.json)保存口径与实际状态；公开页面约1.17MB。原开发裁决不因展示或CI通过改变。
-- [优化前入口完整归档](docs/history/current-task-before-2026-10-25-quality-portfolio.md)保留53a1dcf时原文、字节数与SHA。
-
-## 首轮展示与整理结果
-
-- 开发基线提交`fa3e1c7`；本地恢复分支`archive/pre-portfolio-20261025`保持该提交。原README完整保存在[历史原文](docs/history/2026-10-25-before-portfolio-README.md)。
-- 展示直接读取已有共同层、器件包和五层候选，不重跑识别、不改原图或人工结论。[来源与哈希](site/provenance.json)绑定源基线；[构建配置](configs/portfolio.json)集中管理选样。
-- 交互包括AA/POLY/CT切层、R2_Q1/R2_Q2编号与端子联动、M1/V1/M2/V2/M3切层及孔组放大。器件框是检查范围，AA未逐器件定位；A/B不强行指定源漏。展示数据冻结，无在线AI调用。
-- 原图、材料身份、已审连接及候选几何分别表达；不宣称完整GDS、全芯片自动提取、真实工艺DRC/LVS或仿真就绪网表。
-- 首批328个未引用/未跟踪运行目录归档到仓库外`../silicon-eye-archives/2026-10-25`。5,578,336,614字节内容去重存为2,701,324,395字节，节省2,877,012,219字节；活动工作区约15.2GB→9.4GB。Git普通打包约再节省0.20GB，无历史重写。
-- 逐文件SHA校验完成，恢复抽检通过；依赖闭包审计无缺失。归档后的导体重放model/report与冻结结果完全一致。已跟踪证据与被引用运行目录不清理。
-- 本轮相关测试24项通过，包含归档工具7项；桌面1440×1000、手机390×844实际浏览器交互检查通过。[检查记录](benchmarks/portfolio-v1/browser-verification.json)及[汇总](benchmarks/portfolio-v1/verification.json)不代表照片识别准确率。
-- 展示内容提交`8bf2833`，Pages提交`e4115de`；[发布回执](benchmarks/portfolio-v1/publication.json)保存实际远端构建、文件哈希及仓库信息。后续回执提交不更改展示内容。
-
-## 恢复与接续
-
-```bash
-.venv/bin/python scripts/workspace_archive.py verify --archive ../silicon-eye-archives/2026-10-25
-.venv/bin/python scripts/workspace_archive.py restore --archive ../silicon-eye-archives/2026-10-25 --run 需要恢复的目录名
-.venv/bin/python scripts/build_portfolio.py
-```
-
-开发入口原文已完整归档到[展示整理前CURRENT_TASK](docs/history/current-task-before-2026-10-25-portfolio.md)，含字节数和SHA；以下仍生效事实必须接续，不能因展示整理撤销。
-
-## 原开发任务的事实与未决项
-
-[最新金属复核入口](docs/assets/stacked-via-review-v2/index.html) · [连续五层](docs/assets/stacked-via-review-v2/review/index.html) · [独立样本](docs/assets/stacked-via-review-v2/independent/index.html) · [金属修订报告](docs/reviews/2026-10-25-stacked-via-correction.md)。
-
-- 用户已认可Q1的V1范围基本合适，并指出V1/V2投影应重叠；Q2六个V2占满M2并可与V1重叠。新偏移量、孔径/间距、Q2的3×2排列及金属精确边界仍为候选；原连接批准不重审。共同几何与全网尚未放行。
+- 2026-10-26用户确认Q1/Q2均已解决：两处定性工作几何已验收，联合中样阶段收口，不再作为待裁决问题。具体像素/物理尺寸、未知路径及全幅坐标资格仍按下述范围保留；原连接批准不重审。
 - 中样22条金属、9代理组及两组显式阵列仅覆盖已审清单38条中的11条，非照片覆盖率；独立样本6条金属及两组显式阵列。新局部候选不替换原共同注册表。
 - A={T3,L2}、B={T1,L4}，分别经M2/M3接A、B；旧L3不复活。具体返回M2、M3-X/Y及逐孔路径未知。MID-H1/H2本处与U1/U2隔离，不推导全局异网；H1→V1→M2-A、H2→V1→M2-B已审。
 - U1/U2同一M1；U1/U3有V1、U2无V1，两处均接N2。U1设计右端1310，原生1945<P08左竖2006的次序保持，不补跨H1/H2竖线。N2上接B1、下经D1接L1，F01–F12等已审承载保持。
@@ -53,15 +28,16 @@ SiliconEye重命名已完成。仓库为XIAHONGYUU/SiliconEye，ID1258358595保�
 - 六处材料未知仍为AA-F01951、AA-F01952、材料H1/H2、边界AA-F01744、S3-AA4-LEFT-SD-ACCESS。V3主体截段历史例外、S1/S2/S3身份、G66上桥、R1/R2、四栅33孔、18电阻、W01与195保留对象按原范围继承，详见完整归档。
 - net_edges空、automatic_network_export_allowed=false、complete_network=false；真实尺度/工艺/极性/WL/阻值和完整网表未知。金属与孔skill仍为限定试用v2，未正式通用放行；材料skill资格不变。
 
-## 唯一下一步
+## 明天恢复时的唯一下一步
 
-待用户补齐GitHub凭证的workflow范围后，将已备好的CI配置放回.github/workflows/portfolio.yml，推送并核对真实运行。用户可在本机执行`gh auth refresh -h github.com -s workflow`完成授权；不使用本机通过代替在线结果。展示主体已完成，不重复发布。
+本轮只完成整理、存档与提交，不继续新增技术判断。先读取当前来源状态并精确回放next-request，再开展下述来源检查。
 
-原开发待接续项仍为**V1/V2重叠关系与Q2整组占用比例的局部复核**；不重问已审连接，不因展示或测试通过批准具体几何，不扩全图或重做材料层。
+N1连接已收口，不重问身份、承载或05/06。按来源检查同一走廊C-U1/C-U2/C-U3三条弱带是否为真实M3，分别保留候选/未知；不能为整齐补线。N1新几何继续标候选，后续若出现影响承载的来源歧义再提最少问题，不以逐孔计数替代连接判断。
 
-重放入口：
 ```bash
-.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/stacked-via-review-v2/review-request-v1.json --output runs/新的局部复核目录
+.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/n1-v2-local-reconstruction-v1/next-request.json --output runs/新的N1接续目录
 ```
 
-命令读取已有AI观察，不自动识别照片。独立样本用同目录independent-request-v1.json；旧trial/main仅历史/负例。人审更正须绑定实际旧送审包，事务不得静默改变原生锚点、快照、预算或审批范围。
+当前用新next-request接续（已移除新增声明），同时读新source-fact-state和旧六组working-baseline；原六组除本次N1局部候选外不重算。其他分支V1从`benchmarks/v1-new-short-branch-reviewed-v2/next-request.json`恢复；旧联合中样从`benchmarks/m1-local-tab-v1/work-next.json`恢复并读收口裁决。本轮提交前基线fcc531a；具体存档提交SHA从Git读取，不在此写自引用；origin=https://github.com/XIAHONGYUU/SiliconEye.git；本机silicon-eye目录/命令兼容名保留。
+
+[本轮整理前CURRENT_TASK完整归档](docs/history/current-task-before-2026-10-26-github-handoff.md)。

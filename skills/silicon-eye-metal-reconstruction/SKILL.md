@@ -14,6 +14,8 @@ description: Reconstruct or locally revise regular M1/M2/M3 metal candidates fro
 - 同层除了宽度、间距，还核对来源中的左右/上下次序，必要时声明`source_order_checks`。核对每条折线的转折方向与支路开口，不能为了匹配推测连接把向左返回改成向右；统一入口比较原生/设计的带符号转折，明显反向会拒绝，斜向不明确时保留未评估。跨层坐标不是同一照片，不能套同帧次序或未经验证的投影；V1/V2不能当同孔配对。
 - 新候选采用[统一契约](../../docs/architecture/conductive-workflow-contract-v1.md)的`conductive_layer_observations`。已有样本保持原格式及哈希，由同一入口适配。已审连接继续保留，设计几何仍为候选。
 - 修订只改列明对象的设计路径/宽度等字段；提供父包、`allowed_changed_ids`及AI修订依据。更换照片、原生锚点、接口身份、退休/合并ID属于新证据问题，当前试用事务会拒绝，不能借局部微调绕过。
+- 清单已明确漏掉的金属，用统一契约的显式补建事务：`added_metal_ids/extension_evidence`绑定父包和`visible_inventory`，声明片段与几何一一对应；旧feature/interface逐字段保留，只新增金属，不夹带新孔或连接。补建与修改旧几何分别进行，后续从新包移除补建声明再接续。清单已建模不等于完整来源范围或照片穷尽。
+- 补齐旧对象的可见范围时保留`native_path`，用`source_extent_evidence`分别绑定旧锚点、新观察路径、端部状态和设计候选。按普通局部修订列明变化ID；纯外延保留旧材料，若修正误置端点则另列原因。新的范围证据须绑定当前父包，后续可以显式局部修订，不把范围记录冻结成无法改点；不能以补范围为由修改已审接口或把出界当网络终点。
 
 ## 执行与接续
 
@@ -35,4 +37,10 @@ description: Reconstruct or locally revise regular M1/M2/M3 metal candidates fro
 
 质量交付要分别列出：程序检查、声明来源形状、已审承载、孔组表示/尺寸资格、可见范围与未知端部。11/38已审清单记录不是照片覆盖率；规则图包围PASS、零待裁决或端子闭合均不能表述成完整几何验收。更改金属以容纳孔组只是一份AI提案，不能反过来证明照片支持该边界。按[本轮复查](../../docs/reviews/2026-10-24-conductive-quality-review.md)使用当前入口，不重审已批准连接。
 
-限定试用验收以已有批准不丢失、来源可回查、局部几何和隔离成立、跨区域复用同一命令为依据；数量/照片逐像素匹配不清楚但不影响承载时可保留未知。下一批按直线阵列、拐角承载、短支路、宽母线等结构选代表样本，避免每处新增脚本或重审整批。当前仅同一芯片的空间迁移与回归；几何尚待审，不能据此正式采用共同GDS或声称陌生芯片效果。
+## 固定回归与能力边界
+
+遵循[限定能力与验收标准](../../docs/architecture/conductive-skill-qualification-v1.md)。Q1/Q2联合中样工作几何已收口；本轮V1-S1、V2-R1/R2的身份/承载也已审，孔数及完整来源几何仍按各组范围保留未知，不再笼统把全部几何称为待审。
+
+从CURRENT_TASK指定的当前父包接续；固定回归集为`benchmarks/conductive-regression-v1/suite.json`，执行`.venv/bin/python scripts/check_conductive_regression.py --output runs/NEW_DIR/result.json`。命令回放与软件测试不等于AI重新识图；修改判断策略或模型时，另按上述标准用三个原图输入包先冻结观察，再对照人审评分。禁止将已审答案作为新识别输入或重复索取旧批准。
+
+维持限定试用v2：来源辅助的M1/M2/M3局部规则候选、受限局部修订及批准/未知接续；不承诺全幅覆盖或陌生芯片表现。下一批先建连续范围可见清单，逐项对应候选或未知，再报告覆盖；不再以不断增加零散小样替代能力验收。

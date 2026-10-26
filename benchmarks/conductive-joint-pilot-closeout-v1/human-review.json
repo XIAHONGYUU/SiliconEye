@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kind": "joint_pilot_working_geometry_review",
+  "actor": "human",
+  "date": "2026-10-26",
+  "statement": "好的，现在Q1以及Q2都解决了，联合中样是否可以收口了",
+  "sources": {
+    "reviewed_work": {
+      "path": "docs/assets/m1-local-tab-v1/work/manifest.json",
+      "sha256": "4b0fd29d2f0ff3cfeac7506614cc6f268c0fedb24d4e6db44497bac3034033f9"
+    },
+    "reviewed_work_page": {
+      "path": "docs/assets/m1-local-tab-v1/work/index.html",
+      "sha256": "5da3159c5ea018dd733d4f7674b91e263e4caf7b5f8e9fd1df5d333960618691"
+    },
+    "Q2_M1_V1_comparison": {
+      "path": "docs/assets/m1-local-tab-v1/m1-review/Q2-comparison.png",
+      "sha256": "1daf8473c447be7d801b3a4e9e0b02343859ce0467a4ced26a1401d353d51481"
+    }
+  },
+  "decisions": {
+    "Q1": "resolved",
+    "Q2": "resolved"
+  },
+  "recorded_scope": {
+    "level": "qualitative_working_geometry",
+    "Q1": "V1/V2孔组重叠与五层相对承载关系",
+    "Q2": "保中心缩孔后的相对比例、M1正常横带和向下凸出包围下两孔"
+  },
+  "not_claimed": [
+    "逐像素照片真值",
+    "真实工艺尺寸或PDK DRC",
+    "全幅共同坐标映射",
+    "全部导体或全网络完成",
+    "金属与VIA技能正式通用放行"
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "actor": "AI",
+  "kind": "metal_source_extent_candidates",
+  "reason": "Keep all native anchors and the approved carrier A; locally align only the N1 short head with its confirmed M3 carrier in independent design coordinates.",
+  "basis_parent": {
+    "path": "docs/assets/conductive-corridor-batch-reviewed-v2/work/manifest.json",
+    "sha256": "75fe441f1fab0cf4f46dd257e73d709c310dea793f8975cd4ebb7476dfd333cf"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "metals": [
+    {
+      "metal_id": "RT-M2-R01",
+      "source_frame": "m2",
+      "native_anchor_path": [
+        [
+          3104,
+          1900
+        ],
+        [
+          3102,
+          2960
+        ]
+      ],
+      "visible_native_path": [
+        [
+          3104,
+          1900
+        ],
+        [
+          3102,
+          3000
+        ]
+      ],
+      "design_path": [
+        [
+          185,
+          180
+        ],
+        [
+          185,
+          1115
+        ]
+      ],
+      "endpoint_states": [
+        "visible_terminal_or_unresolved_continuity",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    },
+    {
+      "metal_id": "RT-M2-R02",
+      "source_frame": "m2",
+      "native_anchor_path": [
+        [
+          3376,
+          1900
+        ],
+        [
+          3374,
+          2960
+        ]
+      ],
+      "visible_native_path": [
+        [
+          3376,
+          1900
+        ],
+        [
+          3374,
+          3000
+        ]
+      ],
+      "design_path": [
+        [
+          455,
+          180
+        ],
+        [
+          455,
+          1115
+        ]
+      ],
+      "endpoint_states": [
+        "visible_terminal_or_unresolved_continuity",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    },
+    {
+      "metal_id": "RT-M2-NARROW",
+      "source_frame": "m2",
+      "native_anchor_path": [
+        [
+          3505,
+          2490
+        ],
+        [
+          3532,
+          2490
+        ],
+        [
+          3534,
+          2960
+        ]
+      ],
+      "visible_native_path": [
+        [
+          3505,
+          2490
+        ],
+        [
+          3532,
+          2490
+        ],
+        [
+          3534,
+          3000
+        ]
+      ],
+      "design_path": [
+        [
+          565,
+          682
+        ],
+        [
+          590,
+          682
+        ],
+        [
+          590,
+          1115
+        ]
+      ],
+      "endpoint_states": [
+        "visible_terminal_or_unresolved_continuity",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": false,
+      "reposition_reason": "N1 V2 to M3-A is human confirmed. Native horizontal head remains left-going with the same x span; revise only its design y by +7 to align the carriers, rather than moving contacts onto the stem. Exact photo-to-design metric is not qualified."
+    },
+    {
+      "metal_id": "RT-M3-UP",
+      "source_frame": "m3",
+      "native_anchor_path": [
+        [
+          2980,
+          1958
+        ],
+        [
+          3650,
+          1938
+        ]
+      ],
+      "visible_native_path": [
+        [
+          2940,
+          1960
+        ],
+        [
+          3670,
+          1940
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          184
+        ],
+        [
+          700,
+          184
+        ]
+      ],
+      "endpoint_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    },
+    {
+      "metal_id": "RT-M3-MID",
+      "source_frame": "m3",
+      "native_anchor_path": [
+        [
+          2980,
+          2450
+        ],
+        [
+          3650,
+          2430
+        ]
+      ],
+      "visible_native_path": [
+        [
+          2940,
+          2450
+        ],
+        [
+          3670,
+          2430
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          590
+        ],
+        [
+          700,
+          590
+        ]
+      ],
+      "endpoint_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    },
+    {
+      "metal_id": "RT-M3-THIN1",
+      "source_frame": "m3",
+      "native_anchor_path": [
+        [
+          2980,
+          2540
+        ],
+        [
+          3650,
+          2520
+        ]
+      ],
+      "visible_native_path": [
+        [
+          2940,
+          2545
+        ],
+        [
+          3670,
+          2525
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          700
+        ],
+        [
+          700,
+          700
+        ]
+      ],
+      "endpoint_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    },
+    {
+      "metal_id": "RT-M3-THIN2",
+      "source_frame": "m3",
+      "native_anchor_path": [
+        [
+          2980,
+          2595
+        ],
+        [
+          3650,
+          2575
+        ]
+      ],
+      "visible_native_path": [
+        [
+          2940,
+          2602
+        ],
+        [
+          3670,
+          2582
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          750
+        ],
+        [
+          700,
+          750
+        ]
+      ],
+      "endpoint_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    },
+    {
+      "metal_id": "RT-M3-DOWN",
+      "source_frame": "m3",
+      "native_anchor_path": [
+        [
+          2980,
+          2750
+        ],
+        [
+          3650,
+          2730
+        ]
+      ],
+      "visible_native_path": [
+        [
+          2940,
+          2750
+        ],
+        [
+          3670,
+          2730
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          870
+        ],
+        [
+          700,
+          870
+        ]
+      ],
+      "endpoint_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "preserve_old_footprint": true,
+      "reposition_reason": null
+    }
+  ],
+  "limits": [
+    "Source extents are observed in each frame independently, not a calibrated photo-to-design projection.",
+    "Boundary endpoints are out-of-scope continuations, not real network terminals.",
+    "The N1 upper-cap position is corrected, but whether it contains V2 remains unknown.",
+    "N1 V2 identity and M3-A carrier are now human confirmed; inherited earlier unknown wording is historical. New coordinates remain AI geometry candidates."
+  ]
+}

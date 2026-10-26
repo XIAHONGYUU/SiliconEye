@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-26",
+  "approved_task_count": 1,
+  "approved_interface": "V1-S1-GROUP",
+  "approved_carrier": "S1-M2-A",
+  "pending_interface_count": 0,
+  "all_geometry_and_claims_exactly_unchanged": true,
+  "next_full_model_exact": true,
+  "physical_count_still_unknown": true,
+  "full_group_enclosure_still_not_evaluated": true,
+  "binding_source_artifact_hash_checks": 85,
+  "prior_V2_approved_interfaces_unchanged": 4,
+  "joint_baseline_unchanged": {
+    "objects": 41,
+    "reviewed_interfaces": 13
+  },
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "HTML_links": "PASS",
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "prior_tests": {
+    "passed": 31,
+    "record": "benchmarks/v1-new-short-branch-v1/verification.json",
+    "rerun_this_turn": false
+  },
+  "browser_interaction_tested": false,
+  "production_code_changed": false,
+  "network_export": false,
+  "canonical_geometry_adoption": false,
+  "unrestricted_skill_release": false,
+  "remote_modified": false
+}

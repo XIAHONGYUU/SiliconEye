@@ -1,0 +1,48 @@
+{
+  "actor": "AI",
+  "kind": "same_frame_M3_band_location_assistance",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "method": "Native y2490:2620 median intensity over each x window; Gaussian sigma1.2; peaks distance7 prominence17. Used to verify the marked line and visible end, not source-frame registration.",
+  "profiles": [
+    {
+      "x_window": [
+        3450,
+        3500
+      ],
+      "peak_y": [
+        2517,
+        2533,
+        2552,
+        2590
+      ]
+    },
+    {
+      "x_window": [
+        3510,
+        3550
+      ],
+      "peak_y": [
+        2516,
+        2533,
+        2552,
+        2588
+      ]
+    },
+    {
+      "x_window": [
+        3585,
+        3630
+      ],
+      "peak_y": [
+        2530,
+        2550,
+        2587
+      ]
+    }
+  ],
+  "conclusion": "Upper fine band disappears to the right of its visible end while lower bands continue. It is a source M3 context candidate only; does not prove N1 V2 or its carrier.",
+  "cross_frame_transform": null
+}

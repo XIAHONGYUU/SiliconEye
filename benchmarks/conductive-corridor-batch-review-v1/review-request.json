@@ -1,0 +1,39 @@
+{
+  "kind": "human_geometry_review_pending",
+  "actor": "AI",
+  "scope": "Geometry only; no new connection/count truth.",
+  "sources": {
+    "submitted_page": {
+      "path": "docs/assets/conductive-corridor-batch-review-v1/index.html",
+      "sha256": "f0748481749419a16699703d682ce031c20abcc8a8c359f9df909457f674a5de"
+    },
+    "submitted_workflow": {
+      "path": "docs/assets/conductive-corridor-batch-review-v1/work/manifest.json",
+      "sha256": "7d21a87692a61e3cc578eccb98766769851f892fbc2c6809f5ded4b1a41bb234"
+    },
+    "groups": {
+      "path": "benchmarks/conductive-corridor-batch-review-v1/groups.json",
+      "sha256": "703b15c6417260785a57a4694f1c1a60c1ade19bff307f6cf375bebe6b28c9cd"
+    },
+    "extent_evidence": {
+      "path": "benchmarks/conductive-corridor-batch-review-v1/source-extent-evidence.json",
+      "sha256": "d8fc0a19c2ea0c1e3dcb340f9bd697ff726c4c4f21d8eefa06350cab9f3aa592"
+    }
+  },
+  "group_ids": [
+    "CORRIDOR-GEO-R1",
+    "CORRIDOR-GEO-R2",
+    "CORRIDOR-GEO-R3",
+    "CORRIDOR-GEO-R4",
+    "CORRIDOR-GEO-R5",
+    "CORRIDOR-GEO-R6"
+  ],
+  "human_decisions": {},
+  "unknowns_not_resolved": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ]
+}

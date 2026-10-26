@@ -1,0 +1,235 @@
+{
+  "status": "WORK_SNAPSHOT_READY_GEOMETRY_REVIEW_PENDING",
+  "work_snapshot_ready": true,
+  "domain_count": 2,
+  "object_count": 41,
+  "reviewed_interface_count": 13,
+  "reviewed_terminal_count": 1,
+  "material_counts": {
+    "AA": 334,
+    "POLY": 696,
+    "CT": 10287
+  },
+  "domains": {
+    "medium": {
+      "continuation_exact": true,
+      "connections_preserved": true,
+      "geometry_changes": [],
+      "metrics": {
+        "unit": "relative_design_px_not_photo_registration_or_PDK",
+        "V1_design_cuts": 9,
+        "V2_design_cuts": 12,
+        "V1_V2_overlap_area": 72.0,
+        "V1_V2_group_overlap_area": 240.0,
+        "common_M2": "M2-J01",
+        "V2_M2_width_fraction": 0.9166666666666666,
+        "V2_M2_height_fraction": 0.02564102564102564,
+        "exact_geometry_accepted": false,
+        "via_geometry": {
+          "V1": {
+            "sizes_xy": [
+              [
+                6.0,
+                6.0
+              ]
+            ],
+            "centers_xy": [
+              [
+                1366.5,
+                189.0
+              ],
+              [
+                1375.5,
+                189.0
+              ],
+              [
+                1384.5,
+                189.0
+              ],
+              [
+                1366.5,
+                198.0
+              ],
+              [
+                1375.5,
+                198.0
+              ],
+              [
+                1384.5,
+                198.0
+              ],
+              [
+                1366.5,
+                207.0
+              ],
+              [
+                1375.5,
+                207.0
+              ],
+              [
+                1384.5,
+                207.0
+              ]
+            ]
+          },
+          "V2": {
+            "sizes_xy": [
+              [
+                6.0,
+                6.0
+              ]
+            ],
+            "centers_xy": [
+              [
+                1366.5,
+                175.0
+              ],
+              [
+                1375.5,
+                175.0
+              ],
+              [
+                1384.5,
+                175.0
+              ],
+              [
+                1393.5,
+                175.0
+              ],
+              [
+                1366.5,
+                184.0
+              ],
+              [
+                1375.5,
+                184.0
+              ],
+              [
+                1384.5,
+                184.0
+              ],
+              [
+                1393.5,
+                184.0
+              ],
+              [
+                1366.5,
+                193.0
+              ],
+              [
+                1375.5,
+                193.0
+              ],
+              [
+                1384.5,
+                193.0
+              ],
+              [
+                1393.5,
+                193.0
+              ]
+            ]
+          }
+        },
+        "V1_human_count": null,
+        "V2_human_count": 12
+      },
+      "package_quality": "REVIEWABLE_WITH_QUALITY_GAPS"
+    },
+    "independent": {
+      "continuation_exact": true,
+      "connections_preserved": true,
+      "geometry_changes": [
+        "IT1-M1-RING"
+      ],
+      "metrics": {
+        "unit": "relative_design_px_not_photo_registration_or_PDK",
+        "V1_design_cuts": 6,
+        "V2_design_cuts": 6,
+        "V1_V2_overlap_area": 3.0,
+        "V1_V2_group_overlap_area": 180.0,
+        "common_M2": "IT1-M2-B",
+        "V2_M2_width_fraction": 0.6842105263157895,
+        "V2_M2_height_fraction": 0.7027027027027027,
+        "exact_geometry_accepted": false,
+        "via_geometry": {
+          "V1": {
+            "sizes_xy": [
+              [
+                6.0,
+                6.0
+              ]
+            ],
+            "centers_xy": [
+              [
+                365.5,
+                271.0
+              ],
+              [
+                374.5,
+                271.0
+              ],
+              [
+                365.5,
+                280.0
+              ],
+              [
+                374.5,
+                280.0
+              ],
+              [
+                365.5,
+                289.0
+              ],
+              [
+                374.5,
+                289.0
+              ]
+            ]
+          },
+          "V2": {
+            "sizes_xy": [
+              [
+                6.0,
+                6.0
+              ]
+            ],
+            "centers_xy": [
+              [
+                360.0,
+                283.0
+              ],
+              [
+                380.0,
+                283.0
+              ],
+              [
+                360.0,
+                306.0
+              ],
+              [
+                380.0,
+                306.0
+              ],
+              [
+                360.0,
+                329.0
+              ],
+              [
+                380.0,
+                329.0
+              ]
+            ]
+          }
+        },
+        "V1_human_count": 6,
+        "V2_human_count": 6
+      },
+      "package_quality": "REVIEWABLE_WITH_QUALITY_GAPS"
+    }
+  },
+  "canonical_geometry_adoption": false,
+  "complete_network_export": false,
+  "material_canvas_registration": false,
+  "note": "Readiness means scoped continuation, not physical approval."
+}

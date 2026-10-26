@@ -1,0 +1,87 @@
+{
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2940,
+        2340,
+        3670,
+        3000
+      ],
+      "detail": [
+        3020,
+        2580,
+        3470,
+        2840
+      ]
+    },
+    "m3": {
+      "wide": [
+        2940,
+        2340,
+        3670,
+        3000
+      ],
+      "detail": [
+        3020,
+        2650,
+        3470,
+        2880
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 38,
+    "padding_px": 7,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          3086,
+          2669,
+          3122,
+          2762
+        ],
+        "color": "#ffb04f",
+        "label": "D1 V2?",
+        "label_xy": [
+          3030,
+          2780
+        ]
+      },
+      {
+        "bounds": [
+          3358,
+          2662,
+          3394,
+          2758
+        ],
+        "color": "#ffb04f",
+        "label": "D2 V2?",
+        "label_xy": [
+          3290,
+          2780
+        ]
+      }
+    ],
+    "m3": [
+      {
+        "bounds": [
+          3015,
+          2718,
+          3410,
+          2762
+        ],
+        "color": "#f2a6dd",
+        "label": "B-D?",
+        "label_xy": [
+          3210,
+          2820
+        ]
+      }
+    ]
+  },
+  "native_traces": {}
+}

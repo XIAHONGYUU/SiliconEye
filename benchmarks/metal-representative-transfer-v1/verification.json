@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-26",
+  "scope": "known_chip_spatial_transfer_not_blind_or_cross_chip",
+  "workflow": "silicon_eye.conductive_workflow unchanged",
+  "new_candidate_objects": {
+    "M2": 3,
+    "M3": 5,
+    "V2_groups": 4,
+    "explicit_design_cuts": 32
+  },
+  "new_human_approved_interfaces": 0,
+  "new_pending_interface_ids": [
+    "RT-V2-U1",
+    "RT-V2-U2",
+    "RT-V2-D1",
+    "RT-V2-D2"
+  ],
+  "tests": {
+    "passed": 27,
+    "new_candidate_tests": 4,
+    "existing_regression_tests": 23,
+    "negative_cases": [
+      "narrow_wrong_carrier",
+      "reversed_turn",
+      "missing_array_site"
+    ],
+    "ruff": "PASS"
+  },
+  "baseline": {
+    "exact_continuation": true,
+    "objects": 41,
+    "reviewed_interfaces": 13,
+    "groups": 2,
+    "terminal_paths": 1,
+    "hash_checked_references": 182,
+    "Q1_Q2_remain_closed": true
+  },
+  "candidate_replay": {
+    "exact_model_match": true,
+    "changed_object_ids": [],
+    "source_artifact_hash_checks": 61
+  },
+  "extra_source_zooms_pixel_identity": "PASS",
+  "svg_xml": "PASS",
+  "javascript_syntax": "PASS",
+  "local_html_links": "PASS",
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "source_self_correction": {
+    "initial_lower_array": "4x2",
+    "corrected_lower_array": "5x2",
+    "initial_software_checks": "PASS",
+    "initial_AI_source_review": "REJECTED_INCOMPLETE",
+    "pixel_completeness_not_verified_by_software": true
+  },
+  "human_identity_accuracy": null,
+  "human_destination_accuracy": null,
+  "source_pixel_geometry_qualified": false,
+  "browser_interaction_tested": false,
+  "full_net_export": false,
+  "global_geometry_adoption": false,
+  "remote_modified": false
+}

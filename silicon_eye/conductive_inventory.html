@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>连续走廊：可见清单与覆盖缺口</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111a26;color:#e5edf7;font:17px/1.65 system-ui,sans-serif}
+header,main{max-width:1520px;margin:auto;padding:22px}h1{font-size:29px;margin:0 0 12px}h2{font-size:23px}
+a{color:#85d9ff}button,select,input{font:inherit;color:inherit;background:#24364b;border:1px solid #61758e;border-radius:6px;padding:8px}
+button{cursor:pointer;text-align:left}button:hover,button.active{outline:2px solid #8cdeff}label{display:inline-block;margin:5px 10px 5px 0}
+.note{padding:12px 16px;background:#283340;border-left:5px solid #ffd179}.grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(340px,1fr);gap:22px}
+.card{background:#182638;padding:16px;border:1px solid #405069;border-radius:8px;margin:14px 0}.viewer{overflow:auto;max-height:83vh;background:#091018}
+svg{display:block;width:100%;height:auto}.toolbar{position:sticky;top:0;background:#182638;z-index:1;padding:8px 0}
+.list{max-height:64vh;overflow:auto}.row{display:block;width:100%;margin:8px 0}.status{font-size:14px;color:#bdd0e7}
+#selection{font-size:21px;overflow-wrap:anywhere}#selected-id{font-size:30px;color:#ffdc8e}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #4e6077;text-align:left}
+@media(max-width:950px){.grid{grid-template-columns:1fr}.list{max-height:48vh}}
+</style>
+<header>
+<h1>连续走廊：可见导体／接口清单</h1>
+<div class="note">范围为 M2／V2／M3。分块盘点与台账检查已完成；现有规则几何覆盖仍不完整。M1／V1 未获合格位置对应，不包含在本次覆盖结论中。</div>
+<p id="summary"></p>
+<p><a href="inventory.json">来源观察清单 JSON</a> · <a href="report.json">覆盖检查报告</a> · <a href="manifest.json">来源绑定</a></p>
+<p>每张照片使用各自原生坐标；切换图层只切换来源，不代表已像素对齐。彩线是 AI 来源路径／框选，带照片倾斜，<strong>不是 GDS 几何</strong>。未看见清晰孔组不等于无孔或断开。</p>
+</header>
+<main>
+<div class="grid">
+<section>
+<div class="toolbar">
+<label>照片 <select id="frame"><option value="m2">M2（查 V2 来源）</option><option value="m3">M3（查上层承载）</option></select></label>
+<label>范围 <select id="region"><option value="all">整条走廊</option><option value="top">上段</option><option value="middle">中段</option><option value="bottom">下段</option></select></label>
+<label><input type="checkbox" id="marks" checked>显示标记</label>
+<label><input type="checkbox" id="only" checked>只标当前项</label>
+<label>放大 <select id="zoom"><option value="100">适应窗口</option><option value="150">1.5×</option><option value="200">2×</option></select></label>
+</div>
+<div class="viewer"><svg id="photo" xmlns="http://www.w3.org/2000/svg" aria-label="原生照片和独立来源观察"></svg></div>
+<div class="card" id="selection"><b id="selected-id"></b><div id="selected-description"></div><div id="selected-state"></div></div>
+</section>
+<aside><h2>逐项清单（大字可选）</h2>
+<label>筛选 <input id="search" placeholder="编号、母线、孔组、未知…"></label>
+<div class="status">绿色：已审接口；蓝色：已有模型对应但范围不全；橙色：未建模／未解疑点。</div>
+<div class="list" id="list"></div>
+<h2>当前覆盖结论</h2><table id="coverage"></table>
+<p>数量是来源中的局部观察段，不是物理网络总数。“已有对应”只表示能联系到旧对象，原生范围端部还超出旧路径，不能按完整几何覆盖计入。</p>
+<p>5 项疑点包含：3 条弱横向带、N1 上端是否含 V2，以及左侧两残段是否相连。当前均保留未知；不追加新连接批准，不重审 U1/U2/D1/D2。</p>
+</aside></div>
+<section class="card"><h2>检查方式与边界</h2>
+<p>M2、M3 各以重叠的上／中／下三块检查，覆盖声明的完整原生窗口。每个列出的金属段、接口与疑点均关联至少一个检查块；每条可见 M2 都有全段接口巡查记录。脚本检查清单、来源、原图裁片像素及旧批准接续，不执行图像识别，也不能证明照片已无遗漏。</p>
+<p>完整物理清单穷尽性：AI 已扫描，尚未独立验证。完整重建：未完成。跨帧精确投影：未放行。全网／共同 GDS 采用：未放行。下一步先处理本清单中未建模的线段与出界端部，只有新增身份／承载真歧义再送人审。</p>
+</section></main>
+<script id="data" type="application/json">$payload</script>
+<script>
+const {inventory:I,report:R,sources}=JSON.parse(document.getElementById('data').textContent);
+const E=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+const rows=[...I.metal_observations,...I.inherited_interfaces,...I.unknown_observations];
+let current=I.metal_observations[0].id;
+E('summary').textContent='M2 '+R.metal_fragment_observations.m2+' 段、M3 '+R.metal_fragment_observations.m3+' 段；继承 '+R.inherited_interfaces+' 个已审接口；'+R.unresolved_observations+' 项疑点。未建模观察段 '+R.unmodeled_fragment_observations+' 个。';
+for(const frame of ['m2','m3']){const tr=document.createElement('tr');for(const text of [frame.toUpperCase(),R.metal_fragment_observations[frame]+' 个观察段',R.existing_model_correspondences[frame]+' 个有旧模型对应']){const td=document.createElement('td');td.textContent=text;tr.append(td);}E('coverage').append(tr);}
+function state(r){return r.connection_confirmed===true?'已审身份／承载；孔数仍未知':r.mapped_model_id?'已有对象对应；范围部分覆盖':'AI候选／未知，尚未建模或裁决';}
+function color(r){return r.connection_confirmed===true?'#61edb2':r.mapped_model_id?'#67d9ff':'#ffbf59';}
+function svg(tag,attrs){const n=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);return n;}
+function bounds(r){if(r.native_bounds)return r.native_bounds;const xs=r.native_path.map(p=>p[0]),ys=r.native_path.map(p=>p[1]);return [Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)];}
+function render(){
+ const frame=E('frame').value, region=E('region').value, full=I.scope.frames[frame].native_bounds;
+ const tile=I.scan_tiles.find(t=>t.source_frame===frame&&t.id.endsWith('-'+region));
+ const b=tile?tile.native_bounds:full, view=E('photo');view.replaceChildren();view.setAttribute('viewBox',[b[0],b[1],b[2]-b[0],b[3]-b[1]].join(' '));view.style.width=E('zoom').value+'%';
+ view.append(svg('image',{href:sources[frame],x:full[0],y:full[1],width:full[2]-full[0],height:full[3]-full[1]}));
+ if(E('marks').checked)for(const r of rows.filter(r=>r.source_frame===frame&&(!E('only').checked||r.id===current))){
+  const attrs={fill:'none',stroke:color(r),'stroke-width':r.id===current?4:2,'stroke-linecap':'round'};
+  if(!r.mapped_model_id&&r.connection_confirmed!==true)attrs['stroke-dasharray']='9 5';
+  let item;if(r.native_path)item=svg('polyline',{...attrs,points:r.native_path.map(p=>p.join(',')).join(' ')});else{const a=r.native_bounds;item=svg('rect',{...attrs,x:a[0],y:a[1],width:a[2]-a[0],height:a[3]-a[1]});}view.append(item);
+ }
+ const query=E('search').value.toLowerCase();E('list').replaceChildren();
+ for(const r of rows.filter(r=>r.source_frame===frame&&JSON.stringify(r).toLowerCase().includes(query))){const button=document.createElement('button');button.className='row'+(r.id===current?' active':'');button.textContent=r.id+' · '+(r.description||r.layer+' 已审接口');button.onclick=()=>select(r.id);E('list').append(button);}
+ const row=rows.find(r=>r.id===current);E('selected-id').textContent=row.id;E('selected-description').textContent=row.description||row.lower_metal_id+' → '+row.upper_metal_id;E('selected-state').textContent=state(row)+'；原生位置 '+JSON.stringify(bounds(row));
+}
+function select(id){current=id;const row=rows.find(r=>r.id===id);E('frame').value=row.source_frame;const b=bounds(row),frame=row.source_frame;
+ const region=E('region').value,t=I.scan_tiles.find(t=>t.source_frame===frame&&t.id.endsWith('-'+region));if(t&&(b[3]<t.native_bounds[1]||b[1]>t.native_bounds[3]))E('region').value='all';render();}
+E('frame').onchange=()=>{current=rows.find(r=>r.source_frame===E('frame').value).id;render();};
+for(const id of ['region','marks','only','zoom'])E(id).onchange=render;E('search').oninput=render;render();
+</script></html>

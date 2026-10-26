@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_baseline",
+  "date": "2026-10-26",
+  "status": "CLOSED_SCOPED_WORKING_BASELINE",
+  "geometry_package": {
+    "path": "docs/assets/conductive-corridor-batch-reviewed-v2/work/manifest.json",
+    "sha256": "75fe441f1fab0cf4f46dd257e73d709c310dea793f8975cd4ebb7476dfd333cf"
+  },
+  "geometry_model": {
+    "path": "docs/assets/conductive-corridor-batch-reviewed-v2/work/model.json",
+    "sha256": "0b79a43d1a4c52da32610aa0d49138272ca20282a1ef58a493f0ad944eff750d"
+  },
+  "human_review": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/human-review.json",
+    "sha256": "329110627a6c2aa5f347f02107d08689289f03da678e75db89f4174971494d32"
+  },
+  "reviewed_groups": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/groups-reviewed.json",
+    "sha256": "68cdeeb95b4fc28a76ab979d31846a17c3ff037d419cb6e2123e82af08e0ad7a"
+  },
+  "next_request": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/next-request.json",
+    "sha256": "42bb6968a652a4472a6e57a89b809f2f496227683363eebb62ee2d12ef314e97"
+  },
+  "accepted_group_ids": [
+    "CORRIDOR-GEO-R1",
+    "CORRIDOR-GEO-R2",
+    "CORRIDOR-GEO-R3",
+    "CORRIDOR-GEO-R4",
+    "CORRIDOR-GEO-R5",
+    "CORRIDOR-GEO-R6"
+  ],
+  "accepted_metal_ids": [
+    "C-M2-03",
+    "C-M2-04",
+    "C-M2-05",
+    "C-M2-06",
+    "C-M2-08",
+    "C-M3-T01",
+    "C-M3-T02",
+    "C-M3-T03",
+    "C-M3-T04",
+    "C-M3-T05",
+    "C-M3-T06",
+    "C-M3-M01",
+    "C-M3-M02",
+    "C-M3-M03",
+    "C-M3-M04",
+    "C-M3-M05",
+    "C-M3-M06",
+    "C-M3-E1",
+    "C-M3-E2",
+    "C-M3-L01",
+    "C-M3-L03",
+    "C-M3-EDGE",
+    "RT-M2-R01",
+    "RT-M2-R02",
+    "RT-M2-NARROW",
+    "RT-M3-UP",
+    "RT-M3-MID",
+    "RT-M3-DOWN",
+    "RT-M3-THIN1",
+    "RT-M3-THIN2"
+  ],
+  "pending_geometry_group_ids": [],
+  "accepted_scope": {
+    "level": "qualitative_working_geometry",
+    "new_metal_fragments": 22,
+    "retained_extent_metals": 8,
+    "source_boundary_endpoints": 13
+  },
+  "unchanged_reviewed_interfaces": 4,
+  "unchanged_design_via_cuts": 32,
+  "unknowns_not_resolved": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "not_qualified": {
+    "exact_photo_projection": false,
+    "via_physical_counts": false,
+    "PDK_DRC": false,
+    "physical_inventory_exhaustiveness": false,
+    "M1_V1_correspondence": false,
+    "complete_network": false,
+    "canonical_geometry_adoption": false,
+    "unrestricted_skill_release": false
+  },
+  "continuation_rule": "Read this baseline and the bound human review together with next_request. Frozen raw AI-proposal fields remain historical, not a new pending geometry question. Changed geometry requires a scoped revision; acceptance never authorizes new electrical edges."
+}

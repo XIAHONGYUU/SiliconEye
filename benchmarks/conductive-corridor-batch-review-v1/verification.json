@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-26",
+  "status": "READY_FOR_SIX_GROUP_HUMAN_GEOMETRY_REVIEW",
+  "software_tests": {
+    "specialized": {
+      "command": ".venv/bin/pytest -q tests/test_conductive_source_extents.py tests/test_conductive_metal_extension.py tests/test_conductive_workflow.py tests/test_conductive_inventory.py",
+      "passed": 74,
+      "seconds": 40.38
+    },
+    "fixed": {
+      "passed": 31,
+      "record": {
+        "path": "benchmarks/conductive-corridor-batch-review-v1/fixed-regression-result.json",
+        "sha256": "a2052fbacddb3dc5be0be2acf6e056438b2171e69537fbffad5081b114a41bd8"
+      }
+    },
+    "unique_passed": 105
+  },
+  "changed_object_count": 18,
+  "native_anchors_exact": true,
+  "old_interface_records_exact": true,
+  "old_via_arrays_and_centers_exact": true,
+  "source_extent_metals": 8,
+  "source_boundary_endpoints": 13,
+  "minimum_same_layer_gap_design_px": {
+    "M2": 23.706539182259394,
+    "M3": 7.0
+  },
+  "source_shape": "PASS",
+  "next_full_model_exact": true,
+  "group_count": 6,
+  "human_approved_groups": 0,
+  "remaining_unknowns": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "QA": {
+    "local_links": 22,
+    "SVG_XML": "PASS",
+    "JavaScript_syntax": "PASS",
+    "JSON_binding": "PASS",
+    "manifests": "PASS",
+    "ruff": "PASS",
+    "skill_format": "PASS",
+    "static_geometry_viewed": true,
+    "browser_interaction_tested": false
+  },
+  "new_photo_copies": 0,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "canonical_geometry_adoption": false,
+  "complete_network": false,
+  "remote_modified": false,
+  "artifacts": {
+    "benchmarks/conductive-corridor-batch-review-v1/groups.json": "703b15c6417260785a57a4694f1c1a60c1ade19bff307f6cf375bebe6b28c9cd",
+    "benchmarks/conductive-corridor-batch-review-v1/source-extent-evidence.json": "d8fc0a19c2ea0c1e3dcb340f9bd697ff726c4c4f21d8eefa06350cab9f3aa592",
+    "benchmarks/conductive-corridor-batch-review-v1/observations.json": "53d9a0ff0523f482903c86558aeb82f590d090a2aac7939f54340e564c6d497d",
+    "benchmarks/conductive-corridor-batch-review-v1/revision-evidence.json": "2a8a4df370079e78e7c6a43595571e43f41479fd8cad474e7585416edc41467e",
+    "benchmarks/conductive-corridor-batch-review-v1/request.json": "28711dd161dcb885d96461bc317e39e8b86cf366fcb9ba5957d625903c9cfa0f",
+    "benchmarks/conductive-corridor-batch-review-v1/next-request.json": "bc38c08127a8cfcb629cf01707bbfe7115d90d82ea9e141f6df5d750ea641d6f",
+    "benchmarks/conductive-corridor-batch-review-v1/review-request.json": "8b2af7c426b53afca82e4e7310f6b3be524c5566f3be3325043e2208b5e722d9",
+    "benchmarks/conductive-corridor-batch-review-v1/stage-result.json": "26e1c9fc6959e3f5c559f6b25b0953470d9c25ec03a7a3d301da7cd145e6c746",
+    "benchmarks/conductive-corridor-batch-review-v1/fixed-regression-result.json": "a2052fbacddb3dc5be0be2acf6e056438b2171e69537fbffad5081b114a41bd8",
+    "docs/assets/conductive-corridor-batch-review-v1/work/manifest.json": "7d21a87692a61e3cc578eccb98766769851f892fbc2c6809f5ded4b1a41bb234",
+    "docs/assets/conductive-corridor-batch-review-v1/index.html": "f0748481749419a16699703d682ce031c20abcc8a8c359f9df909457f674a5de",
+    "silicon_eye/conductive_workflow.py": "302951937699b0324f6a8aea19797140d8a88fce28ce2b5f9bb494d104117e00",
+    "tests/test_conductive_source_extents.py": "721f48d27d8b1bde06b6813f18aff8fb469088d4f1943953193f0a6bd444a4c4",
+    "docs/architecture/conductive-workflow-contract-v1.md": "c0a9cda8e45969d215a95719e4e058211e562e41bcff56c3611e777fe804b9df",
+    "skills/silicon-eye-metal-reconstruction/SKILL.md": "a5aea42087a058e7fd9c06454ac0aad6ee5a5724b0c9886a78fe5721d35a859b",
+    "docs/reviews/2026-10-26-corridor-batch-review-and-extents.md": "3be086b339f0ca3d0b11bff9c88c57a3d8448ff46c9275aace1e38f9a5ab0ff5"
+  }
+}

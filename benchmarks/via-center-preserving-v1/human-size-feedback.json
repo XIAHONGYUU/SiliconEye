@@ -1,0 +1,18 @@
+{
+  "actor": "human",
+  "kind": "via_size_feedback",
+  "statement": "各个VIA层次的尺寸，可以不用像照片一样那么大，但是每个VIA的中心点应该对齐。Q2明显V2比V1大，V1和金属的比例也不太对。补充确认：先保持落点，缩小孔径。",
+  "sources": {
+    "reviewed_work": {
+      "path": "docs/assets/conductive-work-baseline-v1/work/manifest.json",
+      "sha256": "1796cecd3e3d68bceaf3c5dee2044ce9495b17873f46b5c01d9878ba82bfda0b"
+    }
+  },
+  "scope": {
+    "preserve_design_centers": true,
+    "exact_source_registration_approved": false,
+    "exact_size_approved": false,
+    "connection_changes": false
+  },
+  "date": "2026-10-26"
+}

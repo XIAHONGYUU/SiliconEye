@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-26",
+  "related_tests_passed": 38,
+  "new_size_revision_tests": 5,
+  "ruff": "PASS",
+  "svg_xml_count": 4,
+  "js_syntax": "PASS",
+  "package_hash_checks": 236,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "center_preservation": "PASS",
+  "metals_and_V1_unchanged": true,
+  "reviewed_connections_unchanged": true,
+  "metrics": {
+    "unit": "relative_design_px_not_photo_registration_or_PDK",
+    "V1_design_cuts": 6,
+    "V2_design_cuts": 6,
+    "V1_V2_overlap_area": 3.0,
+    "V1_V2_group_overlap_area": 180.0,
+    "common_M2": "IT1-M2-B",
+    "V2_M2_width_fraction": 0.6842105263157895,
+    "V2_M2_height_fraction": 0.7027027027027027,
+    "exact_geometry_accepted": false,
+    "via_geometry": {
+      "V1": {
+        "sizes_xy": [
+          [
+            6.0,
+            6.0
+          ]
+        ],
+        "centers_xy": [
+          [
+            365.5,
+            271.0
+          ],
+          [
+            374.5,
+            271.0
+          ],
+          [
+            365.5,
+            280.0
+          ],
+          [
+            374.5,
+            280.0
+          ],
+          [
+            365.5,
+            289.0
+          ],
+          [
+            374.5,
+            289.0
+          ]
+        ]
+      },
+      "V2": {
+        "sizes_xy": [
+          [
+            6.0,
+            6.0
+          ]
+        ],
+        "centers_xy": [
+          [
+            360.0,
+            283.0
+          ],
+          [
+            380.0,
+            283.0
+          ],
+          [
+            360.0,
+            306.0
+          ],
+          [
+            380.0,
+            306.0
+          ],
+          [
+            360.0,
+            329.0
+          ],
+          [
+            380.0,
+            329.0
+          ]
+        ]
+      }
+    },
+    "V1_human_count": 6,
+    "V2_human_count": 6
+  },
+  "browser_interaction_tested": false,
+  "static_geometry_visually_checked": true,
+  "source_registration_verified": false,
+  "precise_size_human_accepted": false,
+  "remote_modified": false,
+  "next_work_snapshot_replay_exact_except_version_id": true
+}

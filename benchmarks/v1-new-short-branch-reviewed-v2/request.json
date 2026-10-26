@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/v1-new-short-branch-v1/observations.json",
+    "sha256": "ff5490856778b8996b73eeba21f86bfea9cb02d88507a5d91d2fd9d097f313d9"
+  },
+  "frames": [
+    "m1",
+    "m2"
+  ],
+  "reviews": [
+    {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/human-review.json",
+      "sha256": "8dff4ac5cddc7ba57033af80af09af0d1a4c9b7f519921ee95c7d3104ea4eb49"
+    }
+  ],
+  "deferred_unknown_ids": [],
+  "questions": {
+    "V1-S1-GROUP": "S1：M1短指上端橙框亮点是否为V1，并接到蓝色A短折线M2的下端，而非灰色B/C？"
+  },
+  "limits": [
+    "S1为新接口，旧N1/W1及Q1/Q2、R1/R2批准不转移到这里。",
+    "孔层仅由M1侧亮点提出；M2的A端框仅标承载端，不把M2亮点当V1。",
+    "该亮区尚不能可靠逐孔分离，当前6×6设计支持区是代理，不是一孔或完整阵列测量。数量、孔径和完整孔组占用未知；仅做身份/承载验证。",
+    "B/C为附近局部上下文，未声明接入不等于物理无孔或全局异网。",
+    "同一已知芯片、有历史宽图上下文，不是盲测或陌生芯片迁移；不建立照片精确投影。",
+    "V1-S1身份及接A下端的局部连接已于2026-10-26确认；原孔组代理、数量/完整占用和精确几何仍未知。"
+  ],
+  "parent": {
+    "path": "docs/assets/v1-new-short-branch-v1/candidate/manifest.json",
+    "sha256": "7ddd3605a1525276ed56e8975dcf5308db702d40899e0f609c53585aee9f6687"
+  },
+  "source_assets": {
+    "m1": {
+      "wide_raw": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m1-wide-raw.png",
+        "sha256": "b0ef627c643c25810ff3adb4ab7b0bc9155413275567cca6257615deefb4f019"
+      },
+      "wide_marked": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m1-wide-marked.png",
+        "sha256": "09b4d1216e40de13b185101863fa72e0bad913a7d121500eb93493b778c60886"
+      },
+      "detail_raw": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m1-detail-raw.png",
+        "sha256": "d77089cd8404e63e2018c8e7319f273e3cbbffd32fbad3f031521d0881f433f4"
+      },
+      "detail_marked": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m1-detail-marked.png",
+        "sha256": "64fe89d50425ad95c2b22b5e35c57acb1c805c0f03058905fc86db67c6b77ff0"
+      }
+    },
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m2-wide-raw.png",
+        "sha256": "28d722660bf0b61a70fc47a15d3802259fecc762eced74240dce1b251e111709"
+      },
+      "wide_marked": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m2-wide-marked.png",
+        "sha256": "694a5f7902b5b81c5a524ddabaef99d660b362d187adcb7d8fd66c1b86cc2b45"
+      },
+      "detail_raw": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m2-detail-raw.png",
+        "sha256": "09b646ce010587ce652fa76f011c3274b1db5ab554290e9499c6a394a408c1d4"
+      },
+      "detail_marked": {
+        "path": "docs/assets/v1-new-short-branch-v1/candidate/m2-detail-marked.png",
+        "sha256": "4191185026ad76f7ab6e5c9b0f1a0fa0efb871d51bc065c5e292199e184cf9a9"
+      }
+    }
+  }
+}

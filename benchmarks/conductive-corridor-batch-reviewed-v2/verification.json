@@ -1,0 +1,40 @@
+{
+  "kind": "scoped_human_geometry_approval_verification",
+  "date": "2026-10-26",
+  "reviewed_groups": 6,
+  "pending_groups": 0,
+  "accepted_metal_fragments": 30,
+  "new_fragment_scope": 22,
+  "retained_extent_scope": 8,
+  "source_boundary_endpoints": 13,
+  "geometry_objects_changed": false,
+  "interfaces_and_via_centers_changed": false,
+  "full_model_exact_vs_submitted": true,
+  "next_full_model_exact": true,
+  "source_review_artifact_hash_paths": 60,
+  "HTML_asset_links": 25,
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "JSON_review_model_binding": "PASS",
+  "browser_interaction_tested": false,
+  "unresolved_ids": [
+    "C-U1",
+    "C-U2",
+    "C-U3",
+    "C-U4",
+    "C-U5"
+  ],
+  "prior_tests": {
+    "passed": 105,
+    "record": "benchmarks/conductive-corridor-batch-review-v1/verification.json",
+    "rerun_this_turn": false
+  },
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "new_human_connection_decisions": 0,
+  "via_count_approval": false,
+  "canonical_geometry_adoption": false,
+  "complete_network": false,
+  "unrestricted_skill_release": false,
+  "remote_modified": false
+}

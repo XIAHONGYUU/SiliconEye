@@ -1,0 +1,19 @@
+{
+  "kind": "scoped_source_fact_review_package",
+  "inputs": {
+    "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e",
+    "benchmarks/corridor-n1-0506-reviewed-v2/source-fact-state.json": "a24c13852ca2c56a35fa74602f0c2db16e823fa1237b0e00f7c07fee7a5953b1",
+    "benchmarks/corridor-n1-0506-reviewed-v2/stage-result.json": "21fcfa7e99199862586e27c22c3b5c0b0488a30935baf9c8798f3b7df5095a79",
+    "docs/reviews/2026-10-26-n1-0506-source-reviewed.md": "31e53fd9bdfe6d409d26a299f67a69f353f43e168fb30291fbcf925d6dee51bd"
+  },
+  "verification": {
+    "path": "benchmarks/corridor-n1-0506-reviewed-v2/verification.json",
+    "sha256": "5c58f5365e6b5cdfc21bac3981aef6172395c7627faef6b9053cb091c7521749"
+  },
+  "working_geometry_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "accepted_source_decisions": 2,
+  "pending_original_questions": []
+}

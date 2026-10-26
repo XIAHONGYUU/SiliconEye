@@ -1,0 +1,17 @@
+[
+  {
+    "mutation": "changed_input_hash",
+    "rejected": true,
+    "error": "Changed evidence: benchmarks/conductive-regression-v1/inputs/V1-S1.json"
+  },
+  {
+    "mutation": "wrong_truth_carrier",
+    "rejected": true,
+    "error": "Carrier truth changed"
+  },
+  {
+    "mutation": "proxy_promoted",
+    "rejected": true,
+    "error": "Proxy qualification changed"
+  }
+]

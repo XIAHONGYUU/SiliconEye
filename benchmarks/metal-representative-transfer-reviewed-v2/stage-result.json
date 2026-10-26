@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "SCOPED_TRANSFER_VALIDATED",
+  "date": "2026-10-26",
+  "human_group_review": {
+    "path": "benchmarks/metal-representative-transfer-reviewed-v2/human-group-adjudication.json",
+    "sha256": "804467a80d8892724559594502b84c58c0c804f90a4578402a8d009bfd950c22"
+  },
+  "reviewed_package": {
+    "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/manifest.json",
+    "sha256": "7a0ac0b1fe13674f4bb3c69ac83701e601085320da2530e8732d56f1b3025720"
+  },
+  "evaluation": {
+    "path": "benchmarks/metal-representative-transfer-reviewed-v2/evaluation-result.json",
+    "sha256": "73a6fe17e6c4f713d8c5155d1891174cc55768f83d360f143737f158c3adbdf6"
+  },
+  "approved_human_tasks": 2,
+  "approved_local_interface_records": 4,
+  "pending_local_interfaces": [],
+  "exact_geometry_changed": false,
+  "physical_count_approved": false,
+  "unknowns_preserved": true,
+  "scope": "M2/V2/M3 right-side region on the same known chip. Existing V1 regression remains valid; no new V1 identification in this batch.",
+  "complete_network": false,
+  "canonical_geometry_adoption": false,
+  "unrestricted_skill_release": false,
+  "next": "核清一处新V1端部/短支路的真实对应，再评估扩展覆盖；不重审已通过R1/R2。",
+  "remote_modified": false
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "native_source_review_panels",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2550,
+        1830,
+        3260,
+        2450
+      ],
+      "detail": [
+        2780,
+        2010,
+        3110,
+        2290
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 28,
+    "padding_px": 6,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          2980,
+          2100,
+          3035,
+          2165
+        ],
+        "color": "#ffb04f",
+        "label": "05",
+        "label_xy": [
+          3035,
+          2050
+        ]
+      },
+      {
+        "bounds": [
+          2925,
+          2130,
+          2975,
+          2190
+        ],
+        "color": "#6ad8ff",
+        "label": "06",
+        "label_xy": [
+          2830,
+          2220
+        ]
+      }
+    ]
+  }
+}

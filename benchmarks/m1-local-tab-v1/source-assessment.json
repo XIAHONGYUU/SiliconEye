@@ -1,0 +1,33 @@
+{
+  "actor": "AI",
+  "kind": "local_metal_shape_observation",
+  "reason": "The M1 source shows a horizontal band with a downward local protrusion at the six-hole group. Model the lowest two V1 sites in the protrusion rather than stretching the entire horizontal strip to cover all three rows.",
+  "sources": {
+    "human_feedback": {
+      "path": "benchmarks/m1-local-tab-v1/human-shape-feedback.json",
+      "sha256": "e1ebea12d11b6ce2fc1d08dae8e33bd083540452134fee7a429bb986b6ff65d1"
+    },
+    "raw": {
+      "path": "docs/assets/metal-independent-transfer-v1/m1-detail-raw.png",
+      "sha256": "b694a2ab966a1cb4959f18677d23cfe49f2ca5f39a6abd6eac52fb0540ad37d3"
+    },
+    "marked": {
+      "path": "docs/assets/five-layer-geometry-v1/source-views/independent-m1-detail-marked.png",
+      "sha256": "9aadb8a19a143b2e2058c0616eed83d2b2b0aa432a51661a8928772e7470ce1b"
+    },
+    "parent": {
+      "path": "docs/assets/via-center-preserving-v1/independent/manifest.json",
+      "sha256": "1bef3ce5b4c760b0f72296ce65495f26933440e7ad0f2125a995c009d664500f"
+    }
+  },
+  "source_frame": "m1",
+  "native_bounds": [
+    2540,
+    646,
+    2585,
+    686
+  ],
+  "design_basis": "Keep all six via centers, all metal except M1 and overall M1 extents. Retain old M1 top edge 266; put normal band bottom 285 between the second/third row. Only the local tab extends to old bottom 294. Candidate proportions, not photo registration.",
+  "downward_tab_candidate": true,
+  "precise_geometry_accepted": false
+}

@@ -13,6 +13,7 @@
 | `reviews` | 本轮新增人工记录引用；不填AI自批结果 |
 | `parent` | 接续/修订时的父包manifest引用；旧接口审批自动继承，不要求重新提交 |
 | `allowed_changed_ids`、`revision_evidence` | 仅修订时声明实际变化ID和AI提案/原因/来源；未声明变化或空泛替代均拒绝 |
+| `added_metal_ids`、`extension_evidence` | 显式补建：声明新增金属ID和绑定父包/来源清单的AI提案；不得增孔、改旧对象或改接口 |
 | `limits` | 保留的未知及覆盖边界；接续不能静默删掉父包限制 |
 | `deferred_unknown_ids` | 仍待裁决但暂缓处理的接口，只可取自当前pending；不改变物理真值 |
 | `questions` | 待裁决ID对应的可读问题，只显示仍待定的问题 |
@@ -21,7 +22,36 @@
 
 没有parent为新建/检查；parent加相同sample为接续；parent加已声明变化为修订。均用同一命令。已有样例在`benchmarks/conductive-workflow-trial-v1/`，先读JSON参数再使用；输出目录必须新建。
 
+显式金属补建仍使用同一命令与原画布/预算。样本绑定`visible_inventory`及`inventory_geometry_mapping=[{observation_id,metal_id}]`，要求声明清单中的全部金属片段与当前对象一一对应。新增对象的原生路径必须与清单完全相同；旧对象仍保留原锚点，清单中的延伸观察只记为部分来源范围，不能倒改旧锚点。事务检查针对所有既有对象。
+
+`extension_evidence={actor:AI,reason,parent,inventory,added_metal_ids,sources}`须与实际请求一致。新增仅能是金属，旧feature和interface逐字段不变，旧批准/孔中心/限制自动接续；不能同时以补建名义微调旧几何、换承载或退役对象。可附`additional_source_order_checks`检查新增结构的同帧次序，沿用原`source_order_checks`；已有清单/映射/附加次序不能在后续接续中静默改写。对倾斜平行来源线可比较相同端的极值次序，不把它当像素配准或几何间距。
+
+完成补建后的下一请求以新包为parent，移除`added_metal_ids/extension_evidence`，原样sample和限制继续回放。`changed_object_ids`仅指旧对象变化，补建名单另在`added_metal_ids`报告。清单30/30已建模只表示声明片段有几何，不证明照片穷尽、旧端部完整、疑点解决或人工几何验收。示例：`benchmarks/conductive-corridor-geometry-v1/request.json`；反例测试：`tests/test_conductive_metal_extension.py`。
+
+### 保留锚点的来源范围补齐
+
+旧`native_path`短于新检查范围时，不覆盖旧路径。样本可绑定`source_extent_evidence`：AI记录含`basis_parent,inventory,reason,geometry_human_approved=false,metals`，每行绑定`metal_id,source_frame,native_anchor_path,visible_native_path,design_path,endpoint_states,preserve_old_footprint`。来源可见路径及端部状态须匹配已绑定清单，旧锚点须匹配基准模型；两者分开保存。
+
+仍使用普通局部修订的白名单与`revision_evidence`。首次增加或后续更换范围记录，必须绑定当前事务父包；没有新事务时不能删除旧范围记录。标记`preserve_old_footprint=true`时，新多边形须覆盖旧材料；确需重定位可见端点时显式给`reposition_reason`，不混称为纯外延。后续只微调一个点也可用新记录绑定新父包，其余对象/孔/批准继续保持。
+
+输出的`source_extent_candidates`表示声明范围有对应候选，不代表实测边界已验收；原锚点仍可能短于观察范围，物理穷尽与精确尺度继续未知。示例：`benchmarks/conductive-corridor-batch-review-v1/request.json`，测试：`tests/test_conductive_source_extents.py`。
+
 ## AI观察样本
+
+### 在现有金属上新增接口
+
+新增孔组使用独立的`added_interface_ids/interface_extension_evidence`事务，不与金属
+补建或已有记录修订混合。证据绑定当前`parent`、准确新增ID清单及每组
+`interface_observations`（值须等于候选的`array_source_evidence`）。旧金属、孔组和
+审批逐字段保留；新组走同一来源站点、完整设计阵列、间距及两侧包围门。新增声明
+在下一次接续时移除，不能重用它绕过旧对象的变更白名单。示例见
+`benchmarks/n1-v2-local-reconstruction-v1/request.json`。
+
+原生照片的独立承载问题可用`native_carrier_confirmation`接续：绑定实际
+`scoped_native_carrier_review_request`及其图像、已审V2身份、来源快照和工作基线，
+`question_id`及完整接口signature必须匹配。只适配该问题首选承载的实际裁决；
+改判其他候选应另立明确更正，不扩大为任意接口批准。此记录不携带孔数批准或
+新设计坐标；若夹带数量或几何裁决则拒绝。范围仍仅为本芯片M2侧V2。
 
 新样本采用`kind=conductive_layer_observations`，包含：
 

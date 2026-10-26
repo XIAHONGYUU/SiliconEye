@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_conductive_regression_suite",
+  "id": "conductive-regression-v1",
+  "date": "2026-10-26",
+  "qualification": "LIMITED_TRIAL_V2",
+  "split": "historical_development",
+  "known_chip_count": 1,
+  "strict_blind": false,
+  "agent_tasks": [
+    {
+      "id": "V1-S1",
+      "input_packet": {
+        "path": "benchmarks/conductive-regression-v1/inputs/V1-S1.json",
+        "sha256": "9f7c5dda16dec006ce4ace11021601d3b5856e0b6d07585ae40ce258f81e6af2"
+      },
+      "human_truth": {
+        "path": "benchmarks/v1-new-short-branch-reviewed-v2/human-review.json",
+        "sha256": "8dff4ac5cddc7ba57033af80af09af0d1a4c9b7f519921ee95c7d3104ea4eb49"
+      },
+      "expected_interfaces": [
+        {
+          "id": "V1-S1-GROUP",
+          "layer": "V1",
+          "lower_metal_id": "S1-M1-STUB",
+          "upper_metal_id": "S1-M2-A"
+        }
+      ],
+      "physical_count_truth": null,
+      "geometry_truth_qualified": false
+    },
+    {
+      "id": "V2-R1",
+      "input_packet": {
+        "path": "benchmarks/conductive-regression-v1/inputs/V2-R1.json",
+        "sha256": "6e029ed46e7400f30142c2889105e0d4e4133d49bd58920310d8f2baaea75ab0"
+      },
+      "human_truth": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/human-group-adjudication.json",
+        "sha256": "804467a80d8892724559594502b84c58c0c804f90a4578402a8d009bfd950c22"
+      },
+      "expected_interfaces": [
+        {
+          "id": "RT-V2-U1",
+          "layer": "V2",
+          "lower_metal_id": "RT-M2-R01",
+          "upper_metal_id": "RT-M3-UP"
+        },
+        {
+          "id": "RT-V2-U2",
+          "layer": "V2",
+          "lower_metal_id": "RT-M2-R02",
+          "upper_metal_id": "RT-M3-UP"
+        }
+      ],
+      "physical_count_truth": null,
+      "geometry_truth_qualified": false
+    },
+    {
+      "id": "V2-R2",
+      "input_packet": {
+        "path": "benchmarks/conductive-regression-v1/inputs/V2-R2.json",
+        "sha256": "3ee60621cb4b4fc3a416fc6219b90db4c1baa91f51cd3c96c626eb3aa383ce39"
+      },
+      "human_truth": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/human-group-adjudication.json",
+        "sha256": "804467a80d8892724559594502b84c58c0c804f90a4578402a8d009bfd950c22"
+      },
+      "expected_interfaces": [
+        {
+          "id": "RT-V2-D1",
+          "layer": "V2",
+          "lower_metal_id": "RT-M2-R01",
+          "upper_metal_id": "RT-M3-DOWN"
+        },
+        {
+          "id": "RT-V2-D2",
+          "layer": "V2",
+          "lower_metal_id": "RT-M2-R02",
+          "upper_metal_id": "RT-M3-DOWN"
+        }
+      ],
+      "physical_count_truth": null,
+      "geometry_truth_qualified": false
+    }
+  ],
+  "replay_packages": [
+    {
+      "id": "V1-S1",
+      "request": {
+        "path": "benchmarks/v1-new-short-branch-reviewed-v2/next-request.json",
+        "sha256": "04972191fb2988fbf6e96f75df3a9ccf4a969e3a81eb2acad1bf027bf58d78b0"
+      },
+      "model": {
+        "path": "docs/assets/v1-new-short-branch-reviewed-v2/reviewed/model.json",
+        "sha256": "f2925b4e8b93a141d752669138519ad38272b6a2a66eae70693f0ab421fb7173"
+      },
+      "manifest": {
+        "path": "docs/assets/v1-new-short-branch-reviewed-v2/reviewed/manifest.json",
+        "sha256": "ce1a66e858d3004989722721b5ec83b9b5afdefc4e4b83dcae3d47d3c41623bc"
+      },
+      "expected_proxy_ids": [
+        "V1-S1-GROUP"
+      ],
+      "expected_design_cut_counts": []
+    },
+    {
+      "id": "V2-R1-R2",
+      "request": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/next-request.json",
+        "sha256": "df1250119547046d06ea3920bdd2261d21d8b07b5f839bcf60a420284dfb4d74"
+      },
+      "model": {
+        "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/model.json",
+        "sha256": "b11deea353620508def2b8e398b50cfd2e89f1606e1b4007dbb02e961866f290"
+      },
+      "manifest": {
+        "path": "docs/assets/metal-representative-transfer-reviewed-v2/reviewed/manifest.json",
+        "sha256": "7a0ac0b1fe13674f4bb3c69ac83701e601085320da2530e8732d56f1b3025720"
+      },
+      "expected_proxy_ids": [],
+      "expected_design_cut_counts": [
+        6,
+        6,
+        10,
+        10
+      ]
+    }
+  ],
+  "joint_snapshot": {
+    "request": {
+      "path": "benchmarks/m1-local-tab-v1/work-next.json",
+      "sha256": "c0065aa2945c4aa6fe7de2f963b3eca8bb673c9e276db2316b7579e7702c72c8"
+    },
+    "snapshot": {
+      "path": "docs/assets/m1-local-tab-v1/work/snapshot.json",
+      "sha256": "6a58dacf34c8dd339a07e996cd5d61698b5898a553c07d2aa8be73f649b96a3f"
+    },
+    "closeout": {
+      "path": "benchmarks/conductive-joint-pilot-closeout-v1/closeout.json",
+      "sha256": "68b7565def50968083ebe0e1b039e1f7620055c74d7cd34a28d8a11bb9e35898"
+    }
+  },
+  "historical_evidence": [
+    {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/migration-summary.json",
+      "sha256": "51527d9ad2433d7e2d71c69b41f7619ceffea9dc759f816ccef38b26a699dff4"
+    },
+    {
+      "path": "benchmarks/v1-new-short-branch-reviewed-v2/evaluation-result.json",
+      "sha256": "6bf2ae2c7eefeb910f9ddb4d927f0c7eece7e6acac646646118c94c14bb4ac72"
+    },
+    {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/evaluation-result.json",
+      "sha256": "73a6fe17e6c4f713d8c5155d1891174cc55768f83d360f143737f158c3adbdf6"
+    },
+    {
+      "path": "benchmarks/v1-new-short-branch-v1/fixed-task.json",
+      "sha256": "4788449db17d202c5c7074fc5ea429f0084f80b3f98892cdeb9b4dc2e9c81a8e"
+    },
+    {
+      "path": "benchmarks/metal-representative-transfer-v1/fixed-tasks.json",
+      "sha256": "ef9a344638717162e5d98a342d0a18d993a6abb1a7d29465120419388c901852"
+    },
+    {
+      "path": "benchmarks/metal-representative-transfer-v1/source-reinspection-v2.json",
+      "sha256": "b186554e45575588a921523ad6c60bf5cadcc085c1c49f94cdfe70bb4b2b88f0"
+    }
+  ],
+  "software_tests": [
+    "tests/test_v1_new_short_branch.py",
+    "tests/test_metal_representative_transfer.py",
+    "tests/test_m1_local_tab.py",
+    "tests/test_via_center_preserving.py",
+    "tests/test_conductive_snapshot.py"
+  ],
+  "showcase_protection": {
+    "path": "benchmarks/conductive-work-baseline-v1/showcase-protection.json",
+    "sha256": "65bd74f8be5ef52e67772879c1af4dde9fbfe7f65fa7ec068aba45785a55bf55"
+  },
+  "historical_results": {
+    "submitted_identity_carrier_tasks": 3,
+    "confirmed_tasks": 3,
+    "interface_records": 5,
+    "human_identity_carrier_corrections": 0,
+    "internal_AI_array_correction_events": 1
+  },
+  "limits": [
+    "回放和软件测试不执行AI识别，不产生新的模型准确率。",
+    "原始输入包不含答案；suite及human_truth含答案，只能用于评分/工程回归。",
+    "同芯片且已参与开发，不是独立盲测；五接口不是五次统计独立试验。",
+    "下部5×2是AI设计候选，不作人工孔数真值；V1支持代理不是单孔。",
+    "不修改原图/既有人审包，不采用全幅几何，不导出全网。"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "actor": "AI",
+  "kind": "explicit_interface_extension",
+  "reason": "Add only the source-observed N1 V2 candidate after scoped human M3-A carrier approval. Preserve all existing records; geometric revision was a separate transaction.",
+  "parent": {
+    "path": "docs/assets/n1-v2-local-reconstruction-v1/metal-revised/manifest.json",
+    "sha256": "d2478b6c6f0def8a6558bed4fdba887b3e8f6c75137ab81d1b6274e975ed120f"
+  },
+  "added_interface_ids": [
+    "N1-V2"
+  ],
+  "interface_observations": {
+    "N1-V2": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/N1-array-observation.json",
+      "sha256": "ae835cf56630f607f971d1a0f30234ffb92c7962acfbeb397cb0449c5e8c134e"
+    }
+  },
+  "sources": {
+    "carrier_review": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/human-review.json",
+      "sha256": "b0f69352b486e6cdf0bd5c93764f038b538780e438a57ec7dd2cc24656f18edd"
+    },
+    "array_observation": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/N1-array-observation.json",
+      "sha256": "ae835cf56630f607f971d1a0f30234ffb92c7962acfbeb397cb0449c5e8c134e"
+    }
+  }
+}

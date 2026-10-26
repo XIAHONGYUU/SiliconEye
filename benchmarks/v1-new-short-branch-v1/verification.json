@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26",
+  "tests": {
+    "passed": 31,
+    "new_V1_tests": 4,
+    "prior_regression_tests": 27,
+    "negative_cases": [
+      "neighbor_M2_carrier",
+      "M2_source_borrowed_as_V1",
+      "reverse_source_turn"
+    ],
+    "ruff": "PASS"
+  },
+  "candidate_replay_exact": true,
+  "changed_object_ids": [],
+  "source_artifact_hash_checks": 72,
+  "raw_source_view_pixel_reuse": "PASS_IN_WORKFLOW_CONTINUATION",
+  "SVG_XML": "PASS",
+  "JavaScript_syntax": "PASS",
+  "HTML_links": "PASS",
+  "static_design_and_native_panels_visually_inspected": true,
+  "browser_interaction_tested": false,
+  "baseline": {
+    "joint_objects": 41,
+    "joint_reviewed_interfaces": 13,
+    "latest_V2_reviewed_interfaces": 4,
+    "previous_Q1_Q2_and_R1_R2_unchanged": true
+  },
+  "pending_interface_ids": [
+    "V1-S1-GROUP"
+  ],
+  "full_via_group_geometry_qualified": false,
+  "physical_cut_count": null,
+  "old_approval_reused_for_new_interface": false,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "production_extraction_code_changed": false,
+  "network_export": false,
+  "canonical_geometry_adoption": false,
+  "remote_modified": false
+}

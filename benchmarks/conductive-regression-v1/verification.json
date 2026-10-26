@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-26",
+  "status": "PASS_SCOPED_ENGINEERING_REGRESSION",
+  "kind": "fixed_regression_and_scope_verification",
+  "source_evidence_paths_checked": 245,
+  "replayed_models_exact": 2,
+  "joint_snapshot_content_exact_except_declared_run_id": true,
+  "joint_closeout_preserved": true,
+  "software_tests_passed": 31,
+  "runner_negative_checks_rejected": 3,
+  "skill_format_validation": {
+    "metal": "PASS",
+    "via": "PASS"
+  },
+  "ruff": "PASS",
+  "qualification": "LIMITED_TRIAL_V2",
+  "new_AI_observation_runs": 0,
+  "new_AI_accuracy": null,
+  "physical_count_or_full_geometry_truth_added": false,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "browser_interaction_tested": false,
+  "canonical_geometry_adoption": false,
+  "complete_network": false,
+  "remote_modified": false,
+  "artifacts": {
+    "benchmarks/conductive-regression-v1/suite.json": "83f220b6564bef7d3cee97db855a03cba9163f40912410194383e99b8399edce",
+    "benchmarks/conductive-regression-v1/execution-result.json": "941e8f6a214440e8c63fd797c4f0fe36e49ce0bb46af973b30ec40a32ac8776e",
+    "benchmarks/conductive-regression-v1/negative-checks.json": "e99fafc190e92d5ae3a07d8ffa87058bed4524534ba2b783b2861333103adca7",
+    "scripts/check_conductive_regression.py": "36dd2cc6c992c2c4b33a49feb75400b64c85939fe74540ecd67c57efe27cb90f",
+    "docs/architecture/conductive-skill-qualification-v1.md": "3eab6ac47578a47895dc6f683e4391cc04248bda3240e0dc5c861f2a60ae1bf4",
+    "skills/silicon-eye-metal-reconstruction/SKILL.md": "c02a67422146322049fff32d3f2c689c19d1c4ec4a11c1fc6d547da6abb27325",
+    "skills/silicon-eye-via-reconstruction/SKILL.md": "5f27f7e434de2576e82fc94637d6a37855ca054fea52bba9a0e9f6db8f1ff6bc"
+  }
+}

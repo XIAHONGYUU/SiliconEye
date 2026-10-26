@@ -1,0 +1,50 @@
+{
+  "kind": "scoped_native_carrier_review_request",
+  "question_id": "N1-M3-CARRIER-Q1",
+  "analysis": {
+    "path": "benchmarks/n1-m3-carrier-inspection-v1/analysis.json",
+    "sha256": "78db4564a41510f18794328975a30a54f62477955b8922aeffb5f73a95fda3bf"
+  },
+  "prior_identity_approval": {
+    "path": "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json",
+    "sha256": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e"
+  },
+  "scope": {
+    "interface_id": "N1-V2",
+    "source_frame": "m2",
+    "native_bounds": [
+      3498,
+      2480,
+      3540,
+      2510
+    ],
+    "lower_metal_id": "RT-M2-NARROW",
+    "upper_candidate": "C-M3-L01",
+    "alternative_ids": [
+      "RT-M3-THIN1",
+      "C-M3-L03",
+      "RT-M3-THIN2"
+    ]
+  },
+  "question": "N1短横头上的已审V2，是否接到右图A（C-M3-L01，宽母线下方第一条、右端在图内结束的细M3）？如不是，请指出B/C/D或其他。",
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ],
+  "delivery": "inline_png_wide_and_detail",
+  "images": {
+    "carrier-detail-pair.png": {
+      "path": "docs/assets/n1-m3-carrier-inspection-v1/carrier-detail-pair.png",
+      "sha256": "f4b16aece95fd89e783d5b60ab90c2b5cb27455026d3b5205c9efff9619281d0"
+    },
+    "carrier-wide-pair.png": {
+      "path": "docs/assets/n1-m3-carrier-inspection-v1/carrier-wide-pair.png",
+      "sha256": "3263a007c0cf21156b2a1371a87e2ff6e735e7783c4532b3b2e26bc33053c430"
+    }
+  },
+  "answer": null
+}
