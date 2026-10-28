@@ -1,0 +1,116 @@
+{
+  "kind": "AI_native_upper_cap_interface_candidates",
+  "date": "2026-10-28",
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "working_request": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/next-request.json",
+    "sha256": "7374314e6384e3fc282bae089f9e142241b6861dc0bc66d491026d60b4ac44a6"
+  },
+  "coverage_audit": {
+    "path": "benchmarks/conductive-corridor-coverage-v1/coverage.json",
+    "sha256": "74087789b59d3509e3d53307c9d2c21ad8e629b59adad8c60519b75d2525c2bf"
+  },
+  "observations": [
+    {
+      "id": "C03-V2-SOURCE-CANDIDATE",
+      "actor": "AI",
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "via_layer_candidate": "V2",
+      "V2_present_candidate": true,
+      "V2_present_human_confirmed": null,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_via_geometry_created": false,
+      "observation": "Localized enhanced lobes occur at the right-going short head. Appearance is consistent with a V2 site, but screen-grid modulation crosses the same bright region and no independently resolved cut outline is established.",
+      "alternative_explanation": "Bright metal tip/edge modulated by screen texture; peak count is not via count.",
+      "authority_limit": "AI source candidate only; similarity to reviewed N1/U1 is reference context, not transferred approval.",
+      "carrier_status": "NOT_ASSIGNED_PENDING_IDENTITY_AND_INDEPENDENT_STRUCTURAL_MATCH"
+    },
+    {
+      "id": "C04-V2-SOURCE-CANDIDATE",
+      "actor": "AI",
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "via_layer_candidate": "V2",
+      "V2_present_candidate": true,
+      "V2_present_human_confirmed": null,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_via_geometry_created": false,
+      "observation": "Localized enhanced lobes occur at the right-going short head. Appearance is consistent with a V2 site, but screen-grid modulation crosses the same bright region and no independently resolved cut outline is established.",
+      "alternative_explanation": "Bright metal tip/edge modulated by screen texture; peak count is not via count.",
+      "authority_limit": "AI source candidate only; similarity to reviewed N1/U1 is reference context, not transferred approval.",
+      "carrier_status": "NOT_ASSIGNED_PENDING_IDENTITY_AND_INDEPENDENT_STRUCTURAL_MATCH"
+    }
+  ],
+  "M3_context_reference_ids": [
+    "C-M3-T01",
+    "C-M3-T02",
+    "C-M3-T03",
+    "C-M3-T04",
+    "C-M3-T05",
+    "C-M3-T06",
+    "RT-M3-UP"
+  ],
+  "carrier_search_limit": "Nearby T01-T06 and UP are shown only as independent M3 context. There is no qualified M2-to-M3 transform or uniquely paired endpoint. Native coordinate proximity and design intersections cannot choose a carrier.",
+  "cross_frame_transform": null,
+  "geometry_changed": false,
+  "new_interfaces_confirmed": 0,
+  "new_net_edges": []
+}

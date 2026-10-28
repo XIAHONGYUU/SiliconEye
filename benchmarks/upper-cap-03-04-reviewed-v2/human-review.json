@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "native_V2_identity_confirmation",
+  "actor": "human",
+  "date": "2026-10-28",
+  "statement": "均为V2",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/upper-cap-03-04-inspection-v1/review-request.json",
+      "sha256": "22ebbc2fcc19401d1c00565fb2c20a1e4b891180c7a9995bce6b1b61b4d257f9"
+    },
+    "observations": {
+      "path": "benchmarks/upper-cap-03-04-inspection-v1/observations.json",
+      "sha256": "374da9f4815e6f8c4867aa3337257c600feeb1e6b940e1e57b5ccc4eea5c0aea"
+    }
+  },
+  "reviewed_images": [
+    {
+      "path": "docs/assets/upper-cap-03-04-inspection-v1/wide-identity-context.png",
+      "sha256": "6a2c9252ecd4ac0300bcb609b4a3da4c5fba7c8f1bd01c6ef5883ea2548a853d"
+    },
+    {
+      "path": "docs/assets/upper-cap-03-04-inspection-v1/native-detail-comparison.png",
+      "sha256": "2272c5169d02baff727d772dc7b2cc20d35e2994a2e1f7b6877c32ed7a2a8666"
+    }
+  ],
+  "decisions": [
+    {
+      "question_id": "C03-V2-IDENTITY-Q1",
+      "candidate_id": "C03-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null
+    },
+    {
+      "question_id": "C04-V2-IDENTITY-Q2",
+      "candidate_id": "C04-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null
+    }
+  ],
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact cut dimensions",
+    "M3 upper carrier",
+    "electrical connection",
+    "new design geometry",
+    "N1 or U1 reapproval",
+    "complete network"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "actor": "AI",
+  "kind": "same_frame_background_vs_visible_metal_assistance",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "x_windows": [
+    [
+      2960,
+      3050
+    ],
+    [
+      3120,
+      3220
+    ],
+    [
+      3310,
+      3410
+    ],
+    [
+      3500,
+      3600
+    ],
+    [
+      3610,
+      3660
+    ]
+  ],
+  "method": "For each target use median of the unmodified native grayscale rectangle y_center +/-8px across each x window. Visible THIN2 core uses its diagnostic peak y +/-3px. No segmentation threshold is fitted.",
+  "target_center_y": {
+    "C-U1": 2033,
+    "C-U2": 2652,
+    "C-U3": 2864
+  },
+  "target_raw_gray_medians": {
+    "C-U1": [
+      142.0,
+      146.5,
+      146.0,
+      143.0,
+      138.0
+    ],
+    "C-U2": [
+      141.0,
+      140.5,
+      137.0,
+      133.0,
+      129.5
+    ],
+    "C-U3": [
+      140.0,
+      137.0,
+      137.0,
+      132.0,
+      133.0
+    ]
+  },
+  "visible_thin_M3_core_gray_medians": [
+    215.0,
+    212.0,
+    206.0,
+    207.0,
+    209.0
+  ],
+  "conclusion": "All three target rectangles have ordinary-background-like grayscale and no resolved independent boundaries/endpoints in the expanded native views. CU2 broad prominence does not identify a bright conductor; darker rims and slowly varying background create an apparent bump.",
+  "limits": [
+    "Grayscale similarity cannot prove material absence.",
+    "Different conductors can have different reflectance; visual edges, ends and context remain essential.",
+    "This is AI source triage only, not human truth, PDK DRC, exact photo registration or full physical coverage."
+  ]
+}

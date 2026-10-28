@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "kind": "native_carrier_batch_human_judgment",
+  "actor": "human",
+  "date": "2026-10-28",
+  "statement": "我个人判断03接T01,04接T02",
+  "basis": "human_visual_judgment; retain the personal-judgment qualifier, not an independently measured registration",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/upper-cap-03-04-reviewed-v2/carrier-review-request.json",
+      "sha256": "deaad98eb51e94d8ee3759c9b6f258b58fa86a7abd2410c7fe81dfc9dabc8111"
+    },
+    "identity_approval": {
+      "path": "benchmarks/upper-cap-03-04-reviewed-v2/human-review.json",
+      "sha256": "335e37577f59614f5ebac11281557a11611d15517de2650fc4b67108711d7cee"
+    }
+  },
+  "reviewed_images": [
+    {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m2-confirmed-caps.png",
+      "sha256": "768a6fc340c2f72a3d3bd99bed7f00649411e5a956b7801df3d914675d7cc108"
+    },
+    {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m3-numbered-bank.png",
+      "sha256": "b60ba475adedef6c0d9842691458e82df9e3d4e89eb9ee47405d94d128364ed2"
+    },
+    {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m2-wide-raw.png",
+      "sha256": "45ce1ee3efa13ae159516b9778b97d1ef0dbf5d06ebd20b4da7bb2bf73677b9a"
+    },
+    {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m3-wide-raw.png",
+      "sha256": "7de4d4cb5be6c0504623414f56ba3444b7de6c1633ab3173cf1b810edaa73f19"
+    }
+  ],
+  "decisions": [
+    {
+      "question_id": "C03-M3-CARRIER-Q1",
+      "candidate_id": "C03-V2-SOURCE-CANDIDATE",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "upper_metal_id": "C-M3-T01",
+      "connection_confirmed": true,
+      "certainty_basis": "human_visual_judgment",
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "question_id": "C04-M3-CARRIER-Q1",
+      "candidate_id": "C04-V2-SOURCE-CANDIDATE",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "upper_metal_id": "C-M3-T02",
+      "connection_confirmed": true,
+      "certainty_basis": "human_visual_judgment",
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ],
+  "observed_cut_count": null,
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ]
+}

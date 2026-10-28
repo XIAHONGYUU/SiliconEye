@@ -1,0 +1,3167 @@
+{
+  "status": "TECHNICAL_PASS_WITH_SCOPED_REVIEWS_AND_UNKNOWNS",
+  "audits": {
+    "M2": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "RT-M2-R01",
+            "RT-M2-R02"
+          ],
+          "gap_px": 244.0
+        },
+        {
+          "ids": [
+            "RT-M2-R01",
+            "RT-M2-NARROW"
+          ],
+          "gap_px": 362.0
+        },
+        {
+          "ids": [
+            "RT-M2-R01",
+            "C-M2-03"
+          ],
+          "gap_px": 127.0
+        },
+        {
+          "ids": [
+            "RT-M2-R01",
+            "C-M2-04"
+          ],
+          "gap_px": 450.14775352099673
+        },
+        {
+          "ids": [
+            "RT-M2-R01",
+            "C-M2-05"
+          ],
+          "gap_px": 67.0
+        },
+        {
+          "ids": [
+            "RT-M2-R01",
+            "C-M2-06"
+          ],
+          "gap_px": 119.0
+        },
+        {
+          "ids": [
+            "RT-M2-R01",
+            "C-M2-08"
+          ],
+          "gap_px": 112.99999999999999
+        },
+        {
+          "ids": [
+            "RT-M2-R02",
+            "RT-M2-NARROW"
+          ],
+          "gap_px": 92.0
+        },
+        {
+          "ids": [
+            "RT-M2-R02",
+            "C-M2-03"
+          ],
+          "gap_px": 259.2392717163046
+        },
+        {
+          "ids": [
+            "RT-M2-R02",
+            "C-M2-04"
+          ],
+          "gap_px": 198.8793604173143
+        },
+        {
+          "ids": [
+            "RT-M2-R02",
+            "C-M2-05"
+          ],
+          "gap_px": 337.0
+        },
+        {
+          "ids": [
+            "RT-M2-R02",
+            "C-M2-06"
+          ],
+          "gap_px": 389.0
+        },
+        {
+          "ids": [
+            "RT-M2-R02",
+            "C-M2-08"
+          ],
+          "gap_px": 383.0
+        },
+        {
+          "ids": [
+            "RT-M2-NARROW",
+            "C-M2-03"
+          ],
+          "gap_px": 723.9509651903228
+        },
+        {
+          "ids": [
+            "RT-M2-NARROW",
+            "C-M2-04"
+          ],
+          "gap_px": 619.2931454489061
+        },
+        {
+          "ids": [
+            "RT-M2-NARROW",
+            "C-M2-05"
+          ],
+          "gap_px": 540.0981392302699
+        },
+        {
+          "ids": [
+            "RT-M2-NARROW",
+            "C-M2-06"
+          ],
+          "gap_px": 581.1239110551209
+        },
+        {
+          "ids": [
+            "RT-M2-NARROW",
+            "C-M2-08"
+          ],
+          "gap_px": 526.0
+        },
+        {
+          "ids": [
+            "C-M2-03",
+            "C-M2-04"
+          ],
+          "gap_px": 419.0
+        },
+        {
+          "ids": [
+            "C-M2-03",
+            "C-M2-05"
+          ],
+          "gap_px": 313.1149948501349
+        },
+        {
+          "ids": [
+            "C-M2-03",
+            "C-M2-06"
+          ],
+          "gap_px": 360.1360853899537
+        },
+        {
+          "ids": [
+            "C-M2-03",
+            "C-M2-08"
+          ],
+          "gap_px": 968.5876315543163
+        },
+        {
+          "ids": [
+            "C-M2-04",
+            "C-M2-05"
+          ],
+          "gap_px": 601.7682278086805
+        },
+        {
+          "ids": [
+            "C-M2-04",
+            "C-M2-06"
+          ],
+          "gap_px": 663.2103738633767
+        },
+        {
+          "ids": [
+            "C-M2-04",
+            "C-M2-08"
+          ],
+          "gap_px": 1104.1467293797505
+        },
+        {
+          "ids": [
+            "C-M2-05",
+            "C-M2-06"
+          ],
+          "gap_px": 23.706539182259394
+        },
+        {
+          "ids": [
+            "C-M2-05",
+            "C-M2-08"
+          ],
+          "gap_px": 615.939120368239
+        },
+        {
+          "ids": [
+            "C-M2-06",
+            "C-M2-08"
+          ],
+          "gap_px": 608.0
+        }
+      ],
+      "minimum_gap_px": 23.706539182259394
+    },
+    "M3": {
+      "status": "PASS",
+      "errors": [],
+      "pair_gaps": [
+        {
+          "ids": [
+            "RT-M3-UP",
+            "RT-M3-MID"
+          ],
+          "gap_px": 336.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "RT-M3-DOWN"
+          ],
+          "gap_px": 616.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "RT-M3-THIN1"
+          ],
+          "gap_px": 482.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "RT-M3-THIN2"
+          ],
+          "gap_px": 532.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-T01"
+          ],
+          "gap_px": 115.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-T02"
+          ],
+          "gap_px": 96.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-T03"
+          ],
+          "gap_px": 77.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-T04"
+          ],
+          "gap_px": 58.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-T05"
+          ],
+          "gap_px": 39.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-T06"
+          ],
+          "gap_px": 20.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-E1"
+          ],
+          "gap_px": 122.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-E2"
+          ],
+          "gap_px": 155.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-M01"
+          ],
+          "gap_px": 232.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-M02"
+          ],
+          "gap_px": 247.00000000000003
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-M03"
+          ],
+          "gap_px": 262.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-M04"
+          ],
+          "gap_px": 277.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-M05"
+          ],
+          "gap_px": 292.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-M06"
+          ],
+          "gap_px": 307.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-L01"
+          ],
+          "gap_px": 464.0
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-L03"
+          ],
+          "gap_px": 501.99999999999994
+        },
+        {
+          "ids": [
+            "RT-M3-UP",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 852.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "RT-M3-DOWN"
+          ],
+          "gap_px": 200.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "RT-M3-THIN1"
+          ],
+          "gap_px": 66.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "RT-M3-THIN2"
+          ],
+          "gap_px": 115.99999999999999
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-T01"
+          ],
+          "gap_px": 511.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-T02"
+          ],
+          "gap_px": 492.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-T03"
+          ],
+          "gap_px": 473.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-T04"
+          ],
+          "gap_px": 454.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-T05"
+          ],
+          "gap_px": 435.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-T06"
+          ],
+          "gap_px": 416.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-E1"
+          ],
+          "gap_px": 205.99999999999997
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-E2"
+          ],
+          "gap_px": 173.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-M01"
+          ],
+          "gap_px": 96.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-M02"
+          ],
+          "gap_px": 81.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-M03"
+          ],
+          "gap_px": 66.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-M04"
+          ],
+          "gap_px": 51.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-M05"
+          ],
+          "gap_px": 36.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-M06"
+          ],
+          "gap_px": 21.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-L01"
+          ],
+          "gap_px": 48.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-L03"
+          ],
+          "gap_px": 86.0
+        },
+        {
+          "ids": [
+            "RT-M3-MID",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 436.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "RT-M3-THIN1"
+          ],
+          "gap_px": 126.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "RT-M3-THIN2"
+          ],
+          "gap_px": 76.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-T01"
+          ],
+          "gap_px": 790.9999999999999
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-T02"
+          ],
+          "gap_px": 771.9999999999999
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-T03"
+          ],
+          "gap_px": 752.9999999999999
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-T04"
+          ],
+          "gap_px": 733.9999999999999
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-T05"
+          ],
+          "gap_px": 715.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-T06"
+          ],
+          "gap_px": 696.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-E1"
+          ],
+          "gap_px": 486.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-E2"
+          ],
+          "gap_px": 453.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-M01"
+          ],
+          "gap_px": 376.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-M02"
+          ],
+          "gap_px": 361.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-M03"
+          ],
+          "gap_px": 346.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-M04"
+          ],
+          "gap_px": 331.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-M05"
+          ],
+          "gap_px": 316.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-M06"
+          ],
+          "gap_px": 301.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-L01"
+          ],
+          "gap_px": 144.0
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-L03"
+          ],
+          "gap_px": 106.00000000000001
+        },
+        {
+          "ids": [
+            "RT-M3-DOWN",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 156.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "RT-M3-THIN2"
+          ],
+          "gap_px": 42.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-T01"
+          ],
+          "gap_px": 657.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-T02"
+          ],
+          "gap_px": 638.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-T03"
+          ],
+          "gap_px": 619.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-T04"
+          ],
+          "gap_px": 600.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-T05"
+          ],
+          "gap_px": 581.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-T06"
+          ],
+          "gap_px": 562.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-E1"
+          ],
+          "gap_px": 352.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-E2"
+          ],
+          "gap_px": 319.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-M01"
+          ],
+          "gap_px": 242.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-M02"
+          ],
+          "gap_px": 226.99999999999997
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-M03"
+          ],
+          "gap_px": 211.99999999999997
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-M04"
+          ],
+          "gap_px": 197.00000000000003
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-M05"
+          ],
+          "gap_px": 182.00000000000003
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-M06"
+          ],
+          "gap_px": 167.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-L01"
+          ],
+          "gap_px": 10.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-L03"
+          ],
+          "gap_px": 12.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN1",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 362.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-T01"
+          ],
+          "gap_px": 707.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-T02"
+          ],
+          "gap_px": 688.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-T03"
+          ],
+          "gap_px": 669.0000000000001
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-T04"
+          ],
+          "gap_px": 650.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-T05"
+          ],
+          "gap_px": 631.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-T06"
+          ],
+          "gap_px": 612.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-E1"
+          ],
+          "gap_px": 402.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-E2"
+          ],
+          "gap_px": 369.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-M01"
+          ],
+          "gap_px": 292.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-M02"
+          ],
+          "gap_px": 277.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-M03"
+          ],
+          "gap_px": 262.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-M04"
+          ],
+          "gap_px": 247.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-M05"
+          ],
+          "gap_px": 232.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-M06"
+          ],
+          "gap_px": 217.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-L01"
+          ],
+          "gap_px": 60.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-L03"
+          ],
+          "gap_px": 22.0
+        },
+        {
+          "ids": [
+            "RT-M3-THIN2",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 312.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-T02"
+          ],
+          "gap_px": 11.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-T03"
+          ],
+          "gap_px": 30.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-T04"
+          ],
+          "gap_px": 48.99999999999999
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-T05"
+          ],
+          "gap_px": 68.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-T06"
+          ],
+          "gap_px": 87.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-E1"
+          ],
+          "gap_px": 297.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-E2"
+          ],
+          "gap_px": 330.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-M01"
+          ],
+          "gap_px": 407.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-M02"
+          ],
+          "gap_px": 422.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-M03"
+          ],
+          "gap_px": 437.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-M04"
+          ],
+          "gap_px": 452.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-M05"
+          ],
+          "gap_px": 467.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-M06"
+          ],
+          "gap_px": 482.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-L01"
+          ],
+          "gap_px": 639.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-L03"
+          ],
+          "gap_px": 677.0
+        },
+        {
+          "ids": [
+            "C-M3-T01",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 1027.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-T03"
+          ],
+          "gap_px": 11.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-T04"
+          ],
+          "gap_px": 30.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-T05"
+          ],
+          "gap_px": 48.99999999999999
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-T06"
+          ],
+          "gap_px": 68.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-E1"
+          ],
+          "gap_px": 278.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-E2"
+          ],
+          "gap_px": 311.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-M01"
+          ],
+          "gap_px": 387.99999999999994
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-M02"
+          ],
+          "gap_px": 403.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-M03"
+          ],
+          "gap_px": 418.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-M04"
+          ],
+          "gap_px": 433.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-M05"
+          ],
+          "gap_px": 448.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-M06"
+          ],
+          "gap_px": 463.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-L01"
+          ],
+          "gap_px": 620.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-L03"
+          ],
+          "gap_px": 658.0
+        },
+        {
+          "ids": [
+            "C-M3-T02",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 1008.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-T04"
+          ],
+          "gap_px": 11.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-T05"
+          ],
+          "gap_px": 30.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-T06"
+          ],
+          "gap_px": 48.99999999999999
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-E1"
+          ],
+          "gap_px": 259.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-E2"
+          ],
+          "gap_px": 292.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-M01"
+          ],
+          "gap_px": 369.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-M02"
+          ],
+          "gap_px": 383.99999999999994
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-M03"
+          ],
+          "gap_px": 399.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-M04"
+          ],
+          "gap_px": 414.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-M05"
+          ],
+          "gap_px": 429.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-M06"
+          ],
+          "gap_px": 444.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-L01"
+          ],
+          "gap_px": 601.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-L03"
+          ],
+          "gap_px": 639.0
+        },
+        {
+          "ids": [
+            "C-M3-T03",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 989.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-T05"
+          ],
+          "gap_px": 11.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-T06"
+          ],
+          "gap_px": 30.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-E1"
+          ],
+          "gap_px": 240.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-E2"
+          ],
+          "gap_px": 273.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-M01"
+          ],
+          "gap_px": 350.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-M02"
+          ],
+          "gap_px": 365.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-M03"
+          ],
+          "gap_px": 380.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-M04"
+          ],
+          "gap_px": 394.99999999999994
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-M05"
+          ],
+          "gap_px": 410.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-M06"
+          ],
+          "gap_px": 425.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-L01"
+          ],
+          "gap_px": 582.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-L03"
+          ],
+          "gap_px": 620.0
+        },
+        {
+          "ids": [
+            "C-M3-T04",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 970.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-T06"
+          ],
+          "gap_px": 11.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-E1"
+          ],
+          "gap_px": 221.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-E2"
+          ],
+          "gap_px": 254.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-M01"
+          ],
+          "gap_px": 331.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-M02"
+          ],
+          "gap_px": 346.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-M03"
+          ],
+          "gap_px": 361.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-M04"
+          ],
+          "gap_px": 376.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-M05"
+          ],
+          "gap_px": 390.99999999999994
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-M06"
+          ],
+          "gap_px": 406.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-L01"
+          ],
+          "gap_px": 563.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-L03"
+          ],
+          "gap_px": 601.0
+        },
+        {
+          "ids": [
+            "C-M3-T05",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 951.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-E1"
+          ],
+          "gap_px": 202.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-E2"
+          ],
+          "gap_px": 235.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-M01"
+          ],
+          "gap_px": 312.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-M02"
+          ],
+          "gap_px": 327.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-M03"
+          ],
+          "gap_px": 342.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-M04"
+          ],
+          "gap_px": 357.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-M05"
+          ],
+          "gap_px": 372.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-M06"
+          ],
+          "gap_px": 386.99999999999994
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-L01"
+          ],
+          "gap_px": 544.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-L03"
+          ],
+          "gap_px": 582.0
+        },
+        {
+          "ids": [
+            "C-M3-T06",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 932.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-E2"
+          ],
+          "gap_px": 25.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-M01"
+          ],
+          "gap_px": 102.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-M02"
+          ],
+          "gap_px": 117.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-M03"
+          ],
+          "gap_px": 132.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-M04"
+          ],
+          "gap_px": 147.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-M05"
+          ],
+          "gap_px": 162.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-M06"
+          ],
+          "gap_px": 177.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-L01"
+          ],
+          "gap_px": 334.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-L03"
+          ],
+          "gap_px": 372.0
+        },
+        {
+          "ids": [
+            "C-M3-E1",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 722.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-M01"
+          ],
+          "gap_px": 69.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-M02"
+          ],
+          "gap_px": 84.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-M03"
+          ],
+          "gap_px": 98.99999999999999
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-M04"
+          ],
+          "gap_px": 114.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-M05"
+          ],
+          "gap_px": 129.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-M06"
+          ],
+          "gap_px": 144.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-L01"
+          ],
+          "gap_px": 301.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-L03"
+          ],
+          "gap_px": 339.0
+        },
+        {
+          "ids": [
+            "C-M3-E2",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 689.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-M02"
+          ],
+          "gap_px": 7.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-M03"
+          ],
+          "gap_px": 22.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-M04"
+          ],
+          "gap_px": 37.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-M05"
+          ],
+          "gap_px": 52.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-M06"
+          ],
+          "gap_px": 67.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-L01"
+          ],
+          "gap_px": 224.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-L03"
+          ],
+          "gap_px": 262.0
+        },
+        {
+          "ids": [
+            "C-M3-M01",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 612.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-M03"
+          ],
+          "gap_px": 7.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-M04"
+          ],
+          "gap_px": 22.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-M05"
+          ],
+          "gap_px": 37.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-M06"
+          ],
+          "gap_px": 52.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-L01"
+          ],
+          "gap_px": 209.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-L03"
+          ],
+          "gap_px": 247.0
+        },
+        {
+          "ids": [
+            "C-M3-M02",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 597.0
+        },
+        {
+          "ids": [
+            "C-M3-M03",
+            "C-M3-M04"
+          ],
+          "gap_px": 7.0
+        },
+        {
+          "ids": [
+            "C-M3-M03",
+            "C-M3-M05"
+          ],
+          "gap_px": 22.0
+        },
+        {
+          "ids": [
+            "C-M3-M03",
+            "C-M3-M06"
+          ],
+          "gap_px": 37.0
+        },
+        {
+          "ids": [
+            "C-M3-M03",
+            "C-M3-L01"
+          ],
+          "gap_px": 193.99999999999997
+        },
+        {
+          "ids": [
+            "C-M3-M03",
+            "C-M3-L03"
+          ],
+          "gap_px": 232.0
+        },
+        {
+          "ids": [
+            "C-M3-M03",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 582.0
+        },
+        {
+          "ids": [
+            "C-M3-M04",
+            "C-M3-M05"
+          ],
+          "gap_px": 7.0
+        },
+        {
+          "ids": [
+            "C-M3-M04",
+            "C-M3-M06"
+          ],
+          "gap_px": 22.0
+        },
+        {
+          "ids": [
+            "C-M3-M04",
+            "C-M3-L01"
+          ],
+          "gap_px": 179.0
+        },
+        {
+          "ids": [
+            "C-M3-M04",
+            "C-M3-L03"
+          ],
+          "gap_px": 217.0
+        },
+        {
+          "ids": [
+            "C-M3-M04",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 567.0
+        },
+        {
+          "ids": [
+            "C-M3-M05",
+            "C-M3-M06"
+          ],
+          "gap_px": 7.0
+        },
+        {
+          "ids": [
+            "C-M3-M05",
+            "C-M3-L01"
+          ],
+          "gap_px": 164.0
+        },
+        {
+          "ids": [
+            "C-M3-M05",
+            "C-M3-L03"
+          ],
+          "gap_px": 202.0
+        },
+        {
+          "ids": [
+            "C-M3-M05",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 552.0
+        },
+        {
+          "ids": [
+            "C-M3-M06",
+            "C-M3-L01"
+          ],
+          "gap_px": 149.0
+        },
+        {
+          "ids": [
+            "C-M3-M06",
+            "C-M3-L03"
+          ],
+          "gap_px": 187.0
+        },
+        {
+          "ids": [
+            "C-M3-M06",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 537.0
+        },
+        {
+          "ids": [
+            "C-M3-L01",
+            "C-M3-L03"
+          ],
+          "gap_px": 30.0
+        },
+        {
+          "ids": [
+            "C-M3-L01",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 380.0
+        },
+        {
+          "ids": [
+            "C-M3-L03",
+            "C-M3-EDGE"
+          ],
+          "gap_px": 342.0
+        }
+      ],
+      "minimum_gap_px": 7.0
+    },
+    "RT-V2-U1": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 6,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "RT-V2-U2": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 6,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "RT-V2-D1": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 10,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "RT-V2-D2": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 10,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "N1-V2": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 2,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "C03-V2": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 2,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "C04-V2": {
+      "status": "PASS",
+      "errors": [],
+      "candidate_cut_count": 2,
+      "count_complete": false,
+      "electrical_connection_confirmed": false,
+      "unit": "relative_design_px_not_PDK",
+      "group_footprint_checked": true
+    },
+    "source_identity": {
+      "status": "PASS",
+      "errors": [],
+      "scope": "human_adjudicated_photograph_stack_not_universal_imaging_rule"
+    },
+    "source_order": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "R01-left-of-R02",
+          "values": {
+            "native_path": [
+              3104,
+              3374
+            ],
+            "design_path": [
+              185,
+              455
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "R02-left-of-N1",
+          "values": {
+            "native_path": [
+              3376,
+              3505
+            ],
+            "design_path": [
+              455,
+              565
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "scope": "declared_same_frame_order_not_registration"
+    },
+    "array_source_observations": {
+      "RT-V2-U1": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 6,
+        "source_pixel_recognition_verified": false
+      },
+      "RT-V2-U2": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 6,
+        "source_pixel_recognition_verified": false
+      },
+      "RT-V2-D1": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 10,
+        "source_pixel_recognition_verified": false
+      },
+      "RT-V2-D2": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 10,
+        "source_pixel_recognition_verified": false
+      },
+      "N1-V2": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 2,
+        "source_pixel_recognition_verified": false
+      },
+      "C03-V2": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 2,
+        "source_pixel_recognition_verified": false
+      },
+      "C04-V2": {
+        "status": "BOUND_AI_OBSERVATION_NOT_HUMAN_COUNT",
+        "observed_candidate_count": 2,
+        "source_pixel_recognition_verified": false
+      }
+    },
+    "additional_source_order": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "C-M3-T01-before-C-M3-T02",
+          "values": {
+            "native_path": [
+              1789,
+              1810
+            ],
+            "design_path": [
+              35,
+              54
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-T02-before-C-M3-T03",
+          "values": {
+            "native_path": [
+              1810,
+              1831
+            ],
+            "design_path": [
+              54,
+              73
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-T03-before-C-M3-T04",
+          "values": {
+            "native_path": [
+              1831,
+              1850
+            ],
+            "design_path": [
+              73,
+              92
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-T04-before-C-M3-T05",
+          "values": {
+            "native_path": [
+              1850,
+              1868
+            ],
+            "design_path": [
+              92,
+              111
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-T05-before-C-M3-T06",
+          "values": {
+            "native_path": [
+              1868,
+              1885
+            ],
+            "design_path": [
+              111,
+              130
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-T06-before-RT-M3-UP",
+          "values": {
+            "native_path": [
+              1885,
+              1938
+            ],
+            "design_path": [
+              130,
+              184
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-M01-before-C-M3-M02",
+          "values": {
+            "native_path": [
+              2259,
+              2279
+            ],
+            "design_path": [
+              450,
+              465
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-M02-before-C-M3-M03",
+          "values": {
+            "native_path": [
+              2279,
+              2296
+            ],
+            "design_path": [
+              465,
+              480
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-M03-before-C-M3-M04",
+          "values": {
+            "native_path": [
+              2296,
+              2317
+            ],
+            "design_path": [
+              480,
+              495
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-M04-before-C-M3-M05",
+          "values": {
+            "native_path": [
+              2317,
+              2334
+            ],
+            "design_path": [
+              495,
+              510
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-M05-before-C-M3-M06",
+          "values": {
+            "native_path": [
+              2334,
+              2352
+            ],
+            "design_path": [
+              510,
+              525
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-M06-before-RT-M3-MID",
+          "values": {
+            "native_path": [
+              2352,
+              2430
+            ],
+            "design_path": [
+              525,
+              590
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "RT-M3-MID-before-C-M3-L01",
+          "values": {
+            "native_path": [
+              2430,
+              2511
+            ],
+            "design_path": [
+              590,
+              682
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-L01-before-RT-M3-THIN1",
+          "values": {
+            "native_path": [
+              2511,
+              2520
+            ],
+            "design_path": [
+              682,
+              700
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "RT-M3-THIN1-before-C-M3-L03",
+          "values": {
+            "native_path": [
+              2520,
+              2545
+            ],
+            "design_path": [
+              700,
+              720
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M3-L03-before-RT-M3-THIN2",
+          "values": {
+            "native_path": [
+              2545,
+              2575
+            ],
+            "design_path": [
+              720,
+              750
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "RT-M3-THIN2-before-RT-M3-DOWN",
+          "values": {
+            "native_path": [
+              2575,
+              2730
+            ],
+            "design_path": [
+              750,
+              870
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "RT-M3-DOWN-before-C-M3-EDGE",
+          "values": {
+            "native_path": [
+              2730,
+              2958
+            ],
+            "design_path": [
+              870,
+              1070
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M2-06-left-C-M2-08",
+          "values": {
+            "native_path": [
+              2960,
+              2973
+            ],
+            "design_path": [
+              45,
+              55
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M2-08-left-C-M2-05",
+          "values": {
+            "native_path": [
+              2973,
+              2990
+            ],
+            "design_path": [
+              55,
+              70
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "C-M2-05-left-RT-M2-R01",
+          "values": {
+            "native_path": [
+              3020,
+              3102
+            ],
+            "design_path": [
+              99,
+              185
+            ]
+          },
+          "passed": true
+        },
+        {
+          "id": "RT-M2-NARROW-left-C-M2-04",
+          "values": {
+            "native_path": [
+              3534,
+              3586
+            ],
+            "design_path": [
+              590,
+              640
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "scope": "declared_same_frame_order_not_registration"
+    },
+    "visible_inventory_geometry": {
+      "status": "DECLARED_FRAGMENT_GEOMETRY_MAPPING_PASS",
+      "inventory": {
+        "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+        "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+      },
+      "listed_metal_observations": 30,
+      "mapped_geometry_count": 30,
+      "unmapped_observation_ids": [],
+      "existing_partial_source_extent_ids": [
+        "RT-M2-R01",
+        "RT-M2-R02",
+        "RT-M2-NARROW",
+        "RT-M3-UP",
+        "RT-M3-MID",
+        "RT-M3-THIN1",
+        "RT-M3-THIN2",
+        "RT-M3-DOWN"
+      ],
+      "unresolved_observation_ids": [
+        "C-U1",
+        "C-U2",
+        "C-U3",
+        "C-U4",
+        "C-U5"
+      ],
+      "boundary_source_observation_endpoints": 48,
+      "complete_source_extent_geometry": false,
+      "physical_inventory_exhaustiveness": "AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED",
+      "actual_photo_coverage_fraction": null
+    },
+    "source_extent_candidates": {
+      "status": "SOURCE_EXTENT_CANDIDATES_BOUND",
+      "evidence": {
+        "path": "benchmarks/n1-v2-local-reconstruction-v1/source-extent-evidence.json",
+        "sha256": "694062d5d8250ca44a6259fee1d1a3d1658045501bf3e18b18153a8f9ae1e0b7"
+      },
+      "metal_count": 8,
+      "source_boundary_endpoints": 13,
+      "original_native_anchors_preserved": true,
+      "geometry_human_approved": false,
+      "precise_extent_geometry_qualified": false,
+      "complete_network": false
+    },
+    "preserved_via_centers": {
+      "RT-V2-U1": {
+        "status": "PASS",
+        "design_centers_xy": [
+          [
+            180.5,
+            175.0
+          ],
+          [
+            189.5,
+            175.0
+          ],
+          [
+            180.5,
+            184.0
+          ],
+          [
+            189.5,
+            184.0
+          ],
+          [
+            180.5,
+            193.0
+          ],
+          [
+            189.5,
+            193.0
+          ]
+        ],
+        "source_registration_verified": false
+      },
+      "RT-V2-U2": {
+        "status": "PASS",
+        "design_centers_xy": [
+          [
+            450.5,
+            175.0
+          ],
+          [
+            459.5,
+            175.0
+          ],
+          [
+            450.5,
+            184.0
+          ],
+          [
+            459.5,
+            184.0
+          ],
+          [
+            450.5,
+            193.0
+          ],
+          [
+            459.5,
+            193.0
+          ]
+        ],
+        "source_registration_verified": false
+      },
+      "RT-V2-D1": {
+        "status": "PASS",
+        "design_centers_xy": [
+          [
+            180.5,
+            847.0
+          ],
+          [
+            189.5,
+            847.0
+          ],
+          [
+            180.5,
+            856.0
+          ],
+          [
+            189.5,
+            856.0
+          ],
+          [
+            180.5,
+            865.0
+          ],
+          [
+            189.5,
+            865.0
+          ],
+          [
+            180.5,
+            874.0
+          ],
+          [
+            189.5,
+            874.0
+          ],
+          [
+            180.5,
+            883.0
+          ],
+          [
+            189.5,
+            883.0
+          ]
+        ],
+        "source_registration_verified": false
+      },
+      "RT-V2-D2": {
+        "status": "PASS",
+        "design_centers_xy": [
+          [
+            450.5,
+            847.0
+          ],
+          [
+            459.5,
+            847.0
+          ],
+          [
+            450.5,
+            856.0
+          ],
+          [
+            459.5,
+            856.0
+          ],
+          [
+            450.5,
+            865.0
+          ],
+          [
+            459.5,
+            865.0
+          ],
+          [
+            450.5,
+            874.0
+          ],
+          [
+            459.5,
+            874.0
+          ],
+          [
+            450.5,
+            883.0
+          ],
+          [
+            459.5,
+            883.0
+          ]
+        ],
+        "source_registration_verified": false
+      },
+      "N1-V2": {
+        "status": "PASS",
+        "design_centers_xy": [
+          [
+            568.0,
+            682.0
+          ],
+          [
+            586.0,
+            682.0
+          ]
+        ],
+        "source_registration_verified": false
+      }
+    },
+    "interface_extension": {
+      "status": "PASS",
+      "added_interface_ids": [
+        "C03-V2",
+        "C04-V2"
+      ],
+      "existing_records_exact": true,
+      "evidence": {
+        "path": "benchmarks/upper-cap-joint-revision-v1/interface-extension-evidence.json",
+        "sha256": "5b5079e6c7daea840ebf42f8c9f5608ef3f1e93d3da5113af6d2376e32d2667e"
+      }
+    }
+  },
+  "object_counts": {
+    "M1": 0,
+    "V1": 0,
+    "M2": 8,
+    "V2": 7,
+    "M3": 22
+  },
+  "pending_interface_ids": [],
+  "deferred_unknown_ids": [],
+  "reviewed_interface_ids": [
+    "RT-V2-U1",
+    "RT-V2-U2",
+    "RT-V2-D1",
+    "RT-V2-D2",
+    "N1-V2",
+    "C03-V2",
+    "C04-V2"
+  ],
+  "changed_object_ids": [],
+  "previously_approved_preserved": true,
+  "physical_accuracy": null,
+  "autonomous_image_recognition": false,
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "added_interface_ids": [
+    "C03-V2",
+    "C04-V2"
+  ],
+  "quality": {
+    "status": "REVIEWABLE_WITH_QUALITY_GAPS",
+    "execution_checks": "PASS",
+    "source_path_shape": {
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "RT-M2-R01",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M2-R02",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M2-NARROW",
+          "native_turns": [
+            1
+          ],
+          "design_turns": [
+            1
+          ],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M2-03",
+          "native_turns": [
+            -1
+          ],
+          "design_turns": [
+            -1
+          ],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M2-04",
+          "native_turns": [
+            -1
+          ],
+          "design_turns": [
+            -1
+          ],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M2-05",
+          "native_turns": [
+            1
+          ],
+          "design_turns": [
+            1
+          ],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M2-06",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M2-08",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M3-UP",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M3-MID",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M3-DOWN",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M3-THIN1",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "RT-M3-THIN2",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-T01",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-T02",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-T03",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-T04",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-T05",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-T06",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-E1",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-E2",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-M01",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-M02",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-M03",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-M04",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-M05",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-M06",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-L01",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-L03",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        },
+        {
+          "id": "C-M3-EDGE",
+          "native_turns": [],
+          "design_turns": [],
+          "status": "PASS"
+        }
+      ],
+      "scope": "declared_path_handedness_not_photo_geometry_acceptance"
+    },
+    "represented_interface_count": 7,
+    "reviewed_represented_interface_count": 7,
+    "interface_geometry": [
+      {
+        "id": "RT-V2-U1",
+        "layer": "V2",
+        "lower_metal_id": "RT-M2-R01",
+        "upper_metal_id": "RT-M3-UP",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 6,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "RT-V2-U2",
+        "layer": "V2",
+        "lower_metal_id": "RT-M2-R02",
+        "upper_metal_id": "RT-M3-UP",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 6,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "RT-V2-D1",
+        "layer": "V2",
+        "lower_metal_id": "RT-M2-R01",
+        "upper_metal_id": "RT-M3-DOWN",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 10,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "RT-V2-D2",
+        "layer": "V2",
+        "lower_metal_id": "RT-M2-R02",
+        "upper_metal_id": "RT-M3-DOWN",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 10,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "N1-V2",
+        "layer": "V2",
+        "lower_metal_id": "RT-M2-NARROW",
+        "upper_metal_id": "C-M3-L01",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 2,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "C03-V2",
+        "layer": "V2",
+        "lower_metal_id": "C-M2-03",
+        "upper_metal_id": "C-M3-T01",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 2,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      },
+      {
+        "id": "C04-V2",
+        "layer": "V2",
+        "lower_metal_id": "C-M2-04",
+        "upper_metal_id": "C-M3-T02",
+        "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+        "human_cut_count": null,
+        "inherited_group_fact": null,
+        "representation": "EXPLICIT_DESIGN_ARRAY",
+        "design_cut_count": 2,
+        "full_group_design_enclosure": "CHECKED",
+        "source_array_geometry": "NOT_QUALIFIED",
+        "native_group_window_recorded": true,
+        "geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED"
+      }
+    ],
+    "proxy_interface_ids": [],
+    "explicit_design_array_count": 7,
+    "source_qualified_array_count": 0,
+    "metal_geometry_acceptance": "CANDIDATE_NOT_HUMAN_ACCEPTED",
+    "coverage": {
+      "status": "PARTIAL",
+      "represented_metal_count": 30,
+      "known_review_inventory_count": null,
+      "represented_review_inventory_count": null,
+      "visible_photo_inventory_complete": false,
+      "photo_coverage_fraction": null,
+      "endpoints": [
+        {
+          "id": "RT-M2-R01",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M2-R02",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M2-NARROW",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M2-03",
+          "end_states": [
+            "exits_scope",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M2-04",
+          "end_states": [
+            "exits_scope",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M2-05",
+          "end_states": [
+            "visible_terminal_or_unresolved_continuity",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M2-06",
+          "end_states": [
+            "exits_scope",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M2-08",
+          "end_states": [
+            "visible_terminal_or_unresolved_continuity",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M3-UP",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M3-MID",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M3-DOWN",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M3-THIN1",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "RT-M3-THIN2",
+          "end_states": [
+            "visible_extent_unreviewed",
+            "continues_beyond_review_window_unknown"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-T01",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-T02",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-T03",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-T04",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-T05",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-T06",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-E1",
+          "end_states": [
+            "exits_scope",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-E2",
+          "end_states": [
+            "exits_scope",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-M01",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-M02",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-M03",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-M04",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-M05",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-M06",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-L01",
+          "end_states": [
+            "exits_scope",
+            "visible_terminal_or_unresolved_continuity"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-L03",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        },
+        {
+          "id": "C-M3-EDGE",
+          "end_states": [
+            "exits_scope",
+            "exits_scope"
+          ],
+          "status": "NOT_QUALIFIED"
+        }
+      ]
+    },
+    "error_budget": {
+      "unit": "relative_design_px_not_PDK",
+      "photo_to_design_metric_budget": "NOT_ESTABLISHED"
+    },
+    "readiness": {
+      "review_package": true,
+      "canonical_geometry_adoption": false,
+      "complete_network_export": false,
+      "unrestricted_skill_release": false
+    },
+    "blocking_adoption_reasons": [
+      "原生导体宽度、端部完整性及规则几何与照片的尺寸对应未验收。",
+      "孔组阵列的真实尺寸/间距/排列尚未通过来源几何验收。",
+      "声明的来源片段已建模；旧对象端部仍部分覆盖，像素穷尽性和来源疑点未验收。",
+      "当前预算是相对设计像素，未建立真实工艺尺寸和PDK DRC资格。"
+    ],
+    "visible_inventory_geometry": {
+      "status": "DECLARED_FRAGMENT_GEOMETRY_MAPPING_PASS",
+      "inventory": {
+        "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+        "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+      },
+      "listed_metal_observations": 30,
+      "mapped_geometry_count": 30,
+      "unmapped_observation_ids": [],
+      "existing_partial_source_extent_ids": [
+        "RT-M2-R01",
+        "RT-M2-R02",
+        "RT-M2-NARROW",
+        "RT-M3-UP",
+        "RT-M3-MID",
+        "RT-M3-THIN1",
+        "RT-M3-THIN2",
+        "RT-M3-DOWN"
+      ],
+      "unresolved_observation_ids": [
+        "C-U1",
+        "C-U2",
+        "C-U3",
+        "C-U4",
+        "C-U5"
+      ],
+      "boundary_source_observation_endpoints": 48,
+      "complete_source_extent_geometry": false,
+      "physical_inventory_exhaustiveness": "AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED",
+      "actual_photo_coverage_fraction": null
+    },
+    "source_extent_candidates": {
+      "status": "SOURCE_EXTENT_CANDIDATES_BOUND",
+      "evidence": {
+        "path": "benchmarks/n1-v2-local-reconstruction-v1/source-extent-evidence.json",
+        "sha256": "694062d5d8250ca44a6259fee1d1a3d1658045501bf3e18b18153a8f9ae1e0b7"
+      },
+      "metal_count": 8,
+      "source_boundary_endpoints": 13,
+      "original_native_anchors_preserved": true,
+      "geometry_human_approved": false,
+      "precise_extent_geometry_qualified": false,
+      "complete_network": false
+    }
+  },
+  "added_metal_ids": []
+}

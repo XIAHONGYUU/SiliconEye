@@ -1,0 +1,51 @@
+{
+  "kind": "scoped_native_M3_material_identity_review_request",
+  "question_id": "M3-WEAK-CU2-IDENTITY-Q1",
+  "source_frame": "m3",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "target_native_bounds": [
+    2940,
+    2634,
+    3670,
+    2670
+  ],
+  "assessment": {
+    "path": "benchmarks/m3-weak-band-review-v1/assessments.json",
+    "sha256": "a05cd6ed93cc0eb014d991d02fafdafcf406e5b62ae332eff57c314c15a6d278"
+  },
+  "question": "C-U2橙框内是否存在一条独立M3导体？AI倾向背景/残留或成像起伏，但目前未能排除宽金属。紫框为左侧另一条真实短M3的端部，不在本次目标范围。",
+  "suggested_answers": [
+    "框内是背景或残留，不新增M3",
+    "框内有独立M3，请指出边界或走向",
+    "仍看不清，保留未知"
+  ],
+  "approval_excludes": [
+    "via identity/count",
+    "connections to other layers",
+    "exact conductor width",
+    "new geometry",
+    "N1 reapproval",
+    "full corridor exhaustiveness"
+  ],
+  "images": {
+    "expanded": {
+      "path": "docs/assets/m3-weak-band-review-v1/C-U2/wide-marked-context.png",
+      "sha256": "d61d5d7c35675d9328769dbb4ae2706420415b688e2c63ea1124a3cd193b00a7"
+    },
+    "native_raw": {
+      "path": "docs/assets/m3-weak-band-review-v1/C-U2/wide-raw-context.png",
+      "sha256": "b20f7e2c0678461c84ed63ff9cc77ce1a8d79344314374eb249d88019384535d"
+    },
+    "detail": {
+      "path": "docs/assets/m3-weak-band-review-v1/C-U2/m3-detail-marked.png",
+      "sha256": "87a4758c7c050cbcbd0d2a557b221374697a1fc00c9f5fd7b28c0518ff3456dd"
+    }
+  },
+  "answer": null,
+  "status": "WITHDRAWN_DURING_AI_REVIEW_BEFORE_USER_ANSWER",
+  "active": false,
+  "withdrawal_reason": "Background/context comparison supports an AI no-distinct-M3 disposition; no human answer is recorded or required for this working triage."
+}

@@ -1,0 +1,29 @@
+{
+  "actor": "AI",
+  "kind": "explicit_interface_extension",
+  "reason": "Add only two scoped source-reviewed interfaces, with complete declared candidate groups, after a separate local joint metal revision. Existing records are exact.",
+  "parent": {
+    "path": "docs/assets/corridor-0506-joint-reviewed-v3/metal-revised/manifest.json",
+    "sha256": "318c905a7807186a19a0d093534c617b9401a60f8a62ac2fe7f611f047b83b7d"
+  },
+  "added_interface_ids": [
+    "C05-V2",
+    "C06-V2"
+  ],
+  "interface_observations": {
+    "C05-V2": {
+      "path": "benchmarks/corridor-0506-joint-reviewed-v3/C05-V2-array-observation.json",
+      "sha256": "cb57518c976871be72be812d811a945444bdb80ca2e6b566a2d51f5d5ce62aec"
+    },
+    "C06-V2": {
+      "path": "benchmarks/corridor-0506-joint-reviewed-v3/C06-V2-array-observation.json",
+      "sha256": "14b874c5b4bf8d442b219cbd13ba90e35febc473e88700cc8140b88130892875"
+    }
+  },
+  "sources": {
+    "carrier_review": {
+      "path": "benchmarks/corridor-0506-joint-reviewed-v3/human-review.json",
+      "sha256": "6d92abe16a1e71e36438ba1a3e447a1aa1c82efbc1e3d21e9a747bae0ea340bd"
+    }
+  }
+}

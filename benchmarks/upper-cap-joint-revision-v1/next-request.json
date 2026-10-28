@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/observations.json",
+    "sha256": "0de5638a207a5cf3a8f78b7060742fc47d87666931c9835df3c820ac5c79bbdb"
+  },
+  "frames": [
+    "m2",
+    "m3"
+  ],
+  "reviews": [],
+  "deferred_unknown_ids": [],
+  "questions": {
+    "RT-V2-U1": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-U2": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-D1": "R2：下部孔组是否为V2并接到B-D？",
+    "RT-V2-D2": "R2：下部孔组是否为V2并接到B-D？",
+    "N1-V2": "Carrier already confirmed: N1接A. Do not reopen; new array dimensions remain candidate."
+  },
+  "limits": [
+    "R1/R2均为本轮新候选，既有Q1/Q2批准不转移给本组。",
+    "新孔数/排列为AI观察，来源精确几何、物理尺度和工艺DRC未知。",
+    "N1与邻线的局部隔离按照片和规则几何保留；没有声明孔的交叉处不自动生成连接，也不证明物理无孔。",
+    "只建模两条M2及邻近上下文，不等于所有可见导体清单或全网。",
+    "本轮未新增V1识别；已收口V1只作防退化回放。",
+    "初稿下部4x2自洽但漏最末排，已在人工送审前按原图退回；本版为5x2 AI候选，软件通过不代表已确认实际孔数。",
+    "R1/R2的V2身份及局部承载已于2026-10-26人工确认；孔数/排列/尺寸仍为候选，前述“新候选”保留为送审历史和几何资格。",
+    "新增22条金属几何只对应本走廊AI清单，未获人工几何批准，不是新增电气连接。",
+    "原8个金属及4个V2接口完全保持；旧8个来源端部仍部分覆盖，不能据30/30声明照片/GDS完整。",
+    "C-U1～C-U5保持未知；未将弱带重建为M3，未判断N1上端V2或05/06连续性。",
+    "E1/E2按同帧可见长短关系修正，比例仍是规则设计候选；未批准像素投影或新增连接。",
+    "本轮已有8条金属的走廊端部补成候选并单列来源延伸，原生锚点和4个已审V2/孔中心不变；不把旧“部分覆盖”历史删除或升级为实测边界。",
+    "新22段分四组做AI来源复核，R1-R4与旧端部R5/R6仍待人工几何裁决；三条弱带、N1孔身份和05/06连续性仍未知。",
+    "N1→C-M3-L01 carrier confirmed by human; inherited N1 carrier/identity unknown wording is historical. Count, dimensions and new local coordinates are not human approved.",
+    "Only N1 short-head design y changes from675 to682; source native anchors and x positions remain unchanged.",
+    "N1 two-site array is an AI geometry candidate. Complete declared design-array enclosure may be checked without asserting the physical count or source geometry is complete.",
+    "03→T01 and04→T02 source carriers are human reviewed. Only two M2 design paths change; source native anchors, M3 and old interfaces remain exact. New dimensions are AI relative-geometry candidates.",
+    "C03/C04 two-site arrays are AI design hypotheses; human identity/carrier approval does not settle physical counts, dimensions or exact photo projection. A complete declared design group PASS does not establish source-array exhaustiveness."
+  ],
+  "parent": {
+    "path": "docs/assets/upper-cap-joint-revision-v1/work/manifest.json",
+    "sha256": "204be8fd2f596f098d6741a1e93f71a35f517b222fefcfd5e70fc6f3dc12ac5c"
+  },
+  "preserve_via_center_ids": [
+    "RT-V2-U1",
+    "RT-V2-U2",
+    "RT-V2-D1",
+    "RT-V2-D2",
+    "N1-V2"
+  ],
+  "allowed_changed_ids": []
+}

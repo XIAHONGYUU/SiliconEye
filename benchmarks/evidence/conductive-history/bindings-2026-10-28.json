@@ -1,0 +1,17 @@
+{
+  "kind": "additional_historical_execution_binding",
+  "date": "2026-10-28",
+  "original_references_preserved": true,
+  "automatic_loader_redirection": false,
+  "versions": [
+    {
+      "original_path": "silicon_eye/conductive_workflow.py",
+      "expected_sha256": "c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive_workflow-c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6.py",
+        "sha256": "c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6"
+      },
+      "provenance": "Exact bytes from git243bf87:silicon_eye/conductive_workflow.py; SHA equals the frozen coverage regression execution hash."
+    }
+  ]
+}

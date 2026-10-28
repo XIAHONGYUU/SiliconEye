@@ -1,0 +1,111 @@
+{
+  "kind": "native_source_interface_identity_inspection",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2600,
+        1900,
+        3350,
+        2400
+      ],
+      "detail": [
+        2880,
+        2050,
+        3090,
+        2240
+      ]
+    },
+    "m3": {
+      "wide": [
+        2600,
+        1900,
+        3350,
+        2400
+      ],
+      "detail": [
+        2880,
+        2050,
+        3090,
+        2240
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 18,
+    "padding_px": 4,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          2980,
+          2100,
+          3034,
+          2135
+        ],
+        "color": "#ffb04f",
+        "label": "05: V2 ?",
+        "label_xy": [
+          3060,
+          2060
+        ]
+      },
+      {
+        "bounds": [
+          2933,
+          2140,
+          2977,
+          2175
+        ],
+        "color": "#79d9e9",
+        "label": "06: V2 ?",
+        "label_xy": [
+          2790,
+          2190
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m3": [
+      {
+        "points": [
+          [
+            2950,
+            2148
+          ],
+          [
+            3010,
+            2148
+          ]
+        ],
+        "color": "#d7a5ff",
+        "label": "E1: context only",
+        "label_xy": [
+          3050,
+          2080
+        ]
+      },
+      {
+        "points": [
+          [
+            2945,
+            2187
+          ],
+          [
+            2980,
+            2187
+          ]
+        ],
+        "color": "#8edba1",
+        "label": "E2: context only",
+        "label_xy": [
+          3050,
+          2210
+        ]
+      }
+    ]
+  }
+}

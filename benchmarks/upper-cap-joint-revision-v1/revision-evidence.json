@@ -1,0 +1,91 @@
+{
+  "actor": "AI",
+  "kind": "reviewed_carriers_local_relative_revision",
+  "reason": "Rebuild the two right-going M2 heads at their reviewed T01/T02 stations; preserve source anchors and all M3. Give03 a visible upward stem rather than compressing it to5px; move04 left25px to preserve the source-supported order that its head is inside the continuing T02 span. This is relative geometry, not calibrated projection.",
+  "changed_ids": [
+    "C-M2-03",
+    "C-M2-04"
+  ],
+  "geometry_human_approved": false,
+  "changes": {
+    "C-M2-03": {
+      "before": [
+        [
+          185,
+          30
+        ],
+        [
+          185,
+          90
+        ],
+        [
+          211,
+          90
+        ]
+      ],
+      "after": [
+        [
+          185,
+          10
+        ],
+        [
+          185,
+          35
+        ],
+        [
+          211,
+          35
+        ]
+      ]
+    },
+    "C-M2-04": {
+      "before": [
+        [
+          665,
+          30
+        ],
+        [
+          665,
+          104
+        ],
+        [
+          690,
+          104
+        ]
+      ],
+      "after": [
+        [
+          640,
+          30
+        ],
+        [
+          640,
+          54
+        ],
+        [
+          665,
+          54
+        ]
+      ]
+    }
+  },
+  "qualification": "Local relative design candidate only; exact lengths, offsets and camera transform remain unqualified. Top source exits are retained, not turned into physical endpoints.",
+  "sources": {
+    "parent": {
+      "path": "docs/assets/n1-v2-local-reconstruction-v1/work/manifest.json",
+      "sha256": "814d359a5c46dfa69f5feeba29fa0e264a7a2a18b089f3d2485660bdfe28fb0d"
+    },
+    "carrier_review": {
+      "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+      "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+    },
+    "source_m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "source_m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  }
+}

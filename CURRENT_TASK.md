@@ -2,18 +2,20 @@
 
 ## 当前状态与授权
 
-**用户“N1接A”已记录并接入：N1-V2将RT-M2-NARROW接到C-M3-L01。** V2身份及M3承载均已审，不重问。仅修N1短横头设计y675→682，新增1×2 AI孔组候选；逐孔及整组包络的两侧包围通过。其他29条金属、原生锚点、旧4接口/32孔完全保持。新几何、孔数/尺寸仍为候选，不当作人审真值或共同GDS采用。本轮已授权整理并提交Git/GitHub main；README、site/、gh-pages保持冻结，不重建或推送展示分支；skill仍LIMITED_TRIAL_V2。
+**05→V2→E1、06→V2→E2身份与承载已审，局部联合几何与完整声明候选孔组包围完成。** 用户原文“身份车承载关系正确”完整保留；按已交付两问解读为两对均确认，不推导孔数/精确投影/新尺寸批准。本轮仅改05、06的M2及E1/E2的局部显示入口，其他26金属、旧7接口和38孔记录完全保持。模型现30金属、9已审承载、42设计候选孔，身份/承载无待答问题。08仍为本范围AI未识别明确V2，非人审物理无孔。README/site/gh-pages保护，skill仍LIMITED_TRIAL_V2；本轮按用户授权整理并提交main；实际提交及远端同步状态以Git引用核验为准，不在入口写自引用SHA。
 
-[人审原文](benchmarks/n1-v2-local-reconstruction-v1/human-review.json) · [当前来源状态](benchmarks/n1-v2-local-reconstruction-v1/source-fact-state.json) · [阶段报告](docs/reviews/2026-10-26-n1-v2-local-reconstruction.md) · [验证](benchmarks/n1-v2-local-reconstruction-v1/verification.json) · [新旧局部图](docs/assets/n1-v2-local-reconstruction-v1/before-after-local.png) · [图层切换页](docs/assets/n1-v2-local-reconstruction-v1/index.html) · [旧六组已审几何](benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json) · [本轮前入口完整归档](docs/history/current-task-before-2026-10-26-n1-carrier-approved.md)。
+[新旧联合图](docs/assets/corridor-0506-joint-reviewed-v3/before-after-joint.png) · [本阶段复核页](docs/assets/corridor-0506-joint-reviewed-v3/index.html) · [完整走廊工作图/图层切换](docs/assets/corridor-0506-joint-reviewed-v3/work/index.html) · [人审原文](benchmarks/corridor-0506-joint-reviewed-v3/human-review.json) · [完整候选组包围](benchmarks/corridor-0506-joint-reviewed-v3/group-enclosure.json) · [当前来源状态](benchmarks/corridor-0506-joint-reviewed-v3/source-review-state.json) · [验证](benchmarks/corridor-0506-joint-reviewed-v3/verification.json) · [阶段报告](docs/reviews/2026-10-28-0506-reviewed-joint-geometry.md) · [前入口完整原文](docs/history/current-task-before-2026-10-28-0506-carriers-and-joint-geometry.md)。
 
-## 本阶段结果及边界
+## 最新结果与边界
 
-- N1源框[3498,2480,3540,2510]、下层RT-M2-NARROW、上层C-M3-L01，连接true；物理孔数null。新孔组设计包络[565,679,589,685]、两候选中心(568,682)/(586,682)。孔径6、每侧包围1；扩大后的整组包络完整落在M2/M3内。完整声明设计阵列包围PASS≠物理孔组穷尽。
-- 原失败只有2px共同材料；新修订保持短横头横向范围、宽度、左向转折及原生锚点，不把孔挪到竖干凑重叠。新坐标仍未获人审；六组原已审几何与其余对象的批准不倒改。
-- 统一入口先局部金属修订，再独立added_interface_ids接口补建，旧记录完全保持；原生承载裁决适配不接受夹带孔数/几何批准。当前工作模型30金属、5已审接口、34设计孔（32旧+2新AI候选）。新接口来源身份/承载已审，设计几何候选。
-- Q2/C-U5：C-M2-05和C-M2-06在图示局部无直接连续M2；不合并ID，global_same_net=null。当前覆盖层保留该裁决，旧冻结清单未知字段仅为历史。
-- 117项不同软件测试通过（77相关+9清单+31固定回归），非AI准确率评测。精确模型接续、来源哈希、4原图裁片、整组包围、静态页面/脚本及展示保护检查通过；浏览器交互未实测。旧文档/裁决/照片不改；本轮存档范围与核验见[GitHub检查点](docs/checkpoints/2026-10-26-conductive-corridor-handoff.md)，实际同步状态以main/origin/main和远端引用为准。
-- 三条弱带C-U1～C-U3继续未知；13个来源出界端部仍是范围边界，不是实际终点。M1/V1、更高层未纳入，物理穷尽/真实PDK/照片精确投影/全网未放行。新增N1候选不能据此宣称全走廊完成。
+- C-M2-05短头y350→340，右侧竖干下端仍y380；C-M2-06 y385→373，横向位置25–45保持。E1/E2来源起点同为原生x2940的范围出口，本地规则入口统一为设计x25，右端仍158/118，E1较长、E2较短的关系保持。原生锚点、宽度、转折、源范围和稳定ID全部保留。
+- C05-V2工作假设两孔，完整包络[70,337,99,343]，加每侧包围1为[69,336,100,344]；C06-V2为[25,370,45,376]，加包围为[24,369,46,377]。每孔和整个包络均被上下金属完整包围；孔径6、最小间距3、包围1是相对设计预算，不是真实PDK。
+- 05同包络三孔备选也可行；06同包络三孔因间距1<3被质量门拒绝，未缩孔/降规则/增加人审数量。若后续来源支持更多孔，应重建完整组范围，不能将当前设计PASS当物理孔数或穷尽证明。
+- 复用批量承载裁决适配与统一入口，先独立局部金属修订，再补两接口。原人审/提交问题/图稿冻结，身份与承载不重问。05/06在本处仍为分离M2，global_same_net=null。
+- 31项固定工程回归通过，非AI准确率；当前生产代码未改，不重复前阶段65项相关测试。4张原生裁片逐像素一致，新next-request完整回放等同工作模型，来源哈希/静态链接/PNG目视通过。25展示文件和gh-pages保持，浏览器交互未实测。
+- 03→V2→T01、04→V2→T02及N1→V2→C-M3-L01完全保持，孔数仍未知；[03/04阶段包](benchmarks/upper-cap-joint-revision-v1/source-review-state.json)为前基线，不重跑或重审。当前九条承载是来源清单局部已审接口，不代表全部物理接口。
+- 08在[2953,2855,2993,3000]内未见独立V2证据，AI暂不补建；y3000是范围边界，不是终点。下方原图梳齿仅为范围外上下文，不能外推无连接、合网或已穷尽。[08来源图](docs/assets/corridor-050608-interfaces-v1/08-source-context.png)。
+- [走廊清单覆盖报告](benchmarks/conductive-corridor-coverage-v1/coverage.json)的30映射、60端点、48范围出口保持；其5接口为历史，后续7接口也为历史，当前应读本阶段9接口覆盖状态，不倒改冻结清单。[三条弱M3 AI处置](benchmarks/m3-weak-band-review-v1/source-review-state.json)保持，不补建≠物理不存在。
 
 ## 必须接续的裁决与未知
 
@@ -28,16 +30,14 @@
 - 六处材料未知仍为AA-F01951、AA-F01952、材料H1/H2、边界AA-F01744、S3-AA4-LEFT-SD-ACCESS。V3主体截段历史例外、S1/S2/S3身份、G66上桥、R1/R2、四栅33孔、18电阻、W01与195保留对象按原范围继承，详见完整归档。
 - net_edges空、automatic_network_export_allowed=false、complete_network=false；真实尺度/工艺/极性/WL/阻值和完整网表未知。金属与孔skill仍为限定试用v2，未正式通用放行；材料skill资格不变。
 
-## 明天恢复时的唯一下一步
+## 唯一下一步
 
-本轮只完成整理、存档与提交，不继续新增技术判断。先读取当前来源状态并精确回放next-request，再开展下述来源检查。
-
-N1连接已收口，不重问身份、承载或05/06。按来源检查同一走廊C-U1/C-U2/C-U3三条弱带是否为真实M3，分别保留候选/未知；不能为整齐补线。N1新几何继续标候选，后续若出现影响承载的来源歧义再提最少问题，不以逐孔计数替代连接判断。
+对连续走廊做一次当前“来源清单→几何→接口覆盖”收口核对：以本阶段模型及9条已审接口回写新覆盖汇总，列清08的AI处置、范围出口、未证明的物理穷尽和后续M1/V1边界；冻结旧报告/批准，不重问已审身份和承载，不继续按零散样本无限扩展。先确定本走廊可收口的能力范围，再决定下一处代表性验证。
 
 ```bash
-.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/n1-v2-local-reconstruction-v1/next-request.json --output runs/新的N1接续目录
+.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/corridor-0506-joint-reviewed-v3/next-request.json --output runs/新的走廊接续目录
 ```
 
-当前用新next-request接续（已移除新增声明），同时读新source-fact-state和旧六组working-baseline；原六组除本次N1局部候选外不重算。其他分支V1从`benchmarks/v1-new-short-branch-reviewed-v2/next-request.json`恢复；旧联合中样从`benchmarks/m1-local-tab-v1/work-next.json`恢复并读收口裁决。本轮提交前基线fcc531a；具体存档提交SHA从Git读取，不在此写自引用；origin=https://github.com/XIAHONGYUU/SiliconEye.git；本机silicon-eye目录/命令兼容名保留。
+接续时同时读本阶段source-review-state及原库存清单，不以历史unknown字段重开旧裁决。其他V1分支从`benchmarks/v1-new-short-branch-reviewed-v2/next-request.json`恢复；旧联合中样从`benchmarks/m1-local-tab-v1/work-next.json`恢复。本轮归档基点为243bf87；弱带/覆盖/03-04/05-06各阶段、批量裁决适配代码与8项新增测试纳入同一研发存档。实际同步状态以main/origin/main和远端引用为准；本入口不作为Git状态替代。origin=https://github.com/XIAHONGYUU/SiliconEye.git；本机目录和silicon-eye命令兼容名保留。
 
-[本轮整理前CURRENT_TASK完整归档](docs/history/current-task-before-2026-10-26-github-handoff.md)。
+[2026-10-28 GitHub存档检查点](docs/checkpoints/2026-10-28-conductive-corridor-handoff.md) · [提交前核验](benchmarks/github-archive-2026-10-28/verification-v1.json) · [整理前入口原文](docs/history/current-task-before-2026-10-28-github-handoff.md)。

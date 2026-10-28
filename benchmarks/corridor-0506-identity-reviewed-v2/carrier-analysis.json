@@ -1,0 +1,73 @@
+{
+  "kind": "native_upper_carrier_comparison",
+  "actor": "AI",
+  "date": "2026-10-28",
+  "identity_approval": {
+    "path": "benchmarks/corridor-0506-identity-reviewed-v2/human-review.json",
+    "sha256": "513f241992d3e93bfe729990faf18c522beae2c67690a0772ce5132d0443cd40"
+  },
+  "working_request": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/next-request.json",
+    "sha256": "97e9ec5fdf7e02791ac0599b1302bd4cc1a6f79b0a4a1c888cda4b76f12ec3db"
+  },
+  "source_photos": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "alternatives": [
+    {
+      "label": "E1",
+      "id": "C-M3-E1",
+      "native_path": [
+        [
+          2940,
+          2148
+        ],
+        [
+          3045,
+          2148
+        ]
+      ]
+    },
+    {
+      "label": "E2",
+      "id": "C-M3-E2",
+      "native_path": [
+        [
+          2940,
+          2187
+        ],
+        [
+          2998,
+          2187
+        ]
+      ]
+    }
+  ],
+  "preferred_search_hypotheses": {
+    "C-M2-05": "C-M3-E1",
+    "C-M2-06": "C-M3-E2"
+  },
+  "basis": "Two distinct M2 sites and two isolated M3 stubs have compatible top/bottom order, separation and relative footprint. E1 is the upper longer stub; E2 the lower shorter stub. This supports a candidate pair, not unique calibrated correspondence.",
+  "alternative_explanations": [
+    "Offset may place either site on a neighboring M3, or pairing may be wrong. The displayed pair is not proved exhaustive."
+  ],
+  "M3_carriers_human_confirmed": false,
+  "cross_frame_transform": null,
+  "registered_pixel_projection_qualified": false,
+  "upper_metal_ids": {
+    "C-M2-05": null,
+    "C-M2-06": null
+  },
+  "physical_cut_counts": {
+    "C-M2-05": null,
+    "C-M2-06": null
+  },
+  "geometry_changed": false
+}

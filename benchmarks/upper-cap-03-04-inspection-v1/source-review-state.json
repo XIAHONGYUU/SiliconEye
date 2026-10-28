@@ -1,0 +1,22 @@
+{
+  "kind": "source_interface_identity_candidate_state",
+  "date": "2026-10-28",
+  "prior_coverage": {
+    "path": "benchmarks/conductive-corridor-coverage-v1/coverage.json",
+    "sha256": "74087789b59d3509e3d53307c9d2c21ad8e629b59adad8c60519b75d2525c2bf"
+  },
+  "observations": {
+    "path": "benchmarks/upper-cap-03-04-inspection-v1/observations.json",
+    "sha256": "374da9f4815e6f8c4867aa3337257c600feeb1e6b940e1e57b5ccc4eea5c0aea"
+  },
+  "pending_identity_question_ids": [
+    "C03-V2-IDENTITY-Q1",
+    "C04-V2-IDENTITY-Q2"
+  ],
+  "M3_carriers_assigned": false,
+  "geometry_unchanged": true,
+  "existing_reviewed_interfaces": 5,
+  "existing_design_cut_count": 34,
+  "new_confirmed_interfaces": 0,
+  "next_dependency": "Resolve 03/04 V2 identity, then identify M3 carriers from independent native structures; do not infer from geometry intersection."
+}

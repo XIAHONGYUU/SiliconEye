@@ -1,0 +1,138 @@
+{
+  "kind": "native_upper_carrier_comparison",
+  "actor": "AI",
+  "date": "2026-10-28",
+  "identity_approval": {
+    "path": "benchmarks/upper-cap-03-04-reviewed-v2/human-review.json",
+    "sha256": "335e37577f59614f5ebac11281557a11611d15517de2650fc4b67108711d7cee"
+  },
+  "working_request": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/next-request.json",
+    "sha256": "7374314e6384e3fc282bae089f9e142241b6861dc0bc66d491026d60b4ac44a6"
+  },
+  "source_photos": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "alternatives": [
+    {
+      "label": "T01",
+      "id": "C-M3-T01",
+      "native_path": [
+        [
+          2940,
+          1809
+        ],
+        [
+          3670,
+          1789
+        ]
+      ]
+    },
+    {
+      "label": "T02",
+      "id": "C-M3-T02",
+      "native_path": [
+        [
+          2940,
+          1830
+        ],
+        [
+          3670,
+          1810
+        ]
+      ]
+    },
+    {
+      "label": "T03",
+      "id": "C-M3-T03",
+      "native_path": [
+        [
+          2940,
+          1851
+        ],
+        [
+          3670,
+          1831
+        ]
+      ]
+    },
+    {
+      "label": "T04",
+      "id": "C-M3-T04",
+      "native_path": [
+        [
+          2940,
+          1870
+        ],
+        [
+          3670,
+          1850
+        ]
+      ]
+    },
+    {
+      "label": "T05",
+      "id": "C-M3-T05",
+      "native_path": [
+        [
+          2940,
+          1888
+        ],
+        [
+          3670,
+          1868
+        ]
+      ]
+    },
+    {
+      "label": "T06",
+      "id": "C-M3-T06",
+      "native_path": [
+        [
+          2940,
+          1905
+        ],
+        [
+          3670,
+          1885
+        ]
+      ]
+    },
+    {
+      "label": "UP",
+      "id": "RT-M3-UP",
+      "native_path": [
+        [
+          2980,
+          1958
+        ],
+        [
+          3650,
+          1938
+        ]
+      ]
+    }
+  ],
+  "preferred_upper_candidate": null,
+  "registered_pixel_projection_qualified": false,
+  "cross_frame_transform": null,
+  "findings": [
+    "Both right-going M2 caps contain V2 by human decision.",
+    "M3 contains six nearby ordered thin bands above the UP bus; these are separate visible native bands.",
+    "Wide-context isolated patches and bank order do not uniquely locate the two cap sites across layers. Their identities as corresponding landmarks are not confirmed.",
+    "No bright M3 patch is being interpreted as a V2 anchor.",
+    "No same-xy or independent regular-design intersection is used to choose an upper carrier."
+  ],
+  "limits": "T01-T06/UP are displayed context alternatives, not an exhaustive proved carrier set. Other or unclear remains valid. No new connected interface or design cuts are created.",
+  "upper_metal_ids": {
+    "C-M2-03": null,
+    "C-M2-04": null
+  }
+}

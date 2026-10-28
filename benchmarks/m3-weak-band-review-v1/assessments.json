@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "kind": "AI_native_M3_band_assessments",
+  "date": "2026-10-27",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "prior_source_fact_state": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/source-fact-state.json",
+    "sha256": "26f6be377cb1369826452ae06c4993983b15229f80420f6a4e70e058ec03b2de"
+  },
+  "assessments": [
+    {
+      "id": "C-U1",
+      "actor": "AI",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2015,
+        3670,
+        2051
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "source_window_spec": {
+        "path": "benchmarks/m3-weak-band-review-v1/C-U1-panels.json",
+        "sha256": "a1b77fde85d1ec8d15191be8a407ec06919ce95e345cbf62a0d14f476b338238"
+      },
+      "is_distinct_M3_human_confirmed": null,
+      "physical_conductor_count": null,
+      "geometry_added": false,
+      "connection_claimed": false,
+      "profile_prominence_gray_range": [
+        3.0358243548814983,
+        6.78623016447122
+      ],
+      "profile_half_prominence_width_native_px_range": [
+        7.519519988568785,
+        44.728632709849606
+      ],
+      "metric_limit": "Brightness/peak width is diagnostic only, not material identity or conductor width.",
+      "status": "AI_BACKGROUND_OR_IMAGING_TEXTURE_CANDIDATE",
+      "is_distinct_M3_candidate": false,
+      "reasoning": "Expanded native view shows no separate crisp paired edges, corner or conductor endpoint in the target interval. Peaks are weak/unstable between independent columns; retain the observation but do not create a conductor.",
+      "working_disposition": "DO_NOT_ADD_METAL_FROM_THIS_BAND",
+      "human_question_required": false,
+      "physical_absence_proven": false,
+      "background_gray_medians": [
+        142.0,
+        146.5,
+        146.0,
+        143.0,
+        138.0
+      ]
+    },
+    {
+      "id": "C-U2",
+      "actor": "AI",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2634,
+        3670,
+        2670
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "source_window_spec": {
+        "path": "benchmarks/m3-weak-band-review-v1/C-U2-panels.json",
+        "sha256": "cd2436c3cf1e97048a5bfec9d8c8d10e46a8bb3229db4d1acd8c65fa015cd754"
+      },
+      "is_distinct_M3_human_confirmed": null,
+      "physical_conductor_count": null,
+      "geometry_added": false,
+      "connection_claimed": false,
+      "profile_prominence_gray_range": [
+        20.984157561642164,
+        30.142462985640265
+      ],
+      "profile_half_prominence_width_native_px_range": [
+        45.03733030949203,
+        51.50971084062968
+      ],
+      "metric_limit": "Brightness/peak width is diagnostic only, not material identity or conductor width.",
+      "status": "AI_BACKGROUND_OR_IMAGING_TEXTURE_CANDIDATE",
+      "is_distinct_M3_candidate": false,
+      "reasoning": "Expanded native source shows no separate crisp paired edges, corner or endpoint in the target interval. Its broad profile bump remains ordinary-background-like in absolute gray values; relative prominence is increased by darker rims around neighboring real lines. The nearby left short M3 terminates before this corridor and is not extended into the target.",
+      "working_disposition": "DO_NOT_ADD_METAL_FROM_THIS_BAND",
+      "human_question_required": false,
+      "physical_absence_proven": false,
+      "adjacent_short_M3_end_search_window": [
+        2860,
+        2645,
+        2915,
+        2680
+      ],
+      "background_gray_medians": [
+        141.0,
+        140.5,
+        137.0,
+        133.0,
+        129.5
+      ]
+    },
+    {
+      "id": "C-U3",
+      "actor": "AI",
+      "source_frame": "m3",
+      "native_bounds": [
+        2940,
+        2846,
+        3670,
+        2882
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "source_window_spec": {
+        "path": "benchmarks/m3-weak-band-review-v1/C-U3-panels.json",
+        "sha256": "77293b26beb816bae167900e061763cb9120b8c0a5d4c979b40d1e8dc08db14b"
+      },
+      "is_distinct_M3_human_confirmed": null,
+      "physical_conductor_count": null,
+      "geometry_added": false,
+      "connection_claimed": false,
+      "profile_prominence_gray_range": [
+        1.7185629563743419,
+        7.462246704012301
+      ],
+      "profile_half_prominence_width_native_px_range": [
+        6.347532511704998,
+        23.912348366642984
+      ],
+      "metric_limit": "Brightness/peak width is diagnostic only, not material identity or conductor width.",
+      "status": "AI_BACKGROUND_OR_IMAGING_TEXTURE_CANDIDATE",
+      "is_distinct_M3_candidate": false,
+      "reasoning": "Expanded native view shows no separate crisp paired edges, corner or conductor endpoint in the target interval. Peaks are weak/unstable between independent columns; retain the observation but do not create a conductor.",
+      "working_disposition": "DO_NOT_ADD_METAL_FROM_THIS_BAND",
+      "human_question_required": false,
+      "physical_absence_proven": false,
+      "background_gray_medians": [
+        140.0,
+        137.0,
+        137.0,
+        132.0,
+        133.0
+      ]
+    }
+  ],
+  "assistance": {
+    "path": "benchmarks/m3-weak-band-review-v1/profile-assistance.json",
+    "sha256": "92611ca2dc55c24d13c48a351f9aeee25ab9bc7f7e5f06c1e061daba7322aec1"
+  },
+  "geometry_changed": false,
+  "new_net_edges": [],
+  "canonical_adoption": false,
+  "physical_exhaustiveness_verified": false,
+  "notes": [
+    "AI negative candidates do not constitute human-confirmed physical absence. Original unknown rows remain immutable.",
+    "A new working disposition is an assessment overlay, not an edit to source evidence or approved geometry."
+  ],
+  "background_assistance": {
+    "path": "benchmarks/m3-weak-band-review-v1/background-assistance.json",
+    "sha256": "3341b37eae3ac6f308cf9e900badd17b0b64cfe67cc1b0af0bfe74b60b8d1eac"
+  },
+  "assessment_revision_history": {
+    "path": "benchmarks/m3-weak-band-review-v1/assessment-revision-history.json",
+    "sha256": "15acb91fbc5722d98713a3ef9648764bc3fc5f4e6d4fe2009b8458106d83c0e2"
+  }
+}

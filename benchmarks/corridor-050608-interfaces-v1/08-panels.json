@@ -1,0 +1,79 @@
+{
+  "kind": "native_source_interface_extent_inspection",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2600,
+        2650,
+        3350,
+        3240
+      ],
+      "detail": [
+        2840,
+        2780,
+        3110,
+        3070
+      ]
+    },
+    "m3": {
+      "wide": [
+        2600,
+        2650,
+        3350,
+        3240
+      ],
+      "detail": [
+        2840,
+        2780,
+        3110,
+        3070
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 18,
+    "padding_px": 4,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          2953,
+          2855,
+          2993,
+          3000
+        ],
+        "color": "#79d9e9",
+        "label": "08: no clear V2 identified",
+        "label_xy": [
+          3020,
+          2810
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m2": [
+      {
+        "points": [
+          [
+            2840,
+            3000
+          ],
+          [
+            3090,
+            3000
+          ]
+        ],
+        "color": "#ffdc62",
+        "label": "y3000: scope boundary",
+        "label_xy": [
+          2820,
+          3120
+        ]
+      }
+    ]
+  }
+}

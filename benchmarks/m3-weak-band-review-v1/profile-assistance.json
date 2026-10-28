@@ -1,0 +1,317 @@
+{
+  "actor": "AI",
+  "kind": "same_frame_source_profile_assistance",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "method": "Median native grayscale over five disjoint x windows; Gaussian sigma1.7; strongest local prominence within +/-20px of a rough -0.027 dy/dx search line. Width is diagnostic half-prominence width, NOT conductor width. Camera slope is for within-M3 search only, not a registration.",
+  "observations": [
+    {
+      "id": "C-U1",
+      "profiles": [
+        {
+          "x_window": [
+            2960,
+            3050
+          ],
+          "approximate_expected_y_for_search_only": 2038.4,
+          "source_frame": "m3",
+          "native_peak_y": 2041,
+          "peak_prominence_gray": 6.78623016447122,
+          "half_prominence_width_native_px": 26.63978733811456
+        },
+        {
+          "x_window": [
+            3120,
+            3220
+          ],
+          "approximate_expected_y_for_search_only": 2033.945,
+          "source_frame": "m3",
+          "native_peak_y": 2031,
+          "peak_prominence_gray": 6.4427999903328725,
+          "half_prominence_width_native_px": 23.585439893003112
+        },
+        {
+          "x_window": [
+            3310,
+            3410
+          ],
+          "approximate_expected_y_for_search_only": 2028.815,
+          "source_frame": "m3",
+          "native_peak_y": 2026,
+          "peak_prominence_gray": 5.721847521075745,
+          "half_prominence_width_native_px": 44.728632709849606
+        },
+        {
+          "x_window": [
+            3500,
+            3600
+          ],
+          "approximate_expected_y_for_search_only": 2023.685,
+          "source_frame": "m3",
+          "native_peak_y": 2028,
+          "peak_prominence_gray": 3.0358243548814983,
+          "half_prominence_width_native_px": 17.348999443094037
+        },
+        {
+          "x_window": [
+            3610,
+            3660
+          ],
+          "approximate_expected_y_for_search_only": 2021.39,
+          "source_frame": "m3",
+          "native_peak_y": 2003,
+          "peak_prominence_gray": 4.3455963352232345,
+          "half_prominence_width_native_px": 7.519519988568785
+        }
+      ]
+    },
+    {
+      "id": "C-U2",
+      "profiles": [
+        {
+          "x_window": [
+            2960,
+            3050
+          ],
+          "approximate_expected_y_for_search_only": 2657.4,
+          "source_frame": "m3",
+          "native_peak_y": 2640,
+          "peak_prominence_gray": 30.142462985640265,
+          "half_prominence_width_native_px": 51.30385734542806
+        },
+        {
+          "x_window": [
+            3120,
+            3220
+          ],
+          "approximate_expected_y_for_search_only": 2652.945,
+          "source_frame": "m3",
+          "native_peak_y": 2640,
+          "peak_prominence_gray": 29.70504332460628,
+          "half_prominence_width_native_px": 51.50971084062968
+        },
+        {
+          "x_window": [
+            3310,
+            3410
+          ],
+          "approximate_expected_y_for_search_only": 2647.815,
+          "source_frame": "m3",
+          "native_peak_y": 2638,
+          "peak_prominence_gray": 29.732110210455232,
+          "half_prominence_width_native_px": 48.0599845294043
+        },
+        {
+          "x_window": [
+            3500,
+            3600
+          ],
+          "approximate_expected_y_for_search_only": 2642.685,
+          "source_frame": "m3",
+          "native_peak_y": 2644,
+          "peak_prominence_gray": 23.921652111459352,
+          "half_prominence_width_native_px": 49.94827645404512
+        },
+        {
+          "x_window": [
+            3610,
+            3660
+          ],
+          "approximate_expected_y_for_search_only": 2640.39,
+          "source_frame": "m3",
+          "native_peak_y": 2629,
+          "peak_prominence_gray": 20.984157561642164,
+          "half_prominence_width_native_px": 45.03733030949203
+        }
+      ]
+    },
+    {
+      "id": "C-U3",
+      "profiles": [
+        {
+          "x_window": [
+            2960,
+            3050
+          ],
+          "approximate_expected_y_for_search_only": 2869.4,
+          "source_frame": "m3",
+          "native_peak_y": 2881,
+          "peak_prominence_gray": 2.5825239851824904,
+          "half_prominence_width_native_px": 6.347532511704998
+        },
+        {
+          "x_window": [
+            3120,
+            3220
+          ],
+          "approximate_expected_y_for_search_only": 2864.945,
+          "source_frame": "m3",
+          "native_peak_y": 2870,
+          "peak_prominence_gray": 2.511963590941434,
+          "half_prominence_width_native_px": 9.20112944527731
+        },
+        {
+          "x_window": [
+            3310,
+            3410
+          ],
+          "approximate_expected_y_for_search_only": 2859.815,
+          "source_frame": "m3",
+          "native_peak_y": 2869,
+          "peak_prominence_gray": 1.7185629563743419,
+          "half_prominence_width_native_px": 6.375779192341248
+        },
+        {
+          "x_window": [
+            3500,
+            3600
+          ],
+          "approximate_expected_y_for_search_only": 2854.685,
+          "source_frame": "m3",
+          "native_peak_y": 2845,
+          "peak_prominence_gray": 7.462246704012301,
+          "half_prominence_width_native_px": 23.912348366642984
+        },
+        {
+          "x_window": [
+            3610,
+            3660
+          ],
+          "approximate_expected_y_for_search_only": 2852.39,
+          "source_frame": "m3",
+          "native_peak_y": 2847,
+          "peak_prominence_gray": 4.171977637912335,
+          "half_prominence_width_native_px": 12.179757863571435
+        }
+      ]
+    },
+    {
+      "id": "CONTROL-THIN2",
+      "profiles": [
+        {
+          "x_window": [
+            2960,
+            3050
+          ],
+          "approximate_expected_y_for_search_only": 2600.4,
+          "source_frame": "m3",
+          "native_peak_y": 2599,
+          "peak_prominence_gray": 103.12000289905708,
+          "half_prominence_width_native_px": 12.683903805622599
+        },
+        {
+          "x_window": [
+            3120,
+            3220
+          ],
+          "approximate_expected_y_for_search_only": 2595.945,
+          "source_frame": "m3",
+          "native_peak_y": 2595,
+          "peak_prominence_gray": 100.39603333002732,
+          "half_prominence_width_native_px": 12.598672574268605
+        },
+        {
+          "x_window": [
+            3310,
+            3410
+          ],
+          "approximate_expected_y_for_search_only": 2590.815,
+          "source_frame": "m3",
+          "native_peak_y": 2592,
+          "peak_prominence_gray": 96.04189323511937,
+          "half_prominence_width_native_px": 12.768960952149563
+        },
+        {
+          "x_window": [
+            3500,
+            3600
+          ],
+          "approximate_expected_y_for_search_only": 2585.685,
+          "source_frame": "m3",
+          "native_peak_y": 2588,
+          "peak_prominence_gray": 96.2335372676118,
+          "half_prominence_width_native_px": 13.027167644321885
+        },
+        {
+          "x_window": [
+            3610,
+            3660
+          ],
+          "approximate_expected_y_for_search_only": 2583.39,
+          "source_frame": "m3",
+          "native_peak_y": 2586,
+          "peak_prominence_gray": 94.56908718089292,
+          "half_prominence_width_native_px": 12.720993992797112
+        }
+      ]
+    },
+    {
+      "id": "CONTROL-MIDDLE-FINE-LINE-WINDOW",
+      "profiles": [
+        {
+          "x_window": [
+            2960,
+            3050
+          ],
+          "approximate_expected_y_for_search_only": 2314.4,
+          "source_frame": "m3",
+          "native_peak_y": 2295,
+          "peak_prominence_gray": 90.63819986201875,
+          "half_prominence_width_native_px": 10.116225010719596
+        },
+        {
+          "x_window": [
+            3120,
+            3220
+          ],
+          "approximate_expected_y_for_search_only": 2309.945,
+          "source_frame": "m3",
+          "native_peak_y": 2293,
+          "peak_prominence_gray": 97.64415791840888,
+          "half_prominence_width_native_px": 10.13139415831084
+        },
+        {
+          "x_window": [
+            3310,
+            3410
+          ],
+          "approximate_expected_y_for_search_only": 2304.815,
+          "source_frame": "m3",
+          "native_peak_y": 2289,
+          "peak_prominence_gray": 93.65549866033312,
+          "half_prominence_width_native_px": 10.006063023149704
+        },
+        {
+          "x_window": [
+            3500,
+            3600
+          ],
+          "approximate_expected_y_for_search_only": 2299.685,
+          "source_frame": "m3",
+          "native_peak_y": 2286,
+          "peak_prominence_gray": 95.39638640171671,
+          "half_prominence_width_native_px": 10.298299190351567
+        },
+        {
+          "x_window": [
+            3610,
+            3660
+          ],
+          "approximate_expected_y_for_search_only": 2297.39,
+          "source_frame": "m3",
+          "native_peak_y": 2284,
+          "peak_prominence_gray": 91.06025680165965,
+          "half_prominence_width_native_px": 10.380571671943141
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Brightness, prominence, width and continuity of a peak cannot establish conductor/material identity.",
+    "Weak/background bands may be coherent across columns; no hard segmentation threshold or physical count is inferred.",
+    "Raw native crops and visual boundaries/endpoints are the primary evidence; no cross-frame transform, geometry adoption or net export.",
+    "The strongest peak within each search window can shift to a neighboring peak; diagnostic peak width is not a measured conductor boundary."
+  ]
+}

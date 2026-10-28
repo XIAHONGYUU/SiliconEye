@@ -1,0 +1,35 @@
+{
+  "kind": "remaining_interface_source_triage",
+  "date": "2026-10-28",
+  "working_request": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/next-request.json",
+    "sha256": "97e9ec5fdf7e02791ac0599b1302bd4cc1a6f79b0a4a1c888cda4b76f12ec3db"
+  },
+  "assessment": {
+    "path": "benchmarks/corridor-050608-interfaces-v1/observations.json",
+    "sha256": "5d0715ec099b022f87e6c64aca79ba04822a30780ac5aa5fa14762160c48c2be"
+  },
+  "pending_identity_question_ids": [
+    "C05-V2-IDENTITY-Q1",
+    "C06-V2-IDENTITY-Q1"
+  ],
+  "review_request": {
+    "path": "benchmarks/corridor-050608-interfaces-v1/review-request.json",
+    "sha256": "2da029b4cad776b8a3710967998fc3403e0c2dd7d39d87e56df7c12a5e75b85d"
+  },
+  "confirmed_reviewed_interfaces": 7,
+  "model_design_cut_count": 38,
+  "geometry_unchanged": true,
+  "new_interfaces": 0,
+  "C08_disposition": "AI_NO_DISTINCT_V2_IDENTIFIED_WITHIN_SCOPE_NOT_HUMAN_ABSENCE",
+  "pair05_06": {
+    "local_direct_M2_continuity": false,
+    "global_same_net": null,
+    "review_reference": {
+      "path": "benchmarks/corridor-n1-0506-reviewed-v2/human-review.json",
+      "sha256": "0dd9d54c78479da08e6758b19d93980166fedda6ce2f9d1f56a1c19740b5df4e"
+    },
+    "reapproval_required": false
+  },
+  "next_dependency": "Resolve05/06 V2 identity only; then inspect M3 carriers separately. Do not create08 via from a crossing or assume route termination at y3000."
+}

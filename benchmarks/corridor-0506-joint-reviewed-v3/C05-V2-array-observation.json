@@ -1,0 +1,49 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "C05-V2",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    2980,
+    2100,
+    3034,
+    2135
+  ],
+  "rows": 1,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        2992,
+        2117
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        3018,
+        2117
+      ]
+    }
+  ],
+  "basis": "Two-site working design hypothesis spanning the full short-head station, not a physical count. Approximate source sites are affected by screen texture and are not independently resolved hole centers. Physical group exhaustiveness remains unknown.",
+  "sources": {
+    "carrier_review": {
+      "path": "benchmarks/corridor-0506-joint-reviewed-v3/human-review.json",
+      "sha256": "6d92abe16a1e71e36438ba1a3e447a1aa1c82efbc1e3d21e9a747bae0ea340bd"
+    },
+    "source_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  }
+}

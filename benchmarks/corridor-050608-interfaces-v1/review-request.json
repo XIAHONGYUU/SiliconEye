@@ -1,0 +1,58 @@
+{
+  "kind": "scoped_native_V2_identity_review_request",
+  "date": "2026-10-28",
+  "observations": {
+    "path": "benchmarks/corridor-050608-interfaces-v1/observations.json",
+    "sha256": "5d0715ec099b022f87e6c64aca79ba04822a30780ac5aa5fa14762160c48c2be"
+  },
+  "working_request": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/next-request.json",
+    "sha256": "97e9ec5fdf7e02791ac0599b1302bd4cc1a6f79b0a4a1c888cda4b76f12ec3db"
+  },
+  "questions": [
+    {
+      "question_id": "C05-V2-IDENTITY-Q1",
+      "candidate_id": "C05-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        2980,
+        2100,
+        3034,
+        2135
+      ],
+      "lower_metal_id": "C-M2-05",
+      "question": "05框内亮头是否包含V2？",
+      "answer": null
+    },
+    {
+      "question_id": "C06-V2-IDENTITY-Q1",
+      "candidate_id": "C06-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        2933,
+        2140,
+        2977,
+        2175
+      ],
+      "lower_metal_id": "C-M2-06",
+      "question": "06框内亮头是否包含V2？",
+      "answer": null
+    }
+  ],
+  "images": {
+    "identity_review": {
+      "path": "docs/assets/corridor-050608-interfaces-v1/05-06-identity-review.png",
+      "sha256": "188ccb28892795f76f0632e90524963795defa241f96075775b902958967c171"
+    }
+  },
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact source array geometry",
+    "M3 upper carrier",
+    "electrical connection",
+    "new design geometry",
+    "05/06 local continuity reapproval",
+    "08 physical absence",
+    "complete network"
+  ]
+}

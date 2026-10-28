@@ -1,0 +1,72 @@
+{
+  "kind": "source_carriers_reviewed_work_geometry_pending",
+  "date": "2026-10-28",
+  "prior_source_state": {
+    "path": "benchmarks/upper-cap-03-04-reviewed-v2/source-review-state.json",
+    "sha256": "607268c5cdab6c11eded53490021bde65236872ddded62a1e078feb295562eb2"
+  },
+  "human_review": {
+    "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+    "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+  },
+  "landing_audit": {
+    "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/landing-audit.json",
+    "sha256": "bd0bb559464c33dd76cea351ca088fb4133ca5fb191fc9f18c804f8556a38c33"
+  },
+  "confirmed_source_interfaces": [
+    {
+      "question_id": "C03-M3-CARRIER-Q1",
+      "candidate_id": "C03-V2-SOURCE-CANDIDATE",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "upper_metal_id": "C-M3-T01",
+      "connection_confirmed": true,
+      "certainty_basis": "human_visual_judgment",
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "question_id": "C04-M3-CARRIER-Q1",
+      "candidate_id": "C04-V2-SOURCE-CANDIDATE",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "upper_metal_id": "C-M3-T02",
+      "connection_confirmed": true,
+      "certainty_basis": "human_visual_judgment",
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ],
+  "pending_identity_question_ids": [],
+  "pending_carrier_question_ids": [],
+  "modeled_reviewed_interfaces": 5,
+  "source_reviewed_interfaces_total": 7,
+  "new_source_carrier_judgments": 2,
+  "new_modeled_interfaces": 0,
+  "modeled_design_cut_count": 34,
+  "physical_cut_counts_unknown": true,
+  "geometry_unchanged": true,
+  "remaining_unsurveyed_M2_interface_records": [
+    "C-M2-05",
+    "C-M2-06",
+    "C-M2-08"
+  ],
+  "next_dependency": "Revise the local upper-bank candidate geometry against approved source carriers, preserving original source scope and array uncertainty; no repeated identity/carrier question.",
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false
+}

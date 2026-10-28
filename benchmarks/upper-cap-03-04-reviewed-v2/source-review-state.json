@@ -1,0 +1,69 @@
+{
+  "kind": "source_interface_identity_confirmed_carrier_pending",
+  "date": "2026-10-28",
+  "prior_state": {
+    "path": "benchmarks/upper-cap-03-04-inspection-v1/source-review-state.json",
+    "sha256": "7ae402cc9d5af450bca2be6c173ab06f3c2646a82efabbc3076ba64275752c95"
+  },
+  "human_review": {
+    "path": "benchmarks/upper-cap-03-04-reviewed-v2/human-review.json",
+    "sha256": "335e37577f59614f5ebac11281557a11611d15517de2650fc4b67108711d7cee"
+  },
+  "observations": {
+    "path": "benchmarks/upper-cap-03-04-inspection-v1/observations.json",
+    "sha256": "374da9f4815e6f8c4867aa3337257c600feeb1e6b940e1e57b5ccc4eea5c0aea"
+  },
+  "pending_identity_question_ids": [],
+  "confirmed_identities": [
+    {
+      "question_id": "C03-V2-IDENTITY-Q1",
+      "candidate_id": "C03-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null
+    },
+    {
+      "question_id": "C04-V2-IDENTITY-Q2",
+      "candidate_id": "C04-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null
+    }
+  ],
+  "pending_carrier_questions": {
+    "path": "benchmarks/upper-cap-03-04-reviewed-v2/carrier-review-request.json",
+    "sha256": "deaad98eb51e94d8ee3759c9b6f258b58fa86a7abd2410c7fe81dfc9dabc8111"
+  },
+  "M3_carriers_assigned": false,
+  "physical_cut_counts": {
+    "C-M2-03": null,
+    "C-M2-04": null
+  },
+  "geometry_unchanged": true,
+  "existing_reviewed_interfaces": 5,
+  "existing_design_cut_count": 34,
+  "new_confirmed_connections": 0,
+  "new_design_vias": 0,
+  "net_edges": [],
+  "next_dependency": "Human identify M3 carriers from independent raw native panels; then inspect source landing and group enclosure. Unclear answers stay unknown."
+}

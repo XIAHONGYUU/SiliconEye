@@ -1,0 +1,90 @@
+{
+  "kind": "scoped_native_carrier_comparison_review_request",
+  "date": "2026-10-28",
+  "analysis": {
+    "path": "benchmarks/upper-cap-03-04-reviewed-v2/carrier-analysis.json",
+    "sha256": "56514cede183a0276e260412c85365b54e3c0628c4ef867f31f7818b6b85ed47"
+  },
+  "prior_identity_approval": {
+    "path": "benchmarks/upper-cap-03-04-reviewed-v2/human-review.json",
+    "sha256": "335e37577f59614f5ebac11281557a11611d15517de2650fc4b67108711d7cee"
+  },
+  "questions": [
+    {
+      "question_id": "C03-M3-CARRIER-Q1",
+      "source_frame": "m2",
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "via_layer": "V2",
+      "identity_human_confirmed": true,
+      "question": "03短横头上的V2接到哪条M3？请按T01–T06／UP／其他／仍不清楚回答。",
+      "upper_candidate": null,
+      "alternative_ids": [
+        "C-M3-T01",
+        "C-M3-T02",
+        "C-M3-T03",
+        "C-M3-T04",
+        "C-M3-T05",
+        "C-M3-T06",
+        "RT-M3-UP"
+      ],
+      "answer": null
+    },
+    {
+      "question_id": "C04-M3-CARRIER-Q1",
+      "source_frame": "m2",
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "via_layer": "V2",
+      "identity_human_confirmed": true,
+      "question": "04短横头上的V2接到哪条M3？请按T01–T06／UP／其他／仍不清楚回答。",
+      "upper_candidate": null,
+      "alternative_ids": [
+        "C-M3-T01",
+        "C-M3-T02",
+        "C-M3-T03",
+        "C-M3-T04",
+        "C-M3-T05",
+        "C-M3-T06",
+        "RT-M3-UP"
+      ],
+      "answer": null
+    }
+  ],
+  "images": {
+    "m2-confirmed-caps.png": {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m2-confirmed-caps.png",
+      "sha256": "768a6fc340c2f72a3d3bd99bed7f00649411e5a956b7801df3d914675d7cc108"
+    },
+    "m3-numbered-bank.png": {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m3-numbered-bank.png",
+      "sha256": "b60ba475adedef6c0d9842691458e82df9e3d4e89eb9ee47405d94d128364ed2"
+    },
+    "m2-wide-raw.png": {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m2-wide-raw.png",
+      "sha256": "45ce1ee3efa13ae159516b9778b97d1ef0dbf5d06ebd20b4da7bb2bf73677b9a"
+    },
+    "m3-wide-raw.png": {
+      "path": "docs/assets/upper-cap-03-04-carrier-v2/m3-wide-raw.png",
+      "sha256": "7de4d4cb5be6c0504623414f56ba3444b7de6c1633ab3173cf1b810edaa73f19"
+    }
+  },
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ]
+}

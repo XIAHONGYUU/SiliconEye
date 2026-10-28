@@ -1,0 +1,71 @@
+{
+  "kind": "native_source_identity_review_panels",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2940,
+        1600,
+        3720,
+        1980
+      ],
+      "detail": [
+        3020,
+        1700,
+        3670,
+        1855
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 24,
+    "padding_px": 6,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          3085,
+          1785,
+          3140,
+          1815
+        ],
+        "label": "03 V2 candidate",
+        "color": "#ffb04f",
+        "label_xy": [
+          2960,
+          1838
+        ]
+      },
+      {
+        "bounds": [
+          3572,
+          1800,
+          3622,
+          1832
+        ],
+        "label": "04 V2 candidate",
+        "color": "#79d9e9",
+        "label_xy": [
+          3440,
+          1850
+        ]
+      },
+      {
+        "bounds": [
+          3086,
+          1892,
+          3122,
+          1952
+        ],
+        "label": "U1: reviewed V2",
+        "color": "#8edba1",
+        "label_xy": [
+          3160,
+          1910
+        ]
+      }
+    ]
+  }
+}

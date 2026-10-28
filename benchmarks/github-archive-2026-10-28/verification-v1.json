@@ -1,0 +1,83 @@
+{
+  "kind": "github_archive_pre_push_verification",
+  "date": "2026-10-28",
+  "status": "VERIFIED_READY_FOR_COMMIT_AND_PUSH",
+  "parent_commit": "243bf87cbb8325d3631ff4919b417f9361f5fa52",
+  "authorized_scope": "Archive current local development outcomes and top-level handoff to main and GitHub. Preserve README/site/gh-pages. No new technical adjudications.",
+  "top_level_documents": {
+    "CURRENT_TASK.md": "13ec2ac075f8af8c139f91d7b51026e5a06c54900fa078ce917cb50487fe6e94",
+    "DEVELOPMENT.md": "376edb5e6e35a2be6b16aa86482b43e845dbbff1c1f6da88eb8e889ab52bb860",
+    "docs/README.md": "0f79e210ad917fbe0d4d89a3fc00b5b68547a2d0a5d9c658e6f2e75a75c946b3",
+    "docs/development-plan.md": "a2e528a8c23f6fd7e3b1b42d359b3c3bdaa2153138a8431c59b8cbad7f2ed9d2",
+    "docs/checkpoints/2026-10-28-conductive-corridor-handoff.md": "b54b1f0b8e1ac4bb9c4f831db980eeb0362ed24f70e080247b5175c87e0aa647"
+  },
+  "task_archive": {
+    "path": "docs/history/current-task-before-2026-10-28-github-handoff.md",
+    "sha256": "76e49dd1f9e551bf8df39a2e21c97c776b4f43ccbc90434ddf5e8658446124b7"
+  },
+  "source_reference_occurrences": 451,
+  "unique_source_references": 93,
+  "manifest_and_execution_maps_checked": 1066,
+  "resolved_historical_execution_bindings": [
+    {
+      "where": "benchmarks/conductive-corridor-coverage-v1/fixed-regression.json",
+      "group": "execution_file_hashes",
+      "path": "silicon_eye/conductive_workflow.py",
+      "expected_sha256": "c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6",
+      "archive": {
+        "path": "benchmarks/evidence/conductive-history/conductive_workflow-c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6.py",
+        "sha256": "c6b3f3bf32ce9482419754fd2c315c49798dc9852736d4b2499e457517b10ff6"
+      }
+    }
+  ],
+  "unresolved_source_or_manifest_bindings": [],
+  "automatic_historical_loader_redirection": false,
+  "top_level_links_checked": 75,
+  "HTML_pages_checked": 13,
+  "HTML_local_resources_checked": 96,
+  "latest_model_replay_exact": true,
+  "metals": 30,
+  "reviewed_interfaces": 9,
+  "candidate_design_cuts": 42,
+  "remaining_source_uncertainties": "08 and three weak M3 bands are AI dispositions, not human physical absence; physical counts, exact projection, PDK, outside-scope routes and complete network remain unknown.",
+  "related_pytest_tests_passed": 65,
+  "pytest_groups": {
+    "batch_adapter": 8,
+    "workflow": 45,
+    "interface_extension": 12
+  },
+  "fixed_regression": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/fixed-regression.json",
+    "sha256": "f5f8242a0017c15d782e77e239ad078777ac2c6454d7fb313eafb1b0f2e7c767"
+  },
+  "fixed_regression_tests_passed": 31,
+  "ruff": "PASS",
+  "portfolio_quality": {
+    "status": "PASS",
+    "asset_hashes": 18,
+    "local_targets": 31
+  },
+  "protected_showcase_files_unchanged": 25,
+  "gh_pages_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "author_identity_live_verified": {
+    "login": "XIAHONGYUU",
+    "id": 280077814,
+    "git_email": "280077814+XIAHONGYUU@users.noreply.github.com"
+  },
+  "remote_before": {
+    "main": "243bf87cbb8325d3631ff4919b417f9361f5fa52",
+    "gh-pages": "01d621b312e89d8ea0d4649ea7a05981785aa35d"
+  },
+  "remote_after": "Check actual refs after push; pre-push record has no self-referential commit SHA.",
+  "online_CI_verified": false,
+  "browser_interaction_tested": false,
+  "new_technical_adjudications": false,
+  "next_task_source": "CURRENT_TASK.md",
+  "git_diff_check": {
+    "status": "PASS_WITH_STANDARD_CSV_CRLF_RECOGNIZED",
+    "command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check",
+    "frozen_CSV_CRLF_files": 5,
+    "trailing_spaces_or_tabs": false,
+    "frozen_bytes_preserved": true
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "actor": "AI",
+  "kind": "source_boundary_consistent_local_joint_revision",
+  "reason": "Put05/06 heads at confirmed E1/E2 y stations. Give both left-scope-exiting M3 stubs the same local entry x25 as the06 M2 fragment, without treating the finite display edge as a physical endpoint. Keep E1 longer thanE2, their right endpoints, separate M2s, native anchors and every old interface. This is independent relative design, not a source projection.",
+  "changed_ids": [
+    "C-M2-05",
+    "C-M2-06",
+    "C-M3-E1",
+    "C-M3-E2"
+  ],
+  "geometry_human_approved": false,
+  "changes": {
+    "C-M2-05": {
+      "before": [
+        [
+          70,
+          350
+        ],
+        [
+          99,
+          350
+        ],
+        [
+          99,
+          380
+        ]
+      ],
+      "after": [
+        [
+          70,
+          340
+        ],
+        [
+          99,
+          340
+        ],
+        [
+          99,
+          380
+        ]
+      ]
+    },
+    "C-M2-06": {
+      "before": [
+        [
+          25,
+          385
+        ],
+        [
+          45,
+          385
+        ]
+      ],
+      "after": [
+        [
+          25,
+          373
+        ],
+        [
+          45,
+          373
+        ]
+      ]
+    },
+    "C-M3-E1": {
+      "before": [
+        [
+          70,
+          340
+        ],
+        [
+          158,
+          340
+        ]
+      ],
+      "after": [
+        [
+          25,
+          340
+        ],
+        [
+          158,
+          340
+        ]
+      ]
+    },
+    "C-M3-E2": {
+      "before": [
+        [
+          70,
+          373
+        ],
+        [
+          118,
+          373
+        ]
+      ],
+      "after": [
+        [
+          25,
+          373
+        ],
+        [
+          118,
+          373
+        ]
+      ]
+    }
+  },
+  "sources": {
+    "parent": {
+      "path": "docs/assets/upper-cap-joint-revision-v1/work/manifest.json",
+      "sha256": "204be8fd2f596f098d6741a1e93f71a35f517b222fefcfd5e70fc6f3dc12ac5c"
+    },
+    "carrier_review": {
+      "path": "benchmarks/corridor-0506-joint-reviewed-v3/human-review.json",
+      "sha256": "6d92abe16a1e71e36438ba1a3e447a1aa1c82efbc1e3d21e9a747bae0ea340bd"
+    },
+    "M2_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "M3_photo": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "scope_note": "Moving a display scope-entry anchor does not extend the observed source path or establish a new physical endpoint."
+}

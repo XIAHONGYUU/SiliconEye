@@ -1,0 +1,22 @@
+{
+  "kind": "deterministic_ledger_reconciliation_plus_AI_source_recheck",
+  "reused_existing_functions": [
+    "silicon_eye.conductive_inventory.audit(original frozen inventory)",
+    "silicon_eye.conductive_workflow.prepare(latest N1 next-request)"
+  ],
+  "joins": [
+    "inventory observation_id -> current sample inventory_geometry_mapping -> feature/model stable ID",
+    "old8 retained native anchors -> current bound source_extent_evidence visible paths",
+    "old4 inherited reviews + N1 scoped source verdict -> current5 reviewed interface signatures",
+    "all60 source endpoints -> declared feature endpoint correspondence, not measured projection",
+    "original unknown IDs -> human source-fact and AI assessment overlays"
+  ],
+  "AI_source_recheck": [
+    "Full native M2 corridor; upper two caps, left hook/patch and lower-left vertical fragment inspected at enlarged native context.",
+    "No additional V2 identity/carrier is claimed; bright caps03/04 remain open source tasks."
+  ],
+  "historical_inventory_audit_status": "LEDGER_CHECKS_PASS_GEOMETRY_COVERAGE_INCOMPLETE",
+  "historical_unmodeled22_is_not_a_current_gap": true,
+  "no_new_production_code": true,
+  "no_image_detector_or_registration": true
+}

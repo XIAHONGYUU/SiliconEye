@@ -1,0 +1,107 @@
+{
+  "kind": "source_identity_confirmed_M3_carrier_pending",
+  "date": "2026-10-28",
+  "prior_state": {
+    "path": "benchmarks/corridor-050608-interfaces-v1/source-review-state.json",
+    "sha256": "9d9c14c7402afa9baafd543ca768e0f2c3ff738d8bb09c84eaf0ab20e5cb0244"
+  },
+  "human_review": {
+    "path": "benchmarks/corridor-0506-identity-reviewed-v2/human-review.json",
+    "sha256": "513f241992d3e93bfe729990faf18c522beae2c67690a0772ce5132d0443cd40"
+  },
+  "carrier_analysis": {
+    "path": "benchmarks/corridor-0506-identity-reviewed-v2/carrier-analysis.json",
+    "sha256": "c756f1c6bb461f1d38fefe8cadfbca69b932a5f87d3815b6bc04515b3889ef14"
+  },
+  "pending_identity_question_ids": [],
+  "confirmed_identities": [
+    {
+      "question_id": "C05-V2-IDENTITY-Q1",
+      "candidate_id": "C05-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        2980,
+        2100,
+        3034,
+        2135
+      ],
+      "lower_metal_id": "C-M2-05",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "question_id": "C06-V2-IDENTITY-Q1",
+      "candidate_id": "C06-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        2933,
+        2140,
+        2977,
+        2175
+      ],
+      "lower_metal_id": "C-M2-06",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_geometry_human_approved": false
+    }
+  ],
+  "pending_carrier_question_ids": [
+    "C05-M3-CARRIER-Q1",
+    "C06-M3-CARRIER-Q1"
+  ],
+  "carrier_review_request": {
+    "path": "benchmarks/corridor-0506-identity-reviewed-v2/carrier-review-request.json",
+    "sha256": "0a7ada6345471f3b8f23b4305a5d199a42de80c1890449fbc2d690c60d823b59"
+  },
+  "M3_carriers_assigned": false,
+  "model_unchanged": true,
+  "model_reviewed_interfaces": 7,
+  "model_design_cut_count": 38,
+  "new_confirmed_connections": 0,
+  "C08_disposition": {
+    "id": "C08-INTERFACE-SURVEY",
+    "actor": "AI",
+    "source_frame": "m2",
+    "source_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "lower_metal_id": "C-M2-08",
+    "survey_native_bounds": [
+      2953,
+      2855,
+      2993,
+      3000
+    ],
+    "declared_native_path": [
+      [
+        2973,
+        2875
+      ],
+      [
+        2973,
+        3000
+      ]
+    ],
+    "V2_present_human_confirmed": null,
+    "V2_present_candidate": null,
+    "physical_cut_count": null,
+    "upper_metal_id": null,
+    "connection_confirmed": null,
+    "source_status": "NO_DISTINCT_V2_IDENTIFIED_AI_NOT_PHYSICAL_ABSENCE",
+    "basis": "Visible upper tip and thin vertical body show no separately localized cut-like group in this scope. A nearby M3 crossing alone cannot establish a via.",
+    "lower_endpoint": "exits_scope_at_y3000_not_physical_terminal",
+    "outside_scope_context": "Wider photo shows a lower M2 crossbar/comb beyond y3000; this is not modeled or approved in the corridor.",
+    "physical_no_via_claim": false,
+    "whole_route_complete": false
+  },
+  "local05_06_continuity_reapproval": false,
+  "next_dependency": "Confirm05/06 M3 carriers only. Do not transfer identity approval into array count, geometry or connections;08 remains AI no-distinct-V2-within-scope."
+}

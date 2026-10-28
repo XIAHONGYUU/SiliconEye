@@ -1,0 +1,72 @@
+{
+  "kind": "scoped_native_V2_identity_review_request",
+  "date": "2026-10-28",
+  "observations": {
+    "path": "benchmarks/upper-cap-03-04-inspection-v1/observations.json",
+    "sha256": "374da9f4815e6f8c4867aa3337257c600feeb1e6b940e1e57b5ccc4eea5c0aea"
+  },
+  "working_geometry_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "delivery": "inline wide native M2 plus equal-scale native detail PNG; HTML supplemental",
+  "questions": [
+    {
+      "question_id": "C03-V2-IDENTITY-Q1",
+      "candidate_id": "C03-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        3085,
+        1785,
+        3140,
+        1815
+      ],
+      "lower_metal_id": "C-M2-03",
+      "question": "03橙框短横头上的局部亮点是否为V2？",
+      "answer": null
+    },
+    {
+      "question_id": "C04-V2-IDENTITY-Q2",
+      "candidate_id": "C04-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        3572,
+        1800,
+        3622,
+        1832
+      ],
+      "lower_metal_id": "C-M2-04",
+      "question": "04蓝框短横头上的局部亮点是否为V2？",
+      "answer": null
+    }
+  ],
+  "images": {
+    "wide": {
+      "path": "docs/assets/upper-cap-03-04-inspection-v1/wide-identity-context.png",
+      "sha256": "6a2c9252ecd4ac0300bcb609b4a3da4c5fba7c8f1bd01c6ef5883ea2548a853d"
+    },
+    "native_details": {
+      "path": "docs/assets/upper-cap-03-04-inspection-v1/native-detail-comparison.png",
+      "sha256": "2272c5169d02baff727d772dc7b2cc20d35e2994a2e1f7b6877c32ed7a2a8666"
+    }
+  },
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact cut dimensions",
+    "M3 upper carrier",
+    "electrical connection",
+    "new design geometry",
+    "N1 or U1 reapproval",
+    "complete network"
+  ],
+  "reference_only_approvals": {
+    "N1": {
+      "path": "benchmarks/n1-v2-local-reconstruction-v1/human-review.json",
+      "sha256": "b0f69352b486e6cdf0bd5c93764f038b538780e438a57ec7dd2cc24656f18edd"
+    },
+    "U1": {
+      "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U1-human-review.json",
+      "sha256": "907c3cc82fd9afb4730abc125292c5159fa318f3d171568a83a10f3d9eb05aee"
+    }
+  }
+}

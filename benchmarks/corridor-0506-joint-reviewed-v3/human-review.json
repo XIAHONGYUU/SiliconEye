@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "native_carrier_batch_human_judgment",
+  "actor": "human",
+  "date": "2026-10-28",
+  "statement": "身份车承载关系正确",
+  "interpretation": "The user confirms both displayed identity/carrier pairs:05 via V2 toE1 and06 via V2 toE2. Original typo is preserved.",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/corridor-0506-identity-reviewed-v2/carrier-review-request.json",
+      "sha256": "0a7ada6345471f3b8f23b4305a5d199a42de80c1890449fbc2d690c60d823b59"
+    },
+    "identity_approval": {
+      "path": "benchmarks/corridor-0506-identity-reviewed-v2/human-review.json",
+      "sha256": "513f241992d3e93bfe729990faf18c522beae2c67690a0772ce5132d0443cd40"
+    }
+  },
+  "reviewed_images": [
+    {
+      "path": "docs/assets/corridor-0506-carrier-v2/carrier-wide-pair.png",
+      "sha256": "74b3a392002b301cd0d70cc5df90dfba88ecb5f9ee8d8f1ba4125c4fd4cac84a"
+    },
+    {
+      "path": "docs/assets/corridor-0506-carrier-v2/carrier-detail-pair.png",
+      "sha256": "6f2ea1d56cf5767dcedd33f9ed58f7bbe60daa1d65504070e6c371d9df19e7aa"
+    }
+  ],
+  "decisions": [
+    {
+      "question_id": "C05-M3-CARRIER-Q1",
+      "candidate_id": "C05-V2-SOURCE-CANDIDATE",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        2980,
+        2100,
+        3034,
+        2135
+      ],
+      "lower_metal_id": "C-M2-05",
+      "upper_metal_id": "C-M3-E1",
+      "connection_confirmed": true,
+      "certainty_basis": "human_scoped_visual_confirmation",
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "question_id": "C06-M3-CARRIER-Q1",
+      "candidate_id": "C06-V2-SOURCE-CANDIDATE",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        2933,
+        2140,
+        2977,
+        2175
+      ],
+      "lower_metal_id": "C-M2-06",
+      "upper_metal_id": "C-M3-E2",
+      "connection_confirmed": true,
+      "certainty_basis": "human_scoped_visual_confirmation",
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ],
+  "observed_cut_count": null,
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ]
+}

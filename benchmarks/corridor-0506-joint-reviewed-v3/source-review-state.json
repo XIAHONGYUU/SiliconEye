@@ -1,0 +1,38 @@
+{
+  "kind": "source_carriers_and_work_geometry_integrated",
+  "date": "2026-10-28",
+  "human_review": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/human-review.json",
+    "sha256": "6d92abe16a1e71e36438ba1a3e447a1aa1c82efbc1e3d21e9a747bae0ea340bd"
+  },
+  "prior_state": {
+    "path": "benchmarks/corridor-0506-identity-reviewed-v2/source-review-state.json",
+    "sha256": "fcee9c9b784f8020036ed110d764e74788092db1dcdfc51cca887c50bdc7550a"
+  },
+  "pending_identity_question_ids": [],
+  "pending_carrier_question_ids": [],
+  "modeled_reviewed_interfaces": 9,
+  "design_cut_count": 42,
+  "new_interfaces": [
+    "C05-V2",
+    "C06-V2"
+  ],
+  "changed_metal_ids": [
+    "C-M2-05",
+    "C-M2-06",
+    "C-M3-E1",
+    "C-M3-E2"
+  ],
+  "new_physical_counts": {
+    "C05-V2": null,
+    "C06-V2": null
+  },
+  "C08_status": "AI_NO_DISTINCT_V2_WITHIN_SCOPE_NOT_PHYSICAL_ABSENCE",
+  "geometry_human_approved": false,
+  "next_request": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/next-request.json",
+    "sha256": "fc53fd46f656ca93d426959b824db4f0cf62bcf09739187b10fc78ffb86f0f08"
+  },
+  "complete_network": false,
+  "source_to_design_transform": null
+}

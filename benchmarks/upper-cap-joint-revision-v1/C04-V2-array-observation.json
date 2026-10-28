@@ -1,0 +1,53 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "C04-V2",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    3572,
+    1800,
+    3622,
+    1832
+  ],
+  "rows": 1,
+  "columns": 2,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        3588,
+        1816
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        3608,
+        1816
+      ]
+    }
+  ],
+  "basis": "Two-site relative design hypothesis spanning both ends of the source head. Screen modulation prevents reliable physical counting. These are approximate AI site assignments, not two independently resolved physical holes. A three-site same-envelope sensitivity check is required; count remains unknown.",
+  "sources": {
+    "human_carrier_review": {
+      "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+      "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+    },
+    "source_photo": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "source_identity": {
+      "path": "benchmarks/upper-cap-03-04-reviewed-v2/human-review.json",
+      "sha256": "335e37577f59614f5ebac11281557a11611d15517de2650fc4b67108711d7cee"
+    }
+  }
+}

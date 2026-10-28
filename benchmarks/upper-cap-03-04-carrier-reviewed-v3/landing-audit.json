@@ -1,0 +1,133 @@
+{
+  "kind": "confirmed_source_carrier_vs_inherited_design_landing_audit",
+  "actor": "AI",
+  "date": "2026-10-28",
+  "human_review": {
+    "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+    "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+  },
+  "working_request": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/next-request.json",
+    "sha256": "7374314e6384e3fc282bae089f9e142241b6861dc0bc66d491026d60b4ac44a6"
+  },
+  "sample": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/observations.json",
+    "sha256": "944ef3a7dc2936dfb52fb4c89f36922ac24f9a483e820277595d029c61388428"
+  },
+  "working_model": {
+    "path": "docs/assets/n1-v2-local-reconstruction-v1/work/model.json",
+    "sha256": "1acb63d9f1afdebea0377ec5dcfa05e70cc951186f61d17ed0d22ba5c14c9b81"
+  },
+  "unit": "relative_design_px_not_PDK",
+  "interfaces": [
+    {
+      "lower_metal_id": "C-M2-03",
+      "upper_metal_id": "C-M3-T01",
+      "source_connection_human_judgment": true,
+      "old_lower_design_path": [
+        [
+          185,
+          30
+        ],
+        [
+          185,
+          90
+        ],
+        [
+          211,
+          90
+        ]
+      ],
+      "old_upper_design_path": [
+        [
+          70,
+          35
+        ],
+        [
+          680,
+          35
+        ]
+      ],
+      "source_native_paths_preserved": true,
+      "current_head_center_y": 90,
+      "confirmed_carrier_center_y": 35,
+      "centerline_y_difference_px": 55,
+      "short_head_common_area_px2": 0.0,
+      "short_head_common_bounds": null,
+      "minimum_cut_width_px": 6,
+      "minimum_enclosure_each_side_px": 1,
+      "minimum_single_cut_required_width_px": 8,
+      "old_geometry_landing_gate": "FAIL_NO_COMMON_MATERIAL_AT_REVIEWED_SHORT_HEAD",
+      "complete_group_enclosure": "NOT_EVALUATED_UNKNOWN_ARRAY_EXTENT",
+      "physical_cut_count": null,
+      "upper_design_boundary_is_not_physical_endpoint": true,
+      "head_center_end_x": 211,
+      "upper_design_stroke_right_bound": 684.0,
+      "full_group_cross_frame_placement": "NOT_QUALIFIED",
+      "geometry_changed": false
+    },
+    {
+      "lower_metal_id": "C-M2-04",
+      "upper_metal_id": "C-M3-T02",
+      "source_connection_human_judgment": true,
+      "old_lower_design_path": [
+        [
+          665,
+          30
+        ],
+        [
+          665,
+          104
+        ],
+        [
+          690,
+          104
+        ]
+      ],
+      "old_upper_design_path": [
+        [
+          70,
+          54
+        ],
+        [
+          680,
+          54
+        ]
+      ],
+      "source_native_paths_preserved": true,
+      "current_head_center_y": 104,
+      "confirmed_carrier_center_y": 54,
+      "centerline_y_difference_px": 50,
+      "short_head_common_area_px2": 0.0,
+      "short_head_common_bounds": null,
+      "minimum_cut_width_px": 6,
+      "minimum_enclosure_each_side_px": 1,
+      "minimum_single_cut_required_width_px": 8,
+      "old_geometry_landing_gate": "FAIL_NO_COMMON_MATERIAL_AT_REVIEWED_SHORT_HEAD",
+      "complete_group_enclosure": "NOT_EVALUATED_UNKNOWN_ARRAY_EXTENT",
+      "physical_cut_count": null,
+      "upper_design_boundary_is_not_physical_endpoint": true,
+      "head_center_end_x": 690,
+      "upper_design_stroke_right_bound": 684.0,
+      "full_group_cross_frame_placement": "NOT_QUALIFIED",
+      "geometry_changed": false
+    }
+  ],
+  "status": "SOURCE_CARRIERS_RECORDED_DESIGN_LANDING_CONFLICT",
+  "scope": "Failure concerns inherited regular coordinates only; it does not refute the source connection judgment.",
+  "prohibited_repairs": [
+    "Do not select T04/T05 just because the old model intersects them.",
+    "Do not move all vias onto a stem to obtain artificial enclosure.",
+    "Do not claim full-group enclosure from one proxy hole.",
+    "Do not move or extend unrelated reviewed M3/UP geometry silently."
+  ],
+  "next_local_revision_requirements": [
+    "Explicitly revise only source-supported relative geometry for C-M2-03/C-M2-04 and their reviewed carriers as needed.",
+    "Preserve native anchors, right-going caps, separate M2 IDs, all existing five interfaces and thirty-four cut centers.",
+    "Retain source scope exits; the finite T02 display limit is not a physical metal endpoint.",
+    "Establish complete candidate array extent before full-group enclosure; keep physical count unknown without a new human count statement.",
+    "Compare before/after source order, same-layer gaps and whole-group enclosures; retain precise projection qualification as unknown."
+  ],
+  "geometry_revision_attempted": false,
+  "reason_no_geometry_revision": "A vertical-only snap compresses the 03 stem from60 to5 design pixels; 04 head also reaches beyond the finite T02 design display bound. Array extent and contextual placement need a joint local revision, not a forced PASS."
+}

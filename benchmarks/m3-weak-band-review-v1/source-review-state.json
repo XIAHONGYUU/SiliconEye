@@ -1,0 +1,31 @@
+{
+  "kind": "source_assessment_continuation_state",
+  "date": "2026-10-27",
+  "actor": "AI",
+  "prior_reviewed_source_facts": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/source-fact-state.json",
+    "sha256": "26f6be377cb1369826452ae06c4993983b15229f80420f6a4e70e058ec03b2de"
+  },
+  "assessment_overlay": {
+    "path": "benchmarks/m3-weak-band-review-v1/assessments.json",
+    "sha256": "a05cd6ed93cc0eb014d991d02fafdafcf406e5b62ae332eff57c314c15a6d278"
+  },
+  "candidate_triage": {
+    "C-U1": "NO_DISTINCT_M3_EVIDENCE_AI_CANDIDATE",
+    "C-U2": "NO_DISTINCT_M3_EVIDENCE_AI_CANDIDATE",
+    "C-U3": "NO_DISTINCT_M3_EVIDENCE_AI_CANDIDATE"
+  },
+  "human_confirmed_absence_ids": [],
+  "pending_question_ids": [],
+  "working_geometry_request": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/next-request.json",
+    "sha256": "7374314e6384e3fc282bae089f9e142241b6861dc0bc66d491026d60b4ac44a6"
+  },
+  "working_geometry_changed": false,
+  "new_interfaces": 0,
+  "new_net_edges": [],
+  "withdrawn_question_ids": [
+    "M3-WEAK-CU2-IDENTITY-Q1"
+  ],
+  "qualification": "AI working triage only; original unknown rows and all human decisions remain unchanged."
+}

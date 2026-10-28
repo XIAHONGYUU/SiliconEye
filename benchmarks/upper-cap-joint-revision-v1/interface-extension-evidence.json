@@ -1,0 +1,29 @@
+{
+  "actor": "AI",
+  "kind": "explicit_interface_extension",
+  "reason": "Add only two source-reviewed interfaces with explicit candidate arrays after the separate two-M2 relative geometry revision. All existing records remain exact. Physical counts unknown.",
+  "parent": {
+    "path": "docs/assets/upper-cap-joint-revision-v1/metal-revised/manifest.json",
+    "sha256": "78df1c13f279042b310b60e43c5362d5186534dde2828175584ecaf74cfc7845"
+  },
+  "added_interface_ids": [
+    "C03-V2",
+    "C04-V2"
+  ],
+  "interface_observations": {
+    "C03-V2": {
+      "path": "benchmarks/upper-cap-joint-revision-v1/C03-V2-array-observation.json",
+      "sha256": "a8b4c5686776ba431deb01c46edef69eeffcea24a00db6d0c2d29316df24ee59"
+    },
+    "C04-V2": {
+      "path": "benchmarks/upper-cap-joint-revision-v1/C04-V2-array-observation.json",
+      "sha256": "bacadf85a3daee31a6eae068ede4434996bec41c2fc37ac78205b97652a1200b"
+    }
+  },
+  "sources": {
+    "carrier_review": {
+      "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+      "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "kind": "complete_declared_design_group_enclosure",
+  "status": "PASS_TWO_SITE_WORKING_HYPOTHESES_NOT_PHYSICAL_COUNT",
+  "groups": [
+    {
+      "id": "C05-V2",
+      "lower_metal_id": "C-M2-05",
+      "upper_metal_id": "C-M3-E1",
+      "complete_declared_array_bounds": [
+        70,
+        337,
+        99,
+        343
+      ],
+      "cut_bounds": [
+        [
+          70.0,
+          337.0,
+          76.0,
+          343.0
+        ],
+        [
+          93.0,
+          337.0,
+          99.0,
+          343.0
+        ]
+      ],
+      "envelope_plus_enclosure_bounds": [
+        69.0,
+        336.0,
+        100.0,
+        344.0
+      ],
+      "lower_covers_whole_group_plus_enclosure": true,
+      "upper_covers_whole_group_plus_enclosure": true,
+      "per_cut_audit": {
+        "status": "PASS",
+        "errors": [],
+        "candidate_cut_count": 2,
+        "count_complete": false,
+        "electrical_connection_confirmed": false,
+        "unit": "relative_design_px_not_PDK"
+      },
+      "physical_cut_count": null,
+      "source_array_geometry": "NOT_QUALIFIED",
+      "source_exhaustiveness": null,
+      "three_site_sensitivity": {
+        "status": "PASS_SAME_ENVELOPE_THREE_SITE_HYPOTHESIS",
+        "pitch_xy": [
+          11.5,
+          9.0
+        ]
+      },
+      "unit": "relative_design_px_not_PDK"
+    },
+    {
+      "id": "C06-V2",
+      "lower_metal_id": "C-M2-06",
+      "upper_metal_id": "C-M3-E2",
+      "complete_declared_array_bounds": [
+        25,
+        370,
+        45,
+        376
+      ],
+      "cut_bounds": [
+        [
+          25.0,
+          370.0,
+          31.0,
+          376.0
+        ],
+        [
+          39.0,
+          370.0,
+          45.0,
+          376.0
+        ]
+      ],
+      "envelope_plus_enclosure_bounds": [
+        24.0,
+        369.0,
+        46.0,
+        377.0
+      ],
+      "lower_covers_whole_group_plus_enclosure": true,
+      "upper_covers_whole_group_plus_enclosure": true,
+      "per_cut_audit": {
+        "status": "PASS",
+        "errors": [],
+        "candidate_cut_count": 2,
+        "count_complete": false,
+        "electrical_connection_confirmed": false,
+        "unit": "relative_design_px_not_PDK"
+      },
+      "physical_cut_count": null,
+      "source_array_geometry": "NOT_QUALIFIED",
+      "source_exhaustiveness": null,
+      "three_site_sensitivity": {
+        "status": "REJECTED_SAME_ENVELOPE_THREE_SITE_HYPOTHESIS",
+        "reason": "Array geometry parameters violate fixed size/spacing minima",
+        "required_pitch_px": 9,
+        "proposed_pitch_px": 7,
+        "physical_count_not_inferred": true,
+        "if_three_physical_holes_later_confirmed": "Reconstruct complete source group/pad extent; do not shrink holes or minimum gaps."
+      },
+      "unit": "relative_design_px_not_PDK"
+    }
+  ]
+}

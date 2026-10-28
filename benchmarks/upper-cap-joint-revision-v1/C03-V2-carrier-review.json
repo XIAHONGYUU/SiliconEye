@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "native_carrier_confirmation",
+  "actor": "human",
+  "date": "2026-10-28",
+  "statement": "我个人判断03接T01,04接T02",
+  "question_id": "C03-M3-CARRIER-Q1",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/upper-cap-03-04-reviewed-v2/carrier-review-request.json",
+      "sha256": "deaad98eb51e94d8ee3759c9b6f258b58fa86a7abd2410c7fe81dfc9dabc8111"
+    },
+    "batch_human_review": {
+      "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+      "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+    }
+  },
+  "decisions": {
+    "interface_id": "C03-V2",
+    "via_layer": "V2",
+    "lower_metal_id": "C-M2-03",
+    "upper_metal_id": "C-M3-T01",
+    "connection_confirmed": true
+  },
+  "observed_cut_count": null,
+  "adapter_only": true,
+  "not_approved": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ]
+}

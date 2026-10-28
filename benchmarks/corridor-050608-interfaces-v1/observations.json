@@ -1,0 +1,146 @@
+{
+  "kind": "remaining_M2_native_interface_assessment",
+  "date": "2026-10-28",
+  "actor": "AI",
+  "working_request": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/next-request.json",
+    "sha256": "97e9ec5fdf7e02791ac0599b1302bd4cc1a6f79b0a4a1c888cda4b76f12ec3db"
+  },
+  "prior_source_state": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/source-review-state.json",
+    "sha256": "86d1bcf69ed882f9522f49c6b762e1534348dd197eb9e18667627766217377fc"
+  },
+  "source_photos": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "observations": [
+    {
+      "id": "C05-V2-SOURCE-CANDIDATE",
+      "actor": "AI",
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        2980,
+        2100,
+        3034,
+        2135
+      ],
+      "lower_metal_id": "C-M2-05",
+      "via_layer_candidate": "V2",
+      "V2_present_candidate": true,
+      "V2_present_human_confirmed": null,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_via_geometry_created": false,
+      "source_status": "V2_IDENTITY_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "basis": "Localized bright cap/pad resembles an interface site; metal surface and screen modulation remain viable explanations. No independently resolved cut boundary or count is established."
+    },
+    {
+      "id": "C06-V2-SOURCE-CANDIDATE",
+      "actor": "AI",
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        2933,
+        2140,
+        2977,
+        2175
+      ],
+      "lower_metal_id": "C-M2-06",
+      "via_layer_candidate": "V2",
+      "V2_present_candidate": true,
+      "V2_present_human_confirmed": null,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_via_geometry_created": false,
+      "source_status": "V2_IDENTITY_CANDIDATE_HUMAN_REVIEW_REQUIRED",
+      "basis": "Localized bright cap/pad resembles an interface site; metal surface and screen modulation remain viable explanations. No independently resolved cut boundary or count is established."
+    },
+    {
+      "id": "C08-INTERFACE-SURVEY",
+      "actor": "AI",
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "lower_metal_id": "C-M2-08",
+      "survey_native_bounds": [
+        2953,
+        2855,
+        2993,
+        3000
+      ],
+      "declared_native_path": [
+        [
+          2973,
+          2875
+        ],
+        [
+          2973,
+          3000
+        ]
+      ],
+      "V2_present_human_confirmed": null,
+      "V2_present_candidate": null,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "source_status": "NO_DISTINCT_V2_IDENTIFIED_AI_NOT_PHYSICAL_ABSENCE",
+      "basis": "Visible upper tip and thin vertical body show no separately localized cut-like group in this scope. A nearby M3 crossing alone cannot establish a via.",
+      "lower_endpoint": "exits_scope_at_y3000_not_physical_terminal",
+      "outside_scope_context": "Wider photo shows a lower M2 crossbar/comb beyond y3000; this is not modeled or approved in the corridor.",
+      "physical_no_via_claim": false,
+      "whole_route_complete": false
+    }
+  ],
+  "M3_context_only": [
+    {
+      "id": "C-M3-E1",
+      "native_path": [
+        [
+          2940,
+          2148
+        ],
+        [
+          3045,
+          2148
+        ]
+      ]
+    },
+    {
+      "id": "C-M3-E2",
+      "native_path": [
+        [
+          2940,
+          2187
+        ],
+        [
+          2998,
+          2187
+        ]
+      ]
+    }
+  ],
+  "tentative_structural_pairing": "05/E1 and06/E2 have compatible upper/lower order and paired spacing, but this is only a search hypothesis. No qualified cross-layer correspondence distinguishes all alternatives.",
+  "M3_carriers_assigned": false,
+  "cross_frame_transform": null,
+  "geometry_changed": false,
+  "new_confirmed_connections": 0,
+  "new_net_edges": []
+}

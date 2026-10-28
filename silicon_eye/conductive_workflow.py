@@ -282,6 +282,56 @@ def native_carrier_review_source(inputs, sample, review, question, claim):
     return source
 
 
+def native_batch_carrier_review_source(inputs, sample, review, question, claim):
+    """Replay one answer from a bound native batch without promoting geometry or counts."""
+    batch = inputs.human(review['sources']['batch_human_review'])
+    identity = inputs.human(question['prior_identity_approval'])
+    analysis = inputs.document(question['analysis'])
+    matches = [q for q in question['questions']
+               if q['question_id'] == review.get('question_id')]
+    answers = [d for d in batch['decisions']
+               if d['question_id'] == review.get('question_id')]
+    if len(matches) != 1 or len(answers) != 1:
+        raise ValueError('Native batch carrier answer is missing or duplicated')
+    scope, answer = matches[0], answers[0]
+    source_keys = ('source_frame', 'native_bounds', 'lower_metal_id')
+    if (review.get('kind') != 'native_carrier_confirmation'
+            or batch.get('kind') != 'native_carrier_batch_human_judgment'
+            or review['statement'] != batch['statement']
+            or batch['sources']['submitted_request'] != review['sources']['submitted_request']
+            or batch['sources']['identity_approval'] != question['prior_identity_approval']
+            or review.get('observed_cut_count') is not None
+            or batch.get('observed_cut_count') is not None
+            or answer.get('physical_cut_count') is not None
+            or answer.get('design_geometry_human_approved') is not False
+            or answer.get('via_layer') != 'V2'
+            or answer.get('connection_confirmed') is not True
+            or review['decisions'].get('connection_confirmed') is not True
+            or analysis['identity_approval'] != question['prior_identity_approval']
+            or any(scope[k] != answer[k] or claim[k] != answer[k] for k in source_keys)
+            or claim['layer'] != 'V2' or claim['layer_pair'] != ['M2', 'M3']
+            or claim['upper_metal_id'] != answer['upper_metal_id']
+            or answer['upper_metal_id'] not in scope['alternative_ids']
+            or not any(d.get('V2_present_human_confirmed') is True
+                       and d.get('via_layer') == 'V2'
+                       and d.get('candidate_id') == answer.get('candidate_id')
+                       and all(d.get(k) == answer[k] for k in source_keys)
+                       for d in identity['decisions'])):
+        raise ValueError('Native batch carrier review exceeds the original answer scope')
+    for ref in question['images'].values():
+        inputs.read(ref)
+    snapshot = inputs.document(sample['snapshot'])
+    if (not {'m2', 'm3'} <= set(analysis['source_photos'])
+            or any(snapshot['source_photos'].get(k) != v
+                   for k, v in analysis['source_photos'].items())):
+        raise ValueError('Native batch carrier source photograph drift')
+    source_request = inputs.document(analysis['working_request'])
+    source = inputs.document(source_request['sample'])
+    # The copied signature conveys the reviewed interface, never the new array geometry.
+    source['interfaces'] = [signature(claim)]
+    return source
+
+
 def apply_reviews(inputs, sample, refs):
     claims = {c['id']: c for c in sample['interfaces']}
     decisions, approved = {}, []
@@ -295,6 +345,9 @@ def apply_reviews(inputs, sample, refs):
         source = inputs.document(review['sources']['submitted_request'])
         if source.get('kind') == 'scoped_native_carrier_review_request':
             source = native_carrier_review_source(inputs, sample, review, source, claims[key])
+        elif source.get('kind') == 'scoped_native_carrier_comparison_review_request':
+            source = native_batch_carrier_review_source(
+                inputs, sample, review, source, claims[key])
         if source.get('kind') == 'conductive_reconstruction_workflow':
             binding = review['sources']['submitted_manifest']
             manifest = inputs.document(binding)

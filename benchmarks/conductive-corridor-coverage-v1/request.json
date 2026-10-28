@@ -1,0 +1,29 @@
+{
+  "kind": "conductive_source_geometry_interface_coverage_audit",
+  "date": "2026-10-28",
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "working_request": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/next-request.json",
+    "sha256": "7374314e6384e3fc282bae089f9e142241b6861dc0bc66d491026d60b4ac44a6"
+  },
+  "working_model": {
+    "path": "docs/assets/n1-v2-local-reconstruction-v1/work/model.json",
+    "sha256": "1acb63d9f1afdebea0377ec5dcfa05e70cc951186f61d17ed0d22ba5c14c9b81"
+  },
+  "reviewed_source_facts": {
+    "path": "benchmarks/n1-v2-local-reconstruction-v1/source-fact-state.json",
+    "sha256": "26f6be377cb1369826452ae06c4993983b15229f80420f6a4e70e058ec03b2de"
+  },
+  "source_assessment_state": {
+    "path": "benchmarks/m3-weak-band-review-v1/source-review-state.json",
+    "sha256": "7e01cef0bbd2b2fe1b75434ab67c4489671bfb3b6127e2250d01b4a6a95b08d2"
+  },
+  "qualitative_geometry_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "scope": "Current declared M2/V2/M3 corridor only; no M1/V1, new geometry, image registration or automatic connections."
+}

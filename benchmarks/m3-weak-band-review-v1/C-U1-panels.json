@@ -1,0 +1,43 @@
+{
+  "kind": "native_source_review_panels",
+  "source_windows": {
+    "m3": {
+      "wide": [
+        2450,
+        1873,
+        4200,
+        2198
+      ],
+      "detail": [
+        2910,
+        1963,
+        3710,
+        2103
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 30,
+    "padding_px": 7,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m3": [
+      {
+        "bounds": [
+          2940,
+          2015,
+          3670,
+          2051
+        ],
+        "label": "C-U1 target only",
+        "color": "#79d9e9",
+        "label_xy": [
+          3230,
+          2118
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "native_source_review_panels",
+  "source_windows": {
+    "m3": {
+      "wide": [
+        2450,
+        2492,
+        4200,
+        2817
+      ],
+      "detail": [
+        2910,
+        2582,
+        3710,
+        2722
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 30,
+    "padding_px": 7,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m3": [
+      {
+        "bounds": [
+          2940,
+          2634,
+          3670,
+          2670
+        ],
+        "label": "C-U2 target only",
+        "color": "#ffb04f",
+        "label_xy": [
+          3230,
+          2737
+        ]
+      },
+      {
+        "bounds": [
+          2860,
+          2645,
+          2915,
+          2680
+        ],
+        "label": "Nearby real short M3 end",
+        "color": "#d28cff",
+        "label_xy": [
+          2475,
+          2582
+        ]
+      }
+    ]
+  }
+}

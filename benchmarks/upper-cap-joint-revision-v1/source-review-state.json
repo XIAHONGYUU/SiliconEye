@@ -1,0 +1,32 @@
+{
+  "kind": "source_carrier_review_and_relative_design_integrated",
+  "date": "2026-10-28",
+  "human_review": {
+    "path": "benchmarks/upper-cap-03-04-carrier-reviewed-v3/human-review.json",
+    "sha256": "8745b41f5c03233accedf0eaef0ff71e210e518f926715e7de1ccf1525d1afe7"
+  },
+  "reviewed_source_interfaces_total": 7,
+  "modeled_reviewed_interfaces": 7,
+  "geometry_human_approved": false,
+  "new_interface_ids": [
+    "C03-V2",
+    "C04-V2"
+  ],
+  "pending_identity_question_ids": [],
+  "pending_carrier_question_ids": [],
+  "physical_new_cut_counts": {
+    "C03-V2": null,
+    "C04-V2": null
+  },
+  "remaining_M2_interface_candidates": [
+    "C-M2-05",
+    "C-M2-06",
+    "C-M2-08"
+  ],
+  "next_request": {
+    "path": "benchmarks/upper-cap-joint-revision-v1/next-request.json",
+    "sha256": "97e9ec5fdf7e02791ac0599b1302bd4cc1a6f79b0a4a1c888cda4b76f12ec3db"
+  },
+  "source_to_design_transform": null,
+  "complete_network": false
+}

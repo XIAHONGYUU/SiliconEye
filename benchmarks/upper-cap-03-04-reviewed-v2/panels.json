@@ -1,0 +1,71 @@
+{
+  "kind": "independent_native_carrier_comparison_panels",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2450,
+        1050,
+        4250,
+        2150
+      ],
+      "detail": [
+        2890,
+        1580,
+        3710,
+        1990
+      ]
+    },
+    "m3": {
+      "wide": [
+        2450,
+        1050,
+        4250,
+        2150
+      ],
+      "detail": [
+        2890,
+        1690,
+        3710,
+        2010
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 21,
+    "padding_px": 4,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          3085,
+          1785,
+          3140,
+          1815
+        ],
+        "label": "03 V2 confirmed",
+        "color": "#ffb04f",
+        "label_xy": [
+          2990,
+          1835
+        ]
+      },
+      {
+        "bounds": [
+          3572,
+          1800,
+          3622,
+          1832
+        ],
+        "label": "04 V2 confirmed",
+        "color": "#79d9e9",
+        "label_xy": [
+          3430,
+          1870
+        ]
+      }
+    ]
+  }
+}

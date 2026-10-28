@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "kind": "native_V2_identity_confirmation",
+  "actor": "human",
+  "date": "2026-10-28",
+  "statement": "都包含V2,批准确认没有问题",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/corridor-050608-interfaces-v1/review-request.json",
+      "sha256": "2da029b4cad776b8a3710967998fc3403e0c2dd7d39d87e56df7c12a5e75b85d"
+    },
+    "observations": {
+      "path": "benchmarks/corridor-050608-interfaces-v1/observations.json",
+      "sha256": "5d0715ec099b022f87e6c64aca79ba04822a30780ac5aa5fa14762160c48c2be"
+    }
+  },
+  "reviewed_images": [
+    {
+      "path": "docs/assets/corridor-050608-interfaces-v1/05-06-identity-review.png",
+      "sha256": "188ccb28892795f76f0632e90524963795defa241f96075775b902958967c171"
+    }
+  ],
+  "decisions": [
+    {
+      "question_id": "C05-V2-IDENTITY-Q1",
+      "candidate_id": "C05-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        2980,
+        2100,
+        3034,
+        2135
+      ],
+      "lower_metal_id": "C-M2-05",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "question_id": "C06-V2-IDENTITY-Q1",
+      "candidate_id": "C06-V2-SOURCE-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        2933,
+        2140,
+        2977,
+        2175
+      ],
+      "lower_metal_id": "C-M2-06",
+      "via_layer": "V2",
+      "V2_present_human_confirmed": true,
+      "physical_cut_count": null,
+      "upper_metal_id": null,
+      "connection_confirmed": null,
+      "design_geometry_human_approved": false
+    }
+  ],
+  "approval_excludes": [
+    "physical_cut_count",
+    "exact source array geometry",
+    "M3 upper carrier",
+    "electrical connection",
+    "new design geometry",
+    "05/06 local continuity reapproval",
+    "08 physical absence",
+    "complete network"
+  ]
+}

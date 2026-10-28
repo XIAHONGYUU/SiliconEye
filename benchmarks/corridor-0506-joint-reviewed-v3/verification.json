@@ -1,0 +1,46 @@
+{
+  "status": "PASS_LOCAL_JOINT_GEOMETRY_AND_DECLARED_GROUPS_NOT_SOURCE_EXHAUSTIVENESS",
+  "source_carrier_pairs": {
+    "C-M2-05": "C-M3-E1",
+    "C-M2-06": "C-M3-E2"
+  },
+  "changed_metal_ids": [
+    "C-M2-05",
+    "C-M2-06",
+    "C-M3-E1",
+    "C-M3-E2"
+  ],
+  "other26_metals_exact": true,
+  "all30_native_anchor_paths_exact": true,
+  "old7_reviewed_interfaces_and38_design_cuts_exact": true,
+  "new_reviewed_interfaces": 2,
+  "reviewed_interface_total": 9,
+  "new_explicit_candidate_cuts": 4,
+  "design_cut_total": 42,
+  "pending_identity_or_carrier_question_ids": [],
+  "whole_candidate_group_enclosures_pass": 2,
+  "physical_new_counts": null,
+  "same_envelope_three_cut_sensitivity": {
+    "C05-V2": "PASS",
+    "C06-V2": "REJECTED_MINIMUM_GAP_1_LT_3"
+  },
+  "05_06_local_M2_still_disjoint": true,
+  "E1_E2_shared_scope_entry_preserved": true,
+  "E1_longer_than_E2": true,
+  "source_array_geometry": "NOT_QUALIFIED",
+  "C08_no_physical_absence_claim": true,
+  "source_to_design_transform": null,
+  "next_request_replay_exact": true,
+  "raw_source_crops_pixel_exact": 4,
+  "source_ref_bindings_checked": 58,
+  "fixed_engineering_regression_passed": 31,
+  "production_code_changed_this_phase": false,
+  "previous65_related_tests_not_repeated": true,
+  "static_HTML_links": "PASS",
+  "delivery_PNG_visually_checked": true,
+  "browser_interaction_tested": false,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "complete_network": false,
+  "canonical_geometry_adopted": false
+}

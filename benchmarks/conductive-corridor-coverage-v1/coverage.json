@@ -1,0 +1,70 @@
+{
+  "status": "DECLARED_COVERAGE_RECONCILED_INTERFACES_AND_PHYSICAL_COMPLETENESS_OPEN",
+  "date": "2026-10-28",
+  "native_scope_by_frame": {
+    "m2": [
+      2940,
+      1730,
+      3670,
+      3000
+    ],
+    "m3": [
+      2940,
+      1730,
+      3670,
+      3000
+    ]
+  },
+  "source_metal_observations": {
+    "M2": 8,
+    "M3": 22,
+    "total": 30
+  },
+  "mapped_current_metal_geometries": 30,
+  "unmapped_source_ids": [],
+  "unlisted_geometry_ids": [],
+  "mapping_measure": "30/30 declared ledger items, not photo coverage",
+  "qualitative_reviewed_geometries_unchanged": 29,
+  "N1_local_geometry_candidate": 1,
+  "source_endpoint_observations": 60,
+  "scope_exit_endpoints": 48,
+  "old8_scope_exit_endpoints": 13,
+  "new22_scope_exit_endpoints": 35,
+  "internal_or_continuity_unknown_endpoints": 12,
+  "network_terminal_count": null,
+  "reviewed_V2_interfaces": 5,
+  "declared_design_cut_count": 34,
+  "full_declared_array_enclosure_checked": 5,
+  "human_physical_cut_count_known_interfaces": 0,
+  "M2_full_extent_survey_records": 8,
+  "M2_with_reviewed_V2": 3,
+  "M2_without_identified_interface_record": [
+    "C-M2-03",
+    "C-M2-04",
+    "C-M2-05",
+    "C-M2-06",
+    "C-M2-08"
+  ],
+  "M3_with_reviewed_V2_carrier_records": 3,
+  "M3_without_reviewed_interface_records_in_this_scope": 19,
+  "actual_visible_interface_total": null,
+  "interface_photo_coverage_fraction": null,
+  "physical_inventory_exhaustiveness": "NOT_INDEPENDENTLY_VERIFIED",
+  "actual_photo_coverage_fraction": null,
+  "historical_unknown_records": 5,
+  "current_human_scoped_dispositions": 2,
+  "AI_only_weak_band_dispositions": 3,
+  "unaccounted_unknown_record_ids": [],
+  "cross_frame_projection_allowed": false,
+  "M1_V1_coverage": "NOT_EVALUATED",
+  "new_metals": 0,
+  "new_interfaces": 0,
+  "new_net_edges": [],
+  "geometry_changed": false,
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "next_bounded_source_task": [
+    "C-M2-03_SHORT_CAP_INTERFACE_IDENTITY",
+    "C-M2-04_SHORT_CAP_INTERFACE_IDENTITY"
+  ]
+}

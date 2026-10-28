@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "native_carrier_confirmation",
+  "actor": "human",
+  "date": "2026-10-28",
+  "statement": "身份车承载关系正确",
+  "question_id": "C05-M3-CARRIER-Q1",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/corridor-0506-identity-reviewed-v2/carrier-review-request.json",
+      "sha256": "0a7ada6345471f3b8f23b4305a5d199a42de80c1890449fbc2d690c60d823b59"
+    },
+    "batch_human_review": {
+      "path": "benchmarks/corridor-0506-joint-reviewed-v3/human-review.json",
+      "sha256": "6d92abe16a1e71e36438ba1a3e447a1aa1c82efbc1e3d21e9a747bae0ea340bd"
+    }
+  },
+  "decisions": {
+    "interface_id": "C05-V2",
+    "via_layer": "V2",
+    "lower_metal_id": "C-M2-05",
+    "upper_metal_id": "C-M3-E1",
+    "connection_confirmed": true
+  },
+  "observed_cut_count": null,
+  "adapter_only": true,
+  "not_approved": [
+    "physical_cut_count",
+    "exact_source_array_geometry",
+    "design_via_placement",
+    "new_geometry_revision",
+    "full_group_enclosure",
+    "complete_network"
+  ]
+}

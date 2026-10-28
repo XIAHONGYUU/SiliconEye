@@ -42,13 +42,13 @@ GitHub Pages使用`gh-pages`分支根目录。推送需要相应授权和本机�
 
 ```bash
 .venv/bin/python -m silicon_eye.conductive_workflow \
-  --request benchmarks/n1-v2-local-reconstruction-v1/next-request.json \
+  --request benchmarks/corridor-0506-joint-reviewed-v3/next-request.json \
   --output runs/新的复核目录
 ```
 
 程序读取AI已形成的观察与既有裁决，不自动从照片识别材料或导出完整网表。局部几何、已审连接和未知范围分别保留。更多输入协议见[文档导航](docs/README.md)。
 
-以上是经过验证的N1局部接续示例；实际工作父包和唯一下一步始终从[CURRENT_TASK.md](CURRENT_TASK.md)读取。父包结果使用新输出目录，不覆盖旧包。新增金属、接口和已有几何修订遵循[统一协议](docs/architecture/conductive-workflow-contract-v1.md)，已审连接不重新识别或索批。
+以上是经过验证的连续走廊接续示例（05/06已审承载和局部联合几何）；实际工作父包和唯一下一步始终从[CURRENT_TASK.md](CURRENT_TASK.md)读取。父包结果使用新输出目录，不覆盖旧包。新增金属、接口和已有几何修订遵循[统一协议](docs/architecture/conductive-workflow-contract-v1.md)，已审连接不重新识别或索批。批量来源裁决可按原问题ID分别绑定，原话、身份批准和已交付图稿保留；承载批准不扩大为孔数、几何或精确投影批准。参考[2026-10-28存档检查点](docs/checkpoints/2026-10-28-conductive-corridor-handoff.md)。
 
 固定工程回归（不调用AI、不生成照片识别准确率）：
 

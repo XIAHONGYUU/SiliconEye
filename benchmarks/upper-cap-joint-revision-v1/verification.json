@@ -1,0 +1,44 @@
+{
+  "status": "PASS_LOCAL_RELATIVE_GEOMETRY_AND_WHOLE_DECLARED_ARRAYS",
+  "changed_metal_ids": [
+    "C-M2-03",
+    "C-M2-04"
+  ],
+  "unchanged_other_metals": 28,
+  "M3_unchanged": 22,
+  "old5_interfaces_and34_cut_records_exact": true,
+  "new_interfaces": 2,
+  "new_explicit_candidate_cuts": 4,
+  "reviewed_interfaces": 7,
+  "design_cut_count": 38,
+  "pending_identity_and_carrier_questions": [],
+  "complete_declared_group_enclosures_pass": 2,
+  "same_envelope_three_site_sensitivity_pass": 2,
+  "physical_cut_counts_unknown": true,
+  "exact_source_array_geometry": "NOT_QUALIFIED",
+  "source_to_design_transform": null,
+  "next_request_replay_exact": true,
+  "raw_source_crops_pixel_exact": 4,
+  "source_bindings_checked": 51,
+  "related_software_tests_unique_passed": 65,
+  "test_groups": {
+    "batch_adapter": 8,
+    "existing_workflow": 45,
+    "existing_interface_extension": 12
+  },
+  "test_run_note": "The combined run passed64 tests and failed one new test on an expected-message regex; after correcting the regex, all8 batch tests passed. Unique tests passed=65.",
+  "fixed_engineering_regression": 31,
+  "ruff_check": "PASS",
+  "static_HTML_links_and_selector_combinations": "PASS",
+  "JS_syntax": "PASS",
+  "before_after_PNG_visually_checked": true,
+  "browser_interaction_tested": false,
+  "showcase_files_unchanged": 25,
+  "gh_pages_unchanged": true,
+  "canonical_geometry_adopted": false,
+  "complete_network": false,
+  "code_sha256": {
+    "silicon_eye/conductive_workflow.py": "de8ee4874247990f7933f2fd6fd753163b12442a1804b46da845dbca66f33e9c",
+    "tests/test_conductive_batch_carriers.py": "a47028a11be8014b656e5bb9033be068edf480af9d15e5e5f2af2597a5b89619"
+  }
+}

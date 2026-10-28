@@ -1,0 +1,57 @@
+{
+  "kind": "native_source_gap_review_panels",
+  "source_windows": {
+    "m2": {
+      "wide": [
+        2940,
+        1640,
+        3720,
+        1940
+      ],
+      "detail": [
+        3020,
+        1700,
+        3670,
+        1855
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 24,
+    "padding_px": 6,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m2": [
+      {
+        "bounds": [
+          3085,
+          1785,
+          3140,
+          1815
+        ],
+        "label": "03 cap: UNKNOWN",
+        "color": "#ffb04f",
+        "label_xy": [
+          2960,
+          1840
+        ]
+      },
+      {
+        "bounds": [
+          3572,
+          1800,
+          3622,
+          1832
+        ],
+        "label": "04 cap: UNKNOWN",
+        "color": "#79d9e9",
+        "label_xy": [
+          3440,
+          1845
+        ]
+      }
+    ]
+  }
+}

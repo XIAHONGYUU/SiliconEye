@@ -1,0 +1,114 @@
+{
+  "rows": [
+    {
+      "id": "RT-V2-U1",
+      "source_frame": "m2",
+      "layer": "V2",
+      "native_bounds": [
+        3086,
+        1892,
+        3122,
+        1952
+      ],
+      "lower_metal_id": "RT-M2-R01",
+      "upper_metal_id": "RT-M3-UP",
+      "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U1-human-review.json",
+        "sha256": "907c3cc82fd9afb4730abc125292c5159fa318f3d171568a83a10f3d9eb05aee"
+      },
+      "physical_cut_count": null,
+      "declared_design_cut_count": 6,
+      "full_declared_design_array_enclosure": "CHECKED",
+      "source_array_geometry": "NOT_QUALIFIED"
+    },
+    {
+      "id": "RT-V2-U2",
+      "source_frame": "m2",
+      "layer": "V2",
+      "native_bounds": [
+        3358,
+        1888,
+        3394,
+        1948
+      ],
+      "lower_metal_id": "RT-M2-R02",
+      "upper_metal_id": "RT-M3-UP",
+      "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-U2-human-review.json",
+        "sha256": "dc9b8b2d98502f21c4496a34ab4020db53a2463687fd156c1a0b2efe75272fa1"
+      },
+      "physical_cut_count": null,
+      "declared_design_cut_count": 6,
+      "full_declared_design_array_enclosure": "CHECKED",
+      "source_array_geometry": "NOT_QUALIFIED"
+    },
+    {
+      "id": "RT-V2-D1",
+      "source_frame": "m2",
+      "layer": "V2",
+      "native_bounds": [
+        3086,
+        2669,
+        3122,
+        2762
+      ],
+      "lower_metal_id": "RT-M2-R01",
+      "upper_metal_id": "RT-M3-DOWN",
+      "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-D1-human-review.json",
+        "sha256": "6404f4f63ba414bc29808f1b6b432115096778cc7545d48737eb661d848e6681"
+      },
+      "physical_cut_count": null,
+      "declared_design_cut_count": 10,
+      "full_declared_design_array_enclosure": "CHECKED",
+      "source_array_geometry": "NOT_QUALIFIED"
+    },
+    {
+      "id": "RT-V2-D2",
+      "source_frame": "m2",
+      "layer": "V2",
+      "native_bounds": [
+        3358,
+        2662,
+        3394,
+        2758
+      ],
+      "lower_metal_id": "RT-M2-R02",
+      "upper_metal_id": "RT-M3-DOWN",
+      "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+      "human_review": {
+        "path": "benchmarks/metal-representative-transfer-reviewed-v2/RT-V2-D2-human-review.json",
+        "sha256": "17eb492011750dbd98fc24a1d6b7e35a3dec6df2a6c5c4b7dd3c373613622de9"
+      },
+      "physical_cut_count": null,
+      "declared_design_cut_count": 10,
+      "full_declared_design_array_enclosure": "CHECKED",
+      "source_array_geometry": "NOT_QUALIFIED"
+    },
+    {
+      "id": "N1-V2",
+      "source_frame": "m2",
+      "layer": "V2",
+      "native_bounds": [
+        3498,
+        2480,
+        3540,
+        2510
+      ],
+      "lower_metal_id": "RT-M2-NARROW",
+      "upper_metal_id": "C-M3-L01",
+      "carrier_status": "HUMAN_CONFIRMED_SCOPED",
+      "human_review": {
+        "path": "benchmarks/n1-v2-local-reconstruction-v1/human-review.json",
+        "sha256": "b0f69352b486e6cdf0bd5c93764f038b538780e438a57ec7dd2cc24656f18edd"
+      },
+      "physical_cut_count": null,
+      "declared_design_cut_count": 2,
+      "full_declared_design_array_enclosure": "CHECKED",
+      "source_array_geometry": "NOT_QUALIFIED"
+    }
+  ]
+}
