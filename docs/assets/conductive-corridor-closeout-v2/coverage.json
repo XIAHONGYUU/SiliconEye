@@ -1,0 +1,46 @@
+{
+  "status": "DECLARED_SCOPE_RECONCILED_PHYSICAL_QUALIFICATION_OPEN",
+  "date": "2026-10-29",
+  "source_metal_counts": {
+    "m2": 8,
+    "m3": 22
+  },
+  "declared_metal_count": 30,
+  "mapped_metal_count": 30,
+  "declaration_mapping_complete": true,
+  "photo_coverage_fraction": null,
+  "retained_qualitative_geometries": 23,
+  "revised_candidate_metal_ids": [
+    "C-M2-03",
+    "C-M2-04",
+    "C-M2-05",
+    "C-M2-06",
+    "RT-M2-NARROW",
+    "C-M3-E1",
+    "C-M3-E2"
+  ],
+  "source_endpoint_count": 60,
+  "scope_exit_endpoints": 48,
+  "physical_network_terminal_count": null,
+  "reviewed_interfaces": 9,
+  "candidate_design_cuts": 42,
+  "whole_declared_groups_checked": 9,
+  "fully_contained_source_interface_windows": 8,
+  "boundary_interface_ids": [
+    "C06-V2"
+  ],
+  "human_physical_counts_known": 0,
+  "M2_with_reviewed_interface": 7,
+  "M2_without_identified_interface": [
+    "C-M2-08"
+  ],
+  "M3_with_reviewed_interface": 7,
+  "actual_interface_total": null,
+  "interface_photo_coverage_fraction": null,
+  "M1_V1_continuous_scope": "NOT_EVALUATED",
+  "source_to_design_transform": null,
+  "physical_inventory_exhaustiveness": "NOT_INDEPENDENTLY_VERIFIED",
+  "complete_network": false,
+  "canonical_geometry_adopted": false,
+  "pending_identity_or_carrier_questions": []
+}

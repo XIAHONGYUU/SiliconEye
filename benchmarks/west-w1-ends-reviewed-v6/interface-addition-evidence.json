@@ -1,0 +1,32 @@
+{
+  "actor": "AI",
+  "reason": "Append only the two independently source-bound, human-reviewed W1 end interfaces and complete candidate arrays.",
+  "parent": {
+    "path": "docs/assets/west-w1-reviewed-v5/S4-F1-interface/manifest.json",
+    "sha256": "b72ab651b4ea7975362a3fc62e0fa8d69e7ceba8cb68d27ea691775a1ba78564"
+  },
+  "added_interface_ids": [
+    "W1-V2-U",
+    "W1-V2-D"
+  ],
+  "interface_observations": {
+    "W1-V2-U": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W1-V2-U-array-observation.json",
+      "sha256": "9525f12409be1c256f055bd695fc3a7debf9832f3100f6078b0734b19202f7f3"
+    },
+    "W1-V2-D": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W1-V2-D-array-observation.json",
+      "sha256": "16c459199db8384ab7ccd07bfe5581f5c22f1daadcbd908d604b734763f518ed"
+    }
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/human-review.json",
+      "sha256": "df8d2186fc0a1a8270040bcabb461957fbc572224e696265ab8b99f06706172f"
+    },
+    "native": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+      "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+    }
+  }
+}

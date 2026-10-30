@@ -1,0 +1,26 @@
+{
+  "actor": "AI",
+  "reason": "Working-candidate BR-R/R3/R4 local parts after explicit canvas growth; source contacts reviewed, dimensions not human-approved.",
+  "parent": {
+    "path": "docs/assets/BR-R-return-work-v3/canvas-only/manifest.json",
+    "sha256": "1cc775f26eaa5ae3b1f0dbee62ffac707745772ad243011506906c05d968632f"
+  },
+  "changed_object_ids": [
+    "C-M1-SPINE"
+  ],
+  "sources": {
+    "source_ledger": {
+      "path": "benchmarks/BR-R-return-work-v3/local-part-source-ledger.json",
+      "sha256": "55aaf9177bd95235f44d45daf7ed98bd73bb20d73abcf9d1253b85816704fa7e"
+    },
+    "human_contact_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "canvas_parent": {
+      "path": "docs/assets/BR-R-return-work-v3/canvas-only/manifest.json",
+      "sha256": "1cc775f26eaa5ae3b1f0dbee62ffac707745772ad243011506906c05d968632f"
+    }
+  },
+  "geometry_human_approved": false
+}

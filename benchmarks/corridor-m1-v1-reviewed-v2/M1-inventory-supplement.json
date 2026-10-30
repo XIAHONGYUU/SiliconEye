@@ -1,0 +1,78 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "reason": "Add one partial M1 spine supporting the two source-reviewed V1 stations. Original M2/M3 inventory and mapping remain immutable.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m1": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m1.jpg",
+          "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+        },
+        "native_bounds": [
+          3100,
+          1900,
+          3200,
+          2900
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "C-M1-SPINE-OBS",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          3143,
+          1960
+        ],
+        [
+          3155,
+          2800
+        ],
+        [
+          3156,
+          2860
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "corner_branch_omitted_from_this_segment"
+        },
+        {
+          "state": "continues_beyond_modeled_segment_unknown"
+        }
+      ],
+      "extent_qualification": "PARTIAL_SPINE_ONLY_OTHER_CONNECTED_HORIZONTAL_RUNS_NOT_MODELED"
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "C-M1-SPINE-OBS",
+      "metal_id": "C-M1-SPINE"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "identity_carrier_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    },
+    "native_question": {
+      "path": "benchmarks/corridor-m1-v1-entry-v1/review-request.json",
+      "sha256": "9832d1e08964f2da0684a686f7ab1e97a558e166aa1fea616c240ede38d70edb"
+    }
+  },
+  "limits": [
+    "Not a full visible M1 inventory. Horizontal branches at A/B and other V1 sites are outside this additive fragment.",
+    "No macro homography is adopted as a source-to-design transform."
+  ]
+}

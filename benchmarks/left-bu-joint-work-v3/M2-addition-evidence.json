@@ -1,0 +1,21 @@
+{
+  "actor": "AI",
+  "reason": "Add the source-reviewed M2 A carrier in an explicit leftward working scope.",
+  "parent": {
+    "path": "docs/assets/left-bu-joint-work-v3/S2-source-parts/manifest.json",
+    "sha256": "dc02c96774eaada8f2bc7eec79c69fa0e1a3d68c9d611c3b87f7f24010d57acd"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "LEFT-M2-A-CANDIDATE"
+  ],
+  "sources": {
+    "inventory_supplement": {
+      "path": "benchmarks/left-bu-joint-work-v3/M2-A-inventory-supplement.json",
+      "sha256": "f02d88f09c1d818d707df940b15b4d2c9a09576009dc939480814e4550e7474c"
+    }
+  }
+}

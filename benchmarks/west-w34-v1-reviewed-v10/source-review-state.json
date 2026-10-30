@@ -1,0 +1,28 @@
+{
+  "kind": "reviewed_W34_V1_working_entry_M1_coverage_gaps",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+    "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+  },
+  "working_request": {
+    "path": "benchmarks/west-w34-v1-reviewed-v10/next-request.json",
+    "sha256": "7c804978e26b6bfe5c378bb37d118d7470444bddba72685d84f78a72aee1c273"
+  },
+  "working_metal_candidates": 39,
+  "reviewed_working_interfaces": 30,
+  "explicit_design_cut_count": 179,
+  "old165_centers_preserved": true,
+  "pending_source_question_ids": [],
+  "coverage_inventory": {
+    "path": "benchmarks/west-w34-v1-reviewed-v10/scoped-M1-coverage.json",
+    "sha256": "48e88d318caf8cdcd38c94a21bba03a7757b0408a2b53bfe2f8d6fa420d4e828"
+  },
+  "coverage_status": "COVERAGE_INCOMPLETE",
+  "new_physical_interfaces_in_gap_list_confirmed": false,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Repair the fixed M1 source gap list (L03 partial plus7 unmodeled fragments), preserving all old geometry/decisions and source gaps. No re-adjudication of W3/W4 interfaces."
+}

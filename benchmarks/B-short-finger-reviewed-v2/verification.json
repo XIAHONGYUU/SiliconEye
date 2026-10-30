@@ -1,0 +1,68 @@
+{
+  "kind": "scoped_three_finger_contact_continuation_verification",
+  "date": "2026-10-29",
+  "status": "THREE_LOCAL_CONTACTS_REVIEWED_CANDIDATE_GEOMETRY_RESUMABLE",
+  "human_review": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+    "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+  },
+  "next_request": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  },
+  "model": {
+    "path": "docs/assets/B-short-finger-reviewed-v2/work/model.json",
+    "sha256": "63781ce59c290c93fdb77226a65c2158e4b098de6226bea82cd460e3c56e5818"
+  },
+  "human_reviewed_ids": [
+    "BF24",
+    "BF25",
+    "BF26"
+  ],
+  "other_candidates_not_promoted": 23,
+  "positive_upper_contacts": 2,
+  "BF25_local_upper_lower_noncontact_confirmed": true,
+  "BF24_BF26_lower_contacts": "UNKNOWN_NOT_ASKED",
+  "exact_geometry_human_approved": false,
+  "material_identity_promoted": false,
+  "cumulative_changed_object_ids": [
+    "C-M1-SPINE"
+  ],
+  "added_metal_candidate_ids": [
+    "BF25-M1-CANDIDATE"
+  ],
+  "metal_count": 32,
+  "original_m2_m3_metals_exact": 30,
+  "old_m1_footprint_preserved": true,
+  "old_native_design_skeletons_exact": true,
+  "existing_reviewed_via_interfaces_exact": 11,
+  "existing_design_cuts_and_centers_exact": 46,
+  "new_via_interfaces": 0,
+  "whole_declared_candidate_via_groups_enclosure": "PASS_11_NOT_PHYSICAL_EXHAUSTIVENESS",
+  "BF25_gap_to_modeled_M1_px": 21.0,
+  "minimum_design_gap_budget_px": 3,
+  "lower_bars_modeled": false,
+  "lower_bar_geometry_spacing_checked": false,
+  "physical_cut_count": null,
+  "global_net_assignment": null,
+  "net_edges_added": 0,
+  "source_to_design_transform": null,
+  "exact_resume": true,
+  "tests_passed": 26,
+  "new_three_finger_tests": 5,
+  "production_code_changed": false,
+  "ruff": "PASS",
+  "original_question_and_images_hash_bound": true,
+  "csv_html_rows": 26,
+  "reviewed_table_rows": 3,
+  "local_resource_links": 49,
+  "inline_scripts_syntax_checked": 3,
+  "png_visual_review": "PASS",
+  "browser_interaction": "NOT_TESTED",
+  "showcase_files_exact": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "prior_current_entry_archive": {
+    "path": "docs/history/current-task-before-2026-10-29-B-short-finger-reviewed.md",
+    "sha256": "fe8bf08d44083b9bb8bd140fd0d02893f7f79b6f06fd73d8911957309a4e73a3"
+  }
+}

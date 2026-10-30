@@ -1,0 +1,105 @@
+{
+  "kind": "fixed_scope_candidate_gap_checks",
+  "source_rescan": {
+    "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+    "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+  },
+  "working_request": {
+    "path": "benchmarks/west-m1-coverage-v11/next-request.json",
+    "sha256": "abd5d8ef2e1f4a420d5d0fb6cb48399bf65323cfa82ce3619a249f6c766d6560"
+  },
+  "checks": [
+    {
+      "first": "C-M1-SPINE",
+      "second": "W34-M1-L07",
+      "meaning": "L03末端与中上横条",
+      "gap_px": 16.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "W34-M1-L04",
+      "second": "W34-M1-L07",
+      "meaning": "L04末端与中上横条",
+      "gap_px": 18.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "W34-M1-L08",
+      "second": "W34-M1-L05",
+      "meaning": "中下横条与L05起端",
+      "gap_px": 12.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "W34-M1-L08",
+      "second": "W34-M1-L06",
+      "meaning": "中下横条与L06起端",
+      "gap_px": 6.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "C-M1-SPINE",
+      "second": "W34-M1-L05",
+      "meaning": "L05末端与下宽主干",
+      "gap_px": 20.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "C-M1-SPINE",
+      "second": "W34-M1-L06",
+      "meaning": "L06末端与下宽主干",
+      "gap_px": 29.999999999999996,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "C-M1-SPINE",
+      "second": "W34-M1-L09",
+      "meaning": "L09/L12与L11下行主干",
+      "gap_px": 12.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "C-M1-SPINE",
+      "second": "W34-M1-L10",
+      "meaning": "L10与L11下行主干",
+      "gap_px": 14.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "W34-M1-L09",
+      "second": "W34-M1-L10",
+      "meaning": "底部左右片段",
+      "gap_px": 50.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    },
+    {
+      "first": "W34-M1-L07",
+      "second": "W34-M1-L08",
+      "meaning": "中部两横条",
+      "gap_px": 14.0,
+      "minimum_gap_px": 3,
+      "status": "PASS",
+      "qualification": "candidate_design_local_gap_not_global_net_isolation"
+    }
+  ],
+  "status": "PASS",
+  "physical_net_isolation_claimed": false
+}

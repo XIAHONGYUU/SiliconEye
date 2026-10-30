@@ -1,0 +1,30 @@
+{
+  "kind": "fixed_M1_geometry_complete_pending_visual_source_acceptance",
+  "date": "2026-10-30",
+  "working_request": {
+    "path": "benchmarks/west-m1-coverage-v11/next-request.json",
+    "sha256": "abd5d8ef2e1f4a420d5d0fb6cb48399bf65323cfa82ce3619a249f6c766d6560"
+  },
+  "coverage": {
+    "path": "benchmarks/west-m1-coverage-v11/scoped-M1-coverage.json",
+    "sha256": "8d850a1f943c7e18afcd1f6dd4f1db79fb2e4ceb563ffbb723b9a9b8e53b89eb"
+  },
+  "working_metal_candidates": 46,
+  "reviewed_working_interfaces": 30,
+  "explicit_design_cut_count": 179,
+  "old179_centers_preserved": true,
+  "pending_source_question_ids": [
+    "M1-COVER-Q1",
+    "M1-COVER-Q2"
+  ],
+  "pending_source_request": {
+    "path": "benchmarks/west-m1-coverage-v11/coverage-review-request.json",
+    "sha256": "e5ab30ebef3c756ab51d6559a5a809f944259abb8fe1061f9102a32424bb3ed1"
+  },
+  "pending_questions_kind": "new_scoped_geometry_and_visible_coverage_not_old_via_identity",
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Accept or locally correct the two new fixed-scope geometry groups; preserve prior VIA decisions and scope exits. Do not claim full M2/M3 or global network coverage."
+}

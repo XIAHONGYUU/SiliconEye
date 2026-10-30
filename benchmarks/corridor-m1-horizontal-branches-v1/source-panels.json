@@ -1,0 +1,94 @@
+{
+  "kind": "native_branch_review_panels",
+  "panels": {
+    "A-wide": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        3000,
+        1800,
+        5310,
+        2300
+      ],
+      "resize_factor": 1,
+      "resize_method": "Pillow_default_bicubic_RGB",
+      "raw": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/A-wide-raw.png",
+        "sha256": "2153d37b1d2023b5c06c60e703764e067d1db338800e2e138ca413292c7c0c3a"
+      },
+      "marked": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/A-wide-marked.png",
+        "sha256": "25a015bc4020babe39b94441f0555b7d4050f3fa1cb24af866d326514775dd87"
+      }
+    },
+    "A-detail": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        3010,
+        1840,
+        3770,
+        2180
+      ],
+      "resize_factor": 2,
+      "resize_method": "Pillow_default_bicubic_RGB",
+      "raw": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/A-detail-raw.png",
+        "sha256": "802f50265f42b84c47c1def5855070b855ce44fbef4f5e10ed0956bf75c2a332"
+      },
+      "marked": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/A-detail-marked.png",
+        "sha256": "bdb48cf34c2a6ee0d25004c3552e277fd444e648ef68a7aa26b12b3f0bbc9822"
+      }
+    },
+    "B-wide": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        1500,
+        2630,
+        3300,
+        3110
+      ],
+      "resize_factor": 1,
+      "resize_method": "Pillow_default_bicubic_RGB",
+      "raw": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/B-wide-raw.png",
+        "sha256": "22faabe0f5b82b975af4428a5770df9734cf90cb19362bb557f8e831801cdcf8"
+      },
+      "marked": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/B-wide-marked.png",
+        "sha256": "88d663a75121a28c2077630e31ec90a28061676f9b59ce20228b27c2c78f074c"
+      }
+    },
+    "B-detail": {
+      "photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        2700,
+        2630,
+        3250,
+        3050
+      ],
+      "resize_factor": 2,
+      "resize_method": "Pillow_default_bicubic_RGB",
+      "raw": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/B-detail-raw.png",
+        "sha256": "0af72e24d8a7ec33bbdaf2cf8d6ef1f274146922042fe12339fe78af3a298c6c"
+      },
+      "marked": {
+        "path": "docs/assets/corridor-m1-horizontal-branches-v1/B-detail-marked.png",
+        "sha256": "f72128d02e9247ce234389552443c0397f4da57d1f3dcbf7f032e68e544a2548"
+      }
+    }
+  },
+  "cross_layer_projection": false
+}

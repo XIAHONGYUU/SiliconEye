@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Complete the observed W4 northern stem and add the previously missed W3 south downward exit; retain all old parts and via centers.",
+  "parent": {
+    "path": "docs/assets/west-w34-v1-reviewed-v10/S2-W34-V1/manifest.json",
+    "sha256": "9d613d212701ca465ed298635737cf3e8f53c20316fcb4a0f601f8e54ca6da9f"
+  },
+  "sources": {
+    "rescan": {
+      "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+      "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+    },
+    "ledger": {
+      "path": "benchmarks/west-m1-coverage-v11/S1-existing-source-ledger.json",
+      "sha256": "40a67ecdcde02fee25218cf336f3b36e6e18bca545d248f54e664a9c73f584f1"
+    }
+  }
+}

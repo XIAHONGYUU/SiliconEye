@@ -97,8 +97,22 @@ def reviewed_features(root, inputs, spec):
     return review
 
 
-def geometry_audit(features, budget, canvas_wh):
+def design_canvas_bounds(canvas_wh, bounds=None):
+    """A signed viewport may grow left without changing design coordinates."""
+    if bounds is None:
+        return [0, 0, *canvas_wh]
+    values = np.asarray(bounds, dtype=float)
+    if (values.shape != (4,) or not np.isfinite(values).all()
+            or len(canvas_wh) != 2 or values[2] - values[0] != canvas_wh[0]
+            or values[3] - values[1] != canvas_wh[1]
+            or min(canvas_wh) <= 0 or (values[:2] > 0).any() or (values[2:] < 0).any()):
+        raise ValueError("Invalid signed design canvas bounds")
+    return list(bounds)
+
+
+def geometry_audit(features, budget, canvas_wh, canvas_bounds=None):
     errors, polygons = [], []
+    viewport = box(*design_canvas_bounds(canvas_wh, canvas_bounds))
     ids = [o["id"] for o in features]
     if len(set(ids)) != len(ids):
         raise ValueError("Duplicate metal ID")
@@ -107,7 +121,7 @@ def geometry_audit(features, budget, canvas_wh):
         polygons.append(p)
         if obj["design_width"] < budget["minimum_width_px"]:
             errors.append(dict(id=obj["id"], reason="minimum_width_failed"))
-        if not box(0, 0, *canvas_wh).covers(p):
+        if not viewport.covers(p):
             errors.append(dict(id=obj["id"], reason="outside_canvas"))
         if not p.is_valid or p.geom_type != "Polygon":
             errors.append(dict(id=obj["id"], reason="invalid_or_disconnected"))

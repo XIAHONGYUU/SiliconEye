@@ -1,0 +1,20 @@
+{
+  "kind": "human_native_V1_identity_and_carrier_request",
+  "date": "2026-10-30",
+  "question_id": "N-WEST-F1-V1-Q1",
+  "observation_source": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+    "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+  },
+  "question": "M1 上方横条下突小台阶的橙框 F1 孔组，是否为 V1，并接到 M2 蓝框 W1 的竖向段？W1 是 A 左侧的另一条较窄 M2；不判孔数，不把 M2 自身的上端亮点作为 V1 证据。",
+  "answer": null,
+  "human_approved": false,
+  "geometry_human_approved": false,
+  "not_reasked": [
+    "N V1 to A",
+    "Q1 V1 to A",
+    "U/D V2 to B-U/B-D",
+    "Other old interfaces",
+    "Hole counts"
+  ]
+}

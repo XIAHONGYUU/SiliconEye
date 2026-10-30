@@ -1,0 +1,23 @@
+{
+  "kind": "native_source_decision_adapter",
+  "actor": "AI",
+  "statement": "W2-N：是 V1，接 W2；W2-S：是 V1，接 W2",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/W2-V1-N-source-binding.json",
+      "sha256": "54a6dd16a9361ff47622523c944b5aaaf9a90271fa8fb45db4a606968ddcab78"
+    },
+    "original_human_review": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+      "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+    }
+  },
+  "decisions": {
+    "interface_id": "W2-V1-N",
+    "via_layer": "V1",
+    "lower_metal_id": "C-M1-SPINE",
+    "upper_metal_id": "WEST-M2-W2-SOURCE",
+    "connection_confirmed": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "kind": "source_local_contact_review_overlay",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "source_observations": {
+    "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+    "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+  },
+  "human_review": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+    "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+  },
+  "reviewed_ids": [
+    "BF24",
+    "BF25",
+    "BF26"
+  ],
+  "unchanged_candidate_ids": [
+    "BF01",
+    "BF02",
+    "BF03",
+    "BF04",
+    "BF05",
+    "BF06",
+    "BF07",
+    "BF08",
+    "BF09",
+    "BF10",
+    "BF11",
+    "BF12",
+    "BF13",
+    "BF14",
+    "BF15",
+    "BF16",
+    "BF17",
+    "BF18",
+    "BF19",
+    "BF20",
+    "BF21",
+    "BF22",
+    "BF23"
+  ],
+  "working_model": {
+    "path": "docs/assets/B-short-finger-reviewed-v2/work/model.json",
+    "sha256": "63781ce59c290c93fdb77226a65c2158e4b098de6226bea82cd460e3c56e5818"
+  },
+  "local_mapping": {
+    "BF24": {
+      "model_id": "C-M1-SPINE",
+      "local_part": "BF24-UPPER",
+      "local_contact_to_BU": true
+    },
+    "BF25": {
+      "model_id": "BF25-M1-CANDIDATE",
+      "local_contact_to_BU": false,
+      "local_contact_to_L1": false,
+      "local_contact_to_L2": false,
+      "global_net_id": null
+    },
+    "BF26": {
+      "model_id": "C-M1-SPINE",
+      "local_part": "BF26-UPPER",
+      "local_contact_to_BU": true
+    }
+  },
+  "pending_original_question": null,
+  "new_geometry_human_approved": false,
+  "new_via_interfaces": 0,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "remaining_unknowns": [
+    "Other23 source fingers",
+    "BR-C/BR-R returns and lower bar paths",
+    "Material identity and exact dimensions of candidate strips",
+    "Any vias or global connectivity"
+  ],
+  "next_step": "Inspect BR-R and local L1/L2 returns against native M1 before making any global isolation inference."
+}

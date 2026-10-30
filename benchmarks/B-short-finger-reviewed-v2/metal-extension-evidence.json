@@ -1,0 +1,25 @@
+{
+  "actor": "AI",
+  "reason": "Represent only source-reviewed locally noncontacting BF25 as a separate candidate strip. Do not assign an electrical net, floating state, or human material/geometry approval.",
+  "parent": {
+    "path": "docs/assets/B-short-finger-reviewed-v2/upper-parts/manifest.json",
+    "sha256": "733568473ca0b17921fc0c43bb495d8c7b1f046d0a26c2f1c5ff5af7c00509a9"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "BF25-M1-CANDIDATE"
+  ],
+  "sources": {
+    "inventory_supplement": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/BF25-inventory-supplement.json",
+      "sha256": "02150e982e99f08fd869ed0fa1490386f116a62e35dbbabbea40e4cc1cac55d4"
+    },
+    "human_contact_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    }
+  }
+}

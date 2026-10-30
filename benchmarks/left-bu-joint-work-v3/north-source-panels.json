@@ -1,0 +1,44 @@
+{
+  "panels": [
+    {
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        1700,
+        1700,
+        2250,
+        2160
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "N-m1-raw.png",
+      "marked": "N-m1-marked.png"
+    },
+    {
+      "frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        1700,
+        1720,
+        2250,
+        2180
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "N-m2-raw.png",
+      "marked": "N-m2-marked.png"
+    }
+  ]
+}

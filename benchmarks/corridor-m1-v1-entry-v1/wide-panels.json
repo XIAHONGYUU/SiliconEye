@@ -1,0 +1,93 @@
+{
+  "kind": "native_M1_V1_entry_source_review",
+  "source_windows": {
+    "m1": {
+      "wide": [
+        2800,
+        1700,
+        3680,
+        3000
+      ],
+      "detail": [
+        3050,
+        1860,
+        3270,
+        2120
+      ]
+    },
+    "m2": {
+      "wide": [
+        2760,
+        1730,
+        3520,
+        3000
+      ],
+      "detail": [
+        3000,
+        1880,
+        3220,
+        2140
+      ]
+    }
+  },
+  "observations": [],
+  "source_label_style": {
+    "font_size_px": 20,
+    "padding_px": 4,
+    "hide_off_window_labels": true
+  },
+  "source_regions": {
+    "m1": [
+      {
+        "bounds": [
+          3125,
+          1930,
+          3175,
+          2010
+        ],
+        "label": "A: V1 ?",
+        "color": "#ffb04f",
+        "label_xy": [
+          3210,
+          1875
+        ]
+      },
+      {
+        "bounds": [
+          3130,
+          2775,
+          3180,
+          2845
+        ],
+        "label": "B: V1 ?",
+        "color": "#79d9e9",
+        "label_xy": [
+          3215,
+          2860
+        ]
+      }
+    ]
+  },
+  "native_traces": {
+    "m2": [
+      {
+        "points": [
+          [
+            3104,
+            1980
+          ],
+          [
+            3103,
+            2600
+          ]
+        ],
+        "label": "R01 reviewed M2",
+        "color": "#8edba1",
+        "label_xy": [
+          3160,
+          2040
+        ]
+      }
+    ]
+  }
+}

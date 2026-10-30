@@ -1,0 +1,41 @@
+{
+  "kind": "native_V1_identity_carrier_human_decision",
+  "actor": "human",
+  "date": "2026-10-30",
+  "question_id": "N-WEST-F1-V1-Q1",
+  "statement": "F1：是 V1，接 W1",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/F1-review-request.json",
+      "sha256": "547d93862fb52dc9fb87116ec4b598c2ba65e4c02569895246c44323bb7aa939"
+    },
+    "source_observations": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+      "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+    },
+    "submitted_pair": {
+      "path": "docs/assets/left-bu-north-reviewed-v4/F1-paired.png",
+      "sha256": "9e7e32c084c89d4d392aa811bc196de6a8e06bda526fe63d8645284de61498b6"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "N-WEST-F1-V1",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        1495,
+        1882,
+        1548,
+        1940
+      ],
+      "V1_present": true,
+      "lower_source_id": "N-WEST-HORIZONTAL",
+      "upper_source_id": "N-WEST-M2-W1",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "parent_request": {
+    "path": "benchmarks/west-w1-reviewed-v5/next-request.json",
+    "sha256": "936902359de4ef9ed22f06247cf1347706716e32f818599c2d0c68eb9648a413"
+  },
+  "parent_sample": {
+    "path": "benchmarks/west-w1-reviewed-v5/S4-F1-interface-sample.json",
+    "sha256": "39e4cd87b529180b0ffa6ee258d5221580985c0668f5b278bd347de7b8949f36"
+  },
+  "parent_manifest": {
+    "path": "docs/assets/west-w1-reviewed-v5/S4-F1-interface/manifest.json",
+    "sha256": "b72ab651b4ea7975362a3fc62e0fa8d69e7ceba8cb68d27ea691775a1ba78564"
+  },
+  "human": {
+    "path": "benchmarks/west-w1-ends-reviewed-v6/human-review.json",
+    "sha256": "df8d2186fc0a1a8270040bcabb461957fbc572224e696265ab8b99f06706172f"
+  },
+  "original_question": {
+    "path": "benchmarks/west-w1-reviewed-v5/W1-V2-review-request.json",
+    "sha256": "aa7314a31297c5297400d4b35cc2549f3f3ce54dd0c7e23a417ec4f487e6e589"
+  },
+  "observations": {
+    "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+    "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+  },
+  "producer": {
+    "path": "silicon_eye/conductive_workflow.py",
+    "sha256": "62fea0d2fbd9868caf79f58de770c8abc2c18b8518530b70c3f28f1c26899f91"
+  },
+  "metal_geometry_producer": {
+    "path": "silicon_eye/metal_reconstruction.py",
+    "sha256": "0c379e4f5e3d4a11ee6a01d381da5ff05f9054544c2145c021f7dfbd49266234"
+  }
+}

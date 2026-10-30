@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_coverage_reconciliation",
+  "date": "2026-10-29",
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "workflow_request": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/next-request.json",
+    "sha256": "fc53fd46f656ca93d426959b824db4f0cf62bcf09739187b10fc78ffb86f0f08"
+  },
+  "work_model": {
+    "path": "docs/assets/corridor-0506-joint-reviewed-v3/work/model.json",
+    "sha256": "d1d0321ab6078fac38155170125d3baaa65b4cac6634d654fdd2d6ab90116c0d"
+  },
+  "qualitative_baseline": {
+    "path": "benchmarks/conductive-corridor-batch-reviewed-v2/working-baseline.json",
+    "sha256": "0d95fedc3264d700252edbd2e838f024cf453570dd5ee133f9cdb2945ad4b619"
+  },
+  "unknown_dispositions": {
+    "path": "benchmarks/conductive-corridor-coverage-v1/unknown-dispositions.json",
+    "sha256": "c65032a5949b08b5b2847e89c2d8ae014826bebc67f489a9ae79f9ec69f60869"
+  },
+  "boundary_interfaces": {
+    "C06-V2": {
+      "reason": "Native approved group window starts atx2933,7px left of the declared corridor x2940. Keep complete source window and its review; do not trim it, expand scope silently, or claim physical completeness.",
+      "human_review": {
+        "path": "benchmarks/corridor-0506-joint-reviewed-v3/C06-V2-carrier-review.json",
+        "sha256": "d6dcf8bf5dd6823838793c7d226295712deb3a35437453a99b8cdb374dc9a902"
+      }
+    }
+  },
+  "unresolved_metals": {
+    "C-M2-08": {
+      "evidence": {
+        "path": "benchmarks/corridor-050608-interfaces-v1/observations.json",
+        "sha256": "5d0715ec099b022f87e6c64aca79ba04822a30780ac5aa5fa14762160c48c2be"
+      },
+      "observation_id": "C08-INTERFACE-SURVEY",
+      "physical_absence_confirmed": false
+    }
+  }
+}

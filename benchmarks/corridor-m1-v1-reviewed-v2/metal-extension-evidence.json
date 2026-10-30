@@ -1,0 +1,26 @@
+{
+  "actor": "AI",
+  "reason": "Source-reviewed A/B entries require one explicitly declared partial lower M1 spine; no old record changes.",
+  "parent": {
+    "path": "docs/assets/corridor-0506-joint-reviewed-v3/work/manifest.json",
+    "sha256": "8d657d5af92def09f264dc64345e2cf75b0cfb4eebc56bd60b36379d8e05cba8"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "C-M1-SPINE"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/M1-inventory-supplement.json",
+      "sha256": "c371e0699e17657d560b55ce472b1d6e31ba0db0263a2bd311f0b7a80fa2d891"
+    },
+    "human_entry_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    }
+  },
+  "geometry_human_approved": false
+}

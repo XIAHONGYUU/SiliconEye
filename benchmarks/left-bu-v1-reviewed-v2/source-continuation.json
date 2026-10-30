@@ -1,0 +1,267 @@
+{
+  "kind": "AI_native_M2_continuation_after_reviewed_V1",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "parent_working_request": {
+    "path": "benchmarks/BR-R-return-work-v3/next-request.json",
+    "sha256": "9ca1a8bd1f96b81e22ca9b6894b7229da88d97c9cf2fadc50889909e74082659"
+  },
+  "human_V1_source": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+    "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+  },
+  "photos": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "coordinate_domain": "Separate original-photo native pixels. No photo projection or GDS coordinates.",
+  "M2_A": {
+    "id": "LEFT-M2-A-CANDIDATE",
+    "frame": "m2",
+    "native_path": [
+      [
+        1966,
+        1915
+      ],
+      [
+        1970,
+        2290
+      ],
+      [
+        1980,
+        2788
+      ]
+    ],
+    "visible_extent_bounds": [
+      1935,
+      1895,
+      2010,
+      2805
+    ],
+    "status": "AI_CONTINUITY_CANDIDATE_WITH_HUMAN_REVIEWED_V1_ENTRY",
+    "end_states": [
+      "visible_top_end_with_U_hole_group",
+      "visible_bottom_end_with_D_hole_group"
+    ],
+    "side_contacts": "No resolved lateral M2 bridge seen in this narrow strip; not proof of global isolation.",
+    "extra_via_absence_asserted": false
+  },
+  "V2_sites": [
+    {
+      "id": "LEFT-M2-A-V2-U",
+      "label": "U",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        1935,
+        1898,
+        2008,
+        1965
+      ],
+      "via_layer": "V2",
+      "V2_present": null,
+      "lower_source_id": "LEFT-M2-A-CANDIDATE",
+      "upper_metal_candidate_id": "RT-M3-UP",
+      "m3_native_carrier_search_bounds": [
+        1870,
+        1932,
+        2150,
+        2008
+      ],
+      "physical_cut_count": null,
+      "connection_confirmed": null
+    },
+    {
+      "id": "LEFT-M2-A-V2-D",
+      "label": "D",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        1942,
+        2695,
+        2008,
+        2795
+      ],
+      "via_layer": "V2",
+      "V2_present": null,
+      "lower_source_id": "LEFT-M2-A-CANDIDATE",
+      "upper_metal_candidate_id": "RT-M3-DOWN",
+      "m3_native_carrier_search_bounds": [
+        1870,
+        2718,
+        2150,
+        2845
+      ],
+      "physical_cut_count": null,
+      "connection_confirmed": null
+    }
+  ],
+  "M3_carrier_continuation": {
+    "basis": "Broad M3 strips visually traced between this source column and the old native x2980..3650 scope. Candidate source association, no inferred VIA from mere overlap.",
+    "old_features_unchanged": [
+      {
+        "id": "RT-M3-UP",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            1958
+          ],
+          [
+            3650,
+            1938
+          ]
+        ],
+        "design_path": [
+          [
+            40,
+            184
+          ],
+          [
+            700,
+            184
+          ]
+        ],
+        "design_width": 60,
+        "label": "B-U upper bus",
+        "label_xy": [
+          65,
+          139
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      },
+      {
+        "id": "RT-M3-DOWN",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            2750
+          ],
+          [
+            3650,
+            2730
+          ]
+        ],
+        "design_path": [
+          [
+            40,
+            870
+          ],
+          [
+            700,
+            870
+          ]
+        ],
+        "design_width": 80,
+        "label": "B-D lower bus",
+        "label_xy": [
+          65,
+          825
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ]
+      }
+    ],
+    "candidate_paths": [
+      {
+        "id": "RT-M3-UP-left-source",
+        "frame": "m3",
+        "native_path": [
+          [
+            1700,
+            1973
+          ],
+          [
+            2300,
+            1969
+          ],
+          [
+            2980,
+            1958
+          ],
+          [
+            3650,
+            1938
+          ]
+        ],
+        "existing_id": "RT-M3-UP"
+      },
+      {
+        "id": "RT-M3-DOWN-left-source",
+        "frame": "m3",
+        "native_path": [
+          [
+            1700,
+            2786
+          ],
+          [
+            2300,
+            2778
+          ],
+          [
+            2980,
+            2750
+          ],
+          [
+            3650,
+            2730
+          ]
+        ],
+        "existing_id": "RT-M3-DOWN"
+      }
+    ]
+  },
+  "middle_crossing": {
+    "upper_metal_context_id": "RT-M3-MID",
+    "V2_on_A": null,
+    "connection_confirmed": null,
+    "exclusion_reason": "The small bright column right of A is a separate M2 component; the M3 middle bus crossing alone establishes no connection.",
+    "neighbor_m2_bounds": [
+      2020,
+      2380,
+      2070,
+      2505
+    ],
+    "new_interface_created": false
+  },
+  "preservation": {
+    "working_geometry_changed": false,
+    "working_interface_count": 11,
+    "working_design_cut_centers": 46,
+    "source_reviewed_interface_facts_in_continuation": 12,
+    "new_source_fact_not_yet_in_work_model": 1
+  },
+  "fine_landing_qualified": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_gate": "Adjudicate U and D V2 identity and M3 carrier together; do not reinterpret reviewed V1 Q1.",
+  "explicit_source_scope": {
+    "m2": [
+      1680,
+      1750,
+      2250,
+      2900
+    ],
+    "m3": [
+      1600,
+      1780,
+      3750,
+      2950
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "historical_reviewed_source_and_proposal_delivery",
+  "inputs": {
+    "human_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "source_question": {
+      "path": "benchmarks/BR-R-return-inspection-v1/review-request.json",
+      "sha256": "5237ae9b89a61e68673d99fd1ec626089cee351861122a8f4d7a5b79edb91ab6"
+    }
+  },
+  "artifacts": {
+    "extension-proposal.png": "b36d4ffc02292e8700d22fa6560967fbb31356504d9ef0358f3a7b8dfb89eedb",
+    "index.html": "f1296b1019602181cfd1adbb6f0e72cdb3e21bc24243f1f8b3db59a9da4de246",
+    "proposal-preview.json": "8a144afb398045802fa14a4a7e9a24369bf348db4587014cee44214b91d9e306",
+    "proposal-full.svg": "6bb4ad46700477c5cbdd72b398d95012e2d6d62b16f54217812940f96f36e30c"
+  }
+}

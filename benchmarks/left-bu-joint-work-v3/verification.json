@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "status": "PASS",
+  "kind": "working_candidate_checks_not_source_geometry_or_PDK_approval",
+  "transactions_replayed_exact": 5,
+  "current_resume_exact": true,
+  "canvas_bounds": [
+    -1500,
+    0,
+    780,
+    1440
+  ],
+  "canvas_history_events": 2,
+  "old_source_anchor_and_skeletons_exact": true,
+  "unchanged_old_metal_records": 30,
+  "extended_old_metal_records": 4,
+  "new_metal_records": 1,
+  "old_interface_records_exact": 11,
+  "old_design_cut_centers_exact": 46,
+  "working_reviewed_interfaces": 14,
+  "whole_candidate_arrays_checked": 14,
+  "explicit_design_cut_count": 80,
+  "new_physical_counts_confirmed": 0,
+  "pending_source_question": "LEFT-BU-NORTH-V1-Q1",
+  "N_interface_modeled": false,
+  "pixel_exact_raw_views": 8,
+  "svg_unique_geometry_objects": 115,
+  "static_local_links_checked": 129,
+  "inline_script_syntax_checked": 6,
+  "source_photo_hashes_exact": true,
+  "frozen_parent_files_exact": 8,
+  "showcase_files_exact": 25,
+  "gh_pages_ref_exact": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "task_archive_body_exact": true,
+  "software_tests": {
+    "unique_tests_passed": 162,
+    "execution_batches_passed": [
+      119,
+      55,
+      16
+    ],
+    "collection": "test-collection.txt",
+    "repeated_cases_included_in_batches": true
+  },
+  "ruff": "PASS",
+  "visual_checks": [
+    "joint-work.png",
+    "N-paired.png"
+  ],
+  "browser_interaction_tested": false,
+  "fine_source_geometry_qualified": false,
+  "canonical_geometry_adopted": false,
+  "automatic_network_export": false,
+  "complete_network": false
+}

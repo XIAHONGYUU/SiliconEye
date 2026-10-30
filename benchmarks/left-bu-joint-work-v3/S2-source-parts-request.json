@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/left-bu-joint-work-v3/S2-source-parts-sample.json",
+    "sha256": "e564b56adadbf279381305ba80efb1fca99935230e1080c0695418207fa02ea2"
+  },
+  "frames": [
+    "m1",
+    "m2",
+    "m3"
+  ],
+  "reviews": [],
+  "deferred_unknown_ids": [],
+  "questions": {
+    "RT-V2-U1": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-U2": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-D1": "R2：下部孔组是否为V2并接到B-D？",
+    "RT-V2-D2": "R2：下部孔组是否为V2并接到B-D？",
+    "N1-V2": "Carrier already confirmed: N1接A. Do not reopen; new array dimensions remain candidate."
+  },
+  "limits": [
+    "R1/R2均为本轮新候选，既有Q1/Q2批准不转移给本组。",
+    "新孔数/排列为AI观察，来源精确几何、物理尺度和工艺DRC未知。",
+    "N1与邻线的局部隔离按照片和规则几何保留；没有声明孔的交叉处不自动生成连接，也不证明物理无孔。",
+    "只建模两条M2及邻近上下文，不等于所有可见导体清单或全网。",
+    "本轮未新增V1识别；已收口V1只作防退化回放。",
+    "初稿下部4x2自洽但漏最末排，已在人工送审前按原图退回；本版为5x2 AI候选，软件通过不代表已确认实际孔数。",
+    "R1/R2的V2身份及局部承载已于2026-10-26人工确认；孔数/排列/尺寸仍为候选，前述“新候选”保留为送审历史和几何资格。",
+    "新增22条金属几何只对应本走廊AI清单，未获人工几何批准，不是新增电气连接。",
+    "原8个金属及4个V2接口完全保持；旧8个来源端部仍部分覆盖，不能据30/30声明照片/GDS完整。",
+    "C-U1～C-U5保持未知；未将弱带重建为M3，未判断N1上端V2或05/06连续性。",
+    "E1/E2按同帧可见长短关系修正，比例仍是规则设计候选；未批准像素投影或新增连接。",
+    "本轮已有8条金属的走廊端部补成候选并单列来源延伸，原生锚点和4个已审V2/孔中心不变；不把旧“部分覆盖”历史删除或升级为实测边界。",
+    "新22段分四组做AI来源复核，R1-R4与旧端部R5/R6仍待人工几何裁决；三条弱带、N1孔身份和05/06连续性仍未知。",
+    "N1→C-M3-L01 carrier confirmed by human; inherited N1 carrier/identity unknown wording is historical. Count, dimensions and new local coordinates are not human approved.",
+    "Only N1 short-head design y changes from675 to682; source native anchors and x positions remain unchanged.",
+    "N1 two-site array is an AI geometry candidate. Complete declared design-array enclosure may be checked without asserting the physical count or source geometry is complete.",
+    "03→T01 and04→T02 source carriers are human reviewed. Only two M2 design paths change; source native anchors, M3 and old interfaces remain exact. New dimensions are AI relative-geometry candidates.",
+    "C03/C04 two-site arrays are AI design hypotheses; human identity/carrier approval does not settle physical counts, dimensions or exact photo projection. A complete declared design group PASS does not establish source-array exhaustiveness.",
+    "05→E1 and06→E2 human source carriers confirmed. Only two M2 heads and two M3 local scope-entry x positions change; all native anchors and seven old interfaces are exact. Geometry is still an AI relative candidate.",
+    "C05/C06 arrays are design hypotheses with physical count unknown. Complete declared design-group enclosure does not qualify source-array completeness or PDK geometry.08 remains no distinct V2 identified in the reviewed scope, not physical absence.",
+    "A/B V1 identity and carrier to RT-M2-R01 are source-reviewed on2026-10-29. New partial M1 spine and relative via arrays are AI candidates; counts and exact source-to-design landing remain unknown.",
+    "Original30 M2/M3 metals,9 V2 interfaces and42 design cuts remain exact. One additive partial M1 inventory is not full M1 or corridor interface coverage.",
+    "A/B each use a two-site relative design hypothesis for whole-declared-array checks, not two physically observed holes. Additional physical holes remain unknown. Horizontal M1 branches are not claimed complete.",
+    "A-right/B-left horizontal M1 main runs are added only as source-bound local parts of C-M1-SPINE within the original corridor. Old wording about unmodeled horizontal branches remains historical for this scoped extension; teeth and outside continuations are still not modeled.",
+    "The original partial M1 inventory and source anchors are immutable. The separate local-part ledger supplies these two added branch observations, not full M1 coverage. No new interface or net edge is created.",
+    "BF24/BF26 contact BU and BF25 has no direct local contact to BU or L1/L2, human-reviewed on2026-10-29. Review applies only to these3 local contacts, not other23 fingers, BR returns, exact geometry, material identity, vias or global nets.",
+    "Only BF24/BF26 are added as connected local parts of C-M1-SPINE. BF25 is later added as an unassigned M1 geometry candidate, not a floating electrical node. Native anchors and all46 old design cut centers are preserved.",
+    "Lower L1/L2 bars remain source-only context and are not modeled here. Local lower noncontact is inherited from the human source verdict, not claimed as a lower-bar design enclosure or spacing check.",
+    "Explicit bottom-only WORKING-CANDIDATE canvas extension780x1240->780x1440; old coordinates/units/sites unchanged. This is not human physical-geometry approval or native source-scope adoption.",
+    "P1-P5 source contacts are reviewed. BR-R/R3/R4 dimensions and local source extensions remain candidates. L1/L2 local gaps do not establish global isolation; N3090/N3158 and BF24/BF26 lower contacts remain unknown.",
+    "L1/L2 are separate local working-geometry candidates. P2/P3 noncontact is only local to BR-R; no electrical floating or complete-network claim. Partial left endpoints are scope exits, not physical terminals.",
+    "Viewport expanded left with negative design x; original origin, sites and all native anchors unchanged. New M1/M3 relative geometry is a source-bound candidate, not a qualified photo transform.",
+    "The middle M3 context passes over new M2 A without a declared V2: no connection is inferred. Existing unknown thin tracks and unreviewed short fingers remain unknown."
+  ],
+  "parent": {
+    "path": "docs/assets/left-bu-joint-work-v3/S1-left-viewport/manifest.json",
+    "sha256": "0d754cfc39b9f803dc656f02a8682e87decf3a29a4da31f432362d7510a89ef3"
+  },
+  "preserve_via_center_ids": [
+    "RT-V2-U1",
+    "RT-V2-U2",
+    "RT-V2-D1",
+    "RT-V2-D2",
+    "N1-V2",
+    "C03-V2",
+    "C04-V2",
+    "C05-V2",
+    "C06-V2",
+    "CORRIDOR-V1-A",
+    "CORRIDOR-V1-B"
+  ],
+  "allowed_changed_ids": [
+    "C-M1-SPINE",
+    "RT-M3-DOWN",
+    "RT-M3-MID",
+    "RT-M3-UP"
+  ],
+  "source_assets": {
+    "m1": {
+      "wide_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-wide-raw.png",
+        "sha256": "19aead2f9de2826456a51aaae2083154f0274dd2a42f8ddf45647c5281c64278"
+      },
+      "wide_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-wide-marked.png",
+        "sha256": "dee47e4043cda499120bc84e85933fdbf79d320e7b79b078dd7b7934836ebf5c"
+      },
+      "detail_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-detail-raw.png",
+        "sha256": "859e1f2e2a3c5ccba6ac4f0e7713071444e1936e6155fbcd2831563ce247ebb5"
+      },
+      "detail_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-detail-marked.png",
+        "sha256": "29360acd3fd31c262d221ff0785b244c1f993d4acb6147aaf7a0a6616c91f7d1"
+      }
+    },
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m2-wide-raw.png",
+        "sha256": "2f43c17712d64af3d8c9353bbd3977d1fbf2abe6bafa048ddc9ddcdce1a08b04"
+      },
+      "wide_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m2-wide-marked.png",
+        "sha256": "2bc151740fa732cc0432b06e589654d8f76549c8560e82b5ff11a890f9508daf"
+      },
+      "detail_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m2-detail-raw.png",
+        "sha256": "dc6860ee22e3bff4f498d5fb78ef44337af00c28a6b14b595bf12e05066b2c29"
+      },
+      "detail_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m2-detail-marked.png",
+        "sha256": "1e35fc6842cff0253a14d2633b1cde485f073fcac8298389eedddfc9ad6f0fc3"
+      }
+    },
+    "m3": {
+      "wide_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m3-wide-raw.png",
+        "sha256": "a5c633f22f53986b4a9c2ef2ed6dcb5519a1a2438134b1cc95b775da06ecb254"
+      },
+      "wide_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m3-wide-marked.png",
+        "sha256": "682a546739e1359d4472aae5cc1232b6d6d898e76a5a27b1b6195aa4ea698392"
+      },
+      "detail_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m3-detail-raw.png",
+        "sha256": "08f38544703f0447d1bd615adac8ba73adf41cb0b33e9ae5b200ee5bd4cedb97"
+      },
+      "detail_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m3-detail-marked.png",
+        "sha256": "08f38544703f0447d1bd615adac8ba73adf41cb0b33e9ae5b200ee5bd4cedb97"
+      }
+    }
+  },
+  "revision_evidence": {
+    "path": "benchmarks/left-bu-joint-work-v3/parts-revision-evidence.json",
+    "sha256": "f2602c2a7d53fed57030191e25d19cfc600e290214e3500465ecc84c00420742"
+  }
+}

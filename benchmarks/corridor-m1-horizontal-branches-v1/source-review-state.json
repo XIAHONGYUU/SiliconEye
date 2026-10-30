@@ -1,0 +1,34 @@
+{
+  "kind": "M1_horizontal_branch_continuation_state",
+  "date": "2026-10-29",
+  "actor": "AI",
+  "new_source_parts": [
+    "A-RIGHT",
+    "B-LEFT"
+  ],
+  "metal_id": "C-M1-SPINE",
+  "identity_and_carrier_approval_reused": {
+    "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+    "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+  },
+  "new_geometry_human_approved": false,
+  "new_interfaces": 0,
+  "preserved_reviewed_interfaces": 11,
+  "source_continuity": "AI_OBSERVED_WITHOUT_DISTINCT_BREAK_IN_DECLARED_HORIZONTAL_RUNS",
+  "working_scope": "PARTIAL_M1_MAIN_RUNS_WITHIN_NATIVE_X_2940_TO_3670",
+  "outside_scope_continues": true,
+  "physical_end_at_scope_exit": false,
+  "unmodeled": [
+    "Downward fingers along B",
+    "Inner parallel segments near A",
+    "External right and left downward returns",
+    "Any newly suspected V1 on outside branches"
+  ],
+  "native_exact_landing_qualified": false,
+  "physical_cut_count": null,
+  "source_to_design_transform": null,
+  "pending_new_human_question": null,
+  "complete_network": false,
+  "net_edges": [],
+  "next_step": "Inventory the visible downward M1 fingers branching from B, keep parallel lower strips separate, then inspect newly localized interfaces from the M1 side."
+}

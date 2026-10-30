@@ -1,0 +1,38 @@
+{
+  "kind": "human_M2_A_end_V2_identity_carrier_batch",
+  "date": "2026-10-29",
+  "sources": {
+    "observations": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+      "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+    },
+    "reviewed_V1": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    }
+  },
+  "questions": [
+    {
+      "question_id": "LEFT-M2-A-V2-U",
+      "label": "U",
+      "question": "M2 A 上端 U 孔组是否为 V2，并接到 M3 的紫色上方 B-U（RT-M3-UP）宽母线？只判身份及承载，孔数保持未知。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "LEFT-M2-A-V2-D",
+      "label": "D",
+      "question": "M2 A 下端 D 孔组是否为 V2，并接到 M3 的粉色下方 B-D（RT-M3-DOWN）宽母线？只判身份及承载，孔数保持未知。",
+      "answer": null,
+      "human_approved": false
+    }
+  ],
+  "not_reasked": [
+    "R34-LEFT-Q1 V1 and M2 A",
+    "Old V1/V2 decisions",
+    "Cut counts",
+    "Middle overlap connection"
+  ],
+  "geometry_adopted": false,
+  "fine_enclosure_claimed": false
+}

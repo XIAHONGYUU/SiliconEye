@@ -1,0 +1,32 @@
+{
+  "kind": "M1_V1_reviewed_candidate_delivery",
+  "inputs": {
+    "human_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    },
+    "question": {
+      "path": "benchmarks/corridor-m1-v1-entry-v1/review-request.json",
+      "sha256": "9832d1e08964f2da0684a686f7ab1e97a558e166aa1fea616c240ede38d70edb"
+    }
+  },
+  "artifacts": {
+    "candidate-groups.png": "79ab9fdc8fd1df730e4b510c9b93f600dbab0b9eb37ad2b1813602810cb35c4c",
+    "index.html": "782c86de8db276c18c90b05dc01ae48283146476258a780d817e1a802c3260a1",
+    "bridge-overview.png": "7104e4b86b569d86138a95e2568ee220f63dec8e2f2ae3d7ea539583cb7e2b24",
+    "metal-added/model.json": "f8e370580bba6f4f22df54223179d6af75bf4bfbabf71c73b7f1280c94fe1925",
+    "metal-added/index.html": "289d3e651e0111a6209e739ab4908e3a51f95df1b4a3b94af5c9ecd2a42e33f9",
+    "metal-added/report.json": "01ee0f29a675fda3119d6453fe95af372a26cc1b515effcbe696430790d1b548",
+    "metal-added/request.json": "682c239df7d811a30e68b14be832bddfac87aa3fa2bfaebc1620fc0dfe80910a",
+    "work/model.json": "467b858bdf580c8c99fece3a74c6cad6be7fb380a29b6703e7482d71e16ac6fb",
+    "work/index.html": "aa36ad6324ba9f68eb4ebe07f7e74ed36419c7e6f89db7b48a30a2a0d4342aa7",
+    "work/report.json": "678a41e2e2ab471583a3ce2057f2b0c2a105c41fcec714d518c660820e091d55",
+    "work/request.json": "0d5e6d7b565c3a132ed1332312559e68e37c19ddba46e584856943cb62260e1a",
+    "work-rejected-v1/diagnostic.json": "decc0f71e83371c303551a7333065408cf765b4faccab28e36bc0bb34fc5d461",
+    "source/m1-detail-marked.png": "40835ff0ebe95cd993a8feaaca80bae53147604898b90f1f3bf7c8602f7aa1cb",
+    "source/m1-wide-marked.png": "27551c9c961bae1a8ae86e66dc0363a3d8be536f8d11e84eadbfd18e303d0ca4",
+    "source/m1-wide-raw.png": "9d970de91094a37781d1f6f3535f7d85f170d29de9bd2f687b888c9ae376d8f5",
+    "source/m1-location.png": "b23db5fe4fe3565891ab016cc6d98c4421e6578b1d46f252a5c1646cb6be2a34",
+    "source/m1-detail-raw.png": "12b0a99b77810749adc020f5e7656a7afb450194c6d8c2135320289d144a82e7"
+  }
+}

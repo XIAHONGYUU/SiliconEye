@@ -1,0 +1,230 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add seven explicitly missing M1 fragments as separate stable metal IDs. The bottom left/right fragments retain a source-supported gap; do not assign middle tracks to old L1/L2.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m1": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m1.jpg",
+          "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+        },
+        "native_bounds": [
+          300,
+          1870,
+          830,
+          2820
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "M1-L07",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          300,
+          2312
+        ],
+        [
+          830,
+          2304
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M1-L08",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          300,
+          2338
+        ],
+        [
+          830,
+          2329
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M1-L04",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          784,
+          1948
+        ],
+        [
+          800,
+          2280
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M1-L05",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          407,
+          2356
+        ],
+        [
+          422,
+          2695
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M1-L06",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          799,
+          2348
+        ],
+        [
+          817,
+          2683
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M1-L09",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          300,
+          2809
+        ],
+        [
+          748,
+          2797
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M1-L10",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          811,
+          2794
+        ],
+        [
+          830,
+          2793
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        },
+        {
+          "state": "declared_scope_or_visible_tip_unknown"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "M1-L07",
+      "metal_id": "W34-M1-L07"
+    },
+    {
+      "observation_id": "M1-L08",
+      "metal_id": "W34-M1-L08"
+    },
+    {
+      "observation_id": "M1-L04",
+      "metal_id": "W34-M1-L04"
+    },
+    {
+      "observation_id": "M1-L05",
+      "metal_id": "W34-M1-L05"
+    },
+    {
+      "observation_id": "M1-L06",
+      "metal_id": "W34-M1-L06"
+    },
+    {
+      "observation_id": "M1-L09",
+      "metal_id": "W34-M1-L09"
+    },
+    {
+      "observation_id": "M1-L10",
+      "metal_id": "W34-M1-L10"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "original_inventory": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/scoped-M1-coverage.json",
+      "sha256": "48e88d318caf8cdcd38c94a21bba03a7757b0408a2b53bfe2f8d6fa420d4e828"
+    },
+    "rescan": {
+      "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+      "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+    }
+  }
+}

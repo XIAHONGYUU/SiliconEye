@@ -1,0 +1,7 @@
+{
+  "status": "EXPECTED_PARENT_CANVAS_REJECTION",
+  "reason": "Revision cannot change snapshot, canvas or budgets",
+  "parent_preserved": true,
+  "output_adopted": false,
+  "meaning": "Requires an explicit tested extension transaction; do not remove the parent."
+}

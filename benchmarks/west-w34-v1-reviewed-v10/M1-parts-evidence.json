@@ -1,0 +1,22 @@
+{
+  "actor": "AI",
+  "reason": "Append source-continuous W3/W4 M1 bars and differentiated north landing pieces. Do not infer entire thin-stem extents or unknown middle contacts.",
+  "parent": {
+    "path": "docs/assets/west-w34-reviewed-v9/S4-W34-V2/manifest.json",
+    "sha256": "48fb8a33daa482a12c030084c5494792ec4e35fc403a8932ca7bd8cba5b97249"
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+      "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+    },
+    "native": {
+      "path": "benchmarks/west-w34-reviewed-v9/W34-M1-source-observations.json",
+      "sha256": "6c660d73d1e304e50b8d0ae724548f0a25381313bdf8dcbada8c0ac60ba6c2fe"
+    },
+    "ledger": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/W34-M1-source-ledger.json",
+      "sha256": "63920eeb7bdb2db8d52af15c867545cd2a30a633f6807cfa053094c3a0ab9575"
+    }
+  }
+}

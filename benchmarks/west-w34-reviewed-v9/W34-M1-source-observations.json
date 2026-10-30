@@ -1,0 +1,238 @@
+{
+  "kind": "AI_native_M1_V1_batch_on_reviewed_W3_W4",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "reviewed_W34_V2": {
+    "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+    "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+  },
+  "M2_metals": [
+    {
+      "id": "WEST-M2-W3-SOURCE",
+      "frame": "m2",
+      "native_path": [
+        [
+          725,
+          1925
+        ],
+        [
+          740,
+          2350
+        ],
+        [
+          755,
+          2795
+        ]
+      ],
+      "native_scope_bounds": [
+        250,
+        1730,
+        850,
+        2900
+      ],
+      "end_states": [
+        "visible_upper_pad",
+        "visible_lower_pad"
+      ]
+    },
+    {
+      "id": "WEST-M2-W4-SOURCE",
+      "frame": "m2",
+      "native_path": [
+        [
+          360,
+          1930
+        ],
+        [
+          380,
+          2355
+        ],
+        [
+          400,
+          2800
+        ]
+      ],
+      "native_scope_bounds": [
+        250,
+        1730,
+        850,
+        2900
+      ],
+      "end_states": [
+        "visible_upper_pad",
+        "visible_lower_pad"
+      ]
+    }
+  ],
+  "M1_local_source_paths": [
+    {
+      "id": "W34-M1-NORTH-BAR-SOURCE",
+      "frame": "m1",
+      "native_path": [
+        [
+          300,
+          1924
+        ],
+        [
+          1000,
+          1910
+        ]
+      ],
+      "attachment_existing_metal_id": "C-M1-SPINE",
+      "basis": "Same-frame upper horizontal bar continues to already source-bound W2 north bar; precise widths and contacts with thin vertical neighbors not adopted."
+    },
+    {
+      "id": "W34-M1-SOUTH-BAR-SOURCE",
+      "frame": "m1",
+      "native_path": [
+        [
+          300,
+          2734
+        ],
+        [
+          1000,
+          2716
+        ]
+      ],
+      "attachment_existing_metal_id": "C-M1-SPINE",
+      "basis": "Same-frame broad lower horizontal bar continues to already source-bound W2 south bar; no via inferred by alignment."
+    }
+  ],
+  "V1_sites": [
+    {
+      "id": "W3-V1-N",
+      "label": "W3-N",
+      "source_frame": "m1",
+      "via_layer": "V1",
+      "m1_native_search_bounds": [
+        728,
+        1905,
+        775,
+        1955
+      ],
+      "m2_native_carrier_search_bounds": [
+        690,
+        1880,
+        775,
+        2020
+      ],
+      "lower_source_id": "W34-M1-NORTH-BAR-SOURCE",
+      "upper_metal_candidate_id": "WEST-M2-W3-SOURCE",
+      "V1_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "alternative": "Local M1 brightness is not by itself an approved V1 connection."
+    },
+    {
+      "id": "W3-V1-S",
+      "label": "W3-S",
+      "source_frame": "m1",
+      "via_layer": "V1",
+      "m1_native_search_bounds": [
+        755,
+        2708,
+        810,
+        2756
+      ],
+      "m2_native_carrier_search_bounds": [
+        720,
+        2670,
+        795,
+        2830
+      ],
+      "lower_source_id": "W34-M1-SOUTH-BAR-SOURCE",
+      "upper_metal_candidate_id": "WEST-M2-W3-SOURCE",
+      "V1_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "alternative": "Local M1 brightness is not by itself an approved V1 connection."
+    },
+    {
+      "id": "W4-V1-N",
+      "label": "W4-N",
+      "source_frame": "m1",
+      "via_layer": "V1",
+      "m1_native_search_bounds": [
+        360,
+        1908,
+        410,
+        1975
+      ],
+      "m2_native_carrier_search_bounds": [
+        325,
+        1880,
+        410,
+        2020
+      ],
+      "lower_source_id": "W34-M1-NORTH-BAR-SOURCE",
+      "upper_metal_candidate_id": "WEST-M2-W4-SOURCE",
+      "V1_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "alternative": "Thin vertical M1 / optical texture may explain the bright column; do not infer via identity from M2 V2."
+    },
+    {
+      "id": "W4-V1-S",
+      "label": "W4-S",
+      "source_frame": "m1",
+      "via_layer": "V1",
+      "m1_native_search_bounds": [
+        385,
+        2710,
+        445,
+        2764
+      ],
+      "m2_native_carrier_search_bounds": [
+        360,
+        2670,
+        445,
+        2830
+      ],
+      "lower_source_id": "W34-M1-SOUTH-BAR-SOURCE",
+      "upper_metal_candidate_id": "WEST-M2-W4-SOURCE",
+      "V1_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "alternative": "Local M1 brightness is not by itself an approved V1 connection."
+    }
+  ],
+  "working_V1_added": false,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "net_edges": [],
+  "complete_network": false
+}

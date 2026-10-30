@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "path": "benchmarks/left-bu-joint-work-v3/next-request.json",
+      "sha256": "d3984a5a9feac6fee001dc3ec585a74c269043a46faa5e88010d17c76cab8390"
+    },
+    {
+      "path": "benchmarks/left-bu-joint-work-v3/S5-north-sample.json",
+      "sha256": "3fca3c4d13033ca50ffb1d69a1a38146cf8fafd457cea038c1c2bff8bf73edaa"
+    },
+    {
+      "path": "docs/assets/left-bu-joint-work-v3/S5-north/model.json",
+      "sha256": "70fa23a6539063e6fd83e3d4499991796f5c6cba99b3bdb1b3c8facaa8185ac1"
+    },
+    {
+      "path": "benchmarks/left-bu-joint-work-v3/north-review-request.json",
+      "sha256": "ea3dedd88d67d3beae451b0eada399935bde45e95b2c179f1bbe3cf9fa519de5"
+    },
+    {
+      "path": "benchmarks/left-bu-joint-work-v3/north-interface-observation.json",
+      "sha256": "e800b638538e4257a8dc6493c8ebaccfe34f314cc2852e3d9c40074037f70ce6"
+    }
+  ],
+  "producer": {
+    "path": "silicon_eye/conductive_workflow.py",
+    "sha256": "62fea0d2fbd9868caf79f58de770c8abc2c18b8518530b70c3f28f1c26899f91"
+  },
+  "metal_geometry_producer": {
+    "path": "silicon_eye/metal_reconstruction.py",
+    "sha256": "0c379e4f5e3d4a11ee6a01d381da5ff05f9054544c2145c021f7dfbd49266234"
+  }
+}

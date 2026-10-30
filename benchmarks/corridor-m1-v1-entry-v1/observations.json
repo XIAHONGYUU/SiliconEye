@@ -1,0 +1,65 @@
+{
+  "kind": "AI_native_M1_entry_source_observations",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "working_request": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/next-request.json",
+    "sha256": "fc53fd46f656ca93d426959b824db4f0cf62bcf09739187b10fc78ffb86f0f08"
+  },
+  "source_photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "macro_search": {
+    "path": "benchmarks/corridor-m1-v1-entry-v1/pad-frame-macro-search-v2.json",
+    "sha256": "c91c62c7cbdbf6a1b2584292469c6bd6cd61c2d9eccfe7b587404bb236cea479"
+  },
+  "observations": [
+    {
+      "id": "CORRIDOR-V1-A-SEARCH",
+      "source_frame": "m1",
+      "native_bounds": [
+        3125,
+        1930,
+        3175,
+        2010
+      ],
+      "source_role": "upper_corner_search_region_not_confirmed_via_group",
+      "V1_present_candidate": null,
+      "V1_present_human_confirmed": null,
+      "physical_cut_count": null,
+      "M1_conductor_id": null,
+      "upper_M2_candidate": "RT-M2-R01",
+      "connection_confirmed": null,
+      "basis": "Bright M1 corner/vertical edge contains repeated modulation; independent V1 cut outlines cannot be isolated. CT, screen texture and metal-edge alternatives remain."
+    },
+    {
+      "id": "CORRIDOR-V1-B-SEARCH",
+      "source_frame": "m1",
+      "native_bounds": [
+        3130,
+        2775,
+        3180,
+        2845
+      ],
+      "source_role": "lower_junction_search_region_not_confirmed_via_group",
+      "V1_present_candidate": null,
+      "V1_present_human_confirmed": null,
+      "physical_cut_count": null,
+      "M1_conductor_id": null,
+      "upper_M2_candidate": "RT-M2-R01",
+      "connection_confirmed": null,
+      "basis": "Horizontal/vertical M1 neighborhood is visible; crossing plus brightness is not proof of a V1 interface."
+    }
+  ],
+  "R02_disposition": "No clearly localized V1 group established from plate-edge search. Deferred, not physical absence.",
+  "registered_fine_landing_qualified": false,
+  "new_geometry_or_connections": 0,
+  "source_to_design_transform": null
+}

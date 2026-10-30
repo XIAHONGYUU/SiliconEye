@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Add only W1 lower visible extent as a connected local part; all old source records and sites remain exact.",
+  "parent": {
+    "path": "docs/assets/west-w1-reviewed-v5/S2-W1-anchor/manifest.json",
+    "sha256": "51537ab216db0c983eddfa28cdddb1650927fb77fdec8dbe55c72f827a0fde1f"
+  },
+  "sources": {
+    "ledger": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-full-source-ledger.json",
+      "sha256": "22977eabce8f44a989d81db22f4676b97410d5487e8cf8ad6e909febd9c16e07"
+    },
+    "full_native": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+      "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+    }
+  }
+}

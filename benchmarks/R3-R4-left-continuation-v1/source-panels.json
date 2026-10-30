@@ -1,0 +1,109 @@
+{
+  "panels": [
+    {
+      "id": "m1-wide",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        1540,
+        2490,
+        3250,
+        3280
+      ],
+      "scale": 1,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "m1-wide-raw.png",
+      "marked": "m1-wide-marked.png"
+    },
+    {
+      "id": "m1-left",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        1580,
+        2740,
+        2480,
+        3270
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "m1-left-raw.png",
+      "marked": "m1-left-marked.png"
+    },
+    {
+      "id": "m1-center",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        2220,
+        2770,
+        2540,
+        3240
+      ],
+      "scale": 3,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "m1-center-raw.png",
+      "marked": "m1-center-marked.png"
+    },
+    {
+      "id": "m1-q1",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        1760,
+        2490,
+        2230,
+        2910
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "m1-q1-raw.png",
+      "marked": "m1-q1-marked.png"
+    },
+    {
+      "id": "m2-q1",
+      "frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        1720,
+        2520,
+        2190,
+        2940
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "m2-q1-raw.png",
+      "marked": "m2-q1-marked.png"
+    }
+  ]
+}

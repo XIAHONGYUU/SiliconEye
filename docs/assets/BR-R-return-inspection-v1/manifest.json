@@ -1,0 +1,29 @@
+{
+  "kind": "native_return_inspection_delivery",
+  "inputs": {
+    "observations": {
+      "path": "benchmarks/BR-R-return-inspection-v1/source-observations.json",
+      "sha256": "300e9b056e2a2510d61ce329c5e67053824c4e832c14087b02fcceffdfe15bd9"
+    },
+    "question": {
+      "path": "benchmarks/BR-R-return-inspection-v1/review-request.json",
+      "sha256": "5237ae9b89a61e68673d99fd1ec626089cee351861122a8f4d7a5b79edb91ab6"
+    },
+    "panels": {
+      "path": "benchmarks/BR-R-return-inspection-v1/source-panels.json",
+      "sha256": "a89c80a1000698708b8e65237721165516bf59b1b66bb5859448741630a5be64"
+    }
+  },
+  "artifacts": {
+    "lower-raw.png": "fda8309460ff22860235af5b4d5fc152c6e5b43cb4325b7c933468a6d35189dc",
+    "upper-raw.png": "af00d8e1ff886e9e2472698a20a2cd206a1e9438834fd2acf92cb69d2d205d06",
+    "gaps-raw.png": "7a62f9d8fcca7c477de984f89f423d75f9d97350a3345b51a2bdb7f4b6f7c4f5",
+    "upper-marked.png": "d5af9d3b3e5c46c38c817149f49ee8b12a0600a492b1b5a754f10dcb3d8715af",
+    "gaps-marked.png": "b1aa9d2e48ae7e95f83b72c69d69d4f71f390d9cae5f902678e4b8e51d52b0d6",
+    "wide-marked.png": "585b827146f5e2052d1c9a1669017f37d72d9ac381520f0948e7726d363cecc1",
+    "wide-raw.png": "ad6f527c491bd38f7902fcc178afb448be3cf1c020ba5397c699b342fe9fe393",
+    "index.html": "27074f7f66c90d0057236b55e22b383eef4273aa5b1f9fe8b8bb911142ad1e00",
+    "local-contact-candidates.csv": "3e88be7d753bcd385b5176806c566058592950f138213eb1482a568aada8a71d",
+    "lower-marked.png": "1273b7dfa65ef36f5ee63a4d96f8bd16ab221bd63afc3f74e0020e7919579b9d"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "actor": "AI",
+  "reason": "Append north M1 continuation; preserve all prior native local-part paths and source aliases.",
+  "parent": {
+    "path": "docs/assets/left-bu-joint-work-v3/S4-interfaces/manifest.json",
+    "sha256": "f9cdcbfef8a9424731974337957bbd8a481e17fdbebc83449ce6d1e538eb7de4"
+  },
+  "sources": {
+    "north": {
+      "path": "benchmarks/left-bu-joint-work-v3/north-source-observation.json",
+      "sha256": "bd48f82df32e0b182ca3b762f2d889e850119ba974af2f611ee6154a5b30b259"
+    },
+    "ledger": {
+      "path": "benchmarks/left-bu-joint-work-v3/north-local-part-ledger.json",
+      "sha256": "55468c9e2c42ff0917e0d6c0447b5d1bc5e95e9e67a379dd066215dd971cbcaa"
+    }
+  },
+  "geometry_human_approved": false
+}

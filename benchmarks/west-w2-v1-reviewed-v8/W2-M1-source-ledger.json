@@ -1,0 +1,1354 @@
+{
+  "kind": "local_metal_part_source_evidence",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "reason": "Append only W2 source-continuous M1 bars and the observed northern downward tab. Do not bridge neighboring thin vertical M1.",
+  "geometry_human_approved": false,
+  "parts": [
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "A-RIGHT",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        1900,
+        3670,
+        3000
+      ],
+      "native_path": [
+        [
+          3143,
+          1960
+        ],
+        [
+          3410,
+          1955
+        ],
+        [
+          3670,
+          1949
+        ]
+      ],
+      "design_bounds": [
+        179,
+        264,
+        655,
+        276
+      ],
+      "source_role": "AI_OBSERVED_SAME_LAYER_HORIZONTAL_CONTINUATION",
+      "geometry_human_approved": false,
+      "attachment_interface_id": "CORRIDOR-V1-A",
+      "scope_exit": {
+        "native_xy": [
+          3670,
+          1949
+        ],
+        "state": "exits_working_scope_continues_in_source",
+        "physical_end": false
+      },
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "B-LEFT",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        1900,
+        3670,
+        3000
+      ],
+      "native_path": [
+        [
+          3155,
+          2780
+        ],
+        [
+          3040,
+          2784
+        ],
+        [
+          2940,
+          2788
+        ]
+      ],
+      "design_bounds": [
+        12,
+        1011,
+        191,
+        1029
+      ],
+      "source_role": "AI_OBSERVED_SAME_LAYER_HORIZONTAL_CONTINUATION",
+      "geometry_human_approved": false,
+      "attachment_interface_id": "CORRIDOR-V1-B",
+      "scope_exit": {
+        "native_xy": [
+          2940,
+          2788
+        ],
+        "state": "exits_working_scope_continues_in_source",
+        "physical_end": false
+      },
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "BF24-UPPER",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        2760,
+        3155,
+        2940
+      ],
+      "native_path": [
+        [
+          2964,
+          2790
+        ],
+        [
+          2970,
+          2899
+        ]
+      ],
+      "design_bounds": [
+        31,
+        1023,
+        37,
+        1110
+      ],
+      "source_observation_id": "BF24",
+      "local_contact_review": {
+        "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+        "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+      },
+      "source_role": "SCOPED_REVIEWED_LOCAL_CONTACT_WITH_CANDIDATE_GEOMETRY",
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "BF26-UPPER",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        2760,
+        3155,
+        2940
+      ],
+      "native_path": [
+        [
+          3068,
+          2787
+        ],
+        [
+          3074,
+          2896
+        ]
+      ],
+      "design_bounds": [
+        115,
+        1023,
+        121,
+        1110
+      ],
+      "source_observation_id": "BF26",
+      "local_contact_review": {
+        "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+        "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+      },
+      "source_role": "SCOPED_REVIEWED_LOCAL_CONTACT_WITH_CANDIDATE_GEOMETRY",
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "BRR-DOWN",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        2760,
+        3155,
+        3200
+      ],
+      "native_path": [
+        [
+          3098,
+          2785
+        ],
+        [
+          3101,
+          2924
+        ],
+        [
+          3104,
+          3070
+        ],
+        [
+          3108,
+          3174
+        ]
+      ],
+      "design_bounds": [
+        136,
+        1014,
+        144,
+        1339
+      ],
+      "source_relation_ids": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "source_contact_review": {
+        "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+        "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+      },
+      "geometry_human_approved": false,
+      "source_role": "REVIEWED_LOCAL_CONTACT_UNADOPTED_GEOMETRY_PROPOSAL",
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "BRR-R3",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        2760,
+        3155,
+        3200
+      ],
+      "native_path": [
+        [
+          3104,
+          3070
+        ],
+        [
+          2940,
+          3074
+        ]
+      ],
+      "design_bounds": [
+        12,
+        1244,
+        144,
+        1256
+      ],
+      "source_relation_ids": [
+        "P4"
+      ],
+      "source_contact_review": {
+        "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+        "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+      },
+      "geometry_human_approved": false,
+      "source_role": "REVIEWED_LOCAL_CONTACT_UNADOPTED_GEOMETRY_PROPOSAL",
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "BRR-R4",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        2760,
+        3155,
+        3200
+      ],
+      "native_path": [
+        [
+          3108,
+          3174
+        ],
+        [
+          2940,
+          3178
+        ]
+      ],
+      "design_bounds": [
+        12,
+        1326,
+        144,
+        1344
+      ],
+      "source_relation_ids": [
+        "P5"
+      ],
+      "source_contact_review": {
+        "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+        "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+      },
+      "geometry_human_approved": false,
+      "source_role": "REVIEWED_LOCAL_CONTACT_UNADOPTED_GEOMETRY_PROPOSAL",
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-BU",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          1673,
+          2830
+        ],
+        [
+          2010,
+          2818
+        ],
+        [
+          2390,
+          2806
+        ],
+        [
+          2800,
+          2794
+        ],
+        [
+          3098,
+          2785
+        ]
+      ],
+      "design_bounds": [
+        -1126,
+        1011,
+        18,
+        1029
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-RETURN",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          1673,
+          2830
+        ],
+        [
+          1685,
+          3226
+        ]
+      ],
+      "design_bounds": [
+        -1126,
+        1011,
+        -1114,
+        1344
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-R3",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          3104,
+          3070
+        ],
+        [
+          2800,
+          3080
+        ],
+        [
+          2397,
+          3095
+        ],
+        [
+          2000,
+          3111
+        ],
+        [
+          1679,
+          3125
+        ]
+      ],
+      "design_bounds": [
+        -1126,
+        1244,
+        18,
+        1256
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-R4",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          3108,
+          3174
+        ],
+        [
+          2800,
+          3184
+        ],
+        [
+          2397,
+          3200
+        ],
+        [
+          2000,
+          3214
+        ],
+        [
+          1685,
+          3226
+        ]
+      ],
+      "design_bounds": [
+        -1126,
+        1326,
+        18,
+        1344
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-BR-C",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          2390,
+          2806
+        ],
+        [
+          2395,
+          2960
+        ],
+        [
+          2399,
+          3095
+        ],
+        [
+          2401,
+          3158
+        ]
+      ],
+      "design_bounds": [
+        -604,
+        1018,
+        -592,
+        1304
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-BU-UP",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          2010,
+          2818
+        ],
+        [
+          2008,
+          2710
+        ],
+        [
+          2004,
+          2570
+        ]
+      ],
+      "design_bounds": [
+        -966,
+        730,
+        -934,
+        1029
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false,
+      "source_observation_id": "BU-UP-SOURCE"
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-UP-WEST",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          1540,
+          2698
+        ],
+        [
+          2008,
+          2686
+        ]
+      ],
+      "design_bounds": [
+        -1430,
+        850,
+        -950,
+        870
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "RT-M3-UP",
+      "part_id": "LEFT-BUS-UP",
+      "source_frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          1700,
+          1973
+        ],
+        [
+          2300,
+          1969
+        ],
+        [
+          2980,
+          1958
+        ],
+        [
+          3650,
+          1938
+        ]
+      ],
+      "design_bounds": [
+        -1440,
+        154,
+        76,
+        214
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "RT-M3-DOWN",
+      "part_id": "LEFT-BUS-DOWN",
+      "source_frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          1700,
+          2786
+        ],
+        [
+          2300,
+          2778
+        ],
+        [
+          2980,
+          2750
+        ],
+        [
+          3650,
+          2730
+        ]
+      ],
+      "design_bounds": [
+        -1440,
+        830,
+        76,
+        910
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "RT-M3-MID",
+      "part_id": "LEFT-MID-CONTEXT",
+      "source_frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3750,
+        3320
+      ],
+      "native_path": [
+        [
+          1700,
+          2475
+        ],
+        [
+          2980,
+          2450
+        ]
+      ],
+      "design_bounds": [
+        -1440,
+        550,
+        76,
+        630
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "LEFT-BU-UP-NORTH",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1750,
+        1660,
+        2240,
+        2860
+      ],
+      "native_path": [
+        [
+          1975,
+          1950
+        ],
+        [
+          2004,
+          2570
+        ]
+      ],
+      "source_observation_id": "BU-UP-NORTH-SOURCE",
+      "design_bounds": [
+        -966,
+        260,
+        -934,
+        736
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "N-WEST-BRIDGE",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          1956,
+          1945
+        ],
+        [
+          1990,
+          1945
+        ]
+      ],
+      "source_observation_id": "N-WEST-BRIDGE",
+      "design_bounds": [
+        -988,
+        272,
+        -934,
+        284
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "N-WEST-STEP",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          1955,
+          1890
+        ],
+        [
+          1956,
+          1945
+        ]
+      ],
+      "source_observation_id": "N-WEST-STEP",
+      "design_bounds": [
+        -988,
+        218,
+        -976,
+        284
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "N-WEST-HORIZONTAL",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          1400,
+          1904
+        ],
+        [
+          1955,
+          1890
+        ]
+      ],
+      "source_observation_id": "N-WEST-HORIZONTAL",
+      "design_bounds": [
+        -1470,
+        218,
+        -976,
+        230
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "N-EAST-TOP",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          1995,
+          1940
+        ],
+        [
+          2585,
+          1930
+        ]
+      ],
+      "source_observation_id": "N-EAST-TOP",
+      "design_bounds": [
+        -944,
+        272,
+        -344,
+        284
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "N-EAST-RIGHT",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          2585,
+          1930
+        ],
+        [
+          2595,
+          2247
+        ]
+      ],
+      "source_observation_id": "N-EAST-RIGHT",
+      "design_bounds": [
+        -356,
+        272,
+        -344,
+        554
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "N-EAST-RETURN",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          2025,
+          2265
+        ],
+        [
+          2595,
+          2247
+        ]
+      ],
+      "source_observation_id": "N-EAST-RETURN",
+      "design_bounds": [
+        -966,
+        542,
+        -344,
+        554
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "F1-M1-TAB",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        1400,
+        1730,
+        3680,
+        3320
+      ],
+      "native_path": [
+        [
+          1520,
+          1898
+        ],
+        [
+          1521,
+          1933
+        ]
+      ],
+      "source_observation_id": "F1-M1-TAB-SOURCE",
+      "design_bounds": [
+        -1372,
+        218,
+        -1348,
+        251
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "N-WEST-M2-W1",
+      "part_id": "W1-LOWER-EXTENT",
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_scope_bounds": [
+        1400,
+        1750,
+        1690,
+        2890
+      ],
+      "native_path": [
+        [
+          1515,
+          2320
+        ],
+        [
+          1525,
+          2795
+        ]
+      ],
+      "source_observation_id": "N-WEST-M2-W1-LOWER-SOURCE",
+      "design_bounds": [
+        -1371,
+        529,
+        -1349,
+        900
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "RT-M3-UP",
+      "part_id": "WEST-W2-BUS-UP",
+      "source_frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_scope_bounds": [
+        870,
+        1750,
+        1500,
+        2940
+      ],
+      "native_path": [
+        [
+          900,
+          1985
+        ],
+        [
+          1380,
+          1980
+        ]
+      ],
+      "source_observation_id": "RT-M3-UP-W2-SOURCE",
+      "design_bounds": [
+        -1850,
+        154,
+        -1420,
+        214
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "RT-M3-DOWN",
+      "part_id": "WEST-W2-BUS-DOWN",
+      "source_frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_scope_bounds": [
+        870,
+        1750,
+        1500,
+        2940
+      ],
+      "native_path": [
+        [
+          900,
+          2805
+        ],
+        [
+          1380,
+          2795
+        ]
+      ],
+      "source_observation_id": "RT-M3-DOWN-W2-SOURCE",
+      "design_bounds": [
+        -1850,
+        830,
+        -1420,
+        910
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "W2-M1-NORTH-BAR",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        870,
+        1730,
+        1600,
+        2940
+      ],
+      "native_path": [
+        [
+          1000,
+          1910
+        ],
+        [
+          1400,
+          1904
+        ]
+      ],
+      "source_observation_id": "W2-M1-NORTH-BAR-SOURCE",
+      "design_bounds": [
+        -1850,
+        218,
+        -1450,
+        230
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "W2-M1-NORTH-TAB",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        870,
+        1730,
+        1600,
+        2940
+      ],
+      "native_path": [
+        [
+          1110,
+          1909
+        ],
+        [
+          1111,
+          1939
+        ]
+      ],
+      "source_observation_id": "W2-M1-NORTH-TAB-SOURCE",
+      "design_bounds": [
+        -1782,
+        218,
+        -1758,
+        251
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "W2-M1-SOUTH-BAR",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        870,
+        1730,
+        1600,
+        2940
+      ],
+      "native_path": [
+        [
+          1000,
+          2716
+        ],
+        [
+          1540,
+          2698
+        ]
+      ],
+      "source_observation_id": "W2-M1-SOUTH-BAR-SOURCE",
+      "design_bounds": [
+        -1850,
+        850,
+        -1410,
+        870
+      ],
+      "geometry_human_approved": false,
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    }
+  ],
+  "full_source_context": [
+    {
+      "part_id": "A-RIGHT",
+      "native_path": [
+        [
+          3143,
+          1960
+        ],
+        [
+          3670,
+          1949
+        ],
+        [
+          4500,
+          1930
+        ],
+        [
+          5175,
+          1917
+        ],
+        [
+          5178,
+          2290
+        ]
+      ],
+      "end_state": "turns_down_then_continues_beyond_display_window",
+      "physical_end": false,
+      "modeled_in_working_canvas": false
+    },
+    {
+      "part_id": "B-LEFT",
+      "native_path": [
+        [
+          3155,
+          2780
+        ],
+        [
+          2940,
+          2788
+        ],
+        [
+          2600,
+          2805
+        ],
+        [
+          2200,
+          2820
+        ],
+        [
+          1682,
+          2828
+        ],
+        [
+          1688,
+          3100
+        ]
+      ],
+      "end_state": "turns_down_then_continues_beyond_display_window",
+      "physical_end": false,
+      "modeled_in_working_canvas": false
+    }
+  ],
+  "sources": {
+    "photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "parent": {
+      "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/manifest.json",
+      "sha256": "afdf3854b78db49b1db8802a36f22d959c0382c157b0e5e2491021e7c7fd8801"
+    },
+    "inherited_A_B_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    },
+    "three_finger_contact_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    "BRR_contact_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "native_left": {
+      "path": "benchmarks/R3-R4-left-continuation-v1/source-observations.json",
+      "sha256": "47d47101039c9fe1bbe97aa751992fe03c79ab838306a7a2cb03f4cb62a18706"
+    },
+    "source_continuation": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+      "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+    },
+    "V1_human": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2_human": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    },
+    "north_native": {
+      "path": "benchmarks/left-bu-joint-work-v3/north-source-observation.json",
+      "sha256": "bd48f82df32e0b182ca3b762f2d889e850119ba974af2f611ee6154a5b30b259"
+    },
+    "upper_branch_native": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+      "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+    },
+    "N_human": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/human-review.json",
+      "sha256": "d46602d22db0cf2631cd7a680a2ed04e2ebae3b4749da59027ae05aa0cf09e5d"
+    },
+    "F1_human": {
+      "path": "benchmarks/west-w1-reviewed-v5/human-review.json",
+      "sha256": "6a2fc733886a9bc114ff114e57eff7ba994b8764e9eaffe8ec0cc5560d659f0a"
+    },
+    "F1_native": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+      "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+    },
+    "full_W1_native": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+      "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+    },
+    "W2_native": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W2-source-observations.json",
+      "sha256": "d943b09eab9857b0a357530e99c7644b9dfb6de76fae0c13df0f04e82a364f0e"
+    },
+    "W2_M1_native": {
+      "path": "benchmarks/west-w2-reviewed-v7/W2-M1-source-observations.json",
+      "sha256": "1bae566bba41ade43a4ecc783e11bcbabaef6102c3f8e752678ce1a39ea6a360"
+    },
+    "W2_V1_human": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+      "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+    }
+  },
+  "limits": [
+    "Only horizontal main runs within the original working corridor are reconstructed. Downward fingers, inner parallel strips and external return paths are not automatically merged.",
+    "B horizontal band is near native y2780, while the inherited approximate spine anchor is y2800; both lie in the approved B search station. Native anchor is preserved and no fine alignment or via center shift is inferred.",
+    "A naive maximum-brightness probe at x3600 selects an inner strip near y1987 rather than the outer run near y1950. Peak brightness alone was not used to fit the branch."
+  ]
+}

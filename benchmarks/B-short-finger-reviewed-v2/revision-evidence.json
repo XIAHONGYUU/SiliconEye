@@ -1,0 +1,27 @@
+{
+  "actor": "AI",
+  "reason": "Add only BF24/BF26 local M1 fingers after scoped same-layer contact confirmation. Preserve all earlier geometry and cross-layer interface records.",
+  "parent": {
+    "path": "docs/assets/corridor-m1-horizontal-branches-v1/work/manifest.json",
+    "sha256": "a3a969fc3ad4d03db58c6f7c641c05575d3046a14b6a6c879c98ef4ea7b03e1d"
+  },
+  "changed_object_ids": [
+    "C-M1-SPINE"
+  ],
+  "sources": {
+    "local_source_ledger": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/local-part-source-ledger.json",
+      "sha256": "4e78b0df2d4107bf9f5146e1324c1cbef5034a171478ab347b1b4b838adda650"
+    },
+    "human_contact_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    "parent": {
+      "path": "docs/assets/corridor-m1-horizontal-branches-v1/work/manifest.json",
+      "sha256": "a3a969fc3ad4d03db58c6f7c641c05575d3046a14b6a6c879c98ef4ea7b03e1d"
+    }
+  },
+  "geometry_human_approved": false,
+  "preserve_old_footprint": true
+}

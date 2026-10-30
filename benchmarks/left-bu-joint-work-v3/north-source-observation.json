@@ -1,0 +1,32 @@
+{
+  "id": "BU-UP-NORTH-SOURCE",
+  "frame": "m1",
+  "native_path": [
+    [
+      1975,
+      1950
+    ],
+    [
+      2004,
+      2570
+    ]
+  ],
+  "native_bounds": [
+    1940,
+    1900,
+    2050,
+    2600
+  ],
+  "kind": "AI_native_same_M1_continuation",
+  "actor": "AI",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "end_states": [
+    "continues_into_upper_M1_junction_and_pending_N_group",
+    "joins_previously_modeled_BU_UP"
+  ],
+  "geometry_human_approved": false,
+  "physical_terminal_claimed": false
+}

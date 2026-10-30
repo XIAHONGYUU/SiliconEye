@@ -1,0 +1,27 @@
+{
+  "kind": "reviewed_N_in_work_and_pending_west_F1_V1",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/human-review.json",
+    "sha256": "d46602d22db0cf2631cd7a680a2ed04e2ebae3b4749da59027ae05aa0cf09e5d"
+  },
+  "working_request": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/next-request.json",
+    "sha256": "4c351612320a48fa2d50aa9240e1d62166adb8fdab3945936ada0d7c3c919409"
+  },
+  "working_metal_candidates": 35,
+  "reviewed_working_interfaces": 15,
+  "explicit_design_cut_count": 89,
+  "old80_design_centers_preserved": true,
+  "pending_source_question_id": "N-WEST-F1-V1-Q1",
+  "pending_source_question": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/F1-review-request.json",
+    "sha256": "547d93862fb52dc9fb87116ec4b598c2ba65e4c02569895246c44323bb7aa939"
+  },
+  "new_F1_interface_modeled": false,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Resolve F1 V1 identity/carrier before adding it, then inspect W1 and westward continuation. Do not reopen N/Q1/U/D."
+}

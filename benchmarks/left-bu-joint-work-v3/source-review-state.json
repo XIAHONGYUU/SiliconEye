@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-29",
+  "kind": "leftward_working_geometry_extended_pending_new_north_V1",
+  "working_request": {
+    "path": "benchmarks/left-bu-joint-work-v3/next-request.json",
+    "sha256": "d3984a5a9feac6fee001dc3ec585a74c269043a46faa5e88010d17c76cab8390"
+  },
+  "human_UD": {
+    "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+    "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+  },
+  "pending_source_question": {
+    "path": "benchmarks/left-bu-joint-work-v3/north-review-request.json",
+    "sha256": "ea3dedd88d67d3beae451b0eada399935bde45e95b2c179f1bbe3cf9fa519de5"
+  },
+  "pending_source_question_id": "LEFT-BU-NORTH-V1-Q1",
+  "working_metals": 35,
+  "reviewed_working_interfaces": 14,
+  "explicit_design_cut_count": 80,
+  "old46_centers_preserved": true,
+  "new_N_interface_modeled": false,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Resolve N V1 identity and carrier before adding its array or tracing it as a connected M2 entry; do not reopen Q1/U/D."
+}

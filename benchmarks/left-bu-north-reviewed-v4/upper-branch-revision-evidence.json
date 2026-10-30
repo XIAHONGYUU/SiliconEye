@@ -1,0 +1,19 @@
+{
+  "actor": "AI",
+  "reason": "Append clear upper M1 branches; N human approval applies to its interface only, branch geometry remains AI candidate.",
+  "parent": {
+    "path": "docs/assets/left-bu-north-reviewed-v4/S1-N-interface/manifest.json",
+    "sha256": "47f2cb6ee67d96c659b5d76b175074ebd302786dfc4da289474d8eb79cf35822"
+  },
+  "sources": {
+    "native": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+      "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+    },
+    "ledger": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-local-part-ledger.json",
+      "sha256": "af135e9679b1c8bd28dd03b77e8d0286baa5dcf3659343832a75bc94dcff3cdf"
+    }
+  },
+  "geometry_human_approved": false
+}

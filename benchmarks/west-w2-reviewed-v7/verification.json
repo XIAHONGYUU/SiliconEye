@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-30",
+  "status": "PASS",
+  "kind": "working_candidate_checks_not_physical_or_PDK_approval",
+  "transactions_replayed_exact": 4,
+  "current_resume_exact": true,
+  "working_metal_count": 37,
+  "reviewed_working_interfaces": 20,
+  "whole_candidate_arrays_checked": 20,
+  "explicit_design_cuts": 125,
+  "physical_counts_confirmed": 0,
+  "old18_reviews_exact": true,
+  "old109_cut_bounds_and_centers_exact": true,
+  "old_metal_paths_widths_native_anchors_and_parts_exact": true,
+  "only_changed_old_metals": [
+    "RT-M3-UP",
+    "RT-M3-DOWN"
+  ],
+  "old_M3_covered_by_additive_west_parts": true,
+  "new_metal": "WEST-M2-W2-SOURCE",
+  "left_viewport_extension": 450,
+  "origin_and_scale_unchanged": true,
+  "old_source_ledger_rows_exact": true,
+  "new_W2_V2_interfaces": [
+    "W2-V2-U",
+    "W2-V2-D"
+  ],
+  "new_W2_V1_source_only": true,
+  "raw_source_views_pixel_exact": 12,
+  "svg_unique_geometry_objects": 162,
+  "static_local_links_checked": 130,
+  "inline_script_syntax_checked": 5,
+  "targeted_tests_passed": 58,
+  "production_changed": false,
+  "source_photos_unchanged": true,
+  "showcase_files_unchanged": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "task_archive_body_exact": true,
+  "pending_source_questions": [
+    "W2-V1-N",
+    "W2-V1-S"
+  ],
+  "visual_checks": [
+    "joint-work.png",
+    "W2-N-paired.png",
+    "W2-S-paired.png"
+  ],
+  "browser_interaction_tested": false,
+  "fine_source_geometry_qualified": false,
+  "canonical_geometry_adopted": false,
+  "complete_network": false
+}

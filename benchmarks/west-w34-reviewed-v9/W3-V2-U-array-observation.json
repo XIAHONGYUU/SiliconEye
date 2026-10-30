@@ -1,0 +1,81 @@
+{
+  "kind": "via_array_observation",
+  "actor": "AI",
+  "reason": "Complete regular relative group; identity/carrier approval excludes physical count and dimensions.",
+  "interface_id": "W3-V2-U",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    702,
+    1900,
+    750,
+    1970
+  ],
+  "count_status": "candidate_not_human_count",
+  "rows": 3,
+  "columns": 2,
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        715,
+        1918
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        734,
+        1918
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        715,
+        1936
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        734,
+        1936
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        715,
+        1954
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        734,
+        1954
+      ]
+    }
+  ],
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+      "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+    },
+    "native": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-source-observations.json",
+      "sha256": "b7d9cf7110914df04dcfb5aa9c6a2a205882a399a2c8aed18b2b54e7a07f82ea"
+    }
+  }
+}

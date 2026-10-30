@@ -1,0 +1,151 @@
+{
+  "kind": "scoped_native_return_contact_human_judgment",
+  "actor": "human",
+  "date": "2026-10-29",
+  "statement": "P1–P5 均正确",
+  "question_id": "BRR-RETURN-Q1",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/BR-R-return-inspection-v1/review-request.json",
+      "sha256": "5237ae9b89a61e68673d99fd1ec626089cee351861122a8f4d7a5b79edb91ab6"
+    },
+    "source_observations": {
+      "path": "benchmarks/BR-R-return-inspection-v1/source-observations.json",
+      "sha256": "300e9b056e2a2510d61ce329c5e67053824c4e832c14087b02fcceffdfe15bd9"
+    },
+    "wide": {
+      "path": "docs/assets/BR-R-return-inspection-v1/wide-marked.png",
+      "sha256": "585b827146f5e2052d1c9a1669017f37d72d9ac381520f0948e7726d363cecc1"
+    },
+    "upper": {
+      "path": "docs/assets/BR-R-return-inspection-v1/upper-marked.png",
+      "sha256": "d5af9d3b3e5c46c38c817149f49ee8b12a0600a492b1b5a754f10dcb3d8715af"
+    },
+    "gaps": {
+      "path": "docs/assets/BR-R-return-inspection-v1/gaps-marked.png",
+      "sha256": "b1aa9d2e48ae7e95f83b72c69d69d4f71f390d9cae5f902678e4b8e51d52b0d6"
+    },
+    "lower": {
+      "path": "docs/assets/BR-R-return-inspection-v1/lower-marked.png",
+      "sha256": "1273b7dfa65ef36f5ee63a4d96f8bd16ab221bd63afc3f74e0020e7919579b9d"
+    }
+  },
+  "decisions": [
+    {
+      "relation_id": "P1",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_target_id": "BU",
+      "native_bounds": [
+        3075,
+        2760,
+        3125,
+        2820
+      ],
+      "local_contact_confirmed": true,
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "global_isolation_confirmed": null,
+      "via_identity": null,
+      "geometry_human_approved": false,
+      "working_scope_human_approved": false
+    },
+    {
+      "relation_id": "P2",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_target_id": "L1-R",
+      "native_bounds": [
+        3025,
+        2905,
+        3120,
+        2935
+      ],
+      "local_contact_confirmed": false,
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "global_isolation_confirmed": null,
+      "via_identity": null,
+      "geometry_human_approved": false,
+      "working_scope_human_approved": false
+    },
+    {
+      "relation_id": "P3",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_target_id": "L2-R",
+      "native_bounds": [
+        3025,
+        2931,
+        3120,
+        2960
+      ],
+      "local_contact_confirmed": false,
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "global_isolation_confirmed": null,
+      "via_identity": null,
+      "geometry_human_approved": false,
+      "working_scope_human_approved": false
+    },
+    {
+      "relation_id": "P4",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_target_id": "BRR-H3070",
+      "native_bounds": [
+        3065,
+        3045,
+        3130,
+        3100
+      ],
+      "local_contact_confirmed": true,
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "global_isolation_confirmed": null,
+      "via_identity": null,
+      "geometry_human_approved": false,
+      "working_scope_human_approved": false
+    },
+    {
+      "relation_id": "P5",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_target_id": "BRR-H3175",
+      "native_bounds": [
+        3065,
+        3140,
+        3135,
+        3200
+      ],
+      "local_contact_confirmed": true,
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "global_isolation_confirmed": null,
+      "via_identity": null,
+      "geometry_human_approved": false,
+      "working_scope_human_approved": false
+    }
+  ],
+  "not_approved": [
+    "New geometry or exact dimensions",
+    "Working-canvas/scope adoption",
+    "Global isolation or complete net",
+    "Neighbor N3090/N3158 contacts",
+    "BF24/BF26 lower contacts",
+    "V1/V2 identity or count",
+    "Existing contact reapproval"
+  ],
+  "geometry_human_approved": false,
+  "working_scope_human_approved": false
+}

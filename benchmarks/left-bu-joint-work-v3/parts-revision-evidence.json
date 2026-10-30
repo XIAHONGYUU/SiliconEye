@@ -1,0 +1,47 @@
+{
+  "actor": "AI",
+  "reason": "Append explicit native source paths for leftward M1 returns and broad M3 buses; source contacts reviewed, dimensions remain candidates.",
+  "sources": {
+    "photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "parent": {
+      "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/manifest.json",
+      "sha256": "afdf3854b78db49b1db8802a36f22d959c0382c157b0e5e2491021e7c7fd8801"
+    },
+    "inherited_A_B_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    },
+    "three_finger_contact_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    "BRR_contact_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "native_left": {
+      "path": "benchmarks/R3-R4-left-continuation-v1/source-observations.json",
+      "sha256": "47d47101039c9fe1bbe97aa751992fe03c79ab838306a7a2cb03f4cb62a18706"
+    },
+    "source_continuation": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+      "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+    },
+    "V1_human": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2_human": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  },
+  "parent": {
+    "path": "docs/assets/left-bu-joint-work-v3/S1-left-viewport/manifest.json",
+    "sha256": "0d754cfc39b9f803dc656f02a8682e87decf3a29a4da31f432362d7510a89ef3"
+  },
+  "geometry_human_approved": false
+}

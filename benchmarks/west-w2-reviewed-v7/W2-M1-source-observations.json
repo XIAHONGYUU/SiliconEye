@@ -1,0 +1,174 @@
+{
+  "kind": "AI_native_M1_interface_candidates_on_reviewed_W2",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "human_W2_V2": {
+    "path": "benchmarks/west-w2-reviewed-v7/human-review.json",
+    "sha256": "97d8968ce540b20a9c8cce9bf30b03b8fb54fe29fdaa801f3b38351c9c3497a1"
+  },
+  "M2_W2": {
+    "id": "WEST-M2-W2-SOURCE",
+    "frame": "m2",
+    "native_path": [
+      [
+        1095,
+        1925
+      ],
+      [
+        1110,
+        2350
+      ],
+      [
+        1123,
+        2795
+      ]
+    ],
+    "native_scope_bounds": [
+      870,
+      1730,
+      1410,
+      2890
+    ],
+    "end_states": [
+      "visible_upper_pad",
+      "visible_lower_pad"
+    ]
+  },
+  "M1_local_source_paths": [
+    {
+      "id": "W2-M1-NORTH-BAR-SOURCE",
+      "frame": "m1",
+      "native_path": [
+        [
+          1000,
+          1910
+        ],
+        [
+          1400,
+          1904
+        ]
+      ],
+      "attachment_existing_metal_id": "C-M1-SPINE",
+      "basis": "Native upper horizontal bar continues to previously source-bound west bar; downward tab carries candidate N. Nearby thin vertical line remains separate."
+    },
+    {
+      "id": "W2-M1-SOUTH-BAR-SOURCE",
+      "frame": "m1",
+      "native_path": [
+        [
+          1000,
+          2716
+        ],
+        [
+          1540,
+          2698
+        ]
+      ],
+      "attachment_existing_metal_id": "C-M1-SPINE",
+      "basis": "Native lower broad horizontal bar continues right into prior LEFT-UP-WEST context; local candidate S is on this broad bar."
+    }
+  ],
+  "V1_sites": [
+    {
+      "id": "W2-V1-N",
+      "label": "N",
+      "source_frame": "m1",
+      "via_layer": "V1",
+      "m1_native_search_bounds": [
+        1085,
+        1898,
+        1138,
+        1948
+      ],
+      "m2_native_carrier_search_bounds": [
+        1065,
+        1880,
+        1140,
+        2010
+      ],
+      "lower_source_id": "W2-M1-NORTH-BAR-SOURCE",
+      "upper_metal_candidate_id": "WEST-M2-W2-SOURCE",
+      "V1_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null
+    },
+    {
+      "id": "W2-V1-S",
+      "label": "S",
+      "source_frame": "m1",
+      "via_layer": "V1",
+      "m1_native_search_bounds": [
+        1118,
+        2688,
+        1175,
+        2735
+      ],
+      "m2_native_carrier_search_bounds": [
+        1095,
+        2670,
+        1160,
+        2815
+      ],
+      "lower_source_id": "W2-M1-SOUTH-BAR-SOURCE",
+      "upper_metal_candidate_id": "WEST-M2-W2-SOURCE",
+      "V1_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null
+    }
+  ],
+  "neighboring_vertical_M1": {
+    "north_native_search_bounds": [
+      1150,
+      1925,
+      1190,
+      2310
+    ],
+    "south_native_search_bounds": [
+      1150,
+      2390,
+      1200,
+      2675
+    ],
+    "connection_to_nearest_horizontal": null,
+    "basis": "Do not bridge the narrow vertical neighbor into either bar based on proximity or carrier overlap."
+  },
+  "working_V1_added": false,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "net_edges": [],
+  "complete_network": false
+}

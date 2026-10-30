@@ -1,0 +1,32 @@
+{
+  "kind": "reviewed_W34_V2_working_entry_pending_M1_V1",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+    "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+  },
+  "working_request": {
+    "path": "benchmarks/west-w34-reviewed-v9/next-request.json",
+    "sha256": "79a14563cb17e405047597b9ef71a4b61953182ad431f032a26435f0a099a8c1"
+  },
+  "working_metal_candidates": 39,
+  "reviewed_working_interfaces": 26,
+  "explicit_design_cut_count": 165,
+  "old133_centers_preserved": true,
+  "pending_source_question_ids": [
+    "W3-V1-N",
+    "W3-V1-S",
+    "W4-V1-N",
+    "W4-V1-S"
+  ],
+  "pending_source_request": {
+    "path": "benchmarks/west-w34-reviewed-v9/W34-V1-review-request.json",
+    "sha256": "2e8f8eb8a5526d087255c14bc5f40dc040ec4c87f2a290cc1ed6a9fae655638c"
+  },
+  "new_W34_V1_geometry_added": false,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Adjudicate only W3/W4 M1-side V1 identity/carriers as one batch, with explicit alternative for W4-N; then add bound M1 extents and complete candidate arrays."
+}

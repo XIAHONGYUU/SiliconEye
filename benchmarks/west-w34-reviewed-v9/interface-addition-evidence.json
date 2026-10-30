@@ -1,0 +1,42 @@
+{
+  "actor": "AI",
+  "reason": "Append only the four source-reviewed W3/W4 V2 interfaces and whole relative candidate groups.",
+  "parent": {
+    "path": "docs/assets/west-w34-reviewed-v9/S3-W34-metal/manifest.json",
+    "sha256": "621ac27a098348546093754bfb7b7bd329e2df61b0563a5d45a77f479397d31f"
+  },
+  "added_interface_ids": [
+    "W3-V2-U",
+    "W3-V2-D",
+    "W4-V2-U",
+    "W4-V2-D"
+  ],
+  "interface_observations": {
+    "W3-V2-U": {
+      "path": "benchmarks/west-w34-reviewed-v9/W3-V2-U-array-observation.json",
+      "sha256": "3b45dd89fccb6614c2b27ce8ddbc4d944a499f0f8870a914169ad97c39b39f56"
+    },
+    "W3-V2-D": {
+      "path": "benchmarks/west-w34-reviewed-v9/W3-V2-D-array-observation.json",
+      "sha256": "644ccd70320137e8257c60c55f37dfe1124e9d9b8574d048f811f4f76bdc4558"
+    },
+    "W4-V2-U": {
+      "path": "benchmarks/west-w34-reviewed-v9/W4-V2-U-array-observation.json",
+      "sha256": "4789054f508ea028d90ae6bc563d7e7f5ba0c9ead13aacee9802aa5db12fd4dd"
+    },
+    "W4-V2-D": {
+      "path": "benchmarks/west-w34-reviewed-v9/W4-V2-D-array-observation.json",
+      "sha256": "a2a79606a1529d337a8224417e74a96206f4bb1adbb9b64c89d074ff72b92077"
+    }
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+      "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+    },
+    "native": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-source-observations.json",
+      "sha256": "b7d9cf7110914df04dcfb5aa9c6a2a205882a399a2c8aed18b2b54e7a07f82ea"
+    }
+  }
+}

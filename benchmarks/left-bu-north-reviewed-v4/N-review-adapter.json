@@ -1,0 +1,23 @@
+{
+  "kind": "native_source_decision_adapter",
+  "actor": "AI",
+  "statement": "N：是 V1，接 A",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/N-source-binding.json",
+      "sha256": "8aaff5a1e7ac137639236cd464d700c253f3f66163ffa6bc8cdee9baa249fc80"
+    },
+    "original_human_review": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/human-review.json",
+      "sha256": "d46602d22db0cf2631cd7a680a2ed04e2ebae3b4749da59027ae05aa0cf09e5d"
+    }
+  },
+  "decisions": {
+    "interface_id": "LEFT-BU-NORTH-V1",
+    "via_layer": "V1",
+    "lower_metal_id": "C-M1-SPINE",
+    "upper_metal_id": "LEFT-M2-A-CANDIDATE",
+    "connection_confirmed": true
+  }
+}

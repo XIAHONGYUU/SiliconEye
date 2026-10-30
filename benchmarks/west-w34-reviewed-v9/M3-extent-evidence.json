@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Append only two native source-continuous west M3 bus portions for W3/W4. Old parts and anchors remain exact.",
+  "parent": {
+    "path": "docs/assets/west-w34-reviewed-v9/S1-left-viewport/manifest.json",
+    "sha256": "4510569e16be744a8c36c9b722c56b402f93de8bd5fcd803d1a328370e9a2acd"
+  },
+  "sources": {
+    "native": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-source-observations.json",
+      "sha256": "b7d9cf7110914df04dcfb5aa9c6a2a205882a399a2c8aed18b2b54e7a07f82ea"
+    },
+    "ledger": {
+      "path": "benchmarks/west-w34-reviewed-v9/west-M3-source-ledger.json",
+      "sha256": "d987e6ec9fd6ee10e014a099397d1c4da38883efed94b6a4d8d0ce0260fd5e90"
+    }
+  }
+}

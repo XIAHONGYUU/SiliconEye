@@ -1,0 +1,58 @@
+{
+  "kind": "scoped_native_M1_V1_entry_review_request",
+  "date": "2026-10-29",
+  "question_id": "CORRIDOR-M1-V1-ENTRY-Q1",
+  "observations": {
+    "path": "benchmarks/corridor-m1-v1-entry-v1/observations.json",
+    "sha256": "5d2182832e7e5d526435f13f01fdde48107af3de8d492d389f12ae352462441e"
+  },
+  "macro_search_context": {
+    "path": "benchmarks/corridor-m1-v1-entry-v1/pad-frame-macro-search-v2.json",
+    "sha256": "c91c62c7cbdbf6a1b2584292469c6bd6cd61c2d9eccfe7b587404bb236cea479"
+  },
+  "regions": [
+    {
+      "id": "CORRIDOR-V1-A-SEARCH",
+      "source_frame": "m1",
+      "native_bounds": [
+        3125,
+        1930,
+        3175,
+        2010
+      ],
+      "upper_M2_candidate": "RT-M2-R01"
+    },
+    {
+      "id": "CORRIDOR-V1-B-SEARCH",
+      "source_frame": "m1",
+      "native_bounds": [
+        3130,
+        2775,
+        3180,
+        2845
+      ],
+      "upper_M2_candidate": "RT-M2-R01"
+    }
+  ],
+  "question": "M1图A上方拐角、B下方交汇中，哪些位置有V1并接到右图R01？可答A/B都有、只有A、只有B、都未见明确V1、其他位置或仍看不清。若只是宏观位置对应也请明确，不能据此视为V1批准。",
+  "answer": null,
+  "images": {
+    "native-wide-pair.png": {
+      "path": "docs/assets/corridor-m1-v1-entry-v1/native-wide-pair.png",
+      "sha256": "320d04951e0e9f418a6dd4b68da70264aaf2c69d4c31104a76a2b5e5ec16a401"
+    },
+    "native-A-B-details.png": {
+      "path": "docs/assets/corridor-m1-v1-entry-v1/native-A-B-details.png",
+      "sha256": "bbd5fae6b3d7635202f10e5784746ed3812330c668687cd6b654414ce94bea42"
+    }
+  },
+  "approval_excludes": [
+    "physical_cut_count",
+    "precise registered via landing",
+    "new design geometry",
+    "source-to-design coordinate adoption",
+    "complete M1/V1 coverage",
+    "old9 interface reapproval",
+    "complete network"
+  ]
+}

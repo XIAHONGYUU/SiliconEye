@@ -1,0 +1,30 @@
+{
+  "parent_request": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/next-request.json",
+    "sha256": "4c351612320a48fa2d50aa9240e1d62166adb8fdab3945936ada0d7c3c919409"
+  },
+  "parent_sample": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/S2-branches-sample.json",
+    "sha256": "b0de3a140076aa34a47b85539e779db9da06fb4a3480011837e9e0226efb9772"
+  },
+  "parent_model": {
+    "path": "docs/assets/left-bu-north-reviewed-v4/S2-upper-branches/model.json",
+    "sha256": "ebe4b54be92133b5d2fe8095a249df9e23f0a27b112779c5bfbc6b9be324ba30"
+  },
+  "original_question": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/F1-review-request.json",
+    "sha256": "547d93862fb52dc9fb87116ec4b598c2ba65e4c02569895246c44323bb7aa939"
+  },
+  "source_observations": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+    "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+  },
+  "producer": {
+    "path": "silicon_eye/conductive_workflow.py",
+    "sha256": "62fea0d2fbd9868caf79f58de770c8abc2c18b8518530b70c3f28f1c26899f91"
+  },
+  "metal_geometry_producer": {
+    "path": "silicon_eye/metal_reconstruction.py",
+    "sha256": "0c379e4f5e3d4a11ee6a01d381da5ff05f9054544c2145c021f7dfbd49266234"
+  }
+}

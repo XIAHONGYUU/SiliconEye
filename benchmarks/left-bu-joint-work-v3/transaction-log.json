@@ -1,0 +1,94 @@
+{
+  "stages": [
+    {
+      "stage": "S1-left-viewport",
+      "model_counts": {
+        "M1": 4,
+        "V1": 2,
+        "M2": 8,
+        "V2": 9,
+        "M3": 22
+      },
+      "request": {
+        "path": "benchmarks/left-bu-joint-work-v3/S1-left-viewport-request.json",
+        "sha256": "f9697a86452accfae5fb8d50a722697a1c42c6c6fb9d709915d8c504cfb0dc52"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-joint-work-v3/S1-left-viewport/manifest.json",
+        "sha256": "0d754cfc39b9f803dc656f02a8682e87decf3a29a4da31f432362d7510a89ef3"
+      }
+    },
+    {
+      "stage": "S2-source-parts",
+      "model_counts": {
+        "M1": 4,
+        "V1": 2,
+        "M2": 8,
+        "V2": 9,
+        "M3": 22
+      },
+      "request": {
+        "path": "benchmarks/left-bu-joint-work-v3/S2-source-parts-request.json",
+        "sha256": "c6f89fa6f864405afe1f81b49ea72f69f54f8e91c3286dcb1fe9f87190027bed"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-joint-work-v3/S2-source-parts/manifest.json",
+        "sha256": "dc02c96774eaada8f2bc7eec79c69fa0e1a3d68c9d611c3b87f7f24010d57acd"
+      }
+    },
+    {
+      "stage": "S3-M2-carrier",
+      "model_counts": {
+        "M1": 4,
+        "V1": 2,
+        "M2": 9,
+        "V2": 9,
+        "M3": 22
+      },
+      "request": {
+        "path": "benchmarks/left-bu-joint-work-v3/S3-M2-carrier-request.json",
+        "sha256": "2306a56c877ba1635ac1fc918d19f670179a6cf466618893c2eb348b4b0a3151"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-joint-work-v3/S3-M2-carrier/manifest.json",
+        "sha256": "81993985963849eec3f7ca330c8d03d7566cd2212f2ff84757dc0c0ee5aeb8b7"
+      }
+    },
+    {
+      "stage": "S4-interfaces",
+      "model_counts": {
+        "M1": 4,
+        "V1": 3,
+        "M2": 9,
+        "V2": 11,
+        "M3": 22
+      },
+      "request": {
+        "path": "benchmarks/left-bu-joint-work-v3/S4-interfaces-request.json",
+        "sha256": "059bdf749d8874496f1a618768b6db967de6d9da885e88d68165ce17d6c5a240"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-joint-work-v3/S4-interfaces/manifest.json",
+        "sha256": "f9cdcbfef8a9424731974337957bbd8a481e17fdbebc83449ce6d1e538eb7de4"
+      }
+    },
+    {
+      "stage": "S5-north",
+      "model_counts": {
+        "M1": 4,
+        "V1": 3,
+        "M2": 9,
+        "V2": 11,
+        "M3": 22
+      },
+      "request": {
+        "path": "benchmarks/left-bu-joint-work-v3/S5-north-request.json",
+        "sha256": "bb69bb027b25755d8f1144b6f81eb90b57838869fa503ff2a716e2dd1763cc70"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-joint-work-v3/S5-north/manifest.json",
+        "sha256": "317b115a4dcada6893e35547c828dd7c4312c1d7159d34cb2f45608e6a798996"
+      }
+    }
+  ]
+}

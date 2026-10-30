@@ -1,0 +1,47 @@
+{
+  "kind": "B_short_finger_inventory_verification",
+  "date": "2026-10-29",
+  "status": "SOURCE_INVENTORY_READY_THREE_LOCAL_CONTACTS_PENDING",
+  "observations": {
+    "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+    "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+  },
+  "review_request": {
+    "path": "benchmarks/B-short-finger-inventory-v1/review-request.json",
+    "sha256": "e5fae92504c4b26bf725a94ca42db035861d2c13fbff3a8a50a826c58aaba4f5"
+  },
+  "short_finger_ids_unique": 26,
+  "upper_contact_AI_candidates": 14,
+  "both_end_gap_AI_candidates": 12,
+  "lower_contact_AI_candidates": 0,
+  "working_scope_ids": [
+    "BF24",
+    "BF25",
+    "BF26"
+  ],
+  "other_source_context_candidates": 23,
+  "classification_human_confirmed": false,
+  "raw_panels_pixel_exact": 4,
+  "csv_rows_exact": 26,
+  "html_rows_exact": 26,
+  "local_links_checked": 11,
+  "scripts_syntax_checked": 1,
+  "png_visual_review": "PASS",
+  "browser_interaction": "NOT_TESTED",
+  "existing_model_replay_exact": true,
+  "existing_metal_count": 31,
+  "existing_reviewed_interfaces": 11,
+  "existing_candidate_cuts_and_centers": 46,
+  "new_geometry_objects": 0,
+  "new_interfaces": 0,
+  "source_to_design_transform": null,
+  "production_code_changed": false,
+  "software_tests_rerun": false,
+  "verification_scope": "Data/artifact consistency and exact baseline replay, not a pixel-recognition evaluation or new physical approval.",
+  "showcase_files_exact": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "previous_current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-29-B-short-finger-inventory.md",
+    "sha256": "418903acee755b774e2b99db22472ff73f92534d51a1192c033627a0d15ca1fc"
+  }
+}

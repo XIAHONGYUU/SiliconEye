@@ -1,0 +1,26 @@
+{
+  "stages": [
+    {
+      "stage": "S1-W2-M1-parts",
+      "request": {
+        "path": "benchmarks/west-w2-v1-reviewed-v8/S1-W2-M1-parts-request.json",
+        "sha256": "a236d0211d379c50141e876243a9d2cd9b3ee71526283c961eeffb899cfbe6fe"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w2-v1-reviewed-v8/S1-W2-M1-parts/manifest.json",
+        "sha256": "8b4cb945e71fbd6e6ca6e373a05714d4c65ca34c95736800e5f65ab0423a1d2a"
+      }
+    },
+    {
+      "stage": "S2-W2-V1",
+      "request": {
+        "path": "benchmarks/west-w2-v1-reviewed-v8/S2-W2-V1-request.json",
+        "sha256": "f53ed18f1426311b19a49e8cf2322acba93709360f578c32c949fd24ada321f6"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w2-v1-reviewed-v8/S2-W2-V1/manifest.json",
+        "sha256": "7709fa01f8f67cb552ede8388abe81e1462fdbe76d555036f12bc63b4d7edb8c"
+      }
+    }
+  ]
+}

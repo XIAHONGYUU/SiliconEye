@@ -1,0 +1,47 @@
+{
+  "kind": "M1_horizontal_branch_verification",
+  "date": "2026-10-29",
+  "status": "SOURCE_BOUND_PARTIAL_BRANCH_CANDIDATES_CHECKED",
+  "request": {
+    "path": "benchmarks/corridor-m1-horizontal-branches-v1/next-request.json",
+    "sha256": "d448872359a568c026fcf82cf0c434cc4f8da96fb4fbbc57ac1e39c56a002078"
+  },
+  "work_model": {
+    "path": "docs/assets/corridor-m1-horizontal-branches-v1/work/model.json",
+    "sha256": "4bd116d18fb4876bce537d79a1a5bf6c2e2883eb1f194f5cf28a7b024f60f59c"
+  },
+  "source_ledger": {
+    "path": "benchmarks/corridor-m1-horizontal-branches-v1/source-ledger.json",
+    "sha256": "8b96524a7f511bffa416bc15552141ae522ab9ac2178e745b3e889e544358dbb"
+  },
+  "changed_object_ids": [
+    "C-M1-SPINE"
+  ],
+  "new_local_parts": 2,
+  "metal_count_unchanged": 31,
+  "native_and_design_skeletons_preserved": true,
+  "old_footprint_preserved": true,
+  "reviewed_interfaces_exact": 11,
+  "all_design_cuts_and_centers_exact": 46,
+  "new_interfaces": 0,
+  "all_declared_candidate_group_enclosure": "PASS_11_NOT_PHYSICAL_EXHAUSTIVENESS",
+  "physical_cut_count": null,
+  "new_geometry_human_approved": false,
+  "source_to_design_transform": null,
+  "exact_resume": true,
+  "software_tests_passed": 115,
+  "new_local_part_tests": 10,
+  "ruff": "PASS",
+  "raw_crops_exact": 4,
+  "local_links_checked": 33,
+  "inline_scripts_syntax_checked": 2,
+  "png_visual_review": "PASS",
+  "browser_interaction": "NOT_TESTED",
+  "showcase_files_exact": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "outside_scope_continuation_is_not_a_physical_endpoint": true,
+  "current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-29-M1-horizontal-branches.md",
+    "sha256": "a71287b87f4524898b129748242832770147ac3047496f609d44ae44d8457258"
+  }
+}

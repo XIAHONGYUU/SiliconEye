@@ -1,0 +1,1222 @@
+[
+  {
+    "source_observation_id": "C-M2-01",
+    "metal_id": "RT-M2-R01",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        3104,
+        1900
+      ],
+      [
+        3102,
+        3000
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        3104,
+        1900
+      ],
+      [
+        3102,
+        2960
+      ]
+    ],
+    "design_path": [
+      [
+        185,
+        180
+      ],
+      [
+        185,
+        1115
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "RT-V2-U1",
+      "RT-V2-D1"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-02",
+    "metal_id": "RT-M2-R02",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        3376,
+        1900
+      ],
+      [
+        3374,
+        3000
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        3376,
+        1900
+      ],
+      [
+        3374,
+        2960
+      ]
+    ],
+    "design_path": [
+      [
+        455,
+        180
+      ],
+      [
+        455,
+        1115
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "RT-V2-U2",
+      "RT-V2-D2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-03",
+    "metal_id": "C-M2-03",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        3100,
+        1730
+      ],
+      [
+        3101,
+        1800
+      ],
+      [
+        3130,
+        1800
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        3100,
+        1730
+      ],
+      [
+        3101,
+        1800
+      ],
+      [
+        3130,
+        1800
+      ]
+    ],
+    "design_path": [
+      [
+        185,
+        10
+      ],
+      [
+        185,
+        35
+      ],
+      [
+        211,
+        35
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "C03-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-04",
+    "metal_id": "C-M2-04",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        3586,
+        1730
+      ],
+      [
+        3588,
+        1815
+      ],
+      [
+        3612,
+        1815
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        3586,
+        1730
+      ],
+      [
+        3588,
+        1815
+      ],
+      [
+        3612,
+        1815
+      ]
+    ],
+    "design_path": [
+      [
+        640,
+        30
+      ],
+      [
+        640,
+        54
+      ],
+      [
+        665,
+        54
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "C04-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-05",
+    "metal_id": "C-M2-05",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        2990,
+        2115
+      ],
+      [
+        3019,
+        2115
+      ],
+      [
+        3020,
+        2150
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2990,
+        2115
+      ],
+      [
+        3019,
+        2115
+      ],
+      [
+        3020,
+        2150
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        340
+      ],
+      [
+        99,
+        340
+      ],
+      [
+        99,
+        380
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "C05-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-06",
+    "metal_id": "C-M2-06",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        2940,
+        2155
+      ],
+      [
+        2960,
+        2155
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2155
+      ],
+      [
+        2960,
+        2155
+      ]
+    ],
+    "design_path": [
+      [
+        25,
+        373
+      ],
+      [
+        45,
+        373
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "C06-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-07",
+    "metal_id": "RT-M2-NARROW",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        3505,
+        2490
+      ],
+      [
+        3532,
+        2490
+      ],
+      [
+        3534,
+        3000
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        3505,
+        2490
+      ],
+      [
+        3532,
+        2490
+      ],
+      [
+        3534,
+        2960
+      ]
+    ],
+    "design_path": [
+      [
+        565,
+        682
+      ],
+      [
+        590,
+        682
+      ],
+      [
+        590,
+        1115
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "N1-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M2-08",
+    "metal_id": "C-M2-08",
+    "source_frame": "m2",
+    "native_path": [
+      [
+        2973,
+        2875
+      ],
+      [
+        2973,
+        3000
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2973,
+        2875
+      ],
+      [
+        2973,
+        3000
+      ]
+    ],
+    "design_path": [
+      [
+        55,
+        1005
+      ],
+      [
+        55,
+        1115
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-T01",
+    "metal_id": "C-M3-T01",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1809
+      ],
+      [
+        3670,
+        1789
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        1809
+      ],
+      [
+        3670,
+        1789
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        35
+      ],
+      [
+        680,
+        35
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "C03-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-T02",
+    "metal_id": "C-M3-T02",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1830
+      ],
+      [
+        3670,
+        1810
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        1830
+      ],
+      [
+        3670,
+        1810
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        54
+      ],
+      [
+        680,
+        54
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "C04-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-T03",
+    "metal_id": "C-M3-T03",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1851
+      ],
+      [
+        3670,
+        1831
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        1851
+      ],
+      [
+        3670,
+        1831
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        73
+      ],
+      [
+        680,
+        73
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-T04",
+    "metal_id": "C-M3-T04",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1870
+      ],
+      [
+        3670,
+        1850
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        1870
+      ],
+      [
+        3670,
+        1850
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        92
+      ],
+      [
+        680,
+        92
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-T05",
+    "metal_id": "C-M3-T05",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1888
+      ],
+      [
+        3670,
+        1868
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        1888
+      ],
+      [
+        3670,
+        1868
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        111
+      ],
+      [
+        680,
+        111
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-T06",
+    "metal_id": "C-M3-T06",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1905
+      ],
+      [
+        3670,
+        1885
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        1905
+      ],
+      [
+        3670,
+        1885
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        130
+      ],
+      [
+        680,
+        130
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-BU",
+    "metal_id": "RT-M3-UP",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        1960
+      ],
+      [
+        3670,
+        1940
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2980,
+        1958
+      ],
+      [
+        3650,
+        1938
+      ]
+    ],
+    "design_path": [
+      [
+        40,
+        184
+      ],
+      [
+        700,
+        184
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "RT-V2-U1",
+      "RT-V2-U2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-E1",
+    "metal_id": "C-M3-E1",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2148
+      ],
+      [
+        3045,
+        2148
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2148
+      ],
+      [
+        3045,
+        2148
+      ]
+    ],
+    "design_path": [
+      [
+        25,
+        340
+      ],
+      [
+        158,
+        340
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "C05-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-E2",
+    "metal_id": "C-M3-E2",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2187
+      ],
+      [
+        2998,
+        2187
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2187
+      ],
+      [
+        2998,
+        2187
+      ]
+    ],
+    "design_path": [
+      [
+        25,
+        373
+      ],
+      [
+        118,
+        373
+      ]
+    ],
+    "working_geometry_status": "LOCAL_REVISION_CANDIDATE_NOT_HUMAN_GEOMETRY_APPROVED",
+    "reviewed_interface_ids": [
+      "C06-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-M01",
+    "metal_id": "C-M3-M01",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2279
+      ],
+      [
+        3670,
+        2259
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2279
+      ],
+      [
+        3670,
+        2259
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        450
+      ],
+      [
+        680,
+        450
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-M02",
+    "metal_id": "C-M3-M02",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2299
+      ],
+      [
+        3670,
+        2279
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2299
+      ],
+      [
+        3670,
+        2279
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        465
+      ],
+      [
+        680,
+        465
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-M03",
+    "metal_id": "C-M3-M03",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2316
+      ],
+      [
+        3670,
+        2296
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2316
+      ],
+      [
+        3670,
+        2296
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        480
+      ],
+      [
+        680,
+        480
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-M04",
+    "metal_id": "C-M3-M04",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2337
+      ],
+      [
+        3670,
+        2317
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2337
+      ],
+      [
+        3670,
+        2317
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        495
+      ],
+      [
+        680,
+        495
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-M05",
+    "metal_id": "C-M3-M05",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2354
+      ],
+      [
+        3670,
+        2334
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2354
+      ],
+      [
+        3670,
+        2334
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        510
+      ],
+      [
+        680,
+        510
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-M06",
+    "metal_id": "C-M3-M06",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2372
+      ],
+      [
+        3670,
+        2352
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2372
+      ],
+      [
+        3670,
+        2352
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        525
+      ],
+      [
+        680,
+        525
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-BM",
+    "metal_id": "RT-M3-MID",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2450
+      ],
+      [
+        3670,
+        2430
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2980,
+        2450
+      ],
+      [
+        3650,
+        2430
+      ]
+    ],
+    "design_path": [
+      [
+        40,
+        590
+      ],
+      [
+        700,
+        590
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-L01",
+    "metal_id": "C-M3-L01",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2528
+      ],
+      [
+        3565,
+        2511
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2528
+      ],
+      [
+        3565,
+        2511
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        682
+      ],
+      [
+        620,
+        682
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "N1-V2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-L02",
+    "metal_id": "RT-M3-THIN1",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2545
+      ],
+      [
+        3670,
+        2525
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2980,
+        2540
+      ],
+      [
+        3650,
+        2520
+      ]
+    ],
+    "design_path": [
+      [
+        40,
+        700
+      ],
+      [
+        700,
+        700
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-L03",
+    "metal_id": "C-M3-L03",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2565
+      ],
+      [
+        3670,
+        2545
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2565
+      ],
+      [
+        3670,
+        2545
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        720
+      ],
+      [
+        680,
+        720
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-L04",
+    "metal_id": "RT-M3-THIN2",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2602
+      ],
+      [
+        3670,
+        2582
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2980,
+        2595
+      ],
+      [
+        3650,
+        2575
+      ]
+    ],
+    "design_path": [
+      [
+        40,
+        750
+      ],
+      [
+        700,
+        750
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-BD",
+    "metal_id": "RT-M3-DOWN",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2750
+      ],
+      [
+        3670,
+        2730
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2980,
+        2750
+      ],
+      [
+        3650,
+        2730
+      ]
+    ],
+    "design_path": [
+      [
+        40,
+        870
+      ],
+      [
+        700,
+        870
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [
+      "RT-V2-D1",
+      "RT-V2-D2"
+    ],
+    "interface_completeness": "NOT_PROVEN"
+  },
+  {
+    "source_observation_id": "C-M3-EDGE",
+    "metal_id": "C-M3-EDGE",
+    "source_frame": "m3",
+    "native_path": [
+      [
+        2940,
+        2978
+      ],
+      [
+        3670,
+        2958
+      ]
+    ],
+    "native_anchor_path": [
+      [
+        2940,
+        2978
+      ],
+      [
+        3670,
+        2958
+      ]
+    ],
+    "design_path": [
+      [
+        70,
+        1070
+      ],
+      [
+        680,
+        1070
+      ]
+    ],
+    "working_geometry_status": "QUALITATIVE_BASELINE_RETAINED",
+    "reviewed_interface_ids": [],
+    "interface_completeness": "NOT_PROVEN"
+  }
+]

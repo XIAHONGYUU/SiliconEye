@@ -1,0 +1,21 @@
+{
+  "actor": "AI",
+  "reason": "Add only the new source-reviewed W2 carrier; neighboring narrow lines remain separate source context.",
+  "parent": {
+    "path": "docs/assets/west-w2-reviewed-v7/S2-west-M3-extent/manifest.json",
+    "sha256": "23d0006c0be463bca557c6469c4293e44b63d18d3fbf8941b2e265881ab12d80"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "WEST-M2-W2-SOURCE"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/west-w2-reviewed-v7/W2-inventory-supplement.json",
+      "sha256": "bbf1694174f13096d62b4110ad10453d646ade324f3a04d1a2c9313a62b06a30"
+    }
+  }
+}

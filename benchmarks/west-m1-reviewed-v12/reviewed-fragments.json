@@ -1,0 +1,479 @@
+{
+  "kind": "reviewed_scoped_M1_geometry_components",
+  "human_review": {
+    "path": "benchmarks/west-m1-reviewed-v12/human-review.json",
+    "sha256": "470c7f1aabf94b420665a6d30adcd90e2516e3bc23afe83c6f1af382f41d4c1f"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/west-m1-coverage-v11/S3-L09-return-sample.json",
+    "sha256": "2081c68c1d56c28da083eacb09e61fd3cdf137373400ab146608c303d0c326f2"
+  },
+  "fragments": [
+    {
+      "source_fragment_id": "M1-L03",
+      "metal_id": "C-M1-SPINE",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          379,
+          1920
+        ],
+        [
+          400,
+          2288
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "selected_local_parts_only",
+        "parts": [
+          {
+            "id": "W4-M1-NORTH-LANDING",
+            "bounds": [
+              -2511,
+              218,
+              -2499,
+              260
+            ],
+            "basis": "Source-bound relative reconstruction; north W4 landing stays narrow, not copied from W3."
+          },
+          {
+            "id": "W4-M1-NORTH-STEM-EXTENT",
+            "bounds": [
+              -2511,
+              249,
+              -2499,
+              510
+            ],
+            "basis": "Same-frame visible continuation, relative orthogonal candidate; scope exit is not a physical terminal."
+          }
+        ]
+      },
+      "question_id": "M1-COVER-Q1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L04",
+      "metal_id": "W34-M1-L04",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          784,
+          1948
+        ],
+        [
+          800,
+          2280
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2106,
+            255
+          ],
+          [
+            -2106,
+            504
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": []
+      },
+      "question_id": "M1-COVER-Q1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L05",
+      "metal_id": "W34-M1-L05",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          407,
+          2356
+        ],
+        [
+          422,
+          2695
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2477,
+            572
+          ],
+          [
+            -2477,
+            826
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": []
+      },
+      "question_id": "M1-COVER-Q1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L06",
+      "metal_id": "W34-M1-L06",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          799,
+          2348
+        ],
+        [
+          817,
+          2683
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2091,
+            566
+          ],
+          [
+            -2091,
+            816
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": []
+      },
+      "question_id": "M1-COVER-Q1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L07",
+      "metal_id": "W34-M1-L07",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2312
+        ],
+        [
+          830,
+          2304
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2585,
+            530
+          ],
+          [
+            -2050,
+            530
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": []
+      },
+      "question_id": "M1-COVER-Q1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L08",
+      "metal_id": "W34-M1-L08",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2338
+        ],
+        [
+          830,
+          2329
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2585,
+            552
+          ],
+          [
+            -2050,
+            552
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": []
+      },
+      "question_id": "M1-COVER-Q1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L09",
+      "metal_id": "W34-M1-L09",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2809
+        ],
+        [
+          748,
+          2797
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2585,
+            920
+          ],
+          [
+            -2168,
+            920
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": [
+          {
+            "id": "L09-SOUTH-RETURN",
+            "bounds": [
+              -2172,
+              916,
+              -2164,
+              950
+            ],
+            "basis": "Same-frame source corner at the end of L09 returns downward; does not bridge the adjacent south spine or L10."
+          }
+        ]
+      },
+      "question_id": "M1-COVER-Q2",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L10",
+      "metal_id": "W34-M1-L10",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          811,
+          2794
+        ],
+        [
+          830,
+          2793
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "whole_scoped_fragment_feature",
+        "design_path": [
+          [
+            -2110,
+            920
+          ],
+          [
+            -2091,
+            920
+          ]
+        ],
+        "design_width": 8,
+        "local_parts": []
+      },
+      "question_id": "M1-COVER-Q2",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L11",
+      "metal_id": "C-M1-SPINE",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          775,
+          2730
+        ],
+        [
+          780,
+          2820
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "selected_local_parts_only",
+        "parts": [
+          {
+            "id": "W3-M1-SOUTH-EXIT",
+            "bounds": [
+              -2152,
+              858,
+              -2128,
+              948
+            ],
+            "basis": "Same-frame visible continuation, relative orthogonal candidate; scope exit is not a physical terminal."
+          }
+        ]
+      },
+      "question_id": "M1-COVER-Q2",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M1-L12",
+      "metal_id": "W34-M1-L09",
+      "native_frame": "m1",
+      "native_path": [
+        [
+          748,
+          2797
+        ],
+        [
+          750,
+          2820
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "scope_native_bounds": [
+        300,
+        1870,
+        830,
+        2820
+      ],
+      "geometry": {
+        "kind": "selected_local_parts_only",
+        "parts": [
+          {
+            "id": "L09-SOUTH-RETURN",
+            "bounds": [
+              -2172,
+              916,
+              -2164,
+              950
+            ],
+            "basis": "Same-frame source corner at the end of L09 returns downward; does not bridge the adjacent south spine or L10."
+          }
+        ]
+      },
+      "question_id": "M1-COVER-Q2",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "physical_net_identity": null,
+      "physical_dimension_approval": false
+    }
+  ],
+  "unchanged_context_fragment_ids": [
+    "M1-L01",
+    "M1-L02"
+  ],
+  "entire_physical_metal_approved": false
+}

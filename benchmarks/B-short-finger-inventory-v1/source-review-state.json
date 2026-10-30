@@ -1,0 +1,51 @@
+{
+  "kind": "B_short_finger_inventory_review_state",
+  "date": "2026-10-29",
+  "observations": {
+    "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+    "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+  },
+  "pending_request": {
+    "path": "benchmarks/B-short-finger-inventory-v1/review-request.json",
+    "sha256": "e5fae92504c4b26bf725a94ca42db035861d2c13fbff3a8a50a826c58aaba4f5"
+  },
+  "human_review": null,
+  "current_scope_ids": [
+    "BF24",
+    "BF25",
+    "BF26"
+  ],
+  "remaining_context_ids": [
+    "BF01",
+    "BF02",
+    "BF03",
+    "BF04",
+    "BF05",
+    "BF06",
+    "BF07",
+    "BF08",
+    "BF09",
+    "BF10",
+    "BF11",
+    "BF12",
+    "BF13",
+    "BF14",
+    "BF15",
+    "BF16",
+    "BF17",
+    "BF18",
+    "BF19",
+    "BF20",
+    "BF21",
+    "BF22",
+    "BF23"
+  ],
+  "new_geometry_or_interfaces": 0,
+  "working_request_unchanged": {
+    "path": "benchmarks/corridor-m1-horizontal-branches-v1/next-request.json",
+    "sha256": "d448872359a568c026fcf82cf0c434cc4f8da96fb4fbbc57ac1e39c56a002078"
+  },
+  "physical_isolation_or_floating_claimed": false,
+  "source_to_design_transform": null,
+  "next_step": "Await only BF24/BF25/BF26 local contact adjudication; preserve other23 as AI candidates and BR routing as unknown. Do not auto-add fingers or network edges."
+}

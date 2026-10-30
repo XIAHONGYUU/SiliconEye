@@ -1,0 +1,42 @@
+{
+  "kind": "AI_M1_V1_continuous_scope_entry_inspection",
+  "date": "2026-10-29",
+  "actor": "AI",
+  "purpose": "Start source search for the next stage; these independently cropped windows are not an established same-location match.",
+  "source_photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "native_search_windows": {
+    "m1": [
+      2450,
+      1450,
+      4050,
+      3300
+    ],
+    "m2": [
+      2450,
+      1450,
+      4050,
+      3300
+    ]
+  },
+  "candidate_target_M2_ids": [
+    "RT-M2-R01",
+    "RT-M2-R02"
+  ],
+  "visible_context": "M1 ring/array structures and rectangular plate-like features are visible; M2 long parallel conductors and endpoint groups are visible. These broad structures do not uniquely identify a V1 interface or a calibrated cross-layer correspondence.",
+  "cross_frame_correspondence": "NOT_ESTABLISHED",
+  "source_to_design_transform": null,
+  "new_V1_candidates": [],
+  "new_M1_carrier_assignments": [],
+  "geometry_added": false,
+  "human_question_required_now": false,
+  "next_action": "Find shared macro structures with independent landmarks first; identify V1 only on M1, then match to the existing M2. If source identity or carrier remains ambiguous, deliver a single bounded native-source question."
+}

@@ -1,0 +1,13 @@
+id,label,mapped_model_id,parts,status,note
+M1-L01,上横条,C-M1-SPINE,W34-M1-NORTH-BAR,MODELED_RELATIVE,本范围主干已补，来源尺寸未测量。
+M1-L02,下宽横条,C-M1-SPINE,W34-M1-SOUTH-BAR,MODELED_RELATIVE,本范围主干已补，物理终点不在本窗口判定。
+M1-L03,W4北侧竖支,C-M1-SPINE,"W4-M1-NORTH-LANDING,W4-M1-NORTH-STEM-EXTENT",MODELED_RELATIVE,已补竖支余段，与中部横条留隙；原上端孔和锚点保持。
+M1-L04,W3北侧细邻线,W34-M1-L04,,MODELED_RELATIVE,独立候选，未把W3-N的V1批准转移给细邻线。
+M1-L05,W4南侧细竖线,W34-M1-L05,,MODELED_RELATIVE,独立候选，上下端间隙保留；全局归属未知。
+M1-L06,W3南侧细竖线,W34-M1-L06,,MODELED_RELATIVE,独立候选，上下端间隙保留；全局归属未知。
+M1-L07,中部上细横条,W34-M1-L07,,MODELED_RELATIVE,上横条独立建模，未指派给旧L1/L2。
+M1-L08,中部下细横条,W34-M1-L08,,MODELED_RELATIVE,下横条独立建模，与上横条保持分开。
+M1-L09,底部平行条左段,W34-M1-L09,,MODELED_RELATIVE,已补水平主体，右端回折另由L12记录；不接L10或L11。
+M1-L10,底部平行条右段,W34-M1-L10,,MODELED_RELATIVE,独立右片段，不因同高并入L09；右端为本窗口出界。
+M1-L11,W3下方主干竖向出口,C-M1-SPINE,W3-M1-SOUTH-EXIT,MODELED_RELATIVE,独立复查新增；同帧主干向下延续，本范围下沿只是截断。
+M1-L12,底部左段的短回折,W34-M1-L09,L09-SOUTH-RETURN,MODELED_RELATIVE,独立复查新增；同帧L09向下回折，与L11留隙，下沿为本范围截断。

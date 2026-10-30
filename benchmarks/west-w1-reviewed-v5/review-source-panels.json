@@ -1,0 +1,130 @@
+{
+  "panels": [
+    {
+      "id": "W1-m2-wide",
+      "frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        1280,
+        1750,
+        1790,
+        2890
+      ],
+      "scale": 1,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "W1-m2-wide-raw.png",
+      "marked": "W1-m2-wide-marked.png"
+    },
+    {
+      "id": "W1-m3-wide",
+      "frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_bounds": [
+        1250,
+        1770,
+        3750,
+        2920
+      ],
+      "scale": 1,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "W1-m3-wide-raw.png",
+      "marked": "W1-m3-wide-marked.png"
+    },
+    {
+      "id": "W1-U-m2",
+      "frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        1250,
+        1730,
+        1790,
+        2170
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "W1-U-m2-raw.png",
+      "marked": "W1-U-m2-marked.png"
+    },
+    {
+      "id": "W1-U-m3",
+      "frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_bounds": [
+        1250,
+        1770,
+        1790,
+        2210
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "W1-U-m3-raw.png",
+      "marked": "W1-U-m3-marked.png"
+    },
+    {
+      "id": "W1-D-m2",
+      "frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        1280,
+        2500,
+        1820,
+        2940
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "W1-D-m2-raw.png",
+      "marked": "W1-D-m2-marked.png"
+    },
+    {
+      "id": "W1-D-m3",
+      "frame": "m3",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "native_bounds": [
+        1250,
+        2540,
+        1790,
+        2980
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "W1-D-m3-raw.png",
+      "marked": "W1-D-m3-marked.png"
+    }
+  ]
+}

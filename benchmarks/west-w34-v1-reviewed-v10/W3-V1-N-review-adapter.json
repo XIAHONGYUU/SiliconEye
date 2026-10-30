@@ -1,0 +1,23 @@
+{
+  "kind": "native_source_decision_adapter",
+  "actor": "AI",
+  "statement": "W3-N、W3-S 均为 V1，接 W3；W4-N、W4-S 均为 V1，接 W4",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/W3-V1-N-source-binding.json",
+      "sha256": "08f635a7dde95b4dab4aeb8c5f2d633cf64d70fea5ada7ade94f1a9d7f3be5f4"
+    },
+    "original_human_review": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+      "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+    }
+  },
+  "decisions": {
+    "interface_id": "W3-V1-N",
+    "via_layer": "V1",
+    "lower_metal_id": "C-M1-SPINE",
+    "upper_metal_id": "WEST-M2-W3-SOURCE",
+    "connection_confirmed": true
+  }
+}

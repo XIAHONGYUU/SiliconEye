@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Append only west source-continuous portions of the two M3 broad buses; old parts and native anchors remain exact.",
+  "parent": {
+    "path": "docs/assets/west-w2-reviewed-v7/S1-left-viewport/manifest.json",
+    "sha256": "dc94fef380bc8022fb48ca1b930e2298312cf833700efdeadd2904006c5f675d"
+  },
+  "sources": {
+    "native": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W2-source-observations.json",
+      "sha256": "d943b09eab9857b0a357530e99c7644b9dfb6de76fae0c13df0f04e82a364f0e"
+    },
+    "ledger": {
+      "path": "benchmarks/west-w2-reviewed-v7/W2-bus-source-ledger.json",
+      "sha256": "3bb4f0085132d2987168e7e0aa1d0416ac4fdcee428f2a5a864dc618001c1bb4"
+    }
+  }
+}

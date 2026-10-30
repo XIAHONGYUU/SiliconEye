@@ -1,0 +1,48 @@
+{
+  "kind": "next_scoped_source_coverage_plan",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "prior_closed_baseline": {
+    "path": "benchmarks/west-m1-reviewed-v12/working-baseline.json",
+    "sha256": "2ed4cafec8d223ac501194178dca6f73955a0cad05be57dcf321a50febfdaa2d"
+  },
+  "scope_choice": "M2 continuous source inventory around reviewed W3/W4",
+  "primary_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "photo_binding_note": "Native M2 search scope only; not a precise projection from M1.",
+  "native_search_bounds": [
+    280,
+    1870,
+    850,
+    2840
+  ],
+  "known_reviewed_metal_ids": [
+    "WEST-M2-W3-SOURCE",
+    "WEST-M2-W4-SOURCE"
+  ],
+  "known_reviewed_interface_ids": [
+    "W3-V2-U",
+    "W3-V2-D",
+    "W4-V2-U",
+    "W4-V2-D",
+    "W3-V1-N",
+    "W3-V1-S",
+    "W4-V1-N",
+    "W4-V1-S"
+  ],
+  "ordered_steps": [
+    "List every visible M2 metal fragment and endpoint/branch in this fixed native search scope before adding geometry.",
+    "Reconcile visible fragments to current M2 geometry; explicitly label missing, partial, uncertain and scope-exit records.",
+    "For missing geometry, run separate source-bound addition or extent transactions; retain all old metal IDs/anchors and179 via sites.",
+    "Only if a new interface is observed, identify V1 on M1 or V2 on M2 and resolve carrier ambiguity. Do not re-open known interfaces.",
+    "Reconcile declared source inventory, working geometry and interfaces and then prepare one grouped coverage review."
+  ],
+  "existing_M3_scope": "B-U/B-D as previously reviewed carrier context only; all-visible M3 is a separate later inventory.",
+  "new_source_observations_frozen": false,
+  "new_geometry_created": false,
+  "source_to_design_transform": null,
+  "complete_network": false
+}

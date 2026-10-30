@@ -1,0 +1,65 @@
+{
+  "kind": "native_V2_identity_carrier_human_decision",
+  "actor": "human",
+  "date": "2026-10-29",
+  "statement": "U：是 V2，接 B-U；D：是 V2，接 B-D",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/review-request.json",
+      "sha256": "0e87341629e20f17ca84de9ac3722343a2ed1ec015d7fe5f71a1f9e0741df0ed"
+    },
+    "source_observations": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+      "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+    },
+    "upper_image": {
+      "path": "docs/assets/left-bu-v1-reviewed-v2/U-paired.png",
+      "sha256": "a47227d52c75c04a2051538dd7ada9687e0c91081b9840e3e1bb01f0e90eb578"
+    },
+    "lower_image": {
+      "path": "docs/assets/left-bu-v1-reviewed-v2/D-paired.png",
+      "sha256": "7d0b74593987d92f6ac21d1f1f458fb4f8c575d816f7bb56943619aaa57e4c3b"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "LEFT-M2-A-V2-U",
+      "question_id": "LEFT-M2-A-V2-U",
+      "statement": "U：是 V2，接 B-U",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        1935,
+        1898,
+        2008,
+        1965
+      ],
+      "V2_present": true,
+      "lower_source_id": "LEFT-M2-A-CANDIDATE",
+      "upper_source_id": "RT-M3-UP",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "LEFT-M2-A-V2-D",
+      "question_id": "LEFT-M2-A-V2-D",
+      "statement": "D：是 V2，接 B-D",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        1942,
+        2695,
+        2008,
+        2795
+      ],
+      "V2_present": true,
+      "lower_source_id": "LEFT-M2-A-CANDIDATE",
+      "upper_source_id": "RT-M3-DOWN",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ]
+}

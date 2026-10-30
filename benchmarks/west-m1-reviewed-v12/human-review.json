@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_M1_working_geometry_coverage_review",
+  "actor": "human",
+  "date": "2026-10-30",
+  "statement": "Q1：几何合理，无明显漏段；Q2：几何合理，无明显遗漏",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/west-m1-coverage-v11/coverage-review-request.json",
+      "sha256": "e5ab30ebef3c756ab51d6559a5a809f944259abb8fe1061f9102a32424bb3ed1"
+    },
+    "submitted_page": {
+      "path": "docs/assets/west-m1-coverage-v11/index.html",
+      "sha256": "0fcfe94ee11a1b831b07fd728729796462fe654d35ed2cfb81218e7725f7443c"
+    },
+    "submitted_model": {
+      "path": "docs/assets/west-m1-coverage-v11/S3-L09-return/model.json",
+      "sha256": "3e842dfd7593a8791298bbccc368a25dc5e6bc3202ef216ca988696f0d0e4a94"
+    },
+    "submitted_manifest": {
+      "path": "docs/assets/west-m1-coverage-v11/S3-L09-return/manifest.json",
+      "sha256": "e6caa21ab349808480ee27f131ccae387842104d415aa87d46d82f07a067c04c"
+    },
+    "submitted_coverage": {
+      "path": "benchmarks/west-m1-coverage-v11/scoped-M1-coverage.json",
+      "sha256": "8d850a1f943c7e18afcd1f6dd4f1db79fb2e4ceb563ffbb723b9a9b8e53b89eb"
+    },
+    "submitted_workflow": {
+      "path": "benchmarks/west-m1-coverage-v11/next-request.json",
+      "sha256": "abd5d8ef2e1f4a420d5d0fb6cb48399bf65323cfa82ce3619a249f6c766d6560"
+    },
+    "source_rescan": {
+      "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+      "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+    },
+    "full_source_image": {
+      "path": "docs/assets/west-m1-coverage-v11/source-full-marked.png",
+      "sha256": "9242bc98c1c3efaf62d52c0b44987bb804a58824e3681f89c5a928e8f6b36e89"
+    },
+    "full_design_image": {
+      "path": "docs/assets/west-m1-coverage-v11/local-full-after.png",
+      "sha256": "f0bef11df3043ee3b341130d9a90936cae37c706fc66fb0aa169f2e672b66645"
+    },
+    "bottom_source_image": {
+      "path": "docs/assets/west-m1-coverage-v11/source-bottom-marked.png",
+      "sha256": "8e41ffd94d654ce004cc8d3146594d9c71d8a28c2010066cca9e2a1891bbfde2"
+    },
+    "bottom_design_image": {
+      "path": "docs/assets/west-m1-coverage-v11/local-bottom-after.png",
+      "sha256": "9f367a00dac09622599f22ff804648e61f68822449c5d507b87f83e9a428de25"
+    }
+  },
+  "decisions": [
+    {
+      "question_id": "M1-COVER-Q1",
+      "question_item_id": "[\"request_user_input_async\",\"call_a1b2e89129bf4526835438f93bf985ce\",0]",
+      "statement": "Q1：几何合理，无明显漏段",
+      "scope_ids": [
+        "M1-L03",
+        "M1-L04",
+        "M1-L05",
+        "M1-L06",
+        "M1-L07",
+        "M1-L08"
+      ],
+      "decision": "accepted",
+      "geometry_level": "qualitative_scoped_working_geometry",
+      "visible_coverage_feedback": "no_obvious_missing_segments_in_submitted_group",
+      "new_via_or_net_decision": false
+    },
+    {
+      "question_id": "M1-COVER-Q2",
+      "question_item_id": "[\"request_user_input_async\",\"call_a1b2e89129bf4526835438f93bf985ce\",1]",
+      "statement": "Q2：几何合理，无明显遗漏",
+      "scope_ids": [
+        "M1-L09",
+        "M1-L10",
+        "M1-L11",
+        "M1-L12"
+      ],
+      "decision": "accepted",
+      "geometry_level": "qualitative_scoped_working_geometry",
+      "visible_coverage_feedback": "no_obvious_missing_segments_in_submitted_group",
+      "new_via_or_net_decision": false
+    }
+  ],
+  "recorded_scope": {
+    "native_frame": "m1",
+    "native_bounds": [
+      300,
+      1870,
+      830,
+      2820
+    ],
+    "level": "qualitative_scoped_working_geometry",
+    "newly_reviewed_fragment_ids": [
+      "M1-L03",
+      "M1-L04",
+      "M1-L05",
+      "M1-L06",
+      "M1-L07",
+      "M1-L08",
+      "M1-L09",
+      "M1-L10",
+      "M1-L11",
+      "M1-L12"
+    ],
+    "unchanged_context_fragment_ids": [
+      "M1-L01",
+      "M1-L02"
+    ],
+    "source_scope_exits_are_not_physical_terminals": true
+  },
+  "not_approved": [
+    "new_via_identities_or_carriers",
+    "physical_via_counts_or_dimensions",
+    "exact_photo_projection",
+    "PDK_or_measured_physical_dimensions",
+    "entire_C-M1-SPINE_outside_scoped_components",
+    "complete_physical_inventory",
+    "complete_network",
+    "canonical_geometry_adoption",
+    "unrestricted_skill_release"
+  ]
+}

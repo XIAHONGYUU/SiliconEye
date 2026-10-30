@@ -1,0 +1,44 @@
+{
+  "kind": "native_return_inspection_review_state",
+  "date": "2026-10-29",
+  "observations": {
+    "path": "benchmarks/BR-R-return-inspection-v1/source-observations.json",
+    "sha256": "300e9b056e2a2510d61ce329c5e67053824c4e832c14087b02fcceffdfe15bd9"
+  },
+  "pending_request": {
+    "path": "benchmarks/BR-R-return-inspection-v1/review-request.json",
+    "sha256": "5237ae9b89a61e68673d99fd1ec626089cee351861122a8f4d7a5b79edb91ab6"
+  },
+  "human_review": null,
+  "pending_relation_ids": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "working_request_unchanged": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  },
+  "new_geometry_objects": 0,
+  "new_interfaces": 0,
+  "old_m1_native_scope_qualification": {
+    "source_frame": "m1",
+    "native_bounds": [
+      2940,
+      1900,
+      3670,
+      3000
+    ],
+    "scope_source": {
+      "path": "benchmarks/corridor-m1-horizontal-branches-v1/source-ledger.json",
+      "sha256": "8b96524a7f511bffa416bc15552141ae522ab9ac2178e745b3e889e544358dbb"
+    },
+    "qualification": "Earlier M1 local-part source scope; separate from M2/M3 frames and not a physical chip boundary."
+  },
+  "new_context_is_observation_only": true,
+  "global_isolation_claimed": false,
+  "source_to_design_transform": null,
+  "next_step": "Await only five local source relations. Preserve prior contacts; decide explicit working-scope extension before reconstructing the below-y3000 returns."
+}

@@ -1,0 +1,113 @@
+{
+  "kind": "via_array_observation",
+  "actor": "AI",
+  "reason": "Complete regular relative array hypothesis from M2 native group; human approval covers identity/carrier, not count or dimensions.",
+  "interface_id": "W1-V2-D",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    1500,
+    2705,
+    1545,
+    2805
+  ],
+  "count_status": "candidate_not_human_count",
+  "rows": 5,
+  "columns": 2,
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        1513,
+        2718
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        1531,
+        2718
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        1513,
+        2735
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        1531,
+        2735
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        1513,
+        2752
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        1531,
+        2752
+      ]
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "native_xy": [
+        1513,
+        2769
+      ]
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "native_xy": [
+        1531,
+        2769
+      ]
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "native_xy": [
+        1513,
+        2786
+      ]
+    },
+    {
+      "row": 4,
+      "column": 1,
+      "native_xy": [
+        1531,
+        2786
+      ]
+    }
+  ],
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/human-review.json",
+      "sha256": "df8d2186fc0a1a8270040bcabb461957fbc572224e696265ab8b99f06706172f"
+    },
+    "native": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+      "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+    }
+  }
+}

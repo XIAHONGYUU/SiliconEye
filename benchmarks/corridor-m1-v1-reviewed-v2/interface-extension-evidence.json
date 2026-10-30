@@ -1,0 +1,28 @@
+{
+  "actor": "AI",
+  "reason": "Add only A/B approved V1 identities/carriers using separate explicit candidate arrays. Existing records unchanged.",
+  "parent": {
+    "path": "docs/assets/corridor-m1-v1-reviewed-v2/metal-added/manifest.json",
+    "sha256": "a6761662df29cc3bac0737902ae3d9d6f6fb919585a2ec43fc900cde7e31da5e"
+  },
+  "added_interface_ids": [
+    "CORRIDOR-V1-A",
+    "CORRIDOR-V1-B"
+  ],
+  "interface_observations": {
+    "CORRIDOR-V1-A": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/CORRIDOR-V1-A-array-observation.json",
+      "sha256": "3804672c5480fda4a440b356cf964de3e6233496c27260713e9f42169c91ef07"
+    },
+    "CORRIDOR-V1-B": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/CORRIDOR-V1-B-array-observation.json",
+      "sha256": "8fc45f1b38de0ea21a001e316f0775c00a74a2bab49988f5f0515d05167caa75"
+    }
+  },
+  "sources": {
+    "human_entry_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    }
+  }
+}

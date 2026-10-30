@@ -1,0 +1,179 @@
+{
+  "kind": "supplemental_same_frame_order_validation",
+  "actor": "AI",
+  "sources": {
+    "rescan": {
+      "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+      "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+    },
+    "working_request": {
+      "path": "benchmarks/west-m1-coverage-v11/next-request.json",
+      "sha256": "abd5d8ef2e1f4a420d5d0fb6cb48399bf65323cfa82ce3619a249f6c766d6560"
+    }
+  },
+  "checks": [
+    {
+      "id": "middle_top_before_lower",
+      "axis": "y",
+      "first": {
+        "id": "W34-M1-L07",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M1-L08",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "north_tip_before_middle",
+      "axis": "y",
+      "first": {
+        "id": "W34-M1-L04",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M1-L07",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "middle_before_south_left",
+      "axis": "y",
+      "first": {
+        "id": "W34-M1-L08",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M1-L05",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "middle_before_south_right",
+      "axis": "y",
+      "first": {
+        "id": "W34-M1-L08",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M1-L06",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "south_stems_left_right",
+      "axis": "x",
+      "first": {
+        "id": "W34-M1-L05",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M1-L06",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "bottom_fragments_left_right",
+      "axis": "x",
+      "first": {
+        "id": "W34-M1-L09",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M1-L10",
+        "extreme": "min"
+      }
+    }
+  ],
+  "result": {
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "middle_top_before_lower",
+        "values": {
+          "native_path": [
+            2312,
+            2329
+          ],
+          "design_path": [
+            530,
+            552
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "north_tip_before_middle",
+        "values": {
+          "native_path": [
+            2280,
+            2304
+          ],
+          "design_path": [
+            504,
+            530
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "middle_before_south_left",
+        "values": {
+          "native_path": [
+            2338,
+            2356
+          ],
+          "design_path": [
+            552,
+            572
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "middle_before_south_right",
+        "values": {
+          "native_path": [
+            2338,
+            2348
+          ],
+          "design_path": [
+            552,
+            566
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "south_stems_left_right",
+        "values": {
+          "native_path": [
+            422,
+            799
+          ],
+          "design_path": [
+            -2477,
+            -2091
+          ]
+        },
+        "passed": true
+      },
+      {
+        "id": "bottom_fragments_left_right",
+        "values": {
+          "native_path": [
+            748,
+            811
+          ],
+          "design_path": [
+            -2168,
+            -2110
+          ]
+        },
+        "passed": true
+      }
+    ],
+    "scope": "declared_same_frame_order_not_registration"
+  },
+  "registration_claimed": false
+}

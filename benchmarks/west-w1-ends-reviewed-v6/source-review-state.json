@@ -1,0 +1,30 @@
+{
+  "kind": "reviewed_W1_ends_source_only_W2_pending",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/west-w1-ends-reviewed-v6/human-review.json",
+    "sha256": "df8d2186fc0a1a8270040bcabb461957fbc572224e696265ab8b99f06706172f"
+  },
+  "working_request": {
+    "path": "benchmarks/west-w1-ends-reviewed-v6/next-request.json",
+    "sha256": "990a2fb7c57f59850950c0ec95896241aa514513757625d62b25bcf38460a611"
+  },
+  "working_metal_candidates": 36,
+  "reviewed_working_interfaces": 18,
+  "explicit_design_cut_count": 109,
+  "old93_centers_preserved": true,
+  "pending_source_question_ids": [
+    "W2-V2-U",
+    "W2-V2-D"
+  ],
+  "pending_source_request": {
+    "path": "benchmarks/west-w1-ends-reviewed-v6/W2-review-request.json",
+    "sha256": "33245735fe516ccb2931d80c2e2a0f59cde2e1c7a2c27f4967c21b93da04443b"
+  },
+  "new_W2_geometry_added": false,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Adjudicate only W2 end identity/carriers; retain W1 approvals. Then add source-bound metal extent and full arrays without moving old geometry."
+}

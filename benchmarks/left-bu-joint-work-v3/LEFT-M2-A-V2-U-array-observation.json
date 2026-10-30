@@ -1,0 +1,105 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "reason": "Visible bright lattice recorded as a whole-group candidate; human approved identity/carrier only.",
+  "interface_id": "LEFT-M2-A-V2-U",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    1935,
+    1898,
+    2008,
+    1965
+  ],
+  "count_status": "candidate_not_human_count",
+  "rows": 3,
+  "columns": 3,
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        1948,
+        1913
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        1970,
+        1913
+      ]
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "native_xy": [
+        1992,
+        1913
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        1948,
+        1931
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        1970,
+        1931
+      ]
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "native_xy": [
+        1992,
+        1931
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        1948,
+        1949
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        1970,
+        1949
+      ]
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "native_xy": [
+        1992,
+        1949
+      ]
+    }
+  ],
+  "sources": {
+    "V1_human": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2_human": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  }
+}

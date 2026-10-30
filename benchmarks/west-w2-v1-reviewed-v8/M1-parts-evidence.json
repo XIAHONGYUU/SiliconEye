@@ -1,0 +1,22 @@
+{
+  "actor": "AI",
+  "reason": "Append only W2 source-continuous M1 bars and the observed northern downward tab. Do not bridge neighboring thin vertical M1.",
+  "parent": {
+    "path": "docs/assets/west-w2-reviewed-v7/S4-W2-interfaces/manifest.json",
+    "sha256": "2f32aba8078a8f2bc842b75e2b8bfd8f380337bd4161792ab682cd5a0671a695"
+  },
+  "sources": {
+    "native": {
+      "path": "benchmarks/west-w2-reviewed-v7/W2-M1-source-observations.json",
+      "sha256": "1bae566bba41ade43a4ecc783e11bcbabaef6102c3f8e752678ce1a39ea6a360"
+    },
+    "human": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+      "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+    },
+    "ledger": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/W2-M1-source-ledger.json",
+      "sha256": "1067ff61a798757da035aaf7c265a55af60492899fe82671d192eba5888639b8"
+    }
+  }
+}

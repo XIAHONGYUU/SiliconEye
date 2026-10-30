@@ -1,0 +1,180 @@
+{
+  "kind": "AI_native_upper_M1_horizontal_branch_observations",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "parent_working_request": {
+    "path": "benchmarks/left-bu-joint-work-v3/next-request.json",
+    "sha256": "d3984a5a9feac6fee001dc3ec585a74c269043a46faa5e88010d17c76cab8390"
+  },
+  "N_human_review": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/human-review.json",
+    "sha256": "d46602d22db0cf2631cd7a680a2ed04e2ebae3b4749da59027ae05aa0cf09e5d"
+  },
+  "source_scope": {
+    "m1": [
+      1150,
+      1700,
+      3300,
+      2440
+    ],
+    "m2": [
+      1130,
+      1720,
+      2210,
+      2320
+    ]
+  },
+  "branch_paths": [
+    {
+      "id": "N-WEST-BRIDGE",
+      "frame": "m1",
+      "native_path": [
+        [
+          1956,
+          1945
+        ],
+        [
+          1990,
+          1945
+        ]
+      ]
+    },
+    {
+      "id": "N-WEST-STEP",
+      "frame": "m1",
+      "native_path": [
+        [
+          1955,
+          1890
+        ],
+        [
+          1956,
+          1945
+        ]
+      ]
+    },
+    {
+      "id": "N-WEST-HORIZONTAL",
+      "frame": "m1",
+      "native_path": [
+        [
+          1400,
+          1904
+        ],
+        [
+          1955,
+          1890
+        ]
+      ],
+      "end_states": [
+        "continues_left_outside_work_scope",
+        "joins_step"
+      ]
+    },
+    {
+      "id": "N-EAST-TOP",
+      "frame": "m1",
+      "native_path": [
+        [
+          1995,
+          1940
+        ],
+        [
+          2585,
+          1930
+        ]
+      ]
+    },
+    {
+      "id": "N-EAST-RIGHT",
+      "frame": "m1",
+      "native_path": [
+        [
+          2585,
+          1930
+        ],
+        [
+          2595,
+          2247
+        ]
+      ]
+    },
+    {
+      "id": "N-EAST-RETURN",
+      "frame": "m1",
+      "native_path": [
+        [
+          2025,
+          2265
+        ],
+        [
+          2595,
+          2247
+        ]
+      ]
+    }
+  ],
+  "continuity_status": "AI_NATIVE_M1_CONTINUITY_CANDIDATES_NOT_FULL_SOURCE_GEOMETRY_ACCEPTANCE",
+  "new_interface_candidate": {
+    "id": "N-WEST-F1-V1",
+    "m1_native_search_bounds": [
+      1495,
+      1882,
+      1548,
+      1940
+    ],
+    "m2_carrier_id": "N-WEST-M2-W1",
+    "V1_present": null,
+    "connection_confirmed": null,
+    "physical_cut_count": null
+  },
+  "carrier_source_record": {
+    "id": "N-WEST-M2-W1",
+    "frame": "m2",
+    "native_path": [
+      [
+        1502,
+        1920
+      ],
+      [
+        1515,
+        2320
+      ]
+    ],
+    "native_carrier_context_bounds": [
+      1478,
+      1898,
+      1535,
+      2320
+    ],
+    "end_states": [
+      "visible_top_context",
+      "continues_down_beyond_this_review"
+    ]
+  },
+  "neighboring_M1": {
+    "native_bounds": [
+      1540,
+      1925,
+      1580,
+      2180
+    ],
+    "local_contact_to_west_bar": null,
+    "basis": "Thin vertical run starts below the bar with a visible gap; do not bridge it by pattern or connect it to the F1 tab."
+  },
+  "source_to_design_transform": null,
+  "fine_landing_qualified": false,
+  "geometry_adopted": false,
+  "net_edges": [],
+  "complete_network": false
+}

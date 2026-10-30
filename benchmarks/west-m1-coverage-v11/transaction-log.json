@@ -1,0 +1,37 @@
+{
+  "stages": [
+    {
+      "stage": "S1-existing-continuations",
+      "request": {
+        "path": "benchmarks/west-m1-coverage-v11/S1-existing-continuations-request.json",
+        "sha256": "41f91c21d6cd132b38f8afaeeb05d0f02e09a48199a06187baa7f938947f70d0"
+      },
+      "manifest": {
+        "path": "docs/assets/west-m1-coverage-v11/S1-existing-continuations/manifest.json",
+        "sha256": "a53823a942f96e155f43f78135edda1868b85107d57b224ed53b689047207e8d"
+      }
+    },
+    {
+      "stage": "S2-seven-M1-fragments",
+      "request": {
+        "path": "benchmarks/west-m1-coverage-v11/S2-seven-M1-fragments-request.json",
+        "sha256": "a5c5445222af603245af5ed566d6b45e051389c357d2a15d9b05ba11b304f29f"
+      },
+      "manifest": {
+        "path": "docs/assets/west-m1-coverage-v11/S2-seven-M1-fragments/manifest.json",
+        "sha256": "8010d228d102ada4865f6892f0ad8a7f25a862fdccf131d36f729d46b50a97b8"
+      }
+    },
+    {
+      "stage": "S3-L09-return",
+      "request": {
+        "path": "benchmarks/west-m1-coverage-v11/S3-L09-return-request.json",
+        "sha256": "5bece8e596e115798f92e57e0893f0a9e74a01aff55b599db198702d12ee3310"
+      },
+      "manifest": {
+        "path": "docs/assets/west-m1-coverage-v11/S3-L09-return/manifest.json",
+        "sha256": "e6caa21ab349808480ee27f131ccae387842104d415aa87d46d82f07a067c04c"
+      }
+    }
+  ]
+}

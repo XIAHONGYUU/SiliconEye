@@ -1,0 +1,1449 @@
+{
+  "kind": "AI_native_M1_short_finger_inventory",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "baseline_request": {
+    "path": "benchmarks/corridor-m1-horizontal-branches-v1/next-request.json",
+    "sha256": "d448872359a568c026fcf82cf0c434cc4f8da96fb4fbbc57ac1e39c56a002078"
+  },
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "scope": {
+    "observation_row": "Only upper row between BU and the near lower parallel bar. Lower-row vertical features are contextual, not silently included.",
+    "native_context_bounds": [
+      1640,
+      2740,
+      3200,
+      3010
+    ],
+    "source_context_extends_existing_working_scope": true,
+    "working_native_x_range": [
+      2940,
+      3155
+    ],
+    "working_geometry_scope_changed": false
+  },
+  "local_contact_definitions": {
+    "UPPER_RAIL_CANDIDATE": "AI sees a narrow continuation reaching BU; tip separated from lower bar. Not a human physical fact.",
+    "BOTH_ENDS_VISIBLE_GAPS": "Local source shows gaps before BU and before the near lower bar. Does not prove physical floating, material identity, via absence, or global disconnection."
+  },
+  "summary": {
+    "short_finger_candidates": 26,
+    "upper_candidates": 14,
+    "lower_candidates": 0,
+    "both_end_gap_candidates": 12,
+    "current_corridor_ids": [
+      "BF24",
+      "BF25",
+      "BF26"
+    ],
+    "long_routing_context_zones": 2,
+    "human_reviewed_short_fingers": 0
+  },
+  "finger_observations": [
+    {
+      "id": "BF01",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 1705,
+      "source_window": [
+        1687,
+        2816,
+        1725,
+        2980
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          1702,
+          2834
+        ],
+        [
+          1708,
+          2943
+        ]
+      ],
+      "endpoint_window_upper": [
+        1687,
+        2819,
+        1723,
+        2874
+      ],
+      "endpoint_window_lower": [
+        1687,
+        2930,
+        1725,
+        2980
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF02",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 1762,
+      "source_window": [
+        1744,
+        2814,
+        1782,
+        2978
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          1759,
+          2863
+        ],
+        [
+          1765,
+          2941
+        ]
+      ],
+      "endpoint_window_upper": [
+        1744,
+        2817,
+        1780,
+        2872
+      ],
+      "endpoint_window_lower": [
+        1744,
+        2928,
+        1782,
+        2978
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF03",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 1816,
+      "source_window": [
+        1798,
+        2812,
+        1836,
+        2976
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          1813,
+          2830
+        ],
+        [
+          1819,
+          2939
+        ]
+      ],
+      "endpoint_window_upper": [
+        1798,
+        2815,
+        1834,
+        2870
+      ],
+      "endpoint_window_lower": [
+        1798,
+        2926,
+        1836,
+        2976
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF04",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 1871,
+      "source_window": [
+        1853,
+        2810,
+        1891,
+        2974
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          1868,
+          2859
+        ],
+        [
+          1874,
+          2937
+        ]
+      ],
+      "endpoint_window_upper": [
+        1853,
+        2813,
+        1889,
+        2868
+      ],
+      "endpoint_window_lower": [
+        1853,
+        2924,
+        1891,
+        2974
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF05",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 1927,
+      "source_window": [
+        1909,
+        2808,
+        1947,
+        2972
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          1924,
+          2826
+        ],
+        [
+          1930,
+          2935
+        ]
+      ],
+      "endpoint_window_upper": [
+        1909,
+        2811,
+        1945,
+        2866
+      ],
+      "endpoint_window_lower": [
+        1909,
+        2922,
+        1947,
+        2972
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF06",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 1982,
+      "source_window": [
+        1964,
+        2806,
+        2002,
+        2970
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          1979,
+          2855
+        ],
+        [
+          1985,
+          2933
+        ]
+      ],
+      "endpoint_window_upper": [
+        1964,
+        2809,
+        2000,
+        2864
+      ],
+      "endpoint_window_lower": [
+        1964,
+        2920,
+        2002,
+        2970
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF07",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2039,
+      "source_window": [
+        2021,
+        2804,
+        2059,
+        2968
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2036,
+          2822
+        ],
+        [
+          2042,
+          2931
+        ]
+      ],
+      "endpoint_window_upper": [
+        2021,
+        2807,
+        2057,
+        2862
+      ],
+      "endpoint_window_lower": [
+        2021,
+        2918,
+        2059,
+        2968
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF08",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2095,
+      "source_window": [
+        2077,
+        2803,
+        2115,
+        2967
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2092,
+          2852
+        ],
+        [
+          2098,
+          2930
+        ]
+      ],
+      "endpoint_window_upper": [
+        2077,
+        2806,
+        2113,
+        2861
+      ],
+      "endpoint_window_lower": [
+        2077,
+        2917,
+        2115,
+        2967
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF09",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2153,
+      "source_window": [
+        2135,
+        2801,
+        2173,
+        2965
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2150,
+          2819
+        ],
+        [
+          2156,
+          2928
+        ]
+      ],
+      "endpoint_window_upper": [
+        2135,
+        2804,
+        2171,
+        2859
+      ],
+      "endpoint_window_lower": [
+        2135,
+        2915,
+        2173,
+        2965
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF10",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2208,
+      "source_window": [
+        2190,
+        2799,
+        2228,
+        2963
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2205,
+          2848
+        ],
+        [
+          2211,
+          2926
+        ]
+      ],
+      "endpoint_window_upper": [
+        2190,
+        2802,
+        2226,
+        2857
+      ],
+      "endpoint_window_lower": [
+        2190,
+        2913,
+        2228,
+        2963
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF11",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2263,
+      "source_window": [
+        2245,
+        2797,
+        2283,
+        2961
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2260,
+          2815
+        ],
+        [
+          2266,
+          2924
+        ]
+      ],
+      "endpoint_window_upper": [
+        2245,
+        2800,
+        2281,
+        2855
+      ],
+      "endpoint_window_lower": [
+        2245,
+        2911,
+        2283,
+        2961
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF12",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2317,
+      "source_window": [
+        2299,
+        2795,
+        2337,
+        2959
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2314,
+          2844
+        ],
+        [
+          2320,
+          2922
+        ]
+      ],
+      "endpoint_window_upper": [
+        2299,
+        2798,
+        2335,
+        2853
+      ],
+      "endpoint_window_lower": [
+        2299,
+        2909,
+        2337,
+        2959
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-L",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF13",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2371,
+      "source_window": [
+        2353,
+        2793,
+        2391,
+        2957
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2368,
+          2811
+        ],
+        [
+          2374,
+          2920
+        ]
+      ],
+      "endpoint_window_upper": [
+        2353,
+        2796,
+        2389,
+        2851
+      ],
+      "endpoint_window_lower": [
+        2353,
+        2907,
+        2391,
+        2957
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": null,
+      "lower_observation": "no_direct_bar_beneath_tip_in_central_routing_gap",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF14",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2425,
+      "source_window": [
+        2407,
+        2791,
+        2445,
+        2955
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2422,
+          2809
+        ],
+        [
+          2428,
+          2918
+        ]
+      ],
+      "endpoint_window_upper": [
+        2407,
+        2794,
+        2443,
+        2849
+      ],
+      "endpoint_window_lower": [
+        2407,
+        2905,
+        2445,
+        2955
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF15",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2479,
+      "source_window": [
+        2461,
+        2789,
+        2499,
+        2953
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2476,
+          2838
+        ],
+        [
+          2482,
+          2916
+        ]
+      ],
+      "endpoint_window_upper": [
+        2461,
+        2792,
+        2497,
+        2847
+      ],
+      "endpoint_window_lower": [
+        2461,
+        2903,
+        2499,
+        2953
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF16",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2535,
+      "source_window": [
+        2517,
+        2787,
+        2555,
+        2951
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2532,
+          2805
+        ],
+        [
+          2538,
+          2914
+        ]
+      ],
+      "endpoint_window_upper": [
+        2517,
+        2790,
+        2553,
+        2845
+      ],
+      "endpoint_window_lower": [
+        2517,
+        2901,
+        2555,
+        2951
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF17",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2589,
+      "source_window": [
+        2571,
+        2786,
+        2609,
+        2950
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2586,
+          2835
+        ],
+        [
+          2592,
+          2913
+        ]
+      ],
+      "endpoint_window_upper": [
+        2571,
+        2789,
+        2607,
+        2844
+      ],
+      "endpoint_window_lower": [
+        2571,
+        2900,
+        2609,
+        2950
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF18",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2643,
+      "source_window": [
+        2625,
+        2784,
+        2663,
+        2948
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2640,
+          2802
+        ],
+        [
+          2646,
+          2911
+        ]
+      ],
+      "endpoint_window_upper": [
+        2625,
+        2787,
+        2661,
+        2842
+      ],
+      "endpoint_window_lower": [
+        2625,
+        2898,
+        2663,
+        2948
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF19",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2696,
+      "source_window": [
+        2678,
+        2782,
+        2716,
+        2946
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2693,
+          2831
+        ],
+        [
+          2699,
+          2909
+        ]
+      ],
+      "endpoint_window_upper": [
+        2678,
+        2785,
+        2714,
+        2840
+      ],
+      "endpoint_window_lower": [
+        2678,
+        2896,
+        2716,
+        2946
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF20",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2751,
+      "source_window": [
+        2733,
+        2780,
+        2771,
+        2944
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2748,
+          2798
+        ],
+        [
+          2754,
+          2907
+        ]
+      ],
+      "endpoint_window_upper": [
+        2733,
+        2783,
+        2769,
+        2838
+      ],
+      "endpoint_window_lower": [
+        2733,
+        2894,
+        2771,
+        2944
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF21",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2805,
+      "source_window": [
+        2787,
+        2778,
+        2825,
+        2942
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2802,
+          2827
+        ],
+        [
+          2808,
+          2905
+        ]
+      ],
+      "endpoint_window_upper": [
+        2787,
+        2781,
+        2823,
+        2836
+      ],
+      "endpoint_window_lower": [
+        2787,
+        2892,
+        2825,
+        2942
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF22",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2861,
+      "source_window": [
+        2843,
+        2776,
+        2881,
+        2940
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2858,
+          2794
+        ],
+        [
+          2864,
+          2903
+        ]
+      ],
+      "endpoint_window_upper": [
+        2843,
+        2779,
+        2879,
+        2834
+      ],
+      "endpoint_window_lower": [
+        2843,
+        2890,
+        2881,
+        2940
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF23",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2914,
+      "source_window": [
+        2896,
+        2774,
+        2934,
+        2938
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2911,
+          2823
+        ],
+        [
+          2917,
+          2901
+        ]
+      ],
+      "endpoint_window_upper": [
+        2896,
+        2777,
+        2932,
+        2832
+      ],
+      "endpoint_window_lower": [
+        2896,
+        2888,
+        2934,
+        2938
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "SOURCE_CONTEXT_ONLY",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF24",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 2967,
+      "source_window": [
+        2949,
+        2772,
+        2987,
+        2936
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          2964,
+          2790
+        ],
+        [
+          2970,
+          2899
+        ]
+      ],
+      "endpoint_window_upper": [
+        2949,
+        2775,
+        2985,
+        2830
+      ],
+      "endpoint_window_lower": [
+        2949,
+        2886,
+        2987,
+        2936
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "CURRENT_WORK_CORRIDOR",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF25",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 3020,
+      "source_window": [
+        3002,
+        2771,
+        3040,
+        2935
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          3017,
+          2820
+        ],
+        [
+          3023,
+          2898
+        ]
+      ],
+      "endpoint_window_upper": [
+        3002,
+        2774,
+        3038,
+        2829
+      ],
+      "endpoint_window_lower": [
+        3002,
+        2885,
+        3040,
+        2935
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "BOTH_ENDS_VISIBLE_GAPS",
+      "upper_contact_candidate": false,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "CURRENT_WORK_CORRIDOR",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    },
+    {
+      "id": "BF26",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_native_x_candidate": 3071,
+      "source_window": [
+        3053,
+        2769,
+        3091,
+        2933
+      ],
+      "finger_body_native_path_candidate": [
+        [
+          3068,
+          2787
+        ],
+        [
+          3074,
+          2896
+        ]
+      ],
+      "endpoint_window_upper": [
+        3053,
+        2772,
+        3089,
+        2827
+      ],
+      "endpoint_window_lower": [
+        3053,
+        2883,
+        3091,
+        2933
+      ],
+      "observation_status": "AI_CANDIDATE_NOT_HUMAN_CONFIRMED",
+      "contact_class": "UPPER_RAIL_CANDIDATE",
+      "upper_contact_candidate": true,
+      "lower_contact_candidate": false,
+      "nearest_lower_bar_context_id": "L1-R",
+      "lower_observation": "visible_separation_before_near_lower_bar",
+      "scope": "CURRENT_WORK_CORRIDOR",
+      "material_identity_human_confirmed": false,
+      "geometry_human_approved": false,
+      "precise_endpoints_measured": false,
+      "global_same_net_with_BU": null,
+      "V1_identity": null
+    }
+  ],
+  "bar_context": [
+    {
+      "id": "BU",
+      "role": "upper_main_run_context",
+      "model_context_id": "C-M1-SPINE",
+      "human_approved_exact_extent": false
+    },
+    {
+      "id": "L1-L",
+      "role": "near_lower_bar_left_segment",
+      "native_path": [
+        [
+          1725,
+          2968
+        ],
+        [
+          2342,
+          2947
+        ]
+      ]
+    },
+    {
+      "id": "L2-L",
+      "role": "far_lower_bar_left_segment",
+      "native_path": [
+        [
+          1725,
+          2990
+        ],
+        [
+          2347,
+          2972
+        ]
+      ]
+    },
+    {
+      "id": "L1-R",
+      "role": "near_lower_bar_right_segment",
+      "native_path": [
+        [
+          2404,
+          2947
+        ],
+        [
+          3080,
+          2920
+        ]
+      ]
+    },
+    {
+      "id": "L2-R",
+      "role": "far_lower_bar_right_segment",
+      "native_path": [
+        [
+          2404,
+          2970
+        ],
+        [
+          3084,
+          2944
+        ]
+      ]
+    }
+  ],
+  "routing_context_zones": [
+    {
+      "id": "BR-C",
+      "kind": "LONG_ROUTING_CONTEXT_NOT_SHORT_FINGER",
+      "native_bounds": [
+        2330,
+        2790,
+        2415,
+        3030
+      ],
+      "basis": "Long vertical return/routing and bar ends near the center. Do not count the x2397 ridge as an additional short finger or automatically merge both lower bars.",
+      "connection_state": "UNKNOWN"
+    },
+    {
+      "id": "BR-R",
+      "kind": "LONG_ROUTING_CONTEXT_NOT_SHORT_FINGER",
+      "native_bounds": [
+        3085,
+        2760,
+        3135,
+        3040
+      ],
+      "basis": "Long return/routing near x3100; not another short finger. Its full connection to lower bars is a separate task.",
+      "connection_state": "UNKNOWN"
+    }
+  ],
+  "proposal_history": {
+    "method": "Center-band grayscale profile proposes x stations only; visual endpoint and routing-context checks determine the AI classification.",
+    "profile_native_bounds": [
+      1680,
+      2860,
+      3150,
+      2910
+    ],
+    "gaussian_sigma_x": 3,
+    "peak_prominence": 20,
+    "minimum_peak_distance": 25,
+    "peak_station_count": 28,
+    "removed_from_short_finger_list": [
+      2397,
+      3100
+    ],
+    "removal_basis": "Long routing context, not extra short strips. No rule forces an alternating or connected pattern.",
+    "photo_perspective_note": "Finger positions drift laterally with y; a fixed x-column can manufacture an apparent endpoint gap. Inspect wider end windows, not the center peak alone."
+  },
+  "qualifications": {
+    "pixel_recognition_validated": false,
+    "precise_geometry_qualified": false,
+    "physical_inventory_exhaustiveness": null,
+    "source_to_design_transform": null,
+    "net_edges_added": 0,
+    "working_model_changed": false
+  },
+  "unknowns": [
+    "Whether apparently gapped bright strips are independently visible M1 or include lower-layer residual contrast.",
+    "Hidden/narrow endpoint connections unresolved by this photo and any cross-layer connectivity.",
+    "BR-C/BR-R return paths and whether locally separate rails join elsewhere."
+  ],
+  "not_inferred": [
+    "Floating electrical node",
+    "Global isolation between BU and lower bars",
+    "Via identity or count",
+    "New metal or net IDs in the working model"
+  ]
+}

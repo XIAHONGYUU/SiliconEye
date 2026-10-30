@@ -1,0 +1,27 @@
+{
+  "actor": "AI",
+  "reason": "Add only the reviewed N interface with the whole candidate group; old14 signatures and80 sites exact.",
+  "parent": {
+    "path": "docs/assets/left-bu-joint-work-v3/S5-north/manifest.json",
+    "sha256": "317b115a4dcada6893e35547c828dd7c4312c1d7159d34cb2f45608e6a798996"
+  },
+  "added_interface_ids": [
+    "LEFT-BU-NORTH-V1"
+  ],
+  "interface_observations": {
+    "LEFT-BU-NORTH-V1": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/N-array-observation.json",
+      "sha256": "1d600501ffbff21eda11d9c7cddc79d2f1855fbbbdf4afce30fa2cbbeb636724"
+    }
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/human-review.json",
+      "sha256": "d46602d22db0cf2631cd7a680a2ed04e2ebae3b4749da59027ae05aa0cf09e5d"
+    },
+    "native": {
+      "path": "benchmarks/left-bu-joint-work-v3/north-interface-observation.json",
+      "sha256": "e800b638538e4257a8dc6493c8ebaccfe34f314cc2852e3d9c40074037f70ce6"
+    }
+  }
+}

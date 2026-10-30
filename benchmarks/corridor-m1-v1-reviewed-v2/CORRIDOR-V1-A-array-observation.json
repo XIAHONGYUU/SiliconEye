@@ -1,0 +1,47 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "interface_id": "CORRIDOR-V1-A",
+  "layer": "V1",
+  "source_frame": "m1",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "native_bounds": [
+    3125,
+    1930,
+    3175,
+    2010
+  ],
+  "rows": 2,
+  "columns": 1,
+  "count_status": "candidate_not_human_count",
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        3144,
+        1965
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        3144,
+        1980
+      ]
+    }
+  ],
+  "basis": "Two-site working representation inside the reviewed source station. Source centers are estimates, not resolved pixel detections or physical count. Search bounds are support windows, not measured group boundaries.",
+  "source_centers_measured": false,
+  "physical_cut_count": null,
+  "sources": {
+    "identity_carrier_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    }
+  }
+}

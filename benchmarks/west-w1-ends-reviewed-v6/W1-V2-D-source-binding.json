@@ -1,0 +1,53 @@
+{
+  "kind": "scoped_native_interface_decision_binding",
+  "actor": "AI",
+  "question_id": "W1-V2-D",
+  "original_submitted_request": {
+    "path": "benchmarks/west-w1-reviewed-v5/W1-V2-review-request.json",
+    "sha256": "aa7314a31297c5297400d4b35cc2549f3f3ce54dd0c7e23a417ec4f487e6e589"
+  },
+  "scope_source": {
+    "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+    "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+  },
+  "scope_pointer": "/V2_sites/1",
+  "decision_pointer": "/decisions/1",
+  "scope_signature": {
+    "id": "W1-V2-D",
+    "layer": "V2",
+    "layer_pair": [
+      "M2",
+      "M3"
+    ],
+    "source_frame": "m2",
+    "native_bounds": [
+      1500,
+      2705,
+      1545,
+      2805
+    ],
+    "lower_metal_id": "N-WEST-M2-W1",
+    "upper_metal_id": "RT-M3-DOWN"
+  },
+  "geometry_human_approved": false,
+  "carrier_bindings": {
+    "lower": {
+      "source_id": "N-WEST-M2-W1",
+      "model_id": "N-WEST-M2-W1",
+      "source": {
+        "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+        "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+      },
+      "pointer": "/M2_W1"
+    },
+    "upper": {
+      "source_id": "RT-M3-DOWN",
+      "model_id": "RT-M3-DOWN",
+      "source": {
+        "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+        "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+      },
+      "pointer": "/M3_carrier_continuation/old_features_unchanged/1"
+    }
+  }
+}

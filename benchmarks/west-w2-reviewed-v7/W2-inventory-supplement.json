@@ -1,0 +1,72 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add only the new source-reviewed W2 carrier; neighboring narrow lines remain separate source context.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          870,
+          1730,
+          1410,
+          2890
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "WEST-M2-W2-OBS",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          1095,
+          1925
+        ],
+        [
+          1110,
+          2350
+        ],
+        [
+          1123,
+          2795
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_upper_pad"
+        },
+        {
+          "state": "visible_lower_pad"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "WEST-M2-W2-OBS",
+      "metal_id": "WEST-M2-W2-SOURCE"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "native": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W2-source-observations.json",
+      "sha256": "d943b09eab9857b0a357530e99c7644b9dfb6de76fae0c13df0f04e82a364f0e"
+    },
+    "human": {
+      "path": "benchmarks/west-w2-reviewed-v7/human-review.json",
+      "sha256": "97d8968ce540b20a9c8cce9bf30b03b8fb54fe29fdaa801f3b38351c9c3497a1"
+    }
+  }
+}

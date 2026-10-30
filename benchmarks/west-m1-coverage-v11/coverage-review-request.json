@@ -1,0 +1,49 @@
+{
+  "kind": "human_scoped_M1_geometry_coverage_acceptance",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "sources": {
+    "coverage": {
+      "path": "benchmarks/west-m1-coverage-v11/scoped-M1-coverage.json",
+      "sha256": "8d850a1f943c7e18afcd1f6dd4f1db79fb2e4ceb563ffbb723b9a9b8e53b89eb"
+    },
+    "rescan": {
+      "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+      "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+    },
+    "working_request": {
+      "path": "benchmarks/west-m1-coverage-v11/next-request.json",
+      "sha256": "abd5d8ef2e1f4a420d5d0fb6cb48399bf65323cfa82ce3619a249f6c766d6560"
+    }
+  },
+  "questions": [
+    {
+      "question_id": "M1-COVER-Q1",
+      "scope_ids": [
+        "M1-L03",
+        "M1-L04",
+        "M1-L05",
+        "M1-L06",
+        "M1-L07",
+        "M1-L08"
+      ],
+      "question": "竖支、细邻线、中部两横条的规则几何是否覆盖原图可见部分，长度/次序/留隙合理？不重审旧VIA。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "M1-COVER-Q2",
+      "scope_ids": [
+        "M1-L09",
+        "M1-L10",
+        "M1-L11",
+        "M1-L12"
+      ],
+      "question": "底部左右片段保持分开，新补的主干向下出口与左段回折是否合理且无明显遗漏？只验本范围，出界不等于物理终点。",
+      "answer": null,
+      "human_approved": false
+    }
+  ],
+  "geometry_human_approved": false,
+  "does_not_approve_new_physical_vias": true
+}

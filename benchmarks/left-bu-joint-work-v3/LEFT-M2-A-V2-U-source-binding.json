@@ -1,0 +1,54 @@
+{
+  "kind": "scoped_native_interface_decision_binding",
+  "actor": "AI",
+  "question_id": "LEFT-M2-A-V2-U",
+  "original_submitted_request": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/review-request.json",
+    "sha256": "0e87341629e20f17ca84de9ac3722343a2ed1ec015d7fe5f71a1f9e0741df0ed"
+  },
+  "scope_source": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+    "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+  },
+  "scope_pointer": "/V2_sites/0",
+  "decision_pointer": "/decisions/0",
+  "scope_signature": {
+    "id": "LEFT-M2-A-V2-U",
+    "layer": "V2",
+    "layer_pair": [
+      "M2",
+      "M3"
+    ],
+    "source_frame": "m2",
+    "native_bounds": [
+      1935,
+      1898,
+      2008,
+      1965
+    ],
+    "lower_metal_id": "LEFT-M2-A-CANDIDATE",
+    "upper_metal_id": "RT-M3-UP"
+  },
+  "carrier_bindings": {
+    "lower": {
+      "source_id": "LEFT-M2-A-CANDIDATE",
+      "model_id": "LEFT-M2-A-CANDIDATE",
+      "source": {
+        "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+        "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+      },
+      "pointer": "/M2_A"
+    },
+    "upper": {
+      "source_id": "RT-M3-UP",
+      "model_id": "RT-M3-UP",
+      "source": {
+        "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+        "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+      },
+      "pointer": "/M3_carrier_continuation/old_features_unchanged/0"
+    }
+  },
+  "geometry_human_approved": false,
+  "description": "Mechanical binding to an already submitted question, not a new human review of current geometry."
+}

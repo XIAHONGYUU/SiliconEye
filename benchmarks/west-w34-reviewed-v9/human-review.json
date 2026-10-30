@@ -1,0 +1,111 @@
+{
+  "kind": "native_V2_identity_carrier_human_decision",
+  "actor": "human",
+  "date": "2026-10-30",
+  "statement": "W3-U、W3-D 均正确；W4-U、W4-D 均正确",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-review-request.json",
+      "sha256": "135b98579966ccb342be87b8d84f6cc55442081e24700f63a607c9d4ba04075f"
+    },
+    "source_observations": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-source-observations.json",
+      "sha256": "b7d9cf7110914df04dcfb5aa9c6a2a205882a399a2c8aed18b2b54e7a07f82ea"
+    },
+    "W3-U_image": {
+      "path": "docs/assets/west-w2-v1-reviewed-v8/W3-U-paired.png",
+      "sha256": "ada22a96bd49e7d425a36e27b33ba89e1670c5c4b06e86a0043e32a27fb0113e"
+    },
+    "W3-D_image": {
+      "path": "docs/assets/west-w2-v1-reviewed-v8/W3-D-paired.png",
+      "sha256": "c4cc71981cc31dcb0e7d38f867192d95aa4770f1da7db8a4fe19ca2dad6e1900"
+    },
+    "W4-U_image": {
+      "path": "docs/assets/west-w2-v1-reviewed-v8/W4-U-paired.png",
+      "sha256": "1cdd72d610243e0fc372c2b2447c1edb7da2ea1c58f669a9f54c45a5d70f916e"
+    },
+    "W4-D_image": {
+      "path": "docs/assets/west-w2-v1-reviewed-v8/W4-D-paired.png",
+      "sha256": "f8e24cd7c4ed63559deebce759b1b5cc833abaccd2f2f395d5547fbf02db9880"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "W3-V2-U",
+      "question_id": "W3-V2-U",
+      "statement": "W3-U、W3-D 均正确",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        702,
+        1900,
+        750,
+        1970
+      ],
+      "V2_present": true,
+      "lower_source_id": "WEST-M2-W3-SOURCE",
+      "upper_source_id": "RT-M3-UP",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "W3-V2-D",
+      "question_id": "W3-V2-D",
+      "statement": "W3-U、W3-D 均正确",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        730,
+        2705,
+        782,
+        2820
+      ],
+      "V2_present": true,
+      "lower_source_id": "WEST-M2-W3-SOURCE",
+      "upper_source_id": "RT-M3-DOWN",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "W4-V2-U",
+      "question_id": "W4-V2-U",
+      "statement": "W4-U、W4-D 均正确",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        337,
+        1900,
+        391,
+        1975
+      ],
+      "V2_present": true,
+      "lower_source_id": "WEST-M2-W4-SOURCE",
+      "upper_source_id": "RT-M3-UP",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "W4-V2-D",
+      "question_id": "W4-V2-D",
+      "statement": "W4-U、W4-D 均正确",
+      "via_layer": "V2",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        372,
+        2700,
+        428,
+        2825
+      ],
+      "V2_present": true,
+      "lower_source_id": "WEST-M2-W4-SOURCE",
+      "upper_source_id": "RT-M3-DOWN",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ]
+}

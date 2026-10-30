@@ -1,0 +1,27 @@
+{
+  "kind": "source_package_checks_not_physical_connectivity_proof",
+  "date": "2026-10-29",
+  "status": "PASS",
+  "frozen_old_files_exact": 8,
+  "raw_source_crops_pixel_exact": 5,
+  "source_routes_in_declared_native_scope": 5,
+  "local_html_resources_checked": 36,
+  "inline_script_syntax_checked": 1,
+  "png_visual_review": [
+    "m1-wide-marked.png",
+    "m1-left-marked.png",
+    "m1-center-marked.png",
+    "Q1-paired.png"
+  ],
+  "showcase_files_exact": 25,
+  "gh_pages_ref_exact": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "working_geometry_changed": false,
+  "reviewed_new_interfaces": 0,
+  "new_human_questions": 1,
+  "browser_interaction_tested": false,
+  "software_suite_rerun": false,
+  "reason": "No program change; prior127 tests belong to BR-R work-v3, not this source judgment.",
+  "human_decision": "PENDING_R34_LEFT_Q1",
+  "canonical_adoption": false,
+  "complete_network": false
+}

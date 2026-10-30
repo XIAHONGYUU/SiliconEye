@@ -1,0 +1,22 @@
+{
+  "actor": "AI",
+  "reason": "Add only the two W3/W4 source-reviewed M2 carriers. Neighboring thin runs are separate source context.",
+  "parent": {
+    "path": "docs/assets/west-w34-reviewed-v9/S2-west-M3-extent/manifest.json",
+    "sha256": "c37867ed45a581eaf5ec67ab0a100730251ba1f8cdcda8697eefc20844dd1dd2"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "WEST-M2-W3-SOURCE",
+    "WEST-M2-W4-SOURCE"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/west-w34-reviewed-v9/W34-inventory-supplement.json",
+      "sha256": "8edb21492a024b79c264d9d30fdd73871b678d10c67d29a2aa1b6aa385b74421"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add only the two W3/W4 source-reviewed M2 carriers. Neighboring thin runs are separate source context.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          250,
+          1730,
+          850,
+          2900
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "WEST-M2-W3-SOURCE-OBS",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          725,
+          1925
+        ],
+        [
+          740,
+          2350
+        ],
+        [
+          755,
+          2795
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_upper_pad"
+        },
+        {
+          "state": "visible_lower_pad"
+        }
+      ]
+    },
+    {
+      "id": "WEST-M2-W4-SOURCE-OBS",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          360,
+          1930
+        ],
+        [
+          380,
+          2355
+        ],
+        [
+          400,
+          2800
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_upper_pad"
+        },
+        {
+          "state": "visible_lower_pad"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "WEST-M2-W3-SOURCE-OBS",
+      "metal_id": "WEST-M2-W3-SOURCE"
+    },
+    {
+      "observation_id": "WEST-M2-W4-SOURCE-OBS",
+      "metal_id": "WEST-M2-W4-SOURCE"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "native": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-source-observations.json",
+      "sha256": "b7d9cf7110914df04dcfb5aa9c6a2a205882a399a2c8aed18b2b54e7a07f82ea"
+    },
+    "human": {
+      "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+      "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+    }
+  }
+}

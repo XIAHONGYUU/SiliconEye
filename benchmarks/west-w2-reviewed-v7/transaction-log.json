@@ -1,0 +1,48 @@
+{
+  "stages": [
+    {
+      "stage": "S1-left-viewport",
+      "request": {
+        "path": "benchmarks/west-w2-reviewed-v7/S1-left-viewport-request.json",
+        "sha256": "64c3ee081bdf142c2367f3baff4dd68736169cee550cddbc5d8d4f08ee266689"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w2-reviewed-v7/S1-left-viewport/manifest.json",
+        "sha256": "dc94fef380bc8022fb48ca1b930e2298312cf833700efdeadd2904006c5f675d"
+      }
+    },
+    {
+      "stage": "S2-west-M3-extent",
+      "request": {
+        "path": "benchmarks/west-w2-reviewed-v7/S2-west-M3-extent-request.json",
+        "sha256": "46f46902892a900885e3955a3b0f7d3e91ba10335dcf6488bf126f1cd851d5a5"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w2-reviewed-v7/S2-west-M3-extent/manifest.json",
+        "sha256": "23d0006c0be463bca557c6469c4293e44b63d18d3fbf8941b2e265881ab12d80"
+      }
+    },
+    {
+      "stage": "S3-W2-metal",
+      "request": {
+        "path": "benchmarks/west-w2-reviewed-v7/S3-W2-metal-request.json",
+        "sha256": "cc0fee5ec189786d8d9ee6502aa283b8e4dc6d93361566f70211ca41e55ca870"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w2-reviewed-v7/S3-W2-metal/manifest.json",
+        "sha256": "fc56e42b83ce0b19d0d98f8f81a6b71e8c0b875e3f3b50e647e470b7e73f1e9d"
+      }
+    },
+    {
+      "stage": "S4-W2-interfaces",
+      "request": {
+        "path": "benchmarks/west-w2-reviewed-v7/S4-W2-interfaces-request.json",
+        "sha256": "874138d812eabc628d590af174478d95c3e30f1fb5ffa7a69e4790665468c68a"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w2-reviewed-v7/S4-W2-interfaces/manifest.json",
+        "sha256": "2f32aba8078a8f2bc842b75e2b8bfd8f380337bd4161792ab682cd5a0671a695"
+      }
+    }
+  ]
+}

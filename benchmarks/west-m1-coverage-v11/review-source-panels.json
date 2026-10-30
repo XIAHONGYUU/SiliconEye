@@ -1,0 +1,67 @@
+{
+  "panels": [
+    {
+      "id": "source-full",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        280,
+        1850,
+        860,
+        2840
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "source-full-raw.png",
+      "marked": "source-full-marked.png"
+    },
+    {
+      "id": "source-middle",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        280,
+        2150,
+        860,
+        2460
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "source-middle-raw.png",
+      "marked": "source-middle-marked.png"
+    },
+    {
+      "id": "source-bottom",
+      "frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        280,
+        2480,
+        860,
+        2880
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        86,
+        82
+      ],
+      "raw": "source-bottom-raw.png",
+      "marked": "source-bottom-marked.png"
+    }
+  ]
+}

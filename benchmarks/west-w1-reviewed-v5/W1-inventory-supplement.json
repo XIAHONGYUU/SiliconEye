@@ -1,0 +1,68 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add the exact source-anchor W1 carrier; lower extent is a subsequent bound part, not a relocated anchor.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          1400,
+          1730,
+          3680,
+          3000
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "N-WEST-M2-W1-OBS",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          1502,
+          1920
+        ],
+        [
+          1515,
+          2320
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_upper_context"
+        },
+        {
+          "state": "partial_source_anchor_continues_down"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "N-WEST-M2-W1-OBS",
+      "metal_id": "N-WEST-M2-W1"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "native": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+      "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+    },
+    "human": {
+      "path": "benchmarks/west-w1-reviewed-v5/human-review.json",
+      "sha256": "6a2fc733886a9bc114ff114e57eff7ba994b8764e9eaffe8ec0cc5560d659f0a"
+    }
+  }
+}

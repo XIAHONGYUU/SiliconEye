@@ -1,0 +1,36 @@
+{
+  "kind": "native_entry_confirmation",
+  "actor": "human",
+  "date": "2026-10-29",
+  "statement": "都有",
+  "question_id": "CORRIDOR-M1-V1-ENTRY-Q1",
+  "region_id": "CORRIDOR-V1-A-SEARCH",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/corridor-m1-v1-entry-v1/review-request.json",
+      "sha256": "9832d1e08964f2da0684a686f7ab1e97a558e166aa1fea616c240ede38d70edb"
+    },
+    "batch_human_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    }
+  },
+  "decisions": {
+    "interface_id": "CORRIDOR-V1-A",
+    "via_layer": "V1",
+    "lower_metal_id": "C-M1-SPINE",
+    "upper_metal_id": "RT-M2-R01",
+    "connection_confirmed": true
+  },
+  "observed_cut_count": null,
+  "adapter_only": true,
+  "not_approved": [
+    "physical_cut_count",
+    "precise registered via landing",
+    "new design geometry",
+    "source-to-design coordinate adoption",
+    "complete M1/V1 coverage",
+    "old9 interface reapproval",
+    "complete network"
+  ]
+}

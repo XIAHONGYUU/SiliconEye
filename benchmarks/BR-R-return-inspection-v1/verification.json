@@ -1,0 +1,53 @@
+{
+  "kind": "native_return_inspection_verification",
+  "date": "2026-10-29",
+  "status": "FIVE_LOCAL_SOURCE_RELATIONS_PENDING",
+  "observations": {
+    "path": "benchmarks/BR-R-return-inspection-v1/source-observations.json",
+    "sha256": "300e9b056e2a2510d61ce329c5e67053824c4e832c14087b02fcceffdfe15bd9"
+  },
+  "request": {
+    "path": "benchmarks/BR-R-return-inspection-v1/review-request.json",
+    "sha256": "5237ae9b89a61e68673d99fd1ec626089cee351861122a8f4d7a5b79edb91ab6"
+  },
+  "relations_unique": 5,
+  "positive_contact_candidates": [
+    "P1",
+    "P4",
+    "P5"
+  ],
+  "local_gap_candidates": [
+    "P2",
+    "P3"
+  ],
+  "human_confirmed_new_relations": 0,
+  "below_legacy_m1_scope_ids": [
+    "P4",
+    "P5"
+  ],
+  "legacy_m1_scope_hash_bound": true,
+  "new_working_scope_adopted": false,
+  "new_geometry_objects": 0,
+  "new_interfaces": 0,
+  "global_isolation_claimed": false,
+  "raw_panels_pixel_exact": 4,
+  "csv_json_html_rows_exact": 5,
+  "local_links_checked": 11,
+  "script_syntax_checks": 1,
+  "original_model_replay_exact": true,
+  "preserved_metals": 32,
+  "preserved_reviewed_via_interfaces": 11,
+  "preserved_design_cut_centers": 46,
+  "source_to_design_transform": null,
+  "production_code_changed": false,
+  "software_tests_rerun": false,
+  "verification_scope": "Source artifact consistency and frozen model replay; not physical contact approval, image-recognition evaluation or geometry DRC.",
+  "png_visual_review": "PASS",
+  "browser_interaction": "NOT_TESTED",
+  "showcase_files_exact": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "prior_current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-29-BR-R-return-inspection.md",
+    "sha256": "8ec05a85e93f553397678778bcbb16868a91be3c5d76f6175c591962a088cc0c"
+  }
+}

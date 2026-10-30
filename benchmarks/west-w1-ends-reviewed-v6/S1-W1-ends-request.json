@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "kind": "conductive_reconstruction_workflow",
+  "sample": {
+    "path": "benchmarks/west-w1-ends-reviewed-v6/S1-W1-ends-sample.json",
+    "sha256": "63290cd1ba64c3ad48783f9f5f047d6edf6e2d4a6297a24638fee360d4725ba3"
+  },
+  "frames": [
+    "m1",
+    "m2",
+    "m3"
+  ],
+  "reviews": [
+    {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W1-V2-U-review-adapter.json",
+      "sha256": "a9e8a10f94ec6eb4c3771e201a84f8ca70a0f3cd4f154c7587f08f17b7532fa7"
+    },
+    {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W1-V2-D-review-adapter.json",
+      "sha256": "267ccc729d13a447f60c36022a1fb952391a52576764d4965a8ca656176573e9"
+    }
+  ],
+  "deferred_unknown_ids": [],
+  "questions": {
+    "RT-V2-U1": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-U2": "R1：上端孔组是否为V2并接到B-U？",
+    "RT-V2-D1": "R2：下部孔组是否为V2并接到B-D？",
+    "RT-V2-D2": "R2：下部孔组是否为V2并接到B-D？",
+    "N1-V2": "Carrier already confirmed: N1接A. Do not reopen; new array dimensions remain candidate.",
+    "W1-V2-U": "U1 V2 identity/carrier already human confirmed; do not reopen. Physical count and dimensions remain candidate.",
+    "W1-V2-D": "D1 V2 identity/carrier already human confirmed; do not reopen. Physical count and dimensions remain candidate."
+  },
+  "limits": [
+    "R1/R2均为本轮新候选，既有Q1/Q2批准不转移给本组。",
+    "新孔数/排列为AI观察，来源精确几何、物理尺度和工艺DRC未知。",
+    "N1与邻线的局部隔离按照片和规则几何保留；没有声明孔的交叉处不自动生成连接，也不证明物理无孔。",
+    "只建模两条M2及邻近上下文，不等于所有可见导体清单或全网。",
+    "本轮未新增V1识别；已收口V1只作防退化回放。",
+    "初稿下部4x2自洽但漏最末排，已在人工送审前按原图退回；本版为5x2 AI候选，软件通过不代表已确认实际孔数。",
+    "R1/R2的V2身份及局部承载已于2026-10-26人工确认；孔数/排列/尺寸仍为候选，前述“新候选”保留为送审历史和几何资格。",
+    "新增22条金属几何只对应本走廊AI清单，未获人工几何批准，不是新增电气连接。",
+    "原8个金属及4个V2接口完全保持；旧8个来源端部仍部分覆盖，不能据30/30声明照片/GDS完整。",
+    "C-U1～C-U5保持未知；未将弱带重建为M3，未判断N1上端V2或05/06连续性。",
+    "E1/E2按同帧可见长短关系修正，比例仍是规则设计候选；未批准像素投影或新增连接。",
+    "本轮已有8条金属的走廊端部补成候选并单列来源延伸，原生锚点和4个已审V2/孔中心不变；不把旧“部分覆盖”历史删除或升级为实测边界。",
+    "新22段分四组做AI来源复核，R1-R4与旧端部R5/R6仍待人工几何裁决；三条弱带、N1孔身份和05/06连续性仍未知。",
+    "N1→C-M3-L01 carrier confirmed by human; inherited N1 carrier/identity unknown wording is historical. Count, dimensions and new local coordinates are not human approved.",
+    "Only N1 short-head design y changes from675 to682; source native anchors and x positions remain unchanged.",
+    "N1 two-site array is an AI geometry candidate. Complete declared design-array enclosure may be checked without asserting the physical count or source geometry is complete.",
+    "03→T01 and04→T02 source carriers are human reviewed. Only two M2 design paths change; source native anchors, M3 and old interfaces remain exact. New dimensions are AI relative-geometry candidates.",
+    "C03/C04 two-site arrays are AI design hypotheses; human identity/carrier approval does not settle physical counts, dimensions or exact photo projection. A complete declared design group PASS does not establish source-array exhaustiveness.",
+    "05→E1 and06→E2 human source carriers confirmed. Only two M2 heads and two M3 local scope-entry x positions change; all native anchors and seven old interfaces are exact. Geometry is still an AI relative candidate.",
+    "C05/C06 arrays are design hypotheses with physical count unknown. Complete declared design-group enclosure does not qualify source-array completeness or PDK geometry.08 remains no distinct V2 identified in the reviewed scope, not physical absence.",
+    "A/B V1 identity and carrier to RT-M2-R01 are source-reviewed on2026-10-29. New partial M1 spine and relative via arrays are AI candidates; counts and exact source-to-design landing remain unknown.",
+    "Original30 M2/M3 metals,9 V2 interfaces and42 design cuts remain exact. One additive partial M1 inventory is not full M1 or corridor interface coverage.",
+    "A/B each use a two-site relative design hypothesis for whole-declared-array checks, not two physically observed holes. Additional physical holes remain unknown. Horizontal M1 branches are not claimed complete.",
+    "A-right/B-left horizontal M1 main runs are added only as source-bound local parts of C-M1-SPINE within the original corridor. Old wording about unmodeled horizontal branches remains historical for this scoped extension; teeth and outside continuations are still not modeled.",
+    "The original partial M1 inventory and source anchors are immutable. The separate local-part ledger supplies these two added branch observations, not full M1 coverage. No new interface or net edge is created.",
+    "BF24/BF26 contact BU and BF25 has no direct local contact to BU or L1/L2, human-reviewed on2026-10-29. Review applies only to these3 local contacts, not other23 fingers, BR returns, exact geometry, material identity, vias or global nets.",
+    "Only BF24/BF26 are added as connected local parts of C-M1-SPINE. BF25 is later added as an unassigned M1 geometry candidate, not a floating electrical node. Native anchors and all46 old design cut centers are preserved.",
+    "Lower L1/L2 bars remain source-only context and are not modeled here. Local lower noncontact is inherited from the human source verdict, not claimed as a lower-bar design enclosure or spacing check.",
+    "Explicit bottom-only WORKING-CANDIDATE canvas extension780x1240->780x1440; old coordinates/units/sites unchanged. This is not human physical-geometry approval or native source-scope adoption.",
+    "P1-P5 source contacts are reviewed. BR-R/R3/R4 dimensions and local source extensions remain candidates. L1/L2 local gaps do not establish global isolation; N3090/N3158 and BF24/BF26 lower contacts remain unknown.",
+    "L1/L2 are separate local working-geometry candidates. P2/P3 noncontact is only local to BR-R; no electrical floating or complete-network claim. Partial left endpoints are scope exits, not physical terminals.",
+    "Viewport expanded left with negative design x; original origin, sites and all native anchors unchanged. New M1/M3 relative geometry is a source-bound candidate, not a qualified photo transform.",
+    "The middle M3 context passes over new M2 A without a declared V2: no connection is inferred. Existing unknown thin tracks and unreviewed short fingers remain unknown.",
+    "Q1 V1 and U/D V2 identity/carriers are human source decisions. New5x2,3x3,5x3 complete arrays are AI candidates; physical counts, fine source landings and PDK dimensions stay unknown.",
+    "V1 and V2 may overlap in design XY on this M2 A pad. This candidate placement is not a human statement of per-hole co-location. All46 inherited site centers are exact.",
+    "Northward same-M1 continuation is represented without adding N as a VIA interface: its V1 identity/carrier still needs a new source decision. Old14 interface decisions remain exact.",
+    "N V1 connects to the same M2 A, source reviewed. The inherited N-pending sentence records the previous source-only stage; current15 interfaces are reviewed. New3x3 geometry is relative, all80 inherited sites stay exact, physical count and source geometry remain unknown.",
+    "Upper M1 east perimeter and partial west step/bar are modeled as source-bound candidates. F1 is source-only pending V1/carrier and has no modeled via. Do not bridge the neighboring thin M1 or declare all interior fingers/network complete.",
+    "F1 is source-reviewed V1 to W1; the inherited F1-pending sentence describes the prior package. Tab, carrier and array geometry are still AI candidates; no physical count is approved.",
+    "F1 complete2x2 array is an AI relative hypothesis; all89 prior sites unchanged. W1 upper/lower V2 remain source candidates, not working interfaces.",
+    "W1 U1 and D1 V2 identity/carriers were source-reviewed on2026-10-30. Historical pending wording remains prior-stage context. New3x2/5x2 groups are AI relative candidates, physical counts and precise source projection remain unknown.",
+    "All36 parent metals,16 approvals and93 prior design cuts remain exact. Upper array fits the existing W1 head without extending its metal or moving any old center. The middle crossing and neighboring separate M2 are not auto-connected."
+  ],
+  "parent": {
+    "path": "docs/assets/west-w1-reviewed-v5/S4-F1-interface/manifest.json",
+    "sha256": "b72ab651b4ea7975362a3fc62e0fa8d69e7ceba8cb68d27ea691775a1ba78564"
+  },
+  "preserve_via_center_ids": [
+    "RT-V2-U1",
+    "RT-V2-U2",
+    "RT-V2-D1",
+    "RT-V2-D2",
+    "N1-V2",
+    "C03-V2",
+    "C04-V2",
+    "C05-V2",
+    "C06-V2",
+    "CORRIDOR-V1-A",
+    "CORRIDOR-V1-B",
+    "LEFT-BU-V1-CANDIDATE",
+    "LEFT-M2-A-V2-U",
+    "LEFT-M2-A-V2-D",
+    "LEFT-BU-NORTH-V1",
+    "N-WEST-F1-V1"
+  ],
+  "allowed_changed_ids": [],
+  "source_assets": {
+    "m1": {
+      "wide_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-wide-raw.png",
+        "sha256": "19aead2f9de2826456a51aaae2083154f0274dd2a42f8ddf45647c5281c64278"
+      },
+      "wide_marked": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m1-wide-marked.png",
+        "sha256": "596c47744bc6cb618093f11f5cfc7d62f50050bd4e0bd798630a9fbffac191c3"
+      },
+      "detail_raw": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-detail-raw.png",
+        "sha256": "859e1f2e2a3c5ccba6ac4f0e7713071444e1936e6155fbcd2831563ce247ebb5"
+      },
+      "detail_marked": {
+        "path": "docs/assets/left-bu-joint-work-v3/source/m1-detail-marked.png",
+        "sha256": "29360acd3fd31c262d221ff0785b244c1f993d4acb6147aaf7a0a6616c91f7d1"
+      }
+    },
+    "m2": {
+      "wide_raw": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m2-wide-raw.png",
+        "sha256": "fc5dc5c5cae4314e26efb627df4ec718c205d23b200c45a53de44b914352540b"
+      },
+      "wide_marked": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m2-wide-marked.png",
+        "sha256": "79f0485e02b2aa89e95b9a68956d8574224a21952ba559f57f1f1573a6589091"
+      },
+      "detail_raw": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m2-detail-raw.png",
+        "sha256": "ad5f1767f0c86d1530d2cb583a70da82d56c6c8962e040d5fccdd2f04f673057"
+      },
+      "detail_marked": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m2-detail-marked.png",
+        "sha256": "892d152ee536b617c728269247a4669c55129bdafafc71abf1e6acef1deb540f"
+      }
+    },
+    "m3": {
+      "wide_raw": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m3-wide-raw.png",
+        "sha256": "627728b4000eca0df0f3e622d4e9145c5f963162a2748dceacf6f48f185690b6"
+      },
+      "wide_marked": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m3-wide-marked.png",
+        "sha256": "84fc16885c217c5e20d0d55270a839d95f05db2e9f927a14613f8c97f664161a"
+      },
+      "detail_raw": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m3-detail-raw.png",
+        "sha256": "a9a9cfe86c6bd45628a289aec7fa200d494c23f0d696da187221c7e2896a6e32"
+      },
+      "detail_marked": {
+        "path": "docs/assets/west-w1-reviewed-v5/source/m3-detail-marked.png",
+        "sha256": "a9a9cfe86c6bd45628a289aec7fa200d494c23f0d696da187221c7e2896a6e32"
+      }
+    }
+  },
+  "added_interface_ids": [
+    "W1-V2-U",
+    "W1-V2-D"
+  ],
+  "interface_extension_evidence": {
+    "path": "benchmarks/west-w1-ends-reviewed-v6/interface-addition-evidence.json",
+    "sha256": "1eb14742db366f016ceb2b51ab14969b19dcd2d949b8c253d0837b56f261c06a"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "kind": "native_V1_identity_carrier_human_decision",
+  "actor": "human",
+  "date": "2026-10-30",
+  "statement": "W3-N、W3-S 均为 V1，接 W3；W4-N、W4-S 均为 V1，接 W4",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/west-w34-reviewed-v9/W34-V1-review-request.json",
+      "sha256": "2e8f8eb8a5526d087255c14bc5f40dc040ec4c87f2a290cc1ed6a9fae655638c"
+    },
+    "source_observations": {
+      "path": "benchmarks/west-w34-reviewed-v9/W34-M1-source-observations.json",
+      "sha256": "6c660d73d1e304e50b8d0ae724548f0a25381313bdf8dcbada8c0ac60ba6c2fe"
+    },
+    "W3-N_image": {
+      "path": "docs/assets/west-w34-reviewed-v9/W3-N-paired.png",
+      "sha256": "b94c2374bb7147e12061f9afa7803565a7351acfaecefb8dd4170cdb40d118b4"
+    },
+    "W3-S_image": {
+      "path": "docs/assets/west-w34-reviewed-v9/W3-S-paired.png",
+      "sha256": "06466bb8a99ca74a2adffde55d6961d6c6672da5f2affe39faf56e2a7059f9c8"
+    },
+    "W4-N_image": {
+      "path": "docs/assets/west-w34-reviewed-v9/W4-N-paired.png",
+      "sha256": "4acf75aed358e1071e85427fcd940d1d7f1cc5785969b56d1756fb890f55f74b"
+    },
+    "W4-S_image": {
+      "path": "docs/assets/west-w34-reviewed-v9/W4-S-paired.png",
+      "sha256": "0fb94182517e6e758fc903f85e9bb5a2c916f7732bc3879738d8b0f040f1cbe5"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "W3-V1-N",
+      "question_id": "W3-V1-N",
+      "statement": "W3-N、W3-S 均为 V1，接 W3",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        728,
+        1905,
+        775,
+        1955
+      ],
+      "V1_present": true,
+      "lower_source_id": "W34-M1-NORTH-BAR-SOURCE",
+      "upper_source_id": "WEST-M2-W3-SOURCE",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "W3-V1-S",
+      "question_id": "W3-V1-S",
+      "statement": "W3-N、W3-S 均为 V1，接 W3",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        755,
+        2708,
+        810,
+        2756
+      ],
+      "V1_present": true,
+      "lower_source_id": "W34-M1-SOUTH-BAR-SOURCE",
+      "upper_source_id": "WEST-M2-W3-SOURCE",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "W4-V1-N",
+      "question_id": "W4-V1-N",
+      "statement": "W4-N、W4-S 均为 V1，接 W4",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        360,
+        1908,
+        410,
+        1975
+      ],
+      "V1_present": true,
+      "lower_source_id": "W34-M1-NORTH-BAR-SOURCE",
+      "upper_source_id": "WEST-M2-W4-SOURCE",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "W4-V1-S",
+      "question_id": "W4-V1-S",
+      "statement": "W4-N、W4-S 均为 V1，接 W4",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        385,
+        2710,
+        445,
+        2764
+      ],
+      "V1_present": true,
+      "lower_source_id": "W34-M1-SOUTH-BAR-SOURCE",
+      "upper_source_id": "WEST-M2-W4-SOURCE",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ]
+}

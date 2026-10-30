@@ -1,0 +1,23 @@
+{
+  "actor": "AI",
+  "reason": "Append only the source-reviewed F1 interface and its complete candidate group.",
+  "parent": {
+    "path": "docs/assets/west-w1-reviewed-v5/S3-W1-lower-extent/manifest.json",
+    "sha256": "30c1ef92234065ac8e8b75b7a79677d129d6acb6442648eed8738ff1ce839597"
+  },
+  "added_interface_ids": [
+    "N-WEST-F1-V1"
+  ],
+  "interface_observations": {
+    "N-WEST-F1-V1": {
+      "path": "benchmarks/west-w1-reviewed-v5/F1-array-observation.json",
+      "sha256": "2c2bbb5a48092e7b5c14477ba2f1ee277e3bec8104a5f974397a89f2a0b7d148"
+    }
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w1-reviewed-v5/human-review.json",
+      "sha256": "6a2fc733886a9bc114ff114e57eff7ba994b8764e9eaffe8ec0cc5560d659f0a"
+    }
+  }
+}

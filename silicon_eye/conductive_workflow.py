@@ -17,17 +17,17 @@ from string import Template
 
 import numpy as np
 from PIL import Image, ImageChops
-from shapely.geometry import Polygon, box
+from shapely.geometry import LineString, Point, Polygon, box
 
 from .conductive_layers import LAYERS, geometry, source_identity_audit, svg_layers
 from .conductive_medium import prepare as prepare_medium
 from .conductive_medium import source_order_audit
 from .conductive_quality import inherited_group_facts, quality_summary, source_shape_audit
 from .geometry_reconstruction import digest
-from .metal_reconstruction import feature_polygon, geometry_audit
+from .metal_reconstruction import design_canvas_bounds, feature_polygon, geometry_audit
 from .metal_via_pilot import group_via_budget, interface_audit, observed_array_audit, source_panels
 from .metal_via_pilot import regular_group_cuts as via_cuts
-from .review_package import Inputs
+from .review_package import Inputs, pointer
 
 
 def signature(cut):
@@ -80,7 +80,8 @@ def candidate_model(sample, snapshot):
     for layer, features in sample['features_by_layer'].items():
         if layer not in ('M1', 'M2', 'M3'):
             raise ValueError('Unsupported metal layer')
-        audit, polygons = geometry_audit(features, sample['metal_budget'], sample['canvas_wh'])
+        audit, polygons = geometry_audit(features, sample['metal_budget'], sample['canvas_wh'],
+                                        sample.get('canvas_bounds'))
         if audit['status'] != 'PASS':
             raise ValueError('Metal geometry gate failed: ' + layer)
         audits[layer] = audit
@@ -138,9 +139,12 @@ def candidate_model(sample, snapshot):
         ))
         if cut.get('cut_array_candidate'):
             objects[layer][-1]['candidate_cut_bounds'] = [c['bounds'] for c in cuts]
-    return dict(objects_by_layer=objects, source_photos=snapshot['source_photos'],
+    result = dict(objects_by_layer=objects, source_photos=snapshot['source_photos'],
                 canvas_wh=sample['canvas_wh'], reviewed_local_connections=[],
-                candidate_interfaces=copy.deepcopy(sample['interfaces'])), audits
+                candidate_interfaces=copy.deepcopy(sample['interfaces']))
+    if 'canvas_bounds' in sample:
+        result['canvas_bounds'] = copy.deepcopy(sample['canvas_bounds'])
+    return result, audits
 
 
 def load_parent(inputs, ref):
@@ -157,6 +161,58 @@ def load_parent(inputs, ref):
     return model, request
 
 
+def canvas_extension_audit(inputs, request, previous, sample, parent_request):
+    """Extend one viewport edge atomically; coordinate origin and old sites stay fixed."""
+    evidence = inputs.document(request['canvas_extension_evidence'])
+    before, after = previous['canvas_wh'], sample['canvas_wh']
+    if (not isinstance(before, list) or not isinstance(after, list)
+            or len(before) != 2 or len(after) != 2
+            or any(type(v) is not int or v <= 0 for v in before + after)):
+        raise ValueError('Canvas extension requires positive integer dimensions')
+    old_bounds = design_canvas_bounds(before, previous.get('canvas_bounds'))
+    new_bounds = design_canvas_bounds(after, sample.get('canvas_bounds'))
+    bottom = new_bounds[:3] == old_bounds[:3] and new_bounds[3] > old_bounds[3]
+    left = new_bounds[1:] == old_bounds[1:] and new_bounds[0] < old_bounds[0]
+    direction = 'BOTTOM_ONLY' if bottom else 'LEFT_ONLY' if left else None
+    if direction is None or any(type(v) is not int for v in old_bounds + new_bounds):
+        raise ValueError('Canvas extension supports strictly bottom-only or left-only growth')
+    if (evidence.get('kind') != 'conductive_canvas_extension'
+            or evidence.get('actor') != 'AI' or not evidence.get('reason')
+            or evidence.get('parent') != request['parent']
+            or evidence.get('from_canvas_wh') != before or evidence.get('to_canvas_wh') != after
+            or evidence.get('direction') != direction
+            or evidence.get('origin_xy') != [0, 0] or evidence.get('scale_xy') != [1, 1]
+            or evidence.get('translation_xy') != [0, 0]
+            or evidence.get('geometry_human_approved') is not False):
+        raise ValueError('Canvas extension evidence does not bind parent/extents/origin')
+    signed = 'canvas_bounds' in previous or 'canvas_bounds' in sample
+    if signed and (evidence.get('from_canvas_bounds') != old_bounds
+                   or evidence.get('to_canvas_bounds') != new_bounds):
+        raise ValueError('Signed canvas extension must bind both viewport bounds')
+    expected = copy.deepcopy(previous)
+    expected['canvas_wh'] = after
+    if 'canvas_bounds' in sample:
+        expected['canvas_bounds'] = sample['canvas_bounds']
+    if sample != expected or any(request.get(k) for k in (
+            'allowed_changed_ids', 'added_metal_ids', 'added_interface_ids', 'revision_evidence',
+            'extension_evidence', 'interface_extension_evidence', 'reviews', 'resolved_limits')):
+        raise ValueError('Canvas extension must preserve every non-canvas sample field')
+    for key in ('frames', 'source_assets', 'source_panel_spec', 'deferred_unknown_ids',
+                'questions'):
+        if request.get(key) != parent_request.get(key):
+            raise ValueError('Canvas extension cannot change source views or review scope')
+    inputs.evidence(evidence)
+    result = dict(status=direction + '_CANVAS_EXTENSION_PASS', evidence=request[
+        'canvas_extension_evidence'], from_canvas_wh=before, to_canvas_wh=after,
+        origin_xy=[0, 0], scale_xy=[1, 1], translation_xy=[0, 0],
+        all_existing_records_exact=True, native_source_scope_changed=False,
+        exact_geometry_human_approved=False)
+    if signed:
+        result.update(from_canvas_bounds=old_bounds, to_canvas_bounds=new_bounds,
+                      design_origin_xy=[0, 0], coordinate_translation_xy=[0, 0])
+    return result
+
+
 def inventory_geometry_audit(inputs, sample, snapshot):
     """Account for declared fragments without certifying source exhaustiveness."""
     inventory = inputs.document(sample['visible_inventory'])
@@ -170,6 +226,36 @@ def inventory_geometry_audit(inputs, sample, snapshot):
     if len(observations) != len(inventory['metal_observations']):
         raise ValueError('Duplicate inventory observation')
     mappings = sample['inventory_geometry_mapping']
+    supplements = sample.get('supplemental_visible_inventories', [])
+    for ref in supplements:
+        supplement = inputs.document(ref)
+        if (supplement.get('kind') != 'conductive_visible_inventory_supplement'
+                or supplement.get('actor') != 'AI' or not supplement.get('reason')
+                or supplement.get('base_inventory') != sample['visible_inventory']
+                or supplement.get('geometry_human_approved') is not False
+                or not supplement.get('metal_observations')):
+            raise ValueError('Invalid additive inventory supplement')
+        inputs.evidence(supplement)
+        for frame, scope in supplement['scope']['frames'].items():
+            if scope['photo'] != snapshot['source_photos'].get(frame):
+                raise ValueError('Supplement belongs to another photograph')
+            bounds = np.asarray(scope['native_bounds'], dtype=float)
+            if (bounds.shape != (4,) or not np.isfinite(bounds).all() or (bounds < 0).any()
+                    or (bounds[2:] <= bounds[:2]).any()
+                    or (bounds[2:] > snapshot['source_wh']).any()):
+                raise ValueError('Invalid supplemental source scope')
+            inputs.read(scope['photo'])
+        for observation in supplement['metal_observations']:
+            frame = observation['source_frame']
+            bounds = supplement['scope']['frames'][frame]['native_bounds']
+            path = np.asarray(observation['native_path'], dtype=float)
+            if (observation['id'] in observations or observation.get('mapped_model_id')
+                    or path.ndim != 2 or path.shape[1] != 2 or len(path) < 2
+                    or not np.isfinite(path).all()
+                    or any(not box(*bounds).covers(Point(x, y)) for x, y in path)):
+                raise ValueError('Supplement reassigns an inventory identity or leaves scope')
+            observations[observation['id']] = observation
+        mappings = mappings + supplement['inventory_geometry_mapping']
     if (len(mappings) != len(observations)
             or {r['observation_id'] for r in mappings} != set(observations)
             or len({r['metal_id'] for r in mappings}) != len(mappings)):
@@ -189,7 +275,7 @@ def inventory_geometry_audit(inputs, sample, snapshot):
             partial.append(old)
         elif feature['native_path'] != observation['native_path']:
             raise ValueError('New fragment moved away from inventory source path')
-    return dict(status='DECLARED_FRAGMENT_GEOMETRY_MAPPING_PASS',
+    result = dict(status='DECLARED_FRAGMENT_GEOMETRY_MAPPING_PASS',
                 inventory=sample['visible_inventory'],
                 listed_metal_observations=len(observations), mapped_geometry_count=len(mappings),
                 unmapped_observation_ids=[],
@@ -201,6 +287,63 @@ def inventory_geometry_audit(inputs, sample, snapshot):
                 complete_source_extent_geometry=False,
                 physical_inventory_exhaustiveness='AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED',
                 actual_photo_coverage_fraction=None)
+    if supplements:
+        result['supplemental_visible_inventories'] = supplements
+        result['scope_qualification'] = 'BASE_INVENTORY_PLUS_EXPLICIT_PARTIAL_SUPPLEMENTS'
+    return result
+
+
+def native_entry_review_source(inputs, sample, review, question, claim):
+    """Bind a new lower-layer entry to its native question, never to macro alignment."""
+    batch = inputs.human(review['sources']['batch_human_review'])
+    regions = {r['id']: r for r in question['regions']}
+    answers = [d for d in batch['decisions'] if d['interface_id'] == claim['id']]
+    if len(answers) != 1 or review.get('region_id') not in regions:
+        raise ValueError('Native entry answer is missing or duplicated')
+    region, answer = regions[review['region_id']], answers[0]
+    observations = inputs.document(question['observations'])
+    working = inputs.document(observations['working_request'])
+    source = inputs.document(working['sample'])
+    snapshot = inputs.document(sample['snapshot'])
+    features = {f['id']: f for fs in sample['features_by_layer'].values() for f in fs}
+    lower = features[claim['lower_metal_id']]
+    if (review.get('kind') != 'native_entry_confirmation'
+            or batch.get('kind') != 'native_entry_human_judgment'
+            or review.get('question_id') != question['question_id']
+            or batch.get('question_id') != question['question_id']
+            or review['statement'] != batch['statement']
+            or batch['sources']['submitted_request'] != review['sources']['submitted_request']
+            or review.get('observed_cut_count') is not None
+            or batch.get('observed_cut_count') is not None
+            or answer.get('physical_cut_count') is not None
+            or answer.get('design_geometry_human_approved') is not False
+            or answer.get('V1_present') is not True
+            or answer.get('via_layer') != 'V1'
+            or answer.get('connection_confirmed') is not True
+            or review['decisions'].get('connection_confirmed') is not True
+            or answer.get('region_id') != region['id']
+            or answer.get('source_frame') != region['source_frame']
+            or answer.get('native_bounds') != region['native_bounds']
+            or claim['source_frame'] != region['source_frame'] or region['source_frame'] != 'm1'
+            or claim['native_bounds'] != region['native_bounds']
+            or claim['layer'] != 'V1' or claim['layer_pair'] != ['M1', 'M2']
+            or answer.get('upper_metal_id') != region['upper_M2_candidate']
+            or claim['upper_metal_id'] != region['upper_M2_candidate']
+            or lower['source_frame'] != 'm1' or lower['layer'] != 'M1'
+            or not any(box(*region['native_bounds']).covers(Point(x, y))
+                       for x, y in lower['native_path'])
+            or source['snapshot'] != sample['snapshot']
+            or any(snapshot['source_photos'].get(k) != v
+                   for k, v in observations['source_photos'].items())
+            or not {'m1', 'm2'} <= set(observations['source_photos'])):
+        raise ValueError('Native entry review exceeds the original identity/carrier scope')
+    for ref in question['images'].values():
+        inputs.read(ref)
+    # The new M1 ID and geometry are an AI mapping of the approved source region.
+    # Only the original M2 anchor is inherited from the submitted baseline.
+    source['features_by_layer']['M1'] = [lower]
+    source['interfaces'] = [signature(claim)]
+    return source
 
 
 def source_extent_audit(inputs, sample):
@@ -245,6 +388,47 @@ def source_extent_audit(inputs, sample):
                                               for s in r['endpoint_states']),
                 original_native_anchors_preserved=True, geometry_human_approved=False,
                 precise_extent_geometry_qualified=False, complete_network=False)
+
+
+def local_part_source_audit(inputs, sample, snapshot):
+    """Bind every declared local addition to native evidence without certifying pixels."""
+    evidence = inputs.document(sample['local_part_source_evidence'])
+    if (evidence.get('kind') != 'local_metal_part_source_evidence'
+            or evidence.get('actor') != 'AI' or not evidence.get('reason')
+            or evidence.get('geometry_human_approved') is not False):
+        raise ValueError('Local parts need explicit AI source evidence')
+    inputs.evidence(evidence)
+    features = {f['id']: f for fs in sample['features_by_layer'].values() for f in fs}
+    parts = {(f['id'], p['id']): p for f in features.values() for p in f.get('local_parts', [])}
+    rows = evidence['parts']
+    if (len(rows) != len(parts)
+            or {(row['metal_id'], row['part_id']) for row in rows} != set(parts)):
+        raise ValueError('Local part source ledger omits or duplicates geometry')
+    for row in rows:
+        feature, part = features[row['metal_id']], parts[row['metal_id'], row['part_id']]
+        frame = feature['source_frame']
+        if (row['source_frame'] != frame
+                or row['source_photo'] != snapshot['source_photos'][frame]
+                or row['design_bounds'] != part['bounds']
+                or row.get('geometry_human_approved') is not False):
+            raise ValueError('Local part geometry/source binding mismatch')
+        native = np.asarray(row['native_path'], dtype=float)
+        bounds = np.asarray(row['native_scope_bounds'], dtype=float)
+        if (native.ndim != 2 or native.shape[1] != 2 or len(native) < 2
+                or not np.isfinite(native).all() or bounds.shape != (4,)
+                or not np.isfinite(bounds).all() or (bounds < 0).any()
+                or (bounds[2:] <= bounds[:2]).any()
+                or (bounds[2:] > snapshot['source_wh']).any()
+                or any(not box(*bounds).covers(Point(x, y)) for x, y in native)):
+            raise ValueError('Local part leaves its native source scope')
+        spread = np.ptp(native, axis=0)
+        left, top, right, bottom = part['bounds']
+        if (max(spread) <= 0 or max(spread) < 2 * min(spread)
+                or int(np.argmax(spread)) != int(np.argmax([right-left, bottom-top]))):
+            raise ValueError('Local part source/design principal direction mismatch')
+    return dict(status='SOURCE_BOUND_LOCAL_PART_CANDIDATES',
+                evidence=sample['local_part_source_evidence'], part_count=len(parts),
+                source_geometry_qualified=False, geometry_human_approved=False)
 
 
 def native_carrier_review_source(inputs, sample, review, question, claim):
@@ -332,22 +516,99 @@ def native_batch_carrier_review_source(inputs, sample, review, question, claim):
     return source
 
 
+def native_source_decision_adapter(inputs, sample, review, question, claim):
+    """Map an existing native human verdict to source-bound working IDs, not dimensions."""
+    batch = inputs.human(review['sources']['original_human_review'])
+    original = inputs.document(question['original_submitted_request'])
+    scope_document = inputs.document(question['scope_source'])
+    scope = pointer(scope_document, question['scope_pointer'])
+    answer = pointer(batch, question['decision_pointer'])
+    questions = original.get('questions', [original])
+    layer = claim['layer']
+    native_bounds = (scope.get('m1_native_search_bounds') if layer == 'V1'
+                     else scope.get('native_search_bounds'))
+    if (review.get('actor') != 'AI'
+            or question.get('kind') != 'scoped_native_interface_decision_binding'
+            or review.get('statement') != batch['statement']
+            or batch['sources']['submitted_request'] != question['original_submitted_request']
+            or len([q for q in questions if q.get('question_id') == question['question_id']]) != 1
+            or answer.get('question_id', batch.get('question_id')) != question['question_id']
+            or question['scope_source'] not in [original.get('observation_source'),
+                                               original.get('sources', {}).get('observations')]
+            or answer.get('interface_id') != claim['id'] or scope.get('id') != claim['id']
+            or answer.get('via_layer') != layer
+            or answer.get(layer + '_present') is not True
+            or answer.get('source_frame') != claim['source_frame']
+            or answer.get('native_search_bounds') != native_bounds
+            or native_bounds != claim['native_bounds']
+            or answer.get('connection_confirmed') is not True
+            or answer.get('physical_cut_count') is not None
+            or answer.get('design_geometry_human_approved') is not False
+            or review.get('observed_cut_count') is not None
+            or review['decisions'].get('connection_confirmed') is not True
+            or question.get('scope_signature') != signature(claim)):
+        raise ValueError('Native decision adapter exceeds original question/verdict scope')
+    inputs.evidence(review)
+    features = {f['id']: f for fs in sample['features_by_layer'].values() for f in fs}
+    snapshot = inputs.document(sample['snapshot'])
+    if (not scope_document.get('photos') or any(snapshot['source_photos'].get(frame) != photo
+            for frame, photo in scope_document['photos'].items())):
+        raise ValueError('Native decision adapter photograph drift')
+    bindings = question['carrier_bindings']
+    if set(bindings) != {'lower', 'upper'}:
+        raise ValueError('Native decision adapter needs both source carrier bindings')
+    for side in ('lower', 'upper'):
+        binding = bindings[side]
+        feature = features[claim[side + '_metal_id']]
+        record = pointer(inputs.document(binding['source']), binding['pointer'])
+        frame = record.get('source_frame', record.get('frame'))
+        if (binding['model_id'] != feature['id'] or binding['source_id'] != record['id']
+                or answer[side + '_source_id'] != record['id']
+                or frame != feature['source_frame']):
+            raise ValueError('Native decision adapter carrier identity drift')
+        if binding.get('local_part_id'):
+            ledger = inputs.document(sample['local_part_source_evidence'])
+            rows = [r for r in ledger['parts'] if r['metal_id'] == feature['id']
+                    and r['part_id'] == binding['local_part_id']]
+            if (len(rows) != 1 or rows[0].get('source_observation_id') != record['id']
+                    or rows[0]['native_path'] != record['native_path']
+                    or rows[0]['source_photo'] != snapshot['source_photos'][frame]
+                    or not LineString(record['native_path']).intersects(box(*native_bounds))):
+                raise ValueError('Native decision adapter local source part drift')
+        elif feature['id'] != record['id'] or feature['native_path'] != record['native_path']:
+            raise ValueError('Native decision adapter direct source anchor drift')
+    # Only the reviewed source signature is adapted. No new image or geometry is
+    # represented as having been shown to the human, and no count is synthesized.
+    source = copy.deepcopy(sample)
+    source['interfaces'] = [signature(claim)]
+    return source
+
+
 def apply_reviews(inputs, sample, refs):
     claims = {c['id']: c for c in sample['interfaces']}
     decisions, approved = {}, []
     for ref in refs:
-        review = inputs.human(ref)
+        review = inputs.document(ref)
+        adapted = review.get('kind') == 'native_source_decision_adapter'
+        if not adapted:
+            review = inputs.human(ref)
+        authority_ref = review['sources']['original_human_review'] if adapted else ref
         decision = review['decisions']
         key = decision.get('interface_id', decision.get('id'))
         if (key not in claims or set(decision) - {'interface_id', 'id', 'via_layer',
                 'lower_metal_id', 'upper_metal_id', 'connection_confirmed'}):
             raise ValueError('Review exceeds interface scope')
         source = inputs.document(review['sources']['submitted_request'])
-        if source.get('kind') == 'scoped_native_carrier_review_request':
+        if adapted:
+            source = native_source_decision_adapter(
+                inputs, sample, review, source, claims[key])
+        elif source.get('kind') == 'scoped_native_carrier_review_request':
             source = native_carrier_review_source(inputs, sample, review, source, claims[key])
         elif source.get('kind') == 'scoped_native_carrier_comparison_review_request':
             source = native_batch_carrier_review_source(
                 inputs, sample, review, source, claims[key])
+        elif source.get('kind') == 'scoped_native_M1_V1_entry_review_request':
+            source = native_entry_review_source(inputs, sample, review, source, claims[key])
         if source.get('kind') == 'conductive_reconstruction_workflow':
             binding = review['sources']['submitted_manifest']
             manifest = inputs.document(binding)
@@ -387,13 +648,13 @@ def apply_reviews(inputs, sample, refs):
             if (not array or array['rows'] * array['columns'] != count
                     or claim.get('count_evidence') != ref):
                 raise ValueError('Reviewed multi-cut count/footprint evidence was lost or changed')
-        result = dict(id=key, connection_confirmed=verdict, human_review=ref)
+        result = dict(id=key, connection_confirmed=verdict, human_review=authority_ref)
         if key in decisions and decisions[key] != result:
             raise ValueError('Conflicting human decisions need explicit correction')
         decisions[key] = result
         if verdict is True:
             approved.append(dict(**signature(claim), status='human_confirmed_scoped_interface',
-                                 connection_confirmed=True, human_review=ref,
+                                 connection_confirmed=True, human_review=authority_ref,
                                  physical_cut_count=count))
     return approved, decisions
 
@@ -476,18 +737,29 @@ def prepare(root, request):
     if sample.get('source_extent_evidence'):
         extent_candidates = source_extent_audit(inputs, sample)
         audits['source_extent_candidates'] = extent_candidates
+    if sample.get('local_part_source_evidence'):
+        audits['local_part_source_candidates'] = local_part_source_audit(inputs, sample, snapshot)
     added = []
     added_interfaces = []
-    parent = parent_request = None
+    parent = parent_request = canvas_extension = None
     if request.get('parent'):
         parent, parent_request = load_parent(inputs, request['parent'])
         if request.get('preserve_via_center_ids'):
             audits['preserved_via_centers'] = preserve_via_centers(
                 parent, model, request['preserve_via_center_ids'])
         previous = inputs.document(parent_request['sample'])
-        if any(sample.get(k) != previous.get(k) for k in ('snapshot', 'canvas_wh', 'metal_budget',
-                                                  'via_budget', 'source_order_checks')):
+        if any(sample.get(k) != previous.get(k) for k in ('snapshot', 'metal_budget',
+                                                        'via_budget', 'source_order_checks')):
             raise ValueError('Revision cannot change snapshot, canvas or budgets')
+        if (sample['canvas_wh'] != previous['canvas_wh']
+                or sample.get('canvas_bounds') != previous.get('canvas_bounds')):
+            if legacy or not request.get('canvas_extension_evidence'):
+                raise ValueError('Revision cannot change snapshot, canvas or budgets')
+            canvas_extension = canvas_extension_audit(
+                inputs, request, previous, sample, parent_request)
+            audits['canvas_extension'] = canvas_extension
+        elif request.get('canvas_extension_evidence'):
+            raise ValueError('Canvas extension declaration without an increased canvas')
         old = {f['id']: f for fs in previous['features_by_layer'].values() for f in fs}
         new = {f['id']: f for fs in sample['features_by_layer'].values() for f in fs}
         old.update({c['id']: c for c in previous['interfaces']})
@@ -552,6 +824,11 @@ def prepare(root, request):
                     'additional_source_order_checks'):
             if previous.get(key) is not None and sample.get(key) != previous[key]:
                 raise ValueError('Existing inventory/order binding cannot silently change')
+        previous_supplements = previous.get('supplemental_visible_inventories', [])
+        supplements = sample.get('supplemental_visible_inventories', [])
+        if (supplements[:len(previous_supplements)] != previous_supplements
+                or (supplements != previous_supplements and not added)):
+            raise ValueError('Inventory supplements must be append-only with added metal')
         old_extent, new_extent = (value.get('source_extent_evidence')
                                   for value in (previous, sample))
         if old_extent and not new_extent:
@@ -561,6 +838,11 @@ def prepare(root, request):
             if (not request.get('revision_evidence')
                     or evidence.get('basis_parent') != request['parent']):
                 raise ValueError('New extent evidence must bind the current revision parent')
+        old_parts, new_parts = (value.get('local_part_source_evidence')
+                                for value in (previous, sample))
+        if (old_parts and not new_parts) or (
+                new_parts and new_parts != old_parts and not request.get('revision_evidence')):
+            raise ValueError('Local part evidence cannot disappear or change without a revision')
         changes = sorted(k for k in old if old[k] != new[k])
         if changes != sorted(request.get('allowed_changed_ids', [])):
             raise ValueError('Revision change scope mismatch')
@@ -588,6 +870,10 @@ def prepare(root, request):
                 raise ValueError('Revision cannot silently move native source anchors')
     else:
         changes = []
+        if 'canvas_bounds' in sample:
+            raise ValueError('Signed canvas bounds require an explicit parent extension')
+        if request.get('canvas_extension_evidence'):
+            raise ValueError('Canvas extension requires a parent package')
         if request.get('added_metal_ids') or request.get('extension_evidence'):
             raise ValueError('Metal extension requires a parent package')
         if request.get('added_interface_ids') or request.get('interface_extension_evidence'):
@@ -673,6 +959,17 @@ def prepare(root, request):
                  deferred_unknown_ids=deferred, review_decisions=decisions,
                  net_edges=[], complete_network=False, automatic_network_export_allowed=False,
                  precise_projection_allowed=False, geometry_adopted=False)
+    canvas_history = copy.deepcopy(parent.get('canvas_extension_history', [])) if parent else []
+    if canvas_extension:
+        if (model['objects_by_layer'] != parent['objects_by_layer']
+                or model['candidate_interfaces'] != parent['candidate_interfaces']
+                or model['reviewed_local_connections'] != parent['reviewed_local_connections']
+                or model['pending_interface_ids'] != parent['pending_interface_ids']
+                or model['review_sources'] != parent['review_sources']):
+            raise ValueError('Canvas-only transaction changed geometry or reviewed connections')
+        canvas_history.append(canvas_extension)
+    if canvas_history:
+        model['canvas_extension_history'] = canvas_history
     resolved = dict(parent.get('resolved_limits', {})) if parent else {}
     resolved.update(request.get('resolved_limits', {}))
     if resolved:
@@ -717,8 +1014,10 @@ def prepare(root, request):
 
 def page(model, report, sample, request, output, root):
     w, h = model['canvas_wh']
-    drawing = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+f'{w} {h}">'
-    drawing += svg_layers(model, [0, 0, w, h])
+    bounds = design_canvas_bounds([w, h], model.get('canvas_bounds'))
+    drawing = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="'
+               + f'{bounds[0]} {bounds[1]} {w} {h}">')
+    drawing += svg_layers(model, bounds)
     for layer, features in sample['features_by_layer'].items():
         drawing += f'<g data-layer="{layer}" fill="white" font-size="24">'
         for f in features:

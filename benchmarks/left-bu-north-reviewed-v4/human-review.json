@@ -1,0 +1,41 @@
+{
+  "kind": "native_V1_identity_carrier_human_decision",
+  "actor": "human",
+  "date": "2026-10-29",
+  "question_id": "LEFT-BU-NORTH-V1-Q1",
+  "statement": "N：是 V1，接 A",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/left-bu-joint-work-v3/north-review-request.json",
+      "sha256": "ea3dedd88d67d3beae451b0eada399935bde45e95b2c179f1bbe3cf9fa519de5"
+    },
+    "source_observations": {
+      "path": "benchmarks/left-bu-joint-work-v3/north-interface-observation.json",
+      "sha256": "e800b638538e4257a8dc6493c8ebaccfe34f314cc2852e3d9c40074037f70ce6"
+    },
+    "submitted_pair": {
+      "path": "docs/assets/left-bu-joint-work-v3/N-paired.png",
+      "sha256": "34e1a2c7f21541457cb2637cb5c4def60f86d475ec304c3e292d9c00da87a699"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "LEFT-BU-NORTH-V1",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        1955,
+        1930,
+        2025,
+        2002
+      ],
+      "V1_present": true,
+      "lower_source_id": "BU-UP-NORTH-SOURCE",
+      "upper_source_id": "LEFT-M2-A-CANDIDATE",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ]
+}

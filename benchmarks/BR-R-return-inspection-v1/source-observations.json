@@ -1,0 +1,227 @@
+{
+  "kind": "AI_native_same_layer_return_inspection",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "baseline_request": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  },
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "source_frame": "m1",
+  "context_id": "BR-R",
+  "BR_R_native_path_candidate": [
+    [
+      3098,
+      2785
+    ],
+    [
+      3101,
+      2924
+    ],
+    [
+      3104,
+      3070
+    ],
+    [
+      3108,
+      3174
+    ]
+  ],
+  "local_relations": [
+    {
+      "id": "P1",
+      "source_target_id": "BU",
+      "native_anchor": [
+        3098,
+        2785
+      ],
+      "native_bounds": [
+        3075,
+        2760,
+        3125,
+        2820
+      ],
+      "local_contact_candidate": true,
+      "label": "上端接 BU",
+      "basis": "Vertical BR-R bright run appears continuous into the upper horizontal bar. No separate gap resolved.",
+      "outside_legacy_y_scope": false
+    },
+    {
+      "id": "P2",
+      "source_target_id": "L1-R",
+      "native_anchor": [
+        3084,
+        2923
+      ],
+      "native_bounds": [
+        3025,
+        2905,
+        3120,
+        2935
+      ],
+      "local_contact_candidate": false,
+      "label": "L1 本处留隙",
+      "basis": "The near lower bar ends left of BR-R; dark background remains before the vertical run. Does not establish global isolation.",
+      "outside_legacy_y_scope": false
+    },
+    {
+      "id": "P3",
+      "source_target_id": "L2-R",
+      "native_anchor": [
+        3085,
+        2944
+      ],
+      "native_bounds": [
+        3025,
+        2931,
+        3120,
+        2960
+      ],
+      "local_contact_candidate": false,
+      "label": "L2 本处留隙",
+      "basis": "The farther lower bar also ends before BR-R. Do not extend a prior approximate endpoint marker across the visible gap.",
+      "outside_legacy_y_scope": false
+    },
+    {
+      "id": "P4",
+      "source_target_id": "BRR-H3070",
+      "native_anchor": [
+        3104,
+        3070
+      ],
+      "native_bounds": [
+        3065,
+        3045,
+        3130,
+        3100
+      ],
+      "local_contact_candidate": true,
+      "label": "接 R3 下方宽横条",
+      "basis": "BR-R continues downward past L1/L2 and appears to form a T junction with the wider horizontal strip near y3070, not the adjacent thin strip near y3090.",
+      "outside_legacy_y_scope": true
+    },
+    {
+      "id": "P5",
+      "source_target_id": "BRR-H3175",
+      "native_anchor": [
+        3108,
+        3174
+      ],
+      "native_bounds": [
+        3065,
+        3140,
+        3135,
+        3200
+      ],
+      "local_contact_candidate": true,
+      "label": "接 R4 底部左折条",
+      "basis": "The same vertical run appears to turn left into the broad strip near y3175. This is not the shorter thin strip near y3158, nor a final physical end.",
+      "outside_legacy_y_scope": true
+    }
+  ],
+  "classification_status": "AI_SOURCE_CANDIDATES_NOT_HUMAN_CONFIRMED",
+  "legacy_source_scope": {
+    "source_frame": "m1",
+    "native_bounds": [
+      2940,
+      1900,
+      3670,
+      3000
+    ],
+    "scope_source": {
+      "path": "benchmarks/corridor-m1-horizontal-branches-v1/source-ledger.json",
+      "sha256": "8b96524a7f511bffa416bc15552141ae522ab9ac2178e745b3e889e544358dbb"
+    },
+    "qualification": "Earlier M1 local-part source scope; separate from M2/M3 frames and not a physical chip boundary."
+  },
+  "new_source_context_scope": {
+    "native_bounds": [
+      2670,
+      2640,
+      3300,
+      3250
+    ],
+    "working_scope_changed": false
+  },
+  "context_bars": [
+    {
+      "id": "BRR-H3070",
+      "page_label": "R3",
+      "role": "wider horizontal strip near y3070",
+      "native_path_candidate": [
+        [
+          2860,
+          3075
+        ],
+        [
+          3104,
+          3070
+        ]
+      ],
+      "model_id": null
+    },
+    {
+      "id": "BRR-H3175",
+      "page_label": "R4",
+      "role": "broad left-turn strip near y3175",
+      "native_path_candidate": [
+        [
+          2860,
+          3180
+        ],
+        [
+          3108,
+          3174
+        ]
+      ],
+      "model_id": null
+    }
+  ],
+  "excluded_neighbors": [
+    {
+      "id": "N3090",
+      "role": "thin neighboring strip near y3090; not the R3 wide strip",
+      "contact_to_BRR": null
+    },
+    {
+      "id": "N3158",
+      "role": "shorter thin neighboring strip near y3158; not the R4 bottom return",
+      "contact_to_BRR": null
+    },
+    {
+      "id": "OUTER-SPINE",
+      "role": "original outer M1 spine near x3155; not the inner BR-R run near x3100",
+      "new_contact_claim": null
+    }
+  ],
+  "qualifications": {
+    "source_to_design_transform": null,
+    "precise_endpoints_measured": false,
+    "via_identity": null,
+    "physical_cut_count": null,
+    "global_isolation_claimed": false,
+    "complete_network": false,
+    "new_geometry_objects": 0,
+    "new_interfaces": 0
+  },
+  "limits": [
+    "All five are local same-layer source candidates; no new connection is treated as human confirmed.",
+    "L1/L2 local gaps do not establish full-net separation. Connections can exist via other ends or layers.",
+    "P4/P5 extend beyond old native y3000 scope. Do not force these into the old780x1240 canvas, shrink the run, or silently change existing coordinates.",
+    "Original approximate L1/L2 endpoints are locators, not measured metal boundaries. The native endpoint windows govern this review.",
+    "No V1/V2 identity, hole count or cross-layer projection inferred from bright lines."
+  ],
+  "preserved_reviews": {
+    "A_B_V1": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    },
+    "BF24_25_26": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    }
+  }
+}

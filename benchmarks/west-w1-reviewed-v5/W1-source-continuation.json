@@ -1,0 +1,309 @@
+{
+  "kind": "AI_native_W1_continuation_after_reviewed_F1",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "human_F1_source": {
+    "path": "benchmarks/west-w1-reviewed-v5/human-review.json",
+    "sha256": "6a2fc733886a9bc114ff114e57eff7ba994b8764e9eaffe8ec0cc5560d659f0a"
+  },
+  "parent_working_request": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/next-request.json",
+    "sha256": "4c351612320a48fa2d50aa9240e1d62166adb8fdab3945936ada0d7c3c919409"
+  },
+  "M2_W1": {
+    "id": "N-WEST-M2-W1",
+    "frame": "m2",
+    "native_path": [
+      [
+        1502,
+        1920
+      ],
+      [
+        1515,
+        2320
+      ]
+    ],
+    "native_carrier_context_bounds": [
+      1478,
+      1898,
+      1535,
+      2320
+    ],
+    "end_states": [
+      "visible_top_context",
+      "continues_down_beyond_this_review"
+    ]
+  },
+  "visible_full_path": {
+    "id": "N-WEST-M2-W1-FULL-SOURCE",
+    "frame": "m2",
+    "native_path": [
+      [
+        1502,
+        1920
+      ],
+      [
+        1515,
+        2320
+      ],
+      [
+        1525,
+        2795
+      ]
+    ],
+    "native_scope_bounds": [
+      1400,
+      1750,
+      1690,
+      2890
+    ],
+    "end_states": [
+      "visible_upper_pad",
+      "visible_lower_pad_not_photo_boundary"
+    ]
+  },
+  "V2_sites": [
+    {
+      "id": "W1-V2-U",
+      "label": "U1",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        1480,
+        1900,
+        1528,
+        1965
+      ],
+      "via_layer": "V2",
+      "V2_present": null,
+      "lower_source_id": "N-WEST-M2-W1",
+      "upper_metal_candidate_id": "RT-M3-UP",
+      "m3_native_carrier_search_bounds": [
+        1380,
+        1935,
+        1670,
+        2015
+      ],
+      "physical_cut_count": null,
+      "connection_confirmed": null
+    },
+    {
+      "id": "W1-V2-D",
+      "label": "D1",
+      "source_frame": "m2",
+      "native_search_bounds": [
+        1500,
+        2705,
+        1545,
+        2805
+      ],
+      "via_layer": "V2",
+      "V2_present": null,
+      "lower_source_id": "N-WEST-M2-W1",
+      "upper_metal_candidate_id": "RT-M3-DOWN",
+      "m3_native_carrier_search_bounds": [
+        1380,
+        2730,
+        1670,
+        2855
+      ],
+      "physical_cut_count": null,
+      "connection_confirmed": null
+    }
+  ],
+  "neighboring_component": {
+    "frame": "m2",
+    "native_bounds": [
+      1590,
+      2380,
+      1650,
+      2890
+    ],
+    "same_metal_as_W1": null,
+    "basis": "A separate right-hand run starts near y2400; visible spacing remains. Do not merge by pattern or by the middle M3 crossing."
+  },
+  "middle_crossing": {
+    "upper_metal_context_id": "RT-M3-MID",
+    "V2_on_W1": null,
+    "connection_confirmed": null
+  },
+  "source_to_design_transform": null,
+  "fine_landing_qualified": false,
+  "geometry_adopted": false,
+  "net_edges": [],
+  "complete_network": false,
+  "M3_carrier_continuation": {
+    "old_features_unchanged": [
+      {
+        "id": "RT-M3-UP",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            1958
+          ],
+          [
+            3650,
+            1938
+          ]
+        ],
+        "design_path": [
+          [
+            40,
+            184
+          ],
+          [
+            700,
+            184
+          ]
+        ],
+        "design_width": 60,
+        "label": "B-U upper bus",
+        "label_xy": [
+          65,
+          139
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ],
+        "local_parts": [
+          {
+            "id": "LEFT-BUS-UP",
+            "bounds": [
+              -1440,
+              154,
+              76,
+              214
+            ],
+            "basis": "Source-bound orthogonal working candidate; no PDK/source dimension acceptance."
+          }
+        ]
+      },
+      {
+        "id": "RT-M3-DOWN",
+        "layer": "M3",
+        "source_frame": "m3",
+        "native_path": [
+          [
+            2980,
+            2750
+          ],
+          [
+            3650,
+            2730
+          ]
+        ],
+        "design_path": [
+          [
+            40,
+            870
+          ],
+          [
+            700,
+            870
+          ]
+        ],
+        "design_width": 80,
+        "label": "B-D lower bus",
+        "label_xy": [
+          65,
+          825
+        ],
+        "role": "structural_hypothesis",
+        "end_states": [
+          "visible_extent_unreviewed",
+          "continues_beyond_review_window_unknown"
+        ],
+        "local_parts": [
+          {
+            "id": "LEFT-BUS-DOWN",
+            "bounds": [
+              -1440,
+              830,
+              76,
+              910
+            ],
+            "basis": "Source-bound orthogonal working candidate; no PDK/source dimension acceptance."
+          }
+        ]
+      }
+    ],
+    "candidate_paths": [
+      {
+        "id": "RT-M3-UP-W1-SOURCE",
+        "frame": "m3",
+        "native_path": [
+          [
+            1380,
+            1980
+          ],
+          [
+            1700,
+            1973
+          ],
+          [
+            2980,
+            1958
+          ]
+        ],
+        "existing_id": "RT-M3-UP"
+      },
+      {
+        "id": "RT-M3-DOWN-W1-SOURCE",
+        "frame": "m3",
+        "native_path": [
+          [
+            1380,
+            2795
+          ],
+          [
+            1700,
+            2786
+          ],
+          [
+            2980,
+            2750
+          ]
+        ],
+        "existing_id": "RT-M3-DOWN"
+      }
+    ],
+    "basis": "Native broad strips visually continuous into already reviewed bus context; no fine via projection claimed."
+  }
+}

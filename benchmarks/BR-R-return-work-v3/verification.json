@@ -1,0 +1,74 @@
+{
+  "kind": "explicit_canvas_and_return_work_verification",
+  "date": "2026-10-29",
+  "status": "THREE_ATOMIC_STAGES_COMPLETE_WORKING_CANDIDATE",
+  "current_request": {
+    "path": "benchmarks/BR-R-return-work-v3/next-request.json",
+    "sha256": "9ca1a8bd1f96b81e22ca9b6894b7229da88d97c9cf2fadc50889909e74082659"
+  },
+  "current_model": {
+    "path": "docs/assets/BR-R-return-work-v3/work/model.json",
+    "sha256": "1e94b9e0e099239168daa1a5252d0ffc8813facae19882b3d6ed11b13e9dc771"
+  },
+  "human_return_contacts": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+    "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+  },
+  "canvas_wh": [
+    780,
+    1440
+  ],
+  "previous_canvas_wh": [
+    780,
+    1240
+  ],
+  "origin_unchanged": true,
+  "old_geometry_scaled_or_translated": false,
+  "canvas_history_entries": 1,
+  "canvas_only_records_exact": true,
+  "S2_changed_ids": [
+    "C-M1-SPINE"
+  ],
+  "S3_added_candidate_ids": [
+    "BRR-L1-CANDIDATE",
+    "BRR-L2-CANDIDATE"
+  ],
+  "current_metal_candidates": 34,
+  "old_M2_M3_records_exact": 30,
+  "BF25_record_exact": true,
+  "old_M1_skeleton_and_four_parts_exact": true,
+  "old_footprint_preserved": true,
+  "reviewed_via_interfaces_exact": 11,
+  "old_design_cuts_and_centers_exact": 46,
+  "new_via_interfaces": 0,
+  "all_declared_candidate_via_groups_enclosure": "PASS_11_NOT_PHYSICAL_EXHAUSTIVENESS",
+  "local_gap_to_BRR_design_px": {
+    "BRR-L1-CANDIDATE": 26.0,
+    "BRR-L2-CANDIDATE": 26.0
+  },
+  "source_to_design_transform": null,
+  "geometry_human_approved": false,
+  "complete_network": false,
+  "net_edges_added": 0,
+  "exact_resume": true,
+  "software_tests_passed": 127,
+  "new_canvas_extension_tests": 19,
+  "ruff": "PASS",
+  "new_M1_raw_crops_pixel_exact": 2,
+  "local_resource_links_checked": 85,
+  "inline_scripts_syntax_checked": 5,
+  "svg_unique_geometry_objects": 80,
+  "png_visual_review": "PASS",
+  "browser_interaction": "NOT_TESTED",
+  "showcase_files_exact": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "prior_current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-29-BR-R-work-v3.md",
+    "sha256": "1a4869b2473aceb05b332d15d92e535504e5019d51ef7e2dca1045d9f65a64fc"
+  },
+  "workflow_code": {
+    "path": "benchmarks/evidence/conductive-history/conductive_workflow-a7ee946d99e20965.py",
+    "sha256": "a7ee946d99e2096513d837e5c683456b6f4338621298d5bd0c59d64d24cb9f6e"
+  },
+  "live_workflow_code_sha256": "a7ee946d99e2096513d837e5c683456b6f4338621298d5bd0c59d64d24cb9f6e"
+}

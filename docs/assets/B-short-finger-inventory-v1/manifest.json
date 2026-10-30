@@ -1,0 +1,29 @@
+{
+  "kind": "B_native_short_finger_review_delivery",
+  "inputs": {
+    "observations": {
+      "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+      "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+    },
+    "question": {
+      "path": "benchmarks/B-short-finger-inventory-v1/review-request.json",
+      "sha256": "e5fae92504c4b26bf725a94ca42db035861d2c13fbff3a8a50a826c58aaba4f5"
+    },
+    "panels": {
+      "path": "benchmarks/B-short-finger-inventory-v1/panels.json",
+      "sha256": "3d0d7d759107abec3e365990f42bea12ecfc7fc41aa5bb00ef4e458e52042c50"
+    }
+  },
+  "artifacts": {
+    "middle-raw.png": "0555a66e423e3af154c24ea989d4ba6b79978fd03ef9acb4c7b81e9ba4467630",
+    "right-marked.png": "2b5dd48be4ddf9901f91cdad8d54dba2c576d6f21bd9a46fd39f037555e415d7",
+    "left-raw.png": "3e09fb003f529c53df3f989907219043f9eeef176a6cd1de940fec69aa2a52d0",
+    "full-raw.png": "a1a834e47e11fbdd886a140e185c6af031e82f99659aaf34f56f034cb776db71",
+    "left-marked.png": "d257eacd30ed3863d8a22ee7f30a26f139ef590907a8d9b65a144274c3bb284e",
+    "middle-marked.png": "817fd94f7f72b18a231bc7e1070c0031ec79280cf71f210c44072523c5005d6e",
+    "index.html": "7b419082faa29f831221062dcec36dd44bbba8ba4c2137399fb4f349dce651c3",
+    "full-marked.png": "f5981e040c9e6ad0872241380cf931e00c369a293d6ab1f94ac4218c6508859b",
+    "right-raw.png": "46395261b310b021087456e8b6cceccca1355abc3925e5c0549449695a602f9a",
+    "finger-table.csv": "2b63bbe92f1364a82ea8555dba7b44a9060bc1725d3382f425c3fe71d81f29c6"
+  }
+}

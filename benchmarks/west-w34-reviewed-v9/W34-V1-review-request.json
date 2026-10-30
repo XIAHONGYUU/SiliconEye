@@ -1,0 +1,47 @@
+{
+  "kind": "human_W34_M1_V1_batch",
+  "date": "2026-10-30",
+  "sources": {
+    "observations": {
+      "path": "benchmarks/west-w34-reviewed-v9/W34-M1-source-observations.json",
+      "sha256": "6c660d73d1e304e50b8d0ae724548f0a25381313bdf8dcbada8c0ac60ba6c2fe"
+    }
+  },
+  "questions": [
+    {
+      "question_id": "W3-V1-N",
+      "label": "W3-N",
+      "question": "W3-N的M1橙框是否含V1并接到M2蓝框W3？只判身份/承载，孔数未知。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "W3-V1-S",
+      "label": "W3-S",
+      "question": "W3-S的M1橙框是否含V1并接到M2蓝框W3？只判身份/承载，孔数未知。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "W4-V1-N",
+      "label": "W4-N",
+      "question": "W4-N的M1橙框是否含V1并接到M2蓝框W4？只判身份/承载，孔数未知。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "W4-V1-S",
+      "label": "W4-S",
+      "question": "W4-S的M1橙框是否含V1并接到M2蓝框W4？只判身份/承载，孔数未知。",
+      "answer": null,
+      "human_approved": false
+    }
+  ],
+  "special_note": "W4-N is at the start of a thin vertical M1; do not copy the W3 pad interpretation or infer V1 from M2 V2.",
+  "not_reasked": [
+    "W3/W4 V2 U/D",
+    "W2 N/S V1",
+    "W2/W1 V2"
+  ],
+  "geometry_human_approved": false
+}

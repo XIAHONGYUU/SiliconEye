@@ -1,0 +1,21 @@
+{
+  "kind": "reviewed_source_and_historical_proposal_verification",
+  "date": "2026-10-29",
+  "human_review": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+    "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+  },
+  "source_relations_confirmed": 5,
+  "source_question_and_images_hash_bound": true,
+  "proposal_geometric_checks": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/proposal-geometry-checks.json",
+    "sha256": "596872fa27752f8cd848e214781ee43de4bfd4d014b816a5d8a2b9632042100c"
+  },
+  "historical_proposal_adopted_at_that_stage": false,
+  "working_state_superseded_by": {
+    "path": "benchmarks/BR-R-return-work-v3/source-review-state.json",
+    "sha256": "09d566d69fbf1bea06ca3cf46e2a8f8fa2590f8a4aedc2b37f12f23f55bcac24"
+  },
+  "geometry_physical_accuracy": null,
+  "note": "Source review and nonadopted preview preceded the user continuation. Working candidate extension is now in work-v3."
+}

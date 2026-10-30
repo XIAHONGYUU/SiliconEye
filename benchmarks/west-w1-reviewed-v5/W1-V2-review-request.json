@@ -1,0 +1,37 @@
+{
+  "kind": "human_W1_end_V2_identity_carrier_batch",
+  "date": "2026-10-30",
+  "sources": {
+    "observations": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-source-continuation.json",
+      "sha256": "7f0d0e4836cc7002443fb8583095b32abae7b32457129367818c95d72970f989"
+    },
+    "reviewed_F1": {
+      "path": "benchmarks/west-w1-reviewed-v5/human-review.json",
+      "sha256": "6a2fc733886a9bc114ff114e57eff7ba994b8764e9eaffe8ec0cc5560d659f0a"
+    }
+  },
+  "questions": [
+    {
+      "question_id": "W1-V2-U",
+      "label": "U1",
+      "question": "W1 上端橙框 U1 是否为 V2，并接 M3 紫色B-U（RT-M3-UP）宽母线？只判身份和承载，孔数未知。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "W1-V2-D",
+      "label": "D1",
+      "question": "W1 下端橙框 D1 是否为 V2，并接 M3 粉色B-D（RT-M3-DOWN）宽母线？只判身份和承载，孔数未知。",
+      "answer": null,
+      "human_approved": false
+    }
+  ],
+  "not_reasked": [
+    "F1 V1 to W1",
+    "N/Q1 to A",
+    "Old U/D V2 to B-U/B-D"
+  ],
+  "geometry_adopted": false,
+  "fine_enclosure_claimed": false
+}

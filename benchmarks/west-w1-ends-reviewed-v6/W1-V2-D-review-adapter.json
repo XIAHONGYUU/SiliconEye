@@ -1,0 +1,23 @@
+{
+  "kind": "native_source_decision_adapter",
+  "actor": "AI",
+  "statement": "W1-U1、W1-D1 均正确",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W1-V2-D-source-binding.json",
+      "sha256": "6f206bf9fb3fe8904fbc66a7576225e4705615fdaecc7c5911b586607041d942"
+    },
+    "original_human_review": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/human-review.json",
+      "sha256": "df8d2186fc0a1a8270040bcabb461957fbc572224e696265ab8b99f06706172f"
+    }
+  },
+  "decisions": {
+    "interface_id": "W1-V2-D",
+    "via_layer": "V2",
+    "lower_metal_id": "N-WEST-M2-W1",
+    "upper_metal_id": "RT-M3-DOWN",
+    "connection_confirmed": true
+  }
+}

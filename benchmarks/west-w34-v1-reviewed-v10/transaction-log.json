@@ -1,0 +1,26 @@
+{
+  "stages": [
+    {
+      "stage": "S1-W34-M1-parts",
+      "request": {
+        "path": "benchmarks/west-w34-v1-reviewed-v10/S1-W34-M1-parts-request.json",
+        "sha256": "e3359a05607589c6c660f09d424fb86fa3d874b710de21603f80ba456c87b1e1"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w34-v1-reviewed-v10/S1-W34-M1-parts/manifest.json",
+        "sha256": "f1cec610cd67c760f82c2842707815df92554de7e65037e0db377c6ee7548116"
+      }
+    },
+    {
+      "stage": "S2-W34-V1",
+      "request": {
+        "path": "benchmarks/west-w34-v1-reviewed-v10/S2-W34-V1-request.json",
+        "sha256": "dbf5d608c8f3b0d6374503bf291c8bd9a8708eb668f4834d72e0c94af0c19c62"
+      },
+      "manifest": {
+        "path": "docs/assets/west-w34-v1-reviewed-v10/S2-W34-V1/manifest.json",
+        "sha256": "9d613d212701ca465ed298635737cf3e8f53c20316fcb4a0f601f8e54ca6da9f"
+      }
+    }
+  ]
+}

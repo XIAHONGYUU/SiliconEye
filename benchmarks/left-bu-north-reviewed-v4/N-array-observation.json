@@ -1,0 +1,101 @@
+{
+  "kind": "via_array_observation",
+  "actor": "AI",
+  "reason": "A whole3x3 bright group is a design hypothesis; identity/carrier alone are human reviewed.",
+  "interface_id": "LEFT-BU-NORTH-V1",
+  "layer": "V1",
+  "source_frame": "m1",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "native_bounds": [
+    1955,
+    1930,
+    2025,
+    2002
+  ],
+  "count_status": "candidate_not_human_count",
+  "rows": 3,
+  "columns": 3,
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        1965,
+        1944
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        1987,
+        1944
+      ]
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "native_xy": [
+        2009,
+        1944
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        1965,
+        1963
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        1987,
+        1963
+      ]
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "native_xy": [
+        2009,
+        1963
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        1965,
+        1984
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        1987,
+        1984
+      ]
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "native_xy": [
+        2009,
+        1984
+      ]
+    }
+  ],
+  "sources": {
+    "human": {
+      "path": "benchmarks/left-bu-north-reviewed-v4/human-review.json",
+      "sha256": "d46602d22db0cf2631cd7a680a2ed04e2ebae3b4749da59027ae05aa0cf09e5d"
+    }
+  }
+}

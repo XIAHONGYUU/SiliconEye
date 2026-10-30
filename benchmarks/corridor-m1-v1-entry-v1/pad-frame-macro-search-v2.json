@@ -1,0 +1,368 @@
+{
+  "actor": "AI",
+  "kind": "pad_frame_macro_search_candidate",
+  "direction": "M2_native_to_M1_native",
+  "method": "AI pad-frame corner selection; mean-ridge localization in native35px bands using13x13 Gaussian sigma2.5, no V1/V2 used; exact4-corner homography,2 other pad blocks held out.",
+  "matrix": [
+    [
+      0.9993196406390615,
+      0.0064434854206997716,
+      2.8610249417881404
+    ],
+    [
+      -0.01229779297074054,
+      1.0008315612103116,
+      -25.07902814808987
+    ],
+    [
+      -1.6429272874649099e-06,
+      -1.2303837792289691e-06,
+      1.0
+    ]
+  ],
+  "points": [
+    {
+      "id": "FTL",
+      "role": "fit",
+      "corner": "BL",
+      "seeds": {
+        "m1": [
+          2532,
+          204
+        ],
+        "m2": [
+          2514,
+          258
+        ]
+      },
+      "measurements": {
+        "m1": {
+          "xy": [
+            2530.0463366907884,
+            200.14240776114832
+          ],
+          "contrast": [
+            78.3553466796875,
+            87.740966796875
+          ],
+          "inside_search_band": true
+        },
+        "m2": {
+          "xy": [
+            2516.0013686181223,
+            255.0604801436608
+          ],
+          "contrast": [
+            75.14385986328125,
+            76.98405456542969
+          ],
+          "inside_search_band": true
+        }
+      },
+      "m2_xy": [
+        2516.0013686181223,
+        255.0604801436608
+      ],
+      "m1_xy": [
+        2530.0463366907884,
+        200.14240776114832
+      ],
+      "predicted_m1_xy": [
+        2530.0462896725694,
+        200.1424057073905
+      ],
+      "residual_px": 4.70630517328533e-05
+    },
+    {
+      "id": "FTR",
+      "role": "fit",
+      "corner": "BR",
+      "seeds": {
+        "m1": [
+          5010,
+          193
+        ],
+        "m2": [
+          4974,
+          280
+        ]
+      },
+      "measurements": {
+        "m1": {
+          "xy": [
+            5009.05274707189,
+            208.94272033896786
+          ],
+          "contrast": [
+            66.77642822265625,
+            83.6607666015625
+          ],
+          "inside_search_band": true
+        },
+        "m2": {
+          "xy": [
+            4965.015794936737,
+            293.0570782397306
+          ],
+          "contrast": [
+            71.3447265625,
+            67.57504272460938
+          ],
+          "inside_search_band": true
+        }
+      },
+      "m2_xy": [
+        4965.015794936737,
+        293.0570782397306
+      ],
+      "m1_xy": [
+        5009.05274707189,
+        208.94272033896786
+      ],
+      "predicted_m1_xy": [
+        5009.052907197382,
+        208.94272692599222
+      ],
+      "residual_px": 0.0001602609193325927
+    },
+    {
+      "id": "FBL",
+      "role": "fit",
+      "corner": "TL",
+      "seeds": {
+        "m1": [
+          1645,
+          3995
+        ],
+        "m2": [
+          1598,
+          4010
+        ]
+      },
+      "measurements": {
+        "m1": {
+          "xy": [
+            1637.0074801005057,
+            3999.9208629355157
+          ],
+          "contrast": [
+            102.51304626464844,
+            93.7019271850586
+          ],
+          "inside_search_band": true
+        },
+        "m2": {
+          "xy": [
+            1597.0136339160103,
+            4011.069137806881
+          ],
+          "contrast": [
+            100.18831634521484,
+            103.4712905883789
+          ],
+          "inside_search_band": true
+        }
+      },
+      "m2_xy": [
+        1597.0136339160103,
+        4011.069137806881
+      ],
+      "m1_xy": [
+        1637.0074801005057,
+        3999.9208629355157
+      ],
+      "predicted_m1_xy": [
+        1637.0074083562126,
+        3999.9209452836703
+      ],
+      "residual_px": 0.00010921749932341035
+    },
+    {
+      "id": "FBR",
+      "role": "fit",
+      "corner": "TR",
+      "seeds": {
+        "m1": [
+          5097,
+          3870
+        ],
+        "m2": [
+          5020,
+          3890
+        ]
+      },
+      "measurements": {
+        "m1": {
+          "xy": [
+            5104.036187825284,
+            3859.9421473005737
+          ],
+          "contrast": [
+            94.60856628417969,
+            94.5909194946289
+          ],
+          "inside_search_band": true
+        },
+        "m2": {
+          "xy": [
+            5013.014766752159,
+            3893.152712785011
+          ],
+          "contrast": [
+            87.43695068359375,
+            95.17096710205078
+          ],
+          "inside_search_band": true
+        }
+      },
+      "m2_xy": [
+        5013.014766752159,
+        3893.152712785011
+      ],
+      "m1_xy": [
+        5104.036187825284,
+        3859.9421473005737
+      ],
+      "predicted_m1_xy": [
+        5104.036252075105,
+        3859.94201646355
+      ],
+      "residual_px": 0.0001457613332156247
+    },
+    {
+      "id": "HT",
+      "role": "holdout",
+      "corner": "BR",
+      "seeds": {
+        "m1": [
+          3350,
+          210
+        ],
+        "m2": [
+          3330,
+          268
+        ]
+      },
+      "measurements": {
+        "m1": {
+          "xy": [
+            3353.905634036265,
+            203.97584073301687
+          ],
+          "contrast": [
+            58.274932861328125,
+            73.87211608886719
+          ],
+          "inside_search_band": true
+        },
+        "m2": {
+          "xy": [
+            3332.449778688817,
+            266.1665275293281
+          ],
+          "contrast": [
+            54.169586181640625,
+            68.84640502929688
+          ],
+          "inside_search_band": true
+        }
+      },
+      "m2_xy": [
+        3332.449778688817,
+        266.1665275293281
+      ],
+      "m1_xy": [
+        3353.905634036265,
+        203.97584073301687
+      ],
+      "predicted_m1_xy": [
+        3354.2213142132637,
+        201.49622941885715
+      ],
+      "residual_px": 2.499625220599842
+    },
+    {
+      "id": "HB",
+      "role": "holdout",
+      "corner": "TR",
+      "seeds": {
+        "m1": [
+          3395,
+          3923
+        ],
+        "m2": [
+          3338,
+          3943
+        ]
+      },
+      "measurements": {
+        "m1": {
+          "xy": [
+            3396.961693634835,
+            3930.9315250322775
+          ],
+          "contrast": [
+            110.47464752197266,
+            86.31238555908203
+          ],
+          "inside_search_band": true
+        },
+        "m2": {
+          "xy": [
+            3333.850482833683,
+            3953.19854554859
+          ],
+          "contrast": [
+            114.14519500732422,
+            98.91606140136719
+          ],
+          "inside_search_band": true
+        }
+      },
+      "m2_xy": [
+        3333.850482833683,
+        3953.19854554859
+      ],
+      "m1_xy": [
+        3396.961693634835,
+        3930.9315250322775
+      ],
+      "predicted_m1_xy": [
+        3395.024380593713,
+        3931.0598161494854
+      ],
+      "residual_px": 1.9415561877151655
+    }
+  ],
+  "budget_px": {
+    "p95": 20,
+    "max": 50
+  },
+  "holdout_p95_px": 2.471721768955608,
+  "holdout_max_px": 2.499625220599842,
+  "localization_bands_valid": true,
+  "fine_landing_qualified": false,
+  "human_structure_identity_confirmed": false,
+  "electrical_connections_confirmed": false,
+  "macro_search_budget_pass": true,
+  "date": "2026-10-29",
+  "source_photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "software": {
+    "opencv": "5.0.0",
+    "numpy": "2.5.4"
+  },
+  "use_permission": "SEARCH_WINDOW_LOCALIZATION_ONLY_NOT_FINE_VIA_LANDING",
+  "source_to_design_transform": null,
+  "interior_structure_holdout": "NOT_ESTABLISHED",
+  "electrical_via_points_used_in_fit": false,
+  "whole_photo_projection_allowed": false
+}

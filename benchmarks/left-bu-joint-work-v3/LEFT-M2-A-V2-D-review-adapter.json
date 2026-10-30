@@ -1,0 +1,23 @@
+{
+  "kind": "native_source_decision_adapter",
+  "actor": "AI",
+  "statement": "U：是 V2，接 B-U；D：是 V2，接 B-D",
+  "observed_cut_count": null,
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/left-bu-joint-work-v3/LEFT-M2-A-V2-D-source-binding.json",
+      "sha256": "d7181dfb8540d61b342334cbd79606fa6b6778c9da6f0835258507e08cce2121"
+    },
+    "original_human_review": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  },
+  "decisions": {
+    "interface_id": "LEFT-M2-A-V2-D",
+    "via_layer": "V2",
+    "lower_metal_id": "LEFT-M2-A-CANDIDATE",
+    "upper_metal_id": "RT-M3-DOWN",
+    "connection_confirmed": true
+  }
+}

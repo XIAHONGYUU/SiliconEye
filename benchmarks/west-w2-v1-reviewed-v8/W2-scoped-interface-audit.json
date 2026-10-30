@@ -1,0 +1,144 @@
+{
+  "kind": "W2_native_scoped_interface_review_not_physical_exhaustiveness",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "working_request": {
+    "path": "benchmarks/west-w2-v1-reviewed-v8/next-request.json",
+    "sha256": "326a35128b23d057995d6a06646bc6042fda3bc90e96d262565d07ed169e56dc"
+  },
+  "photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "scope": {
+    "m1": [
+      1040,
+      1850,
+      1220,
+      2840
+    ],
+    "m2": [
+      1040,
+      1850,
+      1210,
+      2860
+    ]
+  },
+  "reviewed_source_interfaces": [
+    {
+      "id": "W2-V1-N",
+      "source_frame": "m1",
+      "bounds": [
+        1085,
+        1898,
+        1138,
+        1948
+      ],
+      "human_review": {
+        "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+        "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+      }
+    },
+    {
+      "id": "W2-V1-S",
+      "source_frame": "m1",
+      "bounds": [
+        1118,
+        2688,
+        1175,
+        2735
+      ],
+      "human_review": {
+        "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+        "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+      }
+    },
+    {
+      "id": "W2-V2-U",
+      "source_frame": "m2",
+      "bounds": [
+        1070,
+        1900,
+        1120,
+        1970
+      ],
+      "human_review": {
+        "path": "benchmarks/west-w2-reviewed-v7/human-review.json",
+        "sha256": "97d8968ce540b20a9c8cce9bf30b03b8fb54fe29fdaa801f3b38351c9c3497a1"
+      }
+    },
+    {
+      "id": "W2-V2-D",
+      "source_frame": "m2",
+      "bounds": [
+        1095,
+        2700,
+        1150,
+        2815
+      ],
+      "human_review": {
+        "path": "benchmarks/west-w2-reviewed-v7/human-review.json",
+        "sha256": "97d8968ce540b20a9c8cce9bf30b03b8fb54fe29fdaa801f3b38351c9c3497a1"
+      }
+    }
+  ],
+  "remaining_observations": [
+    {
+      "id": "W2-M1-MIDDLE-CROSSINGS",
+      "frame": "m1",
+      "bounds": [
+        1040,
+        2260,
+        1230,
+        2390
+      ],
+      "distinct_new_V1_candidate": null,
+      "decision": "No additional discrete V1 group is resolved at these fine transverse crossings; do not connect by crossing and do not assert absence."
+    },
+    {
+      "id": "W2-M1-NEAR-VERTICAL",
+      "frame": "m1",
+      "bounds": [
+        1150,
+        1925,
+        1200,
+        2675
+      ],
+      "decision": "Keep nearby upper/lower thin vertical M1 source context separate; no unreviewed bridge or source-to-design projection."
+    }
+  ],
+  "source_to_design_transform": null,
+  "source_physical_array_exhaustiveness": false,
+  "all_visible_conductors_covered": false,
+  "complete_network": false
+}

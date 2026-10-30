@@ -1,0 +1,99 @@
+{
+  "kind": "scoped_native_same_layer_return_review_request",
+  "question_id": "BRR-RETURN-Q1",
+  "date": "2026-10-29",
+  "source_observations": {
+    "path": "benchmarks/BR-R-return-inspection-v1/source-observations.json",
+    "sha256": "300e9b056e2a2510d61ce329c5e67053824c4e832c14087b02fcceffdfe15bd9"
+  },
+  "baseline_request": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  },
+  "images": {
+    "wide": {
+      "path": "docs/assets/BR-R-return-inspection-v1/wide-marked.png",
+      "sha256": "585b827146f5e2052d1c9a1669017f37d72d9ac381520f0948e7726d363cecc1"
+    },
+    "upper": {
+      "path": "docs/assets/BR-R-return-inspection-v1/upper-marked.png",
+      "sha256": "d5af9d3b3e5c46c38c817149f49ee8b12a0600a492b1b5a754f10dcb3d8715af"
+    },
+    "gaps": {
+      "path": "docs/assets/BR-R-return-inspection-v1/gaps-marked.png",
+      "sha256": "b1aa9d2e48ae7e95f83b72c69d69d4f71f390d9cae5f902678e4b8e51d52b0d6"
+    },
+    "lower": {
+      "path": "docs/assets/BR-R-return-inspection-v1/lower-marked.png",
+      "sha256": "1273b7dfa65ef36f5ee63a4d96f8bd16ab221bd63afc3f74e0020e7919579b9d"
+    }
+  },
+  "scope_relations": [
+    {
+      "id": "P1",
+      "source_target_id": "BU",
+      "native_bounds": [
+        3075,
+        2760,
+        3125,
+        2820
+      ],
+      "local_contact_candidate": true
+    },
+    {
+      "id": "P2",
+      "source_target_id": "L1-R",
+      "native_bounds": [
+        3025,
+        2905,
+        3120,
+        2935
+      ],
+      "local_contact_candidate": false
+    },
+    {
+      "id": "P3",
+      "source_target_id": "L2-R",
+      "native_bounds": [
+        3025,
+        2931,
+        3120,
+        2960
+      ],
+      "local_contact_candidate": false
+    },
+    {
+      "id": "P4",
+      "source_target_id": "BRR-H3070",
+      "native_bounds": [
+        3065,
+        3045,
+        3130,
+        3100
+      ],
+      "local_contact_candidate": true
+    },
+    {
+      "id": "P5",
+      "source_target_id": "BRR-H3175",
+      "native_bounds": [
+        3065,
+        3140,
+        3135,
+        3200
+      ],
+      "local_contact_candidate": true
+    }
+  ],
+  "question": "请核对P1–P5：P1 BR-R上接BU；P2/P3 L1、L2本处与BR-R留隙不直接相接；P4约y3070的R3宽横条接BR-R；P5约y3175的R4底部回折条接BR-R。五项局部判断是否正确？若有偏差请指出编号；不重审BF24/25/26，不判断全局异网。",
+  "answer": null,
+  "approval_excludes": [
+    "New geometry or exact dimensions",
+    "Working-canvas/scope adoption",
+    "Global isolation or complete net",
+    "Neighbor N3090/N3158 contacts",
+    "BF24/BF26 lower contacts",
+    "V1/V2 identity or count",
+    "Existing contact reapproval"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Proposal-only L1/L2 context fragments to represent reviewed P2/P3 local gaps; not global net IDs or adopted working geometry.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m1": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m1.jpg",
+          "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+        },
+        "native_bounds": [
+          2940,
+          2900,
+          3125,
+          2965
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "BRR-L1-CANDIDATE-OBS",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          2940,
+          2927
+        ],
+        [
+          3064,
+          2923
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "exits_local_scope_not_physical_terminal"
+        },
+        {
+          "state": "local_noncontact_to_BRR_reviewed_not_global_isolation"
+        }
+      ]
+    },
+    {
+      "id": "BRR-L2-CANDIDATE-OBS",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          2940,
+          2948
+        ],
+        [
+          3064,
+          2944
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "exits_local_scope_not_physical_terminal"
+        },
+        {
+          "state": "local_noncontact_to_BRR_reviewed_not_global_isolation"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "BRR-L1-CANDIDATE-OBS",
+      "metal_id": "BRR-L1-CANDIDATE"
+    },
+    {
+      "observation_id": "BRR-L2-CANDIDATE-OBS",
+      "metal_id": "BRR-L2-CANDIDATE"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "human_contact_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "native_observations": {
+      "path": "benchmarks/BR-R-return-inspection-v1/source-observations.json",
+      "sha256": "300e9b056e2a2510d61ce329c5e67053824c4e832c14087b02fcceffdfe15bd9"
+    }
+  }
+}

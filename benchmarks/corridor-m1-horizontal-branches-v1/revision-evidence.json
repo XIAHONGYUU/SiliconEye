@@ -1,0 +1,24 @@
+{
+  "actor": "AI",
+  "reason": "Attach only two source-visible horizontal main runs to the existing partial M1 spine. Keep old source anchors, eleven reviewed interfaces and all forty-six design-cut centers.",
+  "parent": {
+    "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/manifest.json",
+    "sha256": "afdf3854b78db49b1db8802a36f22d959c0382c157b0e5e2491021e7c7fd8801"
+  },
+  "changed_object_ids": [
+    "C-M1-SPINE"
+  ],
+  "sources": {
+    "source_ledger": {
+      "path": "benchmarks/corridor-m1-horizontal-branches-v1/source-ledger.json",
+      "sha256": "8b96524a7f511bffa416bc15552141ae522ab9ac2178e745b3e889e544358dbb"
+    },
+    "parent": {
+      "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/manifest.json",
+      "sha256": "afdf3854b78db49b1db8802a36f22d959c0382c157b0e5e2491021e7c7fd8801"
+    }
+  },
+  "preserve_native_anchor_path": true,
+  "preserve_prior_footprint": true,
+  "geometry_human_approved": false
+}

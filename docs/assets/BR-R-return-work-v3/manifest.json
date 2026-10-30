@@ -1,0 +1,43 @@
+{
+  "kind": "reviewed_return_work_delivery",
+  "inputs": {
+    "human_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "current_request": {
+      "path": "benchmarks/BR-R-return-work-v3/next-request.json",
+      "sha256": "9ca1a8bd1f96b81e22ca9b6894b7229da88d97c9cf2fadc50889909e74082659"
+    },
+    "verification": {
+      "path": "benchmarks/BR-R-return-work-v3/verification.json",
+      "sha256": "cb2b063cfd00515a98483889d3d7406779013018ff8dc429a091b83dc06d3659"
+    },
+    "producer_workflow_snapshot": {
+      "path": "benchmarks/evidence/conductive-history/conductive_workflow-a7ee946d99e20965.py",
+      "sha256": "a7ee946d99e2096513d837e5c683456b6f4338621298d5bd0c59d64d24cb9f6e"
+    }
+  },
+  "artifacts": {
+    "work-full.svg": "8132600894a740943d5b560ba6c12f6d00204f531b0066b1b1649cc3a283b3b7",
+    "index.html": "e74267d233fb9e93dee71c332e1fd8f3d87dceb4e04cdf487f6f77a658d90694",
+    "work-before-after.png": "a8bd8f3fca36c80c21329af577e937b4b64b89a0daba649c0869ab458871236a",
+    "work/model.json": "1e94b9e0e099239168daa1a5252d0ffc8813facae19882b3d6ed11b13e9dc771",
+    "work/index.html": "681adadaae1e2fe56d4cff4906992095b32ad5aad590ef3198bf6a0ea919d190",
+    "work/report.json": "6cdea86a990e94fdb5c3b70797aa7b8a8863c0c15d8144176331cc5690b8f9a8",
+    "work/request.json": "0cc46d1078e908e4df5adf77e088ccf06bd5a9c5d2d49da79356d7c36459fd7c",
+    "canvas-only/model.json": "bb230e2f8cd4a68ce7ef122b13c32595a2e0314dae7399b262248c704db05338",
+    "canvas-only/index.html": "93aa42517858c99095c1c93d9e07f878e5301597931475c4aca168975acb1aff",
+    "canvas-only/report.json": "415399ff6ba1c7e918feccc6a5aa7a952b32ef72e2cea5be8e99d48630699f97",
+    "canvas-only/request.json": "dd98967ac335bb3388d6de59a9e44179cdbb1bdd977109473fa15ccc89be094a",
+    "source/m1-detail-marked.png": "201ad72f471224010428f069f1be1801ea039d1a238ff1d94234db7a754dd3e7",
+    "source/m1-wide-marked.png": "a72693c817d95d443d2f559f9de2345d7e14291ebf2a6972f68fef4605833c31",
+    "source/m1-wide-raw.png": "7bd793290f39b1df4dde2173216b8289a7415e238089c97a15b8613dcc524d7c",
+    "source/m1-location.png": "1ac51bd859a54dbdb7b936f14ed8b5b836b392d4f981c4dfc593c324def6b53a",
+    "source/m1-detail-raw.png": "4d109cc698ab6294314086e4f59baeb4ba8d660ed7bfa3b836afc1d0c3e0cd1d",
+    "M1-return/model.json": "d42a68c6ada7d467d25ea126d7cec4b02b34ca9c4e842619a414298abd2f49a0",
+    "M1-return/index.html": "e6ae1171b568f726d662e2fe10f38a6f3ca881f14fb3c2b21b398009211b160f",
+    "M1-return/report.json": "e73aed77fbea87a27ab43232390628c83f61cb6357722703cda0786350031817",
+    "M1-return/request.json": "0e5d51bbca5c6222fc6256f448d19b82a5b7a17d6bfb016fa697ba0766b61b49"
+  }
+}

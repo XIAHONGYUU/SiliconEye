@@ -1,0 +1,26 @@
+{
+  "kind": "reviewed_three_finger_candidate_delivery",
+  "inputs": {
+    "human_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    "source_question": {
+      "path": "benchmarks/B-short-finger-inventory-v1/review-request.json",
+      "sha256": "e5fae92504c4b26bf725a94ca42db035861d2c13fbff3a8a50a826c58aaba4f5"
+    }
+  },
+  "artifacts": {
+    "local-before-after.png": "2f9d363ae5221712f1eedb9180500a501303d9bcebd2cd5ab0f64e790e64cc5f",
+    "reviewed-table.csv": "92d6a0f0e805acea0c8704cbc1ba45ba923c010f7c340c86fa99557e23121206",
+    "index.html": "b51e43276093d05410c99bcf2395e5b4b0a4cd32f36bf3948acc273f4dafa2ad",
+    "upper-parts/model.json": "c4553d5295add7867d1a9f086212602ed296e12f49a2519731580869f26e1cca",
+    "upper-parts/index.html": "62f058d6ba4986dd378f77c1627992616a4e4232a8a4c44367cd3b19fc26bf43",
+    "upper-parts/report.json": "3b3959a44188beedc494a5c67c6b44a82d0f77ed43549614765537e05fab3e6e",
+    "upper-parts/request.json": "64b65d60364b6d950023e9728aa88987dc4643a8edd526fc635baa9756dd967b",
+    "work/model.json": "63781ce59c290c93fdb77226a65c2158e4b098de6226bea82cd460e3c56e5818",
+    "work/index.html": "3138085174deb0c02502c675e1c1eade937f7ec9dc492fac60e4506e642720e1",
+    "work/report.json": "e06b67f9f79daef563cfd3f30127e223f02519d39056fdd144dc14b8179102f2",
+    "work/request.json": "8fd0765d32e11823f87735bdb9a53842558274cd9e395234f83ab7679b40f927"
+  }
+}

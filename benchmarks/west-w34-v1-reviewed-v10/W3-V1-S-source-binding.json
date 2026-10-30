@@ -1,0 +1,54 @@
+{
+  "kind": "scoped_native_interface_decision_binding",
+  "actor": "AI",
+  "question_id": "W3-V1-S",
+  "original_submitted_request": {
+    "path": "benchmarks/west-w34-reviewed-v9/W34-V1-review-request.json",
+    "sha256": "2e8f8eb8a5526d087255c14bc5f40dc040ec4c87f2a290cc1ed6a9fae655638c"
+  },
+  "scope_source": {
+    "path": "benchmarks/west-w34-reviewed-v9/W34-M1-source-observations.json",
+    "sha256": "6c660d73d1e304e50b8d0ae724548f0a25381313bdf8dcbada8c0ac60ba6c2fe"
+  },
+  "scope_pointer": "/V1_sites/1",
+  "decision_pointer": "/decisions/1",
+  "scope_signature": {
+    "id": "W3-V1-S",
+    "layer": "V1",
+    "layer_pair": [
+      "M1",
+      "M2"
+    ],
+    "source_frame": "m1",
+    "native_bounds": [
+      755,
+      2708,
+      810,
+      2756
+    ],
+    "lower_metal_id": "C-M1-SPINE",
+    "upper_metal_id": "WEST-M2-W3-SOURCE"
+  },
+  "geometry_human_approved": false,
+  "carrier_bindings": {
+    "lower": {
+      "source_id": "W34-M1-SOUTH-BAR-SOURCE",
+      "model_id": "C-M1-SPINE",
+      "source": {
+        "path": "benchmarks/west-w34-reviewed-v9/W34-M1-source-observations.json",
+        "sha256": "6c660d73d1e304e50b8d0ae724548f0a25381313bdf8dcbada8c0ac60ba6c2fe"
+      },
+      "pointer": "/M1_local_source_paths/1",
+      "local_part_id": "W34-M1-SOUTH-BAR"
+    },
+    "upper": {
+      "source_id": "WEST-M2-W3-SOURCE",
+      "model_id": "WEST-M2-W3-SOURCE",
+      "source": {
+        "path": "benchmarks/west-w34-reviewed-v9/W34-M1-source-observations.json",
+        "sha256": "6c660d73d1e304e50b8d0ae724548f0a25381313bdf8dcbada8c0ac60ba6c2fe"
+      },
+      "pointer": "/M2_metals/0"
+    }
+  }
+}

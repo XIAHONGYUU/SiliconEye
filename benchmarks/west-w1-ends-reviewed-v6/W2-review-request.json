@@ -1,0 +1,32 @@
+{
+  "kind": "human_W2_end_V2_identity_carrier_batch",
+  "date": "2026-10-30",
+  "sources": {
+    "observations": {
+      "path": "benchmarks/west-w1-ends-reviewed-v6/W2-source-observations.json",
+      "sha256": "d943b09eab9857b0a357530e99c7644b9dfb6de76fae0c13df0f04e82a364f0e"
+    }
+  },
+  "questions": [
+    {
+      "question_id": "W2-V2-U",
+      "label": "W2-U",
+      "question": "W1左侧新长M2（W2）的上端橙框是否为V2，并接B-U / RT-M3-UP？只判身份和承载，物理孔数未知。",
+      "answer": null,
+      "human_approved": false
+    },
+    {
+      "question_id": "W2-V2-D",
+      "label": "W2-D",
+      "question": "W1左侧新长M2（W2）的下端橙框是否为V2，并接B-D / RT-M3-DOWN？只判身份和承载，物理孔数未知。",
+      "answer": null,
+      "human_approved": false
+    }
+  ],
+  "geometry_human_approved": false,
+  "not_reasked": [
+    "W1 U1/D1",
+    "F1/N/Q1",
+    "Old A U/D"
+  ]
+}

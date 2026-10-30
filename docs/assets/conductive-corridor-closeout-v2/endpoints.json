@@ -1,0 +1,962 @@
+[
+  {
+    "metal_id": "RT-M2-R01",
+    "source_observation_id": "C-M2-01",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      3104,
+      1900
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      185,
+      180
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M2-R01",
+    "source_observation_id": "C-M2-01",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      3102,
+      3000
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      185,
+      1115
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M2-R02",
+    "source_observation_id": "C-M2-02",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      3376,
+      1900
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      455,
+      180
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M2-R02",
+    "source_observation_id": "C-M2-02",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      3374,
+      3000
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      455,
+      1115
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-03",
+    "source_observation_id": "C-M2-03",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      3100,
+      1730
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      185,
+      10
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-03",
+    "source_observation_id": "C-M2-03",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      3130,
+      1800
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      211,
+      35
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-04",
+    "source_observation_id": "C-M2-04",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      3586,
+      1730
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      640,
+      30
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-04",
+    "source_observation_id": "C-M2-04",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      3612,
+      1815
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      665,
+      54
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-05",
+    "source_observation_id": "C-M2-05",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      2990,
+      2115
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      70,
+      340
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-05",
+    "source_observation_id": "C-M2-05",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      3020,
+      2150
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      99,
+      380
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-06",
+    "source_observation_id": "C-M2-06",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2155
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      25,
+      373
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-06",
+    "source_observation_id": "C-M2-06",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      2960,
+      2155
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      45,
+      373
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M2-NARROW",
+    "source_observation_id": "C-M2-07",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      3505,
+      2490
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      565,
+      682
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M2-NARROW",
+    "source_observation_id": "C-M2-07",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      3534,
+      3000
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      590,
+      1115
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-08",
+    "source_observation_id": "C-M2-08",
+    "source_frame": "m2",
+    "endpoint_index": 0,
+    "native_xy": [
+      2973,
+      2875
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      55,
+      1005
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M2-08",
+    "source_observation_id": "C-M2-08",
+    "source_frame": "m2",
+    "endpoint_index": 1,
+    "native_xy": [
+      2973,
+      3000
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      55,
+      1115
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T01",
+    "source_observation_id": "C-M3-T01",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1809
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      35
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T01",
+    "source_observation_id": "C-M3-T01",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1789
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      35
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T02",
+    "source_observation_id": "C-M3-T02",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1830
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      54
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T02",
+    "source_observation_id": "C-M3-T02",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1810
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      54
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T03",
+    "source_observation_id": "C-M3-T03",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1851
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      73
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T03",
+    "source_observation_id": "C-M3-T03",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1831
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      73
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T04",
+    "source_observation_id": "C-M3-T04",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1870
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      92
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T04",
+    "source_observation_id": "C-M3-T04",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1850
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      92
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T05",
+    "source_observation_id": "C-M3-T05",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1888
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      111
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T05",
+    "source_observation_id": "C-M3-T05",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1868
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      111
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T06",
+    "source_observation_id": "C-M3-T06",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1905
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      130
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-T06",
+    "source_observation_id": "C-M3-T06",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1885
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      130
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-UP",
+    "source_observation_id": "C-M3-BU",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      1960
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      40,
+      184
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-UP",
+    "source_observation_id": "C-M3-BU",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      1940
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      700,
+      184
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-E1",
+    "source_observation_id": "C-M3-E1",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2148
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      25,
+      340
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-E1",
+    "source_observation_id": "C-M3-E1",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3045,
+      2148
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      158,
+      340
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-E2",
+    "source_observation_id": "C-M3-E2",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2187
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      25,
+      373
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-E2",
+    "source_observation_id": "C-M3-E2",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      2998,
+      2187
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      118,
+      373
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M01",
+    "source_observation_id": "C-M3-M01",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2279
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      450
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M01",
+    "source_observation_id": "C-M3-M01",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2259
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      450
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M02",
+    "source_observation_id": "C-M3-M02",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2299
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      465
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M02",
+    "source_observation_id": "C-M3-M02",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2279
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      465
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M03",
+    "source_observation_id": "C-M3-M03",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2316
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      480
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M03",
+    "source_observation_id": "C-M3-M03",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2296
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      480
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M04",
+    "source_observation_id": "C-M3-M04",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2337
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      495
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M04",
+    "source_observation_id": "C-M3-M04",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2317
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      495
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M05",
+    "source_observation_id": "C-M3-M05",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2354
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      510
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M05",
+    "source_observation_id": "C-M3-M05",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2334
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      510
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M06",
+    "source_observation_id": "C-M3-M06",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2372
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      525
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-M06",
+    "source_observation_id": "C-M3-M06",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2352
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      525
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-MID",
+    "source_observation_id": "C-M3-BM",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2450
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      40,
+      590
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-MID",
+    "source_observation_id": "C-M3-BM",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2430
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      700,
+      590
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-L01",
+    "source_observation_id": "C-M3-L01",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2528
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      682
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-L01",
+    "source_observation_id": "C-M3-L01",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3565,
+      2511
+    ],
+    "state": "visible_terminal_or_unresolved_continuity",
+    "design_xy": [
+      620,
+      682
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-THIN1",
+    "source_observation_id": "C-M3-L02",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2545
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      40,
+      700
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-THIN1",
+    "source_observation_id": "C-M3-L02",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2525
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      700,
+      700
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-L03",
+    "source_observation_id": "C-M3-L03",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2565
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      720
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-L03",
+    "source_observation_id": "C-M3-L03",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2545
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      720
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-THIN2",
+    "source_observation_id": "C-M3-L04",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2602
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      40,
+      750
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-THIN2",
+    "source_observation_id": "C-M3-L04",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2582
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      700,
+      750
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-DOWN",
+    "source_observation_id": "C-M3-BD",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2750
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      40,
+      870
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "RT-M3-DOWN",
+    "source_observation_id": "C-M3-BD",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2730
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      700,
+      870
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-EDGE",
+    "source_observation_id": "C-M3-EDGE",
+    "source_frame": "m3",
+    "endpoint_index": 0,
+    "native_xy": [
+      2940,
+      2978
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      70,
+      1070
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  },
+  {
+    "metal_id": "C-M3-EDGE",
+    "source_observation_id": "C-M3-EDGE",
+    "source_frame": "m3",
+    "endpoint_index": 1,
+    "native_xy": [
+      3670,
+      2958
+    ],
+    "state": "exits_scope",
+    "design_xy": [
+      680,
+      1070
+    ],
+    "coordinate_relation": "DECLARED_ENDPOINT_ROLE_NOT_MEASURED_PROJECTION"
+  }
+]

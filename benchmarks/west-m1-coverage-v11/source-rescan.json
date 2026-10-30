@@ -1,0 +1,285 @@
+{
+  "kind": "AI_fixed_scope_M1_rescan",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "parent_inventory": {
+    "path": "benchmarks/west-w34-v1-reviewed-v10/scoped-M1-coverage.json",
+    "sha256": "48e88d318caf8cdcd38c94a21bba03a7757b0408a2b53bfe2f8d6fa420d4e828"
+  },
+  "scope": {
+    "layer": "M1",
+    "photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "native_bounds": [
+      300,
+      1870,
+      830,
+      2820
+    ],
+    "interpretation": "One continuous native M1 band containing W3/W4 source contexts; ten declared visible fragments are an AI inventory, not source-exhaustiveness or net coverage proof."
+  },
+  "photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    }
+  },
+  "observations": [
+    {
+      "id": "M1-L01",
+      "label": "上横条",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          300,
+          1924
+        ],
+        [
+          830,
+          1914
+        ]
+      ],
+      "status": "MODELED_RELATIVE",
+      "mapped_model_id": "C-M1-SPINE",
+      "covered_local_part_ids": [
+        "W34-M1-NORTH-BAR"
+      ],
+      "connection_confirmed": null,
+      "note": "本范围主干已补，来源尺寸未测量。"
+    },
+    {
+      "id": "M1-L02",
+      "label": "下宽横条",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2734
+        ],
+        [
+          830,
+          2720
+        ]
+      ],
+      "status": "MODELED_RELATIVE",
+      "mapped_model_id": "C-M1-SPINE",
+      "covered_local_part_ids": [
+        "W34-M1-SOUTH-BAR"
+      ],
+      "connection_confirmed": null,
+      "note": "本范围主干已补，物理终点不在本窗口判定。"
+    },
+    {
+      "id": "M1-L03",
+      "label": "W4北侧竖支",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          379,
+          1920
+        ],
+        [
+          400,
+          2288
+        ]
+      ],
+      "status": "PARTIAL_RELATIVE",
+      "mapped_model_id": "C-M1-SPINE",
+      "covered_local_part_ids": [
+        "W4-M1-NORTH-LANDING"
+      ],
+      "connection_confirmed": null,
+      "note": "只建上端承载到原生约1970，其下余段未建；不得把整段当已覆盖。"
+    },
+    {
+      "id": "M1-L04",
+      "label": "W3北侧细邻线",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          784,
+          1948
+        ],
+        [
+          800,
+          2280
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "不把W3-N孔批准转移给细邻线；上端间隙/归属未确认。"
+    },
+    {
+      "id": "M1-L05",
+      "label": "W4南侧细竖线",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          407,
+          2356
+        ],
+        [
+          422,
+          2695
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "与上下横条的局部间隙和全局归属保留未知。"
+    },
+    {
+      "id": "M1-L06",
+      "label": "W3南侧细竖线",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          799,
+          2348
+        ],
+        [
+          817,
+          2683
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "不根据接近下宽横条而合并，精确端部需补查。"
+    },
+    {
+      "id": "M1-L07",
+      "label": "中部上细横条",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2312
+        ],
+        [
+          830,
+          2304
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "不得直接指派给旧L1/L2，原生同线身份尚未绑定。"
+    },
+    {
+      "id": "M1-L08",
+      "label": "中部下细横条",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2338
+        ],
+        [
+          830,
+          2329
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "与上细横条保持分开，向两侧出界不等于物理终点。"
+    },
+    {
+      "id": "M1-L09",
+      "label": "底部平行条左段",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          300,
+          2809
+        ],
+        [
+          748,
+          2797
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "右端邻近竖段留有中断；不跨空白补桥。"
+    },
+    {
+      "id": "M1-L10",
+      "label": "底部平行条右段",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          811,
+          2794
+        ],
+        [
+          830,
+          2793
+        ]
+      ],
+      "status": "UNMODELED_UNKNOWN",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "只记录窗口内右片段；不因同高合并左段。"
+    },
+    {
+      "id": "M1-L11",
+      "label": "W3下方主干竖向出口",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          775,
+          2730
+        ],
+        [
+          780,
+          2820
+        ]
+      ],
+      "status": "NEWLY_OBSERVED",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "独立复查新增；同帧连接下宽横条，向下越出本范围，不是物理终点。"
+    },
+    {
+      "id": "M1-L12",
+      "label": "底部左段的短回折",
+      "source_frame": "m1",
+      "native_path": [
+        [
+          748,
+          2797
+        ],
+        [
+          750,
+          2820
+        ]
+      ],
+      "status": "NEWLY_OBSERVED",
+      "mapped_model_id": null,
+      "covered_local_part_ids": [],
+      "connection_confirmed": null,
+      "note": "独立复查新增；接L09右端后向下出范围，和L11之间保留原图间隙。"
+    }
+  ],
+  "newly_found_ids": [
+    "M1-L11",
+    "M1-L12"
+  ],
+  "source_to_design_transform": null,
+  "geometry_human_approved": false,
+  "physical_source_exhaustiveness": false,
+  "reason": "Second whole-band sweep found a south main-spine exit and the left bottom segment return omitted by the previous ten-row list. Keep both inside the existing scope; do not inflate the claim to full M2/M3 or full network."
+}

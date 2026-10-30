@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Append only the source-bound F1 M1 tab before adding the carrier or via group.",
+  "parent": {
+    "path": "docs/assets/left-bu-north-reviewed-v4/S2-upper-branches/manifest.json",
+    "sha256": "eed0d2516a69da5ec3149813fcedcdc267f15fd7a8f0fa2305cc7fd4211e5501"
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w1-reviewed-v5/human-review.json",
+      "sha256": "6a2fc733886a9bc114ff114e57eff7ba994b8764e9eaffe8ec0cc5560d659f0a"
+    },
+    "ledger": {
+      "path": "benchmarks/west-w1-reviewed-v5/F1-tab-source-ledger.json",
+      "sha256": "100d0337438edb42a6c2fc0e964e97237219c45f2c5a55cdfb4156be035e01f5"
+    }
+  }
+}

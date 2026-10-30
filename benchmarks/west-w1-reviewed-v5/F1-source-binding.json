@@ -1,0 +1,54 @@
+{
+  "kind": "scoped_native_interface_decision_binding",
+  "actor": "AI",
+  "question_id": "N-WEST-F1-V1-Q1",
+  "original_submitted_request": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/F1-review-request.json",
+    "sha256": "547d93862fb52dc9fb87116ec4b598c2ba65e4c02569895246c44323bb7aa939"
+  },
+  "scope_source": {
+    "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+    "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+  },
+  "scope_pointer": "/new_interface_candidate",
+  "decision_pointer": "/decisions/0",
+  "scope_signature": {
+    "id": "N-WEST-F1-V1",
+    "layer": "V1",
+    "layer_pair": [
+      "M1",
+      "M2"
+    ],
+    "source_frame": "m1",
+    "native_bounds": [
+      1495,
+      1882,
+      1548,
+      1940
+    ],
+    "lower_metal_id": "C-M1-SPINE",
+    "upper_metal_id": "N-WEST-M2-W1"
+  },
+  "geometry_human_approved": false,
+  "carrier_bindings": {
+    "lower": {
+      "source_id": "N-WEST-HORIZONTAL",
+      "model_id": "C-M1-SPINE",
+      "source": {
+        "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+        "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+      },
+      "pointer": "/branch_paths/2",
+      "local_part_id": "N-WEST-HORIZONTAL"
+    },
+    "upper": {
+      "source_id": "N-WEST-M2-W1",
+      "model_id": "N-WEST-M2-W1",
+      "source": {
+        "path": "benchmarks/left-bu-north-reviewed-v4/upper-branch-source-observations.json",
+        "sha256": "c761a82f31380a30c4d9d7cf7a23e40d06ee9ee7e16a2f5d961abc2a2928e250"
+      },
+      "pointer": "/carrier_source_record"
+    }
+  }
+}

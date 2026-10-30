@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_baseline",
+  "date": "2026-10-30",
+  "status": "CLOSED_SCOPED_M1_WORKING_BASELINE",
+  "geometry_package": {
+    "path": "docs/assets/west-m1-reviewed-v12/work/manifest.json",
+    "sha256": "7805e31a2eda32af7af0881be1ed3dac2c00495f473dbb9688067a7cbbdd0c42"
+  },
+  "geometry_model": {
+    "path": "docs/assets/west-m1-reviewed-v12/work/model.json",
+    "sha256": "3e842dfd7593a8791298bbccc368a25dc5e6bc3202ef216ca988696f0d0e4a94"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/west-m1-coverage-v11/S3-L09-return-sample.json",
+    "sha256": "2081c68c1d56c28da083eacb09e61fd3cdf137373400ab146608c303d0c326f2"
+  },
+  "human_review": {
+    "path": "benchmarks/west-m1-reviewed-v12/human-review.json",
+    "sha256": "470c7f1aabf94b420665a6d30adcd90e2516e3bc23afe83c6f1af382f41d4c1f"
+  },
+  "reviewed_fragments": {
+    "path": "benchmarks/west-m1-reviewed-v12/reviewed-fragments.json",
+    "sha256": "99016f88c92e14151227936fde9aabe53ff5e6d3cc9fa5d8bb2f27dc22dbe842"
+  },
+  "coverage": {
+    "path": "benchmarks/west-m1-reviewed-v12/scoped-M1-coverage-reviewed.json",
+    "sha256": "733173fb3e76fbc2ae688cf1d6343339783aa782665feede001c88517a64eb5a"
+  },
+  "next_request": {
+    "path": "benchmarks/west-m1-reviewed-v12/next-request.json",
+    "sha256": "a9fd2ed8393396b3d52cc96bd768606519b806c576db13f3043276fb938a3e90"
+  },
+  "accepted_group_ids": [
+    "M1-COVER-Q1",
+    "M1-COVER-Q2"
+  ],
+  "accepted_source_fragment_ids": [
+    "M1-L03",
+    "M1-L04",
+    "M1-L05",
+    "M1-L06",
+    "M1-L07",
+    "M1-L08",
+    "M1-L09",
+    "M1-L10",
+    "M1-L11",
+    "M1-L12"
+  ],
+  "unchanged_context_fragment_ids": [
+    "M1-L01",
+    "M1-L02"
+  ],
+  "accepted_metal_components": "Use reviewed-fragments.json; whole C-M1-SPINE is not approved outside these components.",
+  "declared_fragment_mapping_count": 12,
+  "newly_reviewed_geometry_fragments": 10,
+  "working_metal_count": 46,
+  "reviewed_interfaces_unchanged": 30,
+  "design_via_cuts_unchanged": 179,
+  "not_qualified": [
+    "exact_photo_projection",
+    "physical_dimensions_or_via_counts",
+    "PDK_DRC",
+    "physical_source_exhaustiveness",
+    "complete_network",
+    "canonical_geometry_adoption",
+    "unrestricted_skill_release"
+  ],
+  "continuation_rule": "Read the bound human review and selected geometry components alongside next_request. Raw AI-proposal pending fields are history, not an instruction to re-ask Q1/Q2. Any geometric change requires an explicit scoped revision and before/after evidence. Acceptance adds no via or net edge."
+}

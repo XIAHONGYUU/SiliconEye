@@ -1,0 +1,39 @@
+{
+  "kind": "closed_fixed_M1_scope_ready_for_M2_inventory",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/west-m1-reviewed-v12/human-review.json",
+    "sha256": "470c7f1aabf94b420665a6d30adcd90e2516e3bc23afe83c6f1af382f41d4c1f"
+  },
+  "working_baseline": {
+    "path": "benchmarks/west-m1-reviewed-v12/working-baseline.json",
+    "sha256": "2ed4cafec8d223ac501194178dca6f73955a0cad05be57dcf321a50febfdaa2d"
+  },
+  "working_request": {
+    "path": "benchmarks/west-m1-reviewed-v12/next-request.json",
+    "sha256": "a9fd2ed8393396b3d52cc96bd768606519b806c576db13f3043276fb938a3e90"
+  },
+  "coverage": {
+    "path": "benchmarks/west-m1-reviewed-v12/scoped-M1-coverage-reviewed.json",
+    "sha256": "733173fb3e76fbc2ae688cf1d6343339783aa782665feede001c88517a64eb5a"
+  },
+  "pending_source_question_ids": [],
+  "working_metal_candidates": 46,
+  "reviewed_working_interfaces": 30,
+  "explicit_design_cut_count": 179,
+  "geometry_changed_this_step": false,
+  "closed_geometry_group_ids": [
+    "M1-COVER-Q1",
+    "M1-COVER-Q2"
+  ],
+  "newly_reviewed_fragment_count": 10,
+  "declared_scope_fragment_count": 12,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step_plan": {
+    "path": "benchmarks/west-m1-reviewed-v12/next-scope-plan.json",
+    "sha256": "39ba68d33688b0b4457e796bddfa9ef8149a2cb141a6f95f55dac821f3cb5e63"
+  }
+}

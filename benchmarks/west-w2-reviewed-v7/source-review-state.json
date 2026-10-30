@@ -1,0 +1,30 @@
+{
+  "kind": "reviewed_W2_V2_working_extension_pending_M1_V1",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/west-w2-reviewed-v7/human-review.json",
+    "sha256": "97d8968ce540b20a9c8cce9bf30b03b8fb54fe29fdaa801f3b38351c9c3497a1"
+  },
+  "working_request": {
+    "path": "benchmarks/west-w2-reviewed-v7/next-request.json",
+    "sha256": "056e2daeb20a1e5ed55b27e0508e01e5ef3c57fd40da7e406958adf0e251e551"
+  },
+  "working_metal_candidates": 37,
+  "reviewed_working_interfaces": 20,
+  "explicit_design_cut_count": 125,
+  "old109_centers_preserved": true,
+  "pending_source_question_ids": [
+    "W2-V1-N",
+    "W2-V1-S"
+  ],
+  "pending_source_request": {
+    "path": "benchmarks/west-w2-reviewed-v7/W2-V1-review-request.json",
+    "sha256": "d9231a8a72c342b9db61a734f42739061841dcb1503eb56ba72783d63d7e0f12"
+  },
+  "new_W2_V1_geometry_added": false,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Adjudicate only new W2 M1-side V1 identity/carriers. Then add bound M1 continuations/landing pads and complete candidate groups without moving old anchors or sites."
+}

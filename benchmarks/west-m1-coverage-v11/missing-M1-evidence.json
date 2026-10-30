@@ -1,0 +1,27 @@
+{
+  "actor": "AI",
+  "reason": "Add seven explicitly missing M1 fragments as separate stable metal IDs. The bottom left/right fragments retain a source-supported gap; do not assign middle tracks to old L1/L2.",
+  "parent": {
+    "path": "docs/assets/west-m1-coverage-v11/S1-existing-continuations/manifest.json",
+    "sha256": "a53823a942f96e155f43f78135edda1868b85107d57b224ed53b689047207e8d"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "W34-M1-L07",
+    "W34-M1-L08",
+    "W34-M1-L04",
+    "W34-M1-L05",
+    "W34-M1-L06",
+    "W34-M1-L09",
+    "W34-M1-L10"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/west-m1-coverage-v11/missing-M1-inventory-supplement.json",
+      "sha256": "1d4dac1a6f8d4d5088e7342c90fff05cf254037c365685bb101e1656a682fbf0"
+    }
+  }
+}

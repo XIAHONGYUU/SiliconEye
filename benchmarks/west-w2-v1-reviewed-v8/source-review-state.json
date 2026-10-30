@@ -1,0 +1,36 @@
+{
+  "kind": "reviewed_W2_V1_working_entry_pending_west_branch_batch",
+  "date": "2026-10-30",
+  "human_review": {
+    "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+    "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+  },
+  "working_request": {
+    "path": "benchmarks/west-w2-v1-reviewed-v8/next-request.json",
+    "sha256": "326a35128b23d057995d6a06646bc6042fda3bc90e96d262565d07ed169e56dc"
+  },
+  "working_metal_candidates": 37,
+  "reviewed_working_interfaces": 22,
+  "explicit_design_cut_count": 133,
+  "old125_centers_preserved": true,
+  "pending_source_question_ids": [
+    "W3-V2-U",
+    "W3-V2-D",
+    "W4-V2-U",
+    "W4-V2-D"
+  ],
+  "pending_source_request": {
+    "path": "benchmarks/west-w2-v1-reviewed-v8/west-branch-review-request.json",
+    "sha256": "135b98579966ccb342be87b8d84f6cc55442081e24700f63a607c9d4ba04075f"
+  },
+  "W2_scoped_source_audit": {
+    "path": "benchmarks/west-w2-v1-reviewed-v8/W2-scoped-interface-audit.json",
+    "sha256": "3bab6c1bf9d9e482d0cb51c23131b22e082e6526bad6d8b0f73ac59436d4b755"
+  },
+  "new_W3_W4_geometry_added": false,
+  "geometry_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "complete_network": false,
+  "next_step": "Adjudicate W3/W4 upper/lower V2 identities/carriers together. Then add source-bound carrier extents and whole relative groups, retaining all old coordinates/decisions."
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "native_V1_identity_carrier_human_decision",
+  "actor": "human",
+  "date": "2026-10-29",
+  "question_id": "R34-LEFT-Q1",
+  "statement": "Q1：是 V1，接 A",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/R3-R4-left-continuation-v1/review-request.json",
+      "sha256": "4b2dd639555a52aed3187f453b56e0beadd4646b22e942651182e08b1b9e9533"
+    },
+    "source_observations": {
+      "path": "benchmarks/R3-R4-left-continuation-v1/source-observations.json",
+      "sha256": "47d47101039c9fe1bbe97aa751992fe03c79ab838306a7a2cb03f4cb62a18706"
+    },
+    "submitted_pair": {
+      "path": "docs/assets/R3-R4-left-continuation-v1/Q1-paired.png",
+      "sha256": "0b5712888bca3a07e7322523232dcf14b5036d78baecf469652acb61e80d4af5"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "LEFT-BU-V1-CANDIDATE",
+      "via_layer": "V1",
+      "source_frame": "m1",
+      "native_search_bounds": [
+        1990,
+        2664,
+        2042,
+        2765
+      ],
+      "V1_present": true,
+      "lower_source_id": "BU-UP-SOURCE",
+      "upper_source_id": "LEFT-M2-A-CANDIDATE",
+      "upper_layer": "M2",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "precise_landing_human_approved": false,
+      "design_geometry_human_approved": false
+    }
+  ],
+  "not_approved": [
+    "M2 photograph V2 identity",
+    "V2 to M3 carrier",
+    "Cut counts",
+    "Exact center co-location",
+    "Fine landing or enclosure",
+    "Complete R3/R4 network",
+    "Canonical geometry adoption"
+  ],
+  "integration_status": "SOURCE_FACT_RECORDED_WORKING_GEOMETRY_PENDING_EXPLICIT_SCOPE_EXTENSION"
+}

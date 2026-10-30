@@ -1,0 +1,26 @@
+{
+  "actor": "AI",
+  "reason": "Add L1/L2 as WORKING-CANDIDATE source fragments after reviewed local noncontact P2/P3; not global net IDs or physical geometry approval.",
+  "parent": {
+    "path": "docs/assets/BR-R-return-work-v3/M1-return/manifest.json",
+    "sha256": "0e59fb2d6fae6001deae2f0dbaaa507a6ca7f29b0ac64283be5fceefeefa8ae3"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "BRR-L1-CANDIDATE",
+    "BRR-L2-CANDIDATE"
+  ],
+  "sources": {
+    "source_inventory_supplement": {
+      "path": "benchmarks/BR-R-return-work-v3/L1-L2-inventory-supplement.json",
+      "sha256": "9eb3c819255bca075d3921ecaf2e6a7000ad7e528e0065b933280cb93b50c7b6"
+    },
+    "human_contact_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    }
+  }
+}

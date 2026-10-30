@@ -1,0 +1,37 @@
+{
+  "actor": "AI",
+  "reason": "Add source-reviewed V1/V2 relations using whole declared candidate arrays; preserve existing records.",
+  "parent": {
+    "path": "docs/assets/left-bu-joint-work-v3/S3-M2-carrier/manifest.json",
+    "sha256": "81993985963849eec3f7ca330c8d03d7566cd2212f2ff84757dc0c0ee5aeb8b7"
+  },
+  "added_interface_ids": [
+    "LEFT-BU-V1-CANDIDATE",
+    "LEFT-M2-A-V2-U",
+    "LEFT-M2-A-V2-D"
+  ],
+  "interface_observations": {
+    "LEFT-BU-V1-CANDIDATE": {
+      "path": "benchmarks/left-bu-joint-work-v3/LEFT-BU-V1-CANDIDATE-array-observation.json",
+      "sha256": "e27e1395a29d3ed14420187ade3f5a0e8a524091451b7ab0d70fdddc845b3325"
+    },
+    "LEFT-M2-A-V2-U": {
+      "path": "benchmarks/left-bu-joint-work-v3/LEFT-M2-A-V2-U-array-observation.json",
+      "sha256": "d5762f0461b26a888924304c8eb0416817db2406865e821951197fc9adfb10d9"
+    },
+    "LEFT-M2-A-V2-D": {
+      "path": "benchmarks/left-bu-joint-work-v3/LEFT-M2-A-V2-D-array-observation.json",
+      "sha256": "445a0f703886cb2d18ee87851502c149de1d8230d0a265c733a0fe87b70786aa"
+    }
+  },
+  "sources": {
+    "V1": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  }
+}

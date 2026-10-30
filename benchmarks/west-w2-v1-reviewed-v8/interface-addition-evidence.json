@@ -1,0 +1,32 @@
+{
+  "actor": "AI",
+  "reason": "Append only the two new human-source-reviewed W2 V1 interfaces and complete candidate groups.",
+  "parent": {
+    "path": "docs/assets/west-w2-v1-reviewed-v8/S1-W2-M1-parts/manifest.json",
+    "sha256": "8b4cb945e71fbd6e6ca6e373a05714d4c65ca34c95736800e5f65ab0423a1d2a"
+  },
+  "added_interface_ids": [
+    "W2-V1-N",
+    "W2-V1-S"
+  ],
+  "interface_observations": {
+    "W2-V1-N": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/W2-V1-N-array-observation.json",
+      "sha256": "8d10f8d44f5f98226c98c242453ac7b67c8c7fa14993133a82d7118102d7031f"
+    },
+    "W2-V1-S": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/W2-V1-S-array-observation.json",
+      "sha256": "69abb0351a6aa5fddffbac470db2a5534a9ed7b830cef43ec57aeea4217ac30a"
+    }
+  },
+  "sources": {
+    "human": {
+      "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+      "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+    },
+    "native": {
+      "path": "benchmarks/west-w2-reviewed-v7/W2-M1-source-observations.json",
+      "sha256": "1bae566bba41ade43a4ecc783e11bcbabaef6102c3f8e752678ce1a39ea6a360"
+    }
+  }
+}

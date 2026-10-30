@@ -1,0 +1,29 @@
+{
+  "kind": "macro_search_supported_native_V1_entry_pending",
+  "date": "2026-10-29",
+  "working_request": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/next-request.json",
+    "sha256": "fc53fd46f656ca93d426959b824db4f0cf62bcf09739187b10fc78ffb86f0f08"
+  },
+  "observations": {
+    "path": "benchmarks/corridor-m1-v1-entry-v1/observations.json",
+    "sha256": "5d2182832e7e5d526435f13f01fdde48107af3de8d492d389f12ae352462441e"
+  },
+  "review_request": {
+    "path": "benchmarks/corridor-m1-v1-entry-v1/review-request.json",
+    "sha256": "9832d1e08964f2da0684a686f7ab1e97a558e166aa1fea616c240ede38d70edb"
+  },
+  "macro_search_budget_pass": true,
+  "macro_identity_authority": "AI_CANDIDATE_NOT_HUMAN_POINT_TRUTH",
+  "fine_landing_qualified": false,
+  "new_V1_confirmed": 0,
+  "new_interfaces": 0,
+  "new_geometry": 0,
+  "prior_metals": 30,
+  "prior_reviewed_interfaces": 9,
+  "prior_design_cuts": 42,
+  "pending_questions": [
+    "CORRIDOR-M1-V1-ENTRY-Q1"
+  ],
+  "next_dependency": "Resolve A/B source identity/carrier or receive corrected local position before defining new M1/V1 geometry. Do not promote mere macro correspondence into V1 approval."
+}

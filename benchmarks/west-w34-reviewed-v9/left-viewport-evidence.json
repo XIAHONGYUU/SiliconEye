@@ -1,0 +1,43 @@
+{
+  "kind": "conductive_canvas_extension",
+  "actor": "AI",
+  "reason": "W3/W4 are west of the current viewport. Extend only left750 without moving origin, scale or old geometry.",
+  "parent": {
+    "path": "docs/assets/west-w2-v1-reviewed-v8/S2-W2-V1/manifest.json",
+    "sha256": "7709fa01f8f67cb552ede8388abe81e1462fdbe76d555036f12bc63b4d7edb8c"
+  },
+  "from_canvas_wh": [
+    2730,
+    1440
+  ],
+  "to_canvas_wh": [
+    3480,
+    1440
+  ],
+  "from_canvas_bounds": [
+    -1950,
+    0,
+    780,
+    1440
+  ],
+  "to_canvas_bounds": [
+    -2700,
+    0,
+    780,
+    1440
+  ],
+  "direction": "LEFT_ONLY",
+  "origin_xy": [
+    0,
+    0
+  ],
+  "scale_xy": [
+    1,
+    1
+  ],
+  "translation_xy": [
+    0,
+    0
+  ],
+  "geometry_human_approved": false
+}

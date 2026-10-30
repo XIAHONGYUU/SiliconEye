@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-30",
+  "status": "PASS_PRE_PUSH_ENGINEERING_CHECKS",
+  "basis_head": "66a450a5c420357e642529c6d36e4874aede3528",
+  "snapshot": {
+    "path": "benchmarks/west-m1-reviewed-v12/next-request.json",
+    "sha256": "a9fd2ed8393396b3d52cc96bd768606519b806c576db13f3043276fb938a3e90"
+  },
+  "model": {
+    "path": "docs/assets/west-m1-reviewed-v12/work/model.json",
+    "sha256": "3e842dfd7593a8791298bbccc368a25dc5e6bc3202ef216ca988696f0d0e4a94"
+  },
+  "fixed_regression": {
+    "path": "benchmarks/github-checkpoint-2026-10-30/fixed-regression.json",
+    "sha256": "b50a1d0e91e71b9acd60d928255e94f0ff6a0a11973468ab014320094233389f"
+  },
+  "showcase_protection": {
+    "path": "benchmarks/conductive-work-baseline-v1/showcase-protection.json",
+    "sha256": "65bd74f8be5ef52e67772879c1af4dde9fbfe7f65fa7ec068aba45785a55bf55"
+  },
+  "targeted_tests": {
+    "command": ".venv/bin/pytest -q tests/test_conductive*.py tests/test_native_source_decision_adapter.py tests/test_b_short_finger_reviewed.py tests/test_metal_reconstruction.py",
+    "passed": 252,
+    "seconds": 191.91,
+    "returncode": 0
+  },
+  "ruff_changed_and_new_modules_and_tests": "PASS",
+  "current_replay_model_exact": true,
+  "current_replay_input_files": 226,
+  "new_json_bound_refs_missing": [],
+  "new_json_bound_refs_hash_mismatch": [],
+  "new_json_bound_refs_ignored_by_git": [],
+  "working_metal_counts": {
+    "M1": 11,
+    "M2": 13,
+    "M3": 22
+  },
+  "reviewed_interfaces": 30,
+  "candidate_design_cuts": 179,
+  "showcase_files_unchanged": 25,
+  "remote_main_before_push": "66a450a5c420357e642529c6d36e4874aede3528",
+  "remote_gh_pages_before_push": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "whitespace_check": "PASS with CRLF accepted for frozen CSV evidence; default whitespace rules otherwise enabled",
+  "git_push_status": "NOT_CLAIMED_BY_PRE_PUSH_RECORD",
+  "new_agent_run": false,
+  "browser_interaction_tested": false,
+  "source_to_design_transform": null,
+  "canonical_geometry_adopted": false,
+  "complete_network": false
+}

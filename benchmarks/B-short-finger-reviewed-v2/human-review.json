@@ -1,0 +1,105 @@
+{
+  "kind": "scoped_same_layer_local_contact_human_judgment",
+  "actor": "human",
+  "date": "2026-10-29",
+  "statement": "这个局部区分正确",
+  "question_id": "B-FINGER-CONTACT-Q1",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/B-short-finger-inventory-v1/review-request.json",
+      "sha256": "e5fae92504c4b26bf725a94ca42db035861d2c13fbff3a8a50a826c58aaba4f5"
+    },
+    "source_observations": {
+      "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+      "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+    },
+    "right_marked": {
+      "path": "docs/assets/B-short-finger-inventory-v1/right-marked.png",
+      "sha256": "2b5dd48be4ddf9901f91cdad8d54dba2c576d6f21bd9a46fd39f037555e415d7"
+    },
+    "right_raw": {
+      "path": "docs/assets/B-short-finger-inventory-v1/right-raw.png",
+      "sha256": "46395261b310b021087456e8b6cceccca1355abc3925e5c0549449695a602f9a"
+    }
+  },
+  "decisions": [
+    {
+      "observation_id": "BF24",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_window": [
+        2949,
+        2772,
+        2987,
+        2936
+      ],
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "local_contact_to_BU": true,
+      "local_contact_to_L1": null,
+      "local_contact_to_L2": null,
+      "upper_carrier_context": "C-M1-SPINE",
+      "exact_geometry_human_approved": false,
+      "physical_cut_count": null,
+      "global_same_net_with_BU": null
+    },
+    {
+      "observation_id": "BF25",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_window": [
+        3002,
+        2771,
+        3040,
+        2935
+      ],
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "local_contact_to_BU": false,
+      "local_contact_to_L1": false,
+      "local_contact_to_L2": false,
+      "upper_carrier_context": null,
+      "exact_geometry_human_approved": false,
+      "physical_cut_count": null,
+      "global_same_net_with_BU": null
+    },
+    {
+      "observation_id": "BF26",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_window": [
+        3053,
+        2769,
+        3091,
+        2933
+      ],
+      "contact_scope": "LOCAL_SAME_LAYER_ONLY",
+      "local_contact_to_BU": true,
+      "local_contact_to_L1": null,
+      "local_contact_to_L2": null,
+      "upper_carrier_context": "C-M1-SPINE",
+      "exact_geometry_human_approved": false,
+      "physical_cut_count": null,
+      "global_same_net_with_BU": null
+    }
+  ],
+  "not_approved": [
+    "Exact geometry",
+    "Other23 fingers",
+    "BR-C/BR-R routing",
+    "Global isolation or floating state",
+    "Via identity/count",
+    "Automatic network adoption",
+    "Material identity promotion",
+    "Other23 fingers"
+  ],
+  "global_net_assignment": null,
+  "geometry_human_approved": false
+}

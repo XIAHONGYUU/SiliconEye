@@ -1,0 +1,26 @@
+{
+  "stages": [
+    {
+      "stage": "S1-N-interface",
+      "request": {
+        "path": "benchmarks/left-bu-north-reviewed-v4/S1-N-request.json",
+        "sha256": "16103dfa740d3bff4fc0e6de1d64ed40c116e755691495b84fef66f6ee580519"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-north-reviewed-v4/S1-N-interface/manifest.json",
+        "sha256": "47f2cb6ee67d96c659b5d76b175074ebd302786dfc4da289474d8eb79cf35822"
+      }
+    },
+    {
+      "stage": "S2-upper-branches",
+      "request": {
+        "path": "benchmarks/left-bu-north-reviewed-v4/S2-branches-request.json",
+        "sha256": "ce75b87892dbc995e2985b5a1ee10bb03e802f3400d78cbe5261a6040100651b"
+      },
+      "manifest": {
+        "path": "docs/assets/left-bu-north-reviewed-v4/S2-upper-branches/manifest.json",
+        "sha256": "eed0d2516a69da5ec3149813fcedcdc267f15fd7a8f0fa2305cc7fd4211e5501"
+      }
+    }
+  ]
+}

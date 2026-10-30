@@ -1,0 +1,370 @@
+{
+  "kind": "non_adopted_extension_geometry_checks",
+  "status": "RELATIVE_PROPOSAL_GEOMETRY_PASS_NOT_ADOPTION",
+  "proposed_canvas_wh": [
+    780,
+    1440
+  ],
+  "old_canvas_wh": [
+    780,
+    1240
+  ],
+  "geometry_max_y": 1344.0,
+  "old_canvas_final_geometry_rejected": true,
+  "new_canvas_relative_geometry_pass": true,
+  "current_parent_canvas_gate": {
+    "status": "EXPECTED_PARENT_CANVAS_REJECTION",
+    "reason": "Revision cannot change snapshot, canvas or budgets",
+    "parent_preserved": true,
+    "output_adopted": false,
+    "meaning": "Requires an explicit tested extension transaction; do not remove the parent."
+  },
+  "M1_geometry": {
+    "status": "PASS",
+    "errors": [],
+    "pair_gaps": [
+      {
+        "ids": [
+          "C-M1-SPINE",
+          "BF25-M1-CANDIDATE"
+        ],
+        "gap_px": 21.0
+      },
+      {
+        "ids": [
+          "C-M1-SPINE",
+          "BRR-L1-CANDIDATE"
+        ],
+        "gap_px": 16.0
+      },
+      {
+        "ids": [
+          "C-M1-SPINE",
+          "BRR-L2-CANDIDATE"
+        ],
+        "gap_px": 26.0
+      },
+      {
+        "ids": [
+          "BF25-M1-CANDIDATE",
+          "BRR-L1-CANDIDATE"
+        ],
+        "gap_px": 16.0
+      },
+      {
+        "ids": [
+          "BF25-M1-CANDIDATE",
+          "BRR-L2-CANDIDATE"
+        ],
+        "gap_px": 36.0
+      },
+      {
+        "ids": [
+          "BRR-L1-CANDIDATE",
+          "BRR-L2-CANDIDATE"
+        ],
+        "gap_px": 11.999999999999998
+      }
+    ],
+    "minimum_gap_px": 11.999999999999998
+  },
+  "local_part_sources": {
+    "status": "SOURCE_BOUND_LOCAL_PART_CANDIDATES",
+    "evidence": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/proposal-local-part-source-ledger.json",
+      "sha256": "90245d66a3698d1ae3d25c27370fbcc7f747826fa43996d5650984739100505c"
+    },
+    "part_count": 7,
+    "source_geometry_qualified": false,
+    "geometry_human_approved": false
+  },
+  "inventory_mapping": {
+    "status": "DECLARED_FRAGMENT_GEOMETRY_MAPPING_PASS",
+    "inventory": {
+      "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+      "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+    },
+    "listed_metal_observations": 34,
+    "mapped_geometry_count": 34,
+    "unmapped_observation_ids": [],
+    "existing_partial_source_extent_ids": [
+      "RT-M2-R01",
+      "RT-M2-R02",
+      "RT-M2-NARROW",
+      "RT-M3-UP",
+      "RT-M3-MID",
+      "RT-M3-THIN1",
+      "RT-M3-THIN2",
+      "RT-M3-DOWN"
+    ],
+    "unresolved_observation_ids": [
+      "C-U1",
+      "C-U2",
+      "C-U3",
+      "C-U4",
+      "C-U5"
+    ],
+    "boundary_source_observation_endpoints": 48,
+    "complete_source_extent_geometry": false,
+    "physical_inventory_exhaustiveness": "AI_SCANNED_NOT_INDEPENDENTLY_VERIFIED",
+    "actual_photo_coverage_fraction": null,
+    "supplemental_visible_inventories": [
+      {
+        "path": "benchmarks/corridor-m1-v1-reviewed-v2/M1-inventory-supplement.json",
+        "sha256": "c371e0699e17657d560b55ce472b1d6e31ba0db0263a2bd311f0b7a80fa2d891"
+      },
+      {
+        "path": "benchmarks/B-short-finger-reviewed-v2/BF25-inventory-supplement.json",
+        "sha256": "02150e982e99f08fd869ed0fa1490386f116a62e35dbbabbea40e4cc1cac55d4"
+      },
+      {
+        "path": "benchmarks/BR-R-return-reviewed-v2/proposal-L1-L2-inventory-supplement.json",
+        "sha256": "8dedca8958fa1c58cd282f000c74b666dee5991aee890a68b1007df9ba984621"
+      }
+    ],
+    "scope_qualification": "BASE_INVENTORY_PLUS_EXPLICIT_PARTIAL_SUPPLEMENTS"
+  },
+  "source_shape": {
+    "status": "PASS",
+    "checks": [
+      {
+        "id": "RT-M2-R01",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M2-R02",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M2-NARROW",
+        "native_turns": [
+          1
+        ],
+        "design_turns": [
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M2-03",
+        "native_turns": [
+          -1
+        ],
+        "design_turns": [
+          -1
+        ],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M2-04",
+        "native_turns": [
+          -1
+        ],
+        "design_turns": [
+          -1
+        ],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M2-05",
+        "native_turns": [
+          1
+        ],
+        "design_turns": [
+          1
+        ],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M2-06",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M2-08",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M3-UP",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M3-MID",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M3-DOWN",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M3-THIN1",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "RT-M3-THIN2",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-T01",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-T02",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-T03",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-T04",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-T05",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-T06",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-E1",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-E2",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-M01",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-M02",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-M03",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-M04",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-M05",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-M06",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-L01",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-L03",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M3-EDGE",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "C-M1-SPINE",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "BF25-M1-CANDIDATE",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "BRR-L1-CANDIDATE",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      },
+      {
+        "id": "BRR-L2-CANDIDATE",
+        "native_turns": [],
+        "design_turns": [],
+        "status": "PASS"
+      }
+    ],
+    "scope": "declared_path_handedness_not_photo_geometry_acceptance"
+  },
+  "candidate_gaps_to_main_M1_design_px": {
+    "BRR-L1-CANDIDATE": 16.0,
+    "BRR-L2-CANDIDATE": 26.0,
+    "BF25-M1-CANDIDATE": 21.0
+  },
+  "all_old_via_geometry_audits_pass": true,
+  "source_contact_human_review": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+    "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+  },
+  "exact_geometry_human_approved": false,
+  "canvas_human_approved": false,
+  "current_workflow_adopted": false,
+  "current_working_request": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  }
+}

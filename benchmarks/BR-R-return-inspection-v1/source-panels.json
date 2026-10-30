@@ -1,0 +1,124 @@
+{
+  "kind": "native_return_inspection_panels",
+  "panels": {
+    "wide": {
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        2670,
+        2640,
+        3300,
+        3250
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        30,
+        90
+      ],
+      "raw": {
+        "path": "docs/assets/BR-R-return-inspection-v1/wide-raw.png",
+        "sha256": "ad6f527c491bd38f7902fcc178afb448be3cf1c020ba5397c699b342fe9fe393"
+      },
+      "marked": {
+        "path": "docs/assets/BR-R-return-inspection-v1/wide-marked.png",
+        "sha256": "585b827146f5e2052d1c9a1669017f37d72d9ac381520f0948e7726d363cecc1"
+      },
+      "relation_ids": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    "upper": {
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        2930,
+        2670,
+        3240,
+        2890
+      ],
+      "scale": 3,
+      "photo_offset_xy": [
+        30,
+        90
+      ],
+      "raw": {
+        "path": "docs/assets/BR-R-return-inspection-v1/upper-raw.png",
+        "sha256": "af00d8e1ff886e9e2472698a20a2cd206a1e9438834fd2acf92cb69d2d205d06"
+      },
+      "marked": {
+        "path": "docs/assets/BR-R-return-inspection-v1/upper-marked.png",
+        "sha256": "d5af9d3b3e5c46c38c817149f49ee8b12a0600a492b1b5a754f10dcb3d8715af"
+      },
+      "relation_ids": [
+        "P1"
+      ]
+    },
+    "gaps": {
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        2910,
+        2810,
+        3230,
+        3040
+      ],
+      "scale": 3,
+      "photo_offset_xy": [
+        30,
+        90
+      ],
+      "raw": {
+        "path": "docs/assets/BR-R-return-inspection-v1/gaps-raw.png",
+        "sha256": "7a62f9d8fcca7c477de984f89f423d75f9d97350a3345b51a2bdb7f4b6f7c4f5"
+      },
+      "marked": {
+        "path": "docs/assets/BR-R-return-inspection-v1/gaps-marked.png",
+        "sha256": "b1aa9d2e48ae7e95f83b72c69d69d4f71f390d9cae5f902678e4b8e51d52b0d6"
+      },
+      "relation_ids": [
+        "P2",
+        "P3"
+      ]
+    },
+    "lower": {
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_bounds": [
+        2860,
+        2990,
+        3230,
+        3240
+      ],
+      "scale": 3,
+      "photo_offset_xy": [
+        30,
+        90
+      ],
+      "raw": {
+        "path": "docs/assets/BR-R-return-inspection-v1/lower-raw.png",
+        "sha256": "fda8309460ff22860235af5b4d5fc152c6e5b43cb4325b7c933468a6d35189dc"
+      },
+      "marked": {
+        "path": "docs/assets/BR-R-return-inspection-v1/lower-marked.png",
+        "sha256": "1273b7dfa65ef36f5ee63a4d96f8bd16ab221bd63afc3f74e0020e7919579b9d"
+      },
+      "relation_ids": [
+        "P4",
+        "P5"
+      ]
+    }
+  },
+  "cross_layer_projection": false
+}

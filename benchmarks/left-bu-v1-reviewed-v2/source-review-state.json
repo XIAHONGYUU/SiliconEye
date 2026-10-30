@@ -1,0 +1,30 @@
+{
+  "kind": "reviewed_V1_and_pending_M2_A_two_end_V2",
+  "date": "2026-10-29",
+  "human_review": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+    "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+  },
+  "working_request": {
+    "path": "benchmarks/BR-R-return-work-v3/next-request.json",
+    "sha256": "9ca1a8bd1f96b81e22ca9b6894b7229da88d97c9cf2fadc50889909e74082659"
+  },
+  "source_continuation": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+    "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+  },
+  "review_request": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/review-request.json",
+    "sha256": "0e87341629e20f17ca84de9ac3722343a2ed1ec015d7fe5f71a1f9e0741df0ed"
+  },
+  "pending_question_ids": [
+    "LEFT-M2-A-V2-U",
+    "LEFT-M2-A-V2-D"
+  ],
+  "working_interfaces": 11,
+  "new_reviewed_source_only_interface_facts": 1,
+  "working_geometry_changed": false,
+  "next_step": "Resolve U/D identity and carrier, then explicitly extend source/working scope and verify complete candidate-group landing without moving old centers.",
+  "net_edges": [],
+  "complete_network": false
+}

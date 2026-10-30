@@ -1,0 +1,53 @@
+{
+  "kind": "scoped_M1_V1_entry_verification",
+  "date": "2026-10-29",
+  "status": "LOCAL_CANDIDATE_BRIDGE_CHECKED_WITH_SOURCE_LIMITS",
+  "current_request": {
+    "path": "benchmarks/corridor-m1-v1-reviewed-v2/next-request.json",
+    "sha256": "d2182c88d4760fbaa677ab84f235051729586e10aa6e12eae3540a38ef5e64dc"
+  },
+  "current_model": {
+    "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/model.json",
+    "sha256": "467b858bdf580c8c99fece3a74c6cad6be7fb380a29b6703e7482d71e16ac6fb"
+  },
+  "exact_replay": true,
+  "old_metals_exact": 30,
+  "old_reviewed_interfaces_exact": 9,
+  "old_design_cuts_and_centers_exact": 42,
+  "new_metals": 1,
+  "new_V1_groups": 2,
+  "new_candidate_cuts": 4,
+  "reviewed_interfaces": 11,
+  "whole_declared_candidate_group_enclosure": "PASS_11_NOT_PHYSICAL_GROUP_EXHAUSTIVENESS",
+  "human_physical_cut_counts_known": 0,
+  "source_to_design_transform": null,
+  "new_geometry_human_approved": false,
+  "software_tests": {
+    "unique_passed": 102,
+    "prior_combined_suite_passed": 101,
+    "current_new_suite_passed": 17,
+    "note": "One appended immutability case added after combined101; no unrelated repeated checks."
+  },
+  "ruff": "PASS",
+  "source_asset_reuse": true,
+  "new_m1_raw_crops_exact": 2,
+  "local_resource_links_checked": 47,
+  "inline_script_syntax_checked": 2,
+  "png_visual_review": "PASS",
+  "browser_interaction": "NOT_TESTED",
+  "showcase_files_exact": 25,
+  "gh_pages_ref": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "first_failure": {
+    "kind": "missing_source_observation_id",
+    "rejected_before_geometry_or_approval_export": true,
+    "diagnostic": {
+      "path": "docs/assets/corridor-m1-v1-reviewed-v2/work-rejected-v1/diagnostic.json",
+      "sha256": "decc0f71e83371c303551a7333065408cf765b4faccab28e36bc0bb34fc5d461"
+    }
+  },
+  "coverage_limit": "31 declared metal fragments, not full M1/V1 photo coverage or a complete network.",
+  "current_task_archive": {
+    "path": "docs/history/current-task-before-2026-10-29-M1-V1-reviewed.md",
+    "sha256": "4708ed9929ddf2a41f0fb100fb7ffe1922abc85013623c40bc850a6f792b04d1"
+  }
+}

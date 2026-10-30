@@ -1,0 +1,18 @@
+{
+  "actor": "AI",
+  "reason": "Append only the newly observed L09 short south return, preserving its original horizontal source anchor and all existing source ledger rows.",
+  "parent": {
+    "path": "docs/assets/west-m1-coverage-v11/S2-seven-M1-fragments/manifest.json",
+    "sha256": "8010d228d102ada4865f6892f0ad8a7f25a862fdccf131d36f729d46b50a97b8"
+  },
+  "sources": {
+    "rescan": {
+      "path": "benchmarks/west-m1-coverage-v11/source-rescan.json",
+      "sha256": "f5a3cc17ea01529addd5c8e808e59255b2550485a232d2bf7d483bdb43bca56f"
+    },
+    "ledger": {
+      "path": "benchmarks/west-m1-coverage-v11/S3-final-source-ledger.json",
+      "sha256": "9c22f196a09e18a62f5a641dc0847c0d8844dfdbe54f6861bfa913ef7bde8edd"
+    }
+  }
+}

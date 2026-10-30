@@ -1,0 +1,165 @@
+{
+  "kind": "native_finger_inventory_panels",
+  "panels": {
+    "full": {
+      "native_bounds": [
+        1640,
+        2740,
+        3200,
+        3010
+      ],
+      "scale": 1,
+      "photo_offset_xy": [
+        30,
+        145
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/B-short-finger-inventory-v1/full-raw.png",
+        "sha256": "a1a834e47e11fbdd886a140e185c6af031e82f99659aaf34f56f034cb776db71"
+      },
+      "marked": {
+        "path": "docs/assets/B-short-finger-inventory-v1/full-marked.png",
+        "sha256": "f5981e040c9e6ad0872241380cf931e00c369a293d6ab1f94ac4218c6508859b"
+      },
+      "finger_ids": [
+        "BF01",
+        "BF02",
+        "BF03",
+        "BF04",
+        "BF05",
+        "BF06",
+        "BF07",
+        "BF08",
+        "BF09",
+        "BF10",
+        "BF11",
+        "BF12",
+        "BF13",
+        "BF14",
+        "BF15",
+        "BF16",
+        "BF17",
+        "BF18",
+        "BF19",
+        "BF20",
+        "BF21",
+        "BF22",
+        "BF23",
+        "BF24",
+        "BF25",
+        "BF26"
+      ]
+    },
+    "left": {
+      "native_bounds": [
+        1640,
+        2740,
+        2210,
+        3010
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        30,
+        145
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/B-short-finger-inventory-v1/left-raw.png",
+        "sha256": "3e09fb003f529c53df3f989907219043f9eeef176a6cd1de940fec69aa2a52d0"
+      },
+      "marked": {
+        "path": "docs/assets/B-short-finger-inventory-v1/left-marked.png",
+        "sha256": "d257eacd30ed3863d8a22ee7f30a26f139ef590907a8d9b65a144274c3bb284e"
+      },
+      "finger_ids": [
+        "BF01",
+        "BF02",
+        "BF03",
+        "BF04",
+        "BF05",
+        "BF06",
+        "BF07",
+        "BF08",
+        "BF09"
+      ]
+    },
+    "middle": {
+      "native_bounds": [
+        2160,
+        2720,
+        2750,
+        3010
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        30,
+        145
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/B-short-finger-inventory-v1/middle-raw.png",
+        "sha256": "0555a66e423e3af154c24ea989d4ba6b79978fd03ef9acb4c7b81e9ba4467630"
+      },
+      "marked": {
+        "path": "docs/assets/B-short-finger-inventory-v1/middle-marked.png",
+        "sha256": "817fd94f7f72b18a231bc7e1070c0031ec79280cf71f210c44072523c5005d6e"
+      },
+      "finger_ids": [
+        "BF10",
+        "BF11",
+        "BF12",
+        "BF13",
+        "BF14",
+        "BF15",
+        "BF16",
+        "BF17",
+        "BF18",
+        "BF19"
+      ]
+    },
+    "right": {
+      "native_bounds": [
+        2690,
+        2690,
+        3200,
+        3000
+      ],
+      "scale": 2,
+      "photo_offset_xy": [
+        30,
+        145
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/B-short-finger-inventory-v1/right-raw.png",
+        "sha256": "46395261b310b021087456e8b6cceccca1355abc3925e5c0549449695a602f9a"
+      },
+      "marked": {
+        "path": "docs/assets/B-short-finger-inventory-v1/right-marked.png",
+        "sha256": "2b5dd48be4ddf9901f91cdad8d54dba2c576d6f21bd9a46fd39f037555e415d7"
+      },
+      "finger_ids": [
+        "BF20",
+        "BF21",
+        "BF22",
+        "BF23",
+        "BF24",
+        "BF25",
+        "BF26"
+      ]
+    }
+  }
+}

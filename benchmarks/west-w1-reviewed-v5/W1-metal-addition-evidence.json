@@ -1,0 +1,21 @@
+{
+  "actor": "AI",
+  "reason": "Add the exact source-anchor W1 carrier; lower extent is a subsequent bound part, not a relocated anchor.",
+  "parent": {
+    "path": "docs/assets/west-w1-reviewed-v5/S1-F1-tab/manifest.json",
+    "sha256": "b68763033ca1ddecc5157ce6c5449c09bb2d00406ef6201dab37ba1334aa1692"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "N-WEST-M2-W1"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/west-w1-reviewed-v5/W1-inventory-supplement.json",
+      "sha256": "329227cc51a518fcbcb71c6648782e896d24ba06065e9edd5a480e616476f5e0"
+    }
+  }
+}

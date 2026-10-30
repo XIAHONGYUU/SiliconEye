@@ -1,0 +1,38 @@
+{
+  "kind": "scoped_native_finger_contact_review_request",
+  "date": "2026-10-29",
+  "question_id": "B-FINGER-CONTACT-Q1",
+  "observations": {
+    "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+    "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+  },
+  "baseline_request": {
+    "path": "benchmarks/corridor-m1-horizontal-branches-v1/next-request.json",
+    "sha256": "d448872359a568c026fcf82cf0c434cc4f8da96fb4fbbc57ac1e39c56a002078"
+  },
+  "scope_finger_ids": [
+    "BF24",
+    "BF25",
+    "BF26"
+  ],
+  "images": {
+    "right_marked": {
+      "path": "docs/assets/B-short-finger-inventory-v1/right-marked.png",
+      "sha256": "2b5dd48be4ddf9901f91cdad8d54dba2c576d6f21bd9a46fd39f037555e415d7"
+    },
+    "right_raw": {
+      "path": "docs/assets/B-short-finger-inventory-v1/right-raw.png",
+      "sha256": "46395261b310b021087456e8b6cceccca1355abc3925e5c0549449695a602f9a"
+    }
+  },
+  "question": "右侧大邻域图中，BF24、BF26倾向通过窄竖段接上方BU；BF25上下两端都可见间隙，暂不接BU或下方L1/L2。这个局部区分是否正确？若BF25实际有细线接下横条，或中间亮条并非M1，请指出。只确认这三条，不扩展到其余23条或BR长线。",
+  "answer": null,
+  "approval_excludes": [
+    "Exact geometry",
+    "Other23 fingers",
+    "BR-C/BR-R routing",
+    "Global isolation or floating state",
+    "Via identity/count",
+    "Automatic network adoption"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "conductive_canvas_extension",
+  "actor": "AI",
+  "reason": "New reviewed source is left of old corridor; grow the viewport without moving design origin or old sites.",
+  "parent": {
+    "path": "docs/assets/BR-R-return-work-v3/work/manifest.json",
+    "sha256": "e76422ad20d2ea2074d5401c27ef2a22ff144b3891ce77201ac6cb53dc3268ce"
+  },
+  "from_canvas_wh": [
+    780,
+    1440
+  ],
+  "to_canvas_wh": [
+    2280,
+    1440
+  ],
+  "from_canvas_bounds": [
+    0,
+    0,
+    780,
+    1440
+  ],
+  "to_canvas_bounds": [
+    -1500,
+    0,
+    780,
+    1440
+  ],
+  "direction": "LEFT_ONLY",
+  "origin_xy": [
+    0,
+    0
+  ],
+  "scale_xy": [
+    1,
+    1
+  ],
+  "translation_xy": [
+    0,
+    0
+  ],
+  "geometry_human_approved": false
+}

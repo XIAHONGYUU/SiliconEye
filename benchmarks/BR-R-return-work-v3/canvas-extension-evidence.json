@@ -1,0 +1,41 @@
+{
+  "kind": "conductive_canvas_extension",
+  "actor": "AI",
+  "reason": "Explicit bottom-only candidate canvas extension, following reviewed BR-R source contacts and the user continuation. Every prior sample field except canvas and every object/site are exact.",
+  "parent": {
+    "path": "docs/assets/B-short-finger-reviewed-v2/work/manifest.json",
+    "sha256": "c72900cf55077d778b710dc4bde6bae5b1688e9a54570fa622f52428f3b9da25"
+  },
+  "from_canvas_wh": [
+    780,
+    1240
+  ],
+  "to_canvas_wh": [
+    780,
+    1440
+  ],
+  "direction": "BOTTOM_ONLY",
+  "origin_xy": [
+    0,
+    0
+  ],
+  "scale_xy": [
+    1,
+    1
+  ],
+  "translation_xy": [
+    0,
+    0
+  ],
+  "geometry_human_approved": false,
+  "sources": {
+    "reviewed_source_contacts": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "extension_proposal": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/extension-proposal.json",
+      "sha256": "df830c5cf87d548e603a078c1fc2a2f939e941c2236e58149d7308a81d5aaa60"
+    }
+  }
+}

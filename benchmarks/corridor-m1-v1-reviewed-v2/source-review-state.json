@@ -1,0 +1,65 @@
+{
+  "kind": "scoped_M1_V1_entry_reviewed_state",
+  "date": "2026-10-29",
+  "human_review": {
+    "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+    "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+  },
+  "original_question": {
+    "path": "benchmarks/corridor-m1-v1-entry-v1/review-request.json",
+    "sha256": "9832d1e08964f2da0684a686f7ab1e97a558e166aa1fea616c240ede38d70edb"
+  },
+  "working_model": {
+    "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/model.json",
+    "sha256": "467b858bdf580c8c99fece3a74c6cad6be7fb380a29b6703e7482d71e16ac6fb"
+  },
+  "reviewed_interfaces": [
+    {
+      "id": "CORRIDOR-V1-A",
+      "V1_identity_human_confirmed": true,
+      "carrier_human_confirmed": "RT-M2-R01",
+      "lower_M1_mapping": "C-M1-SPINE",
+      "lower_M1_mapping_actor": "AI",
+      "physical_cut_count": null,
+      "source_centers_measured": false,
+      "geometry_human_approved": false
+    },
+    {
+      "id": "CORRIDOR-V1-B",
+      "V1_identity_human_confirmed": true,
+      "carrier_human_confirmed": "RT-M2-R01",
+      "lower_M1_mapping": "C-M1-SPINE",
+      "lower_M1_mapping_actor": "AI",
+      "physical_cut_count": null,
+      "source_centers_measured": false,
+      "geometry_human_approved": false
+    }
+  ],
+  "old_records_preserved": {
+    "metals": 30,
+    "V2_interfaces": 9,
+    "design_cuts": 42
+  },
+  "candidate_inventory": {
+    "M1": 1,
+    "M2": 8,
+    "M3": 22,
+    "V1_groups": 2,
+    "V2_groups": 9,
+    "new_design_cuts": 4
+  },
+  "scope_qualifications": [
+    "M1 is one partial vertical spine, not all visible M1.",
+    "Original M2/M3 coverage audit remains independently scoped and is not silently promoted to five-layer completeness.",
+    "A/B original search windows bind human identity/carrier evidence, not measured cut-group edges.",
+    "Source-to-design transform remains null; macro search precision is not internal via precision."
+  ],
+  "remaining_work": [
+    "Add source-visible horizontal M1 continuations at A/B without filling gaps from circuit expectation.",
+    "Inventory other same-area V1 interfaces separately; R02 V1 absence is not established.",
+    "Physical via counts and exact source geometry remain unknown; do not reopen A/B identity/carrier."
+  ],
+  "pending_new_human_question": null,
+  "net_edges": [],
+  "complete_network": false
+}

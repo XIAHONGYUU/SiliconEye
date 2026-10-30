@@ -1,0 +1,78 @@
+{
+  "kind": "AI_upper_M1_V1_source_candidate",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "lower_source_record": {
+    "id": "BU-UP-NORTH-SOURCE",
+    "frame": "m1",
+    "native_path": [
+      [
+        1975,
+        1950
+      ],
+      [
+        2004,
+        2570
+      ]
+    ],
+    "native_bounds": [
+      1940,
+      1900,
+      2050,
+      2600
+    ],
+    "kind": "AI_native_same_M1_continuation",
+    "actor": "AI",
+    "source_photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "end_states": [
+      "continues_into_upper_M1_junction_and_pending_N_group",
+      "joins_previously_modeled_BU_UP"
+    ],
+    "geometry_human_approved": false,
+    "physical_terminal_claimed": false
+  },
+  "new_interface_candidate": {
+    "id": "LEFT-BU-NORTH-V1",
+    "m1_native_search_bounds": [
+      1955,
+      1930,
+      2025,
+      2002
+    ],
+    "m2_carrier_id": "LEFT-M2-A-CANDIDATE",
+    "V1_present": null,
+    "physical_cut_count": null,
+    "connection_confirmed": null
+  },
+  "carrier_source": {
+    "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+    "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+  },
+  "reviewed_context": {
+    "V1_Q1": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2_UD": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  },
+  "source_to_design_transform": null,
+  "fine_landing_qualified": false,
+  "distinction": "N is identified from the M1 photograph. Reviewed U is V2 on M2; it is not the V1 N site.",
+  "scope": "Upper junction only; M1 continues laterally outside this view. No complete network or physical count claim."
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-29",
+  "kind": "source_review_package_checks_not_physical_proof",
+  "status": "PASS",
+  "human_review_statement_exact": true,
+  "previous_Q1_request_unchanged": true,
+  "new_V1_source_fact_confirmed": 1,
+  "working_interfaces_unchanged": 11,
+  "pending_V2_source_questions": 2,
+  "frozen_old_files_exact": 8,
+  "pixel_exact_raw_source_crops": 6,
+  "source_route_locators_in_scope": 3,
+  "local_resources_checked": 42,
+  "inline_script_syntax_checked": 1,
+  "showcase_files_exact": 25,
+  "gh_pages_ref_exact": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "archived_task_body_exact": true,
+  "working_geometry_changed": false,
+  "program_changed": false,
+  "visual_checks": [
+    "U-paired.png",
+    "D-paired.png",
+    "m3-wide-marked.png"
+  ],
+  "browser_interaction_tested": false,
+  "software_tests_rerun": false,
+  "test_scope_reason": "No production change; source decisions require physical review, not repeated prior127 software tests.",
+  "fine_landing_qualified": false,
+  "new_interface_in_working_geometry": false,
+  "complete_network": false
+}

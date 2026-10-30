@@ -1,0 +1,113 @@
+{
+  "actor": "AI",
+  "kind": "via_array_observation",
+  "reason": "Visible bright lattice recorded as a whole-group candidate; human approved identity/carrier only.",
+  "interface_id": "LEFT-BU-V1-CANDIDATE",
+  "layer": "V1",
+  "source_frame": "m1",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "native_bounds": [
+    1990,
+    2664,
+    2042,
+    2765
+  ],
+  "count_status": "candidate_not_human_count",
+  "rows": 5,
+  "columns": 2,
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        2005,
+        2675
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        2028,
+        2675
+      ]
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "native_xy": [
+        2005,
+        2694
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "native_xy": [
+        2028,
+        2694
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "native_xy": [
+        2005,
+        2713
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "native_xy": [
+        2028,
+        2713
+      ]
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "native_xy": [
+        2005,
+        2734
+      ]
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "native_xy": [
+        2028,
+        2734
+      ]
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "native_xy": [
+        2005,
+        2751
+      ]
+    },
+    {
+      "row": 4,
+      "column": 1,
+      "native_xy": [
+        2028,
+        2751
+      ]
+    }
+  ],
+  "sources": {
+    "V1_human": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2_human": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  }
+}

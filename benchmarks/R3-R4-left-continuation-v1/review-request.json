@@ -1,0 +1,32 @@
+{
+  "kind": "human_native_V1_identity_and_carrier_request",
+  "date": "2026-10-29",
+  "observation_source": {
+    "path": "benchmarks/R3-R4-left-continuation-v1/source-observations.json",
+    "sha256": "47d47101039c9fe1bbe97aa751992fe03c79ab838306a7a2cb03f4cb62a18706"
+  },
+  "question_id": "R34-LEFT-Q1",
+  "question": "M1 图中橙框 Q1 的孔组，是否为 V1，并把 BU 向上的宽 M1 接到 M2 图中蓝框 A 的宽竖向 M2？仅判断这处身份与承载，不裁决孔数；M2 本身可见亮点不作为 V1 证据。",
+  "answer": null,
+  "human_approved": false,
+  "m1_source_bounds": [
+    1990,
+    2664,
+    2042,
+    2765
+  ],
+  "m2_carrier_bounds": [
+    1945,
+    2520,
+    2008,
+    2800
+  ],
+  "not_requested": [
+    "P1-P5",
+    "BF24/BF25/BF26",
+    "Old A/B V1",
+    "Via counts",
+    "M2-visible V2 identity",
+    "Full network"
+  ]
+}

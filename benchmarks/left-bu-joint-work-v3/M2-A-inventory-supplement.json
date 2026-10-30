@@ -1,0 +1,100 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add the source-reviewed M2 A carrier in an explicit leftward working scope.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          1680,
+          1730,
+          3680,
+          3000
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "LEFT-M2-A-NATIVE-OBS",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          1966,
+          1915
+        ],
+        [
+          1970,
+          2290
+        ],
+        [
+          1980,
+          2788
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_extent_candidate"
+        },
+        {
+          "state": "visible_extent_candidate"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "LEFT-M2-A-NATIVE-OBS",
+      "metal_id": "LEFT-M2-A-CANDIDATE"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "parent": {
+      "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/manifest.json",
+      "sha256": "afdf3854b78db49b1db8802a36f22d959c0382c157b0e5e2491021e7c7fd8801"
+    },
+    "inherited_A_B_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    },
+    "three_finger_contact_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    "BRR_contact_review": {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    "native_left": {
+      "path": "benchmarks/R3-R4-left-continuation-v1/source-observations.json",
+      "sha256": "47d47101039c9fe1bbe97aa751992fe03c79ab838306a7a2cb03f4cb62a18706"
+    },
+    "source_continuation": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/source-continuation.json",
+      "sha256": "1a26826d2a0ead5e000318c7239a2b79623d75da5a054a9072d6447020c1452d"
+    },
+    "V1_human": {
+      "path": "benchmarks/left-bu-v1-reviewed-v2/human-review.json",
+      "sha256": "ca94b84c4f8f478be7904c943d2958ca1b60174541225d24d6f1a10adb8cdf23"
+    },
+    "V2_human": {
+      "path": "benchmarks/left-bu-joint-work-v3/human-review.json",
+      "sha256": "3439a3123ad4759833807a54cbc83105ce85173e8e721546f30b254e8ac6e8b9"
+    }
+  }
+}

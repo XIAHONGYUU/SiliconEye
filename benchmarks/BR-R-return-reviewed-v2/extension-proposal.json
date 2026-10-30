@@ -1,0 +1,82 @@
+{
+  "kind": "explicit_canvas_extension_proposal",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "status": "PROPOSED_NOT_ADOPTED",
+  "baseline_request": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  },
+  "baseline_parent": {
+    "path": "docs/assets/B-short-finger-reviewed-v2/work/manifest.json",
+    "sha256": "c72900cf55077d778b710dc4bde6bae5b1688e9a54570fa622f52428f3b9da25"
+  },
+  "human_return_contacts": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+    "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+  },
+  "from_canvas_wh": [
+    780,
+    1240
+  ],
+  "to_canvas_wh": [
+    780,
+    1440
+  ],
+  "origin_xy": [
+    0,
+    0
+  ],
+  "direction": "BOTTOM_ONLY",
+  "old_geometry_scaled": false,
+  "old_geometry_translated": false,
+  "old_via_centers_moved": false,
+  "proposed_M1_source_scope": [
+    2940,
+    1900,
+    3670,
+    3200
+  ],
+  "old_source_scope_rewritten": false,
+  "final_state_proposal_sample": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/final-state-proposal-sample.json",
+    "sha256": "58925c7524ced32e8de96e7fed03b65c69db809a7bf511ace397c043adb75d78"
+  },
+  "preview": {
+    "path": "docs/assets/BR-R-return-reviewed-v2/proposal-preview.json",
+    "sha256": "8a144afb398045802fa14a4a7e9a24369bf348db4587014cee44214b91d9e306"
+  },
+  "geometry_checks": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/proposal-geometry-checks.json",
+    "sha256": "596872fa27752f8cd848e214781ee43de4bfd4d014b816a5d8a2b9632042100c"
+  },
+  "stages": [
+    {
+      "id": "S1",
+      "task": "Implement explicit canvas extension transaction only; preserve every feature/interface record and all old coordinate values.",
+      "current_workflow_support": "NOT_IMPLEMENTED_CURRENT_GATE_REJECTS"
+    },
+    {
+      "id": "S2",
+      "task": "After S1, revise only C-M1-SPINE by appending BRR-DOWN/R3/R4 source-bound parts; no VIA changes."
+    },
+    {
+      "id": "S3",
+      "task": "After S2, add L1/L2 candidate fragments via inventory-backed metal addition; preserve all previous records and local gaps."
+    }
+  ],
+  "required_protections": [
+    "Origin/units/budgets unchanged",
+    "Old canvas cannot shrink",
+    "All old coordinates and VIA centers exact",
+    "Source bounds append explicitly; never rewrite old observations",
+    "Candidate-only M1 geometry does not authorize global nets or PDK qualification"
+  ],
+  "not_authorized_by_source_verdict": [
+    "Canvas adoption",
+    "Exact new geometry",
+    "Unasked neighbor contacts",
+    "V1/V2 identity/count",
+    "Global separation or complete-network claims"
+  ]
+}

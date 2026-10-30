@@ -1,0 +1,331 @@
+{
+  "kind": "AI_native_west_M2_branch_batch_after_reviewed_W2",
+  "actor": "AI",
+  "date": "2026-10-30",
+  "photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "reviewed_W2_V1": {
+    "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+    "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+  },
+  "M2_metals": [
+    {
+      "id": "WEST-M2-W3-SOURCE",
+      "frame": "m2",
+      "native_path": [
+        [
+          725,
+          1925
+        ],
+        [
+          740,
+          2350
+        ],
+        [
+          755,
+          2795
+        ]
+      ],
+      "native_scope_bounds": [
+        250,
+        1730,
+        850,
+        2900
+      ],
+      "end_states": [
+        "visible_upper_pad",
+        "visible_lower_pad"
+      ]
+    },
+    {
+      "id": "WEST-M2-W4-SOURCE",
+      "frame": "m2",
+      "native_path": [
+        [
+          360,
+          1930
+        ],
+        [
+          380,
+          2355
+        ],
+        [
+          400,
+          2800
+        ]
+      ],
+      "native_scope_bounds": [
+        250,
+        1730,
+        850,
+        2900
+      ],
+      "end_states": [
+        "visible_upper_pad",
+        "visible_lower_pad"
+      ]
+    }
+  ],
+  "V2_sites": [
+    {
+      "id": "W3-V2-U",
+      "label": "W3-U",
+      "source_frame": "m2",
+      "via_layer": "V2",
+      "native_search_bounds": [
+        702,
+        1900,
+        750,
+        1970
+      ],
+      "lower_source_id": "WEST-M2-W3-SOURCE",
+      "upper_metal_candidate_id": "RT-M3-UP",
+      "m3_native_carrier_search_bounds": [
+        590,
+        1950,
+        850,
+        2020
+      ],
+      "V2_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null
+    },
+    {
+      "id": "W3-V2-D",
+      "label": "W3-D",
+      "source_frame": "m2",
+      "via_layer": "V2",
+      "native_search_bounds": [
+        730,
+        2705,
+        782,
+        2820
+      ],
+      "lower_source_id": "WEST-M2-W3-SOURCE",
+      "upper_metal_candidate_id": "RT-M3-DOWN",
+      "m3_native_carrier_search_bounds": [
+        590,
+        2750,
+        850,
+        2870
+      ],
+      "V2_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null
+    },
+    {
+      "id": "W4-V2-U",
+      "label": "W4-U",
+      "source_frame": "m2",
+      "via_layer": "V2",
+      "native_search_bounds": [
+        337,
+        1900,
+        391,
+        1975
+      ],
+      "lower_source_id": "WEST-M2-W4-SOURCE",
+      "upper_metal_candidate_id": "RT-M3-UP",
+      "m3_native_carrier_search_bounds": [
+        250,
+        1960,
+        510,
+        2030
+      ],
+      "V2_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null
+    },
+    {
+      "id": "W4-V2-D",
+      "label": "W4-D",
+      "source_frame": "m2",
+      "via_layer": "V2",
+      "native_search_bounds": [
+        372,
+        2700,
+        428,
+        2825
+      ],
+      "lower_source_id": "WEST-M2-W4-SOURCE",
+      "upper_metal_candidate_id": "RT-M3-DOWN",
+      "m3_native_carrier_search_bounds": [
+        250,
+        2760,
+        510,
+        2890
+      ],
+      "V2_present": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null
+    }
+  ],
+  "M3_carriers": [
+    {
+      "id": "RT-M3-UP",
+      "layer": "M3",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2980,
+          1958
+        ],
+        [
+          3650,
+          1938
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          184
+        ],
+        [
+          700,
+          184
+        ]
+      ],
+      "design_width": 60,
+      "label": "B-U upper bus",
+      "label_xy": [
+        65,
+        139
+      ],
+      "role": "structural_hypothesis",
+      "end_states": [
+        "visible_extent_unreviewed",
+        "continues_beyond_review_window_unknown"
+      ],
+      "local_parts": [
+        {
+          "id": "LEFT-BUS-UP",
+          "bounds": [
+            -1440,
+            154,
+            76,
+            214
+          ],
+          "basis": "Source-bound orthogonal working candidate; no PDK/source dimension acceptance."
+        }
+      ]
+    },
+    {
+      "id": "RT-M3-DOWN",
+      "layer": "M3",
+      "source_frame": "m3",
+      "native_path": [
+        [
+          2980,
+          2750
+        ],
+        [
+          3650,
+          2730
+        ]
+      ],
+      "design_path": [
+        [
+          40,
+          870
+        ],
+        [
+          700,
+          870
+        ]
+      ],
+      "design_width": 80,
+      "label": "B-D lower bus",
+      "label_xy": [
+        65,
+        825
+      ],
+      "role": "structural_hypothesis",
+      "end_states": [
+        "visible_extent_unreviewed",
+        "continues_beyond_review_window_unknown"
+      ],
+      "local_parts": [
+        {
+          "id": "LEFT-BUS-DOWN",
+          "bounds": [
+            -1440,
+            830,
+            76,
+            910
+          ],
+          "basis": "Source-bound orthogonal working candidate; no PDK/source dimension acceptance."
+        }
+      ]
+    }
+  ],
+  "M3_west_continuity": [
+    {
+      "id": "RT-M3-UP-WEST-BATCH-SOURCE",
+      "frame": "m3",
+      "native_path": [
+        [
+          250,
+          1995
+        ],
+        [
+          900,
+          1985
+        ]
+      ],
+      "existing_id": "RT-M3-UP"
+    },
+    {
+      "id": "RT-M3-DOWN-WEST-BATCH-SOURCE",
+      "frame": "m3",
+      "native_path": [
+        [
+          250,
+          2830
+        ],
+        [
+          900,
+          2805
+        ]
+      ],
+      "existing_id": "RT-M3-DOWN"
+    }
+  ],
+  "basis": "Two further source-visible long M2 runs have bright end groups. Repeated structure is a clue, not an automatic identity/carrier approval.",
+  "working_geometry_added": false,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "net_edges": [],
+  "complete_network": false
+}

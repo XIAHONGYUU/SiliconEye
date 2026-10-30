@@ -1,0 +1,50 @@
+{
+  "kind": "scoped_capability_closeout_and_next_stage",
+  "date": "2026-10-29",
+  "working_request": {
+    "path": "benchmarks/corridor-0506-joint-reviewed-v3/next-request.json",
+    "sha256": "fc53fd46f656ca93d426959b824db4f0cf62bcf09739187b10fc78ffb86f0f08"
+  },
+  "coverage": {
+    "path": "docs/assets/conductive-corridor-closeout-v2/coverage.json",
+    "sha256": "a804484a453a75f2b0318029472a0303469acea9a84cb239a20bad9c17a11821"
+  },
+  "status": "SCOPED_LEDGER_AND_DECLARED_DESIGN_CHECKS_RECONCILED",
+  "skill_qualification": "LIMITED_TRIAL_V2",
+  "ready": [
+    "Declared metal-to-geometry mapping",
+    "Scoped human identity/carrier replay without reasking",
+    "Complete explicit design-array enclosure",
+    "Boundary and AI unknown accounting"
+  ],
+  "not_qualified": [
+    "Physical inventory or interface exhaustiveness",
+    "Physical via counts or exact source-array geometry",
+    "Calibrated cross-frame projection or real-PDK DRC",
+    "M1/V1 inclusion for this continuous scope",
+    "Complete network or automatic netlist export"
+  ],
+  "next_priority": "M1_V1_CONTIGUOUS_SCOPE_JOIN",
+  "target_existing_M2_ids": [
+    "RT-M2-R01",
+    "RT-M2-R02"
+  ],
+  "steps": [
+    "Inspect original M1 and M2 shared macro structures before proposing any coordinate match.",
+    "Qualify the bounded same-location relationship with independent structures; otherwise retain unknown and ask one focused source question.",
+    "Identify V1 from the M1 photograph, then attach it to the already-reviewed corridor M2.",
+    "Use existing workflow transactions, full declared array envelopes and old9-interface regression checks.",
+    "Review only genuinely new identity/carrier ambiguity; keep all previous approvals."
+  ],
+  "existing_V1_reference": {
+    "path": "benchmarks/v1-new-short-branch-reviewed-v2/next-request.json",
+    "sha256": "04972191fb2988fbf6e96f75df3a9ccf4a969e3a81eb2acad1bf027bf58d78b0"
+  },
+  "reference_scope_limit": "The existing V1 sample uses m1 x930–1450,y3110–3560 and m2 x930–1450,y3110–3560, disjoint from the corridor nominal native domain. It is a method reference, not same-location evidence or a registered join.",
+  "new_geometry_or_interfaces": 0,
+  "complete_network": false,
+  "entry_inspection": {
+    "path": "benchmarks/conductive-corridor-closeout-v2/M1-V1-entry-inspection.json",
+    "sha256": "761c60772e5ee7b5290a14864060ead11231e3c93d62004b3e4c63079048cb41"
+  }
+}

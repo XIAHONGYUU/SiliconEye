@@ -1,0 +1,262 @@
+{
+  "kind": "native_M1_leftward_continuation_source_review",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "parent_working_request": {
+    "path": "benchmarks/BR-R-return-work-v3/next-request.json",
+    "sha256": "9ca1a8bd1f96b81e22ca9b6894b7229da88d97c9cf2fadc50889909e74082659"
+  },
+  "photos": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "explicit_source_scope": {
+    "m1": [
+      1540,
+      2490,
+      3250,
+      3280
+    ],
+    "m2": [
+      1720,
+      2520,
+      2190,
+      2940
+    ]
+  },
+  "coordinate_domain": "Each photograph native pixels; paths are approximate trace locators, not reconstructed GDS polygons.",
+  "routes": [
+    {
+      "id": "R3-LEFT",
+      "frame": "m1",
+      "native_path": [
+        [
+          3104,
+          3070
+        ],
+        [
+          2800,
+          3080
+        ],
+        [
+          2397,
+          3095
+        ],
+        [
+          2000,
+          3111
+        ],
+        [
+          1679,
+          3125
+        ]
+      ],
+      "relation": "Visible wide strip continues left through the central BR-C junction to the left vertical return.",
+      "status": "AI_SOURCE_CANDIDATE",
+      "color": "#42e4ef"
+    },
+    {
+      "id": "R4-LEFT",
+      "frame": "m1",
+      "native_path": [
+        [
+          3108,
+          3174
+        ],
+        [
+          2800,
+          3184
+        ],
+        [
+          2397,
+          3200
+        ],
+        [
+          2000,
+          3214
+        ],
+        [
+          1685,
+          3226
+        ],
+        [
+          1673,
+          2830
+        ]
+      ],
+      "relation": "Bottom broad strip continues left and turns upward into the left return to BU.",
+      "status": "AI_SOURCE_CANDIDATE",
+      "color": "#ffb64a"
+    },
+    {
+      "id": "BU-LEFT",
+      "frame": "m1",
+      "native_path": [
+        [
+          1673,
+          2830
+        ],
+        [
+          2010,
+          2818
+        ],
+        [
+          2390,
+          2806
+        ],
+        [
+          2800,
+          2794
+        ],
+        [
+          3098,
+          2785
+        ]
+      ],
+      "relation": "Visible upper return; source continuation of the previously reviewed local BU contact.",
+      "status": "AI_SOURCE_CANDIDATE",
+      "color": "#73ed90"
+    },
+    {
+      "id": "BR-C-SOURCE",
+      "frame": "m1",
+      "native_path": [
+        [
+          2390,
+          2806
+        ],
+        [
+          2395,
+          2960
+        ],
+        [
+          2399,
+          3095
+        ],
+        [
+          2401,
+          3158
+        ]
+      ],
+      "relation": "Central vertical candidate meets R3 and BU; visible bottom ends above R4 locally. This is not global isolation.",
+      "status": "AI_SOURCE_CANDIDATE",
+      "color": "#e5a3ff"
+    },
+    {
+      "id": "BU-UP-SOURCE",
+      "frame": "m1",
+      "native_path": [
+        [
+          2010,
+          2818
+        ],
+        [
+          2008,
+          2710
+        ],
+        [
+          2004,
+          2570
+        ]
+      ],
+      "relation": "Wide upward M1 run from BU reaches the new Q1 hole-group search site; continues beyond this view upward.",
+      "status": "AI_SOURCE_CANDIDATE",
+      "color": "#f797b0"
+    }
+  ],
+  "new_interface_candidate": {
+    "id": "LEFT-BU-V1-CANDIDATE",
+    "m1_native_search_bounds": [
+      1990,
+      2664,
+      2042,
+      2765
+    ],
+    "m2_carrier_id": "LEFT-M2-A-CANDIDATE",
+    "m2_native_carrier_context_bounds": [
+      1945,
+      2520,
+      2008,
+      2800
+    ],
+    "identity": "V1_CANDIDATE_FROM_M1_PHOTO",
+    "carrier": "WIDE_VERTICAL_M2_A_CANDIDATE",
+    "physical_cut_count": null,
+    "m2_visible_holes": "Separate upper-interface/V2 candidate only; not used as V1 identity evidence.",
+    "fine_landing_qualified": false,
+    "human_approved": false
+  },
+  "macro_search_context": {
+    "source": {
+      "path": "benchmarks/corridor-m1-v1-entry-v1/pad-frame-macro-search-v2.json",
+      "sha256": "c91c62c7cbdbf6a1b2584292469c6bd6cd61c2d9eccfe7b587404bb236cea479"
+    },
+    "use": "Locate broad M2 carrier only; no pixel projection or fine landing claim.",
+    "whole_photo_projection_used": false,
+    "source_to_design_transform": null
+  },
+  "continuity_status": "AI_INSPECTED_SOURCE_CONTINUATIONS_NOT_HUMAN_GEOMETRY_ADOPTED",
+  "coverage_boundary": {
+    "completed": [
+      "R3 wide rail from reviewed BR-R contact to left return",
+      "R4 broad return from reviewed BR-R contact to left bend and BU",
+      "Central BR-C neighborhood and local bottom clearance from R4",
+      "Next upward BU branch and broad M2 carrier search"
+    ],
+    "not_exhaustive": [
+      "All short-finger CT terminals",
+      "Every thin neighboring track",
+      "All via sites on all connected branches",
+      "Entire network"
+    ],
+    "thin_neighbor_contacts": null,
+    "other_23_finger_reviews": null,
+    "new_VIA_group_count": 1,
+    "absence_of_other_vias_asserted": false,
+    "open_source_exits": [
+      {
+        "id": "BU-UP-NORTH",
+        "frame": "m1",
+        "native_anchor": [
+          2004,
+          2570
+        ],
+        "status": "CONTINUES_OUTSIDE_INSPECTED_VIEW_NOT_A_PHYSICAL_END"
+      },
+      {
+        "id": "BU-UP-WEST",
+        "frame": "m1",
+        "native_anchor": [
+          1540,
+          2698
+        ],
+        "status": "LEFT_HORIZONTAL_SOURCE_BRANCH_NOT_EXHAUSTIVELY_TRACED"
+      }
+    ]
+  },
+  "preserved_local_reviews": [
+    {
+      "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+      "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+    },
+    {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    }
+  ],
+  "geometry_adopted": false,
+  "working_geometry_modified": false,
+  "net_edges": [],
+  "complete_network": false,
+  "stopping_reason": "A new V1 identity and M2 carrier decision changes cross-layer connectivity. Await the human source decision before adding this interface or tracing its M2 as connected."
+}

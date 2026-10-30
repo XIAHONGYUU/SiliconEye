@@ -1,0 +1,73 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "reason": "Represent only source-reviewed locally noncontacting BF25 as a separate candidate strip. Do not assign an electrical net, floating state, or human material/geometry approval.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m1": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m1.jpg",
+          "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+        },
+        "native_bounds": [
+          3002,
+          2771,
+          3040,
+          2935
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "BF25-SOURCE-OBS",
+      "source_frame": "m1",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          3017,
+          2820
+        ],
+        [
+          3023,
+          2898
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "local_gap_to_BU_reviewed_not_global_open"
+        },
+        {
+          "state": "local_gap_to_lower_bars_reviewed_not_global_open"
+        }
+      ],
+      "extent_qualification": "LOCAL_SOURCE_STRIP_CANDIDATE_NOT_A_GLOBAL_NODE"
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "BF25-SOURCE-OBS",
+      "metal_id": "BF25-M1-CANDIDATE"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "human_contact_review": {
+      "path": "benchmarks/B-short-finger-reviewed-v2/human-review.json",
+      "sha256": "19d9f21ce64d3cb5037396b79ffea41816c1ebef32d570d99416ad135fabcd2f"
+    },
+    "native_observations": {
+      "path": "benchmarks/B-short-finger-inventory-v1/observations.json",
+      "sha256": "2dbdd607a49307ce6a68be8b23296ff4a44724ed03dae4f1d8e202f53146e09a"
+    }
+  },
+  "limits": [
+    "Material identity, exact geometry, vias and global network remain unknown. Only local noncontact is reviewed."
+  ]
+}

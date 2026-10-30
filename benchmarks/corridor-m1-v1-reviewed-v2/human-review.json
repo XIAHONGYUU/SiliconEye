@@ -1,0 +1,59 @@
+{
+  "kind": "native_entry_human_judgment",
+  "actor": "human",
+  "date": "2026-10-29",
+  "question_id": "CORRIDOR-M1-V1-ENTRY-Q1",
+  "statement": "都有",
+  "observed_cut_count": null,
+  "interpretation": "A、B均有V1并接到RT-M2-R01；不批准精确孔位、数量或新增规则几何。",
+  "sources": {
+    "submitted_request": {
+      "path": "benchmarks/corridor-m1-v1-entry-v1/review-request.json",
+      "sha256": "9832d1e08964f2da0684a686f7ab1e97a558e166aa1fea616c240ede38d70edb"
+    },
+    "native-wide-pair.png": {
+      "path": "docs/assets/corridor-m1-v1-entry-v1/native-wide-pair.png",
+      "sha256": "320d04951e0e9f418a6dd4b68da70264aaf2c69d4c31104a76a2b5e5ec16a401"
+    },
+    "native-A-B-details.png": {
+      "path": "docs/assets/corridor-m1-v1-entry-v1/native-A-B-details.png",
+      "sha256": "bbd5fae6b3d7635202f10e5784746ed3812330c668687cd6b654414ce94bea42"
+    }
+  },
+  "decisions": [
+    {
+      "interface_id": "CORRIDOR-V1-A",
+      "region_id": "CORRIDOR-V1-A-SEARCH",
+      "source_frame": "m1",
+      "native_bounds": [
+        3125,
+        1930,
+        3175,
+        2010
+      ],
+      "via_layer": "V1",
+      "V1_present": true,
+      "upper_metal_id": "RT-M2-R01",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    },
+    {
+      "interface_id": "CORRIDOR-V1-B",
+      "region_id": "CORRIDOR-V1-B-SEARCH",
+      "source_frame": "m1",
+      "native_bounds": [
+        3130,
+        2775,
+        3180,
+        2845
+      ],
+      "via_layer": "V1",
+      "V1_present": true,
+      "upper_metal_id": "RT-M2-R01",
+      "connection_confirmed": true,
+      "physical_cut_count": null,
+      "design_geometry_human_approved": false
+    }
+  ]
+}

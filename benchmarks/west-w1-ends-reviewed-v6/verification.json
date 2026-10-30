@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-30",
+  "status": "PASS",
+  "kind": "working_candidate_checks_not_physical_or_PDK_approval",
+  "transactions_replayed_exact": 1,
+  "current_resume_exact": true,
+  "working_metal_count": 36,
+  "reviewed_working_interfaces": 18,
+  "whole_candidate_arrays_checked": 18,
+  "explicit_design_cuts": 109,
+  "physical_counts_confirmed": 0,
+  "old36_metals_exact": true,
+  "old16_reviews_exact": true,
+  "old93_cut_bounds_and_centers_exact": true,
+  "native_anchors_and_canvas_unchanged": true,
+  "source_ledger_unchanged": true,
+  "new_W1_V2_interfaces": [
+    "W1-V2-U",
+    "W1-V2-D"
+  ],
+  "W2_source_only": true,
+  "raw_source_views_pixel_exact": 12,
+  "svg_unique_geometry_objects": 145,
+  "static_local_links_checked": 67,
+  "inline_script_syntax_checked": 2,
+  "targeted_tests_passed": 28,
+  "production_changed": false,
+  "source_photos_unchanged": true,
+  "showcase_files_unchanged": 25,
+  "gh_pages_ref_unchanged": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "task_archive_body_exact": true,
+  "pending_source_questions": [
+    "W2-V2-U",
+    "W2-V2-D"
+  ],
+  "visual_checks": [
+    "joint-work.png",
+    "W2-U-paired.png",
+    "W2-D-paired.png"
+  ],
+  "browser_interaction_tested": false,
+  "fine_source_geometry_qualified": false,
+  "canonical_geometry_adopted": false,
+  "complete_network": false
+}

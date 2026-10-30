@@ -1,0 +1,186 @@
+{
+  "kind": "local_metal_part_source_evidence",
+  "actor": "AI",
+  "date": "2026-10-29",
+  "reason": "Attach only two source-visible horizontal main runs to the existing partial M1 spine. Keep old source anchors, eleven reviewed interfaces and all forty-six design-cut centers.",
+  "geometry_human_approved": false,
+  "parts": [
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "A-RIGHT",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        1900,
+        3670,
+        3000
+      ],
+      "native_path": [
+        [
+          3143,
+          1960
+        ],
+        [
+          3410,
+          1955
+        ],
+        [
+          3670,
+          1949
+        ]
+      ],
+      "design_bounds": [
+        179,
+        264,
+        655,
+        276
+      ],
+      "source_role": "AI_OBSERVED_SAME_LAYER_HORIZONTAL_CONTINUATION",
+      "geometry_human_approved": false,
+      "attachment_interface_id": "CORRIDOR-V1-A",
+      "scope_exit": {
+        "native_xy": [
+          3670,
+          1949
+        ],
+        "state": "exits_working_scope_continues_in_source",
+        "physical_end": false
+      },
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    },
+    {
+      "metal_id": "C-M1-SPINE",
+      "part_id": "B-LEFT",
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_scope_bounds": [
+        2940,
+        1900,
+        3670,
+        3000
+      ],
+      "native_path": [
+        [
+          3155,
+          2780
+        ],
+        [
+          3040,
+          2784
+        ],
+        [
+          2940,
+          2788
+        ]
+      ],
+      "design_bounds": [
+        12,
+        1011,
+        191,
+        1029
+      ],
+      "source_role": "AI_OBSERVED_SAME_LAYER_HORIZONTAL_CONTINUATION",
+      "geometry_human_approved": false,
+      "attachment_interface_id": "CORRIDOR-V1-B",
+      "scope_exit": {
+        "native_xy": [
+          2940,
+          2788
+        ],
+        "state": "exits_working_scope_continues_in_source",
+        "physical_end": false
+      },
+      "native_width_measured": false,
+      "precise_projection_qualified": false
+    }
+  ],
+  "full_source_context": [
+    {
+      "part_id": "A-RIGHT",
+      "native_path": [
+        [
+          3143,
+          1960
+        ],
+        [
+          3670,
+          1949
+        ],
+        [
+          4500,
+          1930
+        ],
+        [
+          5175,
+          1917
+        ],
+        [
+          5178,
+          2290
+        ]
+      ],
+      "end_state": "turns_down_then_continues_beyond_display_window",
+      "physical_end": false,
+      "modeled_in_working_canvas": false
+    },
+    {
+      "part_id": "B-LEFT",
+      "native_path": [
+        [
+          3155,
+          2780
+        ],
+        [
+          2940,
+          2788
+        ],
+        [
+          2600,
+          2805
+        ],
+        [
+          2200,
+          2820
+        ],
+        [
+          1682,
+          2828
+        ],
+        [
+          1688,
+          3100
+        ]
+      ],
+      "end_state": "turns_down_then_continues_beyond_display_window",
+      "physical_end": false,
+      "modeled_in_working_canvas": false
+    }
+  ],
+  "sources": {
+    "photo": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "parent": {
+      "path": "docs/assets/corridor-m1-v1-reviewed-v2/work/manifest.json",
+      "sha256": "afdf3854b78db49b1db8802a36f22d959c0382c157b0e5e2491021e7c7fd8801"
+    },
+    "inherited_A_B_review": {
+      "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+      "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+    }
+  },
+  "limits": [
+    "Only horizontal main runs within the original working corridor are reconstructed. Downward fingers, inner parallel strips and external return paths are not automatically merged.",
+    "B horizontal band is near native y2780, while the inherited approximate spine anchor is y2800; both lie in the approved B search station. Native anchor is preserved and no fine alignment or via center shift is inferred.",
+    "A naive maximum-brightness probe at x3600 selects an inner strip near y1987 rather than the outer run near y1950. Peak brightness alone was not used to fit the branch."
+  ]
+}

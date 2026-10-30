@@ -1,0 +1,52 @@
+{
+  "kind": "reviewed_native_return_contacts_state",
+  "date": "2026-10-29",
+  "human_review": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/human-review.json",
+    "sha256": "16363d5ec4cb26f18e28ae1ad0c7961f4b077b3a688c9b9c00e1804e80a919d8"
+  },
+  "source_question": {
+    "path": "benchmarks/BR-R-return-inspection-v1/review-request.json",
+    "sha256": "5237ae9b89a61e68673d99fd1ec626089cee351861122a8f4d7a5b79edb91ab6"
+  },
+  "reviewed_relation_ids": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "pending_original_question": null,
+  "current_working_request": {
+    "path": "benchmarks/B-short-finger-reviewed-v2/next-request.json",
+    "sha256": "b2dc071f2923c2acd40bf453441a2b72f431b73a3770f2f04cacdb9ccb6658c6"
+  },
+  "current_working_metals": 32,
+  "current_via_interfaces": 11,
+  "current_design_cut_centers": 46,
+  "new_working_geometry_objects": 0,
+  "working_canvas_unchanged": [
+    780,
+    1240
+  ],
+  "extension_proposal": {
+    "path": "benchmarks/BR-R-return-reviewed-v2/extension-proposal.json",
+    "sha256": "df830c5cf87d548e603a078c1fc2a2f939e941c2236e58149d7308a81d5aaa60"
+  },
+  "proposal_only_metals": 34,
+  "proposal_canvas_wh": [
+    780,
+    1440
+  ],
+  "proposal_adopted": false,
+  "source_to_design_transform": null,
+  "net_edges": [],
+  "remaining_unknowns": [
+    "N3090/N3158 contacts",
+    "BF24/BF26 lower contacts",
+    "Other23 finger contacts",
+    "BR-C and external returns",
+    "Exact dimensions/materials/vias/global nets"
+  ],
+  "next_step": "Implement and verify explicit bottom-only canvas extension, then apply source-bound M1 revision and separate context-metal addition; do not reopen reviewed source contacts."
+}

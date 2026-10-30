@@ -1,0 +1,36 @@
+{
+  "kind": "AI_macro_search_attempt_history",
+  "date": "2026-10-29",
+  "attempts": [
+    {
+      "evidence": {
+        "path": "benchmarks/corridor-m1-v1-entry-v1/rejected-periodic-feature-fit.json",
+        "sha256": "cbe08596b1838c3817aad323a15a4a5cda76c3d127f8278c485058fc81d2c6b2"
+      },
+      "outcome": "REJECTED_P95_129PX",
+      "reason": "Periodic array descriptors yielded ambiguous matches; do not use this matrix for projection."
+    },
+    {
+      "evidence": {
+        "path": "benchmarks/corridor-m1-v1-entry-v1/rejected-edge-band-localization-v1.json",
+        "sha256": "2db814fe99557dea7f8a0017cb2f55824d07cef2e0309bd9c5fd4dbb9ffcd157"
+      },
+      "outcome": "REJECTED_LOCALIZATION_SEARCH_BAND",
+      "reason": "FBL localization touched the search band boundary despite small holdout residual; cannot pass localization quality."
+    },
+    {
+      "evidence": {
+        "path": "benchmarks/corridor-m1-v1-entry-v1/pad-frame-macro-search-v2.json",
+        "sha256": "c91c62c7cbdbf6a1b2584292469c6bd6cd61c2d9eccfe7b587404bb236cea479"
+      },
+      "outcome": "PASS_MACRO_SEARCH_ONLY",
+      "revision_reason": "FBL seeds corrected toward the visually inspected same pad-gap ridge, retaining35px band and same20/50px holdout budget. Holdout points remained excluded from fitting.",
+      "remaining_limits": [
+        "Peripheral pad-frame feature identities are AI candidates, not human point truth.",
+        "Two held-out pad structures do not certify interior fine V1 landing.",
+        "The search transform is separate from the independent design-coordinate model."
+      ]
+    }
+  ],
+  "rejected_matrices_used_for_projection": false
+}
