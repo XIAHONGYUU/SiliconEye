@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-10-30T10:31:08.237909+00:00",
+  "status": "FIRST_ARCHIVE_PUSH_VERIFIED",
+  "archive_commit": "18eb33aedda5c11e36061ca1c86a14122066acf1",
+  "remote": "https://github.com/XIAHONGYUU/SiliconEye.git",
+  "branch": "main",
+  "observed_remote_main": "18eb33aedda5c11e36061ca1c86a14122066acf1",
+  "observed_remote_gh_pages": "01d621b312e89d8ea0d4649ea7a05981785aa35d",
+  "remote_verification_command": "git ls-remote origin refs/heads/main refs/heads/gh-pages",
+  "presentation_changed": false,
+  "assessment_began_after_archive_push": true,
+  "note": "Records first archive push. The subsequent assessment documentation commit is separate; this is not a claim about the eventual latest remote HEAD."
+}
