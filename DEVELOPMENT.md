@@ -57,7 +57,18 @@ GitHub Pages使用`gh-pages`分支根目录。推送需要相应授权和本机�
   --output runs/新的回归目录/result.json
 ```
 
-[固定回归集](benchmarks/conductive-regression-v1/suite.json)与[限定能力](docs/architecture/conductive-skill-qualification-v1.md)分别记录软件保障和真实识图边界。普通研发提交保持README、site/及gh-pages不变；只有另行授权展示更新才执行前述构建/发布命令。
+[固定回归集](benchmarks/conductive-regression-v1/suite.json)与[限定能力](docs/architecture/conductive-skill-qualification-v1.md)分别记录软件保障和真实识图边界。普通研发提交默认不改site/及gh-pages；README/DEVELOPMENT的顶层说明或展示更新需单独授权。
+
+## 固定验收确认单
+
+需要人判断时使用同一固定模板，不再临时生成页面或答案格式：
+
+    .venv/bin/silicon-eye review preset --stage METAL
+    .venv/bin/silicon-eye review build --spec configs/review-sheet-demo-m2.json --output runs/新的确认包
+    # 人打开 runs/新的确认包/index.html，导出 review-decision.json 后：
+    .venv/bin/silicon-eye review check --package runs/新的确认包 --decision ~/Downloads/review-decision.json --archive
+
+configs/review-sheet-demo-m2.json是演示定义；真实送审替换为本批review-spec.json。固定产物为review-spec.json、index.html、manifest.json、review-decision.json和review-record.md；页面固定为总览、逐项确认、整体问题、边界与未批准、导出五个分区。旧human-review.json保持原样。完整协议见[固定验收确认单](docs/review-sheet-protocol.md)。
 
 ## 检查
 

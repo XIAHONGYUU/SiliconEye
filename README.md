@@ -33,6 +33,7 @@ AI曾将六孔V1组接到窄M2-A；旧检查只验证单个代理框，漏掉了
 
 - **模拟版图理解**：区分栅端、共享扩散、环、dummy及跨层接口，将正向设计经验用于逆向重建。
 - **工程流程设计**：AI负责观察与推理；脚本执行固定步骤；人工裁决关键歧义。局部修订继承已有成果，并用质量门阻止退化。
+- **固定人审确认**：AA/POLY/CT/METAL 共用同一确认页、结论词表和 review-decision.json；每次送审新建证据包，但界面与答案结构不再随对话变化。
 - **AI辅助开发与验证**：以真实照片持续迭代Python工具、结构化数据和交互复核页，将经验沉淀为可复用skill。
 
 ```mermaid
@@ -47,10 +48,10 @@ flowchart LR
 
 ## 当前进展
 
-已形成AA/POLY/CT共同工作层、局部器件编号与电路表达、五层导体联合复核，以及接续和防退化工具。Demo使用实际项目的冻结数据；其中已审关系与候选几何分开标明。
+已形成AA/POLY/CT共同工作层、局部器件编号与电路表达、五层导体联合复核，以及接续、防退化和固定人审确认单工具。Demo使用实际项目的冻结数据；其中已审关系与候选几何分开标明。
 
 当前是**一颗芯片上的人机协作研究原型**，尚未完成全芯片自动恢复、真实工艺DRC/LVS或仿真就绪网表。测试通过证明工程行为，不等同于识别准确率。
 
 ---
 
-[开发指南](DEVELOPMENT.md) · [文档导航](docs/README.md) · [当前开发任务](CURRENT_TASK.md) · [简历项目表述](docs/portfolio/resume.md) · [样本来源说明](docs/portfolio/data-sources.md) · [README历史原文](docs/history/2026-10-25-before-portfolio-README.md)
+[开发指南](DEVELOPMENT.md) · [固定确认单协议](docs/review-sheet-protocol.md) · [文档导航](docs/README.md) · [当前开发任务](CURRENT_TASK.md) · [简历项目表述](docs/portfolio/resume.md) · [样本来源说明](docs/portfolio/data-sources.md) · [README历史原文](docs/history/2026-10-25-before-portfolio-README.md)

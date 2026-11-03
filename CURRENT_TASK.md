@@ -10,7 +10,7 @@
 - 当前46金属、30已审局部接口、179设计候选孔；本轮审批接续，整个工作模型和全部几何、原生锚点、旧裁决、孔边界/中心精确保持。原点/尺度/视口[-2700,0,780,1440]不变，无新VIA/网边。
 - L09/L10分开，L11主干向下出口、L12左段短回折的本范围表达获通过；出界不是物理终点。定性无明显遗漏不等于全照片穷尽、精密尺寸、PDK DRC或全网完成。
 - 旧V1/V2人审继续按其原始范围生效，见前入口归档。本轮不改旧送审answer=null、AI候选字段或原生证据；冻结提案的pending描述仅为历史，不再重问Q1/Q2。
-- README/site/gh-pages保持；10月29–30日成果已提交并推送[18eb33a](https://github.com/XIAHONGYUU/SiliconEye/commit/18eb33aedda5c11e36061ca1c86a14122066acf1)。skill仍LIMITED_TRIAL_V2；geometry_adopted=false、source_to_design_transform=null、net_edges=[]、complete_network=false。
+- site/gh-pages保持；README/DEVELOPMENT顶层说明随本轮固定确认单工具更新；10月29–30日成果已提交并推送[18eb33a](https://github.com/XIAHONGYUU/SiliconEye/commit/18eb33aedda5c11e36061ca1c86a14122066acf1)。skill仍LIMITED_TRIAL_V2；geometry_adopted=false、source_to_design_transform=null、net_edges=[]、complete_network=false。
 
 [金属剩余工作评估](docs/reviews/2026-10-30-metal-reconstruction-remaining.md)：当前区域还需M2与M3覆盖收口、五层联合验收；全幅另需M1–M3扩展、M4/V3及跨范围合并。尚无全幅清单分母，不报完成百分比；本次只评估，未产生新M2观察或几何。
 
@@ -36,7 +36,7 @@
 - v12审批接续时无程序/几何修改；提交模型→收口模型→当前恢复全内容/模型哈希精确相同，30裁决/179孔保持，未重跑上轮49项及固定回归31项，证据仍在[上一验证](benchmarks/west-m1-coverage-v11/verification.json)和[固定回归](benchmarks/west-m1-coverage-v11/fixed-regression.json)。
 - 来源/人审/组件绑定、旧冻结包、链接/脚本及展示保护核查见verification；浏览器交互未实测。定性几何验收通过不改来源阵列精密资格、物理孔数或正式GDS采用状态。
 - 本次归档前另跑252项相关测试及31项固定回归，均通过；模型精确重放、证据引用与展示保护检查通过。[提交前检查](docs/reviews/2026-10-30-github-checkpoint.md)。这不是新AI识图评测。
-- README/site的25文件及gh-pages引用保持。[前入口全文](docs/history/current-task-before-2026-10-30-west-m1-reviewed-v12.md)完整归档；其引用的历史VIA人审和全部未知继续生效。
+- v12归档时README/site的25文件及gh-pages引用保持；本轮另行更新顶层README/DEVELOPMENT说明，site/gh-pages仍未改。[前入口全文](docs/history/current-task-before-2026-10-30-west-m1-reviewed-v12.md)完整归档；其引用的历史VIA人审和全部未知继续生效。
 
 ## 必须接续的裁决与未知
 

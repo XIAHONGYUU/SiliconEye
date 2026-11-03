@@ -47,7 +47,7 @@
 
 - 未改工作模型、来源照片、179 个候选孔、30 组已审接口、旧 human-review.json。
 - 未运行新 AI 识图评测，未产生新 M2 观察或几何。
-- 未修改 README/site/gh-pages，未推送远端。
+- 未修改 site/ 或 gh-pages；按用户要求补充 README/DEVELOPMENT 顶层说明。主分支保留工具提交，gh-pages 不重建。
 - 演示包明确标注“非送审”，不构成人审或几何授权。
 
 ## 边界与下一步
