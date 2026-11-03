@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "stage": "METAL",
+  "package_id": "DEMO-M2-W34-REVIEW-SHEET-1",
+  "title": "示例：W3/W4 邻近 M2 片段与孔组确认",
+  "date": "2026-11-03",
+  "summary": "固定验收确认单的演示包，不是新的送审、人审或几何批准。用于检查页面、结论选择和导出格式。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "W3/W4 邻近 M2 固定原生窗口；范围出口不是物理终点。"
+  },
+  "items": [
+    {
+      "id": "DEMO-M2-W3",
+      "type": "metal_fragment",
+      "title": "W3 M2 主干片段",
+      "prompt": "W3 的 M2 主干片段在声明范围内是否连续，端点/出界状态是否正确？",
+      "facts": {
+        "模型 ID": "WEST-M2-W3-SOURCE",
+        "原生路径": [
+          [
+            725,
+            1925
+          ],
+          [
+            740,
+            2350
+          ],
+          [
+            755,
+            2795
+          ]
+        ],
+        "来源帧": "m2"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/west-m2-wide-marked.png",
+          "label": "W3/W4 邻近 M2 宽图",
+          "role": "marked",
+          "caption": "固定原生搜索范围上下文"
+        },
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/W3-N-paired.png",
+          "label": "W3-N 上下层对比",
+          "role": "overlay",
+          "caption": "M1/M2 成对标记，仅作上下文"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-M2-W4",
+      "type": "metal_fragment",
+      "title": "W4 M2 主干片段",
+      "prompt": "W4 的 M2 主干片段在声明范围内是否连续，端点/出界状态是否正确？",
+      "facts": {
+        "模型 ID": "WEST-M2-W4-SOURCE",
+        "原生路径": [
+          [
+            360,
+            1930
+          ],
+          [
+            380,
+            2355
+          ],
+          [
+            400,
+            2800
+          ]
+        ],
+        "来源帧": "m2"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/west-m2-wide-marked.png",
+          "label": "W3/W4 邻近 M2 宽图",
+          "role": "marked",
+          "caption": "固定原生搜索范围上下文"
+        },
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/W4-N-paired.png",
+          "label": "W4-N 上下层对比",
+          "role": "overlay",
+          "caption": "M1/M2 成对标记，仅作上下文"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-W3-V2-U",
+      "type": "via_interface",
+      "title": "W3-U 的 V2 孔组",
+      "prompt": "W3-U 的 V2 孔组是否可见，且上下承载为 WEST-M2-W3-SOURCE / RT-M3-UP？",
+      "facts": {
+        "孔层": "V2",
+        "层对": "M2 → M3",
+        "下金属": "WEST-M2-W3-SOURCE",
+        "上金属": "RT-M3-UP",
+        "原生支持窗口": [
+          702,
+          1900,
+          750,
+          1970
+        ]
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/W3-N-paired.png",
+          "label": "W3-N 成对标记",
+          "role": "overlay",
+          "caption": "孔组与上下层相对位置"
+        },
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/W3-N-m2-marked.png",
+          "label": "W3-N M2 标记图",
+          "role": "marked",
+          "caption": "M2 侧孔组观察窗口"
+        }
+      ]
+    },
+    {
+      "id": "DEMO-W4-V2-U",
+      "type": "via_interface",
+      "title": "W4-U 的 V2 孔组",
+      "prompt": "W4-U 的 V2 孔组是否可见，且上下承载为 WEST-M2-W4-SOURCE / RT-M3-UP？",
+      "facts": {
+        "孔层": "V2",
+        "层对": "M2 → M3",
+        "下金属": "WEST-M2-W4-SOURCE",
+        "上金属": "RT-M3-UP",
+        "原生支持窗口": [
+          337,
+          1900,
+          391,
+          1975
+        ]
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/W4-N-paired.png",
+          "label": "W4-N 成对标记",
+          "role": "overlay",
+          "caption": "孔组与上下层相对位置"
+        },
+        {
+          "path": "docs/assets/west-w34-reviewed-v9/W4-N-m2-marked.png",
+          "label": "W4-N M2 标记图",
+          "role": "marked",
+          "caption": "M2 侧孔组观察窗口"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "本页是固定确认单演示，不是新的送审或人审；不得据此改变当前工作模型、已审接口或 179 个候选孔。",
+    "只覆盖声明原生窗口中的 W3/W4 邻近 M2 上下文，不代表全幅 M2 或五层穷尽覆盖。",
+    "范围出口不是物理终点；未列对象、旧批准和旧未知保持不变。"
+  ],
+  "not_approved": [
+    "照片精确投影或跨帧配准",
+    "PDK、实测工艺尺寸或 DRC",
+    "物理孔数、孔径与节距的真值",
+    "完整网表或自动网表导出",
+    "共同几何采用、GDS 发布或全幅完成声明",
+    "演示项之外的导体、器件与连接"
+  ],
+  "sources": {
+    "source_photo_m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "reference_model": {
+      "path": "docs/assets/west-w34-reviewed-v9/S3-W34-metal/model.json",
+      "sha256": "5e0d3a6f3696e25122518570944076e46f0f05c0eccafd85556d28dc71a5a7b7"
+    },
+    "prior_human_review": {
+      "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+      "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+    },
+    "scope_plan": {
+      "path": "benchmarks/west-m1-reviewed-v12/next-scope-plan.json",
+      "sha256": "39ba68d33688b0b4457e796bddfa9ef8149a2cb141a6f95f55dac821f3cb5e63"
+    }
+  }
+}

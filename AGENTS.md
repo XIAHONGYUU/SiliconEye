@@ -15,6 +15,12 @@
 - 开发时 AI 写代码不代表运行时已接入 AI；脚本调用视觉模型仍属于 AI 处理。
 - 自动清理和连接补全需物理证据；不能仅凭尺寸相似或电路常识改变确认网表。
 
+## 固定人审确认单
+
+- 需要人判断时，不临时新造页面或答案格式。先写 review-spec.json，用 silicon-eye review build 生成固定页面；人导出 review-decision.json 后，用 silicon-eye review check --archive 归档。
+- 阶段预设、固定词表和归档文件名见 docs/review-sheet-protocol.md；AA/POLY/CT/METAL/VIA/REGION 共用同一模板。旧 human-review.json 保持原样，不改写、不重解释。
+- 页面只是人审界面：构建成功、页面操作或聊天口头“通过”都不等于几何、物理孔数、网表或共同几何采用已获批准。边界与未批准项继续生效。
+
 ## 数据与结论
 
 - `data/` 中照片是原始输入，不覆盖、不重编码、不在源图上绘制标注。标注副本、对齐图、叠加图和报告写入 `runs/`。

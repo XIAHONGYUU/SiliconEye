@@ -14,6 +14,12 @@
 
 [金属剩余工作评估](docs/reviews/2026-10-30-metal-reconstruction-remaining.md)：当前区域还需M2与M3覆盖收口、五层联合验收；全幅另需M1–M3扩展、M4/V3及跨范围合并。尚无全幅清单分母，不报完成百分比；本次只评估，未产生新M2观察或几何。
 
+## 固定验收确认单工具（本轮交付）
+
+- 新增 silicon-eye review build/check/preset 与固定 HTML 模板，统一 AA/POLY/CT/METAL/VIA/REGION 的确认页、结论词表和 review-decision.json；协议见[固定验收确认单](docs/review-sheet-protocol.md)，验证见[本轮工具记录](docs/reviews/2026-11-03-review-sheet-tool.md)。
+- 示例定义[configs/review-sheet-demo-m2.json](configs/review-sheet-demo-m2.json)，构建页 runs/review-sheet-demo-m2-v1/index.html；示例明确标注非送审，不产生新人审、几何或连接。
+- 后续需要人判断时，先写送审定义并 build，再由人导出 decision 并 review check --archive；构建或页面操作不等于几何授权，当前唯一研究下一步仍为 M2 连续来源清单。
+
 ## 唯一下一步：M2连续来源清单→几何对应→接口未知
 
 [下一范围计划](benchmarks/west-m1-reviewed-v12/next-scope-plan.json)，尚未产生新的M2来源观察/几何/覆盖结果。

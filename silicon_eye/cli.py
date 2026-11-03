@@ -279,6 +279,11 @@ def main() -> None:
     network_parser.add_argument("-o", "--output", required=True)
     ann_parser.set_defaults(func=cmd_annotate)
 
+    # ── review ──
+    from .review_sheet import add_cli as add_review_cli
+
+    add_review_cli(subparsers)
+
     # ── info ──
     info_parser = subparsers.add_parser("info", help="Show config/checkpoint info")
     info_parser.add_argument("-c", "--config", help="Path to chip config YAML")
