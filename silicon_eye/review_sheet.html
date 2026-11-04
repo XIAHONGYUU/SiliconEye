@@ -281,6 +281,41 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   .panel{display:block!important}
   textarea{min-height:40px}
 }
+/* Decision workspace: large evidence, optional trace metadata, read-only context. */
+.masthead{position:static}
+.tabs{top:0}
+.item-index{top:86px;max-height:calc(100vh - 190px)}
+.item-card{scroll-margin-top:90px}
+.titlebar{padding:18px 24px 14px;gap:20px}
+.titlebar h1{font-size:clamp(23px,2.6vw,32px);margin:8px 0}
+.titlebar p{font-size:14px}
+.items-layout{grid-template-columns:235px minmax(0,1fr)}
+.review-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.review-tools select{background:#10253b;color:var(--text);border:1px solid var(--line);padding:7px;border-radius:8px;font:inherit}
+.search{margin:0 6px 12px;width:calc(100% - 12px)}
+.change-note{border-left:3px solid var(--accent);padding:8px 12px;background:#102b40;margin:10px 0;font-size:15px}
+.item-card.context{border-left-color:var(--gray)}
+.item-card.context summary{cursor:pointer;font-weight:650}
+.evidence-tabs{display:flex;flex-wrap:wrap;gap:7px;grid-column:1/-1}
+.evidence-tabs button{font:inherit;font-size:14px;color:var(--text);background:#10273d;border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer}
+.evidence-tabs button[aria-pressed="true"]{color:#06111c;background:var(--accent)}
+.compare-choice{grid-column:1/-1;font-size:13px;color:var(--muted)}
+.compare-choice select{max-width:100%;background:#10273d;color:var(--text);padding:6px;border:1px solid var(--line);font:inherit}
+.evidence-grid.single .compare-choice{display:none}
+.evidence-grid.single{display:block}
+.evidence-grid.single .evidence-tabs{display:flex;margin-bottom:10px}
+.evidence-grid.single .evidence img{max-height:65vh;min-height:160px}
+.evidence-error{padding:16px;color:var(--red)}
+.trace{font-size:13px;color:var(--muted);margin:12px 0}
+.trace summary{cursor:pointer;color:var(--accent)}
+.quick-accept{margin:14px 0 8px}
+.draft-status{font-size:12px;color:var(--muted)}
+.draft-status.error{color:var(--amber)}
+.lightbox-head select{max-width:32vw;padding:8px;background:#10273d;color:var(--text);border:1px solid var(--line);font:inherit}
+.lightbox-body{cursor:grab;overscroll-behavior:contain}
+.lightbox-body.dragging{cursor:grabbing}
+.lightbox-body img{user-select:none;max-width:none}
+@media(max-width:850px){.items-layout{grid-template-columns:1fr}.item-index{position:static;max-height:220px}.titlebar{grid-template-columns:1fr}.meta{justify-content:flex-start}.lightbox-head select{max-width:65vw}.evidence-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -290,7 +325,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     <div class="logo">SE</div>
     <div><strong>SiliconEye 验收确认单</strong><small>固定格式 · 人审判定 · 可归档</small></div>
   </div>
-  <div class="build">送审版本<strong id="build-id">-</strong></div>
+  <div class="build">送审版本<strong id="build-id">-</strong><span class="draft-status" id="draft-status" role="status">尚无本机草稿</span></div>
 </header>
 
 <div class="titlebar">
@@ -359,12 +394,19 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     <div class="panel-head">
       <div><h2>逐项确认</h2><p>按清单从上到下判断；侧栏可快速跳转。只判本范围，不把出界当物理终点。</p></div>
     </div>
+    <div class="review-tools">
+      <label>证据布局 <select id="evidence-layout"><option value="single">大图切换</option><option value="compare">并排对照</option></select></label>
+      <button class="btn" type="button" data-action="next-pending">下一个待完成项</button>
+      <button class="btn ghost" type="button" data-action="save-draft">保存草稿文件</button>
+      <button class="btn ghost" type="button" data-action="import-draft">导入同版草稿</button>
+      <input type="file" accept=".json,application/json" id="draft-file" hidden>
+    </div>
     <div class="items-layout">
       <aside class="item-index" aria-label="确认项索引">
-        <h3>确认项</h3>
+        <h3>本轮待判与参考</h3><input class="input search" id="item-search" type="search" aria-label="搜索编号或标题" placeholder="搜索编号或标题">
         <div class="filters" id="filters">
           <button type="button" data-filter="all" class="active">全部</button>
-          <button type="button" data-filter="todo">未答</button>
+          <button type="button" data-filter="todo">待完成</button><button type="button" data-filter="context">仅参考</button>
           <button type="button" data-filter="accepted">通过</button>
           <button type="button" data-filter="needs_revision">需修改</button>
           <button type="button" data-filter="uncertain">不确定</button>
@@ -380,7 +422,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     <div class="panel-head">
       <div><h2>整体问题</h2><p>这些问题把逐项结论汇总成整组判断；不确定时选“不确定”，不要用通过代替未知。</p></div>
     </div>
-    <div id="question-list"></div>
+    <button class="btn" type="button" data-action="summarize-questions">按已填逐项结论填写整体结论</button><p class="small muted">仅汇总本轮已有回答，可继续修改；不会替未答项作判断，也不会覆盖已有整体结论。</p><div id="question-list"></div>
   </section>
 
   <section class="panel" id="panel-boundaries" hidden>
@@ -421,16 +463,19 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
           <p class="muted small" style="margin-top:12px" id="export-state"></p>
         </div>
         <div class="card" style="margin-top:18px">
-          <h3>归档命令</h3>
-          <p class="muted small">把下载的 JSON 放到送审包目录（或任意路径），然后运行：</p>
+          <h3>导出后交给 Agent 接续</h3>
+          <p>回到对话告诉 Agent“已导出”。本机 Agent 读取对应版本的下载文件，校验后归档并回报结果；如果无法找到文件，再提供 JSON。</p>
+          <details class="trace"><summary>开发者归档命令</summary>
+          <p class="muted small">由 Agent 执行：</p>
           <code class="command">python -m silicon_eye.review_sheet check --package &lt;送审包目录&gt; --decision &lt;review-decision.json&gt; --archive --root .</code>
           <p class="muted small" style="margin-top:10px">校验通过后会写入同类固定文件 review-decision.json 和 review-record.md；不会覆盖不同的既有记录。</p>
+          </details>
         </div>
       </div>
       <div class="card">
         <h3>JSON 预览</h3>
         <p class="muted small" id="preview-state">完成全部必答项后显示。</p>
-        <pre class="json" id="json-preview"></pre>
+        <pre class="json" id="json-preview"></pre><button class="btn" type="button" data-action="copy-summary">复制简明结论</button><pre class="json" id="summary-preview"></pre>
       </div>
     </div>
   </section>
@@ -446,7 +491,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
 
 <dialog id="lightbox" aria-label="证据图放大">
   <div class="lightbox-head">
-    <span class="cap" id="lightbox-cap"></span>
+    <span class="cap" id="lightbox-cap"></span><select id="lightbox-evidence" aria-label="切换证据图"></select><span id="lightbox-scale" class="small"></span>
     <button class="btn ghost" type="button" data-action="zoom-out">−</button>
     <button class="btn ghost" type="button" data-action="zoom-fit">适应</button>
     <button class="btn ghost" type="button" data-action="zoom-original">原大</button>
@@ -473,6 +518,9 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   var lastDecisionText = "";
   var saveTimer = null;
   var toastTimer = null;
+  var validationRequested = false;
+  var evidenceLayout = "single";
+  function isContext(item){ return item.review_mode === "context"; }
 
   function h(tag, props){
     var node = document.createElement(tag);
@@ -533,12 +581,13 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     try{
       var saved = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
       if(!saved || typeof saved !== "object") return;
+      byId("draft-status").textContent = "已恢复本机草稿";
       if(typeof saved.statement === "string") state.statement = saved.statement;
       state.limitsAck = saved.limitsAck === true;
       if(saved.answers){
         SPEC.items.forEach(function(item){
           var savedAnswer = saved.answers[item.id];
-          if(!savedAnswer || typeof savedAnswer !== "object") return;
+          if(isContext(item) || !savedAnswer || typeof savedAnswer !== "object") return;
           var answer = state.answers[item.id];
           answer.verdict = Object.prototype.hasOwnProperty.call(LABELS.verdicts, savedAnswer.verdict) ? savedAnswer.verdict : null;
           answer.notes = typeof savedAnswer.notes === "string" ? savedAnswer.notes : "";
@@ -557,16 +606,27 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
           state.questions[question.id].notes = typeof savedAnswer.notes === "string" ? savedAnswer.notes : "";
         });
       }
-    }catch(error){ /* Ignore corrupt local state; the export remains authoritative. */ }
+    }catch(error){ storageWarning(); }
+  }
+  function storageWarning(){
+    byId("draft-status").textContent = "本机存储不可用，请保存草稿文件";
+    byId("draft-status").classList.add("error");
+  }
+  function persistState(){
+    try{
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+      byId("draft-status").textContent = "草稿已保存到本机";
+      byId("draft-status").classList.remove("error");
+    }catch(error){ storageWarning(); }
   }
   function saveState(){
     clearTimeout(saveTimer);
-    saveTimer = setTimeout(function(){
-      try{ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }catch(error){ /* file:// may block storage */ }
-    }, 120);
+    byId("draft-status").textContent = "正在保存草稿…";
+    saveTimer = setTimeout(persistState, 120);
   }
 
   function itemErrors(item){
+    if(isContext(item)) return [];
     var answer = itemAnswer(item);
     var errors = [];
     if(!answer || !answer.verdict){
@@ -594,8 +654,15 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
         var item = state.answers[id];
         return item && (item.verdict === "needs_revision" || item.verdict === "uncertain");
       });
-      if(blocked.length){
-        return ["有覆盖项未通过（" + blocked.join("、") + "），整体问题不能判通过"];
+      if(blocked.length) return ["有覆盖项未通过（" + blocked.join("、") + "），整体问题不能判通过"];
+      if(question.item_ids.some(function(id){ return !state.answers[id] || !state.answers[id].verdict; })){
+        return ["覆盖项尚未答完，整体问题不能判通过"];
+      }
+      if(question.item_ids.some(function(id){return itemErrors(SPEC.items.find(function(item){return item.id === id;})).length;})){
+        return ["覆盖项仍有未完成检查，整体问题不能判通过"];
+      }
+      if(!question.item_ids.some(function(id){ return state.answers[id] && state.answers[id].verdict === "accepted"; })){
+        return ["没有适用且通过的覆盖项，整体问题不能判通过"];
       }
     }
     return [];
@@ -629,7 +696,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     byId("scope-bounds").textContent = bounds ? bounds.join(", ") : "未声明";
     byId("scope-note").textContent = SPEC.scope.note || "—";
     byId("scope-package").textContent = SPEC.package_id;
-    byId("stat-items").textContent = SPEC.items.length;
+    byId("stat-items").textContent = SPEC.items.filter(function(item){return !isContext(item);}).length;
     byId("stat-required").textContent = SPEC.items.filter(function(item){ return item.required; }).length;
     byId("stat-questions").textContent = SPEC.questions.length;
     byId("stat-evidence").textContent = SPEC.items.reduce(function(total, item){ return total + item.evidence.length; }, 0);
@@ -648,7 +715,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   }
 
   function renderEvidence(entry){
-    var caption = entry.label + (entry.caption ? " · " + entry.caption : "");
+    var caption = (entry.frame ? entry.frame + " · " : "") + entry.label + (entry.caption ? " · " + entry.caption : "");
     var image = h("img", {
       src: entry.url,
       alt: entry.label,
@@ -657,12 +724,15 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       "data-url": entry.url,
       "data-caption": caption
     });
+    image.addEventListener("error", function(){
+      image.after(h("div", {class:"evidence-error"}, "证据图加载失败，请核查来源后再判断。"));
+    }, {once:true});
     var zoom = h("button", {type:"button", class:"zoom", "data-action":"lightbox", "data-url":entry.url, "data-caption":caption}, "放大");
     return h("figure", {class:"evidence"}, image, zoom, h("figcaption", null,
       h("strong", null, entry.label),
-      h("span", {class:"role"}, roleLabel(entry.role)),
+      h("span", {class:"role"}, roleLabel(entry.role) + (entry.frame ? " · " + entry.frame : "")),
       entry.caption ? h("span", {class:"caption"}, entry.caption) : null,
-      h("span", {class:"mono small"}, entry.source_path)
+      h("details", {class:"trace"}, h("summary", null, "来源路径"), h("code", null, entry.source_path))
     ));
   }
 
@@ -678,16 +748,31 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       h("div", {class:"ident"},
         h("span", {class:"item-id"}, item.id),
         h("span", {class:"badge optional"}, typeLabel(item.type)),
-        item.required ? h("span", {class:"badge req"}, "必答") : h("span", {class:"badge optional"}, "可选")
+        isContext(item) ? h("span", {class:"badge optional"}, "参考") : item.required ? h("span", {class:"badge req"}, "必答") : h("span", {class:"badge optional"}, "可选")
       ),
       h("span", {class:"status-badge", "data-role":"status"}, verdictLabel(answer.verdict))
     ));
     card.append(h("h3", {class:"card-title"}, item.title));
     card.append(h("p", {class:"prompt"}, item.prompt));
 
+    if(item.change_summary) card.append(h("p", {class:"change-note"}, "本轮变化：" + item.change_summary));
     if(item.evidence.length){
-      var grid = h("div", {class:"evidence-grid"});
-      item.evidence.forEach(function(entry){ grid.append(renderEvidence(entry)); });
+      var grid = h("div", {class:"evidence-grid single", "data-evidence-selected":"0"});
+      var tabs = h("div", {class:"evidence-tabs", role:"group", "aria-label":"证据图切换"});
+      item.evidence.forEach(function(entry, evidenceIndex){
+        tabs.append(h("button", {type:"button", "data-action":"evidence-select", "data-evidence-index":evidenceIndex,
+          "aria-pressed":evidenceIndex === 0 ? "true" : "false"}, (entry.frame ? entry.frame + " · " : "") + entry.label));
+      });
+      grid.append(tabs);
+      var comparison = h("select", {"data-role":"compare-evidence", "aria-label":"右侧对照图"});
+      var defaultComparison = item.evidence.findIndex(function(entry){return entry.role === "design";});
+      grid.dataset.evidenceCompare = String(defaultComparison >= 0 ? defaultComparison : Math.min(1,item.evidence.length-1));
+      item.evidence.forEach(function(entry,index){comparison.append(h("option",{value:index},(entry.frame ? entry.frame + " · " : "") + entry.label));});
+      comparison.value = grid.dataset.evidenceCompare;
+      grid.append(h("label",{class:"compare-choice"},"左侧为当前标签；右侧对照图：",comparison));
+      item.evidence.forEach(function(entry, evidenceIndex){
+        var figure = renderEvidence(entry); figure.hidden = evidenceIndex !== 0; grid.append(figure);
+      });
       card.append(grid);
     }else{
       card.append(h("p", {class:"muted small"}, "本项未附证据图。"));
@@ -699,7 +784,15 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       facts.forEach(function(key){
         table.append(h("tr", null, h("th", null, key), h("td", null, h("code", null, formatJSON(item.facts[key])))));
       });
-      card.append(table);
+      card.append(h("details", {class:"trace"}, h("summary", null, "编号、原生坐标与来源详情"), table));
+    }
+
+    if(isContext(item)){
+      card.classList.add("context");
+      var reference = h("details", null, h("summary", null, "仅作参考 · 本轮无需重新裁决"));
+      while(card.children.length > 1) reference.append(card.children[1]);
+      card.append(reference);
+      return card;
     }
 
     if(item.checks.length){
@@ -719,6 +812,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       card.append(h("div", {class:"field"}, h("div", {class:"field-label"}, "检查项"), checks));
     }
 
+    card.append(h("button", {type:"button", class:"btn primary quick-accept", "data-action":"accept-next"}, "本项必查均确认，通过并下一项"));
     var group = h("div", {class:"verdicts", role:"radiogroup", "aria-label":"结论"});
     ["accepted","needs_revision","uncertain","not_applicable"].forEach(function(value){
       var id = "verdict-" + index + "-" + value;
@@ -744,7 +838,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
 
   function renderIndexItem(item, index){
     var answer = itemAnswer(item);
-    var status = answer && answer.verdict ? verdictLabel(answer.verdict) : (item.required ? "未答" : "可选未答");
+    var status = isContext(item) ? "仅参考 · 无需重审" : answer && answer.verdict ? verdictLabel(answer.verdict) : (item.required ? "未答" : "可选未答");
     var button = h("button", {type:"button", class:"index-btn", "data-action":"jump", "data-item-id":item.id},
       h("span", {class:"dot"}),
       h("span", {class:"txt"}, h("span", null, item.id), h("span", {class:"st"}, status))
@@ -825,20 +919,26 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     var answer = itemAnswer(item);
     var card = byId("item-card-" + index);
     if(!card) return;
+    if(isContext(item)){
+      card.querySelector('[data-role="status"]').textContent = "仅参考";
+      return;
+    }
     var verdict = answer && answer.verdict ? answer.verdict : "";
     card.className = "card item-card" + (verdict ? " " + verdict : "");
     var status = card.querySelector('[data-role="status"]');
     status.textContent = verdict ? verdictLabel(verdict) : "未答";
     status.className = "status-badge" + (verdict ? " " + verdict : "");
     var errors = itemErrors(item);
+    if(verdict === "accepted" && errors.length){status.textContent = "通过 · 检查未齐";status.className = "status-badge needs_revision";}
     var errorBox = card.querySelector('[data-role="item-error"]');
-    errorBox.textContent = errors.length ? errors.join("；") : "";
+    errorBox.textContent = errors.length && (answer.verdict || validationRequested) ? errors.join("；") : "";
     var button = document.querySelector('#index-list .index-btn[data-item-id="' + cssEscape(item.id) + '"]');
     if(button){
       var key = verdict || "todo";
       button.className = "index-btn " + (verdict === "accepted" ? "done" : verdict === "needs_revision" ? "revise" : verdict === "uncertain" ? "uncertain" : verdict === "not_applicable" ? "na" : "");
       var statusText = button.querySelector(".st");
-      if(statusText) statusText.textContent = verdict ? verdictLabel(verdict) : (item.required ? "未答" : "可选未答");
+      if(statusText) statusText.textContent = verdict === "accepted" && errors.length ? "检查未齐" : verdict ? verdictLabel(verdict) : (item.required ? "未答" : "可选未答");
+      if(verdict === "accepted" && errors.length) button.className = "index-btn revise";
     }
   }
   function updateQuestion(index){
@@ -855,7 +955,8 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     }
     var errorBox = card.querySelector('[data-role="question-error"]');
     var errors = questionErrors(question);
-    if(errorBox) errorBox.textContent = errors.length ? errors.join("；") : "";
+    if(status && verdict === "accepted" && errors.length){status.textContent = "通过 · 覆盖项未齐";status.className = "status-badge needs_revision";}
+    if(errorBox) errorBox.textContent = errors.length && (verdict || validationRequested) ? errors.join("；") : "";
   }
   function cssEscape(value){
     if(window.CSS && CSS.escape) return CSS.escape(value);
@@ -866,15 +967,15 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     var requiredItems = SPEC.items.filter(function(item){ return item.required; });
     var requiredQuestions = SPEC.questions.filter(function(question){ return question.required; });
     var total = requiredItems.length + requiredQuestions.length + 1;
-    var done = requiredItems.filter(function(item){ var answer = itemAnswer(item); return answer && answer.verdict; }).length;
-    done += requiredQuestions.filter(function(question){ var answer = questionAnswer(question); return answer && answer.verdict; }).length;
+    var done = requiredItems.filter(function(item){ var answer = itemAnswer(item); return answer && answer.verdict && itemErrors(item).length === 0; }).length;
+    done += requiredQuestions.filter(function(question){ var answer = questionAnswer(question); return answer && answer.verdict && questionErrors(question).length === 0; }).length;
     if(state.limitsAck) done += 1;
     var percent = total ? Math.round(done * 100 / total) : 0;
     byId("progress-label").textContent = "必答 " + done + "/" + total;
     byId("progress-percent").textContent = percent + "%";
     byId("progress-bar").style.width = percent + "%";
-    var todoItems = requiredItems.filter(function(item){ var answer = itemAnswer(item); return !answer || !answer.verdict; }).length;
-    var todoQuestions = requiredQuestions.filter(function(question){ var answer = questionAnswer(question); return !answer || !answer.verdict; }).length;
+    var todoItems = requiredItems.filter(function(item){ var answer = itemAnswer(item); return !answer || !answer.verdict || itemErrors(item).length > 0; }).length;
+    var todoQuestions = requiredQuestions.filter(function(question){ var answer = questionAnswer(question); return !answer || !answer.verdict || questionErrors(question).length > 0; }).length;
     byId("tab-items-badge").textContent = todoItems;
     byId("tab-questions-badge").textContent = todoQuestions;
     byId("tab-items-badge").hidden = todoItems === 0;
@@ -888,6 +989,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       ? "还有 " + errors.length + " 项未完成：" + errors[0].message
       : "全部必答项已完成，可以导出。";
     byId("export-state").textContent = stateText;
+    byId("summary-preview").textContent = conciseSummary();
     if(errors.length){
       lastDecisionText = "";
       byId("preview-state").textContent = "完成全部必答项后显示。";
@@ -912,7 +1014,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       date: localDate(),
       statement: state.statement.trim(),
       limits_acknowledged: state.limitsAck,
-      answers: SPEC.items.filter(function(item){ return itemAnswer(item) && itemAnswer(item).verdict; }).map(function(item){
+      answers: SPEC.items.filter(function(item){ return !isContext(item) && itemAnswer(item) && itemAnswer(item).verdict; }).map(function(item){
         var answer = itemAnswer(item);
         var checks = {};
         item.checks.forEach(function(check){ checks[check.id] = answer.checks[check.id] === true; });
@@ -944,7 +1046,12 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     anchor.click();
     anchor.remove();
     setTimeout(function(){ URL.revokeObjectURL(url); }, 1200);
-    toast("已生成 review-decision.json；如未自动下载，请点“复制 JSON”。");
+    toast("已导出。请回到对话说“已导出”，由 Agent 读取、校验并归档；若下载失败，可复制 JSON。");
+  }
+  function copyText(value){
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(value).then(function(){toast("已复制。");},function(){fallbackCopy(value);});
+    }else fallbackCopy(value);
   }
   function copyDecision(){
     if(!lastDecisionText){
@@ -952,24 +1059,22 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       if(errors.length){ showErrors(errors); return; }
       lastDecisionText = JSON.stringify(buildDecision(), null, 2) + "\n";
     }
-    if(navigator.clipboard && window.isSecureContext){
-      navigator.clipboard.writeText(lastDecisionText).then(function(){ toast("已复制 JSON。"); }, fallbackCopy);
-    }else{
-      fallbackCopy();
-    }
+    copyText(lastDecisionText);
   }
-  function fallbackCopy(){
+  function fallbackCopy(value){
     var area = document.createElement("textarea");
-    area.value = lastDecisionText;
+    area.value = value;
     area.style.position = "fixed";
     area.style.opacity = "0";
     document.body.append(area);
     area.select();
-    try{ document.execCommand("copy"); toast("已复制 JSON。"); }
+    try{ if(!document.execCommand("copy")) throw new Error("Copy failed"); toast("已复制。"); }
     catch(error){ toast("复制失败，请手动选择 JSON 预览内容。", true); }
     area.remove();
   }
   function showErrors(errors){
+    validationRequested = true;
+    SPEC.items.forEach(function(item, index){ updateItem(index); });
     var first = errors[0];
     toast(first.message + (errors.length > 1 ? "（另有 " + (errors.length - 1) + " 项）" : ""), true);
     if(first.kind === "limits"){
@@ -978,14 +1083,14 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     }else if(first.kind === "question"){
       showTab("questions");
       var qcard = byId("question-card-" + first.index);
-      if(qcard) qcard.scrollIntoView({block:"center"});
+      if(qcard) qcard.scrollIntoView({block:"start"});
     }else{
       showTab("items");
       currentFilter = "all";
       applyFilter();
       var card = byId("item-card-" + first.index);
       if(card){
-        card.scrollIntoView({block:"center"});
+        card.scrollIntoView({block:"start"});
         card.classList.add("flash");
         setTimeout(function(){ card.classList.remove("flash"); }, 1600);
       }
@@ -1005,6 +1110,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   function jumpToItem(id){
     showTab("items");
     currentFilter = "all";
+    byId("item-search").value = "";
     applyFilter();
     var card = document.querySelector('[data-item-id="' + cssEscape(id) + '"].item-card');
     if(!card){
@@ -1013,7 +1119,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       card = document.querySelector('[data-item-id="' + cssEscape(id) + '"].item-card');
     }
     if(card){
-      card.scrollIntoView({block:"center"});
+      card.scrollIntoView({block:"start"});
       card.classList.add("flash");
       setTimeout(function(){ card.classList.remove("flash"); }, 1600);
     }
@@ -1025,12 +1131,139 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     SPEC.items.forEach(function(item, index){
       var answer = itemAnswer(item);
       var verdict = answer && answer.verdict ? answer.verdict : "";
+      var search = byId("item-search").value.trim().toLowerCase();
       var show = currentFilter === "all"
-        || (currentFilter === "todo" && !verdict)
-        || (currentFilter === verdict);
+        || (currentFilter === "context" && isContext(item))
+        || (currentFilter === "todo" && !isContext(item) && (!verdict || itemErrors(item).length))
+        || (!isContext(item) && currentFilter === verdict);
+      show = show && (!search || (item.id + " " + item.title).toLowerCase().indexOf(search) >= 0);
       var card = byId("item-card-" + index);
       if(card) card.hidden = !show;
+      var indexButton = document.querySelector('#index-list .index-btn[data-item-id="' + cssEscape(item.id) + '"]');
+      if(indexButton) indexButton.hidden = !show;
     });
+  }
+
+  function refreshReview(){
+    renderItems(); renderQuestions(); renderBoundaries(); renderExport();
+    SPEC.items.forEach(function(item,index){updateItem(index);});
+    updateProgress(); applyFilter(); applyEvidenceLayouts();
+  }
+  function applyEvidenceLayouts(){
+    document.querySelectorAll('.evidence-grid').forEach(function(grid){
+      grid.classList.toggle('single', evidenceLayout === 'single');
+      var selected = Number(grid.dataset.evidenceSelected || 0);
+      var comparison = Number(grid.dataset.evidenceCompare || 0), figures = grid.querySelectorAll('.evidence');
+      if(comparison === selected && figures.length > 1) comparison = (selected+1)%figures.length;
+      grid.dataset.evidenceCompare = String(comparison);
+      grid.querySelector('[data-role="compare-evidence"]').value = String(comparison);
+      figures.forEach(function(figure,index){
+        figure.hidden = index !== selected && (evidenceLayout === 'single' || index !== comparison);
+      });
+      grid.querySelectorAll('[data-evidence-index]').forEach(function(button){
+        button.setAttribute('aria-pressed', String(Number(button.dataset.evidenceIndex) === selected));
+      });
+    });
+  }
+  function nextPending(afterIndex){
+    var pending = SPEC.items.map(function(item,index){return {item:item,index:index};}).filter(function(row){
+      return !isContext(row.item) && row.item.required &&
+        (!itemAnswer(row.item).verdict || itemErrors(row.item).length);
+    });
+    var row = pending.find(function(candidate){return candidate.index > afterIndex;}) || pending[0];
+    if(row) jumpToItem(row.item.id);
+    else {showTab('questions');toast('逐项必答已完成，请核对整体问题。');}
+  }
+  function acceptAndNext(card){
+    var index = Number(card.dataset.index), item = SPEC.items[index];
+    if(isContext(item)) return;
+    var answer = itemAnswer(item);
+    item.checks.forEach(function(check){
+      if(check.required) answer.checks[check.id] = true;
+    });
+    answer.verdict = 'accepted';
+    card.querySelectorAll('[data-role="check"]').forEach(function(input){input.checked = !!answer.checks[input.dataset.checkId];});
+    card.querySelector('[data-role="verdict"][value="accepted"]').checked = true;
+    saveState(); updateItem(index); updateProgress(); nextPending(index);
+  }
+  function summarizeQuestions(){
+    var filled = 0;
+    SPEC.questions.forEach(function(question,index){
+      if(questionAnswer(question).verdict) return;
+      var items = question.item_ids.map(function(id){return SPEC.items.find(function(item){return item.id === id;});});
+      if(items.some(function(item){return !itemAnswer(item).verdict || itemErrors(item).length;})) return;
+      var values = items.map(function(item){return itemAnswer(item).verdict;});
+      var verdict = values.indexOf('needs_revision') >= 0 ? 'needs_revision'
+        : values.indexOf('uncertain') >= 0 ? 'uncertain'
+        : values.indexOf('accepted') >= 0 ? 'accepted' : 'uncertain';
+      state.questions[question.id].verdict = verdict;
+      byId('question-card-' + index).querySelector('[value="' + verdict + '"]').checked = true;
+      updateQuestion(index); filled++;
+    });
+    saveState(); updateProgress(); toast('已汇总 ' + filled + ' 个未填整体结论；已有结论保留。');
+  }
+  function conciseSummary(){
+    var lines = [allErrors().length ? '草稿（尚未完成，不能作为正式回传）' : '复核摘要（正式回传请附 review-decision.json）',
+      '送审包：' + SPEC.package_id + '；版本：' + BUILD.build_id];
+    SPEC.items.filter(function(item){return !isContext(item);}).forEach(function(item){
+      var answer = itemAnswer(item);
+      lines.push(item.id + '：' + verdictLabel(answer.verdict) +
+        (answer.verdict === 'accepted' && itemErrors(item).length ? '（检查未齐）' : '') +
+        (answer.notes.trim() ? '；' + answer.notes.trim() : ''));
+    });
+    SPEC.questions.forEach(function(question){
+      var answer = questionAnswer(question);
+      lines.push(question.id + '：' + verdictLabel(answer.verdict) +
+        (answer.verdict === 'accepted' && questionErrors(question).length ? '（覆盖项未齐）' : '') +
+        (answer.notes.trim() ? '；' + answer.notes.trim() : ''));
+    });
+    if(state.statement.trim()) lines.push('补充：' + state.statement.trim());
+    lines.push('范围与边界：' + (state.limitsAck ? '已阅读确认' : '尚未确认'));
+    return lines.join('\n');
+  }
+  function downloadJSON(value,name){
+    var url = URL.createObjectURL(new Blob([JSON.stringify(value,null,2)+'\n'],{type:'application/json'}));
+    var link = h('a',{href:url,download:name});document.body.append(link);link.click();link.remove();
+    setTimeout(function(){URL.revokeObjectURL(url);},1200);
+  }
+  function saveDraftFile(){
+    downloadJSON({schema_version:1,kind:'silicon_eye_review_draft',build_id:BUILD.build_id,
+      package_id:SPEC.package_id,stage:SPEC.stage,spec_sha256:BUILD.spec_sha256,state:state},
+      'review-draft-' + SPEC.package_id + '.json');
+    toast('草稿已导出；草稿不属于人审归档记录。');
+  }
+  function readDraft(document){
+    function requireDraft(condition,message){if(!condition) throw new Error(message);}
+    requireDraft(document && document.kind === 'silicon_eye_review_draft' && document.schema_version === 1,'请选择本工具导出的草稿文件');
+    requireDraft(document.build_id === BUILD.build_id && document.package_id === SPEC.package_id &&
+      document.stage === SPEC.stage && document.spec_sha256 === BUILD.spec_sha256,'草稿不是当前送审版本，未导入');
+    var saved = document.state;
+    function object(value){return value && typeof value === 'object' && !Array.isArray(value);}
+    requireDraft(object(saved) && object(saved.answers) && object(saved.questions),'草稿结构错误');
+    requireDraft(typeof saved.statement === 'string' && typeof saved.limitsAck === 'boolean','草稿字段类型错误');
+    requireDraft(Object.keys(saved.answers).every(function(id){return SPEC.items.some(function(item){return item.id === id;});}) &&
+      Object.keys(saved.questions).every(function(id){return SPEC.questions.some(function(question){return question.id === id;});}),'草稿含未知编号');
+    var clean = {answers:{},questions:{},statement:saved.statement,limitsAck:saved.limitsAck};
+    SPEC.items.forEach(function(item){
+      var answer = saved.answers[item.id] || {verdict:null,checks:{},notes:''};
+      requireDraft(object(answer) && object(answer.checks) && typeof answer.notes === 'string','草稿逐项字段错误');
+      requireDraft(answer.verdict === null || Object.prototype.hasOwnProperty.call(LABELS.verdicts,answer.verdict),'草稿含非法结论');
+      requireDraft(!isContext(item) || answer.verdict === null,'参考项不能获得本轮新裁决');
+      requireDraft(Object.keys(answer.checks).every(function(id){return item.checks.some(function(check){return check.id === id;});}),'草稿含未知检查项');
+      var checks = {};
+      item.checks.forEach(function(check){
+        requireDraft(answer.checks[check.id] === undefined || typeof answer.checks[check.id] === 'boolean','检查值必须为布尔值');
+        checks[check.id] = answer.checks[check.id] === true;
+      });
+      clean.answers[item.id] = {verdict:answer.verdict,checks:checks,notes:answer.notes};
+    });
+    SPEC.questions.forEach(function(question){
+      var answer = saved.questions[question.id] || {verdict:null,notes:''};
+      requireDraft(object(answer) && typeof answer.notes === 'string' &&
+        (answer.verdict === null || Object.prototype.hasOwnProperty.call(LABELS.question_verdicts,answer.verdict)),'草稿整体字段错误');
+      clean.questions[question.id] = {verdict:answer.verdict,notes:answer.notes};
+    });
+    return clean;
   }
 
   function toast(message, isError){
@@ -1041,25 +1274,42 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     toastTimer = setTimeout(function(){ node.className = "toast"; }, 3600);
   }
 
-  var lightboxZoom = 1;
-  function openLightbox(url, caption){
-    var dialog = byId("lightbox");
+  var lightboxEntries = [];
+  function lightboxScale(){
     var image = byId("lightbox-img");
-    image.src = url;
-    image.alt = caption || "";
-    image.style.width = "100%";
-    image.style.height = "auto";
-    lightboxZoom = 1;
-    byId("lightbox-cap").textContent = caption || "";
-    byId("lightbox-open").href = url;
+    byId("lightbox-scale").textContent = image.naturalWidth ? Math.round(image.getBoundingClientRect().width / image.naturalWidth * 100) + "%" : "";
+  }
+  function showLightboxImage(index){
+    var entry = lightboxEntries[index];
+    if(!entry) return;
+    var image = byId("lightbox-img");
+    image.src = entry.url; image.alt = entry.caption; image.style.width = "100%"; image.style.height = "auto";
+    byId("lightbox-cap").textContent = entry.caption;
+    byId("lightbox-open").href = entry.url;
+    byId("lightbox-evidence").value = String(index);
+    var body = document.querySelector('.lightbox-body');body.scrollTop = 0;body.scrollLeft = 0;
+    image.onload = lightboxScale;
+    lightboxScale();
+  }
+  function openLightbox(url, caption, grid){
+    lightboxEntries = grid ? Array.from(grid.querySelectorAll('.evidence img')).map(function(image){
+      return {url:image.dataset.url,caption:image.dataset.caption};
+    }) : [{url:url,caption:caption}];
+    var selector = byId("lightbox-evidence");selector.textContent = "";
+    lightboxEntries.forEach(function(entry,index){selector.append(h('option',{value:index},entry.caption));});
+    var dialog = byId("lightbox");
     if(dialog.showModal && !dialog.open) dialog.showModal();
+    showLightboxImage(Math.max(0,lightboxEntries.findIndex(function(entry){return entry.url === url;})));
   }
   function zoomLightbox(multiplier){
-    var image = byId("lightbox-img");
+    var image = byId("lightbox-img"), body = document.querySelector('.lightbox-body');
     var current = image.getBoundingClientRect().width || image.naturalWidth || 800;
     var next = Math.max(120, Math.min(current * multiplier, 20000));
+    var ratio = next / current, left = body.scrollLeft, top = body.scrollTop;
     image.style.width = next + "px";
-    lightboxZoom = next / (image.naturalWidth || next);
+    body.scrollLeft = (left + body.clientWidth / 2) * ratio - body.clientWidth / 2;
+    body.scrollTop = (top + body.clientHeight / 2) * ratio - body.clientHeight / 2;
+    lightboxScale();
   }
 
   function bindEvents(){
@@ -1070,16 +1320,28 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       var target = event.target.closest("[data-action]");
       if(!target) return;
       var action = target.dataset.action;
-      if(action === "lightbox"){ openLightbox(target.dataset.url, target.dataset.caption); }
+      if(action === "lightbox"){ openLightbox(target.dataset.url, target.dataset.caption, target.closest(".evidence-grid")); }
       else if(action === "jump"){ jumpToItem(target.dataset.itemId); }
       else if(action === "export"){ downloadDecision(); }
       else if(action === "copy"){ copyDecision(); }
+      else if(action === "accept-next"){ acceptAndNext(target.closest('.item-card')); }
+      else if(action === "next-pending"){ nextPending(-1); }
+      else if(action === "evidence-select"){
+        target.closest('.evidence-grid').dataset.evidenceSelected = target.dataset.evidenceIndex;
+        applyEvidenceLayouts();
+      }
+      else if(action === "summarize-questions"){ summarizeQuestions(); }
+      else if(action === "save-draft"){ saveDraftFile(); }
+      else if(action === "import-draft"){ byId('draft-file').click(); }
+      else if(action === "copy-summary"){ copyText(conciseSummary()); }
       else if(action === "clear"){
         if(window.confirm("清空本页在浏览器中保存的全部答案？")){
-          localStorage.removeItem(STORE_KEY);
+          clearTimeout(saveTimer);
+          try{localStorage.removeItem(STORE_KEY);}catch(error){storageWarning();}
           state = {answers:{}, questions:{}, statement:"", limitsAck:false};
-          initState();
-          location.reload();
+          SPEC.items.forEach(function(item){state.answers[item.id]={verdict:null,checks:{},notes:""};item.checks.forEach(function(check){state.answers[item.id].checks[check.id]=false;});});
+          SPEC.questions.forEach(function(question){state.questions[question.id]={verdict:null,notes:""};});
+          validationRequested = false;refreshReview();persistState();
         }
       }
       else if(action === "close-lightbox"){ byId("lightbox").close(); }
@@ -1087,13 +1349,37 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       else if(action === "zoom-out"){ zoomLightbox(0.74); }
       else if(action === "zoom-fit"){
         var image = byId("lightbox-img");
-        image.style.width = "100%";
+        image.style.width = "100%"; lightboxScale();
       }
       else if(action === "zoom-original"){
         var original = byId("lightbox-img");
-        original.style.width = (original.naturalWidth || 1200) + "px";
+        original.style.width = (original.naturalWidth || 1200) + "px"; lightboxScale();
       }
     });
+    byId('item-search').addEventListener('input', applyFilter);
+    byId('evidence-layout').addEventListener('change',function(event){evidenceLayout=event.target.value;applyEvidenceLayouts();});
+    byId('draft-file').addEventListener('change',function(event){
+      var file = event.target.files[0];if(!file) return;
+      file.text().then(function(value){
+        var clean = readDraft(JSON.parse(value));
+        state=clean;validationRequested=false;refreshReview();saveState();toast('同版草稿已恢复，尚未归档。');
+      }).catch(function(error){toast('未导入：'+error.message,true);});
+      event.target.value='';
+    });
+    byId('lightbox-evidence').addEventListener('change',function(event){showLightboxImage(Number(event.target.value));});
+    var body = document.querySelector('.lightbox-body'), drag = null;
+    byId('lightbox-img').draggable = false;
+    body.addEventListener('pointerdown',function(event){
+      if(event.button !== 0) return;
+      drag={x:event.clientX,y:event.clientY,left:body.scrollLeft,top:body.scrollTop};
+      body.classList.add('dragging');body.setPointerCapture(event.pointerId);
+    });
+    body.addEventListener('pointermove',function(event){
+      if(!drag) return;body.scrollLeft=drag.left+drag.x-event.clientX;body.scrollTop=drag.top+drag.y-event.clientY;
+    });
+    function endDrag(){drag=null;body.classList.remove('dragging');}
+    body.addEventListener('pointerup',endDrag);body.addEventListener('pointercancel',endDrag);body.addEventListener('lostpointercapture',endDrag);
+    window.addEventListener('pagehide',function(){clearTimeout(saveTimer);persistState();});
     byId("filters").addEventListener("click", function(event){
       var button = event.target.closest("button[data-filter]");
       if(!button) return;
@@ -1101,6 +1387,9 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       applyFilter();
     });
     byId("item-list").addEventListener("change", function(event){
+      if(event.target.matches('[data-role="compare-evidence"]')){
+        event.target.closest('.evidence-grid').dataset.evidenceCompare=event.target.value;applyEvidenceLayouts();return;
+      }
       var card = event.target.closest(".item-card");
       if(!card) return;
       var index = Number(card.dataset.index);
@@ -1160,6 +1449,10 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     });
     window.addEventListener("keydown", function(event){
       if(event.key === "Escape" && byId("lightbox").open){ byId("lightbox").close(); }
+      if(byId("lightbox").open && event.target.tagName !== 'SELECT' && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')){
+        var index=Number(byId('lightbox-evidence').value),step=event.key==='ArrowRight'?1:-1;
+        var next=index+step;if(next>=0 && next<lightboxEntries.length){event.preventDefault();showLightboxImage(next);}
+      }
     });
   }
 
@@ -1174,7 +1467,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   SPEC.questions.forEach(function(question, index){ updateQuestion(index); });
   updateProgress();
   applyFilter();
-  showTab("overview");
+  showTab("items");
 })();
 </script>
 </body>

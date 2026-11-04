@@ -48,7 +48,7 @@ ITEM_TYPES = (
     "region_boundary",
     "other",
 )
-ROLES = ("source", "marked", "design", "overlay", "detail", "other")
+ROLES = ("source", "marked", "design", "overlay", "paired", "detail", "other")
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}
 ID_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:-]{0,79}$")
 
@@ -162,7 +162,7 @@ STAGE_PRESETS = {
                 {"id": "no_missing_segment", "label": "无明显漏段", "required": True},
                 {
                     "id": "native_path_matches",
-                    "label": "原生路径与照片可见走向一致",
+                    "label": "原图对应与相对走向合理（允许畸变校正）",
                     "required": True,
                 },
             ],
@@ -189,7 +189,7 @@ STAGE_PRESETS = {
             },
             {
                 "id": "Q2",
-                "prompt": "孔组数量、阵列与相对位置是否无明显遗漏或错误？",
+                "prompt": "声明孔组的落点与上下金属相对位置是否合理（不要求逐孔计数）？",
                 "item_types": ["via_interface"],
             },
         ],
@@ -290,7 +290,11 @@ def image_size(path):
 def preset_questions(stage, items):
     questions = []
     for question in STAGE_PRESETS[stage]["questions"]:
-        item_ids = [item["id"] for item in items if item["type"] in question["item_types"]]
+        item_ids = [
+            item["id"] for item in items
+            if item["type"] in question["item_types"]
+            and item.get("review_mode", "decision") != "context"
+        ]
         if item_ids:
             questions.append(
                 {
@@ -357,8 +361,13 @@ def normalize_spec(root, raw):
         require(isinstance(item_title, str) and item_title.strip(), "Item title is empty")
         prompt = item.get("prompt")
         require(isinstance(prompt, str) and prompt.strip(), f"Item {item_id} has no prompt")
-        required = item.get("required", True)
+        review_mode = item.get("review_mode", "decision")
+        require(review_mode in {"decision", "context"}, "Invalid item.review_mode")
+        required = item.get("required", review_mode != "context")
         require(isinstance(required, bool), "item.required must be boolean")
+        require(not (review_mode == "context" and required), "Context cannot require a verdict")
+        change_summary = item.get("change_summary", "")
+        require(isinstance(change_summary, str), "item.change_summary must be a string")
         facts = item.get("facts", {})
         require(isinstance(facts, dict), f"Item {item_id} facts must be an object")
 
@@ -384,18 +393,23 @@ def normalize_spec(root, raw):
             require(isinstance(label, str) and label.strip(), "Evidence label is empty")
             caption = entry.get("caption", "")
             require(isinstance(caption, str), "Evidence caption must be a string")
+            evidence_frame = entry.get("frame", "")
+            require(isinstance(evidence_frame, str), "Evidence frame must be a string")
             evidence.append(
                 {
                     "path": display_path(source_path, root),
                     "label": label,
                     "role": role,
                     "caption": caption,
+                    "frame": evidence_frame,
                     "sha256": digest(source_path),
                     "width_height": image_size(source_path),
                 }
             )
 
-        if "checks" in item:
+        if review_mode == "context":
+            checks = []
+        elif "checks" in item:
             checks_raw = item["checks"]
             require(isinstance(checks_raw, list), f"Item {item_id} checks must be a list")
             checks = copy.deepcopy(checks_raw)
@@ -414,7 +428,7 @@ def normalize_spec(root, raw):
             )
             check["required"] = bool(check.get("required", False))
 
-        note_required_on = item.get("note_required_on", ["needs_revision"])
+        note_required_on = item.get("note_required_on", ["needs_revision", "not_applicable"])
         require(isinstance(note_required_on, list), "note_required_on must be a list")
         require(
             all(value in VERDICTS for value in note_required_on),
@@ -427,6 +441,8 @@ def normalize_spec(root, raw):
                 "title": item_title,
                 "prompt": prompt,
                 "required": required,
+                "review_mode": review_mode,
+                "change_summary": change_summary,
                 "facts": facts,
                 "evidence": evidence,
                 "checks": checks,
@@ -464,7 +480,10 @@ def normalize_spec(root, raw):
                     and all(value in ITEM_TYPES for value in item_types),
                     f"Question {question_id} has invalid item_types",
                 )
-                covered = [item["id"] for item in items if item["type"] in item_types]
+                covered = [
+                    item["id"] for item in items
+                    if item["type"] in item_types and item["review_mode"] != "context"
+                ]
                 require(covered, f"Question {question_id} covers no items")
             require(
                 len(set(covered)) == len(covered),
@@ -475,6 +494,8 @@ def normalize_spec(root, raw):
                 f"Question {question_id} references unknown items: "
                 + ", ".join(sorted(set(covered) - item_ids)),
             )
+            context_ids = {item["id"] for item in items if item["review_mode"] == "context"}
+            require(not (set(covered) & context_ids), "Questions cannot re-review context items")
             questions.append(
                 {
                     "id": question_id,
@@ -558,6 +579,7 @@ def _copy_assets(spec, root, stage):
                     "label": entry["label"],
                     "role": entry["role"],
                     "caption": entry["caption"],
+                    "frame": entry["frame"],
                     "url": record["output_path"],
                     "width_height": record["width_height"],
                     "source_path": entry["path"],
@@ -608,7 +630,8 @@ def build(root, spec_path, output):
                     "source": "原图",
                     "marked": "标记图",
                     "design": "规则图",
-                    "overlay": "对比/叠加图",
+                    "overlay": "叠加图",
+                    "paired": "分层并列（独立坐标）",
                     "detail": "放大图",
                     "other": "其他",
                 },
@@ -733,6 +756,9 @@ def normalize_decision(manifest, spec, raw):
         if item_id in provided:
             errors.append(f"Duplicate answer for item: {item_id}")
             continue
+        if items[item_id].get("review_mode") == "context":
+            errors.append(f"Context item cannot receive a new verdict: {item_id}")
+            continue
         provided[item_id] = answer
 
     answers = []
@@ -839,6 +865,14 @@ def normalize_decision(manifest, spec, raw):
                 f"Question {answer['question_id']} cannot be accepted while covered items "
                 "are not: " + ", ".join(blocked)
             )
+        missing = [item_id for item_id in covered if item_id not in by_item]
+        if missing:
+            errors.append(
+                f"Question {answer['question_id']} cannot be accepted with unanswered covered "
+                "items: " + ", ".join(missing)
+            )
+        if not any(by_item.get(item_id, {}).get("verdict") == "accepted" for item_id in covered):
+            errors.append(f"Question {answer['question_id']} has no applicable accepted items")
 
     if errors:
         raise DecisionError(errors)

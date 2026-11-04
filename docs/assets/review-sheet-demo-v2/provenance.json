@@ -1,0 +1,30 @@
+{
+  "kind": "review_ui_demo_views_not_new_geometry",
+  "model": {
+    "path": "docs/assets/west-m1-reviewed-v12/work/model.json",
+    "sha256": "3e842dfd7593a8791298bbccc368a25dc5e6bc3202ef216ca988696f0d0e4a94"
+  },
+  "renderer": {
+    "path": "silicon_eye/conductive_layers.py",
+    "sha256": "9094bb85edf502bfdbf484f4ea1a747c15d6a1eaad89ff051d16a607f88ef330"
+  },
+  "design_bounds": [
+    -2700,
+    120,
+    -1600,
+    1040
+  ],
+  "operations": [
+    "existing svg_layers renderer",
+    "layer visibility selection",
+    "display viewport only",
+    "W3/W4 labels; W2 explicitly context"
+  ],
+  "geometry_changed": false,
+  "new_human_review": false,
+  "precise_projection_allowed": false,
+  "outputs": {
+    "M2-working.svg": "ab943afac2ebdceca34aa23dc8743cd4128c6742028d54ed27c44739cb57dbf9",
+    "five-layer-working.svg": "d42bdd7a6a382c737fc31421870b0abcf57e337323e07b40babdc8b609177e22"
+  }
+}

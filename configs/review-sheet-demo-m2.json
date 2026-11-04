@@ -4,8 +4,8 @@
   "stage": "METAL",
   "package_id": "DEMO-M2-W34-REVIEW-SHEET-1",
   "title": "示例：W3/W4 邻近 M2 片段与孔组确认",
-  "date": "2026-11-03",
-  "summary": "固定验收确认单的演示包，不是新的送审、人审或几何批准。用于检查页面、结论选择和导出格式。",
+  "date": "2026-11-04",
+  "summary": "界面演示，非正式送审：展示本轮待判、旧接口仅参考、大图切换、快捷确认与草稿恢复。所有操作仅用于测试界面，不构成新几何或人审批准。",
   "scope": {
     "frame": "m2",
     "native_bounds": [
@@ -42,18 +42,42 @@
       },
       "evidence": [
         {
+          "path": "docs/assets/west-w34-reviewed-v9/west-m2-wide-raw.png",
+          "label": "M2 原图宽邻域",
+          "role": "source",
+          "frame": "m2",
+          "caption": "与M2标记宽图同一原生窗口；上下层成对图保持独立坐标。"
+        },
+        {
           "path": "docs/assets/west-w34-reviewed-v9/west-m2-wide-marked.png",
           "label": "W3/W4 邻近 M2 宽图",
           "role": "marked",
-          "caption": "固定原生搜索范围上下文"
+          "caption": "固定原生搜索范围上下文",
+          "frame": "m2"
         },
         {
           "path": "docs/assets/west-w34-reviewed-v9/W3-N-paired.png",
           "label": "W3-N 上下层对比",
-          "role": "overlay",
-          "caption": "M1/M2 成对标记，仅作上下文"
+          "role": "paired",
+          "caption": "M1/M2 成对标记，仅作上下文",
+          "frame": "m1 / m2"
+        },
+        {
+          "path": "docs/assets/review-sheet-demo-v2/M2-working.svg",
+          "label": "M2 规则几何",
+          "role": "design",
+          "frame": "design",
+          "caption": "既有模型的独立设计坐标视图；相对结构复核，不作照片精确投影。 右侧W2仅作参照，不在本轮待判清单。"
+        },
+        {
+          "path": "docs/assets/review-sheet-demo-v2/five-layer-working.svg",
+          "label": "五层联合几何",
+          "role": "design",
+          "frame": "design",
+          "caption": "M1/V1/M2/V2/M3既有候选及已审承载上下文；不新增几何或连接。 右侧W2仅作参照，不在本轮待判清单。"
         }
-      ]
+      ],
+      "change_summary": "演示待判项：只核对声明范围内的几何表达，不表示已经产生新修订。"
     },
     {
       "id": "DEMO-M2-W4",
@@ -80,24 +104,48 @@
       },
       "evidence": [
         {
+          "path": "docs/assets/west-w34-reviewed-v9/west-m2-wide-raw.png",
+          "label": "M2 原图宽邻域",
+          "role": "source",
+          "frame": "m2",
+          "caption": "与M2标记宽图同一原生窗口；上下层成对图保持独立坐标。"
+        },
+        {
           "path": "docs/assets/west-w34-reviewed-v9/west-m2-wide-marked.png",
           "label": "W3/W4 邻近 M2 宽图",
           "role": "marked",
-          "caption": "固定原生搜索范围上下文"
+          "caption": "固定原生搜索范围上下文",
+          "frame": "m2"
         },
         {
           "path": "docs/assets/west-w34-reviewed-v9/W4-N-paired.png",
           "label": "W4-N 上下层对比",
-          "role": "overlay",
-          "caption": "M1/M2 成对标记，仅作上下文"
+          "role": "paired",
+          "caption": "M1/M2 成对标记，仅作上下文",
+          "frame": "m1 / m2"
+        },
+        {
+          "path": "docs/assets/review-sheet-demo-v2/M2-working.svg",
+          "label": "M2 规则几何",
+          "role": "design",
+          "frame": "design",
+          "caption": "既有模型的独立设计坐标视图；相对结构复核，不作照片精确投影。 右侧W2仅作参照，不在本轮待判清单。"
+        },
+        {
+          "path": "docs/assets/review-sheet-demo-v2/five-layer-working.svg",
+          "label": "五层联合几何",
+          "role": "design",
+          "frame": "design",
+          "caption": "M1/V1/M2/V2/M3既有候选及已审承载上下文；不新增几何或连接。 右侧W2仅作参照，不在本轮待判清单。"
         }
-      ]
+      ],
+      "change_summary": "演示待判项：只核对声明范围内的几何表达，不表示已经产生新修订。"
     },
     {
       "id": "DEMO-W3-V2-U",
       "type": "via_interface",
       "title": "W3-U 的 V2 孔组",
-      "prompt": "W3-U 的 V2 孔组是否可见，且上下承载为 WEST-M2-W3-SOURCE / RT-M3-UP？",
+      "prompt": "已审 W3-U：V2 接入 RT-M3-UP。请仅作为本轮M2几何的承载上下文。",
       "facts": {
         "孔层": "V2",
         "层对": "M2 → M3",
@@ -112,24 +160,43 @@
       },
       "evidence": [
         {
-          "path": "docs/assets/west-w34-reviewed-v9/W3-N-paired.png",
-          "label": "W3-N 成对标记",
-          "role": "overlay",
-          "caption": "孔组与上下层相对位置"
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W3-U-m2-raw.png",
+          "label": "W3-U M2 原图",
+          "frame": "m2",
+          "role": "source",
+          "caption": "V2的原生来源侧，已审身份与承载。"
         },
         {
-          "path": "docs/assets/west-w34-reviewed-v9/W3-N-m2-marked.png",
-          "label": "W3-N M2 标记图",
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W3-U-m2-marked.png",
+          "label": "W3-U M2 标记图",
+          "frame": "m2",
           "role": "marked",
-          "caption": "M2 侧孔组观察窗口"
+          "caption": "对应上端V2孔组。"
+        },
+        {
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W3-U-m3-marked.png",
+          "label": "W3-U M3 承载",
+          "frame": "m3",
+          "role": "marked",
+          "caption": "B-U承载上下文，保留本层坐标。"
+        },
+        {
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W3-U-paired.png",
+          "label": "W3-U M2/M3 并列",
+          "frame": "m2 / m3",
+          "role": "paired",
+          "caption": "两层分别显示，未直接投影叠加。"
         }
-      ]
+      ],
+      "review_mode": "context",
+      "required": false,
+      "change_summary": "旧接口身份与承载已审；本页仅供参照，不重新裁决孔数、几何或连接。"
     },
     {
       "id": "DEMO-W4-V2-U",
       "type": "via_interface",
       "title": "W4-U 的 V2 孔组",
-      "prompt": "W4-U 的 V2 孔组是否可见，且上下承载为 WEST-M2-W4-SOURCE / RT-M3-UP？",
+      "prompt": "已审 W4-U：V2 接入 RT-M3-UP。请仅作为本轮M2几何的承载上下文。",
       "facts": {
         "孔层": "V2",
         "层对": "M2 → M3",
@@ -144,18 +211,37 @@
       },
       "evidence": [
         {
-          "path": "docs/assets/west-w34-reviewed-v9/W4-N-paired.png",
-          "label": "W4-N 成对标记",
-          "role": "overlay",
-          "caption": "孔组与上下层相对位置"
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W4-U-m2-raw.png",
+          "label": "W4-U M2 原图",
+          "frame": "m2",
+          "role": "source",
+          "caption": "V2的原生来源侧，已审身份与承载。"
         },
         {
-          "path": "docs/assets/west-w34-reviewed-v9/W4-N-m2-marked.png",
-          "label": "W4-N M2 标记图",
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W4-U-m2-marked.png",
+          "label": "W4-U M2 标记图",
+          "frame": "m2",
           "role": "marked",
-          "caption": "M2 侧孔组观察窗口"
+          "caption": "对应上端V2孔组。"
+        },
+        {
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W4-U-m3-marked.png",
+          "label": "W4-U M3 承载",
+          "frame": "m3",
+          "role": "marked",
+          "caption": "B-U承载上下文，保留本层坐标。"
+        },
+        {
+          "path": "docs/assets/west-w2-v1-reviewed-v8/W4-U-paired.png",
+          "label": "W4-U M2/M3 并列",
+          "frame": "m2 / m3",
+          "role": "paired",
+          "caption": "两层分别显示，未直接投影叠加。"
         }
-      ]
+      ],
+      "review_mode": "context",
+      "required": false,
+      "change_summary": "旧接口身份与承载已审；本页仅供参照，不重新裁决孔数、几何或连接。"
     }
   ],
   "limits": [
@@ -177,8 +263,8 @@
       "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
     },
     "reference_model": {
-      "path": "docs/assets/west-w34-reviewed-v9/S3-W34-metal/model.json",
-      "sha256": "5e0d3a6f3696e25122518570944076e46f0f05c0eccafd85556d28dc71a5a7b7"
+      "path": "docs/assets/west-m1-reviewed-v12/work/model.json",
+      "sha256": "3e842dfd7593a8791298bbccc368a25dc5e6bc3202ef216ca988696f0d0e4a94"
     },
     "prior_human_review": {
       "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
@@ -187,6 +273,10 @@
     "scope_plan": {
       "path": "benchmarks/west-m1-reviewed-v12/next-scope-plan.json",
       "sha256": "39ba68d33688b0b4457e796bddfa9ef8149a2cb141a6f95f55dac821f3cb5e63"
+    },
+    "demo_view_provenance": {
+      "path": "docs/assets/review-sheet-demo-v2/provenance.json",
+      "sha256": "3d7db9bc92254938172087e5c167af8000582804e7562341c33d774c2f5d872a"
     }
   }
 }

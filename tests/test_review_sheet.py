@@ -328,3 +328,129 @@ def test_metal_fragment_only_drops_interface_question(tmp_path):
     build(tmp_path, write_spec(tmp_path, document), tmp_path / "package")
     spec = json.loads((tmp_path / "package" / "review-spec.json").read_text())
     assert [question["id"] for question in spec["questions"]] == ["Q1", "Q2"]
+
+
+def test_context_is_read_only_and_excluded_from_questions(tmp_path):
+    document = make_spec(tmp_path)
+    document['items'][1]['review_mode'] = 'context'
+    document['items'][0]['change_summary'] = 'Only this extent is revised'
+    output = tmp_path / 'package'
+    build(tmp_path, write_spec(tmp_path, document), output)
+    manifest = json.loads((output / 'manifest.json').read_text())
+    spec = json.loads((output / 'review-spec.json').read_text())
+    context = spec['items'][1]
+    assert context['required'] is False and context['checks'] == []
+    assert all(context['id'] not in q['item_ids'] for q in spec['questions'])
+    assert [q['id'] for q in spec['questions']] == ['Q1', 'Q2']
+    decision_path, decision = make_decision(tmp_path, output, manifest, spec)
+    with pytest.raises(DecisionError, match='Context item cannot receive'):
+        check(tmp_path, output, decision_path)
+    decision['answers'] = [a for a in decision['answers'] if a['item_id'] != context['id']]
+    decision_path.write_text(json.dumps(decision))
+    assert check(tmp_path, output, decision_path)['answers'] == 1
+
+
+@pytest.mark.parametrize('explicit_question', [False, True])
+def test_context_cannot_be_required_or_reapproved_in_a_question(tmp_path, explicit_question):
+    document = make_spec(tmp_path)
+    item = document['items'][0]
+    item['review_mode'] = 'context'
+    if explicit_question:
+        document['questions'] = [{'id': 'Q1', 'prompt': 'Review?', 'item_ids': [item['id']]}]
+        message = 'cannot re-review context'
+    else:
+        item['required'] = True
+        message = 'Context cannot require'
+    with pytest.raises(ValueError, match=message):
+        build(tmp_path, write_spec(tmp_path, document), tmp_path / 'package')
+
+
+def test_overall_acceptance_cannot_hide_unanswered_optional_item(tmp_path):
+    document = make_spec(tmp_path)
+    document['items'][0]['required'] = False
+    output = tmp_path / 'package'
+    build(tmp_path, write_spec(tmp_path, document), output)
+    manifest = json.loads((output / 'manifest.json').read_text())
+    spec = json.loads((output / 'review-spec.json').read_text())
+    decision_path, decision = make_decision(tmp_path, output, manifest, spec)
+    decision['answers'].pop(0)
+    decision_path.write_text(json.dumps(decision))
+    with pytest.raises(DecisionError, match='unanswered covered'):
+        check(tmp_path, output, decision_path)
+
+
+def test_all_not_applicable_cannot_become_overall_accepted(tmp_path):
+    _, output, manifest, spec = build_pkg(tmp_path)
+    decision_path, decision = make_decision(tmp_path, output, manifest, spec)
+    for answer in decision['answers']:
+        answer.update(verdict='not_applicable', notes='Outside the declared decision scope')
+    decision_path.write_text(json.dumps(decision))
+    with pytest.raises(DecisionError, match='no applicable accepted items'):
+        check(tmp_path, output, decision_path)
+
+
+def test_frame_and_independent_paired_evidence_are_preserved(tmp_path):
+    document = make_spec(tmp_path)
+    document['items'][0]['evidence'][0].update(frame='m1 / m2', role='paired')
+    output = tmp_path / 'package'
+    build(tmp_path, write_spec(tmp_path, document), output)
+    page = (output / 'index.html').read_text()
+    payload = json.loads(re.search(r'type="application/json">(.*?)</script>', page, re.S)[1])
+    assert payload['spec']['items'][0]['evidence'][0]['frame'] == 'm1 / m2'
+    assert payload['labels']['roles']['paired'] == '分层并列（独立坐标）'
+
+
+def test_demo_v2_context_uses_v2_source_not_v1_north_images():
+    root = Path(__file__).parents[1]
+    demo = json.loads((root / 'configs/review-sheet-demo-m2.json').read_text())
+    via_items = [item for item in demo['items'] if item['type'] == 'via_interface']
+    assert len(via_items) == 2
+    for item in via_items:
+        assert item['review_mode'] == 'context'
+        assert all('-N-' not in e['path'] for e in item['evidence'])
+        assert any(e['frame'] == 'm2' and e['role'] == 'source' for e in item['evidence'])
+        assert any(e['frame'] == 'm3' for e in item['evidence'])
+
+
+def test_draft_reader_restores_exact_state_and_rejects_cross_build_or_unknown_ids(tmp_path):
+    # Exercise the pure JavaScript draft parser without launching or mocking a browser.
+    import shutil
+    import subprocess
+
+    node = shutil.which('node')
+    if not node:
+        pytest.skip('Node is optional; browser validation covers the interactive draft flow')
+    document = make_spec(tmp_path)
+    document['items'][1]['review_mode'] = 'context'
+    output = tmp_path / 'package'
+    build(tmp_path, write_spec(tmp_path, document), output)
+    page = (output / 'index.html').read_text()
+    payload = json.loads(re.search(r'type="application/json">(.*?)</script>', page, re.S)[1])
+    start = page.index('  function readDraft(document){')
+    end = page.index('  function toast(', start)
+    js = r'''
+const vm=require('node:vm'), assert=require('node:assert/strict');
+const payload=PAYLOAD;
+const context={SPEC:payload.spec,BUILD:payload.build,LABELS:payload.labels,
+  isContext:item=>item.review_mode==='context'};
+vm.createContext(context); vm.runInContext(SOURCE,context);
+const spec=payload.spec, build=payload.build;
+const answers=Object.fromEntries(spec.items.map(item=>[item.id,{verdict:null,
+  checks:Object.fromEntries(item.checks.map(c=>[c.id,false])),notes:''}]));
+const draft={schema_version:1,kind:'silicon_eye_review_draft',build_id:build.build_id,
+  package_id:spec.package_id,stage:spec.stage,spec_sha256:build.spec_sha256,
+  state:{answers,questions:Object.fromEntries(spec.questions.map(q=>[q.id,{verdict:null,notes:''}])),statement:'partial',limitsAck:false}};
+const clean=context.readDraft(draft);
+assert.equal(JSON.stringify(clean),JSON.stringify(draft.state));
+assert.equal(clean.answers[spec.items[0].id].checks.endpoints_correct,false);
+const clone=()=>JSON.parse(JSON.stringify(draft));
+let bad=clone();bad.build_id='old';assert.throws(()=>context.readDraft(bad),/送审版本/);
+bad=clone();bad.spec_sha256='changed';assert.throws(()=>context.readDraft(bad),/送审版本/);
+bad=clone();bad.state.answers.UNKNOWN={};assert.throws(()=>context.readDraft(bad),/未知编号/);
+bad=clone();bad.state.answers[spec.items[1].id].verdict='accepted';assert.throws(()=>context.readDraft(bad),/新裁决/);
+bad=clone();bad.state.answers[spec.items[0].id].checks.endpoints_correct='true';assert.throws(()=>context.readDraft(bad),/布尔值/);
+bad=clone();bad.state.answers[spec.items[0].id].verdict='maybe';assert.throws(()=>context.readDraft(bad),/非法结论/);
+console.log('draft parser: exact restore plus six invalid inputs rejected');
+'''.replace('PAYLOAD', json.dumps(payload)).replace('SOURCE', json.dumps(page[start:end]))
+    result = subprocess.run([node], input=js, text=True, capture_output=True, check=False)
+    assert result.returncode == 0, result.stdout + result.stderr
