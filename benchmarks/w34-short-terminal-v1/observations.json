@@ -1,0 +1,103 @@
+{
+  "kind": "scoped_short_terminal_via_identity_triage",
+  "actor": "AI",
+  "date": "2026-11-05",
+  "accepted_geometry_baseline": {
+    "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+    "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+  },
+  "photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "status": "PENDING_HUMAN_V2_IDENTITY_ONLY",
+  "new_modeled_vias": 0,
+  "new_connections": 0,
+  "source_to_design_transform": null,
+  "observations": [
+    {
+      "id": "S01",
+      "candidate_interface_id": "W34-S01-V2-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        292,
+        2370,
+        343,
+        2398
+      ],
+      "lower_metal_id": "W34-M2-S01",
+      "observed": "Bright repeated spots or a bright band at the visible short head; plausible V2, identity not yet adjudicated.",
+      "AI_candidate_layer": "V2",
+      "identity_confirmed": null,
+      "upper_metal_id": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "V1_status": "NOT_ESTABLISHED_BY_THIS_M2_PHOTO",
+      "turn_context": "左向短回折"
+    },
+    {
+      "id": "S02",
+      "candidate_interface_id": "W34-S02-V2-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        410,
+        2332,
+        462,
+        2360
+      ],
+      "lower_metal_id": "W34-M2-S02",
+      "observed": "Bright repeated spots or a bright band at the visible short head; plausible V2, identity not yet adjudicated.",
+      "AI_candidate_layer": "V2",
+      "identity_confirmed": null,
+      "upper_metal_id": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "V1_status": "NOT_ESTABLISHED_BY_THIS_M2_PHOTO",
+      "turn_context": "右向短回折"
+    },
+    {
+      "id": "S03",
+      "candidate_interface_id": "W34-S03-V2-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        458,
+        2273,
+        514,
+        2298
+      ],
+      "lower_metal_id": "W34-M2-S03",
+      "observed": "Bright repeated spots or a bright band at the visible short head; plausible V2, identity not yet adjudicated.",
+      "AI_candidate_layer": "V2",
+      "identity_confirmed": null,
+      "upper_metal_id": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "V1_status": "NOT_ESTABLISHED_BY_THIS_M2_PHOTO",
+      "turn_context": "左向短回折"
+    },
+    {
+      "id": "S04",
+      "candidate_interface_id": "W34-S04-V2-CANDIDATE",
+      "source_frame": "m2",
+      "native_bounds": [
+        763,
+        2227,
+        814,
+        2255
+      ],
+      "lower_metal_id": "W34-M2-S04",
+      "observed": "Bright repeated spots or a bright band at the visible short head; plausible V2, identity not yet adjudicated.",
+      "AI_candidate_layer": "V2",
+      "identity_confirmed": null,
+      "upper_metal_id": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "V1_status": "NOT_ESTABLISHED_BY_THIS_M2_PHOTO",
+      "turn_context": "右向短头"
+    }
+  ],
+  "adjacent_layer_inspection": {
+    "M1": "Native M1 broad context inspected, but no qualified correspondence or new V1 identity is established for these tips. Do not use M2 brightness as V1 evidence.",
+    "M3": "Multiple closely spaced horizontal conductors appear in native M3 context. No qualified source transform or individual carrier is established; no assignment by y-coordinate alone."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kind": "supplemental_same_frame_order_validation",
+  "actor": "AI",
+  "sources": {
+    "source_inventory": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-inventory.json",
+      "sha256": "99cf35dc1ad0226c9ae0198041d5acea8979918fe358188ee369f0eaacd5040e"
+    },
+    "candidate_sample": {
+      "path": "benchmarks/w34-m2-coverage-v1/sample.json",
+      "sha256": "1701fb21813768478298b8740fb39391781e4e1868dcdf3da9f7775d362d144e"
+    }
+  },
+  "checks": [
+    {
+      "id": "W34-M2-S01-before-WEST-M2-W4-SOURCE",
+      "axis": "x",
+      "first": {
+        "id": "W34-M2-S01",
+        "extreme": "min"
+      },
+      "second": {
+        "id": "WEST-M2-W4-SOURCE",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "WEST-M2-W4-SOURCE-before-W34-M2-S02",
+      "axis": "x",
+      "first": {
+        "id": "WEST-M2-W4-SOURCE",
+        "extreme": "min"
+      },
+      "second": {
+        "id": "W34-M2-S02",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "W34-M2-S02-before-W34-M2-S03",
+      "axis": "x",
+      "first": {
+        "id": "W34-M2-S02",
+        "extreme": "min"
+      },
+      "second": {
+        "id": "W34-M2-S03",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "W34-M2-S03-before-WEST-M2-W3-SOURCE",
+      "axis": "x",
+      "first": {
+        "id": "W34-M2-S03",
+        "extreme": "min"
+      },
+      "second": {
+        "id": "WEST-M2-W3-SOURCE",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "WEST-M2-W3-SOURCE-before-W34-M2-S04",
+      "axis": "x",
+      "first": {
+        "id": "WEST-M2-W3-SOURCE",
+        "extreme": "min"
+      },
+      "second": {
+        "id": "W34-M2-S04",
+        "extreme": "min"
+      }
+    },
+    {
+      "id": "W34-M2-S03-tip-above-W34-M2-S02",
+      "axis": "y",
+      "first": {
+        "id": "W34-M2-S03",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M2-S02",
+        "extreme": "max"
+      }
+    },
+    {
+      "id": "W34-M2-S02-tip-above-W34-M2-S01",
+      "axis": "y",
+      "first": {
+        "id": "W34-M2-S02",
+        "extreme": "max"
+      },
+      "second": {
+        "id": "W34-M2-S01",
+        "extreme": "max"
+      }
+    }
+  ],
+  "cross_frame_projection_claim": false
+}

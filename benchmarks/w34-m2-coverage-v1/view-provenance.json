@@ -1,0 +1,52 @@
+{
+  "kind": "native_M2_views_and_existing_renderer_geometry",
+  "actor": "AI",
+  "photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "source_wide_bounds": [
+    200,
+    1720,
+    1120,
+    2970
+  ],
+  "source_heads_bounds": [
+    270,
+    2170,
+    850,
+    2450
+  ],
+  "scoped_native_bounds": [
+    280,
+    1870,
+    850,
+    2840
+  ],
+  "design_viewport": [
+    -2650,
+    105,
+    -2000,
+    960
+  ],
+  "source_to_design_transform": null,
+  "raw_crops_pixel_exact": true,
+  "model_before": {
+    "path": "docs/assets/west-m1-reviewed-v12/work/model.json",
+    "sha256": "3e842dfd7593a8791298bbccc368a25dc5e6bc3202ef216ca988696f0d0e4a94"
+  },
+  "model_after": {
+    "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+    "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+  },
+  "views": {
+    "after-five-layer.svg": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+    "source-heads-marked.png": "2e5b047aa6e9a308ff28c9d085f493ee6b81f8c990b7d8e4aec7927fcd0a7e65",
+    "before-M2.svg": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+    "source-wide-raw.png": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+    "after-M2.svg": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+    "scope-raw.png": "460193099e124566dfbbbd0a40dd10fa9745ff5b83549c605041b78953916242",
+    "source-wide-marked.png": "997d7441fe4f2ac7109dfab381d56e51507aeea8ce5653dfe36281e576734249",
+    "source-heads-raw.png": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f"
+  }
+}

@@ -2,41 +2,39 @@
 
 ## 当前目标与状态
 
-**Q1“几何合理，无明显漏段”、Q2“几何合理，无明显遗漏”已保存。固定M1原生范围[300,1870,830,2820]作为定性工作几何基线收口，无本批待审批。下一步先建立W3/W4邻近M2的连续来源清单。**
+**W3/W4邻近M2的G1/G2/COV及整体Q1/Q2均已通过实际导出确认单校验并归档。四条M2定性几何、固定范围“无明显遗漏”已收口；下一步集中裁决S01–S04短端的V2身份，尚不判断M3承载。**
 
-- [最新已审入口](docs/assets/west-m1-reviewed-v12/index.html) · [五层切换/原图](docs/assets/west-m1-reviewed-v12/work/index.html) · [工作基线](benchmarks/west-m1-reviewed-v12/working-baseline.json) · [人审原话](benchmarks/west-m1-reviewed-v12/human-review.json)。
-- 唯一几何恢复：[next-request](benchmarks/west-m1-reviewed-v12/next-request.json)；[状态](benchmarks/west-m1-reviewed-v12/source-review-state.json)、[报告](docs/reviews/2026-10-30-west-m1-reviewed-v12.md)、[验证](benchmarks/west-m1-reviewed-v12/verification.json)。
-- 声明清单12/12已有对应几何；本轮Q1/Q2新审L03–L12共10片段，L01/L02是不变上下文，不扩为整个C-M1-SPINE的全范围批准。[准确批准组件](benchmarks/west-m1-reviewed-v12/reviewed-fragments.json) · [已审覆盖清单](benchmarks/west-m1-reviewed-v12/scoped-M1-coverage-reviewed.json)。
-- 当前46金属、30已审局部接口、179设计候选孔；本轮审批接续，整个工作模型和全部几何、原生锚点、旧裁决、孔边界/中心精确保持。原点/尺度/视口[-2700,0,780,1440]不变，无新VIA/网边。
-- L09/L10分开，L11主干向下出口、L12左段短回折的本范围表达获通过；出界不是物理终点。定性无明显遗漏不等于全照片穷尽、精密尺寸、PDK DRC或全网完成。
-- 旧V1/V2人审继续按其原始范围生效，见前入口归档。本轮不改旧送审answer=null、AI候选字段或原生证据；冻结提案的pending描述仅为历史，不再重问Q1/Q2。
-- site/gh-pages保持；README/DEVELOPMENT顶层说明随本轮固定确认单工具更新；10月29–30日成果已提交并推送[18eb33a](https://github.com/XIAHONGYUU/SiliconEye/commit/18eb33aedda5c11e36061ca1c86a14122066acf1)。skill仍LIMITED_TRIAL_V2；geometry_adopted=false、source_to_design_transform=null、net_edges=[]、complete_network=false。
+- [本轮已审基线](benchmarks/w34-m2-reviewed-v2/working-baseline.json) · [四条准确批准几何](benchmarks/w34-m2-reviewed-v2/reviewed-fragments.json) · [已审范围覆盖](benchmarks/w34-m2-reviewed-v2/scoped-M2-coverage-reviewed.json)。
+- [实际确认记录](docs/assets/w34-m2-coverage-v1/review/review-record.md) · [归档JSON](docs/assets/w34-m2-coverage-v1/review/review-decision.json)；旧送审build=30785baea2e440169f045696a25364eb。它不是演示包。
+- M2固定原生范围[280,1870,850,2840]；新S01–S04几何获定性批准，两个旧主干W3/W4只作上下文。6/6声明片段有对应几何，COV为本范围明显可见无遗漏，不扩大为实测边界/物理照片穷尽/全幅M2完成。
+- 三条上端、一条下端仍是范围出口；四个短端V1/V2身份和承载不随几何批准而通过。旧46对象、30接口、179候选孔、旧M1基线及材料保持。
 
-[金属剩余工作评估](docs/reviews/2026-10-30-metal-reconstruction-remaining.md)：当前区域还需M2与M3覆盖收口、五层联合验收；全幅另需M1–M3扩展、M4/V3及跨范围合并。尚无全幅清单分母，不报完成百分比；本次只评估，未产生新M2观察或几何。
+## 当前唯一下一步：四个短端的V2身份
 
-## 固定验收确认单工具（本轮交付）
+- [正式孔身份确认单](docs/assets/w34-short-terminal-v1/review/index.html)，预览 http://127.0.0.1:8772/w34-short-terminal-v1/review/index.html 。包W34-SHORT-TIP-V2-IDENTITY-20261105-V1，build=f2f06bd9e86c4118a743459ab9210868。
+- 只问S01/S02/S03/S04橙框是否包含M2→M3的V2；[来源观察](benchmarks/w34-short-terminal-v1/observations.json)保留原生框，四端均可见疑似孔组亮点，identity_confirmed=null，上M3 ID=null，孔数未知。
+- 宽邻域、共同局部图、原图和已审M2图可切换；本次不是新孔尺寸/整组包围或连接审批，不重问G1/G2/COV，也不重审W3/W4八处接口。
+- M1及M3宽邻域已查看，但新V1或M3具体承载尚未建立可靠对应；不能把M2亮点当V1，不能只按跨帧y坐标认定M3行号。三层坐标保持独立，没有精确投影。
+- 用户导出新确认单后，Agent核对新build并用review check --archive归档；身份明确后再检查M3相对对应与完整孔组包围。任一不确定保留，不自动新增孔或接通。
 
-- 新增 silicon-eye review build/check/preset 与固定 HTML 模板，统一 AA/POLY/CT/METAL/VIA/REGION 的确认页、结论词表和 review-decision.json；协议见[固定验收确认单](docs/review-sheet-protocol.md)，验证见[本轮工具记录](docs/reviews/2026-11-03-review-sheet-tool.md)。
-- 示例定义[configs/review-sheet-demo-m2.json](configs/review-sheet-demo-m2.json)，构建页 runs/review-sheet-demo-m2-v1/index.html；示例明确标注非送审，不产生新人审、几何或连接。
-- 后续需要人判断时，先写送审定义并 build，再由人导出 decision 并 review check --archive；构建或页面操作不等于几何授权，当前唯一研究下一步仍为 M2 连续来源清单。
+## 工作接续与验证
 
-## 唯一下一步：M2连续来源清单→几何对应→接口未知
+- 工作模型继续使用[不变的50金属模型/五层页](docs/assets/w34-m2-coverage-v1/work/index.html)，[唯一几何恢复请求](benchmarks/w34-m2-coverage-v1/next-request.json)。必须同时读取已审M2基线和准确组件；冻结提案中的pending是送审历史，不再索要旧批准。
+- M1=11/M2=17/M3=22，30已审局部接口、179设计候选孔；本轮没有新孔/接口/网边。原点/尺度/视口[-2700,0,780,1440]保持，source_to_design_transform=null，geometry_adopted=false，net_edges=[]，complete_network=false；skill仍LIMITED_TRIAL_V2。
+- [接续验证](benchmarks/w34-m2-reviewed-v2/verification.json)：真实导出版本匹配、范围/必查/边界均有效，所有批准组件绑定，模型精确重放，来源/固定包哈希与原图像素裁片核验通过，当前README/site25文件保持。
+- 本轮无程序或几何更改，未重复跑上一批75项软件测试。上一送审[验证](benchmarks/w34-m2-coverage-v1/verification.json)和[说明](docs/reviews/2026-11-05-w34-m2-coverage.md)保留；旧固定回归README历史哈希差异仍单列，未篡改旧基线，未声称整套回归PASS。
+- [本次批准与孔身份核查说明](docs/reviews/2026-11-05-w34-m2-reviewed-and-terminal.md)。用户已授权本版本提交并推送GitHub；不改README/site、AA/POLY/CT、规范导体注册表或gh-pages。
 
-[下一范围计划](benchmarks/west-m1-reviewed-v12/next-scope-plan.json)，尚未产生新的M2来源观察/几何/覆盖结果。
+## 版本归档检查（2026-11-05）
 
-- 选择W3/W4邻近的本层M2原生搜索范围[280,1870,850,2840]，以既有W3/W4为锚定上下文；不是把M1边界投影到M2。
-- 先清点本范围全部可见M2片段、端点和细支路，逐项对应当前模型或标记缺失/部分/不确定及出界；不先生成零散新接口问题。
-- 再用来源绑定的补建/外延事务补缺；旧46金属的ID/锚点、179孔和30裁决保持。出现新身份/连接歧义时才送审，旧W3/W4的8处V1/V2不重问。
-- M3的B-U/B-D只作已审承载上下文；所有M3细走线及高层金属另建连续范围清单，不暗示已覆盖。
-- 工作接续必须同时读当前next-request、已审基线和准确组件清单；修订已审组件要显式列变化及前后比较，不将本次批准复制给新几何。
+- 本次提交包含M2四线补建、实际人审归档、已审基线与待裁决V2确认单。44项相关测试通过，两固定包/来源哈希与50金属接续重放通过，README/site25文件保持。详见[提交检查](docs/reviews/2026-11-05-w34-github-checkpoint.md)。
+- 四端V2身份尚无新导出；提交和发布源码不改变其判定。后续可独立准备M3原生可见线清单，不能提前批准四端承载。
 
-## 本轮验收接续与验证
+## 固定确认单与历史
 
-- 批准绑定原送审请求、Q1/Q2范围、原图及规则图、工作模型和来源清单，未新造人审。Q1只审L03–L08，Q2只审L09–L12；精确范围不含全C-M1-SPINE或新连接。
-- v12审批接续时无程序/几何修改；提交模型→收口模型→当前恢复全内容/模型哈希精确相同，30裁决/179孔保持，未重跑上轮49项及固定回归31项，证据仍在[上一验证](benchmarks/west-m1-coverage-v11/verification.json)和[固定回归](benchmarks/west-m1-coverage-v11/fixed-regression.json)。
-- 来源/人审/组件绑定、旧冻结包、链接/脚本及展示保护核查见verification；浏览器交互未实测。定性几何验收通过不改来源阵列精密资格、物理孔数或正式GDS采用状态。
-- 本次归档前另跑252项相关测试及31项固定回归，均通过；模型精确重放、证据引用与展示保护检查通过。[提交前检查](docs/reviews/2026-10-30-github-checkpoint.md)。这不是新AI识图评测。
-- v12归档时README/site的25文件及gh-pages引用保持；本轮另行更新顶层README/DEVELOPMENT说明，site/gh-pages仍未改。[前入口全文](docs/history/current-task-before-2026-10-30-west-m1-reviewed-v12.md)完整归档；其引用的历史VIA人审和全部未知继续生效。
+- [固定确认单协议](docs/review-sheet-protocol.md)：正式人审以实际导出和check归档为准；页面、算法PASS或聊天口头通过不升级物理/几何批准。
+- 11月4日演示包只验证界面，不能移植其答案；11月5日M2实际几何通过只覆盖G1/G2/COV范围，新的孔身份页答案初始空白。
+- [本次接续前入口完整归档](docs/history/current-task-before-2026-11-05-w34-m2-accepted.md)及其历史链接保存全部旧裁决/未知；关键项继续如下。
 
 ## 必须接续的裁决与未知
 
@@ -53,8 +51,10 @@
 ## 恢复
 
 ```bash
-# 当前唯一几何恢复入口，输出用新目录。
-.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/west-m1-reviewed-v12/next-request.json --output runs/新的已审M1接续目录
+# 重放当前已审局部工作几何，不改变其验收范围；输出必须新目录。
+.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/w34-m2-coverage-v1/next-request.json --output runs/新的M2接续目录
+# 用户完成本轮V2身份导出后，替换为实际收到的文件路径。
+.venv/bin/python -m silicon_eye.review_sheet check --package docs/assets/w34-short-terminal-v1/review --decision /实际路径/review-decision.json --archive
 ```
 
-固定工程回归沿用scripts/check_conductive_regression.py，按实际变更决定重跑；不当作新AI识图评测。旧范围入口不扩大到本侧五层覆盖率。不得自动重建README/site或发布gh-pages。
+未经新裁决不为四短端加VIA或连接。不得自动重建README/site或发布gh-pages。

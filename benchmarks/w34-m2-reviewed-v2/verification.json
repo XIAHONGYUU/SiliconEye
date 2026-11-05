@@ -1,0 +1,42 @@
+{
+  "kind": "human_geometry_acceptance_and_next_identity_review_check",
+  "date": "2026-11-05",
+  "actual_export_package_id": "W34-M2-COVERAGE-20261105-V1",
+  "actual_export_build_id": "30785baea2e440169f045696a25364eb",
+  "received_export_sha256": "b062f500a76afaf642c1dec89211149ad133097f805d3182a9a98f81e3ec3dae",
+  "check_archive": "VALID,3accepted items,2accepted questions,limits acknowledged",
+  "archived_review": {
+    "path": "docs/assets/w34-m2-coverage-v1/review/review-decision.json",
+    "sha256": "91c6092f756919f9df48a7e1d80ee834cc841796f496dd61af562da30385cb13"
+  },
+  "baseline_bound": true,
+  "accepted_exact_geometry_components": 4,
+  "scoped_coverage_decision": "no obvious M2 omission within [280,1870,850,2840]",
+  "working_model_unchanged_from_submission": true,
+  "next_request_replay_model_exact": true,
+  "metals": 50,
+  "inherited_reviewed_interfaces": 30,
+  "candidate_design_cuts": 179,
+  "new_modeled_vias": 0,
+  "new_connections": 0,
+  "current_showcase_25_files_unchanged": true,
+  "next_review": {
+    "package_id": "W34-SHORT-TIP-V2-IDENTITY-20261105-V1",
+    "build_id": "f2f06bd9e86c4118a743459ab9210868",
+    "required_identity_items": 4,
+    "M3_carriers_approved": false,
+    "browser_checked": true,
+    "all_five_evidence_views_loaded": true,
+    "new_answers_selected": 0,
+    "screenshot": "runs/w34-terminal-inspection-20261105/review-browser.png"
+  },
+  "raw_crops_pixel_exact": true,
+  "all_four_tip_boxes_inside_both_views": true,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "software_code_changed": false,
+  "software_test_rerun": false,
+  "reason": "Only source observations/review data/documentation changed; actual review checker and exact model continuation run. Prior 75 relevant tests remain recorded in the submission verification; no new implementation to test."
+}

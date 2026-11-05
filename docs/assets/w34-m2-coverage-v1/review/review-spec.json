@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "package_id": "W34-M2-COVERAGE-20261105-V1",
+  "stage": "METAL",
+  "stage_label": "金属",
+  "title": "W3／W4 邻近 M2：四条细线与范围覆盖复核",
+  "date": "2026-11-05",
+  "summary": "本轮正式送审：新增S01–S04四条规则几何，核对固定范围的可见M2覆盖。先看G1/G2，再看COV；旧主干与八处接口只作参考。完成后导出JSON，我来校验和归档。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "红框为本轮范围；宽图保留邻域。规则图在独立设计坐标中，不直接投影到照片。"
+  },
+  "items": [
+    {
+      "id": "G1",
+      "type": "metal_fragment",
+      "title": "S01–S03：W4 左右的三条细 M2",
+      "prompt": "这三条是否为真实 M2，且规则图中的左／右／左回折、S03高于S02高于S01、与W4的间隙均合理？",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "新增三条独立细 M2；保留各自回折方向、高低次序与间隙，上端按范围出口处理。",
+      "facts": {
+        "对应ID": [
+          "W34-M2-S01",
+          "W34-M2-S02",
+          "W34-M2-S03"
+        ],
+        "来源状态": "AI候选，待本轮人审",
+        "端点": "三条上端均出固定范围；短回折端的接口尚未判断"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-wide-marked.png",
+          "label": "M2 编号与范围",
+          "role": "marked",
+          "caption": "红框为固定核查范围；彩线只标注本层来源路径，未投影规则几何。",
+          "frame": "m2",
+          "sha256": "997d7441fe4f2ac7109dfab381d56e51507aeea8ce5653dfe36281e576734249",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-wide-raw.png",
+          "label": "M2 原图宽邻域",
+          "role": "source",
+          "caption": "保留范围外结构用于判断相对位置，范围外不纳入本批完整性。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-heads-marked.png",
+          "label": "四个短端放大标记",
+          "role": "marked",
+          "caption": "S01左回折、S02右回折、S03左回折；S04上端右短头。只判几何，不裁决孔或连接。",
+          "frame": "m2",
+          "sha256": "2e5b047aa6e9a308ff28c9d085f493ee6b81f8c990b7d8e4aec7927fcd0a7e65",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-heads-raw.png",
+          "label": "短端原图放大",
+          "role": "source",
+          "caption": "本层原图像素，未拉伸、未配准。",
+          "frame": "m2",
+          "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "本轮 M2 规则图",
+          "role": "design",
+          "caption": "四条新细线带色，W3/W4为不变粗线；独立设计坐标，不是照片精确投影。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/before-M2.svg",
+          "label": "补建前 M2 图",
+          "role": "design",
+          "caption": "同一视口的旧几何；旧对象没有移动。",
+          "frame": "design",
+          "sha256": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-five-layer.svg",
+          "label": "五层联合上下文",
+          "role": "design",
+          "caption": "只作已有承载上下文；相交不自动形成孔或连接。",
+          "frame": "design",
+          "sha256": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_matches",
+          "label": "三条细线均与原图可见 M2 对应",
+          "required": true
+        },
+        {
+          "id": "turns_and_order",
+          "label": "回折方向及三个短端的高低次序合理",
+          "required": true
+        },
+        {
+          "id": "gaps_and_exits",
+          "label": "与邻线分开；上端出界未当成物理终点",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "G2",
+      "type": "metal_fragment",
+      "title": "S04：W3 右侧的向下细支路",
+      "prompt": "S04的上端右短头、与W3分开的竖段、向下出界的表达是否合理？",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "新增上端向右短头及向下延伸；与W3主干保持分开，下端标为范围出口。",
+      "facts": {
+        "对应ID": "W34-M2-S04",
+        "来源状态": "AI候选，待本轮人审",
+        "未裁决": "上端是否有新VIA、连接哪条邻层金属"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-wide-marked.png",
+          "label": "M2 编号与范围",
+          "role": "marked",
+          "caption": "红框为固定核查范围；彩线只标注本层来源路径，未投影规则几何。",
+          "frame": "m2",
+          "sha256": "997d7441fe4f2ac7109dfab381d56e51507aeea8ce5653dfe36281e576734249",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-wide-raw.png",
+          "label": "M2 原图宽邻域",
+          "role": "source",
+          "caption": "保留范围外结构用于判断相对位置，范围外不纳入本批完整性。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-heads-marked.png",
+          "label": "四个短端放大标记",
+          "role": "marked",
+          "caption": "S01左回折、S02右回折、S03左回折；S04上端右短头。只判几何，不裁决孔或连接。",
+          "frame": "m2",
+          "sha256": "2e5b047aa6e9a308ff28c9d085f493ee6b81f8c990b7d8e4aec7927fcd0a7e65",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-heads-raw.png",
+          "label": "短端原图放大",
+          "role": "source",
+          "caption": "本层原图像素，未拉伸、未配准。",
+          "frame": "m2",
+          "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "本轮 M2 规则图",
+          "role": "design",
+          "caption": "四条新细线带色，W3/W4为不变粗线；独立设计坐标，不是照片精确投影。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/before-M2.svg",
+          "label": "补建前 M2 图",
+          "role": "design",
+          "caption": "同一视口的旧几何；旧对象没有移动。",
+          "frame": "design",
+          "sha256": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-five-layer.svg",
+          "label": "五层联合上下文",
+          "role": "design",
+          "caption": "只作已有承载上下文；相交不自动形成孔或连接。",
+          "frame": "design",
+          "sha256": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_matches",
+          "label": "S04对应原图中的真实 M2",
+          "required": true
+        },
+        {
+          "id": "head_and_gap",
+          "label": "右向短头及与W3的间隙合理",
+          "required": true
+        },
+        {
+          "id": "exit",
+          "label": "下端是范围出口，不是物理终点",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "COV",
+      "type": "region_boundary",
+      "title": "固定范围内的 M2 覆盖完整性",
+      "prompt": "只看红框 [280,1870,850,2840]：W3/W4两条主干加S01–S04四条细线，是否已覆盖全部明显可见的M2，且没有明显漏段？",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "将两条既有主干与四条新增细线归入同一范围清单，共六个可见片段；不是六条完整网络。",
+      "facts": {
+        "声明片段数": 6,
+        "几何映射": "6/6，仅为清单与模型对应，不代表独立证明照片完整",
+        "范围出口": "S01/S02/S03上端、S04下端，共4处",
+        "范围外": "左侧更外细线、右侧W2及下方小块仅作邻域参照，不在本批送审"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-wide-marked.png",
+          "label": "M2 编号与范围",
+          "role": "marked",
+          "caption": "红框为固定核查范围；彩线只标注本层来源路径，未投影规则几何。",
+          "frame": "m2",
+          "sha256": "997d7441fe4f2ac7109dfab381d56e51507aeea8ce5653dfe36281e576734249",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/source-wide-raw.png",
+          "label": "M2 原图宽邻域",
+          "role": "source",
+          "caption": "保留范围外结构用于判断相对位置，范围外不纳入本批完整性。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/scope-raw.png",
+          "label": "固定范围原图",
+          "role": "source",
+          "caption": "仅裁决此原生窗口中的明显可见M2，无新增连接批准。",
+          "frame": "m2",
+          "sha256": "460193099e124566dfbbbd0a40dd10fa9745ff5b83549c605041b78953916242",
+          "width_height": [
+            570,
+            970
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "本轮 M2 规则图",
+          "role": "design",
+          "caption": "四条新细线带色，W3/W4为不变粗线；独立设计坐标，不是照片精确投影。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/before-M2.svg",
+          "label": "补建前 M2 图",
+          "role": "design",
+          "caption": "同一视口的旧几何；旧对象没有移动。",
+          "frame": "design",
+          "sha256": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-five-layer.svg",
+          "label": "五层联合上下文",
+          "role": "design",
+          "caption": "只作已有承载上下文；相交不自动形成孔或连接。",
+          "frame": "design",
+          "sha256": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "no_missing",
+          "label": "固定范围内无明显遗漏的M2片段或细支路",
+          "required": true
+        },
+        {
+          "id": "scope",
+          "label": "没有把范围外导体算作本批完成，也未把四处出界当物理终点",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "CTX-W34",
+      "type": "metal_fragment",
+      "title": "W3／W4 主干与八处旧接口（仅参考）",
+      "prompt": "W3/W4主干作为本批位置参照。V1-N/S与V2-U/D的八处旧批准继续按原范围生效；不用再次判断。",
+      "required": false,
+      "review_mode": "context",
+      "change_summary": "旧几何、八处身份/承载及所有孔中心均保持；本轮没有新增接口。",
+      "facts": {
+        "不变金属ID": [
+          "WEST-M2-W3-SOURCE",
+          "WEST-M2-W4-SOURCE"
+        ],
+        "旧接口ID": [
+          "W3-V1-N",
+          "W3-V1-S",
+          "W4-V1-N",
+          "W4-V1-S",
+          "W3-V2-U",
+          "W3-V2-D",
+          "W4-V2-U",
+          "W4-V2-D"
+        ],
+        "资格": "旧身份与承载已审，不扩为本次精密尺寸/完整边界批准"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "本轮 M2 规则图",
+          "role": "design",
+          "caption": "四条新细线带色，W3/W4为不变粗线；独立设计坐标，不是照片精确投影。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/before-M2.svg",
+          "label": "补建前 M2 图",
+          "role": "design",
+          "caption": "同一视口的旧几何；旧对象没有移动。",
+          "frame": "design",
+          "sha256": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-five-layer.svg",
+          "label": "五层联合上下文",
+          "role": "design",
+          "caption": "只作已有承载上下文；相交不自动形成孔或连接。",
+          "frame": "design",
+          "sha256": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+          "width_height": null
+        }
+      ],
+      "checks": [],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "本轮四条新增M2的来源对应、转折、间隙及出口表达是否合理？",
+      "item_ids": [
+        "G1",
+        "G2"
+      ],
+      "required": true
+    },
+    {
+      "id": "Q2",
+      "prompt": "在固定红框内，是否已覆盖全部明显可见M2，无明显漏段？",
+      "item_ids": [
+        "COV"
+      ],
+      "required": true
+    }
+  ],
+  "limits": [
+    "本轮只审四条新增M2的定性工作几何和固定范围内的明显可见覆盖；旧接口不重审。",
+    "短端的亮区尚未作新VIA身份或跨层承载判断，不能把未判断写成没有孔。",
+    "含W3/W4在内的46个旧金属对象不变；原生坐标、30条旧局部接口和179个候选孔保持。",
+    "6/6是来源清单到几何的映射，不是全幅覆盖率；四处出界不是物理终点。",
+    "规则图与照片分别保留坐标。本轮未建立合格的source_to_design_transform。"
+  ],
+  "not_approved": [
+    "四个短端的新VIA身份、数量或跨层承载",
+    "整个芯片、全幅M2或连续五层的穷尽覆盖",
+    "物理尺寸、真实工艺PDK DRC、精确照片投影",
+    "全网点亮、完整网表、共同几何采用或GDS发布"
+  ],
+  "sources": {
+    "source_photo_m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "accepted_parent": {
+      "path": "docs/assets/west-m1-reviewed-v12/work/manifest.json",
+      "sha256": "7805e31a2eda32af7af0881be1ed3dac2c00495f473dbb9688067a7cbbdd0c42"
+    },
+    "candidate_manifest": {
+      "path": "docs/assets/w34-m2-coverage-v1/work/manifest.json",
+      "sha256": "7abafe8bff5d0e041bbc375378898297f19400c8301b3425494210e669ec5b2c"
+    },
+    "source_inventory": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-inventory.json",
+      "sha256": "99cf35dc1ad0226c9ae0198041d5acea8979918fe358188ee369f0eaacd5040e"
+    },
+    "scoped_coverage": {
+      "path": "benchmarks/w34-m2-coverage-v1/scoped-coverage.json",
+      "sha256": "a5e0dace20f6e440b186dcc99ae6625bd828475d256123100b1fb46726e15545"
+    },
+    "same_frame_order": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-order-result.json",
+      "sha256": "41dea05ffc3967c708ae3eba34dc33376d648e2be825040e9cb9be1e75715564"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-m2-coverage-v1/view-provenance.json",
+      "sha256": "105e9b337914096d2f45ee5dffa82b4b7212f0b8c2721d96fe57a34e78bc91c8"
+    },
+    "prior_v2_review": {
+      "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+      "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+    },
+    "prior_v1_review": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+      "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+    }
+  }
+}

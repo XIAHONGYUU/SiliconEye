@@ -1,0 +1,227 @@
+{
+  "kind": "reviewed_scoped_M2_geometry_components",
+  "date": "2026-11-05",
+  "human_review": {
+    "path": "docs/assets/w34-m2-coverage-v1/review/review-decision.json",
+    "sha256": "91c6092f756919f9df48a7e1d80ee834cc841796f496dd61af562da30385cb13"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-m2-coverage-v1/review/manifest.json",
+    "sha256": "7e166e7f35b388886fabf0b97b9da2c4d35d9d7302afc5f63ccffce2a6b08d44"
+  },
+  "model": {
+    "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+    "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+  },
+  "fragments": [
+    {
+      "source_fragment_id": "M2-S01",
+      "metal_id": "W34-M2-S01",
+      "native_frame": "m2",
+      "native_path": [
+        [
+          313,
+          1870
+        ],
+        [
+          334,
+          2383
+        ],
+        [
+          307,
+          2384
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "scope_native_bounds": [
+        280,
+        1870,
+        850,
+        2840
+      ],
+      "geometry": {
+        "design_path": [
+          [
+            -2550,
+            135
+          ],
+          [
+            -2550,
+            552
+          ],
+          [
+            -2577,
+            552
+          ]
+        ],
+        "design_width": 6
+      },
+      "review_item_id": "G1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "new_via_identity_approval": false,
+      "new_connection_approval": false,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M2-S02",
+      "metal_id": "W34-M2-S02",
+      "native_frame": "m2",
+      "native_path": [
+        [
+          399,
+          1870
+        ],
+        [
+          424,
+          2345
+        ],
+        [
+          450,
+          2345
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "scope_native_bounds": [
+        280,
+        1870,
+        850,
+        2840
+      ],
+      "geometry": {
+        "design_path": [
+          [
+            -2460,
+            135
+          ],
+          [
+            -2460,
+            522
+          ],
+          [
+            -2434,
+            522
+          ]
+        ],
+        "design_width": 6
+      },
+      "review_item_id": "G1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "new_via_identity_approval": false,
+      "new_connection_approval": false,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M2-S03",
+      "metal_id": "W34-M2-S03",
+      "native_frame": "m2",
+      "native_path": [
+        [
+          483,
+          1870
+        ],
+        [
+          501,
+          2285
+        ],
+        [
+          474,
+          2286
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "scope_native_bounds": [
+        280,
+        1870,
+        850,
+        2840
+      ],
+      "geometry": {
+        "design_path": [
+          [
+            -2375,
+            135
+          ],
+          [
+            -2375,
+            473
+          ],
+          [
+            -2402,
+            473
+          ]
+        ],
+        "design_width": 6
+      },
+      "review_item_id": "G1",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "new_via_identity_approval": false,
+      "new_connection_approval": false,
+      "physical_dimension_approval": false
+    },
+    {
+      "source_fragment_id": "M2-S04",
+      "metal_id": "W34-M2-S04",
+      "native_frame": "m2",
+      "native_path": [
+        [
+          800,
+          2239
+        ],
+        [
+          773,
+          2240
+        ],
+        [
+          795,
+          2840
+        ]
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "scope_native_bounds": [
+        280,
+        1870,
+        850,
+        2840
+      ],
+      "geometry": {
+        "design_path": [
+          [
+            -2073,
+            435
+          ],
+          [
+            -2100,
+            435
+          ],
+          [
+            -2100,
+            923
+          ]
+        ],
+        "design_width": 6
+      },
+      "review_item_id": "G2",
+      "status": "human_accepted_qualitative_scoped_geometry",
+      "new_via_identity_approval": false,
+      "new_connection_approval": false,
+      "physical_dimension_approval": false
+    }
+  ],
+  "unchanged_context_ids": [
+    "WEST-M2-W3-SOURCE",
+    "WEST-M2-W4-SOURCE"
+  ],
+  "entire_physical_metal_approved": false
+}

@@ -1,0 +1,275 @@
+{
+  "kind": "scoped_continuous_M2_source_inventory",
+  "actor": "AI",
+  "date": "2026-11-04",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    280,
+    1870,
+    850,
+    2840
+  ],
+  "basis": {
+    "path": "benchmarks/west-m1-reviewed-v12/next-scope-plan.json",
+    "sha256": "39ba68d33688b0b4457e796bddfa9ef8149a2cb141a6f95f55dac821f3cb5e63"
+  },
+  "existing_fragments": [
+    {
+      "id": "M2-W4",
+      "metal_id": "WEST-M2-W4-SOURCE",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          360,
+          1930
+        ],
+        [
+          380,
+          2355
+        ],
+        [
+          400,
+          2800
+        ]
+      ],
+      "geometry_status": "UNCHANGED_INHERITED_WORKING_GEOMETRY",
+      "approval_scope": "inherited via identity/carriers only; no new geometry or dimension approval"
+    },
+    {
+      "id": "M2-W3",
+      "metal_id": "WEST-M2-W3-SOURCE",
+      "source_frame": "m2",
+      "native_path": [
+        [
+          725,
+          1925
+        ],
+        [
+          740,
+          2350
+        ],
+        [
+          755,
+          2795
+        ]
+      ],
+      "geometry_status": "UNCHANGED_INHERITED_WORKING_GEOMETRY",
+      "approval_scope": "inherited via identity/carriers only; no new geometry or dimension approval"
+    }
+  ],
+  "new_fragments": [
+    {
+      "id": "M2-S01",
+      "metal_id": "W34-M2-S01",
+      "label": "W4左侧细线，下端左回折",
+      "native_path": [
+        [
+          313,
+          1870
+        ],
+        [
+          334,
+          2383
+        ],
+        [
+          307,
+          2384
+        ]
+      ],
+      "design_path": [
+        [
+          -2550,
+          135
+        ],
+        [
+          -2550,
+          552
+        ],
+        [
+          -2577,
+          552
+        ]
+      ],
+      "ends": [
+        "exits_scope",
+        "visible_tip_attachment_unknown"
+      ],
+      "color": "#ffb347"
+    },
+    {
+      "id": "M2-S02",
+      "metal_id": "W34-M2-S02",
+      "label": "W4右侧细线，下端右回折",
+      "native_path": [
+        [
+          399,
+          1870
+        ],
+        [
+          424,
+          2345
+        ],
+        [
+          450,
+          2345
+        ]
+      ],
+      "design_path": [
+        [
+          -2460,
+          135
+        ],
+        [
+          -2460,
+          522
+        ],
+        [
+          -2434,
+          522
+        ]
+      ],
+      "ends": [
+        "exits_scope",
+        "visible_tip_attachment_unknown"
+      ],
+      "color": "#65dcff"
+    },
+    {
+      "id": "M2-S03",
+      "metal_id": "W34-M2-S03",
+      "label": "中间上行细线，下端左回折",
+      "native_path": [
+        [
+          483,
+          1870
+        ],
+        [
+          501,
+          2285
+        ],
+        [
+          474,
+          2286
+        ]
+      ],
+      "design_path": [
+        [
+          -2375,
+          135
+        ],
+        [
+          -2375,
+          473
+        ],
+        [
+          -2402,
+          473
+        ]
+      ],
+      "ends": [
+        "exits_scope",
+        "visible_tip_attachment_unknown"
+      ],
+      "color": "#d6a0ff"
+    },
+    {
+      "id": "M2-S04",
+      "metal_id": "W34-M2-S04",
+      "label": "W3右侧细线，上端右短头、向下出界",
+      "native_path": [
+        [
+          800,
+          2239
+        ],
+        [
+          773,
+          2240
+        ],
+        [
+          795,
+          2840
+        ]
+      ],
+      "design_path": [
+        [
+          -2073,
+          435
+        ],
+        [
+          -2100,
+          435
+        ],
+        [
+          -2100,
+          923
+        ]
+      ],
+      "ends": [
+        "visible_tip_attachment_unknown",
+        "exits_scope"
+      ],
+      "color": "#f6e05e"
+    }
+  ],
+  "declared_fragment_count": 6,
+  "new_geometry_count": 4,
+  "scope_exit_count": 4,
+  "source_inventory_qualification": "AI_VISUAL_SWEEP_PENDING_HUMAN_COVERAGE_REVIEW",
+  "interface_candidates": [
+    {
+      "metal_id": "W34-M2-S01",
+      "endpoint": [
+        307,
+        2384
+      ],
+      "status": "UNASSESSED_TERMINAL_NOT_A_VIA_CLAIM",
+      "V1_present": null,
+      "V2_present": null,
+      "carrier": null
+    },
+    {
+      "metal_id": "W34-M2-S02",
+      "endpoint": [
+        450,
+        2345
+      ],
+      "status": "UNASSESSED_TERMINAL_NOT_A_VIA_CLAIM",
+      "V1_present": null,
+      "V2_present": null,
+      "carrier": null
+    },
+    {
+      "metal_id": "W34-M2-S03",
+      "endpoint": [
+        474,
+        2286
+      ],
+      "status": "UNASSESSED_TERMINAL_NOT_A_VIA_CLAIM",
+      "V1_present": null,
+      "V2_present": null,
+      "carrier": null
+    },
+    {
+      "metal_id": "W34-M2-S04",
+      "endpoint": [
+        800,
+        2239
+      ],
+      "status": "UNASSESSED_TERMINAL_NOT_A_VIA_CLAIM",
+      "V1_present": null,
+      "V2_present": null,
+      "carrier": null
+    }
+  ],
+  "outside_scope_context": [
+    "left thin trace around x220 lies outside x280",
+    "W2 around x1100 is reference outside x850",
+    "small lower pads below y2840 are context, not omitted in-scope metal"
+  ],
+  "no_physical_absence_claim": true,
+  "source_to_design_transform": null,
+  "complete_network": false
+}

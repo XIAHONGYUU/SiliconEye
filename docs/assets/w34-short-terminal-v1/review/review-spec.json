@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "package_id": "W34-SHORT-TIP-V2-IDENTITY-20261105-V1",
+  "stage": "VIA",
+  "stage_label": "层间孔",
+  "title": "S01–S04 短端：集中核对 V2 身份",
+  "date": "2026-11-05",
+  "summary": "四条M2几何与固定范围覆盖已审。本次只确认四处短头是否包含V2；不重新判断几何、不裁决M3承载、不数孔。看不清可选不确定。完成后导出JSON，由Agent回收归档。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "橙框只标在M2原图自身；V1必须另查M1来源。四处孔组搜索框逐项列出，未作跨层投影。"
+  },
+  "items": [
+    {
+      "id": "S01",
+      "type": "via_interface",
+      "title": "S01：左向短回折上的孔层身份",
+      "prompt": "S01橙框内的端部亮点是否包含从M2通向M3的V2孔组？本次只判V2身份，不要求孔数，也不判断接哪条M3。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "仅新增孔身份问题；本线几何已审，不重审，不指定M3承载。",
+      "facts": {
+        "对应M2金属ID": "W34-M2-S01",
+        "来源帧": "m2",
+        "候选孔层": "V2，未获人审",
+        "原生完整孔组搜索框": [
+          292,
+          2370,
+          343,
+          2398
+        ],
+        "上层承载": "未知，本次不裁决",
+        "物理孔数": "未知，本次不逐孔计数"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域与四端编号",
+          "role": "marked",
+          "caption": "S01–S04橙框为本层端部孔身份候选；W3/W4仅为位置参照，旧接口不重审。",
+          "frame": "m2",
+          "sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-marked.png",
+          "label": "四端局部放大标记",
+          "role": "marked",
+          "caption": "四个端部保留共同邻域；不要求逐孔计数。",
+          "frame": "m2",
+          "sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-raw.png",
+          "label": "四端原图",
+          "role": "source",
+          "caption": "原生像素，未拉伸或投影。",
+          "frame": "m2",
+          "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+          "label": "M2 宽邻域原图",
+          "role": "source",
+          "caption": "四处短端的走线上下文。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "已审 M2 几何参照",
+          "role": "design",
+          "caption": "仅参照已审金属ID与回折关系；没有加入新孔。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_tip",
+          "label": "橙框位于编号所指M2短端",
+          "required": true
+        },
+        {
+          "id": "V2_identity",
+          "label": "确认此端部包含V2（M2→M3），不是仅金属亮带或拍屏纹理",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "S02",
+      "type": "via_interface",
+      "title": "S02：右向短回折上的孔层身份",
+      "prompt": "S02橙框内的端部亮点是否包含从M2通向M3的V2孔组？本次只判V2身份，不要求孔数，也不判断接哪条M3。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "仅新增孔身份问题；本线几何已审，不重审，不指定M3承载。",
+      "facts": {
+        "对应M2金属ID": "W34-M2-S02",
+        "来源帧": "m2",
+        "候选孔层": "V2，未获人审",
+        "原生完整孔组搜索框": [
+          410,
+          2332,
+          462,
+          2360
+        ],
+        "上层承载": "未知，本次不裁决",
+        "物理孔数": "未知，本次不逐孔计数"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域与四端编号",
+          "role": "marked",
+          "caption": "S01–S04橙框为本层端部孔身份候选；W3/W4仅为位置参照，旧接口不重审。",
+          "frame": "m2",
+          "sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-marked.png",
+          "label": "四端局部放大标记",
+          "role": "marked",
+          "caption": "四个端部保留共同邻域；不要求逐孔计数。",
+          "frame": "m2",
+          "sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-raw.png",
+          "label": "四端原图",
+          "role": "source",
+          "caption": "原生像素，未拉伸或投影。",
+          "frame": "m2",
+          "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+          "label": "M2 宽邻域原图",
+          "role": "source",
+          "caption": "四处短端的走线上下文。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "已审 M2 几何参照",
+          "role": "design",
+          "caption": "仅参照已审金属ID与回折关系；没有加入新孔。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_tip",
+          "label": "橙框位于编号所指M2短端",
+          "required": true
+        },
+        {
+          "id": "V2_identity",
+          "label": "确认此端部包含V2（M2→M3），不是仅金属亮带或拍屏纹理",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "S03",
+      "type": "via_interface",
+      "title": "S03：左向短回折上的孔层身份",
+      "prompt": "S03橙框内的端部亮点是否包含从M2通向M3的V2孔组？本次只判V2身份，不要求孔数，也不判断接哪条M3。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "仅新增孔身份问题；本线几何已审，不重审，不指定M3承载。",
+      "facts": {
+        "对应M2金属ID": "W34-M2-S03",
+        "来源帧": "m2",
+        "候选孔层": "V2，未获人审",
+        "原生完整孔组搜索框": [
+          458,
+          2273,
+          514,
+          2298
+        ],
+        "上层承载": "未知，本次不裁决",
+        "物理孔数": "未知，本次不逐孔计数"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域与四端编号",
+          "role": "marked",
+          "caption": "S01–S04橙框为本层端部孔身份候选；W3/W4仅为位置参照，旧接口不重审。",
+          "frame": "m2",
+          "sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-marked.png",
+          "label": "四端局部放大标记",
+          "role": "marked",
+          "caption": "四个端部保留共同邻域；不要求逐孔计数。",
+          "frame": "m2",
+          "sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-raw.png",
+          "label": "四端原图",
+          "role": "source",
+          "caption": "原生像素，未拉伸或投影。",
+          "frame": "m2",
+          "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+          "label": "M2 宽邻域原图",
+          "role": "source",
+          "caption": "四处短端的走线上下文。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "已审 M2 几何参照",
+          "role": "design",
+          "caption": "仅参照已审金属ID与回折关系；没有加入新孔。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_tip",
+          "label": "橙框位于编号所指M2短端",
+          "required": true
+        },
+        {
+          "id": "V2_identity",
+          "label": "确认此端部包含V2（M2→M3），不是仅金属亮带或拍屏纹理",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "S04",
+      "type": "via_interface",
+      "title": "S04：右向短头上的孔层身份",
+      "prompt": "S04橙框内的端部亮点是否包含从M2通向M3的V2孔组？本次只判V2身份，不要求孔数，也不判断接哪条M3。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "仅新增孔身份问题；本线几何已审，不重审，不指定M3承载。",
+      "facts": {
+        "对应M2金属ID": "W34-M2-S04",
+        "来源帧": "m2",
+        "候选孔层": "V2，未获人审",
+        "原生完整孔组搜索框": [
+          763,
+          2227,
+          814,
+          2255
+        ],
+        "上层承载": "未知，本次不裁决",
+        "物理孔数": "未知，本次不逐孔计数"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域与四端编号",
+          "role": "marked",
+          "caption": "S01–S04橙框为本层端部孔身份候选；W3/W4仅为位置参照，旧接口不重审。",
+          "frame": "m2",
+          "sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-marked.png",
+          "label": "四端局部放大标记",
+          "role": "marked",
+          "caption": "四个端部保留共同邻域；不要求逐孔计数。",
+          "frame": "m2",
+          "sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/tips-m2-raw.png",
+          "label": "四端原图",
+          "role": "source",
+          "caption": "原生像素，未拉伸或投影。",
+          "frame": "m2",
+          "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+          "width_height": [
+            580,
+            280
+          ]
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+          "label": "M2 宽邻域原图",
+          "role": "source",
+          "caption": "四处短端的走线上下文。",
+          "frame": "m2",
+          "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+          "width_height": [
+            920,
+            1250
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "已审 M2 几何参照",
+          "role": "design",
+          "caption": "仅参照已审金属ID与回折关系；没有加入新孔。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "source_tip",
+          "label": "橙框位于编号所指M2短端",
+          "required": true
+        },
+        {
+          "id": "V2_identity",
+          "label": "确认此端部包含V2（M2→M3），不是仅金属亮带或拍屏纹理",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "CTX-GEO",
+      "type": "metal_fragment",
+      "title": "已审四条M2几何（只读参考）",
+      "prompt": "本页仅新增S01–S04的V2身份裁决，不重复判断M2的回折、间隙和范围覆盖。",
+      "required": false,
+      "review_mode": "context",
+      "change_summary": "G1/G2/COV已由实际导出确认单通过并归档；四条几何与既有接口不变。",
+      "facts": {
+        "accepted_items": [
+          "G1",
+          "G2",
+          "COV"
+        ],
+        "inherited_interfaces": 30,
+        "new_via_geometry": 0
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+          "label": "已审 M2 几何参照",
+          "role": "design",
+          "caption": "仅参照已审金属ID与回折关系；没有加入新孔。",
+          "frame": "design",
+          "sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+          "width_height": null
+        }
+      ],
+      "checks": [],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "这四处端部是否均确认包含V2孔组？若存在不确定或需修改项，请保留对应状态，不按全部通过汇总。",
+      "item_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "required": true
+    }
+  ],
+  "limits": [
+    "本轮只批准编号端部的V2身份；金属几何与旧接口不重审。",
+    "亮区是孔组候选；AI观察和工程检查不能替代本次孔身份裁决。",
+    "没有指定任何一条M3承载；先完成身份，再核相邻M3对应。",
+    "M2上的亮点不是V1证据；M1侧的新接口尚未建立。"
+  ],
+  "not_approved": [
+    "上层M3承载、跨层电气接通或同网关系",
+    "物理孔数、孔径、节距与精确落点",
+    "新孔的规则几何和整组包围",
+    "精确投影、PDK DRC、完整网表或GDS采用",
+    "范围外连续部分与未知端口"
+  ],
+  "sources": {
+    "accepted_geometry_baseline": {
+      "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+      "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+    },
+    "actual_geometry_decision": {
+      "path": "docs/assets/w34-m2-coverage-v1/review/review-decision.json",
+      "sha256": "91c6092f756919f9df48a7e1d80ee834cc841796f496dd61af562da30385cb13"
+    },
+    "candidate_observations": {
+      "path": "benchmarks/w34-short-terminal-v1/observations.json",
+      "sha256": "924dbfabaccff70937a4ff154e68dd163de76d6c071ae41c16dd6cc570c40e41"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-short-terminal-v1/view-provenance.json",
+      "sha256": "9ef4b3a99b7678ace25f2e5cd2b8f30af25ecc6fd5bdc40b78aa46fe3bf6c8e2"
+    },
+    "unchanged_work_manifest": {
+      "path": "docs/assets/w34-m2-coverage-v1/work/manifest.json",
+      "sha256": "7abafe8bff5d0e041bbc375378898297f19400c8301b3425494210e669ec5b2c"
+    }
+  }
+}

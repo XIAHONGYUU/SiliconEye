@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "W34-M2-S01-before-WEST-M2-W4-SOURCE",
+      "values": {
+        "native_path": [
+          307,
+          360
+        ],
+        "design_path": [
+          -2577,
+          -2505
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "WEST-M2-W4-SOURCE-before-W34-M2-S02",
+      "values": {
+        "native_path": [
+          360,
+          399
+        ],
+        "design_path": [
+          -2505,
+          -2460
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "W34-M2-S02-before-W34-M2-S03",
+      "values": {
+        "native_path": [
+          399,
+          474
+        ],
+        "design_path": [
+          -2460,
+          -2402
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "W34-M2-S03-before-WEST-M2-W3-SOURCE",
+      "values": {
+        "native_path": [
+          474,
+          725
+        ],
+        "design_path": [
+          -2402,
+          -2140
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "WEST-M2-W3-SOURCE-before-W34-M2-S04",
+      "values": {
+        "native_path": [
+          725,
+          773
+        ],
+        "design_path": [
+          -2140,
+          -2100
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "W34-M2-S03-tip-above-W34-M2-S02",
+      "values": {
+        "native_path": [
+          2286,
+          2345
+        ],
+        "design_path": [
+          473,
+          522
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "W34-M2-S02-tip-above-W34-M2-S01",
+      "values": {
+        "native_path": [
+          2345,
+          2384
+        ],
+        "design_path": [
+          522,
+          552
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "scope": "declared_same_frame_order_not_registration"
+}

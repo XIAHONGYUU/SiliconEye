@@ -1,0 +1,53 @@
+{
+  "kind": "scoped_M2_supplement_verification",
+  "date": "2026-11-05",
+  "status": "TECHNICAL_PASS_PENDING_HUMAN_GEOMETRY_AND_COVERAGE",
+  "old_metal_objects_preserved_exact": 46,
+  "old_reviewed_interfaces_preserved_exact": 30,
+  "old_candidate_cuts_preserved_exact": 179,
+  "metal_count_after": 50,
+  "M2_count_after": 17,
+  "new_candidate_ids": [
+    "W34-M2-S01",
+    "W34-M2-S02",
+    "W34-M2-S03",
+    "W34-M2-S04"
+  ],
+  "old_via_layers_preserved_exact": true,
+  "resume_model_exact": true,
+  "same_frame_order_checks": 7,
+  "local_gap_checks": 5,
+  "raw_crops_pixel_exact": true,
+  "manifest_inputs_verified": 231,
+  "source_to_design_transform": null,
+  "showcase_files_unchanged_current_baseline": 25,
+  "software_tests": {
+    "command": ".venv/bin/pytest -q tests/test_v1_new_short_branch.py tests/test_metal_representative_transfer.py tests/test_m1_local_tab.py tests/test_via_center_preserving.py tests/test_conductive_snapshot.py tests/test_conductive_metal_extension.py tests/test_review_sheet.py",
+    "result": "75 passed in 43.09s"
+  },
+  "historical_fixed_regression": {
+    "status": "FAIL",
+    "reason": "Showcase changed: README.md",
+    "cause": "Historical suite protects pre-review-tool README; later committed top-level documentation changed before this M2 supplement. No suite baseline was changed. Earlier replay phases ran before protection check; positive model replay is independently checked for the current model above.",
+    "original_result": "benchmarks/w34-m2-coverage-v1/historical-fixed-regression.json"
+  },
+  "new_human_decisions": 0,
+  "new_interfaces": 0,
+  "geometry_human_approved": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "complete_network": false,
+  "geometry_adopted": false,
+  "git_head_at_verification": "fecf2f4ca6e90610aa69cf1e1886d6435e6367fd",
+  "browser_review": {
+    "date": "2026-11-05",
+    "url": "http://127.0.0.1:8772/w34-m2-coverage-v1/review/index.html",
+    "build_id": "30785baea2e440169f045696a25364eb",
+    "all_eight_evidence_views_loaded": true,
+    "single_and_compare_modes_checked": true,
+    "new_answers_selected": 0,
+    "decision_file_present": false,
+    "screenshot": "runs/w34-m2-inspection-20261104/review-browser.png",
+    "preview": "localhost-only background HTTP server; transient first preview exit fixed and lazy-loaded views retested"
+  },
+  "candidate_cut_count_recounted": 179
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "30785baea2e440169f045696a25364eb",
+  "package_id": "W34-M2-COVERAGE-20261105-V1",
+  "stage": "METAL",
+  "created_at": "2026-11-05T01:05:26+00:00",
+  "spec_sha256": "6e778d1c210c6292d0a2db6abb1a7ec754bfa2a49e5e9e993faf35eca1cbbf00",
+  "page_sha256": "34a77c72fea9049830cf7020787db6084c1fc208c02d53860bd0f437e908b7d1",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/source-wide-marked.png",
+      "source_sha256": "997d7441fe4f2ac7109dfab381d56e51507aeea8ce5653dfe36281e576734249",
+      "output_path": "assets/997d7441fe-source-wide-marked.png",
+      "output_sha256": "997d7441fe4f2ac7109dfab381d56e51507aeea8ce5653dfe36281e576734249",
+      "width_height": [
+        920,
+        1250
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/source-wide-raw.png",
+      "source_sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+      "output_path": "assets/8877f5e8ee-source-wide-raw.png",
+      "output_sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+      "width_height": [
+        920,
+        1250
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/source-heads-marked.png",
+      "source_sha256": "2e5b047aa6e9a308ff28c9d085f493ee6b81f8c990b7d8e4aec7927fcd0a7e65",
+      "output_path": "assets/2e5b047aa6-source-heads-marked.png",
+      "output_sha256": "2e5b047aa6e9a308ff28c9d085f493ee6b81f8c990b7d8e4aec7927fcd0a7e65",
+      "width_height": [
+        580,
+        280
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/source-heads-raw.png",
+      "source_sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+      "output_path": "assets/1493fdc099-source-heads-raw.png",
+      "output_sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f",
+      "width_height": [
+        580,
+        280
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/after-M2.svg",
+      "source_sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+      "output_path": "assets/915be930b9-after-M2.svg",
+      "output_sha256": "915be930b92f0f38b5951a9a95627f35669c452b0d4ebdfe43ed90b526af888f",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/before-M2.svg",
+      "source_sha256": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+      "output_path": "assets/8822e46f9e-before-M2.svg",
+      "output_sha256": "8822e46f9ed17d74bf0d9f72b34d38305d216ef92e69309c5246de8b0f6d8523",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/after-five-layer.svg",
+      "source_sha256": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+      "output_path": "assets/50e85d08ba-after-five-layer.svg",
+      "output_sha256": "50e85d08baff0cc398d677df5ff88960c1f2501a571fd51d87b90617d39e6552",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-m2-coverage-v1/scope-raw.png",
+      "source_sha256": "460193099e124566dfbbbd0a40dd10fa9745ff5b83549c605041b78953916242",
+      "output_path": "assets/460193099e-scope-raw.png",
+      "output_sha256": "460193099e124566dfbbbd0a40dd10fa9745ff5b83549c605041b78953916242",
+      "width_height": [
+        570,
+        970
+      ]
+    }
+  ],
+  "sources": {
+    "source_photo_m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "accepted_parent": {
+      "path": "docs/assets/west-m1-reviewed-v12/work/manifest.json",
+      "sha256": "7805e31a2eda32af7af0881be1ed3dac2c00495f473dbb9688067a7cbbdd0c42"
+    },
+    "candidate_manifest": {
+      "path": "docs/assets/w34-m2-coverage-v1/work/manifest.json",
+      "sha256": "7abafe8bff5d0e041bbc375378898297f19400c8301b3425494210e669ec5b2c"
+    },
+    "source_inventory": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-inventory.json",
+      "sha256": "99cf35dc1ad0226c9ae0198041d5acea8979918fe358188ee369f0eaacd5040e"
+    },
+    "scoped_coverage": {
+      "path": "benchmarks/w34-m2-coverage-v1/scoped-coverage.json",
+      "sha256": "a5e0dace20f6e440b186dcc99ae6625bd828475d256123100b1fb46726e15545"
+    },
+    "same_frame_order": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-order-result.json",
+      "sha256": "41dea05ffc3967c708ae3eba34dc33376d648e2be825040e9cb9be1e75715564"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-m2-coverage-v1/view-provenance.json",
+      "sha256": "105e9b337914096d2f45ee5dffa82b4b7212f0b8c2721d96fe57a34e78bc91c8"
+    },
+    "prior_v2_review": {
+      "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+      "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+    },
+    "prior_v1_review": {
+      "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+      "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+    }
+  },
+  "counts": {
+    "items": 4,
+    "required_items": 3,
+    "questions": 2,
+    "required_questions": 2,
+    "evidence": 8
+  }
+}

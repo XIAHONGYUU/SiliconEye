@@ -1,0 +1,32 @@
+{
+  "actor": "AI",
+  "reason": "Add four explicitly observed fine M2 fragments in the fixed W3/W4 native window; retain three top exits and one bottom exit and all local gaps. No via or electrical net inferred.",
+  "parent": {
+    "path": "docs/assets/west-m1-reviewed-v12/work/manifest.json",
+    "sha256": "7805e31a2eda32af7af0881be1ed3dac2c00495f473dbb9688067a7cbbdd0c42"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "W34-M2-S01",
+    "W34-M2-S02",
+    "W34-M2-S03",
+    "W34-M2-S04"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/w34-m2-coverage-v1/M2-supplement.json",
+      "sha256": "bd31170cea7b7517c2c8edf8ac2f33a3eae7d00a369bd2a024c0b51b9ae0747a"
+    },
+    "scoped_scan": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-inventory.json",
+      "sha256": "99cf35dc1ad0226c9ae0198041d5acea8979918fe358188ee369f0eaacd5040e"
+    },
+    "prior_baseline": {
+      "path": "benchmarks/west-m1-reviewed-v12/working-baseline.json",
+      "sha256": "2ed4cafec8d223ac501194178dca6f73955a0cad05be57dcf321a50febfdaa2d"
+    }
+  }
+}

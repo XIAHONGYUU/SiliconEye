@@ -1,0 +1,52 @@
+{
+  "kind": "scoped_source_geometry_interface_coverage",
+  "actor": "AI",
+  "native_bounds": [
+    280,
+    1870,
+    850,
+    2840
+  ],
+  "declared_source_fragments": 6,
+  "represented_fragments": 6,
+  "rows": [
+    {
+      "observation_id": "M2-W4",
+      "metal_id": "WEST-M2-W4-SOURCE",
+      "mapping": "existing_unchanged"
+    },
+    {
+      "observation_id": "M2-W3",
+      "metal_id": "WEST-M2-W3-SOURCE",
+      "mapping": "existing_unchanged"
+    },
+    {
+      "observation_id": "M2-S01",
+      "metal_id": "W34-M2-S01",
+      "mapping": "new_candidate_pending_review"
+    },
+    {
+      "observation_id": "M2-S02",
+      "metal_id": "W34-M2-S02",
+      "mapping": "new_candidate_pending_review"
+    },
+    {
+      "observation_id": "M2-S03",
+      "metal_id": "W34-M2-S03",
+      "mapping": "new_candidate_pending_review"
+    },
+    {
+      "observation_id": "M2-S04",
+      "metal_id": "W34-M2-S04",
+      "mapping": "new_candidate_pending_review"
+    }
+  ],
+  "new_interfaces": 0,
+  "inherited_local_interfaces": 30,
+  "inherited_W3_W4_interfaces": 8,
+  "source_boundary_exits": 4,
+  "new_tip_interfaces": "UNASSESSED - not physical absence",
+  "source_exhaustiveness": "AI_SWEEP_PENDING_HUMAN_COVERAGE",
+  "geometry_human_approved": false,
+  "complete_network": false
+}

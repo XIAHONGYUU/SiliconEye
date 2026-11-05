@@ -1,0 +1,45 @@
+{
+  "kind": "M2_source_tip_views",
+  "photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "views": {
+    "wide": {
+      "native_bounds": [
+        200,
+        1720,
+        1120,
+        2970
+      ],
+      "raw": {
+        "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+        "sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8"
+      },
+      "marked": {
+        "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+        "sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d"
+      }
+    },
+    "tips": {
+      "native_bounds": [
+        270,
+        2170,
+        850,
+        2450
+      ],
+      "raw": {
+        "path": "docs/assets/w34-short-terminal-v1/tips-m2-raw.png",
+        "sha256": "1493fdc099fa4be6c8a02f63528f4b1dece41204dcc2ba03e6528f064365e61f"
+      },
+      "marked": {
+        "path": "docs/assets/w34-short-terminal-v1/tips-m2-marked.png",
+        "sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9"
+      }
+    }
+  },
+  "source_to_design_transform": null,
+  "raw_crops_pixel_exact": true,
+  "labels_are_source_boxes_not_design_projection": true,
+  "bounds_cover_each_declared_tip": true
+}

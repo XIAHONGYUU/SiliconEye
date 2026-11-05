@@ -1,0 +1,165 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add four explicitly observed fine M2 fragments in the fixed W3/W4 native window; retain three top exits and one bottom exit and all local gaps. No via or electrical net inferred.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          280,
+          1870,
+          850,
+          2840
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "M2-S01",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          313,
+          1870
+        ],
+        [
+          334,
+          2383
+        ],
+        [
+          307,
+          2384
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "exits_scope"
+        },
+        {
+          "state": "visible_tip_attachment_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M2-S02",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          399,
+          1870
+        ],
+        [
+          424,
+          2345
+        ],
+        [
+          450,
+          2345
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "exits_scope"
+        },
+        {
+          "state": "visible_tip_attachment_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M2-S03",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          483,
+          1870
+        ],
+        [
+          501,
+          2285
+        ],
+        [
+          474,
+          2286
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "exits_scope"
+        },
+        {
+          "state": "visible_tip_attachment_unknown"
+        }
+      ]
+    },
+    {
+      "id": "M2-S04",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          800,
+          2239
+        ],
+        [
+          773,
+          2240
+        ],
+        [
+          795,
+          2840
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_tip_attachment_unknown"
+        },
+        {
+          "state": "exits_scope"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "M2-S01",
+      "metal_id": "W34-M2-S01"
+    },
+    {
+      "observation_id": "M2-S02",
+      "metal_id": "W34-M2-S02"
+    },
+    {
+      "observation_id": "M2-S03",
+      "metal_id": "W34-M2-S03"
+    },
+    {
+      "observation_id": "M2-S04",
+      "metal_id": "W34-M2-S04"
+    }
+  ],
+  "unknown_observations": [],
+  "sources": {
+    "scoped_scan": {
+      "path": "benchmarks/w34-m2-coverage-v1/source-inventory.json",
+      "sha256": "99cf35dc1ad0226c9ae0198041d5acea8979918fe358188ee369f0eaacd5040e"
+    },
+    "baseline": {
+      "path": "benchmarks/west-m1-reviewed-v12/working-baseline.json",
+      "sha256": "2ed4cafec8d223ac501194178dca6f73955a0cad05be57dcf321a50febfdaa2d"
+    }
+  }
+}

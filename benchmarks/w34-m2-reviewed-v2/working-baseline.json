@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_baseline",
+  "date": "2026-11-05",
+  "status": "CLOSED_SCOPED_M2_WORKING_BASELINE",
+  "geometry_package": {
+    "path": "docs/assets/w34-m2-coverage-v1/work/manifest.json",
+    "sha256": "7abafe8bff5d0e041bbc375378898297f19400c8301b3425494210e669ec5b2c"
+  },
+  "geometry_model": {
+    "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+    "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/w34-m2-coverage-v1/sample.json",
+    "sha256": "1701fb21813768478298b8740fb39391781e4e1868dcdf3da9f7775d362d144e"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-m2-coverage-v1/review/manifest.json",
+    "sha256": "7e166e7f35b388886fabf0b97b9da2c4d35d9d7302afc5f63ccffce2a6b08d44"
+  },
+  "human_review": {
+    "path": "docs/assets/w34-m2-coverage-v1/review/review-decision.json",
+    "sha256": "91c6092f756919f9df48a7e1d80ee834cc841796f496dd61af562da30385cb13"
+  },
+  "review_record": {
+    "path": "docs/assets/w34-m2-coverage-v1/review/review-record.md",
+    "sha256": "92744735a42ada2e696c50e7fbaff2f2690e500a4ed2d74a7166897f8be810b1"
+  },
+  "reviewed_fragments": {
+    "path": "benchmarks/w34-m2-reviewed-v2/reviewed-fragments.json",
+    "sha256": "03206556b3a047aee7e2b445e6b2122327e70be6ae19b8684d7e399413507c4b"
+  },
+  "coverage": {
+    "path": "benchmarks/w34-m2-reviewed-v2/scoped-M2-coverage-reviewed.json",
+    "sha256": "6021c38290c2916d9c9117086397d2272f0418b288a968bbe2455463da2a2de3"
+  },
+  "inherited_M1_baseline": {
+    "path": "benchmarks/west-m1-reviewed-v12/working-baseline.json",
+    "sha256": "2ed4cafec8d223ac501194178dca6f73955a0cad05be57dcf321a50febfdaa2d"
+  },
+  "next_request": {
+    "path": "benchmarks/w34-m2-coverage-v1/next-request.json",
+    "sha256": "73c39ab5d3aa583de274d692370025876b94612b9ef198b004baead622a10476"
+  },
+  "accepted_group_ids": [
+    "G1",
+    "G2",
+    "COV"
+  ],
+  "accepted_new_metal_ids": [
+    "W34-M2-S01",
+    "W34-M2-S02",
+    "W34-M2-S03",
+    "W34-M2-S04"
+  ],
+  "scope_native_bounds": [
+    280,
+    1870,
+    850,
+    2840
+  ],
+  "working_metal_count": 50,
+  "reviewed_interfaces_unchanged": 30,
+  "design_via_cuts_unchanged": 179,
+  "new_vias_or_connections": 0,
+  "short_tip_interfaces": "UNASSESSED - geometry review does not settle V1/V2 or carriers",
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "continuation_rule": "Read this baseline and exact four components together with bound next-request. Preserve old M1 and all30 interface decisions. Raw pending fields in the immutable proposal describe its submission history; do not re-ask G1/G2/COV. New via identity and carrier decisions remain separate."
+}

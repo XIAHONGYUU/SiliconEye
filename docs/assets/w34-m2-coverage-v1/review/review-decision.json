@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-M2-COVERAGE-20261105-V1",
+  "build_id": "30785baea2e440169f045696a25364eb",
+  "stage": "METAL",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "G1",
+      "verdict": "accepted",
+      "checks": {
+        "source_matches": true,
+        "turns_and_order": true,
+        "gaps_and_exits": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "G2",
+      "verdict": "accepted",
+      "checks": {
+        "source_matches": true,
+        "head_and_gap": true,
+        "exit": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "COV",
+      "verdict": "accepted",
+      "checks": {
+        "no_missing": true,
+        "scope": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "verdict": "accepted",
+      "notes": ""
+    },
+    {
+      "question_id": "Q2",
+      "verdict": "accepted",
+      "notes": ""
+    }
+  ],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-m2-coverage-v1/review",
+      "manifest_sha256": "7e166e7f35b388886fabf0b97b9da2c4d35d9d7302afc5f63ccffce2a6b08d44"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-m2-coverage-v1/review/index.html",
+      "sha256": "34a77c72fea9049830cf7020787db6084c1fc208c02d53860bd0f437e908b7d1"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-m2-coverage-v1/review/review-spec.json",
+      "sha256": "6e778d1c210c6292d0a2db6abb1a7ec754bfa2a49e5e9e993faf35eca1cbbf00"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "红框为本轮范围；宽图保留邻域。规则图在独立设计坐标中，不直接投影到照片。"
+  },
+  "not_approved": [
+    "四个短端的新VIA身份、数量或跨层承载",
+    "整个芯片、全幅M2或连续五层的穷尽覆盖",
+    "物理尺寸、真实工艺PDK DRC、精确照片投影",
+    "全网点亮、完整网表、共同几何采用或GDS发布"
+  ]
+}
