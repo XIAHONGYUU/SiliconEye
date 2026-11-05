@@ -1,0 +1,38 @@
+{
+  "actor": "AI",
+  "reason": "Add only four actually source-approved V2 interfaces; old51 metals/30 interfaces/179cuts exact. New9 design cuts are candidate representations, not human physical counts.",
+  "parent": {
+    "path": "docs/assets/w34-joint-geometry-v1/S2-joint-metals/manifest.json",
+    "sha256": "4c5e2ecb9a769c655bb3c49e04f79b2ac30e3233b3e750090a5027e7e12e8651"
+  },
+  "added_interface_ids": [
+    "W34-S01-V2-CANDIDATE",
+    "W34-S02-V2-CANDIDATE",
+    "W34-S03-V2-CANDIDATE",
+    "W34-S04-V2-CANDIDATE"
+  ],
+  "interface_observations": {
+    "W34-S01-V2-CANDIDATE": {
+      "path": "benchmarks/w34-joint-geometry-v1/S01-array-observation.json",
+      "sha256": "b9991e28cde456e1f6d126b7d035a700cb77ebf558b6ccd2e98bc50cb0bbc64f"
+    },
+    "W34-S02-V2-CANDIDATE": {
+      "path": "benchmarks/w34-joint-geometry-v1/S02-array-observation.json",
+      "sha256": "b45540f7d4bf3a091972c7a491ac65f68fff0c458231903bc1719337139c7c59"
+    },
+    "W34-S03-V2-CANDIDATE": {
+      "path": "benchmarks/w34-joint-geometry-v1/S03-array-observation.json",
+      "sha256": "a659cba6a90d2830f80efa0199cf33d359789da21293565646b7e4f437789158"
+    },
+    "W34-S04-V2-CANDIDATE": {
+      "path": "benchmarks/w34-joint-geometry-v1/S04-array-observation.json",
+      "sha256": "64a9ac660ee829e6f3abf9896256f74bd849b57fff846bc8ee9b6872363620d0"
+    }
+  },
+  "sources": {
+    "accepted_carriers": {
+      "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+      "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+    }
+  }
+}

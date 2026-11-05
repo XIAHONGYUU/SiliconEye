@@ -1,0 +1,36 @@
+{
+  "kind": "source_only_M3_inventory_views",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "scope_native_bounds": [
+    180,
+    2120,
+    1280,
+    2490
+  ],
+  "wide_context_bounds": [
+    180,
+    1850,
+    1280,
+    2850
+  ],
+  "raw_crops_pixel_exact": true,
+  "marked_line_coordinates_are_native_M3_only": true,
+  "source_to_design_transform": null,
+  "assets": {
+    "middle-m3-raw.png": {
+      "path": "docs/assets/w34-m3-native-inventory-v1/middle-m3-raw.png",
+      "sha256": "b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba"
+    },
+    "middle-m3-indexed.png": {
+      "path": "docs/assets/w34-m3-native-inventory-v1/middle-m3-indexed.png",
+      "sha256": "a3c22c48e01f488205842a2b95046d286265cd2d25f64b3adb09963699437563"
+    },
+    "wide-m3-raw.png": {
+      "path": "docs/assets/w34-m3-native-inventory-v1/wide-m3-raw.png",
+      "sha256": "cd886079cac8e9251d0b8104540a2346ba8d1f964af01c851dc799344dacc3a9"
+    }
+  }
+}

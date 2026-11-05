@@ -1,0 +1,81 @@
+{
+  "kind": "scoped_V2_source_connections_from_fixed_reviews",
+  "date": "2026-11-05",
+  "identity_review": {
+    "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+    "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+  },
+  "carrier_review": {
+    "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+    "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+  },
+  "carrier_manifest": {
+    "path": "docs/assets/w34-m3-carrier-review-v1/review/manifest.json",
+    "sha256": "d0d1d45547870a4a5e4ff299b0d66c5e03ec597e4e2d815ece2ee783a0e35431"
+  },
+  "source_proposals": {
+    "path": "benchmarks/w34-m3-carrier-review-v1/carrier-proposals.json",
+    "sha256": "df30c857a0a66eac4cc1bdbc03ac9ea5becc02f76b0d712512dce31c36d28866"
+  },
+  "rows": [
+    {
+      "id": "S01",
+      "interface_id": "W34-S01-V2-CANDIDATE",
+      "source_frame": "m2",
+      "layer": "V2",
+      "lower_metal_id": "W34-M2-S01",
+      "upper_source_row": "WM3-R09",
+      "upper_model_id": "C-M3-M06",
+      "identity_confirmed": true,
+      "carrier_confirmed": true,
+      "connection_confirmed_scoped_source": true,
+      "physical_cut_count": null,
+      "design_geometry_approved": false
+    },
+    {
+      "id": "S02",
+      "interface_id": "W34-S02-V2-CANDIDATE",
+      "source_frame": "m2",
+      "layer": "V2",
+      "lower_metal_id": "W34-M2-S02",
+      "upper_source_row": "WM3-R07",
+      "upper_model_id": "C-M3-M04",
+      "identity_confirmed": true,
+      "carrier_confirmed": true,
+      "connection_confirmed_scoped_source": true,
+      "physical_cut_count": null,
+      "design_geometry_approved": false
+    },
+    {
+      "id": "S03",
+      "interface_id": "W34-S03-V2-CANDIDATE",
+      "source_frame": "m2",
+      "layer": "V2",
+      "lower_metal_id": "W34-M2-S03",
+      "upper_source_row": "WM3-R04",
+      "upper_model_id": "C-M3-M01",
+      "identity_confirmed": true,
+      "carrier_confirmed": true,
+      "connection_confirmed_scoped_source": true,
+      "physical_cut_count": null,
+      "design_geometry_approved": false
+    },
+    {
+      "id": "S04",
+      "interface_id": "W34-S04-V2-CANDIDATE",
+      "source_frame": "m2",
+      "layer": "V2",
+      "lower_metal_id": "W34-M2-S04",
+      "upper_source_row": "WM3-R03",
+      "upper_model_id": "W34-M3-R03",
+      "identity_confirmed": true,
+      "carrier_confirmed": true,
+      "connection_confirmed_scoped_source": true,
+      "physical_cut_count": null,
+      "design_geometry_approved": false
+    }
+  ],
+  "new_physical_count_truth": null,
+  "new_geometry_approved": false,
+  "complete_network": false
+}

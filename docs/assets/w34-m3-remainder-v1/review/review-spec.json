@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "package_id": "W34-M3-REMAINDER-20261105-V1",
+  "stage": "METAL",
+  "stage_label": "金属",
+  "title": "M3窗口补齐：两条细线与宽母线",
+  "date": "2026-11-05",
+  "summary": "上一批G1/G2联合几何已经实际确认归档。本次只补固定M3窗口剩余R01、R02、B01，不重问已审身份、承载或七条细线几何。原图大字标注，支持单层／联合和新旧对照。",
+  "scope": {
+    "frame": "m3",
+    "native_bounds": [
+      180,
+      2120,
+      1280,
+      2490
+    ],
+    "note": "九条细线和一个宽母线局部；规则图使用独立设计坐标。大邻域只是连续性上下文，不扩大本次完整性范围。"
+  },
+  "items": [
+    {
+      "id": "G1",
+      "type": "metal_fragment",
+      "title": "R01／R02：两条剩余细 M3",
+      "prompt": "R01短段和R02通行段的相对位置、可见长度、上下次序与间隙是否合理？R01左端是可见短端，其余截口只代表窗口出口；不判断范围外是否同网。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "只新增W34-M3-R01、W34-M3-R02两个物理片段ID；旧51金属及全部34接口保持。",
+      "facts": {
+        "new_metal_ids": [
+          "W34-M3-R01",
+          "W34-M3-R02"
+        ],
+        "source_scope": [
+          180,
+          2120,
+          1280,
+          2490
+        ],
+        "new_connections": 0,
+        "precise_projection": false
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/scope-marked.png",
+          "label": "固定窗口：大字编号原图",
+          "role": "marked",
+          "caption": "橙色R01/R02为本次新增；紫色R03–R09已审；绿色B01为下沿截取的宽母线部分。",
+          "frame": "m3",
+          "sha256": "0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6",
+          "width_height": [
+            1100,
+            370
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/after-M3.svg",
+          "label": "补建后 M3 单层",
+          "role": "design",
+          "caption": "橙色两条新线，绿色原宽母线西延；保留已审七条细线，规则图不是照片投影。",
+          "frame": "design",
+          "sha256": "914b9e257848aa7f65e81ba01892d242c19edd896d3f3bca29b4377d1561061f",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/before-M3.svg",
+          "label": "补建前 M3（同坐标）",
+          "role": "design",
+          "caption": "与补建后采用同一独立设计坐标；空缺表示旧模型未覆盖，不表示照片没有金属。",
+          "frame": "design",
+          "sha256": "7034ec19a335602c8f62ad745d5fa51661c9a7dec2d250e09b4d57e63487b162",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/context-marked.png",
+          "label": "M3 大邻域及黄色范围边界",
+          "role": "marked",
+          "caption": "黄色框是本次固定来源窗口；范围出口不是物理终点。",
+          "frame": "m3",
+          "sha256": "6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901",
+          "width_height": [
+            1200,
+            600
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/scope-raw.png",
+          "label": "固定窗口未标注原图",
+          "role": "source",
+          "caption": "原生[180,2120,1280,2490]，照片原件未改写。",
+          "frame": "m3",
+          "sha256": "b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba",
+          "width_height": [
+            1100,
+            370
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/after-joint.svg",
+          "label": "五层联合候选（仅参考）",
+          "role": "design",
+          "caption": "53金属、34已审局部接口；M1/M2/V1/V2保持，不重新审批旧连接。",
+          "frame": "design",
+          "sha256": "ede0900770aa8fd0223067aeb477ba89101a2d19318c6db7ed32ddedacd58410",
+          "width_height": null
+        }
+      ],
+      "checks": [
+        {
+          "id": "shape_and_order",
+          "label": "两条新线的长度、次序及相对间隙合理",
+          "required": true
+        },
+        {
+          "id": "scope_exits",
+          "label": "未把窗口出口当作物理终点或擅自补连",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "G2",
+      "type": "metal_fragment",
+      "title": "B01：原宽母线向西连续范围",
+      "prompt": "B01对应原中部宽M3母线，向西补出的连续范围是否合理？它在固定窗口下沿仅露出一部分，宽度沿用原规则图；请结合大邻域判断，不要求精确边缘投影。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "仅给RT-M3-MID添加西侧局部块，保留原骨架、宽度和原生锚点；不另建重复母线，不新增VIA。",
+      "facts": {
+        "extended_metal_id": "RT-M3-MID",
+        "added_part_id": "W34-WEST-MID-CONTINUATION",
+        "old_source_anchors_unchanged": true,
+        "physical_width_measured": false
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/scope-marked.png",
+          "label": "固定窗口：大字编号原图",
+          "role": "marked",
+          "caption": "橙色R01/R02为本次新增；紫色R03–R09已审；绿色B01为下沿截取的宽母线部分。",
+          "frame": "m3",
+          "sha256": "0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6",
+          "width_height": [
+            1100,
+            370
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/after-M3.svg",
+          "label": "补建后 M3 单层",
+          "role": "design",
+          "caption": "橙色两条新线，绿色原宽母线西延；保留已审七条细线，规则图不是照片投影。",
+          "frame": "design",
+          "sha256": "914b9e257848aa7f65e81ba01892d242c19edd896d3f3bca29b4377d1561061f",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/continuity-marked.png",
+          "label": "B01 同一照片连续性与旧锚点",
+          "role": "marked",
+          "caption": "同一张M3照片向右跟到原RT-M3-MID锚点；绿色为AI连续性观察，不涉及跨层投影或新孔审批。",
+          "frame": "m3",
+          "sha256": "26226d5bb7ca04eb604776fb50fb6733aead3b659cbd079b373c92a1e470c53d",
+          "width_height": [
+            3630,
+            330
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/continuity-raw.png",
+          "label": "宽母线长邻域未标注原图",
+          "role": "source",
+          "caption": "原生[180,2300,3810,2630]，用于观察B01与原宽母线的连续性。",
+          "frame": "m3",
+          "sha256": "cc8ef373852099f02b957b7eabbfd9365149caac6b30b1d826cd22e95a5e678b",
+          "width_height": [
+            3630,
+            330
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/before-M3.svg",
+          "label": "补建前 M3（同坐标）",
+          "role": "design",
+          "caption": "与补建后采用同一独立设计坐标；空缺表示旧模型未覆盖，不表示照片没有金属。",
+          "frame": "design",
+          "sha256": "7034ec19a335602c8f62ad745d5fa51661c9a7dec2d250e09b4d57e63487b162",
+          "width_height": null
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/context-marked.png",
+          "label": "M3 大邻域及黄色范围边界",
+          "role": "marked",
+          "caption": "黄色框是本次固定来源窗口；范围出口不是物理终点。",
+          "frame": "m3",
+          "sha256": "6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901",
+          "width_height": [
+            1200,
+            600
+          ]
+        },
+        {
+          "path": "docs/assets/w34-m3-remainder-v1/scope-raw.png",
+          "label": "固定窗口未标注原图",
+          "role": "source",
+          "caption": "原生[180,2120,1280,2490]，照片原件未改写。",
+          "frame": "m3",
+          "sha256": "b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba",
+          "width_height": [
+            1100,
+            370
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "same_bus_extent",
+          "label": "与原宽母线的对应及西侧连续范围合理",
+          "required": true
+        },
+        {
+          "id": "gap_retained",
+          "label": "宽母线与上方细线保持间隙，无明显误连",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "本次三项新增/延伸几何整体合理，且固定窗口的九条细线与一个宽母线局部无明显漏段？仅判可见几何，不判所有VIA或全网。",
+      "item_ids": [
+        "G1",
+        "G2"
+      ],
+      "required": true
+    }
+  ],
+  "limits": [
+    "上一批七条M3与四处短头几何已经通过，不重审；本次仅审三项增量及固定窗口明显漏段。",
+    "34条局部接口及188候选孔原样保留，本次不要求逐孔数数、不新增连接。",
+    "B01在固定窗口下沿被截断；完整宽度来自更大同帧上下文的相对重建，不是实测尺寸。",
+    "10/10来源片段有模型对应，只是清单覆盖；新孔身份/连接和全幅覆盖仍未检查。"
+  ],
+  "not_approved": [
+    "物理孔数、尺寸、节距或精确源图边缘",
+    "新VIA接口、未声明分支或全网闭合",
+    "跨层精确投影、PDK DRC、共同GDS采用或全幅完成"
+  ],
+  "sources": {
+    "accepted_parent": {
+      "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+      "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+    },
+    "candidate_model": {
+      "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/model.json",
+      "sha256": "68795de36e63e286d990386c60d1aef52f1fc58f964a82795f8ffc3cc71caf55"
+    },
+    "candidate_manifest": {
+      "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/manifest.json",
+      "sha256": "10004f09e33e0a5d55ca30c8a3f9cd79bee9ff5d0bd50c1718494a14df826914"
+    },
+    "scoped_coverage": {
+      "path": "benchmarks/w34-m3-remainder-v1/scoped-coverage.json",
+      "sha256": "f2160e1782ec9614a01c40dd98b062b4d58420d73755fbfe8b8058b51b2aff2e"
+    },
+    "source_provenance": {
+      "path": "benchmarks/w34-m3-remainder-v1/view-provenance.json",
+      "sha256": "3531d0e1fe292e00d57d2e0998634aa2f3987851b9f91bd1b2f2564b3abc01b7"
+    },
+    "technical_verification": {
+      "path": "benchmarks/w34-m3-remainder-v1/verification.json",
+      "sha256": "baea43f8f7849e310d22a0a70c059c42e1cf94b50702b280050a9edb7eb50ead"
+    }
+  }
+}

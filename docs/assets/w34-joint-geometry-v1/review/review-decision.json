@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-JOINT-GEOMETRY-20261105-V1",
+  "build_id": "3e10f46706d8487fbcf761093d9a7aac",
+  "stage": "METAL",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "G1",
+      "verdict": "accepted",
+      "checks": {
+        "local_geometry": true,
+        "no_extra_bridge": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "G2",
+      "verdict": "accepted",
+      "checks": {
+        "continuous_extent": true,
+        "scope_exit": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "verdict": "accepted",
+      "notes": ""
+    }
+  ],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-joint-geometry-v1/review",
+      "manifest_sha256": "2be20424497425605bec79656bfed8ae01def517663b9a0342e44064ec3a1282"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-joint-geometry-v1/review/index.html",
+      "sha256": "053fa62c5de4c4d2eb07436604d90f920fca1920166838a3a3cc2d37ff1a8029"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-joint-geometry-v1/review/review-spec.json",
+      "sha256": "53bf2448312ae648e153e53462abaf78dfb2e7785efe1dffb87e388acf82605e"
+    }
+  },
+  "recorded_scope": {
+    "frame": "independent design coordinates; m2/m3 source references",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "范围数字为已审M2来源；规则图在独立设计坐标，M3照片另保留原生范围，未直接投影。"
+  },
+  "not_approved": [
+    "物理孔数或精确源图孔阵列",
+    "精确跨层配准、工艺尺寸或PDK DRC",
+    "全幅完成、完整网表或GDS采用",
+    "本轮范围外的金属或连接"
+  ]
+}

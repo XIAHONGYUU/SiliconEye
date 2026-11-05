@@ -1,0 +1,139 @@
+{
+  "actor": "AI",
+  "views": [
+    {
+      "name": "north-m1-wide",
+      "frame": "m1",
+      "native_bounds": [
+        180,
+        1300,
+        1000,
+        2050
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-raw.png",
+        "sha256": "41475adcebbd4ce5cee479e6a1908b57fb5208ababaacc7b919ddc25e87c9eab"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-marked.png",
+        "sha256": "036c9091943a2a3c63481b456e7b66b7dbb3e7266acf1c982668e4e098bb96b7"
+      }
+    },
+    {
+      "name": "north-m1-detail",
+      "frame": "m1",
+      "native_bounds": [
+        250,
+        1600,
+        600,
+        1840
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-raw.png",
+        "sha256": "f9e8318bacc71bda48c0c82255a95d7e20741277e670a696b4834d6abed86ac2"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-marked.png",
+        "sha256": "d44dff0d36623a6529d8444ef1d6c4c82e07d5f02b3365f0f2671e883a89f7fb"
+      }
+    },
+    {
+      "name": "north-m2-wide",
+      "frame": "m2",
+      "native_bounds": [
+        180,
+        1500,
+        900,
+        2050
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "raw": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-raw.png",
+        "sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-marked.png",
+        "sha256": "18359102429917611314d12315343c5fba2875d822a57c4a38e476ba1da6c7d5"
+      }
+    },
+    {
+      "name": "south-m1-wide",
+      "frame": "m1",
+      "native_bounds": [
+        550,
+        3000,
+        1150,
+        3700
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-wide-raw.png",
+        "sha256": "4c5a54f44004e46ff41c88a17dcf231775d35dbd0b1445327b883fd2e09d3c33"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-wide-marked.png",
+        "sha256": "b9c7302172327017ef813b642da265a7a62c7ed574ea128dfd479550c1d541ce"
+      }
+    },
+    {
+      "name": "south-m1-detail",
+      "frame": "m1",
+      "native_bounds": [
+        650,
+        3200,
+        1000,
+        3560
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "raw": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-detail-raw.png",
+        "sha256": "4ad6704d04cedf0840cb9f6ddd5766294f7952a57dd72f8b56bc2c6bbfbc26ca"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-detail-marked.png",
+        "sha256": "80bb605df608b17cbf73478e91b619107b3c65c057dea4fab7570323c35f25c3"
+      }
+    },
+    {
+      "name": "south-m2-wide",
+      "frame": "m2",
+      "native_bounds": [
+        550,
+        3000,
+        1150,
+        3700
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "raw": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m2-wide-raw.png",
+        "sha256": "7f9f5987e23c61958321003d5067ce5b2af1525bcbc28f10a2cf0ca055d4fc6b"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m2-wide-marked.png",
+        "sha256": "8b7835647c4511182cf497dffc37866473319303cb706c1ea45022391e1b6468"
+      }
+    }
+  ],
+  "source_to_design_transform": null,
+  "boxes_are_search_neighborhoods_not_measured_vias": true
+}

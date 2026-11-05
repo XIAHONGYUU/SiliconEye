@@ -1,0 +1,279 @@
+{
+  "kind": "native_M3_continuous_source_inventory_draft",
+  "actor": "AI",
+  "date": "2026-11-05",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "scope_native_bounds": [
+    180,
+    2120,
+    1280,
+    2490
+  ],
+  "wide_context_bounds": [
+    180,
+    1850,
+    1280,
+    2850
+  ],
+  "basis": "Independent M3 source-frame visual scan; smoothed brightness profiles at x250,500,850,1150 assisted row locations only. Screen stripe peaks and wide-band boundaries are not each counted as conductors.",
+  "rows": [
+    {
+      "id": "WM3-R01",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          1170,
+          2218
+        ],
+        [
+          1280,
+          2214
+        ]
+      ],
+      "end_states": [
+        "short_visible_left_tip",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R02",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2272
+        ],
+        [
+          1280,
+          2252
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R03",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          800,
+          2285
+        ],
+        [
+          1280,
+          2273
+        ]
+      ],
+      "end_states": [
+        "short_visible_left_tip",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R04",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2332
+        ],
+        [
+          1280,
+          2310
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R05",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2352
+        ],
+        [
+          1280,
+          2330
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R06",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2370
+        ],
+        [
+          1280,
+          2349
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R07",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2392
+        ],
+        [
+          1280,
+          2371
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R08",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2409
+        ],
+        [
+          1280,
+          2388
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-R09",
+      "type": "visible_thin_M3_candidate",
+      "native_path": [
+        [
+          180,
+          2429
+        ],
+        [
+          1280,
+          2407
+        ]
+      ],
+      "end_states": [
+        "exits_scope",
+        "exits_scope"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    },
+    {
+      "id": "WM3-B01",
+      "type": "visible_broad_M3_band_partial_candidate",
+      "native_visible_region_candidate": [
+        [
+          180,
+          2450
+        ],
+        [
+          1280,
+          2428
+        ],
+        [
+          1280,
+          2490
+        ],
+        [
+          180,
+          2490
+        ]
+      ],
+      "end_states": [
+        "exits_scope_left",
+        "exits_scope_right",
+        "exits_scope_bottom"
+      ],
+      "model_id": null,
+      "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+      "precise_edge_approval": false,
+      "interface_ids": [],
+      "connection_confirmed": null,
+      "human_reviewed": false
+    }
+  ],
+  "declared_visible_fragments": 10,
+  "thin_fragments": 9,
+  "broad_partial_bands": 1,
+  "source_coverage_qualification": "AI_DRAFT_NOT_HUMAN_VERIFIED",
+  "source_to_design_transform": null,
+  "mapped_to_M2_tips": false,
+  "new_geometry_created": false,
+  "new_interfaces": 0,
+  "new_connections": 0,
+  "prior_model_and_materials_changed": false,
+  "identity_gate": {
+    "path": "docs/assets/w34-short-terminal-v1/review/manifest.json",
+    "sha256": "b9a2493bcf043fdf63a9b025eb6bb557a936d58ab551d9c84da7bf7169b8ed1d"
+  },
+  "continuation_rule": "Await S01-S04 V2 identity review. Use these native M3 row labels only as source lookup; establish same-frame correspondence with existing M3 IDs before adding geometry. Do not assign a carrier by cross-layer y proximity or by row ordinal. This is preparation, not an additional human-review request."
+}

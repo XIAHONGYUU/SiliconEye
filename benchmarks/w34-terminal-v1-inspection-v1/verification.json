@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SOURCE_BINDINGS_ONLY",
+  "checks": {
+    "W34-END-N1_M1_box_in_wide_and_detail": true,
+    "W34-END-N1_no_inferred_truth": true,
+    "W34-END-N2_M1_box_in_wide_and_detail": true,
+    "W34-END-N2_no_inferred_truth": true,
+    "W34-END-N3_M1_box_in_wide_and_detail": true,
+    "W34-END-N3_no_inferred_truth": true,
+    "W34-END-S1_M1_box_in_wide_and_detail": true,
+    "W34-END-S1_no_inferred_truth": true,
+    "34_old_connections": true,
+    "188_candidate_cuts": true,
+    "no_network_adoption": true,
+    "showcase_protected": true
+  },
+  "model_unchanged": {
+    "path": "docs/assets/w34-terminal-extension-v1/work/model.json",
+    "sha256": "3d260ca212b2a73d54799a931f2adf2b795c6b1e5e5ab598803f2e2617b1749d"
+  },
+  "reviewed_local_interfaces": 34,
+  "candidate_design_cuts": 188,
+  "new_model_interfaces": 0,
+  "new_model_geometry": 0,
+  "physical_via_identity_qualified": false,
+  "carrier_qualified": false,
+  "source_to_design_transform": null
+}

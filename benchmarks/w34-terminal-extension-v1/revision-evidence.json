@@ -1,0 +1,44 @@
+{
+  "actor": "AI",
+  "reason": "Append only four same-layer visible terminal extents; preserve original source anchors, reviewed heads, metal footprint and every interface.",
+  "sources": {
+    "accepted_geometry_baseline": {
+      "path": "benchmarks/w34-m3-reviewed-v2/working-baseline.json",
+      "sha256": "1388d806cad0c33252c10ff2c4ef94d38b09a558a682c63e6313ee445fc3db10"
+    },
+    "part_ledger": {
+      "path": "benchmarks/w34-terminal-extension-v1/local-parts-ledger.json",
+      "sha256": "569cee9135030b934d70c0b7a7cc6f7359741956991668989798c296f43a61a8"
+    },
+    "interface_sweep": {
+      "path": "benchmarks/w34-terminal-extension-v1/interface-sweep.json",
+      "sha256": "731bc7899e8f1157ab44a92c422bf32a22cae9473ceaa0844a0ab4ef72bd63c0"
+    }
+  },
+  "changes": [
+    {
+      "id": "W34-M2-S01",
+      "added_part_id": "S01-NORTH-VISIBLE-END-EXTENT",
+      "old_native_path_preserved": true,
+      "old_geometry_preserved": true
+    },
+    {
+      "id": "W34-M2-S02",
+      "added_part_id": "S02-NORTH-VISIBLE-END-EXTENT",
+      "old_native_path_preserved": true,
+      "old_geometry_preserved": true
+    },
+    {
+      "id": "W34-M2-S03",
+      "added_part_id": "S03-NORTH-VISIBLE-END-EXTENT",
+      "old_native_path_preserved": true,
+      "old_geometry_preserved": true
+    },
+    {
+      "id": "W34-M2-S04",
+      "added_part_id": "S04-SOUTH-VISIBLE-END-EXTENT",
+      "old_native_path_preserved": true,
+      "old_geometry_preserved": true
+    }
+  ]
+}

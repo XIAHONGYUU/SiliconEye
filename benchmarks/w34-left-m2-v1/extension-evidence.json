@@ -1,0 +1,33 @@
+{
+  "actor": "AI",
+  "reason": "Add one distinct source-visible fine M2 left of prior x280 inventory scope. All53 existing metals,34 interfaces and188 cuts exact; V2 identity remains a separate source candidate.",
+  "parent": {
+    "path": "docs/assets/w34-terminal-extension-v1/work/manifest.json",
+    "sha256": "bfdb08853f4f2bbb234914d06823cde28417865af1630b69d8efe661f253317b"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "W34-M2-L01"
+  ],
+  "sources": {
+    "native_inventory": {
+      "path": "benchmarks/w34-left-m2-v1/source-inventory.json",
+      "sha256": "578ba2e25370a788b1ca54c2fcbbec7bb99f373c78d7fc87e41800d48617b9ee"
+    },
+    "supplement": {
+      "path": "benchmarks/w34-left-m2-v1/inventory-supplement.json",
+      "sha256": "3d5c9c56f8c482b174370e4b65259bab1f43b6e2111c5ab5b0e3afaf72441197"
+    },
+    "accepted_parent": {
+      "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+      "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+    },
+    "four_rejected_non_via_targets": {
+      "path": "benchmarks/w34-terminal-v1-reviewed-v2/identity-closeout.json",
+      "sha256": "1cbc0e78a2c848c607eff0680433faca8aa79ca777bfc08b96ac538661f51ae6"
+    }
+  }
+}

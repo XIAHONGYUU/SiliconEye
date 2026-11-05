@@ -1,0 +1,61 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add one distinct source-visible fine M2 left of prior x280 inventory scope. All53 existing metals,34 interfaces and188 cuts exact; V2 identity remains a separate source candidate.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m2": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_bounds": [
+          180,
+          1680,
+          280,
+          2410
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "W34-M2-L01-SOURCE",
+      "source_frame": "m2",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          220,
+          1750
+        ],
+        [
+          248,
+          2365
+        ],
+        [
+          222,
+          2366
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_upper_tip_interface_unknown"
+        },
+        {
+          "state": "visible_left_return_tip_interface_unknown"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "W34-M2-L01-SOURCE",
+      "metal_id": "W34-M2-L01"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "same_design_coordinates_before_after_with_existing_renderer",
+  "before_model": {
+    "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+    "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+  },
+  "after_model": {
+    "path": "docs/assets/w34-joint-geometry-v1/S3-joint-work/model.json",
+    "sha256": "8f2fe68e8e237a04d0a17b62ce5a6c11cecfa1af5bcc7a2045ad5610e8344b83"
+  },
+  "source_to_design_transform": null,
+  "views": {
+    "before-heads.svg": {
+      "path": "docs/assets/w34-joint-geometry-v1/before-heads.svg",
+      "sha256": "cd09fc388a524912afd57c79478282cc86e61f56187ec5a00625ee245f00606a"
+    },
+    "before-joint.svg": {
+      "path": "docs/assets/w34-joint-geometry-v1/before-joint.svg",
+      "sha256": "118f06be140a2cc7ea7e340c69e2365b5b7c91b664d608ab76f18ba0af34d783"
+    },
+    "after-M3.svg": {
+      "path": "docs/assets/w34-joint-geometry-v1/after-M3.svg",
+      "sha256": "8745540f8abea38ebaf72218ac8a0bf26c30d288c036f75849bba9df49912c8e"
+    },
+    "after-heads.svg": {
+      "path": "docs/assets/w34-joint-geometry-v1/after-heads.svg",
+      "sha256": "0364d9a6d39c33b031d08a6778cba39fdc034050867eeb81025cf48d132446b0"
+    },
+    "after-joint.svg": {
+      "path": "docs/assets/w34-joint-geometry-v1/after-joint.svg",
+      "sha256": "1c4eabfb1405e18b5945a1855adfec48dfa737fb4a1027c4974c4f81d279b35d"
+    },
+    "before-M3.svg": {
+      "path": "docs/assets/w34-joint-geometry-v1/before-M3.svg",
+      "sha256": "dc0ed0624fc284cda38184dd22cf11a5feb4b878c9bfe0d5065c67b496157c3b"
+    }
+  },
+  "only_design_geometry_overlaid": false,
+  "not_a_photo_projection": true
+}

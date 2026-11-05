@@ -117,4 +117,27 @@ V1与V2可在XY投影重叠，间距门只比较同一孔层。分别检查各�
 
 本批原生帧未声明镜像，带符号转折一致性作为当前约定；未知来源若有镜像应先在输入标准化阶段核清，不能直接反转设计绕过。检查只消费声明路径，不做像素检测。
 
+## 固定确认单的受限 V2 接续
+
+`reviews`可引用`kind=review_sheet_interface_adapter,actor=AI`的机器绑定记录，
+由`conductive_sheet_review`读取已经归档的身份确认单和承载确认单。
+适配记录不是人审记录，不补写人类statement；结果的authority指向实际承载导出JSON。
+
+- 两包必须通过固定review校验；逐项accepted、对应必查为true、非context，
+  且导出的build、包manifest、页面、规范化spec和资源哈希保持。
+- `identity`和`carrier`各绑定manifest、decision、item_id、check_id、
+  spec中的source_key、观察pointer及显示事实字段映射。原生框、M2 ID、
+  M3来源路径和来源行号必须对应实际显示的事实，不能只靠摘要文本匹配。
+- 当前仅支持V2及现有来源观察契约：身份中的candidate_interface_id、
+  source_frame/native_bounds/lower_metal_id须与接口一致；
+  M3承载按旧模型原生锚点或新来源路径绑定，照片须属于当前快照。
+- 不确定、非适用、未答、上下文、换版本、换孔框/承载或丢失事实绑定均拒绝。
+  不允许适配器提供人工孔数；新阵列仍按AI观察检查，物理数目保持null。
+- 仅接续局部来源连接，不批准局部几何、配准、工艺DRC、全网或共同GDS。
+  几何修订仍通过原有显式修订事务和独立几何确认单。
+
+实际样例：`benchmarks/w34-joint-geometry-v1/S01-sheet-adapter.json`；
+拒绝路径和接续回归：`tests/test_conductive_sheet_review.py`。
+旧人工记录、旧适配器及其来源绑定保持原契约。
+
 readiness分别输出review_package、canonical_geometry_adoption、complete_network_export、unrestricted_skill_release。当前可交复核包，后三项始终关闭；所有旧几何、审批记录和冻结页保持。新复查的[中样输入](../../benchmarks/conductive-quality-review-v1/medium-request-v1.json)已纠正R-M2-3返回方向；旧中样现应被新门拒绝，不能再拿旧PASS替代新复查。原trial固定包仍是当时事实，当前验证见[质量复查报告](../reviews/2026-10-24-conductive-quality-review.md)。

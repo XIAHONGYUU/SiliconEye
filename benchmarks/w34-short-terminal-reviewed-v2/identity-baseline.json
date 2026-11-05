@@ -1,0 +1,147 @@
+{
+  "kind": "scoped_via_identity_baseline_without_carrier",
+  "date": "2026-11-05",
+  "status": "FOUR_V2_IDENTITIES_CONFIRMED_CARRIERS_PENDING",
+  "review_manifest": {
+    "path": "docs/assets/w34-short-terminal-v1/review/manifest.json",
+    "sha256": "b9a2493bcf043fdf63a9b025eb6bb557a936d58ab551d9c84da7bf7169b8ed1d"
+  },
+  "human_review": {
+    "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+    "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+  },
+  "review_record": {
+    "path": "docs/assets/w34-short-terminal-v1/review/review-record.md",
+    "sha256": "5feb2364f4572410dac89dd50eba76fb52a495f9b560b888d2f279006b5fdee3"
+  },
+  "submitted_observations": {
+    "path": "benchmarks/w34-short-terminal-v1/observations.json",
+    "sha256": "924dbfabaccff70937a4ff154e68dd163de76d6c071ae41c16dd6cc570c40e41"
+  },
+  "accepted_M2_geometry_baseline": {
+    "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+    "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+  },
+  "rows": [
+    {
+      "id": "S01",
+      "candidate_interface_id": "W34-S01-V2-CANDIDATE",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        292,
+        2370,
+        343,
+        2398
+      ],
+      "lower_metal_id": "W34-M2-S01",
+      "identity_confirmed": true,
+      "identity_status": "HUMAN_CONFIRMED_SOURCE_IDENTITY_ONLY",
+      "upper_metal_id": null,
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "human_decision_item": "S01"
+    },
+    {
+      "id": "S02",
+      "candidate_interface_id": "W34-S02-V2-CANDIDATE",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        410,
+        2332,
+        462,
+        2360
+      ],
+      "lower_metal_id": "W34-M2-S02",
+      "identity_confirmed": true,
+      "identity_status": "HUMAN_CONFIRMED_SOURCE_IDENTITY_ONLY",
+      "upper_metal_id": null,
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "human_decision_item": "S02"
+    },
+    {
+      "id": "S03",
+      "candidate_interface_id": "W34-S03-V2-CANDIDATE",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        458,
+        2273,
+        514,
+        2298
+      ],
+      "lower_metal_id": "W34-M2-S03",
+      "identity_confirmed": true,
+      "identity_status": "HUMAN_CONFIRMED_SOURCE_IDENTITY_ONLY",
+      "upper_metal_id": null,
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "human_decision_item": "S03"
+    },
+    {
+      "id": "S04",
+      "candidate_interface_id": "W34-S04-V2-CANDIDATE",
+      "layer": "V2",
+      "layer_pair": [
+        "M2",
+        "M3"
+      ],
+      "source_frame": "m2",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "native_bounds": [
+        763,
+        2227,
+        814,
+        2255
+      ],
+      "lower_metal_id": "W34-M2-S04",
+      "identity_confirmed": true,
+      "identity_status": "HUMAN_CONFIRMED_SOURCE_IDENTITY_ONLY",
+      "upper_metal_id": null,
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "geometry_modeled": false,
+      "human_decision_item": "S04"
+    }
+  ],
+  "inherited_modelled_reviewed_connections": 30,
+  "new_modelled_connections": 0,
+  "new_candidate_cuts": 0,
+  "continuation_rule": "S01-S04 source V2 presence/layer identity is confirmed. Do not ask presence again. The upper M3 carrier, counts, via geometry, exact registration and complete group enclosure remain unapproved. Do not feed these identity-only records to a connection-confirming adapter."
+}

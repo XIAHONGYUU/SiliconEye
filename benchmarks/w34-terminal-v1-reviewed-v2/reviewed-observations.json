@@ -1,0 +1,248 @@
+{
+  "kind": "human_review_derived_scoped_observations",
+  "actor": "AI",
+  "derivation": "Copy frozen source observations; derive local negative identity only from explicit human note 非孔, not generic needs_revision.",
+  "source_observations": {
+    "path": "benchmarks/w34-terminal-v1-inspection-v1/observations.json",
+    "sha256": "6c23cb4c89ab89afcf5db66aa2548727c13d7541c60ed3d0f525e34257369f1c"
+  },
+  "actual_review": {
+    "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+    "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-terminal-v1-inspection-v1/review/manifest.json",
+    "sha256": "e8ec635763c30450235ce69fef2f9c4609bad12865af037087d7e86abe6d2dfa"
+  },
+  "observations": [
+    {
+      "id": "W34-END-N1",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        307,
+        1728,
+        347,
+        1790
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          299,
+          1735,
+          323,
+          1770
+        ]
+      },
+      "side": "north",
+      "identity_confirmed": false,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "Candidate fine M1 end near the S01 upper-tip neighborhood; V1 identity unresolved.",
+      "context_m2_id": "W34-M2-S01",
+      "status": "REJECTED_SEARCH_TARGET_NON_VIA",
+      "rejected_by_actual_review": true,
+      "human_item_id": "N1",
+      "human_verdict": "needs_revision",
+      "human_note": "非孔",
+      "actual_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "scope_limit": "Only the specific displayed M1 search candidate is non-via. Does not establish that the M2 endpoint or surrounding metal has no V1 elsewhere, a global disconnection, or a physical electrical end."
+    },
+    {
+      "id": "W34-END-N2",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        398,
+        1728,
+        438,
+        1790
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          382,
+          1735,
+          407,
+          1770
+        ]
+      },
+      "side": "north",
+      "identity_confirmed": false,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "Candidate nearby M1 end near S02; adjacent parallel M1 is an alternative, source correspondence is not qualified.",
+      "context_m2_id": "W34-M2-S02",
+      "status": "REJECTED_SEARCH_TARGET_NON_VIA",
+      "rejected_by_actual_review": true,
+      "human_item_id": "N2",
+      "human_verdict": "needs_revision",
+      "human_note": "非孔",
+      "actual_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "scope_limit": "Only the specific displayed M1 search candidate is non-via. Does not establish that the M2 endpoint or surrounding metal has no V1 elsewhere, a global disconnection, or a physical electrical end."
+    },
+    {
+      "id": "W34-END-N3",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        486,
+        1685,
+        520,
+        1745
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          468,
+          1685,
+          492,
+          1720
+        ]
+      },
+      "side": "north",
+      "identity_confirmed": false,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "Candidate shorter M1 end near S03; neighboring longer fine M1 is an explicit alternative.",
+      "context_m2_id": "W34-M2-S03",
+      "status": "REJECTED_SEARCH_TARGET_NON_VIA",
+      "rejected_by_actual_review": true,
+      "human_item_id": "N3",
+      "human_verdict": "needs_revision",
+      "human_note": "非孔",
+      "actual_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "scope_limit": "Only the specific displayed M1 search candidate is non-via. Does not establish that the M2 endpoint or surrounding metal has no V1 elsewhere, a global disconnection, or a physical electrical end."
+    },
+    {
+      "id": "W34-END-S1",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        803,
+        3345,
+        853,
+        3445
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          800,
+          3375,
+          829,
+          3420
+        ]
+      },
+      "side": "south",
+      "identity_confirmed": false,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "M1 longitudinal fine-line search neighborhood near the S04 lower tip; no clear hole or exact correspondence can be established by AI.",
+      "context_m2_id": "W34-M2-S04",
+      "status": "REJECTED_SEARCH_TARGET_NON_VIA",
+      "rejected_by_actual_review": true,
+      "human_item_id": "S1",
+      "human_verdict": "needs_revision",
+      "human_note": "非孔",
+      "actual_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "scope_limit": "Only the specific displayed M1 search candidate is non-via. Does not establish that the M2 endpoint or surrounding metal has no V1 elsewhere, a global disconnection, or a physical electrical end."
+    }
+  ],
+  "rejected_non_via_count": 4,
+  "confirmed_V1_count": 0,
+  "pending_in_this_four_target_batch": 0,
+  "new_model_interfaces": 0,
+  "model_changed": false
+}

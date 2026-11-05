@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_baseline",
+  "date": "2026-11-05",
+  "status": "CLOSED_SCOPED_TERMINAL_EXTENT_GEOMETRY",
+  "geometry_package": {
+    "path": "docs/assets/w34-terminal-extension-v1/work/manifest.json",
+    "sha256": "bfdb08853f4f2bbb234914d06823cde28417865af1630b69d8efe661f253317b"
+  },
+  "geometry_model": {
+    "path": "docs/assets/w34-terminal-extension-v1/work/model.json",
+    "sha256": "3d260ca212b2a73d54799a931f2adf2b795c6b1e5e5ab598803f2e2617b1749d"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/w34-terminal-extension-v1/sample.json",
+    "sha256": "1c0863f6a5ae9d03e6d129c174e49f8e9a42f84bdfa637d6fe5ac5051f966ff2"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-terminal-extension-v1/review/manifest.json",
+    "sha256": "41bf6a4b8633e716712c8907da853ff9c51bbdd340f7880bdb6ac116cbe33dd6"
+  },
+  "human_review": {
+    "path": "docs/assets/w34-terminal-extension-v1/review/review-decision.json",
+    "sha256": "ca5e344bfdfc56add65eab17e287c3edd10383ca2e80ecb7c194b1b405354806"
+  },
+  "review_record": {
+    "path": "docs/assets/w34-terminal-extension-v1/review/review-record.md",
+    "sha256": "7cf87f62772887cf87e5d3b42fabe0c6acb7844ac741c07e641cf26c62bb5b41"
+  },
+  "source_connections": {
+    "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+    "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+  },
+  "inherited_M2_baseline": {
+    "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+    "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+  },
+  "next_request": {
+    "path": "benchmarks/w34-terminal-extension-v1/next-request.json",
+    "sha256": "7e5d54a58aabb13dbd282b62bf513455d679e158e05170259a25edbd11708c07"
+  },
+  "accepted_group_ids": [
+    "G1",
+    "G2"
+  ],
+  "accepted_overall_question_ids": [
+    "Q1"
+  ],
+  "accepted_scope": {
+    "G1": "S01/S02/S03 northward source-visible extents, relative terminal heights, lengths and gaps.",
+    "G2": "S04 southward source-visible extent and neighbor gap.",
+    "Q1": "Four added extents reasonable without obvious wrong bridges or truncations; not source endpoint VIA identities."
+  },
+  "working_metal_count": 53,
+  "reviewed_local_connections": 34,
+  "design_candidate_cut_count": 188,
+  "physical_cut_count": null,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "remaining_inventory_ids": [],
+  "continuation_rule": "Four source-visible terminal extents are now accepted qualitative working geometry. Do not re-ask lengths or old34 connections. Inspect M1-origin evidence for new V1 identity before assigning carriers or adding interfaces. All188 candidate cuts retained.",
+  "inherited_joint_baseline": {
+    "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+    "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+  },
+  "coverage": {
+    "path": "benchmarks/w34-m3-reviewed-v2/scoped-coverage.json",
+    "sha256": "b712d69d867c08c34cfe1895da917dc6bb162cf6004669ca066cd747a986f0f0"
+  },
+  "inherited_M3_baseline": {
+    "path": "benchmarks/w34-m3-reviewed-v2/working-baseline.json",
+    "sha256": "1388d806cad0c33252c10ff2c4ef94d38b09a558a682c63e6313ee445fc3db10"
+  },
+  "new_endpoint_interfaces": "UNKNOWN",
+  "coverage_scope_note": "Inherited coverage references fixed M3 window only, not the expanded four-stem envelope."
+}

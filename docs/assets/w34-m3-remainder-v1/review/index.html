@@ -1,0 +1,1474 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SiliconEye 验收确认单</title>
+<style>
+:root{
+  --bg:#0a131f;--bg2:#0e1a2a;--panel:#122238;--panel2:#182d48;--line:#2b4767;
+  --text:#edf4fd;--muted:#9cb2ca;--accent:#7fd3ff;--accent2:#b9e8ff;
+  --green:#63d69a;--amber:#ffc166;--blue:#86bfff;--gray:#91a6bc;--red:#ff8585;
+  --shadow:0 12px 34px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:linear-gradient(180deg,#08111c 0,#0a131f 320px,#0a131f 100%);
+  color:var(--text);font:17px/1.6 "Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  padding-bottom:104px;
+}
+a{color:var(--accent)}
+button{font:inherit}
+[hidden]{display:none!important}
+code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}
+.masthead{
+  position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;
+  gap:24px;padding:14px 30px;background:rgba(8,17,28,.94);border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{
+  display:grid;place-items:center;width:46px;height:46px;border-radius:14px;
+  background:linear-gradient(145deg,#1f5d85,#12334f);border:1px solid #3d7ba3;
+  color:var(--accent2);font-weight:800;letter-spacing:.5px;
+}
+.brand strong{display:block;font-size:19px;letter-spacing:.4px}
+.brand small{display:block;color:var(--muted);font-size:13px}
+.build{text-align:right;color:var(--muted);font-size:13px}
+.build strong{display:block;color:var(--text);font-size:13px;font-family:Consolas,monospace}
+.titlebar{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:34px;align-items:end;
+  padding:34px 30px 22px;max-width:1860px;margin:0 auto;
+}
+.stage-pill{
+  display:inline-block;padding:5px 12px;border-radius:999px;background:#153a58;color:var(--accent2);
+  border:1px solid #2f6f96;font-size:13px;letter-spacing:.6px;font-weight:700;
+}
+.titlebar h1{margin:12px 0 8px;font-size:clamp(27px,3.2vw,44px);line-height:1.2;letter-spacing:.5px}
+.titlebar p{margin:0;color:var(--muted);max-width:1000px;font-size:16px}
+.meta{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+.meta div{min-width:120px}
+.meta span{display:block;color:var(--muted);font-size:12px;letter-spacing:.8px;text-transform:uppercase}
+.meta strong{display:block;font-size:15px;font-weight:600;margin-top:4px;overflow-wrap:anywhere}
+.tabs{
+  position:sticky;top:75px;z-index:55;display:flex;gap:8px;overflow:auto;padding:10px 30px;
+  background:rgba(10,19,31,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(10px);
+}
+.tab{
+  white-space:nowrap;padding:10px 18px;border-radius:10px;border:1px solid transparent;
+  background:transparent;color:var(--muted);cursor:pointer;font-weight:650;
+}
+.tab:hover{color:var(--text);background:#13253a}
+.tab.active{color:#06111c;background:var(--accent);border-color:var(--accent)}
+.tab .badge{
+  display:inline-block;min-width:20px;margin-left:6px;padding:1px 6px;border-radius:999px;
+  background:#254566;color:var(--text);font-size:12px;text-align:center;
+}
+.tab.active .badge{background:rgba(0,0,0,.2);color:#06111c}
+main{max-width:1860px;margin:0 auto;padding:26px 30px 60px}
+.panel{animation:fade .18s ease}
+@keyframes fade{from{opacity:.4;transform:translateY(3px)}to{opacity:1;transform:none}}
+.panel-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:10px 0 18px;flex-wrap:wrap}
+.panel-head h2{margin:0;font-size:23px;letter-spacing:.3px}
+.panel-head p{margin:0;color:var(--muted);font-size:14px}
+.grid{display:grid;gap:18px}
+.grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{
+  background:linear-gradient(180deg,var(--panel),#101f33);border:1px solid var(--line);
+  border-radius:16px;padding:22px 24px;box-shadow:var(--shadow);
+}
+.card.soft{background:#0e1b2c;box-shadow:none}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.mono{font-family:Consolas,monospace}
+.stat{padding:20px 22px}
+.stat .num{font-size:34px;font-weight:800;line-height:1.1;color:var(--accent2)}
+.stat .label{color:var(--muted);font-size:13px;margin-top:4px}
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.legend span{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
+.legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.legend .accepted{background:var(--green)}.legend .needs_revision{background:var(--amber)}
+.legend .uncertain{background:var(--blue)}.legend .not_applicable{background:var(--gray)}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.steps li:before{
+  content:counter(s);display:grid;place-items:center;width:32px;height:32px;border-radius:10px;
+  background:#153a58;color:var(--accent2);font-weight:800;border:1px solid #2f6f96;
+}
+.kv{width:100%;border-collapse:collapse}
+.kv th,.kv td{padding:8px 10px;border-bottom:1px solid #233c58;text-align:left;vertical-align:top}
+.kv th{color:var(--muted);font-weight:600;width:28%;white-space:nowrap}
+.notice{
+  border-left:4px solid var(--amber);background:#2a2313;color:#ffe8bd;
+  padding:14px 18px;border-radius:0 12px 12px 0;margin:18px 0;
+}
+.items-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:22px;align-items:start}
+.item-index{
+  position:sticky;top:142px;max-height:calc(100vh - 260px);overflow:auto;
+  background:#0d1a2a;border:1px solid var(--line);border-radius:14px;padding:12px;
+}
+.item-index h3{margin:4px 8px 10px;font-size:13px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.index-btn{
+  display:grid;grid-template-columns:12px minmax(0,1fr);gap:9px;align-items:center;width:100%;
+  padding:8px;border:0;border-radius:9px;background:transparent;color:var(--muted);
+  cursor:pointer;text-align:left;font-size:13px;
+}
+.index-btn:hover{background:#14283e;color:var(--text)}
+.index-btn .dot{width:9px;height:9px;border-radius:50%;background:#4b637b}
+.index-btn .txt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.index-btn.done .dot{background:var(--green)}
+.index-btn.revise .dot{background:var(--amber)}
+.index-btn.uncertain .dot{background:var(--blue)}
+.index-btn.na .dot{background:var(--gray)}
+.index-btn .st{font-size:11px;color:var(--muted);display:block;margin-top:1px}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px;padding:0 8px}
+.filters button{
+  padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:#0f2033;
+  color:var(--muted);cursor:pointer;font-size:12px;
+}
+.filters button.active{background:var(--accent);color:#06111c;border-color:var(--accent);font-weight:700}
+.item-card{margin-bottom:20px;border-left:5px solid #314b69;scroll-margin-top:150px}
+.item-card.accepted{border-left-color:var(--green)}
+.item-card.needs_revision{border-left-color:var(--amber)}
+.item-card.uncertain{border-left-color:var(--blue)}
+.item-card.not_applicable{border-left-color:var(--gray)}
+.item-card.flash{outline:2px solid var(--accent);outline-offset:2px}
+.card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.ident{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.item-id{font-family:Consolas,monospace;font-size:13px;color:var(--accent2);background:#102d45;padding:3px 8px;border-radius:7px;border:1px solid #28516e}
+.badge{font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.badge.req{border-color:#7a5b20;color:#ffd98e;background:#2b2414}
+.badge.optional{border-color:#3a4e63;color:#aec2d6}
+.status-badge{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:#1a2b40;color:var(--muted)}
+.status-badge.accepted{background:#123b2b;color:var(--green)}
+.status-badge.needs_revision{background:#3d2f12;color:var(--amber)}
+.status-badge.uncertain{background:#152d4a;color:var(--blue)}
+.status-badge.not_applicable{background:#26313d;color:var(--gray)}
+.card-title{font-size:22px;margin:2px 0 8px}
+.prompt{color:#d9e7f6;font-size:16px}
+.evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:16px 0 18px}
+.evidence{margin:0;background:#08131f;border:1px solid #243d57;border-radius:12px;overflow:hidden;position:relative}
+.evidence img{display:block;width:100%;max-height:520px;object-fit:contain;background:#06101a;cursor:zoom-in}
+.evidence figcaption{padding:10px 12px;font-size:12px;color:var(--muted);display:grid;gap:3px}
+.evidence figcaption strong{color:var(--text);font-size:13px}
+.evidence .role{display:inline-block;width:max-content;padding:1px 7px;border-radius:999px;background:#17324b;color:#bfe7ff;border:1px solid #2c5574;font-size:11px}
+.evidence .caption{color:#c4d4e4}
+.evidence .zoom{
+  position:absolute;right:10px;top:10px;z-index:2;padding:5px 10px;border-radius:8px;
+  background:rgba(7,17,28,.82);color:#dff2ff;border:1px solid #3c6685;cursor:zoom-in;font-size:12px;
+}
+.facts{width:100%;border-collapse:collapse;margin:8px 0 18px;font-size:14px}
+.facts th,.facts td{padding:8px 10px;border-bottom:1px solid #213a54;text-align:left;vertical-align:top}
+.facts th{width:24%;color:var(--muted);font-weight:600;white-space:nowrap}
+.field{margin:16px 0}
+.field-label{font-size:12px;letter-spacing:.8px;color:var(--muted);text-transform:uppercase;margin-bottom:7px}
+.verdicts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.verdicts input{position:absolute;opacity:0;width:0;height:0}
+.verdict{
+  display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 10px;border-radius:11px;
+  border:1px solid var(--line);background:#0e1e31;color:#d7e6f5;cursor:pointer;font-weight:650;
+  transition:transform .08s ease,border-color .12s ease,background .12s ease;
+}
+.verdict:hover{border-color:#4d7599}
+.verdict .dot{width:9px;height:9px;border-radius:50%;background:#4b637b}
+.verdict.accepted .dot{background:var(--green)}
+.verdict.needs_revision .dot{background:var(--amber)}
+.verdict.uncertain .dot{background:var(--blue)}
+.verdict.not_applicable .dot{background:var(--gray)}
+input:checked + .verdict.accepted{background:#123b2b;border-color:var(--green);box-shadow:0 0 0 1px var(--green) inset}
+input:checked + .verdict.needs_revision{background:#3d2f12;border-color:var(--amber);box-shadow:0 0 0 1px var(--amber) inset}
+input:checked + .verdict.uncertain{background:#152d4a;border-color:var(--blue);box-shadow:0 0 0 1px var(--blue) inset}
+input:checked + .verdict.not_applicable{background:#26313d;border-color:var(--gray);box-shadow:0 0 0 1px var(--gray) inset}
+input:focus-visible + .verdict{outline:2px solid var(--accent);outline-offset:2px}
+.checks{display:grid;gap:8px;margin:8px 0 4px}
+.check{display:flex;align-items:flex-start;gap:9px;padding:9px 11px;border-radius:9px;background:#0d1d2e;border:1px solid #1e3852;cursor:pointer;font-size:14px}
+.check input{margin-top:3px;accent-color:var(--accent);width:17px;height:17px}
+.check em{margin-left:auto;font-style:normal;font-size:11px;color:#ffd98e;border:1px solid #7a5b20;background:#2b2414;padding:1px 6px;border-radius:999px;white-space:nowrap}
+textarea,.input{
+  width:100%;background:#081522;border:1px solid #2a4866;border-radius:10px;color:var(--text);
+  padding:10px 12px;font:inherit;font-size:14px;resize:vertical;
+}
+textarea:focus,.input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.item-error,.question-error{color:var(--red);font-size:13px;min-height:0;margin-top:8px}
+.item-error:not(:empty),.question-error:not(:empty){padding:9px 11px;border:1px solid #6b2b2b;background:#2a1414;border-radius:8px}
+.question-card{margin-bottom:18px;border-left:5px solid #314b69}
+.question-card.accepted{border-left-color:var(--green)}
+.question-card.needs_revision{border-left-color:var(--amber)}
+.question-card.uncertain{border-left-color:var(--blue)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
+.chip{padding:3px 9px;border-radius:999px;border:1px solid #2c5574;background:#102d45;color:#bfe7ff;font-size:12px;cursor:pointer}
+.chip:hover{background:#19405f}
+.q-verdicts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.q-verdicts input{position:absolute;opacity:0;width:0;height:0}
+.q-verdicts input:checked + .verdict.accepted{background:#123b2b;border-color:var(--green)}
+.q-verdicts input:checked + .verdict.needs_revision{background:#3d2f12;border-color:var(--amber)}
+.q-verdicts input:checked + .verdict.uncertain{background:#152d4a;border-color:var(--blue)}
+.boundary-list{margin:0;padding-left:22px;display:grid;gap:8px}
+.boundary-list li{color:#d6e6f6}
+.ack{
+  display:flex;align-items:flex-start;gap:12px;margin:20px 0;padding:16px 18px;border-radius:12px;
+  border:1px solid #6b5626;background:#2a2313;color:#ffe9c2;font-weight:650;cursor:pointer;
+}
+.ack input{width:20px;height:20px;margin-top:2px;accent-color:var(--amber)}
+.export-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btn{
+  padding:11px 18px;border-radius:10px;border:1px solid var(--line);background:#14283e;
+  color:var(--text);cursor:pointer;font-weight:700;
+}
+.btn:hover{background:#1a3450}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#06111c}
+.btn.primary:hover{background:var(--accent2)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:transparent}
+pre.json{
+  margin:12px 0 0;padding:15px;border-radius:12px;background:#06101a;border:1px solid #213a54;
+  max-height:460px;overflow:auto;font-size:12px;line-height:1.5;white-space:pre-wrap;word-break:break-word;
+}
+.command{
+  display:block;padding:12px 14px;border-radius:10px;background:#06101a;border:1px solid #213a54;
+  color:#bfe7ff;overflow:auto;white-space:pre;font-size:13px;margin:8px 0 0;
+}
+.actionbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;align-items:center;gap:18px;
+  padding:12px 30px;background:rgba(7,16,27,.96);border-top:1px solid var(--line);backdrop-filter:blur(10px);
+}
+.progress-wrap{flex:1;min-width:160px}
+.progress-track{height:9px;border-radius:999px;background:#1a2c41;overflow:hidden;border:1px solid #223b55}
+.progress-bar{height:100%;width:0;background:linear-gradient(90deg,#3ba5d8,#7fd3ff);transition:width .2s ease}
+.progress-text{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted);margin-bottom:5px}
+.actionbar .btn{padding:10px 16px}
+.toast{
+  position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);z-index:100;
+  max-width:min(720px,90vw);padding:12px 18px;border-radius:11px;background:#17324b;
+  border:1px solid #3c6685;color:#e9f7ff;box-shadow:var(--shadow);opacity:0;pointer-events:none;
+  transition:opacity .16s ease,transform .16s ease;font-size:14px;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast.error{background:#3a1717;border-color:#7a3232;color:#ffdede}
+dialog#lightbox{
+  width:min(96vw,1800px);height:min(94vh,1100px);padding:0;border:1px solid #3c6685;border-radius:14px;
+  background:#06101a;color:var(--text);box-shadow:0 30px 80px rgba(0,0,0,.6);
+}
+dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
+.lightbox-head{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid #213a54;position:sticky;top:0;background:#06101a;z-index:2}
+.lightbox-head .cap{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:13px}
+.lightbox-body{height:calc(100% - 58px);overflow:auto;display:flex;align-items:flex-start;justify-content:center;padding:12px}
+.lightbox-body img{display:block;max-width:none;background:#000}
+.noscript{padding:30px;background:#3a1717;color:#ffdede}
+@media(max-width:1100px){
+  .titlebar{grid-template-columns:1fr}.meta{justify-content:flex-start}
+  .items-layout{grid-template-columns:1fr}.item-index{position:static;max-height:none}
+  .export-grid{grid-template-columns:1fr}
+  .grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .masthead{padding:10px 16px}.build{display:none}
+  .titlebar{padding:22px 16px 16px}.tabs{top:67px;padding:8px 16px}
+  main{padding:16px 16px 50px}.actionbar{padding:10px 16px;gap:10px}
+  .verdicts{grid-template-columns:repeat(2,1fr)}.q-verdicts{grid-template-columns:1fr}
+  .card{padding:18px 16px}.item-id{font-size:11px}
+}
+@media print{
+  body{background:#fff;color:#111;padding:0}
+  .masthead,.tabs,.actionbar,.item-index,.filters,.toast{display:none!important}
+  .card{box-shadow:none;break-inside:avoid}
+  .item-card{border:1px solid #999}
+  .panel{display:block!important}
+  textarea{min-height:40px}
+}
+/* Decision workspace: large evidence, optional trace metadata, read-only context. */
+.masthead{position:static}
+.tabs{top:0}
+.item-index{top:86px;max-height:calc(100vh - 190px)}
+.item-card{scroll-margin-top:90px}
+.titlebar{padding:18px 24px 14px;gap:20px}
+.titlebar h1{font-size:clamp(23px,2.6vw,32px);margin:8px 0}
+.titlebar p{font-size:14px}
+.items-layout{grid-template-columns:235px minmax(0,1fr)}
+.review-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.review-tools select{background:#10253b;color:var(--text);border:1px solid var(--line);padding:7px;border-radius:8px;font:inherit}
+.search{margin:0 6px 12px;width:calc(100% - 12px)}
+.change-note{border-left:3px solid var(--accent);padding:8px 12px;background:#102b40;margin:10px 0;font-size:15px}
+.item-card.context{border-left-color:var(--gray)}
+.item-card.context summary{cursor:pointer;font-weight:650}
+.evidence-tabs{display:flex;flex-wrap:wrap;gap:7px;grid-column:1/-1}
+.evidence-tabs button{font:inherit;font-size:14px;color:var(--text);background:#10273d;border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer}
+.evidence-tabs button[aria-pressed="true"]{color:#06111c;background:var(--accent)}
+.compare-choice{grid-column:1/-1;font-size:13px;color:var(--muted)}
+.compare-choice select{max-width:100%;background:#10273d;color:var(--text);padding:6px;border:1px solid var(--line);font:inherit}
+.evidence-grid.single .compare-choice{display:none}
+.evidence-grid.single{display:block}
+.evidence-grid.single .evidence-tabs{display:flex;margin-bottom:10px}
+.evidence-grid.single .evidence img{max-height:65vh;min-height:160px}
+.evidence-error{padding:16px;color:var(--red)}
+.trace{font-size:13px;color:var(--muted);margin:12px 0}
+.trace summary{cursor:pointer;color:var(--accent)}
+.quick-accept{margin:14px 0 8px}
+.draft-status{font-size:12px;color:var(--muted)}
+.draft-status.error{color:var(--amber)}
+.lightbox-head select{max-width:32vw;padding:8px;background:#10273d;color:var(--text);border:1px solid var(--line);font:inherit}
+.lightbox-body{cursor:grab;overscroll-behavior:contain}
+.lightbox-body.dragging{cursor:grabbing}
+.lightbox-body img{user-select:none;max-width:none}
+@media(max-width:850px){.items-layout{grid-template-columns:1fr}.item-index{position:static;max-height:220px}.titlebar{grid-template-columns:1fr}.meta{justify-content:flex-start}.lightbox-head select{max-width:65vw}.evidence-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<noscript><div class="noscript">本确认单需要启用 JavaScript 才能记录选择并导出 JSON。请用浏览器打开并允许 JavaScript。</div></noscript>
+<header class="masthead">
+  <div class="brand">
+    <div class="logo">SE</div>
+    <div><strong>SiliconEye 验收确认单</strong><small>固定格式 · 人审判定 · 可归档</small></div>
+  </div>
+  <div class="build">送审版本<strong id="build-id">-</strong><span class="draft-status" id="draft-status" role="status">尚无本机草稿</span></div>
+</header>
+
+<div class="titlebar">
+  <div>
+    <span class="stage-pill" id="stage-pill">-</span>
+    <h1 id="page-title">-</h1>
+    <p id="page-summary"></p>
+  </div>
+  <div class="meta">
+    <div><span>包编号</span><strong id="meta-package">-</strong></div>
+    <div><span>原生范围</span><strong id="meta-scope">-</strong></div>
+    <div><span>日期</span><strong id="meta-date">-</strong></div>
+  </div>
+</div>
+
+<nav class="tabs" aria-label="确认单分区">
+  <button class="tab active" type="button" data-tab="overview">总览</button>
+  <button class="tab" type="button" data-tab="items">逐项确认 <span class="badge" id="tab-items-badge">0</span></button>
+  <button class="tab" type="button" data-tab="questions">整体问题 <span class="badge" id="tab-questions-badge">0</span></button>
+  <button class="tab" type="button" data-tab="boundaries">边界与未批准</button>
+  <button class="tab" type="button" data-tab="export">导出</button>
+</nav>
+
+<main>
+  <section class="panel" id="panel-overview">
+    <div class="panel-head">
+      <div><h2>总览</h2><p>先看范围与证据，再逐项给出结论。所有必答项完成后才能导出正式 JSON。</p></div>
+    </div>
+    <div class="grid cols-3">
+      <div class="card stat"><div class="num" id="stat-items">0</div><div class="label">确认项（必答 <span id="stat-required">0</span>）</div></div>
+      <div class="card stat"><div class="num" id="stat-questions">0</div><div class="label">整体问题</div></div>
+      <div class="card stat"><div class="num" id="stat-evidence">0</div><div class="label">证据图</div></div>
+    </div>
+    <div class="grid cols-2" style="margin-top:18px">
+      <div class="card">
+        <h3>怎么用</h3>
+        <ol class="steps">
+          <li><div><strong>逐项看证据</strong><br><span class="muted">每项都有原图/标记图/规则图和事实表；点击图片可放大。</span></div></li>
+          <li><div><strong>给结论、勾必查</strong><br><span class="muted">通过、需修改、不确定、不适用四选一；带“必查”的检查项必须勾选才能判通过。</span></div></li>
+          <li><div><strong>导出 JSON</strong><br><span class="muted">全部必答项完成后下载 review-decision.json，再交给校验命令归档。</span></div></li>
+        </ol>
+        <div class="legend">
+          <span><i class="accepted"></i>通过</span><span><i class="needs_revision"></i>需修改</span>
+          <span><i class="uncertain"></i>不确定</span><span><i class="not_applicable"></i>不适用</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>范围</h3>
+        <table class="kv">
+          <tr><th>来源帧</th><td id="scope-frame">-</td></tr>
+          <tr><th>原生窗口</th><td id="scope-bounds">-</td></tr>
+          <tr><th>说明</th><td id="scope-note">-</td></tr>
+          <tr><th>包编号</th><td id="scope-package">-</td></tr>
+        </table>
+        <div class="notice">本页只记录对送审内容的判断，不自动批准精确尺寸、物理孔数、PDK/DRC、完整网表或共同几何采用。</div>
+      </div>
+    </div>
+    <div class="card soft" style="margin-top:18px">
+      <h3>来源绑定</h3>
+      <p class="muted small">这些文件在生成送审包时已记录哈希；页面和资源被改动时，校验命令会拒绝。</p>
+      <table class="kv" id="sources-table"></table>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-items" hidden>
+    <div class="panel-head">
+      <div><h2>逐项确认</h2><p>按清单从上到下判断；侧栏可快速跳转。只判本范围，不把出界当物理终点。</p></div>
+    </div>
+    <div class="review-tools">
+      <label>证据布局 <select id="evidence-layout"><option value="single">大图切换</option><option value="compare">并排对照</option></select></label>
+      <button class="btn" type="button" data-action="next-pending">下一个待完成项</button>
+      <button class="btn ghost" type="button" data-action="save-draft">保存草稿文件</button>
+      <button class="btn ghost" type="button" data-action="import-draft">导入同版草稿</button>
+      <input type="file" accept=".json,application/json" id="draft-file" hidden>
+    </div>
+    <div class="items-layout">
+      <aside class="item-index" aria-label="确认项索引">
+        <h3>本轮待判与参考</h3><input class="input search" id="item-search" type="search" aria-label="搜索编号或标题" placeholder="搜索编号或标题">
+        <div class="filters" id="filters">
+          <button type="button" data-filter="all" class="active">全部</button>
+          <button type="button" data-filter="todo">待完成</button><button type="button" data-filter="context">仅参考</button>
+          <button type="button" data-filter="accepted">通过</button>
+          <button type="button" data-filter="needs_revision">需修改</button>
+          <button type="button" data-filter="uncertain">不确定</button>
+          <button type="button" data-filter="not_applicable">不适用</button>
+        </div>
+        <div id="index-list"></div>
+      </aside>
+      <div id="item-list"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-questions" hidden>
+    <div class="panel-head">
+      <div><h2>整体问题</h2><p>这些问题把逐项结论汇总成整组判断；不确定时选“不确定”，不要用通过代替未知。</p></div>
+    </div>
+    <button class="btn" type="button" data-action="summarize-questions">按已填逐项结论填写整体结论</button><p class="small muted">仅汇总本轮已有回答，可继续修改；不会替未答项作判断，也不会覆盖已有整体结论。</p><div id="question-list"></div>
+  </section>
+
+  <section class="panel" id="panel-boundaries" hidden>
+    <div class="panel-head">
+      <div><h2>边界与未批准</h2><p>确认单只覆盖声明范围。以下内容在本次判断中保持未知或未批准。</p></div>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>本确认单的限制</h3>
+        <ul class="boundary-list" id="limits-list"></ul>
+      </div>
+      <div class="card">
+        <h3>明确不批准</h3>
+        <ul class="boundary-list" id="not-approved-list"></ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <label class="ack"><input type="checkbox" id="limits-ack"><span>我已阅读并理解上述范围与未批准边界；本确认单不代替精密尺寸、物理孔数、PDK/DRC、完整网表或共同几何采用的验收。</span></label>
+      <p class="muted small">未勾选此项不能导出正式确认 JSON。</p>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-export" hidden>
+    <div class="panel-head">
+      <div><h2>导出确认 JSON</h2><p>导出的文件是固定格式的 review-decision.json，绑定本次送审版本哈希。</p></div>
+    </div>
+    <div class="export-grid">
+      <div>
+        <div class="card">
+          <h3>总体意见（可选）</h3>
+          <p class="muted small">可以写用户原话或整组补充；逐项备注仍以各项为准。</p>
+          <textarea id="statement" rows="4" placeholder="例如：本组几何合理，无明显漏段；W3/U 与 W4/U 承载正确。"></textarea>
+          <div class="actions">
+            <button class="btn primary" type="button" data-action="export" id="export-btn">生成并下载 review-decision.json</button>
+            <button class="btn" type="button" data-action="copy" id="copy-btn" disabled>复制 JSON</button>
+            <button class="btn ghost" type="button" data-action="clear">清空本页答案</button>
+          </div>
+          <p class="muted small" style="margin-top:12px" id="export-state"></p>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <h3>导出后交给 Agent 接续</h3>
+          <p>回到对话告诉 Agent“已导出”。本机 Agent 读取对应版本的下载文件，校验后归档并回报结果；如果无法找到文件，再提供 JSON。</p>
+          <details class="trace"><summary>开发者归档命令</summary>
+          <p class="muted small">由 Agent 执行：</p>
+          <code class="command">python -m silicon_eye.review_sheet check --package &lt;送审包目录&gt; --decision &lt;review-decision.json&gt; --archive --root .</code>
+          <p class="muted small" style="margin-top:10px">校验通过后会写入同类固定文件 review-decision.json 和 review-record.md；不会覆盖不同的既有记录。</p>
+          </details>
+        </div>
+      </div>
+      <div class="card">
+        <h3>JSON 预览</h3>
+        <p class="muted small" id="preview-state">完成全部必答项后显示。</p>
+        <pre class="json" id="json-preview"></pre><button class="btn" type="button" data-action="copy-summary">复制简明结论</button><pre class="json" id="summary-preview"></pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="actionbar">
+  <div class="progress-wrap">
+    <div class="progress-text"><span id="progress-label">必答 0/0</span><span id="progress-percent">0%</span></div>
+    <div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+  </div>
+  <button class="btn primary" type="button" data-action="export">导出确认 JSON</button>
+</footer>
+
+<dialog id="lightbox" aria-label="证据图放大">
+  <div class="lightbox-head">
+    <span class="cap" id="lightbox-cap"></span><select id="lightbox-evidence" aria-label="切换证据图"></select><span id="lightbox-scale" class="small"></span>
+    <button class="btn ghost" type="button" data-action="zoom-out">−</button>
+    <button class="btn ghost" type="button" data-action="zoom-fit">适应</button>
+    <button class="btn ghost" type="button" data-action="zoom-original">原大</button>
+    <button class="btn ghost" type="button" data-action="zoom-in">+</button>
+    <a class="btn ghost" id="lightbox-open" href="#" target="_blank" rel="noopener">新标签打开</a>
+    <button class="btn" type="button" data-action="close-lightbox">关闭</button>
+  </div>
+  <div class="lightbox-body"><img id="lightbox-img" alt=""></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="payload" type="application/json">{"spec":{"schema_version":1,"kind":"silicon_eye_review_sheet","package_id":"W34-M3-REMAINDER-20261105-V1","stage":"METAL","stage_label":"金属","title":"M3窗口补齐：两条细线与宽母线","date":"2026-11-05","summary":"上一批G1/G2联合几何已经实际确认归档。本次只补固定M3窗口剩余R01、R02、B01，不重问已审身份、承载或七条细线几何。原图大字标注，支持单层／联合和新旧对照。","scope":{"frame":"m3","native_bounds":[180,2120,1280,2490],"note":"九条细线和一个宽母线局部；规则图使用独立设计坐标。大邻域只是连续性上下文，不扩大本次完整性范围。"},"items":[{"id":"G1","type":"metal_fragment","title":"R01／R02：两条剩余细 M3","prompt":"R01短段和R02通行段的相对位置、可见长度、上下次序与间隙是否合理？R01左端是可见短端，其余截口只代表窗口出口；不判断范围外是否同网。","required":true,"review_mode":"decision","change_summary":"只新增W34-M3-R01、W34-M3-R02两个物理片段ID；旧51金属及全部34接口保持。","facts":{"new_metal_ids":["W34-M3-R01","W34-M3-R02"],"source_scope":[180,2120,1280,2490],"new_connections":0,"precise_projection":false},"evidence":[{"label":"固定窗口：大字编号原图","role":"marked","caption":"橙色R01/R02为本次新增；紫色R03–R09已审；绿色B01为下沿截取的宽母线部分。","frame":"m3","url":"assets/0340bf116a-scope-marked.png","width_height":[1100,370],"source_path":"docs/assets/w34-m3-remainder-v1/scope-marked.png","sha256":"0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6"},{"label":"补建后 M3 单层","role":"design","caption":"橙色两条新线，绿色原宽母线西延；保留已审七条细线，规则图不是照片投影。","frame":"design","url":"assets/914b9e2578-after-M3.svg","width_height":null,"source_path":"docs/assets/w34-m3-remainder-v1/after-M3.svg","sha256":"914b9e257848aa7f65e81ba01892d242c19edd896d3f3bca29b4377d1561061f"},{"label":"补建前 M3（同坐标）","role":"design","caption":"与补建后采用同一独立设计坐标；空缺表示旧模型未覆盖，不表示照片没有金属。","frame":"design","url":"assets/7034ec19a3-before-M3.svg","width_height":null,"source_path":"docs/assets/w34-m3-remainder-v1/before-M3.svg","sha256":"7034ec19a335602c8f62ad745d5fa51661c9a7dec2d250e09b4d57e63487b162"},{"label":"M3 大邻域及黄色范围边界","role":"marked","caption":"黄色框是本次固定来源窗口；范围出口不是物理终点。","frame":"m3","url":"assets/6729d348d7-context-marked.png","width_height":[1200,600],"source_path":"docs/assets/w34-m3-remainder-v1/context-marked.png","sha256":"6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901"},{"label":"固定窗口未标注原图","role":"source","caption":"原生[180,2120,1280,2490]，照片原件未改写。","frame":"m3","url":"assets/b9cf6951cf-scope-raw.png","width_height":[1100,370],"source_path":"docs/assets/w34-m3-remainder-v1/scope-raw.png","sha256":"b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba"},{"label":"五层联合候选（仅参考）","role":"design","caption":"53金属、34已审局部接口；M1/M2/V1/V2保持，不重新审批旧连接。","frame":"design","url":"assets/ede0900770-after-joint.svg","width_height":null,"source_path":"docs/assets/w34-m3-remainder-v1/after-joint.svg","sha256":"ede0900770aa8fd0223067aeb477ba89101a2d19318c6db7ed32ddedacd58410"}],"checks":[{"id":"shape_and_order","label":"两条新线的长度、次序及相对间隙合理","required":true},{"id":"scope_exits","label":"未把窗口出口当作物理终点或擅自补连","required":true}],"note_required_on":["needs_revision","not_applicable"]},{"id":"G2","type":"metal_fragment","title":"B01：原宽母线向西连续范围","prompt":"B01对应原中部宽M3母线，向西补出的连续范围是否合理？它在固定窗口下沿仅露出一部分，宽度沿用原规则图；请结合大邻域判断，不要求精确边缘投影。","required":true,"review_mode":"decision","change_summary":"仅给RT-M3-MID添加西侧局部块，保留原骨架、宽度和原生锚点；不另建重复母线，不新增VIA。","facts":{"extended_metal_id":"RT-M3-MID","added_part_id":"W34-WEST-MID-CONTINUATION","old_source_anchors_unchanged":true,"physical_width_measured":false},"evidence":[{"label":"固定窗口：大字编号原图","role":"marked","caption":"橙色R01/R02为本次新增；紫色R03–R09已审；绿色B01为下沿截取的宽母线部分。","frame":"m3","url":"assets/0340bf116a-scope-marked.png","width_height":[1100,370],"source_path":"docs/assets/w34-m3-remainder-v1/scope-marked.png","sha256":"0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6"},{"label":"补建后 M3 单层","role":"design","caption":"橙色两条新线，绿色原宽母线西延；保留已审七条细线，规则图不是照片投影。","frame":"design","url":"assets/914b9e2578-after-M3.svg","width_height":null,"source_path":"docs/assets/w34-m3-remainder-v1/after-M3.svg","sha256":"914b9e257848aa7f65e81ba01892d242c19edd896d3f3bca29b4377d1561061f"},{"label":"B01 同一照片连续性与旧锚点","role":"marked","caption":"同一张M3照片向右跟到原RT-M3-MID锚点；绿色为AI连续性观察，不涉及跨层投影或新孔审批。","frame":"m3","url":"assets/26226d5bb7-continuity-marked.png","width_height":[3630,330],"source_path":"docs/assets/w34-m3-remainder-v1/continuity-marked.png","sha256":"26226d5bb7ca04eb604776fb50fb6733aead3b659cbd079b373c92a1e470c53d"},{"label":"宽母线长邻域未标注原图","role":"source","caption":"原生[180,2300,3810,2630]，用于观察B01与原宽母线的连续性。","frame":"m3","url":"assets/cc8ef37385-continuity-raw.png","width_height":[3630,330],"source_path":"docs/assets/w34-m3-remainder-v1/continuity-raw.png","sha256":"cc8ef373852099f02b957b7eabbfd9365149caac6b30b1d826cd22e95a5e678b"},{"label":"补建前 M3（同坐标）","role":"design","caption":"与补建后采用同一独立设计坐标；空缺表示旧模型未覆盖，不表示照片没有金属。","frame":"design","url":"assets/7034ec19a3-before-M3.svg","width_height":null,"source_path":"docs/assets/w34-m3-remainder-v1/before-M3.svg","sha256":"7034ec19a335602c8f62ad745d5fa51661c9a7dec2d250e09b4d57e63487b162"},{"label":"M3 大邻域及黄色范围边界","role":"marked","caption":"黄色框是本次固定来源窗口；范围出口不是物理终点。","frame":"m3","url":"assets/6729d348d7-context-marked.png","width_height":[1200,600],"source_path":"docs/assets/w34-m3-remainder-v1/context-marked.png","sha256":"6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901"},{"label":"固定窗口未标注原图","role":"source","caption":"原生[180,2120,1280,2490]，照片原件未改写。","frame":"m3","url":"assets/b9cf6951cf-scope-raw.png","width_height":[1100,370],"source_path":"docs/assets/w34-m3-remainder-v1/scope-raw.png","sha256":"b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba"}],"checks":[{"id":"same_bus_extent","label":"与原宽母线的对应及西侧连续范围合理","required":true},{"id":"gap_retained","label":"宽母线与上方细线保持间隙，无明显误连","required":true}],"note_required_on":["needs_revision","not_applicable"]}],"questions":[{"id":"Q1","prompt":"本次三项新增/延伸几何整体合理，且固定窗口的九条细线与一个宽母线局部无明显漏段？仅判可见几何，不判所有VIA或全网。","item_ids":["G1","G2"],"required":true}],"limits":["上一批七条M3与四处短头几何已经通过，不重审；本次仅审三项增量及固定窗口明显漏段。","34条局部接口及188候选孔原样保留，本次不要求逐孔数数、不新增连接。","B01在固定窗口下沿被截断；完整宽度来自更大同帧上下文的相对重建，不是实测尺寸。","10/10来源片段有模型对应，只是清单覆盖；新孔身份/连接和全幅覆盖仍未检查。"],"not_approved":["物理孔数、尺寸、节距或精确源图边缘","新VIA接口、未声明分支或全网闭合","跨层精确投影、PDK DRC、共同GDS采用或全幅完成"],"sources":{"accepted_parent":{"path":"benchmarks/w34-joint-reviewed-v2/working-baseline.json","sha256":"d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"},"candidate_model":{"path":"docs/assets/w34-m3-remainder-v1/S2-joint-work/model.json","sha256":"68795de36e63e286d990386c60d1aef52f1fc58f964a82795f8ffc3cc71caf55"},"candidate_manifest":{"path":"docs/assets/w34-m3-remainder-v1/S2-joint-work/manifest.json","sha256":"10004f09e33e0a5d55ca30c8a3f9cd79bee9ff5d0bd50c1718494a14df826914"},"scoped_coverage":{"path":"benchmarks/w34-m3-remainder-v1/scoped-coverage.json","sha256":"f2160e1782ec9614a01c40dd98b062b4d58420d73755fbfe8b8058b51b2aff2e"},"source_provenance":{"path":"benchmarks/w34-m3-remainder-v1/view-provenance.json","sha256":"3531d0e1fe292e00d57d2e0998634aa2f3987851b9f91bd1b2f2564b3abc01b7"},"technical_verification":{"path":"benchmarks/w34-m3-remainder-v1/verification.json","sha256":"baea43f8f7849e310d22a0a70c059c42e1cf94b50702b280050a9edb7eb50ead"}}},"build":{"build_id":"eeffc3a512d54a34b65486a8b73ca3bf","package_id":"W34-M3-REMAINDER-20261105-V1","stage":"METAL","stage_label":"金属","created_at":"2026-11-05T06:49:11+00:00","spec_sha256":"c2fb2ba7ac172216e7f3dad601d612a2cb9b5f2470caed19dad80fc2066e0eeb"},"labels":{"verdicts":{"accepted":"通过","needs_revision":"需修改","uncertain":"不确定","not_applicable":"不适用"},"question_verdicts":{"accepted":"通过","needs_revision":"需修改","uncertain":"不确定"},"roles":{"source":"原图","marked":"标记图","design":"规则图","overlay":"叠加图","paired":"分层并列（独立坐标）","detail":"放大图","other":"其他"},"types":{"aa_polygon":"AA 多边形","poly_fragment":"POLY 片段","ct_array":"CT 阵列","metal_fragment":"金属片段","via_interface":"孔组接口","region_boundary":"范围边界","other":"其他"}}}</script>
+<script>
+(function(){
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("payload").textContent);
+  var SPEC = DATA.spec;
+  var BUILD = DATA.build;
+  var LABELS = DATA.labels;
+  var STORE_KEY = "silicon-eye-review:" + BUILD.build_id;
+  var state = {answers:{}, questions:{}, statement:"", limitsAck:false};
+  var currentFilter = "all";
+  var lastDecisionText = "";
+  var saveTimer = null;
+  var toastTimer = null;
+  var validationRequested = false;
+  var evidenceLayout = "single";
+  function isContext(item){ return item.review_mode === "context"; }
+
+  function h(tag, props){
+    var node = document.createElement(tag);
+    if(props){
+      Object.keys(props).forEach(function(key){
+        var value = props[key];
+        if(value === null || value === undefined || value === false) return;
+        if(key === "class"){ node.className = value; return; }
+        if(key === "text"){ node.textContent = value; return; }
+        if(key === "dataset"){ Object.assign(node.dataset, value); return; }
+        if(key.indexOf("on") === 0 && typeof value === "function"){
+          node.addEventListener(key.slice(2).toLowerCase(), value); return;
+        }
+        if(value === true){ node.setAttribute(key, ""); return; }
+        node.setAttribute(key, String(value));
+      });
+    }
+    for(var i=2;i<arguments.length;i++){
+      var children = arguments[i];
+      if(children === null || children === undefined || children === false) continue;
+      if(Array.isArray(children)){
+        children.forEach(function(child){ appendChild(node, child); });
+      }else{
+        appendChild(node, children);
+      }
+    }
+    return node;
+  }
+  function appendChild(node, child){
+    if(child === null || child === undefined || child === false) return;
+    if(Array.isArray(child)){ child.forEach(function(item){ appendChild(node, item); }); return; }
+    node.append(child instanceof Node ? child : document.createTextNode(String(child)));
+  }
+  function text(value){ return document.createTextNode(value === null || value === undefined ? "" : String(value)); }
+  function byId(id){ return document.getElementById(id); }
+  function itemAnswer(item){ return state.answers[item.id]; }
+  function questionAnswer(question){ return state.questions[question.id]; }
+  function verdictLabel(value){ return LABELS.verdicts[value] || "未答"; }
+  function roleLabel(value){ return LABELS.roles[value] || value; }
+  function typeLabel(value){ return (LABELS.types && LABELS.types[value]) || value; }
+  function localDate(){
+    var now = new Date();
+    return now.getFullYear() + "-" + String(now.getMonth()+1).padStart(2,"0") + "-" + String(now.getDate()).padStart(2,"0");
+  }
+  function formatJSON(value){
+    if(typeof value === "string") return value;
+    try{ return JSON.stringify(value); }catch(error){ return String(value); }
+  }
+
+  function initState(){
+    SPEC.items.forEach(function(item){
+      state.answers[item.id] = {verdict:null, checks:{}, notes:""};
+      item.checks.forEach(function(check){ state.answers[item.id].checks[check.id] = false; });
+    });
+    SPEC.questions.forEach(function(question){
+      state.questions[question.id] = {verdict:null, notes:""};
+    });
+    try{
+      var saved = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+      if(!saved || typeof saved !== "object") return;
+      byId("draft-status").textContent = "已恢复本机草稿";
+      if(typeof saved.statement === "string") state.statement = saved.statement;
+      state.limitsAck = saved.limitsAck === true;
+      if(saved.answers){
+        SPEC.items.forEach(function(item){
+          var savedAnswer = saved.answers[item.id];
+          if(isContext(item) || !savedAnswer || typeof savedAnswer !== "object") return;
+          var answer = state.answers[item.id];
+          answer.verdict = Object.prototype.hasOwnProperty.call(LABELS.verdicts, savedAnswer.verdict) ? savedAnswer.verdict : null;
+          answer.notes = typeof savedAnswer.notes === "string" ? savedAnswer.notes : "";
+          if(savedAnswer.checks){
+            item.checks.forEach(function(check){
+              answer.checks[check.id] = savedAnswer.checks[check.id] === true;
+            });
+          }
+        });
+      }
+      if(saved.questions){
+        SPEC.questions.forEach(function(question){
+          var savedAnswer = saved.questions[question.id];
+          if(!savedAnswer || typeof savedAnswer !== "object") return;
+          state.questions[question.id].verdict = Object.prototype.hasOwnProperty.call(LABELS.question_verdicts, savedAnswer.verdict) ? savedAnswer.verdict : null;
+          state.questions[question.id].notes = typeof savedAnswer.notes === "string" ? savedAnswer.notes : "";
+        });
+      }
+    }catch(error){ storageWarning(); }
+  }
+  function storageWarning(){
+    byId("draft-status").textContent = "本机存储不可用，请保存草稿文件";
+    byId("draft-status").classList.add("error");
+  }
+  function persistState(){
+    try{
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+      byId("draft-status").textContent = "草稿已保存到本机";
+      byId("draft-status").classList.remove("error");
+    }catch(error){ storageWarning(); }
+  }
+  function saveState(){
+    clearTimeout(saveTimer);
+    byId("draft-status").textContent = "正在保存草稿…";
+    saveTimer = setTimeout(persistState, 120);
+  }
+
+  function itemErrors(item){
+    if(isContext(item)) return [];
+    var answer = itemAnswer(item);
+    var errors = [];
+    if(!answer || !answer.verdict){
+      if(item.required) errors.push("尚未选择结论");
+      return errors;
+    }
+    if(answer.verdict === "accepted"){
+      var missing = item.checks.filter(function(check){
+        return check.required && !answer.checks[check.id];
+      }).map(function(check){ return check.label; });
+      if(missing.length) errors.push("判通过前必须勾选：" + missing.join("、"));
+    }
+    if(item.note_required_on.indexOf(answer.verdict) >= 0 && !answer.notes.trim()){
+      errors.push("选择“" + verdictLabel(answer.verdict) + "”时必须填写备注");
+    }
+    return errors;
+  }
+  function questionErrors(question){
+    var answer = questionAnswer(question);
+    if(!answer || !answer.verdict){
+      return question.required ? ["尚未选择结论"] : [];
+    }
+    if(answer.verdict === "accepted"){
+      var blocked = question.item_ids.filter(function(id){
+        var item = state.answers[id];
+        return item && (item.verdict === "needs_revision" || item.verdict === "uncertain");
+      });
+      if(blocked.length) return ["有覆盖项未通过（" + blocked.join("、") + "），整体问题不能判通过"];
+      if(question.item_ids.some(function(id){ return !state.answers[id] || !state.answers[id].verdict; })){
+        return ["覆盖项尚未答完，整体问题不能判通过"];
+      }
+      if(question.item_ids.some(function(id){return itemErrors(SPEC.items.find(function(item){return item.id === id;})).length;})){
+        return ["覆盖项仍有未完成检查，整体问题不能判通过"];
+      }
+      if(!question.item_ids.some(function(id){ return state.answers[id] && state.answers[id].verdict === "accepted"; })){
+        return ["没有适用且通过的覆盖项，整体问题不能判通过"];
+      }
+    }
+    return [];
+  }
+  function allErrors(){
+    var errors = [];
+    SPEC.items.forEach(function(item, index){
+      var messages = itemErrors(item);
+      if(messages.length) errors.push({kind:"item", index:index, id:item.id, message:messages[0]});
+    });
+    SPEC.questions.forEach(function(question, index){
+      var messages = questionErrors(question);
+      if(messages.length) errors.push({kind:"question", index:index, id:question.id, message:messages[0]});
+    });
+    if(!state.limitsAck){
+      errors.push({kind:"limits", message:"请先在“边界与未批准”勾选确认。"});
+    }
+    return errors;
+  }
+
+  function renderMeta(){
+    byId("build-id").textContent = BUILD.build_id.slice(0, 12);
+    byId("stage-pill").textContent = SPEC.stage_label + " · " + SPEC.stage;
+    byId("page-title").textContent = SPEC.title;
+    byId("page-summary").textContent = SPEC.summary || "按固定格式逐项确认；全部必答项完成后导出 review-decision.json。";
+    byId("meta-package").textContent = SPEC.package_id;
+    byId("meta-date").textContent = SPEC.date;
+    var bounds = SPEC.scope.native_bounds;
+    byId("meta-scope").textContent = SPEC.scope.frame + (bounds ? " " + bounds.join(",") : "");
+    byId("scope-frame").textContent = SPEC.scope.frame;
+    byId("scope-bounds").textContent = bounds ? bounds.join(", ") : "未声明";
+    byId("scope-note").textContent = SPEC.scope.note || "—";
+    byId("scope-package").textContent = SPEC.package_id;
+    byId("stat-items").textContent = SPEC.items.filter(function(item){return !isContext(item);}).length;
+    byId("stat-required").textContent = SPEC.items.filter(function(item){ return item.required; }).length;
+    byId("stat-questions").textContent = SPEC.questions.length;
+    byId("stat-evidence").textContent = SPEC.items.reduce(function(total, item){ return total + item.evidence.length; }, 0);
+    var table = byId("sources-table");
+    table.textContent = "";
+    var sources = Object.keys(SPEC.sources || {});
+    if(!sources.length){
+      table.append(h("tr", null, h("th", null, "来源"), h("td", null, "本包未声明额外来源绑定")));
+    }else{
+      sources.forEach(function(name){
+        table.append(h("tr", null, h("th", null, name), h("td", null,
+          h("div", {class:"mono small"}, SPEC.sources[name].path),
+          h("div", {class:"mono small muted"}, SPEC.sources[name].sha256))));
+      });
+    }
+  }
+
+  function renderEvidence(entry){
+    var caption = (entry.frame ? entry.frame + " · " : "") + entry.label + (entry.caption ? " · " + entry.caption : "");
+    var image = h("img", {
+      src: entry.url,
+      alt: entry.label,
+      loading: "lazy",
+      "data-action": "lightbox",
+      "data-url": entry.url,
+      "data-caption": caption
+    });
+    image.addEventListener("error", function(){
+      image.after(h("div", {class:"evidence-error"}, "证据图加载失败，请核查来源后再判断。"));
+    }, {once:true});
+    var zoom = h("button", {type:"button", class:"zoom", "data-action":"lightbox", "data-url":entry.url, "data-caption":caption}, "放大");
+    return h("figure", {class:"evidence"}, image, zoom, h("figcaption", null,
+      h("strong", null, entry.label),
+      h("span", {class:"role"}, roleLabel(entry.role) + (entry.frame ? " · " + entry.frame : "")),
+      entry.caption ? h("span", {class:"caption"}, entry.caption) : null,
+      h("details", {class:"trace"}, h("summary", null, "来源路径"), h("code", null, entry.source_path))
+    ));
+  }
+
+  function renderItem(item, index){
+    var answer = itemAnswer(item);
+    var card = h("article", {
+      class: "card item-card",
+      id: "item-card-" + index,
+      "data-item-id": item.id,
+      "data-index": index
+    });
+    card.append(h("div", {class:"card-head"},
+      h("div", {class:"ident"},
+        h("span", {class:"item-id"}, item.id),
+        h("span", {class:"badge optional"}, typeLabel(item.type)),
+        isContext(item) ? h("span", {class:"badge optional"}, "参考") : item.required ? h("span", {class:"badge req"}, "必答") : h("span", {class:"badge optional"}, "可选")
+      ),
+      h("span", {class:"status-badge", "data-role":"status"}, verdictLabel(answer.verdict))
+    ));
+    card.append(h("h3", {class:"card-title"}, item.title));
+    card.append(h("p", {class:"prompt"}, item.prompt));
+
+    if(item.change_summary) card.append(h("p", {class:"change-note"}, "本轮变化：" + item.change_summary));
+    if(item.evidence.length){
+      var grid = h("div", {class:"evidence-grid single", "data-evidence-selected":"0"});
+      var tabs = h("div", {class:"evidence-tabs", role:"group", "aria-label":"证据图切换"});
+      item.evidence.forEach(function(entry, evidenceIndex){
+        tabs.append(h("button", {type:"button", "data-action":"evidence-select", "data-evidence-index":evidenceIndex,
+          "aria-pressed":evidenceIndex === 0 ? "true" : "false"}, (entry.frame ? entry.frame + " · " : "") + entry.label));
+      });
+      grid.append(tabs);
+      var comparison = h("select", {"data-role":"compare-evidence", "aria-label":"右侧对照图"});
+      var defaultComparison = item.evidence.findIndex(function(entry){return entry.role === "design";});
+      grid.dataset.evidenceCompare = String(defaultComparison >= 0 ? defaultComparison : Math.min(1,item.evidence.length-1));
+      item.evidence.forEach(function(entry,index){comparison.append(h("option",{value:index},(entry.frame ? entry.frame + " · " : "") + entry.label));});
+      comparison.value = grid.dataset.evidenceCompare;
+      grid.append(h("label",{class:"compare-choice"},"左侧为当前标签；右侧对照图：",comparison));
+      item.evidence.forEach(function(entry, evidenceIndex){
+        var figure = renderEvidence(entry); figure.hidden = evidenceIndex !== 0; grid.append(figure);
+      });
+      card.append(grid);
+    }else{
+      card.append(h("p", {class:"muted small"}, "本项未附证据图。"));
+    }
+
+    var facts = Object.keys(item.facts || {});
+    if(facts.length){
+      var table = h("table", {class:"facts"});
+      facts.forEach(function(key){
+        table.append(h("tr", null, h("th", null, key), h("td", null, h("code", null, formatJSON(item.facts[key])))));
+      });
+      card.append(h("details", {class:"trace"}, h("summary", null, "编号、原生坐标与来源详情"), table));
+    }
+
+    if(isContext(item)){
+      card.classList.add("context");
+      var reference = h("details", null, h("summary", null, "仅作参考 · 本轮无需重新裁决"));
+      while(card.children.length > 1) reference.append(card.children[1]);
+      card.append(reference);
+      return card;
+    }
+
+    if(item.checks.length){
+      var checks = h("div", {class:"checks"});
+      item.checks.forEach(function(check){
+        var id = "check-" + index + "-" + check.id;
+        var input = h("input", {
+          type: "checkbox",
+          id: id,
+          "data-role": "check",
+          "data-check-id": check.id,
+          checked: !!(answer && answer.checks[check.id])
+        });
+        checks.append(h("label", {class:"check", for:id}, input, h("span", null, check.label),
+          check.required ? h("em", null, "必查") : null));
+      });
+      card.append(h("div", {class:"field"}, h("div", {class:"field-label"}, "检查项"), checks));
+    }
+
+    card.append(h("button", {type:"button", class:"btn primary quick-accept", "data-action":"accept-next"}, "本项必查均确认，通过并下一项"));
+    var group = h("div", {class:"verdicts", role:"radiogroup", "aria-label":"结论"});
+    ["accepted","needs_revision","uncertain","not_applicable"].forEach(function(value){
+      var id = "verdict-" + index + "-" + value;
+      var input = h("input", {
+        type: "radio",
+        name: "verdict-" + index,
+        id: id,
+        value: value,
+        "data-role": "verdict",
+        checked: !!(answer && answer.verdict === value)
+      });
+      group.append(input, h("label", {class:"verdict " + value, for:id},
+        h("span", {class:"dot"}), h("span", null, LABELS.verdicts[value])));
+    });
+    card.append(h("div", {class:"field"}, h("div", {class:"field-label"}, "我的结论"), group));
+
+    var notes = h("textarea", {"data-role":"notes", rows:"2", placeholder:"补充说明（选择“需修改”时必填；其他结论可选）"});
+    notes.value = answer ? answer.notes : "";
+    card.append(h("label", {class:"field"}, h("div", {class:"field-label"}, "备注"), notes));
+    card.append(h("div", {class:"item-error", "data-role":"item-error"}));
+    return card;
+  }
+
+  function renderIndexItem(item, index){
+    var answer = itemAnswer(item);
+    var status = isContext(item) ? "仅参考 · 无需重审" : answer && answer.verdict ? verdictLabel(answer.verdict) : (item.required ? "未答" : "可选未答");
+    var button = h("button", {type:"button", class:"index-btn", "data-action":"jump", "data-item-id":item.id},
+      h("span", {class:"dot"}),
+      h("span", {class:"txt"}, h("span", null, item.id), h("span", {class:"st"}, status))
+    );
+    button.dataset.index = String(index);
+    return button;
+  }
+
+  function renderItems(){
+    var list = byId("item-list");
+    var index = byId("index-list");
+    list.textContent = "";
+    index.textContent = "";
+    SPEC.items.forEach(function(item, i){
+      list.append(renderItem(item, i));
+      index.append(renderIndexItem(item, i));
+    });
+  }
+
+  function renderQuestion(question, index){
+    var answer = questionAnswer(question);
+    var card = h("article", {class:"card question-card", "data-question-id":question.id, id:"question-card-" + index});
+    card.append(h("div", {class:"card-head"},
+      h("div", {class:"ident"}, h("span", {class:"item-id"}, question.id), question.required ? h("span", {class:"badge req"}, "必答") : h("span", {class:"badge optional"}, "可选")),
+      h("span", {class:"status-badge", "data-role":"q-status"}, verdictLabel(answer && answer.verdict))
+    ));
+    card.append(h("h3", {class:"card-title"}, question.prompt));
+    var chips = h("div", {class:"chips"});
+    question.item_ids.forEach(function(id){
+      chips.append(h("button", {type:"button", class:"chip", "data-action":"jump", "data-item-id":id}, id));
+    });
+    card.append(h("div", {class:"small muted"}, "覆盖 " + question.item_ids.length + " 个确认项"), chips);
+    var group = h("div", {class:"q-verdicts", role:"radiogroup", "aria-label":"整体结论"});
+    ["accepted","needs_revision","uncertain"].forEach(function(value){
+      var id = "q-verdict-" + index + "-" + value;
+      var input = h("input", {type:"radio", name:"q-verdict-" + index, id:id, value:value, "data-role":"q-verdict", checked: !!(answer && answer.verdict === value)});
+      group.append(input, h("label", {class:"verdict " + value, for:id}, h("span", {class:"dot"}), h("span", null, LABELS.question_verdicts[value])));
+    });
+    card.append(h("div", {class:"field"}, h("div", {class:"field-label"}, "整体结论"), group));
+    var notes = h("textarea", {"data-role":"q-notes", rows:"2", placeholder:"备注（可选）"});
+    notes.value = answer ? answer.notes : "";
+    card.append(h("label", {class:"field"}, h("div", {class:"field-label"}, "备注"), notes));
+    card.append(h("div", {class:"question-error", "data-role":"question-error"}));
+    return card;
+  }
+
+  function renderQuestions(){
+    var list = byId("question-list");
+    list.textContent = "";
+    if(!SPEC.questions.length){
+      list.append(h("div", {class:"card"}, h("p", {class:"muted"}, "本确认单没有整体问题，逐项结论即为完整记录。")));
+      return;
+    }
+    SPEC.questions.forEach(function(question, index){ list.append(renderQuestion(question, index)); });
+  }
+
+  function renderBoundaries(){
+    var limits = byId("limits-list");
+    var notApproved = byId("not-approved-list");
+    limits.textContent = "";
+    notApproved.textContent = "";
+    (SPEC.limits || []).forEach(function(value){ limits.append(h("li", null, value)); });
+    (SPEC.not_approved || []).forEach(function(value){ notApproved.append(h("li", null, value)); });
+    if(!(SPEC.limits || []).length) limits.append(h("li", {class:"muted"}, "无额外限制。"));
+    if(!(SPEC.not_approved || []).length) notApproved.append(h("li", {class:"muted"}, "未声明额外未批准项。"));
+    var ack = byId("limits-ack");
+    ack.checked = state.limitsAck;
+  }
+
+  function renderExport(){
+    var statement = byId("statement");
+    statement.value = state.statement;
+    updateExportState();
+  }
+
+  function updateItem(index){
+    var item = SPEC.items[index];
+    var answer = itemAnswer(item);
+    var card = byId("item-card-" + index);
+    if(!card) return;
+    if(isContext(item)){
+      card.querySelector('[data-role="status"]').textContent = "仅参考";
+      return;
+    }
+    var verdict = answer && answer.verdict ? answer.verdict : "";
+    card.className = "card item-card" + (verdict ? " " + verdict : "");
+    var status = card.querySelector('[data-role="status"]');
+    status.textContent = verdict ? verdictLabel(verdict) : "未答";
+    status.className = "status-badge" + (verdict ? " " + verdict : "");
+    var errors = itemErrors(item);
+    if(verdict === "accepted" && errors.length){status.textContent = "通过 · 检查未齐";status.className = "status-badge needs_revision";}
+    var errorBox = card.querySelector('[data-role="item-error"]');
+    errorBox.textContent = errors.length && (answer.verdict || validationRequested) ? errors.join("；") : "";
+    var button = document.querySelector('#index-list .index-btn[data-item-id="' + cssEscape(item.id) + '"]');
+    if(button){
+      var key = verdict || "todo";
+      button.className = "index-btn " + (verdict === "accepted" ? "done" : verdict === "needs_revision" ? "revise" : verdict === "uncertain" ? "uncertain" : verdict === "not_applicable" ? "na" : "");
+      var statusText = button.querySelector(".st");
+      if(statusText) statusText.textContent = verdict === "accepted" && errors.length ? "检查未齐" : verdict ? verdictLabel(verdict) : (item.required ? "未答" : "可选未答");
+      if(verdict === "accepted" && errors.length) button.className = "index-btn revise";
+    }
+  }
+  function updateQuestion(index){
+    var question = SPEC.questions[index];
+    var answer = questionAnswer(question);
+    var card = byId("question-card-" + index);
+    if(!card) return;
+    var verdict = answer && answer.verdict ? answer.verdict : "";
+    card.className = "card question-card" + (verdict ? " " + verdict : "");
+    var status = card.querySelector('[data-role="q-status"]');
+    if(status){
+      status.textContent = verdict ? verdictLabel(verdict) : "未答";
+      status.className = "status-badge" + (verdict ? " " + verdict : "");
+    }
+    var errorBox = card.querySelector('[data-role="question-error"]');
+    var errors = questionErrors(question);
+    if(status && verdict === "accepted" && errors.length){status.textContent = "通过 · 覆盖项未齐";status.className = "status-badge needs_revision";}
+    if(errorBox) errorBox.textContent = errors.length && (verdict || validationRequested) ? errors.join("；") : "";
+  }
+  function cssEscape(value){
+    if(window.CSS && CSS.escape) return CSS.escape(value);
+    return String(value).replace(/["\\]/g, "\\$&");
+  }
+
+  function updateProgress(){
+    var requiredItems = SPEC.items.filter(function(item){ return item.required; });
+    var requiredQuestions = SPEC.questions.filter(function(question){ return question.required; });
+    var total = requiredItems.length + requiredQuestions.length + 1;
+    var done = requiredItems.filter(function(item){ var answer = itemAnswer(item); return answer && answer.verdict && itemErrors(item).length === 0; }).length;
+    done += requiredQuestions.filter(function(question){ var answer = questionAnswer(question); return answer && answer.verdict && questionErrors(question).length === 0; }).length;
+    if(state.limitsAck) done += 1;
+    var percent = total ? Math.round(done * 100 / total) : 0;
+    byId("progress-label").textContent = "必答 " + done + "/" + total;
+    byId("progress-percent").textContent = percent + "%";
+    byId("progress-bar").style.width = percent + "%";
+    var todoItems = requiredItems.filter(function(item){ var answer = itemAnswer(item); return !answer || !answer.verdict || itemErrors(item).length > 0; }).length;
+    var todoQuestions = requiredQuestions.filter(function(question){ var answer = questionAnswer(question); return !answer || !answer.verdict || questionErrors(question).length > 0; }).length;
+    byId("tab-items-badge").textContent = todoItems;
+    byId("tab-questions-badge").textContent = todoQuestions;
+    byId("tab-items-badge").hidden = todoItems === 0;
+    byId("tab-questions-badge").hidden = todoQuestions === 0;
+    SPEC.questions.forEach(function(question, index){ updateQuestion(index); });
+    updateExportState();
+  }
+  function updateExportState(){
+    var errors = allErrors();
+    var stateText = errors.length
+      ? "还有 " + errors.length + " 项未完成：" + errors[0].message
+      : "全部必答项已完成，可以导出。";
+    byId("export-state").textContent = stateText;
+    byId("summary-preview").textContent = conciseSummary();
+    if(errors.length){
+      lastDecisionText = "";
+      byId("preview-state").textContent = "完成全部必答项后显示。";
+      byId("json-preview").textContent = "";
+      byId("copy-btn").disabled = true;
+    }else{
+      lastDecisionText = JSON.stringify(buildDecision(), null, 2) + "\n";
+      byId("preview-state").textContent = "以下 JSON 将在点击导出时下载。";
+      byId("json-preview").textContent = lastDecisionText;
+      byId("copy-btn").disabled = false;
+    }
+  }
+
+  function buildDecision(){
+    return {
+      schema_version: 1,
+      kind: "silicon_eye_review_decision",
+      package_id: SPEC.package_id,
+      build_id: BUILD.build_id,
+      stage: SPEC.stage,
+      actor: "human",
+      date: localDate(),
+      statement: state.statement.trim(),
+      limits_acknowledged: state.limitsAck,
+      answers: SPEC.items.filter(function(item){ return !isContext(item) && itemAnswer(item) && itemAnswer(item).verdict; }).map(function(item){
+        var answer = itemAnswer(item);
+        var checks = {};
+        item.checks.forEach(function(check){ checks[check.id] = answer.checks[check.id] === true; });
+        return {item_id: item.id, verdict: answer.verdict, checks: checks, notes: answer.notes.trim()};
+      }),
+      questions: SPEC.questions.filter(function(question){ return questionAnswer(question) && questionAnswer(question).verdict; }).map(function(question){
+        var answer = questionAnswer(question);
+        return {question_id: question.id, verdict: answer.verdict, notes: answer.notes.trim()};
+      })
+    };
+  }
+
+  function downloadDecision(){
+    var errors = allErrors();
+    if(errors.length){
+      showErrors(errors);
+      return;
+    }
+    var decision = buildDecision();
+    lastDecisionText = JSON.stringify(decision, null, 2) + "\n";
+    byId("json-preview").textContent = lastDecisionText;
+    byId("copy-btn").disabled = false;
+    var blob = new Blob([lastDecisionText], {type:"application/json"});
+    var url = URL.createObjectURL(blob);
+    var anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = "review-decision.json";
+    document.body.append(anchor);
+    anchor.click();
+    anchor.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1200);
+    toast("已导出。请回到对话说“已导出”，由 Agent 读取、校验并归档；若下载失败，可复制 JSON。");
+  }
+  function copyText(value){
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(value).then(function(){toast("已复制。");},function(){fallbackCopy(value);});
+    }else fallbackCopy(value);
+  }
+  function copyDecision(){
+    if(!lastDecisionText){
+      var errors = allErrors();
+      if(errors.length){ showErrors(errors); return; }
+      lastDecisionText = JSON.stringify(buildDecision(), null, 2) + "\n";
+    }
+    copyText(lastDecisionText);
+  }
+  function fallbackCopy(value){
+    var area = document.createElement("textarea");
+    area.value = value;
+    area.style.position = "fixed";
+    area.style.opacity = "0";
+    document.body.append(area);
+    area.select();
+    try{ if(!document.execCommand("copy")) throw new Error("Copy failed"); toast("已复制。"); }
+    catch(error){ toast("复制失败，请手动选择 JSON 预览内容。", true); }
+    area.remove();
+  }
+  function showErrors(errors){
+    validationRequested = true;
+    SPEC.items.forEach(function(item, index){ updateItem(index); });
+    var first = errors[0];
+    toast(first.message + (errors.length > 1 ? "（另有 " + (errors.length - 1) + " 项）" : ""), true);
+    if(first.kind === "limits"){
+      showTab("boundaries");
+      byId("limits-ack").focus();
+    }else if(first.kind === "question"){
+      showTab("questions");
+      var qcard = byId("question-card-" + first.index);
+      if(qcard) qcard.scrollIntoView({block:"start"});
+    }else{
+      showTab("items");
+      currentFilter = "all";
+      applyFilter();
+      var card = byId("item-card-" + first.index);
+      if(card){
+        card.scrollIntoView({block:"start"});
+        card.classList.add("flash");
+        setTimeout(function(){ card.classList.remove("flash"); }, 1600);
+      }
+    }
+  }
+
+  function showTab(name){
+    document.querySelectorAll(".tab").forEach(function(button){
+      button.classList.toggle("active", button.dataset.tab === name);
+    });
+    document.querySelectorAll(".panel").forEach(function(panel){
+      panel.hidden = panel.id !== "panel-" + name;
+    });
+    if(name === "export") updateExportState();
+    window.scrollTo({top:0, behavior:"smooth"});
+  }
+  function jumpToItem(id){
+    showTab("items");
+    currentFilter = "all";
+    byId("item-search").value = "";
+    applyFilter();
+    var card = document.querySelector('[data-item-id="' + cssEscape(id) + '"].item-card');
+    if(!card){
+      var indexItem = document.querySelector('#index-list .index-btn[data-item-id="' + cssEscape(id) + '"]');
+      if(indexItem) indexItem.click();
+      card = document.querySelector('[data-item-id="' + cssEscape(id) + '"].item-card');
+    }
+    if(card){
+      card.scrollIntoView({block:"start"});
+      card.classList.add("flash");
+      setTimeout(function(){ card.classList.remove("flash"); }, 1600);
+    }
+  }
+  function applyFilter(){
+    document.querySelectorAll("#filters button").forEach(function(button){
+      button.classList.toggle("active", button.dataset.filter === currentFilter);
+    });
+    SPEC.items.forEach(function(item, index){
+      var answer = itemAnswer(item);
+      var verdict = answer && answer.verdict ? answer.verdict : "";
+      var search = byId("item-search").value.trim().toLowerCase();
+      var show = currentFilter === "all"
+        || (currentFilter === "context" && isContext(item))
+        || (currentFilter === "todo" && !isContext(item) && (!verdict || itemErrors(item).length))
+        || (!isContext(item) && currentFilter === verdict);
+      show = show && (!search || (item.id + " " + item.title).toLowerCase().indexOf(search) >= 0);
+      var card = byId("item-card-" + index);
+      if(card) card.hidden = !show;
+      var indexButton = document.querySelector('#index-list .index-btn[data-item-id="' + cssEscape(item.id) + '"]');
+      if(indexButton) indexButton.hidden = !show;
+    });
+  }
+
+  function refreshReview(){
+    renderItems(); renderQuestions(); renderBoundaries(); renderExport();
+    SPEC.items.forEach(function(item,index){updateItem(index);});
+    updateProgress(); applyFilter(); applyEvidenceLayouts();
+  }
+  function applyEvidenceLayouts(){
+    document.querySelectorAll('.evidence-grid').forEach(function(grid){
+      grid.classList.toggle('single', evidenceLayout === 'single');
+      var selected = Number(grid.dataset.evidenceSelected || 0);
+      var comparison = Number(grid.dataset.evidenceCompare || 0), figures = grid.querySelectorAll('.evidence');
+      if(comparison === selected && figures.length > 1) comparison = (selected+1)%figures.length;
+      grid.dataset.evidenceCompare = String(comparison);
+      grid.querySelector('[data-role="compare-evidence"]').value = String(comparison);
+      figures.forEach(function(figure,index){
+        figure.hidden = index !== selected && (evidenceLayout === 'single' || index !== comparison);
+      });
+      grid.querySelectorAll('[data-evidence-index]').forEach(function(button){
+        button.setAttribute('aria-pressed', String(Number(button.dataset.evidenceIndex) === selected));
+      });
+    });
+  }
+  function nextPending(afterIndex){
+    var pending = SPEC.items.map(function(item,index){return {item:item,index:index};}).filter(function(row){
+      return !isContext(row.item) && row.item.required &&
+        (!itemAnswer(row.item).verdict || itemErrors(row.item).length);
+    });
+    var row = pending.find(function(candidate){return candidate.index > afterIndex;}) || pending[0];
+    if(row) jumpToItem(row.item.id);
+    else {showTab('questions');toast('逐项必答已完成，请核对整体问题。');}
+  }
+  function acceptAndNext(card){
+    var index = Number(card.dataset.index), item = SPEC.items[index];
+    if(isContext(item)) return;
+    var answer = itemAnswer(item);
+    item.checks.forEach(function(check){
+      if(check.required) answer.checks[check.id] = true;
+    });
+    answer.verdict = 'accepted';
+    card.querySelectorAll('[data-role="check"]').forEach(function(input){input.checked = !!answer.checks[input.dataset.checkId];});
+    card.querySelector('[data-role="verdict"][value="accepted"]').checked = true;
+    saveState(); updateItem(index); updateProgress(); nextPending(index);
+  }
+  function summarizeQuestions(){
+    var filled = 0;
+    SPEC.questions.forEach(function(question,index){
+      if(questionAnswer(question).verdict) return;
+      var items = question.item_ids.map(function(id){return SPEC.items.find(function(item){return item.id === id;});});
+      if(items.some(function(item){return !itemAnswer(item).verdict || itemErrors(item).length;})) return;
+      var values = items.map(function(item){return itemAnswer(item).verdict;});
+      var verdict = values.indexOf('needs_revision') >= 0 ? 'needs_revision'
+        : values.indexOf('uncertain') >= 0 ? 'uncertain'
+        : values.indexOf('accepted') >= 0 ? 'accepted' : 'uncertain';
+      state.questions[question.id].verdict = verdict;
+      byId('question-card-' + index).querySelector('[value="' + verdict + '"]').checked = true;
+      updateQuestion(index); filled++;
+    });
+    saveState(); updateProgress(); toast('已汇总 ' + filled + ' 个未填整体结论；已有结论保留。');
+  }
+  function conciseSummary(){
+    var lines = [allErrors().length ? '草稿（尚未完成，不能作为正式回传）' : '复核摘要（正式回传请附 review-decision.json）',
+      '送审包：' + SPEC.package_id + '；版本：' + BUILD.build_id];
+    SPEC.items.filter(function(item){return !isContext(item);}).forEach(function(item){
+      var answer = itemAnswer(item);
+      lines.push(item.id + '：' + verdictLabel(answer.verdict) +
+        (answer.verdict === 'accepted' && itemErrors(item).length ? '（检查未齐）' : '') +
+        (answer.notes.trim() ? '；' + answer.notes.trim() : ''));
+    });
+    SPEC.questions.forEach(function(question){
+      var answer = questionAnswer(question);
+      lines.push(question.id + '：' + verdictLabel(answer.verdict) +
+        (answer.verdict === 'accepted' && questionErrors(question).length ? '（覆盖项未齐）' : '') +
+        (answer.notes.trim() ? '；' + answer.notes.trim() : ''));
+    });
+    if(state.statement.trim()) lines.push('补充：' + state.statement.trim());
+    lines.push('范围与边界：' + (state.limitsAck ? '已阅读确认' : '尚未确认'));
+    return lines.join('\n');
+  }
+  function downloadJSON(value,name){
+    var url = URL.createObjectURL(new Blob([JSON.stringify(value,null,2)+'\n'],{type:'application/json'}));
+    var link = h('a',{href:url,download:name});document.body.append(link);link.click();link.remove();
+    setTimeout(function(){URL.revokeObjectURL(url);},1200);
+  }
+  function saveDraftFile(){
+    downloadJSON({schema_version:1,kind:'silicon_eye_review_draft',build_id:BUILD.build_id,
+      package_id:SPEC.package_id,stage:SPEC.stage,spec_sha256:BUILD.spec_sha256,state:state},
+      'review-draft-' + SPEC.package_id + '.json');
+    toast('草稿已导出；草稿不属于人审归档记录。');
+  }
+  function readDraft(document){
+    function requireDraft(condition,message){if(!condition) throw new Error(message);}
+    requireDraft(document && document.kind === 'silicon_eye_review_draft' && document.schema_version === 1,'请选择本工具导出的草稿文件');
+    requireDraft(document.build_id === BUILD.build_id && document.package_id === SPEC.package_id &&
+      document.stage === SPEC.stage && document.spec_sha256 === BUILD.spec_sha256,'草稿不是当前送审版本，未导入');
+    var saved = document.state;
+    function object(value){return value && typeof value === 'object' && !Array.isArray(value);}
+    requireDraft(object(saved) && object(saved.answers) && object(saved.questions),'草稿结构错误');
+    requireDraft(typeof saved.statement === 'string' && typeof saved.limitsAck === 'boolean','草稿字段类型错误');
+    requireDraft(Object.keys(saved.answers).every(function(id){return SPEC.items.some(function(item){return item.id === id;});}) &&
+      Object.keys(saved.questions).every(function(id){return SPEC.questions.some(function(question){return question.id === id;});}),'草稿含未知编号');
+    var clean = {answers:{},questions:{},statement:saved.statement,limitsAck:saved.limitsAck};
+    SPEC.items.forEach(function(item){
+      var answer = saved.answers[item.id] || {verdict:null,checks:{},notes:''};
+      requireDraft(object(answer) && object(answer.checks) && typeof answer.notes === 'string','草稿逐项字段错误');
+      requireDraft(answer.verdict === null || Object.prototype.hasOwnProperty.call(LABELS.verdicts,answer.verdict),'草稿含非法结论');
+      requireDraft(!isContext(item) || answer.verdict === null,'参考项不能获得本轮新裁决');
+      requireDraft(Object.keys(answer.checks).every(function(id){return item.checks.some(function(check){return check.id === id;});}),'草稿含未知检查项');
+      var checks = {};
+      item.checks.forEach(function(check){
+        requireDraft(answer.checks[check.id] === undefined || typeof answer.checks[check.id] === 'boolean','检查值必须为布尔值');
+        checks[check.id] = answer.checks[check.id] === true;
+      });
+      clean.answers[item.id] = {verdict:answer.verdict,checks:checks,notes:answer.notes};
+    });
+    SPEC.questions.forEach(function(question){
+      var answer = saved.questions[question.id] || {verdict:null,notes:''};
+      requireDraft(object(answer) && typeof answer.notes === 'string' &&
+        (answer.verdict === null || Object.prototype.hasOwnProperty.call(LABELS.question_verdicts,answer.verdict)),'草稿整体字段错误');
+      clean.questions[question.id] = {verdict:answer.verdict,notes:answer.notes};
+    });
+    return clean;
+  }
+
+  function toast(message, isError){
+    var node = byId("toast");
+    node.textContent = message;
+    node.className = "toast show" + (isError ? " error" : "");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ node.className = "toast"; }, 3600);
+  }
+
+  var lightboxEntries = [];
+  function lightboxScale(){
+    var image = byId("lightbox-img");
+    byId("lightbox-scale").textContent = image.naturalWidth ? Math.round(image.getBoundingClientRect().width / image.naturalWidth * 100) + "%" : "";
+  }
+  function showLightboxImage(index){
+    var entry = lightboxEntries[index];
+    if(!entry) return;
+    var image = byId("lightbox-img");
+    image.src = entry.url; image.alt = entry.caption; image.style.width = "100%"; image.style.height = "auto";
+    byId("lightbox-cap").textContent = entry.caption;
+    byId("lightbox-open").href = entry.url;
+    byId("lightbox-evidence").value = String(index);
+    var body = document.querySelector('.lightbox-body');body.scrollTop = 0;body.scrollLeft = 0;
+    image.onload = lightboxScale;
+    lightboxScale();
+  }
+  function openLightbox(url, caption, grid){
+    lightboxEntries = grid ? Array.from(grid.querySelectorAll('.evidence img')).map(function(image){
+      return {url:image.dataset.url,caption:image.dataset.caption};
+    }) : [{url:url,caption:caption}];
+    var selector = byId("lightbox-evidence");selector.textContent = "";
+    lightboxEntries.forEach(function(entry,index){selector.append(h('option',{value:index},entry.caption));});
+    var dialog = byId("lightbox");
+    if(dialog.showModal && !dialog.open) dialog.showModal();
+    showLightboxImage(Math.max(0,lightboxEntries.findIndex(function(entry){return entry.url === url;})));
+  }
+  function zoomLightbox(multiplier){
+    var image = byId("lightbox-img"), body = document.querySelector('.lightbox-body');
+    var current = image.getBoundingClientRect().width || image.naturalWidth || 800;
+    var next = Math.max(120, Math.min(current * multiplier, 20000));
+    var ratio = next / current, left = body.scrollLeft, top = body.scrollTop;
+    image.style.width = next + "px";
+    body.scrollLeft = (left + body.clientWidth / 2) * ratio - body.clientWidth / 2;
+    body.scrollTop = (top + body.clientHeight / 2) * ratio - body.clientHeight / 2;
+    lightboxScale();
+  }
+
+  function bindEvents(){
+    document.querySelectorAll(".tab").forEach(function(button){
+      button.addEventListener("click", function(){ showTab(button.dataset.tab); });
+    });
+    document.addEventListener("click", function(event){
+      var target = event.target.closest("[data-action]");
+      if(!target) return;
+      var action = target.dataset.action;
+      if(action === "lightbox"){ openLightbox(target.dataset.url, target.dataset.caption, target.closest(".evidence-grid")); }
+      else if(action === "jump"){ jumpToItem(target.dataset.itemId); }
+      else if(action === "export"){ downloadDecision(); }
+      else if(action === "copy"){ copyDecision(); }
+      else if(action === "accept-next"){ acceptAndNext(target.closest('.item-card')); }
+      else if(action === "next-pending"){ nextPending(-1); }
+      else if(action === "evidence-select"){
+        target.closest('.evidence-grid').dataset.evidenceSelected = target.dataset.evidenceIndex;
+        applyEvidenceLayouts();
+      }
+      else if(action === "summarize-questions"){ summarizeQuestions(); }
+      else if(action === "save-draft"){ saveDraftFile(); }
+      else if(action === "import-draft"){ byId('draft-file').click(); }
+      else if(action === "copy-summary"){ copyText(conciseSummary()); }
+      else if(action === "clear"){
+        if(window.confirm("清空本页在浏览器中保存的全部答案？")){
+          clearTimeout(saveTimer);
+          try{localStorage.removeItem(STORE_KEY);}catch(error){storageWarning();}
+          state = {answers:{}, questions:{}, statement:"", limitsAck:false};
+          SPEC.items.forEach(function(item){state.answers[item.id]={verdict:null,checks:{},notes:""};item.checks.forEach(function(check){state.answers[item.id].checks[check.id]=false;});});
+          SPEC.questions.forEach(function(question){state.questions[question.id]={verdict:null,notes:""};});
+          validationRequested = false;refreshReview();persistState();
+        }
+      }
+      else if(action === "close-lightbox"){ byId("lightbox").close(); }
+      else if(action === "zoom-in"){ zoomLightbox(1.35); }
+      else if(action === "zoom-out"){ zoomLightbox(0.74); }
+      else if(action === "zoom-fit"){
+        var image = byId("lightbox-img");
+        image.style.width = "100%"; lightboxScale();
+      }
+      else if(action === "zoom-original"){
+        var original = byId("lightbox-img");
+        original.style.width = (original.naturalWidth || 1200) + "px"; lightboxScale();
+      }
+    });
+    byId('item-search').addEventListener('input', applyFilter);
+    byId('evidence-layout').addEventListener('change',function(event){evidenceLayout=event.target.value;applyEvidenceLayouts();});
+    byId('draft-file').addEventListener('change',function(event){
+      var file = event.target.files[0];if(!file) return;
+      file.text().then(function(value){
+        var clean = readDraft(JSON.parse(value));
+        state=clean;validationRequested=false;refreshReview();saveState();toast('同版草稿已恢复，尚未归档。');
+      }).catch(function(error){toast('未导入：'+error.message,true);});
+      event.target.value='';
+    });
+    byId('lightbox-evidence').addEventListener('change',function(event){showLightboxImage(Number(event.target.value));});
+    var body = document.querySelector('.lightbox-body'), drag = null;
+    byId('lightbox-img').draggable = false;
+    body.addEventListener('pointerdown',function(event){
+      if(event.button !== 0) return;
+      drag={x:event.clientX,y:event.clientY,left:body.scrollLeft,top:body.scrollTop};
+      body.classList.add('dragging');body.setPointerCapture(event.pointerId);
+    });
+    body.addEventListener('pointermove',function(event){
+      if(!drag) return;body.scrollLeft=drag.left+drag.x-event.clientX;body.scrollTop=drag.top+drag.y-event.clientY;
+    });
+    function endDrag(){drag=null;body.classList.remove('dragging');}
+    body.addEventListener('pointerup',endDrag);body.addEventListener('pointercancel',endDrag);body.addEventListener('lostpointercapture',endDrag);
+    window.addEventListener('pagehide',function(){clearTimeout(saveTimer);persistState();});
+    byId("filters").addEventListener("click", function(event){
+      var button = event.target.closest("button[data-filter]");
+      if(!button) return;
+      currentFilter = button.dataset.filter;
+      applyFilter();
+    });
+    byId("item-list").addEventListener("change", function(event){
+      if(event.target.matches('[data-role="compare-evidence"]')){
+        event.target.closest('.evidence-grid').dataset.evidenceCompare=event.target.value;applyEvidenceLayouts();return;
+      }
+      var card = event.target.closest(".item-card");
+      if(!card) return;
+      var index = Number(card.dataset.index);
+      var item = SPEC.items[index];
+      var answer = itemAnswer(item);
+      if(event.target.matches('[data-role="verdict"]')){ answer.verdict = event.target.value; }
+      else if(event.target.matches('[data-role="check"]')){ answer.checks[event.target.dataset.checkId] = event.target.checked; }
+      else { return; }
+      saveState();
+      updateItem(index);
+      updateProgress();
+    });
+    byId("item-list").addEventListener("input", function(event){
+      if(!event.target.matches('[data-role="notes"]')) return;
+      var card = event.target.closest(".item-card");
+      if(!card) return;
+      var index = Number(card.dataset.index);
+      var item = SPEC.items[index];
+      itemAnswer(item).notes = event.target.value;
+      saveState();
+      updateItem(index);
+      updateProgress();
+    });
+    byId("question-list").addEventListener("change", function(event){
+      var card = event.target.closest(".question-card");
+      if(!card) return;
+      var index = Number(card.id.replace("question-card-", ""));
+      var question = SPEC.questions[index];
+      var answer = questionAnswer(question);
+      if(event.target.matches('[data-role="q-verdict"]')){ answer.verdict = event.target.value; }
+      else { return; }
+      saveState();
+      updateQuestion(index);
+      updateProgress();
+    });
+    byId("question-list").addEventListener("input", function(event){
+      if(!event.target.matches('[data-role="q-notes"]')) return;
+      var card = event.target.closest(".question-card");
+      if(!card) return;
+      var index = Number(card.id.replace("question-card-", ""));
+      questionAnswer(SPEC.questions[index]).notes = event.target.value;
+      saveState();
+      updateProgress();
+    });
+    byId("limits-ack").addEventListener("change", function(event){
+      state.limitsAck = event.target.checked;
+      saveState();
+      updateProgress();
+    });
+    byId("statement").addEventListener("input", function(event){
+      state.statement = event.target.value;
+      saveState();
+      updateExportState();
+    });
+    byId("lightbox").addEventListener("click", function(event){
+      if(event.target === byId("lightbox")) byId("lightbox").close();
+    });
+    window.addEventListener("keydown", function(event){
+      if(event.key === "Escape" && byId("lightbox").open){ byId("lightbox").close(); }
+      if(byId("lightbox").open && event.target.tagName !== 'SELECT' && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')){
+        var index=Number(byId('lightbox-evidence').value),step=event.key==='ArrowRight'?1:-1;
+        var next=index+step;if(next>=0 && next<lightboxEntries.length){event.preventDefault();showLightboxImage(next);}
+      }
+    });
+  }
+
+  initState();
+  renderMeta();
+  renderItems();
+  renderQuestions();
+  renderBoundaries();
+  renderExport();
+  bindEvents();
+  SPEC.items.forEach(function(item, index){ updateItem(index); });
+  SPEC.questions.forEach(function(question, index){ updateQuestion(index); });
+  updateProgress();
+  applyFilter();
+  showTab("items");
+})();
+</script>
+</body>
+</html>

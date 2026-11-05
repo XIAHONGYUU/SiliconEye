@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "package_id": "W34-LEFT-M2-20261105-V1",
+  "stage": "METAL",
+  "title": "左侧细 M2：整段补建与短头身份",
+  "date": "2026-11-05",
+  "summary": "转向旧清单明确未覆盖的约x220细M2。本轮只新增L01候选，保留全部旧金属、34已审接口和188候选孔。G1审新线几何，I1独立审短头V2身份；M3承载仍未知。四处已否定M1搜索目标不再送审。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      180,
+      1680,
+      280,
+      2410
+    ],
+    "note": "窄窗口内只声明L01一条细M2。宽图中的左右邻线为上下文，非整幅/全范围完成声明；规则图为独立设计坐标。"
+  },
+  "items": [
+    {
+      "id": "G1",
+      "type": "metal_fragment",
+      "title": "L01：左侧细 M2 整段几何",
+      "prompt": "L01上端、竖向连续段及下端向左短回折的形状、相对位置、长度与邻线间隙是否合理？仅审这一条新增M2，不重新审批S01/S02/S03或旧接口。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "只新增稳定ID W34-M2-L01，未改原53金属，未新增VIA或连接。",
+      "facts": {
+        "new_metal_id": "W34-M2-L01",
+        "native_path": [
+          [
+            220,
+            1750
+          ],
+          [
+            248,
+            2365
+          ],
+          [
+            222,
+            2366
+          ]
+        ],
+        "design_width_candidate": 6,
+        "old_metal_records_exact": 53,
+        "new_model_interfaces": 0
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-left-m2-v1/wide-marked.png",
+          "sha256": "b883f30d73acec16f9cb125e762255b062b6d20aefb43dbc594600fb233161f5",
+          "label": "M2 大邻域：L01整段与短头",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "蓝线标出本次L01；橙框I1只为V2身份候选。绿色REF-S01/02是同帧已审参考，不重问。",
+          "width_height": [
+            870,
+            1150
+          ]
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/after-M2.svg",
+          "sha256": "a3974a29eacb7a512b9d988e6caee2753d773bbc755e3c687334217156effc8a",
+          "label": "补建后 M2 单层",
+          "role": "design",
+          "frame": "design",
+          "caption": "橙色为L01规则候选；其余是原已审范围上下文，没有新增孔或连接。"
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/before-M2.svg",
+          "sha256": "27116476048530f784d19ee4d267d58db6d5c7e7214be210586383facd4550e1",
+          "label": "补建前 M2（同坐标）",
+          "role": "design",
+          "frame": "design",
+          "caption": "旧模型未覆盖L01。新旧同一设计坐标；原图与规则图未精确投影。"
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/wide-raw.png",
+          "sha256": "5e99b7f107f7487da54766514925b69545ad11d37b4867016251e058977938f2",
+          "label": "M2 未标注整段原图",
+          "role": "source",
+          "frame": "m2",
+          "caption": "原生[80,1450,950,2600]；本次声明清单仅含[180,1680,280,2410]中的L01。",
+          "width_height": [
+            870,
+            1150
+          ]
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/tip-marked.png",
+          "sha256": "4f6cc99fa426bc0eecccd63a42b7316a3146d4201d896d891ea9b8ea90b198b7",
+          "label": "M2 短头：I1与已审参考",
+          "role": "detail",
+          "frame": "m2",
+          "caption": "保留左侧上下文和右侧两处已审V2短头。I1是否为V2仍需实际判断，不要求数孔。",
+          "width_height": [
+            570,
+            310
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "geometry_reasonable",
+          "label": "整段走向、上端位置及向左回折合理",
+          "required": true
+        },
+        {
+          "id": "neighbor_gap",
+          "label": "与邻线保持间隙，没有误连",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "I1",
+      "type": "via_interface",
+      "title": "I1：M2短头亮点是否为 V2",
+      "prompt": "M2原图橙框I1的短头亮点，是否确为V2？绿色REF-S01/02仅供同帧对比，不重问。只裁决孔层身份，不批准接哪条M3，不要求逐孔计数；若不是孔请选需修改并说明，看不清可选不确定。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "新V2身份候选尚未写入模型；先有M2来源身份裁决，再考虑M3承载与完整组包围。",
+      "facts": {
+        "observation_id": "W34-LEFT-L01-V2-SEARCH",
+        "source_frame": "m2",
+        "native_bounds": [
+          210,
+          2348,
+          262,
+          2380
+        ],
+        "lower_metal_context_only": "W34-M2-L01",
+        "V2_identity_confirmed": null,
+        "upper_metal_id": null,
+        "connection_confirmed": null,
+        "physical_cut_count": null
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-left-m2-v1/tip-marked.png",
+          "sha256": "4f6cc99fa426bc0eecccd63a42b7316a3146d4201d896d891ea9b8ea90b198b7",
+          "label": "M2 短头：I1与已审参考",
+          "role": "detail",
+          "frame": "m2",
+          "caption": "保留左侧上下文和右侧两处已审V2短头。I1是否为V2仍需实际判断，不要求数孔。",
+          "width_height": [
+            570,
+            310
+          ]
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/wide-marked.png",
+          "sha256": "b883f30d73acec16f9cb125e762255b062b6d20aefb43dbc594600fb233161f5",
+          "label": "M2 大邻域：L01整段与短头",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "蓝线标出本次L01；橙框I1只为V2身份候选。绿色REF-S01/02是同帧已审参考，不重问。",
+          "width_height": [
+            870,
+            1150
+          ]
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/tip-raw.png",
+          "sha256": "6bab5b69f339101046cf9b8662a706ff0a45988683425a5982a6333b496205b8",
+          "label": "M2 未标注短头邻域",
+          "role": "source",
+          "frame": "m2",
+          "caption": "原生[80,2180,650,2490]。亮点来源为M2，未把M1亮边或M3亮点借作V2。",
+          "width_height": [
+            570,
+            310
+          ]
+        },
+        {
+          "path": "docs/assets/w34-left-m2-v1/wide-raw.png",
+          "sha256": "5e99b7f107f7487da54766514925b69545ad11d37b4867016251e058977938f2",
+          "label": "M2 未标注整段原图",
+          "role": "source",
+          "frame": "m2",
+          "caption": "原生[80,1450,950,2600]；本次声明清单仅含[180,1680,280,2410]中的L01。",
+          "width_height": [
+            870,
+            1150
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "V2_visible_on_M2",
+          "label": "在M2短头可辨认V2，而非仅有金属边缘或拍屏纹理",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    }
+  ],
+  "questions": [],
+  "limits": [
+    "G1几何与I1孔身份分别判断，通过其中一项不会自动批准另一项。",
+    "V2只从M2侧判断；本次不送M3承载或V1，不以设计图恰好重叠产生连接。",
+    "旧53金属/34接口/188候选孔逐字段保持，四处“非孔”裁决继续生效。",
+    "范围是L01所在窄原生窗口，不代表宽图全部导体或完整网络覆盖。"
+  ],
+  "not_approved": [
+    "I1接哪条M3、完整孔组包围或新电气连接",
+    "物理孔数/孔径/节距、精确投影或真实工艺尺寸",
+    "PDK DRC、共同GDS采用、全幅完成或完整网表",
+    "L01上端无孔或电气终止结论"
+  ],
+  "sources": {
+    "accepted_geometry_parent": {
+      "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+      "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+    },
+    "four_non_via_closeout": {
+      "path": "benchmarks/w34-terminal-v1-reviewed-v2/identity-closeout.json",
+      "sha256": "1cbc0e78a2c848c607eff0680433faca8aa79ca777bfc08b96ac538661f51ae6"
+    },
+    "native_inventory": {
+      "path": "benchmarks/w34-left-m2-v1/source-inventory.json",
+      "sha256": "578ba2e25370a788b1ca54c2fcbbec7bb99f373c78d7fc87e41800d48617b9ee"
+    },
+    "V2_observation": {
+      "path": "benchmarks/w34-left-m2-v1/V2-observation.json",
+      "sha256": "25b33684b129e067e7e31cb5b0173b76227dcf8ec475d42bd0128be641445f80"
+    },
+    "candidate_manifest": {
+      "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+      "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+    },
+    "candidate_model": {
+      "path": "docs/assets/w34-left-m2-v1/work/model.json",
+      "sha256": "56e8ab8104efb8887310e2514905cf7794ad915df47fb4fb2d89766e36e584a1"
+    },
+    "verification": {
+      "path": "benchmarks/w34-left-m2-v1/verification.json",
+      "sha256": "364afcdd8568e06476a846128b5c10739385ba0baf376190393b7ed401e1a061"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-left-m2-v1/view-provenance.json",
+      "sha256": "c23202b82de0e8fd30643a1d09cb5b43bd8433dfbfb3653a3047a79ea147a15c"
+    }
+  }
+}

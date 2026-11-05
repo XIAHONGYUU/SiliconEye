@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "stage": "METAL",
+  "package_id": "W34-JOINT-GEOMETRY-20261105-V1",
+  "title": "四端联合几何：局部修订与整组包围",
+  "date": "2026-11-05",
+  "summary": "四处V2身份与M3承载均已审。本轮只看局部几何前后变化：四个短头、端部垫、R03与六条M3西侧连续范围。整组设计包围已检查，不重审连接、不要求数孔。",
+  "scope": {
+    "frame": "independent design coordinates; m2/m3 source references",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "范围数字为已审M2来源；规则图在独立设计坐标，M3照片另保留原生范围，未直接投影。"
+  },
+  "items": [
+    {
+      "id": "G1",
+      "type": "metal_fragment",
+      "title": "四个短头的联合局部修订",
+      "change_summary": "仅S01/S02/S03/S04短头设计y从552/522/473/435调整至525/495/450/420；x、回折方向和原生锚点不变，端部增加局部承载垫。",
+      "prompt": "修订后的四个短头、端部局部扩宽及M3相对关系是否合理，且没有误接邻线？只看工作几何，不重新判断已审孔身份/承载，不要求逐孔计数。",
+      "facts": {
+        "changed_M2_ids": [
+          "W34-M2-S01",
+          "W34-M2-S02",
+          "W34-M2-S03",
+          "W34-M2-S04"
+        ],
+        "new_design_cut_candidates": [
+          2,
+          2,
+          2,
+          3
+        ],
+        "physical_cut_count": null,
+        "complete_declared_group_enclosure": "CHECKED",
+        "precise_source_array_geometry": "NOT_QUALIFIED"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/after-heads.svg",
+          "label": "修订后 M2／V2／M3 端部",
+          "role": "design",
+          "frame": "design",
+          "caption": "9个设计候选孔逐孔显示；上下金属包围已检查，2/2/2/3不是人工孔数真值。"
+        },
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/before-heads.svg",
+          "label": "修订前 同坐标端部",
+          "role": "design",
+          "frame": "design",
+          "caption": "与修订后视口相同。旧M2短头尚未按已审M3承载调整。"
+        },
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/after-joint.svg",
+          "label": "修订后 五层联合图",
+          "role": "design",
+          "frame": "design",
+          "caption": "51金属、34条局部连接；M1和原179孔精确保留。"
+        },
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/before-joint.svg",
+          "label": "修订前 五层联合图",
+          "role": "design",
+          "frame": "design",
+          "caption": "已审v2独立M2工作基线；不改写旧批准。"
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域来源",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "原生短头和已审V2位置；不是设计图投影。"
+        },
+        {
+          "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-marked.png",
+          "label": "M3 宽邻域来源",
+          "role": "marked",
+          "frame": "m3",
+          "caption": "已审R09/R07/R04/R03承载原图上下文；坐标独立。"
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+          "label": "M2 原图",
+          "role": "source",
+          "frame": "m2",
+          "caption": ""
+        },
+        {
+          "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-raw.png",
+          "label": "M3 原图",
+          "role": "source",
+          "frame": "m3",
+          "caption": ""
+        }
+      ],
+      "checks": [
+        {
+          "id": "local_geometry",
+          "label": "四短头局部修订和上下层相对几何合理",
+          "required": true
+        },
+        {
+          "id": "no_extra_bridge",
+          "label": "无明显误连、回折反向或邻线粘连",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "type": "metal_fragment",
+      "title": "R03及中间六条M3的西侧连续范围",
+      "change_summary": "新增R03局部M3片段；中间M01–M06仅向左补来源可见范围，原骨架/锚点不变；出界不当作物理终点。",
+      "prompt": "R03局部段、中间六条M3连续扩展和彼此间隙的表达是否合理？不重新审批四个承载，也不宣称全幅M3或全网完成。",
+      "facts": {
+        "new_M3_id": "W34-M3-R03",
+        "extended_M3_ids": [
+          "C-M3-M01",
+          "C-M3-M02",
+          "C-M3-M03",
+          "C-M3-M04",
+          "C-M3-M05",
+          "C-M3-M06"
+        ],
+        "new_electrical_decision": "none - four carriers already approved separately"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/after-M3.svg",
+          "label": "修订后 M3 单层",
+          "role": "design",
+          "frame": "design",
+          "caption": ""
+        },
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/before-M3.svg",
+          "label": "修订前 M3 单层",
+          "role": "design",
+          "frame": "design",
+          "caption": ""
+        },
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/after-joint.svg",
+          "label": "修订后 五层联合图",
+          "role": "design",
+          "frame": "design",
+          "caption": "51金属、34条局部连接；M1和原179孔精确保留。"
+        },
+        {
+          "path": "docs/assets/w34-joint-geometry-v1/before-joint.svg",
+          "label": "修订前 五层联合图",
+          "role": "design",
+          "frame": "design",
+          "caption": "已审v2独立M2工作基线；不改写旧批准。"
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域来源",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "原生短头和已审V2位置；不是设计图投影。"
+        },
+        {
+          "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-marked.png",
+          "label": "M3 宽邻域来源",
+          "role": "marked",
+          "frame": "m3",
+          "caption": "已审R09/R07/R04/R03承载原图上下文；坐标独立。"
+        },
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+          "label": "M2 原图",
+          "role": "source",
+          "frame": "m2",
+          "caption": ""
+        },
+        {
+          "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-raw.png",
+          "label": "M3 原图",
+          "role": "source",
+          "frame": "m3",
+          "caption": ""
+        }
+      ],
+      "checks": [
+        {
+          "id": "continuous_extent",
+          "label": "连续M3范围、六线次序和间隙合理",
+          "required": true
+        },
+        {
+          "id": "scope_exit",
+          "label": "R03右端及左侧范围出口未当作物理终点",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "CTX-APPROVED",
+      "type": "via_interface",
+      "title": "四处身份与承载已审（仅参考）",
+      "review_mode": "context",
+      "required": false,
+      "change_summary": "实际固定确认单已归档通过；受限适配把这四条接入模型，不增加孔数或尺寸批准。",
+      "prompt": "S01→R09、S02→R07、S03→R04、S04→R03已审，不再重问。当前只需评价新增局部设计几何。",
+      "facts": {
+        "reviewed_local_interfaces": 34,
+        "old_cut_sites_unchanged": 179,
+        "candidate_design_cut_count_after": 188,
+        "source_physical_counts": null
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+          "label": "M2 宽邻域来源",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "原生短头和已审V2位置；不是设计图投影。"
+        },
+        {
+          "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-marked.png",
+          "label": "M3 宽邻域来源",
+          "role": "marked",
+          "frame": "m3",
+          "caption": "已审R09/R07/R04/R03承载原图上下文；坐标独立。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "本轮局部修订和连续M3几何是否整体合理，无明显拓扑退化？",
+      "item_ids": [
+        "G1",
+        "G2"
+      ]
+    }
+  ],
+  "limits": [
+    "已审身份/承载不重问；本次只验新的局部设计几何，不替换先前来源批准。",
+    "2/2/2/3和总188孔是AI设计候选；实际孔数/尺寸/节距仍未知。",
+    "整组上下包围和局部间距为当前工作坐标工程检查，不是真实PDK DRC。",
+    "范围外连续性、未审分支、全幅金属覆盖和完整网络仍未完成。"
+  ],
+  "not_approved": [
+    "物理孔数或精确源图孔阵列",
+    "精确跨层配准、工艺尺寸或PDK DRC",
+    "全幅完成、完整网表或GDS采用",
+    "本轮范围外的金属或连接"
+  ],
+  "sources": {
+    "actual_carrier_review": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+      "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+    },
+    "actual_identity_review": {
+      "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+      "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+    },
+    "source_connections": {
+      "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+      "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+    },
+    "before_model": {
+      "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+      "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+    },
+    "after_manifest": {
+      "path": "docs/assets/w34-joint-geometry-v1/S3-joint-work/manifest.json",
+      "sha256": "6a274c77eb2039f002904a2878b0735d473e75df277429a4e3ce9e1dff3a9a75"
+    },
+    "local_revision": {
+      "path": "benchmarks/w34-joint-geometry-v1/S2-revision-evidence.json",
+      "sha256": "384835cc63df958901f9e7255c497e2b168b9124668f7529f306709f409a3d5d"
+    },
+    "local_parts_source_ledger": {
+      "path": "benchmarks/w34-joint-geometry-v1/S2-local-parts-ledger.json",
+      "sha256": "79daaa27d6cd9dbead44da850f3da4ed7e9e72f6f8ec364270165b99e1d5f719"
+    },
+    "comparison_views": {
+      "path": "benchmarks/w34-joint-geometry-v1/comparison-views.json",
+      "sha256": "bc9f4f2712f3267ed0e28da4ed0276af52ecef10996ed531f920172f35487d0e"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "scoped_V1_identity_batch_closeout",
+  "date": "2026-11-05",
+  "status": "CLOSED_ALL_FOUR_TARGETS_REJECTED_NON_VIA",
+  "actor": "AI",
+  "human_review": {
+    "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+    "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+  },
+  "human_review_record": {
+    "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-record.md",
+    "sha256": "6e35f5e0aa9b72e92291f8bc15297acfb0d8891359ecc1f35f9d0a64ede58788"
+  },
+  "reviewed_observations": {
+    "path": "benchmarks/w34-terminal-v1-reviewed-v2/reviewed-observations.json",
+    "sha256": "377b538221b76ae7c46449f17587348aaf475f5a7a2cf7f543664db54e6f94a0"
+  },
+  "negative_reference": {
+    "path": "benchmarks/w34-terminal-v1-reviewed-v2/negative-reference-set.json",
+    "sha256": "f37e1b518249ea00b30a4cba1c8de10bb39bc307d550c69343f24910d058e6c4"
+  },
+  "accepted_geometry_baseline": {
+    "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+    "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+  },
+  "current_model": {
+    "path": "docs/assets/w34-terminal-extension-v1/work/model.json",
+    "sha256": "3d260ca212b2a73d54799a931f2adf2b795c6b1e5e5ab598803f2e2617b1749d"
+  },
+  "next_request": {
+    "path": "benchmarks/w34-terminal-extension-v1/next-request.json",
+    "sha256": "7e5d54a58aabb13dbd282b62bf513455d679e158e05170259a25edbd11708c07"
+  },
+  "confirmed_V1_target_ids": [],
+  "rejected_target_ids": [
+    "W34-END-N1",
+    "W34-END-N2",
+    "W34-END-N3",
+    "W34-END-S1"
+  ],
+  "new_model_interfaces": 0,
+  "model_geometry_changed": false,
+  "reviewed_local_connections": 34,
+  "design_candidate_cuts": 188,
+  "continuation_rule": "Do not re-ask these four rejected search targets or relabel them as unreviewed. Do not infer no-via at whole M2 endpoints or disconnected global nets. Resume from the accepted geometry model and seek independent positive source evidence before proposing another V1.",
+  "complete_network": false,
+  "geometry_adopted": false
+}

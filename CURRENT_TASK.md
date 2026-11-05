@@ -1,40 +1,35 @@
 # 当前任务
 
-## 当前目标与状态
+## 当前状态与本次停止边界
 
-**W3/W4邻近M2的G1/G2/COV及整体Q1/Q2均已通过实际导出确认单校验并归档。四条M2定性几何、固定范围“无明显遗漏”已收口；下一步集中裁决S01–S04短端的V2身份，尚不判断M3承载。**
+**L01新线几何G1与短头V2身份I1已由实际确认单通过归档。用户要求先提交Git/GitHub，后续分析下次继续；本次不开展M3承载分析。**
 
-- [本轮已审基线](benchmarks/w34-m2-reviewed-v2/working-baseline.json) · [四条准确批准几何](benchmarks/w34-m2-reviewed-v2/reviewed-fragments.json) · [已审范围覆盖](benchmarks/w34-m2-reviewed-v2/scoped-M2-coverage-reviewed.json)。
-- [实际确认记录](docs/assets/w34-m2-coverage-v1/review/review-record.md) · [归档JSON](docs/assets/w34-m2-coverage-v1/review/review-decision.json)；旧送审build=30785baea2e440169f045696a25364eb。它不是演示包。
-- M2固定原生范围[280,1870,850,2840]；新S01–S04几何获定性批准，两个旧主干W3/W4只作上下文。6/6声明片段有对应几何，COV为本范围明显可见无遗漏，不扩大为实测边界/物理照片穷尽/全幅M2完成。
-- 三条上端、一条下端仍是范围出口；四个短端V1/V2身份和承载不随几何批准而通过。旧46对象、30接口、179候选孔、旧M1基线及材料保持。
+- [实际确认记录](docs/assets/w34-left-m2-v1/review/review-record.md) · [最新已审工作基线](benchmarks/w34-left-m2-reviewed-v2/working-baseline.json) · [I1已审V2身份](benchmarks/w34-left-m2-reviewed-v2/V2-identity-reviewed.json)。实际版本0bb2cde885f74ee0aa03f9e086b65c5b，G1/I1均accepted。
+- [54金属工作模型](docs/assets/w34-left-m2-v1/work/index.html) · [唯一接续请求](benchmarks/w34-left-m2-v1/next-request.json)。M1=11/M2=18/M3=25；34条已审局部连接、188候选设计孔保持。I1尚未建为模型VIA或连接；物理孔数/尺寸未知。
+- L01=W34-M2-L01，原生[[220,1750],[248,2365],[222,2366]]，窄窗口M2=[180,1680,280,2410]；设计正交路径[[-2640,50],[-2640,510],[-2666,510]]，宽6为本批已审相对几何，不是实测尺度或共同GDS采用。
+- I1原生框[210,2348,262,2380]的V2身份已审；connection_confirmed=null、upper_metal_id=null、physical_cut_count=null。**身份通过不等于M3承载通过，也不以设计图重叠推导连接。**
 
-## 当前唯一下一步：四个短端的V2身份
+## 下次唯一下一步：核I1的M3承载
 
-- [正式孔身份确认单](docs/assets/w34-short-terminal-v1/review/index.html)，预览 http://127.0.0.1:8772/w34-short-terminal-v1/review/index.html 。包W34-SHORT-TIP-V2-IDENTITY-20261105-V1，build=f2f06bd9e86c4118a743459ab9210868。
-- 只问S01/S02/S03/S04橙框是否包含M2→M3的V2；[来源观察](benchmarks/w34-short-terminal-v1/observations.json)保留原生框，四端均可见疑似孔组亮点，identity_confirmed=null，上M3 ID=null，孔数未知。
-- 宽邻域、共同局部图、原图和已审M2图可切换；本次不是新孔尺寸/整组包围或连接审批，不重问G1/G2/COV，也不重审W3/W4八处接口。
-- M1及M3宽邻域已查看，但新V1或M3具体承载尚未建立可靠对应；不能把M2亮点当V1，不能只按跨帧y坐标认定M3行号。三层坐标保持独立，没有精确投影。
-- 用户导出新确认单后，Agent核对新build并用review check --archive归档；身份明确后再检查M3相对对应与完整孔组包围。任一不确定保留，不自动新增孔或接通。
+- 下次恢复后，从原生M3照片建立局部结构对应、比较邻近替代导体，核I1接哪条M3；未有合格投影时分别并列原图，不直接投影或靠行号/设计y510指定。
+- G1几何和I1身份不重审；只对影响新承载的歧义提交固定确认单。承载实际通过后再检查完整组上下包围，必要时限定微调，之后才允许增加模型接口。
+- 本轮到提交/推送完成即停止；不提前生成承载候选、不增加新网络分析任务。L01上端接口仍未知，不因可见线端强配V1。
+- [四非孔收口](benchmarks/w34-terminal-v1-reviewed-v2/identity-closeout.json)继续生效：W34-END-N1/N2/N3/S1均是已拒绝M1搜索目标，不重问、不建孔，不推导附近无孔或全局断开。
 
-## 工作接续与验证
+## 工程与质量记录
 
-- 工作模型继续使用[不变的50金属模型/五层页](docs/assets/w34-m2-coverage-v1/work/index.html)，[唯一几何恢复请求](benchmarks/w34-m2-coverage-v1/next-request.json)。必须同时读取已审M2基线和准确组件；冻结提案中的pending是送审历史，不再索要旧批准。
-- M1=11/M2=17/M3=22，30已审局部接口、179设计候选孔；本轮没有新孔/接口/网边。原点/尺度/视口[-2700,0,780,1440]保持，source_to_design_transform=null，geometry_adopted=false，net_edges=[]，complete_network=false；skill仍LIMITED_TRIAL_V2。
-- [接续验证](benchmarks/w34-m2-reviewed-v2/verification.json)：真实导出版本匹配、范围/必查/边界均有效，所有批准组件绑定，模型精确重放，来源/固定包哈希与原图像素裁片核验通过，当前README/site25文件保持。
-- 本轮无程序或几何更改，未重复跑上一批75项软件测试。上一送审[验证](benchmarks/w34-m2-coverage-v1/verification.json)和[说明](docs/reviews/2026-11-05-w34-m2-coverage.md)保留；旧固定回归README历史哈希差异仍单列，未篡改旧基线，未声称整套回归PASS。
-- [本次批准与孔身份核查说明](docs/reviews/2026-11-05-w34-m2-reviewed-and-terminal.md)。用户已授权本版本提交并推送GitHub；不改README/site、AA/POLY/CT、规范导体注册表或gh-pages。
+- [本批22项几何/保持检查](benchmarks/w34-left-m2-v1/verification.json)通过；统一入口显式补建L01、next-request重放通过；原53feature、原17个M2对象和M1/M3/V1/V2、34连接、188孔中心及画布保持。
+- [提交前检查](benchmarks/w34-left-m2-reviewed-v2/release-checks.json)：114项相关测试本次重新运行通过，定向Ruff通过；固定确认单资源与归档校验通过，diff检查通过。旧历史总回归README哈希漂移FAIL原样保留，不宣称整套PASS。
+- 本批包含受限[固定确认单V2连接接续适配](silicon_eye/conductive_sheet_review.py)及[拒绝/接续测试](tests/test_conductive_sheet_review.py)，供旧四短头已审连接使用；L01的承载尚未确认，未使用适配器生成新连接。契约见[统一入口](docs/architecture/conductive-workflow-contract-v1.md)。
+- README/site当前25文件、M1/M2/M3原图、AA/POLY/CT及规范注册表保持，未发布gh-pages。原始送审包、旧人审与否定记录不改写；当前批准以新的已审基线为准，冻结pending是历史。
+- skill仍LIMITED_TRIAL_V2；source_to_design_transform=null、geometry_adopted=false、net_edges=[]、complete_network=false。工程通过不等于真实PDK DRC、全幅金属完成或完整网表。
+- 本次GitHub提交包括本地尚未推送的联合几何、M3覆盖、四条M2延伸、四非孔裁决、L01及全部实际确认单。提交/远端同步状态以Git记录为准；不在文档写入会自引用改变的本次提交哈希。
 
-## 版本归档检查（2026-11-05）
+## 基线与历史
 
-- 本次提交包含M2四线补建、实际人审归档、已审基线与待裁决V2确认单。44项相关测试通过，两固定包/来源哈希与50金属接续重放通过，README/site25文件保持。详见[提交检查](docs/reviews/2026-11-05-w34-github-checkpoint.md)。
-- 四端V2身份尚无新导出；提交和发布源码不改变其判定。后续可独立准备M3原生可见线清单，不能提前批准四端承载。
-
-## 固定确认单与历史
-
-- [固定确认单协议](docs/review-sheet-protocol.md)：正式人审以实际导出和check归档为准；页面、算法PASS或聊天口头通过不升级物理/几何批准。
-- 11月4日演示包只验证界面，不能移植其答案；11月5日M2实际几何通过只覆盖G1/G2/COV范围，新的孔身份页答案初始空白。
-- [本次接续前入口完整归档](docs/history/current-task-before-2026-11-05-w34-m2-accepted.md)及其历史链接保存全部旧裁决/未知；关键项继续如下。
+- [原53金属范围基线](benchmarks/w34-terminal-reviewed-v2/working-baseline.json)、[M3固定窗口基线](benchmarks/w34-m3-reviewed-v2/working-baseline.json)、[四端来源连接](benchmarks/w34-joint-geometry-v1/source-connection-baseline.json)及[身份](benchmarks/w34-short-terminal-reviewed-v2/identity-baseline.json)保持。
+- [原接口清点](benchmarks/w34-terminal-extension-v1/interface-sweep.json)的8处V2/4处V1不包括新I1；I1身份记录与34条已审模型连接区分。[四负例参考](benchmarks/w34-terminal-v1-reviewed-v2/negative-reference-set.json)是人工参考，未宣称自动AI评测。
+- [本次前入口全文](docs/history/current-task-before-2026-11-05-w34-left-m2-reviewed-push.md) · [本轮L01说明](docs/reviews/2026-11-05-w34-left-m2.md) · [固定确认协议](docs/review-sheet-protocol.md)。
 
 ## 必须接续的裁决与未知
 
@@ -48,13 +43,11 @@
 - 其它区域 A={T3,L2}/B={T1,L4}、H1/H2 局部隔离、U1/U2 同 M1、U1/U3 经 V1 接 N2、U3 CT→AA 环端子路径按历史保持，不转移到本走廊。
 - [材料快照 v5](configs/joint-work-layer-v5.json)为 AA334/POLY696/CT10287；规范导体注册表仍[原33记录](docs/assets/conductive-stack-v2/model.json)。AA-F01951/1952、材料 H1/H2、边界 AA-F01744、S3-AA4-LEFT-SD-ACCESS 六处材料未知保持。物理工艺／尺度／孔数／极性／WL／阻值未知，自动网络导出禁止。
 
-## 恢复
+## 下次恢复
 
 ```bash
-# 重放当前已审局部工作几何，不改变其验收范围；输出必须新目录。
-.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/w34-m2-coverage-v1/next-request.json --output runs/新的M2接续目录
-# 用户完成本轮V2身份导出后，替换为实际收到的文件路径。
-.venv/bin/python -m silicon_eye.review_sheet check --package docs/assets/w34-short-terminal-v1/review --decision /实际路径/review-decision.json --archive
+# 先读最新已审基线；不重复L01补建，不重问G1/I1，不复活四非孔目标。
+.venv/bin/python -m silicon_eye.conductive_workflow --request benchmarks/w34-left-m2-v1/next-request.json --output runs/新的L01接续目录
 ```
 
-未经新裁决不为四短端加VIA或连接。不得自动重建README/site或发布gh-pages。
+本次推送后停止。下次仅核新V2的M3承载；不得自动重建展示页、发布gh-pages或导完整网表。

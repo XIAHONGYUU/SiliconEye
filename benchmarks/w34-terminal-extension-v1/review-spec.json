@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "package_id": "W34-TERMINAL-EXTENSION-20261105-V1",
+  "stage": "METAL",
+  "title": "四条细 M2：接续原范围出口",
+  "date": "2026-11-05",
+  "summary": "固定M3窗口已通过归档。本区8处V2和4处V1的批准已接续；本次沿四条细M2的原出界方向补到可见端部，只送审新增长度与相对位置，不重问旧孔/承载。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1650,
+      850,
+      3450
+    ],
+    "note": "这是四条既有M2连续延伸的包络范围，不是此矩形全部导体或接口的覆盖声明。上下原图分别展示更大邻域。"
+  },
+  "items": [
+    {
+      "id": "G1",
+      "type": "metal_fragment",
+      "title": "S01／S02／S03 上方连续范围",
+      "prompt": "三条细M2在原窗口上方继续到图示可见短端；新规则图的相对高度、长度、次序和间隙是否合理？仅核新增上段，不重审已审下端V2及M3承载。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "只给既有稳定ID追加来源支持的局部范围，不改原生锚点、已审短头或旧金属足迹。",
+      "facts": {
+        "changed_ids": [
+          "W34-M2-S01",
+          "W34-M2-S02",
+          "W34-M2-S03"
+        ],
+        "all_old_interfaces_preserved": 34,
+        "candidate_cuts_unchanged": 188,
+        "new_interface_decisions": 0,
+        "new_endpoint_V1_V2": "UNKNOWN"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/north-marked.png",
+          "sha256": "384898365c8cdb428265d5312cc6362059ffcd089d74f50bb47ac2b04ce94101",
+          "label": "原图大邻域：本次延伸段",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "圈出的是可见线端；黄线为旧窗口边界，非金属断点。未标记新孔。",
+          "width_height": [
+            720,
+            550
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/after-north.svg",
+          "sha256": "d04de99da62712f2c9bbff047da764e9ef9e3fd9e2c110e9397b5230f6c71f75",
+          "label": "补长后 M2 单层",
+          "role": "design",
+          "frame": "design",
+          "caption": "仅增局部连续块；原短头、原骨架、VIA中心均保留。规则图为相对重建，非照片投影。"
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/before-north.svg",
+          "sha256": "4bcb7dbe175910bbed340e19d372b881617e3739359f2806debba76db29b9ce4",
+          "label": "补长前 M2（同坐标）",
+          "role": "design",
+          "frame": "design",
+          "caption": "旧版在原范围边界截取，不代表物理终点。"
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/north-raw.png",
+          "sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+          "label": "未标注原图大邻域",
+          "role": "source",
+          "frame": "m2",
+          "caption": "用于检查圈线和相邻独立金属；照片原件未改。",
+          "width_height": [
+            720,
+            550
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/after-whole.svg",
+          "sha256": "cf740119b93593fd2270cc343a9d2c4fc647e7bead07d9161997ec82839983d2",
+          "label": "补长后本区 M2 全貌",
+          "role": "design",
+          "frame": "design",
+          "caption": "仅作四条线的整体上下文；范围外其它导体不在本轮完整性声明内。"
+        }
+      ],
+      "checks": [
+        {
+          "id": "extent_correct",
+          "label": "三条上方延伸的长度、端部高低和间隙合理",
+          "required": true
+        },
+        {
+          "id": "no_new_bridge",
+          "label": "没有与邻线误接；可见线端不当作已知电气端点",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    },
+    {
+      "id": "G2",
+      "type": "metal_fragment",
+      "title": "S04 下方连续范围",
+      "prompt": "S04越过原窗口下沿，向下连续到图示短端；新规则图的可见范围、相邻间隙及端部位置是否合理？原上端V2及M3承载已审，本次不判断新端部孔或全网。",
+      "required": true,
+      "review_mode": "decision",
+      "change_summary": "只给既有稳定ID追加来源支持的局部范围，不改原生锚点、已审短头或旧金属足迹。",
+      "facts": {
+        "changed_ids": [
+          "W34-M2-S04"
+        ],
+        "all_old_interfaces_preserved": 34,
+        "candidate_cuts_unchanged": 188,
+        "new_interface_decisions": 0,
+        "new_endpoint_V1_V2": "UNKNOWN"
+      },
+      "evidence": [
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/south-marked.png",
+          "sha256": "727494d3d036d6c089b30a28211af1d57f74c942aebe16957295107175d475e3",
+          "label": "原图大邻域：本次延伸段",
+          "role": "marked",
+          "frame": "m2",
+          "caption": "圈出的是可见线端；黄线为旧窗口边界，非金属断点。未标记新孔。",
+          "width_height": [
+            400,
+            950
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/after-south.svg",
+          "sha256": "95ad1707aec0e78fed69802f4d851bd04bc8ecc7a7fb185c6ca4382e2cf679be",
+          "label": "补长后 M2 单层",
+          "role": "design",
+          "frame": "design",
+          "caption": "仅增局部连续块；原短头、原骨架、VIA中心均保留。规则图为相对重建，非照片投影。"
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/before-south.svg",
+          "sha256": "35a4a3a5846bc68b9bb777cb2cd1f5dc0e25c10b83b8e5c791b81c65b235d97e",
+          "label": "补长前 M2（同坐标）",
+          "role": "design",
+          "frame": "design",
+          "caption": "旧版在原范围边界截取，不代表物理终点。"
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/south-raw.png",
+          "sha256": "1144d730b2351d04e6a3d55abc4fe48f192f522e22bde08ee3fe7813c9410f12",
+          "label": "未标注原图大邻域",
+          "role": "source",
+          "frame": "m2",
+          "caption": "用于检查圈线和相邻独立金属；照片原件未改。",
+          "width_height": [
+            400,
+            950
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-extension-v1/after-whole.svg",
+          "sha256": "cf740119b93593fd2270cc343a9d2c4fc647e7bead07d9161997ec82839983d2",
+          "label": "补长后本区 M2 全貌",
+          "role": "design",
+          "frame": "design",
+          "caption": "仅作四条线的整体上下文；范围外其它导体不在本轮完整性声明内。"
+        }
+      ],
+      "checks": [
+        {
+          "id": "extent_correct",
+          "label": "S04向下延伸范围及相邻间隙合理",
+          "required": true
+        },
+        {
+          "id": "no_new_bridge",
+          "label": "没有与邻线误接；可见线端不当作已知电气端点",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "not_applicable"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "上述四条M2的新增连续范围整体合理，无明显误接或截短？不判断新端部VIA或全网络。",
+      "item_ids": [
+        "G1",
+        "G2"
+      ],
+      "required": true
+    }
+  ],
+  "limits": [
+    "只审四条M2新增范围；固定M3窗口几何、旧短头和12处本区已审接口不重审。",
+    "新可见线端是否有V1或其它连接尚未知，M2自身亮点不能当作V1。",
+    "34接口与188候选设计孔全部保持；不新增电气连接，不要求数孔。",
+    "上下来源图保持独立原生坐标；设计图为正交相对几何，未作像素投影。"
+  ],
+  "not_approved": [
+    "四个新端部的孔身份、承载、无孔或电气终止结论",
+    "整个包络范围的所有导体和接口穷尽覆盖",
+    "物理尺寸/孔数、PDK DRC、精确投影或GDS采用",
+    "全芯片重建完成、完整网表或自动网络导出"
+  ],
+  "sources": {
+    "accepted_parent": {
+      "path": "benchmarks/w34-m3-reviewed-v2/working-baseline.json",
+      "sha256": "1388d806cad0c33252c10ff2c4ef94d38b09a558a682c63e6313ee445fc3db10"
+    },
+    "new_manifest": {
+      "path": "docs/assets/w34-terminal-extension-v1/work/manifest.json",
+      "sha256": "bfdb08853f4f2bbb234914d06823cde28417865af1630b69d8efe661f253317b"
+    },
+    "new_model": {
+      "path": "docs/assets/w34-terminal-extension-v1/work/model.json",
+      "sha256": "3d260ca212b2a73d54799a931f2adf2b795c6b1e5e5ab598803f2e2617b1749d"
+    },
+    "part_ledger": {
+      "path": "benchmarks/w34-terminal-extension-v1/local-parts-ledger.json",
+      "sha256": "569cee9135030b934d70c0b7a7cc6f7359741956991668989798c296f43a61a8"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-terminal-extension-v1/view-provenance.json",
+      "sha256": "489c4045cdd568f0e96b0a3b20a1861725e5fba81481ddc3a9039936abddeef6"
+    },
+    "interface_sweep": {
+      "path": "benchmarks/w34-terminal-extension-v1/interface-sweep.json",
+      "sha256": "731bc7899e8f1157ab44a92c422bf32a22cae9473ceaa0844a0ab4ef72bd63c0"
+    },
+    "verification": {
+      "path": "benchmarks/w34-terminal-extension-v1/verification.json",
+      "sha256": "d441720c776b49cd3ee2c66a0e06731e3219ef052d36f4f00bc0a7c07d8ad737"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "actor": "AI",
+  "reason": "Same-frame broad M3 band is continuous to existing RT-M3-MID. Extend only west local footprint; original spine, anchors and width remain unchanged.",
+  "sources": {
+    "accepted_joint_baseline": {
+      "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+      "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+    },
+    "part_ledger": {
+      "path": "benchmarks/w34-m3-remainder-v1/S2-local-parts-ledger.json",
+      "sha256": "c0383b1db1236121d3553bb2cd9de85d78732f4684ff0354f1c03a6658d311f5"
+    },
+    "native_inventory": {
+      "path": "benchmarks/w34-m3-native-inventory-v1/source-inventory.json",
+      "sha256": "937280223768b071287b1916738da4165e2a2ed1a735d80450ee69f179cb1dd4"
+    }
+  },
+  "changes": [
+    {
+      "id": "RT-M3-MID",
+      "added_local_part": {
+        "id": "W34-WEST-MID-CONTINUATION",
+        "bounds": [
+          -2630,
+          550,
+          -1420,
+          630
+        ],
+        "basis": "Same-frame broad M3 band is continuous to existing RT-M3-MID. Extend only west local footprint; original spine, anchors and width remain unchanged."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    }
+  ]
+}

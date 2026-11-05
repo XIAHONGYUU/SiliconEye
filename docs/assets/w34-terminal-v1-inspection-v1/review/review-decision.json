@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-TERMINAL-V1-IDENTITY-20261105-V1",
+  "build_id": "baa23ce29a0445b2a9ae7a5d88e82e37",
+  "stage": "VIA",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "N1",
+      "verdict": "needs_revision",
+      "checks": {
+        "V1_visible_in_M1": false
+      },
+      "notes": "非孔"
+    },
+    {
+      "item_id": "N2",
+      "verdict": "needs_revision",
+      "checks": {
+        "V1_visible_in_M1": false
+      },
+      "notes": "非孔"
+    },
+    {
+      "item_id": "N3",
+      "verdict": "needs_revision",
+      "checks": {
+        "V1_visible_in_M1": false
+      },
+      "notes": "非孔"
+    },
+    {
+      "item_id": "S1",
+      "verdict": "needs_revision",
+      "checks": {
+        "V1_visible_in_M1": false
+      },
+      "notes": "非孔"
+    }
+  ],
+  "questions": [],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-terminal-v1-inspection-v1/review",
+      "manifest_sha256": "e8ec635763c30450235ce69fef2f9c4609bad12865af037087d7e86abe6d2dfa"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-terminal-v1-inspection-v1/review/index.html",
+      "sha256": "fc224a01e16a900ed5dce00fb9ff81d951d711cd86f0f67ae4d37a4f3c1f546b"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-spec.json",
+      "sha256": "2887f4d8cb58e1d1432f59cc79739bc7d1c082341a618dd546e611281f32f358"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m1 native search windows; m2 context independently shown",
+    "native_bounds": [
+      250,
+      1600,
+      1000,
+      3560
+    ],
+    "note": "四个离散搜索邻域的包络，不是整个矩形覆盖声明。每张图都保留独立原生范围；搜索框未通过精确跨层定位资格。"
+  },
+  "not_approved": [
+    "M1下层承载ID与M2上层承载ID或新电气连接",
+    "孔数、孔径、间距或阵列的物理真值",
+    "精确投影、PDK DRC、共同GDS采用或全幅覆盖",
+    "框外没有孔、可见线端是电气终点或完整网表"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "review_sheet_interface_adapter",
+  "actor": "AI",
+  "reason": "Consume the actual accepted fixed-sheet identity/carrier decisions; bind original displayed facts and source anchors without creating human count or geometry approval.",
+  "interface_id": "W34-S01-V2-CANDIDATE",
+  "identity": {
+    "manifest": {
+      "path": "docs/assets/w34-short-terminal-v1/review/manifest.json",
+      "sha256": "b9a2493bcf043fdf63a9b025eb6bb557a936d58ab551d9c84da7bf7169b8ed1d"
+    },
+    "decision": {
+      "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+      "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+    },
+    "item_id": "S01",
+    "check_id": "V2_identity",
+    "source_key": "candidate_observations",
+    "pointer": "/observations/0",
+    "fact_keys": {
+      "native_bounds": "原生完整孔组搜索框",
+      "lower_metal_id": "对应M2金属ID"
+    }
+  },
+  "carrier": {
+    "manifest": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review/manifest.json",
+      "sha256": "d0d1d45547870a4a5e4ff299b0d66c5e03ec597e4e2d815ece2ee783a0e35431"
+    },
+    "decision": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+      "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+    },
+    "item_id": "S01-M3",
+    "check_id": "M3_carrier",
+    "source_key": "carrier_proposals",
+    "pointer": "/rows/0",
+    "fact_keys": {
+      "candidate_M3_native_path": "M3原生候选路径"
+    }
+  },
+  "carrier_row_fact_key": "M3来源候选行号",
+  "carrier_lower_fact_key": "对应M2金属ID",
+  "model_source_key": "unchanged_work_model",
+  "upper_source_key": "M3_native_inventory"
+}

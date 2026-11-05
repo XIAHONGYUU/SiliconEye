@@ -1,0 +1,59 @@
+{
+  "actor": "AI",
+  "source_views": [
+    {
+      "name": "wide",
+      "native_bounds": [
+        80,
+        1450,
+        950,
+        2600
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "raw": {
+        "path": "docs/assets/w34-left-m2-v1/wide-raw.png",
+        "sha256": "5e99b7f107f7487da54766514925b69545ad11d37b4867016251e058977938f2"
+      },
+      "marked": {
+        "path": "docs/assets/w34-left-m2-v1/wide-marked.png",
+        "sha256": "b883f30d73acec16f9cb125e762255b062b6d20aefb43dbc594600fb233161f5"
+      }
+    },
+    {
+      "name": "tip",
+      "native_bounds": [
+        80,
+        2180,
+        650,
+        2490
+      ],
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      },
+      "raw": {
+        "path": "docs/assets/w34-left-m2-v1/tip-raw.png",
+        "sha256": "6bab5b69f339101046cf9b8662a706ff0a45988683425a5982a6333b496205b8"
+      },
+      "marked": {
+        "path": "docs/assets/w34-left-m2-v1/tip-marked.png",
+        "sha256": "4f6cc99fa426bc0eecccd63a42b7316a3146d4201d896d891ea9b8ea90b198b7"
+      }
+    }
+  ],
+  "source_to_design_transform": null,
+  "design_viewport": [
+    -2695,
+    0,
+    -2290,
+    650
+  ],
+  "scope_note": "Native narrow inventory [180,1680,280,2410] contains only L01. Wider images include old reviewed short-head reference groups, not new geometry/connection approvals.",
+  "reference_review": {
+    "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+    "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+  }
+}

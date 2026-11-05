@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "3784b60f6a8b4a8badd22b1c7330919f",
+  "package_id": "W34-TERMINAL-EXTENSION-20261105-V1",
+  "stage": "METAL",
+  "created_at": "2026-11-05T07:04:08+00:00",
+  "spec_sha256": "a66126026b964b4a835c387ee36731d393922253575175075a57df95a74a8def",
+  "page_sha256": "626b607984f90099c0f1ff9d64070f1f0f0bae509547b60831d944bdd61dc90c",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/north-marked.png",
+      "source_sha256": "384898365c8cdb428265d5312cc6362059ffcd089d74f50bb47ac2b04ce94101",
+      "output_path": "assets/384898365c-north-marked.png",
+      "output_sha256": "384898365c8cdb428265d5312cc6362059ffcd089d74f50bb47ac2b04ce94101",
+      "width_height": [
+        720,
+        550
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/after-north.svg",
+      "source_sha256": "d04de99da62712f2c9bbff047da764e9ef9e3fd9e2c110e9397b5230f6c71f75",
+      "output_path": "assets/d04de99da6-after-north.svg",
+      "output_sha256": "d04de99da62712f2c9bbff047da764e9ef9e3fd9e2c110e9397b5230f6c71f75",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/before-north.svg",
+      "source_sha256": "4bcb7dbe175910bbed340e19d372b881617e3739359f2806debba76db29b9ce4",
+      "output_path": "assets/4bcb7dbe17-before-north.svg",
+      "output_sha256": "4bcb7dbe175910bbed340e19d372b881617e3739359f2806debba76db29b9ce4",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/north-raw.png",
+      "source_sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+      "output_path": "assets/7481ed1ba9-north-raw.png",
+      "output_sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+      "width_height": [
+        720,
+        550
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/after-whole.svg",
+      "source_sha256": "cf740119b93593fd2270cc343a9d2c4fc647e7bead07d9161997ec82839983d2",
+      "output_path": "assets/cf740119b9-after-whole.svg",
+      "output_sha256": "cf740119b93593fd2270cc343a9d2c4fc647e7bead07d9161997ec82839983d2",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/south-marked.png",
+      "source_sha256": "727494d3d036d6c089b30a28211af1d57f74c942aebe16957295107175d475e3",
+      "output_path": "assets/727494d3d0-south-marked.png",
+      "output_sha256": "727494d3d036d6c089b30a28211af1d57f74c942aebe16957295107175d475e3",
+      "width_height": [
+        400,
+        950
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/after-south.svg",
+      "source_sha256": "95ad1707aec0e78fed69802f4d851bd04bc8ecc7a7fb185c6ca4382e2cf679be",
+      "output_path": "assets/95ad1707ae-after-south.svg",
+      "output_sha256": "95ad1707aec0e78fed69802f4d851bd04bc8ecc7a7fb185c6ca4382e2cf679be",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/before-south.svg",
+      "source_sha256": "35a4a3a5846bc68b9bb777cb2cd1f5dc0e25c10b83b8e5c791b81c65b235d97e",
+      "output_path": "assets/35a4a3a584-before-south.svg",
+      "output_sha256": "35a4a3a5846bc68b9bb777cb2cd1f5dc0e25c10b83b8e5c791b81c65b235d97e",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-extension-v1/south-raw.png",
+      "source_sha256": "1144d730b2351d04e6a3d55abc4fe48f192f522e22bde08ee3fe7813c9410f12",
+      "output_path": "assets/1144d730b2-south-raw.png",
+      "output_sha256": "1144d730b2351d04e6a3d55abc4fe48f192f522e22bde08ee3fe7813c9410f12",
+      "width_height": [
+        400,
+        950
+      ]
+    }
+  ],
+  "sources": {
+    "accepted_parent": {
+      "path": "benchmarks/w34-m3-reviewed-v2/working-baseline.json",
+      "sha256": "1388d806cad0c33252c10ff2c4ef94d38b09a558a682c63e6313ee445fc3db10"
+    },
+    "new_manifest": {
+      "path": "docs/assets/w34-terminal-extension-v1/work/manifest.json",
+      "sha256": "bfdb08853f4f2bbb234914d06823cde28417865af1630b69d8efe661f253317b"
+    },
+    "new_model": {
+      "path": "docs/assets/w34-terminal-extension-v1/work/model.json",
+      "sha256": "3d260ca212b2a73d54799a931f2adf2b795c6b1e5e5ab598803f2e2617b1749d"
+    },
+    "part_ledger": {
+      "path": "benchmarks/w34-terminal-extension-v1/local-parts-ledger.json",
+      "sha256": "569cee9135030b934d70c0b7a7cc6f7359741956991668989798c296f43a61a8"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-terminal-extension-v1/view-provenance.json",
+      "sha256": "489c4045cdd568f0e96b0a3b20a1861725e5fba81481ddc3a9039936abddeef6"
+    },
+    "interface_sweep": {
+      "path": "benchmarks/w34-terminal-extension-v1/interface-sweep.json",
+      "sha256": "731bc7899e8f1157ab44a92c422bf32a22cae9473ceaa0844a0ab4ef72bd63c0"
+    },
+    "verification": {
+      "path": "benchmarks/w34-terminal-extension-v1/verification.json",
+      "sha256": "d441720c776b49cd3ee2c66a0e06731e3219ef052d36f4f00bc0a7c07d8ad737"
+    }
+  },
+  "counts": {
+    "items": 2,
+    "required_items": 2,
+    "questions": 1,
+    "required_questions": 1,
+    "evidence": 9
+  }
+}

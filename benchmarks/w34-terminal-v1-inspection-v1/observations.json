@@ -1,0 +1,198 @@
+{
+  "kind": "native_V1_identity_search_observations",
+  "actor": "AI",
+  "accepted_parent": {
+    "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+    "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+  },
+  "observations": [
+    {
+      "id": "W34-END-N1",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        307,
+        1728,
+        347,
+        1790
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          299,
+          1735,
+          323,
+          1770
+        ]
+      },
+      "side": "north",
+      "identity_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "Candidate fine M1 end near the S01 upper-tip neighborhood; V1 identity unresolved.",
+      "context_m2_id": "W34-M2-S01"
+    },
+    {
+      "id": "W34-END-N2",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        398,
+        1728,
+        438,
+        1790
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          382,
+          1735,
+          407,
+          1770
+        ]
+      },
+      "side": "north",
+      "identity_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "Candidate nearby M1 end near S02; adjacent parallel M1 is an alternative, source correspondence is not qualified.",
+      "context_m2_id": "W34-M2-S02"
+    },
+    {
+      "id": "W34-END-N3",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        486,
+        1685,
+        520,
+        1745
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          468,
+          1685,
+          492,
+          1720
+        ]
+      },
+      "side": "north",
+      "identity_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "Candidate shorter M1 end near S03; neighboring longer fine M1 is an explicit alternative.",
+      "context_m2_id": "W34-M2-S03"
+    },
+    {
+      "id": "W34-END-S1",
+      "stage": "V1_IDENTITY_SEARCH",
+      "actor": "AI",
+      "upper_metal_id": null,
+      "lower_metal_id": null,
+      "layer_pair": [
+        "M1",
+        "M2"
+      ],
+      "source_frame": "m1",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "native_search_bounds": [
+        803,
+        3345,
+        853,
+        3445
+      ],
+      "m2_context": {
+        "source_photo": {
+          "path": "data/test_chip/tile_full/m2.jpg",
+          "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+        },
+        "native_tip_bounds": [
+          800,
+          3375,
+          829,
+          3420
+        ]
+      },
+      "side": "south",
+      "identity_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "source_correspondence": "UNQUALIFIED_SEARCH_NEIGHBORHOOD",
+      "model_interface_created": false,
+      "alternatives": [
+        "No V1 distinguishable from M1 edge or photographing-screen texture.",
+        "Actual V1/M1 carrier is on a neighboring fine line or beyond the marked search area."
+      ],
+      "reason": "M1 longitudinal fine-line search neighborhood near the S04 lower tip; no clear hole or exact correspondence can be established by AI.",
+      "context_m2_id": "W34-M2-S04"
+    }
+  ],
+  "scope_note": "Search boxes are AI candidate neighborhoods, not detected/approved via groups, not exact cross-layer projection. Only new V1 identity is submitted; carrier mapping remains unknown.",
+  "source_to_design_transform": null,
+  "new_geometry_created": false,
+  "new_interfaces": 0
+}

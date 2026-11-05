@@ -1,0 +1,72 @@
+{
+  "kind": "scoped_four_interface_joint_geometry_validation",
+  "date": "2026-11-05",
+  "actual_carrier_export_sha256": "39f4be0992eace93451b73a2fc1018915d1b755b7f8c4e118ea75ea901e730ab",
+  "human_carrier_archive": "VALID:4 accepted,1 accepted question,limits acknowledged",
+  "human_source_connections": {
+    "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+    "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+  },
+  "transactions": [
+    "S1 additive R03 only",
+    "S2 ten declared metal revisions only",
+    "S3 four interface additions only"
+  ],
+  "metal_count": 51,
+  "local_reviewed_connections": 34,
+  "candidate_cuts_before": 179,
+  "candidate_cuts_after": 188,
+  "new_candidate_cut_counts": [
+    2,
+    2,
+    2,
+    3
+  ],
+  "new_human_physical_count_truth": null,
+  "old_179_cuts_preserved_exact": true,
+  "old_30_connections_preserved_exact": true,
+  "M1_geometry_preserved_exact": true,
+  "all_original_native_metal_anchors_preserved": true,
+  "geometry_human_approval_for_new_revisions": false,
+  "new_groups_enclosure": "4/4 CHECKED",
+  "new_groups_source_geometry": "4/4 NOT_QUALIFIED",
+  "next_request_full_model_exact": true,
+  "all_three_transaction_manifests_verified": true,
+  "review_manifest": {
+    "path": "docs/assets/w34-joint-geometry-v1/review/manifest.json",
+    "sha256": "2be20424497425605bec79656bfed8ae01def517663b9a0342e44064ec3a1282"
+  },
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "showcase_25_files_unchanged": true,
+  "software_tests": {
+    "new_adapter_and_relevant_paths": "83 passed in15.10s",
+    "fixed_legacy_software_tests": "31 passed in28.69s",
+    "total": 114
+  },
+  "ruff": "PASS for conductive_sheet_review.py,conductive_workflow.py,test_conductive_sheet_review.py",
+  "historical_fixed_suite": {
+    "status": "FAIL",
+    "error": "Showcase changed: README.md",
+    "report": "benchmarks/w34-joint-geometry-v1/historical-fixed-regression.json",
+    "old_protection_not_rewritten": true
+  },
+  "execution_code": {
+    "silicon_eye/conductive_workflow.py": "b2cd4f08b1d61d6d196ed3365007e4324445408f4937794e4c54c3e5fc7a0e74",
+    "silicon_eye/conductive_sheet_review.py": "9ffece1dbda5abaacaa1c9f7647c5710b96f8b25c5a7810c152b3144626ea61b",
+    "tests/test_conductive_sheet_review.py": "fdaf936e06da26f20cc76d31de8ecd0759fb392b0d71be859d8730fd5e5c0f73"
+  },
+  "remaining_M3_inventory": [
+    "WM3-R01",
+    "WM3-R02",
+    "WM3-B01"
+  ],
+  "scope": "Source-approved local interfaces and candidate relative joint geometry; not source-array precision, full M3 coverage, PDK or complete-net qualification.",
+  "browser_review": {
+    "evidence_views_loaded": 10,
+    "before_after_and_independent_source_switches_checked": true,
+    "new_geometry_answers_selected": 0,
+    "screenshot": "runs/w34-joint-geometry-20261105/review-browser.png"
+  }
+}

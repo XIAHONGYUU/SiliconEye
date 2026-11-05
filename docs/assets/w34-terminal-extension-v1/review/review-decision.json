@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-TERMINAL-EXTENSION-20261105-V1",
+  "build_id": "3784b60f6a8b4a8badd22b1c7330919f",
+  "stage": "METAL",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "G1",
+      "verdict": "accepted",
+      "checks": {
+        "extent_correct": true,
+        "no_new_bridge": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "G2",
+      "verdict": "accepted",
+      "checks": {
+        "extent_correct": true,
+        "no_new_bridge": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "verdict": "accepted",
+      "notes": ""
+    }
+  ],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-terminal-extension-v1/review",
+      "manifest_sha256": "41bf6a4b8633e716712c8907da853ff9c51bbdd340f7880bdb6ac116cbe33dd6"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-terminal-extension-v1/review/index.html",
+      "sha256": "626b607984f90099c0f1ff9d64070f1f0f0bae509547b60831d944bdd61dc90c"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-terminal-extension-v1/review/review-spec.json",
+      "sha256": "a66126026b964b4a835c387ee36731d393922253575175075a57df95a74a8def"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1650,
+      850,
+      3450
+    ],
+    "note": "这是四条既有M2连续延伸的包络范围，不是此矩形全部导体或接口的覆盖声明。上下原图分别展示更大邻域。"
+  },
+  "not_approved": [
+    "四个新端部的孔身份、承载、无孔或电气终止结论",
+    "整个包络范围的所有导体和接口穷尽覆盖",
+    "物理尺寸/孔数、PDK DRC、精确投影或GDS采用",
+    "全芯片重建完成、完整网表或自动网络导出"
+  ]
+}

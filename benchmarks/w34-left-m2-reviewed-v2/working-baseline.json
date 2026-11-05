@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_and_identity_baseline",
+  "date": "2026-11-05",
+  "status": "CLOSED_L01_GEOMETRY_AND_V2_IDENTITY_ONLY",
+  "geometry_model": {
+    "path": "docs/assets/w34-left-m2-v1/work/model.json",
+    "sha256": "56e8ab8104efb8887310e2514905cf7794ad915df47fb4fb2d89766e36e584a1"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/w34-left-m2-v1/sample.json",
+    "sha256": "afd00ad3b60798f76f35e1acc7f1c889b25ee75ddc21cc60c1310b9d8fd78e11"
+  },
+  "geometry_package": {
+    "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+    "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+  },
+  "human_review": {
+    "path": "docs/assets/w34-left-m2-v1/review/review-decision.json",
+    "sha256": "febbde695332fc330dc5e04d4a4e12e423ffb01fbd9d6a9a5fd61252e48be832"
+  },
+  "review_record": {
+    "path": "docs/assets/w34-left-m2-v1/review/review-record.md",
+    "sha256": "13d0cc1869ac5f75d1f620d44131d3a8961f75de9f52181d8974fc8af8901330"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-left-m2-v1/review/manifest.json",
+    "sha256": "f3e4c11032ffa29c12016687a7e67e940b80a0b34ade3b2768962ce9e31edfde"
+  },
+  "accepted_geometry_item_id": "G1",
+  "accepted_metal_id": "W34-M2-L01",
+  "accepted_identity_item_id": "I1",
+  "reviewed_V2_identity": {
+    "path": "benchmarks/w34-left-m2-reviewed-v2/V2-identity-reviewed.json",
+    "sha256": "956a4d626c51350957533b4f264627e28b1912fe2a0cb5b81f0143b9078fc391"
+  },
+  "inherited_geometry_baseline": {
+    "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+    "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+  },
+  "four_non_via_closeout": {
+    "path": "benchmarks/w34-terminal-v1-reviewed-v2/identity-closeout.json",
+    "sha256": "1cbc0e78a2c848c607eff0680433faca8aa79ca777bfc08b96ac538661f51ae6"
+  },
+  "next_request": {
+    "path": "benchmarks/w34-left-m2-v1/next-request.json",
+    "sha256": "b55224e65f8c1276c3b8a0911cfcd54f4125b59a5cf6b4df249021d0ca5e8e53"
+  },
+  "working_metal_count": 54,
+  "reviewed_local_connections": 34,
+  "candidate_design_cuts": 188,
+  "new_source_V2_identity_confirmed": true,
+  "new_model_VIA_count": 0,
+  "new_model_interface_count": 0,
+  "M3_carrier_confirmed": false,
+  "M3_carrier_id": null,
+  "physical_cut_count": null,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "continuation_rule": "G1 and I1 accepted actual archive: do not re-ask L01 geometry or V2 identity. User requested GitHub commit/push now and further analysis next time. On next authorization, inspect native M3 carrier, then group enclosure and only then add interface after actual carrier approval. Do not infer carrier from design y510 overlap or reopen four non-via targets."
+}

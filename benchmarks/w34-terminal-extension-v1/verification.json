@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checks": {
+    "53_ids_retained": true,
+    "only_four_declared_metals_changed": true,
+    "W34-M2-S01_old_fields_exact": true,
+    "W34-M2-S02_old_fields_exact": true,
+    "W34-M2-S03_old_fields_exact": true,
+    "W34-M2-S04_old_fields_exact": true,
+    "M1_objects_exact": true,
+    "M3_objects_exact": true,
+    "V1_objects_exact": true,
+    "V2_objects_exact": true,
+    "34_connections_and_decisions_exact": true,
+    "188_cuts_exact": true,
+    "same_canvas_and_origin": true,
+    "next_request_exact_replay": true,
+    "old_footprints_contained": true,
+    "showcase_unchanged": true,
+    "no_net_adoption": true,
+    "engine_technical_pass": true
+  },
+  "accepted_parent": {
+    "path": "benchmarks/w34-m3-reviewed-v2/working-baseline.json",
+    "sha256": "1388d806cad0c33252c10ff2c4ef94d38b09a558a682c63e6313ee445fc3db10"
+  },
+  "work_manifest": {
+    "path": "docs/assets/w34-terminal-extension-v1/work/manifest.json",
+    "sha256": "bfdb08853f4f2bbb234914d06823cde28417865af1630b69d8efe661f253317b"
+  },
+  "changed_metal_ids": [
+    "W34-M2-S01",
+    "W34-M2-S02",
+    "W34-M2-S03",
+    "W34-M2-S04"
+  ],
+  "counts": {
+    "M1": 11,
+    "V1": 11,
+    "M2": 17,
+    "V2": 23,
+    "M3": 25
+  },
+  "physical_cut_count": null,
+  "new_interface_count": 0,
+  "geometry_human_approved": false,
+  "endpoint_V1_V2_identity": "UNKNOWN",
+  "source_to_design_transform": null,
+  "historical_full_regression": "Pre-existing historical README hash mismatch remains unchanged; no full-suite PASS claimed."
+}

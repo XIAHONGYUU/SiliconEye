@@ -1,0 +1,30 @@
+{
+  "actor": "AI",
+  "reason": "Add only the remaining R01/R02 native-scope M3 fragments; preserve all51 previous metals and34 interfaces exactly.",
+  "parent": {
+    "path": "docs/assets/w34-joint-geometry-v1/S3-joint-work/manifest.json",
+    "sha256": "6a274c77eb2039f002904a2878b0735d473e75df277429a4e3ce9e1dff3a9a75"
+  },
+  "inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "added_metal_ids": [
+    "W34-M3-R01",
+    "W34-M3-R02"
+  ],
+  "sources": {
+    "supplement": {
+      "path": "benchmarks/w34-m3-remainder-v1/R01-R02-supplement.json",
+      "sha256": "1c0e672c7032e0f61c6b6439e80f8f57314146a0ef3adb11a870c22bf12549ab"
+    },
+    "accepted_joint_baseline": {
+      "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+      "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+    },
+    "native_inventory": {
+      "path": "benchmarks/w34-m3-native-inventory-v1/source-inventory.json",
+      "sha256": "937280223768b071287b1916738da4165e2a2ed1a735d80450ee69f179cb1dd4"
+    }
+  }
+}

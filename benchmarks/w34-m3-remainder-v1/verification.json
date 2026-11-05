@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "checks": {
+    "new_metal_ids_exact": true,
+    "old_features_exact_except_declared_bus": true,
+    "old_bus_footprint_and_source_anchors_retained": true,
+    "M1_objects_exact": true,
+    "M2_objects_exact": true,
+    "V1_objects_exact": true,
+    "V2_objects_exact": true,
+    "34_interface_records_exact": true,
+    "188_cut_bounds_and_centers_exact": true,
+    "replay_geometry_and_interfaces_exact": true,
+    "no_new_net_or_adoption": true,
+    "nine_source_rows_and_design_rows_ordered": true,
+    "bus_extension_contains_old_bus": true,
+    "scope_M3_min_gap_at_least_3": true,
+    "showcase_unchanged": true
+  },
+  "minimum_local_M3_gap": 7.0,
+  "counts": {
+    "M1": 11,
+    "V1": 11,
+    "M2": 17,
+    "V2": 23,
+    "M3": 25
+  },
+  "reviewed_local_connections": 34,
+  "design_candidate_cuts": 188,
+  "physical_cut_count": null,
+  "scope_geometry_human_approved": false,
+  "declared_scope_mapping": "10/10 candidate mappings, not independently proven photograph coverage",
+  "transactions": [
+    {
+      "path": "docs/assets/w34-m3-remainder-v1/S1-add/manifest.json",
+      "sha256": "4d3738ae92c83c9e353cf04d75990d94a7f37486eafc2d891953b70f2aecf4f2"
+    },
+    {
+      "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/manifest.json",
+      "sha256": "10004f09e33e0a5d55ca30c8a3f9cd79bee9ff5d0bd50c1718494a14df826914"
+    }
+  ],
+  "accepted_parent": {
+    "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+    "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+  },
+  "source_to_design_transform": null,
+  "historical_full_regression": "Prior frozen suite remains FAIL on pre-existing README hash drift; not rerun or rewritten."
+}

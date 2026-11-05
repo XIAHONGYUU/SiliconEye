@@ -1,0 +1,67 @@
+{
+  "actor": "AI",
+  "source_views": [
+    {
+      "native_bounds": [
+        180,
+        1500,
+        900,
+        2050
+      ],
+      "raw": {
+        "path": "docs/assets/w34-terminal-extension-v1/north-raw.png",
+        "sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-extension-v1/north-marked.png",
+        "sha256": "384898365c8cdb428265d5312cc6362059ffcd089d74f50bb47ac2b04ce94101"
+      },
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      }
+    },
+    {
+      "native_bounds": [
+        600,
+        2600,
+        1000,
+        3550
+      ],
+      "raw": {
+        "path": "docs/assets/w34-terminal-extension-v1/south-raw.png",
+        "sha256": "1144d730b2351d04e6a3d55abc4fe48f192f522e22bde08ee3fe7813c9410f12"
+      },
+      "marked": {
+        "path": "docs/assets/w34-terminal-extension-v1/south-marked.png",
+        "sha256": "727494d3d036d6c089b30a28211af1d57f74c942aebe16957295107175d475e3"
+      },
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m2.jpg",
+        "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+      }
+    }
+  ],
+  "design_viewports": {
+    "north": [
+      -2630,
+      0,
+      -2300,
+      250
+    ],
+    "south": [
+      -2220,
+      780,
+      -1990,
+      1430
+    ],
+    "whole": [
+      -2670,
+      0,
+      -1990,
+      1430
+    ]
+  },
+  "source_to_design_transform": null,
+  "note": "Only same-layer continuous terminal extents. Native labels do not project the independent rule geometry. Dashed source/design lines respectively mark old scope limits, not pixel-correspondence transforms."
+}

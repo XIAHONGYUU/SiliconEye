@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "checks": {
+    "only_one_added_metal": true,
+    "old53_features_exact": true,
+    "M1_model_objects_exact": true,
+    "M3_model_objects_exact": true,
+    "V1_model_objects_exact": true,
+    "V2_model_objects_exact": true,
+    "old17_M2_objects_exact": true,
+    "34_interface_records_and_decisions_exact": true,
+    "188_candidate_cuts_retained": true,
+    "next_request_exact_replay": true,
+    "canvas_exact": true,
+    "four_negative_targets_retained": true,
+    "V2_identity_and_M3_still_unknown": true,
+    "same_M2_frame_order": true,
+    "source_and_design_left_return": true,
+    "new_M2_spacing_at_least_3": true,
+    "showcase_protected": true,
+    "no_network_adoption": true,
+    "m1_source_photo_preserved": true,
+    "m2_source_photo_preserved": true,
+    "m3_source_photo_preserved": true,
+    "engine_technical_pass": true
+  },
+  "minimum_new_M2_gap": 57.42821606144492,
+  "counts": {
+    "M1": 11,
+    "V1": 11,
+    "M2": 18,
+    "V2": 23,
+    "M3": 25
+  },
+  "new_metal_ids": [
+    "W34-M2-L01"
+  ],
+  "new_model_interfaces": 0,
+  "reviewed_local_interfaces": 34,
+  "candidate_cuts": 188,
+  "physical_count": null,
+  "geometry_human_approved": false,
+  "V2_identity_human_approved": false,
+  "M3_carrier_human_approved": false,
+  "manifest": {
+    "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+    "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+  },
+  "source_to_design_transform": null,
+  "historical_regression": "Older full-suite README hash mismatch remains unchanged; no full-suite PASS claimed."
+}

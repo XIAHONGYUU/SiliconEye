@@ -1,0 +1,57 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add only the source-reviewed S04 upper carrier R03 fragment; old50 metals and30 interfaces exact. Visible right endpoint is scope exit.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m3": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m3.jpg",
+          "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+        },
+        "native_bounds": [
+          180,
+          2160,
+          1280,
+          2475
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "W34-M3-R03-SOURCE",
+      "source_frame": "m3",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          800,
+          2285
+        ],
+        [
+          1280,
+          2273
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_tip_attachment_unknown"
+        },
+        {
+          "state": "exits_scope"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "W34-M3-R03-SOURCE",
+      "metal_id": "W34-M3-R03"
+    }
+  ]
+}

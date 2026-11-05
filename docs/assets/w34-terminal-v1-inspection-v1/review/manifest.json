@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "baa23ce29a0445b2a9ae7a5d88e82e37",
+  "package_id": "W34-TERMINAL-V1-IDENTITY-20261105-V1",
+  "stage": "VIA",
+  "created_at": "2026-11-05T07:16:40+00:00",
+  "spec_sha256": "2887f4d8cb58e1d1432f59cc79739bc7d1c082341a618dd546e611281f32f358",
+  "page_sha256": "fc224a01e16a900ed5dce00fb9ff81d951d711cd86f0f67ae4d37a4f3c1f546b",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-marked.png",
+      "source_sha256": "036c9091943a2a3c63481b456e7b66b7dbb3e7266acf1c982668e4e098bb96b7",
+      "output_path": "assets/036c909194-north-m1-wide-marked.png",
+      "output_sha256": "036c9091943a2a3c63481b456e7b66b7dbb3e7266acf1c982668e4e098bb96b7",
+      "width_height": [
+        820,
+        750
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-marked.png",
+      "source_sha256": "d44dff0d36623a6529d8444ef1d6c4c82e07d5f02b3365f0f2671e883a89f7fb",
+      "output_path": "assets/d44dff0d36-north-m1-detail-marked.png",
+      "output_sha256": "d44dff0d36623a6529d8444ef1d6c4c82e07d5f02b3365f0f2671e883a89f7fb",
+      "width_height": [
+        350,
+        240
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-marked.png",
+      "source_sha256": "18359102429917611314d12315343c5fba2875d822a57c4a38e476ba1da6c7d5",
+      "output_path": "assets/1835910242-north-m2-wide-marked.png",
+      "output_sha256": "18359102429917611314d12315343c5fba2875d822a57c4a38e476ba1da6c7d5",
+      "width_height": [
+        720,
+        550
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-raw.png",
+      "source_sha256": "41475adcebbd4ce5cee479e6a1908b57fb5208ababaacc7b919ddc25e87c9eab",
+      "output_path": "assets/41475adceb-north-m1-wide-raw.png",
+      "output_sha256": "41475adcebbd4ce5cee479e6a1908b57fb5208ababaacc7b919ddc25e87c9eab",
+      "width_height": [
+        820,
+        750
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-raw.png",
+      "source_sha256": "f9e8318bacc71bda48c0c82255a95d7e20741277e670a696b4834d6abed86ac2",
+      "output_path": "assets/f9e8318bac-north-m1-detail-raw.png",
+      "output_sha256": "f9e8318bacc71bda48c0c82255a95d7e20741277e670a696b4834d6abed86ac2",
+      "width_height": [
+        350,
+        240
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-raw.png",
+      "source_sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+      "output_path": "assets/7481ed1ba9-north-m2-wide-raw.png",
+      "output_sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+      "width_height": [
+        720,
+        550
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-wide-marked.png",
+      "source_sha256": "b9c7302172327017ef813b642da265a7a62c7ed574ea128dfd479550c1d541ce",
+      "output_path": "assets/b9c7302172-south-m1-wide-marked.png",
+      "output_sha256": "b9c7302172327017ef813b642da265a7a62c7ed574ea128dfd479550c1d541ce",
+      "width_height": [
+        600,
+        700
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-detail-marked.png",
+      "source_sha256": "80bb605df608b17cbf73478e91b619107b3c65c057dea4fab7570323c35f25c3",
+      "output_path": "assets/80bb605df6-south-m1-detail-marked.png",
+      "output_sha256": "80bb605df608b17cbf73478e91b619107b3c65c057dea4fab7570323c35f25c3",
+      "width_height": [
+        350,
+        360
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/south-m2-wide-marked.png",
+      "source_sha256": "8b7835647c4511182cf497dffc37866473319303cb706c1ea45022391e1b6468",
+      "output_path": "assets/8b7835647c-south-m2-wide-marked.png",
+      "output_sha256": "8b7835647c4511182cf497dffc37866473319303cb706c1ea45022391e1b6468",
+      "width_height": [
+        600,
+        700
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-wide-raw.png",
+      "source_sha256": "4c5a54f44004e46ff41c88a17dcf231775d35dbd0b1445327b883fd2e09d3c33",
+      "output_path": "assets/4c5a54f440-south-m1-wide-raw.png",
+      "output_sha256": "4c5a54f44004e46ff41c88a17dcf231775d35dbd0b1445327b883fd2e09d3c33",
+      "width_height": [
+        600,
+        700
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-detail-raw.png",
+      "source_sha256": "4ad6704d04cedf0840cb9f6ddd5766294f7952a57dd72f8b56bc2c6bbfbc26ca",
+      "output_path": "assets/4ad6704d04-south-m1-detail-raw.png",
+      "output_sha256": "4ad6704d04cedf0840cb9f6ddd5766294f7952a57dd72f8b56bc2c6bbfbc26ca",
+      "width_height": [
+        350,
+        360
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-terminal-v1-inspection-v1/south-m2-wide-raw.png",
+      "source_sha256": "7f9f5987e23c61958321003d5067ce5b2af1525bcbc28f10a2cf0ca055d4fc6b",
+      "output_path": "assets/7f9f5987e2-south-m2-wide-raw.png",
+      "output_sha256": "7f9f5987e23c61958321003d5067ce5b2af1525bcbc28f10a2cf0ca055d4fc6b",
+      "width_height": [
+        600,
+        700
+      ]
+    }
+  ],
+  "sources": {
+    "accepted_terminal_baseline": {
+      "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+      "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+    },
+    "current_model": {
+      "path": "docs/assets/w34-terminal-extension-v1/work/model.json",
+      "sha256": "3d260ca212b2a73d54799a931f2adf2b795c6b1e5e5ab598803f2e2617b1749d"
+    },
+    "native_observations": {
+      "path": "benchmarks/w34-terminal-v1-inspection-v1/observations.json",
+      "sha256": "6c23cb4c89ab89afcf5db66aa2548727c13d7541c60ed3d0f525e34257369f1c"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-terminal-v1-inspection-v1/view-provenance.json",
+      "sha256": "72cba50aefaee8b407450f6e869c394804cc1db77a93fc3a96701ed8089bcf85"
+    },
+    "verification": {
+      "path": "benchmarks/w34-terminal-v1-inspection-v1/verification.json",
+      "sha256": "e364bb6dbdf2b3bcf2d40211fbd699fd573d29cfe15c10aba67ace940d737f44"
+    }
+  },
+  "counts": {
+    "items": 4,
+    "required_items": 4,
+    "questions": 0,
+    "required_questions": 0,
+    "evidence": 12
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "kind": "M2_V2_M3_carrier_proposal_without_new_connection",
+  "actor": "AI",
+  "date": "2026-11-05",
+  "identity_baseline": {
+    "path": "benchmarks/w34-short-terminal-reviewed-v2/identity-baseline.json",
+    "sha256": "c6ee85bfa1eef85217499cce542086ca94824f6b83571ce16ca9321e8cd9edb7"
+  },
+  "same_frame_correspondence": {
+    "path": "benchmarks/w34-m3-carrier-review-v1/same-frame-continuity.json",
+    "sha256": "04bcc343bbb22f19123412ad990f64dc945abdfec3fbff741f147c9c7eaa6b86"
+  },
+  "source_inventory": {
+    "path": "benchmarks/w34-m3-native-inventory-v1/source-inventory.json",
+    "sha256": "937280223768b071287b1916738da4165e2a2ed1a735d80450ee69f179cb1dd4"
+  },
+  "rows": [
+    {
+      "id": "S01",
+      "known_V2_identity": true,
+      "proposed_M3_source_row": "WM3-R09",
+      "existing_model_id_candidate": "C-M3-M06",
+      "existing_model_id_qualification": "AI_SAME_FRAME_MATCH_NOT_NEW_HUMAN_TRUTH",
+      "candidate_M3_native_path": [
+        [
+          180,
+          2429
+        ],
+        [
+          1280,
+          2407
+        ]
+      ],
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "design_group_geometry": null,
+      "whole_group_enclosure": "NOT_EVALUATED_NO_DESIGN_CUT_GROUP_YET",
+      "color": "#ffb347"
+    },
+    {
+      "id": "S02",
+      "known_V2_identity": true,
+      "proposed_M3_source_row": "WM3-R07",
+      "existing_model_id_candidate": "C-M3-M04",
+      "existing_model_id_qualification": "AI_SAME_FRAME_MATCH_NOT_NEW_HUMAN_TRUTH",
+      "candidate_M3_native_path": [
+        [
+          180,
+          2392
+        ],
+        [
+          1280,
+          2371
+        ]
+      ],
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "design_group_geometry": null,
+      "whole_group_enclosure": "NOT_EVALUATED_NO_DESIGN_CUT_GROUP_YET",
+      "color": "#65dcff"
+    },
+    {
+      "id": "S03",
+      "known_V2_identity": true,
+      "proposed_M3_source_row": "WM3-R04",
+      "existing_model_id_candidate": "C-M3-M01",
+      "existing_model_id_qualification": "AI_SAME_FRAME_MATCH_NOT_NEW_HUMAN_TRUTH",
+      "candidate_M3_native_path": [
+        [
+          180,
+          2332
+        ],
+        [
+          1280,
+          2310
+        ]
+      ],
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "design_group_geometry": null,
+      "whole_group_enclosure": "NOT_EVALUATED_NO_DESIGN_CUT_GROUP_YET",
+      "color": "#d6a0ff"
+    },
+    {
+      "id": "S04",
+      "known_V2_identity": true,
+      "proposed_M3_source_row": "WM3-R03",
+      "existing_model_id_candidate": null,
+      "existing_model_id_qualification": "NO_EXISTING_MODEL_ID_ASSIGNED",
+      "candidate_M3_native_path": [
+        [
+          800,
+          2285
+        ],
+        [
+          1280,
+          2273
+        ]
+      ],
+      "carrier_confirmed": null,
+      "connection_confirmed": null,
+      "physical_cut_count": null,
+      "design_group_geometry": null,
+      "whole_group_enclosure": "NOT_EVALUATED_NO_DESIGN_CUT_GROUP_YET",
+      "color": "#6ce6a4"
+    }
+  ],
+  "basis": "Native M2 short-head staircase and existing upper/lower broad-bus context narrow the candidate family; the same M3 photo fixes the row order and local short ends. This yields an AI carrier hypothesis for human judgement, not a qualified fine landing or a numerical cross-frame nearest-row assignment.",
+  "source_to_source_transform": null,
+  "source_to_design_transform": null,
+  "fine_landing_precision": "NOT_ESTABLISHED",
+  "new_geometry": false,
+  "new_connections": 0,
+  "rejected_transform_reuse": {
+    "historical_candidate": "benchmarks/metal-extension/roi2-M2-M3-local-registration-candidate-v23.json",
+    "reason": "Historical candidate has large LOO errors and explicitly rejected upstream extrapolation; not used to select these M3 rows."
+  }
+}

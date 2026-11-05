@@ -1,0 +1,274 @@
+{
+  "actor": "AI",
+  "reason": "Source-approved carriers constrain joint relative geometry. Revise only four M2 short-head heights/pads and six M3 western extent local parts; preserve old via sites and original source anchors. No new interfaces in this transaction.",
+  "sources": {
+    "accepted_source_carriers": {
+      "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+      "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+    },
+    "part_ledger": {
+      "path": "benchmarks/w34-joint-geometry-v1/S2-local-parts-ledger.json",
+      "sha256": "79daaa27d6cd9dbead44da850f3da4ed7e9e72f6f8ec364270165b99e1d5f719"
+    }
+  },
+  "changes": [
+    {
+      "id": "W34-M2-S01",
+      "before_design_path": [
+        [
+          -2550,
+          135
+        ],
+        [
+          -2550,
+          552
+        ],
+        [
+          -2577,
+          552
+        ]
+      ],
+      "after_design_path": [
+        [
+          -2550,
+          135
+        ],
+        [
+          -2550,
+          525
+        ],
+        [
+          -2577,
+          525
+        ]
+      ],
+      "added_local_part": {
+        "id": "S01-SOURCE-HEAD-PAD",
+        "bounds": [
+          -2580,
+          520,
+          -2547,
+          530
+        ],
+        "basis": "Observed bright horizontal short head is locally wider than its fine vertical stem; relative joint candidate with old source anchor unchanged."
+      },
+      "reason": "Human-approved upper M3 source carrier now constrains relative design height; preserve x/turn direction/native anchors. New geometry separately reviewable."
+    },
+    {
+      "id": "W34-M2-S02",
+      "before_design_path": [
+        [
+          -2460,
+          135
+        ],
+        [
+          -2460,
+          522
+        ],
+        [
+          -2434,
+          522
+        ]
+      ],
+      "after_design_path": [
+        [
+          -2460,
+          135
+        ],
+        [
+          -2460,
+          495
+        ],
+        [
+          -2434,
+          495
+        ]
+      ],
+      "added_local_part": {
+        "id": "S02-SOURCE-HEAD-PAD",
+        "bounds": [
+          -2463,
+          490,
+          -2431,
+          500
+        ],
+        "basis": "Observed bright horizontal short head is locally wider than its fine vertical stem; relative joint candidate with old source anchor unchanged."
+      },
+      "reason": "Human-approved upper M3 source carrier now constrains relative design height; preserve x/turn direction/native anchors. New geometry separately reviewable."
+    },
+    {
+      "id": "W34-M2-S03",
+      "before_design_path": [
+        [
+          -2375,
+          135
+        ],
+        [
+          -2375,
+          473
+        ],
+        [
+          -2402,
+          473
+        ]
+      ],
+      "after_design_path": [
+        [
+          -2375,
+          135
+        ],
+        [
+          -2375,
+          450
+        ],
+        [
+          -2402,
+          450
+        ]
+      ],
+      "added_local_part": {
+        "id": "S03-SOURCE-HEAD-PAD",
+        "bounds": [
+          -2405,
+          445,
+          -2372,
+          455
+        ],
+        "basis": "Observed bright horizontal short head is locally wider than its fine vertical stem; relative joint candidate with old source anchor unchanged."
+      },
+      "reason": "Human-approved upper M3 source carrier now constrains relative design height; preserve x/turn direction/native anchors. New geometry separately reviewable."
+    },
+    {
+      "id": "W34-M2-S04",
+      "before_design_path": [
+        [
+          -2073,
+          435
+        ],
+        [
+          -2100,
+          435
+        ],
+        [
+          -2100,
+          923
+        ]
+      ],
+      "after_design_path": [
+        [
+          -2073,
+          420
+        ],
+        [
+          -2100,
+          420
+        ],
+        [
+          -2100,
+          923
+        ]
+      ],
+      "added_local_part": {
+        "id": "S04-SOURCE-HEAD-PAD",
+        "bounds": [
+          -2103,
+          415,
+          -2070,
+          425
+        ],
+        "basis": "Observed bright horizontal short head is locally wider than its fine vertical stem; relative joint candidate with old source anchor unchanged."
+      },
+      "reason": "Human-approved upper M3 source carrier now constrains relative design height; preserve x/turn direction/native anchors. New geometry separately reviewable."
+    },
+    {
+      "id": "C-M3-M01",
+      "added_local_part": {
+        "id": "W34-LEFT-SOURCE-CONTINUATION",
+        "bounds": [
+          -2630,
+          446,
+          74,
+          454
+        ],
+        "basis": "Visible continuous same-frame M3 trace extends through the west work window, preserving original right-hand feature and original native anchors."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    },
+    {
+      "id": "C-M3-M02",
+      "added_local_part": {
+        "id": "W34-LEFT-SOURCE-CONTINUATION",
+        "bounds": [
+          -2630,
+          461,
+          74,
+          469
+        ],
+        "basis": "Visible continuous same-frame M3 trace extends through the west work window, preserving original right-hand feature and original native anchors."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    },
+    {
+      "id": "C-M3-M03",
+      "added_local_part": {
+        "id": "W34-LEFT-SOURCE-CONTINUATION",
+        "bounds": [
+          -2630,
+          476,
+          74,
+          484
+        ],
+        "basis": "Visible continuous same-frame M3 trace extends through the west work window, preserving original right-hand feature and original native anchors."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    },
+    {
+      "id": "C-M3-M04",
+      "added_local_part": {
+        "id": "W34-LEFT-SOURCE-CONTINUATION",
+        "bounds": [
+          -2630,
+          491,
+          74,
+          499
+        ],
+        "basis": "Visible continuous same-frame M3 trace extends through the west work window, preserving original right-hand feature and original native anchors."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    },
+    {
+      "id": "C-M3-M05",
+      "added_local_part": {
+        "id": "W34-LEFT-SOURCE-CONTINUATION",
+        "bounds": [
+          -2630,
+          506,
+          74,
+          514
+        ],
+        "basis": "Visible continuous same-frame M3 trace extends through the west work window, preserving original right-hand feature and original native anchors."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    },
+    {
+      "id": "C-M3-M06",
+      "added_local_part": {
+        "id": "W34-LEFT-SOURCE-CONTINUATION",
+        "bounds": [
+          -2630,
+          521,
+          74,
+          529
+        ],
+        "basis": "Visible continuous same-frame M3 trace extends through the west work window, preserving original right-hand feature and original native anchors."
+      },
+      "original_native_path_preserved": true,
+      "original_design_path_preserved": true
+    }
+  ]
+}

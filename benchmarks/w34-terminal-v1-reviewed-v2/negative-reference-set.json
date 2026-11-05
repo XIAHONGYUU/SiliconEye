@@ -1,0 +1,424 @@
+{
+  "kind": "manual_V1_negative_regression_reference",
+  "actor": "AI",
+  "source_review": {
+    "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+    "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+  },
+  "example_count": 4,
+  "independent_chip_count": 1,
+  "geographic_groups": 2,
+  "examples": [
+    {
+      "id": "W34-END-N1",
+      "task": "V1_presence_in_named_search_target",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_frame": "m1",
+      "native_search_bounds": [
+        307,
+        1728,
+        347,
+        1790
+      ],
+      "context_m2_id": "W34-M2-S01",
+      "reference_evidence": [
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-marked.png",
+          "label": "M1 大邻域：橙色搜索框",
+          "role": "marked",
+          "caption": "橙框只是AI搜索邻域，不是已经找到或批准的孔组；先判断M1上是否看得到V1。",
+          "frame": "m1",
+          "sha256": "036c9091943a2a3c63481b456e7b66b7dbb3e7266acf1c982668e4e098bb96b7",
+          "width_height": [
+            820,
+            750
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-marked.png",
+          "label": "M1 放大：保留相邻线",
+          "role": "detail",
+          "caption": "保留多条相邻M1作为参照；短端亮边、长条和拍屏纹理不能直接作为孔。",
+          "frame": "m1",
+          "sha256": "d44dff0d36623a6529d8444ef1d6c4c82e07d5f02b3365f0f2671e883a89f7fb",
+          "width_height": [
+            350,
+            240
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-marked.png",
+          "label": "M2 已审线端上下文",
+          "role": "marked",
+          "caption": "蓝框标示已审可见线端，仅供上下文定位；未直接投影到M1，不审批M1→M2承载。",
+          "frame": "m2",
+          "sha256": "18359102429917611314d12315343c5fba2875d822a57c4a38e476ba1da6c7d5",
+          "width_height": [
+            720,
+            550
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-raw.png",
+          "label": "M1 未标注大邻域",
+          "role": "source",
+          "caption": "原生照片独立显示；可回查搜索框是否选偏。",
+          "frame": "m1",
+          "sha256": "41475adcebbd4ce5cee479e6a1908b57fb5208ababaacc7b919ddc25e87c9eab",
+          "width_height": [
+            820,
+            750
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-raw.png",
+          "label": "M1 未标注放大邻域",
+          "role": "source",
+          "caption": "原生像素裁图，不增强、不造孔。",
+          "frame": "m1",
+          "sha256": "f9e8318bacc71bda48c0c82255a95d7e20741277e670a696b4834d6abed86ac2",
+          "width_height": [
+            350,
+            240
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-raw.png",
+          "label": "M2 未标注大邻域",
+          "role": "source",
+          "caption": "M2仅作线端上下文，不能作为V1孔来源。",
+          "frame": "m2",
+          "sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+          "width_height": [
+            720,
+            550
+          ]
+        }
+      ],
+      "expected_identity": "NON_VIA",
+      "expected_identity_confirmed": false,
+      "expected_model_interface_added": false,
+      "expected_connection_confirmed": null,
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "N1",
+      "human_note": "非孔",
+      "grading_scope": "Only the marked target, not adjacent unmarked areas. Correct behavior rejects this target without inferring global isolation or no-via elsewhere."
+    },
+    {
+      "id": "W34-END-N2",
+      "task": "V1_presence_in_named_search_target",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_frame": "m1",
+      "native_search_bounds": [
+        398,
+        1728,
+        438,
+        1790
+      ],
+      "context_m2_id": "W34-M2-S02",
+      "reference_evidence": [
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-marked.png",
+          "label": "M1 大邻域：橙色搜索框",
+          "role": "marked",
+          "caption": "橙框只是AI搜索邻域，不是已经找到或批准的孔组；先判断M1上是否看得到V1。",
+          "frame": "m1",
+          "sha256": "036c9091943a2a3c63481b456e7b66b7dbb3e7266acf1c982668e4e098bb96b7",
+          "width_height": [
+            820,
+            750
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-marked.png",
+          "label": "M1 放大：保留相邻线",
+          "role": "detail",
+          "caption": "保留多条相邻M1作为参照；短端亮边、长条和拍屏纹理不能直接作为孔。",
+          "frame": "m1",
+          "sha256": "d44dff0d36623a6529d8444ef1d6c4c82e07d5f02b3365f0f2671e883a89f7fb",
+          "width_height": [
+            350,
+            240
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-marked.png",
+          "label": "M2 已审线端上下文",
+          "role": "marked",
+          "caption": "蓝框标示已审可见线端，仅供上下文定位；未直接投影到M1，不审批M1→M2承载。",
+          "frame": "m2",
+          "sha256": "18359102429917611314d12315343c5fba2875d822a57c4a38e476ba1da6c7d5",
+          "width_height": [
+            720,
+            550
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-raw.png",
+          "label": "M1 未标注大邻域",
+          "role": "source",
+          "caption": "原生照片独立显示；可回查搜索框是否选偏。",
+          "frame": "m1",
+          "sha256": "41475adcebbd4ce5cee479e6a1908b57fb5208ababaacc7b919ddc25e87c9eab",
+          "width_height": [
+            820,
+            750
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-raw.png",
+          "label": "M1 未标注放大邻域",
+          "role": "source",
+          "caption": "原生像素裁图，不增强、不造孔。",
+          "frame": "m1",
+          "sha256": "f9e8318bacc71bda48c0c82255a95d7e20741277e670a696b4834d6abed86ac2",
+          "width_height": [
+            350,
+            240
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-raw.png",
+          "label": "M2 未标注大邻域",
+          "role": "source",
+          "caption": "M2仅作线端上下文，不能作为V1孔来源。",
+          "frame": "m2",
+          "sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+          "width_height": [
+            720,
+            550
+          ]
+        }
+      ],
+      "expected_identity": "NON_VIA",
+      "expected_identity_confirmed": false,
+      "expected_model_interface_added": false,
+      "expected_connection_confirmed": null,
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "N2",
+      "human_note": "非孔",
+      "grading_scope": "Only the marked target, not adjacent unmarked areas. Correct behavior rejects this target without inferring global isolation or no-via elsewhere."
+    },
+    {
+      "id": "W34-END-N3",
+      "task": "V1_presence_in_named_search_target",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_frame": "m1",
+      "native_search_bounds": [
+        486,
+        1685,
+        520,
+        1745
+      ],
+      "context_m2_id": "W34-M2-S03",
+      "reference_evidence": [
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-marked.png",
+          "label": "M1 大邻域：橙色搜索框",
+          "role": "marked",
+          "caption": "橙框只是AI搜索邻域，不是已经找到或批准的孔组；先判断M1上是否看得到V1。",
+          "frame": "m1",
+          "sha256": "036c9091943a2a3c63481b456e7b66b7dbb3e7266acf1c982668e4e098bb96b7",
+          "width_height": [
+            820,
+            750
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-marked.png",
+          "label": "M1 放大：保留相邻线",
+          "role": "detail",
+          "caption": "保留多条相邻M1作为参照；短端亮边、长条和拍屏纹理不能直接作为孔。",
+          "frame": "m1",
+          "sha256": "d44dff0d36623a6529d8444ef1d6c4c82e07d5f02b3365f0f2671e883a89f7fb",
+          "width_height": [
+            350,
+            240
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-marked.png",
+          "label": "M2 已审线端上下文",
+          "role": "marked",
+          "caption": "蓝框标示已审可见线端，仅供上下文定位；未直接投影到M1，不审批M1→M2承载。",
+          "frame": "m2",
+          "sha256": "18359102429917611314d12315343c5fba2875d822a57c4a38e476ba1da6c7d5",
+          "width_height": [
+            720,
+            550
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-wide-raw.png",
+          "label": "M1 未标注大邻域",
+          "role": "source",
+          "caption": "原生照片独立显示；可回查搜索框是否选偏。",
+          "frame": "m1",
+          "sha256": "41475adcebbd4ce5cee479e6a1908b57fb5208ababaacc7b919ddc25e87c9eab",
+          "width_height": [
+            820,
+            750
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m1-detail-raw.png",
+          "label": "M1 未标注放大邻域",
+          "role": "source",
+          "caption": "原生像素裁图，不增强、不造孔。",
+          "frame": "m1",
+          "sha256": "f9e8318bacc71bda48c0c82255a95d7e20741277e670a696b4834d6abed86ac2",
+          "width_height": [
+            350,
+            240
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/north-m2-wide-raw.png",
+          "label": "M2 未标注大邻域",
+          "role": "source",
+          "caption": "M2仅作线端上下文，不能作为V1孔来源。",
+          "frame": "m2",
+          "sha256": "7481ed1ba9c9c3438ec56d70f47018b95869445cbd1ebb91505b619b674e77ca",
+          "width_height": [
+            720,
+            550
+          ]
+        }
+      ],
+      "expected_identity": "NON_VIA",
+      "expected_identity_confirmed": false,
+      "expected_model_interface_added": false,
+      "expected_connection_confirmed": null,
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "N3",
+      "human_note": "非孔",
+      "grading_scope": "Only the marked target, not adjacent unmarked areas. Correct behavior rejects this target without inferring global isolation or no-via elsewhere."
+    },
+    {
+      "id": "W34-END-S1",
+      "task": "V1_presence_in_named_search_target",
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m1.jpg",
+        "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+      },
+      "source_frame": "m1",
+      "native_search_bounds": [
+        803,
+        3345,
+        853,
+        3445
+      ],
+      "context_m2_id": "W34-M2-S04",
+      "reference_evidence": [
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-wide-marked.png",
+          "label": "M1 大邻域：橙色搜索框",
+          "role": "marked",
+          "caption": "橙框只是AI搜索邻域，不是已经找到或批准的孔组；先判断M1上是否看得到V1。",
+          "frame": "m1",
+          "sha256": "b9c7302172327017ef813b642da265a7a62c7ed574ea128dfd479550c1d541ce",
+          "width_height": [
+            600,
+            700
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-detail-marked.png",
+          "label": "M1 放大：保留相邻线",
+          "role": "detail",
+          "caption": "保留多条相邻M1作为参照；短端亮边、长条和拍屏纹理不能直接作为孔。",
+          "frame": "m1",
+          "sha256": "80bb605df608b17cbf73478e91b619107b3c65c057dea4fab7570323c35f25c3",
+          "width_height": [
+            350,
+            360
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m2-wide-marked.png",
+          "label": "M2 已审线端上下文",
+          "role": "marked",
+          "caption": "蓝框标示已审可见线端，仅供上下文定位；未直接投影到M1，不审批M1→M2承载。",
+          "frame": "m2",
+          "sha256": "8b7835647c4511182cf497dffc37866473319303cb706c1ea45022391e1b6468",
+          "width_height": [
+            600,
+            700
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-wide-raw.png",
+          "label": "M1 未标注大邻域",
+          "role": "source",
+          "caption": "原生照片独立显示；可回查搜索框是否选偏。",
+          "frame": "m1",
+          "sha256": "4c5a54f44004e46ff41c88a17dcf231775d35dbd0b1445327b883fd2e09d3c33",
+          "width_height": [
+            600,
+            700
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m1-detail-raw.png",
+          "label": "M1 未标注放大邻域",
+          "role": "source",
+          "caption": "原生像素裁图，不增强、不造孔。",
+          "frame": "m1",
+          "sha256": "4ad6704d04cedf0840cb9f6ddd5766294f7952a57dd72f8b56bc2c6bbfbc26ca",
+          "width_height": [
+            350,
+            360
+          ]
+        },
+        {
+          "path": "docs/assets/w34-terminal-v1-inspection-v1/south-m2-wide-raw.png",
+          "label": "M2 未标注大邻域",
+          "role": "source",
+          "caption": "M2仅作线端上下文，不能作为V1孔来源。",
+          "frame": "m2",
+          "sha256": "7f9f5987e23c61958321003d5067ce5b2af1525bcbc28f10a2cf0ca055d4fc6b",
+          "width_height": [
+            600,
+            700
+          ]
+        }
+      ],
+      "expected_identity": "NON_VIA",
+      "expected_identity_confirmed": false,
+      "expected_model_interface_added": false,
+      "expected_connection_confirmed": null,
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "S1",
+      "human_note": "非孔",
+      "grading_scope": "Only the marked target, not adjacent unmarked areas. Correct behavior rejects this target without inferring global isolation or no-via elsewhere."
+    }
+  ],
+  "automated_AI_evaluation_implemented": false,
+  "evaluation_executed": false,
+  "usage": "Manual reference for subsequent V1 judgments. Freeze new observations before reading these answers when measuring recognition; source/display checks do not measure recognition quality.",
+  "limits": [
+    "Four named targets on one chip, not four independent chips or a general accuracy estimate.",
+    "No design-array or carrier truth is added; no global absence/net isolation is approved."
+  ]
+}

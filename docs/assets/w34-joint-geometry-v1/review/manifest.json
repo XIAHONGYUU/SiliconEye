@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "3e10f46706d8487fbcf761093d9a7aac",
+  "package_id": "W34-JOINT-GEOMETRY-20261105-V1",
+  "stage": "METAL",
+  "created_at": "2026-11-05T03:51:30+00:00",
+  "spec_sha256": "53bf2448312ae648e153e53462abaf78dfb2e7785efe1dffb87e388acf82605e",
+  "page_sha256": "053fa62c5de4c4d2eb07436604d90f920fca1920166838a3a3cc2d37ff1a8029",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-joint-geometry-v1/after-heads.svg",
+      "source_sha256": "0364d9a6d39c33b031d08a6778cba39fdc034050867eeb81025cf48d132446b0",
+      "output_path": "assets/0364d9a6d3-after-heads.svg",
+      "output_sha256": "0364d9a6d39c33b031d08a6778cba39fdc034050867eeb81025cf48d132446b0",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-joint-geometry-v1/before-heads.svg",
+      "source_sha256": "cd09fc388a524912afd57c79478282cc86e61f56187ec5a00625ee245f00606a",
+      "output_path": "assets/cd09fc388a-before-heads.svg",
+      "output_sha256": "cd09fc388a524912afd57c79478282cc86e61f56187ec5a00625ee245f00606a",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-joint-geometry-v1/after-joint.svg",
+      "source_sha256": "1c4eabfb1405e18b5945a1855adfec48dfa737fb4a1027c4974c4f81d279b35d",
+      "output_path": "assets/1c4eabfb14-after-joint.svg",
+      "output_sha256": "1c4eabfb1405e18b5945a1855adfec48dfa737fb4a1027c4974c4f81d279b35d",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-joint-geometry-v1/before-joint.svg",
+      "source_sha256": "118f06be140a2cc7ea7e340c69e2365b5b7c91b664d608ab76f18ba0af34d783",
+      "output_path": "assets/118f06be14-before-joint.svg",
+      "output_sha256": "118f06be140a2cc7ea7e340c69e2365b5b7c91b664d608ab76f18ba0af34d783",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+      "source_sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+      "output_path": "assets/d25e328802-wide-m2-marked.png",
+      "output_sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+      "width_height": [
+        920,
+        1250
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-marked.png",
+      "source_sha256": "b84281337c0a708b6e31c26afb4dd4cb5c6d8c8e8ee09e0aabc8edee6da09b39",
+      "output_path": "assets/b84281337c-wide-m3-marked.png",
+      "output_sha256": "b84281337c0a708b6e31c26afb4dd4cb5c6d8c8e8ee09e0aabc8edee6da09b39",
+      "width_height": [
+        1200,
+        1060
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+      "source_sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+      "output_path": "assets/8877f5e8ee-wide-m2-raw.png",
+      "output_sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+      "width_height": [
+        920,
+        1250
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-raw.png",
+      "source_sha256": "23d98f24759988b2e227a8bcf0cff042232b6f7a09db0981d68e4f6f0bfc2e4e",
+      "output_path": "assets/23d98f2475-wide-m3-raw.png",
+      "output_sha256": "23d98f24759988b2e227a8bcf0cff042232b6f7a09db0981d68e4f6f0bfc2e4e",
+      "width_height": [
+        1200,
+        1060
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-joint-geometry-v1/after-M3.svg",
+      "source_sha256": "8745540f8abea38ebaf72218ac8a0bf26c30d288c036f75849bba9df49912c8e",
+      "output_path": "assets/8745540f8a-after-M3.svg",
+      "output_sha256": "8745540f8abea38ebaf72218ac8a0bf26c30d288c036f75849bba9df49912c8e",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-joint-geometry-v1/before-M3.svg",
+      "source_sha256": "dc0ed0624fc284cda38184dd22cf11a5feb4b878c9bfe0d5065c67b496157c3b",
+      "output_path": "assets/dc0ed0624f-before-M3.svg",
+      "output_sha256": "dc0ed0624fc284cda38184dd22cf11a5feb4b878c9bfe0d5065c67b496157c3b",
+      "width_height": null
+    }
+  ],
+  "sources": {
+    "actual_carrier_review": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+      "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+    },
+    "actual_identity_review": {
+      "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+      "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+    },
+    "source_connections": {
+      "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+      "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+    },
+    "before_model": {
+      "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+      "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+    },
+    "after_manifest": {
+      "path": "docs/assets/w34-joint-geometry-v1/S3-joint-work/manifest.json",
+      "sha256": "6a274c77eb2039f002904a2878b0735d473e75df277429a4e3ce9e1dff3a9a75"
+    },
+    "local_revision": {
+      "path": "benchmarks/w34-joint-geometry-v1/S2-revision-evidence.json",
+      "sha256": "384835cc63df958901f9e7255c497e2b168b9124668f7529f306709f409a3d5d"
+    },
+    "local_parts_source_ledger": {
+      "path": "benchmarks/w34-joint-geometry-v1/S2-local-parts-ledger.json",
+      "sha256": "79daaa27d6cd9dbead44da850f3da4ed7e9e72f6f8ec364270165b99e1d5f719"
+    },
+    "comparison_views": {
+      "path": "benchmarks/w34-joint-geometry-v1/comparison-views.json",
+      "sha256": "bc9f4f2712f3267ed0e28da4ed0276af52ecef10996ed531f920172f35487d0e"
+    }
+  },
+  "counts": {
+    "items": 3,
+    "required_items": 2,
+    "questions": 1,
+    "required_questions": 1,
+    "evidence": 10
+  }
+}

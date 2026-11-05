@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-V2-M3-CARRIERS-20261105-V1",
+  "build_id": "44d697560d4d4d459deff4dc34bf47d0",
+  "stage": "VIA",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "S01-M3",
+      "verdict": "accepted",
+      "checks": {
+        "correct_source_tip": true,
+        "M3_carrier": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "S02-M3",
+      "verdict": "accepted",
+      "checks": {
+        "correct_source_tip": true,
+        "M3_carrier": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "S03-M3",
+      "verdict": "accepted",
+      "checks": {
+        "correct_source_tip": true,
+        "M3_carrier": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "S04-M3",
+      "verdict": "accepted",
+      "checks": {
+        "correct_source_tip": true,
+        "M3_carrier": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "verdict": "accepted",
+      "notes": ""
+    }
+  ],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review",
+      "manifest_sha256": "d0d1d45547870a4a5e4ff299b0d66c5e03ec597e4e2d815ece2ee783a0e35431"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review/index.html",
+      "sha256": "37165c2c9d1e16ef72b11a09ef32a3c2d1adfafe96e3da97d45d3cc114339a8e"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-m3-carrier-review-v1/review/review-spec.json",
+      "sha256": "923ba3962357f5f39aab29a2dee5b2b72a5cc476d48442a6f2c3c80e8776878b"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m2 / m3 independent native frames",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "上列范围是已审M2范围；M3局部[180,2160,1280,2475]、宽邻域[180,1820,1380,2880]。范围数字不能跨帧直接比较，没有精确投影。"
+  },
+  "not_approved": [
+    "物理孔数、精确孔径与节距",
+    "精确跨层落点、配准或整组包围通过",
+    "全幅M3覆盖、来源几何穷尽或未列分支",
+    "自动网表、完整网络、PDK DRC或GDS采用"
+  ]
+}

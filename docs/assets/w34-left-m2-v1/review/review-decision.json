@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-LEFT-M2-20261105-V1",
+  "build_id": "0bb2cde885f74ee0aa03f9e086b65c5b",
+  "stage": "METAL",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "G1",
+      "verdict": "accepted",
+      "checks": {
+        "geometry_reasonable": true,
+        "neighbor_gap": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "I1",
+      "verdict": "accepted",
+      "checks": {
+        "V2_visible_on_M2": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-left-m2-v1/review",
+      "manifest_sha256": "f3e4c11032ffa29c12016687a7e67e940b80a0b34ade3b2768962ce9e31edfde"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-left-m2-v1/review/index.html",
+      "sha256": "5b3962efb8957eee3e17c2e87e63862f7b4471e3701b943871c33d5c3b977e63"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-left-m2-v1/review/review-spec.json",
+      "sha256": "ce38080310959835a8bab4bf01e616f0a636b5b1c1706db4e6369525269faee9"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m2",
+    "native_bounds": [
+      180,
+      1680,
+      280,
+      2410
+    ],
+    "note": "窄窗口内只声明L01一条细M2。宽图中的左右邻线为上下文，非整幅/全范围完成声明；规则图为独立设计坐标。"
+  },
+  "not_approved": [
+    "I1接哪条M3、完整孔组包围或新电气连接",
+    "物理孔数/孔径/节距、精确投影或真实工艺尺寸",
+    "PDK DRC、共同GDS采用、全幅完成或完整网表",
+    "L01上端无孔或电气终止结论"
+  ]
+}

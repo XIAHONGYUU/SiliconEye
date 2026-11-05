@@ -1,0 +1,84 @@
+{
+  "kind": "conductive_visible_inventory_supplement",
+  "actor": "AI",
+  "reason": "Add only the remaining R01/R02 native-scope M3 fragments; preserve all51 previous metals and34 interfaces exactly.",
+  "base_inventory": {
+    "path": "benchmarks/conductive-corridor-inventory-v1/inventory.json",
+    "sha256": "cb030f9d5aedd02b7cd194c86a7e27f4168a2deebcdf2c0d5babd0569f538176"
+  },
+  "geometry_human_approved": false,
+  "scope": {
+    "frames": {
+      "m3": {
+        "photo": {
+          "path": "data/test_chip/tile_full/m3.jpg",
+          "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+        },
+        "native_bounds": [
+          180,
+          2120,
+          1280,
+          2490
+        ]
+      }
+    }
+  },
+  "metal_observations": [
+    {
+      "id": "W34-M3-R01-SOURCE",
+      "source_frame": "m3",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          1170,
+          2218
+        ],
+        [
+          1280,
+          2214
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "visible_tip_attachment_unknown"
+        },
+        {
+          "state": "exits_scope"
+        }
+      ]
+    },
+    {
+      "id": "W34-M3-R02-SOURCE",
+      "source_frame": "m3",
+      "mapped_model_id": null,
+      "native_path": [
+        [
+          180,
+          2272
+        ],
+        [
+          1280,
+          2252
+        ]
+      ],
+      "endpoints": [
+        {
+          "state": "exits_scope"
+        },
+        {
+          "state": "exits_scope"
+        }
+      ]
+    }
+  ],
+  "inventory_geometry_mapping": [
+    {
+      "observation_id": "W34-M3-R01-SOURCE",
+      "metal_id": "W34-M3-R01"
+    },
+    {
+      "observation_id": "W34-M3-R02-SOURCE",
+      "metal_id": "W34-M3-R02"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "44d697560d4d4d459deff4dc34bf47d0",
+  "package_id": "W34-V2-M3-CARRIERS-20261105-V1",
+  "stage": "VIA",
+  "created_at": "2026-11-05T03:25:20+00:00",
+  "spec_sha256": "923ba3962357f5f39aab29a2dee5b2b72a5cc476d48442a6f2c3c80e8776878b",
+  "page_sha256": "37165c2c9d1e16ef72b11a09ef32a3c2d1adfafe96e3da97d45d3cc114339a8e",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-short-terminal-v1/wide-m2-marked.png",
+      "source_sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+      "output_path": "assets/d25e328802-wide-m2-marked.png",
+      "output_sha256": "d25e3288026cd4da0960a4669ba17bb1e60408d9cbf501a4ade07854dc41676d",
+      "width_height": [
+        920,
+        1250
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-marked.png",
+      "source_sha256": "b84281337c0a708b6e31c26afb4dd4cb5c6d8c8e8ee09e0aabc8edee6da09b39",
+      "output_path": "assets/b84281337c-wide-m3-marked.png",
+      "output_sha256": "b84281337c0a708b6e31c26afb4dd4cb5c6d8c8e8ee09e0aabc8edee6da09b39",
+      "width_height": [
+        1200,
+        1060
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-short-terminal-v1/tips-m2-marked.png",
+      "source_sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9",
+      "output_path": "assets/3508ff5bb1-tips-m2-marked.png",
+      "output_sha256": "3508ff5bb1ab3ce6990f21a7673b9526c85aa7a3ebc06f6dbd5b15107d1311b9",
+      "width_height": [
+        580,
+        280
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-carrier-review-v1/detail-m3-marked.png",
+      "source_sha256": "92d9f2e238e54bc7040b8a7edbb11981d6e455195c12d5a55ab2163c9ee6ca80",
+      "output_path": "assets/92d9f2e238-detail-m3-marked.png",
+      "output_sha256": "92d9f2e238e54bc7040b8a7edbb11981d6e455195c12d5a55ab2163c9ee6ca80",
+      "width_height": [
+        1100,
+        315
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-carrier-review-v1/detail-m3-raw.png",
+      "source_sha256": "4a76dca7c855fe22f20c3312a7fccdd66a73b7e8b89735c3732007d89ea567d1",
+      "output_path": "assets/4a76dca7c8-detail-m3-raw.png",
+      "output_sha256": "4a76dca7c855fe22f20c3312a7fccdd66a73b7e8b89735c3732007d89ea567d1",
+      "width_height": [
+        1100,
+        315
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-raw.png",
+      "source_sha256": "23d98f24759988b2e227a8bcf0cff042232b6f7a09db0981d68e4f6f0bfc2e4e",
+      "output_path": "assets/23d98f2475-wide-m3-raw.png",
+      "output_sha256": "23d98f24759988b2e227a8bcf0cff042232b6f7a09db0981d68e4f6f0bfc2e4e",
+      "width_height": [
+        1200,
+        1060
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-short-terminal-v1/wide-m2-raw.png",
+      "source_sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+      "output_path": "assets/8877f5e8ee-wide-m2-raw.png",
+      "output_sha256": "8877f5e8eeaa96d06669ee948a14fb85976acd52120c8055d7d8ac46c00838a8",
+      "width_height": [
+        920,
+        1250
+      ]
+    }
+  ],
+  "sources": {
+    "identity_baseline": {
+      "path": "benchmarks/w34-short-terminal-reviewed-v2/identity-baseline.json",
+      "sha256": "c6ee85bfa1eef85217499cce542086ca94824f6b83571ce16ca9321e8cd9edb7"
+    },
+    "actual_identity_review": {
+      "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+      "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+    },
+    "accepted_M2_baseline": {
+      "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+      "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+    },
+    "M3_native_inventory": {
+      "path": "benchmarks/w34-m3-native-inventory-v1/source-inventory.json",
+      "sha256": "937280223768b071287b1916738da4165e2a2ed1a735d80450ee69f179cb1dd4"
+    },
+    "M3_same_frame_continuity": {
+      "path": "benchmarks/w34-m3-carrier-review-v1/same-frame-continuity.json",
+      "sha256": "04bcc343bbb22f19123412ad990f64dc945abdfec3fbff741f147c9c7eaa6b86"
+    },
+    "carrier_proposals": {
+      "path": "benchmarks/w34-m3-carrier-review-v1/carrier-proposals.json",
+      "sha256": "df30c857a0a66eac4cc1bdbc03ac9ea5becc02f76b0d712512dce31c36d28866"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-m3-carrier-review-v1/view-provenance.json",
+      "sha256": "0b399d82ca8d51f50b0d2d7390b17f961cf72ee03bd0b70f13e4b5b0f47a8991"
+    },
+    "unchanged_work_model": {
+      "path": "docs/assets/w34-m2-coverage-v1/work/model.json",
+      "sha256": "86c34b69b6fa099f65d49ec5a862d6b3befa70b74761d2b5033104d6bd218689"
+    }
+  },
+  "counts": {
+    "items": 5,
+    "required_items": 4,
+    "questions": 1,
+    "required_questions": 1,
+    "evidence": 7
+  }
+}

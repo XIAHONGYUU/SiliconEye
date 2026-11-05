@@ -1,0 +1,50 @@
+{
+  "kind": "scoped_continuous_M2_source_inventory",
+  "actor": "AI",
+  "date": "2026-11-05",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    180,
+    1680,
+    280,
+    2410
+  ],
+  "scope": "One source-visible left fine M2. Neighbor lines outside this narrow window are context, not declared complete.",
+  "prior_scope": {
+    "path": "benchmarks/w34-m2-coverage-v1/source-inventory.json",
+    "sha256": "99cf35dc1ad0226c9ae0198041d5acea8979918fe358188ee369f0eaacd5040e"
+  },
+  "rows": [
+    {
+      "id": "W34-M2-L01-SOURCE",
+      "model_id": null,
+      "native_path": [
+        [
+          220,
+          1750
+        ],
+        [
+          248,
+          2365
+        ],
+        [
+          222,
+          2366
+        ]
+      ],
+      "end_states": [
+        "visible_upper_tip_interface_unknown",
+        "visible_left_return_tip_interface_unknown"
+      ],
+      "existing_model_correspondence": "NEW_DISTINCT_NATIVE_TRACE_LEFT_OF_EXISTING_S01",
+      "basis": "Native M2 trace around x220 is explicitly outside original x280 scope. Visual full-trace sweep distinguishes it from S01 around x313 and two farther-left context traces around x100/x140."
+    }
+  ],
+  "declared_fragment_count": 1,
+  "geometry_human_approved": false,
+  "identity_human_approved": false,
+  "source_to_design_transform": null
+}

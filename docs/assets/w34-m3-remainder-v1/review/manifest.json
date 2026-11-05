@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "eeffc3a512d54a34b65486a8b73ca3bf",
+  "package_id": "W34-M3-REMAINDER-20261105-V1",
+  "stage": "METAL",
+  "created_at": "2026-11-05T06:49:11+00:00",
+  "spec_sha256": "c2fb2ba7ac172216e7f3dad601d612a2cb9b5f2470caed19dad80fc2066e0eeb",
+  "page_sha256": "ae8f0032d71c083537cdc627d44245ec8da397fbd5f98946b5964432de737d92",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/scope-marked.png",
+      "source_sha256": "0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6",
+      "output_path": "assets/0340bf116a-scope-marked.png",
+      "output_sha256": "0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6",
+      "width_height": [
+        1100,
+        370
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/after-M3.svg",
+      "source_sha256": "914b9e257848aa7f65e81ba01892d242c19edd896d3f3bca29b4377d1561061f",
+      "output_path": "assets/914b9e2578-after-M3.svg",
+      "output_sha256": "914b9e257848aa7f65e81ba01892d242c19edd896d3f3bca29b4377d1561061f",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/before-M3.svg",
+      "source_sha256": "7034ec19a335602c8f62ad745d5fa51661c9a7dec2d250e09b4d57e63487b162",
+      "output_path": "assets/7034ec19a3-before-M3.svg",
+      "output_sha256": "7034ec19a335602c8f62ad745d5fa51661c9a7dec2d250e09b4d57e63487b162",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/context-marked.png",
+      "source_sha256": "6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901",
+      "output_path": "assets/6729d348d7-context-marked.png",
+      "output_sha256": "6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901",
+      "width_height": [
+        1200,
+        600
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/scope-raw.png",
+      "source_sha256": "b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba",
+      "output_path": "assets/b9cf6951cf-scope-raw.png",
+      "output_sha256": "b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba",
+      "width_height": [
+        1100,
+        370
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/after-joint.svg",
+      "source_sha256": "ede0900770aa8fd0223067aeb477ba89101a2d19318c6db7ed32ddedacd58410",
+      "output_path": "assets/ede0900770-after-joint.svg",
+      "output_sha256": "ede0900770aa8fd0223067aeb477ba89101a2d19318c6db7ed32ddedacd58410",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/continuity-marked.png",
+      "source_sha256": "26226d5bb7ca04eb604776fb50fb6733aead3b659cbd079b373c92a1e470c53d",
+      "output_path": "assets/26226d5bb7-continuity-marked.png",
+      "output_sha256": "26226d5bb7ca04eb604776fb50fb6733aead3b659cbd079b373c92a1e470c53d",
+      "width_height": [
+        3630,
+        330
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-m3-remainder-v1/continuity-raw.png",
+      "source_sha256": "cc8ef373852099f02b957b7eabbfd9365149caac6b30b1d826cd22e95a5e678b",
+      "output_path": "assets/cc8ef37385-continuity-raw.png",
+      "output_sha256": "cc8ef373852099f02b957b7eabbfd9365149caac6b30b1d826cd22e95a5e678b",
+      "width_height": [
+        3630,
+        330
+      ]
+    }
+  ],
+  "sources": {
+    "accepted_parent": {
+      "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+      "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+    },
+    "candidate_model": {
+      "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/model.json",
+      "sha256": "68795de36e63e286d990386c60d1aef52f1fc58f964a82795f8ffc3cc71caf55"
+    },
+    "candidate_manifest": {
+      "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/manifest.json",
+      "sha256": "10004f09e33e0a5d55ca30c8a3f9cd79bee9ff5d0bd50c1718494a14df826914"
+    },
+    "scoped_coverage": {
+      "path": "benchmarks/w34-m3-remainder-v1/scoped-coverage.json",
+      "sha256": "f2160e1782ec9614a01c40dd98b062b4d58420d73755fbfe8b8058b51b2aff2e"
+    },
+    "source_provenance": {
+      "path": "benchmarks/w34-m3-remainder-v1/view-provenance.json",
+      "sha256": "3531d0e1fe292e00d57d2e0998634aa2f3987851b9f91bd1b2f2564b3abc01b7"
+    },
+    "technical_verification": {
+      "path": "benchmarks/w34-m3-remainder-v1/verification.json",
+      "sha256": "baea43f8f7849e310d22a0a70c059c42e1cf94b50702b280050a9edb7eb50ead"
+    }
+  },
+  "counts": {
+    "items": 2,
+    "required_items": 2,
+    "questions": 1,
+    "required_questions": 1,
+    "evidence": 8
+  }
+}

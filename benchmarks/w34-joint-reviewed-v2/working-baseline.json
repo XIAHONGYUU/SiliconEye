@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_baseline",
+  "date": "2026-11-05",
+  "status": "CLOSED_SCOPED_JOINT_GEOMETRY",
+  "geometry_package": {
+    "path": "docs/assets/w34-joint-geometry-v1/S3-joint-work/manifest.json",
+    "sha256": "6a274c77eb2039f002904a2878b0735d473e75df277429a4e3ce9e1dff3a9a75"
+  },
+  "geometry_model": {
+    "path": "docs/assets/w34-joint-geometry-v1/S3-joint-work/model.json",
+    "sha256": "8f2fe68e8e237a04d0a17b62ce5a6c11cecfa1af5bcc7a2045ad5610e8344b83"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/w34-joint-geometry-v1/S3-interface-sample.json",
+    "sha256": "b097c48739e6fbc4f4786955e9ad05a6bfbba491f3a0bbf180e88e38c23bf8f1"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-joint-geometry-v1/review/manifest.json",
+    "sha256": "2be20424497425605bec79656bfed8ae01def517663b9a0342e44064ec3a1282"
+  },
+  "human_review": {
+    "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+    "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+  },
+  "review_record": {
+    "path": "docs/assets/w34-joint-geometry-v1/review/review-record.md",
+    "sha256": "9afe489a89bd8d31951d2bc656d65b371ab9d957a2634f2eb2e7127aba9dd297"
+  },
+  "source_connections": {
+    "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+    "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+  },
+  "inherited_M2_baseline": {
+    "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+    "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+  },
+  "next_request": {
+    "path": "benchmarks/w34-joint-geometry-v1/next-request.json",
+    "sha256": "258ce42e14c903f6622cca65c779adafc1f0a425807d07c44c18b647758ad64c"
+  },
+  "accepted_group_ids": [
+    "G1",
+    "G2"
+  ],
+  "accepted_overall_question_ids": [
+    "Q1"
+  ],
+  "accepted_scope": {
+    "G1": "Four M2 heads/local landing pads and relative M3 geometry, as displayed in the submitted package.",
+    "G2": "R03 and six M3 western local continuations, including gaps and scope exits."
+  },
+  "working_metal_count": 51,
+  "reviewed_local_connections": 34,
+  "design_candidate_cut_count": 188,
+  "physical_cut_count": null,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "remaining_inventory_ids": [
+    "WM3-R01",
+    "WM3-R02",
+    "WM3-B01"
+  ],
+  "continuation_rule": "Preserve submitted geometry and actual G1/G2/Q1 approval. Do not re-ask old identity/carriers or approved geometry. Supplement remaining source fragments separately; source-array counts, PDK and full coverage remain unapproved."
+}

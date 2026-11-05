@@ -1,0 +1,533 @@
+{
+  "kind": "scoped_interface_and_exit_sweep",
+  "actor": "AI",
+  "source_scope": {
+    "m2": [
+      280,
+      1870,
+      850,
+      2840
+    ]
+  },
+  "accepted_model": {
+    "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/model.json",
+    "sha256": "68795de36e63e286d990386c60d1aef52f1fc58f964a82795f8ffc3cc71caf55"
+  },
+  "source_photos": {
+    "aa": {
+      "path": "data/test_chip/tile_full/aa.jpg",
+      "sha256": "91171d14eced38ffa4fd32eec83b26440d812563e46af5d88a3cb849fe63c804"
+    },
+    "implant": {
+      "path": "data/test_chip/tile_full/implant.jpg",
+      "sha256": "6be26a353cf73b236dc8f1116d617d08fea889696c6b9051b57630903ce16044"
+    },
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    },
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    },
+    "m4": {
+      "path": "data/test_chip/tile_full/m4.jpg",
+      "sha256": "da9af79be51c2a1f501b919ea4576d25d047f67dd8d0214e3cd232dee70ec0c0"
+    },
+    "poly": {
+      "path": "data/test_chip/tile_full/poly.jpg",
+      "sha256": "b468dfebba1508d171330cfdacd21f3a955a4f43472c298b4901005fb3d1b7d1"
+    },
+    "sub": {
+      "path": "data/test_chip/tile_full/sub.jpg",
+      "sha256": "dd9587c62615f3b2684b1aa9bc69b425b8d6d2dc2d7ac5265645f86508f3e0c6"
+    }
+  },
+  "rows": [
+    {
+      "interface_id": "W3-V2-U",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        702,
+        1900,
+        750,
+        1970
+      ],
+      "lower_metal_id": "WEST-M2-W3-SOURCE",
+      "upper_metal_id": "RT-M3-UP",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W3-V2-U",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          702,
+          1900,
+          750,
+          1970
+        ],
+        "lower_metal_id": "WEST-M2-W3-SOURCE",
+        "upper_metal_id": "RT-M3-UP",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+          "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W3-V2-D",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        730,
+        2705,
+        782,
+        2820
+      ],
+      "lower_metal_id": "WEST-M2-W3-SOURCE",
+      "upper_metal_id": "RT-M3-DOWN",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W3-V2-D",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          730,
+          2705,
+          782,
+          2820
+        ],
+        "lower_metal_id": "WEST-M2-W3-SOURCE",
+        "upper_metal_id": "RT-M3-DOWN",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+          "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W4-V2-U",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        337,
+        1900,
+        391,
+        1975
+      ],
+      "lower_metal_id": "WEST-M2-W4-SOURCE",
+      "upper_metal_id": "RT-M3-UP",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W4-V2-U",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          337,
+          1900,
+          391,
+          1975
+        ],
+        "lower_metal_id": "WEST-M2-W4-SOURCE",
+        "upper_metal_id": "RT-M3-UP",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+          "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W4-V2-D",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        372,
+        2700,
+        428,
+        2825
+      ],
+      "lower_metal_id": "WEST-M2-W4-SOURCE",
+      "upper_metal_id": "RT-M3-DOWN",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W4-V2-D",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          372,
+          2700,
+          428,
+          2825
+        ],
+        "lower_metal_id": "WEST-M2-W4-SOURCE",
+        "upper_metal_id": "RT-M3-DOWN",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-reviewed-v9/human-review.json",
+          "sha256": "25affbef1d170ca3f310e08f93e7c10afc0a238c9f717b7b5a999df2ee3433ac"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W3-V1-N",
+      "layer": "V1",
+      "source_frame": "m1",
+      "native_bounds": [
+        728,
+        1905,
+        775,
+        1955
+      ],
+      "lower_metal_id": "C-M1-SPINE",
+      "upper_metal_id": "WEST-M2-W3-SOURCE",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W3-V1-N",
+        "layer": "V1",
+        "layer_pair": [
+          "M1",
+          "M2"
+        ],
+        "source_frame": "m1",
+        "native_bounds": [
+          728,
+          1905,
+          775,
+          1955
+        ],
+        "lower_metal_id": "C-M1-SPINE",
+        "upper_metal_id": "WEST-M2-W3-SOURCE",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+          "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W3-V1-S",
+      "layer": "V1",
+      "source_frame": "m1",
+      "native_bounds": [
+        755,
+        2708,
+        810,
+        2756
+      ],
+      "lower_metal_id": "C-M1-SPINE",
+      "upper_metal_id": "WEST-M2-W3-SOURCE",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W3-V1-S",
+        "layer": "V1",
+        "layer_pair": [
+          "M1",
+          "M2"
+        ],
+        "source_frame": "m1",
+        "native_bounds": [
+          755,
+          2708,
+          810,
+          2756
+        ],
+        "lower_metal_id": "C-M1-SPINE",
+        "upper_metal_id": "WEST-M2-W3-SOURCE",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+          "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W4-V1-N",
+      "layer": "V1",
+      "source_frame": "m1",
+      "native_bounds": [
+        360,
+        1908,
+        410,
+        1975
+      ],
+      "lower_metal_id": "C-M1-SPINE",
+      "upper_metal_id": "WEST-M2-W4-SOURCE",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W4-V1-N",
+        "layer": "V1",
+        "layer_pair": [
+          "M1",
+          "M2"
+        ],
+        "source_frame": "m1",
+        "native_bounds": [
+          360,
+          1908,
+          410,
+          1975
+        ],
+        "lower_metal_id": "C-M1-SPINE",
+        "upper_metal_id": "WEST-M2-W4-SOURCE",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+          "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W4-V1-S",
+      "layer": "V1",
+      "source_frame": "m1",
+      "native_bounds": [
+        385,
+        2710,
+        445,
+        2764
+      ],
+      "lower_metal_id": "C-M1-SPINE",
+      "upper_metal_id": "WEST-M2-W4-SOURCE",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W4-V1-S",
+        "layer": "V1",
+        "layer_pair": [
+          "M1",
+          "M2"
+        ],
+        "source_frame": "m1",
+        "native_bounds": [
+          385,
+          2710,
+          445,
+          2764
+        ],
+        "lower_metal_id": "C-M1-SPINE",
+        "upper_metal_id": "WEST-M2-W4-SOURCE",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "benchmarks/west-w34-v1-reviewed-v10/human-review.json",
+          "sha256": "b247063d5777d2b379470dffa0f309023d4495bdb530e9a1e9a9dcf740f57648"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W34-S01-V2-CANDIDATE",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        292,
+        2370,
+        343,
+        2398
+      ],
+      "lower_metal_id": "W34-M2-S01",
+      "upper_metal_id": "C-M3-M06",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W34-S01-V2-CANDIDATE",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          292,
+          2370,
+          343,
+          2398
+        ],
+        "lower_metal_id": "W34-M2-S01",
+        "upper_metal_id": "C-M3-M06",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+          "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W34-S02-V2-CANDIDATE",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        410,
+        2332,
+        462,
+        2360
+      ],
+      "lower_metal_id": "W34-M2-S02",
+      "upper_metal_id": "C-M3-M04",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W34-S02-V2-CANDIDATE",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          410,
+          2332,
+          462,
+          2360
+        ],
+        "lower_metal_id": "W34-M2-S02",
+        "upper_metal_id": "C-M3-M04",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+          "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W34-S03-V2-CANDIDATE",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        458,
+        2273,
+        514,
+        2298
+      ],
+      "lower_metal_id": "W34-M2-S03",
+      "upper_metal_id": "C-M3-M01",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W34-S03-V2-CANDIDATE",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          458,
+          2273,
+          514,
+          2298
+        ],
+        "lower_metal_id": "W34-M2-S03",
+        "upper_metal_id": "C-M3-M01",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+          "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    },
+    {
+      "interface_id": "W34-S04-V2-CANDIDATE",
+      "layer": "V2",
+      "source_frame": "m2",
+      "native_bounds": [
+        763,
+        2227,
+        814,
+        2255
+      ],
+      "lower_metal_id": "W34-M2-S04",
+      "upper_metal_id": "W34-M3-R03",
+      "status": "INHERITED_ACTUAL_HUMAN_SOURCE_APPROVAL",
+      "model_connection": {
+        "id": "W34-S04-V2-CANDIDATE",
+        "layer": "V2",
+        "layer_pair": [
+          "M2",
+          "M3"
+        ],
+        "source_frame": "m2",
+        "native_bounds": [
+          763,
+          2227,
+          814,
+          2255
+        ],
+        "lower_metal_id": "W34-M2-S04",
+        "upper_metal_id": "W34-M3-R03",
+        "status": "human_confirmed_scoped_interface",
+        "connection_confirmed": true,
+        "human_review": {
+          "path": "docs/assets/w34-m3-carrier-review-v1/review/review-decision.json",
+          "sha256": "96fe04ed5512cda32f2c1c947cf4c3dd223292aeec044ec8c277531f785351d1"
+        },
+        "physical_cut_count": null
+      },
+      "physical_cut_count": null
+    }
+  ],
+  "known_V2_interfaces": 8,
+  "known_V1_interfaces": 4,
+  "sweep_observation": "No additional distinct V2 group identified along these six native M2 fragments within fixed scope. This AI observation is not a physical absence assertion.",
+  "V1_exhaustiveness": "NOT_QUALIFIED: M1-origin evidence for other contacts remains unassessed; M2 brightness is not a V1 observation.",
+  "extra_interfaces_added": 0,
+  "interface_exhaustiveness": false,
+  "scope_exits_to_follow": [
+    "W34-M2-S01:north",
+    "W34-M2-S02:north",
+    "W34-M2-S03:north",
+    "W34-M2-S04:south"
+  ],
+  "new_endpoint_interfaces": "UNKNOWN - not inferred from visible line tip"
+}

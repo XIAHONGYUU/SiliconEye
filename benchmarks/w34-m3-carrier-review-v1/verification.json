@@ -1,0 +1,38 @@
+{
+  "kind": "V2_identity_acceptance_and_M3_carrier_proposal_verification",
+  "date": "2026-11-05",
+  "identity_review_archive": "VALID:4 accepted identity items,1 accepted question,limits acknowledged",
+  "identity_review": {
+    "path": "docs/assets/w34-short-terminal-v1/review/review-decision.json",
+    "sha256": "0b0d2b3bd0df9b68540c81ab3be93502d01c0748925f5374f7305ba854f8f8ed"
+  },
+  "received_identity_export_sha256": "430c101520e2e4ea059b5181aef43b0a90062241e50d20dc7ec71c787ace922a",
+  "source_identity_count_confirmed": 4,
+  "new_carriers_confirmed": 0,
+  "new_model_interfaces": 0,
+  "old_work_model_exact_replay": true,
+  "old_reviewed_model_connections": 30,
+  "old_design_cuts": 179,
+  "same_frame_tracks": 6,
+  "samples_per_track": 35,
+  "track_order_preserved": true,
+  "minimum_between_track_center_spacing_native_px": 16,
+  "same_frame_continuity_qualification": "AI observation aided by ridge sequence; not independent human truth or cross-layer registration",
+  "raw_crop_pixels_exact": true,
+  "carrier_review_build": "44d697560d4d4d459deff4dc34bf47d0",
+  "carrier_proposals_human_approved": false,
+  "new_design_geometry": false,
+  "new_connections": 0,
+  "source_to_design_transform": null,
+  "fine_landing_enclosure": "NOT_EVALUATED_PENDING_CARRIER_AND_DESIGN_GROUP",
+  "showcase_25_files_unchanged": true,
+  "software_code_changed": false,
+  "software_tests_rerun": false,
+  "scope": "New source data and human review records; actual checker/package hashes/model replay validated. No claim of new AI benchmark accuracy or full regression PASS.",
+  "browser_review": {
+    "all_seven_evidence_views_loaded": true,
+    "wide_native_M2_M3_pair_checked": true,
+    "new_answers_selected": 0,
+    "screenshot": "runs/w34-m3-carrier-inspection-20261105/review-browser.png"
+  }
+}

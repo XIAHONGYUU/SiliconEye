@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "scoped_working_geometry_baseline",
+  "date": "2026-11-05",
+  "status": "CLOSED_SCOPED_M3_WINDOW_GEOMETRY",
+  "geometry_package": {
+    "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/manifest.json",
+    "sha256": "10004f09e33e0a5d55ca30c8a3f9cd79bee9ff5d0bd50c1718494a14df826914"
+  },
+  "geometry_model": {
+    "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/model.json",
+    "sha256": "68795de36e63e286d990386c60d1aef52f1fc58f964a82795f8ffc3cc71caf55"
+  },
+  "geometry_sample": {
+    "path": "benchmarks/w34-m3-remainder-v1/S2-bus-sample.json",
+    "sha256": "869f61dc7a5df4982584dd4e4c9a0aad646887dc64bbcde5deb217af7fafab46"
+  },
+  "review_manifest": {
+    "path": "docs/assets/w34-m3-remainder-v1/review/manifest.json",
+    "sha256": "ddfcb076ca192ca8ceee9785bec0cc93b3b836450f928d49bc5e826ef0d94fb7"
+  },
+  "human_review": {
+    "path": "docs/assets/w34-m3-remainder-v1/review/review-decision.json",
+    "sha256": "ae2d7eb740e9fac83997ee4d1edfb5461ffd6c125f8084537bc3b76e7a6e445b"
+  },
+  "review_record": {
+    "path": "docs/assets/w34-m3-remainder-v1/review/review-record.md",
+    "sha256": "3707f1049e9847a83b35abfa335bd6b3d7df2cb3bd647b6a4a43a6dace7f66f1"
+  },
+  "source_connections": {
+    "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+    "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+  },
+  "inherited_M2_baseline": {
+    "path": "benchmarks/w34-m2-reviewed-v2/working-baseline.json",
+    "sha256": "4ad0efd87b3526ee7f7dcd72eafe2ee42f8a7d3d861d684da895a39922915cb1"
+  },
+  "next_request": {
+    "path": "benchmarks/w34-m3-remainder-v1/next-request.json",
+    "sha256": "a537c44adc0c812a27762f8e9b6f86703716cc9b8aa779f655fb66ff63e2fc56"
+  },
+  "accepted_group_ids": [
+    "G1",
+    "G2"
+  ],
+  "accepted_overall_question_ids": [
+    "Q1"
+  ],
+  "accepted_scope": {
+    "G1": "R01/R02 relative position, lengths, order and gaps; scope exits are not physical ends.",
+    "G2": "B01 correspondence to original RT-M3-MID and source-supported western extent.",
+    "Q1": "No obvious missing visible metal fragment in m3 [180,2120,1280,2490]; not all interfaces or all-chip coverage."
+  },
+  "working_metal_count": 53,
+  "reviewed_local_connections": 34,
+  "design_candidate_cut_count": 188,
+  "physical_cut_count": null,
+  "source_to_design_transform": null,
+  "geometry_adopted": false,
+  "complete_network": false,
+  "qualification": "LIMITED_TRIAL_V2",
+  "remaining_inventory_ids": [],
+  "continuation_rule": "Preserve both actual archived geometry approvals, all53 metals,34 interfaces and188 cuts. Inspect lower-photo interface sources and continue declared scope exits without re-asking old geometry. Full native/canonical geometry and all interfaces remain unqualified.",
+  "inherited_joint_baseline": {
+    "path": "benchmarks/w34-joint-reviewed-v2/working-baseline.json",
+    "sha256": "d87b9ce223a80bd8e15d11be311ba13e4e15dc1e3e061d5dd88f91b21844413d"
+  },
+  "coverage": {
+    "path": "benchmarks/w34-m3-reviewed-v2/scoped-coverage.json",
+    "sha256": "b712d69d867c08c34cfe1895da917dc6bb162cf6004669ca066cd747a986f0f0"
+  }
+}

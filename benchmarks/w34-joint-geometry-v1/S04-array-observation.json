@@ -1,0 +1,53 @@
+{
+  "kind": "via_array_observation",
+  "actor": "AI",
+  "reason": "Source bright lobes form a horizontal group; 2/2/2/3 is an AI representation candidate, not human physical-count truth. Screenshot texture/blending may obscure cuts.",
+  "interface_id": "W34-S04-V2-CANDIDATE",
+  "layer": "V2",
+  "source_frame": "m2",
+  "source_photo": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "native_bounds": [
+    763,
+    2227,
+    814,
+    2255
+  ],
+  "count_status": "candidate_not_human_count",
+  "rows": 1,
+  "columns": 3,
+  "sites": [
+    {
+      "row": 0,
+      "column": 0,
+      "native_xy": [
+        774,
+        2240
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "native_xy": [
+        784,
+        2240
+      ]
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "native_xy": [
+        794,
+        2240
+      ]
+    }
+  ],
+  "sources": {
+    "source_carriers": {
+      "path": "benchmarks/w34-joint-geometry-v1/source-connection-baseline.json",
+      "sha256": "4e317ea136fdf31f59d2eb48ea6d40efecac5b5e265f5cfc7fb3026e3e499aa6"
+    }
+  }
+}

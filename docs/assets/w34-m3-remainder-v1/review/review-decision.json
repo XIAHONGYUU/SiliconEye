@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-M3-REMAINDER-20261105-V1",
+  "build_id": "eeffc3a512d54a34b65486a8b73ca3bf",
+  "stage": "METAL",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "G1",
+      "verdict": "accepted",
+      "checks": {
+        "shape_and_order": true,
+        "scope_exits": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "G2",
+      "verdict": "accepted",
+      "checks": {
+        "same_bus_extent": true,
+        "gap_retained": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "verdict": "accepted",
+      "notes": ""
+    }
+  ],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-m3-remainder-v1/review",
+      "manifest_sha256": "ddfcb076ca192ca8ceee9785bec0cc93b3b836450f928d49bc5e826ef0d94fb7"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-m3-remainder-v1/review/index.html",
+      "sha256": "ae8f0032d71c083537cdc627d44245ec8da397fbd5f98946b5964432de737d92"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-m3-remainder-v1/review/review-spec.json",
+      "sha256": "c2fb2ba7ac172216e7f3dad601d612a2cb9b5f2470caed19dad80fc2066e0eeb"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m3",
+    "native_bounds": [
+      180,
+      2120,
+      1280,
+      2490
+    ],
+    "note": "九条细线和一个宽母线局部；规则图使用独立设计坐标。大邻域只是连续性上下文，不扩大本次完整性范围。"
+  },
+  "not_approved": [
+    "物理孔数、尺寸、节距或精确源图边缘",
+    "新VIA接口、未声明分支或全网闭合",
+    "跨层精确投影、PDK DRC、共同GDS采用或全幅完成"
+  ]
+}

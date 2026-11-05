@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_decision",
+  "package_id": "W34-SHORT-TIP-V2-IDENTITY-20261105-V1",
+  "build_id": "f2f06bd9e86c4118a743459ab9210868",
+  "stage": "VIA",
+  "actor": "human",
+  "date": "2026-11-05",
+  "statement": "",
+  "limits_acknowledged": true,
+  "answers": [
+    {
+      "item_id": "S01",
+      "verdict": "accepted",
+      "checks": {
+        "source_tip": true,
+        "V2_identity": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "S02",
+      "verdict": "accepted",
+      "checks": {
+        "source_tip": true,
+        "V2_identity": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "S03",
+      "verdict": "accepted",
+      "checks": {
+        "source_tip": true,
+        "V2_identity": true
+      },
+      "notes": ""
+    },
+    {
+      "item_id": "S04",
+      "verdict": "accepted",
+      "checks": {
+        "source_tip": true,
+        "V2_identity": true
+      },
+      "notes": ""
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "Q1",
+      "verdict": "accepted",
+      "notes": ""
+    }
+  ],
+  "sources": {
+    "submitted_package": {
+      "path": "docs/assets/w34-short-terminal-v1/review",
+      "manifest_sha256": "b9a2493bcf043fdf63a9b025eb6bb557a936d58ab551d9c84da7bf7169b8ed1d"
+    },
+    "submitted_page": {
+      "path": "docs/assets/w34-short-terminal-v1/review/index.html",
+      "sha256": "30a417777a3b3d5f5dc9b6590c7e866723553736726ee18baa7a77bf9d937a28"
+    },
+    "submitted_spec": {
+      "path": "docs/assets/w34-short-terminal-v1/review/review-spec.json",
+      "sha256": "bcd70cf9a41f001617a18929bf1d62f798f9d755c668ef8b20cd670296f8f128"
+    }
+  },
+  "recorded_scope": {
+    "frame": "m2",
+    "native_bounds": [
+      280,
+      1870,
+      850,
+      2840
+    ],
+    "note": "橙框只标在M2原图自身；V1必须另查M1来源。四处孔组搜索框逐项列出，未作跨层投影。"
+  },
+  "not_approved": [
+    "上层M3承载、跨层电气接通或同网关系",
+    "物理孔数、孔径、节距与精确落点",
+    "新孔的规则几何和整组包围",
+    "精确投影、PDK DRC、完整网表或GDS采用",
+    "范围外连续部分与未知端口"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet_manifest",
+  "build_id": "0bb2cde885f74ee0aa03f9e086b65c5b",
+  "package_id": "W34-LEFT-M2-20261105-V1",
+  "stage": "METAL",
+  "created_at": "2026-11-05T07:52:01+00:00",
+  "spec_sha256": "ce38080310959835a8bab4bf01e616f0a636b5b1c1706db4e6369525269faee9",
+  "page_sha256": "5b3962efb8957eee3e17c2e87e63862f7b4471e3701b943871c33d5c3b977e63",
+  "template_sha256": "3625d1a598370076f6dd99eac6122d95ec1c78ed9d095bca93ed75808b33104f",
+  "code_sha256": "7f58766524ebc009f1ed5bbdbe18196f021023b3d3dde93d78b32b556f6cd77f",
+  "assets": [
+    {
+      "source_path": "docs/assets/w34-left-m2-v1/wide-marked.png",
+      "source_sha256": "b883f30d73acec16f9cb125e762255b062b6d20aefb43dbc594600fb233161f5",
+      "output_path": "assets/b883f30d73-wide-marked.png",
+      "output_sha256": "b883f30d73acec16f9cb125e762255b062b6d20aefb43dbc594600fb233161f5",
+      "width_height": [
+        870,
+        1150
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-left-m2-v1/after-M2.svg",
+      "source_sha256": "a3974a29eacb7a512b9d988e6caee2753d773bbc755e3c687334217156effc8a",
+      "output_path": "assets/a3974a29ea-after-M2.svg",
+      "output_sha256": "a3974a29eacb7a512b9d988e6caee2753d773bbc755e3c687334217156effc8a",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-left-m2-v1/before-M2.svg",
+      "source_sha256": "27116476048530f784d19ee4d267d58db6d5c7e7214be210586383facd4550e1",
+      "output_path": "assets/2711647604-before-M2.svg",
+      "output_sha256": "27116476048530f784d19ee4d267d58db6d5c7e7214be210586383facd4550e1",
+      "width_height": null
+    },
+    {
+      "source_path": "docs/assets/w34-left-m2-v1/wide-raw.png",
+      "source_sha256": "5e99b7f107f7487da54766514925b69545ad11d37b4867016251e058977938f2",
+      "output_path": "assets/5e99b7f107-wide-raw.png",
+      "output_sha256": "5e99b7f107f7487da54766514925b69545ad11d37b4867016251e058977938f2",
+      "width_height": [
+        870,
+        1150
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-left-m2-v1/tip-marked.png",
+      "source_sha256": "4f6cc99fa426bc0eecccd63a42b7316a3146d4201d896d891ea9b8ea90b198b7",
+      "output_path": "assets/4f6cc99fa4-tip-marked.png",
+      "output_sha256": "4f6cc99fa426bc0eecccd63a42b7316a3146d4201d896d891ea9b8ea90b198b7",
+      "width_height": [
+        570,
+        310
+      ]
+    },
+    {
+      "source_path": "docs/assets/w34-left-m2-v1/tip-raw.png",
+      "source_sha256": "6bab5b69f339101046cf9b8662a706ff0a45988683425a5982a6333b496205b8",
+      "output_path": "assets/6bab5b69f3-tip-raw.png",
+      "output_sha256": "6bab5b69f339101046cf9b8662a706ff0a45988683425a5982a6333b496205b8",
+      "width_height": [
+        570,
+        310
+      ]
+    }
+  ],
+  "sources": {
+    "accepted_geometry_parent": {
+      "path": "benchmarks/w34-terminal-reviewed-v2/working-baseline.json",
+      "sha256": "1632ba7cb80187f473b843d5de5a46c1d828cff1389218aacc837dff0136bd25"
+    },
+    "four_non_via_closeout": {
+      "path": "benchmarks/w34-terminal-v1-reviewed-v2/identity-closeout.json",
+      "sha256": "1cbc0e78a2c848c607eff0680433faca8aa79ca777bfc08b96ac538661f51ae6"
+    },
+    "native_inventory": {
+      "path": "benchmarks/w34-left-m2-v1/source-inventory.json",
+      "sha256": "578ba2e25370a788b1ca54c2fcbbec7bb99f373c78d7fc87e41800d48617b9ee"
+    },
+    "V2_observation": {
+      "path": "benchmarks/w34-left-m2-v1/V2-observation.json",
+      "sha256": "25b33684b129e067e7e31cb5b0173b76227dcf8ec475d42bd0128be641445f80"
+    },
+    "candidate_manifest": {
+      "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+      "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+    },
+    "candidate_model": {
+      "path": "docs/assets/w34-left-m2-v1/work/model.json",
+      "sha256": "56e8ab8104efb8887310e2514905cf7794ad915df47fb4fb2d89766e36e584a1"
+    },
+    "verification": {
+      "path": "benchmarks/w34-left-m2-v1/verification.json",
+      "sha256": "364afcdd8568e06476a846128b5c10739385ba0baf376190393b7ed401e1a061"
+    },
+    "view_provenance": {
+      "path": "benchmarks/w34-left-m2-v1/view-provenance.json",
+      "sha256": "c23202b82de0e8fd30643a1d09cb5b43bd8433dfbfb3653a3047a79ea147a15c"
+    }
+  },
+  "counts": {
+    "items": 2,
+    "required_items": 2,
+    "questions": 0,
+    "required_questions": 0,
+    "evidence": 6
+  }
+}

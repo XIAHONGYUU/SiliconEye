@@ -1,0 +1,388 @@
+{
+  "kind": "scoped_source_geometry_interface_coverage",
+  "actor": "AI",
+  "source_inventory": {
+    "path": "benchmarks/w34-m3-native-inventory-v1/source-inventory.json",
+    "sha256": "937280223768b071287b1916738da4165e2a2ed1a735d80450ee69f179cb1dd4"
+  },
+  "source_scope_native_bounds": [
+    180,
+    2120,
+    1280,
+    2490
+  ],
+  "model": {
+    "path": "docs/assets/w34-m3-remainder-v1/S2-joint-work/model.json",
+    "sha256": "68795de36e63e286d990386c60d1aef52f1fc58f964a82795f8ffc3cc71caf55"
+  },
+  "rows": [
+    {
+      "source_id": "WM3-R01",
+      "model_id": "W34-M3-R01",
+      "native_evidence": {
+        "id": "WM3-R01",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            1170,
+            2218
+          ],
+          [
+            1280,
+            2214
+          ]
+        ],
+        "end_states": [
+          "short_visible_left_tip",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-m3-remainder-v1/review/review-decision.json",
+        "sha256": "ae2d7eb740e9fac83997ee4d1edfb5461ffd6c125f8084537bc3b76e7a6e445b"
+      },
+      "interface_coverage": "NOT_ASSESSED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R02",
+      "model_id": "W34-M3-R02",
+      "native_evidence": {
+        "id": "WM3-R02",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2272
+          ],
+          [
+            1280,
+            2252
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-m3-remainder-v1/review/review-decision.json",
+        "sha256": "ae2d7eb740e9fac83997ee4d1edfb5461ffd6c125f8084537bc3b76e7a6e445b"
+      },
+      "interface_coverage": "NOT_ASSESSED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R03",
+      "model_id": "W34-M3-R03",
+      "native_evidence": {
+        "id": "WM3-R03",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            800,
+            2285
+          ],
+          [
+            1280,
+            2273
+          ]
+        ],
+        "end_states": [
+          "short_visible_left_tip",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R04",
+      "model_id": "C-M3-M01",
+      "native_evidence": {
+        "id": "WM3-R04",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2332
+          ],
+          [
+            1280,
+            2310
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R05",
+      "model_id": "C-M3-M02",
+      "native_evidence": {
+        "id": "WM3-R05",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2352
+          ],
+          [
+            1280,
+            2330
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R06",
+      "model_id": "C-M3-M03",
+      "native_evidence": {
+        "id": "WM3-R06",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2370
+          ],
+          [
+            1280,
+            2349
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R07",
+      "model_id": "C-M3-M04",
+      "native_evidence": {
+        "id": "WM3-R07",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2392
+          ],
+          [
+            1280,
+            2371
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R08",
+      "model_id": "C-M3-M05",
+      "native_evidence": {
+        "id": "WM3-R08",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2409
+          ],
+          [
+            1280,
+            2388
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-R09",
+      "model_id": "C-M3-M06",
+      "native_evidence": {
+        "id": "WM3-R09",
+        "type": "visible_thin_M3_candidate",
+        "native_path": [
+          [
+            180,
+            2429
+          ],
+          [
+            1280,
+            2407
+          ]
+        ],
+        "end_states": [
+          "exits_scope",
+          "exits_scope"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_G2_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-joint-geometry-v1/review/review-decision.json",
+        "sha256": "396d12aefb1369ac01df47e1ce35cb6820829c14946611d927a5a73844019417"
+      },
+      "interface_coverage": "ONLY_EXISTING_DECLARED_INTERFACES_PRESERVED",
+      "physical_end": false
+    },
+    {
+      "source_id": "WM3-B01",
+      "model_id": "RT-M3-MID",
+      "native_evidence": {
+        "id": "WM3-B01",
+        "type": "visible_broad_M3_band_partial_candidate",
+        "native_visible_region_candidate": [
+          [
+            180,
+            2450
+          ],
+          [
+            1280,
+            2428
+          ],
+          [
+            1280,
+            2490
+          ],
+          [
+            180,
+            2490
+          ]
+        ],
+        "end_states": [
+          "exits_scope_left",
+          "exits_scope_right",
+          "exits_scope_bottom"
+        ],
+        "model_id": null,
+        "existing_model_correspondence": "NOT_YET_BOUND_DO_NOT_ADD_DUPLICATE_GEOMETRY",
+        "precise_edge_approval": false,
+        "interface_ids": [],
+        "connection_confirmed": null,
+        "human_reviewed": false
+      },
+      "geometry_status": "ACCEPTED_SCOPED_GEOMETRY",
+      "geometry_review": {
+        "path": "docs/assets/w34-m3-remainder-v1/review/review-decision.json",
+        "sha256": "ae2d7eb740e9fac83997ee4d1edfb5461ffd6c125f8084537bc3b76e7a6e445b"
+      },
+      "interface_coverage": "NOT_ASSESSED",
+      "physical_end": false
+    }
+  ],
+  "declared_source_fragments": 10,
+  "represented_fragments": 10,
+  "previously_geometry_reviewed": 10,
+  "new_geometry_pending": 0,
+  "all_visible_source_coverage_human_approved": true,
+  "interface_exhaustiveness": false,
+  "new_interfaces": 0,
+  "complete_network": false,
+  "limits": [
+    "10/10 means this declared source inventory has mapped geometry, not independently proven photograph completeness.",
+    "Unknown interfaces on new R01/R02/B01 remain unassessed; do not infer an absence of vias.",
+    "B01 is a partial band at the lower crop edge; wider same-frame context supports mapping to existing middle bus."
+  ],
+  "coverage_approval_scope": "Human Q1: no obvious missing segment in the displayed fixed window; not an independent exhaustive physical inventory or interface census.",
+  "human_review": {
+    "path": "docs/assets/w34-m3-remainder-v1/review/review-decision.json",
+    "sha256": "ae2d7eb740e9fac83997ee4d1edfb5461ffd6c125f8084537bc3b76e7a6e445b"
+  }
+}

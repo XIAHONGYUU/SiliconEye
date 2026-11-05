@@ -1,0 +1,46 @@
+{
+  "kind": "independent_native_M3_carrier_views",
+  "photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "views": {
+    "wide": {
+      "native_bounds": [
+        180,
+        1820,
+        1380,
+        2880
+      ],
+      "raw": {
+        "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-raw.png",
+        "sha256": "23d98f24759988b2e227a8bcf0cff042232b6f7a09db0981d68e4f6f0bfc2e4e"
+      },
+      "marked": {
+        "path": "docs/assets/w34-m3-carrier-review-v1/wide-m3-marked.png",
+        "sha256": "b84281337c0a708b6e31c26afb4dd4cb5c6d8c8e8ee09e0aabc8edee6da09b39"
+      }
+    },
+    "detail": {
+      "native_bounds": [
+        180,
+        2160,
+        1280,
+        2475
+      ],
+      "raw": {
+        "path": "docs/assets/w34-m3-carrier-review-v1/detail-m3-raw.png",
+        "sha256": "4a76dca7c855fe22f20c3312a7fccdd66a73b7e8b89735c3732007d89ea567d1"
+      },
+      "marked": {
+        "path": "docs/assets/w34-m3-carrier-review-v1/detail-m3-marked.png",
+        "sha256": "92d9f2e238e54bc7040b8a7edbb11981d6e455195c12d5a55ab2163c9ee6ca80"
+      }
+    }
+  },
+  "raw_crops_pixel_exact": true,
+  "marks_use_M3_native_paths_only": true,
+  "no_M2_projection": true,
+  "source_to_source_transform": null,
+  "source_to_design_transform": null
+}

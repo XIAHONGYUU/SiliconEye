@@ -1,0 +1,24 @@
+{
+  "status": "PASS_RECORD_AND_PRESERVATION_CHECKS",
+  "checks": {
+    "W34-END-N1_explicit_negative_retained": true,
+    "W34-END-N1_no_connection_inferred": true,
+    "W34-END-N2_explicit_negative_retained": true,
+    "W34-END-N2_no_connection_inferred": true,
+    "W34-END-N3_explicit_negative_retained": true,
+    "W34-END-N3_no_connection_inferred": true,
+    "W34-END-S1_explicit_negative_retained": true,
+    "W34-END-S1_no_connection_inferred": true,
+    "accepted_model_sha_preserved": true,
+    "m1_raw_sha_preserved": true,
+    "m2_raw_sha_preserved": true,
+    "34_connections_retained": true,
+    "188_candidate_cuts_retained": true,
+    "showcase_protected": true,
+    "network_and_adoption_unchanged": true
+  },
+  "review_package_id": "W34-TERMINAL-V1-IDENTITY-20261105-V1",
+  "build_id": "baa23ce29a0445b2a9ae7a5d88e82e37",
+  "semantic_result": "Four explicit non-via verdicts. VALID export is not an accepted geometry/interface result.",
+  "AI_evaluation_executed": false
+}

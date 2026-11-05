@@ -1,0 +1,79 @@
+{
+  "actor": "AI",
+  "source_views": [
+    {
+      "name": "scope",
+      "native_bounds": [
+        180,
+        2120,
+        1280,
+        2490
+      ],
+      "raw": {
+        "path": "docs/assets/w34-m3-remainder-v1/scope-raw.png",
+        "sha256": "b9cf6951cf5d0e55696bf88ddc1169c180fa4075deaa43b7b8a65b5e016afdba"
+      },
+      "marked": {
+        "path": "docs/assets/w34-m3-remainder-v1/scope-marked.png",
+        "sha256": "0340bf116af4b5e377fe7e63af1381c7f19717d0bc91bb3415c134d9ae4075c6"
+      },
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "cross_layer_projection": false
+    },
+    {
+      "name": "context",
+      "native_bounds": [
+        180,
+        2080,
+        1380,
+        2680
+      ],
+      "raw": {
+        "path": "docs/assets/w34-m3-remainder-v1/context-raw.png",
+        "sha256": "8de28b1aac3a2ad538d47c23b47dd271ec4179935a9e26b82db82c92abf5b32a"
+      },
+      "marked": {
+        "path": "docs/assets/w34-m3-remainder-v1/context-marked.png",
+        "sha256": "6729d348d7ef554130efd70441196f676f4fffed231049bc4124cdf041f28901"
+      },
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "cross_layer_projection": false
+    },
+    {
+      "name": "continuity",
+      "native_bounds": [
+        180,
+        2300,
+        3810,
+        2630
+      ],
+      "raw": {
+        "path": "docs/assets/w34-m3-remainder-v1/continuity-raw.png",
+        "sha256": "cc8ef373852099f02b957b7eabbfd9365149caac6b30b1d826cd22e95a5e678b"
+      },
+      "marked": {
+        "path": "docs/assets/w34-m3-remainder-v1/continuity-marked.png",
+        "sha256": "26226d5bb7ca04eb604776fb50fb6733aead3b659cbd079b373c92a1e470c53d"
+      },
+      "source_photo": {
+        "path": "data/test_chip/tile_full/m3.jpg",
+        "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+      },
+      "cross_layer_projection": false
+    }
+  ],
+  "design_viewport": [
+    -2670,
+    330,
+    -1600,
+    650
+  ],
+  "source_to_design_transform": null,
+  "design_view_note": "Orthogonal relative reconstruction, not photo projection. Before/after share design coordinates. Full B01 width is context from wider source; fixed inventory scope includes only its clipped upper portion."
+}

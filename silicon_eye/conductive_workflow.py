@@ -23,6 +23,7 @@ from .conductive_layers import LAYERS, geometry, source_identity_audit, svg_laye
 from .conductive_medium import prepare as prepare_medium
 from .conductive_medium import source_order_audit
 from .conductive_quality import inherited_group_facts, quality_summary, source_shape_audit
+from .conductive_sheet_review import interface_source as sheet_interface_source
 from .geometry_reconstruction import digest
 from .metal_reconstruction import design_canvas_bounds, feature_polygon, geometry_audit
 from .metal_via_pilot import group_via_budget, interface_audit, observed_array_audit, source_panels
@@ -589,16 +590,21 @@ def apply_reviews(inputs, sample, refs):
     decisions, approved = {}, []
     for ref in refs:
         review = inputs.document(ref)
+        sheet = review.get('kind') == 'review_sheet_interface_adapter'
         adapted = review.get('kind') == 'native_source_decision_adapter'
-        if not adapted:
+        if sheet:
+            source, decision, authority_ref = sheet_interface_source(inputs, sample, review)
+        elif not adapted:
             review = inputs.human(ref)
-        authority_ref = review['sources']['original_human_review'] if adapted else ref
-        decision = review['decisions']
+        if not sheet:
+            authority_ref = review['sources']['original_human_review'] if adapted else ref
+            decision = review['decisions']
         key = decision.get('interface_id', decision.get('id'))
         if (key not in claims or set(decision) - {'interface_id', 'id', 'via_layer',
                 'lower_metal_id', 'upper_metal_id', 'connection_confirmed'}):
             raise ValueError('Review exceeds interface scope')
-        source = inputs.document(review['sources']['submitted_request'])
+        if not sheet:
+            source = inputs.document(review['sources']['submitted_request'])
         if adapted:
             source = native_source_decision_adapter(
                 inputs, sample, review, source, claims[key])
