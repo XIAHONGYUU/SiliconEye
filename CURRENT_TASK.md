@@ -8,11 +8,13 @@
 
 | 车道 | 项目 | 状态 | 下一步 |
 | --- | --- | --- | --- |
-| Engineering | 工作流效率最小包 | `active` | 完成入口/计时/digest 收口并本地 checkpoint |
+| Engineering | 工作流效率最小包 | `done` | 已本地 checkpoint（不推送） |
 | Review | `M3-BATCH-EXTENTS-20261109-V1` | `ready_for_review` | 用户复核 WEST、EAST、Q1 |
 | Next | L01 M3 承载 / 下一独立范围 | `queued` | 本批裁决归档后启动；不提前生成依赖本裁决的决策 |
 
 复核窗口：默认每周二、周五各 30 分钟，可调整。计时口径见 [cycle-time-v1](benchmarks/cycle-time-v1/README.md)。
+
+本轮最小包已落地：单页入口、`DECISIONS.md`、周期记录、确认页计时、[一页复核摘要](benchmarks/batch-production-v1/review-digest.md)；本地 checkpoint 未推送。[本轮说明](docs/reviews/2026-11-09-workflow-efficiency.md)。
 
 ## 当前批次
 
