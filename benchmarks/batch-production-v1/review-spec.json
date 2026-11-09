@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "not_approved": [
+    "照片精确投影或跨帧配准",
+    "PDK、实测工艺尺寸或 DRC",
+    "物理孔数、孔径与节距的真值",
+    "完整网表或自动网表导出",
+    "共同几何采用、GDS 发布或全幅完成声明",
+    "本声明范围之外的导体、器件与连接"
+  ],
+  "package_id": "M3-BATCH-EXTENTS-20261109-V1",
+  "stage": "METAL",
+  "stage_label": "金属",
+  "date": "2026-11-09",
+  "title": "M3六线两侧范围扩展：一次集中复核",
+  "summary": "六条已有M3、12处范围扩展；只审左右新增范围，不重审旧中段、不批准L01承载或新连接。",
+  "scope": {
+    "frame": "m3",
+    "native_bounds": [
+      50,
+      2180,
+      5101,
+      2460
+    ],
+    "note": "同层中心线x=50至5100；只审原覆盖外延，未做全画幅穷尽识别。"
+  },
+  "sources": {
+    "m3": {
+      "path": "data/test_chip/tile_full/m3.jpg",
+      "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+    }
+  },
+  "items": [
+    {
+      "id": "WEST",
+      "type": "metal_fragment",
+      "title": "左侧六条共同延续",
+      "prompt": "请整组核对六条线是否保持各自行序和连续性、新增范围是否对应原图；只审新增部分。若有问题备注具体M01–M06，不必逐条重填。",
+      "required": true,
+      "facts": {
+        "对象": [
+          "C-M3-M01",
+          "C-M3-M02",
+          "C-M3-M03",
+          "C-M3-M04",
+          "C-M3-M05",
+          "C-M3-M06"
+        ],
+        "新增原生范围x": [
+          50,
+          250
+        ],
+        "变化": "只追加外延，原足迹不删除",
+        "端点": "本轮范围出口，不声明物理终止"
+      },
+      "evidence": [
+        {
+          "path": "runs/batch-production-20261109/west-comparison.png",
+          "sha256": "64c2817034630e9ab67928a941d8c515a2b4ea00a0b8c72a3e06dfd2cbe772b4",
+          "label": "原图与算法路径（上下对照）",
+          "role": "detail",
+          "frame": "m3"
+        },
+        {
+          "path": "runs/batch-production-20261109/west-design.png",
+          "sha256": "f6572ec8e9421c1d20f7257d54df25c4906bea2fd73692017c74f8f58d999582",
+          "label": "规则几何：灰为旧足迹、蓝为外延",
+          "role": "design",
+          "frame": "design"
+        }
+      ],
+      "checks": [
+        {
+          "id": "continuity",
+          "label": "新增部分同层连续、六条行序无串线",
+          "required": true
+        },
+        {
+          "id": "scope",
+          "label": "仅认可本轮范围；未把出口当物理端点或新增连接",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "uncertain"
+      ]
+    },
+    {
+      "id": "EAST",
+      "type": "metal_fragment",
+      "title": "右侧六条共同延续",
+      "prompt": "请整组核对六条线是否保持各自行序和连续性、新增范围是否对应原图；只审新增部分。若有问题备注具体M01–M06，不必逐条重填。",
+      "required": true,
+      "facts": {
+        "对象": [
+          "C-M3-M01",
+          "C-M3-M02",
+          "C-M3-M03",
+          "C-M3-M04",
+          "C-M3-M05",
+          "C-M3-M06"
+        ],
+        "新增原生范围x": [
+          3670,
+          5100
+        ],
+        "变化": "只追加外延，原足迹不删除",
+        "端点": "本轮范围出口，不声明物理终止"
+      },
+      "evidence": [
+        {
+          "path": "runs/batch-production-20261109/east-comparison.png",
+          "sha256": "fa382b0c9f3dde16da09ebdf03c07528270af0aedfcd02743170cfd2c8238817",
+          "label": "原图与算法路径（上下对照）",
+          "role": "detail",
+          "frame": "m3"
+        },
+        {
+          "path": "runs/batch-production-20261109/east-design.png",
+          "sha256": "ec5a234bc8c8ca11786abb23757babe36f46c2aea132377122798b124f86cea7",
+          "label": "规则几何：灰为旧足迹、蓝为外延",
+          "role": "design",
+          "frame": "design"
+        }
+      ],
+      "checks": [
+        {
+          "id": "continuity",
+          "label": "新增部分同层连续、六条行序无串线",
+          "required": true
+        },
+        {
+          "id": "scope",
+          "label": "仅认可本轮范围；未把出口当物理端点或新增连接",
+          "required": true
+        }
+      ],
+      "note_required_on": [
+        "needs_revision",
+        "uncertain"
+      ]
+    }
+  ],
+  "limits": [
+    "原生锚点和已审接口保持；照片范围边界不是物理端点。",
+    "规则图沿用旧宽度，新增长度是相对设计候选，未批准精确像素投影或物理尺度。",
+    "L01几何与V2身份保持已审；M3承载仍未知，不靠设计重叠指定。",
+    "旧四处非孔不重审；不新增孔、接口或网表。"
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "prompt": "本轮左右两组新增范围是否可接受为同层几何候选？不包含跨层连接。",
+      "item_ids": [
+        "WEST",
+        "EAST"
+      ],
+      "required": true
+    }
+  ]
+}

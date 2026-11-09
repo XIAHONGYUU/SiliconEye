@@ -70,6 +70,12 @@ GitHub Pages使用`gh-pages`分支根目录。推送需要相应授权和本机�
 
 configs/review-sheet-demo-m2.json是演示定义；真实送审替换为本批review-spec.json。固定产物为review-spec.json、index.html、manifest.json、review-decision.json和review-record.md；页面固定为总览、逐项确认、整体问题、边界与未批准、导出五个分区。旧human-review.json保持原样。完整协议见[固定验收确认单](docs/review-sheet-protocol.md)。
 
+确认页自动记录首次交互和导出时间（`review_started_at` / `review_exported_at`），`review check` 计算 `review_seconds`；这是墙钟时间，不是活跃工时。批次周期记录与汇总：
+
+```bash
+.venv/bin/python scripts/cycle_time.py benchmarks/cycle-time-v1/records/*.json
+```
+
 ## 检查
 
 ```bash

@@ -1,0 +1,43 @@
+{
+  "kind": "conductive_canvas_extension",
+  "actor": "AI",
+  "reason": "Outward viewport for batch M3 extents; no existing site changes.",
+  "parent": {
+    "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+    "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+  },
+  "from_canvas_wh": [
+    3480,
+    1440
+  ],
+  "to_canvas_wh": [
+    3560,
+    1440
+  ],
+  "from_canvas_bounds": [
+    -2700,
+    0,
+    780,
+    1440
+  ],
+  "to_canvas_bounds": [
+    -2780,
+    0,
+    780,
+    1440
+  ],
+  "direction": "LEFT_ONLY",
+  "origin_xy": [
+    0,
+    0
+  ],
+  "scale_xy": [
+    1,
+    1
+  ],
+  "translation_xy": [
+    0,
+    0
+  ],
+  "geometry_human_approved": false
+}

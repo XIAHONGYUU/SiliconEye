@@ -36,6 +36,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+metal-batch = ["scipy>=1.11"]
 segmentation-eval = ["scikit-learn>=1.5,<2"]
 sam = [
     # SAM 3 for device segmentation (install separately due to size)

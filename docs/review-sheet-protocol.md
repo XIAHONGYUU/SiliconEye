@@ -24,6 +24,13 @@
 
 固定命名意味着下一次对话、下一轮补建和不同层级的复核都使用同一套入口，不再各自发明确认文件。
 
+## 复核计时（可选，2026-11-09）
+
+- 确认页在首次交互时记录 `review_started_at`，导出时记录 `review_exported_at`；两者为 ISO 8601 UTC 时间。
+- `review check` 校验时间顺序并计算 `review_seconds`，写入 `review-decision.json`、`review-record.md` 和命令 summary。
+- 这是墙钟时间，不是活跃工时；用于批次 lead time 和等待时间分析，不作为人审质量或几何准确率指标。
+- 旧 decision 不带这两个字段仍可校验；缺失时间保持 `null`，不补造。
+
 ## 固定结论词表
 
 | 值 | 页面文字 | 含义 |

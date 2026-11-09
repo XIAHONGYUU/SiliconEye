@@ -1,0 +1,71 @@
+{
+  "actor": "AI",
+  "reason": "Batch source-bound outward extension of six existing M3 metals; no native anchor or interface edits.",
+  "geometry_human_approved": false,
+  "sources": {
+    "traces": {
+      "path": "benchmarks/batch-production-v1/traces.json",
+      "sha256": "eda0f3e8c64ab632195e0823fcec6daa0dbcd9c621396080082ddeaf4215e7b7"
+    },
+    "ledger": {
+      "path": "benchmarks/batch-production-v1/local-parts-ledger.json",
+      "sha256": "4a13cda45aa189e9909c650ba2df6f54fd6bd4893bf99def5d62be73dcc86165"
+    }
+  },
+  "changes": [
+    {
+      "id": "C-M3-M01",
+      "native_anchor_preserved": true,
+      "old_footprint_preserved": true,
+      "new_parts": [
+        "BATCH-20261109-WEST",
+        "BATCH-20261109-EAST"
+      ]
+    },
+    {
+      "id": "C-M3-M02",
+      "native_anchor_preserved": true,
+      "old_footprint_preserved": true,
+      "new_parts": [
+        "BATCH-20261109-WEST",
+        "BATCH-20261109-EAST"
+      ]
+    },
+    {
+      "id": "C-M3-M03",
+      "native_anchor_preserved": true,
+      "old_footprint_preserved": true,
+      "new_parts": [
+        "BATCH-20261109-WEST",
+        "BATCH-20261109-EAST"
+      ]
+    },
+    {
+      "id": "C-M3-M04",
+      "native_anchor_preserved": true,
+      "old_footprint_preserved": true,
+      "new_parts": [
+        "BATCH-20261109-WEST",
+        "BATCH-20261109-EAST"
+      ]
+    },
+    {
+      "id": "C-M3-M05",
+      "native_anchor_preserved": true,
+      "old_footprint_preserved": true,
+      "new_parts": [
+        "BATCH-20261109-WEST",
+        "BATCH-20261109-EAST"
+      ]
+    },
+    {
+      "id": "C-M3-M06",
+      "native_anchor_preserved": true,
+      "old_footprint_preserved": true,
+      "new_parts": [
+        "BATCH-20261109-WEST",
+        "BATCH-20261109-EAST"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "timer_start_utc": "2026-11-09T00:37:36.581314+00:00",
+  "review_ready_utc": "2026-11-09T00:42:42.766664+00:00",
+  "delivery_checkpoint_utc": "2026-11-09T00:44:13.502048+00:00",
+  "scope_preparation_to_review_ready_seconds": 306.18535,
+  "scope_preparation_to_checkpoint_seconds": 396.920734,
+  "initial_context_read_before_timer": "not measured; timer starts at first scoped crop preparation",
+  "recognition_seconds": 1.6345677219999857,
+  "batch_build_seconds": 3.804996139000025,
+  "targeted_tests_seconds": 10.13,
+  "human_review_seconds": null,
+  "counts": {
+    "existing_metals_extended": 6,
+    "extent_additions": 12,
+    "new_metals": 0,
+    "review_groups": 2,
+    "formal_connections_added": 0
+  }
+}

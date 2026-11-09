@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "seed": 20261106,
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "checkpoint": {
+    "path": "runs/metal-algorithm-pilot-20261106/models/sam2.1_hiera_tiny-hf.pt",
+    "sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+  },
+  "cases": [
+    {
+      "id": "L01",
+      "description": "L01 细线与左短头",
+      "bounds": [
+        180,
+        2150,
+        280,
+        2410
+      ],
+      "box": [
+        212,
+        2150,
+        264,
+        2385
+      ],
+      "positive": [
+        [
+          240,
+          2250
+        ],
+        [
+          246,
+          2345
+        ]
+      ],
+      "negative": [
+        [
+          205,
+          2250
+        ],
+        [
+          270,
+          2300
+        ]
+      ],
+      "probes": [
+        [
+          236,
+          2200,
+          1
+        ],
+        [
+          244,
+          2300,
+          1
+        ],
+        [
+          225,
+          2366,
+          1
+        ],
+        [
+          205,
+          2360,
+          0
+        ],
+        [
+          268,
+          2365,
+          0
+        ],
+        [
+          250,
+          2400,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "S03",
+      "description": "S03 窄线转角",
+      "bounds": [
+        440,
+        2150,
+        540,
+        2330
+      ],
+      "box": [
+        460,
+        2150,
+        520,
+        2300
+      ],
+      "positive": [
+        [
+          497,
+          2230
+        ],
+        [
+          485,
+          2286
+        ]
+      ],
+      "negative": [
+        [
+          450,
+          2200
+        ],
+        [
+          530,
+          2250
+        ]
+      ],
+      "probes": [
+        [
+          495,
+          2200,
+          1
+        ],
+        [
+          500,
+          2260,
+          1
+        ],
+        [
+          476,
+          2286,
+          1
+        ],
+        [
+          460,
+          2270,
+          0
+        ],
+        [
+          518,
+          2286,
+          0
+        ],
+        [
+          500,
+          2310,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "W4",
+      "description": "W4 宽金属及邻近细线",
+      "bounds": [
+        340,
+        2150,
+        450,
+        2430
+      ],
+      "box": [
+        356,
+        2150,
+        414,
+        2430
+      ],
+      "positive": [
+        [
+          376,
+          2250
+        ],
+        [
+          382,
+          2390
+        ]
+      ],
+      "negative": [
+        [
+          345,
+          2250
+        ],
+        [
+          435,
+          2300
+        ]
+      ],
+      "probes": [
+        [
+          374,
+          2200,
+          1
+        ],
+        [
+          379,
+          2320,
+          1
+        ],
+        [
+          382,
+          2410,
+          1
+        ],
+        [
+          350,
+          2300,
+          0
+        ],
+        [
+          420,
+          2300,
+          0
+        ],
+        [
+          441,
+          2345,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "S04",
+      "description": "S04 细支路及左侧宽金属",
+      "bounds": [
+        710,
+        2150,
+        850,
+        2430
+      ],
+      "box": [
+        762,
+        2215,
+        820,
+        2430
+      ],
+      "positive": [
+        [
+          789,
+          2240
+        ],
+        [
+          782,
+          2350
+        ]
+      ],
+      "negative": [
+        [
+          737,
+          2300
+        ],
+        [
+          830,
+          2300
+        ]
+      ],
+      "probes": [
+        [
+          800,
+          2240,
+          1
+        ],
+        [
+          779,
+          2270,
+          1
+        ],
+        [
+          785,
+          2410,
+          1
+        ],
+        [
+          741,
+          2350,
+          0
+        ],
+        [
+          810,
+          2300,
+          0
+        ],
+        [
+          780,
+          2200,
+          0
+        ]
+      ]
+    }
+  ],
+  "template": {
+    "source": "m1",
+    "bounds": [
+      3134,
+      1953,
+      3153,
+      1976
+    ],
+    "scales": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "thresholds": [
+      0.5,
+      0.65,
+      0.8
+    ],
+    "targets": [
+      {
+        "id": "A-template-source",
+        "bounds": [
+          3125,
+          1930,
+          3175,
+          2010
+        ],
+        "expected": true,
+        "split": "sanity_not_evaluation"
+      },
+      {
+        "id": "B-known-positive",
+        "bounds": [
+          3130,
+          2775,
+          3180,
+          2845
+        ],
+        "expected": true,
+        "split": "known_case_diagnostic"
+      },
+      {
+        "id": "W34-END-N1",
+        "bounds": [
+          307,
+          1728,
+          347,
+          1790
+        ],
+        "expected": false,
+        "split": "known_case_diagnostic"
+      },
+      {
+        "id": "W34-END-N2",
+        "bounds": [
+          398,
+          1728,
+          438,
+          1790
+        ],
+        "expected": false,
+        "split": "known_case_diagnostic"
+      },
+      {
+        "id": "W34-END-N3",
+        "bounds": [
+          486,
+          1685,
+          520,
+          1745
+        ],
+        "expected": false,
+        "split": "known_case_diagnostic"
+      },
+      {
+        "id": "W34-END-S1",
+        "bounds": [
+          803,
+          3345,
+          853,
+          3445
+        ],
+        "expected": false,
+        "split": "known_case_diagnostic"
+      }
+    ]
+  },
+  "references": [
+    {
+      "path": "benchmarks/w34-left-m2-reviewed-v2/working-baseline.json",
+      "sha256": "e50976be506ba2975241c5f62d29690892ad17153b91e97369c643f7c8112555"
+    },
+    {
+      "path": "benchmarks/w34-terminal-v1-reviewed-v2/negative-reference-set.json",
+      "sha256": "f37e1b518249ea00b30a4cba1c8de10bb39bc307d550c69343f24910d058e6c4"
+    }
+  ],
+  "limits": [
+    "Same chip, selected known regions; exploratory comparison, not blind generalization.",
+    "AI sparse probes are not human pixel truth. Native paths locate objects; design widths are not segmentation ground truth.",
+    "All segmentation masks remain candidates; no geometry, hole count, carrier or net changes.",
+    "Otsu uses positive prompts to select components; GrabCut uses the shared box as hard exclusion and point disks as constraints; SAM uses the same box/point locations as model prompts. Different mechanisms, not identical supervision.",
+    "No mask hole filling or geometric completion; no threshold tuning after outputs.",
+    "Manual baseline and correction time unmeasured; no end-to-end speedup claim.",
+    "Known negative targets used only for regression, not resubmitted for human approval."
+  ]
+}

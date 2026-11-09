@@ -1,0 +1,58 @@
+{
+  "task": "Six seeded M3 centerlines, same-photo trace only; AI candidate geometry",
+  "source": "/home/zuoky/project_siliconeyes/silicon-eye/data/test_chip/tile_full/m3.jpg",
+  "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde",
+  "crop": [
+    200,
+    2200,
+    3700,
+    2500
+  ],
+  "x_range": [
+    250,
+    3650
+  ],
+  "seeds": [
+    [
+      250,
+      2330
+    ],
+    [
+      250,
+      2350
+    ],
+    [
+      250,
+      2369
+    ],
+    [
+      250,
+      2391
+    ],
+    [
+      250,
+      2407
+    ],
+    [
+      250,
+      2427
+    ]
+  ],
+  "ids": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "output": "geometry.json: {tracks:[{id,points:[[native_x,native_y],...],unknown_spans:[]}]}",
+  "scope": "Trace six seed-selected lines to x=3650. Preserve identity. Report ambiguity, do not invent connections. Centerline only, no width/polygon/via/netlist.",
+  "budget_seconds": 480,
+  "correction_limit": 2,
+  "timing": "Record wall start/end UTC and elapsed perf_counter; separate preparation, execution, review/correction. Preserve initial output and time repeat execution separately. No GPU/install/network.",
+  "isolation": "Read only protocol, provided crop, original source, environment/package availability, own branch files. Do not read prior geometry, benchmarks, reports or other branch output.",
+  "traditional": "Visual source inspection and manually authored centerline points; may render/validate with code; no automatic pixel/line extraction.",
+  "algorithm": "Use deterministic pixel line/ridge detection plus continuity/path search; no manually entered paths except shared seeds. Record parameters, method and computational repeats.",
+  "evaluation": "Main and separate judge use withheld previous AI samples plus independent source inspection. Samples are not human truth. Compare centerline error, missing tracks, identity swaps, validity, timing; no dense accuracy or electrical claims."
+}

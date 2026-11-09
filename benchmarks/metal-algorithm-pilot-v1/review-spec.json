@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "stage": "METAL",
+  "package_id": "METAL-ALGORITHM-PILOT-20261106",
+  "date": "2026-11-06",
+  "title": "金属算法对照：只读比较，不重审模型",
+  "summary": "只读对照：绿色为候选掩膜；未证明人工提速。S04检查点2/3及第二提示点偏离细线，不计入稀疏汇总；其原结果保留。无需重新裁决旧几何或四个非孔。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      180,
+      2150,
+      850,
+      2430
+    ],
+    "note": "四个局部窗口；非全幅验收。"
+  },
+  "items": [
+    {
+      "id": "L01",
+      "type": "metal_fragment",
+      "title": "L01 细线与左短头",
+      "prompt": "只读比较算法掩膜；不要求重新确认已审几何。",
+      "review_mode": "context",
+      "facts": {
+        "原生范围": [
+          180,
+          2150,
+          280,
+          2410
+        ],
+        "性质": "算法对照，不重新审批既有几何",
+        "AI目视检查": "All three retain main line and short head; SAM has a broader/smoother edge and small fringe pixels."
+      },
+      "evidence": [
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/L01-comparison.png",
+          "label": "原图 / Otsu / GrabCut / SAM2",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/L01-probes.png",
+          "label": "AI稀疏检查点：红=目标，青=非目标",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "type": "metal_fragment",
+      "title": "S03 窄线转角",
+      "prompt": "只读比较算法掩膜；不要求重新确认已审几何。",
+      "review_mode": "context",
+      "facts": {
+        "原生范围": [
+          440,
+          2150,
+          540,
+          2330
+        ],
+        "性质": "算法对照，不重新审批既有几何",
+        "AI目视检查": "All three retain main line/head; SAM broadens below the head."
+      },
+      "evidence": [
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/S03-comparison.png",
+          "label": "原图 / Otsu / GrabCut / SAM2",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/S03-probes.png",
+          "label": "AI稀疏检查点：红=目标，青=非目标",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    },
+    {
+      "id": "W4",
+      "type": "metal_fragment",
+      "title": "W4 宽金属及邻近细线",
+      "prompt": "只读比较算法掩膜；不要求重新确认已审几何。",
+      "review_mode": "context",
+      "facts": {
+        "原生范围": [
+          340,
+          2150,
+          450,
+          2430
+        ],
+        "性质": "算法对照，不重新审批既有几何",
+        "AI目视检查": "GrabCut collapses to tiny fragments; Otsu has stripe holes; SAM is more continuous but has residual holes."
+      },
+      "evidence": [
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/W4-comparison.png",
+          "label": "原图 / Otsu / GrabCut / SAM2",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/W4-probes.png",
+          "label": "AI稀疏检查点：红=目标，青=非目标",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "type": "metal_fragment",
+      "title": "S04 细支路及左侧宽金属",
+      "prompt": "只读比较算法掩膜；不要求重新确认已审几何。",
+      "review_mode": "context",
+      "facts": {
+        "原生范围": [
+          710,
+          2150,
+          850,
+          2430
+        ],
+        "性质": "算法对照，不重新审批既有几何",
+        "AI目视检查": "Otsu and SAM visually retain the fine branch; GrabCut largely retains only the head. Sparse diagnostic and prompt offset invalidate a clean quantitative comparison."
+      },
+      "evidence": [
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/S04-comparison.png",
+          "label": "原图 / Otsu / GrabCut / SAM2",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/S04-probes.png",
+          "label": "AI稀疏检查点：红=目标，青=非目标",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    },
+    {
+      "id": "TEMPLATE",
+      "type": "via_interface",
+      "title": "V1模板匹配：已知正负例回归",
+      "prompt": "只读：四个非孔保持原裁决；橙框为最高相似位置，不代表孔。",
+      "review_mode": "context",
+      "facts": {
+        "模板": "A仅作自匹配检查，不计评估",
+        "检查": "B一个已知正例 + 四个已判非孔目标",
+        "阈值": "0.50四个非孔全部误报；0.65和0.80在本批能分开。非泛化准确率。"
+      },
+      "evidence": [
+        {
+          "path": "runs/metal-algorithm-pilot-20261106/result-v1/template-comparison.png",
+          "label": "原图与匹配峰值",
+          "role": "marked",
+          "frame": "m1"
+        }
+      ]
+    }
+  ],
+  "questions": [],
+  "sources": {
+    "m1": {
+      "path": "data/test_chip/tile_full/m1.jpg",
+      "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+    },
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "limitations": [
+    "Same chip, selected known regions; exploratory comparison, not blind generalization.",
+    "AI sparse probes are not human pixel truth. Native paths locate objects; design widths are not segmentation ground truth.",
+    "All segmentation masks remain candidates; no geometry, hole count, carrier or net changes.",
+    "Otsu uses positive prompts to select components; GrabCut uses the shared box as hard exclusion and point disks as constraints; SAM uses the same box/point locations as model prompts. Different mechanisms, not identical supervision.",
+    "No mask hole filling or geometric completion; no threshold tuning after outputs.",
+    "Manual baseline and correction time unmeasured; no end-to-end speedup claim.",
+    "Known negative targets used only for regression, not resubmitted for human approval."
+  ]
+}

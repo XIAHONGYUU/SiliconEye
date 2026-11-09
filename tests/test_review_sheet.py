@@ -162,6 +162,9 @@ def test_template_keeps_fixed_sections_and_escapes_payload(tmp_path):
     assert template.count("__PAYLOAD__") == 1
     for label in ["总览", "逐项确认", "整体问题", "边界与未批准", "导出"]:
         assert label in template
+    assert "review_started_at" in template
+    assert "review_exported_at" in template
+    assert "markReviewStarted" in template
 
     document = make_spec(tmp_path)
     document["title"] = "</script><script>alert(1)</script>"
@@ -210,6 +213,7 @@ def test_complete_decision_is_archived_idempotently(tmp_path):
     assert summary["answers"] == 2
     assert summary["verdicts"] == {"accepted": 2}
     assert summary["questions"] == {"accepted": 3}
+    assert summary["review_seconds"] is None
     assert (output / "review-decision.json").is_file()
     record = (output / "review-record.md").read_text()
     assert "# 验收确认记录" in record
@@ -220,6 +224,28 @@ def test_complete_decision_is_archived_idempotently(tmp_path):
 
     again = check(tmp_path, output, decision_path, archive=True)
     assert again["status"] == "VALID"
+
+
+def test_decision_records_wall_clock_review_timing(tmp_path):
+    _, output, manifest, spec = build_pkg(tmp_path)
+    decision_path, _ = make_decision(
+        tmp_path,
+        output,
+        manifest,
+        spec,
+        review_started_at="2026-11-03T10:00:00+00:00",
+        review_exported_at="2026-11-03T10:12:30+00:00",
+    )
+
+    summary = check(tmp_path, output, decision_path, archive=True)
+    assert summary["review_started_at"] == "2026-11-03T10:00:00+00:00"
+    assert summary["review_exported_at"] == "2026-11-03T10:12:30+00:00"
+    assert summary["review_seconds"] == 750.0
+    record = (output / "review-record.md").read_text()
+    assert "复核计时" in record
+    assert "12.5 分钟" in record
+    saved = json.loads((output / "review-decision.json").read_text())
+    assert saved["review_seconds"] == 750.0
 
 
 @pytest.mark.parametrize(
@@ -244,6 +270,16 @@ def test_complete_decision_is_archived_idempotently(tmp_path):
         (lambda d: d["answers"][0].update({"verdict": "maybe"}), "invalid verdict"),
         (lambda d: d["questions"].pop(0), "Required question is unanswered"),
         (lambda d: d.update({"actor": "AI"}), "actor must be human"),
+        (lambda d: d.update({"review_started_at": "not-a-time"}), "ISO 8601"),
+        (
+            lambda d: d.update(
+                {
+                    "review_started_at": "2026-11-03T10:12:30+00:00",
+                    "review_exported_at": "2026-11-03T10:00:00+00:00",
+                }
+            ),
+            "must not be before",
+        ),
     ],
 )
 def test_invalid_decisions_are_rejected(tmp_path, mutate, message):

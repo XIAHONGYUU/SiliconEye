@@ -1,0 +1,11 @@
+{
+  "source_archive": {
+    "url": "https://codeload.github.com/facebookresearch/sam2/tar.gz/refs/heads/main",
+    "sha256": "f0bc125d69a0a85dc52c54ed16c88ee504b65b6fe3f0d215dacd4cb991e18292",
+    "commit": "unresolved; archive content hash pinned"
+  },
+  "checkpoint_url": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/main/sam2.1_hiera_tiny.pt",
+  "git_head": "ded54cc2e18c6a87c09272348651b807a4d1998c",
+  "gpu": "NVML access denied; CPU chosen",
+  "downloads": "Git clone and first archive attempts failed TLS; final archive and official HF checkpoint succeeded"
+}

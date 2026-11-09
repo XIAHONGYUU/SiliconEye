@@ -1,0 +1,25 @@
+{
+  "array_and_prediction_checks": {
+    "Q01-entropy.npy": true,
+    "Q01-probability.npy": true,
+    "Q02-entropy.npy": true,
+    "Q02-probability.npy": true,
+    "Q03-entropy.npy": true,
+    "Q03-probability.npy": true,
+    "Q04-entropy.npy": true,
+    "Q04-probability.npy": true,
+    "Q05-entropy.npy": true,
+    "Q05-probability.npy": true,
+    "Q06-entropy.npy": true,
+    "Q06-probability.npy": true,
+    "Q07-entropy.npy": true,
+    "Q07-probability.npy": true,
+    "predictions.json": true
+  },
+  "model_sha256": "d7e0c00fb3d0eccdb9786e7ad099d378a0c964549199ec94ea4606a33e98cde9",
+  "primary_batch_mean_seconds": 3.2393764725995426,
+  "reload_batch_mean_seconds": 3.308465420200082,
+  "model_unchanged": true,
+  "independent_process_reload": true,
+  "status": "PASS"
+}

@@ -1,0 +1,357 @@
+{
+  "reference_status": "withheld historical AI samples; not human ground truth",
+  "reference_sha256": "b0e5377511a245eca42d37de1f6f3da88dc7a7be1f3fca52354a4d28a2a1f829",
+  "source_sha256_match": true,
+  "metric_units": "native pixels; vertical distance at 35 historical sample columns",
+  "branches": {
+    "traditional": {
+      "geometry_sha256": "ca06733ed003969bb1b6cf6ef4e9c5e38026e98ce5a9ca5ae68650c37fe689e0",
+      "track_count": 6,
+      "unique_ids": 6,
+      "missing_ids": [],
+      "extra_ids": [],
+      "tracks": [
+        {
+          "id": "T1",
+          "point_count": 9,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.8957328385899668,
+          "median_error": 1.0,
+          "max_error": 1.875,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T2",
+          "point_count": 9,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.9649350649350709,
+          "median_error": 1.0,
+          "max_error": 2.0,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T3",
+          "point_count": 9,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 1.2411873840445098,
+          "median_error": 1.25,
+          "max_error": 2.0,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T4",
+          "point_count": 9,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.8071428571428572,
+          "median_error": 0.875,
+          "max_error": 2.0,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T5",
+          "point_count": 9,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.6044526901669737,
+          "median_error": 0.5454545454545041,
+          "max_error": 1.75,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T6",
+          "point_count": 9,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.7467532467532432,
+          "median_error": 0.625,
+          "max_error": 2.800000000000182,
+          "within_2px": 34,
+          "within_4px": 35
+        }
+      ],
+      "timing": {
+        "start_utc": "2026-11-06T12:16:37.182618+00:00",
+        "end_utc": "2026-11-06T12:18:47.903960+00:00",
+        "total_seconds": 130.72125616700214,
+        "preparation_seconds": 13.000825579001685,
+        "visual_tracing_and_implementation_seconds": 81.36786154699803,
+        "render_review_checks_seconds": 36.352569041002425,
+        "correction_rounds": 0,
+        "repeat_render_seconds": 1.5137915530031023,
+        "repeat_manual_tracing_seconds": null,
+        "human_review_seconds": null,
+        "point_count": 54
+      },
+      "aggregate": {
+        "sample_count": 210,
+        "mean_error": 0.8767006802721036,
+        "median_error": 1.0,
+        "max_error": 2.800000000000182,
+        "within_2px_count": 209,
+        "within_4px_count": 210
+      },
+      "heldout_excluding_six_shared_seeds": {
+        "sample_count": 204,
+        "mean_error": 0.9024859943977537,
+        "median_error": 1.0,
+        "max_error": 2.800000000000182,
+        "within_2px_count": 203,
+        "within_4px_count": 204
+      },
+      "ordering": {
+        "nonpositive_adjacent_gap_columns": 0,
+        "minimum_adjacent_gap_px": 16.0,
+        "nearest_reference_identity_mismatch_track_columns": 0,
+        "total_track_columns": 20406,
+        "note": "Reference-based identity check, not independent connectivity proof."
+      }
+    },
+    "algorithm": {
+      "geometry_sha256": "4ef20fa88f3c77275f41e661632f689f06f2a78ca4c2e5ef495d4da495410a6e",
+      "track_count": 6,
+      "unique_ids": 6,
+      "missing_ids": [],
+      "extra_ids": [],
+      "tracks": [
+        {
+          "id": "T1",
+          "point_count": 851,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.11428571428571428,
+          "median_error": 0.0,
+          "max_error": 1.0,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T2",
+          "point_count": 851,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.5142857142857142,
+          "median_error": 1.0,
+          "max_error": 1.0,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T3",
+          "point_count": 851,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 1.2285714285714286,
+          "median_error": 1.0,
+          "max_error": 3.0,
+          "within_2px": 32,
+          "within_4px": 35
+        },
+        {
+          "id": "T4",
+          "point_count": 851,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.37142857142857144,
+          "median_error": 0.0,
+          "max_error": 1.0,
+          "within_2px": 35,
+          "within_4px": 35
+        },
+        {
+          "id": "T5",
+          "point_count": 851,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.9714285714285714,
+          "median_error": 1.0,
+          "max_error": 3.0,
+          "within_2px": 33,
+          "within_4px": 35
+        },
+        {
+          "id": "T6",
+          "point_count": 851,
+          "finite_strict_monotonic": true,
+          "unknown_spans": [],
+          "x_range": [
+            250.0,
+            3650.0
+          ],
+          "full_x_coverage": true,
+          "reference_samples_covered": 35,
+          "mean_error": 0.7142857142857143,
+          "median_error": 1.0,
+          "max_error": 2.0,
+          "within_2px": 35,
+          "within_4px": 35
+        }
+      ],
+      "timing": {
+        "start_utc": "2026-11-06T12:16:41.532131+00:00",
+        "end_utc": "2026-11-06T12:19:22.264768+00:00",
+        "elapsed_wall_seconds": 160.732637,
+        "elapsed_perf_counter_since_start_file_seconds": 141.8132098950009,
+        "perf_counter_note": "start file perf counter is after initial protocol read; UTC total includes that read.",
+        "phases_seconds": {
+          "preparation_implementation_and_initial_execution": 64.707321,
+          "first_result_to_corrected_result": 38.399104,
+          "final_inspection_checks_documentation": 57.626212
+        },
+        "phase_basis": "UTC start, initial geometry file mtime, corrected execution timestamp, final timestamp; phases include tool/model latency, not CPU-only",
+        "correction_rounds": 1,
+        "algorithm_execution": {
+          "utc": "2026-11-06T12:18:24.638556+00:00",
+          "first_execution_seconds": 0.7798501139986911,
+          "repeat_execution_seconds": [
+            0.7419020289999025,
+            0.7454721360008989,
+            0.7481055450007261,
+            0.7970978129997093,
+            0.8184440660006658
+          ],
+          "repeat_median_seconds": 0.7481055450007261,
+          "includes": "source decode/crop, ridge filtering, six DP traces, geometry assembly; excludes JSON/PNG writing",
+          "synthetic_check": {
+            "max_centerline_error_px": 0.480000000000004,
+            "parallel_line_jump": false
+          }
+        },
+        "code_sha256": "2ff7032b6ac9c653002cec5fdd5934f057f7c91e4b0ee1c00582934fe333d140"
+      },
+      "aggregate": {
+        "sample_count": 210,
+        "mean_error": 0.6523809523809524,
+        "median_error": 1.0,
+        "max_error": 3.0,
+        "within_2px_count": 205,
+        "within_4px_count": 210
+      },
+      "heldout_excluding_six_shared_seeds": {
+        "sample_count": 204,
+        "mean_error": 0.6715686274509803,
+        "median_error": 1.0,
+        "max_error": 3.0,
+        "within_2px_count": 199,
+        "within_4px_count": 204
+      },
+      "ordering": {
+        "nonpositive_adjacent_gap_columns": 0,
+        "minimum_adjacent_gap_px": 14.0,
+        "nearest_reference_identity_mismatch_track_columns": 0,
+        "total_track_columns": 20406,
+        "note": "Reference-based identity check, not independent connectivity proof."
+      }
+    }
+  },
+  "algorithm_initial_failure": {
+    "sha256": "04ab2507bef79c7befcc37a00982e6a4e2b71e235d52a44d7a3d87c8e007bd83",
+    "heldout_sample_count": 204,
+    "mean_error": 15.602941176470589,
+    "max_error": 37.0,
+    "within_4px_count": 70,
+    "nonpositive_adjacent_gap_columns": 3333,
+    "nearest_reference_identity_mismatch_track_columns": 13199,
+    "total_track_columns": 20406,
+    "endpoints": [
+      [
+        3650,
+        2264
+      ],
+      [
+        3650,
+        2264
+      ],
+      [
+        3650,
+        2322
+      ],
+      [
+        3650,
+        2322
+      ],
+      [
+        3650,
+        2322
+      ],
+      [
+        3650,
+        2322
+      ]
+    ]
+  }
+}

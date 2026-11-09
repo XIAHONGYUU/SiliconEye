@@ -1,0 +1,429 @@
+{
+  "kind": "independent_AI_reviewer_diagnostics",
+  "limits": "Sparse probes and visual review are AI assessment, not human ground truth or dense accuracy. Single trial per method.",
+  "results": {
+    "traditional": {
+      "timing_as_submitted": {
+        "start_utc": "2026-11-06T06:58:44+00:00",
+        "end_utc": "2026-11-06T07:01:00.303724+00:00",
+        "total_wall_clock_seconds": 136.304,
+        "prior_failed_launch_excluded": true,
+        "correction_rounds": 0,
+        "stages": [
+          {
+            "name": "read_image_and_manual_reasoning",
+            "start_utc": "2026-11-06T06:58:44Z",
+            "end_utc": "2026-11-06T07:00:01Z",
+            "seconds": 77,
+            "includes": "protocol, rules, source hash, crops, grid display, visual interpretation and native coordinate decisions"
+          },
+          {
+            "name": "algorithm",
+            "seconds": 0,
+            "notes": "No image recognition algorithm used."
+          },
+          {
+            "name": "geometry_conversion_render_and_first_inspection",
+            "start_utc": "2026-11-06T07:00:01Z",
+            "end_utc": "2026-11-06T07:00:20Z",
+            "seconds": 19,
+            "includes": "manual geometry JSON and rendering code, numeric checks, overlay inspection; subparts not separately timed"
+          },
+          {
+            "name": "checks_and_delivery",
+            "start_utc": "2026-11-06T07:00:20Z",
+            "end_utc": "2026-11-06T07:01:00.303724+00:00",
+            "seconds": 40.304,
+            "includes": "SVG parsing, Python syntax validation, limitations notes and timing record"
+          }
+        ]
+      },
+      "objects": [
+        {
+          "case": "A",
+          "id": "A1",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 8,
+          "area_px2": 8084.0,
+          "component_count": 1,
+          "end_states": [
+            {
+              "location": "top",
+              "state": "visible_closed_candidate",
+              "at": [
+                3104,
+                1899
+              ]
+            },
+            {
+              "location": "bottom",
+              "state": "exits_crop",
+              "segment": [
+                [
+                  3089,
+                  2170
+                ],
+                [
+                  3119,
+                  2170
+                ]
+              ]
+            }
+          ],
+          "uncertainties": [
+            "Candidate outer material boundary from visual inspection; blur and periodic texture give roughly 2–3 native pixel edge uncertainty.",
+            "Bottom is crop clipping, not a physical termination; internal contrast is not interpreted as holes."
+          ]
+        },
+        {
+          "case": "B",
+          "id": "B1",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 9,
+          "area_px2": 1083.0,
+          "component_count": 1,
+          "end_states": [
+            {
+              "location": "top",
+              "state": "exits_crop",
+              "segment": [
+                [
+                  3097,
+                  1700
+                ],
+                [
+                  3104,
+                  1700
+                ]
+              ]
+            },
+            {
+              "location": "right_short_head",
+              "state": "visible_closed_candidate",
+              "at": [
+                3131,
+                1802
+              ]
+            }
+          ],
+          "uncertainties": [
+            "Candidate only; narrow shaft blur makes its width uncertain by roughly 2 native pixels per edge.",
+            "Shaft and short head appear continuous, but this does not establish an electrical network."
+          ]
+        },
+        {
+          "case": "C",
+          "id": "C1",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 11,
+          "area_px2": 1755.5,
+          "component_count": 1,
+          "end_states": [
+            {
+              "location": "left_head",
+              "state": "visible_closed_candidate",
+              "at": [
+                2987,
+                2117
+              ]
+            },
+            {
+              "location": "bottom_stem",
+              "state": "visible_closed_candidate",
+              "at": [
+                3022,
+                2159
+              ]
+            },
+            {
+              "location": "toward_C2",
+              "state": "visible_gap_candidate"
+            }
+          ],
+          "uncertainties": [
+            "Candidate outer contour with roughly 2–3 native pixel uncertainty at blurred corners.",
+            "Internal bright/dark texture retained inside solid silhouette; no hole interpretation."
+          ]
+        },
+        {
+          "case": "C",
+          "id": "C2",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 8,
+          "area_px2": 1178.0,
+          "component_count": 1,
+          "end_states": [
+            {
+              "location": "perimeter",
+              "state": "visible_closed_candidate"
+            },
+            {
+              "location": "toward_C1",
+              "state": "visible_gap_candidate"
+            },
+            {
+              "location": "toward_left_context",
+              "state": "visible_gap_candidate"
+            }
+          ],
+          "uncertainties": [
+            "Candidate only; short isolated material fragment, with roughly 2–3 native pixel boundary uncertainty.",
+            "Left out-of-crop context was excluded as instructed."
+          ]
+        }
+      ],
+      "C1_C2_gap_px": 24.758836806279895,
+      "C1_C2_intersection_area": 0.0
+    },
+    "sam": {
+      "timing_as_submitted": {
+        "start_utc": "2026-11-06T06:58:49+00:00",
+        "end_utc": "2026-11-06T07:02:11.362347+00:00",
+        "total_wall_seconds": 202.362347,
+        "active_budget_seconds": 900,
+        "segments": [
+          {
+            "name": "protocol_source_read_prompt_code_and_imports_combined",
+            "start_utc": "2026-11-06T06:58:49+00:00",
+            "end_utc": "2026-11-06T06:59:55.297698+00:00",
+            "seconds": 66.297698
+          },
+          {
+            "name": "algorithm_vectorization_run1",
+            "start_utc": "2026-11-06T06:59:55.297698+00:00",
+            "end_utc": "2026-11-06T07:00:05.732487+00:00",
+            "seconds": 10.434789
+          },
+          {
+            "name": "visual_check_geometry_validation_correction_and_restart_combined",
+            "start_utc": "2026-11-06T07:00:05.732487+00:00",
+            "end_utc": "2026-11-06T07:01:00.879395+00:00",
+            "seconds": 55.146908
+          },
+          {
+            "name": "algorithm_vectorization_run2",
+            "start_utc": "2026-11-06T07:01:00.879395+00:00",
+            "end_utc": "2026-11-06T07:01:11.181678+00:00",
+            "seconds": 10.302283
+          },
+          {
+            "name": "final_visual_check_validation_and_delivery_combined",
+            "start_utc": "2026-11-06T07:01:11.181678+00:00",
+            "end_utc": "2026-11-06T07:02:11.362347+00:00",
+            "seconds": 60.180669
+          }
+        ],
+        "visual_checks": 2,
+        "correction_rounds": 1,
+        "sunk_installation_cost_excluded": true,
+        "timing_limits": "Initial UTC start measured to whole second; no exclusion of inference waits or tool overhead. Stage thinking/tool portions combined where not separately measured."
+      },
+      "objects": [
+        {
+          "case": "A",
+          "id": "A1",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 18,
+          "area_px2": 6686.5,
+          "component_count": 1,
+          "end_states": [
+            {
+              "edge": "bottom",
+              "state": "clipped_by_case_bounds",
+              "continuation": "unknown_outside_crop"
+            },
+            {
+              "location": "upper cap",
+              "state": "visible_termination"
+            }
+          ],
+          "uncertainties": [
+            "Soft optical boundary; contour depends on prompts and mask threshold.",
+            "External envelope only; internal texture and mask voids are not interpreted as holes."
+          ]
+        },
+        {
+          "case": "B",
+          "id": "B1",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 21,
+          "area_px2": 585.5,
+          "component_count": 1,
+          "end_states": [
+            {
+              "edge": "top",
+              "state": "clipped_by_case_bounds",
+              "continuation": "unknown_outside_crop"
+            },
+            {
+              "location": "right short head",
+              "state": "visible_termination"
+            }
+          ],
+          "uncertainties": [
+            "Soft optical boundary; contour depends on prompts and mask threshold.",
+            "External envelope only; internal texture and mask voids are not interpreted as holes."
+          ]
+        },
+        {
+          "case": "C",
+          "id": "C1",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 28,
+          "area_px2": 1632.0,
+          "component_count": 1,
+          "end_states": [
+            {
+              "location": "all outer edges",
+              "state": "visible_termination_with_soft_optical_boundary"
+            }
+          ],
+          "uncertainties": [
+            "Soft optical boundary; contour depends on prompts and mask threshold.",
+            "External envelope only; internal texture and mask voids are not interpreted as holes."
+          ]
+        },
+        {
+          "case": "C",
+          "id": "C2",
+          "polygon_valid": true,
+          "outside_crop_area": 0.0,
+          "positive_probes_hit": 3,
+          "positive_probe_count": 3,
+          "negative_probes_hit": 0,
+          "negative_probe_count": 3,
+          "positive_hits": [
+            true,
+            true,
+            true
+          ],
+          "negative_hits": [
+            false,
+            false,
+            false
+          ],
+          "vertices": 17,
+          "area_px2": 1191.5,
+          "component_count": 1,
+          "end_states": [
+            {
+              "location": "all outer edges",
+              "state": "visible_termination_with_soft_optical_boundary"
+            }
+          ],
+          "uncertainties": [
+            "Soft optical boundary; contour depends on prompts and mask threshold.",
+            "External envelope only; internal texture and mask voids are not interpreted as holes."
+          ]
+        }
+      ],
+      "C1_C2_gap_px": 25.495097567963924,
+      "C1_C2_intersection_area": 0.0
+    }
+  }
+}

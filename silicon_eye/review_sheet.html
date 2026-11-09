@@ -461,6 +461,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
             <button class="btn ghost" type="button" data-action="clear">清空本页答案</button>
           </div>
           <p class="muted small" style="margin-top:12px" id="export-state"></p>
+          <p class="muted small">页面自动记录首次交互和导出时间，仅用于批次周期统计，不改变任何判定。</p>
         </div>
         <div class="card" style="margin-top:18px">
           <h3>导出后交给 Agent 接续</h3>
@@ -514,6 +515,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   var LABELS = DATA.labels;
   var STORE_KEY = "silicon-eye-review:" + BUILD.build_id;
   var state = {answers:{}, questions:{}, statement:"", limitsAck:false};
+  var reviewStartedAt = null;
   var currentFilter = "all";
   var lastDecisionText = "";
   var saveTimer = null;
@@ -564,6 +566,9 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   function localDate(){
     var now = new Date();
     return now.getFullYear() + "-" + String(now.getMonth()+1).padStart(2,"0") + "-" + String(now.getDate()).padStart(2,"0");
+  }
+  function markReviewStarted(){
+    if(!reviewStartedAt) reviewStartedAt = new Date().toISOString();
   }
   function formatJSON(value){
     if(typeof value === "string") return value;
@@ -1003,7 +1008,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     }
   }
 
-  function buildDecision(){
+  function buildDecision(exportedAt){
     return {
       schema_version: 1,
       kind: "silicon_eye_review_decision",
@@ -1014,6 +1019,8 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       date: localDate(),
       statement: state.statement.trim(),
       limits_acknowledged: state.limitsAck,
+      review_started_at: reviewStartedAt,
+      review_exported_at: exportedAt || null,
       answers: SPEC.items.filter(function(item){ return !isContext(item) && itemAnswer(item) && itemAnswer(item).verdict; }).map(function(item){
         var answer = itemAnswer(item);
         var checks = {};
@@ -1033,7 +1040,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
       showErrors(errors);
       return;
     }
-    var decision = buildDecision();
+    var decision = buildDecision(new Date().toISOString());
     lastDecisionText = JSON.stringify(decision, null, 2) + "\n";
     byId("json-preview").textContent = lastDecisionText;
     byId("copy-btn").disabled = false;
@@ -1057,7 +1064,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
     if(!lastDecisionText){
       var errors = allErrors();
       if(errors.length){ showErrors(errors); return; }
-      lastDecisionText = JSON.stringify(buildDecision(), null, 2) + "\n";
+      lastDecisionText = JSON.stringify(buildDecision(new Date().toISOString()), null, 2) + "\n";
     }
     copyText(lastDecisionText);
   }
@@ -1313,6 +1320,8 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
   }
 
   function bindEvents(){
+    document.addEventListener("pointerdown", markReviewStarted, true);
+    document.addEventListener("keydown", markReviewStarted, true);
     document.querySelectorAll(".tab").forEach(function(button){
       button.addEventListener("click", function(){ showTab(button.dataset.tab); });
     });
@@ -1339,6 +1348,7 @@ dialog#lightbox::backdrop{background:rgba(0,0,0,.72)}
           clearTimeout(saveTimer);
           try{localStorage.removeItem(STORE_KEY);}catch(error){storageWarning();}
           state = {answers:{}, questions:{}, statement:"", limitsAck:false};
+          reviewStartedAt = null;
           SPEC.items.forEach(function(item){state.answers[item.id]={verdict:null,checks:{},notes:""};item.checks.forEach(function(check){state.answers[item.id].checks[check.id]=false;});});
           SPEC.questions.forEach(function(question){state.questions[question.id]={verdict:null,notes:""};});
           validationRequested = false;refreshReview();persistState();

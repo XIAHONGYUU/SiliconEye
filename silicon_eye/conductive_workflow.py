@@ -174,9 +174,13 @@ def canvas_extension_audit(inputs, request, previous, sample, parent_request):
     new_bounds = design_canvas_bounds(after, sample.get('canvas_bounds'))
     bottom = new_bounds[:3] == old_bounds[:3] and new_bounds[3] > old_bounds[3]
     left = new_bounds[1:] == old_bounds[1:] and new_bounds[0] < old_bounds[0]
-    direction = 'BOTTOM_ONLY' if bottom else 'LEFT_ONLY' if left else None
+    right = (new_bounds[:2] == old_bounds[:2] and new_bounds[3] == old_bounds[3]
+             and new_bounds[2] > old_bounds[2])
+    direction = 'BOTTOM_ONLY' if bottom else 'LEFT_ONLY' if left else (
+        'RIGHT_ONLY' if right else None)
     if direction is None or any(type(v) is not int for v in old_bounds + new_bounds):
-        raise ValueError('Canvas extension supports strictly bottom-only or left-only growth')
+        raise ValueError(
+            'Canvas extension supports strictly bottom-only, left-only or right-only growth')
     if (evidence.get('kind') != 'conductive_canvas_extension'
             or evidence.get('actor') != 'AI' or not evidence.get('reason')
             or evidence.get('parent') != request['parent']

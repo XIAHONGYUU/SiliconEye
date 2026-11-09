@@ -1,0 +1,152 @@
+{
+  "kind": "AI_reviewer_reference_before_branch_outputs",
+  "source": {
+    "path": "data/test_chip/tile_full/m2.jpg",
+    "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+  },
+  "scope": "Sparse interior/exterior probes, object separation and scope exits. Not human ground truth, dense IoU, or network correctness.",
+  "checks": {
+    "A1": {
+      "case": "A",
+      "positive": [
+        [
+          3104,
+          1940
+        ],
+        [
+          3103,
+          2020
+        ],
+        [
+          3102,
+          2140
+        ]
+      ],
+      "negative": [
+        [
+          3075,
+          2020
+        ],
+        [
+          3135,
+          2020
+        ],
+        [
+          3104,
+          1870
+        ]
+      ],
+      "expected_exits": [
+        "bottom"
+      ]
+    },
+    "B1": {
+      "case": "B",
+      "positive": [
+        [
+          3099,
+          1740
+        ],
+        [
+          3100,
+          1780
+        ],
+        [
+          3121,
+          1800
+        ]
+      ],
+      "negative": [
+        [
+          3080,
+          1770
+        ],
+        [
+          3135,
+          1800
+        ],
+        [
+          3100,
+          1825
+        ]
+      ],
+      "expected_exits": [
+        "top"
+      ]
+    },
+    "C1": {
+      "case": "C",
+      "positive": [
+        [
+          3000,
+          2115
+        ],
+        [
+          3020,
+          2125
+        ],
+        [
+          3020,
+          2145
+        ]
+      ],
+      "negative": [
+        [
+          2995,
+          2145
+        ],
+        [
+          3045,
+          2125
+        ],
+        [
+          3020,
+          2170
+        ]
+      ],
+      "expected_exits": []
+    },
+    "C2": {
+      "case": "C",
+      "positive": [
+        [
+          2950,
+          2150
+        ],
+        [
+          2960,
+          2155
+        ],
+        [
+          2958,
+          2165
+        ]
+      ],
+      "negative": [
+        [
+          2930,
+          2155
+        ],
+        [
+          2985,
+          2155
+        ],
+        [
+          2958,
+          2183
+        ]
+      ],
+      "expected_exits": []
+    }
+  },
+  "rubric": [
+    "All four targets delivered as valid native polygons with rerunnable code and overlay/SVG.",
+    "No merger across C1/C2 gap; no omitted target or large spill into non-target.",
+    "Inspect complete overlays for contour deviation, edge expansion, clipping and excess vertices.",
+    "Expected crop exits respected; no electrical terminal inference.",
+    "Wall-clock delivery time includes implementation/prompts/inference/vectorization/review; startup quota failures excluded; installation excluded for both."
+  ],
+  "frozen_at_utc": "2026-11-06T06:59:30.619503+00:00",
+  "raw_probe_overlay_checked": true,
+  "branch_results_seen": false
+}

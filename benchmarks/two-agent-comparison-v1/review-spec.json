@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "kind": "silicon_eye_review_sheet",
+  "stage": "METAL",
+  "package_id": "TWO-AGENT-COMPARISON-20261106",
+  "title": "双Agent流程对照：旧方式与SAM辅助",
+  "date": "2026-11-06",
+  "summary": "同图、同目标、同矢量交付要求。旧方式136秒；SAM202秒，慢约48%。不要求重审旧几何，不批准生产采用。",
+  "scope": {
+    "frame": "m2",
+    "native_bounds": [
+      2900,
+      1700,
+      3170,
+      2190
+    ],
+    "note": "三个固定局部窗口，四个目标；框间区域未评测。"
+  },
+  "items": [
+    {
+      "id": "A",
+      "type": "metal_fragment",
+      "title": "A：宽竖线及上端",
+      "review_mode": "context",
+      "prompt": "只读对照：左为原图，中为旧方式，右为SAM辅助；全部仍是候选。",
+      "facts": {
+        "范围": [
+          3060,
+          1850,
+          3160,
+          2170
+        ],
+        "计时": "旧方式136.304秒；SAM辅助202.362秒（整组）",
+        "精度边界": "两边稀疏点均通过，不代表完整边界准确。"
+      },
+      "evidence": [
+        {
+          "path": "runs/two-agent-comparison-20261106/judge/A-comparison.png",
+          "label": "统一坐标/透明度对照",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/two-agent-comparison-20261106/judge/A-reference.png",
+          "label": "预先冻结的AI检查点",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "type": "metal_fragment",
+      "title": "B：细线与右短头",
+      "review_mode": "context",
+      "prompt": "只读对照：左为原图，中为旧方式，右为SAM辅助；全部仍是候选。",
+      "facts": {
+        "范围": [
+          3060,
+          1700,
+          3170,
+          1840
+        ],
+        "计时": "旧方式136.304秒；SAM辅助202.362秒（整组）",
+        "精度边界": "两边稀疏点均通过，不代表完整边界准确。"
+      },
+      "evidence": [
+        {
+          "path": "runs/two-agent-comparison-20261106/judge/B-comparison.png",
+          "label": "统一坐标/透明度对照",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/two-agent-comparison-20261106/judge/B-reference.png",
+          "label": "预先冻结的AI检查点",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "type": "metal_fragment",
+      "title": "C：相邻独立片段与间隙",
+      "review_mode": "context",
+      "prompt": "只读对照：左为原图，中为旧方式，右为SAM辅助；全部仍是候选。",
+      "facts": {
+        "范围": [
+          2900,
+          2070,
+          3070,
+          2190
+        ],
+        "计时": "旧方式136.304秒；SAM辅助202.362秒（整组）",
+        "精度边界": "两边稀疏点均通过，不代表完整边界准确。"
+      },
+      "evidence": [
+        {
+          "path": "runs/two-agent-comparison-20261106/judge/C-comparison.png",
+          "label": "统一坐标/透明度对照",
+          "role": "detail",
+          "frame": "m2"
+        },
+        {
+          "path": "runs/two-agent-comparison-20261106/judge/C-reference.png",
+          "label": "预先冻结的AI检查点",
+          "role": "marked",
+          "frame": "m2"
+        }
+      ]
+    }
+  ],
+  "questions": [],
+  "sources": {
+    "m2": {
+      "path": "data/test_chip/tile_full/m2.jpg",
+      "sha256": "adc58964c1e40c059ac787e5d31a9b045cffbf8f6e84bec545e823b5126872c6"
+    }
+  },
+  "limitations": [
+    "Single same-chip pair; four selected simple targets; no repeated randomized crossover.",
+    "Different agents and service latency confound general method speed claims.",
+    "Both exclude shared setup and prior SAM installation; include each branch code/preparation/checks.",
+    "Probe labels are source-inspected AI judgments, not human ground truth.12/12 does not establish dense accuracy.",
+    "No human correction time measured; human review or adoption still separate."
+  ]
+}

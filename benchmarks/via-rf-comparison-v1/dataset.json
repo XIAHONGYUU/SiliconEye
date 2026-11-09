@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "task": "Locate V1-like groups in anonymous M1 crops; reject non-via appearances or report uncertain.",
+  "coordinate_system": "local crop pixels, x right/y down; all crops 80x128, original native resolution",
+  "train": [
+    {
+      "id": "R01",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/train/R01.png",
+      "image_sha256": "2cb8378741d8975ca8b4130d13e17e9ed9542348afaf12bcaae41e6099191838",
+      "size": [
+        80,
+        128
+      ],
+      "label": "via",
+      "reviewed_scope_bbox": [
+        15,
+        24,
+        65,
+        104
+      ]
+    },
+    {
+      "id": "R02",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/train/R02.png",
+      "image_sha256": "1989fb1d9bf423d9cdec3be5525598f69681cd510023436245184c4bc931cb2e",
+      "size": [
+        80,
+        128
+      ],
+      "label": "non_via",
+      "reviewed_scope_bbox": [
+        20,
+        33,
+        60,
+        95
+      ]
+    },
+    {
+      "id": "R03",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/train/R03.png",
+      "image_sha256": "9477f9b4ac3534679a5ce97015e92d874c04d30feb50b76353ba718198c7960a",
+      "size": [
+        80,
+        128
+      ],
+      "label": "via",
+      "reviewed_scope_bbox": [
+        20,
+        29,
+        60,
+        99
+      ]
+    },
+    {
+      "id": "R04",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/train/R04.png",
+      "image_sha256": "17bad54369e7bb249762e421d26ae1647e9f934b8b54eb5eccb45d414161ce1b",
+      "size": [
+        80,
+        128
+      ],
+      "label": "non_via",
+      "reviewed_scope_bbox": [
+        20,
+        33,
+        60,
+        95
+      ]
+    }
+  ],
+  "test": [
+    {
+      "id": "Q01",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q01.png",
+      "image_sha256": "40086db340df1bff3117a76ff184b9d9d8cef17c87b2a945c6e6fff9b9ba0096",
+      "size": [
+        80,
+        128
+      ]
+    },
+    {
+      "id": "Q02",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q02.png",
+      "image_sha256": "7a397da929cf7c0598348f530bf257641968a35a5ed8ed184f9c293802346592",
+      "size": [
+        80,
+        128
+      ]
+    },
+    {
+      "id": "Q03",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q03.png",
+      "image_sha256": "633a43f9406d1922594003f37aa7cd1bfaa70b78663d2f479e40284fdb3a66c7",
+      "size": [
+        80,
+        128
+      ]
+    },
+    {
+      "id": "Q04",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q04.png",
+      "image_sha256": "ca9ba39c341df5bdfb69a89455c38178a798ec9693e717af1f5e7a51b275553a",
+      "size": [
+        80,
+        128
+      ]
+    },
+    {
+      "id": "Q05",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q05.png",
+      "image_sha256": "74adab9d94038ba5b0896e66b26823704c9f56107bfe282cbdfdce1c77561b50",
+      "size": [
+        80,
+        128
+      ]
+    },
+    {
+      "id": "Q06",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q06.png",
+      "image_sha256": "29a1889f20887bd4816413707a6520da029b274e50fccd22f76060033fc84bf8",
+      "size": [
+        80,
+        128
+      ]
+    },
+    {
+      "id": "Q07",
+      "image": "/home/zuoky/project_siliconeyes/silicon-eye/runs/via-rf-comparison-20261106/dataset/test/Q07.png",
+      "image_sha256": "03347728ba4946210dfd6cec7b73a5595efef58b106143aa7dd01b86bb7113d3",
+      "size": [
+        80,
+        128
+      ]
+    }
+  ],
+  "output_schema": {
+    "images": [
+      {
+        "id": "Qxx",
+        "candidates": [
+          {
+            "bbox": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "score": null,
+            "status": "via|unknown",
+            "reason": "optional explanation"
+          }
+        ],
+        "note": "optional; no candidate means no detected via, not whole-crop physical absence"
+      }
+    ]
+  },
+  "evaluation_scope": "Only historical human-reviewed subregions are graded; candidate boxes outside those scopes remain unadjudicated. Whole-crop physical absence, exact cut counts and dense pixel labels are not known.",
+  "training_labels": "Region-level via presence/absence from past human decisions; any pixel scribbles must be authored from TRAIN images and marked AI annotations, not dense human truth.",
+  "isolation": "No historical files, source IDs/coordinates, judge files, test answers or opposite branch outputs. Test images may be inspected/predicted once parameters are frozen. No test-label feedback tuning.",
+  "threshold_policy": "Declare decision/uncertainty thresholds and model hyperparameters before first test predictions. Preserve original predictions.",
+  "timing_policy": "Record first complete wall time excluding external quota wait; separate setup/annotation/train/predict/review; 5 repeat batch predictions after model fixed, no test tuning.",
+  "candidate_size_limit": {
+    "max_width": 50,
+    "max_height": 80,
+    "basis": "Maximum width and height of training human-reviewed positive search boxes; prevents full-crop box from counting as localization. Not true via dimensions."
+  }
+}

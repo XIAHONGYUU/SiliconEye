@@ -1,0 +1,366 @@
+{
+  "frozen_utc": "2026-11-06T12:28:14.201899+00:00",
+  "source": {
+    "path": "data/test_chip/tile_full/m1.jpg",
+    "sha256": "4927593a432936bcd3910a69db696205aed2b92d6969f8c3530ef83a5a385d13"
+  },
+  "human_label_scope": "Presence/absence within named targets only; centers/counts/boundaries not approved.",
+  "train": [
+    {
+      "source_id": "CORRIDOR-V1-A",
+      "label": "via",
+      "target": [
+        3125,
+        1930,
+        3175,
+        2010
+      ],
+      "human_review": {
+        "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+        "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+      },
+      "human_item_id": "CORRIDOR-V1-A",
+      "human_statement": "都有; A/B both V1 present",
+      "id": "R01",
+      "crop_native": [
+        3110,
+        1906,
+        3190,
+        2034
+      ],
+      "target_local": [
+        15,
+        24,
+        65,
+        104
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/train/R01.png",
+      "image_sha256": "2cb8378741d8975ca8b4130d13e17e9ed9542348afaf12bcaae41e6099191838"
+    },
+    {
+      "source_id": "W34-END-N1",
+      "label": "non_via",
+      "target": [
+        307,
+        1728,
+        347,
+        1790
+      ],
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "N1",
+      "human_statement": "非孔",
+      "id": "R02",
+      "crop_native": [
+        287,
+        1695,
+        367,
+        1823
+      ],
+      "target_local": [
+        20,
+        33,
+        60,
+        95
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/train/R02.png",
+      "image_sha256": "1989fb1d9bf423d9cdec3be5525598f69681cd510023436245184c4bc931cb2e"
+    },
+    {
+      "source_id": "U1",
+      "label": "via",
+      "target": [
+        1505,
+        1875,
+        1545,
+        1945
+      ],
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      },
+      "human_item_id": "U1",
+      "human_statement": "V1_present=True",
+      "id": "R03",
+      "crop_native": [
+        1485,
+        1846,
+        1565,
+        1974
+      ],
+      "target_local": [
+        20,
+        29,
+        60,
+        99
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/train/R03.png",
+      "image_sha256": "9477f9b4ac3534679a5ce97015e92d874c04d30feb50b76353ba718198c7960a"
+    },
+    {
+      "source_id": "W34-END-N2",
+      "label": "non_via",
+      "target": [
+        398,
+        1728,
+        438,
+        1790
+      ],
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "N2",
+      "human_statement": "非孔",
+      "id": "R04",
+      "crop_native": [
+        378,
+        1695,
+        458,
+        1823
+      ],
+      "target_local": [
+        20,
+        33,
+        60,
+        95
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/train/R04.png",
+      "image_sha256": "17bad54369e7bb249762e421d26ae1647e9f934b8b54eb5eccb45d414161ce1b"
+    }
+  ],
+  "test": [
+    {
+      "source_id": "W34-END-N3",
+      "label": "non_via",
+      "target": [
+        486,
+        1685,
+        520,
+        1745
+      ],
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "N3",
+      "human_statement": "非孔",
+      "id": "Q01",
+      "crop_native": [
+        463,
+        1651,
+        543,
+        1779
+      ],
+      "target_local": [
+        23,
+        34,
+        57,
+        94
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q01.png",
+      "image_sha256": "40086db340df1bff3117a76ff184b9d9d8cef17c87b2a945c6e6fff9b9ba0096"
+    },
+    {
+      "source_id": "W2-V1-S",
+      "label": "via",
+      "target": [
+        1118,
+        2688,
+        1175,
+        2735
+      ],
+      "human_review": {
+        "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+        "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+      },
+      "human_item_id": "W2-V1-S",
+      "human_statement": "W2-S：是 V1，接 W2",
+      "id": "Q02",
+      "crop_native": [
+        1106,
+        2647,
+        1186,
+        2775
+      ],
+      "target_local": [
+        12,
+        41,
+        69,
+        88
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q02.png",
+      "image_sha256": "7a397da929cf7c0598348f530bf257641968a35a5ed8ed184f9c293802346592"
+    },
+    {
+      "source_id": "U2",
+      "label": "non_via",
+      "target": [
+        1525,
+        2270,
+        1575,
+        2335
+      ],
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      },
+      "human_item_id": "U2",
+      "human_statement": "V1_present=False",
+      "id": "Q03",
+      "crop_native": [
+        1510,
+        2238,
+        1590,
+        2366
+      ],
+      "target_local": [
+        15,
+        32,
+        65,
+        97
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q03.png",
+      "image_sha256": "633a43f9406d1922594003f37aa7cd1bfaa70b78663d2f479e40284fdb3a66c7"
+    },
+    {
+      "source_id": "CORRIDOR-V1-B",
+      "label": "via",
+      "target": [
+        3130,
+        2775,
+        3180,
+        2845
+      ],
+      "human_review": {
+        "path": "benchmarks/corridor-m1-v1-reviewed-v2/human-review.json",
+        "sha256": "fb5fed88a2254732ca1b25dce2e4d660160a79f67a6d151d4e982d70f5dcc4cc"
+      },
+      "human_item_id": "CORRIDOR-V1-B",
+      "human_statement": "都有; A/B both V1 present",
+      "id": "Q04",
+      "crop_native": [
+        3115,
+        2746,
+        3195,
+        2874
+      ],
+      "target_local": [
+        15,
+        29,
+        65,
+        99
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q04.png",
+      "image_sha256": "ca9ba39c341df5bdfb69a89455c38178a798ec9693e717af1f5e7a51b275553a"
+    },
+    {
+      "source_id": "W34-END-S1",
+      "label": "non_via",
+      "target": [
+        803,
+        3345,
+        853,
+        3445
+      ],
+      "human_review": {
+        "path": "docs/assets/w34-terminal-v1-inspection-v1/review/review-decision.json",
+        "sha256": "da41de2456fe570fde0b5340bc2e28c477647a8576276eb124c2571b3cbcc81c"
+      },
+      "human_item_id": "S1",
+      "human_statement": "非孔",
+      "id": "Q05",
+      "crop_native": [
+        788,
+        3331,
+        868,
+        3459
+      ],
+      "target_local": [
+        15,
+        14,
+        65,
+        114
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q05.png",
+      "image_sha256": "74adab9d94038ba5b0896e66b26823704c9f56107bfe282cbdfdce1c77561b50"
+    },
+    {
+      "source_id": "W2-V1-N",
+      "label": "via",
+      "target": [
+        1085,
+        1898,
+        1138,
+        1948
+      ],
+      "human_review": {
+        "path": "benchmarks/west-w2-v1-reviewed-v8/human-review.json",
+        "sha256": "9ba9372e5d1f2c25cda26c91aa25d1c065f338565c9d0f1c83028a40590a2a23"
+      },
+      "human_item_id": "W2-V1-N",
+      "human_statement": "W2-N：是 V1，接 W2",
+      "id": "Q06",
+      "crop_native": [
+        1071,
+        1859,
+        1151,
+        1987
+      ],
+      "target_local": [
+        14,
+        39,
+        67,
+        89
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q06.png",
+      "image_sha256": "29a1889f20887bd4816413707a6520da029b274e50fccd22f76060033fc84bf8"
+    },
+    {
+      "source_id": "U3",
+      "label": "via",
+      "target": [
+        1524,
+        2675,
+        1570,
+        2740
+      ],
+      "human_review": {
+        "path": "benchmarks/n2-v1-identity-reviewed-v7/human-review-v1.json",
+        "sha256": "52516fb511afcda9bc4f100fdbe9d47ce6cdefd4c4ed78dc253688c10a025eb4"
+      },
+      "human_item_id": "U3",
+      "human_statement": "V1_present=True",
+      "id": "Q07",
+      "crop_native": [
+        1507,
+        2643,
+        1587,
+        2771
+      ],
+      "target_local": [
+        17,
+        32,
+        63,
+        97
+      ],
+      "image": "runs/via-rf-comparison-20261106/dataset/test/Q07.png",
+      "image_sha256": "03347728ba4946210dfd6cec7b73a5595efef58b106143aa7dd01b86bb7113d3"
+    }
+  ],
+  "metric_plan": {
+    "target_hit": "At least one valid VIA candidate bbox center inside positive human search bounds; bbox width<=50 and height<=80, fully inside crop. Unknown does not count hit.",
+    "false_target_hit": "At least one valid VIA candidate bbox center inside explicit negative search bounds; unknown counted separately.",
+    "unadjudicated": "Candidate center outside all named scopes for that crop. Not counted false.",
+    "rejection": "uncertain is abstention, not correct negative; report coverage.",
+    "training_test_overlap": "No original pixel rectangle overlap allowed.",
+    "candidate_size_limit": {
+      "width": 50,
+      "height": 80,
+      "basis": "train positive human search max dimensions"
+    },
+    "frozen_before_predictions": true
+  }
+}

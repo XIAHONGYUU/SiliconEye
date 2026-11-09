@@ -258,6 +258,18 @@ def now_utc():
     return datetime.now(UTC).replace(microsecond=0).isoformat()
 
 
+def parse_iso8601(value, label):
+    if value is None:
+        return None
+    if not isinstance(value, str):
+        raise ValueError(f"{label} must be an ISO 8601 string or null")
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise ValueError(f"{label} must be an ISO 8601 timestamp") from exc
+    return parsed if parsed.tzinfo is not None else parsed.replace(tzinfo=UTC)
+
+
 def display_path(path, root):
     path, root = Path(path).resolve(), Path(root).resolve()
     try:
@@ -735,6 +747,19 @@ def normalize_decision(manifest, spec, raw):
         errors.append("Decision date must be YYYY-MM-DD")
     if raw.get("limits_acknowledged") is not True:
         errors.append("The declared boundaries must be explicitly acknowledged")
+    review_started_at = review_exported_at = review_seconds = None
+    try:
+        review_started_at = parse_iso8601(raw.get("review_started_at"), "review_started_at")
+        review_exported_at = parse_iso8601(raw.get("review_exported_at"), "review_exported_at")
+    except ValueError as exc:
+        errors.append(str(exc))
+    if review_started_at and review_exported_at:
+        if review_exported_at < review_started_at:
+            errors.append("review_exported_at must not be before review_started_at")
+        else:
+            review_seconds = round(
+                (review_exported_at - review_started_at).total_seconds(), 3
+            )
     statement = raw.get("statement", "")
     if not isinstance(statement, str):
         errors.append("Decision statement must be a string")
@@ -887,6 +912,13 @@ def normalize_decision(manifest, spec, raw):
         "date": raw["date"],
         "statement": statement.strip(),
         "limits_acknowledged": True,
+        "review_started_at": (
+            review_started_at.isoformat() if review_started_at is not None else None
+        ),
+        "review_exported_at": (
+            review_exported_at.isoformat() if review_exported_at is not None else None
+        ),
+        "review_seconds": review_seconds,
         "answers": answers,
         "questions": question_answers,
         "sources": {},
@@ -913,6 +945,12 @@ def render_record(record, spec):
     ]
     if record["statement"]:
         lines.append(f"- 总体意见：{record['statement']}")
+    if record.get("review_started_at") or record.get("review_exported_at"):
+        started = record.get("review_started_at") or "未记录"
+        exported = record.get("review_exported_at") or "未记录"
+        seconds = record.get("review_seconds")
+        elapsed = f"{seconds / 60:.1f} 分钟" if seconds is not None else "未计算"
+        lines.append(f"- 复核计时：开始 {started}；导出 {exported}；墙钟用时 {elapsed}")
     lines += [
         "",
         "## 逐项确认",
@@ -984,6 +1022,9 @@ def check(root, package, decision_path, archive=False):
         "stage": spec["stage"],
         "build_id": manifest["build_id"],
         "date": record["date"],
+        "review_started_at": record["review_started_at"],
+        "review_exported_at": record["review_exported_at"],
+        "review_seconds": record["review_seconds"],
         "answers": len(record["answers"]),
         "required_answers": sum(item["required"] for item in spec["items"]),
         "verdicts": dict(Counter(answer["verdict"] for answer in record["answers"])),

@@ -1,0 +1,368 @@
+{
+  "kind": "exploratory_algorithm_comparison",
+  "geometry_adopted": false,
+  "human_correction_seconds": null,
+  "human_baseline_seconds": null,
+  "speedup_proven": false,
+  "dense_truth_available": false,
+  "device": "cpu",
+  "threads": 2,
+  "sam_load_seconds": 0.6417696019999539,
+  "spec_sha256": "2ade93fde3a7bbd4aad19358f22627ceac919eb415bc10547e9a7159c463a684",
+  "code_sha256": "649f5682c0c5e2753c891478cb0beb06b6475d1d748d117293a6902c0b70c730",
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "numpy": "2.5.4",
+    "opencv-python": "5.0.0.93"
+  },
+  "segmentation": [
+    {
+      "case": "L01",
+      "method": "otsu_seeded",
+      "seconds": 0.0005518670000128623,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 3178,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": 155.0
+    },
+    {
+      "case": "L01",
+      "method": "grabcut",
+      "seconds": 0.028113375000089036,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 3935,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": null
+    },
+    {
+      "case": "L01",
+      "method": "sam2_tiny",
+      "seconds": 2.7401400239999703,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 4328,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": 0.9029208421707153,
+      "otsu_threshold": null
+    },
+    {
+      "case": "S03",
+      "method": "otsu_seeded",
+      "seconds": 0.0004215190000422808,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 2208,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": 157.0
+    },
+    {
+      "case": "S03",
+      "method": "grabcut",
+      "seconds": 0.017447392999997646,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 2353,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": null
+    },
+    {
+      "case": "S03",
+      "method": "sam2_tiny",
+      "seconds": 2.7227912210000795,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 2985,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": 0.8562387824058533,
+      "otsu_threshold": null
+    },
+    {
+      "case": "W4",
+      "method": "otsu_seeded",
+      "seconds": 0.0002794109999513239,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 7859,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": 144.0
+    },
+    {
+      "case": "W4",
+      "method": "grabcut",
+      "seconds": 0.03632599200000186,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 3,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": false,
+        "mask_pixels": 14,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": null
+    },
+    {
+      "case": "W4",
+      "method": "sam2_tiny",
+      "seconds": 2.6025897650000616,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 0,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": true,
+        "mask_pixels": 9004,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": 0.891210675239563,
+      "otsu_threshold": null
+    },
+    {
+      "case": "S04",
+      "method": "otsu_seeded",
+      "seconds": 0.00047319800000877876,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 2,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": false,
+        "mask_pixels": 1470,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": 151.0
+    },
+    {
+      "case": "S04",
+      "method": "grabcut",
+      "seconds": 0.03175123699998039,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 2,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": false,
+        "mask_pixels": 143,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": null,
+      "otsu_threshold": null
+    },
+    {
+      "case": "S04",
+      "method": "sam2_tiny",
+      "seconds": 2.6502488830000175,
+      "diagnostics": {
+        "positive_probes": 3,
+        "missed_positive_probes": 2,
+        "negative_probes": 3,
+        "hit_negative_probes": 0,
+        "positive_probes_one_component": false,
+        "mask_pixels": 2151,
+        "scope": "AI-authored sparse diagnostics; not IoU, human truth or circuit connectivity"
+      },
+      "predicted_quality_not_accuracy": 0.4217042326927185,
+      "otsu_threshold": null
+    }
+  ],
+  "template": [
+    {
+      "id": "A-template-source",
+      "bounds": [
+        3125,
+        1930,
+        3175,
+        2010
+      ],
+      "expected": true,
+      "split": "sanity_not_evaluation",
+      "score": 1.0,
+      "local_xywh": [
+        9,
+        23,
+        19,
+        23
+      ],
+      "seconds": 0.008264265000093474,
+      "candidate_at_threshold": {
+        "0.5": true,
+        "0.65": true,
+        "0.8": true
+      }
+    },
+    {
+      "id": "B-known-positive",
+      "bounds": [
+        3130,
+        2775,
+        3180,
+        2845
+      ],
+      "expected": true,
+      "split": "known_case_diagnostic",
+      "score": 0.8292868733406067,
+      "local_xywh": [
+        17,
+        36,
+        19,
+        23
+      ],
+      "seconds": 0.00014646799991169246,
+      "candidate_at_threshold": {
+        "0.5": true,
+        "0.65": true,
+        "0.8": true
+      }
+    },
+    {
+      "id": "W34-END-N1",
+      "bounds": [
+        307,
+        1728,
+        347,
+        1790
+      ],
+      "expected": false,
+      "split": "known_case_diagnostic",
+      "score": 0.5793277025222778,
+      "local_xywh": [
+        12,
+        18,
+        23,
+        28
+      ],
+      "seconds": 0.0004768359999616223,
+      "candidate_at_threshold": {
+        "0.5": true,
+        "0.65": false,
+        "0.8": false
+      }
+    },
+    {
+      "id": "W34-END-N2",
+      "bounds": [
+        398,
+        1728,
+        438,
+        1790
+      ],
+      "expected": false,
+      "split": "known_case_diagnostic",
+      "score": 0.6180498003959656,
+      "local_xywh": [
+        5,
+        12,
+        23,
+        28
+      ],
+      "seconds": 0.0001662360000409535,
+      "candidate_at_threshold": {
+        "0.5": true,
+        "0.65": false,
+        "0.8": false
+      }
+    },
+    {
+      "id": "W34-END-N3",
+      "bounds": [
+        486,
+        1685,
+        520,
+        1745
+      ],
+      "expected": false,
+      "split": "known_case_diagnostic",
+      "score": 0.6219207644462585,
+      "local_xywh": [
+        0,
+        7,
+        23,
+        28
+      ],
+      "seconds": 0.00013952500000868895,
+      "candidate_at_threshold": {
+        "0.5": true,
+        "0.65": false,
+        "0.8": false
+      }
+    },
+    {
+      "id": "W34-END-S1",
+      "bounds": [
+        803,
+        3345,
+        853,
+        3445
+      ],
+      "expected": false,
+      "split": "known_case_diagnostic",
+      "score": 0.5466360449790955,
+      "local_xywh": [
+        31,
+        9,
+        19,
+        23
+      ],
+      "seconds": 0.00024204999999710708,
+      "candidate_at_threshold": {
+        "0.5": true,
+        "0.65": false,
+        "0.8": false
+      }
+    }
+  ],
+  "limits": [
+    "Same chip, selected known regions; exploratory comparison, not blind generalization.",
+    "AI sparse probes are not human pixel truth. Native paths locate objects; design widths are not segmentation ground truth.",
+    "All segmentation masks remain candidates; no geometry, hole count, carrier or net changes.",
+    "Otsu uses positive prompts to select components; GrabCut uses the shared box as hard exclusion and point disks as constraints; SAM uses the same box/point locations as model prompts. Different mechanisms, not identical supervision.",
+    "No mask hole filling or geometric completion; no threshold tuning after outputs.",
+    "Manual baseline and correction time unmeasured; no end-to-end speedup claim.",
+    "Known negative targets used only for regression, not resubmitted for human approval."
+  ]
+}

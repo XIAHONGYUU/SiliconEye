@@ -1,0 +1,17 @@
+{
+  "kind": "post_run_AI_probe_and_visual_audit",
+  "human_approved": false,
+  "excluded_from_sparse_summary": [
+    "S04"
+  ],
+  "reason": "S04 positive probes 2/3 are right of the visible fine trace; prompt 2 is also offset. Keep original scores but do not interpret them as real missed metal. No labels/prompts/masks were changed after inference.",
+  "valid_scope": "L01/S03/W4 sparse point diagnostics only; target exclusion points on adjacent conductors mean non-target, not non-metal.",
+  "visual_observations": {
+    "L01": "All three retain main line and short head; SAM has a broader/smoother edge and small fringe pixels.",
+    "S03": "All three retain main line/head; SAM broadens below the head.",
+    "W4": "GrabCut collapses to tiny fragments; Otsu has stripe holes; SAM is more continuous but has residual holes.",
+    "S04": "Otsu and SAM visually retain the fine branch; GrabCut largely retains only the head. Sparse diagnostic and prompt offset invalidate a clean quantitative comparison."
+  },
+  "manual_review_seconds": null,
+  "source_and_model_changes": false
+}

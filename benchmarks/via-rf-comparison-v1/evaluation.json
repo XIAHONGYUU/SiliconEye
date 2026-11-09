@@ -1,0 +1,789 @@
+{
+  "evaluated_utc": "2026-11-08T09:18:46.118462+00:00",
+  "reference_sha256": "af6a0065c88570c2363a28f7b97088eea89b5f2e6c0bbbf3b9574ecc90e77cc6",
+  "scope": "Human-reviewed target presence/absence only; coarse candidate localization. No dense labels or exact center/IoU accuracy.",
+  "branches": {
+    "visual": {
+      "predictions_path": "runs/via-rf-comparison-20261106/traditional/predictions.json",
+      "predictions_sha256": "bf25f54487bc988d94386e96590e48c155e41709aa78cca18c4b745baf170b47",
+      "metrics": {
+        "positive_targets": 4,
+        "positive_targets_hit": 4,
+        "positive_targets_missed": 0,
+        "negative_targets": 3,
+        "negative_targets_false_hit": 0,
+        "negative_targets_unknown_without_hit": 1,
+        "negative_targets_no_hit_no_unknown": 2,
+        "target_unknown_count": 1,
+        "invalid_candidates": 0,
+        "unadjudicated_context_candidates": 0,
+        "total_candidates": 5
+      },
+      "items": [
+        {
+          "id": "Q01",
+          "source_id": "W34-END-N3",
+          "expected_label": "non_via",
+          "target_local": [
+            23,
+            34,
+            57,
+            94
+          ],
+          "target_via_hit": false,
+          "positive_hit": null,
+          "negative_false_hit": false,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": true,
+          "candidates": [],
+          "note": "Only continuous horizontal periodic lines and long bright vertical bands, resembling negative training examples; no compact via-like group detected."
+        },
+        {
+          "id": "Q02",
+          "source_id": "W2-V1-S",
+          "expected_label": "via",
+          "target_local": [
+            12,
+            41,
+            69,
+            88
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                22,
+                53,
+                49,
+                90
+              ],
+              "score": null,
+              "status": "via",
+              "reason": "Compact bright widened bead group within horizontal bright band, with downward extension; resembles R03.",
+              "valid": true,
+              "center": [
+                35.5,
+                71.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Candidate is a group, not an individual-cut count."
+        },
+        {
+          "id": "Q03",
+          "source_id": "U2",
+          "expected_label": "non_via",
+          "target_local": [
+            15,
+            32,
+            65,
+            97
+          ],
+          "target_via_hit": false,
+          "positive_hit": null,
+          "negative_false_hit": false,
+          "target_unknown": true,
+          "negative_explicit_rejection_or_no_detection": false,
+          "candidates": [
+            {
+              "bbox": [
+                46,
+                43,
+                68,
+                84
+              ],
+              "score": null,
+              "status": "unknown",
+              "reason": "Two bright horizontal periodic rows cross a long bright vertical strip; localized grouping is less distinct than positive training examples and may be a crossing artifact.",
+              "valid": true,
+              "center": [
+                57.0,
+                63.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Ambiguous crossing; no physical via confirmation."
+        },
+        {
+          "id": "Q04",
+          "source_id": "CORRIDOR-V1-B",
+          "expected_label": "via",
+          "target_local": [
+            15,
+            29,
+            65,
+            99
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                18,
+                21,
+                48,
+                57
+              ],
+              "score": null,
+              "status": "via",
+              "reason": "Short bright parallel bars terminate at a bright vertical strip, forming a localized junction similar to the positive R01 group.",
+              "valid": true,
+              "center": [
+                33.0,
+                39.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Localization covers the most salient junction, excluding long continuation."
+        },
+        {
+          "id": "Q05",
+          "source_id": "W34-END-S1",
+          "expected_label": "non_via",
+          "target_local": [
+            15,
+            14,
+            65,
+            114
+          ],
+          "target_via_hit": false,
+          "positive_hit": null,
+          "negative_false_hit": false,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": true,
+          "candidates": [],
+          "note": "Long vertical bright bands and regular stripe texture; no clearly localized positive-like group distinguished."
+        },
+        {
+          "id": "Q06",
+          "source_id": "W2-V1-N",
+          "expected_label": "via",
+          "target_local": [
+            14,
+            39,
+            67,
+            89
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                25,
+                42,
+                60,
+                82
+              ],
+              "score": null,
+              "status": "via",
+              "reason": "Bright compact bead cluster protrudes below a horizontal band; closely resembles R03 positive morphology.",
+              "valid": true,
+              "center": [
+                42.5,
+                62.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Candidate group only."
+        },
+        {
+          "id": "Q07",
+          "source_id": "U3",
+          "expected_label": "via",
+          "target_local": [
+            17,
+            32,
+            63,
+            97
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                25,
+                45,
+                54,
+                86
+              ],
+              "score": null,
+              "status": "via",
+              "reason": "Localized bright widened vertical beads in and below horizontal bright band, similar to R03 positive group.",
+              "valid": true,
+              "center": [
+                39.5,
+                65.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Candidate group only."
+        }
+      ]
+    },
+    "rf": {
+      "predictions_path": "runs/via-rf-comparison-20261106/algorithm/result/predictions.json",
+      "predictions_sha256": "7dc93288cd14bef79d00f955f2d6e25c79955b14e268cf93046943e1c6af182e",
+      "metrics": {
+        "positive_targets": 4,
+        "positive_targets_hit": 4,
+        "positive_targets_missed": 0,
+        "negative_targets": 3,
+        "negative_targets_false_hit": 1,
+        "negative_targets_unknown_without_hit": 0,
+        "negative_targets_no_hit_no_unknown": 2,
+        "target_unknown_count": 2,
+        "invalid_candidates": 0,
+        "unadjudicated_context_candidates": 12,
+        "total_candidates": 23
+      },
+      "items": [
+        {
+          "id": "Q01",
+          "source_id": "W34-END-N3",
+          "expected_label": "non_via",
+          "target_local": [
+            23,
+            34,
+            57,
+            94
+          ],
+          "target_via_hit": false,
+          "positive_hit": null,
+          "negative_false_hit": false,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": true,
+          "candidates": [
+            {
+              "bbox": [
+                1,
+                1,
+                6,
+                31
+              ],
+              "score": 0.6960919499397278,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                3.5,
+                16.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                3,
+                33,
+                6,
+                36
+              ],
+              "score": 0.6855555772781372,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                4.5,
+                34.5
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                4,
+                54,
+                8,
+                58
+              ],
+              "score": 0.7369999885559082,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                6.0,
+                56.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                5,
+                63,
+                9,
+                67
+              ],
+              "score": 0.7163636684417725,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                7.0,
+                65.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                6,
+                70,
+                9,
+                73
+              ],
+              "score": 0.7374999523162842,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                7.5,
+                71.5
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                6,
+                74,
+                9,
+                78
+              ],
+              "score": 0.7211111187934875,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                7.5,
+                76.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                7,
+                96,
+                11,
+                104
+              ],
+              "score": 0.8045833110809326,
+              "status": "via",
+              "valid": true,
+              "center": [
+                9.0,
+                100.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                8,
+                111,
+                13,
+                119
+              ],
+              "score": 0.8413333892822266,
+              "status": "via",
+              "valid": true,
+              "center": [
+                10.5,
+                115.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            }
+          ],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        },
+        {
+          "id": "Q02",
+          "source_id": "W2-V1-S",
+          "expected_label": "via",
+          "target_local": [
+            12,
+            41,
+            69,
+            88
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                22,
+                57,
+                42,
+                71
+              ],
+              "score": 0.9228499531745911,
+              "status": "via",
+              "valid": true,
+              "center": [
+                32.0,
+                64.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                68,
+                61,
+                72,
+                64
+              ],
+              "score": 0.68666672706604,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                70.0,
+                62.5
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                29,
+                78,
+                38,
+                85
+              ],
+              "score": 0.8452083468437195,
+              "status": "via",
+              "valid": true,
+              "center": [
+                33.5,
+                81.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        },
+        {
+          "id": "Q03",
+          "source_id": "U2",
+          "expected_label": "non_via",
+          "target_local": [
+            15,
+            32,
+            65,
+            97
+          ],
+          "target_via_hit": true,
+          "positive_hit": null,
+          "negative_false_hit": true,
+          "target_unknown": true,
+          "negative_explicit_rejection_or_no_detection": false,
+          "candidates": [
+            {
+              "bbox": [
+                54,
+                47,
+                60,
+                51
+              ],
+              "score": 0.7868750095367432,
+              "status": "via",
+              "valid": true,
+              "center": [
+                57.0,
+                49.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                1,
+                51,
+                4,
+                56
+              ],
+              "score": 0.8661538362503052,
+              "status": "via",
+              "valid": true,
+              "center": [
+                2.5,
+                53.5
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                20,
+                51,
+                24,
+                54
+              ],
+              "score": 0.6809999942779541,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                22.0,
+                52.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                27,
+                51,
+                33,
+                55
+              ],
+              "score": 0.7099999785423279,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                30.0,
+                53.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        },
+        {
+          "id": "Q04",
+          "source_id": "CORRIDOR-V1-B",
+          "expected_label": "via",
+          "target_local": [
+            15,
+            29,
+            65,
+            99
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                35,
+                1,
+                47,
+                64
+              ],
+              "score": 0.8850458264350891,
+              "status": "via",
+              "valid": true,
+              "center": [
+                41.0,
+                32.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                37,
+                71,
+                47,
+                80
+              ],
+              "score": 0.8417332768440247,
+              "status": "via",
+              "valid": true,
+              "center": [
+                42.0,
+                75.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                37,
+                84,
+                48,
+                118
+              ],
+              "score": 0.9118953347206116,
+              "status": "via",
+              "valid": true,
+              "center": [
+                42.5,
+                101.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            },
+            {
+              "bbox": [
+                38,
+                121,
+                48,
+                127
+              ],
+              "score": 0.7725581526756287,
+              "status": "via",
+              "valid": true,
+              "center": [
+                43.0,
+                124.0
+              ],
+              "inside_reviewed_target": false,
+              "adjudication": "unadjudicated_context"
+            }
+          ],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        },
+        {
+          "id": "Q05",
+          "source_id": "W34-END-S1",
+          "expected_label": "non_via",
+          "target_local": [
+            15,
+            14,
+            65,
+            114
+          ],
+          "target_via_hit": false,
+          "positive_hit": null,
+          "negative_false_hit": false,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": true,
+          "candidates": [],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        },
+        {
+          "id": "Q06",
+          "source_id": "W2-V1-N",
+          "expected_label": "via",
+          "target_local": [
+            14,
+            39,
+            67,
+            89
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": true,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                54,
+                42,
+                79,
+                49
+              ],
+              "score": 0.6825409531593323,
+              "status": "unknown",
+              "valid": true,
+              "center": [
+                66.5,
+                45.5
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                1,
+                43,
+                48,
+                77
+              ],
+              "score": 0.8541666865348816,
+              "status": "via",
+              "valid": true,
+              "center": [
+                24.5,
+                60.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        },
+        {
+          "id": "Q07",
+          "source_id": "U3",
+          "expected_label": "via",
+          "target_local": [
+            17,
+            32,
+            63,
+            97
+          ],
+          "target_via_hit": true,
+          "positive_hit": true,
+          "negative_false_hit": null,
+          "target_unknown": false,
+          "negative_explicit_rejection_or_no_detection": null,
+          "candidates": [
+            {
+              "bbox": [
+                27,
+                52,
+                42,
+                64
+              ],
+              "score": 0.9116789102554321,
+              "status": "via",
+              "valid": true,
+              "center": [
+                34.5,
+                58.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            },
+            {
+              "bbox": [
+                38,
+                73,
+                41,
+                79
+              ],
+              "score": 0.8157142996788025,
+              "status": "via",
+              "valid": true,
+              "center": [
+                39.5,
+                76.0
+              ],
+              "inside_reviewed_target": true,
+              "adjudication": "scoped_target"
+            }
+          ],
+          "note": "Appearance candidates only; no detection does not establish physical absence."
+        }
+      ]
+    }
+  }
+}

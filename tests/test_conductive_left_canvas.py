@@ -95,3 +95,29 @@ def test_negative_geometry_requires_a_matching_explicit_viewport():
         'status'] == 'PASS'
     with pytest.raises(ValueError, match='canvas bounds'):
         geometry_audit([feature], budget, [100, 100], [-50, 0, 100, 100])
+
+
+@pytest.mark.parametrize('right_bound,top,valid', [(2400, 0, True), (700, 0, False),
+                                                (2400, 1, False)])
+def test_right_viewport_preserves_geometry_and_rejects_shrink_or_translation(
+        right_bound, top, valid):
+    with tempfile.TemporaryDirectory(dir=ROOT / 'runs') as temporary:
+        folder = Path(temporary)
+        request, sample, evidence = left_request(folder)
+        sample['canvas_wh'] = [right_bound, 1440]
+        sample['canvas_bounds'] = [0, top, right_bound, 1440 + top]
+        evidence.update(direction='RIGHT_ONLY', to_canvas_wh=sample['canvas_wh'],
+                        to_canvas_bounds=sample['canvas_bounds'])
+        request['sample'] = write(folder, 'sample.json', sample)
+        request['canvas_extension_evidence'] = write(folder, 'evidence.json', evidence)
+        if not valid:
+            with pytest.raises(ValueError):
+                prepare(ROOT, request)
+            return
+        model, report, *_ = prepare(ROOT, request)
+        old = read(ROOT / 'docs/assets/BR-R-return-work-v3/work/model.json')
+        for key in ('objects_by_layer', 'candidate_interfaces', 'reviewed_local_connections',
+                    'review_sources', 'review_decisions'):
+            assert model[key] == old[key]
+        assert report['audits']['canvas_extension']['status'] == 'RIGHT_ONLY_CANVAS_EXTENSION_PASS'
+        assert model['canvas_bounds'] == [0, 0, 2400, 1440]

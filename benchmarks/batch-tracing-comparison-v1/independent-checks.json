@@ -1,0 +1,25 @@
+{
+  "replay_exact": true,
+  "replay_seconds": 0.7890442679999978,
+  "tests": [
+    {
+      "case": "blank",
+      "outcome": "explicit_failure",
+      "reason": "No supported ridge path for seed 65, x=4"
+    },
+    {
+      "case": "missing_segment",
+      "outcome": "explicit_failure",
+      "reason": "No supported ridge path for seed 65, x=188"
+    },
+    {
+      "case": "continuous_sloped",
+      "outcome": "returned",
+      "unknown_spans": [],
+      "points": 101
+    }
+  ],
+  "renderer_style_cleanup_preserves_images": true,
+  "ruff": "PASS all three scripts",
+  "renderer_original": "traditional/render-original.py.txt"
+}

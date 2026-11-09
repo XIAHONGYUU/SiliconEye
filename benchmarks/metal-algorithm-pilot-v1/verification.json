@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "m1_source_unchanged": true,
+    "m2_source_unchanged": true,
+    "benchmarks/w34-left-m2-reviewed-v2/working-baseline.json": true,
+    "benchmarks/w34-terminal-v1-reviewed-v2/negative-reference-set.json": true,
+    "L01_prompts_disjoint_probes": true,
+    "S03_prompts_disjoint_probes": true,
+    "W4_prompts_disjoint_probes": true,
+    "S04_prompts_disjoint_probes": true
+  },
+  "all_listed_checks_pass": true,
+  "evidence_sha256": "f6d814fd43c6952a59a3e01ff9efecce6d1b11672b839ca3daa4cb21aa2885bb",
+  "limits": "Checks verify reproducibility and boundaries, not image recognition correctness.",
+  "pytest": "36 passed (test_review_sheet.py and test_metal_algorithm_pilot.py)",
+  "ruff": "PASS for new module and test",
+  "pip_check": "No broken requirements",
+  "git_diff_check": "PASS",
+  "current_and_report_links_exist": true,
+  "code_matches_report": true,
+  "tracked_changes": [
+    "CURRENT_TASK.md"
+  ]
+}
