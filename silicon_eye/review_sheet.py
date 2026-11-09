@@ -902,7 +902,7 @@ def normalize_decision(manifest, spec, raw):
     if errors:
         raise DecisionError(errors)
 
-    return {
+    record = {
         "schema_version": SCHEMA_VERSION,
         "kind": DECISION_KIND,
         "package_id": spec["package_id"],
@@ -912,19 +912,22 @@ def normalize_decision(manifest, spec, raw):
         "date": raw["date"],
         "statement": statement.strip(),
         "limits_acknowledged": True,
-        "review_started_at": (
-            review_started_at.isoformat() if review_started_at is not None else None
-        ),
-        "review_exported_at": (
-            review_exported_at.isoformat() if review_exported_at is not None else None
-        ),
-        "review_seconds": review_seconds,
         "answers": answers,
         "questions": question_answers,
         "sources": {},
         "recorded_scope": spec["scope"],
         "not_approved": spec["not_approved"],
     }
+    # Old packages did not contain timing; keep their archived decision byte-identical.
+    if review_started_at is not None or review_exported_at is not None:
+        record["review_started_at"] = (
+            review_started_at.isoformat() if review_started_at is not None else None
+        )
+        record["review_exported_at"] = (
+            review_exported_at.isoformat() if review_exported_at is not None else None
+        )
+        record["review_seconds"] = review_seconds
+    return record
 
 
 def render_record(record, spec):
@@ -1022,9 +1025,9 @@ def check(root, package, decision_path, archive=False):
         "stage": spec["stage"],
         "build_id": manifest["build_id"],
         "date": record["date"],
-        "review_started_at": record["review_started_at"],
-        "review_exported_at": record["review_exported_at"],
-        "review_seconds": record["review_seconds"],
+        "review_started_at": record.get("review_started_at"),
+        "review_exported_at": record.get("review_exported_at"),
+        "review_seconds": record.get("review_seconds"),
         "answers": len(record["answers"]),
         "required_answers": sum(item["required"] for item in spec["items"]),
         "verdicts": dict(Counter(answer["verdict"] for answer in record["answers"])),

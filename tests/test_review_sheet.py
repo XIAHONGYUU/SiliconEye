@@ -221,6 +221,7 @@ def test_complete_decision_is_archived_idempotently(tmp_path):
     assert "照片精确投影或跨帧配准" in record
     saved = json.loads((output / "review-decision.json").read_text())
     assert saved["sources"]["submitted_page"]["sha256"] == manifest["page_sha256"]
+    assert "review_started_at" not in saved
 
     again = check(tmp_path, output, decision_path, archive=True)
     assert again["status"] == "VALID"

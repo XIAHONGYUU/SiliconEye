@@ -1,6 +1,6 @@
 # 工作流效率最小包与仓库减负评估（2026-11-09）
 
-本轮只调整流程入口、计时和度量，不改变已审几何、连接、原图或当前待审候选。当前批次 `M3-BATCH-EXTENTS-20261109-V1` 仍为 `ready_for_review`。
+本轮只调整流程入口、计时和度量，不改变已审几何、连接、原图或当前待审候选。当前批次 `M3-BATCH-EXTENTS-20261109-V1` 仍为 `ready_for_review`。变更已本地 checkpoint，未推送。
 
 ## 已落地
 
@@ -20,7 +20,7 @@
 .venv/bin/ruff check silicon_eye/review_sheet.py scripts/cycle_time.py tests/test_review_sheet.py tests/test_cycle_time.py
 ```
 
-实际结果见本轮回复；页面计时是墙钟时间（首次交互到导出），不是活跃工时，也不作为人审质量指标。
+实际结果见本轮回复；页面计时是墙钟时间（首次交互到导出），不是活跃工时，也不作为人审质量指标。兼容性已用 `docs/assets/w34-left-m2-v1/review` 的旧 decision 在临时镜像根重放：`check --archive` 仍为 VALID，旧记录不需要新增计时字段。
 
 ## 仓库减负评估
 
@@ -48,7 +48,7 @@
 
 ### 第二项：`docs/assets` 全量进入 Git
 
-3.0GB 中大量是全幅源图副本和模型 JSON；仅四个 `O-source/O-raw` 文件就约 140MB，前 15 个 PNG 合计 2.49GB。Git 已对相同 blob 去重，但工作树、备份和 Agent 搜索仍承担全量。建议：
+3.0GB 中大量是全幅源图副本和模型 JSON；仅四个 `O-source/O-raw` 文件就约 140MB，前 15 个 PNG 合计 2.49GB。按 SHA-256 检查，3,724 个文件中有 541 个重复组、1,286 个重复文件；工作树内硬链接去重可释放约 0.70GB，但不缩小 Git 历史。Git 已对相同 blob 去重，但工作树、备份和 Agent 搜索仍承担全量。建议：
 
 1. 新增资产政策：新全幅图只存一份共享源或只存裁片/缩略图，完整证据放外部归档；Git 只留 manifest、哈希和小图。
 2. 先做内容哈希去重，找出重复的全幅图；更新引用后再删除重复副本，不直接批量删。
