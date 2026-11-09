@@ -16,8 +16,13 @@ DEFAULTS = dict(
 
 def trace(gray, seeds, x_start, x_end):
     """Trace fixed bright-ridge paths; unsupported gaps fail instead of being bridged."""
-    if (gray.ndim != 2 or not seeds or not 0 <= x_start < x_end < gray.shape[1]
-            or any(type(s) is not int or not 0 <= s < gray.shape[0] for s in seeds)):
+    if (
+        gray.ndim != 2
+        or not np.isfinite(gray).all()
+        or not seeds
+        or not 0 <= x_start < x_end < gray.shape[1]
+        or any(type(s) is not int or not 0 <= s < gray.shape[0] for s in seeds)
+    ):
         raise ValueError("Invalid ridge image, seeds or x range")
     smooth = gaussian_filter(gray.astype(float), (DEFAULTS["sigma_y"], DEFAULTS["sigma_x"]))
     ridge = smooth - gaussian_filter(smooth, (DEFAULTS["background_sigma_y"], 0))
@@ -71,4 +76,3 @@ def trace(gray, seeds, x_start, x_end):
             )
         )
     return tracks
-

@@ -7,9 +7,9 @@
 ## D001 当前工作基线
 
 - 状态：`active`
-- 决定：工程主线父基线为 `w34-left-m2-reviewed-v2`；54 个金属对象（M1=11、M2=18、M3=25），34 条已审局部连接，188 个候选设计孔。
-- 权威来源：[working-baseline.json](benchmarks/w34-left-m2-reviewed-v2/working-baseline.json)、[接续请求](benchmarks/w34-left-m2-v1/next-request.json)
-- 边界：计数是当前工作模型计数，不等于全芯片完成、物理孔数或完整网表。
+- 决定：当前已审几何来源为 `runs/m3-wide-inventory-20261109/reviewed-baseline.json`，绑定扩大批 LOWER-SAFE 工作包、扩大批裁决和之前的已审合并基线；历史父基线 `w34-left-m2-reviewed-v2` 继续保留。当前计数仍为 54 个金属对象（M1=11、M2=18、M3=25），34 条已审局部连接，188 个候选设计孔。
+- 权威来源：[当前已审范围基线](runs/m3-wide-inventory-20261109/reviewed-baseline.json)、[历史父基线](benchmarks/w34-left-m2-reviewed-v2/working-baseline.json)、[接续请求](benchmarks/w34-left-m2-v1/next-request.json)
+- 边界：计数是当前工作模型计数，不等于全芯片完成、物理孔数或完整网表；全幅 M3 来源清单的 accepted 只批准清单，不新增几何、身份或连接。
 
 ## D002 L01 与 V2 身份
 
@@ -27,9 +27,9 @@
 
 ## D004 当前 M3 批量外延
 
-- 状态：`pending_review`
-- 决定：`C-M3-M01` 至 `C-M3-M06` 的左右 12 处外延是候选；`M3-BATCH-EXTENTS-20261109-V1` 的 WEST/EAST/Q1 归档前不采用，旧基线继续生效。
-- 权威来源：[复核摘要](benchmarks/batch-production-v1/review-digest.md)、[本轮报告](docs/reviews/2026-11-09-batch-production.md)
+- 状态：`accepted`
+- 决定：`C-M3-M01` 至 `C-M3-M06` 的左右 12 处外延已由 `M3-BATCH-EXTENTS-20261109-V1` 实际导出并归档 accepted；后续已合并入当前已审范围基线。旧 54 金属、34 条连接和 188 个候选孔保持。
+- 权威来源：[第一批复核记录](runs/batch-production-20261109/review/review-record.md)、[复核摘要](benchmarks/batch-production-v1/review-digest.md)、[本轮报告](docs/reviews/2026-11-09-batch-production.md)
 - 边界：不新增导体身份、孔、接口或连接；两端是范围出口，不是物理终点。
 
 ## D005 证据与输出资格
@@ -55,3 +55,20 @@
   - 每批记录周期到 `benchmarks/cycle-time-v1/records/`；固定确认页自动记录首次交互/导出时间。
   - 默认复核窗口为每周二、周五各 30 分钟，可按用户安排调整；批次提前准备一页摘要。
 - 边界：流程提速不改变证据等级；未归档裁决前，候选不能写成已批准。
+
+## D008 全幅 M3 来源清单
+
+- 状态：`accepted`
+- 决定：`M3-FULL-INVENTORY-20261109-V1` 的 8 个区域全部 accepted；全幅 5712×4284 共 672 个亮脊线片段，其中 30 个旧路径上下文、642 个未分配或部分新增。只认可来源片段清单，不批准身份、端点、几何、连接或物理孔数。
+- 权威来源：[复核记录](runs/m3-wide-inventory-20261109/final/review/review-record.md)、[复核决定](runs/m3-wide-inventory-20261109/final/review/review-decision.json)、[本轮报告](docs/reviews/2026-11-09-m3-full-inventory.md)
+- 边界：片段数不是导体数；区域级通过不是 672 条逐项真值验证；不得直接把清单塞入 54 金属模型或网表。
+
+## 2026-11-09 批量范围裁决归档
+
+- M3-BATCH-EXTENTS-20261109-V1 的 WEST/EAST/Q1 与 M3-TOP-EAST-20261109-V1 的 EAST 已由实际导出文件校验归档，分别见 [第一批](runs/batch-production-20261109/review/review-record.md)、[第二批](runs/batch-production-round2-20261109/package-final/review/review-record.md)。仅接受声明的相对范围几何，不升级精确投影/物理端点/跨层连接。
+- 两批已审parts精确合并至 [范围工作基线](runs/batch-expanded-20261109/reviewed-baseline.json)；历史接口/未知不变。随后 M3-EXPANDED-20261109-V1 六组已 accepted，详见下节。
+
+## 2026-11-09 扩大批实际归档与全幅边界
+
+- M3-EXPANDED-20261109-V1六组均accepted，实际导出已校验归档；LOWER身份检查随组接受，[记录](runs/batch-expanded-20261109/review-final/review-record.md)。精确投影、物理端点、跨层承载和完整网表不在批准范围。
+- 最新已审几何来源为[基线绑定](runs/m3-wide-inventory-20261109/reviewed-baseline.json)。新全幅M3清查只生成原生片段清单，不新增金属身份或规则几何；不能把672片段计为672导体。

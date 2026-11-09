@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "package_id": "M3-FULL-INVENTORY-20261109-V1",
+  "date": "2026-11-09",
+  "frame": "m3",
+  "photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "source_wh": [
+    5712,
+    4284
+  ],
+  "parameters": {
+    "threshold": 10.0,
+    "minimum_span": 120
+  },
+  "band_height": 540,
+  "previous_traces": [
+    {
+      "path": "benchmarks/batch-production-v1/traces.json",
+      "sha256": "eda0f3e8c64ab632195e0823fcec6daa0dbcd9c621396080082ddeaf4215e7b7"
+    },
+    {
+      "path": "runs/batch-production-round2-20261109/package-final/traces.json",
+      "sha256": "08c988842d513215f2c57134f7c0efd3e6fe4057a81c0db4870ba04a584d8f81"
+    },
+    {
+      "path": "runs/batch-expanded-20261109/TOP/traces.json",
+      "sha256": "06bc6c2709cbbdea9b36cd4a6d9c15da8e1d57e7ac15606313a83a56d77935e3"
+    },
+    {
+      "path": "runs/batch-expanded-20261109/EDGE/traces.json",
+      "sha256": "d5a6e885472eaf2c3475addeda49bb1258016ed5ac7e3b5bf5b4c2ac5e3b65b8"
+    },
+    {
+      "path": "runs/batch-expanded-20261109/LOWER-SAFE/traces.json",
+      "sha256": "8cd8b7c4b9fe380a80e1baca0feb24e149b55a3a06158528ba689b6f2251d59a"
+    }
+  ]
+}

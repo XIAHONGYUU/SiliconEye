@@ -12,3 +12,9 @@
 - 2026-11-08：ilastik 孔检测对照；快速候选有价值，假孔排除待改进。 [记录](../reviews/2026-11-08-via-rf-comparison.md)
 - 2026-11-09：M3 六条导体 12 处批量外延生成复核材料；候选待审，未采用。 [记录](../reviews/2026-11-09-batch-production.md)
 - 2026-11-09：工作流效率最小包；单页入口、`DECISIONS.md`、周期记录、复核计时与一页摘要。 [摘要](../reviews/2026-11-09-workflow-efficiency.md)
+
+- 2026-11-09：固定入口正常推进独立上方六线右侧延续；程序5.17秒，准备至交付检查点149.79秒（含种子返工），一组待审。 [摘要](../reviews/2026-11-09-batch-production-round2.md)
+- 2026-11-09：实际归档前两批导出裁决；合并已审范围后扩大至10条/20处/6组，新增区间累计24130px；THIN1/THIN2身份待核，两次断带拒绝保留。 [摘要](../reviews/2026-11-09-batch-expanded.md)
+
+- 2026-11-09：归档扩大批六组裁决；新增全幅M3亮脊来源清查，672片段/8区域，明确风险与未分配身份，不接入几何。 [摘要](../reviews/2026-11-09-m3-full-inventory.md)
+- 2026-11-09：全幅M3来源清单8区域 accepted；回写周期记录与当前状态，补 review/accepted 时间并本地 checkpoint。 [复核记录](../../runs/m3-wide-inventory-20261109/final/review/review-record.md)

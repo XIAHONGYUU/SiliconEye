@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "package_id": "M3-TOP-EAST-20261109-V1",
+  "date": "2026-11-09",
+  "title": "上方六条M3：右侧新增范围集中复核",
+  "parent": {
+    "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+    "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+  },
+  "photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "frame": "m3",
+  "layer": "M3",
+  "bounds": [
+    2900,
+    1700,
+    4501,
+    1940
+  ],
+  "seed_x": 2940,
+  "targets": [
+    {
+      "id": "C-M3-T01",
+      "seed_y": 1804
+    },
+    {
+      "id": "C-M3-T02",
+      "seed_y": 1828
+    },
+    {
+      "id": "C-M3-T03",
+      "seed_y": 1848
+    },
+    {
+      "id": "C-M3-T04",
+      "seed_y": 1867
+    },
+    {
+      "id": "C-M3-T05",
+      "seed_y": 1887
+    },
+    {
+      "id": "C-M3-T06",
+      "seed_y": 1902
+    }
+  ],
+  "groups": [
+    {
+      "id": "EAST",
+      "title": "上方六线右侧延续 x3670–4500",
+      "native_x": [
+        3670,
+        4500
+      ],
+      "design_x": [
+        676,
+        1510
+      ],
+      "source_view": [
+        3600,
+        1700,
+        4541,
+        1940
+      ]
+    }
+  ],
+  "canvas_margin": 20,
+  "minimum_trace_gap_px": 2
+}

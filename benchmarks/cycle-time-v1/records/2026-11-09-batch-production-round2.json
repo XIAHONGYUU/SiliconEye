@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "batch_id": "M3-TOP-EAST-20261109-V1",
+  "package_id": "M3-TOP-EAST-20261109-V1",
+  "parent_baseline": "w34-left-m2-reviewed-v2",
+  "state": "accepted",
+  "queued_at": "2026-11-09T07:55:17.283199+00:00",
+  "ready_at": "2026-11-09T07:57:47.070987+00:00",
+  "review_sent_at": "2026-11-09T07:57:47.070987+00:00",
+  "review_started_at": "2026-11-09T07:58:48.456000+00:00",
+  "review_done_at": "2026-11-09T07:58:58.399000+00:00",
+  "accepted_at": "2026-11-09T08:07:11.296597+00:00",
+  "committed_at": null,
+  "human_review_minutes": 0.16571666666666665,
+  "notes": "review_sent_at approximated by ready_at; chat handoff not separately timestamped. Initial context read unmeasured; one rejected seed attempt retained. Actual exported decision checked and archived; accepted_at is bookkeeping checkpoint, not export time."
+}

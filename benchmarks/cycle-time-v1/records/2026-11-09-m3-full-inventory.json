@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "batch_id": "M3-FULL-INVENTORY-20261109-V1",
+  "package_id": "M3-FULL-INVENTORY-20261109-V1",
+  "parent_baseline": "runs/m3-wide-inventory-20261109/reviewed-baseline.json",
+  "state": "accepted",
+  "queued_at": "2026-11-09T08:11:52.522776+00:00",
+  "ready_at": "2026-11-09T08:19:34.543609+00:00",
+  "review_sent_at": "2026-11-09T08:19:34.543609+00:00",
+  "review_started_at": "2026-11-09T08:21:34.743000+00:00",
+  "review_done_at": "2026-11-09T08:22:04.468000+00:00",
+  "accepted_at": "2026-11-09T08:28:27.457115+00:00",
+  "committed_at": null,
+  "human_review_minutes": 0.4954166666666667,
+  "notes": "review_sent_at approximated by ready_at; accepted_at is review-record archive mtime. Full-frame SOURCE INVENTORY, no new design geometry. 672 fragments including 30 old-context and 642 unassigned/mixed. Fragment count is not conductor count."
+}

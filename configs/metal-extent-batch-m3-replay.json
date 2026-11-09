@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "package_id": "M3-BATCH-REPLAY-20261109",
+  "date": "2026-11-09",
+  "title": "M3六线批处理重放",
+  "parent": {
+    "path": "docs/assets/w34-left-m2-v1/work/manifest.json",
+    "sha256": "bbf6e4f8729e7c101914ad3d8674a8217b4d38e9fbe7a5d8ff9ea62434e6f7ce"
+  },
+  "photo": {
+    "path": "data/test_chip/tile_full/m3.jpg",
+    "sha256": "08e986785c13f7203034cde55db3d6898ece61d2d31175d93f2d57e5e9389dde"
+  },
+  "frame": "m3",
+  "layer": "M3",
+  "bounds": [
+    50,
+    2180,
+    5101,
+    2460
+  ],
+  "seed_x": 250,
+  "targets": [
+    {
+      "id": "C-M3-M01",
+      "seed_y": 2330
+    },
+    {
+      "id": "C-M3-M02",
+      "seed_y": 2350
+    },
+    {
+      "id": "C-M3-M03",
+      "seed_y": 2369
+    },
+    {
+      "id": "C-M3-M04",
+      "seed_y": 2391
+    },
+    {
+      "id": "C-M3-M05",
+      "seed_y": 2407
+    },
+    {
+      "id": "C-M3-M06",
+      "seed_y": 2427
+    }
+  ],
+  "groups": [
+    {
+      "id": "WEST",
+      "title": "左侧六线",
+      "native_x": [
+        50,
+        250
+      ],
+      "design_x": [
+        -2760,
+        -2626
+      ],
+      "source_view": [
+        50,
+        2220,
+        550,
+        2460
+      ]
+    },
+    {
+      "id": "EAST",
+      "title": "右侧六线",
+      "native_x": [
+        3670,
+        5100
+      ],
+      "design_x": [
+        676,
+        2110
+      ],
+      "source_view": [
+        3600,
+        2160,
+        5180,
+        2410
+      ]
+    }
+  ],
+  "canvas_margin": 20,
+  "minimum_trace_gap_px": 2
+}

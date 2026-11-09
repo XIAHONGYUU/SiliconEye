@@ -3,14 +3,14 @@
   "batch_id": "M3-BATCH-EXTENTS-20261109-V1",
   "package_id": "M3-BATCH-EXTENTS-20261109-V1",
   "parent_baseline": "w34-left-m2-reviewed-v2",
-  "state": "ready_for_review",
+  "state": "accepted",
   "queued_at": null,
   "ready_at": "2026-11-09T00:42:42.766664+00:00",
   "review_sent_at": "2026-11-09T00:44:13.502048+00:00",
   "review_started_at": null,
   "review_done_at": null,
-  "accepted_at": null,
+  "accepted_at": "2026-11-09T08:07:11.296597+00:00",
   "committed_at": null,
   "human_review_minutes": null,
-  "notes": "ready_at/review_sent_at copied from benchmarks/batch-production-v1/timing.json; queued_at and human review not measured."
+  "notes": "ready_at/review_sent_at copied from benchmarks/batch-production-v1/timing.json; queued_at and human review not measured. Page predates review-timing fields. Actual exported decision checked and archived; accepted_at is bookkeeping checkpoint, not export time."
 }

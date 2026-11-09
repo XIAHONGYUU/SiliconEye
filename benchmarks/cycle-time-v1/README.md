@@ -29,4 +29,4 @@ ready_to_commit      = committed_at - ready_at
 .venv/bin/python scripts/cycle_time.py --json benchmarks/cycle-time-v1/records/*.json
 ```
 
-当前批次记录：[2026-11-09-batch-production.json](records/2026-11-09-batch-production.json)。
+当前记录：[records/](records/)（第一批、第二轮、扩大批、全幅清查）。

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "batch_id": "M3-EXPANDED-20261109-V1",
+  "package_id": "M3-EXPANDED-20261109-V1",
+  "parent_baseline": "runs/batch-expanded-20261109/reviewed-baseline.json",
+  "state": "accepted",
+  "queued_at": "2026-11-09T08:01:19.254097+00:00",
+  "ready_at": "2026-11-09T08:07:11.296597+00:00",
+  "review_sent_at": "2026-11-09T08:07:11.296597+00:00",
+  "review_started_at": "2026-11-09T08:10:33.854000+00:00",
+  "review_done_at": "2026-11-09T08:10:55.626000+00:00",
+  "accepted_at": "2026-11-09T08:16:50.561515+00:00",
+  "committed_at": null,
+  "human_review_minutes": 0.3628666666666666,
+  "notes": "review_sent_at approximated by ready_at; chat handoff not separately timestamped. 10 identities / 20 new parts / 6 review groups; two lower thin-line identities uncertain. Export lookup excluded from measured scope clock."
+}
