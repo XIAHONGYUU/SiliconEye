@@ -10,7 +10,7 @@
   "review_started_at": null,
   "review_done_at": null,
   "accepted_at": "2026-11-09T08:07:11.296597+00:00",
-  "committed_at": null,
+  "committed_at": "2026-11-09T08:55:03+00:00",
   "human_review_minutes": null,
-  "notes": "ready_at/review_sent_at copied from benchmarks/batch-production-v1/timing.json; queued_at and human review not measured. Page predates review-timing fields. Actual exported decision checked and archived; accepted_at is bookkeeping checkpoint, not export time."
+  "notes": "ready_at/review_sent_at copied from benchmarks/batch-production-v1/timing.json; queued_at and human review not measured. Page predates review-timing fields. Actual exported decision checked and archived; accepted_at is bookkeeping checkpoint, not export time. committed_at is the local checkpoint commit timestamp 2026-11-09T08:55:03+00:00."
 }
