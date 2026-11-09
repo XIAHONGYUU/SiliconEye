@@ -56,7 +56,7 @@
 
 ### 其他可选动作
 
-- `workspace_archive.py plan` 当前只能归档 44 个未被引用目录、约 395MB；228 个目录被文本引用保护。该保护规则偏保守，但安全。
+- `workspace_archive.py plan` 当前只能归档 44 个未被引用目录、约 395MB；228 个目录被文本引用保护。该保护规则偏保守，但安全。评估用 plan 已生成在 `../silicon-eye-archives/2026-11-09-plan/`，尚未 apply。
 - `runs/via-rf-comparison-20261106` 被文档引用，因此归档工具不会整体处理；需要单独的“保留证据、清理 runtime”清单，不能直接套用整目录归档。
 - `.git` 有约 498MB loose objects 和若干 unreachable 对象；确认无需要的未引用提交后，可用 `git gc --prune=now` 收紧，但不要用 `filter-repo`/BFG 重写历史。
 - `benchmarks/evidence` 中 276MB ZIP 与 `runs/`、`docs/assets` 有重叠；先按 SHA-256 建索引，再决定哪些 ZIP 可外移，不能只看文件名。
