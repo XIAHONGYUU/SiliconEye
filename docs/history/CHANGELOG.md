@@ -18,3 +18,5 @@
 
 - 2026-11-09：归档扩大批六组裁决；新增全幅M3亮脊来源清查，672片段/8区域，明确风险与未分配身份，不接入几何。 [摘要](../reviews/2026-11-09-m3-full-inventory.md)
 - 2026-11-09：全幅M3来源清单8区域 accepted；回写周期记录与当前状态，补 review/accepted 时间并本地 checkpoint。 [复核记录](../../runs/m3-wide-inventory-20261109/final/review/review-record.md)
+
+- 2026-11-11：按用户授权完成当前节点GitHub归档准备；320文件去重打包并恢复校验，4套实际复核裁决验证，80项相关测试通过。 [恢复/验证](../../benchmarks/github-checkpoint-2026-11-11/README.md)

@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "date": "2026-11-11",
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_metal_extent_batch.py tests/test_ridge_inventory.py tests/test_conductive_left_canvas.py tests/test_conductive_canvas_extension.py tests/test_review_sheet.py",
+    "passed": 80,
+    "seconds": 21.03
+  },
+  "ruff": "PASS changed implementation/tests and archive builder",
+  "restored_files": 320,
+  "restored_review_packages": 4,
+  "split_archive_reassembled_sha256_verified": true,
+  "archived_decisions": [
+    {
+      "status": "VALID",
+      "package_id": "M3-BATCH-EXTENTS-20261109-V1",
+      "stage": "METAL",
+      "build_id": "eadd903c51934df7b96aaf1160045e85",
+      "date": "2026-11-09",
+      "review_started_at": null,
+      "review_exported_at": null,
+      "review_seconds": null,
+      "answers": 2,
+      "required_answers": 2,
+      "verdicts": {
+        "accepted": 2
+      },
+      "questions": {
+        "accepted": 1
+      },
+      "limits_acknowledged": true
+    },
+    {
+      "status": "VALID",
+      "package_id": "M3-TOP-EAST-20261109-V1",
+      "stage": "METAL",
+      "build_id": "c04c113410874b9384c647d8b03e9ccf",
+      "date": "2026-11-09",
+      "review_started_at": "2026-11-09T07:58:48.456000+00:00",
+      "review_exported_at": "2026-11-09T07:58:58.399000+00:00",
+      "review_seconds": 9.943,
+      "answers": 1,
+      "required_answers": 1,
+      "verdicts": {
+        "accepted": 1
+      },
+      "questions": {},
+      "limits_acknowledged": true
+    },
+    {
+      "status": "VALID",
+      "package_id": "M3-EXPANDED-20261109-V1",
+      "stage": "METAL",
+      "build_id": "e06781514b5c4c79b23f73b075ad9f7f",
+      "date": "2026-11-09",
+      "review_started_at": "2026-11-09T08:10:33.854000+00:00",
+      "review_exported_at": "2026-11-09T08:10:55.626000+00:00",
+      "review_seconds": 21.772,
+      "answers": 6,
+      "required_answers": 6,
+      "verdicts": {
+        "accepted": 6
+      },
+      "questions": {},
+      "limits_acknowledged": true
+    },
+    {
+      "status": "VALID",
+      "package_id": "M3-FULL-INVENTORY-20261109-V1",
+      "stage": "METAL",
+      "build_id": "288af9f788d14a58b8e73c1de951d696",
+      "date": "2026-11-09",
+      "review_started_at": "2026-11-09T08:21:34.743000+00:00",
+      "review_exported_at": "2026-11-09T08:22:04.468000+00:00",
+      "review_seconds": 29.725,
+      "answers": 8,
+      "required_answers": 8,
+      "verdicts": {
+        "accepted": 8
+      },
+      "questions": {},
+      "limits_acknowledged": true
+    }
+  ]
+}

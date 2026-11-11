@@ -2,7 +2,7 @@
 
 ## 当前目标与授权
 
-用户已导出扩大批裁决，授权再次扩大范围。本轮覆盖整张M3照片，处理已有身份之外的来源候选；从局部规则外延转入全幅来源清查，不将候选清单冒充几何完成。
+用户已导出全幅来源裁决，并授权将当前节点提交GitHub。本轮覆盖整张M3照片，处理已有身份之外的来源候选；从局部规则外延转入全幅来源清查，不将候选清单冒充几何完成。
 
 ## 当前队列
 
@@ -29,15 +29,20 @@
 - [第一批](runs/batch-production-20261109/review/review-record.md)、[第二批](runs/batch-production-round2-20261109/package-final/review/review-record.md)已归档。54金属、34已审局部连接、188候选设计孔保持。
 - [原历史基线](benchmarks/w34-left-m2-reviewed-v2/working-baseline.json)保留旧身份/接口来源。全幅候选身份unassigned，不能直接采用到网表。
 
+## 本次GitHub节点
+
+- [恢复说明与证据分片](benchmarks/github-checkpoint-2026-11-11/README.md) · [验证记录](benchmarks/github-checkpoint-2026-11-11/verification.json)。320文件去重归档；恢复后哈希和4套复核包通过。克隆后先恢复本轮runs证据，文档链接才可直接打开。
+- 80项相关测试通过（21.03秒），Ruff通过。精确远端同步状态以Git引用为准，本页不写自引用commit SHA。
+
 ## 唯一下一步
 
 全幅来源清单已归档；下一轮若要继续，先从已审清单建立新身份对应/候选几何，需用户确认范围与优先级。不得把672片段直接当导体，也不得由区域通过升级身份、连接或物理端点。
 
-## 生效边界与未提交工作
+## 生效边界与节点存档
 
 - 稳定决定见[DECISIONS.md](DECISIONS.md)，阶段历史见[CHANGELOG](docs/history/CHANGELOG.md)及[旧入口归档](docs/history/current-task-before-2026-11-09-workflow-efficiency.md)。
 - L01几何G1、短头V2身份I1已审；承载/上层ID/物理孔数未知，未建新VIA或连接。N1/N2/N3/S1仍为非孔，不重审、不推导全局断开。
 - source_to_design_transform=null、geometry_adopted=false、net_edges=[]、complete_network=false，skill为LIMITED_TRIAL_V2；不导出自动网表，不采用精确共同几何。
 - 六处材料、BF25及返回路径、旧配准拒绝项、AA/POLY/CT保护和其它未决按原历史保留。
-- 固定入口代码/配置/测试/说明和本轮材料已本地 checkpoint（不推送、不覆盖旧证据）；新增ridge_inventory模块和对应测试/配置，原外延算法不变。 [入口说明](docs/metal-extent-batch.md)。
+- 当前节点按用户授权提交推送GitHub，不覆盖旧证据；新增ridge_inventory模块和对应测试/配置，原外延算法不变。 [入口说明](docs/metal-extent-batch.md)。
 - 每批周期记录继续写入[cycle-time-v1](benchmarks/cycle-time-v1/README.md)，默认复核窗口周二/周五各30分钟，可随用户安排调整。
