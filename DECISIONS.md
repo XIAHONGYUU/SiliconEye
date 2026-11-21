@@ -72,3 +72,10 @@
 
 - M3-EXPANDED-20261109-V1六组均accepted，实际导出已校验归档；LOWER身份检查随组接受，[记录](runs/batch-expanded-20261109/review-final/review-record.md)。精确投影、物理端点、跨层承载和完整网表不在批准范围。
 - 最新已审几何来源为[基线绑定](runs/m3-wide-inventory-20261109/reviewed-baseline.json)。新全幅M3清查只生成原生片段清单，不新增金属身份或规则几何；不能把672片段计为672导体。
+
+## D009 三处来源关系与边缘分类裁决
+
+- 状态：`accepted`（仅明确局部关系/边缘分类）
+- 决定：实际2026-11-19导出G01/G05/G24均accepted。G01只确认RIDGE-0005/0006的直接局部来源关系，G05只确认0017/0019；G24的0360/0356为宽金属边缘，不建立独立细导体。
+- 权威来源：[实际记录](runs/m3-triage-20261111/verified/review-final/review-record.md)、[接续状态](runs/m3-identity-followthrough-20261119/reviewed-source-state.json)。
+- 边界：304分组仍非整组人审批准，AI邻居不继承关系；不扩成跨层连接、几何采用、物理端点或全网。三项不再重审。新25对直接关系尚未批准。

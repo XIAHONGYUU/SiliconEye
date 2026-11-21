@@ -1,0 +1,517 @@
+{
+  "status": "PASS",
+  "files": 99,
+  "unique_blobs": 70,
+  "restored_files_verified": 99,
+  "restored_review_packages_verified": 2,
+  "archive": {
+    "path": "benchmarks/github-checkpoint-2026-11-21/evidence.tar.gz",
+    "sha256": "81699dcd99ec7fa9b5f6b3b43a89353e08b56c63ca99e5c1848b3a83e550a45e",
+    "size": 6829566,
+    "parts": [
+      {
+        "path": "benchmarks/github-checkpoint-2026-11-21/evidence.tar.gz.part01",
+        "size": 6829566,
+        "sha256": "81699dcd99ec7fa9b5f6b3b43a89353e08b56c63ca99e5c1848b3a83e550a45e"
+      }
+    ],
+    "path_is_reassembled": true
+  },
+  "entries": [
+    {
+      "path": "runs/m3-identity-followthrough-20261119/IDENTITY-01.png",
+      "sha256": "450c0678467c9968ea9388d2305d65ea2a404a9bbcc8b82ecf7de087073857aa",
+      "size": 353686
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/IDENTITY-02.png",
+      "sha256": "6ac512f7f85759e227fbeb89787b19a74a2fdd2ef29d6561b5fc6d1a65fb31b1",
+      "size": 351541
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/IDENTITY-03.png",
+      "sha256": "c78d252a6abf80a500b2b17a6fbcef39b27128c8dcbcbd5cbff29de21897b4f9",
+      "size": 406905
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/IDENTITY-04.png",
+      "sha256": "d91f977c235f177d987d43184f3d75ec7d2461681a985d61edb08ac66ab31543",
+      "size": 402725
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/IDENTITY-05.png",
+      "sha256": "e22763e6ae3b6129fcd5f814bb53d72f8138c5bc36ba2363ce71b6bd80901779",
+      "size": 421471
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0124-inspection.png",
+      "sha256": "474a9f699a4e0ff0a7bae3027047780af0d80f0a7fbc6fd8410f325deb6a0beb",
+      "size": 93766
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0124-peak-tracks.png",
+      "sha256": "822b3c9848d137bca72ed44bbe86b6d28faab0220e2beebebb3bbfb8d6d05728",
+      "size": 75739
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0167-inspection.png",
+      "sha256": "37751d8fea653e6790dbb82c2047c2b9a7c41d575f5b9989f46821d4009a3523",
+      "size": 101316
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0310-inspection.png",
+      "sha256": "2b6b55ed5f9e42b9ece103bc83da7cf57cd123bce6919ebfaa3b099e83f84ffd",
+      "size": 187496
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0310-peak-tracks.png",
+      "sha256": "f61c66fb1f7fedc113e42a148cb29fd2d1f94ee589c7c98c76d62afa163aaa9c",
+      "size": 105945
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0326-inspection.png",
+      "sha256": "c6b2756d7905e024597169712ff06e269957340b29a1b3d688714367a6f76147",
+      "size": 234384
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/RIDGE-0326-peak-tracks.png",
+      "sha256": "9913dca07baa6b0196900716da2c039fa576406720125319082d3a2098890e96",
+      "size": 90090
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/analyze_profiles.py",
+      "sha256": "90e35cd60d8fefbf24dcbd7226f383c6be3a0f6d28acc292b4847557d1e5471f",
+      "size": 5276
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/build_relation_review.py",
+      "sha256": "98c5fa2c43e7dcfef0d14a252b6a09d14aec2e80508bbf44d7317f199ab75de4",
+      "size": 3949
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/peak-profiles-v2.json",
+      "sha256": "cfa1e11011635fb6199c7906f44f4551161b6fa207a7d09295512c22b582b44e",
+      "size": 507230
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/peak-profiles.json",
+      "sha256": "21f5db18372a5c8fc10c85016f2061eafa2bef1a70ab20e491ab8fb1699b59ad",
+      "size": 433321
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/relation-rules.json",
+      "sha256": "bbfe582d8e779638d8043b17654714940482c3146e5083e3af84141b9289acd7",
+      "size": 4167
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/assets/450c067846-IDENTITY-01.png",
+      "sha256": "450c0678467c9968ea9388d2305d65ea2a404a9bbcc8b82ecf7de087073857aa",
+      "size": 353686
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/assets/6ac512f7f8-IDENTITY-02.png",
+      "sha256": "6ac512f7f85759e227fbeb89787b19a74a2fdd2ef29d6561b5fc6d1a65fb31b1",
+      "size": 351541
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/assets/c78d252a6a-IDENTITY-03.png",
+      "sha256": "c78d252a6abf80a500b2b17a6fbcef39b27128c8dcbcbd5cbff29de21897b4f9",
+      "size": 406905
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/assets/d91f977c23-IDENTITY-04.png",
+      "sha256": "d91f977c235f177d987d43184f3d75ec7d2461681a985d61edb08ac66ab31543",
+      "size": 402725
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/assets/e22763e6ae-IDENTITY-05.png",
+      "sha256": "e22763e6ae3b6129fcd5f814bb53d72f8138c5bc36ba2363ce71b6bd80901779",
+      "size": 421471
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/index.html",
+      "sha256": "d419ec6b388292e9f78e11c24dedb4af267e809557b002346ffd37d61d0ba7d3",
+      "size": 88448
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/manifest.json",
+      "sha256": "350975cff37b731b34c1da59eabb1a4bed82f35f5322b839ded4eaa479c22baa",
+      "size": 3221
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/review-spec.json",
+      "sha256": "231eed10ba9d2dcaf100de746abb8374966fcc44a9c8109f717a12020452e13f",
+      "size": 10338
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review-rules.json",
+      "sha256": "c74415a0dfe2f6b328c772fff25dbb5d0eecbb00755dd83c615db03f8e3fbdbe",
+      "size": 630
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review-spec.json",
+      "sha256": "0b7a160c48ac98ed8852b1051395a04fa6ac728c368b5ca3a5704245f07f856a",
+      "size": 8802
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/reviewed-source-state.json",
+      "sha256": "81a0f9176c28e5b0c4c993b9aa2bab00ef9a229d43c3b4e88862f9cecd95988f",
+      "size": 51591
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/risk-diagnostics/branch-localization.json",
+      "sha256": "3ebd44249f95031bc3113de45c694c4279593c493b3e41fd159dbfc81c73c842",
+      "size": 155173
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/risk-diagnostics/old-id-overlap-intervals.json",
+      "sha256": "d4f673badc5fe4d668cddffdb76c46146a3b7562c440136e4590a4bf83d5f67b",
+      "size": 282249
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/risk-diagnostics/peripheral-boundaries.json",
+      "sha256": "4f9f2c11634de32e4c6931a624d0990445e7edd903ab815ae8d550205583bff4",
+      "size": 3970
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/risk-diagnostics/summary.json",
+      "sha256": "7635e587b5a818318759218d0e3481aaf7cf281453041717bfabc91c095acc82",
+      "size": 1085
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/risk-diagnostics/threshold-causes.json",
+      "sha256": "88e05ad4d0a50334b8245bd81dea97cb08129d268eb1a2a4f51dbc528d0c0576",
+      "size": 53163
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/risk-diagnostics/unambiguous-source-sections.json",
+      "sha256": "27cabc7a84772d0db1425c0ef131b69ca838da941b3bca8e138edb4a23006b50",
+      "size": 1204885
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/section-correspondence.json",
+      "sha256": "0a5a9020196c2a12ea3f6368a1d97a9574237fb426a28d335b32757fdeb91c03",
+      "size": 1439293
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/section-validation.json",
+      "sha256": "da058dc8a45c07f311d16a51d647afa7a4fa8f42d9cea98b1fb9428781dd0edc",
+      "size": 1500887
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/source-working-set.json",
+      "sha256": "f783ba25b0244c818714c60b6465dcc6ee09ccd1f5198dee6a8cbd6dc102b6c7",
+      "size": 2963908
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/start.json",
+      "sha256": "a445d982612e1859a5be173dfde0761bac78fb4b1ef96a495a516b27ea37ea2d",
+      "size": 41
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/verified-diagnostics/branch-localization.json",
+      "sha256": "3ebd44249f95031bc3113de45c694c4279593c493b3e41fd159dbfc81c73c842",
+      "size": 155173
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/verified-diagnostics/old-id-overlap-intervals.json",
+      "sha256": "d4f673badc5fe4d668cddffdb76c46146a3b7562c440136e4590a4bf83d5f67b",
+      "size": 282249
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/verified-diagnostics/peripheral-boundaries.json",
+      "sha256": "4f9f2c11634de32e4c6931a624d0990445e7edd903ab815ae8d550205583bff4",
+      "size": 3970
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/verified-diagnostics/summary.json",
+      "sha256": "f97dc58af58cc688a741b9e94c361bf7a6b676423f29e677df5813782cfdd53c",
+      "size": 1086
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/verified-diagnostics/threshold-causes.json",
+      "sha256": "88e05ad4d0a50334b8245bd81dea97cb08129d268eb1a2a4f51dbc528d0c0576",
+      "size": 53163
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/verified-diagnostics/unambiguous-source-sections.json",
+      "sha256": "27cabc7a84772d0db1425c0ef131b69ca838da941b3bca8e138edb4a23006b50",
+      "size": 1204885
+    },
+    {
+      "path": "runs/m3-triage-20261111/G01-evidence.png",
+      "sha256": "14ee76ac1e303277501a0b2b2b30fab93145b2bc5207fa8ae05cf6792226391c",
+      "size": 122446
+    },
+    {
+      "path": "runs/m3-triage-20261111/G05-evidence.png",
+      "sha256": "71fa3c1029eb16ae6a0ea77ba798a62a0c190dd1587fc7f8718de439195a3427",
+      "size": 104548
+    },
+    {
+      "path": "runs/m3-triage-20261111/G07-evidence.png",
+      "sha256": "aa94e1311af86343e23d0b4fd9a4879f6cbe1d62b5f76f9c69a42c2fac915d69",
+      "size": 159252
+    },
+    {
+      "path": "runs/m3-triage-20261111/G24-evidence.png",
+      "sha256": "2d68d7ea94e8ec5e4390bc6977a2e711e72c5d034054ce95c34ede5ab212724c",
+      "size": 149412
+    },
+    {
+      "path": "runs/m3-triage-20261111/G27-evidence.png",
+      "sha256": "d5da91732f572bced839303c6113941becfc2f9dda389fdeaa35ec5d59bacdb8",
+      "size": 118277
+    },
+    {
+      "path": "runs/m3-triage-20261111/G28-evidence.png",
+      "sha256": "591f8c4a85589bf8d1cc526a50a215648e0936cd7208b8c216ae310cc5c6c15d",
+      "size": 125451
+    },
+    {
+      "path": "runs/m3-triage-20261111/build_review.py",
+      "sha256": "037489de5269a19f143574b0fa96a55b0bda3f66f9d2d42daa045542da51c4a9",
+      "size": 5132
+    },
+    {
+      "path": "runs/m3-triage-20261111/candidate-chains.json",
+      "sha256": "172a576dd63191559f4e7654d9663e02f5e6bc480fc317e6a4adbc64c892f708",
+      "size": 45572
+    },
+    {
+      "path": "runs/m3-triage-20261111/completion.json",
+      "sha256": "6e0c6c9d061a33418db7b21243dd43a56e3da178aeca662592cfa930e4efc0b2",
+      "size": 612
+    },
+    {
+      "path": "runs/m3-triage-20261111/final-review-spec.json",
+      "sha256": "55de24fb88f66ba16640f4e8a286a71720cd01843c01732ab6929de391d4f2b2",
+      "size": 5152
+    },
+    {
+      "path": "runs/m3-triage-20261111/gap-checks.json",
+      "sha256": "5b5918cf11b57efec9eb4b93dd8812de9701fccf2e33d7e91dcd1a0a801719b2",
+      "size": 12409
+    },
+    {
+      "path": "runs/m3-triage-20261111/gap-montage.png",
+      "sha256": "a9f846fd53d8a6188db41dc240140bc8f96c452e8a6f8029e04dc176579d8f53",
+      "size": 1093190
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/assets/14ee76ac1e-G01-evidence.png",
+      "sha256": "14ee76ac1e303277501a0b2b2b30fab93145b2bc5207fa8ae05cf6792226391c",
+      "size": 122446
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/assets/2d68d7ea94-G24-evidence.png",
+      "sha256": "2d68d7ea94e8ec5e4390bc6977a2e711e72c5d034054ce95c34ede5ab212724c",
+      "size": 149412
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/assets/591f8c4a85-G28-evidence.png",
+      "sha256": "591f8c4a85589bf8d1cc526a50a215648e0936cd7208b8c216ae310cc5c6c15d",
+      "size": 125451
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/assets/71fa3c1029-G05-evidence.png",
+      "sha256": "71fa3c1029eb16ae6a0ea77ba798a62a0c190dd1587fc7f8718de439195a3427",
+      "size": 104548
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/assets/aa94e1311a-G07-evidence.png",
+      "sha256": "aa94e1311af86343e23d0b4fd9a4879f6cbe1d62b5f76f9c69a42c2fac915d69",
+      "size": 159252
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/assets/d5da91732f-G27-evidence.png",
+      "sha256": "d5da91732f572bced839303c6113941becfc2f9dda389fdeaa35ec5d59bacdb8",
+      "size": 118277
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/index.html",
+      "sha256": "fe429ac24f9dd8cff9d8462fcbf52767bb7227180729f7b45a82a40e9e1108ba",
+      "size": 88390
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/manifest.json",
+      "sha256": "3dc9584f7edd460fafbac523b8ad8e08c6793745ee4afe6dabe25cc280b68416",
+      "size": 3482
+    },
+    {
+      "path": "runs/m3-triage-20261111/review/review-spec.json",
+      "sha256": "7cce90aa50b76f4add32706206723f4d959e3e13811cf50039d2bb1e4f815e76",
+      "size": 10707
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-final/assets/14ee76ac1e-G01-evidence.png",
+      "sha256": "14ee76ac1e303277501a0b2b2b30fab93145b2bc5207fa8ae05cf6792226391c",
+      "size": 122446
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-final/assets/2d68d7ea94-G24-evidence.png",
+      "sha256": "2d68d7ea94e8ec5e4390bc6977a2e711e72c5d034054ce95c34ede5ab212724c",
+      "size": 149412
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-final/assets/71fa3c1029-G05-evidence.png",
+      "sha256": "71fa3c1029eb16ae6a0ea77ba798a62a0c190dd1587fc7f8718de439195a3427",
+      "size": 104548
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-final/index.html",
+      "sha256": "f909ba759c5794eab953bbefef4fea02d67e25eadc2e357db91cfd7ced157467",
+      "size": 85177
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-final/manifest.json",
+      "sha256": "d9345a4540d65e056abc65ca3e64ba9b491153921538b37e27569d703420b796",
+      "size": 2354
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-final/review-spec.json",
+      "sha256": "1a637f6a8c29b056cc1976a5aa8e1d881ec8cf9838ac79603e96967642c678b8",
+      "size": 6192
+    },
+    {
+      "path": "runs/m3-triage-20261111/review-spec.json",
+      "sha256": "889a69b7c0541f263bed4fe92fbf0a45275c7b1c5e9e77c46129c61928e4d6db",
+      "size": 8923
+    },
+    {
+      "path": "runs/m3-triage-20261111/source-candidates.json",
+      "sha256": "3a53cc4641b8f3f4c0360c1f1a4f8a66aa26730b76f58463e65363849eb537b7",
+      "size": 1754553
+    },
+    {
+      "path": "runs/m3-triage-20261111/threshold-12.0.json",
+      "sha256": "0bb30c031a3c34125a60eae4709b40369c867fd66fa3f97f5ad64a20988ba15b",
+      "size": 3801313
+    },
+    {
+      "path": "runs/m3-triage-20261111/threshold-8.0.json",
+      "sha256": "4084a77050df80cf25e2c04a87c16530281217eefa423e320e9bf9b16f9f54d3",
+      "size": 3949929
+    },
+    {
+      "path": "runs/m3-triage-20261111/timing.json",
+      "sha256": "b372a98abb411f75a8e74f6806c98bf13d119975c63ef9b0c49e56fbcdb84c05",
+      "size": 119
+    },
+    {
+      "path": "runs/m3-triage-20261111/triage.json",
+      "sha256": "4457a1ce15967901cf6e33f870c53b7f7eda7557dd9aa5239bbc1093209da1b8",
+      "size": 3921115
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/G01-evidence.png",
+      "sha256": "14ee76ac1e303277501a0b2b2b30fab93145b2bc5207fa8ae05cf6792226391c",
+      "size": 122446
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/G05-evidence.png",
+      "sha256": "71fa3c1029eb16ae6a0ea77ba798a62a0c190dd1587fc7f8718de439195a3427",
+      "size": 104548
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/G24-evidence.png",
+      "sha256": "2d68d7ea94e8ec5e4390bc6977a2e711e72c5d034054ce95c34ede5ab212724c",
+      "size": 149412
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/build_review.py",
+      "sha256": "2923d8731a7706f15111e1d6fc73008fd0b2dfd1cd4bdb59e50e06cc08bad548",
+      "size": 5141
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/candidate-chains.json",
+      "sha256": "172a576dd63191559f4e7654d9663e02f5e6bc480fc317e6a4adbc64c892f708",
+      "size": 45572
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/completion.json",
+      "sha256": "d58094d06b84f732c99bc729abe74c15bca85dcadbd3705a550d413c232b8412",
+      "size": 611
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/final-review-spec.json",
+      "sha256": "c2a90d7a18517bf3527e9d6a94c14fbd5f57e95cdf71f0f2c5af76b674b5dbf3",
+      "size": 5197
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/gap-checks.json",
+      "sha256": "5b5918cf11b57efec9eb4b93dd8812de9701fccf2e33d7e91dcd1a0a801719b2",
+      "size": 12409
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/assets/14ee76ac1e-G01-evidence.png",
+      "sha256": "14ee76ac1e303277501a0b2b2b30fab93145b2bc5207fa8ae05cf6792226391c",
+      "size": 122446
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/assets/2d68d7ea94-G24-evidence.png",
+      "sha256": "2d68d7ea94e8ec5e4390bc6977a2e711e72c5d034054ce95c34ede5ab212724c",
+      "size": 149412
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/assets/71fa3c1029-G05-evidence.png",
+      "sha256": "71fa3c1029eb16ae6a0ea77ba798a62a0c190dd1587fc7f8718de439195a3427",
+      "size": 104548
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/index.html",
+      "sha256": "5b454c1fb2d977b0db0419b2ec1d7f7c4b65986cc559122084c7d386257f9390",
+      "size": 85222
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/manifest.json",
+      "sha256": "a01700c8af2ed3d9e246e66ba0813d003d58aecb8d801809a2abf32acb663c34",
+      "size": 2399
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/review-decision.json",
+      "sha256": "210bd851437904b49bbc16a49bff2d38b05e1e377f131d6a662467fe97b26c6d",
+      "size": 2022
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/review-record.md",
+      "sha256": "d22d3cec82403fcf33b9faa92c4192395a56543f784482158dc7e48cb47127f3",
+      "size": 1900
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/review-final/review-spec.json",
+      "sha256": "a1d41362b4220e35a5557307514caf151c15f6d105a053dceb38ad7aa432033f",
+      "size": 6237
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/source-candidates.json",
+      "sha256": "0a9e4e008bb448d49e15aa07877e72e844c3defa2277306b68d0933bf90ccfbb",
+      "size": 1754531
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/threshold-12.0.json",
+      "sha256": "0bb30c031a3c34125a60eae4709b40369c867fd66fa3f97f5ad64a20988ba15b",
+      "size": 3801313
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/threshold-8.0.json",
+      "sha256": "4084a77050df80cf25e2c04a87c16530281217eefa423e320e9bf9b16f9f54d3",
+      "size": 3949929
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/timing.json",
+      "sha256": "1226dd42de6f190615faa83361a65bbdcc6ee77ca5ea5529db6f748242c7f952",
+      "size": 119
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/triage.json",
+      "sha256": "aa9230516df293ff94fc72fd2ae116fe2a67bf111cf3c56669a093fa75582ca6",
+      "size": 3921115
+    },
+    {
+      "path": "runs/m3-triage-20261111/verified/verification.json",
+      "sha256": "1476484d782c8bd8873c528e64b6ec6974473da73b26d236cc0d9ca8bcb388f9",
+      "size": 459
+    }
+  ]
+}

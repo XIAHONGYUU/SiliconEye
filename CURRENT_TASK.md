@@ -2,47 +2,45 @@
 
 ## 当前目标与授权
 
-用户已导出全幅来源裁决，并授权将当前节点提交GitHub。本轮覆盖整张M3照片，处理已有身份之外的来源候选；从局部规则外延转入全幅来源清查，不将候选清单冒充几何完成。
+用户要求先提交GitHub，再继续推进。已核验11月19日实际导出，G01/G05/G24均通过；本次接续三项结果并保存可恢复证据，不再重问。当前唯一待审批次为五组/25对新的局部来源关系。
 
 ## 当前队列
 
 | 项目 | 状态 | 下一步 |
 | --- | --- | --- |
-| 固定外延入口 + 全幅来源清查入口 | 已验证 | 复用现有命令 |
-| M3-FULL-INVENTORY-20261109-V1 | accepted | 来源清单已归档；后续身份对应/几何接入待新任务授权 |
-| 后续几何 | 未开始 | 从已审清单建立新身份对应，再批量接入；不得直接采用片段 |
+| 672来源记录分流 | 完成，原始分类保持 | 不当作672条金属身份 |
+| G01/G05/G24实际裁决 | 已归档、接续重放一致 | 两对直接关系 + 两条宽金属边缘记录，不传播批准 |
+| 风险局部化 | AI来源分析，未采用 | 保留原始片段、局部区间和身份unknown |
+| M3-DIRECT-RELATIONS-20261119-V1 | ready_for_review | 仅判IDENTITY-01～05，每组5对 |
 
-## 最新交付
+## 最新交付与裁决
 
-- [全幅复核页](runs/m3-wide-inventory-20261109/final/review/index.html) · [一页摘要](docs/reviews/2026-11-09-m3-full-inventory.md) · [覆盖图](runs/m3-wide-inventory-20261109/full-atlas.png) · [清单](runs/m3-wide-inventory-20261109/final/inventory.json)。
-- 全幅5712×4284，共24470208像素；672亮脊线片段，30旧路径上下文、642未分配/部分新增；8区域、16证据图。片段数不是金属身份数，当前没有新增规则几何或连接。
-- [优先候选133个](runs/m3-wide-inventory-20261109/priority-candidates.json)仅按跨度及风险排序，不是已确认正确。239组件存在分叉/并行合并风险，20个外围边缘风险，两类可能重叠。
-- 程序识别4.35秒、材料全包23.67秒；本轮首次实现/两次运行/测试/检查至交付记录462.02秒（7.7分钟），初始读取、导出查找及最终聊天未计时。
-- 2项针对性测试、Ruff、diff检查通过；坐标界限、片段无重复分区、复核包哈希检查通过。抽查三张区域对照及全幅图，确认边缘/密集结构风险；没有672条逐项人工验证。
-- `python -m silicon_eye.ridge_inventory --spec configs/m3-full-ridge-inventory.json --output 新runs目录`。最终输出为final/；full/是更宽松旧路径重叠分类的首轮，不作为当前复核入口。
+- [本批一页摘要](docs/reviews/2026-11-21-m3-source-relations.md) · [五组固定复核页](runs/m3-identity-followthrough-20261119/review/index.html) · [拟审25对](runs/m3-identity-followthrough-20261119/relation-rules.json)。旧G01/G05/G24/G07不在新提案内，不能由相似结构类推批准。
+- [三项实际记录](runs/m3-triage-20261111/verified/review-final/review-record.md)：G01确认RIDGE-0005/0006同一局部来源路径；G05确认0017/0019；G24确认0360/0356为宽金属边缘，不建立独立细导体。实际导出2026-11-19，首次交互至导出59.635秒，不是总分析时间。
+- [已接续来源状态](runs/m3-identity-followthrough-20261119/reviewed-source-state.json)：304候选分组、仅2对已审直接关系、2条已审边缘记录，所有group_human_approved=false。原333稳定候选排除2条边缘后为331；不是331条已确认导体。
+- [风险诊断](runs/m3-identity-followthrough-20261119/verified-diagnostics/summary.json)：231个分叉风险片段局部化为291个来源区间；其中260新来源候选、25旧路径上下文、6局部旧路径重合。62阈值不稳定分为16长度筛选/采样表示原因和46原始亮度不稳定；均不代表物理身份已解决。
+- [来源工作集](runs/m3-identity-followthrough-20261119/source-working-set.json)分别保存331稳定片段、16筛选恢复候选、260局部来源区间；单位不同，不能相加为金属数。20外围边缘风险及其它未知继续保留。
 
-## 已归档与当前父基线
+## 当前父基线与保护
 
-- [扩大批六组裁决](runs/batch-expanded-20261109/review-final/review-record.md)全部accepted且实际归档；页面交互至导出21.772秒，不含交互前读图。LOWER局部身份检查随组接受，不升级精确投影或承载。
-- [全幅来源清单裁决](runs/m3-wide-inventory-20261109/final/review/review-record.md)8区域全部accepted，页面首次交互至导出29.725秒；只认可来源片段清单，不批准身份、几何、连接或物理端点。
-- [当前已审范围基线](runs/m3-wide-inventory-20261109/reviewed-baseline.json)绑定LOWER-SAFE最终工作包、扩大批裁决和之前的已审合并基线。新全幅清查不修改该模型。
-- [第一批](runs/batch-production-20261109/review/review-record.md)、[第二批](runs/batch-production-round2-20261109/package-final/review/review-record.md)已归档。54金属、34已审局部连接、188候选设计孔保持。
-- [原历史基线](benchmarks/w34-left-m2-reviewed-v2/working-baseline.json)保留旧身份/接口来源。全幅候选身份unassigned，不能直接采用到网表。
+- [当前已审范围基线](runs/m3-wide-inventory-20261109/reviewed-baseline.json)绑定LOWER-SAFE工作包、扩大批实际裁决和历史父基线，54金属、34已审局部连接、188候选设计孔保持。新分组/区间未接入几何或网表。
+- 全幅清单8区域accepted只认可来源清单，不授予672片段的身份/几何/连接。扩大批六组accepted及前两批几何裁决保持，见[DECISIONS.md](DECISIONS.md)。
+- L01几何G1、短头V2身份I1已审，M3承载/上层ID/物理孔数仍未知，不重审；四处M1非孔N1/N2/N3/S1保持否定，不推导全局断开。
+- source_to_design_transform=null、geometry_adopted=false、net_edges=[]、complete_network=false，skill为LIMITED_TRIAL_V2。六处材料、BF25/返回路径、旧配准拒绝、AA/POLY/CT及其它未知按稳定决定和历史保持。
 
-## 本次GitHub节点
+## GitHub与验证节点
 
-- [恢复说明与证据分片](benchmarks/github-checkpoint-2026-11-11/README.md) · [验证记录](benchmarks/github-checkpoint-2026-11-11/verification.json)。320文件去重归档；恢复后哈希和4套复核包通过。克隆后先恢复本轮runs证据，文档链接才可直接打开。
-- 80项相关测试通过（21.03秒），Ruff通过。精确远端同步状态以Git引用为准，本页不写自引用commit SHA。
+- [本增量证据恢复说明](benchmarks/github-checkpoint-2026-11-21/README.md) · [核验记录](benchmarks/github-checkpoint-2026-11-21/verification.json)。99文件按内容去重70块，压缩约6.83MB；临时恢复99文件SHA和2套最终固定包通过。克隆先恢复[前一节点](benchmarks/github-checkpoint-2026-11-11/README.md)，再恢复本增量，runs链接才可用。
+- 本次8项相关测试、Ruff、当前来源/实际裁决/父包哈希、三项应用精确重放和规则成员互斥检查通过。README/site25文件对提交前HEAD保持，未发布gh-pages。
+- 只读代码审查未发现当前三项输入的提交阻塞。source_review_apply尚无通用的关系/边缘交叉规则拒绝；当前输入和新25对已单独验证不与已审边缘重合，不能把此检查称为通用冲突解决。
+- GitHub提交/同步以Git引用为准；本页不写自引用commit SHA。历史总回归的旧README哈希失败保持，不宣称本次运行全套。周期记录见[cycle-time-v1](benchmarks/cycle-time-v1/README.md)。
 
 ## 唯一下一步
 
-全幅来源清单已归档；下一轮若要继续，先从已审清单建立新身份对应/候选几何，需用户确认范围与优先级。不得把672片段直接当导体，也不得由区域通过升级身份、连接或物理端点。
+在五组固定页判断IDENTITY-01～05并导出review-decision.json。每组只接受明确列出的5对直接关系；有错误备注具体G编号，不清楚可保持uncertain。收到实际导出后校验归档，再按具体裁决接续；不得让整条AI候选链变成人审身份，或升级为电气连接。等待时不产生依赖此裁决的新决定。
 
-## 生效边界与节点存档
+## 节奏与恢复
 
-- 稳定决定见[DECISIONS.md](DECISIONS.md)，阶段历史见[CHANGELOG](docs/history/CHANGELOG.md)及[旧入口归档](docs/history/current-task-before-2026-11-09-workflow-efficiency.md)。
-- L01几何G1、短头V2身份I1已审；承载/上层ID/物理孔数未知，未建新VIA或连接。N1/N2/N3/S1仍为非孔，不重审、不推导全局断开。
-- source_to_design_transform=null、geometry_adopted=false、net_edges=[]、complete_network=false，skill为LIMITED_TRIAL_V2；不导出自动网表，不采用精确共同几何。
-- 六处材料、BF25及返回路径、旧配准拒绝项、AA/POLY/CT保护和其它未决按原历史保留。
-- 当前节点按用户授权提交推送GitHub，不覆盖旧证据；新增ridge_inventory模块和对应测试/配置，原外延算法不变。 [入口说明](docs/metal-extent-batch.md)。
-- 每批周期记录继续写入[cycle-time-v1](benchmarks/cycle-time-v1/README.md)，默认复核窗口周二/周五各30分钟，可随用户安排调整。
+- WIP=1：一个工程事务、一个待审批批次；默认周二/周五各30分钟复核可按用户安排调整。稳定边界见[DECISIONS](DECISIONS.md)，历史变化见[CHANGELOG](docs/history/CHANGELOG.md)。
+- 本轮有效旧分流使用runs/m3-triage-20261111/verified/，有效后续诊断使用runs/m3-identity-followthrough-20261119/verified-diagnostics/；其余过程输出仅为历史。
+- 导出后用 `.venv/bin/python -m silicon_eye.review_sheet check --package runs/m3-identity-followthrough-20261119/review --decision /实际路径/review-decision.json --archive`。不改原图、旧送审包或展示页。
