@@ -1,0 +1,647 @@
+{
+  "status": "PASS",
+  "files": 125,
+  "unique_blobs": 78,
+  "restored_files_verified": 125,
+  "restored_review_packages_verified": 2,
+  "archive": {
+    "path": "benchmarks/github-checkpoint-2026-11-22/evidence.tar.gz",
+    "sha256": "ac3f79c709c0a6ee8630d79c9b1b6648ee83a21b307271b4d94637fca1f0b2bc",
+    "size": 20149413,
+    "parts": [
+      {
+        "path": "benchmarks/github-checkpoint-2026-11-22/evidence.tar.gz.part01",
+        "size": 20149413,
+        "sha256": "ac3f79c709c0a6ee8630d79c9b1b6648ee83a21b307271b4d94637fca1f0b2bc"
+      }
+    ],
+    "path_is_reassembled": true
+  },
+  "entries": [
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/H03-band-detail.png",
+      "sha256": "36ca75668de92ed81d4c5d3763d17aa8fc8e4834dc12682c63816cd3062ec498",
+      "size": 391418
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/geometry-pilot-spec.json",
+      "sha256": "ee1e7f34e5bdc40d69e48811189d0e83ee2267786228d6f4d77a78c008184d88",
+      "size": 945
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/lower-context.png",
+      "sha256": "45cd9e36c57c77e8d966ba9cc6c7a696f5244932c35f116451679ec9452b04c0",
+      "size": 695002
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/middle-context.png",
+      "sha256": "97676c2fb51d7f5b9689a1941df4f2c9b4a614736fbdf9fe5dd7c461b6f8110d",
+      "size": 323697
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/parallel-context.png",
+      "sha256": "6135cfe45893c6c0abf129f76b6e48835ee73031ab4f5e24c599c67d0f9b5b54",
+      "size": 630228
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/review-handoff.png",
+      "sha256": "4a4255c8390b7da04abce7cdd3bc1385d793fa02768cd41af0ecfda75617dc55",
+      "size": 124133
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/reviewed-source-state.json",
+      "sha256": "d73a0f8b1cedcbf70ce9828f8b6fd0eed973c54622accaa22a4c8e89e20bf35a",
+      "size": 57187
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/reviewed-support-paths.json",
+      "sha256": "1f09a1e8bb2da6fc0136ccfe5f38600a49517f2b0e02a2efeec9f3c40a9ec309",
+      "size": 12900
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/summary.json",
+      "sha256": "facbf2a58917ac01a15303089fceed9fb6f3c6e82e7b8cb4d6a5e1b2f437d24d",
+      "size": 1003
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/upper-context.png",
+      "sha256": "239a30d56196ee0c75e6c7cc0dc0c0d16bedb72b81fd8ebb28a2b07c135eaf70",
+      "size": 386815
+    },
+    {
+      "path": "runs/m3-direct-pairs-closeout-20261122/verification.json",
+      "sha256": "47dc7fc79bf993c960517378a8f5db7ab4e3716c20330f668cfd055557b524e5",
+      "size": 1610
+    },
+    {
+      "path": "runs/m3-export-routing-20261122/current-review.png",
+      "sha256": "28714f75dd397010bd344e3f00efc54e8cbae7b149443b6d94c805b3edda544c",
+      "size": 84209
+    },
+    {
+      "path": "runs/m3-export-routing-20261122/received-decision.json",
+      "sha256": "c2c2a08fd7d7941551f0566a6d206d37a240aed0ad4e11cb189a2b782c6f9a40",
+      "size": 631
+    },
+    {
+      "path": "runs/m3-export-routing-20261122/routing-check.json",
+      "sha256": "a350a8618589cedd1f139ba6494b0ba16b6f41917e5ac9b268e3d4966cfa67ef",
+      "size": 1008
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R01.png",
+      "sha256": "ff0c79f3251b04c971029f16dc45873a4ece0e48db8e5e13c6be8f2a8be768c5",
+      "size": 717616
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R02.png",
+      "sha256": "21c9baca1d9415cd6cd2bfc1f5d7be2203d21177f70e30da0c0203d78e399e1e",
+      "size": 804246
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R03.png",
+      "sha256": "d9c9a395fa56e9ee87f88be7a86f914640800be4a8c2ae9cd15d78ac52b56547",
+      "size": 453949
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R04.png",
+      "sha256": "d7a7a05fd1725542b03de0e589a7c4c4bbe7eb97cde1f9378309aa749b115810",
+      "size": 656696
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R05.png",
+      "sha256": "09882a52d1c725d7b4b4404ff8a4097cf5adc03a9c329e5e04924b6da8961011",
+      "size": 741254
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R06.png",
+      "sha256": "a6e4982035f832f05d0db1d22810032cd291fceac4b753a5f0f43ed828f51517",
+      "size": 839083
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R07.png",
+      "sha256": "48a69dfee4eeb89f7eee4f6827031e175621efcdd58ef1d794e4c5ba3188738b",
+      "size": 889993
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R08.png",
+      "sha256": "2640d5d09ef6348fe94c8a62ac6cc7ad215c297aff1e479b2c6257ee2f52bccc",
+      "size": 975311
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R09.png",
+      "sha256": "40fc54c91a089aa1daf9c8c63494eaf9370541aa70f5b52af0c86153dfe77ce5",
+      "size": 878309
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/R10.png",
+      "sha256": "6466415d262f931c66ddde5360fd9ef5a3b36d0ba4b6ea6afec5348170c69a65",
+      "size": 812195
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/candidates.json",
+      "sha256": "0b57299d34171588cbfc07f969254d994209a8ed05ea59155438f099f1c53eae",
+      "size": 56631
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/09882a52d1-R05.png",
+      "sha256": "09882a52d1c725d7b4b4404ff8a4097cf5adc03a9c329e5e04924b6da8961011",
+      "size": 741254
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/21c9baca1d-R02.png",
+      "sha256": "21c9baca1d9415cd6cd2bfc1f5d7be2203d21177f70e30da0c0203d78e399e1e",
+      "size": 804246
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/2640d5d09e-R08.png",
+      "sha256": "2640d5d09ef6348fe94c8a62ac6cc7ad215c297aff1e479b2c6257ee2f52bccc",
+      "size": 975311
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/40fc54c91a-R09.png",
+      "sha256": "40fc54c91a089aa1daf9c8c63494eaf9370541aa70f5b52af0c86153dfe77ce5",
+      "size": 878309
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/48a69dfee4-R07.png",
+      "sha256": "48a69dfee4eeb89f7eee4f6827031e175621efcdd58ef1d794e4c5ba3188738b",
+      "size": 889993
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/6466415d26-R10.png",
+      "sha256": "6466415d262f931c66ddde5360fd9ef5a3b36d0ba4b6ea6afec5348170c69a65",
+      "size": 812195
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/a6e4982035-R06.png",
+      "sha256": "a6e4982035f832f05d0db1d22810032cd291fceac4b753a5f0f43ed828f51517",
+      "size": 839083
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/d7a7a05fd1-R04.png",
+      "sha256": "d7a7a05fd1725542b03de0e589a7c4c4bbe7eb97cde1f9378309aa749b115810",
+      "size": 656696
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/d9c9a395fa-R03.png",
+      "sha256": "d9c9a395fa56e9ee87f88be7a86f914640800be4a8c2ae9cd15d78ac52b56547",
+      "size": 453949
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/assets/ff0c79f325-R01.png",
+      "sha256": "ff0c79f3251b04c971029f16dc45873a4ece0e48db8e5e13c6be8f2a8be768c5",
+      "size": 717616
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/index.html",
+      "sha256": "3abd01c59899a7a906896fda69694e452ca10e4a3bf168bb1805d84de42e2f11",
+      "size": 93849
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/manifest.json",
+      "sha256": "f4683cf631b2d8b337ba4ea56e5f6c04f37ec5c25d739b88187b6f8d264c702c",
+      "size": 5272
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review/review-spec.json",
+      "sha256": "1bc30d788668506f9701f4e53941a477e7224c403e2547ac9e00430c5addb3c6",
+      "size": 18541
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/generated/review-spec.json",
+      "sha256": "19b6340976546ba582a673c047d494ec41151e47006f401dd5e2b9cc74a5a3b2",
+      "size": 15716
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/pilot-spec.json",
+      "sha256": "118ea2cc9a941f23ac11b0955cb50b815ebd08df5f907e8a52f580c1e68dcff8",
+      "size": 1669
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/09882a52d1-R05.png",
+      "sha256": "09882a52d1c725d7b4b4404ff8a4097cf5adc03a9c329e5e04924b6da8961011",
+      "size": 741254
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/21c9baca1d-R02.png",
+      "sha256": "21c9baca1d9415cd6cd2bfc1f5d7be2203d21177f70e30da0c0203d78e399e1e",
+      "size": 804246
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/2640d5d09e-R08.png",
+      "sha256": "2640d5d09ef6348fe94c8a62ac6cc7ad215c297aff1e479b2c6257ee2f52bccc",
+      "size": 975311
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/40fc54c91a-R09.png",
+      "sha256": "40fc54c91a089aa1daf9c8c63494eaf9370541aa70f5b52af0c86153dfe77ce5",
+      "size": 878309
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/48a69dfee4-R07.png",
+      "sha256": "48a69dfee4eeb89f7eee4f6827031e175621efcdd58ef1d794e4c5ba3188738b",
+      "size": 889993
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/6466415d26-R10.png",
+      "sha256": "6466415d262f931c66ddde5360fd9ef5a3b36d0ba4b6ea6afec5348170c69a65",
+      "size": 812195
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/a6e4982035-R06.png",
+      "sha256": "a6e4982035f832f05d0db1d22810032cd291fceac4b753a5f0f43ed828f51517",
+      "size": 839083
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/d7a7a05fd1-R04.png",
+      "sha256": "d7a7a05fd1725542b03de0e589a7c4c4bbe7eb97cde1f9378309aa749b115810",
+      "size": 656696
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/d9c9a395fa-R03.png",
+      "sha256": "d9c9a395fa56e9ee87f88be7a86f914640800be4a8c2ae9cd15d78ac52b56547",
+      "size": 453949
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/assets/ff0c79f325-R01.png",
+      "sha256": "ff0c79f3251b04c971029f16dc45873a4ece0e48db8e5e13c6be8f2a8be768c5",
+      "size": 717616
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/index.html",
+      "sha256": "4b83ce7365304a96879a856085c0bb44ae2179b579dc759b932a5ea05c89678d",
+      "size": 97691
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/manifest.json",
+      "sha256": "2bfcc49fc60effa2e769da196a0bf7c81f5de416c65753640d9956c6039fe646",
+      "size": 5861
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review/review-spec.json",
+      "sha256": "5d1123be4c3a7be36568bc775d0e6e55febef3735a9c03292b69b191d47303b7",
+      "size": 23394
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/review-spec.json",
+      "sha256": "093fad55655fd611297575ea04ae7f5fe6866a2d06000e07d9fb7b132e5acce0",
+      "size": 20849
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/reviewed-local-baseline.json",
+      "sha256": "13297e16596d275a4f577a044f0965db54da8ed80bddfa354f6e94548d47b497",
+      "size": 46316
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/selection.json",
+      "sha256": "e3af88df9b1cf3390cb0f25c1a6239cdad9bec604d108bfcccc72fc0aff7d8ba",
+      "size": 9813
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/ten-group-contact.png",
+      "sha256": "8ecb9b81f2b451ef8ab161e1e6c43a250351cf07c5d52971f22471ff8aa50d6e",
+      "size": 2151811
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/timing.json",
+      "sha256": "4ce075b7878de1b6ac0e21b0a0d2ee6acc9e78dd12ebb18adb078121af589d64",
+      "size": 287
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122/verification.json",
+      "sha256": "cac3f997543acf7700ef7af037c59cb38e376635ff7a1c91e64499e82f9e9b00",
+      "size": 1553
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R01.png",
+      "sha256": "1e423d04643c5e2d6fc72b15d6da405106c0be32819d44fa6eb4ab2f6776c8cd",
+      "size": 804036
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R02.png",
+      "sha256": "a91b501457b7f8b71f35296b874eefbe9be29aa73b893ff4e39529a92bcc9c14",
+      "size": 453834
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R03.png",
+      "sha256": "fa33b6f228236ee5b3cd4b46ba9c9b41d9fc91977719e55eef0d5197d60eefaa",
+      "size": 656909
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R04.png",
+      "sha256": "79302b638d01462f453a6befc65354f1a2908047f66acfc297df576f45572f71",
+      "size": 741225
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R05.png",
+      "sha256": "086961186635af7f82f65ebf406d6589ede2bb2ac4aeb742461e95f91a0b8291",
+      "size": 838929
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R06.png",
+      "sha256": "60e5f9da036f69178b6c36400ee02bedbd2a55f11bf8ae7ae2cea70e9a729f5f",
+      "size": 890221
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R07.png",
+      "sha256": "2c3801009b4f507c24751cd46307e1f761602d7f035f8e57a7e77cf5a38e82eb",
+      "size": 1198329
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R08.png",
+      "sha256": "2640d5d09ef6348fe94c8a62ac6cc7ad215c297aff1e479b2c6257ee2f52bccc",
+      "size": 975311
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R09.png",
+      "sha256": "40fc54c91a089aa1daf9c8c63494eaf9370541aa70f5b52af0c86153dfe77ce5",
+      "size": 878309
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/R10.png",
+      "sha256": "6466415d262f931c66ddde5360fd9ef5a3b36d0ba4b6ea6afec5348170c69a65",
+      "size": 812195
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/candidates.json",
+      "sha256": "c71da8db6f7d149862a258836907352efe387e0fa17b5f1d31410520f804909b",
+      "size": 58717
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/0869611866-R05.png",
+      "sha256": "086961186635af7f82f65ebf406d6589ede2bb2ac4aeb742461e95f91a0b8291",
+      "size": 838929
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/1e423d0464-R01.png",
+      "sha256": "1e423d04643c5e2d6fc72b15d6da405106c0be32819d44fa6eb4ab2f6776c8cd",
+      "size": 804036
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/2640d5d09e-R08.png",
+      "sha256": "2640d5d09ef6348fe94c8a62ac6cc7ad215c297aff1e479b2c6257ee2f52bccc",
+      "size": 975311
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/2c3801009b-R07.png",
+      "sha256": "2c3801009b4f507c24751cd46307e1f761602d7f035f8e57a7e77cf5a38e82eb",
+      "size": 1198329
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/40fc54c91a-R09.png",
+      "sha256": "40fc54c91a089aa1daf9c8c63494eaf9370541aa70f5b52af0c86153dfe77ce5",
+      "size": 878309
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/60e5f9da03-R06.png",
+      "sha256": "60e5f9da036f69178b6c36400ee02bedbd2a55f11bf8ae7ae2cea70e9a729f5f",
+      "size": 890221
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/6466415d26-R10.png",
+      "sha256": "6466415d262f931c66ddde5360fd9ef5a3b36d0ba4b6ea6afec5348170c69a65",
+      "size": 812195
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/79302b638d-R04.png",
+      "sha256": "79302b638d01462f453a6befc65354f1a2908047f66acfc297df576f45572f71",
+      "size": 741225
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/a91b501457-R02.png",
+      "sha256": "a91b501457b7f8b71f35296b874eefbe9be29aa73b893ff4e39529a92bcc9c14",
+      "size": 453834
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/assets/fa33b6f228-R03.png",
+      "sha256": "fa33b6f228236ee5b3cd4b46ba9c9b41d9fc91977719e55eef0d5197d60eefaa",
+      "size": 656909
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/index.html",
+      "sha256": "1921050d8792527453bd215b3f8385b1193b6ea654b49302ea46c3ae31085d76",
+      "size": 93914
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/manifest.json",
+      "sha256": "f5c676862015e1797685df354b5ddee80de28342805b5c8d2834b78fd719b347",
+      "size": 5338
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review/review-spec.json",
+      "sha256": "08fc7f57774d37ebc4bd902953a22d00f1cb8b245a5fe0c2a31011692cff2e21",
+      "size": 18606
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/generated/review-spec.json",
+      "sha256": "102fd98985133411285893d6d51e979069633678110272ec618acfeec2c52f0e",
+      "size": 15781
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/pilot-spec.json",
+      "sha256": "23323adfdc6ead7bd3ac17b18ee5b2e2db142362df34af1c7c21cc80de6204c6",
+      "size": 1669
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/preview.json",
+      "sha256": "c3cc49919c891b32a75941e27dafa9e4cc4b1da979aa6a4132f5ad543cb20139",
+      "size": 206
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/0869611866-R05.png",
+      "sha256": "086961186635af7f82f65ebf406d6589ede2bb2ac4aeb742461e95f91a0b8291",
+      "size": 838929
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/1e423d0464-R01.png",
+      "sha256": "1e423d04643c5e2d6fc72b15d6da405106c0be32819d44fa6eb4ab2f6776c8cd",
+      "size": 804036
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/2640d5d09e-R08.png",
+      "sha256": "2640d5d09ef6348fe94c8a62ac6cc7ad215c297aff1e479b2c6257ee2f52bccc",
+      "size": 975311
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/2c3801009b-R07.png",
+      "sha256": "2c3801009b4f507c24751cd46307e1f761602d7f035f8e57a7e77cf5a38e82eb",
+      "size": 1198329
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/40fc54c91a-R09.png",
+      "sha256": "40fc54c91a089aa1daf9c8c63494eaf9370541aa70f5b52af0c86153dfe77ce5",
+      "size": 878309
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/60e5f9da03-R06.png",
+      "sha256": "60e5f9da036f69178b6c36400ee02bedbd2a55f11bf8ae7ae2cea70e9a729f5f",
+      "size": 890221
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/6466415d26-R10.png",
+      "sha256": "6466415d262f931c66ddde5360fd9ef5a3b36d0ba4b6ea6afec5348170c69a65",
+      "size": 812195
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/79302b638d-R04.png",
+      "sha256": "79302b638d01462f453a6befc65354f1a2908047f66acfc297df576f45572f71",
+      "size": 741225
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/a91b501457-R02.png",
+      "sha256": "a91b501457b7f8b71f35296b874eefbe9be29aa73b893ff4e39529a92bcc9c14",
+      "size": 453834
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/assets/fa33b6f228-R03.png",
+      "sha256": "fa33b6f228236ee5b3cd4b46ba9c9b41d9fc91977719e55eef0d5197d60eefaa",
+      "size": 656909
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/index.html",
+      "sha256": "2863e8d933b969680155add5d3c5c4ee28acd61ff427855624dc7bbe183edd47",
+      "size": 97911
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/manifest.json",
+      "sha256": "67d677797aae6e085c72208f7fbfcb7435cff4f86b23e26e7d239169ea2b6ae8",
+      "size": 6137
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/review-decision.json",
+      "sha256": "9df12a2790f5a98b9037f53fcf74619e5e2209bada944e478698f86f16df9ff6",
+      "size": 3231
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/review-record.md",
+      "sha256": "3d1e72eee6d1cd99f9f380ca8ea91715e2374405ee72004817687b618099a29d",
+      "size": 2823
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review/review-spec.json",
+      "sha256": "88b7e866dc5f9b8aa645f172128a5fd648fc21cd7f5cffb8c699f64a70642935",
+      "size": 23641
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review-handoff.png",
+      "sha256": "e2c9ceccc1b9d3fb97644ec36101b48db92e7794638b5105fa8dc9d6b519152f",
+      "size": 100017
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/review-spec.json",
+      "sha256": "8029b65ada32adfde07f2f3341558427f386c1e8b1c8e21d8901f842cb7ebbb4",
+      "size": 21096
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/reviewed-local-baseline.json",
+      "sha256": "13297e16596d275a4f577a044f0965db54da8ed80bddfa354f6e94548d47b497",
+      "size": 46316
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/selection.json",
+      "sha256": "ed25c630440a5e905cc75542f2f2c97832fecfb44c98bf5c909db475a29e08ae",
+      "size": 10998
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/semantic-hold.json",
+      "sha256": "82cbd54dad1ef5300e1cc677def71b2f1221dfc0a2a0b99d5e23ff154e452a7a",
+      "size": 1084
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/timing.json",
+      "sha256": "a99d035f12c3f5689c285e6fbf179b64ab26f87b2a4f3a99aedf8b64e2def738",
+      "size": 227
+    },
+    {
+      "path": "runs/m3-geometry-ten-groups-20261122-final/verification.json",
+      "sha256": "7ace0a7d2b67b291c50d5a5d0ec537b218e8e6a11f84f7779c1f65c3630772e9",
+      "size": 1952
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/review-decision.json",
+      "sha256": "ca30a11913686bb7143d2124a3d7c0285d5e79e79ae22dd823475eb21e44026e",
+      "size": 2395
+    },
+    {
+      "path": "runs/m3-identity-followthrough-20261119/review/review-record.md",
+      "sha256": "5891c1387c168fc7da4d7dda9c53f18c2b7a39ba2ed41d38d7fa40d1545f7814",
+      "size": 2447
+    },
+    {
+      "path": "runs/m3-local-geometry-reviewed-20261122/closeout.json",
+      "sha256": "88b934b57e7c81cf6a75c131bfa5276c50ab25a65ea5391fac64d1341fabdc57",
+      "size": 719
+    },
+    {
+      "path": "runs/m3-local-geometry-reviewed-20261122/local-baseline.json",
+      "sha256": "e506664ecb9907aa3dfc018e6bfe1c9f85108bc6d3bfe9e6ffc9f0130eae7ed1",
+      "size": 108594
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/H01.png",
+      "sha256": "0ecdcce43349851c9c703583636b3b7ede3cab8146467e73e2a7e941555de8dc",
+      "size": 570860
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/H02.png",
+      "sha256": "1b028d1d2e3fe4ac29d2f35f3bb53cc44e35224367d236da932f0c148bb7effb",
+      "size": 946581
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/H03.png",
+      "sha256": "2932fe3c3351e4c30faabe65ef485c40bcb6258502ea74b4ec560e14e0eda8ef",
+      "size": 396967
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/candidates.json",
+      "sha256": "6312e7373e56c6f279a0ca958a8246fc9af6761090efad4589f7ba9c900a88b0",
+      "size": 45900
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/assets/0ecdcce433-H01.png",
+      "sha256": "0ecdcce43349851c9c703583636b3b7ede3cab8146467e73e2a7e941555de8dc",
+      "size": 570860
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/assets/1b028d1d2e-H02.png",
+      "sha256": "1b028d1d2e3fe4ac29d2f35f3bb53cc44e35224367d236da932f0c148bb7effb",
+      "size": 946581
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/assets/2932fe3c33-H03.png",
+      "sha256": "2932fe3c3351e4c30faabe65ef485c40bcb6258502ea74b4ec560e14e0eda8ef",
+      "size": 396967
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/index.html",
+      "sha256": "f268a58ec1b59a27dccd3ab857ef9233b71964f4f2c8aed3eb5fc0034f28aa28",
+      "size": 85340
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/manifest.json",
+      "sha256": "085848c989c34302470e062c6a3df51895952fa261ae08f6210c4d5d9c99eb0a",
+      "size": 2583
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/review-decision.json",
+      "sha256": "c5cc4f0502fa71f497bb0c3aeda82b23200dc6d34e0b5946fb771419a34dd8f7",
+      "size": 1938
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/review-record.md",
+      "sha256": "392ecc78e0354afdf1b43dff28eab857e5b6519e85d27f04efd3e38b703a6b30",
+      "size": 1621
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review/review-spec.json",
+      "sha256": "3ac3c98f59a0443800f5efe5313d7f4ac2638575c1cdeb63f9895ebfc51f1c1e",
+      "size": 6329
+    },
+    {
+      "path": "runs/m3-reviewed-path-geometry-20261122-v2/review-spec.json",
+      "sha256": "53fd25def9dc72018d44f3739ea48c7dfa44e5e1ae0d3f408d4a473dcee5d14a",
+      "size": 5280
+    }
+  ]
+}

@@ -2,14 +2,14 @@
   "schema_version": 1,
   "batch_id": "M3-DIRECT-RELATIONS-20261119-V1",
   "package_id": "M3-DIRECT-RELATIONS-20261119-V1",
-  "state": "ready_for_review",
+  "state": "accepted",
   "queued_at": null,
   "ready_at": "2026-11-19T12:52:25+00:00",
   "review_sent_at": null,
-  "review_started_at": null,
-  "review_done_at": null,
-  "accepted_at": null,
+  "review_started_at": "2026-11-22T11:12:05.188000+00:00",
+  "review_done_at": "2026-11-22T11:12:28.097000+00:00",
+  "accepted_at": "2026-11-22T11:22:54.492978+00:00",
   "committed_at": null,
-  "human_review_minutes": null,
-  "notes": "Existing2026-11-19 material verified and resumed2026-11-21. Five groups contain25 direct source relations; do not re-ask G01/G05/G24 or adopt whole chains."
+  "human_review_minutes": 0.38181666666666664,
+  "notes": "Five accepted groups archived2026-11-22;25 explicit direct pairs appended to prior2. 22.909s is first interaction to final export, not total review/analysis time. Exports17/18 have matching answers;18 used for archival. No geometry/network adoption."
 }

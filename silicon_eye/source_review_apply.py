@@ -3,6 +3,48 @@
 import copy
 
 
+def continue_pairs(parent, rules, answers):
+    """Append explicit pair verdicts, preserving prior evidence and unknown identities.
+
+    The caller must validate the fixed review package and bind these rules to its spec.
+    A group verdict applies only to its listed pairs, never to AI neighbors.
+    """
+    known = {f for g in parent["groups"] for f in g["fragments"]}
+    excluded = {e["fragment_id"] for e in parent["reviewed_edges"]}
+    previous = {frozenset(r["fragments"]) for r in parent["reviewed_relations"]}
+    flattened, case_answers, origins = [], {}, {}
+    pairs_seen = set(previous)
+    for rule in rules:
+        if rule["action"] != "same_source_path":
+            raise ValueError("Pair continuation cannot change edge classifications")
+        answer = answers[rule["item_id"]]
+        for pair in rule["pairs"]:
+            case, ids = pair["case"], pair["fragments"]
+            if case in origins or len(ids) != 2 or len(set(ids)) != 2:
+                raise ValueError("Duplicate case or invalid pair")
+            if set(ids) & excluded or not set(ids) <= known:
+                raise ValueError("Pair intersects excluded edges or unknown fragments")
+            key = frozenset(ids)
+            if key in pairs_seen:
+                raise ValueError("Repeated pair or already reviewed relation")
+            pairs_seen.add(key)
+            origins[case] = rule["item_id"]
+            flattened.append(dict(item_id=case, action=rule["action"], fragments=ids))
+            case_answers[case] = answer
+    result = apply(parent["groups"], flattened, case_answers)
+    for relation in result["reviewed_relations"]:
+        case = relation["review_item"]
+        relation["case_id"] = case
+        relation["review_item"] = origins[case]
+    result["reviewed_relations"] = (
+        copy.deepcopy(parent["reviewed_relations"]) + result["reviewed_relations"]
+    )
+    result["reviewed_edges"] = copy.deepcopy(parent["reviewed_edges"])
+    if len({g["id"] for g in result["groups"]}) != len(result["groups"]):
+        raise ValueError("Non-unique candidate group IDs")
+    return result
+
+
 def apply(groups, rules, answers):
     """Return candidate groups plus exact approved relations and excluded edge records."""
     groups = copy.deepcopy(groups)

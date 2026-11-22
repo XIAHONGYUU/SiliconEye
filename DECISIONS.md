@@ -79,3 +79,24 @@
 - 决定：实际2026-11-19导出G01/G05/G24均accepted。G01只确认RIDGE-0005/0006的直接局部来源关系，G05只确认0017/0019；G24的0360/0356为宽金属边缘，不建立独立细导体。
 - 权威来源：[实际记录](runs/m3-triage-20261111/verified/review-final/review-record.md)、[接续状态](runs/m3-identity-followthrough-20261119/reviewed-source-state.json)。
 - 边界：304分组仍非整组人审批准，AI邻居不继承关系；不扩成跨层连接、几何采用、物理端点或全网。三项不再重审。新25对直接关系尚未批准。
+
+## D010 五组25对直接来源关系裁决（2026-11-22）
+
+- 状态：`accepted`，仅固定页列明的直接局部关系；接续D009，其历史“新25对尚未批准”状态至此更新。
+- 决定：M3-DIRECT-RELATIONS-20261119-V1的IDENTITY-01～05均accepted、无备注；精确范围以[归档决定](runs/m3-identity-followthrough-20261119/review/review-decision.json)与[25对规则](runs/m3-identity-followthrough-20261119/relation-rules.json)为准。旧两对/两条边缘保持，合计27直接关系、2条边缘，不重审。
+- 权威来源：[复核记录](runs/m3-identity-followthrough-20261119/review/review-record.md)、[增量接续](runs/m3-direct-pairs-closeout-20261122/reviewed-source-state.json)。
+- 边界：20个已审关系图组件只是证据组织，不是20条已确认完整导体；304候选组保持整组未批准。不得由组件推导额外关系、物理端点、几何采用、跨层连接或网表。
+
+## D011 H01/H02局部规则几何裁决（2026-11-22）
+
+- 状态：`accepted`，仅局部矩形表达及候选线宽。
+- 决定：M3-REVIEWED-PATH-GEOMETRY-20261122-V1的H01/H02均accepted、无备注；分别保留280×10和855×12相对像素矩形。H03是context，未获批准，仍须分析宽带上下边界。
+- 权威来源：[实际记录](runs/m3-reviewed-path-geometry-20261122-v2/review/review-record.md)、[已审局部基线](runs/m3-geometry-ten-groups-20261122-final/reviewed-local-baseline.json)。
+- 边界：独立局部坐标，不授予全局位置、邻线间距、物理尺寸、真实端点、跨层连接或网表批准。R01–R10十组新局部几何尚未批准。
+
+## D012 R01–R10十组局部规则几何裁决（2026-11-22）
+
+- 状态：`accepted`，仅列明十处局部矩形表达及候选线宽；D011末尾的待审状态至此更新。
+- 决定：实际导出21与final build46968448…精确匹配，R01–R10均accepted、无备注；导出20答案相同。与H01/H02合并为12处局部已审形状，不重审。
+- 权威来源：[实际记录](runs/m3-geometry-ten-groups-20261122-final/review/review-record.md)、[12处局部基线](runs/m3-local-geometry-reviewed-20261122/local-baseline.json)。
+- 边界：独立局部坐标，不授予全局位置、间距、物理尺寸、真实端点、孔、跨层连接或网表批准。5处数值暂停及孔阵列上缘语义暂停保留；原27对直接关系、2条已审宽边缘保持。
